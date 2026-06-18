@@ -9,58 +9,64 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
 import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
 
+const ServiciosRoute = ServiciosRouteImport.update({
+  id: '/servicios',
+  path: '/servicios',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
-  id: '/servicios/',
-  path: '/servicios/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
-  id: '/servicios/websites',
-  path: '/servicios/websites',
-  getParentRoute: () => rootRouteImport,
+  id: '/websites',
+  path: '/websites',
+  getParentRoute: () => ServiciosRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/servicios': typeof ServiciosRouteWithChildren
   '/servicios/websites': typeof ServiciosWebsitesRoute
-  '/servicios/': typeof ServiciosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/servicios': typeof ServiciosRouteWithChildren
   '/servicios/websites': typeof ServiciosWebsitesRoute
-  '/servicios': typeof ServiciosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/servicios': typeof ServiciosRouteWithChildren
   '/servicios/websites': typeof ServiciosWebsitesRoute
-  '/servicios/': typeof ServiciosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/servicios/websites' | '/servicios/'
+  fullPaths: '/' | '/servicios' | '/servicios/websites'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/servicios/websites' | '/servicios'
-  id: '__root__' | '/' | '/servicios/websites' | '/servicios/'
+  to: '/' | '/servicios' | '/servicios/websites'
+  id: '__root__' | '/' | '/servicios' | '/servicios/websites'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ServiciosWebsitesRoute: typeof ServiciosWebsitesRoute
-  ServiciosIndexRoute: typeof ServiciosIndexRoute
+  ServiciosRoute: typeof ServiciosRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/servicios': {
+      id: '/servicios'
+      path: '/servicios'
+      fullPath: '/servicios'
+      preLoaderRoute: typeof ServiciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -68,28 +74,42 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/servicios/': {
-      id: '/servicios/'
-      path: '/servicios'
-      fullPath: '/servicios/'
-      preLoaderRoute: typeof ServiciosIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/servicios/websites': {
       id: '/servicios/websites'
-      path: '/servicios/websites'
+      path: '/websites'
       fullPath: '/servicios/websites'
       preLoaderRoute: typeof ServiciosWebsitesRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ServiciosRoute
     }
   }
 }
 
+interface ServiciosRouteChildren {
+  ServiciosWebsitesRoute: typeof ServiciosWebsitesRoute
+}
+
+const ServiciosRouteChildren: ServiciosRouteChildren = {
+  ServiciosWebsitesRoute: ServiciosWebsitesRoute,
+}
+
+const ServiciosRouteWithChildren = ServiciosRoute._addFileChildren(
+  ServiciosRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ServiciosWebsitesRoute: ServiciosWebsitesRoute,
-  ServiciosIndexRoute: ServiciosIndexRoute,
+  ServiciosRoute: ServiciosRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
