@@ -231,33 +231,31 @@ function ComparePlans() {
             </tr>
           </thead>
           <tbody>
-            {COMPARE_GROUPS.map((g) => (
-              <>
-                <tr key={g.group} className="bg-neutral-50">
-                  <td
-                    colSpan={COMPARE_HEADERS.length + 1}
-                    className="px-4 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-neutral-500"
-                  >
-                    {g.group}
+            {COMPARE_GROUPS.flatMap((g) => [
+              <tr key={`g-${g.group}`} className="bg-neutral-50">
+                <td
+                  colSpan={COMPARE_HEADERS.length + 1}
+                  className="px-4 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-neutral-500"
+                >
+                  {g.group}
+                </td>
+              </tr>,
+              ...g.rows.map((r) => (
+                <tr
+                  key={`r-${g.group}-${r.label}`}
+                  className="border-t border-dashed border-neutral-200"
+                >
+                  <td className="sticky left-0 z-[1] bg-white px-4 py-3 text-left text-neutral-800">
+                    {r.label}
                   </td>
-                </tr>
-                {g.rows.map((r) => (
-                  <tr
-                    key={r.label}
-                    className="border-t border-dashed border-neutral-200"
-                  >
-                    <td className="sticky left-0 z-[1] bg-white px-4 py-3 text-left text-neutral-800">
-                      {r.label}
+                  {r.vals.map((v, i) => (
+                    <td key={i} className="px-3 py-3 text-center">
+                      <CellIcon v={v} />
                     </td>
-                    {r.vals.map((v, i) => (
-                      <td key={i} className="px-3 py-3 text-center">
-                        <CellIcon v={v} />
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </>
-            ))}
+                  ))}
+                </tr>
+              )),
+            ])}
           </tbody>
         </table>
       </div>
