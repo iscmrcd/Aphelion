@@ -13,19 +13,6 @@ export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
   return (
     <section ref={ref} id="websites" className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
-        {/* Intro */}
-        <div className="mx-auto mb-14 max-w-2xl text-center">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Websites
-          </p>
-          <h2 className="text-3xl font-medium tracking-[-0.025em] text-neutral-950 sm:text-5xl">
-            Seis niveles. Una sola filosofía.
-          </h2>
-          <p className="mt-5 text-base text-neutral-500 sm:text-lg">
-            Software que vende por ti. Desde una presencia profesional hasta un SaaS
-            multiusuario — todos diseñados para crecer contigo.
-          </p>
-        </div>
 
         {/* Tabs */}
         <div className="mb-8 -mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
