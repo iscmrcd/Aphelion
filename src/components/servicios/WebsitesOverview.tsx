@@ -1,14 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { WEB_LEVELS } from "@/lib/websites-data";
-import grain1 from "@/assets/banners/grain-wave-1.avif.asset.json";
-import grain2 from "@/assets/banners/grain-wave-2.avif.asset.json";
-import grain3 from "@/assets/banners/grain-wave-3.avif.asset.json";
-import grain4 from "@/assets/banners/grain-wave-4.avif.asset.json";
-import grain5 from "@/assets/banners/grain-wave-5.avif.asset.json";
-import grain6 from "@/assets/banners/grain-wave-6.avif.asset.json";
+import grad1 from "@/assets/banners/gradient-1.jpg.asset.json";
+import grad2 from "@/assets/banners/gradient-2.jpg.asset.json";
+import grad3 from "@/assets/banners/gradient-3.png.asset.json";
+import grad4 from "@/assets/banners/gradient-4.avif.asset.json";
+import grad5 from "@/assets/banners/gradient-5.avif.asset.json";
+import grad6 from "@/assets/banners/gradient-6.avif.asset.json";
 
-const GRADIENTS = [grain1.url, grain2.url, grain3.url, grain4.url, grain5.url, grain6.url];
+const GRADIENTS = [grad1.url, grad2.url, grad3.url, grad4.url, grad5.url, grad6.url];
 
 // Featured tier — keeps the "Popular" badge.
 const FEATURED_SLUG = "captacion";
