@@ -21,6 +21,7 @@ export const Route = createFileRoute("/servicios/websites")({
       },
     ],
   }),
+  ssr: false,
   component: WebsitesPage,
 });
 
