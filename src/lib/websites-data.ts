@@ -30,7 +30,7 @@ export const WEB_LEVELS: WebLevel[] = [
       "1 ronda de cambios",
     ],
     notInc: ["CRM o agenda incluidos", "Panel administrativo", "Login o portal", "Integraciones API"],
-    canAdd: ["Cotizador simple", "Formulario avanzado", "Landing para campaña", "Pagos en línea", "Tracking avanzado"],
+    canAdd: ["Cotizador express", "Cotizador simple", "Formulario avanzado", "Landing para campaña", "Pagos en línea", "Embed Calendly / PMS"],
   },
   {
     id: 2,
@@ -164,6 +164,7 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
   {
     group: "Automatización",
     rows: [
+      { label: "Cotizador express", vals: ["addon", "addon", "addon", "yes", "yes", "yes"] },
       { label: "Cotizador simple", vals: ["addon", "addon", "addon", "yes", "yes", "yes"] },
       { label: "CRM básico", vals: ["no", "addon", "addon", "yes", "yes", "yes"] },
       { label: "Agenda básica", vals: ["no", "addon", "addon", "yes", "yes", "yes"] },
@@ -185,6 +186,7 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
     group: "Pagos e integraciones",
     rows: [
       { label: "Pagos en línea", vals: ["addon", "addon", "addon", "addon", "yes", "yes"] },
+      { label: "Embeds simples (Calendly, PMS, mapa)", vals: ["addon", "addon", "addon", "addon", "addon", "addon"] },
       { label: "Integraciones externas", vals: ["custom", "custom", "custom", "custom", "custom", "custom"] },
     ],
   },
