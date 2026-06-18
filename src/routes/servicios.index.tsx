@@ -1,5 +1,6 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Hero } from "@/components/servicios/Hero";
+import { TrustedLogos } from "@/components/servicios/TrustedLogos";
 import { CategoryBento } from "@/components/servicios/CategoryBento";
 import { WebsitesOverview } from "@/components/servicios/WebsitesOverview";
 import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholders";
@@ -32,6 +33,7 @@ function ServiciosPage() {
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
       <Hero onCta={goWebsites} />
+      <TrustedLogos />
       <CategoryBento onWebsites={goWebsites} />
       <WebsitesOverview />
       <CategoryPlaceholders />
