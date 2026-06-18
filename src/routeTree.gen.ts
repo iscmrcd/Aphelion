@@ -9,35 +9,28 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
 import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
 
-const ServiciosRoute = ServiciosRouteImport.update({
-  id: '/servicios',
-  path: '/servicios',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => ServiciosRoute,
+  id: '/servicios/',
+  path: '/servicios/',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
-  id: '/websites',
-  path: '/websites',
-  getParentRoute: () => ServiciosRoute,
+  id: '/servicios/websites',
+  path: '/servicios/websites',
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/servicios': typeof ServiciosRouteWithChildren
   '/servicios/websites': typeof ServiciosWebsitesRoute
   '/servicios/': typeof ServiciosIndexRoute
 }
@@ -49,32 +42,25 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/servicios': typeof ServiciosRouteWithChildren
   '/servicios/websites': typeof ServiciosWebsitesRoute
   '/servicios/': typeof ServiciosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/servicios' | '/servicios/websites' | '/servicios/'
+  fullPaths: '/' | '/servicios/websites' | '/servicios/'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/servicios/websites' | '/servicios'
-  id: '__root__' | '/' | '/servicios' | '/servicios/websites' | '/servicios/'
+  id: '__root__' | '/' | '/servicios/websites' | '/servicios/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ServiciosRoute: typeof ServiciosRouteWithChildren
+  ServiciosWebsitesRoute: typeof ServiciosWebsitesRoute
+  ServiciosIndexRoute: typeof ServiciosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/servicios': {
-      id: '/servicios'
-      path: '/servicios'
-      fullPath: '/servicios'
-      preLoaderRoute: typeof ServiciosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -84,38 +70,25 @@ declare module '@tanstack/react-router' {
     }
     '/servicios/': {
       id: '/servicios/'
-      path: '/'
+      path: '/servicios'
       fullPath: '/servicios/'
       preLoaderRoute: typeof ServiciosIndexRouteImport
-      parentRoute: typeof ServiciosRoute
+      parentRoute: typeof rootRouteImport
     }
     '/servicios/websites': {
       id: '/servicios/websites'
-      path: '/websites'
+      path: '/servicios/websites'
       fullPath: '/servicios/websites'
       preLoaderRoute: typeof ServiciosWebsitesRouteImport
-      parentRoute: typeof ServiciosRoute
+      parentRoute: typeof rootRouteImport
     }
   }
 }
 
-interface ServiciosRouteChildren {
-  ServiciosWebsitesRoute: typeof ServiciosWebsitesRoute
-  ServiciosIndexRoute: typeof ServiciosIndexRoute
-}
-
-const ServiciosRouteChildren: ServiciosRouteChildren = {
-  ServiciosWebsitesRoute: ServiciosWebsitesRoute,
-  ServiciosIndexRoute: ServiciosIndexRoute,
-}
-
-const ServiciosRouteWithChildren = ServiciosRoute._addFileChildren(
-  ServiciosRouteChildren,
-)
-
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ServiciosRoute: ServiciosRouteWithChildren,
+  ServiciosWebsitesRoute: ServiciosWebsitesRoute,
+  ServiciosIndexRoute: ServiciosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
