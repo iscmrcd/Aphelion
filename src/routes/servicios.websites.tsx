@@ -3,6 +3,8 @@ import { ArrowLeft } from "lucide-react";
 import { WebsitesSection } from "@/components/servicios/WebsitesSection";
 import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
+import banner from "@/assets/banners/websites-banner.png.asset.json";
+
 
 export const Route = createFileRoute("/servicios/websites")({
   head: () => ({
@@ -42,20 +44,34 @@ function WebsitesPage() {
         </div>
       </div>
 
-      <section className="px-5 pt-20 pb-10 sm:pt-28">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
+      <section className="relative overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:pt-28 sm:pb-32">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-90"
+          style={{
+            backgroundImage: `url(${banner.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-neutral-950/10 to-neutral-950"
+        />
+        <div className="relative mx-auto max-w-4xl text-center">
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/60">
             Websites
           </p>
-          <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-neutral-950">
+          <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-white">
             Seis niveles. Una sola filosofía.
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-neutral-500 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
             Elige el escalón que necesitas hoy. Sube cuando el negocio lo pida — sin
             reconstruir, sin romper lo que ya funciona.
           </p>
         </div>
       </section>
+
 
       <WebsitesSection />
       <FAQ />
