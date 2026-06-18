@@ -1,9 +1,16 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { WEB_LEVELS } from "@/lib/websites-data";
-import grainWave from "@/assets/banners/grain-wave-2.avif.asset.json";
+import grain1 from "@/assets/banners/grain-wave-1.avif.asset.json";
+import grain2 from "@/assets/banners/grain-wave-2.avif.asset.json";
+import grain3 from "@/assets/banners/grain-wave-3.avif.asset.json";
+import grain4 from "@/assets/banners/grain-wave-4.avif.asset.json";
+import grain5 from "@/assets/banners/grain-wave-5.avif.asset.json";
+import grain6 from "@/assets/banners/grain-wave-6.avif.asset.json";
 
-// Featured tier — gets the gradient image background (ElevenLabs "Popular" treatment).
+const GRADIENTS = [grain1.url, grain2.url, grain3.url, grain4.url, grain5.url, grain6.url];
+
+// Featured tier — keeps the "Popular" badge.
 const FEATURED_SLUG = "captacion";
 
 const fmt = (n: number | null) =>
