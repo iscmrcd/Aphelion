@@ -1,10 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useRef } from "react";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Hero } from "@/components/servicios/Hero";
 import { CategoryBento } from "@/components/servicios/CategoryBento";
-import { WebsitesSection } from "@/components/servicios/WebsitesSection";
+import { WebsitesOverview } from "@/components/servicios/WebsitesOverview";
 import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholders";
-import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 
 export const Route = createFileRoute("/servicios")({
@@ -14,13 +12,13 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Websites, marketing, contenido, video y SaaS para marcas high-ticket. Seis niveles de páginas web — de presencia profesional a plataformas SaaS.",
+          "Websites, marketing, contenido, video y SaaS para marcas high-ticket. Infraestructura digital para marcas que no se conforman.",
       },
       { property: "og:title", content: "Servicios — Aphelion" },
       {
         property: "og:description",
         content:
-          "Infraestructura digital para marcas que no se conforman. Seis niveles de websites más servicios complementarios.",
+          "Infraestructura digital para marcas que no se conforman. Websites en 6 niveles más servicios complementarios.",
       },
     ],
   }),
@@ -28,17 +26,15 @@ export const Route = createFileRoute("/servicios")({
 });
 
 function ServiciosPage() {
-  const websitesRef = useRef<HTMLDivElement>(null);
-  const scrollToWebsites = () =>
-    websitesRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const navigate = useNavigate();
+  const goWebsites = () => navigate({ to: "/servicios/websites" });
 
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <Hero onCta={scrollToWebsites} />
-      <CategoryBento onWebsites={scrollToWebsites} />
-      <WebsitesSection ref={websitesRef} />
+      <Hero onCta={goWebsites} />
+      <CategoryBento onWebsites={goWebsites} />
+      <WebsitesOverview />
       <CategoryPlaceholders />
-      <FAQ />
       <CTAFooter />
     </main>
   );

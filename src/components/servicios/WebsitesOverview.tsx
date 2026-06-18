@@ -1,0 +1,81 @@
+import { Link } from "@tanstack/react-router";
+import { ArrowUpRight, Check } from "lucide-react";
+import { WEB_LEVELS } from "@/lib/websites-data";
+
+const fmt = (n: number | null) =>
+  n === null ? "Cotización" : "$" + n.toLocaleString("es-MX");
+
+export function WebsitesOverview() {
+  return (
+    <section className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-2xl">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+              Websites · 6 niveles
+            </p>
+            <h2 className="text-3xl font-medium tracking-[-0.025em] text-neutral-950 sm:text-5xl">
+              De presencia profesional a SaaS.
+            </h2>
+            <p className="mt-5 text-base text-neutral-500 sm:text-lg">
+              Cada nivel es un escalón: empiezas donde tu marca está hoy y subes cuando el
+              negocio lo pide. Sin reconstruir desde cero.
+            </p>
+          </div>
+          <Link
+            to="/servicios/websites"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
+          >
+            Ver paquetes y comparar
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {WEB_LEVELS.map((l) => (
+            <Link
+              key={l.id}
+              to="/servicios/websites"
+              hash={l.slug}
+              className="group flex flex-col rounded-3xl border border-neutral-200 bg-white p-6 transition hover:border-neutral-950"
+            >
+              <div className="mb-6 flex items-center justify-between">
+                <span className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+                  Nivel 0{l.id}
+                </span>
+                <ArrowUpRight className="h-4 w-4 text-neutral-400 transition group-hover:text-neutral-950" />
+              </div>
+              <h3 className="text-xl font-medium tracking-[-0.01em] text-neutral-950">
+                {l.name}
+              </h3>
+              <p className="mt-2 text-sm text-neutral-500">{l.tagline}</p>
+
+              <div className="mt-6 flex items-baseline gap-1.5">
+                <span className="text-2xl font-medium tabular-nums text-neutral-950">
+                  {fmt(l.setup)}
+                </span>
+                {l.setup !== null && (
+                  <span className="text-xs text-neutral-500">setup</span>
+                )}
+              </div>
+              {l.men !== null && (
+                <p className="mt-1 text-xs text-neutral-500">
+                  + {fmt(l.men)} <span className="text-neutral-400">/ mes mantenimiento</span>
+                </p>
+              )}
+
+              <ul className="mt-6 space-y-1.5 border-t border-dashed border-neutral-200 pt-5">
+                {l.includes.slice(0, 3).map((i) => (
+                  <li key={i} className="flex items-start gap-2 text-xs text-neutral-700">
+                    <Check className="mt-0.5 h-3 w-3 flex-shrink-0 text-neutral-950" strokeWidth={2.5} />
+                    <span>{i}</span>
+                  </li>
+                ))}
+              </ul>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
