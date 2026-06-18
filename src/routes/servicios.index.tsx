@@ -23,7 +23,6 @@ export const Route = createFileRoute("/servicios/")({
       },
     ],
   }),
-  ssr: false,
   component: ServiciosPage,
 });
 
