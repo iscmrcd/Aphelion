@@ -6,7 +6,7 @@ import { WebsitesOverview } from "@/components/servicios/WebsitesOverview";
 import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholders";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 
-export const Route = createFileRoute("/servicios")({
+export const Route = createFileRoute("/servicios/")({
   head: () => ({
     meta: [
       { title: "Servicios — Aphelion" },
