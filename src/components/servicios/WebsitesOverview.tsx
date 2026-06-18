@@ -43,8 +43,9 @@ export function WebsitesOverview() {
         </div>
 
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {WEB_LEVELS.map((l) => {
+          {WEB_LEVELS.map((l, idx) => {
             const featured = l.slug === FEATURED_SLUG;
+            const gradient = GRADIENTS[idx % GRADIENTS.length];
             return (
               <Link
                 key={l.id}
@@ -52,17 +53,16 @@ export function WebsitesOverview() {
                 hash={l.slug}
                 className="group relative flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white p-6 transition hover:border-neutral-950"
               >
-                {featured && (
-                  <div
-                    aria-hidden
-                    className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                    style={{
-                      backgroundImage: `url(${grainWave.url})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  />
-                )}
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  style={{
+                    backgroundImage: `url(${gradient})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+
                 <div className="relative mb-6 flex items-center justify-between">
                   <span
                     className={
