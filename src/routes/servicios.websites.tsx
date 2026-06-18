@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { WebsitesSection } from "@/components/servicios/WebsitesSection";
 import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
-import banner from "@/assets/banners/gradient-fondo.png.asset.json";
+import banner from "@/assets/banners/websites-banner.png.asset.json";
 
 
 export const Route = createFileRoute("/servicios/websites")({
