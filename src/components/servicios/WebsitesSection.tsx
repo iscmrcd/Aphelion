@@ -78,7 +78,7 @@ export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
                           billing === "mensual" ? "bg-white text-neutral-950 shadow-sm" : "text-neutral-500"
                         }`}
                       >
-                        Mensualidad
+                        Mantenimiento
                       </button>
                     </div>
                     <div className="mt-5 flex items-baseline gap-2">
@@ -89,6 +89,11 @@ export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
                         {billing === "setup" ? "MXN, una sola vez" : "MXN / mes"}
                       </span>
                     </div>
+                    <p className="mt-3 text-xs leading-relaxed text-neutral-500">
+                      {billing === "setup"
+                        ? "Inversión inicial: diseño, desarrollo y puesta en marcha."
+                        : "Mantenimiento mensual: hosting, dominio, monitoreo, backups, seguridad y soporte continuo."}
+                    </p>
                   </>
                 ) : (
                   <div>
