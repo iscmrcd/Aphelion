@@ -4,7 +4,7 @@ import { WEB_LEVELS } from "@/lib/websites-data";
 import grad1 from "@/assets/banners/gradient-1.jpg.asset.json";
 import grad2 from "@/assets/banners/gradient-2.jpg.asset.json";
 import grad3 from "@/assets/banners/gradient-3.png.asset.json";
-import grad4 from "@/assets/banners/gradient-4.jpg.asset.json";
+import grad4 from "@/assets/banners/gradient-4.png.asset.json";
 import grad5 from "@/assets/banners/gradient-5.avif.asset.json";
 import grad6 from "@/assets/banners/gradient-6.avif.asset.json";
 
