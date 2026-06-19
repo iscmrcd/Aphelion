@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Check, ChevronDown, Minus } from "lucide-react";
 import { MARKETING_PACKAGES, MARKETING_REPLACES, type MarketingPackage } from "@/lib/marketing-data";
-import cardBg from "@/assets/banners/brand-partner-bg.jpg.asset.json";
-import premiumBg from "@/assets/banners/produccion-premium-bg-v2.jpg.asset.json";
+import cardBg from "@/assets/banners/brand-partner-bg-v3.jpg.asset.json";
+import premiumBg from "@/assets/banners/produccion-premium-bg-v3.jpg.asset.json";
 
 const fmt = (n: number) => "$" + n.toLocaleString("es-MX");
 
