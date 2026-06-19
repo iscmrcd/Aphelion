@@ -142,10 +142,10 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
     <section
       ref={sectionRef}
       className="relative bg-neutral-950"
-      style={{ height: "180vh" }}
+      style={{ height: "135vh" }}
       aria-label="Websites banner"
     >
-      <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden px-5">
+      <div className="sticky top-0 flex min-h-[520px] items-center justify-center overflow-hidden px-5 pt-20 pb-24 sm:min-h-[580px] sm:pt-28 sm:pb-32">
         <canvas
           ref={canvasRef}
           className="absolute inset-0 h-full w-full"
