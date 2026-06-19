@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Check, ChevronDown, Minus } from "lucide-react";
 import { MARKETING_PACKAGES, MARKETING_REPLACES, type MarketingPackage } from "@/lib/marketing-data";
+import cardBg from "@/assets/banners/marketing-card-bg.webp.asset.json";
+
 
 const fmt = (n: number) => "$" + n.toLocaleString("es-MX");
 
@@ -64,16 +66,33 @@ function PackageCard({
   return (
     <div
       className={`overflow-hidden rounded-2xl border transition ${
-        dark
-          ? "border-neutral-950 bg-neutral-950 text-white"
-          : "border-neutral-200 bg-white text-neutral-950"
-      } ${open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""}`}
+        dark ? "border-neutral-950" : "border-neutral-200"
+      } ${open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""} bg-white`}
     >
       <button
         onClick={onToggle}
-        className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left sm:px-7 sm:py-6"
+        className={`relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left sm:px-7 sm:py-6 ${
+          dark ? "text-white" : "text-neutral-950"
+        }`}
+        style={
+          dark
+            ? {
+                backgroundColor: "#0a0a0a",
+                backgroundImage: `url(${cardBg.url})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : undefined
+        }
       >
-        <div className="min-w-0">
+        {dark && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-950/55 to-neutral-950/30"
+          />
+        )}
+        <div className="relative min-w-0">
+
           <div className="flex flex-wrap items-center gap-2">
             <span
               className={`text-[10px] font-medium uppercase tracking-[0.16em] ${
@@ -112,7 +131,7 @@ function PackageCard({
           </p>
         </div>
 
-        <div className="flex shrink-0 items-center gap-3 sm:gap-5">
+        <div className="relative flex shrink-0 items-center gap-3 sm:gap-5">
           <div className="text-right">
             <div
               className={`text-lg font-medium tabular-nums tracking-[-0.02em] sm:text-2xl ${
@@ -138,7 +157,7 @@ function PackageCard({
         </div>
       </button>
 
-      {open && (
+      {open && ((dark: boolean) => (
         <div
           className={`border-t px-5 pb-7 pt-6 sm:px-7 ${
             dark ? "border-white/10" : "border-neutral-200"
@@ -447,7 +466,7 @@ function PackageCard({
             </a>
           </div>
         </div>
-      )}
+      ))(false)}
     </div>
   );
 }
