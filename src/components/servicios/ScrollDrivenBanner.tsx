@@ -104,11 +104,8 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
         const section = sectionRef.current;
         if (!section) return;
         const rect = section.getBoundingClientRect();
-        const total = Math.max(160, section.offsetHeight * 0.72);
-        const progress = Math.min(
-          1,
-          Math.max(0, -rect.top / total),
-        );
+        const total = Math.max(1, section.offsetHeight - window.innerHeight);
+        const progress = Math.min(1, Math.max(0, -rect.top / total));
         const frames = imagesRef.current.length;
         const idx = Math.min(frames - 1, Math.floor(progress * frames));
         if (idx !== lastFrameRef.current) drawFrame(idx);
@@ -144,10 +141,11 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:pt-28 sm:pb-32"
+      className="relative bg-neutral-950"
+      style={{ height: "180vh" }}
       aria-label="Websites banner"
     >
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden px-5">
         <canvas
           ref={canvasRef}
           className="absolute inset-0 h-full w-full"
@@ -157,8 +155,9 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/30 via-neutral-950/10 to-neutral-950"
         />
+        <div className="relative">{children}</div>
       </div>
-      <div className="relative flex items-center justify-center">{children}</div>
     </section>
   );
 }
+
