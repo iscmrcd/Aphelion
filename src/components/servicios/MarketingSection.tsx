@@ -77,7 +77,6 @@ function PackageCard({
         style={
           dark
             ? {
-                backgroundColor: "#0a0a0a",
                 backgroundImage: `url(${isLimited ? premiumBg.url : cardBg.url})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -88,7 +87,7 @@ function PackageCard({
         {dark && (
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-950/55 to-neutral-950/30"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/25 via-black/10 to-transparent"
           />
         )}
         <div className="relative min-w-0">
