@@ -466,7 +466,7 @@ function PackageCard({
             </a>
           </div>
         </div>
-      )}
+      ))(false)}
     </div>
   );
 }
