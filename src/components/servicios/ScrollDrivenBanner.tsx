@@ -70,7 +70,7 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
 
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const dpr = Math.min(window.devicePixelRatio || 1, 3);
       const cw = canvas.clientWidth;
       const ch = canvas.clientHeight;
       if (canvas.width !== cw * dpr || canvas.height !== ch * dpr) {
