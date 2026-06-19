@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { WebsitesSection } from "@/components/servicios/WebsitesSection";
 import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
-import banner from "@/assets/banners/websites-banner.png.asset.json";
+import { ScrollDrivenBanner } from "@/components/servicios/ScrollDrivenBanner";
 
 
 export const Route = createFileRoute("/servicios/websites")({
@@ -44,21 +44,8 @@ function WebsitesPage() {
         </div>
       </div>
 
-      <section className="relative overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:pt-28 sm:pb-32">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-90"
-          style={{
-            backgroundImage: `url(${banner.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-neutral-950/10 to-neutral-950"
-        />
-        <div className="relative mx-auto max-w-4xl text-center">
+      <ScrollDrivenBanner>
+        <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/60">
             Websites
           </p>
@@ -70,7 +57,7 @@ function WebsitesPage() {
             reconstruir, sin romper lo que ya funciona.
           </p>
         </div>
-      </section>
+      </ScrollDrivenBanner>
 
 
       <WebsitesSection />
