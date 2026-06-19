@@ -28,7 +28,7 @@ export const Route = createFileRoute("/servicios/websites")({
 
 function WebsitesPage() {
   return (
-    <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
+    <main className="relative min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
       <div className="absolute inset-x-0 top-0 z-20 px-5 py-5">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <Link
