@@ -104,7 +104,7 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
         const section = sectionRef.current;
         if (!section) return;
         const rect = section.getBoundingClientRect();
-        const total = Math.max(1, section.offsetHeight - window.innerHeight);
+        const total = Math.max(1, section.offsetHeight * 0.9);
         const progress = Math.min(1, Math.max(0, -rect.top / total));
         const frames = imagesRef.current.length;
         const idx = Math.min(frames - 1, Math.floor(progress * frames));
@@ -141,22 +141,19 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-neutral-950"
-      style={{ height: "135vh" }}
+      className="relative overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:pt-28 sm:pb-32"
       aria-label="Websites banner"
     >
-      <div className="sticky top-0 flex min-h-[520px] items-center justify-center overflow-hidden px-5 pt-20 pb-24 sm:min-h-[580px] sm:pt-28 sm:pb-32">
-        <canvas
-          ref={canvasRef}
-          className="absolute inset-0 h-full w-full"
-          style={{ opacity: ready ? 1 : 0, transition: "opacity 400ms ease" }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/30 via-neutral-950/10 to-neutral-950"
-        />
-        <div className="relative">{children}</div>
-      </div>
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 h-full w-full"
+        style={{ opacity: ready ? 1 : 0, transition: "opacity 400ms ease" }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/30 via-neutral-950/10 to-neutral-950"
+      />
+      <div className="relative">{children}</div>
     </section>
   );
 }
