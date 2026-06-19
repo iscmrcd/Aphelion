@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import { OTHER_CATEGORIES } from "@/lib/websites-data";
 
 export function CategoryPlaceholders() {
@@ -20,9 +21,9 @@ export function CategoryPlaceholders() {
 
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {OTHER_CATEGORIES.map((c) => (
-            <a
+            <Link
               key={c.name}
-              href="#contacto"
+              to="/contacto"
               className="group flex items-start justify-between gap-4 rounded-3xl border border-neutral-200 bg-white p-6 transition hover:border-neutral-950"
             >
               <div>
@@ -33,7 +34,7 @@ export function CategoryPlaceholders() {
                 </span>
               </div>
               <ArrowUpRight className="h-4 w-4 flex-shrink-0 text-neutral-400 transition group-hover:text-neutral-950" />
-            </a>
+            </Link>
           ))}
         </div>
       </div>
