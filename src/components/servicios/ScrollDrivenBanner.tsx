@@ -142,10 +142,10 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
     <section
       ref={sectionRef}
       className="relative bg-neutral-950"
-      style={{ height: "200vh" }}
+      style={{ height: "180vh" }}
       aria-label="Websites banner"
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+      <div className="sticky top-0 w-full overflow-hidden pt-20 pb-24 sm:pt-28 sm:pb-32">
         <canvas
           ref={canvasRef}
           className="absolute inset-0 h-full w-full"
@@ -155,7 +155,7 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
           aria-hidden
           className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/30 via-neutral-950/10 to-neutral-950"
         />
-        <div className="relative flex h-full items-center justify-center px-5">
+        <div className="relative flex items-center justify-center px-5">
           {children}
         </div>
       </div>
