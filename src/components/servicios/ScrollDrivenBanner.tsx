@@ -142,7 +142,7 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
     <section
       ref={sectionRef}
       className="relative bg-neutral-950"
-      style={{ height: "180vh" }}
+      style={{ height: "110vh" }}
       aria-label="Websites banner"
     >
       <div className="sticky top-0 w-full overflow-hidden pt-20 pb-24 sm:pt-28 sm:pb-32">
