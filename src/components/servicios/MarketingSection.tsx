@@ -157,7 +157,7 @@ function PackageCard({
         </div>
       </button>
 
-      {open && (
+      {open && ((dark: boolean) => (
         <div
           className={`border-t px-5 pb-7 pt-6 sm:px-7 ${
             dark ? "border-white/10" : "border-neutral-200"
