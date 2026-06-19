@@ -131,7 +131,7 @@ function PackageCard({
           </p>
         </div>
 
-        <div className="flex shrink-0 items-center gap-3 sm:gap-5">
+        <div className="relative flex shrink-0 items-center gap-3 sm:gap-5">
           <div className="text-right">
             <div
               className={`text-lg font-medium tabular-nums tracking-[-0.02em] sm:text-2xl ${
