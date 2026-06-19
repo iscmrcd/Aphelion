@@ -3,6 +3,7 @@ import { Hero } from "@/components/servicios/Hero";
 import { TrustedLogos } from "@/components/servicios/TrustedLogos";
 import { CategoryBento } from "@/components/servicios/CategoryBento";
 import { WebsitesOverview } from "@/components/servicios/WebsitesOverview";
+import { MarketingOverview } from "@/components/servicios/MarketingOverview";
 import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholders";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 
@@ -36,6 +37,7 @@ function ServiciosPage() {
       <TrustedLogos />
       <CategoryBento onWebsites={goWebsites} />
       <WebsitesOverview />
+      <MarketingOverview />
       <CategoryPlaceholders />
       <CTAFooter />
     </main>
