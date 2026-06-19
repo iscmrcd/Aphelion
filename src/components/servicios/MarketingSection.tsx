@@ -78,7 +78,7 @@ function PackageCard({
           dark
             ? {
                 backgroundColor: "#0a0a0a",
-                backgroundImage: `url(${cardBg.url})`,
+                backgroundImage: `url(${isLimited ? premiumBg.url : cardBg.url})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }
