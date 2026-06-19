@@ -1,15 +1,17 @@
 import { Code2, Megaphone, Camera, Video, Boxes, Sparkles, ArrowUpRight } from "lucide-react";
+import { useNavigate } from "@tanstack/react-router";
 
 const CATEGORIES = [
-  { key: "web", title: "Websites", desc: "Seis niveles, de presencia a SaaS.", icon: Code2, status: "active" as const },
-  { key: "marketing", title: "Marketing Digital", desc: "Meta · Google · TikTok.", icon: Megaphone, status: "soon" as const },
-  { key: "contenido", title: "Contenido", desc: "Redes, reels y editorial.", icon: Camera, status: "soon" as const },
+  { key: "web", title: "Websites", desc: "Seis niveles, de presencia a SaaS.", icon: Code2, status: "active" as const, route: "/servicios/websites" },
+  { key: "marketing", title: "Marketing & Contenido", desc: "Contenido + Meta · Google · TikTok.", icon: Megaphone, status: "active" as const, route: "/servicios/marketing" },
+  { key: "contenido", title: "Producción de Contenido", desc: "Foto, reels y editorial mensual.", icon: Camera, status: "soon" as const },
   { key: "video", title: "Video & Drone", desc: "Comerciales y tomas aéreas.", icon: Video, status: "soon" as const },
   { key: "saas", title: "SaaS a Medida", desc: "Plataformas multiusuario.", icon: Boxes, status: "soon" as const },
   { key: "branding", title: "Branding", desc: "Identidad y sistema visual.", icon: Sparkles, status: "soon" as const },
 ];
 
 export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
+  const navigate = useNavigate();
   return (
     <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
@@ -25,10 +27,15 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
           {CATEGORIES.map((c) => {
             const Icon = c.icon;
             const isActive = c.status === "active";
+            const handleClick = () => {
+              if (c.key === "web") return onWebsites();
+              if (isActive && c.route) return navigate({ to: c.route });
+              document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
+            };
             return (
               <button
                 key={c.key}
-                onClick={isActive ? onWebsites : () => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={handleClick}
                 className="group flex flex-col rounded-3xl border border-neutral-200 bg-white p-6 text-left transition hover:border-neutral-950"
               >
                 <div className="mb-8 flex items-center justify-between">
