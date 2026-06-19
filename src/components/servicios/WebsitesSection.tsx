@@ -1,108 +1,281 @@
 import { forwardRef, useState } from "react";
-import { Check, Minus, Plus, Settings } from "lucide-react";
-import { WEB_LEVELS, COMPARE_GROUPS, COMPARE_HEADERS, type CompareCell } from "@/lib/websites-data";
+import { Check, ChevronDown, Minus, Plus, Settings } from "lucide-react";
+import { WEB_LEVELS, COMPARE_GROUPS, COMPARE_HEADERS, type CompareCell, type WebLevel } from "@/lib/websites-data";
 
 const fmt = (n: number | null) =>
   n === null ? "Cotización" : "$" + n.toLocaleString("es-MX");
 
+const BADGES: Record<number, { label: string; tone: "popular" | "custom" } | undefined> = {
+  2: { label: "Más elegido", tone: "popular" },
+  6: { label: "A medida", tone: "custom" },
+};
+
 export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
-  const [active, setActive] = useState(2); // Profesional default
-  const [billing, setBilling] = useState<"setup" | "mensual">("setup");
-  const level = WEB_LEVELS.find((l) => l.id === active)!;
+  const [openId, setOpenId] = useState<number>(2);
 
   return (
     <section ref={ref} id="websites" className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl">
-
-        {/* Tabs */}
-        <div className="mb-8 -mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-          <div className="flex min-w-max gap-2 sm:justify-center">
-            {WEB_LEVELS.map((l) => (
-              <button
-                key={l.id}
-                onClick={() => setActive(l.id)}
-                className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm transition ${
-                  active === l.id
-                    ? "border-neutral-950 bg-neutral-950 text-white"
-                    : "border-neutral-200 bg-white text-neutral-700 hover:border-neutral-400"
-                }`}
-              >
-                {l.name}
-              </button>
-            ))}
-          </div>
+      <div className="mx-auto max-w-3xl">
+        <div className="mb-10 text-center">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+            Selecciona tu nivel
+          </p>
+          <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+            Seis escalones. Tú eliges dónde empezar.
+          </h2>
+          <p className="mt-3 text-sm text-neutral-500">
+            Toca cualquier tarjeta para ver lo que incluye.
+          </p>
         </div>
 
-        {/* Level Card */}
-        <div className="rounded-[28px] border border-neutral-200 bg-white p-6 sm:p-10">
-          <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
-            {/* Left: meta */}
-            <div className="lg:w-1/2">
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-                Nivel 0{level.id}
-              </p>
-              <h3 className="mt-2 text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-                {level.name}
-              </h3>
-              <p className="mt-3 text-base text-neutral-500">{level.tagline}</p>
+        <div className="space-y-3">
+          {WEB_LEVELS.map((l) => (
+            <LevelCard
+              key={l.id}
+              level={l}
+              open={openId === l.id}
+              onToggle={() => setOpenId(openId === l.id ? -1 : l.id)}
+              badge={BADGES[l.id]}
+            />
+          ))}
+        </div>
+      </div>
 
-              {/* Price + toggle */}
-              <div className="mt-8">
-                {level.setup !== null ? (
-                  <>
-                    <div className="inline-flex rounded-full border border-neutral-200 bg-neutral-50 p-1">
-                      <button
-                        onClick={() => setBilling("setup")}
-                        className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${
-                          billing === "setup" ? "bg-white text-neutral-950 shadow-sm" : "text-neutral-500"
-                        }`}
-                      >
-                        Setup único
-                      </button>
-                      <button
-                        onClick={() => setBilling("mensual")}
-                        className={`rounded-full px-4 py-1.5 text-xs font-medium transition ${
-                          billing === "mensual" ? "bg-white text-neutral-950 shadow-sm" : "text-neutral-500"
-                        }`}
-                      >
-                        Mantenimiento
-                      </button>
-                    </div>
-                    <div className="mt-5 flex items-baseline gap-2">
-                      <span className="text-5xl font-medium tracking-[-0.03em] text-neutral-950 tabular-nums">
-                        {fmt(billing === "setup" ? level.setup : level.men)}
-                      </span>
-                      <span className="text-sm text-neutral-500">
-                        {billing === "setup" ? "MXN, una sola vez" : "MXN / mes"}
-                      </span>
-                    </div>
-                    <p className="mt-3 text-xs leading-relaxed text-neutral-500">
-                      {billing === "setup"
-                        ? "Inversión inicial: diseño, desarrollo y puesta en marcha."
-                        : "Mantenimiento mensual: hosting, dominio, monitoreo, backups, seguridad y soporte continuo."}
-                    </p>
-                  </>
-                ) : (
-                  <div>
-                    <div className="text-5xl font-medium tracking-[-0.03em] text-neutral-950">
-                      A medida
-                    </div>
-                    <p className="mt-2 text-sm text-neutral-500">
-                      Alcance, usuarios e infraestructura definen el costo.
-                    </p>
-                  </div>
-                )}
+      <div className="mx-auto mt-20 max-w-6xl">
+        <ComparePlans />
+      </div>
+    </section>
+  );
+});
+WebsitesSection.displayName = "WebsitesSection";
+
+function LevelCard({
+  level,
+  open,
+  onToggle,
+  badge,
+}: {
+  level: WebLevel;
+  open: boolean;
+  onToggle: () => void;
+  badge?: { label: string; tone: "popular" | "custom" };
+}) {
+  const [billing, setBilling] = useState<"setup" | "mensual">("setup");
+  const isPopular = badge?.tone === "popular";
+  const isCustom = badge?.tone === "custom";
+
+  return (
+    <div
+      className={`overflow-hidden rounded-2xl border transition ${
+        isPopular
+          ? "border-neutral-950 bg-neutral-950 text-white"
+          : "border-neutral-200 bg-white text-neutral-950"
+      } ${open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""}`}
+    >
+      {/* Header — always visible */}
+      <button
+        onClick={onToggle}
+        className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left sm:px-7 sm:py-6"
+      >
+        <div className="min-w-0">
+          <div className="flex items-center gap-2">
+            <span
+              className={`text-[10px] font-medium uppercase tracking-[0.16em] ${
+                isPopular ? "text-white/60" : "text-neutral-500"
+              }`}
+            >
+              Nivel 0{level.id}
+            </span>
+            {badge && (
+              <span
+                className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${
+                  isPopular
+                    ? "bg-white text-neutral-950"
+                    : "border border-neutral-300 bg-neutral-50 text-neutral-700"
+                }`}
+              >
+                {badge.label}
+              </span>
+            )}
+          </div>
+          <h3
+            className={`mt-1 truncate text-xl font-medium tracking-[-0.02em] sm:text-2xl ${
+              isPopular ? "text-white" : "text-neutral-950"
+            }`}
+          >
+            {level.name}
+          </h3>
+          <p
+            className={`mt-1 line-clamp-1 text-sm ${
+              isPopular ? "text-white/70" : "text-neutral-500"
+            }`}
+          >
+            {level.tagline}
+          </p>
+        </div>
+
+        <div className="flex shrink-0 items-center gap-3 sm:gap-5">
+          <div className="text-right">
+            {isCustom ? (
+              <div
+                className={`text-base font-medium tracking-[-0.01em] ${
+                  isPopular ? "text-white" : "text-neutral-950"
+                }`}
+              >
+                A medida
               </div>
+            ) : (
+              <>
+                <div
+                  className={`text-lg font-medium tabular-nums tracking-[-0.02em] sm:text-2xl ${
+                    isPopular ? "text-white" : "text-neutral-950"
+                  }`}
+                >
+                  {fmt(level.setup)}
+                </div>
+                <div
+                  className={`text-[10px] uppercase tracking-[0.12em] ${
+                    isPopular ? "text-white/60" : "text-neutral-500"
+                  }`}
+                >
+                  setup
+                </div>
+              </>
+            )}
+          </div>
+          <ChevronDown
+            className={`h-5 w-5 transition-transform ${open ? "rotate-180" : ""} ${
+              isPopular ? "text-white/70" : "text-neutral-400"
+            }`}
+            strokeWidth={2}
+          />
+        </div>
+      </button>
 
-              <div className="mt-8">
-                <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+      {/* Body — expanded */}
+      {open && (
+        <div
+          className={`border-t px-5 pb-7 pt-6 sm:px-7 ${
+            isPopular ? "border-white/10" : "border-neutral-200"
+          }`}
+        >
+          {/* Pricing detail */}
+          {level.setup !== null ? (
+            <div className="mb-7">
+              <div
+                className={`inline-flex rounded-full p-1 ${
+                  isPopular ? "bg-white/10" : "border border-neutral-200 bg-neutral-50"
+                }`}
+              >
+                <button
+                  onClick={() => setBilling("setup")}
+                  className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
+                    billing === "setup"
+                      ? isPopular
+                        ? "bg-white text-neutral-950"
+                        : "bg-white text-neutral-950 shadow-sm"
+                      : isPopular
+                        ? "text-white/70"
+                        : "text-neutral-500"
+                  }`}
+                >
+                  Setup único
+                </button>
+                <button
+                  onClick={() => setBilling("mensual")}
+                  className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition ${
+                    billing === "mensual"
+                      ? isPopular
+                        ? "bg-white text-neutral-950"
+                        : "bg-white text-neutral-950 shadow-sm"
+                      : isPopular
+                        ? "text-white/70"
+                        : "text-neutral-500"
+                  }`}
+                >
+                  Mantenimiento
+                </button>
+              </div>
+              <div className="mt-4 flex items-baseline gap-2">
+                <span
+                  className={`text-4xl font-medium tracking-[-0.03em] tabular-nums sm:text-5xl ${
+                    isPopular ? "text-white" : "text-neutral-950"
+                  }`}
+                >
+                  {fmt(billing === "setup" ? level.setup : level.men)}
+                </span>
+                <span className={`text-xs ${isPopular ? "text-white/60" : "text-neutral-500"}`}>
+                  {billing === "setup" ? "MXN, una sola vez" : "MXN / mes"}
+                </span>
+              </div>
+              <p
+                className={`mt-2 text-xs leading-relaxed ${
+                  isPopular ? "text-white/60" : "text-neutral-500"
+                }`}
+              >
+                {billing === "setup"
+                  ? "Inversión inicial: diseño, desarrollo y puesta en marcha."
+                  : "Hosting, dominio, monitoreo, backups, seguridad y soporte continuo."}
+              </p>
+            </div>
+          ) : (
+            <p
+              className={`mb-7 text-sm ${
+                isPopular ? "text-white/70" : "text-neutral-500"
+              }`}
+            >
+              Alcance, usuarios e infraestructura definen el costo.
+            </p>
+          )}
+
+          {/* Two-col content */}
+          <div className="grid gap-7 sm:grid-cols-2">
+            <div>
+              <p
+                className={`mb-3 text-xs font-medium uppercase tracking-[0.14em] ${
+                  isPopular ? "text-white/60" : "text-neutral-500"
+                }`}
+              >
+                Incluye
+              </p>
+              <ul className="space-y-2">
+                {level.includes.map((i) => (
+                  <li
+                    key={i}
+                    className={`flex items-start gap-2.5 text-sm ${
+                      isPopular ? "text-white/90" : "text-neutral-800"
+                    }`}
+                  >
+                    <Check
+                      className={`mt-0.5 h-4 w-4 flex-shrink-0 ${
+                        isPopular ? "text-white" : "text-neutral-950"
+                      }`}
+                      strokeWidth={2.5}
+                    />
+                    <span>{i}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <p
+                  className={`mb-3 text-xs font-medium uppercase tracking-[0.14em] ${
+                    isPopular ? "text-white/60" : "text-neutral-500"
+                  }`}
+                >
                   Ideal para
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {level.ideal.map((i) => (
                     <span
                       key={i}
-                      className="rounded-full border border-neutral-200 px-3 py-1 text-xs text-neutral-700"
+                      className={`rounded-full px-2.5 py-1 text-xs ${
+                        isPopular
+                          ? "border border-white/20 text-white/80"
+                          : "border border-neutral-200 text-neutral-700"
+                      }`}
                     >
                       {i}
                     </span>
@@ -110,64 +283,24 @@ export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="#contacto"
-                  className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
-                >
-                  Elegir este nivel
-                </a>
-                <a
-                  href="#comparar"
-                  className="inline-flex items-center justify-center rounded-full border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
-                >
-                  Comparar todos
-                </a>
-              </div>
-            </div>
-
-            {/* Right: includes */}
-            <div className="lg:w-1/2 lg:border-l lg:border-neutral-200 lg:pl-12">
-              <div>
-                <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
-                  Incluye
-                </p>
-                <ul className="space-y-2.5">
-                  {level.includes.map((i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-neutral-800">
-                      <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-950" strokeWidth={2.5} />
-                      <span>{i}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {level.notInc.length > 0 && (
-                <div className="mt-6">
-                  <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
-                    No incluye
-                  </p>
-                  <ul className="space-y-2">
-                    {level.notInc.map((i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-neutral-400">
-                        <Minus className="mt-1 h-3 w-3 flex-shrink-0" strokeWidth={2.5} />
-                        <span>{i}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
               {level.canAdd.length > 0 && (
-                <div className="mt-6">
-                  <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+                <div>
+                  <p
+                    className={`mb-3 text-xs font-medium uppercase tracking-[0.14em] ${
+                      isPopular ? "text-white/60" : "text-neutral-500"
+                    }`}
+                  >
                     Módulos opcionales
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5">
                     {level.canAdd.map((i) => (
                       <span
                         key={i}
-                        className="inline-flex items-center gap-1.5 rounded-full border border-dashed border-neutral-300 px-3 py-1 text-xs text-neutral-600"
+                        className={`inline-flex items-center gap-1 rounded-full border border-dashed px-2.5 py-1 text-xs ${
+                          isPopular
+                            ? "border-white/30 text-white/70"
+                            : "border-neutral-300 text-neutral-600"
+                        }`}
                       >
                         <Plus className="h-3 w-3" strokeWidth={2.5} />
                         {i}
@@ -176,17 +309,61 @@ export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
                   </div>
                 </div>
               )}
+
+              {level.notInc.length > 0 && (
+                <div>
+                  <p
+                    className={`mb-3 text-xs font-medium uppercase tracking-[0.14em] ${
+                      isPopular ? "text-white/60" : "text-neutral-500"
+                    }`}
+                  >
+                    No incluye
+                  </p>
+                  <ul className="space-y-1.5">
+                    {level.notInc.map((i) => (
+                      <li
+                        key={i}
+                        className={`flex items-start gap-2 text-xs ${
+                          isPopular ? "text-white/50" : "text-neutral-400"
+                        }`}
+                      >
+                        <Minus className="mt-1 h-3 w-3 flex-shrink-0" strokeWidth={2.5} />
+                        <span>{i}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
-        </div>
 
-        {/* Compare table */}
-        <ComparePlans />
-      </div>
-    </section>
+          <div className="mt-7 flex flex-wrap gap-2.5">
+            <a
+              href="/contacto"
+              className={`inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
+                isPopular
+                  ? "bg-white text-neutral-950 hover:bg-white/90"
+                  : "bg-neutral-950 text-white hover:bg-neutral-800"
+              }`}
+            >
+              Elegir este nivel
+            </a>
+            <a
+              href="#comparar"
+              className={`inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-medium transition ${
+                isPopular
+                  ? "border-white/30 text-white hover:border-white"
+                  : "border-neutral-200 text-neutral-950 hover:border-neutral-950"
+              }`}
+            >
+              Comparar todos
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
   );
-});
-WebsitesSection.displayName = "WebsitesSection";
+}
 
 function CellIcon({ v }: { v: CompareCell }) {
   if (v === "yes") return <Check className="mx-auto h-4 w-4 text-neutral-950" strokeWidth={2.5} />;
@@ -197,7 +374,7 @@ function CellIcon({ v }: { v: CompareCell }) {
 
 function ComparePlans() {
   return (
-    <div id="comparar" className="mt-20">
+    <div id="comparar">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
           Compare plans
