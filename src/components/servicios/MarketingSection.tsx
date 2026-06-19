@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Check, ChevronDown, Minus } from "lucide-react";
 import { MARKETING_PACKAGES, MARKETING_REPLACES, type MarketingPackage } from "@/lib/marketing-data";
 import cardBg from "@/assets/banners/marketing-card-bg.webp.asset.json";
-
+import premiumBg from "@/assets/banners/produccion-premium-bg.webp.asset.json";
 
 const fmt = (n: number) => "$" + n.toLocaleString("es-MX");
 
