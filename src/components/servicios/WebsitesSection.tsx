@@ -372,6 +372,75 @@ function CellIcon({ v }: { v: CompareCell }) {
   return <Minus className="mx-auto h-3 w-3 text-neutral-300" strokeWidth={2.5} />;
 }
 
+const CELL_LABEL: Record<CompareCell, string> = {
+  yes: "Incluido",
+  addon: "Módulo opcional",
+  no: "No disponible",
+  custom: "Cotización",
+};
+
+function MobileCompare() {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(1);
+
+  return (
+    <div className="md:hidden">
+      {/* Plan selector */}
+      <div className="rounded-2xl border border-neutral-200 bg-white p-3">
+        <p className="mb-2 px-1 text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+          Compara dos planes
+        </p>
+        <div className="grid grid-cols-2 gap-2">
+          {[{ val: a, set: setA, label: "Plan A" }, { val: b, set: setB, label: "Plan B" }].map((s, idx) => (
+            <label key={idx} className="relative block">
+              <span className="mb-1 block px-1 text-[10px] font-medium uppercase tracking-wider text-neutral-400">
+                {s.label}
+              </span>
+              <select
+                value={s.val}
+                onChange={(e) => s.set(Number(e.target.value))}
+                className="w-full appearance-none rounded-xl border border-neutral-200 bg-neutral-50 px-3 py-2.5 pr-8 text-sm font-medium text-neutral-950 focus:border-neutral-950 focus:outline-none"
+              >
+                {COMPARE_HEADERS.map((h, i) => (
+                  <option key={h} value={i}>{h}</option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute bottom-3 right-2.5 h-4 w-4 text-neutral-500" />
+            </label>
+          ))}
+        </div>
+      </div>
+
+      {/* Comparison list */}
+      <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white">
+        <div className="grid grid-cols-[minmax(0,1fr)_72px_72px] items-center gap-2 border-b border-neutral-200 bg-white px-4 py-3">
+          <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-neutral-500">Feature</span>
+          <span className="truncate text-center text-[11px] font-semibold text-neutral-950">{COMPARE_HEADERS[a]}</span>
+          <span className="truncate text-center text-[11px] font-semibold text-neutral-950">{COMPARE_HEADERS[b]}</span>
+        </div>
+
+        {COMPARE_GROUPS.map((g) => (
+          <div key={g.group}>
+            <div className="bg-neutral-50 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+              {g.group}
+            </div>
+            {g.rows.map((r) => (
+              <div
+                key={r.label}
+                className="grid grid-cols-[minmax(0,1fr)_72px_72px] items-center gap-2 border-t border-dashed border-neutral-200 px-4 py-3"
+              >
+                <span className="text-[13px] leading-snug text-neutral-800">{r.label}</span>
+                <span className="flex justify-center" aria-label={CELL_LABEL[r.vals[a]]}><CellIcon v={r.vals[a]} /></span>
+                <span className="flex justify-center" aria-label={CELL_LABEL[r.vals[b]]}><CellIcon v={r.vals[b]} /></span>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function ComparePlans() {
   return (
     <div id="comparar">
@@ -384,7 +453,11 @@ function ComparePlans() {
         </h3>
       </div>
 
-      <div className="overflow-x-auto rounded-2xl border border-neutral-200 bg-white">
+      {/* Mobile: A vs B */}
+      <MobileCompare />
+
+      {/* Desktop: full table */}
+      <div className="hidden overflow-x-auto rounded-2xl border border-neutral-200 bg-white md:block">
         <table className="w-full min-w-[840px] border-collapse text-sm">
           <thead className="sticky top-0 bg-white">
             <tr className="border-b border-neutral-200">
@@ -429,7 +502,7 @@ function ComparePlans() {
         </table>
       </div>
 
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-neutral-500">
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-neutral-500">
         <span className="inline-flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-neutral-950" strokeWidth={2.5} /> Incluido</span>
         <span className="inline-flex items-center gap-1.5"><Plus className="h-3.5 w-3.5" strokeWidth={2.5} /> Módulo opcional</span>
         <span className="inline-flex items-center gap-1.5"><Minus className="h-3 w-3" strokeWidth={2.5} /> No disponible</span>
