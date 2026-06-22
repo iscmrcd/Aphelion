@@ -379,63 +379,175 @@ const CELL_LABEL: Record<CompareCell, string> = {
   custom: "Cotización",
 };
 
+function MobileCellIcon({ v }: { v: CompareCell }) {
+  if (v === "yes")
+    return (
+      <span className="mx-auto flex h-6 w-6 items-center justify-center rounded-full bg-emerald-50">
+        <Check className="h-3.5 w-3.5 text-emerald-600" strokeWidth={3} />
+      </span>
+    );
+  if (v === "addon")
+    return (
+      <span className="mx-auto flex h-6 w-6 items-center justify-center rounded-full bg-blue-50">
+        <Plus className="h-3.5 w-3.5 text-blue-600" strokeWidth={3} />
+      </span>
+    );
+  if (v === "custom")
+    return (
+      <span className="mx-auto flex h-6 w-6 items-center justify-center rounded-full bg-amber-50">
+        <Settings className="h-3 w-3 text-amber-600" strokeWidth={2.5} />
+      </span>
+    );
+  return (
+    <span className="mx-auto flex h-6 w-6 items-center justify-center rounded-full bg-neutral-100">
+      <Minus className="h-3 w-3 text-neutral-400" strokeWidth={3} />
+    </span>
+  );
+}
+
+function PlanSelector({
+  val,
+  set,
+  label,
+  accent,
+}: {
+  val: number;
+  set: (n: number) => void;
+  label: string;
+  accent: "neutral" | "dark";
+}) {
+  const lvl = WEB_LEVELS[val];
+  const isDark = accent === "dark";
+  return (
+    <label className="relative block">
+      <span
+        className={`mb-1.5 block px-1 text-[10px] font-semibold uppercase tracking-[0.14em] ${
+          isDark ? "text-neutral-950" : "text-neutral-500"
+        }`}
+      >
+        {label}
+      </span>
+      <div
+        className={`relative rounded-2xl border-2 transition ${
+          isDark ? "border-neutral-950 bg-neutral-950 text-white" : "border-neutral-200 bg-white text-neutral-950"
+        }`}
+      >
+        <select
+          value={val}
+          onChange={(e) => set(Number(e.target.value))}
+          className="w-full cursor-pointer appearance-none bg-transparent px-3.5 pb-2 pt-3 pr-8 text-[13px] font-semibold focus:outline-none"
+        >
+          {COMPARE_HEADERS.map((h, i) => (
+            <option key={h} value={i} className="text-neutral-950">
+              {h}
+            </option>
+          ))}
+        </select>
+        <ChevronDown
+          className={`pointer-events-none absolute right-2.5 top-3.5 h-4 w-4 ${isDark ? "text-white/70" : "text-neutral-500"}`}
+        />
+        <div
+          className={`flex items-baseline gap-1 px-3.5 pb-3 pt-0.5 text-[11px] ${
+            isDark ? "text-white/70" : "text-neutral-500"
+          }`}
+        >
+          <span className={`text-base font-semibold ${isDark ? "text-white" : "text-neutral-950"}`}>
+            {fmt(lvl.setup)}
+          </span>
+          {lvl.men !== null && <span>· {fmt(lvl.men)}/mes</span>}
+        </div>
+      </div>
+    </label>
+  );
+}
+
 function MobileCompare() {
   const [a, setA] = useState(0);
   const [b, setB] = useState(1);
+  const planA = WEB_LEVELS[a];
+  const planB = WEB_LEVELS[b];
 
   return (
     <div className="md:hidden">
-      {/* Plan selector */}
-      <div className="rounded-2xl border border-neutral-200 bg-white p-3">
-        <p className="mb-2 px-1 text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-          Compara dos planes
-        </p>
-        <div className="grid grid-cols-2 gap-2">
-          {[{ val: a, set: setA, label: "Plan A" }, { val: b, set: setB, label: "Plan B" }].map((s, idx) => (
-            <label key={idx} className="relative block">
-              <span className="mb-1 block px-1 text-[10px] font-medium uppercase tracking-wider text-neutral-400">
-                {s.label}
-              </span>
-              <select
-                value={s.val}
-                onChange={(e) => s.set(Number(e.target.value))}
-                className="w-full appearance-none rounded-xl border border-neutral-200 bg-neutral-50 px-3 py-2.5 pr-8 text-sm font-medium text-neutral-950 focus:border-neutral-950 focus:outline-none"
-              >
-                {COMPARE_HEADERS.map((h, i) => (
-                  <option key={h} value={i}>{h}</option>
-                ))}
-              </select>
-              <ChevronDown className="pointer-events-none absolute bottom-3 right-2.5 h-4 w-4 text-neutral-500" />
-            </label>
-          ))}
+      {/* Plan selector with prices + vs badge */}
+      <div className="relative">
+        <div className="grid grid-cols-2 gap-3">
+          <PlanSelector val={a} set={setA} label="Plan A" accent="neutral" />
+          <PlanSelector val={b} set={setB} label="Plan B" accent="dark" />
+        </div>
+        <div className="pointer-events-none absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2">
+          <span className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-neutral-100 text-[10px] font-bold uppercase tracking-wider text-neutral-700 shadow-sm">
+            vs
+          </span>
         </div>
       </div>
 
       {/* Comparison list */}
-      <div className="mt-4 overflow-hidden rounded-2xl border border-neutral-200 bg-white">
-        <div className="grid grid-cols-[minmax(0,1fr)_72px_72px] items-center gap-2 border-b border-neutral-200 bg-white px-4 py-3">
-          <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-neutral-500">Feature</span>
-          <span className="truncate text-center text-[11px] font-semibold text-neutral-950">{COMPARE_HEADERS[a]}</span>
-          <span className="truncate text-center text-[11px] font-semibold text-neutral-950">{COMPARE_HEADERS[b]}</span>
-        </div>
-
+      <div className="mt-5 overflow-hidden rounded-2xl border border-neutral-200 bg-white">
         {COMPARE_GROUPS.map((g) => (
           <div key={g.group}>
-            <div className="bg-neutral-50 px-4 py-2 text-[10px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+            <div className="bg-neutral-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
               {g.group}
             </div>
             {g.rows.map((r) => (
               <div
                 key={r.label}
-                className="grid grid-cols-[minmax(0,1fr)_72px_72px] items-center gap-2 border-t border-dashed border-neutral-200 px-4 py-3"
+                className="grid grid-cols-[minmax(0,1fr)_56px_56px] items-center gap-2 border-t border-dashed border-neutral-200 px-4 py-3"
               >
                 <span className="text-[13px] leading-snug text-neutral-800">{r.label}</span>
-                <span className="flex justify-center" aria-label={CELL_LABEL[r.vals[a]]}><CellIcon v={r.vals[a]} /></span>
-                <span className="flex justify-center" aria-label={CELL_LABEL[r.vals[b]]}><CellIcon v={r.vals[b]} /></span>
+                <span className="flex justify-center" aria-label={CELL_LABEL[r.vals[a]]}>
+                  <MobileCellIcon v={r.vals[a]} />
+                </span>
+                <span className="flex justify-center" aria-label={CELL_LABEL[r.vals[b]]}>
+                  <MobileCellIcon v={r.vals[b]} />
+                </span>
               </div>
             ))}
           </div>
         ))}
+      </div>
+
+      {/* Summary cards with CTA */}
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        {[{ p: planA, dark: false }, { p: planB, dark: true }].map(({ p, dark }) => (
+          <div
+            key={p.id}
+            className={`flex flex-col rounded-2xl border p-4 ${
+              dark ? "border-neutral-950 bg-neutral-950 text-white" : "border-neutral-200 bg-white text-neutral-950"
+            }`}
+          >
+            <span className={`text-[10px] font-semibold uppercase tracking-[0.14em] ${dark ? "text-white/60" : "text-neutral-500"}`}>
+              Nivel 0{p.id}
+            </span>
+            <span className="mt-0.5 text-[13px] font-semibold leading-tight">{p.name}</span>
+            <div className="mt-3">
+              <div className="text-xl font-semibold tracking-tight">{fmt(p.setup)}</div>
+              {p.men !== null && (
+                <div className={`text-[11px] ${dark ? "text-white/60" : "text-neutral-500"}`}>
+                  + {fmt(p.men)}/mes
+                </div>
+              )}
+            </div>
+            <a
+              href="#contacto"
+              className={`mt-4 inline-flex items-center justify-center rounded-full px-3 py-2 text-[12px] font-semibold transition ${
+                dark
+                  ? "bg-white text-neutral-950 hover:bg-neutral-200"
+                  : "bg-neutral-950 text-white hover:bg-neutral-800"
+              }`}
+            >
+              Elegir
+            </a>
+          </div>
+        ))}
+      </div>
+
+      {/* Mobile legend */}
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-[11px] text-neutral-600">
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-emerald-50"><Check className="h-2.5 w-2.5 text-emerald-600" strokeWidth={3} /></span>Incluido</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-blue-50"><Plus className="h-2.5 w-2.5 text-blue-600" strokeWidth={3} /></span>Opcional</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-amber-50"><Settings className="h-2 w-2 text-amber-600" strokeWidth={2.5} /></span>Cotización</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-neutral-100"><Minus className="h-2 w-2 text-neutral-400" strokeWidth={3} /></span>No</span>
       </div>
     </div>
   );
