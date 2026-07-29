@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Check, ChevronDown, Minus } from "lucide-react";
-import { MARKETING_PACKAGES, MARKETING_REPLACES, type MarketingPackage } from "@/lib/marketing-data";
+import type { MarketingPackage } from "@/lib/marketing-data";
+import { useMarketingData } from "@/lib/content";
+import { useT, useLang } from "@/lib/i18n";
 import cardBg from "@/assets/banners/brand-partner-bg-v3.jpg.asset.json";
 import premiumBg from "@/assets/banners/produccion-premium-bg-v3.jpg.asset.json";
-
-const fmt = (n: number) => "$" + n.toLocaleString("es-MX");
 
 const BADGE_TONE: Record<number, "popular" | "limited" | undefined> = {
   3: "popular",
@@ -13,6 +13,8 @@ const BADGE_TONE: Record<number, "popular" | "limited" | undefined> = {
 
 export function MarketingSection() {
   const [openId, setOpenId] = useState<number>(3); // Brand Partner default
+  const { MARKETING_PACKAGES } = useMarketingData();
+  const t = useT();
 
   return (
     <section
@@ -22,13 +24,13 @@ export function MarketingSection() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Selecciona tu volumen
+            {t("Select your volume", "Selecciona tu volumen")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            Cuatro paquetes. Tú eliges la velocidad.
+            {t("Four packages. You choose the speed.", "Cuatro paquetes. Tú eliges la velocidad.")}
           </h2>
           <p className="mt-3 text-sm text-neutral-500">
-            Toca cualquier tarjeta para ver lo que incluye.
+            {t("Tap any card to see what's included.", "Toca cualquier tarjeta para ver lo que incluye.")}
           </p>
         </div>
 
@@ -62,6 +64,10 @@ function PackageCard({
   const isPopular = tone === "popular";
   const isLimited = tone === "limited";
   const dark = isPopular || isLimited;
+  const { MARKETING_REPLACES } = useMarketingData();
+  const t = useT();
+  const { lang } = useLang();
+  const fmt = (n: number) => "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
 
   return (
     <div
@@ -144,7 +150,7 @@ function PackageCard({
                 dark ? "text-white/60" : "text-neutral-500"
               }`}
             >
-              /semana
+              {t("/week", "/semana")}
             </div>
           </div>
           <ChevronDown
@@ -173,7 +179,7 @@ function PackageCard({
                 {fmt(pkg.weekly)}
               </span>
               <span className={`text-xs ${dark ? "text-white/60" : "text-neutral-500"}`}>
-                MXN / semana + IVA
+                {t("MXN / week + VAT", "MXN / semana + IVA")}
               </span>
             </div>
             <p
@@ -181,7 +187,10 @@ function PackageCard({
                 dark ? "text-white/60" : "text-neutral-500"
               }`}
             >
-              ~{fmt(pkg.monthly)} MXN / mes · Contrato mínimo: {pkg.contractMonths} meses
+              {t(
+                `~${fmt(pkg.monthly)} MXN / month · Minimum contract: ${pkg.contractMonths} months`,
+                `~${fmt(pkg.monthly)} MXN / mes · Contrato mínimo: ${pkg.contractMonths} meses`
+              )}
             </p>
           </div>
 
@@ -194,7 +203,7 @@ function PackageCard({
                     dark ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  Para quién es
+                  {t("Who it's for", "Para quién es")}
                 </p>
                 <p className={`text-sm leading-relaxed ${dark ? "text-white/80" : "text-neutral-700"}`}>
                   {pkg.forWho}
@@ -207,7 +216,7 @@ function PackageCard({
                     dark ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  Ideal para
+                  {t("Ideal for", "Ideal para")}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {pkg.ideal.map((i) => (
@@ -231,7 +240,7 @@ function PackageCard({
                     dark ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  Qué lograrás
+                  {t("What you'll achieve", "Qué lograrás")}
                 </p>
                 <ul className="space-y-2">
                   {pkg.outcomes.map((o) => (
@@ -290,7 +299,7 @@ function PackageCard({
                     dark ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  Equipo de producción
+                  {t("Production team", "Equipo de producción")}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {pkg.equipment.map((e) => (
@@ -321,7 +330,7 @@ function PackageCard({
                       dark ? "text-white/60" : "text-neutral-500"
                     }`}
                   >
-                    Pauta publicitaria
+                    {t("Ad spend", "Pauta publicitaria")}
                   </p>
                   <p
                     className={`text-xs leading-relaxed ${
@@ -340,7 +349,7 @@ function PackageCard({
                       dark ? "text-white/60" : "text-neutral-500"
                     }`}
                   >
-                    No incluye
+                    {t("Not included", "No incluye")}
                   </p>
                   <ul className="space-y-1.5">
                     {pkg.notIncluded.map((i) => (
@@ -372,7 +381,7 @@ function PackageCard({
                   dark ? "bg-white/5 text-white/60" : "bg-neutral-50 text-neutral-500"
                 }`}
               >
-                Vs. contratar el equipo por separado
+                {t("Vs. hiring the team separately", "Vs. contratar el equipo por separado")}
               </div>
               <table className="w-full text-sm">
                 <tbody>
@@ -393,7 +402,7 @@ function PackageCard({
                           dark ? "text-white/70" : "text-neutral-600"
                         }`}
                       >
-                        {r.cost}/mes
+                        {r.cost}{t("/mo", "/mes")}
                       </td>
                     </tr>
                   ))}
@@ -407,14 +416,14 @@ function PackageCard({
                         dark ? "text-white" : "text-neutral-950"
                       }`}
                     >
-                      Costo equivalente
+                      {t("Equivalent cost", "Costo equivalente")}
                     </td>
                     <td
                       className={`px-4 py-2.5 text-right font-medium tabular-nums ${
                         dark ? "text-emerald-300" : "text-emerald-700"
                       }`}
                     >
-                      $36,000–$56,000/mes
+                      {t("$36,000–$56,000/mo", "$36,000–$56,000/mes")}
                     </td>
                   </tr>
                   <tr
@@ -434,7 +443,7 @@ function PackageCard({
                         dark ? "text-white" : "text-white"
                       }`}
                     >
-                      ~{fmt(pkg.monthly)}/mes
+                      ~{fmt(pkg.monthly)}{t("/mo", "/mes")}
                     </td>
                   </tr>
                 </tbody>
@@ -451,7 +460,7 @@ function PackageCard({
                   : "bg-neutral-950 text-white hover:bg-neutral-800"
               }`}
             >
-              Reservar este nivel
+              {t("Book this tier", "Reservar este nivel")}
             </a>
             <a
               href="/contacto"
@@ -461,7 +470,7 @@ function PackageCard({
                   : "border-neutral-200 text-neutral-950 hover:border-neutral-950"
               }`}
             >
-              Hablar con estrategia
+              {t("Talk to strategy", "Hablar con estrategia")}
             </a>
           </div>
         </div>

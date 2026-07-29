@@ -1,0 +1,342 @@
+import type { MarketingPackage } from "./marketing-data";
+
+export const MARKETING_PACKAGES_EN: MarketingPackage[] = [
+  {
+    id: 1,
+    slug: "presencia",
+    vol: "Vol.01",
+    name: "Presence",
+    tagline: "Active, professional, on-brand social profiles — without you lifting a finger.",
+    weekly: 1490,
+    monthly: 6450,
+    contractMonths: 3,
+    forWho:
+      "Local businesses with steady customers who don't have the time or team to create content. They're not chasing aggressive growth yet — they want to look sharp, keep their social profiles active, and build trust when someone new checks them out online.",
+    ideal: [
+      "Restaurants and cafés",
+      "Spas and salons",
+      "Local boutiques",
+      "Medical and dental practices",
+      "Barbershops",
+      "Personal brands",
+      "Established service businesses",
+    ],
+    objective:
+      "Maintain a professional, active, and consistent digital presence that builds trust and gets prospects to validate the brand before they visit or reach out.",
+    outcomes: [
+      "Active, well-kept social profiles without lifting a finger",
+      "A more professional image than most of your local competition",
+      "Content aligned with your brand, style, and tone",
+      "More trust from anyone new landing on your profile",
+      "Your story told well, visually",
+    ],
+    deliverables: [
+      {
+        group: "Monthly content",
+        items: [
+          "Monthly content planning (editorial calendar)",
+          "9 monthly posts (professional photography)",
+          "3 monthly reels",
+          "Weekly promotional stories",
+          "1 professional photo session per month",
+          "Editing and production of all content",
+          "Copywriting for every post",
+          "Basic graphic design",
+          "Scheduling and publishing",
+          "Visual optimization of feed and profile",
+        ],
+      },
+    ],
+    equipment: [
+      "Full-frame camera",
+      "1.4 prime lens",
+      "Softbox and continuous lighting",
+      "Wireless microphone",
+      "Editing with brand color grading",
+    ],
+    notIncluded: [
+      "Paid campaigns (Meta Ads)",
+      "Aerial video",
+      "Cinematic stabilizer",
+      "Google Ads",
+      "Website",
+    ],
+  },
+  {
+    id: 2,
+    slug: "crecimiento",
+    vol: "Vol.02",
+    name: "Growth",
+    tagline: "Attract new customers with real content and campaigns that actually work.",
+    weekly: 2490,
+    monthly: 10780,
+    contractMonths: 6,
+    badge: "Popular",
+    forWho:
+      "Businesses that have moved past just \"being present\" and want to actively use social media to attract new customers. They're ready to invest in advertising and need someone to do it right — with real content, not generic stock footage.",
+    ideal: [
+      "Growing restaurants",
+      "Boutique hotels",
+      "Premium wellness brands",
+      "Aesthetic clinics",
+      "Hospitality",
+      "BC / SoCal market",
+    ],
+    objective:
+      "Grow your audience, generate new leads, and build a competitive brand with higher-tier production plus Meta Ads campaigns that work because the content behind them is real.",
+    outcomes: [
+      "More reach and visibility with new prospects",
+      "A stronger, more competitive visual brand",
+      "Meta campaigns that work hand in hand with the content",
+      "Greater authority in your local and regional category",
+      "Higher-tier production: motion, lighting, aerial shots",
+      "Real data on what works and what doesn't",
+    ],
+    deliverables: [
+      {
+        group: "Content",
+        items: [
+          "Monthly content strategy",
+          "12 monthly posts (professional photo + graphic)",
+          "5 monthly reels (stabilizer, motion, and lighting)",
+          "1 monthly drone shot",
+          "Active weekly stories",
+          "2 photo/video sessions per month",
+          "Full editing with color correction",
+          "Copywriting and promotional graphic design",
+          "Post scheduling",
+          "Visual optimization of IG and Facebook profiles",
+        ],
+      },
+      {
+        group: "Meta Ads campaigns",
+        items: [
+          "Meta Business Manager setup",
+          "Active Meta Ads campaigns",
+          "Target audience segmentation",
+          "Monthly optimization",
+          "Monthly results report",
+        ],
+      },
+    ],
+    equipment: [
+      "Full-frame camera",
+      "Mobile camera in LOG (second camera)",
+      "1.4 prime and telephoto lens",
+      "Cinematic stabilizer",
+      "Drone",
+      "Softbox and continuous lighting",
+      "Studio flash",
+      "Wireless microphone",
+    ],
+    adSpend:
+      "Meta Ads spend is billed directly to the client on the platform. We manage it. Recommended minimum: $3,000–$8,000 MXN/month.",
+    notIncluded: [
+      "Google Ads or TikTok Ads",
+      "Website",
+      "Master commercial video",
+      "Funnels or automations",
+    ],
+  },
+  {
+    id: 3,
+    slug: "brand-partner",
+    vol: "Vol.03",
+    name: "Brand Partner",
+    tagline: "Your full marketing department: content, campaigns, web, and funnels.",
+    weekly: 5490,
+    monthly: 23770,
+    contractMonths: 12,
+    forWho:
+      "Brands that understand a real digital strategy needs quality content, well-managed campaigns, and a website that converts — all working together. Instead of hiring a photographer, editor, community manager, ads specialist, and developer separately, they get one strategic team.",
+    ideal: [
+      "Premium restaurants",
+      "Restaurant groups",
+      "Hotels and resorts",
+      "High-ticket clinics",
+      "Regionally expanding brands",
+    ],
+    objective:
+      "Build a complete digital ecosystem — content + campaigns + web + automations — that functions like an integrated marketing department with creative direction and real growth strategy.",
+    outcomes: [
+      "Full control of your digital image across every channel",
+      "Campaigns that work because the content behind them is real",
+      "Websites and landing pages that generate and qualify leads",
+      "Funnels that work while you run your business",
+      "A brand ready to scale regionally",
+      "Real data to drive business decisions",
+    ],
+    deliverables: [
+      {
+        group: "Content production",
+        items: [
+          "Comprehensive monthly strategy (content + campaigns + web)",
+          "16 monthly posts (photo + graphic)",
+          "8 monthly reels (full production)",
+          "Active weekly stories",
+          "Ad creative (videos, carousels, stills)",
+          "2–3 photo/video sessions per month",
+          "Drone aerial video per calendar",
+          "Creative direction and branding",
+          "Commercial and promotional graphic design",
+          "Event and launch coverage",
+        ],
+      },
+      {
+        group: "Digital campaigns",
+        items: [
+          "Meta Ads — full management",
+          "Google Ads — Search and Display",
+          "TikTok Ads based on brand profile",
+          "Pixel, Google Analytics, and Tag Manager",
+          "Advanced segmentation and retargeting",
+          "Continuous optimization",
+          "Monthly ROI report",
+        ],
+      },
+      {
+        group: "Web and conversion",
+        items: [
+          "Professional conversion-focused website (included)",
+          "Landing pages per campaign or product",
+          "Lead-capture funnels",
+          "Follow-up forms and automations",
+          "Basic WhatsApp or email marketing",
+          "Priority support",
+        ],
+      },
+    ],
+    equipment: [
+      "Full-frame camera",
+      "Mobile camera in LOG",
+      "1.2 and 1.4 prime lenses",
+      "Telephoto lens",
+      "Cinematic stabilizer",
+      "Drone",
+      "Softbox, continuous lighting, and studio flash",
+      "Wireless microphone",
+      "Cinema-grade color editing",
+    ],
+    adSpend:
+      "Ad spend billed directly from the client to the platforms. We manage it. Recommended minimum: $8,000–$20,000 MXN/month depending on goals.",
+    notIncluded: [],
+  },
+  {
+    id: 4,
+    slug: "produccion-premium",
+    vol: "Vol.04",
+    name: "Premium Production",
+    tagline: "Cinematic production for the binational MX / SoCal market.",
+    weekly: 7500,
+    monthly: 32500,
+    contractMonths: 12,
+    badge: "Limited spots",
+    forWho:
+      "Real estate developments, premium builders, hotels, resorts, or luxury brands that need international-level audiovisual production to compete in the binational Baja California / SoCal market. Clients already investing $1,500–$2,500 USD/month in ad spend who understand marketing as a direct high-ticket sales tool.",
+    ideal: [
+      "Real estate developments",
+      "Premium builders",
+      "Hotels and resorts",
+      "Wineries and wine tourism",
+      "Luxury brands",
+      "MX + SoCal + San Diego market",
+    ],
+    objective:
+      "Position the brand in the binational premium market, generate qualified high-ticket leads, and support aggressive campaigns with cinematic production content that justifies the price of what's being sold.",
+    outcomes: [
+      "International-level production content",
+      "Real positioning in the binational MX / SoCal market",
+      "Campaigns optimized for high-net-worth buyers",
+      "Aerial tours and master videos that sell without a site visit",
+      "A complete digital ecosystem ready to scale",
+      "Qualified leads that can close in USD",
+    ],
+    deliverables: [
+      {
+        group: "Cinematic production",
+        items: [
+          "2–4 full production sessions per month",
+          "Drone aerial tours",
+          "1 monthly master video (1–3 min, cinema-grade)",
+          "20+ high-end monthly posts",
+          "10+ monthly reels (cinematic aesthetic)",
+          "Daily stories",
+          "Complete advertising materials",
+          "Construction progress and launch coverage",
+          "Exclusive creative direction",
+        ],
+      },
+      {
+        group: "Binational campaigns",
+        items: [
+          "Meta Ads — MX + SoCal + San Diego + Inland Empire targeting",
+          "Google Ads — Search, Display, and YouTube",
+          "TikTok Ads",
+          "Advanced retargeting and lookalike audiences",
+          "Campaigns in Spanish and English",
+          "Monthly ROI and qualified-lead report",
+        ],
+      },
+      {
+        group: "Web, CRM, and conversion",
+        items: [
+          "Development website or landing pages (included)",
+          "Basic qualified-lead CRM",
+          "Prospect follow-up automation",
+          "Quote request or visit-scheduling system",
+          "Dedicated priority support",
+        ],
+      },
+    ],
+    equipment: [
+      "Full-frame camera",
+      "Mobile camera in LOG",
+      "1.2 and 1.4 prime lenses",
+      "Telephoto lens",
+      "Cinematic stabilizer",
+      "Drone",
+      "Softbox, continuous lighting, and studio flash",
+      "Wireless microphone",
+      "Cinema-grade color editing",
+    ],
+    adSpend:
+      "Recommended minimum spend: $15,000–$40,000 MXN/month ($800–$2,200 USD), paid directly to Meta/Google. USD quotes available for clients in the U.S. market.",
+    notIncluded: [],
+  },
+];
+
+export const MARKETING_REPLACES_EN = [
+  { role: "Community manager", cost: "$8,000 – $12,000" },
+  { role: "Photographer / videographer", cost: "$5,000 – $8,000" },
+  { role: "Video editor", cost: "$4,000 – $6,000" },
+  { role: "Ads specialist", cost: "$8,000 – $12,000" },
+  { role: "Web developer", cost: "$6,000 – $10,000" },
+  { role: "Creative direction", cost: "$5,000 – $8,000" },
+];
+
+export const FAQ_MARKETING_EN = [
+  {
+    q: "Why category exclusivity?",
+    a: "We work with only one company per category and competitive area. We don't want to compete against our own clients or dilute the strategy. If your competitor signs first, that spot is theirs until their contract ends.",
+  },
+  {
+    q: "Is ad spend included in the price?",
+    a: "No. Meta, Google, or TikTok spend is billed directly from the client to the platforms. We manage and optimize it. This gives you full control and transparency over what's spent and where it goes.",
+  },
+  {
+    q: "Why is there a minimum contract?",
+    a: "Real marketing doesn't work in a month. Content needs time to build an audience, campaigns need data to optimize, and a brand needs consistency. Our terms are calibrated to get you results, not to lock you in.",
+  },
+  {
+    q: "Can you work with my in-house team?",
+    a: "Yes. If you already have a community manager or creative team, we can integrate as production + strategy + ads. We evaluate this in the first meeting.",
+  },
+  {
+    q: "What happens if I want to upgrade?",
+    a: "You can move between packages at any time. Billing simply adjusts to the new tier, and the new package's minimum contract term restarts.",
+  },
+  {
+    q: "How does billing work?",
+    a: "Weekly or monthly billing + VAT. Brand Partner and Premium Production can be billed in USD for clients in the U.S. market.",
+  },
+];

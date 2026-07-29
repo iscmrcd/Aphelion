@@ -12,6 +12,9 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { LanguageToggle } from "@/components/LanguageToggle";
+import { LangProvider } from "@/lib/i18n";
+import { validateLangSearch } from "@/lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -74,22 +77,14 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  validateSearch: validateLangSearch,
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Digital Services Hub offers comprehensive digital marketing and web development solutions." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Digital Services Hub offers comprehensive digital marketing and web development solutions." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Digital Services Hub offers comprehensive digital marketing and web development solutions." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93e7d540-7c7a-4294-aa71-dff14a4448aa/id-preview-3d8bed77--b08287cd-a75c-4c5e-ab22-124721ec0350.lovable.app-1781747580806.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93e7d540-7c7a-4294-aa71-dff14a4448aa/id-preview-3d8bed77--b08287cd-a75c-4c5e-ab22-124721ec0350.lovable.app-1781747580806.png" },
+      { name: "author", content: "Aphelion" },
+      { property: "og:site_name", content: "Aphelion" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
@@ -123,9 +118,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
-      <WhatsAppFloat />
+      <LangProvider>
+        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+        <Outlet />
+        <WhatsAppFloat />
+        <LanguageToggle />
+      </LangProvider>
     </QueryClientProvider>
   );
 }
+

@@ -4,30 +4,57 @@ import { useState } from "react";
 import { Plus } from "lucide-react";
 import { MarketingSection } from "@/components/servicios/MarketingSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
+import { useMarketingData } from "@/lib/content";
+import { useT } from "@/lib/i18n";
+import { buildHead } from "@/lib/seo";
 import { FAQ_MARKETING } from "@/lib/marketing-data";
+import { FAQ_MARKETING_EN } from "@/lib/marketing-data.en";
 import banner from "@/assets/banners/gradient-3.png.asset.json";
 
 export const Route = createFileRoute("/servicios/marketing")({
-  head: () => ({
-    meta: [
-      { title: "Marketing & Contenido — Aphelion" },
-      {
-        name: "description",
-        content:
-          "Cuatro niveles de marketing y contenido: presencia, crecimiento, brand partner y producción premium. Exclusividad por rubro.",
+  loaderDeps: ({ search }) => ({ lang: search.lang }),
+  loader: ({ deps }) => deps,
+  head: ({ loaderData }) =>
+    buildHead({
+      path: "/servicios/marketing",
+      lang: loaderData?.lang ?? "en",
+      en: {
+        title: "Marketing & Content — Four Volumes | Aphelion",
+        description:
+          "Four marketing and content tiers: Presence, Growth, Brand Partner and Premium Production. One brand per category and market.",
+        ogTitle: "Marketing & Content — Aphelion",
+        ogDescription:
+          "Real content, managed campaigns and cinematic production. One brand per category and competitive zone.",
       },
-      { property: "og:title", content: "Marketing & Contenido — Aphelion" },
-      {
-        property: "og:description",
-        content:
+      es: {
+        title: "Marketing y Contenido — Cuatro volúmenes | Aphelion",
+        description:
+          "Cuatro niveles de marketing y contenido: presencia, crecimiento, brand partner y producción premium. Exclusividad por rubro.",
+        ogTitle: "Marketing & Contenido — Aphelion",
+        ogDescription:
           "Contenido real, campañas administradas y producción cinematográfica. Una sola marca por categoría y zona.",
       },
-    ],
-  }),
+      jsonLd: [{
+        "@type": "Service",
+        serviceType: "Digital marketing and content production",
+        provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
+        areaServed: ["MX", "US"],
+        name: "Marketing & Content",
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: (loaderData?.lang === "es" ? FAQ_MARKETING : FAQ_MARKETING_EN).map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }],
+    }),
   component: MarketingPage,
 });
 
 function MarketingPage() {
+  const t = useT();
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
       <div className="border-b border-neutral-200 px-5 py-5">
@@ -37,10 +64,10 @@ function MarketingPage() {
             className="inline-flex items-center gap-2 text-xs font-medium text-neutral-500 transition hover:text-neutral-950"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            Servicios
+            {t("Services", "Servicios")}
           </Link>
           <span className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Marketing & Contenido
+            {t("Marketing & Content", "Marketing & Contenido")}
           </span>
         </div>
       </div>
@@ -61,18 +88,26 @@ function MarketingPage() {
         />
         <div className="relative mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/60">
-            Marketing & Contenido
+            {t("Marketing & Content", "Marketing & Contenido")}
           </p>
           <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-white">
-            Cuatro volúmenes. Una sola marca por rubro.
+            {t(
+              "Four volumes. One brand per category.",
+              "Cuatro volúmenes. Una sola marca por rubro."
+            )}
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
-            De presencia activa a producción cinematográfica binacional.
-            Trabajamos con una sola empresa por categoría y zona competitiva.
+            {t(
+              "From an active presence to binational cinematic production. We work with a single company per category and competitive zone.",
+              "De presencia activa a producción cinematográfica binacional. Trabajamos con una sola empresa por categoría y zona competitiva."
+            )}
           </p>
           <div className="mx-auto mt-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs text-white/80">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />
-            Exclusividad por rubro · Cupo limitado
+            {t(
+              "Category exclusivity · Limited spots",
+              "Exclusividad por rubro · Cupo limitado"
+            )}
           </div>
         </div>
       </section>
@@ -85,16 +120,18 @@ function MarketingPage() {
 }
 
 function MarketingFAQ() {
+  const t = useT();
+  const { FAQ_MARKETING } = useMarketingData();
   const [open, setOpen] = useState<number | null>(0);
   return (
     <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl">
         <div className="mb-12 text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Preguntas frecuentes
+            {t("Frequently asked questions", "Preguntas frecuentes")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            Cómo trabajamos.
+            {t("How we work.", "Cómo trabajamos.")}
           </h2>
         </div>
 

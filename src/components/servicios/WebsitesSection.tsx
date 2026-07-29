@@ -1,30 +1,31 @@
 import { forwardRef, useState } from "react";
 import { Check, ChevronDown, Minus, Plus, Settings } from "lucide-react";
-import { WEB_LEVELS, COMPARE_GROUPS, COMPARE_HEADERS, type CompareCell, type WebLevel } from "@/lib/websites-data";
+import type { CompareCell, WebLevel } from "@/lib/websites-data";
+import { useWebsitesData } from "@/lib/content";
+import { useT, useLang } from "@/lib/i18n";
 
-const fmt = (n: number | null) =>
-  n === null ? "Cotización" : "$" + n.toLocaleString("es-MX");
-
-const BADGES: Record<number, { label: string; tone: "popular" | "custom" } | undefined> = {
-  2: { label: "Más elegido", tone: "popular" },
-  6: { label: "A medida", tone: "custom" },
+const BADGES: Record<number, { label: [string, string]; tone: "popular" | "custom" } | undefined> = {
+  2: { label: ["Most popular", "Más elegido"], tone: "popular" },
+  6: { label: ["Custom", "A medida"], tone: "custom" },
 };
 
 export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
   const [openId, setOpenId] = useState<number>(2);
+  const { WEB_LEVELS } = useWebsitesData();
+  const t = useT();
 
   return (
     <section ref={ref} id="websites" className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Selecciona tu nivel
+            {t("Select your tier", "Selecciona tu nivel")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            Seis escalones. Tú eliges dónde empezar.
+            {t("Six tiers. You choose where to start.", "Seis escalones. Tú eliges dónde empezar.")}
           </h2>
           <p className="mt-3 text-sm text-neutral-500">
-            Toca cualquier tarjeta para ver lo que incluye.
+            {t("Tap any card to see what's included.", "Toca cualquier tarjeta para ver lo que incluye.")}
           </p>
         </div>
 
@@ -58,11 +59,15 @@ function LevelCard({
   level: WebLevel;
   open: boolean;
   onToggle: () => void;
-  badge?: { label: string; tone: "popular" | "custom" };
+  badge?: { label: [string, string]; tone: "popular" | "custom" };
 }) {
   const [billing, setBilling] = useState<"setup" | "mensual">("setup");
   const isPopular = badge?.tone === "popular";
   const isCustom = badge?.tone === "custom";
+  const t = useT();
+  const { lang } = useLang();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "Cotización") : "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
 
   return (
     <div
@@ -84,7 +89,7 @@ function LevelCard({
                 isPopular ? "text-white/60" : "text-neutral-500"
               }`}
             >
-              Nivel 0{level.id}
+              {t("Tier 0", "Nivel 0")}{level.id}
             </span>
             {badge && (
               <span
@@ -94,7 +99,7 @@ function LevelCard({
                     : "border border-neutral-300 bg-neutral-50 text-neutral-700"
                 }`}
               >
-                {badge.label}
+                {t(badge.label[0], badge.label[1])}
               </span>
             )}
           </div>
@@ -122,7 +127,7 @@ function LevelCard({
                   isPopular ? "text-white" : "text-neutral-950"
                 }`}
               >
-                A medida
+                {t("Custom", "A medida")}
               </div>
             ) : (
               <>
@@ -138,7 +143,7 @@ function LevelCard({
                     isPopular ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  setup
+                  {t("setup", "setup")}
                 </div>
               </>
             )}
@@ -179,7 +184,7 @@ function LevelCard({
                         : "text-neutral-500"
                   }`}
                 >
-                  Setup único
+                  {t("One-time setup", "Setup único")}
                 </button>
                 <button
                   onClick={() => setBilling("mensual")}
@@ -193,7 +198,7 @@ function LevelCard({
                         : "text-neutral-500"
                   }`}
                 >
-                  Mantenimiento
+                  {t("Maintenance", "Mantenimiento")}
                 </button>
               </div>
               <div className="mt-4 flex items-baseline gap-2">
@@ -205,7 +210,7 @@ function LevelCard({
                   {fmt(billing === "setup" ? level.setup : level.men)}
                 </span>
                 <span className={`text-xs ${isPopular ? "text-white/60" : "text-neutral-500"}`}>
-                  {billing === "setup" ? "MXN, una sola vez" : "MXN / mes"}
+                  {billing === "setup" ? t("MXN, one-time", "MXN, una sola vez") : t("MXN / month", "MXN / mes")}
                 </span>
               </div>
               <p
@@ -214,8 +219,8 @@ function LevelCard({
                 }`}
               >
                 {billing === "setup"
-                  ? "Inversión inicial: diseño, desarrollo y puesta en marcha."
-                  : "Hosting, dominio, monitoreo, backups, seguridad y soporte continuo."}
+                  ? t("Initial investment: design, development, and launch.", "Inversión inicial: diseño, desarrollo y puesta en marcha.")
+                  : t("Hosting, domain, monitoring, backups, security, and ongoing support.", "Hosting, dominio, monitoreo, backups, seguridad y soporte continuo.")}
               </p>
             </div>
           ) : (
@@ -224,7 +229,7 @@ function LevelCard({
                 isPopular ? "text-white/70" : "text-neutral-500"
               }`}
             >
-              Alcance, usuarios e infraestructura definen el costo.
+              {t("Scope, users, and infrastructure define the cost.", "Alcance, usuarios e infraestructura definen el costo.")}
             </p>
           )}
 
@@ -236,7 +241,7 @@ function LevelCard({
                   isPopular ? "text-white/60" : "text-neutral-500"
                 }`}
               >
-                Incluye
+                {t("Includes", "Incluye")}
               </p>
               <ul className="space-y-2">
                 {level.includes.map((i) => (
@@ -265,7 +270,7 @@ function LevelCard({
                     isPopular ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  Ideal para
+                  {t("Ideal for", "Ideal para")}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {level.ideal.map((i) => (
@@ -290,7 +295,7 @@ function LevelCard({
                       isPopular ? "text-white/60" : "text-neutral-500"
                     }`}
                   >
-                    Módulos opcionales
+                    {t("Optional modules", "Módulos opcionales")}
                   </p>
                   <div className="flex flex-wrap gap-1.5">
                     {level.canAdd.map((i) => (
@@ -317,7 +322,7 @@ function LevelCard({
                       isPopular ? "text-white/60" : "text-neutral-500"
                     }`}
                   >
-                    No incluye
+                    {t("Not included", "No incluye")}
                   </p>
                   <ul className="space-y-1.5">
                     {level.notInc.map((i) => (
@@ -346,7 +351,7 @@ function LevelCard({
                   : "bg-neutral-950 text-white hover:bg-neutral-800"
               }`}
             >
-              Elegir este nivel
+              {t("Choose this tier", "Elegir este nivel")}
             </a>
             <a
               href="#comparar"
@@ -356,7 +361,7 @@ function LevelCard({
                   : "border-neutral-200 text-neutral-950 hover:border-neutral-950"
               }`}
             >
-              Comparar todos
+              {t("Compare all", "Comparar todos")}
             </a>
           </div>
         </div>
@@ -372,12 +377,16 @@ function CellIcon({ v }: { v: CompareCell }) {
   return <Minus className="mx-auto h-3 w-3 text-neutral-300" strokeWidth={2.5} />;
 }
 
-const CELL_LABEL: Record<CompareCell, string> = {
-  yes: "Incluido",
-  addon: "Módulo opcional",
-  no: "No disponible",
-  custom: "Cotización",
-};
+function useCellLabel() {
+  const t = useT();
+  const CELL_LABEL: Record<CompareCell, string> = {
+    yes: t("Included", "Incluido"),
+    addon: t("Optional module", "Módulo opcional"),
+    no: t("Not available", "No disponible"),
+    custom: t("Quote", "Cotización"),
+  };
+  return CELL_LABEL;
+}
 
 function MobileCellIcon({ v }: { v: CompareCell }) {
   if (v === "yes")
@@ -416,6 +425,11 @@ function PlanSelector({
   label: string;
   accent: "neutral" | "dark";
 }) {
+  const { WEB_LEVELS, COMPARE_HEADERS } = useWebsitesData();
+  const { lang } = useLang();
+  const fmt = (n: number | null) =>
+    n === null ? (lang === "es" ? "Cotización" : "Quote") : "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
+  const t = useT();
   const lvl = WEB_LEVELS[val];
   const isDark = accent === "dark";
   return (
@@ -454,7 +468,7 @@ function PlanSelector({
           <span className={`text-base font-semibold ${isDark ? "text-white" : "text-neutral-950"}`}>
             {fmt(lvl.setup)}
           </span>
-          {lvl.men !== null && <span>· {fmt(lvl.men)}/mes</span>}
+          {lvl.men !== null && <span>· {fmt(lvl.men)}{t("/mo", "/mes")}</span>}
         </div>
       </div>
     </label>
@@ -464,6 +478,12 @@ function PlanSelector({
 function MobileCompare() {
   const [a, setA] = useState(0);
   const [b, setB] = useState(1);
+  const { WEB_LEVELS, COMPARE_GROUPS } = useWebsitesData();
+  const t = useT();
+  const { lang } = useLang();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "Cotización") : "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
+  const CELL_LABEL = useCellLabel();
   const planA = WEB_LEVELS[a];
   const planB = WEB_LEVELS[b];
 
@@ -472,12 +492,12 @@ function MobileCompare() {
       {/* Plan selector with prices + vs badge */}
       <div className="relative">
         <div className="grid grid-cols-2 gap-3">
-          <PlanSelector val={a} set={setA} label="Plan A" accent="neutral" />
-          <PlanSelector val={b} set={setB} label="Plan B" accent="dark" />
+          <PlanSelector val={a} set={setA} label={t("Plan A", "Plan A")} accent="neutral" />
+          <PlanSelector val={b} set={setB} label={t("Plan B", "Plan B")} accent="dark" />
         </div>
         <div className="pointer-events-none absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2">
           <span className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-neutral-100 text-[10px] font-bold uppercase tracking-wider text-neutral-700 shadow-sm">
-            vs
+            {t("vs", "vs")}
           </span>
         </div>
       </div>
@@ -517,14 +537,14 @@ function MobileCompare() {
             }`}
           >
             <span className={`text-[10px] font-semibold uppercase tracking-[0.14em] ${dark ? "text-white/60" : "text-neutral-500"}`}>
-              Nivel 0{p.id}
+              {t("Tier 0", "Nivel 0")}{p.id}
             </span>
             <span className="mt-0.5 text-[13px] font-semibold leading-tight">{p.name}</span>
             <div className="mt-3">
               <div className="text-xl font-semibold tracking-tight">{fmt(p.setup)}</div>
               {p.men !== null && (
                 <div className={`text-[11px] ${dark ? "text-white/60" : "text-neutral-500"}`}>
-                  + {fmt(p.men)}/mes
+                  + {fmt(p.men)}{t("/mo", "/mes")}
                 </div>
               )}
             </div>
@@ -536,7 +556,7 @@ function MobileCompare() {
                   : "bg-neutral-950 text-white hover:bg-neutral-800"
               }`}
             >
-              Elegir
+              {t("Choose", "Elegir")}
             </a>
           </div>
         ))}
@@ -544,24 +564,26 @@ function MobileCompare() {
 
       {/* Mobile legend */}
       <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-[11px] text-neutral-600">
-        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-emerald-50"><Check className="h-2.5 w-2.5 text-emerald-600" strokeWidth={3} /></span>Incluido</span>
-        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-blue-50"><Plus className="h-2.5 w-2.5 text-blue-600" strokeWidth={3} /></span>Opcional</span>
-        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-amber-50"><Settings className="h-2 w-2 text-amber-600" strokeWidth={2.5} /></span>Cotización</span>
-        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-neutral-100"><Minus className="h-2 w-2 text-neutral-400" strokeWidth={3} /></span>No</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-emerald-50"><Check className="h-2.5 w-2.5 text-emerald-600" strokeWidth={3} /></span>{t("Included", "Incluido")}</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-blue-50"><Plus className="h-2.5 w-2.5 text-blue-600" strokeWidth={3} /></span>{t("Optional", "Opcional")}</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-amber-50"><Settings className="h-2 w-2 text-amber-600" strokeWidth={2.5} /></span>{t("Quote", "Cotización")}</span>
+        <span className="inline-flex items-center gap-1"><span className="flex h-4 w-4 items-center justify-center rounded-full bg-neutral-100"><Minus className="h-2 w-2 text-neutral-400" strokeWidth={3} /></span>{t("No", "No")}</span>
       </div>
     </div>
   );
 }
 
 function ComparePlans() {
+  const { COMPARE_HEADERS, COMPARE_GROUPS } = useWebsitesData();
+  const t = useT();
   return (
     <div id="comparar">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-          Compare plans
+          {t("Compare plans", "Compare plans")}
         </p>
         <h3 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-          Todo, lado a lado.
+          {t("Everything, side by side.", "Todo, lado a lado.")}
         </h3>
       </div>
 
@@ -615,10 +637,10 @@ function ComparePlans() {
       </div>
 
       <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-neutral-500">
-        <span className="inline-flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-neutral-950" strokeWidth={2.5} /> Incluido</span>
-        <span className="inline-flex items-center gap-1.5"><Plus className="h-3.5 w-3.5" strokeWidth={2.5} /> Módulo opcional</span>
-        <span className="inline-flex items-center gap-1.5"><Minus className="h-3 w-3" strokeWidth={2.5} /> No disponible</span>
-        <span className="inline-flex items-center gap-1.5"><Settings className="h-3 w-3" strokeWidth={2} /> Cotización</span>
+        <span className="inline-flex items-center gap-1.5"><Check className="h-3.5 w-3.5 text-neutral-950" strokeWidth={2.5} /> {t("Included", "Incluido")}</span>
+        <span className="inline-flex items-center gap-1.5"><Plus className="h-3.5 w-3.5" strokeWidth={2.5} /> {t("Optional module", "Módulo opcional")}</span>
+        <span className="inline-flex items-center gap-1.5"><Minus className="h-3 w-3" strokeWidth={2.5} /> {t("Not available", "No disponible")}</span>
+        <span className="inline-flex items-center gap-1.5"><Settings className="h-3 w-3" strokeWidth={2} /> {t("Quote", "Cotización")}</span>
       </div>
     </div>
   );
