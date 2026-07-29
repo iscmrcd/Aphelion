@@ -16,7 +16,7 @@ export function SiteFooter() {
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
             {t(
               "Digital infrastructure for brands that refuse to settle.",
-              "Infraestructura digital para marcas que no se conforman."
+              "Infraestructura digital para marcas que no se conforman.",
             )}
           </p>
         </div>

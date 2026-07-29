@@ -31,21 +31,23 @@ export const Route = createFileRoute("/servicios/websites")({
         ogDescription:
           "Software que vende por ti. Web Presencial, Profesional, Captación, Automatizada, Sistema Comercial y SaaS.",
       },
-      jsonLd: [{
-        "@type": "Service",
-        serviceType: "Web design and development",
-        provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
-        areaServed: ["MX", "US"],
-        name: "Websites",
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: (loaderData?.lang === "es" ? FAQ_WEB : FAQ_WEB_EN).map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      }],
+      jsonLd: [
+        {
+          "@type": "Service",
+          serviceType: "Web design and development",
+          provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
+          areaServed: ["MX", "US"],
+          name: "Websites",
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: (loaderData?.lang === "es" ? FAQ_WEB : FAQ_WEB_EN).map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        },
+      ],
     }),
   component: WebsitesPage,
 });
@@ -65,7 +67,7 @@ function WebsitesPage() {
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
             {t(
               "Pick the tier you need today. Move up when the business asks for it — no rebuild, nothing broken along the way.",
-              "Elige el escalón que necesitas hoy. Sube cuando el negocio lo pida — sin reconstruir, sin romper lo que ya funciona."
+              "Elige el escalón que necesitas hoy. Sube cuando el negocio lo pida — sin reconstruir, sin romper lo que ya funciona.",
             )}
           </p>
         </div>

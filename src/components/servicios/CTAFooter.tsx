@@ -4,7 +4,10 @@ import { useT } from "@/lib/i18n";
 export function CTAFooter() {
   const t = useT();
   return (
-    <section id="contacto" className="border-t border-neutral-200 bg-neutral-950 px-5 py-24 text-white sm:py-32">
+    <section
+      id="contacto"
+      className="border-t border-neutral-200 bg-neutral-950 px-5 py-24 text-white sm:py-32"
+    >
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-4xl font-medium tracking-[-0.03em] sm:text-5xl">
           {t(
