@@ -225,18 +225,18 @@
 
 @keyframes marquee {
   from { transform: translateX(0); }
-  to { transform: translateX(calc(-50% - 1rem)); }
+  to { transform: translateX(calc(-50% - var(--marquee-gap, 1rem) / 2)); }
 }
 
 .animate-marquee {
+  --marquee-gap: 1rem;
   animation: marquee 70s linear infinite;
 }
 
 @media (min-width: 640px) {
   .animate-marquee {
-    animation-duration: 90s;
-    /* gap-8 => half the duplicated track shifts by half width + half gap */
     --marquee-gap: 2rem;
+    animation-duration: 90s;
   }
 }
 
