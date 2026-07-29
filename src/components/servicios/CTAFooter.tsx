@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { AphelionLogo } from "@/components/Brand";
 import { useT } from "@/lib/i18n";
 
 export function CTAFooter() {

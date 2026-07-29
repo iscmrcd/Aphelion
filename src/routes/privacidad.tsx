@@ -1,6 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
-import { AphelionLogo } from "@/components/Brand";
 import { useT } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
 
