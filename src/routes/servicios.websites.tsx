@@ -6,6 +6,8 @@ import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { ScrollDrivenBanner } from "@/components/servicios/ScrollDrivenBanner";
 import { useT } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
+import { FAQ_WEB } from "@/lib/websites-data";
+import { FAQ_WEB_EN } from "@/lib/websites-data.en";
 
 export const Route = createFileRoute("/servicios/websites")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -30,13 +32,21 @@ export const Route = createFileRoute("/servicios/websites")({
         ogDescription:
           "Software que vende por ti. Web Presencial, Profesional, Captación, Automatizada, Sistema Comercial y SaaS.",
       },
-      jsonLd: {
+      jsonLd: [{
         "@type": "Service",
         serviceType: "Web design and development",
         provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
         areaServed: ["MX", "US"],
         name: "Websites",
       },
+      {
+        "@type": "FAQPage",
+        mainEntity: (loaderData?.lang === "es" ? FAQ_WEB : FAQ_WEB_EN).map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }],
     }),
   component: WebsitesPage,
 });

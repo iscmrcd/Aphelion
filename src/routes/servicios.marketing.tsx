@@ -7,6 +7,8 @@ import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useMarketingData } from "@/lib/content";
 import { useT } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
+import { FAQ_MARKETING } from "@/lib/marketing-data";
+import { FAQ_MARKETING_EN } from "@/lib/marketing-data.en";
 import banner from "@/assets/banners/gradient-3.png.asset.json";
 
 export const Route = createFileRoute("/servicios/marketing")({
@@ -32,13 +34,21 @@ export const Route = createFileRoute("/servicios/marketing")({
         ogDescription:
           "Contenido real, campañas administradas y producción cinematográfica. Una sola marca por categoría y zona.",
       },
-      jsonLd: {
+      jsonLd: [{
         "@type": "Service",
         serviceType: "Digital marketing and content production",
         provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
         areaServed: ["MX", "US"],
         name: "Marketing & Content",
       },
+      {
+        "@type": "FAQPage",
+        mainEntity: (loaderData?.lang === "es" ? FAQ_MARKETING : FAQ_MARKETING_EN).map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }],
     }),
   component: MarketingPage,
 });
