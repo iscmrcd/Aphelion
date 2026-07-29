@@ -58,7 +58,7 @@ function MarketingPage() {
   const t = useT();
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <section className="relative overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:pt-28 sm:pb-32">
+      <section className="relative flex min-h-[460px] items-center overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:min-h-[620px] sm:pt-28 sm:pb-32">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-90"
