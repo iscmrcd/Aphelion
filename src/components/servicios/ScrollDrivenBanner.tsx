@@ -65,11 +65,27 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
     const drawFrame = (i: number) => {
       const canvas = canvasRef.current;
       if (!canvas) return;
-      const img = imagesRef.current[i];
+      const imgs = imagesRef.current;
+      let img = imgs[i];
       if (!img) return;
       if (!img.complete || img.naturalWidth === 0) {
+        // Draw the nearest already-decoded frame instead of freezing on frame 0.
+        let nearest: HTMLImageElement | null = null;
+        for (let d = 1; d < imgs.length; d++) {
+          const a = imgs[i - d];
+          const b = imgs[i + d];
+          if (a && a.complete && a.naturalWidth > 0) {
+            nearest = a;
+            break;
+          }
+          if (b && b.complete && b.naturalWidth > 0) {
+            nearest = b;
+            break;
+          }
+        }
         img.addEventListener("load", () => drawFrame(i), { once: true });
-        return;
+        if (!nearest) return;
+        img = nearest;
       }
       const ctx = canvas.getContext("2d");
       if (!ctx) return;
@@ -104,13 +120,16 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
         const section = sectionRef.current;
         if (!section) return;
         const rect = section.getBoundingClientRect();
-        const total = Math.max(1, section.offsetHeight * 0.9);
+        // Advance from the very first pixel of scroll: the whole sequence plays
+        // over roughly half the banner height.
+        const total = Math.max(1, section.offsetHeight * 0.5);
         const progress = Math.min(1, Math.max(0, -rect.top / total));
         const frames = imagesRef.current.length;
         const idx = Math.min(frames - 1, Math.floor(progress * frames));
         if (idx !== lastFrameRef.current) drawFrame(idx);
       });
     };
+
 
     const onResize = () => {
       // Re-pick image set if breakpoint crossed.
