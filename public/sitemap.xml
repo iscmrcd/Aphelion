@@ -10,13 +10,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aphelion.mx/servicios</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/servicios" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/servicios?lang=es" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/servicios" />
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://aphelion.mx/servicios/websites</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/servicios/websites" />
     <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/servicios/websites?lang=es" />
