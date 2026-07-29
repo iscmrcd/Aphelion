@@ -104,8 +104,12 @@ export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
         const section = sectionRef.current;
         if (!section) return;
         const rect = section.getBoundingClientRect();
-        const total = Math.max(1, section.offsetHeight * 0.9);
-        const progress = Math.min(1, Math.max(0, -rect.top / total));
+        const vh = window.innerHeight || 1;
+        // Progress runs from the moment the section's bottom enters the viewport
+        // until its bottom leaves the top — so it advances from the first pixel.
+        const total = Math.max(1, section.offsetHeight + vh * 0.6);
+        const travelled = vh - rect.top;
+        const progress = Math.min(1, Math.max(0, travelled / total));
         const frames = imagesRef.current.length;
         const idx = Math.min(frames - 1, Math.floor(progress * frames));
         if (idx !== lastFrameRef.current) drawFrame(idx);
