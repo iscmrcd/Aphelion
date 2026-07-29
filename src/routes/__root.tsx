@@ -15,6 +15,7 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { LangProvider } from "@/lib/i18n";
+import { ThemeProvider } from "@/lib/theme";
 import { validateLangSearch } from "@/lib/seo";
 
 function NotFoundComponent() {
@@ -119,6 +120,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
       <LangProvider>
         <div className="flex min-h-screen flex-col bg-neutral-50">
           <SiteHeader />
@@ -130,6 +132,7 @@ function RootComponent() {
         </div>
         <WhatsAppFloat />
       </LangProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }
