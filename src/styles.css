@@ -217,3 +217,8 @@
 .dark img[alt="Aphelion"] {
   filter: invert(1);
 }
+
+.dark .hover\:bg-neutral-100:hover,
+.dark .hover\:bg-neutral-50:hover {
+  background-color: oklch(0.26 0.01 260);
+}
