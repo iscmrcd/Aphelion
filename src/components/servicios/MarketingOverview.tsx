@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { MARKETING_PACKAGES, type MarketingPackage } from "@/lib/marketing-data";
+import type { MarketingPackage } from "@/lib/marketing-data";
+import { useMarketingData } from "@/lib/content";
 import { useT, useLang } from "@/lib/i18n";
 import grad1 from "@/assets/banners/gradient-1.jpg.asset.json";
 import grad2 from "@/assets/banners/gradient-2.jpg.asset.json";
@@ -11,6 +12,7 @@ import grad6 from "@/assets/banners/gradient-6.avif.asset.json";
 const GRADIENTS = [grad1.url, grad2.url, grad5.url, grad6.url];
 
 export function MarketingOverview() {
+  const { MARKETING_PACKAGES } = useMarketingData();
   const t = useT();
   const { lang } = useLang();
   const fmt = (n: number) => "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
-import { FAQ_WEB } from "@/lib/websites-data";
+import { useWebsitesData } from "@/lib/content";
 import { useT } from "@/lib/i18n";
 
 export function FAQ() {
+  const { FAQ_WEB } = useWebsitesData();
   const [open, setOpen] = useState<number | null>(0);
   const t = useT();
   return (

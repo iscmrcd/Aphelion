@@ -1,9 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import { OTHER_CATEGORIES } from "@/lib/websites-data";
+import { useWebsitesData } from "@/lib/content";
 import { useT } from "@/lib/i18n";
 
 export function CategoryPlaceholders() {
+  const { OTHER_CATEGORIES } = useWebsitesData();
   const t = useT();
   return (
     <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">

@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { WEB_LEVELS, type WebLevel } from "@/lib/websites-data";
+import type { WebLevel } from "@/lib/websites-data";
+import { useWebsitesData } from "@/lib/content";
 import { useT, useLang } from "@/lib/i18n";
 import grad1 from "@/assets/banners/gradient-1.jpg.asset.json";
 import grad2 from "@/assets/banners/gradient-2.jpg.asset.json";
@@ -15,6 +16,7 @@ const GRADIENTS = [grad1.url, grad2.url, grad3.url, grad4.url, grad5.url, grad6.
 const FEATURED_SLUG = "captacion";
 
 export function WebsitesOverview() {
+  const { WEB_LEVELS } = useWebsitesData();
   const t = useT();
   const { lang } = useLang();
   const fmt = (n: number | null) =>
