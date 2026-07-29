@@ -2,63 +2,88 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowLeft, Check } from "lucide-react";
 import { AphelionLogo } from "@/components/Brand";
+import { useT } from "@/lib/i18n";
+import { buildHead, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/contacto")({
-  head: () => ({
-    meta: [
-      { title: "Contacto — Aphelion" },
-      {
-        name: "description",
-        content:
+  loaderDeps: ({ search }) => ({ lang: search.lang }),
+  loader: ({ deps }) => deps,
+  head: ({ loaderData }) =>
+    buildHead({
+      path: "/contacto",
+      lang: loaderData?.lang ?? "en",
+      en: {
+        title: "Contact Aphelion — Start Your Project",
+        description:
+          "Tell us about your project. Websites, marketing, content, video, branding or custom SaaS — we reply within 24 hours.",
+        ogTitle: "Contact — Aphelion",
+        ogDescription: "Tell us about your project. We reply within 24 hours.",
+      },
+      es: {
+        title: "Contacto — Inicia tu proyecto con Aphelion",
+        description:
           "Cuéntanos tu proyecto. Websites, marketing, contenido, video, branding o SaaS personalizado — te respondemos en menos de 24 horas.",
+        ogTitle: "Contacto — Aphelion",
+        ogDescription: "Cuéntanos tu proyecto. Te respondemos en menos de 24 horas.",
       },
-      { property: "og:title", content: "Contacto — Aphelion" },
-      {
-        property: "og:description",
-        content:
-          "Cuéntanos tu proyecto. Te respondemos en menos de 24 horas.",
+      jsonLd: {
+        "@type": "ContactPage",
+        name: "Contact Aphelion",
+        url: `${SITE_URL}/contacto`,
       },
-    ],
-  }),
+    }),
   component: ContactoPage,
 });
 
-const SERVICES = [
-  "Websites",
-  "Marketing Digital",
-  "Contenido para Redes",
-  "Video Comercial & Drone",
-  "Branding",
-  "SaaS Personalizado",
-  "Aún no estoy seguro",
-];
-
-const BUDGETS = [
-  "Menos de $20,000 MXN",
-  "$20,000 – $50,000 MXN",
-  "$50,000 – $150,000 MXN",
-  "Más de $150,000 MXN",
-  "Mensualidad / contrato recurrente",
-];
-
 function ContactoPage() {
+  const t = useT();
   const [sent, setSent] = useState(false);
   const [service, setService] = useState<string>("");
   const [budget, setBudget] = useState<string>("");
 
+  const SERVICES = [
+    t("Websites", "Websites"),
+    t("Digital Marketing", "Marketing Digital"),
+    t("Social Media Content", "Contenido para Redes"),
+    t("Commercial & Drone Video", "Video Comercial & Drone"),
+    t("Branding", "Branding"),
+    t("Custom SaaS", "SaaS Personalizado"),
+    t("Not sure yet", "Aún no estoy seguro"),
+  ];
+
+  const BUDGETS = [
+    t("Less than $20,000 MXN", "Menos de $20,000 MXN"),
+    t("$20,000 – $50,000 MXN", "$20,000 – $50,000 MXN"),
+    t("$50,000 – $150,000 MXN", "$50,000 – $150,000 MXN"),
+    t("More than $150,000 MXN", "Más de $150,000 MXN"),
+    t("Monthly / recurring contract", "Mensualidad / contrato recurrente"),
+  ];
+
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    const lines = [
-      `Hola, soy ${data.get("name")}.`,
-      `Empresa: ${data.get("company") || "—"}`,
-      `Email: ${data.get("email")}`,
-      `Teléfono: ${data.get("phone") || "—"}`,
-      `Servicio: ${service || "—"}`,
-      `Presupuesto: ${budget || "—"}`,
-      "",
-      `${data.get("message")}`,
-    ].join("\n");
+    const lines = t(
+      [
+        `Hi, I'm ${data.get("name")}.`,
+        `Company: ${data.get("company") || "—"}`,
+        `Email: ${data.get("email")}`,
+        `Phone: ${data.get("phone") || "—"}`,
+        `Service: ${service || "—"}`,
+        `Budget: ${budget || "—"}`,
+        "",
+        `${data.get("message")}`,
+      ],
+      [
+        `Hola, soy ${data.get("name")}.`,
+        `Empresa: ${data.get("company") || "—"}`,
+        `Email: ${data.get("email")}`,
+        `Teléfono: ${data.get("phone") || "—"}`,
+        `Servicio: ${service || "—"}`,
+        `Presupuesto: ${budget || "—"}`,
+        "",
+        `${data.get("message")}`,
+      ]
+    ).join("\n");
     const url = `https://wa.me/?text=${encodeURIComponent(lines)}`;
     window.open(url, "_blank");
     setSent(true);
@@ -76,7 +101,7 @@ function ContactoPage() {
             className="inline-flex items-center gap-2 text-xs font-medium text-neutral-600 transition hover:text-neutral-950"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            Servicios
+            {t("Services", "Servicios")}
           </Link>
         </div>
       </header>
@@ -85,21 +110,29 @@ function ContactoPage() {
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.2fr]">
           <div>
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Contacto
+              {t("Contact", "Contacto")}
             </p>
             <h1 className="text-[clamp(2rem,4.5vw,3.25rem)] font-medium leading-[1.05] tracking-[-0.03em]">
-              Cuéntanos qué tienes en mente.
+              {t("Tell us what's on your mind.", "Cuéntanos qué tienes en mente.")}
             </h1>
             <p className="mt-5 max-w-md text-base leading-relaxed text-neutral-500">
-              Respondemos en menos de 24 horas. Si tu proyecto encaja, agendamos una
-              llamada de 30 minutos sin compromiso para entender alcance, tiempos y
-              presupuesto.
+              {t(
+                "We reply within 24 hours. If your project fits, we'll set up a free 30-minute call to understand scope, timelines and budget.",
+                "Respondemos en menos de 24 horas. Si tu proyecto encaja, agendamos una llamada de 30 minutos sin compromiso para entender alcance, tiempos y presupuesto."
+              )}
             </p>
 
             <div className="mt-10 space-y-4 border-t border-neutral-200 pt-8">
-              <Item label="Email" value="hola@aphelion.mx" href="mailto:hola@aphelion.mx" />
-              <Item label="WhatsApp" value="Escríbenos directo" href="https://wa.me/" />
-              <Item label="Ubicación" value="Ensenada · Valle de Guadalupe · México" />
+              <Item label={t("Email", "Email")} value="hola@aphelion.mx" href="mailto:hola@aphelion.mx" />
+              <Item
+                label="WhatsApp"
+                value={t("Message us directly", "Escríbenos directo")}
+                href="https://wa.me/"
+              />
+              <Item
+                label={t("Location", "Ubicación")}
+                value={t("Ensenada · Valle de Guadalupe · Mexico", "Ensenada · Valle de Guadalupe · México")}
+              />
             </div>
           </div>
 
@@ -110,33 +143,35 @@ function ContactoPage() {
                   <Check className="h-5 w-5" />
                 </div>
                 <h2 className="text-2xl font-medium tracking-[-0.02em]">
-                  Mensaje listo para enviar
+                  {t("Message ready to send", "Mensaje listo para enviar")}
                 </h2>
                 <p className="mt-3 max-w-sm text-sm text-neutral-500">
-                  Abrimos WhatsApp con tu mensaje precargado. Si prefieres, también
-                  puedes escribirnos a hola@aphelion.mx.
+                  {t(
+                    "We opened WhatsApp with your message pre-filled. You can also write to us at hola@aphelion.mx.",
+                    "Abrimos WhatsApp con tu mensaje precargado. Si prefieres, también puedes escribirnos a hola@aphelion.mx."
+                  )}
                 </p>
                 <button
                   onClick={() => setSent(false)}
                   className="mt-6 text-xs font-medium text-neutral-500 underline-offset-4 hover:text-neutral-950 hover:underline"
                 >
-                  Enviar otro mensaje
+                  {t("Send another message", "Enviar otro mensaje")}
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <Field name="name" label="Nombre *" required />
-                  <Field name="company" label="Empresa" />
+                  <Field name="name" label={t("Name *", "Nombre *")} required />
+                  <Field name="company" label={t("Company", "Empresa")} />
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <Field name="email" label="Email *" type="email" required />
-                  <Field name="phone" label="Teléfono / WhatsApp" type="tel" />
+                  <Field name="email" label={t("Email *", "Email *")} type="email" required />
+                  <Field name="phone" label={t("Phone / WhatsApp", "Teléfono / WhatsApp")} type="tel" />
                 </div>
 
                 <div>
                   <label className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
-                    Servicio
+                    {t("Service", "Servicio")}
                   </label>
                   <div className="flex flex-wrap gap-2">
                     {SERVICES.map((s) => (
@@ -153,7 +188,7 @@ function ContactoPage() {
 
                 <div>
                   <label className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
-                    Presupuesto estimado
+                    {t("Estimated budget", "Presupuesto estimado")}
                   </label>
                   <div className="flex flex-wrap gap-2">
                     {BUDGETS.map((b) => (
@@ -173,7 +208,7 @@ function ContactoPage() {
                     htmlFor="message"
                     className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500"
                   >
-                    Cuéntanos del proyecto *
+                    {t("Tell us about the project *", "Cuéntanos del proyecto *")}
                   </label>
                   <textarea
                     id="message"
@@ -182,7 +217,10 @@ function ContactoPage() {
                     rows={5}
                     maxLength={1000}
                     className="w-full rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950 focus:bg-white"
-                    placeholder="Qué es tu negocio, qué necesitas resolver, tiempos…"
+                    placeholder={t(
+                      "What's your business, what do you need to solve, timelines…",
+                      "Qué es tu negocio, qué necesitas resolver, tiempos…"
+                    )}
                   />
                 </div>
 
@@ -190,11 +228,13 @@ function ContactoPage() {
                   type="submit"
                   className="inline-flex w-full items-center justify-center rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-medium text-white transition hover:bg-neutral-800 sm:w-auto"
                 >
-                  Enviar mensaje
+                  {t("Send message", "Enviar mensaje")}
                 </button>
                 <p className="text-xs text-neutral-400">
-                  Al enviar aceptas que te contactemos sobre tu solicitud. No
-                  compartimos tu información.
+                  {t(
+                    "By submitting you agree to be contacted about your request. We don't share your information.",
+                    "Al enviar aceptas que te contactemos sobre tu solicitud. No compartimos tu información."
+                  )}
                 </p>
               </form>
             )}
