@@ -1,3 +1,4 @@
+import { useNavigate } from "@tanstack/react-router";
 import {
   createContext,
   useCallback,
@@ -59,12 +60,30 @@ export function LangProvider({ children }: { children: ReactNode }) {
   // SSR always renders the default (English) markup; detection runs after hydration.
   const [lang, setLangState] = useState<Lang>(DEFAULT_LANG);
   const [ready, setReady] = useState(false);
+  const navigate = useNavigate();
+
+  /** Keeps ?lang in sync so route head() metadata renders in the right language. */
+  const syncUrl = useCallback(
+    (l: Lang) => {
+      navigate({
+        // @ts-expect-error — search is validated at the root route
+        search: (prev: Record<string, unknown>) => ({
+          ...prev,
+          lang: l === DEFAULT_LANG ? undefined : l,
+        }),
+        replace: true,
+        resetScroll: false,
+      });
+    },
+    [navigate]
+  );
 
   useEffect(() => {
     const detected = detectLang();
     setLangState(detected);
     setReady(true);
-  }, []);
+    if (detected !== DEFAULT_LANG) syncUrl(detected);
+  }, [syncUrl]);
 
   useEffect(() => {
     if (typeof document !== "undefined") {
@@ -72,18 +91,18 @@ export function LangProvider({ children }: { children: ReactNode }) {
     }
   }, [lang]);
 
-  const setLang = useCallback((l: Lang) => {
-    setLangState(l);
-    try {
-      window.localStorage.setItem(STORAGE_KEY, l);
-    } catch {
-      /* ignore */
-    }
-    const url = new URL(window.location.href);
-    if (l === DEFAULT_LANG) url.searchParams.delete("lang");
-    else url.searchParams.set("lang", l);
-    window.history.replaceState({}, "", url.toString());
-  }, []);
+  const setLang = useCallback(
+    (l: Lang) => {
+      setLangState(l);
+      try {
+        window.localStorage.setItem(STORAGE_KEY, l);
+      } catch {
+        /* ignore */
+      }
+      syncUrl(l);
+    },
+    [syncUrl]
+  );
 
   const value = useMemo(() => ({ lang, setLang, ready }), [lang, setLang, ready]);
 
