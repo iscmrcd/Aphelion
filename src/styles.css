@@ -212,3 +212,8 @@
   background-color: oklch(0.14 0.008 260);
   color: oklch(0.97 0.003 260);
 }
+
+/* Brand marks are dark artwork; invert them for night mode. */
+.dark img[alt="Aphelion"] {
+  filter: invert(1);
+}
