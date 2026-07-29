@@ -222,3 +222,24 @@
 .dark .hover\:bg-neutral-50:hover {
   background-color: oklch(0.26 0.01 260);
 }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 1rem)); }
+}
+
+.animate-marquee {
+  animation: marquee 70s linear infinite;
+}
+
+@media (min-width: 640px) {
+  .animate-marquee {
+    animation-duration: 90s;
+    /* gap-8 => half the duplicated track shifts by half width + half gap */
+    --marquee-gap: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+}
