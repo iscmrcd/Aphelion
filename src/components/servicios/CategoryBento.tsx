@@ -1,26 +1,67 @@
 import { Code2, Megaphone, Camera, Video, Boxes, Sparkles, ArrowUpRight } from "lucide-react";
 import { useNavigate } from "@tanstack/react-router";
-
-const CATEGORIES = [
-  { key: "web", title: "Websites", desc: "Seis niveles, de presencia a SaaS.", icon: Code2, status: "active" as const, route: "/servicios/websites" },
-  { key: "marketing", title: "Marketing & Contenido", desc: "Contenido + Meta · Google · TikTok.", icon: Megaphone, status: "active" as const, route: "/servicios/marketing" },
-  { key: "contenido", title: "Producción de Contenido", desc: "Foto, reels y editorial mensual.", icon: Camera, status: "soon" as const },
-  { key: "video", title: "Video & Drone", desc: "Comerciales y tomas aéreas.", icon: Video, status: "soon" as const },
-  { key: "saas", title: "SaaS a Medida", desc: "Plataformas multiusuario.", icon: Boxes, status: "soon" as const },
-  { key: "branding", title: "Branding", desc: "Identidad y sistema visual.", icon: Sparkles, status: "soon" as const },
-];
+import { useT } from "@/lib/i18n";
 
 export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
   const navigate = useNavigate();
+  const t = useT();
+
+  const CATEGORIES = [
+    {
+      key: "web",
+      title: t("Websites", "Websites"),
+      desc: t("Six tiers, from presence to SaaS.", "Seis niveles, de presencia a SaaS."),
+      icon: Code2,
+      status: "active" as const,
+      route: "/servicios/websites" as const,
+    },
+    {
+      key: "marketing",
+      title: t("Marketing & Content", "Marketing & Contenido"),
+      desc: t("Content + Meta · Google · TikTok.", "Contenido + Meta · Google · TikTok."),
+      icon: Megaphone,
+      status: "active" as const,
+      route: "/servicios/marketing" as const,
+    },
+    {
+      key: "contenido",
+      title: t("Content Production", "Producción de Contenido"),
+      desc: t("Photo, reels, and monthly editorial.", "Foto, reels y editorial mensual."),
+      icon: Camera,
+      status: "soon" as const,
+    },
+    {
+      key: "video",
+      title: t("Video & Drone", "Video & Drone"),
+      desc: t("Commercials and aerial footage.", "Comerciales y tomas aéreas."),
+      icon: Video,
+      status: "soon" as const,
+    },
+    {
+      key: "saas",
+      title: t("Custom SaaS", "SaaS a Medida"),
+      desc: t("Multi-user platforms.", "Plataformas multiusuario."),
+      icon: Boxes,
+      status: "soon" as const,
+    },
+    {
+      key: "branding",
+      title: t("Branding", "Branding"),
+      desc: t("Identity and visual systems.", "Identidad y sistema visual."),
+      icon: Sparkles,
+      status: "soon" as const,
+    },
+  ];
+
   return (
     <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 max-w-2xl">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Servicios
+            {t("Services", "Servicios")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            Una agencia. Toda tu infraestructura.
+            {t("One agency. Your entire infrastructure.", "Una agencia. Toda tu infraestructura.")}
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +88,7 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
                     <h3 className="text-lg font-medium text-neutral-950">{c.title}</h3>
                     {!isActive && (
                       <span className="rounded-full border border-neutral-200 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-neutral-500">
-                        Cotización
+                        {t("Get a quote", "Cotización")}
                       </span>
                     )}
                   </div>

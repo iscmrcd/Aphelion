@@ -1,4 +1,6 @@
-// Minimalist trusted-platforms strip. Inline monochrome SVGs so todo permanece B&W.
+import { useT } from "@/lib/i18n";
+
+// Minimalist trusted-platforms strip. Inline monochrome SVGs so it stays B&W.
 const Logo = ({ children, label }: { children: React.ReactNode; label: string }) => (
   <div
     aria-label={label}
@@ -9,11 +11,12 @@ const Logo = ({ children, label }: { children: React.ReactNode; label: string })
 );
 
 export function TrustedLogos() {
+  const t = useT();
   return (
     <section className="border-t border-neutral-200 bg-neutral-50 px-5 py-12">
       <div className="mx-auto max-w-6xl">
         <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
-          Integramos las plataformas que ya usas
+          {t("We integrate the platforms you already use", "Integramos las plataformas que ya usas")}
         </p>
         <div className="grid grid-cols-2 items-center gap-y-6 sm:grid-cols-3 md:grid-cols-6">
           <Logo label="Meta">

@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { WEB_LEVELS, type WebLevel } from "@/lib/websites-data";
+import { useT, useLang } from "@/lib/i18n";
 import grad1 from "@/assets/banners/gradient-1.jpg.asset.json";
 import grad2 from "@/assets/banners/gradient-2.jpg.asset.json";
 import grad3 from "@/assets/banners/gradient-3.png.asset.json";
@@ -13,31 +14,34 @@ const GRADIENTS = [grad1.url, grad2.url, grad3.url, grad4.url, grad5.url, grad6.
 
 const FEATURED_SLUG = "captacion";
 
-const fmt = (n: number | null) =>
-  n === null ? "Cotización" : "$" + n.toLocaleString("es-MX");
-
 export function WebsitesOverview() {
+  const t = useT();
+  const { lang } = useLang();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "Cotización") : "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
   return (
     <section className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Websites · 6 niveles
+              {t("Websites · 6 tiers", "Websites · 6 niveles")}
             </p>
             <h2 className="text-3xl font-medium tracking-[-0.025em] text-neutral-950 sm:text-5xl">
-              De presencia profesional a SaaS.
+              {t("From professional presence to SaaS.", "De presencia profesional a SaaS.")}
             </h2>
             <p className="mt-5 text-base text-neutral-500 sm:text-lg">
-              Cada nivel es un escalón: empiezas donde tu marca está hoy y subes cuando el
-              negocio lo pide. Sin reconstruir desde cero.
+              {t(
+                "Each tier is a step: start where your brand is today and level up as the business demands it. No rebuilding from scratch.",
+                "Cada nivel es un escalón: empiezas donde tu marca está hoy y subes cuando el negocio lo pide. Sin reconstruir desde cero.",
+              )}
             </p>
           </div>
           <Link
             to="/servicios/websites"
             className="inline-flex w-fit items-center gap-2 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
-            Ver paquetes y comparar
+            {t("See packages & compare", "Ver paquetes y comparar")}
             <ArrowUpRight className="h-4 w-4" />
           </Link>
         </div>
@@ -49,6 +53,8 @@ export function WebsitesOverview() {
               level={l}
               gradient={GRADIENTS[idx % GRADIENTS.length]}
               featured={l.slug === FEATURED_SLUG}
+              fmt={fmt}
+              t={t}
             />
           ))}
         </div>
@@ -61,10 +67,14 @@ function WebCard({
   level: l,
   gradient,
   featured,
+  fmt,
+  t,
 }: {
   level: WebLevel;
   gradient: string;
   featured: boolean;
+  fmt: (n: number | null) => string;
+  t: ReturnType<typeof useT>;
 }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const [active, setActive] = useState(false);
@@ -107,7 +117,7 @@ function WebCard({
               : "text-xs font-medium uppercase tracking-[0.14em] text-neutral-500 transition group-hover:text-white group-data-[active=true]:text-white"
           }
         >
-          {featured ? "Popular" : `Nivel 0${l.id}`}
+          {featured ? t("Popular", "Popular") : t(`Tier 0${l.id}`, `Nivel 0${l.id}`)}
         </span>
         <ArrowUpRight className="h-4 w-4 text-neutral-400 transition group-hover:text-white group-data-[active=true]:text-white" />
       </div>
@@ -123,13 +133,17 @@ function WebCard({
           {fmt(l.setup)}
         </span>
         {l.setup !== null && (
-          <span className="text-xs text-neutral-500 transition group-hover:text-white/70 group-data-[active=true]:text-white/70">setup</span>
+          <span className="text-xs text-neutral-500 transition group-hover:text-white/70 group-data-[active=true]:text-white/70">
+            {t("setup", "setup")}
+          </span>
         )}
       </div>
       {l.men !== null && (
         <p className="relative mt-1 text-xs text-neutral-600 transition group-hover:text-white/80 group-data-[active=true]:text-white/80">
           + {fmt(l.men)}{" "}
-          <span className="text-neutral-500 transition group-hover:text-white/60 group-data-[active=true]:text-white/60">/ mes mantenimiento</span>
+          <span className="text-neutral-500 transition group-hover:text-white/60 group-data-[active=true]:text-white/60">
+            {t("/mo maintenance", "/ mes mantenimiento")}
+          </span>
         </p>
       )}
 

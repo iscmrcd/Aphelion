@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { MARKETING_PACKAGES, type MarketingPackage } from "@/lib/marketing-data";
+import { useT, useLang } from "@/lib/i18n";
 import grad1 from "@/assets/banners/gradient-1.jpg.asset.json";
 import grad2 from "@/assets/banners/gradient-2.jpg.asset.json";
 import grad5 from "@/assets/banners/gradient-5.avif.asset.json";
@@ -9,54 +10,73 @@ import grad6 from "@/assets/banners/gradient-6.avif.asset.json";
 
 const GRADIENTS = [grad1.url, grad2.url, grad5.url, grad6.url];
 
-const fmt = (n: number) => "$" + n.toLocaleString("es-MX");
-
 export function MarketingOverview() {
+  const t = useT();
+  const { lang } = useLang();
+  const fmt = (n: number) => "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
   return (
     <section className="border-t border-neutral-200 bg-white px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Marketing & Contenido · 4 niveles
+              {t("Marketing & Content · 4 tiers", "Marketing & Contenido · 4 niveles")}
             </p>
             <h2 className="text-3xl font-medium tracking-[-0.025em] text-neutral-950 sm:text-5xl">
-              De presencia activa a producción cinematográfica.
+              {t(
+                "From active presence to cinematic production.",
+                "De presencia activa a producción cinematográfica.",
+              )}
             </h2>
             <p className="mt-5 text-base text-neutral-500 sm:text-lg">
-              Contenido real, campañas administradas y producción que justifica el ticket.
-              Exclusividad por rubro: una sola marca por categoría y zona.
+              {t(
+                "Real content, managed campaigns, and production that justifies the price tag. Category exclusivity: one brand per niche and zone.",
+                "Contenido real, campañas administradas y producción que justifica el ticket. Exclusividad por rubro: una sola marca por categoría y zona.",
+              )}
             </p>
           </div>
           <Link
             to="/servicios/marketing"
             className="inline-flex w-fit items-center gap-2 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
-            Ver paquetes completos
+            {t("See full packages", "Ver paquetes completos")}
             <ArrowUpRight className="h-4 w-4" />
           </Link>
         </div>
 
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {MARKETING_PACKAGES.map((p, idx) => (
-            <OverviewCard key={p.id} pkg={p} gradient={GRADIENTS[idx % GRADIENTS.length]} />
+            <OverviewCard key={p.id} pkg={p} gradient={GRADIENTS[idx % GRADIENTS.length]} fmt={fmt} t={t} />
           ))}
         </div>
 
         <p className="mt-8 text-center text-xs text-neutral-500">
-          Pauta publicitaria (Meta · Google · TikTok) corre directo del cliente a la plataforma — nosotros la administramos.
+          {t(
+            "Ad spend (Meta · Google · TikTok) runs directly from the client to the platform — we manage it.",
+            "Pauta publicitaria (Meta · Google · TikTok) corre directo del cliente a la plataforma — nosotros la administramos.",
+          )}
         </p>
       </div>
     </section>
   );
 }
 
-function OverviewCard({ pkg: p, gradient }: { pkg: MarketingPackage; gradient: string }) {
+function OverviewCard({
+  pkg: p,
+  gradient,
+  fmt,
+  t,
+}: {
+  pkg: MarketingPackage;
+  gradient: string;
+  fmt: (n: number) => string;
+  t: ReturnType<typeof useT>;
+}) {
   const ref = useRef<HTMLAnchorElement>(null);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    // Solo activar scroll-trigger en dispositivos sin hover (touch)
+    // Only activate scroll-trigger on devices without hover (touch)
     const noHover = window.matchMedia("(hover: none)").matches;
     if (!noHover || !ref.current) return;
 
@@ -66,7 +86,7 @@ function OverviewCard({ pkg: p, gradient }: { pkg: MarketingPackage; gradient: s
         entries.forEach((e) => setActive(e.isIntersecting));
       },
       {
-        // banda central del viewport (~30% alto)
+        // central band of the viewport (~30% height)
         rootMargin: "-40% 0px -40% 0px",
         threshold: 0,
       },
@@ -118,13 +138,13 @@ function OverviewCard({ pkg: p, gradient }: { pkg: MarketingPackage; gradient: s
           {fmt(p.weekly)}
         </span>
         <span className="text-xs text-neutral-500 transition group-hover:text-white/70 group-data-[active=true]:text-white/70">
-          /sem + IVA
+          {t("/wk + tax", "/sem + IVA")}
         </span>
       </div>
       <p className="relative mt-1 text-xs text-neutral-600 transition group-hover:text-white/80 group-data-[active=true]:text-white/80">
         ~{fmt(p.monthly)}{" "}
         <span className="text-neutral-500 transition group-hover:text-white/60 group-data-[active=true]:text-white/60">
-          /mes · contrato {p.contractMonths} m
+          {t(`/mo · ${p.contractMonths}mo contract`, `/mes · contrato ${p.contractMonths} m`)}
         </span>
       </p>
 

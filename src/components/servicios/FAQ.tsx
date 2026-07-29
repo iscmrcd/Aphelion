@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
 import { FAQ_WEB } from "@/lib/websites-data";
+import { useT } from "@/lib/i18n";
 
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
+  const t = useT();
   return (
     <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl">
         <div className="mb-12 text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            Preguntas frecuentes
+            {t("Frequently asked questions", "Preguntas frecuentes")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            Lo que la gente nos pregunta.
+            {t("What people ask us.", "Lo que la gente nos pregunta.")}
           </h2>
         </div>
 
