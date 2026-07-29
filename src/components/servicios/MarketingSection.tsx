@@ -179,7 +179,7 @@ function PackageCard({
                 {fmt(pkg.weekly)}
               </span>
               <span className={`text-xs ${dark ? "text-white/60" : "text-neutral-500"}`}>
-                {t("USD / week + tax", "MXN / semana + IVA")}
+                {t("MXN / week + VAT", "MXN / semana + IVA")}
               </span>
             </div>
             <p
@@ -188,7 +188,7 @@ function PackageCard({
               }`}
             >
               {t(
-                `~${fmt(pkg.monthly)} USD / month · Minimum contract: ${pkg.contractMonths} months`,
+                `~${fmt(pkg.monthly)} MXN / month · Minimum contract: ${pkg.contractMonths} months`,
                 `~${fmt(pkg.monthly)} MXN / mes · Contrato mínimo: ${pkg.contractMonths} meses`
               )}
             </p>

@@ -210,7 +210,7 @@ function LevelCard({
                   {fmt(billing === "setup" ? level.setup : level.men)}
                 </span>
                 <span className={`text-xs ${isPopular ? "text-white/60" : "text-neutral-500"}`}>
-                  {billing === "setup" ? t("USD, one-time", "MXN, una sola vez") : t("USD / month", "MXN / mes")}
+                  {billing === "setup" ? t("MXN, one-time", "MXN, una sola vez") : t("MXN / month", "MXN / mes")}
                 </span>
               </div>
               <p
