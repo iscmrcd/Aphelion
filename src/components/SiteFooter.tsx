@@ -27,7 +27,7 @@ export function SiteFooter() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li>
-              <Link to="/servicios" className="transition hover:text-white">
+              <Link to="/" className="transition hover:text-white">
                 {t("All services", "Todos los servicios")}
               </Link>
             </li>
