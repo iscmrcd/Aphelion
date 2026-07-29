@@ -142,3 +142,73 @@
     color: var(--color-foreground);
   }
 }
+
+/*
+ * Night shift theme.
+ *
+ * The marketing site is authored with the static neutral palette, so dark mode
+ * is applied by remapping those neutral utilities inside `.dark`. Keeps a
+ * single source of truth instead of dark: variants scattered across components.
+ */
+.dark {
+  color-scheme: dark;
+}
+
+.dark .bg-white,
+.dark .bg-neutral-50,
+.dark .bg-neutral-100 {
+  background-color: oklch(0.19 0.008 260);
+}
+
+.dark .bg-white\/85,
+.dark .bg-neutral-50\/80 {
+  background-color: oklch(0.19 0.008 260 / 0.85);
+}
+
+.dark .bg-neutral-200 {
+  background-color: oklch(0.28 0.01 260);
+}
+
+.dark .bg-neutral-950,
+.dark .bg-neutral-900 {
+  background-color: oklch(0.97 0.003 260);
+}
+
+.dark .text-white {
+  color: oklch(0.16 0.008 260);
+}
+
+.dark .text-neutral-950,
+.dark .text-neutral-900 {
+  color: oklch(0.97 0.003 260);
+}
+
+.dark .text-neutral-700,
+.dark .text-neutral-600 {
+  color: oklch(0.82 0.005 260);
+}
+
+.dark .text-neutral-500,
+.dark .text-neutral-400 {
+  color: oklch(0.68 0.005 260);
+}
+
+.dark .border-neutral-100,
+.dark .border-neutral-200,
+.dark .border-neutral-300 {
+  border-color: oklch(0.3 0.01 260);
+}
+
+.dark .hover\:bg-neutral-800:hover {
+  background-color: oklch(0.88 0.004 260);
+}
+
+.dark .hover\:text-neutral-950:hover {
+  color: oklch(1 0 0);
+}
+
+/* Sections that are intentionally dark in light mode stay dark. */
+.dark .theme-invert-lock {
+  background-color: oklch(0.14 0.008 260);
+  color: oklch(0.97 0.003 260);
+}
