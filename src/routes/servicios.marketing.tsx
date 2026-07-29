@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { Plus } from "lucide-react";
 import { MarketingSection } from "@/components/servicios/MarketingSection";
@@ -34,21 +33,23 @@ export const Route = createFileRoute("/servicios/marketing")({
         ogDescription:
           "Contenido real, campañas administradas y producción cinematográfica. Una sola marca por categoría y zona.",
       },
-      jsonLd: [{
-        "@type": "Service",
-        serviceType: "Digital marketing and content production",
-        provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
-        areaServed: ["MX", "US"],
-        name: "Marketing & Content",
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: (loaderData?.lang === "es" ? FAQ_MARKETING : FAQ_MARKETING_EN).map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      }],
+      jsonLd: [
+        {
+          "@type": "Service",
+          serviceType: "Digital marketing and content production",
+          provider: { "@type": "Organization", name: "Aphelion", url: "https://aphelion.mx" },
+          areaServed: ["MX", "US"],
+          name: "Marketing & Content",
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: (loaderData?.lang === "es" ? FAQ_MARKETING : FAQ_MARKETING_EN).map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        },
+      ],
     }),
   component: MarketingPage,
 });
@@ -57,21 +58,6 @@ function MarketingPage() {
   const t = useT();
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <div className="border-b border-neutral-200 px-5 py-5">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link
-            to="/servicios"
-            className="inline-flex items-center gap-2 text-xs font-medium text-neutral-500 transition hover:text-neutral-950"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            {t("Services", "Servicios")}
-          </Link>
-          <span className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            {t("Marketing & Content", "Marketing & Contenido")}
-          </span>
-        </div>
-      </div>
-
       <section className="relative overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:pt-28 sm:pb-32">
         <div
           aria-hidden
@@ -93,21 +79,18 @@ function MarketingPage() {
           <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-white">
             {t(
               "Four volumes. One brand per category.",
-              "Cuatro volúmenes. Una sola marca por rubro."
+              "Cuatro volúmenes. Una sola marca por rubro.",
             )}
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
             {t(
               "From an active presence to binational cinematic production. We work with a single company per category and competitive zone.",
-              "De presencia activa a producción cinematográfica binacional. Trabajamos con una sola empresa por categoría y zona competitiva."
+              "De presencia activa a producción cinematográfica binacional. Trabajamos con una sola empresa por categoría y zona competitiva.",
             )}
           </p>
           <div className="mx-auto mt-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs text-white/80">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />
-            {t(
-              "Category exclusivity · Limited spots",
-              "Exclusividad por rubro · Cupo limitado"
-            )}
+            {t("Category exclusivity · Limited spots", "Exclusividad por rubro · Cupo limitado")}
           </div>
         </div>
       </section>

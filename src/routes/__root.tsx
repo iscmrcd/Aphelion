@@ -12,7 +12,8 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { LanguageToggle } from "@/components/LanguageToggle";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { LangProvider } from "@/lib/i18n";
 import { validateLangSearch } from "@/lib/seo";
 
@@ -119,12 +120,16 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <LangProvider>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        <div className="flex min-h-screen flex-col bg-neutral-50">
+          <SiteHeader />
+          <div className="flex-1">
+            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+            <Outlet />
+          </div>
+          <SiteFooter />
+        </div>
         <WhatsAppFloat />
-        <LanguageToggle />
       </LangProvider>
     </QueryClientProvider>
   );
 }
-

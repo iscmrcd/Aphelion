@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowLeft, Check } from "lucide-react";
-import { AphelionLogo } from "@/components/Brand";
+import { Check } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
 
@@ -82,7 +81,7 @@ function ContactoPage() {
         `Presupuesto: ${budget || "—"}`,
         "",
         `${data.get("message")}`,
-      ]
+      ],
     ).join("\n");
     const url = `https://wa.me/?text=${encodeURIComponent(lines)}`;
     window.open(url, "_blank");
@@ -91,21 +90,6 @@ function ContactoPage() {
 
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <header className="border-b border-neutral-200 px-5 py-5">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link to="/" className="inline-flex items-center">
-            <AphelionLogo className="h-6 w-auto" />
-          </Link>
-          <Link
-            to="/servicios"
-            className="inline-flex items-center gap-2 text-xs font-medium text-neutral-600 transition hover:text-neutral-950"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            {t("Services", "Servicios")}
-          </Link>
-        </div>
-      </header>
-
       <section className="px-5 py-16 sm:py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.2fr]">
           <div>
@@ -118,12 +102,16 @@ function ContactoPage() {
             <p className="mt-5 max-w-md text-base leading-relaxed text-neutral-500">
               {t(
                 "We reply within 24 hours. If your project fits, we'll set up a free 30-minute call to understand scope, timelines and budget.",
-                "Respondemos en menos de 24 horas. Si tu proyecto encaja, agendamos una llamada de 30 minutos sin compromiso para entender alcance, tiempos y presupuesto."
+                "Respondemos en menos de 24 horas. Si tu proyecto encaja, agendamos una llamada de 30 minutos sin compromiso para entender alcance, tiempos y presupuesto.",
               )}
             </p>
 
             <div className="mt-10 space-y-4 border-t border-neutral-200 pt-8">
-              <Item label={t("Email", "Email")} value="hola@aphelion.mx" href="mailto:hola@aphelion.mx" />
+              <Item
+                label={t("Email", "Email")}
+                value="hola@aphelion.mx"
+                href="mailto:hola@aphelion.mx"
+              />
               <Item
                 label="WhatsApp"
                 value={t("Message us directly", "Escríbenos directo")}
@@ -131,7 +119,10 @@ function ContactoPage() {
               />
               <Item
                 label={t("Location", "Ubicación")}
-                value={t("Ensenada · Valle de Guadalupe · Mexico", "Ensenada · Valle de Guadalupe · México")}
+                value={t(
+                  "Ensenada · Valle de Guadalupe · Mexico",
+                  "Ensenada · Valle de Guadalupe · México",
+                )}
               />
             </div>
           </div>
@@ -148,7 +139,7 @@ function ContactoPage() {
                 <p className="mt-3 max-w-sm text-sm text-neutral-500">
                   {t(
                     "We opened WhatsApp with your message pre-filled. You can also write to us at hola@aphelion.mx.",
-                    "Abrimos WhatsApp con tu mensaje precargado. Si prefieres, también puedes escribirnos a hola@aphelion.mx."
+                    "Abrimos WhatsApp con tu mensaje precargado. Si prefieres, también puedes escribirnos a hola@aphelion.mx.",
                   )}
                 </p>
                 <button
@@ -166,7 +157,11 @@ function ContactoPage() {
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field name="email" label={t("Email *", "Email *")} type="email" required />
-                  <Field name="phone" label={t("Phone / WhatsApp", "Teléfono / WhatsApp")} type="tel" />
+                  <Field
+                    name="phone"
+                    label={t("Phone / WhatsApp", "Teléfono / WhatsApp")}
+                    type="tel"
+                  />
                 </div>
 
                 <div>
@@ -175,11 +170,7 @@ function ContactoPage() {
                   </label>
                   <div className="flex flex-wrap gap-2">
                     {SERVICES.map((s) => (
-                      <Chip
-                        key={s}
-                        active={service === s}
-                        onClick={() => setService(s)}
-                      >
+                      <Chip key={s} active={service === s} onClick={() => setService(s)}>
                         {s}
                       </Chip>
                     ))}
@@ -192,11 +183,7 @@ function ContactoPage() {
                   </label>
                   <div className="flex flex-wrap gap-2">
                     {BUDGETS.map((b) => (
-                      <Chip
-                        key={b}
-                        active={budget === b}
-                        onClick={() => setBudget(b)}
-                      >
+                      <Chip key={b} active={budget === b} onClick={() => setBudget(b)}>
                         {b}
                       </Chip>
                     ))}
@@ -219,7 +206,7 @@ function ContactoPage() {
                     className="w-full rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950 focus:bg-white"
                     placeholder={t(
                       "What's your business, what do you need to solve, timelines…",
-                      "Qué es tu negocio, qué necesitas resolver, tiempos…"
+                      "Qué es tu negocio, qué necesitas resolver, tiempos…",
                     )}
                   />
                 </div>
@@ -233,7 +220,7 @@ function ContactoPage() {
                 <p className="text-xs text-neutral-400">
                   {t(
                     "By submitting you agree to be contacted about your request. We don't share your information.",
-                    "Al enviar aceptas que te contactemos sobre tu solicitud. No compartimos tu información."
+                    "Al enviar aceptas que te contactemos sobre tu solicitud. No compartimos tu información.",
                   )}
                 </p>
               </form>
@@ -300,15 +287,7 @@ function Chip({
   );
 }
 
-function Item({
-  label,
-  value,
-  href,
-}: {
-  label: string;
-  value: string;
-  href?: string;
-}) {
+function Item({ label, value, href }: { label: string; value: string; href?: string }) {
   const content = (
     <div className="flex items-baseline justify-between gap-4">
       <span className="text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">

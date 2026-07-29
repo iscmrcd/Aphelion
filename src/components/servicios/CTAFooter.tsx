@@ -1,11 +1,13 @@
 import { Link } from "@tanstack/react-router";
-import { AphelionLogo } from "@/components/Brand";
 import { useT } from "@/lib/i18n";
 
 export function CTAFooter() {
   const t = useT();
   return (
-    <section id="contacto" className="border-t border-neutral-200 bg-neutral-950 px-5 py-24 text-white sm:py-32">
+    <section
+      id="contacto"
+      className="border-t border-neutral-200 bg-neutral-950 px-5 py-24 text-white sm:py-32"
+    >
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-4xl font-medium tracking-[-0.03em] sm:text-5xl">
           {t(
@@ -33,18 +35,6 @@ export function CTAFooter() {
             WhatsApp
           </a>
         </div>
-      </div>
-      <div className="mx-auto mt-20 flex max-w-6xl flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40">
-        <Link to="/" className="inline-flex items-center gap-3 text-white/70">
-          <AphelionLogo className="h-5 w-auto brightness-0 invert" />
-        </Link>
-        <span>
-          © {new Date().getFullYear()} Aphelion.{" "}
-          {t(
-            "Ensenada · Valle de Guadalupe · Mexico",
-            "Ensenada · Valle de Guadalupe · México",
-          )}
-        </span>
       </div>
     </section>
   );
