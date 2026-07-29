@@ -91,21 +91,6 @@ function ContactoPage() {
 
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <header className="border-b border-neutral-200 px-5 py-5">
-        <div className="mx-auto flex max-w-6xl items-center justify-between">
-          <Link to="/" className="inline-flex items-center">
-            <AphelionLogo className="h-6 w-auto" />
-          </Link>
-          <Link
-            to="/servicios"
-            className="inline-flex items-center gap-2 text-xs font-medium text-neutral-600 transition hover:text-neutral-950"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            {t("Services", "Servicios")}
-          </Link>
-        </div>
-      </header>
-
       <section className="px-5 py-16 sm:py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.2fr]">
           <div>

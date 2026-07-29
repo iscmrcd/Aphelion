@@ -38,22 +38,6 @@ function PrivacidadPage() {
   const t = useT();
   return (
     <div className="min-h-screen bg-white text-neutral-900">
-      {/* Header */}
-      <header className="border-b border-neutral-200">
-        <div className="mx-auto max-w-4xl px-6 py-5 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <AphelionLogo className="h-6 w-auto" />
-          </Link>
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            {t("Home", "Inicio")}
-          </Link>
-        </div>
-      </header>
-
       <main className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
         <p className="text-sm uppercase tracking-widest text-neutral-500 mb-4">
           {t("Legal notice", "Aviso legal")}

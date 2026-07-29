@@ -34,18 +34,6 @@ export function CTAFooter() {
           </a>
         </div>
       </div>
-      <div className="mx-auto mt-20 flex max-w-6xl flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40">
-        <Link to="/" className="inline-flex items-center gap-3 text-white/70">
-          <AphelionLogo className="h-5 w-auto brightness-0 invert" />
-        </Link>
-        <span>
-          © {new Date().getFullYear()} Aphelion.{" "}
-          {t(
-            "Ensenada · Valle de Guadalupe · Mexico",
-            "Ensenada · Valle de Guadalupe · México",
-          )}
-        </span>
-      </div>
     </section>
   );
 }
