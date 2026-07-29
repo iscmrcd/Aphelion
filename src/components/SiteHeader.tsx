@@ -43,7 +43,7 @@ export function SiteHeader() {
   }, []);
 
   const nav = [
-    { to: "/servicios", label: t("Services", "Servicios") },
+    { to: "/", label: t("Services", "Servicios") },
     { to: "/servicios/websites", label: "Websites" },
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
     { to: "/contacto", label: t("Contact", "Contacto") },
