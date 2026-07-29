@@ -1,8 +1,28 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { AphelionLogo } from "@/components/Brand";
 import { useT, useLang } from "@/lib/i18n";
+import { useTheme } from "@/lib/theme";
+
+function ThemeToggle() {
+  const t = useT();
+  const { theme, toggle } = useTheme();
+  const dark = theme === "dark";
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      aria-label={dark ? t("Switch to day mode", "Cambiar a modo día") : t("Switch to night mode", "Cambiar a modo noche")}
+      aria-pressed={dark}
+      title={dark ? t("Day", "Día") : t("Night", "Noche")}
+      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-neutral-950 transition hover:bg-neutral-100"
+    >
+      {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+    </button>
+  );
+}
+
 
 function LangSwitch({ compact = false }: { compact?: boolean }) {
   const { lang, setLang } = useLang();
