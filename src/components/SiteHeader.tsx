@@ -96,7 +96,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <LangSwitch />
+
           <Link
             to="/contacto"
             className="hidden rounded-full bg-neutral-950 px-4 py-2 text-xs font-medium text-white transition hover:bg-neutral-800 sm:inline-flex"
