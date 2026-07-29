@@ -57,8 +57,3 @@ export function TrustedLogos() {
     </section>
   );
 }
-        </div>
-      </div>
-    </section>
-  );
-}
