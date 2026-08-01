@@ -78,8 +78,9 @@ function PackageCard({
       <button
         onClick={onToggle}
         className={`relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left sm:px-7 sm:py-6 ${
-          dark ? "text-white" : "text-neutral-950"
+          dark ? "on-dark text-white" : "text-neutral-950"
         }`}
+
         style={
           dark
             ? {
