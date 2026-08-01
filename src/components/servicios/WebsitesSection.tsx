@@ -73,7 +73,8 @@ function LevelCard({
     <div
       className={`overflow-hidden rounded-2xl border transition ${
         isPopular
-          ? "border-neutral-950 bg-neutral-950 text-white"
+          ? "on-dark border-neutral-950 bg-neutral-950 text-white"
+
           : "border-neutral-200 bg-white text-neutral-950"
       } ${open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""}`}
     >

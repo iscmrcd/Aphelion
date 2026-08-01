@@ -7,7 +7,7 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-950 px-5 py-14 text-white">
+    <footer className="on-dark border-t border-white/10 bg-neutral-950 px-5 py-14 text-white">
       <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link to="/" aria-label="Aphelion" className="inline-flex">
