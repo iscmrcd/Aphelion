@@ -299,6 +299,19 @@
   filter: invert(1);
 }
 
+/* Textured tier headers (Brand Partner / Producción Premium) go solid black at
+   night — the prismatic gradients read as noise against the dark UI. */
+.dark .tier-textured {
+  background-image: none !important;
+  background-color: oklch(0.13 0.004 260) !important;
+}
+
+.dark .tier-textured .tier-textured-veil {
+  display: none;
+}
+
+
+
 
 @keyframes marquee {
   from { transform: translateX(0); }
