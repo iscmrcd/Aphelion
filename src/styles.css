@@ -147,81 +147,151 @@
  * Night shift theme.
  *
  * The marketing site is authored with the static neutral palette, so dark mode
- * is applied by remapping those neutral utilities inside `.dark`. Keeps a
- * single source of truth instead of dark: variants scattered across components.
+ * remaps those neutral utilities inside `.dark`.
+ *
+ * IMPORTANT: surfaces that are already dark by design (footer, CTA band,
+ * hero banners, gradient/photo card headers) must NOT be remapped — inverting
+ * them turns their white copy black over a dark image. Those get `.on-dark`,
+ * and every remap below skips `.on-dark` and its whole subtree.
  */
 .dark {
   color-scheme: dark;
 }
 
-.dark .bg-white,
-.dark .bg-neutral-50,
-.dark .bg-neutral-100 {
-  background-color: oklch(0.19 0.008 260);
+/* --- surfaces -------------------------------------------------------- */
+
+.dark .bg-white:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.205 0.008 260);
 }
 
-.dark .bg-white\/85,
-.dark .bg-neutral-50\/80 {
-  background-color: oklch(0.19 0.008 260 / 0.85);
+.dark .bg-neutral-50:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.165 0.008 260);
 }
 
-.dark .bg-neutral-200 {
-  background-color: oklch(0.28 0.01 260);
+.dark .bg-neutral-100:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.24 0.01 260);
 }
 
-.dark .bg-neutral-950,
-.dark .bg-neutral-900 {
+.dark .bg-white\/85:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.175 0.008 260 / 0.85);
+}
+
+.dark .bg-neutral-50\/80:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.165 0.008 260 / 0.85);
+}
+
+.dark .bg-neutral-200:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.3 0.01 260);
+}
+
+/* Black chips/buttons/cards flip to light so they stay the emphasis layer. */
+.dark .bg-neutral-950:not(.on-dark, .on-dark *),
+.dark .bg-neutral-900:not(.on-dark, .on-dark *) {
   background-color: oklch(0.97 0.003 260);
 }
 
-.dark .text-white {
+/* --- text ------------------------------------------------------------ */
+
+.dark .text-white:not(.on-dark, .on-dark *) {
   color: oklch(0.16 0.008 260);
 }
 
-.dark .text-neutral-950,
-.dark .text-neutral-900 {
+.dark .text-white\/90:not(.on-dark, .on-dark *) {
+  color: oklch(0.16 0.008 260 / 0.9);
+}
+.dark .text-white\/80:not(.on-dark, .on-dark *) {
+  color: oklch(0.16 0.008 260 / 0.82);
+}
+.dark .text-white\/70:not(.on-dark, .on-dark *) {
+  color: oklch(0.16 0.008 260 / 0.75);
+}
+.dark .text-white\/60:not(.on-dark, .on-dark *) {
+  color: oklch(0.16 0.008 260 / 0.68);
+}
+.dark .text-white\/50:not(.on-dark, .on-dark *) {
+  color: oklch(0.16 0.008 260 / 0.6);
+}
+.dark .text-white\/40:not(.on-dark, .on-dark *) {
+  color: oklch(0.16 0.008 260 / 0.55);
+}
+
+.dark .text-neutral-950:not(.on-dark, .on-dark *),
+.dark .text-neutral-900:not(.on-dark, .on-dark *) {
   color: oklch(0.97 0.003 260);
 }
 
-.dark .text-neutral-700,
-.dark .text-neutral-600 {
-  color: oklch(0.82 0.005 260);
+.dark .text-neutral-800:not(.on-dark, .on-dark *),
+.dark .text-neutral-700:not(.on-dark, .on-dark *) {
+  color: oklch(0.88 0.004 260);
 }
 
-.dark .text-neutral-500,
-.dark .text-neutral-400 {
-  color: oklch(0.68 0.005 260);
+.dark .text-neutral-600:not(.on-dark, .on-dark *) {
+  color: oklch(0.8 0.004 260);
 }
 
-.dark .border-neutral-100,
-.dark .border-neutral-200,
-.dark .border-neutral-300 {
-  border-color: oklch(0.3 0.01 260);
+.dark .text-neutral-500:not(.on-dark, .on-dark *),
+.dark .text-neutral-400:not(.on-dark, .on-dark *) {
+  color: oklch(0.72 0.005 260);
 }
 
-.dark .hover\:bg-neutral-800:hover {
+.dark .text-neutral-300:not(.on-dark, .on-dark *) {
+  color: oklch(0.6 0.005 260);
+}
+
+/* --- borders --------------------------------------------------------- */
+
+.dark .border-neutral-100:not(.on-dark, .on-dark *),
+.dark .border-neutral-200:not(.on-dark, .on-dark *),
+.dark .border-neutral-300:not(.on-dark, .on-dark *) {
+  border-color: oklch(0.32 0.01 260);
+}
+
+.dark .border-neutral-950:not(.on-dark, .on-dark *),
+.dark .border-neutral-900:not(.on-dark, .on-dark *) {
+  border-color: oklch(0.75 0.006 260);
+}
+
+.dark .border-white\/30:not(.on-dark, .on-dark *) {
+  border-color: oklch(0.16 0.008 260 / 0.35);
+}
+.dark .border-white\/20:not(.on-dark, .on-dark *) {
+  border-color: oklch(0.16 0.008 260 / 0.25);
+}
+.dark .border-white\/15:not(.on-dark, .on-dark *),
+.dark .border-white\/10:not(.on-dark, .on-dark *) {
+  border-color: oklch(0.16 0.008 260 / 0.18);
+}
+
+/* --- interactive states ---------------------------------------------- */
+
+.dark .hover\:bg-neutral-800:hover:not(.on-dark, .on-dark *) {
   background-color: oklch(0.88 0.004 260);
 }
 
-.dark .hover\:text-neutral-950:hover {
+.dark .hover\:text-neutral-950:hover:not(.on-dark, .on-dark *) {
   color: oklch(1 0 0);
 }
 
-/* Sections that are intentionally dark in light mode stay dark. */
-.dark .theme-invert-lock {
-  background-color: oklch(0.14 0.008 260);
-  color: oklch(0.97 0.003 260);
+.dark .hover\:border-neutral-950:hover:not(.on-dark, .on-dark *),
+.dark .data-\[active\=true\]\:border-neutral-950[data-active="true"]:not(.on-dark, .on-dark *) {
+  border-color: oklch(0.7 0.006 260);
 }
 
-/* Brand marks are dark artwork; invert them for night mode. */
-.dark img[alt="Aphelion"] {
+.dark .hover\:bg-neutral-100:hover:not(.on-dark, .on-dark *),
+.dark .hover\:bg-neutral-50:hover:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.28 0.01 260);
+}
+
+.dark .hover\:bg-neutral-200:hover:not(.on-dark, .on-dark *) {
+  background-color: oklch(0.88 0.004 260);
+}
+
+/* Brand marks are dark artwork; invert them for night mode — except on the
+   surfaces that stay dark, where the mark is already light. */
+.dark img[alt="Aphelion"]:not(.on-dark *) {
   filter: invert(1);
 }
 
-.dark .hover\:bg-neutral-100:hover,
-.dark .hover\:bg-neutral-50:hover {
-  background-color: oklch(0.26 0.01 260);
-}
 
 @keyframes marquee {
   from { transform: translateX(0); }
