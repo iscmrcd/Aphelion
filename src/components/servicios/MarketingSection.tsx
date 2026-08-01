@@ -94,7 +94,7 @@ function PackageCard({
         {dark && (
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/25 via-black/10 to-transparent"
+            className="tier-textured-veil pointer-events-none absolute inset-0 bg-gradient-to-r from-black/25 via-black/10 to-transparent"
           />
         )}
         <div className="relative min-w-0">
