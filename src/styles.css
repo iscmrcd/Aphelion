@@ -286,7 +286,14 @@
   background-color: oklch(0.88 0.004 260);
 }
 
+/* Dark cards keep their tone at night; give them a readable edge. */
+.dark .on-dark.border-neutral-950,
+.dark .on-dark .border-neutral-950 {
+  border-color: oklch(1 0 0 / 0.16);
+}
+
 /* Brand marks are dark artwork; invert them for night mode — except on the
+
    surfaces that stay dark, where the mark is already light. */
 .dark img[alt="Aphelion"]:not(.on-dark *) {
   filter: invert(1);
