@@ -58,7 +58,7 @@ function BrandItem({ brand }: { brand: Brand }) {
 
   return (
     <div className="group flex w-28 shrink-0 flex-col items-center justify-start gap-2 sm:w-32">
-      <div className="flex h-9 items-center justify-center text-neutral-400 transition duration-300 group-hover:text-neutral-900">
+      <div className="flex h-11 items-center justify-center text-neutral-400 transition duration-300 group-hover:text-neutral-900">
         {brand.node ??
           (brand.src ? (
             <img
