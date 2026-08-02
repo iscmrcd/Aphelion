@@ -51,17 +51,40 @@ const BRANDS: Brand[] = [
 ];
 
 function BrandItem({ brand }: { brand: Brand }) {
+  const size = brand.size ?? "h-7";
+  const base = `${size} w-auto max-w-[104px] object-contain transition-opacity duration-300`;
+
   return (
     <div className="group flex w-28 shrink-0 flex-col items-center justify-start gap-2 sm:w-32">
       <div className="flex h-9 items-center justify-center text-neutral-400 transition duration-300 group-hover:text-neutral-900">
-        {brand.node ?? (
-          <img
-            src={brand.src ?? `https://cdn.simpleicons.org/${brand.slug}`}
-            alt={`${brand.label} logo`}
-            loading="lazy"
-            className={`${brand.size ?? "h-7"} w-auto max-w-[104px] object-contain opacity-80 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0`}
-          />
-        )}
+        {brand.node ??
+          (brand.src ? (
+            <img
+              src={brand.src}
+              alt={`${brand.label} logo`}
+              loading="lazy"
+              className={`${base} opacity-80 grayscale group-hover:opacity-100 group-hover:grayscale-0`}
+            />
+          ) : (
+            // Two stacked marks: a neutral one by default, the true brand-colour
+            // one revealed on hover. A CSS grayscale filter can't be undone on
+            // single-colour SVGs served pre-tinted, so we cross-fade instead.
+            <span className="relative inline-flex items-center justify-center">
+              <img
+                src={`https://cdn.simpleicons.org/${brand.slug}/a3a3a3`}
+                alt={`${brand.label} logo`}
+                loading="lazy"
+                className={`${base} opacity-90 group-hover:opacity-0`}
+              />
+              <img
+                src={`https://cdn.simpleicons.org/${brand.slug}`}
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+                className={`${base} absolute inset-0 m-auto opacity-0 group-hover:opacity-100`}
+              />
+            </span>
+          ))}
       </div>
       <span className="text-center text-[11px] font-medium leading-tight tracking-tight text-neutral-400 transition group-hover:text-neutral-950">
         {brand.label}
