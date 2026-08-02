@@ -46,13 +46,8 @@ const BRANDS: Brand[] = [
   },
   { slug: "supabase", label: "Supabase" },
   { slug: "calendly", label: "Calendly" },
-  { slug: "odoo", label: "Odoo", size: "h-8" },
-  {
-    slug: "zoho",
-    label: "Zoho",
-    src: "https://commons.wikimedia.org/wiki/Special:FilePath/ZOHO_logo_2023.svg",
-    size: "h-6",
-  },
+  { slug: "odoo", label: "Odoo" },
+  { slug: "zoho", label: "Zoho" },
 ];
 
 function BrandItem({ brand }: { brand: Brand }) {
