@@ -10,21 +10,23 @@ type Brand = {
 };
 
 // Google Business Profile mark (storefront pin) drawn inline: the official
-// asset is not on any icon CDN, and the whole strip renders monochrome anyway.
+// asset is not on any icon CDN. Grey by default, Google blue on hover to match
+// the cross-fade the CDN marks get.
 const GoogleBusinessMark = (
-  <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" aria-hidden="true">
-    <path
-      d="M12 22s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"
-      fill="currentColor"
-    />
-    <path
-      d="M8 8.6h8M8.6 10.6h6.8v3.6H8.6z"
-      stroke="#fff"
-      strokeWidth="1.3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+  <span className="text-neutral-400 transition-colors duration-300 group-hover:text-[#4285F4]">
+    <svg viewBox="0 0 24 24" className="h-8 w-8" fill="none" aria-hidden="true">
+      <path
+        d="M12 23.2c0-.1 8-6.9 8-12.2a8 8 0 1 0-16 0c0 5.3 8 12.1 8 12.2Z"
+        fill="currentColor"
+      />
+      <g fill="#fff">
+        {/* storefront awning + shutter */}
+        <path d="M6.6 6.7h10.8a.8.8 0 0 1 .78.62l.42 1.86a.6.6 0 0 1-.59.72H5.99a.6.6 0 0 1-.59-.72l.42-1.86a.8.8 0 0 1 .78-.62Z" />
+        <path d="M7 11.1h10v4.6a.8.8 0 0 1-.8.8H7.8a.8.8 0 0 1-.8-.8v-4.6Z" opacity=".55" />
+        <path d="M8.6 12.4h6.8v1.1H8.6zM8.6 14.2h6.8v1.1H8.6z" />
+      </g>
+    </svg>
+  </span>
 );
 
 const BRANDS: Brand[] = [
@@ -46,8 +48,8 @@ const BRANDS: Brand[] = [
   },
   { slug: "supabase", label: "Supabase" },
   { slug: "calendly", label: "Calendly" },
-  { slug: "odoo", label: "Odoo" },
-  { slug: "zoho", label: "Zoho" },
+  { slug: "odoo", label: "Odoo", size: "h-10" },
+  { slug: "zoho", label: "Zoho", size: "h-10" },
 ];
 
 function BrandItem({ brand }: { brand: Brand }) {
