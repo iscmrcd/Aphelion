@@ -61,7 +61,7 @@ function BrandItem({ brand }: { brand: Brand }) {
       <div className="flex h-9 items-center justify-center text-neutral-400 transition duration-300 group-hover:text-neutral-900">
         {brand.node ?? (
           <img
-            src={brand.src ?? `https://cdn.simpleicons.org/${brand.slug}/9ca3af`}
+            src={brand.src ?? `https://cdn.simpleicons.org/${brand.slug}`}
             alt={`${brand.label} logo`}
             loading="lazy"
             className={`${brand.size ?? "h-7"} w-auto max-w-[104px] object-contain opacity-80 grayscale transition duration-300 group-hover:opacity-100 group-hover:grayscale-0`}
