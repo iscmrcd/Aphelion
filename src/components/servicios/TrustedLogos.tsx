@@ -54,10 +54,16 @@ const BRANDS: Brand[] = [
   {
     slug: "aws",
     label: "AWS",
-    src: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    size: "h-8",
   },
   { slug: "supabase", label: "Supabase" },
   { slug: "calendly", label: "Calendly" },
+  { slug: "wordpress", label: "WordPress" },
+  { slug: "vercel", label: "Vercel" },
+  { slug: "chatgpt", label: "ChatGPT", node: ChatGPTMark },
+  { slug: "claude", label: "Claude" },
+  { slug: "godaddy", label: "GoDaddy" },
   { slug: "odoo", label: "Odoo", size: "h-10" },
   { slug: "zoho", label: "Zoho", size: "h-10" },
 ];
