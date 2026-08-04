@@ -66,6 +66,10 @@ const BRANDS: Brand[] = [
   { slug: "godaddy", label: "GoDaddy" },
   { slug: "odoo", label: "Odoo", size: "h-10" },
   { slug: "zoho", label: "Zoho", size: "h-10" },
+  { slug: "cloudflare", label: "Cloudflare", size: "h-8" },
+  { slug: "clerk", label: "Clerk" },
+  { slug: "github", label: "GitHub" },
+  { slug: "resend", label: "Resend" },
 ];
 
 function BrandItem({ brand }: { brand: Brand }) {
