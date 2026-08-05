@@ -83,7 +83,7 @@ function ContactoPage() {
         `${data.get("message")}`,
       ],
     ).join("\n");
-    const url = `https://wa.me/?text=${encodeURIComponent(lines)}`;
+    const url = `https://wa.me/526461293352?text=${encodeURIComponent(lines)}`;
     window.open(url, "_blank");
     setSent(true);
   }
@@ -115,7 +115,7 @@ function ContactoPage() {
               <Item
                 label="WhatsApp"
                 value={t("Message us directly", "Escríbenos directo")}
-                href="https://wa.me/"
+                href="https://wa.me/526461293352"
               />
               <Item
                 label={t("Location", "Ubicación")}
