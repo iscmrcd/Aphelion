@@ -8,6 +8,13 @@ export type BlogSection = {
   bodyEs: string[];
 };
 
+export type BlogFaqItem = {
+  q: string;
+  qEn: string;
+  a: string;
+  aEn: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -24,6 +31,8 @@ export type BlogPost = {
   lede: string;
   ledeEs: string;
   sections: BlogSection[];
+  gradient: string;
+  faq: BlogFaqItem[];
   schema: {
     keywords: string[];
     keywordsEs: string[];
@@ -106,6 +115,39 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    gradient: "from-neutral-800 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuánto tiempo toma ver resultados de SEO?",
+        qEn: "How long does it take to see SEO results?",
+        a: "El SEO técnico y de estructura empieza a mostrar movimiento en 4 a 6 meses, pero los resultados que realmente importan — tráfico calificado y conversiones — se acumulan entre 9 y 12 meses. Cualquier agencia que prometa el primer lugar en tres semanas está vendiendo otra cosa, normalmente tráfico pagado disfrazado. La paciencia no es opcional en SEO, es parte del modelo.",
+        aEn: "Technical and structural SEO starts showing movement in 4 to 6 months, but the results that actually matter — qualified traffic and conversions — compound over 9 to 12 months. Any agency promising a first-page ranking in three weeks is selling something else, usually paid traffic dressed up as organic. Patience isn't optional in SEO, it's part of the model.",
+      },
+      {
+        q: "¿El SEO vale la pena para un negocio pequeño o solo para empresas grandes?",
+        qEn: "Is SEO worth it for a small business or only for large companies?",
+        a: "Vale la pena para negocios de cualquier tamaño, pero el retorno es más rápido y barato para negocios locales con competencia baja o media — un plomero en Ensenada puede posicionar en semanas lo que a una fintech nacional le toma un año. La clave es ajustar el alcance: no necesitas competir a nivel nacional si tu negocio solo atiende una ciudad. Un negocio pequeño con SEO bien enfocado suele ganarle a uno grande con presupuesto disperso.",
+        aEn: "It's worth it for businesses of any size, but the return is faster and cheaper for local businesses with low-to-medium competition — a plumber in Ensenada can rank in weeks for something a national fintech takes a year to achieve. The key is matching scope to reality: you don't need to compete nationally if your business only serves one city. A small business with tightly focused SEO often beats a large one with scattered budget.",
+      },
+      {
+        q: "¿Qué pasa si dejo de pagar SEO después de unos meses?",
+        qEn: "What happens if I stop paying for SEO after a few months?",
+        a: "A diferencia de los anuncios pagados, que se apagan el mismo día que dejas de pagar, el contenido y las mejoras técnicas de SEO no desaparecen de inmediato — el sitio conserva parte de su posicionamiento por un tiempo. Pero sin mantenimiento, los competidores que sí siguen invirtiendo eventualmente te rebasan, y el contenido se vuelve obsoleto. Piénsalo como ejercicio: dejar de entrenar no borra el músculo de inmediato, pero tampoco lo mantiene.",
+        aEn: "Unlike paid ads, which turn off the same day you stop paying, SEO content and technical improvements don't disappear immediately — the site keeps part of its ranking for a while. But without maintenance, competitors who keep investing eventually pass you, and the content goes stale. Think of it like exercise: stopping doesn't erase the muscle overnight, but it doesn't maintain it either.",
+      },
+      {
+        q: "¿Cómo sé si necesito SEO o mejor empiezo con Google Ads?",
+        qEn: "How do I know if I need SEO or should start with Google Ads instead?",
+        a: "Si necesitas resultados este mes, Google Ads. Si estás construyendo para los próximos dos o tres años y quieres dejar de depender por completo de presupuesto pagado, SEO. La mayoría de los negocios saludables terminan usando ambos: Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo por adquisición con el tiempo. Empezar solo con uno no es un error, siempre que sepas cuál resuelve qué problema.",
+        aEn: "If you need results this month, Google Ads. If you're building for the next two or three years and want to stop depending entirely on paid budget, SEO. Most healthy businesses end up using both: Ads to fill the gap while SEO compounds, and SEO to lower acquisition cost over time. Starting with just one isn't a mistake, as long as you know which one solves which problem.",
+      },
+      {
+        q: "¿Qué debo pedir antes de firmar un contrato de SEO?",
+        qEn: "What should I ask for before signing an SEO contract?",
+        a: "Pide acceso completo a tu propio Google Search Console y Analytics — si la agencia se resiste, es una señal de alerta. Pide casos reales con números de tráfico e ingresos, no solo capturas de rankings. Pide un cronograma honesto de 4 a 12 meses, y pide que te expliquen en qué se va cada peso del presupuesto: contenido, enlaces, técnico. Un proveedor serio no tiene problema en mostrar su trabajo.",
+        aEn: "Ask for full access to your own Google Search Console and Analytics — if the agency resists, that's a red flag. Ask for real case studies with traffic and revenue numbers, not just ranking screenshots. Ask for an honest 4-to-12-month timeline, and ask exactly where each peso of the budget goes: content, links, technical work. A serious provider has no problem showing their work.",
+      },
+    ],
     schema: {
       keywords: ["SEO cost Mexico", "SEO pricing", "SEO agency Mexico", "SEO Ensenada"],
       keywordsEs: ["costo SEO México", "precio SEO", "agencia SEO México", "SEO Ensenada"],
@@ -184,6 +226,39 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Pregunta cuál es el trabajo del sitio. Si es una tarjeta digital para referidos, con Presencial basta. Si la gente te investiga antes de llamar, Profesional. Si estás invirtiendo activamente en anuncios y necesitas que el sitio convierta ese tráfico, Captación o Automatizada. Si procesas transacciones o administras clientes desde el propio sitio, estás en territorio de Sistema Comercial o SaaS — y esa es una conversación de presupuesto completamente distinta.",
         ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Necesito una página web si ya tengo redes sociales activas?",
+        qEn: "Do I need a website if I already have active social media?",
+        a: "Sí, y no son lo mismo. Las redes sociales las controla la plataforma — pueden cambiar el algoritmo, suspender tu cuenta, o simplemente dejar de mostrarte a tus seguidores. Tu sitio web es el único activo digital que realmente te pertenece y controlas por completo. Además, para negocios de servicios o alto valor, un sitio profesional sigue siendo la referencia que la gente busca antes de confiar en ti.",
+        aEn: "Yes, and they're not the same thing. Social media is controlled by the platform — it can change its algorithm, suspend your account, or simply stop showing you to your followers. Your website is the only digital asset you actually own and fully control. And for service or high-ticket businesses, a professional site is still the reference people check before trusting you.",
+      },
+      {
+        q: "¿Cuánto tiempo toma construir una página web profesional?",
+        qEn: "How long does it take to build a professional website?",
+        a: "Un sitio de nivel Presencial o Profesional toma entre 3 y 6 semanas desde que se aprueba el contenido. Un sitio de Captación o Automatizado, con formularios, integraciones y lógica de conversión, toma de 6 a 10 semanas. Sistemas comerciales o SaaS a medida pueden tomar varios meses. El cuello de botella casi siempre es el contenido y las decisiones del cliente, no el desarrollo en sí.",
+        aEn: "A Presence or Professional-tier site takes 3 to 6 weeks once content is approved. A Lead-Gen or Automated site, with forms, integrations and conversion logic, takes 6 to 10 weeks. Custom commercial systems or SaaS can take several months. The bottleneck is almost always content and client decisions, not the development itself.",
+      },
+      {
+        q: "¿Puedo empezar con un sitio básico y actualizarlo después?",
+        qEn: "Can I start with a basic site and upgrade it later?",
+        a: "Sí, siempre y cuando esté construido sobre una base que pueda crecer. El problema no es empezar simple — es empezar con un constructor DIY con plantillas cerradas que después tienes que reconstruir desde cero para escalar. Si desde el inicio usas una arquitectura que permite agregar formularios, integraciones o un sistema de pagos, subir de nivel es una extensión, no una reconstrucción.",
+        aEn: "Yes, as long as it's built on a foundation that can grow. The problem isn't starting simple — it's starting on a DIY builder with closed templates that you later have to rebuild from scratch to scale. If you start with an architecture that allows adding forms, integrations or a payment system, upgrading is an extension, not a rebuild.",
+      },
+      {
+        q: "¿Qué pasa si ya tengo un sitio y solo quiero un rediseño?",
+        qEn: "What if I already have a site and just want a redesign?",
+        a: "Un rediseño real no es solo cambiar colores y fotos — es la oportunidad de corregir estructura, velocidad y conversión al mismo tiempo. Antes de rediseñar, vale la pena auditar qué páginas ya generan tráfico o leads, para no perder ese posicionamiento en el proceso. El costo de un rediseño suele ser similar al de un sitio Profesional nuevo, porque el trabajo de estrategia y copy es prácticamente el mismo.",
+        aEn: "A real redesign isn't just changing colors and photos — it's the chance to fix structure, speed and conversion at the same time. Before redesigning, it's worth auditing which pages already generate traffic or leads, so you don't lose that ranking in the process. A redesign's cost is usually similar to a new Professional-tier site, because the strategy and copywriting work is nearly the same.",
+      },
+      {
+        q: "¿Cómo evito pagar de más por funciones que no voy a usar?",
+        qEn: "How do I avoid overpaying for features I won't use?",
+        a: "Define primero cuál es el trabajo del sitio — ¿es una tarjeta de presentación, o necesita vender o capturar leads directamente? La mayoría del sobrecosto viene de comprar el nivel Comercial o SaaS cuando el negocio en realidad necesita un sitio Profesional. Pide que te expliquen qué nivel corresponde a tu objetivo actual, no al que podrías tener en tres años.",
+        aEn: "Start by defining what the site's actual job is — is it a business card, or does it need to sell or capture leads directly? Most overspending comes from buying a Commercial or SaaS tier when the business actually needs a Professional-tier site. Ask to be shown which tier matches your current goal, not the one you might have in three years.",
       },
     ],
     schema: {
@@ -274,6 +349,39 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "El error común es dividir un presupuesto ajustado 50/50 entre ambas plataformas desde el primer día. Un mejor orden: comprobar que la oferta funciona primero en la plataforma con señales de intención más claras, lograr que la landing page y el seguimiento conviertan, y luego sumar la segunda plataforma para escalar alcance una vez que conoces tus números. Correr ambas plataformas mal es peor que correr una sola bien.",
         ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Puedo usar Google Ads y Meta Ads al mismo tiempo con un presupuesto pequeño?",
+        qEn: "Can I use Google Ads and Meta Ads at the same time with a small budget?",
+        a: "Técnicamente sí, pero repartir un presupuesto ajustado entre dos plataformas casi siempre significa hacer las dos mal. Con presupuestos menores a $15,000 MXN mensuales, es mejor concentrar todo en la plataforma con señales de intención más claras para tu negocio, comprobar que convierte, y sumar la segunda plataforma después. Escalar mal en dos frentes cuesta más que escalar bien en uno.",
+        aEn: "Technically yes, but splitting a tight budget between two platforms almost always means doing both poorly. With budgets under $15,000 MXN per month, it's better to concentrate everything on the platform with clearer intent signals for your business, confirm it converts, and add the second platform later. Scaling poorly on two fronts costs more than scaling well on one.",
+      },
+      {
+        q: "¿Cuál plataforma da resultados más rápido?",
+        qEn: "Which platform gives results faster?",
+        a: "Google Ads suele mostrar resultados más rápido porque intercepta una búsqueda activa — la persona ya decidió que necesita algo, solo falta que te encuentre. Meta Ads necesita más tiempo para que el algoritmo aprenda a quién mostrarle tu anuncio y para que la audiencia desarrolle interés, generalmente de dos a cuatro semanas de optimización antes de estabilizarse.",
+        aEn: "Google Ads usually shows results faster because it intercepts an active search — the person already decided they need something, they just need to find you. Meta Ads needs more time for the algorithm to learn who to show your ad to and for the audience to develop interest, typically two to four weeks of optimization before it stabilizes.",
+      },
+      {
+        q: "¿Necesito un sitio web para anunciarme, o puedo usar solo la página de Facebook o Instagram?",
+        qEn: "Do I need a website to advertise, or can I just use my Facebook or Instagram page?",
+        a: "Puedes lanzar campañas de Meta dirigiendo tráfico a un formulario nativo de la plataforma sin sitio web, y funciona para volumen de leads. Pero para Google Ads casi siempre necesitas una landing page — no puedes anunciarte para una búsqueda específica y mandar a la gente a un perfil genérico de redes sociales. Un sitio propio también te da control total de la conversión y de los datos, algo que la plataforma no te va a dar.",
+        aEn: "You can run Meta campaigns sending traffic to a native platform form without a website, and it works for lead volume. But for Google Ads you almost always need a landing page — you can't advertise for a specific search and send people to a generic social media profile. Owning a site also gives you full control over conversion and data, which the platform won't give you.",
+      },
+      {
+        q: "¿Qué presupuesto mínimo necesito para empezar a anunciarme?",
+        qEn: "What's the minimum budget I need to start advertising?",
+        a: "Como piso realista para México en 2026, considera al menos $8,000–$12,000 MXN mensuales por plataforma para juntar suficientes datos y que el algoritmo pueda optimizar. Por debajo de eso, es difícil sacar conclusiones confiables en menos de un mes, porque el volumen de clics y conversiones es demasiado bajo para tomar decisiones con datos reales.",
+        aEn: "As a realistic floor for Mexico in 2026, plan for at least $8,000–$12,000 MXN per month per platform to gather enough data for the algorithm to optimize. Below that, it's hard to draw reliable conclusions in under a month, because click and conversion volume is too low to make decisions based on real data.",
+      },
+      {
+        q: "¿Cómo sé si mi negocio es más de Google Ads o de Meta Ads?",
+        qEn: "How do I know if my business fits Google Ads or Meta Ads better?",
+        a: "Pregúntate si la gente ya busca activamente lo que vendes por nombre o categoría — si sí, empieza en Google. Si tu producto es visual, nuevo en el mercado, o depende de generar deseo antes de que exista la búsqueda, empieza en Meta. Si no estás seguro, revisa el volumen de búsqueda de tu categoría en Google Keyword Planner: si hay volumen real, ahí está tu respuesta.",
+        aEn: "Ask yourself if people already actively search for what you sell by name or category — if so, start with Google. If your product is visual, new to the market, or depends on generating desire before the search exists, start with Meta. If you're not sure, check your category's search volume in Google Keyword Planner: if there's real volume, that's your answer.",
       },
     ],
     schema: {
@@ -421,6 +529,39 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Cómo sé si mi cuenta de Google Ads está desperdiciando dinero?",
+        qEn: "How do I know if my Google Ads account is wasting money?",
+        a: "Las señales más claras son: no sabes cuántas de tus conversiones vienen realmente de los anuncios, tus términos de búsqueda incluyen frases que no tienen que ver con tu negocio, y llevas meses sin revisar ni ajustar las campañas. Si al revisar el informe de términos de búsqueda encuentras clics por cosas que no vendes, ya estás perdiendo presupuesto ahí mismo.",
+        aEn: "The clearest signs are: you don't actually know how many of your conversions come from the ads, your search terms include phrases unrelated to your business, and the campaigns haven't been reviewed or adjusted in months. If checking the search terms report turns up clicks for things you don't sell, you're already losing budget right there.",
+      },
+      {
+        q: "¿Cada cuánto debo revisar mi cuenta de Google Ads?",
+        qEn: "How often should I review my Google Ads account?",
+        a: "Como mínimo, una revisión semanal de 20 a 30 minutos: términos de búsqueda, gasto por campaña y conversiones. Una revisión más profunda — pausar anuncios débiles, ajustar pujas, probar copy nuevo — cada dos a cuatro semanas. Las cuentas que se revisan mensualmente en vez de semanalmente casi siempre rinden peor, porque los problemas se acumulan antes de detectarse.",
+        aEn: "At minimum, a weekly 20-to-30-minute review: search terms, spend per campaign, and conversions. A deeper review — pausing weak ads, adjusting bids, testing new copy — every two to four weeks. Accounts reviewed monthly instead of weekly almost always underperform, because problems pile up before they're caught.",
+      },
+      {
+        q: "¿Puedo administrar Google Ads yo mismo o necesito contratar a alguien?",
+        qEn: "Can I manage Google Ads myself or do I need to hire someone?",
+        a: "Con presupuestos pequeños y una sola categoría de producto, es posible administrarlo tú mismo si dedicas tiempo real cada semana a revisarlo. El punto donde vale la pena contratar ayuda es cuando el presupuesto mensual supera lo que estás dispuesto a perder mientras aprendes, o cuando ya no tienes las horas para darle seguimiento constante — que es, en la práctica, la mayoría de los negocios.",
+        aEn: "With small budgets and a single product category, it's possible to manage it yourself if you dedicate real time to reviewing it every week. The point where hiring help pays off is when the monthly budget exceeds what you're willing to lose while learning, or when you no longer have the hours to give it consistent attention — which, in practice, is most businesses.",
+      },
+      {
+        q: "¿Qué es lo primero que debo revisar si sospecho que algo está mal en mi cuenta?",
+        qEn: "What's the first thing I should check if I suspect something is wrong with my account?",
+        a: "Empieza por el seguimiento de conversiones: confirma que esté configurado correctamente y contando las acciones correctas (llamadas, formularios, ventas). Si eso está roto, cualquier otra optimización parte de datos falsos. Después revisa el informe de términos de búsqueda de los últimos 30 días buscando gasto en frases irrelevantes.",
+        aEn: "Start with conversion tracking: confirm it's set up correctly and counting the right actions (calls, forms, sales). If that's broken, every other optimization is built on false data. Then check the search terms report from the last 30 days looking for spend on irrelevant phrases.",
+      },
+      {
+        q: "¿Vale la pena pedir una auditoría de mi cuenta actual?",
+        qEn: "Is it worth getting an audit of my current account?",
+        a: "Sí, especialmente si nunca se ha hecho una y llevas más de tres meses corriendo campañas. Una auditoría honesta revisa seguimiento de conversiones, estructura de campañas, calidad de landing pages y gasto desperdiciado, y suele pagarse sola con lo que encuentra en la primera revisión de términos de búsqueda.",
+        aEn: "Yes, especially if one has never been done and you've been running campaigns for more than three months. An honest audit reviews conversion tracking, campaign structure, landing page quality and wasted spend, and usually pays for itself with what it finds in the first search terms review alone.",
+      },
+    ],
     schema: {
       keywords: [
         "Google Ads mistakes",
@@ -509,6 +650,39 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "La mayoría de los compradores no cierra en la primera llamada — el ciclo de venta inmobiliario dura semanas o meses. Todo lead debe entrar a un CRM con una cadencia de seguimiento: una secuencia de nutrición con nuevos listados que coincidan con sus criterios, actualizaciones de mercado y un contacto humano cada una o dos semanas. Los leads que se caen de una hoja de cálculo después de la primera llamada perdida son leads que ya pagaste y tiraste a la basura.",
         ],
+      },
+    ],
+    gradient: "from-neutral-700 to-stone-900",
+    faq: [
+      {
+        q: "¿Cuánto presupuesto necesito para empezar a generar leads inmobiliarios?",
+        qEn: "How much budget do I need to start generating real estate leads?",
+        a: "Para un desarrollo o inventario mediano, un piso realista es de $15,000 a $25,000 MXN mensuales entre Meta y Google, sin contar el costo de la landing page y el CRM. Categorías de alto valor como preventas o desarrollos premium suelen necesitar más presupuesto porque el costo por lead calificado es más alto y el ciclo de decisión es más largo.",
+        aEn: "For a mid-size development or inventory, a realistic floor is $15,000 to $25,000 MXN per month across Meta and Google, not counting the landing page and CRM cost. High-ticket categories like pre-sales or premium developments usually need more budget because the cost per qualified lead is higher and the decision cycle is longer.",
+      },
+      {
+        q: "¿Los portales como Inmuebles24 son suficientes o necesito publicidad pagada aparte?",
+        qEn: "Are portals like Inmuebles24 enough, or do I need separate paid advertising?",
+        a: "Los portales generan volumen, pero la intención suele ser más baja y compites directamente al lado de otros desarrollos en el mismo listado. La publicidad pagada propia (Meta y Google) te da control sobre a quién le hablas y hacia dónde los mandas, sin la competencia visual inmediata del portal. Lo ideal es usar los portales como una fuente más, no como la única.",
+        aEn: "Portals generate volume, but intent tends to be lower and you compete directly next to other developments in the same listing. Your own paid advertising (Meta and Google) gives you control over who you target and where you send them, without the portal's immediate visual competition. The ideal setup uses portals as one source among several, not the only one.",
+      },
+      {
+        q: "¿Cuánto tiempo tarda en cerrar un lead inmobiliario en promedio?",
+        qEn: "How long does it typically take to close a real estate lead?",
+        a: "El ciclo de venta inmobiliario suele correr de varias semanas a varios meses, dependiendo del ticket y si es preventa o entrega inmediata. Por eso un solo seguimiento no es suficiente — el lead necesita una secuencia de nutrición constante durante todo ese periodo, no solo una llamada inicial y luego silencio.",
+        aEn: "The real estate sales cycle typically runs from several weeks to several months, depending on the price point and whether it's pre-sale or immediate delivery. That's why a single follow-up isn't enough — the lead needs a consistent nurture sequence through that entire period, not just an initial call followed by silence.",
+      },
+      {
+        q: "¿Qué necesito además de anuncios para que el sistema de leads funcione?",
+        qEn: "What do I need besides ads for the lead system to actually work?",
+        a: "Necesitas una landing page diseñada para capturar contacto antes de mostrar todo el listado, un sistema de respuesta automática (WhatsApp o SMS) que conteste en los primeros cinco minutos, y un CRM donde ningún lead se pierda entre llamadas. Sin estas tres piezas, el tráfico pagado se desperdicia sin importar qué tan bueno sea el anuncio.",
+        aEn: "You need a landing page designed to capture contact before showing the full listing, an automated response system (WhatsApp or SMS) that replies within the first five minutes, and a CRM where no lead gets lost between calls. Without these three pieces, paid traffic gets wasted no matter how good the ad is.",
+      },
+      {
+        q: "¿Meta Ads funciona para preventas donde todavía no hay nada construido?",
+        qEn: "Does Meta Ads work for pre-sales where nothing is built yet?",
+        a: "Sí, y de hecho suele funcionar mejor que Google Ads en esa etapa, porque nadie está buscando activamente algo que no existe todavía — hay que generar el deseo con renders, recorridos virtuales y la narrativa del proyecto. Google Ads se vuelve más útil cuando ya hay unidades entregadas o construcción avanzada que la gente puede buscar y verificar.",
+        aEn: "Yes, and it often works better than Google Ads at that stage, because nobody is actively searching for something that doesn't exist yet — you have to generate desire with renders, virtual walkthroughs and the project's narrative. Google Ads becomes more useful once units are delivered or construction is advanced enough that people can search for and verify it.",
       },
     ],
     schema: {

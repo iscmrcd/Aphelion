@@ -117,21 +117,18 @@ function BlogIndexPage() {
                 key={post.slug}
                 to="/blog/$slug"
                 params={{ slug: post.slug }}
-                className="group flex flex-col overflow-hidden rounded-2xl border-[0.5px] border-neutral-200 bg-white transition hover:border-neutral-950"
+                className="group flex flex-col overflow-hidden rounded-2xl border-[0.5px] border-neutral-200 bg-white p-3 transition hover:border-neutral-950"
               >
                 <div
                   aria-hidden
-                  className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100"
+                  className={`flex h-48 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-neutral-200 via-neutral-100 to-neutral-50" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-400">
-                      Aphelion
-                    </span>
-                  </div>
+                  <span className="text-sm font-medium uppercase tracking-[0.16em] text-white opacity-60">
+                    {postCategory(post, lang)}
+                  </span>
                 </div>
 
-                <div className="flex flex-1 flex-col p-6">
+                <div className="flex flex-1 flex-col px-3 pb-3 pt-6">
                   <div className="mb-3 flex items-center gap-2">
                     <span className="rounded-full border-[0.5px] border-neutral-300 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-neutral-500">
                       {postCategory(post, lang)}

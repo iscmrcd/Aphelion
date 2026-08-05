@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD } from "@/lib/seo";
@@ -71,6 +71,18 @@ export const Route = createFileRoute("/blog/$slug")({
             },
           ],
         },
+        ...(post.faq.length > 0
+          ? [
+              {
+                "@type": "FAQPage",
+                mainEntity: post.faq.map((f) => ({
+                  "@type": "Question",
+                  name: lang === "es" ? f.q : f.qEn,
+                  acceptedAnswer: { "@type": "Answer", text: lang === "es" ? f.a : f.aEn },
+                })),
+              },
+            ]
+          : []),
       ],
     });
   },
@@ -175,6 +187,8 @@ function BlogArticlePage() {
             ))}
           </div>
 
+          <ArticleFAQ post={post} lang={lang} />
+
           <InlineCTA />
         </div>
       </article>
@@ -189,20 +203,23 @@ function BlogArticlePage() {
 function ArticleHero({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
   const t = useT();
   return (
-    <section className="border-b border-neutral-200 bg-neutral-50 px-5 pt-24 pb-14 sm:pt-32 sm:pb-16">
-      <div className="mx-auto max-w-3xl">
+    <section
+      className={`on-dark relative overflow-hidden bg-gradient-to-br ${post.gradient} px-5 pt-24 pb-14 sm:pt-32 sm:pb-16`}
+    >
+      <div aria-hidden className="absolute inset-0 bg-black/50" />
+      <div className="relative mx-auto max-w-3xl">
         <Link
           to="/blog"
-          className="mb-6 inline-flex items-center gap-1.5 text-sm text-neutral-500 transition hover:text-neutral-950"
+          className="mb-6 inline-flex items-center gap-1.5 text-sm text-white/70 transition hover:text-white"
         >
           ← {t("Resources", "Recursos")}
         </Link>
         <div className="mb-5">
-          <span className="rounded-full border-[0.5px] border-neutral-300 bg-white px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-neutral-600">
+          <span className="rounded-full border-[0.5px] border-white/30 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-white backdrop-blur-sm">
             {postCategory(post, lang)}
           </span>
         </div>
-        <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-medium leading-[1.08] tracking-[-0.03em] text-neutral-950">
+        <h1 className="text-[clamp(2rem,5vw,3.25rem)] font-medium leading-[1.08] tracking-[-0.03em] text-white">
           {postTitle(post, lang)}
         </h1>
       </div>
@@ -255,6 +272,55 @@ function TableOfContents({ post, lang }: { post: BlogPost; lang: "en" | "es" }) 
   );
 }
 
+function ArticleFAQ({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
+  const t = useT();
+  const [open, setOpen] = useState<number | null>(0);
+
+  if (post.faq.length === 0) return null;
+
+  return (
+    <section className="mt-16 border-t border-neutral-200 pt-12">
+      <div className="mb-10 text-center">
+        <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+          {t("Frequently asked questions", "Preguntas frecuentes")}
+        </h2>
+      </div>
+      <div className="divide-y divide-neutral-200 border-y border-neutral-200">
+        {post.faq.map((f, i) => {
+          const isOpen = open === i;
+          const question = lang === "es" ? f.q : f.qEn;
+          const answer = lang === "es" ? f.a : f.aEn;
+          return (
+            <div key={i}>
+              <button
+                onClick={() => setOpen(isOpen ? null : i)}
+                className="flex w-full items-center justify-between gap-4 py-5 text-left"
+              >
+                <span className="text-base font-medium text-neutral-950">{question}</span>
+                <Plus
+                  className={`h-4 w-4 flex-shrink-0 text-neutral-500 transition-transform duration-200 ${
+                    isOpen ? "rotate-45" : ""
+                  }`}
+                  strokeWidth={2}
+                />
+              </button>
+              <div
+                className={`grid transition-all duration-300 ${
+                  isOpen ? "grid-rows-[1fr] pb-5" : "grid-rows-[0fr]"
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <p className="pr-8 text-sm leading-relaxed text-neutral-500">{answer}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 function InlineCTA() {
   const t = useT();
   return (
@@ -300,11 +366,13 @@ function RelatedArticles({ posts, lang }: { posts: BlogPost[]; lang: "en" | "es"
             >
               <div
                 aria-hidden
-                className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-100"
+                className={`m-3 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-neutral-200 via-neutral-100 to-neutral-50" />
+                <span className="text-xs font-medium uppercase tracking-[0.16em] text-white opacity-60">
+                  {postCategory(post, lang)}
+                </span>
               </div>
-              <div className="flex flex-1 flex-col p-6">
+              <div className="flex flex-1 flex-col px-6 pb-6">
                 <span className="mb-3 w-fit rounded-full border-[0.5px] border-neutral-300 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-neutral-500">
                   {postCategory(post, lang)}
                 </span>
