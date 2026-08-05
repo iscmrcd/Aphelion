@@ -13,7 +13,11 @@ function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      aria-label={dark ? t("Switch to day mode", "Cambiar a modo día") : t("Switch to night mode", "Cambiar a modo noche")}
+      aria-label={
+        dark
+          ? t("Switch to day mode", "Cambiar a modo día")
+          : t("Switch to night mode", "Cambiar a modo noche")
+      }
       aria-pressed={dark}
       title={dark ? t("Day", "Día") : t("Night", "Noche")}
       className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 text-neutral-950 transition hover:bg-neutral-100"
@@ -22,7 +26,6 @@ function ThemeToggle() {
     </button>
   );
 }
-
 
 function LangSwitch({ compact = false }: { compact?: boolean }) {
   const { lang, setLang } = useLang();
@@ -66,6 +69,7 @@ export function SiteHeader() {
     { to: "/", label: t("Services", "Servicios") },
     { to: "/servicios/websites", label: "Websites" },
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
+    { to: "/blog", label: t("Resources", "Recursos") },
     { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;
 
