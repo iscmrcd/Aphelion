@@ -29,7 +29,9 @@ export function CTAFooter() {
             {t("Book a call", "Agendar llamada")}
           </Link>
           <a
-            href="https://wa.me/"
+            href="https://wa.me/526461293352?text=Hola%20Aphelion%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"
           >
             WhatsApp
