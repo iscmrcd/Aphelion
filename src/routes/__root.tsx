@@ -78,6 +78,8 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const META_PIXEL_ID = "2813619889012734";
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   validateSearch: validateLangSearch,
   head: () => ({
@@ -96,6 +98,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "apple-touch-icon", href: "/favicon.svg" },
     ],
+    // Meta Pixel — production only, so dev/local and Lovable preview traffic
+    // never lands in the Pixel's data.
+    scripts: import.meta.env.PROD
+      ? [
+          {
+            children: `
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '${META_PIXEL_ID}');
+fbq('track', 'PageView');
+            `.trim(),
+          },
+        ]
+      : [],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -110,6 +132,15 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        <noscript>
+          <img
+            height={1}
+            width={1}
+            style={{ display: "none" }}
+            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+            alt=""
+          />
+        </noscript>
         {children}
         <Scripts />
       </body>
@@ -123,17 +154,17 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-      <LangProvider>
-        <div className="flex min-h-screen flex-col bg-neutral-50">
-          <SiteHeader />
-          <div className="flex-1">
-            {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-            <Outlet />
+        <LangProvider>
+          <div className="flex min-h-screen flex-col bg-neutral-50">
+            <SiteHeader />
+            <div className="flex-1">
+              {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+              <Outlet />
+            </div>
+            <SiteFooter />
           </div>
-          <SiteFooter />
-        </div>
-        <WhatsAppFloat />
-      </LangProvider>
+          <WhatsAppFloat />
+        </LangProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );
