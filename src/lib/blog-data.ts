@@ -3156,6 +3156,151 @@ export const BLOG_POSTS: BlogPost[] = [
       keywordsEs: ["presupuesto marketing digital México", "cuánto invertir en marketing"],
     },
   },
+  {
+    slug: "landing-page-vs-pagina-web",
+    title: "Landing Page vs. Website: When to Use Each One",
+    titleEs: "Landing Page vs Página Web: Cuándo Usar Cada Una",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "A landing page has one job: convert one campaign's traffic into one action. A website has a different job: exist permanently and represent your whole business. Confusing the two is why some ad campaigns look expensive without converting.",
+    excerptEs:
+      "Una landing page tiene un solo trabajo: convertir el tráfico de una campaña en una acción concreta. Una página web tiene otro trabajo: existir de forma permanente y representar tu negocio completo. Confundir ambas es la razón por la que algunas campañas de anuncios se ven caras sin convertir.",
+    readingTime: 6,
+    date: "2026-08-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A landing page is one page built for one campaign and one conversion goal: no navigation, no distractions, sent traffic that already knows what it's there for. A website is a permanent, multi-page presence built to be found through search and represent your entire business. Most businesses eventually need both, not one instead of the other.",
+    ledeEs:
+      "Una landing page es una sola página para una campaña y un objetivo de conversión: sin navegación, para tráfico que ya sabe a qué llegó. Una página web es una presencia permanente con varias páginas, hecha para que te encuentren por búsqueda y representar tu negocio completo. La mayoría necesita ambas, no una en lugar de la otra.",
+    sections: [
+      {
+        id: "que-es-una-landing-page",
+        heading: "What a landing page actually is",
+        headingEs: "Qué es realmente una landing page",
+        body: [
+          "A landing page is a single page with a single objective: turn a visitor into a lead, a sale, or a booked call. It usually drops the site's main navigation on purpose, because every link that isn't the conversion button is an exit door. It exists to receive traffic from one specific source (a Google Ads campaign, a Meta Ads campaign, an email send) and to keep that visitor focused on the one offer that brought them there. The same call to action tends to repeat several times down the page, because the only path forward that matters is the one that converts.",
+        ],
+        bodyEs: [
+          "Una landing page es una sola página con un solo objetivo: convertir a la persona que llega en un lead, una venta o una llamada agendada. Suele quitar la navegación principal del sitio a propósito, porque cada enlace que no sea el botón de conversión es una puerta de salida. Existe para recibir tráfico de una fuente específica (una campaña de Google Ads, una de Meta Ads, un envío de correo) y mantener a esa persona enfocada en la única oferta que la trajo ahí. El mismo llamado a la acción suele repetirse varias veces a lo largo de la página, porque el único camino que importa es el que convierte.",
+        ],
+      },
+      {
+        id: "que-es-una-pagina-web",
+        heading: "What a professional website actually is",
+        headingEs: "Qué es realmente una página web profesional",
+        body: [
+          "A website is a permanent, multi-page structure: home, services, about, contact, and usually more. It's built to be found by people who weren't specifically sent there, through a Google search, a business card, word of mouth. Its job isn't to close one specific offer. It's to represent the entire business, answer the objections a stranger has before trusting you, and rank for the searches people run when they're looking for what you do, not just when they clicked one ad. That last part compounds over time. Content published today keeps attracting search traffic months and years later, something a single campaign page was never built to do.",
+        ],
+        bodyEs: [
+          "Una página web es una estructura permanente con varias páginas: inicio, servicios, nosotros, contacto, y normalmente más. Está hecha para que la encuentren personas que no llegaron por un enlace específico, sino por una búsqueda en Google, una tarjeta de presentación o una recomendación de boca en boca. Su trabajo no es cerrar una sola oferta. Es representar el negocio completo, resolver las objeciones que tiene un desconocido antes de confiar en ti, y posicionar para las búsquedas que la gente hace cuando busca lo que ofreces, no solo cuando dio clic en un anuncio. Esa última parte se acumula con el tiempo. El contenido que publicas hoy sigue atrayendo tráfico de búsqueda meses y años después, algo para lo que una página de campaña nunca estuvo pensada.",
+        ],
+      },
+      {
+        id: "cuando-usar-landing-page",
+        heading: "When a landing page is the right tool",
+        headingEs: "Cuándo la landing page es la herramienta correcta",
+        body: [
+          "Use a landing page when you're about to run a paid campaign for one specific service, product, or offer. If you're launching Google Ads for \"kitchen remodeling quotes\" or Meta Ads for a new product line, that traffic needs to land on a page that mirrors exactly what the ad promised, with one clear next step. Sending that same traffic anywhere else forces the visitor to go looking for what you advertised, and most of them won't bother. It's also the right call for a limited-time launch or a seasonal promotion, something that has a start date, an end date, and doesn't need to exist as part of the permanent site once the campaign is over.",
+        ],
+        bodyEs: [
+          'Usa una landing page cuando estás por correr una campaña pagada para un servicio, producto u oferta específica. Si vas a lanzar Google Ads para "cotización de remodelación de cocina" o Meta Ads para una línea de producto nueva, ese tráfico necesita llegar a una página que refleje exactamente lo que prometió el anuncio, con un solo paso siguiente claro. Mandar ese mismo tráfico a cualquier otro lado obliga a la persona a buscar lo que anunciaste, y la mayoría no se va a molestar. También es la decisión correcta para un lanzamiento de tiempo limitado o una promoción de temporada: algo con fecha de inicio, fecha de fin, y que no necesita seguir existiendo como parte del sitio permanente una vez que termina la campaña.',
+        ],
+      },
+      {
+        id: "cuando-usar-pagina-web",
+        heading: "When a website is the right tool",
+        headingEs: "Cuándo la página web es la herramienta correcta",
+        body: [
+          "Use a website when you want to be found, not just clicked on. If your goal is organic search visibility, if people research a business before calling, or if you need one place that explains everything you do, a website is the tool. It's also the right choice the moment you have more than one offer to represent. A landing page can sell one thing well. It can't be the home for a business with five services and a reputation to build. And if a potential client or partner is going to check you out before a meeting, the website is what they're looking for, not a page built for someone else's ad click.",
+        ],
+        bodyEs: [
+          "Usa una página web cuando quieres que te encuentren, no solo que te den clic. Si tu objetivo es visibilidad en búsqueda orgánica, si la gente investiga un negocio antes de llamar, o si necesitas un solo lugar que explique todo lo que haces, la página web es la herramienta. También es la opción correcta en cuanto tienes más de una oferta que representar. Una landing page puede vender una sola cosa bien. No puede ser la casa de un negocio con cinco servicios y una reputación por construir. Y si un cliente o socio potencial va a investigarte antes de una reunión, lo que busca es la página web, no una página construida para el clic de otra persona.",
+        ],
+      },
+      {
+        id: "el-error-de-mezclarlas",
+        heading: "Why mixing them up is a common, expensive mistake",
+        headingEs: "Por qué mezclarlas es un error común y caro",
+        body: [
+          "The most common version of this mistake is running a paid campaign and sending all of that traffic to the site's homepage instead of a dedicated landing page. The visitor clicked an ad about one specific thing, lands on a page built to represent everything, and now has to search the navigation to find what was promised. That extra step is where most of the conversion leaks out, and it happens quietly: the campaign still generates clicks, the cost per click still looks normal, but the cost per actual lead climbs because fewer of those clicks turn into anything. It's not that the website is bad, it's the wrong page for that particular job.",
+        ],
+        bodyEs: [
+          "La versión más común de este error es correr una campaña pagada y mandar todo ese tráfico a la página de inicio del sitio en vez de a una landing page dedicada. La persona dio clic en un anuncio sobre algo específico, llega a una página construida para representar todo, y ahora tiene que buscar en la navegación lo que se le prometió. Ese paso extra es donde se pierde la mayor parte de la conversión, y pasa de forma silenciosa: la campaña sigue generando clics, el costo por clic se ve normal, pero el costo por lead real sube porque menos de esos clics se convierten en algo. No es que la página web esté mal, es la página equivocada para ese trabajo específico.",
+        ],
+      },
+      {
+        id: "no-son-excluyentes",
+        heading: "Why they aren't competitors, most businesses need both",
+        headingEs: "Por qué no son excluyentes y la mayoría necesita ambas",
+        body: [
+          "Most businesses that ask this question don't actually need to choose. The website is the permanent base, the place that exists whether or not a campaign is running, that ranks in search, that a referral checks before calling. Landing pages are the campaign-specific layer on top of that base: one per offer, one per audience, built and retired as campaigns start and end. A dental clinic, for example, keeps one website that covers every service it offers, and can still run a separate landing page for a specific promotion like teeth whitening during a particular month. A single website with no landing pages wastes ad spend. A pile of landing pages with no website has nothing permanent to fall back on.",
+        ],
+        bodyEs: [
+          "La mayoría de los negocios que se hacen esta pregunta en realidad no tienen que elegir. La página web es la base permanente, el lugar que existe corra o no una campaña, que posiciona en búsqueda, que un referido revisa antes de llamar. Las landing pages son la capa específica de campaña sobre esa base: una por oferta, una por audiencia, que se construyen y se retiran conforme las campañas empiezan y terminan. Una clínica dental, por ejemplo, mantiene una sola página web que cubre todos sus servicios, y aun así puede correr una landing page aparte para una promoción específica, como blanqueamiento dental durante un mes en particular. Un solo sitio web sin landing pages desperdicia gasto publicitario. Un montón de landing pages sin un sitio web no tiene nada permanente en qué apoyarse.",
+        ],
+      },
+      {
+        id: "diferencia-de-costo-y-tiempo",
+        heading: "The real cost and time difference",
+        headingEs: "La diferencia real de costo y tiempo",
+        body: [
+          "A standalone landing page typically falls in the same $25,000–$60,000 MXN range as a Professional-tier website, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. A Professional site with multiple pages takes 3 to 6 weeks to build, while a single landing page usually lands on the faster end of that same window. If you need landing pages built into ongoing campaign infrastructure with CRM integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. Domain and hosting still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
+        ],
+        bodyEs: [
+          "Una landing page independiente suele caer en el mismo rango de $25,000 a $60,000 MXN que un sitio de nivel Profesional, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. Un sitio Profesional con varias páginas toma de 3 a 6 semanas construirlo, mientras que una sola landing page suele quedar en el extremo más rápido de esa misma ventana. Si necesitas landing pages integradas a infraestructura de campaña continua con CRM, eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. Dominio y hosting aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Puedo usar mi página web como landing page para mis anuncios?",
+        qEn: "Can I just use my website as the landing page for my ads?",
+        a: "Técnicamente sí, pero casi siempre baja la conversión. Si mandas tráfico de un anuncio específico a tu página de inicio, la persona tiene que buscar lo que anunciaste en vez de verlo de inmediato, y ese paso extra es donde se pierde la mayoría de las conversiones. Una página interna del sitio bien enfocada puede funcionar si ya está construida para esa oferta, pero rara vez convierte igual que una landing page dedicada.",
+        aEn: "Technically yes, but it almost always lowers conversion. If you send traffic from a specific ad to your homepage, the visitor has to go looking for what was advertised instead of seeing it immediately, and that extra step is where most conversions leak out. A tightly focused internal page can work if it's already built around that offer, but it rarely converts as well as a dedicated landing page.",
+      },
+      {
+        q: "¿Una landing page necesita estar conectada a mi sitio web principal?",
+        qEn: "Does a landing page need to be connected to my main website?",
+        a: "No necesariamente. Muchas landing pages viven en su propio subdominio o URL independiente, sin navegación de regreso al sitio principal, precisamente para no distraer al visitante. Si ya tienes un sitio web, tiene sentido que la landing page comparta la identidad visual, pero funcionalmente puede operar por separado.",
+        aEn: "Not necessarily. Many landing pages live on their own subdomain or standalone URL with no navigation back to the main site, specifically so nothing distracts the visitor. If you already have a website, it makes sense for the landing page to share its visual identity, but functionally it can operate on its own.",
+      },
+      {
+        q: "¿Qué necesito primero si estoy empezando desde cero: la página web o la landing page?",
+        qEn: "If I'm starting from zero, which do I need first: the website or the landing page?",
+        a: "Depende de qué vas a hacer primero. Si tu plan inmediato es correr una campaña de anuncios para una oferta puntual, empieza por la landing page: es más barata, más rápida de construir, y es lo único que necesitas para esa campaña. Si tu prioridad es que te encuentren orgánicamente o necesitas representar el negocio completo desde el día uno, empieza por la página web.",
+        aEn: "It depends on what you're doing first. If your immediate plan is to run an ad campaign for one specific offer, start with the landing page: it's cheaper, faster to build, and it's all you need for that campaign. If your priority is being found organically or you need to represent the full business from day one, start with the website.",
+      },
+      {
+        q: "¿Puedo tener varias landing pages para distintas campañas al mismo tiempo?",
+        qEn: "Can I have multiple landing pages for different campaigns at the same time?",
+        a: "Sí, y es lo normal cuando corres más de una campaña activa. Cada oferta, cada público o cada ubicación puede tener su propia landing page enfocada en ese mensaje específico. Es más barato y más simple construir varias landing pages puntuales que tratar de que una sola página le hable a todos.",
+        aEn: "Yes, and it's normal once you're running more than one active campaign. Each offer, audience, or location can have its own landing page focused on that specific message. It's cheaper and simpler to build several targeted landing pages than to try to make one page speak to everyone.",
+      },
+      {
+        q: "¿Una landing page ayuda con SEO?",
+        qEn: "Does a landing page help with SEO?",
+        a: "Muy poco, y no es su trabajo. Al no tener navegación ni estar conectada a la estructura del sitio, Google normalmente no la trata como parte del posicionamiento orgánico del negocio. Si buscas resultados de SEO, esa inversión va en la página web, no en la landing page. Son herramientas para objetivos distintos.",
+        aEn: "Very little, and that's not its job. Without navigation or a connection to the site's structure, Google usually doesn't treat it as part of the business's organic ranking. If you're after SEO results, that investment belongs in the website, not the landing page. They're tools for different goals.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "landing page vs website",
+        "landing page vs webpage",
+        "when to use a landing page",
+        "landing page or website Mexico",
+      ],
+      keywordsEs: [
+        "landing page vs pagina web",
+        "landing page vs página web",
+        "cuándo usar landing page",
+        "diferencia entre landing page y página web",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
