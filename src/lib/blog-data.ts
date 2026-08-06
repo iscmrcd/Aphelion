@@ -41,7 +41,7 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: "cuanto-cuesta-seo-mexico",
+    slug: "cuanto-cuesta-el-seo-en-mexico",
     title: "How Much Does SEO Cost in Mexico? Real 2026 Prices",
     titleEs: "¿Cuánto cuesta el SEO en México? Precios reales 2026",
     category: "SEO",
@@ -424,7 +424,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   },
   {
-    slug: "errores-google-ads",
+    slug: "errores-de-google-ads",
     title: "10 Google Ads Mistakes That Burn Your Budget",
     titleEs: "10 errores de Google Ads que queman tu presupuesto",
     category: "Paid Ads",
