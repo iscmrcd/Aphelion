@@ -3,8 +3,6 @@ import { Check, ChevronDown, Minus } from "lucide-react";
 import type { MarketingPackage } from "@/lib/marketing-data";
 import { useMarketingData } from "@/lib/content";
 import { useT, useLang } from "@/lib/i18n";
-import cardBg from "@/assets/banners/brand-partner-bg-v3.jpg.asset.json";
-import premiumBg from "@/assets/banners/produccion-premium-bg-v3.jpg.asset.json";
 
 const BADGE_TONE: Record<number, "popular" | "limited" | undefined> = {
   3: "popular",
@@ -93,7 +91,7 @@ function PackageCard({
               <span
                 className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${
                   isPopular
-                    ? "bg-white text-neutral-950"
+                    ? "bg-neutral-950 text-white"
                     : isLimited
                       ? "bg-amber-300 text-neutral-950"
                       : "border border-neutral-300 bg-neutral-50 text-neutral-700"
