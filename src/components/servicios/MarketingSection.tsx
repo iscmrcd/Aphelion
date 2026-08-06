@@ -3,8 +3,6 @@ import { Check, ChevronDown, Minus } from "lucide-react";
 import type { MarketingPackage } from "@/lib/marketing-data";
 import { useMarketingData } from "@/lib/content";
 import { useT, useLang } from "@/lib/i18n";
-import cardBg from "@/assets/banners/brand-partner-bg-v3.jpg.asset.json";
-import premiumBg from "@/assets/banners/produccion-premium-bg-v3.jpg.asset.json";
 
 const BADGE_TONE: Record<number, "popular" | "limited" | undefined> = {
   3: "popular",
@@ -63,7 +61,7 @@ function PackageCard({
 }) {
   const isPopular = tone === "popular";
   const isLimited = tone === "limited";
-  const dark = isPopular || isLimited;
+  const dark = false;
   const { MARKETING_REPLACES } = useMarketingData();
   const t = useT();
   const { lang } = useLang();
@@ -71,32 +69,14 @@ function PackageCard({
 
   return (
     <div
-      className={`overflow-hidden rounded-2xl border transition ${
-        dark ? "border-neutral-950" : "border-neutral-200"
-      } ${open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""} bg-white`}
+      className={`overflow-hidden rounded-2xl border border-neutral-200 transition ${
+        open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""
+      } bg-white`}
     >
       <button
         onClick={onToggle}
-        className={`relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left sm:px-7 sm:py-6 ${
-          dark ? "on-dark tier-textured text-white" : "text-neutral-950"
-        }`}
-
-        style={
-          dark
-            ? {
-                backgroundImage: `url(${isLimited ? premiumBg.url : cardBg.url})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }
-            : undefined
-        }
+        className="relative grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left text-neutral-950 sm:px-7 sm:py-6"
       >
-        {dark && (
-          <div
-            aria-hidden
-            className="tier-textured-veil pointer-events-none absolute inset-0 bg-gradient-to-r from-black/25 via-black/10 to-transparent"
-          />
-        )}
         <div className="relative min-w-0">
 
           <div className="flex flex-wrap items-center gap-2">
@@ -111,7 +91,7 @@ function PackageCard({
               <span
                 className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${
                   isPopular
-                    ? "bg-white text-neutral-950"
+                    ? "bg-neutral-950 text-white"
                     : isLimited
                       ? "bg-amber-300 text-neutral-950"
                       : "border border-neutral-300 bg-neutral-50 text-neutral-700"
