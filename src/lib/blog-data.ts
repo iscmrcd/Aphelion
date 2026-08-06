@@ -1792,6 +1792,1370 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "guia-seo",
+    title: "SEO: The Complete 2026 Guide",
+    titleEs: "SEO: Guía Completa 2026",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "What SEO is and how it actually works in 2026: local SEO, technical SEO, content and AI Search — with real examples from Baja California.",
+    excerptEs:
+      "Qué es el SEO y cómo funciona en 2026: SEO local, técnico, contenido y AI Search. Ejemplos reales de Baja California.",
+    readingTime: 18,
+    date: "2026-08-06",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "SEO is the practice of getting a website found in search results without paying per click — by fixing what search engines can't crawl, publishing content that answers real questions, and earning the signals that convince Google a page deserves to rank. It compounds over months rather than delivering instant traffic, which is exactly what makes it cheaper than ads over time.",
+    ledeEs:
+      "El SEO es la práctica de lograr que un sitio web aparezca en resultados de búsqueda sin pagar por clic — corrigiendo lo que los buscadores no pueden rastrear, publicando contenido que responde preguntas reales, y ganando las señales que convencen a Google de que una página merece posicionar. Se acumula en meses en vez de entregar tráfico instantáneo, que es justo lo que lo hace más barato que los anuncios con el tiempo.",
+    gradient: "from-neutral-800 to-neutral-950",
+    sections: [
+      {
+        id: "que-es-seo",
+        heading: "What SEO actually is",
+        headingEs: "Qué es realmente el SEO",
+        body: [
+          "SEO — search engine optimization — is the set of practices that help a website rank in organic (unpaid) search results. It has three connected disciplines: technical SEO (making sure search engines can crawl and understand the site), content SEO (publishing pages that answer what people are actually searching for), and authority (earning links and mentions that signal trustworthiness). A site missing any one of the three caps how well the other two can perform.",
+        ],
+        bodyEs: [
+          "El SEO — optimización para motores de búsqueda — es el conjunto de prácticas que ayudan a un sitio web a posicionar en resultados orgánicos (no pagados). Tiene tres disciplinas conectadas: SEO técnico (asegurar que los buscadores puedan rastrear y entender el sitio), SEO de contenido (publicar páginas que respondan lo que la gente realmente busca), y autoridad (ganar enlaces y menciones que señalen confiabilidad). Un sitio al que le falte cualquiera de las tres limita qué tan bien pueden rendir las otras dos.",
+        ],
+      },
+      {
+        id: "como-funciona-google",
+        heading: "How Google actually decides what to rank",
+        headingEs: "Cómo decide Google realmente qué posicionar",
+        body: [
+          "Search engines crawl the web with automated bots, index what they find, and rank pages for a given search using hundreds of signals — relevance to the query, page speed and mobile usability, how authoritative the domain is, and increasingly, how directly and clearly a page answers the question. There's no single trick that moves rankings; it's the accumulation of many small, correct decisions over time.",
+        ],
+        bodyEs: [
+          "Los buscadores rastrean la web con bots automatizados, indexan lo que encuentran, y posicionan páginas para una búsqueda usando cientos de señales — relevancia con la consulta, velocidad y usabilidad móvil, qué tan autorizado es el dominio, y cada vez más, qué tan directa y claramente responde una página la pregunta. No hay un solo truco que mueva el posicionamiento; es la acumulación de muchas decisiones correctas y pequeñas en el tiempo.",
+        ],
+      },
+      {
+        id: "seo-tecnico",
+        heading: "Technical SEO: the foundation",
+        headingEs: "SEO técnico: la base",
+        body: [
+          "If search engines can't crawl and load a site quickly, nothing else matters — great content on a broken foundation still won't rank. This covers site speed, mobile usability, a clean URL structure, HTTPS, and making sure important pages aren't accidentally blocked from indexing. It's invisible to visitors but foundational to everything else on this list.",
+        ],
+        bodyEs: [
+          "Si los buscadores no pueden rastrear y cargar un sitio rápido, nada más importa — un gran contenido sobre una base rota no va a posicionar de todas formas. Esto cubre velocidad del sitio, usabilidad móvil, una estructura de URL limpia, HTTPS, y asegurarse de que páginas importantes no estén bloqueadas de indexación por accidente. Es invisible para los visitantes pero es la base de todo lo demás en esta lista.",
+        ],
+      },
+      {
+        id: "seo-contenido",
+        heading: "Content SEO: answering real questions",
+        headingEs: "SEO de contenido: responder preguntas reales",
+        body: [
+          "Content that ranks is content built around what people actually type into a search bar, structured so both readers and search engines can find the answer fast — a clear, direct answer near the top, followed by the depth that earns trust. Content written to please an algorithm instead of a person reads poorly and, ironically, ranks worse over time as search engines get better at detecting the difference.",
+        ],
+        bodyEs: [
+          "El contenido que posiciona es contenido construido alrededor de lo que la gente realmente escribe en un buscador, estructurado para que tanto lectores como buscadores encuentren la respuesta rápido — una respuesta clara y directa cerca del inicio, seguida de la profundidad que gana confianza. El contenido escrito para complacer a un algoritmo en vez de a una persona se lee mal y, irónicamente, posiciona peor con el tiempo conforme los buscadores mejoran detectando la diferencia.",
+        ],
+      },
+      {
+        id: "seo-local",
+        heading: "Local SEO: for businesses that serve a specific area",
+        headingEs: "SEO local: para negocios que atienden una zona específica",
+        body: [
+          'For any business with a physical location or a defined service area, local SEO — an optimized Google Business Profile, consistent business information, and real reviews — usually returns more per peso than national SEO. We cover it in full depth in "local SEO: the complete guide."',
+        ],
+        bodyEs: [
+          'Para cualquier negocio con ubicación física o un área de servicio definida, el SEO local — un perfil de Google Business optimizado, información de negocio consistente y reseñas reales — suele rendir más por peso que el SEO nacional. Lo cubrimos a fondo en "SEO local: guía completa."',
+        ],
+      },
+      {
+        id: "ai-search",
+        heading: "AI Search: the new layer on top of traditional SEO",
+        headingEs: "AI Search: la nueva capa sobre el SEO tradicional",
+        body: [
+          "AI-powered answer engines and search overviews now summarize information directly, often without a click. Ranking well for these means the same fundamentals — clear, direct, well-structured answers — matter even more, because these systems pull from pages that state facts plainly instead of burying them in marketing language. Being citable is becoming as important as being clickable.",
+        ],
+        bodyEs: [
+          "Los motores de respuesta con IA y los resúmenes de búsqueda ahora resumen información directamente, muchas veces sin un clic. Posicionar bien para esto significa que los mismos fundamentos — respuestas claras, directas y bien estructuradas — importan todavía más, porque estos sistemas toman de páginas que declaran hechos claramente en vez de enterrarlos en lenguaje de marketing. Ser citable se está volviendo tan importante como ser clickeable.",
+        ],
+      },
+      {
+        id: "cuanto-tarda-cuesta",
+        heading: "How long it takes and what it costs",
+        headingEs: "Cuánto tarda y cuánto cuesta",
+        body: [
+          'SEO takes 4 to 6 months for initial movement and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in "how long does SEO take" and "how much does SEO cost in Mexico."',
+        ],
+        bodyEs: [
+          'El SEO toma de 4 a 6 meses para mostrar movimiento inicial y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en "cuánto tarda el SEO" y "cuánto cuesta el SEO en México."',
+        ],
+      },
+      {
+        id: "seo-vs-otros-canales",
+        heading: "How SEO compares to paid channels",
+        headingEs: "Cómo se compara el SEO con canales pagados",
+        body: [
+          'SEO and Google Ads solve different problems on different timelines — ads deliver traffic the day you turn them on and stop the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. Most businesses eventually need both, but rarely at the same intensity from day one. We go deeper on how to sequence the two in "SEO vs Google Ads."',
+        ],
+        bodyEs: [
+          'El SEO y Google Ads resuelven problemas distintos en cronogramas distintos — los anuncios entregan tráfico el día que los enciendes y se detienen el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La mayoría de los negocios eventualmente necesita ambos, pero rara vez con la misma intensidad desde el día uno. Profundizamos en cómo secuenciar los dos en "SEO vs Google Ads."',
+        ],
+      },
+      {
+        id: "errores-y-siguientes-pasos",
+        heading: "Common mistakes and where to go next",
+        headingEs: "Errores comunes y siguientes pasos",
+        body: [
+          'The most common SEO mistakes we see — no Google Business Profile optimization, thin or duplicate content, ignoring mobile speed — are covered in full in "12 SEO mistakes small businesses make." This guide is the starting point; each linked cluster goes deeper into one specific piece of the system, and we keep adding new ones as the SEO landscape shifts.',
+        ],
+        bodyEs: [
+          'Los errores de SEO más comunes que vemos — sin perfil de Google Business optimizado, contenido pobre o duplicado, ignorar la velocidad móvil — están cubiertos a fondo en "12 errores de SEO que cometen las pymes." Esta guía es el punto de partida; cada cluster enlazado profundiza en una pieza específica del sistema, y seguimos sumando nuevos conforme cambia el panorama del SEO.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuánto cuesta el SEO en México?",
+        qEn: "How much does SEO cost in Mexico?",
+        a: "Como rango de mercado para 2026, el SEO cuesta entre $8,000 y $35,000 MXN mensuales dependiendo de la competencia, el tamaño del sitio y si incluye producción de contenido. El desglose completo por tipo de negocio está en cuánto cuesta el SEO en México.",
+        aEn: "As a 2026 market range, SEO costs between $8,000 and $35,000 MXN per month depending on competition, site size, and whether content production is included. The full breakdown by business type is in how much does SEO cost in Mexico.",
+      },
+      {
+        q: "¿Cuánto tarda el SEO en dar resultados?",
+        qEn: "How long does SEO take to show results?",
+        a: "Entre 4 y 6 meses para movimiento inicial, y de 9 a 12 meses para resultados que se acumulan de forma significativa. El desglose completo por escenario está en cuánto tarda el SEO.",
+        aEn: "Between 4 and 6 months for initial movement, and 9 to 12 months for results that compound meaningfully. The full breakdown by scenario is in how long does SEO take.",
+      },
+      {
+        q: "¿El SEO sirve para cualquier tipo de negocio?",
+        qEn: "Does SEO work for any type of business?",
+        a: "Sirve mejor para negocios donde la gente busca activamente antes de comprar — servicios, retail, salud, bienes raíces. Para categorías sin volumen de búsqueda real, el SEO tiene menos con qué trabajar y otros canales suelen rendir mejor.",
+        aEn: "It works best for businesses where people actively search before buying — services, retail, health, real estate. For categories with no real search volume, SEO has less to work with and other channels usually perform better.",
+      },
+      {
+        q: "¿Necesito SEO técnico, de contenido y local, o puedo elegir solo uno?",
+        qEn: "Do I need technical, content and local SEO, or can I just pick one?",
+        a: "Los tres trabajan juntos — el SEO técnico es la base sin la cual el contenido no puede posicionar, y el SEO local es la capa que importa más si tu negocio atiende una zona específica. La mayoría de los negocios necesita los tres en distintas proporciones, no uno solo.",
+        aEn: "All three work together — technical SEO is the foundation without which content can't rank, and local SEO is the layer that matters most if your business serves a specific area. Most businesses need all three in different proportions, not just one.",
+      },
+      {
+        q: "¿Cómo afecta la búsqueda con IA al SEO tradicional?",
+        qEn: "How does AI search affect traditional SEO?",
+        a: "Los fundamentos siguen siendo los mismos — contenido claro, estructurado y confiable — pero ahora también importa ser citable directamente por sistemas de IA, no solo aparecer en una lista de resultados clickeables.",
+        aEn: "The fundamentals stay the same — clear, structured, trustworthy content — but now it also matters to be directly citable by AI systems, not just to appear in a list of clickable results.",
+      },
+      {
+        q: "¿Puedo hacer SEO yo mismo o necesito una agencia?",
+        qEn: "Can I do SEO myself or do I need an agency?",
+        a: "Con tiempo y aprendizaje, se puede hacer SEO básico internamente, especialmente la parte local. Para SEO técnico avanzado y estrategias de contenido a escala, la mayoría de los negocios rinde mejor con ayuda especializada, aunque sea de forma parcial.",
+        aEn: "With time and learning, basic SEO can be done in-house, especially the local piece. For advanced technical SEO and content strategy at scale, most businesses perform better with specialized help, even if only partially.",
+      },
+    ],
+    schema: {
+      keywords: ["what is SEO", "how SEO works", "SEO guide Mexico", "AI search SEO"],
+      keywordsEs: ["qué es SEO", "cómo funciona el SEO", "guía SEO México", "AI Search SEO"],
+    },
+  },
+  {
+    slug: "guia-google-ads",
+    title: "Google Ads: The Complete 2026 Guide",
+    titleEs: "Google Ads: Guía Completa 2026",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "A complete guide to Google Ads: campaign types, budget, measuring with GA4, and the mistakes that burn the most money — with real benchmarks from Baja California.",
+    excerptEs:
+      "Guía completa de Google Ads: tipos de campaña, presupuesto, medición con GA4 y errores comunes. Con benchmarks reales de Baja California.",
+    readingTime: 18,
+    date: "2026-08-07",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Google Ads is a pay-per-click advertising system that shows your business at the top of search results, on YouTube, and across millions of partner sites, and charges only when someone clicks or takes a specific action. It works by intercepting existing demand — people already searching for what you sell — which is why it can generate leads within days rather than the months SEO takes.",
+    ledeEs:
+      "Google Ads es un sistema de publicidad de pago por clic que muestra tu negocio arriba de los resultados de búsqueda, en YouTube y en millones de sitios asociados, y cobra solo cuando alguien hace clic o realiza una acción específica. Funciona interceptando demanda que ya existe — gente que ya está buscando lo que vendes — por eso puede generar leads en días, no en los meses que toma el SEO.",
+    gradient: "from-slate-700 to-neutral-900",
+    sections: [
+      {
+        id: "como-funciona",
+        heading: "How Google Ads actually works",
+        headingEs: "Cómo funciona realmente Google Ads",
+        body: [
+          "Advertisers bid on keywords relevant to their business, and Google runs an auction every time someone searches — the winner isn't just the highest bidder, but the combination of bid, ad relevance and expected click-through rate (Quality Score). A highly relevant, well-written ad can beat a bigger budget with a sloppy one. You pay only when someone clicks, not for the impression.",
+        ],
+        bodyEs: [
+          "Los anunciantes pujan por palabras clave relevantes para su negocio, y Google corre una subasta cada vez que alguien busca — el ganador no es solo quien puja más alto, sino la combinación de la puja, la relevancia del anuncio y la tasa de clics esperada (Nivel de Calidad). Un anuncio muy relevante y bien escrito puede ganarle a un presupuesto mayor pero descuidado. Pagas solo cuando alguien da clic, no por la impresión.",
+        ],
+      },
+      {
+        id: "tipos-de-campana",
+        heading: "The main campaign types",
+        headingEs: "Los principales tipos de campaña",
+        body: [
+          "Search campaigns show text ads on the results page for specific keywords — the highest-intent option. Performance Max and Demand Gen use Google's automation to place ads across Search, YouTube, Display and Gmail from a single campaign. Display and YouTube campaigns build awareness visually rather than capturing active search intent. Most businesses should start with Search before layering in the others.",
+        ],
+        bodyEs: [
+          "Las campañas de Búsqueda muestran anuncios de texto en la página de resultados para palabras clave específicas — la opción de mayor intención. Performance Max y Demand Gen usan la automatización de Google para colocar anuncios en Búsqueda, YouTube, Display y Gmail desde una sola campaña. Las campañas de Display y YouTube construyen conocimiento de marca de forma visual en vez de capturar intención de búsqueda activa. La mayoría de los negocios debería empezar con Búsqueda antes de sumar las demás.",
+        ],
+      },
+      {
+        id: "presupuesto",
+        heading: "What it actually costs",
+        headingEs: "Cuánto cuesta realmente",
+        body: [
+          'Cost per click in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over $100 MXN in competitive ones like legal or medical services. We publish real CPC ranges by industry in "how much does Google Ads cost in Mexico."',
+        ],
+        bodyEs: [
+          'El costo por clic en México varía enormemente por industria — desde unos cuantos pesos en categorías de baja competencia hasta más de $100 MXN en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en "cuánto cuesta Google Ads en México."',
+        ],
+      },
+      {
+        id: "medicion",
+        heading: "Measuring what actually matters",
+        headingEs: "Medir lo que realmente importa",
+        body: [
+          'Google Ads is only as good as the data feeding its algorithm — without accurate conversion tracking through GA4 and Google Tag Manager, both you and Google are optimizing blind. This is the single most common gap we find when auditing accounts. The full setup process is in "how to actually measure conversions."',
+        ],
+        bodyEs: [
+          'Google Ads es tan bueno como los datos que alimentan su algoritmo — sin seguimiento de conversiones preciso a través de GA4 y Google Tag Manager, tanto tú como Google están optimizando a ciegas. Este es el hueco más común que encontramos al auditar cuentas. El proceso completo de configuración está en "cómo medir conversiones de verdad."',
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "The mistakes that burn the most budget",
+        headingEs: "Los errores que más queman presupuesto",
+        body: [
+          'Broad match keywords with no negatives, broken conversion tracking, and landing pages that do not match search intent account for most of the wasted spend we find in account audits. The full list of ten is in "10 Google Ads mistakes that burn your budget."',
+        ],
+        bodyEs: [
+          'La concordancia amplia sin negativas, el seguimiento de conversiones roto y las landing pages que no coinciden con la intención de búsqueda explican la mayor parte del gasto desperdiciado que encontramos en auditorías de cuenta. La lista completa de diez está en "10 errores de Google Ads que queman tu presupuesto."',
+        ],
+      },
+      {
+        id: "google-ads-vs-seo",
+        heading: "Google Ads vs. organic SEO",
+        headingEs: "Google Ads vs. SEO orgánico",
+        body: [
+          'Google Ads delivers traffic immediately but stops the moment you stop paying; SEO takes months to build but keeps working without an ongoing per-click cost. Most businesses eventually run both — Ads for immediate demand, SEO to lower acquisition cost over time. We compare the two directly in "SEO vs Google Ads."',
+        ],
+        bodyEs: [
+          'Google Ads entrega tráfico de inmediato pero se detiene en cuanto dejas de pagar; el SEO toma meses en construirse pero sigue funcionando sin un costo continuo por clic. La mayoría de los negocios eventualmente corre ambos — Ads para demanda inmediata, SEO para bajar el costo de adquisición con el tiempo. Comparamos los dos directamente en "SEO vs Google Ads."',
+        ],
+      },
+      {
+        id: "google-ads-vs-meta",
+        heading: "Google Ads vs. Meta Ads",
+        headingEs: "Google Ads vs. Meta Ads",
+        body: [
+          'Google Ads captures people already searching for what you sell; Meta Ads creates demand through visual, interruption-based selling. Which deserves the first dollar depends on whether your category has real search volume. We break down exactly how to decide in "Google Ads vs Meta Ads."',
+        ],
+        bodyEs: [
+          'Google Ads captura gente que ya está buscando lo que vendes; Meta Ads genera demanda a través de venta visual e interruptiva. Cuál merece el primer peso depende de si tu categoría tiene volumen de búsqueda real. Desglosamos exactamente cómo decidir en "Google Ads vs Meta Ads."',
+        ],
+      },
+      {
+        id: "casos-especiales",
+        heading: "Industries with special rules",
+        headingEs: "Industrias con reglas especiales",
+        body: [
+          "Some categories — medical and dental services chief among them — face additional Google Ads policy restrictions around claims, certifications and landing page requirements. Getting these wrong doesn't just waste budget, it can get an account suspended. If you're in a regulated category, review the specific restrictions before launching.",
+        ],
+        bodyEs: [
+          "Algunas categorías — servicios médicos y dentales entre las principales — enfrentan restricciones adicionales de política de Google Ads sobre declaraciones, certificaciones y requisitos de landing page. Hacerlo mal no solo desperdicia presupuesto, puede suspender la cuenta. Si estás en una categoría regulada, revisa las restricciones específicas antes de lanzar.",
+        ],
+      },
+      {
+        id: "como-empezar",
+        heading: "How to get started",
+        headingEs: "Cómo empezar",
+        body: [
+          "Start with one tightly scoped Search campaign around your highest-intent keywords, a landing page built to match that specific intent, and conversion tracking configured before the first peso is spent — not after. Everything else in this guide is about optimizing a foundation that needs to be solid first.",
+        ],
+        bodyEs: [
+          "Empieza con una sola campaña de Búsqueda bien acotada alrededor de tus palabras clave de mayor intención, una landing page construida para coincidir con esa intención específica, y el seguimiento de conversiones configurado antes de gastar el primer peso — no después. Todo lo demás en esta guía es sobre optimizar una base que primero necesita ser sólida.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuánto necesito para empezar en Google Ads?",
+        qEn: "How much do I need to start with Google Ads?",
+        a: "Como piso realista para México en 2026, considera al menos $8,000 a $12,000 MXN mensuales para juntar suficientes datos y que el sistema pueda optimizar. El desglose completo por industria está en cuánto cuesta Google Ads en México.",
+        aEn: "As a realistic floor for Mexico in 2026, plan for at least $8,000 to $12,000 MXN per month to gather enough data for the system to optimize. The full breakdown by industry is in how much does Google Ads cost in Mexico.",
+      },
+      {
+        q: "¿Cuánto tiempo toma ver resultados en Google Ads?",
+        qEn: "How long does it take to see results in Google Ads?",
+        a: "A diferencia del SEO, Google Ads puede generar los primeros clics y leads el mismo día que se activa la campaña. La optimización completa del algoritmo suele tomar de dos a cuatro semanas.",
+        aEn: "Unlike SEO, Google Ads can generate the first clicks and leads the same day the campaign goes live. Full algorithm optimization usually takes two to four weeks.",
+      },
+      {
+        q: "¿Necesito un sitio web para anunciarme en Google Ads?",
+        qEn: "Do I need a website to advertise on Google Ads?",
+        a: "Sí, casi siempre — necesitas una landing page que coincida con la intención de la palabra clave. Anunciarte para una búsqueda específica y mandar a la gente a una página genérica reduce drásticamente la conversión.",
+        aEn: "Yes, almost always — you need a landing page that matches the keyword's intent. Advertising for a specific search and sending people to a generic page drastically reduces conversion.",
+      },
+      {
+        q: "¿Puedo administrar Google Ads yo mismo?",
+        qEn: "Can I manage Google Ads myself?",
+        a: "Con presupuestos pequeños y una sola categoría, es posible administrarlo tú mismo si le dedicas revisión semanal real. Para cuentas más grandes o complejas, la mayoría de los negocios rinde mejor con ayuda especializada.",
+        aEn: "With small budgets and a single category, it's possible to manage it yourself if you dedicate real weekly review to it. For larger or more complex accounts, most businesses perform better with specialized help.",
+      },
+      {
+        q: "¿Qué pasa si mi industria tiene restricciones especiales?",
+        qEn: "What if my industry has special restrictions?",
+        a: "Categorías como salud y servicios legales tienen políticas adicionales de Google sobre qué se puede anunciar y cómo. Vale la pena revisar las restricciones específicas de tu industria antes de lanzar para evitar que la cuenta se suspenda.",
+        aEn: "Categories like healthcare and legal services have additional Google policies on what can be advertised and how. It's worth reviewing your industry's specific restrictions before launching to avoid account suspension.",
+      },
+      {
+        q: "¿Google Ads o SEO primero?",
+        qEn: "Google Ads or SEO first?",
+        a: "Si necesitas resultados este mes, Google Ads. Si estás construyendo para los próximos años y quieres depender menos de presupuesto pagado con el tiempo, empieza a invertir en SEO en paralelo. Profundizamos en esta decisión en SEO vs Google Ads.",
+        aEn: "If you need results this month, Google Ads. If you're building for the coming years and want to depend less on paid budget over time, start investing in SEO in parallel. We go deeper on this decision in SEO vs Google Ads.",
+      },
+    ],
+    schema: {
+      keywords: ["what is Google Ads", "how Google Ads works", "Google Ads guide Mexico"],
+      keywordsEs: ["qué es Google Ads", "cómo funciona Google Ads", "guía Google Ads México"],
+    },
+  },
+  {
+    slug: "cuanto-cuesta-google-ads-en-mexico",
+    title: "How Much Does Google Ads Cost in Mexico? (Real 2026 CPCs)",
+    titleEs: "¿Cuánto Cuesta Google Ads en México? (CPCs Reales 2026)",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Real 2026 cost-per-click ranges by industry for Google Ads in Mexico — typical market estimates, not guesses.",
+    excerptEs:
+      "Rangos reales de costo por clic 2026 por industria para Google Ads en México — estimaciones de mercado típicas, no adivinanzas.",
+    readingTime: 8,
+    date: "2026-08-09",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Google Ads in Mexico costs anywhere from $5 to over $150 MXN per click depending on industry, with legal, medical and financial services at the high end and local retail or home services at the low end. Total monthly spend, not just CPC, is what determines whether a budget is viable — a low CPC with weak conversion still wastes money.",
+    ledeEs:
+      "Google Ads en México cuesta desde $5 hasta más de $150 MXN por clic según la industria, con servicios legales, médicos y financieros en el rango alto, y retail local o servicios del hogar en el rango bajo. El gasto mensual total, no solo el CPC, es lo que determina si un presupuesto es viable — un CPC bajo con mala conversión igual desperdicia dinero.",
+    gradient: "from-slate-700 to-neutral-900",
+    sections: [
+      {
+        id: "tabla-cpc-industria",
+        heading: "Typical CPC ranges by industry (2026 market estimates)",
+        headingEs: "Rangos típicos de CPC por industria (estimaciones de mercado 2026)",
+        body: [
+          "As typical market estimates for Mexico in 2026 — not guarantees — these are the cost-per-click ranges we see most often by industry:",
+          "Legal services: $60–$180 MXN per click.",
+          "Medical and dental: $40–$120 MXN per click.",
+          "Real estate: $25–$80 MXN per click.",
+          "B2B / professional services: $30–$100 MXN per click.",
+          "Home services (plumbing, electrical, contractors): $15–$45 MXN per click.",
+          "Restaurants and local retail: $5–$20 MXN per click.",
+          "E-commerce (general): $8–$30 MXN per click.",
+        ],
+        bodyEs: [
+          "Como estimaciones de mercado típicas para México en 2026 — no garantías — estos son los rangos de costo por clic que vemos con más frecuencia por industria:",
+          "Servicios legales: $60–$180 MXN por clic.",
+          "Médico y dental: $40–$120 MXN por clic.",
+          "Bienes raíces: $25–$80 MXN por clic.",
+          "B2B / servicios profesionales: $30–$100 MXN por clic.",
+          "Servicios del hogar (plomería, electricidad, contratistas): $15–$45 MXN por clic.",
+          "Restaurantes y retail local: $5–$20 MXN por clic.",
+          "E-commerce (general): $8–$30 MXN por clic.",
+        ],
+      },
+      {
+        id: "por-que-varia-tanto",
+        heading: "Why CPC varies so much by industry",
+        headingEs: "Por qué el CPC varía tanto por industria",
+        body: [
+          "CPC reflects how much competitors are willing to pay for the same click, which usually tracks how valuable a single customer is. A law firm can afford $150 MXN per click because one client can be worth tens of thousands of pesos; a restaurant can't justify that same click cost against an average ticket of a few hundred pesos. High CPC isn't inherently bad — it's a signal of a valuable category, not necessarily a broken campaign.",
+        ],
+        bodyEs: [
+          "El CPC refleja cuánto están dispuestos a pagar los competidores por el mismo clic, lo que generalmente sigue qué tan valioso es un solo cliente. Un despacho legal puede pagar $150 MXN por clic porque un cliente puede valer decenas de miles de pesos; un restaurante no puede justificar ese mismo costo de clic contra un ticket promedio de unos cuantos cientos de pesos. Un CPC alto no es malo en sí mismo — es una señal de una categoría valiosa, no necesariamente de una campaña rota.",
+        ],
+      },
+      {
+        id: "cpc-no-es-todo",
+        heading: "Why CPC alone doesn't tell the full story",
+        headingEs: "Por qué el CPC solo no cuenta toda la historia",
+        body: [
+          "A lower CPC with a poor conversion rate can cost more per sale than a higher CPC with a landing page that actually converts. The number that matters most is cost per qualified lead or cost per sale, not cost per click in isolation — CPC is just one input into that larger equation.",
+        ],
+        bodyEs: [
+          "Un CPC más bajo con una mala tasa de conversión puede costar más por venta que un CPC más alto con una landing page que sí convierte. El número que más importa es el costo por lead calificado o costo por venta, no el CPC de forma aislada — el CPC es solo un insumo dentro de esa ecuación más grande.",
+        ],
+      },
+      {
+        id: "presupuesto-mensual",
+        heading: "What total monthly budget to plan for",
+        headingEs: "Qué presupuesto mensual total planear",
+        body: [
+          "Beyond CPC, plan for enough monthly volume to generate meaningful data — as a market range, $8,000 to $15,000 MXN monthly for local service categories, and $15,000 MXN and up for competitive national categories like legal, medical or B2B. Below these floors, results tend to be inconsistent regardless of how well the account is built.",
+        ],
+        bodyEs: [
+          "Más allá del CPC, planea un volumen mensual suficiente para generar datos significativos — como rango de mercado, $8,000 a $15,000 MXN mensuales para categorías de servicio local, y $15,000 MXN en adelante para categorías nacionales competidas como legal, médico o B2B. Por debajo de estos pisos, los resultados tienden a ser inconsistentes sin importar qué tan bien esté construida la cuenta.",
+        ],
+      },
+      {
+        id: "como-bajar-el-cpc",
+        heading: "How to actually lower your CPC",
+        headingEs: "Cómo bajar realmente tu CPC",
+        body: [
+          "Improving Quality Score — through tighter ad groups, more relevant ad copy, and a landing page that matches the keyword — lowers CPC more reliably than simply lowering bids, which just loses you the auction. Negative keywords that filter out irrelevant clicks also reduce wasted spend, which functionally lowers your effective cost per useful click.",
+        ],
+        bodyEs: [
+          "Mejorar el Nivel de Calidad — con grupos de anuncios más específicos, copy más relevante y una landing page que coincida con la palabra clave — baja el CPC de forma más confiable que simplemente bajar las pujas, que solo te hace perder la subasta. Las palabras clave negativas que filtran clics irrelevantes también reducen el gasto desperdiciado, lo que en la práctica baja tu costo efectivo por clic útil.",
+        ],
+      },
+      {
+        id: "donde-profundizar",
+        heading: "Where to go deeper",
+        headingEs: "Dónde profundizar",
+        body: [
+          'For the full picture on campaign types, measurement and common mistakes, start with "Google Ads: the complete guide." For the tracking setup that makes any of these numbers trustworthy, see "how to actually measure conversions."',
+        ],
+        bodyEs: [
+          'Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con "Google Ads: guía completa." Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa "cómo medir conversiones de verdad."',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Estos rangos de CPC son garantizados?",
+        qEn: "Are these CPC ranges guaranteed?",
+        a: "No — son estimaciones de mercado típicas basadas en lo que observamos con frecuencia en 2026, no una garantía para tu cuenta específica. El CPC real depende de tu ubicación, competencia directa y Nivel de Calidad.",
+        aEn: "No — they're typical market estimates based on what we commonly observe in 2026, not a guarantee for your specific account. Actual CPC depends on your location, direct competition and Quality Score.",
+      },
+      {
+        q: "¿Por qué mi CPC es más alto que el rango que publican aquí?",
+        qEn: "Why is my CPC higher than the range published here?",
+        a: "Un Nivel de Calidad bajo, palabras clave demasiado amplias, o competir en una zona geográfica de alta demanda pueden subir tu CPC por encima del rango típico de tu industria. Vale la pena revisar la estructura de la cuenta antes de asumir que el mercado simplemente es más caro.",
+        aEn: "A low Quality Score, overly broad keywords, or competing in a high-demand geographic area can push your CPC above your industry's typical range. It's worth reviewing account structure before assuming the market is simply more expensive.",
+      },
+      {
+        q: "¿Un CPC bajo significa una buena campaña?",
+        qEn: "Does a low CPC mean a good campaign?",
+        a: "No necesariamente — un CPC bajo con una landing page que no convierte puede costar más por venta que un CPC alto bien dirigido. El CPC es una sola métrica dentro de una ecuación más grande.",
+        aEn: "Not necessarily — a low CPC with a landing page that doesn't convert can cost more per sale than a well-targeted high CPC. CPC is just one metric within a larger equation.",
+      },
+      {
+        q: "¿El CPC es el mismo en todo México?",
+        qEn: "Is CPC the same across all of Mexico?",
+        a: "No — varía por zona geográfica además de por industria. Ciudades con más competidores pujando por los mismos términos suelen tener CPCs más altos que mercados con menos competencia directa.",
+        aEn: "No — it varies by geographic area in addition to industry. Cities with more competitors bidding on the same terms usually have higher CPCs than markets with less direct competition.",
+      },
+      {
+        q: "¿Cómo sé cuál es el CPC real para mi negocio específico?",
+        qEn: "How do I find the actual CPC for my specific business?",
+        a: "La Herramienta de Planificación de Palabras Clave de Google da estimaciones específicas para tus términos y ubicación exacta, y es más precisa que cualquier rango general publicado — incluyendo el de esta página.",
+        aEn: "Google's Keyword Planner tool gives specific estimates for your exact terms and location, and is more precise than any general published range — including the one on this page.",
+      },
+    ],
+    schema: {
+      keywords: ["Google Ads cost Mexico", "CPC by industry Mexico", "Google Ads pricing"],
+      keywordsEs: ["costo Google Ads México", "CPC por industria México", "precio Google Ads"],
+    },
+  },
+  {
+    slug: "cuanto-tarda-el-seo",
+    title: "How Long Does SEO Take to Show Results?",
+    titleEs: "¿Cuánto Tarda el SEO en Dar Resultados?",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "A direct answer with real timelines: how long SEO actually takes by scenario, and why anyone promising results in weeks is selling something else.",
+    excerptEs:
+      "Una respuesta directa con tiempos reales: cuánto tarda realmente el SEO según el escenario, y por qué quien promete resultados en semanas está vendiendo otra cosa.",
+    readingTime: 6,
+    date: "2026-08-11",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "SEO takes 4 to 6 months to show initial ranking movement, and 9 to 12 months to compound into meaningful, sustained traffic. Low-competition local categories can move faster; competitive national categories can take longer. Any timeline shorter than a couple of months is not realistic SEO — it's something else being sold under the same name.",
+    ledeEs:
+      "El SEO toma de 4 a 6 meses para mostrar movimiento inicial en el posicionamiento, y de 9 a 12 meses para acumularse en tráfico significativo y sostenido. Categorías locales de baja competencia pueden moverse más rápido; categorías nacionales competidas pueden tomar más. Cualquier plazo menor a un par de meses no es SEO real — es otra cosa vendida bajo el mismo nombre.",
+    gradient: "from-neutral-800 to-neutral-950",
+    sections: [
+      {
+        id: "linea-de-tiempo-general",
+        heading: "The general timeline",
+        headingEs: "El cronograma general",
+        body: [
+          "Weeks 1 to 4: technical fixes and foundational work, largely invisible in rankings. Months 2 to 4: initial movement on lower-competition keywords. Months 4 to 6: measurable traffic increase begins. Months 9 to 12: compounding effect where content and authority reinforce each other, and growth accelerates. This isn't a guarantee for every site, but it's the shape the curve typically takes.",
+        ],
+        bodyEs: [
+          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en palabras clave de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar.",
+        ],
+      },
+      {
+        id: "que-lo-acelera",
+        heading: "What makes it faster",
+        headingEs: "Qué lo hace más rápido",
+        body: [
+          "Low local competition, a domain with some existing history and authority, and a business category with clear, specific search intent all shorten the timeline. A local business in a low-competition category with a clean technical foundation can see meaningful movement in as little as 8 to 10 weeks.",
+        ],
+        bodyEs: [
+          "Baja competencia local, un dominio con algo de historial y autoridad existente, y una categoría de negocio con intención de búsqueda clara y específica acortan el cronograma. Un negocio local en una categoría de baja competencia con una base técnica limpia puede ver movimiento significativo en tan solo 8 a 10 semanas.",
+        ],
+      },
+      {
+        id: "que-lo-retrasa",
+        heading: "What slows it down",
+        headingEs: "Qué lo retrasa",
+        body: [
+          "A brand-new domain with no history, high national competition, a large technical debt that needs fixing before content can even be evaluated fairly, or inconsistent publishing all extend the timeline significantly. Starting from a redesign or migration can also temporarily set rankings back before they recover.",
+        ],
+        bodyEs: [
+          "Un dominio nuevo sin historial, alta competencia nacional, una deuda técnica grande que hay que corregir antes de que el contenido se pueda evaluar de forma justa, o publicación inconsistente extienden el cronograma significativamente. Empezar desde un rediseño o migración también puede retrasar temporalmente el posicionamiento antes de que se recupere.",
+        ],
+      },
+      {
+        id: "senales-de-alerta",
+        heading: "Red flags in timeline promises",
+        headingEs: "Señales de alerta en promesas de tiempo",
+        body: [
+          "Anyone promising first-page rankings in two to three weeks is either describing paid traffic mislabeled as SEO, or using tactics that risk a penalty later. Real SEO doesn't skip the timeline — it can only be executed faster within it, not compressed past what search engines need to build trust in a site.",
+        ],
+        bodyEs: [
+          "Quien prometa rankings en primera página en dos o tres semanas está describiendo tráfico pagado mal etiquetado como SEO, o usando tácticas que arriesgan una penalización después. El SEO real no se salta el cronograma — solo se puede ejecutar más rápido dentro de él, no comprimirlo más allá de lo que los buscadores necesitan para confiar en un sitio.",
+        ],
+      },
+      {
+        id: "mientras-tanto",
+        heading: "What to do while you wait",
+        headingEs: "Qué hacer mientras tanto",
+        body: [
+          'If you need traffic before SEO compounds, running Google Ads or Meta Ads in parallel fills the gap without waiting. We cover how to think about that sequencing in "SEO vs Google Ads."',
+        ],
+        bodyEs: [
+          'Si necesitas tráfico antes de que el SEO se acumule, correr Google Ads o Meta Ads en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en "SEO vs Google Ads."',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Por qué el SEO tarda tanto comparado con los anuncios?",
+        qEn: "Why does SEO take so long compared to ads?",
+        a: "Porque el SEO depende de que los buscadores rastreen, indexen y ganen confianza en un sitio con el tiempo — no hay forma de comprar ese proceso, solo de ejecutarlo correctamente y con consistencia.",
+        aEn: "Because SEO depends on search engines crawling, indexing and building trust in a site over time — there's no way to buy that process, only to execute it correctly and consistently.",
+      },
+      {
+        q: "¿Puedo acelerar el SEO pagando más?",
+        qEn: "Can I speed up SEO by paying more?",
+        a: "Hasta cierto punto — más presupuesto puede significar más contenido y más trabajo técnico en paralelo, pero no elimina el tiempo mínimo que los buscadores necesitan para confiar en un sitio nuevo o en cambios recientes.",
+        aEn: "Up to a point — more budget can mean more content and more technical work in parallel, but it doesn't eliminate the minimum time search engines need to trust a new site or recent changes.",
+      },
+      {
+        q: "¿Si mi sitio ya tiene tiempo, el SEO es más rápido?",
+        qEn: "If my site is already established, is SEO faster?",
+        a: "Sí, generalmente — un dominio con historial y algo de autoridad ya construida suele moverse más rápido que uno completamente nuevo, porque parte de la confianza con los buscadores ya existe.",
+        aEn: "Yes, generally — a domain with history and some existing authority usually moves faster than a brand-new one, because part of the trust with search engines already exists.",
+      },
+      {
+        q: "¿Qué pasa si dejo de invertir en SEO a la mitad del proceso?",
+        qEn: "What happens if I stop investing in SEO halfway through?",
+        a: "El progreso no desaparece de inmediato, pero se estanca y eventualmente los competidores que sí siguen invirtiendo lo superan. El SEO recompensa la consistencia más que la intensidad de corto plazo.",
+        aEn: "Progress doesn't disappear immediately, but it stalls and competitors who keep investing eventually overtake it. SEO rewards consistency more than short-term intensity.",
+      },
+    ],
+    schema: {
+      keywords: ["how long does SEO take", "SEO timeline"],
+      keywordsEs: ["cuánto tarda el SEO", "tiempo de resultados SEO"],
+    },
+  },
+  {
+    slug: "seo-vs-google-ads",
+    title: "SEO vs Google Ads: Where Should You Invest First?",
+    titleEs: "SEO vs Google Ads: ¿Dónde Invertir Primero?",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "A direct comparison of SEO and Google Ads — cost, timeline and when each deserves your first peso.",
+    excerptEs:
+      "Una comparación directa entre SEO y Google Ads — costo, tiempo y cuándo merece cada uno tu primer peso.",
+    readingTime: 8,
+    date: "2026-08-12",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: 'Google Ads delivers traffic the day you turn it on and stops the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. The right first investment depends on how urgently you need results and how long you plan to be in business, not on which channel is objectively "better."',
+    ledeEs:
+      'Google Ads entrega tráfico el día que lo enciendes y se detiene el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La inversión correcta para empezar depende de qué tan urgente necesitas resultados y cuánto tiempo planeas seguir en el negocio, no de cuál canal es objetivamente "mejor."',
+    gradient: "from-neutral-800 to-neutral-950",
+    sections: [
+      {
+        id: "la-diferencia-fundamental",
+        heading: "The fundamental difference",
+        headingEs: "La diferencia fundamental",
+        body: [
+          "Google Ads is rented traffic — the moment the budget stops, the traffic stops with it. SEO is owned traffic — it takes real investment to build, but once ranking, it keeps generating visits without a direct per-click cost. Neither is better in the abstract; they solve different problems on different timelines.",
+        ],
+        bodyEs: [
+          "Google Ads es tráfico rentado — en el momento en que se detiene el presupuesto, el tráfico se detiene con él. El SEO es tráfico propio — toma inversión real construirlo, pero una vez posicionando, sigue generando visitas sin un costo directo por clic. Ninguno es mejor en abstracto; resuelven problemas distintos en cronogramas distintos.",
+        ],
+      },
+      {
+        id: "costo-comparado",
+        heading: "Cost compared over time",
+        headingEs: "Costo comparado en el tiempo",
+        body: [
+          "In the first six months, Google Ads usually costs less overall because SEO's investment hasn't paid off yet. Past month twelve, the comparison often flips — SEO's marginal cost per visit trends toward zero while Ads keeps costing the same per click indefinitely. The break-even point varies by category, but it's real.",
+        ],
+        bodyEs: [
+          "En los primeros seis meses, Google Ads suele costar menos en total porque la inversión en SEO todavía no ha rendido frutos. Después del mes doce, la comparación muchas veces se invierte — el costo marginal por visita del SEO tiende a cero mientras que Ads sigue costando lo mismo por clic indefinidamente. El punto de equilibrio varía por categoría, pero es real.",
+        ],
+      },
+      {
+        id: "cuando-empezar-con-ads",
+        heading: "When to start with Google Ads",
+        headingEs: "Cuándo empezar con Google Ads",
+        body: [
+          "Choose Ads first when you need revenue this quarter, when you're testing a new offer or market and need fast signal on what converts, or when your category is too competitive to realistically rank organically in a reasonable timeframe.",
+        ],
+        bodyEs: [
+          "Elige Ads primero cuando necesitas ingresos este trimestre, cuando estás probando una oferta o mercado nuevo y necesitas señal rápida de qué convierte, o cuando tu categoría es demasiado competida para posicionar orgánicamente en un plazo razonable.",
+        ],
+      },
+      {
+        id: "cuando-empezar-con-seo",
+        heading: "When to start with SEO",
+        headingEs: "Cuándo empezar con SEO",
+        body: [
+          "Choose SEO first when you're building for the long term and want to reduce dependency on paid budget over time, when your category has clear, sustained search volume, or when cash flow is tight and you can afford to invest time before revenue.",
+        ],
+        bodyEs: [
+          "Elige SEO primero cuando estás construyendo a largo plazo y quieres reducir la dependencia de presupuesto pagado con el tiempo, cuando tu categoría tiene volumen de búsqueda claro y sostenido, o cuando el flujo de efectivo está ajustado y puedes invertir tiempo antes que ingresos.",
+        ],
+      },
+      {
+        id: "por-que-no-es-o-uno-o-otro",
+        heading: "Why it's rarely either/or",
+        headingEs: "Por qué rara vez es uno u otro",
+        body: [
+          'Most established businesses eventually run both — Ads to fill the gap while SEO compounds, and SEO to lower blended acquisition cost over time. The sequencing question matters more than the choice itself. For platform-to-platform paid comparisons, see "Google Ads vs Meta Ads."',
+        ],
+        bodyEs: [
+          'La mayoría de los negocios establecidos eventualmente corre ambos — Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo de adquisición combinado con el tiempo. La pregunta de secuencia importa más que la elección en sí. Para comparaciones entre plataformas pagadas, revisa "Google Ads vs Meta Ads."',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuál da mejor retorno de inversión?",
+        qEn: "Which gives a better return on investment?",
+        a: "Depende del horizonte de tiempo — a corto plazo, Google Ads suele tener un retorno más predecible. A largo plazo (12+ meses), el SEO frecuentemente supera a los anuncios porque el costo marginal por visita baja con el tiempo.",
+        aEn: "It depends on the time horizon — short term, Google Ads usually has a more predictable return. Long term (12+ months), SEO frequently outperforms ads because marginal cost per visit drops over time.",
+      },
+      {
+        q: "¿Puedo hacer solo uno de los dos para siempre?",
+        qEn: "Can I just do one of the two forever?",
+        a: "Sí, algunos negocios operan exitosamente solo con uno — pero renuncian a las ventajas del otro: velocidad en el caso de SEO solo, o independencia de presupuesto en el caso de Ads solo.",
+        aEn: "Yes, some businesses operate successfully with just one — but they give up the other's advantages: speed in the case of SEO-only, or budget independence in the case of Ads-only.",
+      },
+      {
+        q: "¿Cuál requiere menos gestión continua?",
+        qEn: "Which requires less ongoing management?",
+        a: "Ninguno de los dos funciona bien en piloto automático, pero Google Ads necesita revisión más frecuente (semanal) mientras que el SEO puede revisarse con menor frecuencia (mensual) una vez establecido un ritmo de publicación.",
+        aEn: "Neither works well on autopilot, but Google Ads needs more frequent review (weekly) while SEO can be reviewed less often (monthly) once a publishing rhythm is established.",
+      },
+      {
+        q: "¿Cómo decido cuál probar primero si tengo presupuesto limitado?",
+        qEn: "How do I decide which to try first with a limited budget?",
+        a: "Pregúntate qué tan urgente necesitas resultados. Si es este trimestre, Google Ads. Si estás construyendo para los próximos dos o tres años, empieza a invertir en SEO ahora, aunque sea con un presupuesto modesto.",
+        aEn: "Ask yourself how urgently you need results. If it's this quarter, Google Ads. If you're building for the next two or three years, start investing in SEO now, even with a modest budget.",
+      },
+      {
+        q: "¿Cambia la respuesta según la industria?",
+        qEn: "Does the answer change by industry?",
+        a: "Sí — industrias con alto volumen de búsqueda y ciclos de compra largos favorecen al SEO; industrias con decisiones de compra urgentes o de bajo volumen de búsqueda favorecen a los anuncios.",
+        aEn: "Yes — industries with high search volume and long purchase cycles favor SEO; industries with urgent purchase decisions or low search volume favor ads.",
+      },
+    ],
+    schema: {
+      keywords: ["SEO vs Google Ads", "SEO or ads first"],
+      keywordsEs: ["SEO vs Google Ads", "SEO o ads primero"],
+    },
+  },
+  {
+    slug: "guia-marketing-medico",
+    title: "Medical & Dental Marketing: The Complete 2026 Guide",
+    titleEs: "Marketing Médico y Dental: Guía Completa 2026",
+    category: "Medical Marketing",
+    categoryEs: "Marketing Médico",
+    excerpt:
+      "A complete guide to medical and dental marketing in Mexico: local patients, U.S. patient acquisition, reputation, campaigns and compliance — with cases from Baja California.",
+    excerptEs:
+      "Guía completa de marketing médico y dental en México: pacientes locales, captación de pacientes de EE.UU., reputación, campañas y cumplimiento. Casos de Baja California.",
+    readingTime: 18,
+    date: "2026-08-14",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Medical and dental marketing has two audiences that need different systems: local patients who search, compare reviews and book close to home, and — for clinics near the border — U.S. patients drawn by cost savings who need a completely different trust-building process before they'll cross into Mexico for care. Both run on the same foundation: reputation, a compliant website, and campaigns that respect strict advertising rules.",
+    ledeEs:
+      "El marketing médico y dental tiene dos audiencias que necesitan sistemas distintos: pacientes locales que buscan, comparan reseñas y agendan cerca de casa, y — para clínicas cerca de la frontera — pacientes de EE.UU. atraídos por el ahorro que necesitan un proceso de confianza completamente distinto antes de cruzar a México por atención médica. Ambos corren sobre la misma base: reputación, un sitio web que cumple normativa, y campañas que respetan reglas publicitarias estrictas.",
+    gradient: "from-neutral-800 to-zinc-950",
+    sections: [
+      {
+        id: "dos-audiencias",
+        heading: "Two audiences, two systems",
+        headingEs: "Dos audiencias, dos sistemas",
+        body: [
+          'A local patient searching "dentista cerca de mí" is close to booking — they need a fast, trustworthy local presence. A U.S. patient researching dental work in Tijuana is earlier in a much longer trust journey — they need pricing transparency, credentials, reviews from other American patients, and a clear picture of what crossing the border for care actually looks like. Treating both audiences with the same content and campaigns wastes budget on both.',
+        ],
+        bodyEs: [
+          'Un paciente local que busca "dentista cerca de mí" está cerca de agendar — necesita una presencia local rápida y confiable. Un paciente de EE.UU. investigando trabajo dental en Tijuana está más al principio de un proceso de confianza mucho más largo — necesita transparencia de precios, credenciales, reseñas de otros pacientes estadounidenses, y una idea clara de cómo es realmente cruzar la frontera por atención médica. Tratar a ambas audiencias con el mismo contenido y campañas desperdicia presupuesto en ambas.',
+        ],
+      },
+      {
+        id: "reputacion",
+        heading: "Reputation is the product before the product",
+        headingEs: "La reputación es el producto antes del producto",
+        body: [
+          'For any medical or dental practice, reviews carry more weight than almost any other marketing asset — patients are choosing who touches their body or their family\'s health, and they research accordingly. A steady stream of recent, real reviews, and a habit of responding to every one, does more for patient acquisition than most paid campaigns. We cover the exact process in "how to get more Google reviews for doctors."',
+        ],
+        bodyEs: [
+          'Para cualquier consultorio médico o dental, las reseñas pesan más que casi cualquier otro activo de marketing — los pacientes están eligiendo quién va a tocar su cuerpo o la salud de su familia, y investigan en consecuencia. Un flujo constante de reseñas reales y recientes, junto con el hábito de responder a cada una, hace más por la captación de pacientes que la mayoría de las campañas pagadas. Cubrimos el proceso exacto en "cómo conseguir más reseñas de Google para médicos."',
+        ],
+      },
+      {
+        id: "sitio-web-clinico",
+        heading: "What a clinic's website actually needs",
+        headingEs: "Qué necesita realmente el sitio de una clínica",
+        body: [
+          'Beyond standard trust signals, a medical or dental site needs visible credentials, clear service and pricing pages, and — this matters more here than in almost any other industry — content that meets Google\'s E-E-A-T standard (experience, expertise, authoritativeness, trustworthiness), since health content faces extra scrutiny in search rankings. We go deeper on this in "E-E-A-T for medical content" and "websites for clinics."',
+        ],
+        bodyEs: [
+          'Más allá de las señales de confianza estándar, un sitio médico o dental necesita credenciales visibles, páginas claras de servicios y precios, y — esto importa más aquí que en casi cualquier otra industria — contenido que cumpla con el estándar E-E-A-T de Google (experiencia, especialización, autoridad, confiabilidad), ya que el contenido de salud enfrenta escrutinio extra en el posicionamiento de búsqueda. Profundizamos en esto en "E-E-A-T para contenido médico" y "sitios web para clínicas."',
+        ],
+      },
+      {
+        id: "pacientes-eeuu",
+        heading: "The U.S. patient opportunity at the border",
+        headingEs: "La oportunidad de pacientes de EE.UU. en la frontera",
+        body: [
+          'For clinics in Tijuana and other border cities, patients from California and Arizona represent one of the highest-value opportunities in Mexican healthcare marketing — driven by dental and medical costs that can run a fraction of U.S. prices for comparable care. This audience requires bilingual content, U.S.-facing advertising, and a completely different trust-building process. We cover the full system in "medical tourism in Tijuana: how to attract U.S. patients."',
+        ],
+        bodyEs: [
+          'Para clínicas en Tijuana y otras ciudades fronterizas, los pacientes de California y Arizona representan una de las oportunidades de mayor valor en el marketing de salud mexicano — impulsada por costos dentales y médicos que pueden ser una fracción del precio en EE.UU. para atención comparable. Esta audiencia requiere contenido bilingüe, publicidad orientada a EE.UU., y un proceso de confianza completamente distinto. Cubrimos el sistema completo en "turismo médico en Tijuana: cómo captar pacientes de EE.UU."',
+        ],
+      },
+      {
+        id: "cumplimiento",
+        heading: "Compliance and advertising restrictions",
+        headingEs: "Cumplimiento y restricciones publicitarias",
+        body: [
+          'Medical and dental advertising faces restrictions that most other industries don\'t — on both the Mexican regulatory side (COFEPRIS) and the platform side (Google Ads has specific healthcare policies). Getting this wrong risks more than a wasted budget; it can mean a suspended ad account or regulatory issues. See the specific Google Ads restrictions in "Google Ads for doctors: the restrictions."',
+        ],
+        bodyEs: [
+          'La publicidad médica y dental enfrenta restricciones que la mayoría de las otras industrias no tienen — tanto del lado regulatorio mexicano (COFEPRIS) como del lado de las plataformas (Google Ads tiene políticas específicas de salud). Hacerlo mal arriesga más que un presupuesto desperdiciado; puede significar una cuenta de anuncios suspendida o problemas regulatorios. Revisa las restricciones específicas de Google Ads en "Google Ads para médicos: las restricciones."',
+        ],
+      },
+      {
+        id: "comunicacion-directa",
+        heading: "WhatsApp and direct communication",
+        headingEs: "WhatsApp y comunicación directa",
+        body: [
+          'Patients — especially anxious ones researching a procedure — respond better to a direct WhatsApp line than a contact form that disappears into an inbox. For border-city clinics, this matters even more: a fast, clear answer to a nervous first message from a U.S. patient often decides whether they book at all. We cover setup and scripts in "WhatsApp for clinics."',
+        ],
+        bodyEs: [
+          'Los pacientes — especialmente los que están ansiosos investigando un procedimiento — responden mejor a una línea directa de WhatsApp que a un formulario de contacto que desaparece en una bandeja de entrada. Para clínicas en ciudades fronterizas, esto importa todavía más: una respuesta rápida y clara al primer mensaje nervioso de un paciente de EE.UU. muchas veces decide si agenda o no. Cubrimos la configuración y guiones en "WhatsApp para clínicas."',
+        ],
+      },
+      {
+        id: "redes-sociales",
+        heading: "Social media for doctors and clinics",
+        headingEs: "Redes sociales para médicos y clínicas",
+        body: [
+          'Social media works differently for healthcare than for most industries — the content that builds trust is educational and behind-the-scenes, not sales-driven, and testimonials need to be handled carefully to stay within advertising rules. We go deeper on what actually works in "social media for doctors."',
+        ],
+        bodyEs: [
+          'Las redes sociales funcionan distinto para salud que para la mayoría de las industrias — el contenido que genera confianza es educativo y detrás de cámaras, no orientado a la venta, y los testimonios hay que manejarlos con cuidado para mantenerse dentro de las reglas publicitarias. Profundizamos en qué funciona realmente en "redes sociales para doctores."',
+        ],
+      },
+      {
+        id: "presupuesto",
+        heading: "What to budget",
+        headingEs: "Qué presupuestar",
+        body: [
+          'Medical and dental marketing typically costs more than average because patient acquisition value is high and the sales cycle involves more trust-building steps. The full budget breakdown is in "how much to invest in medical marketing."',
+        ],
+        bodyEs: [
+          'El marketing médico y dental suele costar más que el promedio porque el valor de adquisición de paciente es alto y el ciclo de venta involucra más pasos de construcción de confianza. El desglose completo de presupuesto está en "cuánto invertir en marketing médico."',
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "Common mistakes in medical marketing",
+        headingEs: "Errores comunes en marketing médico",
+        body: [
+          'The most frequent ones we see: generic stock-photo websites with no real credentials shown, ignoring reviews entirely, and advertising claims that violate platform or regulatory rules without the practice realizing it. The full list is in "medical marketing mistakes."',
+        ],
+        bodyEs: [
+          'Los más frecuentes que vemos: sitios web con fotos genéricas de banco de imágenes sin credenciales reales mostradas, ignorar las reseñas por completo, y declaraciones publicitarias que violan reglas de plataforma o regulatorias sin que el consultorio se dé cuenta. La lista completa está en "errores de marketing dental."',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿El marketing médico es diferente al marketing de otras industrias?",
+        qEn: "Is medical marketing different from marketing in other industries?",
+        a: "Sí, en varios sentidos importantes — enfrenta más restricciones publicitarias, requiere más señales de confianza y credenciales, y las reseñas pesan más en la decisión del paciente que en la mayoría de las otras compras.",
+        aEn: "Yes, in several important ways — it faces more advertising restrictions, requires more trust signals and credentials, and reviews weigh more heavily in a patient's decision than in most other purchases.",
+      },
+      {
+        q: "¿Puedo anunciar tratamientos médicos en Google Ads sin restricciones?",
+        qEn: "Can I advertise medical treatments on Google Ads without restrictions?",
+        a: "No — Google tiene políticas específicas para salud que limitan ciertas declaraciones y requieren certificaciones en algunos casos. Revisa las restricciones específicas antes de lanzar campañas para evitar que la cuenta se suspenda.",
+        aEn: "No — Google has specific health policies that limit certain claims and require certifications in some cases. Review the specific restrictions before launching campaigns to avoid account suspension.",
+      },
+      {
+        q: "¿Vale la pena enfocarse en pacientes de EE.UU. si mi clínica no está en la frontera?",
+        qEn: "Is it worth focusing on U.S. patients if my clinic isn't near the border?",
+        a: "Es mucho más difícil sin la ventaja de proximidad geográfica — la mayoría de los pacientes de turismo médico buscan cercanía razonable a la frontera. Para clínicas fuera de ciudades fronterizas, el enfoque suele rendir más en pacientes locales o nacionales.",
+        aEn: "It's much harder without the advantage of geographic proximity — most medical tourism patients look for reasonable closeness to the border. For clinics outside border cities, focus usually performs better on local or national patients.",
+      },
+      {
+        q: "¿Cuánto cuesta el marketing médico comparado con otras industrias?",
+        qEn: "How much does medical marketing cost compared to other industries?",
+        a: "Generalmente más — el valor de un paciente adquirido es alto y el proceso de generar confianza requiere más contenido, reputación y, en el caso de pacientes de EE.UU., campañas bilingües. El desglose completo está en cuánto invertir en marketing médico.",
+        aEn: "Generally more — the value of an acquired patient is high and the trust-building process requires more content, reputation work, and, in the case of U.S. patients, bilingual campaigns. The full breakdown is in how much to invest in medical marketing.",
+      },
+      {
+        q: "¿Las reseñas falsas son un riesgo mayor en salud?",
+        qEn: "Are fake reviews a bigger risk in healthcare?",
+        a: "Sí — más allá del riesgo general de que Google las detecte, en salud generan un riesgo de confianza mayor si un paciente descubre que fueron fabricadas, dado lo sensible de la decisión que está tomando.",
+        aEn: "Yes — beyond the general risk of Google detecting them, in healthcare they create a bigger trust risk if a patient discovers they were fabricated, given how sensitive the decision they're making is.",
+      },
+      {
+        q: "¿Necesito contenido en inglés si mi clínica está en México?",
+        qEn: "Do I need English-language content if my clinic is in Mexico?",
+        a: "Si buscas pacientes de EE.UU., sí, y no como una traducción automática — el contenido en inglés necesita hablarle directamente a las preocupaciones específicas de un paciente estadounidense sobre cruzar la frontera por atención médica.",
+        aEn: "If you're targeting U.S. patients, yes, and not as an automatic translation — the English content needs to speak directly to a U.S. patient's specific concerns about crossing the border for care.",
+      },
+    ],
+    schema: {
+      keywords: ["medical marketing Mexico", "dental marketing", "healthcare marketing guide"],
+      keywordsEs: ["marketing médico México", "marketing dental", "guía marketing salud"],
+    },
+  },
+  {
+    slug: "como-atraer-pacientes-de-estados-unidos",
+    title: "Medical Tourism in Tijuana: How to Attract U.S. Patients",
+    titleEs: "Turismo Médico en Tijuana: Cómo Captar Pacientes de EE.UU.",
+    category: "Medical Marketing",
+    categoryEs: "Marketing Médico",
+    excerpt:
+      "How Tijuana dental and medical clinics attract patients from California and Arizona — trust signals, bilingual content and the campaigns that actually convert cross-border patients.",
+    excerptEs:
+      "Cómo las clínicas dentales y médicas de Tijuana captan pacientes de California y Arizona — señales de confianza, contenido bilingüe y las campañas que sí convierten pacientes transfronterizos.",
+    readingTime: 10,
+    date: "2026-08-16",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "U.S. patients from California and Arizona come to Tijuana for dental and medical care that costs a fraction of U.S. prices, but they need a longer trust-building process than local patients before they'll cross the border. Bilingual content built specifically for an American audience, verifiable credentials, and reviews from other U.S. patients are what actually convert this audience, not translated Spanish marketing copy.",
+    ledeEs:
+      "Los pacientes de EE.UU. de California y Arizona llegan a Tijuana por atención dental y médica que cuesta una fracción del precio en EE.UU., pero necesitan un proceso de confianza más largo que los pacientes locales antes de cruzar la frontera. El contenido bilingüe construido específicamente para una audiencia estadounidense, credenciales verificables y reseñas de otros pacientes de EE.UU. son lo que realmente convierte a esta audiencia, no copy de marketing en español traducido.",
+    gradient: "from-neutral-800 to-zinc-950",
+    sections: [
+      {
+        id: "por-que-cruzan-la-frontera",
+        heading: "Why U.S. patients cross the border",
+        headingEs: "Por qué los pacientes de EE.UU. cruzan la frontera",
+        body: [
+          "Cost is the primary driver — dental implants, crowns, and many elective procedures in Tijuana commonly run a fraction of equivalent U.S. pricing, even accounting for travel. Proximity matters too: for patients in San Diego or Yuma, Tijuana is often closer than the nearest comparable U.S. provider. But cost alone doesn't convert a nervous first-time patient — trust does.",
+        ],
+        bodyEs: [
+          "El costo es el motor principal — implantes dentales, coronas y muchos procedimientos electivos en Tijuana suelen costar una fracción del precio equivalente en EE.UU., incluso considerando el viaje. La cercanía también importa: para pacientes en San Diego o Yuma, Tijuana muchas veces está más cerca que el proveedor comparable más cercano en EE.UU. Pero el costo solo no convierte a un paciente nervioso de primera vez — la confianza sí.",
+        ],
+      },
+      {
+        id: "la-barrera-de-confianza",
+        heading: "The trust barrier is the real obstacle",
+        headingEs: "La barrera de confianza es el obstáculo real",
+        body: [
+          'A U.S. patient considering care in Mexico is working through real concerns — safety, credentials, what happens if something goes wrong, and whether the clinic is actually as good as it claims. Content that ignores these concerns and jumps straight to price loses the patient before they ever reach the "how much does it cost" question.',
+        ],
+        bodyEs: [
+          'Un paciente de EE.UU. que considera atención en México está procesando preocupaciones reales — seguridad, credenciales, qué pasa si algo sale mal, y si la clínica realmente es tan buena como dice. El contenido que ignora estas preocupaciones y salta directo al precio pierde al paciente antes de que llegue a la pregunta de "cuánto cuesta".',
+        ],
+      },
+      {
+        id: "contenido-bilingue-real",
+        heading: "Bilingual content means built for the audience, not translated",
+        headingEs: "Contenido bilingüe significa construido para la audiencia, no traducido",
+        body: [
+          "English content for U.S. patients needs to be written from scratch for that audience's specific concerns and search behavior, not a direct translation of Spanish marketing copy. That means addressing border-crossing logistics, U.S. dollar pricing, credential verification in terms an American patient recognizes, and testimonials specifically from other U.S. patients, not just local ones.",
+        ],
+        bodyEs: [
+          "El contenido en inglés para pacientes de EE.UU. necesita escribirse desde cero para las preocupaciones y el comportamiento de búsqueda específicos de esa audiencia, no una traducción directa del copy en español. Eso significa abordar la logística de cruzar la frontera, precios en dólares, verificación de credenciales en términos que un paciente estadounidense reconozca, y testimonios específicamente de otros pacientes de EE.UU., no solo locales.",
+        ],
+      },
+      {
+        id: "senales-de-confianza",
+        heading: "The trust signals that actually matter",
+        headingEs: "Las señales de confianza que realmente importan",
+        body: [
+          "Verifiable credentials and certifications displayed prominently, before-and-after cases with real patient consent, video testimonials specifically from U.S. patients describing the crossing and treatment experience, and transparent U.S.-dollar pricing all reduce the specific anxieties this audience has that local patients typically don't.",
+        ],
+        bodyEs: [
+          "Credenciales y certificaciones verificables mostradas de forma prominente, casos de antes y después con consentimiento real del paciente, testimonios en video específicamente de pacientes de EE.UU. describiendo la experiencia de cruzar y el tratamiento, y precios transparentes en dólares reducen las ansiedades específicas que tiene esta audiencia y que los pacientes locales típicamente no tienen.",
+        ],
+      },
+      {
+        id: "donde-encontrarlos",
+        heading: "Where to actually reach them",
+        headingEs: "Dónde realmente encontrarlos",
+        body: [
+          'Google Ads targeting U.S. border-area zip codes for specific procedure searches, Meta Ads targeting the same geography with educational, testimonial-driven creative, and English-language SEO content built around the specific searches U.S. patients run — "dental implants Tijuana cost," "is it safe to get dental work in Mexico" — all outperform generic Spanish-language campaigns for this specific audience.',
+        ],
+        bodyEs: [
+          'Google Ads dirigido a códigos postales de zonas fronterizas de EE.UU. para búsquedas de procedimientos específicos, Meta Ads dirigido a la misma geografía con creativos educativos y basados en testimonios, y contenido SEO en inglés construido alrededor de las búsquedas específicas que hacen los pacientes de EE.UU. — "dental implants Tijuana cost," "is it safe to get dental work in Mexico" — superan a las campañas genéricas en español para esta audiencia específica.',
+        ],
+      },
+      {
+        id: "despues-del-primer-contacto",
+        heading: "What happens after the first contact",
+        headingEs: "Qué pasa después del primer contacto",
+        body: [
+          'A fast, clear response — ideally bilingual and available by WhatsApp or a direct phone line, not just an email form — often decides whether a nervous first-time patient books at all. The broader follow-up principles are the same ones covered in "real estate lead follow-up," adapted to a patient instead of a buyer: speed and reassurance win.',
+        ],
+        bodyEs: [
+          'Una respuesta rápida y clara — idealmente bilingüe y disponible por WhatsApp o una línea telefónica directa, no solo un formulario de correo — muchas veces decide si un paciente nervioso de primera vez agenda o no. Los principios generales de seguimiento son los mismos que cubrimos en "seguimiento de leads inmobiliarios," adaptados a un paciente en vez de un comprador: velocidad y tranquilidad ganan.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Qué tan seguro es para un paciente de EE.UU. recibir atención dental en Tijuana?",
+        qEn: "How safe is it for a U.S. patient to get dental care in Tijuana?",
+        a: "Depende completamente de la clínica específica — credenciales verificables, certificaciones reales y reseñas consistentes de otros pacientes de EE.UU. son las señales que un paciente debe buscar antes de decidir, igual que investigaría cualquier proveedor de salud en su propio país.",
+        aEn: "It depends entirely on the specific clinic — verifiable credentials, real certifications and consistent reviews from other U.S. patients are the signals a patient should look for before deciding, the same way they'd research any healthcare provider in their own country.",
+      },
+      {
+        q: "¿Cuánto pueden ahorrar los pacientes de EE.UU. viniendo a Tijuana?",
+        qEn: "How much can U.S. patients save coming to Tijuana?",
+        a: "Como referencia de mercado, muchos procedimientos dentales y médicos electivos cuestan una fracción del precio equivalente en EE.UU., aunque el ahorro exacto varía mucho por procedimiento y proveedor específico — vale la pena cotizar directamente con la clínica.",
+        aEn: "As a market reference, many dental and elective medical procedures cost a fraction of the equivalent U.S. price, though the exact savings vary a lot by procedure and specific provider — it's worth getting a direct quote from the clinic.",
+      },
+      {
+        q: "¿Necesito seguro médico especial para recibir atención en México?",
+        qEn: "Do I need special medical insurance to get care in Mexico?",
+        a: "La mayoría de los pacientes de turismo médico pagan directamente, ya que la mayoría de los seguros de EE.UU. no cubren atención fuera del país — esto es parte de por qué el ahorro de costo es el motor principal detrás de la decisión.",
+        aEn: "Most medical tourism patients pay directly, since most U.S. insurance doesn't cover care outside the country — this is part of why cost savings is the primary driver behind the decision.",
+      },
+      {
+        q: "¿El contenido en inglés debe estar en un dominio separado?",
+        qEn: "Should English content live on a separate domain?",
+        a: "No es necesario — funciona bien como una sección o subcarpeta en inglés dentro del mismo sitio, siempre que esté construida específicamente para la audiencia estadounidense y no sea solo una traducción automática del contenido en español.",
+        aEn: "It's not necessary — it works well as an English section or subfolder within the same site, as long as it's built specifically for the U.S. audience and isn't just an automatic translation of the Spanish content.",
+      },
+      {
+        q: "¿Qué plataforma publicitaria funciona mejor para llegar a pacientes de EE.UU.?",
+        qEn: "Which advertising platform works best to reach U.S. patients?",
+        a: "Google Ads captura a quienes ya están buscando activamente el procedimiento y el destino; Meta Ads funciona bien para generar conocimiento inicial con contenido testimonial. La mayoría de las clínicas fronterizas exitosas usa ambas.",
+        aEn: "Google Ads captures people already actively searching for the procedure and destination; Meta Ads works well for building initial awareness with testimonial content. Most successful border clinics use both.",
+      },
+    ],
+    schema: {
+      keywords: ["medical tourism Tijuana", "dental tourism Mexico", "attract US patients Tijuana"],
+      keywordsEs: [
+        "turismo médico Tijuana",
+        "turismo dental México",
+        "captar pacientes de Estados Unidos",
+      ],
+    },
+  },
+  {
+    slug: "optimizar-google-business-profile",
+    title: "How to Optimize Your Google Business Profile (Step by Step)",
+    titleEs: "Cómo Optimizar tu Perfil de Google Business (Paso a Paso)",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "A step-by-step, actionable process for optimizing a Google Business Profile — the single highest-leverage local SEO asset most businesses neglect.",
+    excerptEs:
+      "Un proceso paso a paso y accionable para optimizar un perfil de Google Business — el activo de SEO local de mayor impacto que la mayoría de los negocios descuida.",
+    readingTime: 9,
+    date: "2026-08-18",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Optimizing a Google Business Profile means claiming and verifying it, filling every field completely and accurately, uploading real photos regularly, and actively managing reviews, in that order. Most businesses claim it once and never touch it again, which leaves most of its ranking value unclaimed.",
+    ledeEs:
+      "Optimizar un perfil de Google Business significa reclamarlo y verificarlo, llenar cada campo de forma completa y precisa, subir fotos reales con regularidad, y gestionar activamente las reseñas, en ese orden. La mayoría de los negocios lo reclama una vez y nunca lo vuelve a tocar, lo que deja la mayor parte de su valor de posicionamiento sin reclamar.",
+    gradient: "from-neutral-800 to-neutral-950",
+    sections: [
+      {
+        id: "paso-1-reclamar-verificar",
+        heading: "Step 1: Claim and verify the profile",
+        headingEs: "Paso 1: Reclama y verifica el perfil",
+        body: [
+          "Search for your business on Google Maps, claim it if it already exists or create it if it doesn't, and complete Google's verification process — usually a postcard, phone call, or video verification depending on the business type. An unverified profile has limited ranking ability and can't be fully edited.",
+        ],
+        bodyEs: [
+          "Busca tu negocio en Google Maps, reclámalo si ya existe o créalo si no, y completa el proceso de verificación de Google — normalmente una postal, llamada telefónica o verificación por video según el tipo de negocio. Un perfil sin verificar tiene capacidad de posicionamiento limitada y no se puede editar por completo.",
+        ],
+      },
+      {
+        id: "paso-2-informacion-completa",
+        heading: "Step 2: Complete every field accurately",
+        headingEs: "Paso 2: Completa cada campo con precisión",
+        body: [
+          "Business name exactly as it appears elsewhere (no keyword stuffing), the most specific and accurate category available, complete and accurate hours including holidays, a local phone number, and a description that clearly states what the business does. Incomplete profiles rank worse than complete ones with otherwise similar authority.",
+        ],
+        bodyEs: [
+          "Nombre del negocio exactamente como aparece en cualquier otro lado (sin rellenar con palabras clave), la categoría más específica y precisa disponible, horarios completos y correctos incluyendo días festivos, un número telefónico local, y una descripción que declare claramente a qué se dedica el negocio. Los perfiles incompletos posicionan peor que los completos con autoridad similar.",
+        ],
+      },
+      {
+        id: "paso-3-fotos",
+        heading: "Step 3: Upload real photos regularly",
+        headingEs: "Paso 3: Sube fotos reales con regularidad",
+        body: [
+          "Profiles with more recent, real photos get more clicks and calls than those with stock images or none at all. Add exterior, interior, team and product or service photos, and keep adding new ones monthly — a profile with photos from three years ago signals inactivity even if everything else is current.",
+        ],
+        bodyEs: [
+          "Los perfiles con fotos más recientes y reales reciben más clics y llamadas que los que tienen imágenes de banco o ninguna. Suma fotos del exterior, interior, equipo y producto o servicio, y sigue agregando nuevas cada mes — un perfil con fotos de hace tres años señala inactividad aunque todo lo demás esté al día.",
+        ],
+      },
+      {
+        id: "paso-4-resenas",
+        heading: "Step 4: Build a system for reviews",
+        headingEs: "Paso 4: Construye un sistema para reseñas",
+        body: [
+          "Ask every satisfied customer for a review at the moment satisfaction is highest — right after the service, not days later. Respond to every review, positive and negative, professionally and promptly. A steady trickle of new reviews outperforms a large batch collected once and never repeated.",
+        ],
+        bodyEs: [
+          "Pide una reseña a cada cliente satisfecho en el momento de mayor satisfacción — justo después del servicio, no días después. Responde a cada reseña, positiva y negativa, de forma profesional y oportuna. Un flujo constante de reseñas nuevas rinde mejor que un lote grande recolectado una vez y nunca repetido.",
+        ],
+      },
+      {
+        id: "paso-5-publicaciones",
+        heading: "Step 5: Use posts and Q&A actively",
+        headingEs: "Paso 5: Usa publicaciones y preguntas y respuestas activamente",
+        body: [
+          "Google Business posts — offers, updates, events — signal an active business and give you another surface to appear on. The Q&A section is also worth monitoring and pre-populating with the questions customers actually ask, since anyone can answer there, including competitors or bots giving wrong information.",
+        ],
+        bodyEs: [
+          "Las publicaciones de Google Business — ofertas, actualizaciones, eventos — señalan un negocio activo y dan otra superficie donde aparecer. La sección de preguntas y respuestas también vale la pena monitorearla y prellenarla con las preguntas que realmente hacen los clientes, ya que cualquiera puede responder ahí, incluyendo competidores o bots dando información incorrecta.",
+        ],
+      },
+      {
+        id: "paso-6-consistencia-nap",
+        heading: "Step 6: Keep NAP consistent everywhere",
+        headingEs: "Paso 6: Mantén el NAP consistente en todos lados",
+        body: [
+          "Name, Address and Phone need to match exactly across the website, the profile, social media and any directory listing. Even small inconsistencies confuse the algorithms that verify a business is real, which quietly caps ranking potential.",
+        ],
+        bodyEs: [
+          "Nombre, Dirección y Teléfono necesitan coincidir exactamente en el sitio web, el perfil, redes sociales y cualquier directorio. Incluso inconsistencias pequeñas confunden a los algoritmos que verifican que un negocio es real, lo que limita el potencial de posicionamiento en silencio.",
+        ],
+      },
+      {
+        id: "paso-7-mantenimiento",
+        heading: "Step 7: Treat it as an ongoing channel",
+        headingEs: "Paso 7: Trátalo como un canal continuo",
+        body: [
+          'A profile optimized once and never revisited slowly loses the value all this work built. Review it monthly at minimum: new photos, response to recent reviews, and an updated post. This is the single asset covered in most depth as part of "local SEO: the complete guide."',
+        ],
+        bodyEs: [
+          'Un perfil optimizado una vez y nunca revisado va perdiendo lentamente el valor que todo este trabajo construyó. Revísalo mensualmente como mínimo: fotos nuevas, respuesta a reseñas recientes, y una publicación actualizada. Este es el activo que cubrimos con más profundidad como parte de "SEO local: guía completa."',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuánto tiempo toma optimizar un perfil de Google Business desde cero?",
+        qEn: "How long does it take to optimize a Google Business Profile from scratch?",
+        a: "La configuración inicial completa toma unas dos a tres horas de trabajo enfocado. El proceso de verificación puede tomar de unos días a dos semanas dependiendo del método que Google asigne.",
+        aEn: "The full initial setup takes about two to three focused hours of work. The verification process can take anywhere from a few days to two weeks depending on the method Google assigns.",
+      },
+      {
+        q: "¿Puedo tener un perfil sin dirección física visible?",
+        qEn: "Can I have a profile without a visible physical address?",
+        a: "Sí, para negocios de servicio a domicilio que no reciben clientes en un local — Google permite ocultar la dirección exacta mientras se define un área de servicio, siempre que el negocio siga siendo verificable.",
+        aEn: "Yes, for service-area businesses that don't receive customers at a location — Google allows hiding the exact address while defining a service area, as long as the business remains verifiable.",
+      },
+      {
+        q: "¿Qué tan seguido debo publicar en el perfil?",
+        qEn: "How often should I post to the profile?",
+        a: "Al menos una vez cada una o dos semanas mantiene el perfil visiblemente activo. Publicaciones más frecuentes ayudan, pero la consistencia importa más que el volumen.",
+        aEn: "At least once every one to two weeks keeps the profile visibly active. More frequent posting helps, but consistency matters more than volume.",
+      },
+      {
+        q: "¿Debo responder a reseñas negativas o es mejor ignorarlas?",
+        qEn: "Should I respond to negative reviews or is it better to ignore them?",
+        a: "Siempre respóndelas, de forma profesional y sin ponerte a la defensiva. Los clientes potenciales leen las respuestas tanto como las reseñas mismas, y una respuesta bien manejada puede generar más confianza que ausencia de reseñas negativas.",
+        aEn: "Always respond to them, professionally and without getting defensive. Potential customers read the responses as much as the reviews themselves, and a well-handled response can build more trust than the absence of negative reviews.",
+      },
+      {
+        q: "¿El perfil de Google Business reemplaza a un sitio web?",
+        qEn: "Does a Google Business Profile replace a website?",
+        a: "No del todo — puede generar tráfico y llamadas por sí solo, pero un sitio web le da a los buscadores más contenido para indexar y es donde conviertes ese tráfico en algo más profundo que una llamada.",
+        aEn: "Not entirely — it can generate traffic and calls on its own, but a website gives search engines more content to index and is where you convert that traffic into something deeper than a phone call.",
+      },
+    ],
+    schema: {
+      keywords: ["optimize Google Business Profile", "Google My Business setup"],
+      keywordsEs: ["optimizar Google Business", "configurar perfil Google Business"],
+    },
+  },
+  {
+    slug: "como-medir-conversiones-google-ads",
+    title: "How to Actually Measure Conversions (GA4 + GTM)",
+    titleEs: "Cómo Medir Conversiones de Verdad (GA4 + GTM)",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "A practical GA4 and Google Tag Manager setup for measuring Google Ads conversions correctly — written from the accounts we've had to fix, not theory.",
+    excerptEs:
+      "Una configuración práctica de GA4 y Google Tag Manager para medir conversiones de Google Ads correctamente — escrito desde las cuentas que hemos tenido que corregir, no desde la teoría.",
+    readingTime: 9,
+    date: "2026-08-20",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Measuring conversions correctly means GA4 tracking real business actions (calls, form fills, purchases) through Google Tag Manager, connected properly to Google Ads, not just pageviews mislabeled as conversions. In nearly every account audit we run, broken or incomplete conversion tracking is the first thing we find, and it invalidates every other optimization until it's fixed.",
+    ledeEs:
+      "Medir conversiones correctamente significa que GA4 rastree acciones de negocio reales (llamadas, formularios, compras) a través de Google Tag Manager, conectado correctamente a Google Ads, no solo vistas de página mal etiquetadas como conversiones. En casi cada auditoría de cuenta que hacemos, el seguimiento de conversiones roto o incompleto es lo primero que encontramos, e invalida cualquier otra optimización hasta que se corrige.",
+    gradient: "from-slate-700 to-neutral-900",
+    sections: [
+      {
+        id: "por-que-esto-importa-tanto",
+        heading: "Why this matters more than any single ad tweak",
+        headingEs: "Por qué esto importa más que cualquier ajuste de anuncio",
+        body: [
+          "Google Ads' bidding algorithm optimizes toward whatever it's told counts as a conversion. If that signal is wrong — counting every pageview instead of actual leads, or missing conversions that happen by phone — the algorithm spends money chasing the wrong outcome, confidently and consistently. No amount of creative or keyword optimization fixes a measurement problem underneath it.",
+        ],
+        bodyEs: [
+          "El algoritmo de puja de Google Ads optimiza hacia lo que se le indique que cuenta como conversión. Si esa señal está mal — contando cada vista de página en vez de leads reales, o perdiendo conversiones que ocurren por teléfono — el algoritmo gasta dinero persiguiendo el resultado equivocado, de forma consistente y segura de sí mismo. Ninguna optimización de creativo o palabra clave corrige un problema de medición debajo de todo eso.",
+        ],
+      },
+      {
+        id: "ga4-vs-gtm",
+        heading: "GA4 and Google Tag Manager: what each one actually does",
+        headingEs: "GA4 y Google Tag Manager: qué hace cada uno realmente",
+        body: [
+          "GA4 is where conversion data lives and gets reported. Google Tag Manager is the tool that fires the tracking code that tells GA4 a conversion happened, without needing a developer to edit site code every time something changes. Together, GTM captures the event and GA4 records and reports it, and from there, Google Ads pulls that conversion data to optimize bidding.",
+        ],
+        bodyEs: [
+          "GA4 es donde vive y se reporta la información de conversiones. Google Tag Manager es la herramienta que dispara el código de seguimiento que le dice a GA4 que ocurrió una conversión, sin necesitar que un desarrollador edite el código del sitio cada vez que algo cambia. Juntos, GTM captura el evento y GA4 lo registra y reporta, y de ahí, Google Ads toma esa información de conversión para optimizar la puja.",
+        ],
+      },
+      {
+        id: "que-contar-como-conversion",
+        heading: "What actually counts as a conversion",
+        headingEs: "Qué realmente cuenta como conversión",
+        body: [
+          "A conversion should be an action with real business value: a submitted lead form, a completed purchase, a phone call that lasts long enough to be a real inquiry, a WhatsApp click that starts a conversation. Pageviews, scroll depth, or time-on-site are engagement signals, not conversions — counting them as conversions is one of the most common mistakes we find.",
+        ],
+        bodyEs: [
+          "Una conversión debería ser una acción con valor de negocio real: un formulario de lead enviado, una compra completada, una llamada que dura lo suficiente para ser una consulta real, un clic a WhatsApp que inicia una conversación. Las vistas de página, la profundidad de scroll o el tiempo en el sitio son señales de interacción, no conversiones — contarlas como conversiones es uno de los errores más comunes que encontramos.",
+        ],
+      },
+      {
+        id: "rastreo-de-llamadas",
+        heading: "Call tracking: the piece most accounts miss entirely",
+        headingEs:
+          "Seguimiento de llamadas: la pieza que la mayoría de las cuentas se pierde por completo",
+        body: [
+          "For service businesses, a large share of conversions happen by phone, and most accounts have zero visibility into which ads and keywords actually drove those calls. Dynamic number insertion and call tracking connect a phone call back to the specific campaign that generated it, closing a gap that otherwise makes half the conversion picture invisible.",
+        ],
+        bodyEs: [
+          "Para negocios de servicio, una gran parte de las conversiones ocurre por teléfono, y la mayoría de las cuentas no tiene ninguna visibilidad de qué anuncios y palabras clave realmente generaron esas llamadas. La inserción dinámica de número y el seguimiento de llamadas conectan una llamada telefónica de vuelta con la campaña específica que la generó, cerrando un hueco que de otra forma vuelve invisible la mitad del panorama de conversión.",
+        ],
+      },
+      {
+        id: "lo-que-vemos-en-auditorias",
+        heading: "What we consistently find when auditing accounts",
+        headingEs: "Lo que consistentemente encontramos al auditar cuentas",
+        body: [
+          "Duplicate conversion tags firing twice and inflating results, conversions still tracking an old form after a site redesign silently broke it, and phone calls with no tracking at all are the three issues that show up most often — including in accounts we've audited like Velport's, where fixing the same three gaps was the first step before any campaign optimization made sense. None of this requires guessing; it requires actually checking the tags fire correctly, which most accounts never do after initial setup.",
+        ],
+        bodyEs: [
+          "Etiquetas de conversión duplicadas disparándose dos veces e inflando los resultados, conversiones que siguen rastreando un formulario viejo después de que un rediseño del sitio lo rompió en silencio, y llamadas telefónicas sin ningún rastreo son los tres problemas que aparecen con más frecuencia — incluyendo en cuentas que hemos auditado como la de Velport, donde corregir esos mismos tres huecos fue el primer paso antes de que cualquier optimización de campaña tuviera sentido. Nada de esto requiere adivinar; requiere realmente revisar que las etiquetas disparen correctamente, algo que la mayoría de las cuentas nunca hace después de la configuración inicial.",
+        ],
+      },
+      {
+        id: "como-verificar-que-funciona",
+        heading: "How to verify it's actually working",
+        headingEs: "Cómo verificar que realmente funciona",
+        body: [
+          "Use GTM's Preview mode and GA4's DebugView to watch events fire in real time before trusting any report, and periodically complete a test conversion yourself to confirm it shows up correctly in both GA4 and Google Ads. The full list of related account mistakes, including tracking, is in \"10 Google Ads mistakes that burn your budget.\"",
+        ],
+        bodyEs: [
+          'Usa el modo Vista Previa de GTM y el DebugView de GA4 para ver los eventos dispararse en tiempo real antes de confiar en cualquier reporte, y periódicamente completa tú mismo una conversión de prueba para confirmar que aparece correctamente tanto en GA4 como en Google Ads. La lista completa de errores de cuenta relacionados, incluyendo seguimiento, está en "10 errores de Google Ads que queman tu presupuesto."',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Necesito GTM si ya tengo GA4 instalado?",
+        qEn: "Do I need GTM if I already have GA4 installed?",
+        a: "No es obligatorio, pero facilita muchísimo agregar y modificar seguimiento sin depender de un desarrollador cada vez. Para cuentas con más de un par de eventos de conversión, GTM ahorra tiempo real.",
+        aEn: "It's not mandatory, but it makes adding and modifying tracking without depending on a developer every time much easier. For accounts with more than a couple of conversion events, GTM saves real time.",
+      },
+      {
+        q: "¿Cómo sé si mi seguimiento de conversiones está roto?",
+        qEn: "How do I know if my conversion tracking is broken?",
+        a: "Compara el número de conversiones reportadas contra las ventas o leads reales que sabes que recibiste en el mismo periodo — una diferencia grande en cualquier dirección es la señal más clara de que algo está mal.",
+        aEn: "Compare the number of reported conversions against the actual sales or leads you know you received in the same period — a large gap in either direction is the clearest sign something is wrong.",
+      },
+      {
+        q: "¿Cada cuánto debo revisar que el seguimiento siga funcionando?",
+        qEn: "How often should I check that tracking is still working?",
+        a: "Después de cualquier cambio al sitio web, siempre. Como rutina general, una revisión mensual detecta la mayoría de los problemas antes de que distorsionen semanas de optimización de campaña.",
+        aEn: "After any website change, always. As a general routine, a monthly check catches most problems before they distort weeks of campaign optimization.",
+      },
+      {
+        q: "¿Las llamadas telefónicas realmente se pueden rastrear con precisión?",
+        qEn: "Can phone calls actually be tracked accurately?",
+        a: "Sí, con inserción dinámica de número y una herramienta de seguimiento de llamadas — se puede saber exactamente qué campaña y palabra clave generó cada llamada, con el mismo nivel de detalle que un formulario web.",
+        aEn: "Yes, with dynamic number insertion and a call tracking tool — you can know exactly which campaign and keyword generated each call, with the same level of detail as a web form.",
+      },
+      {
+        q: "¿Vale la pena pagar por una auditoría de tracking si sospecho que algo está mal?",
+        qEn: "Is it worth paying for a tracking audit if I suspect something is wrong?",
+        a: "Casi siempre sí — encontrar y corregir seguimiento roto suele pagarse solo de inmediato, porque cada semana que el algoritmo optimiza con datos incorrectos es presupuesto gastado persiguiendo el objetivo equivocado.",
+        aEn: "Almost always yes — finding and fixing broken tracking usually pays for itself immediately, because every week the algorithm optimizes on incorrect data is budget spent chasing the wrong target.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "GA4 conversion tracking",
+        "Google Tag Manager setup",
+        "measure Google Ads conversions",
+      ],
+      keywordsEs: [
+        "seguimiento de conversiones GA4",
+        "configurar Google Tag Manager",
+        "medir conversiones Google Ads",
+      ],
+    },
+  },
+  {
+    slug: "cuanto-invertir-en-marketing-digital",
+    title: "How Much Should a Small Business Invest in Digital Marketing?",
+    titleEs: "¿Cuánto Debe Invertir una Pyme en Marketing Digital?",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Real 2026 digital marketing budget ranges by business size in Mexico — from a solo operation to an established mid-size company.",
+    excerptEs:
+      "Rangos reales de presupuesto de marketing digital 2026 por tamaño de negocio en México — desde una operación individual hasta una empresa mediana establecida.",
+    readingTime: 8,
+    date: "2026-08-22",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "As a 2026 market range, a small business in Mexico should plan for roughly 7% to 12% of revenue on digital marketing if actively growing, or $10,000 to $60,000 MXN monthly depending on size — micro-businesses at the low end, established mid-size companies at the high end. Businesses spending far below this range typically plateau; those spending far above it without a clear system usually have a conversion problem, not a budget problem.",
+    ledeEs:
+      "Como rango de mercado 2026, un negocio pequeño en México debe planear entre 7% y 12% de sus ingresos en marketing digital si está en crecimiento activo, o entre $10,000 y $60,000 MXN mensuales según el tamaño — micronegocios en el rango bajo, empresas medianas establecidas en el rango alto. Los negocios que gastan muy por debajo de este rango suelen estancarse; los que gastan muy por encima sin un sistema claro suelen tener un problema de conversión, no de presupuesto.",
+    gradient: "from-neutral-800 to-zinc-950",
+    sections: [
+      {
+        id: "rangos-por-tamano",
+        heading: "Budget ranges by business size",
+        headingEs: "Rangos de presupuesto por tamaño de negocio",
+        body: [
+          "As typical 2026 market ranges for Mexico:",
+          "Solo operator or micro-business: $10,000–$18,000 MXN/month.",
+          "Small business (a handful of employees, one location): $18,000–$35,000 MXN/month.",
+          "Established small-to-medium business (multiple locations or a national footprint): $35,000–$60,000 MXN/month.",
+          "Larger, competitive categories or aggressive growth targets: $60,000 MXN/month and up.",
+        ],
+        bodyEs: [
+          "Como rangos de mercado típicos 2026 para México:",
+          "Operador individual o micronegocio: $10,000–$18,000 MXN/mes.",
+          "Negocio pequeño (un puñado de empleados, una ubicación): $18,000–$35,000 MXN/mes.",
+          "Pyme establecida (varias ubicaciones o presencia nacional): $35,000–$60,000 MXN/mes.",
+          "Categorías más grandes y competidas o metas de crecimiento agresivas: $60,000 MXN/mes en adelante.",
+        ],
+      },
+      {
+        id: "porcentaje-de-ingresos",
+        heading: "Why percentage of revenue is a better anchor than a flat number",
+        headingEs: "Por qué el porcentaje de ingresos es un mejor ancla que un número fijo",
+        body: [
+          "A flat peso amount doesn't scale with the business, but a percentage does — 7% to 12% of revenue is a commonly cited range for businesses actively trying to grow, versus 3% to 6% for businesses mainly trying to maintain their current position. New businesses or those launching in a new market often need to spend at the higher end temporarily to build initial traction.",
+        ],
+        bodyEs: [
+          "Un monto fijo en pesos no escala con el negocio, pero un porcentaje sí — 7% a 12% de los ingresos es un rango comúnmente citado para negocios que buscan crecer activamente, contra 3% a 6% para negocios que principalmente buscan mantener su posición actual. Los negocios nuevos o los que lanzan en un mercado nuevo suelen necesitar gastar en el rango alto temporalmente para construir tracción inicial.",
+        ],
+      },
+      {
+        id: "como-repartirlo",
+        heading: "How to split the budget across channels",
+        headingEs: "Cómo repartir el presupuesto entre canales",
+        body: [
+          "There's no universal split, but a common starting point for a small business is roughly 40% paid ads (Google and Meta combined), 30% SEO and content, 20% website and conversion infrastructure, and 10% held in reserve for testing new channels. This shifts significantly by industry — a real estate developer weighs differently than a local restaurant.",
+        ],
+        bodyEs: [
+          "No existe un reparto universal, pero un punto de partida común para un negocio pequeño es aproximadamente 40% anuncios pagados (Google y Meta combinados), 30% SEO y contenido, 20% sitio web e infraestructura de conversión, y 10% en reserva para probar canales nuevos. Esto cambia significativamente por industria — una desarrolladora inmobiliaria pesa distinto que un restaurante local.",
+        ],
+      },
+      {
+        id: "senales-de-subinversion",
+        heading: "Signs you're underinvesting",
+        headingEs: "Señales de que estás subinvirtiendo",
+        body: [
+          "Flat or declining traffic despite a growing market, relying almost entirely on referrals with no scalable acquisition channel, and a website that hasn't been touched in years are all signs the budget is too low to support real growth, regardless of how good the product or service is.",
+        ],
+        bodyEs: [
+          "Tráfico plano o en declive a pesar de un mercado en crecimiento, depender casi por completo de referidos sin un canal de adquisición escalable, y un sitio web que no se ha tocado en años son señales de que el presupuesto es demasiado bajo para sostener un crecimiento real, sin importar qué tan bueno sea el producto o servicio.",
+        ],
+      },
+      {
+        id: "senales-de-mala-asignacion",
+        heading: "Signs the problem isn't budget, it's allocation",
+        headingEs: "Señales de que el problema no es presupuesto, es asignación",
+        body: [
+          'A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken landing page or a slow response process just wastes more money faster. Before increasing budget, it\'s worth auditing where the current spend is actually going. See "agency, freelancer or in-house team" for who should be managing that allocation.',
+        ],
+        bodyEs: [
+          'Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto — más tráfico a una landing page rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa "¿agencia, freelancer o equipo interno?" para saber quién debería gestionar esa asignación.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Qué porcentaje de ingresos debo destinar a marketing digital?",
+        qEn: "What percentage of revenue should I allocate to digital marketing?",
+        a: "Como rango de mercado, entre 7% y 12% para negocios en crecimiento activo, y entre 3% y 6% para negocios enfocados en mantener su posición actual. Negocios nuevos suelen necesitar temporalmente el extremo alto de ese rango.",
+        aEn: "As a market range, between 7% and 12% for actively growing businesses, and between 3% and 6% for businesses focused on maintaining their current position. New businesses often temporarily need the higher end of that range.",
+      },
+      {
+        q: "¿Un negocio muy pequeño realmente necesita presupuesto de marketing?",
+        qEn: "Does a very small business really need a marketing budget?",
+        a: "Sí, incluso un micronegocio se beneficia de un presupuesto mínimo consistente — $10,000 a $18,000 MXN mensuales — mejor que gastos esporádicos grandes seguidos de meses sin ninguna actividad.",
+        aEn: "Yes, even a micro-business benefits from a consistent minimum budget — $10,000 to $18,000 MXN per month — better than large sporadic spending followed by months of no activity at all.",
+      },
+      {
+        q: "¿Cómo sé si estoy gastando lo suficiente?",
+        qEn: "How do I know if I'm spending enough?",
+        a: "Si el tráfico y los leads están estancados a pesar de un mercado que crece, y dependes casi por completo de referidos, probablemente estás por debajo del rango que tu tamaño de negocio necesita.",
+        aEn: "If traffic and leads are stagnant despite a growing market, and you rely almost entirely on referrals, you're probably below the range your business size needs.",
+      },
+      {
+        q: "¿Gastar más siempre genera más crecimiento?",
+        qEn: "Does spending more always generate more growth?",
+        a: "No — si el problema real es conversión o seguimiento, más presupuesto solo desperdicia dinero más rápido. Hay que confirmar que el sistema completo funcione antes de escalar el gasto.",
+        aEn: "No — if the real problem is conversion or follow-up, more budget just wastes money faster. It's worth confirming the full system works before scaling spend.",
+      },
+      {
+        q: "¿El presupuesto debe ser el mismo todos los meses?",
+        qEn: "Should the budget be the same every month?",
+        a: "No necesariamente — muchos negocios ajustan el gasto según estacionalidad o momentos clave de lanzamiento, mientras mantienen un piso mínimo constante para no perder continuidad en canales como SEO.",
+        aEn: "Not necessarily — many businesses adjust spend based on seasonality or key launch moments, while keeping a constant minimum floor so they don't lose continuity in channels like SEO.",
+      },
+    ],
+    schema: {
+      keywords: ["digital marketing budget Mexico", "how much to spend on marketing"],
+      keywordsEs: ["presupuesto marketing digital México", "cuánto invertir en marketing"],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
