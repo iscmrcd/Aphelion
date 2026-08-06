@@ -37,4 +37,195 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/privacidad" />
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-cuesta-el-seo-en-mexico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-cuesta-el-seo-en-mexico/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-cuesta-el-seo-en-mexico/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-cuesta-el-seo-en-mexico/" />
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/google-ads-vs-meta-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/google-ads-vs-meta-ads/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/google-ads-vs-meta-ads/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/google-ads-vs-meta-ads/" />
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/errores-de-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/errores-de-google-ads/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/errores-de-google-ads/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/errores-de-google-ads/" />
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/guia-marketing-inmobiliario/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/guia-marketing-inmobiliario/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/guia-marketing-inmobiliario/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/guia-marketing-inmobiliario/" />
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/como-generar-leads-inmobiliarios/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/como-generar-leads-inmobiliarios/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/como-generar-leads-inmobiliarios/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/como-generar-leads-inmobiliarios/" />
+    <lastmod>2026-07-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/mapa-interactivo-de-lotes/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/mapa-interactivo-de-lotes/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/mapa-interactivo-de-lotes/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/mapa-interactivo-de-lotes/" />
+    <lastmod>2026-07-19</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/seguimiento-de-leads-inmobiliarios/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/seguimiento-de-leads-inmobiliarios/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/seguimiento-de-leads-inmobiliarios/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/seguimiento-de-leads-inmobiliarios/" />
+    <lastmod>2026-07-21</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-cuesta-una-pagina-web-en-mexico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-cuesta-una-pagina-web-en-mexico/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-cuesta-una-pagina-web-en-mexico/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-cuesta-una-pagina-web-en-mexico/" />
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/seo-local-guia/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/seo-local-guia/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/seo-local-guia/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/seo-local-guia/" />
+    <lastmod>2026-07-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-invertir-en-facebook-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-invertir-en-facebook-ads/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-invertir-en-facebook-ads/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-invertir-en-facebook-ads/" />
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/errores-de-seo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/errores-de-seo/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/errores-de-seo/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/errores-de-seo/" />
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/agencia-o-freelancer-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/agencia-o-freelancer-marketing/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/agencia-o-freelancer-marketing/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/agencia-o-freelancer-marketing/" />
+    <lastmod>2026-08-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-invertir-en-marketing-inmobiliario/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-invertir-en-marketing-inmobiliario/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-invertir-en-marketing-inmobiliario/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-invertir-en-marketing-inmobiliario/" />
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/guia-seo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/guia-seo/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/guia-seo/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/guia-seo/" />
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/guia-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/guia-google-ads/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/guia-google-ads/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/guia-google-ads/" />
+    <lastmod>2026-08-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-cuesta-google-ads-en-mexico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-cuesta-google-ads-en-mexico/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-cuesta-google-ads-en-mexico/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-cuesta-google-ads-en-mexico/" />
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-tarda-el-seo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-tarda-el-seo/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-tarda-el-seo/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-tarda-el-seo/" />
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/seo-vs-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/seo-vs-google-ads/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/seo-vs-google-ads/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/seo-vs-google-ads/" />
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/guia-marketing-medico/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/guia-marketing-medico/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/guia-marketing-medico/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/guia-marketing-medico/" />
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/como-atraer-pacientes-de-estados-unidos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/como-atraer-pacientes-de-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/como-atraer-pacientes-de-estados-unidos/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/como-atraer-pacientes-de-estados-unidos/" />
+    <lastmod>2026-08-16</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/optimizar-google-business-profile/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/optimizar-google-business-profile/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/optimizar-google-business-profile/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/optimizar-google-business-profile/" />
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/como-medir-conversiones-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/como-medir-conversiones-google-ads/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/como-medir-conversiones-google-ads/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/como-medir-conversiones-google-ads/" />
+    <lastmod>2026-08-20</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/cuanto-invertir-en-marketing-digital/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/cuanto-invertir-en-marketing-digital/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/cuanto-invertir-en-marketing-digital/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/cuanto-invertir-en-marketing-digital/" />
+    <lastmod>2026-08-22</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
