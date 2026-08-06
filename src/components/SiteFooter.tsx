@@ -41,6 +41,11 @@ export function SiteFooter() {
                 {t("Marketing & Content", "Marketing y Contenido")}
               </Link>
             </li>
+            <li>
+              <Link to="/servicios/video-con-dron" className="transition hover:text-white">
+                {t("Drone Video", "Video con Dron")}
+              </Link>
+            </li>
           </ul>
         </div>
 
