@@ -2,13 +2,13 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowRight, Plus } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
+import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD } from "@/lib/seo";
 import {
   getPostBySlug,
   getRelatedPosts,
   postTitle,
-  postExcerpt,
   postCategory,
   postLede,
   postAuthorRole,
@@ -193,7 +193,13 @@ function BlogArticlePage() {
         </div>
       </article>
 
-      {related.length > 0 && <RelatedArticles posts={related} lang={lang} />}
+      <BlogTeaserSection
+        categories={[post.category]}
+        posts={related}
+        lang={lang}
+        title="Related articles"
+        titleEs="Artículos relacionados"
+      />
 
       <CTAFooter />
     </main>
@@ -345,52 +351,5 @@ function InlineCTA() {
         <ArrowRight className="h-3.5 w-3.5" />
       </Link>
     </div>
-  );
-}
-
-function RelatedArticles({ posts, lang }: { posts: BlogPost[]; lang: "en" | "es" }) {
-  const t = useT();
-  return (
-    <section className="border-t border-neutral-200 px-5 py-16 sm:py-20">
-      <div className="mx-auto max-w-3xl">
-        <p className="mb-8 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-          {t("Related articles", "Artículos relacionados")}
-        </p>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {posts.map((post) => (
-            <Link
-              key={post.slug}
-              to="/blog/$slug"
-              params={{ slug: post.slug }}
-              className="group flex flex-col overflow-hidden rounded-2xl border-[0.5px] border-neutral-200 bg-white transition hover:border-neutral-950"
-            >
-              <div
-                aria-hidden
-                className={`m-3 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
-              >
-                <span className="text-xs font-medium uppercase tracking-[0.16em] text-white opacity-60">
-                  {postCategory(post, lang)}
-                </span>
-              </div>
-              <div className="flex flex-1 flex-col px-6 pb-6">
-                <span className="mb-3 w-fit rounded-full border-[0.5px] border-neutral-300 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-neutral-500">
-                  {postCategory(post, lang)}
-                </span>
-                <h3 className="text-base font-medium leading-snug tracking-[-0.01em] text-neutral-950">
-                  {postTitle(post, lang)}
-                </h3>
-                <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-neutral-500">
-                  {postExcerpt(post, lang)}
-                </p>
-                <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-neutral-950">
-                  {t("Read article", "Leer artículo")}
-                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }

@@ -3,7 +3,8 @@ import { WebsitesSection } from "@/components/servicios/WebsitesSection";
 import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { ScrollDrivenBanner } from "@/components/servicios/ScrollDrivenBanner";
-import { useT } from "@/lib/i18n";
+import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
+import { useT, useLang } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
 import { FAQ_WEB } from "@/lib/websites-data";
 import { FAQ_WEB_EN } from "@/lib/websites-data.en";
@@ -54,6 +55,7 @@ export const Route = createFileRoute("/servicios/websites")({
 
 function WebsitesPage() {
   const t = useT();
+  const { lang } = useLang();
   return (
     <main className="relative min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
       <ScrollDrivenBanner>
@@ -75,6 +77,7 @@ function WebsitesPage() {
 
       <WebsitesSection />
       <FAQ />
+      <BlogTeaserSection categories={["Diseño Web"]} lang={lang} />
       <CTAFooter />
     </main>
   );

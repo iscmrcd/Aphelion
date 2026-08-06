@@ -3,8 +3,9 @@ import { useState } from "react";
 import { Plus } from "lucide-react";
 import { MarketingSection } from "@/components/servicios/MarketingSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
+import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { useMarketingData } from "@/lib/content";
-import { useT } from "@/lib/i18n";
+import { useT, useLang } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
 import { FAQ_MARKETING } from "@/lib/marketing-data";
 import { FAQ_MARKETING_EN } from "@/lib/marketing-data.en";
@@ -56,6 +57,7 @@ export const Route = createFileRoute("/servicios/marketing")({
 
 function MarketingPage() {
   const t = useT();
+  const { lang } = useLang();
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
       <section className="on-dark relative flex min-h-[460px] items-center overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:min-h-[620px] sm:pt-28 sm:pb-32">
@@ -97,6 +99,10 @@ function MarketingPage() {
 
       <MarketingSection />
       <MarketingFAQ />
+      <BlogTeaserSection
+        categories={["SEO", "Publicidad", "Estrategia de Marketing"]}
+        lang={lang}
+      />
       <CTAFooter />
     </main>
   );
