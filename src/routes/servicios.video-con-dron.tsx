@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DroneSection } from "@/components/servicios/DroneSection";
+import { ParallaxBanner } from "@/components/servicios/ParallaxBanner";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
@@ -62,20 +63,7 @@ function DronePage() {
   const t = useT();
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <section className="on-dark relative flex min-h-[420px] items-center overflow-hidden bg-neutral-950 px-5 pt-24 pb-16 sm:min-h-[520px] sm:pt-32 sm:pb-20">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-90"
-          style={{
-            backgroundImage: "url(/images/video-dron-banner.webp)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/50 via-neutral-950/30 to-neutral-950"
-        />
+      <ParallaxBanner image="/images/video-dron-banner.webp">
         <div className="relative mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/60">
             {t("Aerial Production", "Producción Aérea")}
@@ -106,7 +94,7 @@ function DronePage() {
             </a>
           </div>
         </div>
-      </section>
+      </ParallaxBanner>
 
       <DroneSection />
       <CTAFooter />
