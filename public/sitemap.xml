@@ -228,4 +228,12 @@
     <lastmod>2026-08-22</lastmod>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/landing-page-vs-pagina-web/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/landing-page-vs-pagina-web/" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/landing-page-vs-pagina-web/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/landing-page-vs-pagina-web/" />
+    <lastmod>2026-08-25</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
