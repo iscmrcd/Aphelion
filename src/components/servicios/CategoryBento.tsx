@@ -63,7 +63,7 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
       key: "dron",
       title: t("Drone", "Drone"),
       desc: t("Aerial video and photography.", "Video y fotografía aérea."),
-      icon: Video,
+      icon: DroneIcon,
       status: "active" as const,
       route: "/servicios/video-con-dron" as const,
     },
