@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { AphelionLogo } from "@/components/Brand";
+import { FacebookIcon, InstagramIcon, PinterestIcon, XIcon } from "@/components/SocialIcons";
 import { useT } from "@/lib/i18n";
 
 export function SiteFooter() {
@@ -19,6 +20,44 @@ export function SiteFooter() {
               "Infraestructura digital para marcas que no se conforman.",
             )}
           </p>
+          <div className="mt-5 flex items-center gap-4">
+            <a
+              href="https://www.facebook.com/aphelion.mx"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-white/60 transition hover:text-white"
+            >
+              <FacebookIcon className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/aphelion.mx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-white/60 transition hover:text-white"
+            >
+              <InstagramIcon className="h-4 w-4" />
+            </a>
+            <a
+              href="https://mx.pinterest.com/aphelionmx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pinterest"
+              className="text-white/60 transition hover:text-white"
+            >
+              <PinterestIcon className="h-4 w-4" />
+            </a>
+            <a
+              href="https://x.com/aphelionmx"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+              className="text-white/60 transition hover:text-white"
+            >
+              <XIcon className="h-4 w-4" />
+            </a>
+          </div>
         </div>
 
         <div>
@@ -94,7 +133,10 @@ export function SiteFooter() {
       <div className="mx-auto mt-12 flex max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/40">
         <span>© {year} Aphelion.</span>
         <span>
-          {t("Ensenada · Valle de Guadalupe · Mexico", "Ensenada · Valle de Guadalupe · México")}
+          {t(
+            "Ensenada · Valle de Guadalupe · Tijuana · Mexico",
+            "Ensenada · Valle de Guadalupe · Tijuana · México",
+          )}
         </span>
       </div>
     </footer>

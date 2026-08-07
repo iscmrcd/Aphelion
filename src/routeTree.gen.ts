@@ -9,25 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ServiciosRouteImport } from './routes/servicios'
-import { Route as PrivacidadRouteImport } from './routes/privacidad'
-import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
+import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as PrivacidadRouteImport } from './routes/privacidad'
+import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
-import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
-import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
+import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
+import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
+import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
 
-const ServiciosRoute = ServiciosRouteImport.update({
-  id: '/servicios',
-  path: '/servicios',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacidadRoute = PrivacidadRouteImport.update({
-  id: '/privacidad',
-  path: '/privacidad',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactoRoute = ContactoRouteImport.update({
@@ -35,9 +30,24 @@ const ContactoRoute = ContactoRouteImport.update({
   path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const PrivacidadRoute = PrivacidadRouteImport.update({
+  id: '/privacidad',
+  path: '/privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiciosRoute = ServiciosRouteImport.update({
+  id: '/servicios',
+  path: '/servicios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
@@ -45,14 +55,9 @@ const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
-  id: '/websites',
-  path: '/websites',
+const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
+  id: '/marketing',
+  path: '/marketing',
   getParentRoute: () => ServiciosRoute,
 } as any)
 const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
@@ -60,15 +65,10 @@ const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
   path: '/video-con-dron',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
-  id: '/marketing',
-  path: '/marketing',
+const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
+  id: '/websites',
+  path: '/websites',
   getParentRoute: () => ServiciosRoute,
-} as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
-  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -156,18 +156,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/servicios': {
-      id: '/servicios'
-      path: '/servicios'
-      fullPath: '/servicios'
-      preLoaderRoute: typeof ServiciosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacidad': {
-      id: '/privacidad'
-      path: '/privacidad'
-      fullPath: '/privacidad'
-      preLoaderRoute: typeof PrivacidadRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacto': {
@@ -177,11 +170,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/privacidad': {
+      id: '/privacidad'
+      path: '/privacidad'
+      fullPath: '/privacidad'
+      preLoaderRoute: typeof PrivacidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicios': {
+      id: '/servicios'
+      path: '/servicios'
+      fullPath: '/servicios'
+      preLoaderRoute: typeof ServiciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/servicios/': {
@@ -191,18 +205,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosIndexRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/servicios/websites': {
-      id: '/servicios/websites'
-      path: '/websites'
-      fullPath: '/servicios/websites'
-      preLoaderRoute: typeof ServiciosWebsitesRouteImport
+    '/servicios/marketing': {
+      id: '/servicios/marketing'
+      path: '/marketing'
+      fullPath: '/servicios/marketing'
+      preLoaderRoute: typeof ServiciosMarketingRouteImport
       parentRoute: typeof ServiciosRoute
     }
     '/servicios/video-con-dron': {
@@ -212,19 +219,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosVideoConDronRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/servicios/marketing': {
-      id: '/servicios/marketing'
-      path: '/marketing'
-      fullPath: '/servicios/marketing'
-      preLoaderRoute: typeof ServiciosMarketingRouteImport
+    '/servicios/websites': {
+      id: '/servicios/websites'
+      path: '/websites'
+      fullPath: '/servicios/websites'
+      preLoaderRoute: typeof ServiciosWebsitesRouteImport
       parentRoute: typeof ServiciosRoute
-    }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
     }
   }
 }
@@ -258,3 +258,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
