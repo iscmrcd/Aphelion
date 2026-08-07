@@ -3,6 +3,8 @@ import { DroneSection } from "@/components/servicios/DroneSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
+import { FAQ_DRONE } from "@/lib/dron-data";
+import { FAQ_DRONE_EN } from "@/lib/dron-data.en";
 
 export const Route = createFileRoute("/servicios/video-con-dron")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -42,6 +44,14 @@ export const Route = createFileRoute("/servicios/video-con-dron")({
             "Mexicali",
           ],
           name: "Video y Fotografía Aérea con Dron",
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: (loaderData?.lang === "es" ? FAQ_DRONE : FAQ_DRONE_EN).map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
         },
       ],
     }),

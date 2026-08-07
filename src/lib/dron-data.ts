@@ -5,8 +5,11 @@ export type DronePackage = {
   tagline: string;
   duration: string;
   price: number;
+  ideal: string[];
   features: string[];
 };
+
+export type FaqItem = { q: string; a: string };
 
 export const DRONE_PACKAGES: DronePackage[] = [
   {
@@ -16,6 +19,7 @@ export const DRONE_PACKAGES: DronePackage[] = [
     tagline: "Grabación aérea de una locación — restaurantes, propiedades, hoteles, negocios",
     duration: "Hasta 1 hora en sitio",
     price: 2990,
+    ideal: ["Restaurantes", "Hoteles", "Inmobiliarias", "Negocios locales"],
     features: [
       "Planeación de tomas",
       "Captura en 4K",
@@ -32,6 +36,7 @@ export const DRONE_PACKAGES: DronePackage[] = [
     tagline: "Documentación aérea de un evento — activaciones, inauguraciones, bodas",
     duration: "Hasta 4 horas continuas",
     price: 4990,
+    ideal: ["Bodas", "Inauguraciones", "Activaciones de marca"],
     features: [
       "Todo lo de Captura",
       "1 video editado (60–90 seg) + versión vertical",
@@ -47,6 +52,7 @@ export const DRONE_PACKAGES: DronePackage[] = [
     tagline: "Registro aéreo de un proceso — obra, construcción, viñedo, desarrollo",
     duration: "Paquete de 4 visitas, cadencia acordada",
     price: 8890,
+    ideal: ["Constructoras", "Desarrollos inmobiliarios", "Viñedos"],
     features: [
       "Antes de la primera visita, verificamos la ubicación exacta: la mayoría de las zonas se puede volar libremente, pero algunas (como el radio cercano a un aeropuerto) requieren gestión de permiso especial ante AFAC. Te avisamos desde la cotización si tu proyecto aplica.",
       "Hasta 2 horas por visita",
@@ -84,4 +90,31 @@ export const DRONE_POLICY: string[] = [
   "Si la ubicación cae dentro de una zona restringida (radio de aeropuerto u otra restricción AFAC), se confirma antes de la sesión — aplica el cargo de Gestión de permiso en Extras",
   "El material incluye licencia de uso para el cliente contratante — reventa o cesión a terceros requiere autorización",
   "Anticipo del 50% para reservar fecha",
+];
+
+export const FAQ_DRONE: FaqItem[] = [
+  {
+    q: "¿Qué pasa si el clima no permite volar?",
+    a: "Reprogramamos una vez sin costo. Después de eso aplica un cargo.",
+  },
+  {
+    q: "¿Necesito permisos para volar en mi ubicación?",
+    a: "La mayoría de zonas se puede volar libremente. Si tu ubicación cae en un área restringida (radio de aeropuerto u otra restricción AFAC), te lo confirmamos desde la cotización.",
+  },
+  {
+    q: "¿Puedo usar el video en campañas pagadas (Meta/Google Ads)?",
+    a: "Sí, el material incluye licencia de uso para el cliente contratante. Reventa o cesión a terceros requiere autorización.",
+  },
+  {
+    q: "¿Entregan los archivos originales (RAW)?",
+    a: "Se puede agregar como extra ($999 MXN); no viene incluido por default.",
+  },
+  {
+    q: "¿Qué pasa si necesito más tiempo el día de la sesión?",
+    a: "Se cobra en bloques de 30 minutos ($499 c/u). El tiempo de espera en sitio cuenta como tiempo contratado.",
+  },
+  {
+    q: "¿Cómo se reserva la fecha?",
+    a: "Con un anticipo del 50%.",
+  },
 ];
