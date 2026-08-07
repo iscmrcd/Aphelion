@@ -3,8 +3,9 @@ import { Plus } from "lucide-react";
 import { useWebsitesData } from "@/lib/content";
 import { useT } from "@/lib/i18n";
 
-export function FAQ() {
+export function FAQ({ items }: { items?: { q: string; a: string }[] }) {
   const { FAQ_WEB } = useWebsitesData();
+  const faqs = items ?? FAQ_WEB;
   const [open, setOpen] = useState<number | null>(0);
   const t = useT();
   return (
