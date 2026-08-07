@@ -1,6 +1,35 @@
-import { Code2, Megaphone, Camera, Video, Boxes, Sparkles, ArrowUpRight } from "lucide-react";
+import { Code2, Megaphone, Camera, Boxes, Sparkles, ArrowUpRight } from "lucide-react";
 import { useNavigate } from "@tanstack/react-router";
 import { useT } from "@/lib/i18n";
+
+function DroneIcon({ className, strokeWidth = 1.5 }: { className?: string; strokeWidth?: number }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={strokeWidth}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      {/* rotors */}
+      <path d="M2.5 5h5M2.5 5c0-.8.6-1.4 1.4-1.4S5.3 4.2 5.3 5M5 5c0-.8.6-1.4 1.4-1.4S7.8 4.2 7.8 5" />
+      <path d="M16.5 5h5M16.5 5c0-.8.6-1.4 1.4-1.4s1.4.6 1.4 1.4M19 5c0-.8.6-1.4 1.4-1.4s1.4.6 1.4 1.4" />
+      {/* arms */}
+      <path d="M5 5.4 8.8 9.2M19 5.4 15.2 9.2" />
+      {/* body */}
+      <rect x="8.5" y="9" width="7" height="5" rx="1.6" />
+      {/* gimbal camera */}
+      <path d="M12 14v1.6" />
+      <circle cx="12" cy="17.6" r="2" />
+      {/* landing legs */}
+      <path d="M8.8 14 6.6 18.5M15.2 14l2.2 4.5" />
+    </svg>
+  );
+}
+
 
 export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
   const navigate = useNavigate();
@@ -34,7 +63,7 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
       key: "dron",
       title: t("Drone", "Drone"),
       desc: t("Aerial video and photography.", "Video y fotografía aérea."),
-      icon: Video,
+      icon: DroneIcon,
       status: "active" as const,
       route: "/servicios/video-con-dron" as const,
     },
