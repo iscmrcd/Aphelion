@@ -21,7 +21,7 @@ export function FAQ({ items }: { items?: { q: string; a: string }[] }) {
         </div>
 
         <div className="divide-y divide-neutral-200 border-y border-neutral-200">
-          {FAQ_WEB.map((f, i) => {
+          {faqs.map((f, i) => {
             const isOpen = open === i;
             return (
               <div key={i}>
