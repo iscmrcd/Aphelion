@@ -1,5 +1,8 @@
-import { Check } from "lucide-react";
+import { useState } from "react";
+import { Check, ChevronDown } from "lucide-react";
+import type { DronePackage } from "@/lib/dron-data";
 import { useDroneData } from "@/lib/content";
+import { FAQ } from "@/components/servicios/FAQ";
 import { useT, useLang } from "@/lib/i18n";
 
 const WHATSAPP_NUMBER = "526461293352";
@@ -14,9 +17,8 @@ function waLink(t: (en: string, es: string) => string, packageName: string) {
 
 export function DroneSection() {
   const t = useT();
-  const { lang } = useLang();
-  const { DRONE_PACKAGES, DRONE_EXTRAS, DRONE_ZONES, DRONE_POLICY } = useDroneData();
-  const fmt = (n: number) => "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US") + " MXN";
+  const { DRONE_PACKAGES, DRONE_EXTRAS, DRONE_ZONES, FAQ_DRONE } = useDroneData();
+  const [openId, setOpenId] = useState<number>(1);
 
   return (
     <>
@@ -25,57 +27,32 @@ export function DroneSection() {
         id="paquetes"
         className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28"
       >
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            {t("Packages", "Paquetes")}
-          </p>
-          <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            {t("Three ways to work in the air.", "Tres formas de trabajar en el aire.")}
-          </h2>
-        </div>
+        <div className="mx-auto max-w-3xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+              {t("Packages", "Paquetes")}
+            </p>
+            <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+              {t("Three ways to work in the air.", "Tres formas de trabajar en el aire.")}
+            </h2>
+            <p className="mt-3 text-sm text-neutral-500">
+              {t(
+                "Tap any card to see what's included.",
+                "Toca cualquier tarjeta para ver lo que incluye.",
+              )}
+            </p>
+          </div>
 
-        <div className="mx-auto mt-12 grid max-w-6xl gap-5 md:grid-cols-3">
-          {DRONE_PACKAGES.map((pkg) => (
-            <div
-              key={pkg.id}
-              className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-6 sm:p-7"
-            >
-              <h3 className="text-xl font-medium tracking-[-0.02em] text-neutral-950">
-                {pkg.name}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-neutral-500">{pkg.tagline}</p>
-
-              <div className="mt-5 border-t border-dashed border-neutral-200 pt-5">
-                <div className="text-3xl font-medium tracking-[-0.03em] tabular-nums text-neutral-950">
-                  {fmt(pkg.price)}
-                </div>
-                <p className="mt-1 text-xs uppercase tracking-[0.12em] text-neutral-500">
-                  {pkg.duration}
-                </p>
-              </div>
-
-              <ul className="mt-6 flex-1 space-y-2.5">
-                {pkg.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2.5 text-sm text-neutral-700">
-                    <Check
-                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-950"
-                      strokeWidth={2.5}
-                    />
-                    <span className="leading-relaxed">{f}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href={waLink(t, pkg.name)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-7 inline-flex items-center justify-center rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
-              >
-                {t("Book by WhatsApp", "Cotizar por WhatsApp")}
-              </a>
-            </div>
-          ))}
+          <div className="space-y-3">
+            {DRONE_PACKAGES.map((pkg) => (
+              <PackageCard
+                key={pkg.id}
+                pkg={pkg}
+                open={openId === pkg.id}
+                onToggle={() => setOpenId(openId === pkg.id ? -1 : pkg.id)}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -133,29 +110,122 @@ export function DroneSection() {
         </div>
       </section>
 
-      {/* Política */}
-      <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
-        <div className="mx-auto max-w-3xl">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            {t("Policy", "Política")}
-          </p>
-          <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            {t("Good to know before booking.", "Bueno saberlo antes de reservar.")}
-          </h2>
-
-          <ul className="mt-8 space-y-3">
-            {DRONE_POLICY.map((p) => (
-              <li
-                key={p}
-                className="flex items-start gap-3 text-sm leading-relaxed text-neutral-700"
-              >
-                <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-neutral-400" />
-                <span>{p}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      {/* FAQ */}
+      <FAQ items={FAQ_DRONE} />
     </>
+  );
+}
+
+function PackageCard({
+  pkg,
+  open,
+  onToggle,
+}: {
+  pkg: DronePackage;
+  open: boolean;
+  onToggle: () => void;
+}) {
+  const t = useT();
+  const { lang } = useLang();
+  const fmt = (n: number) => "$" + n.toLocaleString(lang === "es" ? "es-MX" : "en-US");
+
+  return (
+    <div
+      className={`overflow-hidden rounded-2xl border border-neutral-200 bg-white transition ${
+        open ? "shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]" : ""
+      }`}
+    >
+      <button
+        onClick={onToggle}
+        className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-5 text-left text-neutral-950 sm:px-7 sm:py-6"
+      >
+        <div className="min-w-0">
+          <span className="text-[10px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+            {pkg.duration}
+          </span>
+          <h3 className="mt-1 truncate text-xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-2xl">
+            {pkg.name}
+          </h3>
+          <p className="mt-1 line-clamp-1 text-sm text-neutral-500">{pkg.tagline}</p>
+        </div>
+
+        <div className="flex shrink-0 items-center gap-3 sm:gap-5">
+          <div className="text-right">
+            <div className="text-lg font-medium tabular-nums tracking-[-0.02em] text-neutral-950 sm:text-2xl">
+              {fmt(pkg.price)}
+            </div>
+            <div className="text-[10px] uppercase tracking-[0.12em] text-neutral-500">MXN</div>
+          </div>
+          <ChevronDown
+            className={`h-5 w-5 text-neutral-400 transition-transform ${open ? "rotate-180" : ""}`}
+            strokeWidth={2}
+          />
+        </div>
+      </button>
+
+      {open && (
+        <div className="border-t border-neutral-200 px-5 pb-7 pt-6 sm:px-7">
+          <div className="mb-7">
+            <div className="flex flex-wrap items-baseline gap-2">
+              <span className="text-4xl font-medium tracking-[-0.03em] tabular-nums text-neutral-950 sm:text-5xl">
+                {fmt(pkg.price)}
+              </span>
+              <span className="text-xs text-neutral-500">MXN</span>
+            </div>
+            <p className="mt-2 text-xs leading-relaxed text-neutral-500">{pkg.duration}</p>
+          </div>
+
+          <div className="mb-7">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+              {t("Ideal for", "Ideal para")}
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {pkg.ideal.map((i) => (
+                <span
+                  key={i}
+                  className="rounded-full border border-neutral-200 px-2.5 py-1 text-xs text-neutral-700"
+                >
+                  {i}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+              {t("What's included", "Qué incluye")}
+            </p>
+            <ul className="space-y-2.5">
+              {pkg.features.map((f) => (
+                <li key={f} className="flex items-start gap-2.5 text-sm text-neutral-800">
+                  <Check
+                    className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-950"
+                    strokeWidth={2.5}
+                  />
+                  <span className="leading-relaxed">{f}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-7 flex flex-wrap gap-2.5">
+            <a
+              href={waLink(t, pkg.name)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
+            >
+              {t("Book by WhatsApp", "Cotizar por WhatsApp")}
+            </a>
+            <a
+              href="/contacto"
+              className="inline-flex items-center justify-center rounded-full border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
+            >
+              {t("Talk to strategy", "Hablar con estrategia")}
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
