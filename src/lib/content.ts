@@ -21,12 +21,13 @@ import {
   FAQ_WEB_EN,
   OTHER_CATEGORIES_EN,
 } from "./websites-data.en";
-import { DRONE_PACKAGES, DRONE_EXTRAS, DRONE_ZONES, DRONE_POLICY } from "./dron-data";
+import { DRONE_PACKAGES, DRONE_EXTRAS, DRONE_ZONES, DRONE_POLICY, FAQ_DRONE } from "./dron-data";
 import {
   DRONE_PACKAGES_EN,
   DRONE_EXTRAS_EN,
   DRONE_ZONES_EN,
   DRONE_POLICY_EN,
+  FAQ_DRONE_EN,
 } from "./dron-data.en";
 
 /** Language-aware marketing content. */
@@ -73,12 +74,13 @@ export function useDroneData() {
   return useMemo(
     () =>
       lang === "es"
-        ? { DRONE_PACKAGES, DRONE_EXTRAS, DRONE_ZONES, DRONE_POLICY }
+        ? { DRONE_PACKAGES, DRONE_EXTRAS, DRONE_ZONES, DRONE_POLICY, FAQ_DRONE }
         : {
             DRONE_PACKAGES: DRONE_PACKAGES_EN,
             DRONE_EXTRAS: DRONE_EXTRAS_EN,
             DRONE_ZONES: DRONE_ZONES_EN,
             DRONE_POLICY: DRONE_POLICY_EN,
+            FAQ_DRONE: FAQ_DRONE_EN,
           },
     [lang],
   );
