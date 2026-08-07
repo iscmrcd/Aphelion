@@ -26,17 +26,19 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
     {
       key: "contenido",
       title: t("Content Production", "Producción de Contenido"),
-      desc: t("Photo, reels, and monthly editorial.", "Foto, reels y editorial mensual."),
+      desc: t("Photo, video, reels, and monthly editorial.", "Foto, video, reels y editorial mensual."),
       icon: Camera,
       status: "soon" as const,
     },
     {
-      key: "video",
-      title: t("Video & Drone", "Video & Drone"),
-      desc: t("Commercials and aerial footage.", "Comerciales y tomas aéreas."),
+      key: "dron",
+      title: t("Drone", "Drone"),
+      desc: t("Aerial video and photography.", "Video y fotografía aérea."),
       icon: Video,
-      status: "soon" as const,
+      status: "active" as const,
+      route: "/servicios/video-con-dron" as const,
     },
+
     {
       key: "saas",
       title: t("Custom SaaS", "SaaS a Medida"),
