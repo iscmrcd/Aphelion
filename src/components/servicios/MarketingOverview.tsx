@@ -140,11 +140,11 @@ function OverviewCard({
           {fmt(p.weekly)}
         </span>
         <span className="text-xs text-neutral-500 transition group-hover:text-white/70 group-data-[active=true]:text-white/70">
-          {t("/wk + tax", "/sem + IVA")}
+          {t("MXN /wk + tax", "MXN /sem + IVA")}
         </span>
       </div>
       <p className="relative mt-1 text-xs text-neutral-600 transition group-hover:text-white/80 group-data-[active=true]:text-white/80">
-        ~{fmt(p.monthly)}{" "}
+        ~{fmt(p.monthly)} MXN{" "}
         <span className="text-neutral-500 transition group-hover:text-white/60 group-data-[active=true]:text-white/60">
           {t(`/mo · ${p.contractMonths}mo contract`, `/mes · contrato ${p.contractMonths} m`)}
         </span>

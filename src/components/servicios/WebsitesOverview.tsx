@@ -136,13 +136,13 @@ function WebCard({
         </span>
         {l.setup !== null && (
           <span className="text-xs text-neutral-500 transition group-hover:text-white/70 group-data-[active=true]:text-white/70">
-            {t("setup", "setup")}
+            {t("MXN setup", "MXN setup")}
           </span>
         )}
       </div>
       {l.men !== null && (
         <p className="relative mt-1 text-xs text-neutral-600 transition group-hover:text-white/80 group-data-[active=true]:text-white/80">
-          + {fmt(l.men)}{" "}
+          + {fmt(l.men)} MXN{" "}
           <span className="text-neutral-500 transition group-hover:text-white/60 group-data-[active=true]:text-white/60">
             {t("/mo maintenance", "/ mes mantenimiento")}
           </span>
