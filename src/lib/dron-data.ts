@@ -77,10 +77,10 @@ export type DroneZone = { zone: string; charge: string };
 
 export const DRONE_ZONES: DroneZone[] = [
   { zone: "Ensenada y Valle de Guadalupe", charge: "Incluido" },
-  { zone: "Rosarito / Tecate", charge: "+$1,200" },
-  { zone: "Tijuana", charge: "+$1,499" },
-  { zone: "San Quintín", charge: "+$1,900" },
-  { zone: "Mexicali", charge: "+$2,700" },
+  { zone: "Rosarito / Tecate", charge: "+$1,200 MXN" },
+  { zone: "Tijuana", charge: "+$1,499 MXN" },
+  { zone: "San Quintín", charge: "+$1,900 MXN" },
+  { zone: "Mexicali", charge: "+$2,700 MXN" },
   { zone: "Fuera de BC", charge: "Cotización con viáticos" },
 ];
 

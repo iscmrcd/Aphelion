@@ -144,7 +144,7 @@ function LevelCard({
                     isPopular ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  {t("setup", "setup")}
+                  {t("MXN setup", "MXN setup")}
                 </div>
               </>
             )}
@@ -469,7 +469,10 @@ function PlanSelector({
           <span className={`text-base font-semibold ${isDark ? "text-white" : "text-neutral-950"}`}>
             {fmt(lvl.setup)}
           </span>
-          {lvl.men !== null && <span>· {fmt(lvl.men)}{t("/mo", "/mes")}</span>}
+          <span className={`text-[10px] uppercase tracking-[0.12em] ${isDark ? "text-white/60" : "text-neutral-500"}`}>
+            MXN
+          </span>
+          {lvl.men !== null && <span>· {fmt(lvl.men)} MXN{t("/mo", "/mes")}</span>}
         </div>
       </div>
     </label>
@@ -542,10 +545,15 @@ function MobileCompare() {
             </span>
             <span className="mt-0.5 text-[13px] font-semibold leading-tight">{p.name}</span>
             <div className="mt-3">
-              <div className="text-xl font-semibold tracking-tight">{fmt(p.setup)}</div>
+              <div className="flex items-baseline gap-1">
+                <div className="text-xl font-semibold tracking-tight">{fmt(p.setup)}</div>
+                <div className={`text-[10px] uppercase tracking-[0.12em] ${dark ? "text-white/60" : "text-neutral-500"}`}>
+                  MXN
+                </div>
+              </div>
               {p.men !== null && (
                 <div className={`text-[11px] ${dark ? "text-white/60" : "text-neutral-500"}`}>
-                  + {fmt(p.men)}{t("/mo", "/mes")}
+                  + {fmt(p.men)} MXN{t("/mo", "/mes")}
                 </div>
               )}
             </div>

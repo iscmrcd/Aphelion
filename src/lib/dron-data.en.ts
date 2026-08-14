@@ -64,10 +64,10 @@ export const DRONE_EXTRAS_EN: string[] = [
 
 export const DRONE_ZONES_EN: DroneZone[] = [
   { zone: "Ensenada and Valle de Guadalupe", charge: "Included" },
-  { zone: "Rosarito / Tecate", charge: "+$1,200" },
-  { zone: "Tijuana", charge: "+$1,499" },
-  { zone: "San Quintín", charge: "+$1,900" },
-  { zone: "Mexicali", charge: "+$2,700" },
+  { zone: "Rosarito / Tecate", charge: "+$1,200 MXN" },
+  { zone: "Tijuana", charge: "+$1,499 MXN" },
+  { zone: "San Quintín", charge: "+$1,900 MXN" },
+  { zone: "Mexicali", charge: "+$2,700 MXN" },
   { zone: "Outside Baja California", charge: "Quote with travel expenses" },
 ];
 

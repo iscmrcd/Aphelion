@@ -131,7 +131,7 @@ function PackageCard({
                 dark ? "text-white/60" : "text-neutral-500"
               }`}
             >
-              {t("/week", "/semana")}
+              {t("MXN / week", "MXN / semana")}
             </div>
           </div>
           <ChevronDown
@@ -404,7 +404,7 @@ function PackageCard({
                         dark ? "text-emerald-300" : "text-emerald-700"
                       }`}
                     >
-                      {t("$36,000–$56,000/mo", "$36,000–$56,000/mes")}
+                      {t("$36,000–$56,000 MXN/mo", "$36,000–$56,000 MXN/mes")}
                     </td>
                   </tr>
                   <tr
@@ -424,7 +424,7 @@ function PackageCard({
                         dark ? "text-white" : "text-white"
                       }`}
                     >
-                      ~{fmt(pkg.monthly)}{t("/mo", "/mes")}
+                      ~{fmt(pkg.monthly)} MXN{t("/mo", "/mes")}
                     </td>
                   </tr>
                 </tbody>
