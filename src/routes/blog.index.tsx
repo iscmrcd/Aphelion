@@ -1,10 +1,46 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Search, X } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
-import { BLOG_POSTS, BLOG_CATEGORIES, postTitle, postExcerpt, postCategory } from "@/lib/blog-data";
+import {
+  BLOG_POSTS,
+  BLOG_CATEGORIES,
+  postTitle,
+  postExcerpt,
+  postCategory,
+  type BlogPost,
+} from "@/lib/blog-data";
+
+function normalize(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+function matchesQuery(post: BlogPost, query: string): boolean {
+  const q = normalize(query);
+  if (!q) return true;
+  const haystack = normalize(
+    [
+      post.title,
+      post.titleEs,
+      post.excerpt,
+      post.excerptEs,
+      post.category,
+      post.categoryEs,
+      ...post.schema.keywords,
+      ...post.schema.keywordsEs,
+    ].join(" "),
+  );
+  return q
+    .split(/\s+/)
+    .filter(Boolean)
+    .every((term) => haystack.includes(term));
+}
 
 export const Route = createFileRoute("/blog/")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -51,11 +87,14 @@ function BlogIndexPage() {
   const t = useT();
   const { lang } = useLang();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
-    if (!activeCategory) return BLOG_POSTS;
-    return BLOG_POSTS.filter((p) => p.category === activeCategory);
-  }, [activeCategory]);
+    return BLOG_POSTS.filter((p) => {
+      const inCategory = !activeCategory || p.category === activeCategory;
+      return inCategory && matchesQuery(p, query);
+    });
+  }, [activeCategory, query]);
 
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
@@ -81,6 +120,31 @@ function BlogIndexPage() {
 
       <section className="px-5 py-10 sm:py-14">
         <div className="mx-auto max-w-6xl">
+          <div className="relative mb-6 max-w-md">
+            <Search
+              aria-hidden
+              className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-400"
+            />
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={t("Search articles…", "Buscar en el blog…")}
+              aria-label={t("Search articles", "Buscar artículos")}
+              className="w-full rounded-full border-[0.5px] border-neutral-300 bg-white py-2.5 pl-10 pr-10 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950"
+            />
+            {query && (
+              <button
+                type="button"
+                onClick={() => setQuery("")}
+                aria-label={t("Clear search", "Borrar búsqueda")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1 text-neutral-400 transition hover:text-neutral-950"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            )}
+          </div>
+
           <div className="mb-10 flex flex-wrap items-center gap-2">
             <button
               type="button"
@@ -162,10 +226,15 @@ function BlogIndexPage() {
 
           {filtered.length === 0 && (
             <p className="py-20 text-center text-sm text-neutral-500">
-              {t(
-                "No articles in this category yet.",
-                "Todavía no hay artículos en esta categoría.",
-              )}
+              {query
+                ? t(
+                    "No articles match your search.",
+                    "No se encontraron artículos que coincidan con tu búsqueda.",
+                  )
+                : t(
+                    "No articles in this category yet.",
+                    "Todavía no hay artículos en esta categoría.",
+                  )}
             </p>
           )}
         </div>
