@@ -115,12 +115,8 @@ function BlogIndexPage() {
               "Precios reales, errores reales y los sistemas que realmente mueven la aguja — escrito por el equipo que corre las campañas.",
             )}
           </p>
-        </div>
-      </section>
 
-      <section className="px-5 py-10 sm:py-14">
-        <div className="mx-auto max-w-6xl">
-          <div className="relative mx-auto mb-6 max-w-md">
+          <div className="relative mx-auto mt-10 max-w-md">
             <Search
               aria-hidden
               className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-600"
@@ -129,7 +125,7 @@ function BlogIndexPage() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder={t("Search articles…", "Buscar en el blog…")}
+              placeholder={t("Search articles", "Buscar en el blog")}
               aria-label={t("Search articles", "Buscar artículos")}
               className="w-full rounded-full border-[0.5px] border-neutral-300 bg-white py-2.5 pl-10 pr-10 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950"
             />
@@ -144,7 +140,11 @@ function BlogIndexPage() {
               </button>
             )}
           </div>
+        </div>
+      </section>
 
+      <section className="px-5 py-10 sm:py-14">
+        <div className="mx-auto max-w-6xl">
           <div className="mb-10 flex flex-wrap items-center gap-2">
             <button
               type="button"
