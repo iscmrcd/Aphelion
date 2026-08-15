@@ -3301,6 +3301,1125 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "guia-meta-ads",
+    title: "Meta Ads: The Complete 2026 Guide",
+    titleEs: "Meta Ads: guía completa 2026",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Everything Meta Ads actually requires to work: targeting, creative, Pixel and CAPI, budget logic, and the mistakes that quietly burn spend on Facebook and Instagram.",
+    excerptEs:
+      "Todo lo que Meta Ads realmente necesita para funcionar: segmentación, creativos, Pixel y CAPI, lógica de presupuesto, y los errores que queman el gasto en Facebook e Instagram sin que se note de inmediato.",
+    readingTime: 8,
+    date: "2026-08-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Meta Ads works differently from Google Ads: instead of capturing a search, it interrupts attention and creates demand. That means the creative carries more weight than the targeting, tracking has to be set up correctly from day one, and results take longer to read than a search campaign's.",
+    ledeEs:
+      "Meta Ads funciona distinto a Google Ads: en vez de capturar una búsqueda, interrumpe la atención y genera demanda. Eso significa que el creativo pesa más que la segmentación, el tracking hay que configurarlo bien desde el día uno, y los resultados tardan más en leerse que en una campaña de búsqueda.",
+    sections: [
+      {
+        id: "que-es-meta-ads",
+        heading: "What Meta Ads actually is",
+        headingEs: "Qué es realmente Meta Ads",
+        body: [
+          "Meta Ads is the ad platform behind Facebook and Instagram: image, video, carousel, and Reels placements bought through the same auction and the same campaign structure (campaign, ad set, ad). It runs on interruption, not search intent, so the algorithm optimizes toward whoever the creative and the initial targeting attract, not toward a keyword someone typed.",
+        ],
+        bodyEs: [
+          "Meta Ads es la plataforma de anuncios detrás de Facebook e Instagram: ubicaciones de imagen, video, carrusel y Reels compradas a través de la misma subasta y la misma estructura de campaña (campaña, conjunto de anuncios, anuncio). Funciona por interrupción, no por intención de búsqueda, así que el algoritmo optimiza hacia quien atraiga el creativo y la segmentación inicial, no hacia una palabra clave que alguien escribió.",
+        ],
+      },
+      {
+        id: "estructura-de-cuenta",
+        heading: "Campaign structure that actually scales",
+        headingEs: "Estructura de cuenta que sí escala",
+        body: [
+          "A campaign sets the objective (leads, sales, traffic). Ad sets define budget, audience, and placement. Ads are the actual creative. Most wasted spend comes from too many ad sets splitting a small budget into pieces too thin for the algorithm to learn from. Fewer ad sets with real budget behind each one almost always outperforms a wide, thin spread.",
+        ],
+        bodyEs: [
+          "Una campaña define el objetivo (leads, ventas, tráfico). Los conjuntos de anuncios definen presupuesto, audiencia y ubicación. Los anuncios son el creativo en sí. La mayor parte del gasto desperdiciado viene de tener demasiados conjuntos de anuncios repartiendo un presupuesto pequeño en pedazos muy delgados para que el algoritmo aprenda. Menos conjuntos con presupuesto real detrás casi siempre le gana a un reparto amplio y delgado.",
+        ],
+      },
+      {
+        id: "creativo-primero",
+        heading: "Why the creative matters more than the targeting",
+        headingEs: "Por qué el creativo pesa más que la segmentación",
+        body: [
+          "On Meta, the same audience sees dozens of ads a day; the creative decides which ones get a second look. A strong hook in the first two seconds of a video, a clear single message per ad, and a specific call to action outperform broad targeting tricks almost every time. Agencies that talk mostly about audiences and rarely about the actual ad are usually hiding a creative problem.",
+        ],
+        bodyEs: [
+          "En Meta, la misma audiencia ve decenas de anuncios al día; el creativo decide cuáles reciben una segunda mirada. Un gancho fuerte en los primeros dos segundos de un video, un mensaje único y claro por anuncio, y un llamado a la acción específico le ganan casi siempre a los trucos de segmentación amplia. Las agencias que hablan sobre todo de audiencias y casi nada del anuncio en sí suelen estar tapando un problema de creativo.",
+        ],
+      },
+      {
+        id: "pixel-y-capi",
+        heading: "Why the Pixel and CAPI aren't optional",
+        headingEs: "Por qué el Pixel y el CAPI no son opcionales",
+        body: [
+          "Meta's Pixel tracks conversions on your site through the browser; the Conversions API (CAPI) sends the same events server-to-server, which keeps tracking accurate even when browsers block cookies. Running Meta Ads without both means the algorithm is optimizing on incomplete data, which shows up as campaigns that look worse than they actually perform.",
+        ],
+        bodyEs: [
+          "El Pixel de Meta rastrea conversiones en tu sitio desde el navegador; la API de Conversiones (CAPI) envía los mismos eventos servidor a servidor, lo que mantiene el rastreo preciso incluso cuando los navegadores bloquean cookies. Correr Meta Ads sin ambos significa que el algoritmo está optimizando con datos incompletos, y eso se refleja en campañas que se ven peor de lo que realmente rinden.",
+        ],
+      },
+      {
+        id: "presupuesto-y-aprendizaje",
+        heading: "Budget and the learning phase",
+        headingEs: "Presupuesto y la fase de aprendizaje",
+        body: [
+          "Each ad set needs roughly 50 conversion events in a week to exit Meta's learning phase and stabilize. Below that, costs bounce around and performance looks inconsistent even when nothing is actually wrong. That's the real reason small, split-up budgets underperform: the algorithm never gets enough signal to settle.",
+        ],
+        bodyEs: [
+          "Cada conjunto de anuncios necesita alrededor de 50 eventos de conversión en una semana para salir de la fase de aprendizaje de Meta y estabilizarse. Por debajo de eso, los costos rebotan y el rendimiento se ve inconsistente aunque no haya nada realmente mal. Esa es la razón real por la que los presupuestos chicos y repartidos rinden poco: el algoritmo nunca recibe suficiente señal para asentarse.",
+        ],
+      },
+      {
+        id: "meta-vs-google",
+        heading: "Meta Ads vs. Google Ads, in practice",
+        headingEs: "Meta Ads vs Google Ads, en la práctica",
+        body: [
+          "Google captures demand that already exists; Meta creates it. A plumber with clear local search volume usually gets faster returns from Google. A new product line or a high-ticket visual category (real estate, hospitality) usually needs Meta first to build awareness before search demand shows up at all.",
+        ],
+        bodyEs: [
+          "Google captura demanda que ya existe; Meta la crea. Un plomero con volumen de búsqueda local claro suele obtener retornos más rápidos con Google. Una línea de producto nueva o una categoría visual de alto valor (bienes raíces, hospitalidad) suele necesitar primero Meta para generar conocimiento, antes de que aparezca demanda de búsqueda.",
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "The mistakes that quietly burn budget",
+        headingEs: "Los errores que queman presupuesto sin que se note",
+        body: [
+          "The most common ones: no CAPI backup for the Pixel, ad sets split too thin to learn, creative left running until it fatigues instead of refreshed on a schedule, and campaigns optimized for traffic when the real goal is leads or sales. Each one alone raises cost per result without an obvious red flag in the dashboard.",
+        ],
+        bodyEs: [
+          "Los más comunes: sin CAPI de respaldo para el Pixel, conjuntos de anuncios repartidos demasiado delgado para aprender, creativo que sigue corriendo hasta fatigarse en vez de refrescarse con calendario, y campañas optimizadas para tráfico cuando el objetivo real es leads o ventas. Cada uno por sí solo sube el costo por resultado sin una alerta obvia en el panel.",
+        ],
+      },
+      {
+        id: "como-medir-resultados",
+        heading: "How to actually read results",
+        headingEs: "Cómo leer los resultados de verdad",
+        body: [
+          "Cost per result inside Meta's dashboard only tells part of the story; what closes matters more than what converts on the platform. Cross-check Meta's reported conversions against GA4 and, ideally, against what actually turns into revenue in your CRM. The three numbers rarely match exactly, and the gap is where the real read comes from.",
+        ],
+        bodyEs: [
+          "El costo por resultado dentro del panel de Meta solo cuenta parte de la historia; lo que cierra importa más que lo que convierte en la plataforma. Cruza las conversiones que reporta Meta contra GA4 y, si es posible, contra lo que realmente se vuelve ingreso en tu CRM. Los tres números casi nunca coinciden exactamente, y en esa diferencia está la lectura real.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Cuánto presupuesto mínimo necesito para Meta Ads?",
+        qEn: "What's the minimum budget I need for Meta Ads?",
+        a: "Para que un conjunto de anuncios salga de la fase de aprendizaje necesitas generar cerca de 50 conversiones en una semana, así que el presupuesto mínimo depende de cuánto cuesta cada conversión en tu categoría. Como referencia práctica, la mayoría de las cuentas pequeñas empiezan a estabilizarse entre $6,000 y $12,000 MXN al mes en pauta.",
+        aEn: "To exit the learning phase, an ad set needs roughly 50 conversions in a week, so the minimum budget depends on how much each conversion costs in your category. As a practical reference, most small accounts start to stabilize somewhere between $6,000 and $12,000 MXN per month in media spend.",
+      },
+      {
+        q: "¿Meta Ads funciona sin un sitio web?",
+        qEn: "Does Meta Ads work without a website?",
+        a: "Puedes correr campañas dirigiendo tráfico a un formulario nativo de la plataforma, y funciona para volumen de leads. Pero pierdes control sobre el diseño de la conversión, el seguimiento completo con Pixel y CAPI, y la posibilidad de retargeting basado en comportamiento real en tu sitio.",
+        aEn: "You can run campaigns sending traffic to a native platform form, and it works for lead volume. But you lose control over the conversion design, full Pixel and CAPI tracking, and the ability to retarget based on actual behavior on your site.",
+      },
+      {
+        q: "¿Cada cuánto debo cambiar los creativos?",
+        qEn: "How often should I change my creatives?",
+        a: "Cuando la frecuencia (veces que la misma persona ve el anuncio) sube y el costo por resultado empieza a subir con ella, es señal de fatiga creativa. En la mayoría de las cuentas eso ocurre entre 2 y 4 semanas, dependiendo del tamaño de la audiencia.",
+        aEn: "When frequency (how many times the same person sees the ad) climbs and cost per result climbs with it, that's creative fatigue. In most accounts that happens somewhere between 2 and 4 weeks, depending on audience size.",
+      },
+      {
+        q: "¿Necesito un video profesional o sirve contenido grabado con celular?",
+        qEn: "Do I need professional video, or is phone-shot content enough?",
+        a: "Depende del objetivo. Para awareness y alcance, contenido nativo y menos producido suele rendir bien porque se siente parte del feed. Para categorías de ticket alto (inmobiliarias, clínicas) donde la percepción de calidad importa, un video con mejor producción sí mueve la aguja.",
+        aEn: "It depends on the goal. For awareness and reach, native, less-produced content often performs well because it feels like part of the feed. For high-ticket categories (real estate, clinics) where quality perception matters, better-produced video does move the needle.",
+      },
+      {
+        q: "¿Cómo sé si mi problema es de presupuesto o de creativo?",
+        qEn: "How do I know if my problem is budget or creative?",
+        a: "Si el costo por clic es razonable pero nadie convierte después de llegar a la página, el problema casi siempre es de landing page o de oferta, no de Meta Ads. Si el costo por clic ya es alto desde el inicio, el problema suele ser el creativo o la segmentación.",
+        aEn: "If cost per click is reasonable but nobody converts once they land on the page, the problem is almost always the landing page or the offer, not Meta Ads. If cost per click is already high from the start, the problem is usually the creative or the targeting.",
+      },
+      {
+        q: "¿Vale la pena correr Meta Ads y Google Ads al mismo tiempo?",
+        qEn: "Is it worth running Meta Ads and Google Ads at the same time?",
+        a: "La mayoría de los negocios termina necesitando ambos, pero rara vez al mismo tiempo desde el día uno. Un orden común: probar la oferta en la plataforma con señales de intención más claras primero, y sumar la segunda una vez que los números del primer canal ya se conocen.",
+        aEn: "Most businesses end up needing both, but rarely at the same time from day one. A common sequence: prove the offer on the platform with clearer intent signals first, then add the second channel once the first one's numbers are already known.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Meta Ads guide",
+        "Facebook Ads guide",
+        "Instagram Ads",
+        "Meta Pixel CAPI",
+        "Meta Ads strategy",
+      ],
+      keywordsEs: [
+        "guía meta ads",
+        "guía facebook ads",
+        "publicidad instagram",
+        "pixel meta capi",
+        "estrategia meta ads",
+      ],
+    },
+  },
+  {
+    slug: "facebook-ads-o-instagram-ads",
+    title: "Facebook Ads or Instagram Ads? Where Your Customer Actually Is",
+    titleEs: "¿Facebook Ads o Instagram Ads? Dónde está tu cliente",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Facebook and Instagram share the same ad platform, but they don't share the same audience or the same content style. Here's how to decide where to put your budget first.",
+    excerptEs:
+      "Facebook e Instagram comparten la misma plataforma de anuncios, pero no comparten la misma audiencia ni el mismo estilo de contenido. Así se decide dónde poner primero el presupuesto.",
+    readingTime: 5,
+    date: "2026-08-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Facebook and Instagram run on the same Meta Ads platform, so the question isn't really which platform, it's which placement fits your audience and your creative. Instagram skews younger and more visual; Facebook still reaches an older, broader audience with real purchasing power in many categories.",
+    ledeEs:
+      "Facebook e Instagram corren sobre la misma plataforma de Meta Ads, así que la pregunta no es realmente qué plataforma, sino qué ubicación le queda mejor a tu audiencia y a tu creativo. Instagram tiende a un público más joven y visual; Facebook todavía llega a una audiencia mayor y más amplia con poder de compra real en muchas categorías.",
+    sections: [
+      {
+        id: "misma-plataforma",
+        heading: "They're the same campaign, different placements",
+        headingEs: "Son la misma campaña, distintas ubicaciones",
+        body: [
+          "When you set up a Meta Ads campaign, Facebook and Instagram are placement options inside the same ad set, not separate platforms with separate setups. You can run both together, or select just one, using the exact same creative, budget, and tracking.",
+        ],
+        bodyEs: [
+          "Cuando configuras una campaña de Meta Ads, Facebook e Instagram son opciones de ubicación dentro del mismo conjunto de anuncios, no plataformas separadas con configuraciones distintas. Puedes correr ambas juntas, o elegir solo una, usando el mismo creativo, presupuesto y rastreo.",
+        ],
+      },
+      {
+        id: "quien-esta-en-cada-una",
+        heading: "Who's actually on each one",
+        headingEs: "Quién está realmente en cada una",
+        body: [
+          "Instagram tends to skew younger, more visual, and more engaged with Stories and Reels. Facebook still holds a broader, often older audience, including decision-makers in B2B and service categories who spend real time in Facebook Groups and Marketplace. Neither is objectively better, they just reach different slices of the same market.",
+        ],
+        bodyEs: [
+          "Instagram tiende a un público más joven, visual y activo en Stories y Reels. Facebook todavía tiene una audiencia más amplia, muchas veces mayor, incluyendo tomadores de decisión en categorías B2B y de servicios que pasan tiempo real en Grupos y Marketplace de Facebook. Ninguna es objetivamente mejor, solo llegan a distintas partes del mismo mercado.",
+        ],
+      },
+      {
+        id: "tipo-de-negocio",
+        heading: "Which fits which kind of business",
+        headingEs: "Cuál le queda a qué tipo de negocio",
+        body: [
+          "Visual, lifestyle-driven categories (restaurants, boutiques, real estate, beauty) usually get more traction on Instagram. Service businesses, local businesses with a broader-age customer base, and anything selling through community trust often perform better weighted toward Facebook.",
+        ],
+        bodyEs: [
+          "Categorías visuales y de estilo de vida (restaurantes, boutiques, bienes raíces, belleza) suelen tener más tracción en Instagram. Los negocios de servicios, negocios locales con clientela de edad más amplia, y cualquier cosa que se venda a través de confianza comunitaria suelen rendir mejor con más peso en Facebook.",
+        ],
+      },
+      {
+        id: "el-creativo-cambia",
+        heading: "The creative usually needs to change too",
+        headingEs: "El creativo casi siempre tiene que cambiar también",
+        body: [
+          "A vertical, fast-paced Reel built for Instagram often looks out of place as a Facebook feed ad, and a longer, more explanatory Facebook video can feel slow on Instagram. Running one identical creative across both placements without adjusting format is a common reason results look mixed.",
+        ],
+        bodyEs: [
+          "Un Reel vertical y de ritmo rápido pensado para Instagram muchas veces se ve fuera de lugar como anuncio de Facebook, y un video más largo y explicativo de Facebook se siente lento en Instagram. Correr un solo creativo idéntico en ambas ubicaciones sin ajustar el formato es una razón común de que los resultados se vean mixtos.",
+        ],
+      },
+      {
+        id: "como-decidir",
+        heading: "How to actually decide",
+        headingEs: "Cómo decidir en la práctica",
+        body: [
+          "If budget is tight, start with automatic placements and let Meta's delivery data show which platform is actually converting before manually restricting anything. Once you have two to three weeks of data, split budget toward whichever placement is producing cheaper results for your specific offer.",
+        ],
+        bodyEs: [
+          "Si el presupuesto es ajustado, empieza con ubicaciones automáticas y deja que los datos de entrega de Meta muestren cuál plataforma realmente está convirtiendo antes de restringir algo manualmente. Con dos o tres semanas de datos, reparte el presupuesto hacia la ubicación que esté produciendo resultados más baratos para tu oferta específica.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Puedo correr la misma campaña en Facebook e Instagram al mismo tiempo?",
+        qEn: "Can I run the same campaign on Facebook and Instagram at the same time?",
+        a: "Sí, es la configuración por default en Meta Ads: un mismo conjunto de anuncios puede entregar en ambas plataformas a la vez. La plataforma decide automáticamente cuánto presupuesto mandar a cada una según dónde esté convirtiendo mejor, a menos que tú lo restrinjas manualmente.",
+        aEn: "Yes, it's the default setup in Meta Ads: one ad set can deliver on both platforms at once. The platform automatically decides how much budget to send to each based on where it's converting better, unless you manually restrict it.",
+      },
+      {
+        q: "¿Instagram es más caro que Facebook?",
+        qEn: "Is Instagram more expensive than Facebook?",
+        a: "Depende de la categoría y de qué tan competido esté el espacio publicitario en cada una en ese momento. No hay una regla fija de que una siempre sea más cara; varía por industria, temporada y calidad del creativo.",
+        aEn: "It depends on the category and how competitive the ad space on each is at that moment. There's no fixed rule that one is always more expensive; it varies by industry, season, and creative quality.",
+      },
+      {
+        q: "¿Necesito una cuenta de Instagram separada para anunciarme ahí?",
+        qEn: "Do I need a separate Instagram account to advertise there?",
+        a: "Sí, necesitas una cuenta de Instagram profesional conectada a tu página de Facebook y a tu Administrador de Anuncios para poder correr campañas ahí, aunque el anuncio se administre desde la misma plataforma de Meta Ads.",
+        aEn: "Yes, you need a professional Instagram account connected to your Facebook page and your Ads Manager to run campaigns there, even though the ad is managed from the same Meta Ads platform.",
+      },
+      {
+        q: "¿Los Reels rinden mejor que los posts normales?",
+        qEn: "Do Reels perform better than regular posts?",
+        a: "En la mayoría de las cuentas sí, porque Meta está priorizando activamente el formato de video corto en ambas plataformas. Pero un Reel mal hecho rinde peor que una foto bien pensada; el formato no sustituye un buen creativo.",
+        aEn: "In most accounts, yes, because Meta is actively prioritizing short-form video on both platforms right now. But a poorly made Reel underperforms a well-thought-out photo; the format doesn't replace a good creative.",
+      },
+    ],
+    schema: {
+      keywords: ["Facebook Ads vs Instagram Ads", "Instagram advertising", "Meta Ads placements"],
+      keywordsEs: [
+        "facebook ads o instagram ads",
+        "publicidad en instagram",
+        "ubicaciones meta ads",
+      ],
+    },
+  },
+  {
+    slug: "que-es-el-pixel-de-meta",
+    title: "Pixel and CAPI: Why Your Campaigns Measure Poorly Without Them",
+    titleEs: "Pixel y CAPI: por qué tus campañas miden mal sin ellos",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "The Meta Pixel and the Conversions API aren't optional extras, they're what tells the algorithm who actually converted. Here's what each one does and why you need both.",
+    excerptEs:
+      "El Pixel de Meta y la API de Conversiones no son extras opcionales, son lo que le dice al algoritmo quién realmente convirtió. Aquí está lo que hace cada uno y por qué necesitas los dos.",
+    readingTime: 5,
+    date: "2026-08-31",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "The Pixel tracks what happens on your site through the visitor's browser. The Conversions API (CAPI) sends the same events directly from your server. Together they give Meta's algorithm a complete, accurate picture of who converted, which is what the whole ad auction depends on.",
+    ledeEs:
+      "El Pixel rastrea lo que pasa en tu sitio a través del navegador de quien visita. La API de Conversiones (CAPI) manda los mismos eventos directamente desde tu servidor. Juntos le dan al algoritmo de Meta una imagen completa y precisa de quién convirtió, que es de lo que depende toda la subasta de anuncios.",
+    sections: [
+      {
+        id: "que-hace-el-pixel",
+        heading: "What the Pixel actually does",
+        headingEs: "Qué hace realmente el Pixel",
+        body: [
+          "The Pixel is a snippet of code installed on your site that reports events back to Meta: page views, add-to-cart actions, purchases, form submissions. Meta uses that data to learn who's likely to convert and to show your ads to more people who look like your past converters.",
+        ],
+        bodyEs: [
+          "El Pixel es un fragmento de código instalado en tu sitio que reporta eventos de vuelta a Meta: vistas de página, agregar al carrito, compras, envíos de formulario. Meta usa esos datos para aprender quién es probable que convierta y para mostrar tus anuncios a más gente parecida a quienes ya convirtieron antes.",
+        ],
+      },
+      {
+        id: "por-que-falla-solo",
+        heading: "Why the Pixel alone isn't enough anymore",
+        headingEs: "Por qué el Pixel solo ya no basta",
+        body: [
+          "Browser privacy changes, ad blockers, and Safari's tracking restrictions all cut into how many events the Pixel actually captures. It doesn't fail loudly, it just quietly under-reports, which makes campaigns look like they're converting less than they really are.",
+        ],
+        bodyEs: [
+          "Los cambios de privacidad en navegadores, los bloqueadores de anuncios y las restricciones de rastreo de Safari le quitan al Pixel una parte de los eventos que realmente captura. No falla de forma ruidosa, simplemente subreporta en silencio, lo que hace que las campañas se vean como si convirtieran menos de lo que realmente convierten.",
+        ],
+      },
+      {
+        id: "que-hace-capi",
+        heading: "What CAPI adds",
+        headingEs: "Qué suma el CAPI",
+        body: [
+          "The Conversions API sends the same conversion events from your server directly to Meta, bypassing the browser entirely. It doesn't replace the Pixel, it backs it up: when the browser misses an event, the server-side event fills the gap, which is what keeps measurement accurate.",
+        ],
+        bodyEs: [
+          "La API de Conversiones manda los mismos eventos de conversión desde tu servidor directamente a Meta, sin pasar por el navegador. No reemplaza al Pixel, lo respalda: cuando el navegador se pierde un evento, el evento del lado del servidor llena ese hueco, y eso es lo que mantiene la medición precisa.",
+        ],
+      },
+      {
+        id: "que-significa-en-la-practica",
+        heading: "What it means in practice",
+        headingEs: "Qué significa en la práctica",
+        body: [
+          "Accounts running both typically report more conversions than Pixel-only setups, not because more people are actually converting, but because fewer real conversions go uncounted. That directly lowers your reported cost per result, and gives the algorithm better data to optimize toward.",
+        ],
+        bodyEs: [
+          "Las cuentas que corren ambos normalmente reportan más conversiones que las que solo usan Pixel, no porque más gente esté convirtiendo en realidad, sino porque menos conversiones reales se quedan sin contar. Eso baja directamente tu costo por resultado reportado, y le da al algoritmo mejores datos para optimizar.",
+        ],
+      },
+      {
+        id: "como-se-instala",
+        heading: "How it actually gets set up",
+        headingEs: "Cómo se instala en la práctica",
+        body: [
+          "The Pixel is a code snippet added to your site's header. CAPI requires a server-side connection, either through a direct integration, a tag manager server container, or an e-commerce platform's built-in Meta integration. It's a one-time technical setup, not something that needs ongoing manual work once it's correctly configured.",
+        ],
+        bodyEs: [
+          "El Pixel es un fragmento de código que se agrega al encabezado del sitio. El CAPI requiere una conexión del lado del servidor, ya sea con una integración directa, un contenedor de servidor de un gestor de etiquetas, o la integración nativa de Meta en una plataforma de e-commerce. Es una configuración técnica de una sola vez, no algo que necesite trabajo manual continuo una vez bien configurado.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Necesito programador para instalar el Pixel y el CAPI?",
+        qEn: "Do I need a developer to install the Pixel and CAPI?",
+        a: "El Pixel es relativamente simple si tu sitio usa un gestor de etiquetas como Google Tag Manager. El CAPI casi siempre requiere configuración técnica más profunda, especialmente si quieres enviar eventos de servidor con datos limpios y sin duplicados.",
+        aEn: "The Pixel is relatively simple if your site uses a tag manager like Google Tag Manager. CAPI almost always requires deeper technical setup, especially if you want to send server-side events with clean, non-duplicated data.",
+      },
+      {
+        q: "¿El Pixel funciona igual en todos los navegadores?",
+        qEn: "Does the Pixel work the same across all browsers?",
+        a: "No. Safari en particular limita agresivamente cuánto tiempo puede rastrear un Pixel a un visitante, y muchos usuarios de Chrome y Firefox usan extensiones que lo bloquean directamente. Esa variación es justo la razón por la que el CAPI existe.",
+        aEn: "No. Safari in particular aggressively limits how long a Pixel can track a visitor, and many Chrome and Firefox users run extensions that block it outright. That variation is exactly why CAPI exists.",
+      },
+      {
+        q: "¿Cómo sé si mi Pixel está funcionando bien?",
+        qEn: "How do I know if my Pixel is working correctly?",
+        a: "El Administrador de Eventos de Meta muestra en tiempo real qué eventos está recibiendo, de qué fuente (navegador o servidor), y si hay duplicados o errores de coincidencia. Es la primera revisión antes de gastar en cualquier campaña.",
+        aEn: "Meta's Events Manager shows in real time what events it's receiving, from which source (browser or server), and whether there are duplicates or matching errors. It's the first check before spending on any campaign.",
+      },
+      {
+        q: "¿El CAPI reemplaza al Pixel?",
+        qEn: "Does CAPI replace the Pixel?",
+        a: "No, funcionan juntos. Cuando ambos envían el mismo evento, Meta usa un sistema de deduplicación para no contarlo dos veces. La combinación es lo que da la medición más completa, no uno u otro por separado.",
+        aEn: "No, they work together. When both send the same event, Meta uses a deduplication system so it doesn't get counted twice. The combination is what gives the most complete measurement, not either one alone.",
+      },
+    ],
+    schema: {
+      keywords: ["Meta Pixel", "Conversions API", "CAPI Facebook", "Meta tracking setup"],
+      keywordsEs: [
+        "pixel de meta",
+        "api de conversiones",
+        "capi facebook",
+        "configuracion de rastreo meta",
+      ],
+    },
+  },
+  {
+    slug: "errores-de-facebook-ads",
+    title: "10 Meta Ads Mistakes Businesses Keep Making",
+    titleEs: "10 errores de Meta Ads que cometen los negocios",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "The recurring, avoidable mistakes we see in Meta Ads accounts audits: from missing CAPI to creative fatigue nobody caught in time.",
+    excerptEs:
+      "Los errores recurrentes y evitables que encontramos en auditorías de cuentas de Meta Ads: desde CAPI ausente hasta fatiga creativa que nadie detectó a tiempo.",
+    readingTime: 6,
+    date: "2026-09-02",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most wasted Meta Ads budget doesn't come from one dramatic mistake, it comes from a handful of small, quiet ones stacking up: incomplete tracking, split budgets, and creative left running long past its useful life.",
+    ledeEs:
+      "La mayor parte del presupuesto desperdiciado en Meta Ads no viene de un error dramático, viene de un puñado de errores chicos y silenciosos que se acumulan: rastreo incompleto, presupuesto repartido de más, y creativo que sigue corriendo mucho después de cumplir su ciclo.",
+    sections: [
+      {
+        id: "sin-capi",
+        heading: "1. No CAPI backing up the Pixel",
+        headingEs: "1. Sin CAPI respaldando al Pixel",
+        body: [
+          "Running only the browser Pixel means losing a real share of conversion events to privacy restrictions and ad blockers. The fix is a one-time technical setup, not an ongoing cost, so there's rarely a good reason to skip it.",
+        ],
+        bodyEs: [
+          "Correr solo el Pixel de navegador significa perder una parte real de eventos de conversión por restricciones de privacidad y bloqueadores de anuncios. La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela.",
+        ],
+      },
+      {
+        id: "presupuesto-fragmentado",
+        heading: "2. Budget split across too many ad sets",
+        headingEs: "2. Presupuesto fragmentado en demasiados conjuntos",
+        body: [
+          "Each ad set needs enough volume to exit the learning phase. Splitting a modest budget across five or six ad sets almost guarantees none of them ever stabilizes, which shows up as inconsistent, expensive results across the board.",
+        ],
+        bodyEs: [
+          "Cada conjunto de anuncios necesita suficiente volumen para salir de la fase de aprendizaje. Repartir un presupuesto modesto entre cinco o seis conjuntos casi garantiza que ninguno se estabilice nunca, y eso se refleja en resultados inconsistentes y caros en toda la cuenta.",
+        ],
+      },
+      {
+        id: "fatiga-creativa",
+        heading: "3. Creative left running until it fatigues",
+        headingEs: "3. Creativo que sigue corriendo hasta fatigarse",
+        body: [
+          "When the same audience sees the same ad too many times, cost per result climbs even though nothing about the offer changed. Refreshing creative on a schedule, before frequency climbs past a healthy range, keeps costs from creeping up unnoticed.",
+        ],
+        bodyEs: [
+          "Cuando la misma audiencia ve el mismo anuncio demasiadas veces, el costo por resultado sube aunque nada de la oferta haya cambiado. Refrescar el creativo con calendario, antes de que la frecuencia suba más de la cuenta, evita que los costos se cuelen hacia arriba sin que nadie lo note.",
+        ],
+      },
+      {
+        id: "optimizar-para-trafico",
+        heading: "4. Optimizing for traffic instead of the real goal",
+        headingEs: "4. Optimizar para tráfico en vez del objetivo real",
+        body: [
+          "A traffic-optimized campaign brings clicks, but Meta's algorithm isn't looking for people likely to buy, it's looking for people likely to click. If the goal is leads or sales, the campaign objective needs to say so directly.",
+        ],
+        bodyEs: [
+          "Una campaña optimizada para tráfico trae clics, pero el algoritmo de Meta no está buscando gente que probablemente compre, busca gente que probablemente haga clic. Si el objetivo es leads o ventas, la campaña tiene que decirlo directamente.",
+        ],
+      },
+      {
+        id: "un-solo-mensaje",
+        heading: "5. One ad trying to say everything",
+        headingEs: "5. Un solo anuncio tratando de decirlo todo",
+        body: [
+          "Ads that pack in every feature, every benefit, and every offer at once dilute the message and slow down the scroll-past decision instead of speeding it up. One clear message per ad, tested against a different single message, reads results far more clearly.",
+        ],
+        bodyEs: [
+          "Los anuncios que meten cada característica, cada beneficio y cada oferta al mismo tiempo diluyen el mensaje y hacen más lenta la decisión de seguir viendo, en vez de acelerarla. Un solo mensaje claro por anuncio, comparado contra otro mensaje único distinto, deja leer los resultados con mucha más claridad.",
+        ],
+      },
+      {
+        id: "no-revisar-desglose",
+        heading: "6. Never checking the placement breakdown",
+        headingEs: "6. Nunca revisar el desglose por ubicación",
+        body: [
+          "Automatic placements can spend heavily on a placement that isn't actually converting for a given offer. Checking the breakdown by placement every couple of weeks catches this before it burns through real budget.",
+        ],
+        bodyEs: [
+          "Las ubicaciones automáticas pueden gastar fuerte en una ubicación que en realidad no está convirtiendo para una oferta dada. Revisar el desglose por ubicación cada par de semanas atrapa esto antes de que queme presupuesto real.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Cuál es el error más caro de esta lista?",
+        qEn: "Which mistake on this list is the most expensive?",
+        a: "El más caro suele ser fragmentar el presupuesto en demasiados conjuntos de anuncios, porque afecta a toda la cuenta al mismo tiempo, no a una sola campaña. Es también el más fácil de arreglar: consolidar en menos conjuntos con más presupuesto cada uno.",
+        aEn: "The most expensive one is usually splitting budget across too many ad sets, because it affects the whole account at once, not just one campaign. It's also the easiest to fix: consolidate into fewer ad sets with more budget each.",
+      },
+      {
+        q: "¿Cómo sé si mi creativo ya se fatigó?",
+        qEn: "How do I know if my creative has already fatigued?",
+        a: "Revisa la frecuencia (veces que la misma persona ve el anuncio) junto con el costo por resultado. Si ambas suben al mismo tiempo sin que hayas cambiado nada más, es fatiga creativa, no un problema de la oferta.",
+        aEn: "Check frequency (how many times the same person sees the ad) alongside cost per result. If both climb at the same time without you changing anything else, that's creative fatigue, not an offer problem.",
+      },
+      {
+        q: "¿Estos errores aplican igual a cuentas chicas y grandes?",
+        qEn: "Do these mistakes apply equally to small and large accounts?",
+        a: "Sí, pero pegan más fuerte en cuentas chicas porque tienen menos margen para absorber el desperdicio. Una cuenta con presupuesto grande puede diluir un error en el volumen total; una cuenta chica lo siente de inmediato.",
+        aEn: "Yes, but they hit harder on small accounts because there's less margin to absorb the waste. A large-budget account can dilute one mistake into the total volume; a small account feels it immediately.",
+      },
+      {
+        q: "¿Vale la pena una auditoría si nunca he tenido una?",
+        qEn: "Is an audit worth it if I've never had one?",
+        a: "Especialmente si llevas más de tres meses corriendo campañas sin haber revisado tracking, estructura de cuenta y calidad de creativo. Una auditoría honesta suele encontrar suficiente desperdicio para pagarse sola con lo que corrige en la primera revisión.",
+        aEn: "Especially if you've been running campaigns for more than three months without reviewing tracking, account structure, and creative quality. An honest audit usually finds enough waste to pay for itself with what it corrects in the first review.",
+      },
+    ],
+    schema: {
+      keywords: ["Meta Ads mistakes", "Facebook Ads mistakes", "Meta Ads audit"],
+      keywordsEs: ["errores de facebook ads", "errores de meta ads", "auditoria meta ads"],
+    },
+  },
+  {
+    slug: "guia-video-marketing",
+    title: "Video, Photography & Drone: The Complete 2026 Guide",
+    titleEs: "Video, fotografía y dron: guía completa 2026",
+    category: "Video & Drone",
+    categoryEs: "Video y Drone",
+    excerpt:
+      "How professional video, photography, and drone production actually fit into a marketing strategy: what each format is for, what it costs, and when it's worth the investment.",
+    excerptEs:
+      "Cómo encajan realmente el video, la fotografía y el dron profesionales en una estrategia de marketing: para qué sirve cada formato, qué cuesta, y cuándo vale la pena invertir en ello.",
+    readingTime: 7,
+    date: "2026-09-04",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Video, photography, and drone content aren't interchangeable, each does a different job. Video builds trust and explains; photography sells the specific product or space; drone footage adds scale and context nothing else can capture from the ground.",
+    ledeEs:
+      "Video, fotografía y dron no son intercambiables, cada uno hace un trabajo distinto. El video genera confianza y explica; la fotografía vende el producto o espacio específico; el dron aporta escala y contexto que nada más puede capturar desde el suelo.",
+    sections: [
+      {
+        id: "para-que-sirve-cada-formato",
+        heading: "What each format is actually for",
+        headingEs: "Para qué sirve realmente cada formato",
+        body: [
+          "Corporate video builds trust before a sale happens, it's what a prospect watches before calling. Commercial photography sells the specific thing, a product, a room, a dish. Drone footage adds scale, context, and a sense of place that ground-level content can't replicate on its own.",
+        ],
+        bodyEs: [
+          "El video corporativo genera confianza antes de que ocurra la venta, es lo que un prospecto ve antes de llamar. La fotografía comercial vende lo específico: un producto, una habitación, un platillo. El material de dron aporta escala, contexto y sentido de lugar que el contenido a nivel de suelo no puede replicar solo.",
+        ],
+      },
+      {
+        id: "cuando-vale-la-pena",
+        heading: "When it's actually worth investing",
+        headingEs: "Cuándo realmente vale la pena invertir",
+        body: [
+          "High-ticket categories (real estate, hospitality, construction) see the clearest return, because buyers make slower decisions and need more visual proof before committing. Lower-ticket, high-frequency businesses often get more mileage from consistent photography than from occasional big video shoots.",
+        ],
+        bodyEs: [
+          "Las categorías de ticket alto (bienes raíces, hospitalidad, construcción) tienen el retorno más claro, porque los compradores toman decisiones más lentas y necesitan más prueba visual antes de comprometerse. Los negocios de ticket bajo y alta frecuencia suelen sacarle más provecho a fotografía constante que a producciones de video grandes y ocasionales.",
+        ],
+      },
+      {
+        id: "el-dron-especificamente",
+        heading: "What drone footage adds specifically",
+        headingEs: "Qué aporta específicamente el dron",
+        body: [
+          "Aerial footage works for one campaign at a time, not a full site's worth of pages, it's built to receive traffic from a specific source and convert it. For real estate and construction, it shows scale and surroundings buyers can't get any other way. For events and hospitality, it captures a sense of place static ground photos miss entirely.",
+        ],
+        bodyEs: [
+          "El material aéreo funciona para mostrar escala y entorno como ningún otro formato. Para bienes raíces y construcción, muestra escala y alrededores que los compradores no pueden obtener de ninguna otra forma. Para eventos y hospitalidad, captura un sentido de lugar que las fotos estáticas de piso no logran del todo.",
+        ],
+      },
+      {
+        id: "costos-reales",
+        heading: "Real costs, roughly",
+        headingEs: "Costos reales, a grandes rasgos",
+        body: [
+          "A single-location drone session runs a few thousand pesos for a few hours of work. A full corporate video production, with scripting, multiple locations, and post-production, runs considerably more and takes weeks rather than days. Photography sits somewhere in between, priced mostly by time on site and number of final images delivered.",
+        ],
+        bodyEs: [
+          "Una sesión de dron en una sola locación cuesta unos cuantos miles de pesos por unas horas de trabajo. Una producción de video corporativo completa, con guion, varias locaciones y postproducción, cuesta considerablemente más y toma semanas en vez de días. La fotografía queda en un punto intermedio, con precio definido sobre todo por el tiempo en sitio y el número de imágenes finales entregadas.",
+        ],
+      },
+      {
+        id: "permisos-y-regulacion",
+        heading: "Permits and regulation, briefly",
+        headingEs: "Permisos y regulación, brevemente",
+        body: [
+          "Most locations in Mexico can be flown freely, but areas near airports or other restricted airspace require permit management through AFAC before the shoot. A production team that checks this before quoting, not the day of the shoot, is the difference between a smooth session and a cancelled one.",
+        ],
+        bodyEs: [
+          "La mayoría de las ubicaciones en México se pueden volar libremente, pero las zonas cercanas a aeropuertos u otro espacio aéreo restringido requieren gestión de permiso ante AFAC antes de la sesión. Un equipo de producción que revisa esto antes de cotizar, no el día de la sesión, es la diferencia entre una sesión fluida y una cancelada.",
+        ],
+      },
+      {
+        id: "como-integrarlo-a-marketing",
+        heading: "How to integrate it into the rest of your marketing",
+        headingEs: "Cómo integrarlo al resto de tu marketing",
+        body: [
+          "Raw footage on its own doesn't sell anything, it needs to feed the channels that already carry your marketing: a landing page for a specific campaign, an ad creative, a listing, a proposal deck. Planning the shoot around where the content will actually be used gets more mileage than shooting first and figuring out placement later.",
+        ],
+        bodyEs: [
+          "El material en bruto por sí solo no vende nada, tiene que alimentar los canales donde ya vive tu marketing: una landing page para una campaña específica, un creativo de anuncio, una ficha de propiedad, una presentación de ventas. Planear la sesión alrededor de dónde se va a usar el contenido rinde más que grabar primero y decidir el uso después.",
+        ],
+      },
+    ],
+    gradient: "from-stone-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Necesito video, fotografía o dron, o los tres?",
+        qEn: "Do I need video, photography, or drone, or all three?",
+        a: "Depende de qué tan visual sea tu categoría y qué tan grande sea la decisión de compra de tu cliente. Un restaurante suele necesitar sobre todo fotografía constante; un desarrollo inmobiliario suele necesitar los tres trabajando juntos.",
+        aEn: "It depends on how visual your category is and how big your customer's buying decision is. A restaurant usually needs mostly consistent photography; a real estate development usually needs all three working together.",
+      },
+      {
+        q: "¿El dron sirve para negocios que no son inmobiliarios?",
+        qEn: "Is drone footage useful for businesses outside real estate?",
+        a: "Sí. Eventos, hoteles, restaurantes con terraza o ubicación destacada, y cualquier negocio donde el entorno físico sea parte de la venta se benefician del mismo tipo de contenido aéreo.",
+        aEn: "Yes. Events, hotels, restaurants with a terrace or a standout location, and any business where the physical setting is part of the sale benefit from the same kind of aerial content.",
+      },
+      {
+        q: "¿Cuánto tiempo toma una producción de video corporativo?",
+        qEn: "How long does a corporate video production take?",
+        a: "Desde el guion hasta la entrega final, una producción típica toma entre tres y seis semanas, dependiendo de cuántas locaciones y qué tan compleja sea la postproducción.",
+        aEn: "From script to final delivery, a typical production takes three to six weeks, depending on how many locations and how complex the post-production is.",
+      },
+      {
+        q: "¿Puedo empezar solo con dron y agregar video después?",
+        qEn: "Can I start with just drone and add video later?",
+        a: "Sí, no hay que construir las tres piezas al mismo tiempo. Muchos negocios empiezan con una sesión de dron puntual para una campaña específica y suman video corporativo más adelante cuando el presupuesto lo permite.",
+        aEn: "Yes, you don't have to build all three pieces at once. Many businesses start with a one-off drone session for a specific campaign and add corporate video later once budget allows.",
+      },
+      {
+        q: "¿Qué pasa si mi ubicación cae en zona restringida para dron?",
+        qEn: "What happens if my location falls in a drone-restricted zone?",
+        a: "Se confirma desde la cotización, antes de agendar la sesión. La mayoría de las zonas restringidas por cercanía a un aeropuerto sí se pueden volar, solo requieren gestión de permiso especial ante AFAC.",
+        aEn: "It's confirmed at the quote stage, before the session is scheduled. Most zones restricted due to airport proximity can still be flown, they just require special permit management through AFAC.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "video marketing guide",
+        "commercial photography",
+        "drone video production",
+        "corporate video",
+      ],
+      keywordsEs: [
+        "guia video marketing",
+        "fotografia comercial",
+        "produccion video dron",
+        "video corporativo",
+      ],
+    },
+  },
+  {
+    slug: "cuanto-cuesta-un-video-corporativo",
+    title: "How Much Does a Corporate Video Cost in Mexico?",
+    titleEs: "¿Cuánto cuesta un video corporativo en México?",
+    category: "Video & Drone",
+    categoryEs: "Video y Drone",
+    excerpt:
+      "Real corporate video pricing in Mexico: what changes the cost, what a single-location shoot runs versus a multi-location production, and where the money actually goes.",
+    excerptEs:
+      "Precios reales de video corporativo en México: qué cambia el costo, cuánto corre una grabación en una sola locación contra una producción multi-locación, y a dónde va realmente el dinero.",
+    readingTime: 5,
+    date: "2026-09-06",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A single-location corporate video with basic editing runs a modest fixed cost measured in a few thousand pesos. A multi-location production with scripting, drone footage, and full post-production runs several times that, and takes weeks instead of days.",
+    ledeEs:
+      "Un video corporativo en una sola locación con edición básica cuesta un monto fijo modesto de unos cuantos miles de pesos. Una producción multi-locación con guion, tomas de dron y postproducción completa cuesta varias veces eso, y toma semanas en vez de días.",
+    sections: [
+      {
+        id: "que-determina-el-precio",
+        heading: "What actually determines the price",
+        headingEs: "Qué determina realmente el precio",
+        body: [
+          "Four variables set the cost: how many locations, how many shooting days, how much scripting and pre-production planning, and how much post-production work (color, sound design, motion graphics) the final cut needs. A single-location product video and a multi-day brand documentary are not the same purchase, even if both get called corporate video.",
+        ],
+        bodyEs: [
+          "Cuatro variables definen el costo: cuántas locaciones, cuántos días de grabación, cuánta planeación de guion y preproducción, y cuánto trabajo de postproducción (color, sonido, motion graphics) necesita el corte final. Un video de producto en una sola locación y un documental de marca de varios días no son la misma compra, aunque a ambos se les llame video corporativo.",
+        ],
+      },
+      {
+        id: "rangos-tipicos",
+        heading: "Typical price ranges",
+        headingEs: "Rangos de precio típicos",
+        body: [
+          "A single-location shoot with one edited video and basic color correction is the entry point. Adding multiple locations, drone footage, interview setups, and motion graphics moves the project into a considerably higher range. Enterprise-level brand films with multi-day shoots and full crews sit at the top end.",
+        ],
+        bodyEs: [
+          "Una sesión de una sola locación con un video editado y corrección de color básica es el punto de entrada. Sumar varias locaciones, tomas de dron, entrevistas y motion graphics mueve el proyecto a un rango considerablemente más alto. Los video-documentales de marca de nivel empresarial, con grabaciones de varios días y equipo completo, quedan en el extremo más alto.",
+        ],
+      },
+      {
+        id: "que-incluye-la-cotizacion",
+        heading: "What a quote should actually include",
+        headingEs: "Qué debería incluir realmente una cotización",
+        body: [
+          "A real quote breaks down pre-production (script, shot list, location scouting), production days, and post-production (editing rounds, color, sound, music licensing). If a quote is just one flat number with no breakdown, it's worth asking what happens if you need an extra round of edits.",
+        ],
+        bodyEs: [
+          "Una cotización real desglosa preproducción (guion, lista de tomas, exploración de locación), días de producción, y postproducción (rondas de edición, color, sonido, licencia de música). Si una cotización es solo un número plano sin desglose, vale la pena preguntar qué pasa si necesitas una ronda extra de ediciones.",
+        ],
+      },
+      {
+        id: "costos-ocultos",
+        heading: "Costs that catch people off guard",
+        headingEs: "Costos que agarran a la gente desprevenida",
+        body: [
+          "Music licensing, talent fees if the video uses actors instead of real staff, additional revision rounds beyond what's included, and rush delivery all add to the base quote. None of these are hidden on purpose, they're just easy to forget when comparing two quotes side by side.",
+        ],
+        bodyEs: [
+          "La licencia de música, honorarios de talento si el video usa actores en vez de personal real, rondas de revisión adicionales fuera de las incluidas, y entrega urgente se suman a la cotización base. Ninguno de estos está escondido a propósito, simplemente son fáciles de olvidar al comparar dos cotizaciones lado a lado.",
+        ],
+      },
+    ],
+    gradient: "from-stone-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuánto tiempo toma producir un video corporativo?",
+        qEn: "How long does it take to produce a corporate video?",
+        a: "Un video de una sola locación puede entregarse en pocos días hábiles. Una producción multi-locación con guion completo y postproducción compleja toma de tres a seis semanas desde el brief hasta la entrega final.",
+        aEn: "A single-location video can be delivered in a few business days. A multi-location production with a full script and complex post-production takes three to six weeks from brief to final delivery.",
+      },
+      {
+        q: "¿El precio incluye el guion?",
+        qEn: "Does the price include the script?",
+        a: "Depende del alcance. Para producciones simples, el guion suele estar incluido en el costo base. Para producciones más grandes, el desarrollo de guion y storyboard puede cotizarse como una etapa separada de preproducción.",
+        aEn: "It depends on scope. For simple productions, scripting is usually included in the base cost. For larger productions, script and storyboard development may be quoted as a separate pre-production stage.",
+      },
+      {
+        q: "¿Puedo usar el mismo video en redes y en pauta pagada?",
+        qEn: "Can I use the same video on social media and paid ads?",
+        a: "Sí, pero casi siempre necesita versiones distintas: formato vertical para redes e historias, formato horizontal para YouTube o sitio web, y cortes más cortos específicos para pauta. Eso normalmente se cotiza como parte de la entrega, no como un proyecto aparte.",
+        aEn: "Yes, but it almost always needs different versions: vertical format for social and stories, horizontal format for YouTube or your website, and shorter specific cuts for paid ads. That's normally quoted as part of the delivery, not a separate project.",
+      },
+      {
+        q: "¿Qué pasa si no me gusta el primer corte?",
+        qEn: "What happens if I don't like the first cut?",
+        a: "Las cotizaciones normales incluyen una o dos rondas de ajustes dentro del precio. Rondas adicionales fuera de las incluidas se cobran aparte, así que vale la pena confirmar cuántas rondas trae la cotización antes de empezar.",
+        aEn: "Standard quotes include one or two rounds of revisions within the price. Additional rounds beyond those included are billed separately, so it's worth confirming how many rounds a quote includes before starting.",
+      },
+    ],
+    schema: {
+      keywords: ["corporate video cost Mexico", "video production pricing"],
+      keywordsEs: ["cuanto cuesta un video corporativo", "precio produccion de video mexico"],
+    },
+  },
+  {
+    slug: "regulacion-de-drones-en-mexico",
+    title: "Drones in Mexico: Regulation and Permits for Commercial Use",
+    titleEs: "Drones en México: regulación y permisos para uso comercial",
+    category: "Video & Drone",
+    categoryEs: "Video y Drone",
+    excerpt:
+      "What commercial drone regulation in Mexico actually covers: AFAC oversight, restricted zones near airports, and how to confirm before a shoot, not on the day of it.",
+    excerptEs:
+      "Lo que realmente cubre la regulación de dron comercial en México: supervisión de AFAC, zonas restringidas cerca de aeropuertos, y cómo confirmarlo antes de la sesión, no el día de la sesión.",
+    readingTime: 5,
+    date: "2026-09-08",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Commercial drone use in Mexico falls under AFAC (Agencia Federal de Aviación Civil), and most locations can be flown without a special permit. The exception is airspace near airports and other officially restricted zones, which require permit management confirmed before the shoot is scheduled.",
+    ledeEs:
+      "El uso comercial de dron en México cae bajo la supervisión de AFAC (Agencia Federal de Aviación Civil), y la mayoría de las ubicaciones se pueden volar sin permiso especial. La excepción es el espacio aéreo cerca de aeropuertos y otras zonas oficialmente restringidas, que requieren gestión de permiso confirmada antes de agendar la sesión.",
+    sections: [
+      {
+        id: "quien-regula",
+        heading: "Who regulates drone use in Mexico",
+        headingEs: "Quién regula el uso de dron en México",
+        body: [
+          "AFAC oversees civil aviation in Mexico, and that includes commercial drone operation. Regulations distinguish between recreational and commercial use, and commercial operators are expected to fly within the rules that apply to their specific category and location.",
+        ],
+        bodyEs: [
+          "AFAC supervisa la aviación civil en México, y eso incluye la operación comercial de drones. La normativa distingue entre uso recreativo y comercial, y se espera que los operadores comerciales vuelen dentro de las reglas que aplican a su categoría y ubicación específicas.",
+        ],
+      },
+      {
+        id: "zonas-restringidas",
+        heading: "What actually makes a zone restricted",
+        headingEs: "Qué hace realmente que una zona esté restringida",
+        body: [
+          "The most common restriction is proximity to an airport, where controlled airspace requires coordination before any flight. Other restricted areas can include certain government facilities and event airspace during specific occasions. Most commercial and residential locations fall outside these zones entirely.",
+        ],
+        bodyEs: [
+          "La restricción más común es la cercanía a un aeropuerto, donde el espacio aéreo controlado requiere coordinación antes de cualquier vuelo. Otras áreas restringidas pueden incluir ciertas instalaciones gubernamentales y espacio aéreo de eventos en ocasiones específicas. La mayoría de las ubicaciones comerciales y residenciales quedan completamente fuera de estas zonas.",
+        ],
+      },
+      {
+        id: "como-se-confirma",
+        heading: "How this actually gets checked before a shoot",
+        headingEs: "Cómo se confirma esto realmente antes de una sesión",
+        body: [
+          "A responsible production team checks the exact coordinates of a location against known restricted airspace before quoting, not on the day of the shoot. If a location falls inside a restricted zone, permit management is handled as a separate step ahead of the session, not improvised on site.",
+        ],
+        bodyEs: [
+          "Un equipo de producción responsable revisa las coordenadas exactas de una ubicación contra el espacio aéreo restringido conocido antes de cotizar, no el día de la sesión. Si una ubicación cae dentro de una zona restringida, la gestión del permiso se maneja como un paso aparte antes de la sesión, no se improvisa en sitio.",
+        ],
+      },
+      {
+        id: "que-pasa-si-no-se-respeta",
+        heading: "What's actually at stake if this gets skipped",
+        headingEs: "Qué está realmente en juego si se salta este paso",
+        body: [
+          "Flying in restricted airspace without the proper coordination carries real regulatory risk for whoever is operating the drone, not just an inconvenience. It's one of the reasons it's worth confirming a production team actually checks this as a standard step, rather than assuming any location is fair game.",
+        ],
+        bodyEs: [
+          "Volar en espacio aéreo restringido sin la coordinación adecuada implica un riesgo regulatorio real para quien está operando el dron, no solo una molestia. Es una de las razones por las que vale la pena confirmar que un equipo de producción realmente revisa esto como paso estándar, en vez de asumir que cualquier ubicación es válida sin más.",
+        ],
+      },
+    ],
+    gradient: "from-stone-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Necesito permiso para grabar con dron en mi negocio?",
+        qEn: "Do I need a permit to shoot drone footage at my business?",
+        a: "En la mayoría de los casos no, si tu ubicación está fuera de zonas restringidas por cercanía a un aeropuerto u otra área controlada. Un equipo de producción serio confirma esto desde la cotización revisando la ubicación exacta.",
+        aEn: "In most cases, no, if your location is outside zones restricted by airport proximity or another controlled area. A serious production team confirms this at the quote stage by checking the exact location.",
+      },
+      {
+        q: "¿Cómo sé si mi ubicación está en zona restringida?",
+        qEn: "How do I know if my location is in a restricted zone?",
+        a: "Se revisa contra el espacio aéreo controlado conocido por AFAC antes de agendar la sesión. Es responsabilidad del equipo de producción hacer esta verificación, no algo que tengas que investigar tú mismo.",
+        aEn: "It's checked against airspace known to be controlled by AFAC before the session is scheduled. It's the production team's responsibility to run this check, not something you need to research yourself.",
+      },
+      {
+        q: "¿Cuánto tiempo toma tramitar un permiso si mi ubicación lo requiere?",
+        qEn: "How long does it take to get a permit if my location requires one?",
+        a: "Varía según la zona y la complejidad del trámite. Por eso conviene verificar la ubicación desde el primer contacto, para que el permiso, si aplica, no retrase la fecha de la sesión.",
+        aEn: "It varies depending on the zone and how complex the process is. That's why it's worth checking the location from the first contact, so the permit, if it applies, doesn't delay the shoot date.",
+      },
+      {
+        q: "¿La regulación es la misma para uso recreativo y comercial?",
+        qEn: "Is the regulation the same for recreational and commercial use?",
+        a: "No. El uso comercial está sujeto a supervisión más específica por parte de AFAC. Cualquier operador que ofrezca servicios de dron para negocios debería operar dentro de esa categoría, no bajo reglas recreativas.",
+        aEn: "No. Commercial use is subject to more specific oversight from AFAC. Any operator offering drone services for businesses should be operating within that category, not under recreational rules.",
+      },
+    ],
+    schema: {
+      keywords: ["drone regulations Mexico", "AFAC drone permits", "commercial drone Mexico"],
+      keywordsEs: ["regulacion de drones en mexico", "permisos afac dron", "dron comercial mexico"],
+    },
+  },
+  {
+    slug: "presupuesto-para-google-ads",
+    title: "How to Set Your Google Ads Budget",
+    titleEs: "Cómo definir tu presupuesto de Google Ads",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "A practical way to size a Google Ads budget: working backward from your close rate and average sale, not from a round number that feels safe.",
+    excerptEs:
+      "Una forma práctica de dimensionar un presupuesto de Google Ads: partiendo de tu tasa de cierre y venta promedio, no de un número redondo que se siente seguro.",
+    readingTime: 5,
+    date: "2026-09-10",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "The right Google Ads budget isn't a round number picked because it feels affordable, it's worked out backward from how much a customer is worth, what share of leads actually close, and how much competition drives up your cost per click.",
+    ledeEs:
+      "El presupuesto correcto de Google Ads no es un número redondo que se elige porque se siente accesible, se calcula al revés: cuánto vale un cliente, qué porcentaje de leads realmente cierra, y qué tanto la competencia sube tu costo por clic.",
+    sections: [
+      {
+        id: "empieza-por-el-cierre",
+        heading: "Start from your close rate, not your budget comfort",
+        headingEs: "Empieza por tu tasa de cierre, no por lo que se siente cómodo gastar",
+        body: [
+          "If one in five leads becomes a customer and a customer is worth a known amount, that math tells you what you can afford to pay per lead and still profit. Working forward from a round monthly number skips this step entirely and often either overspends or underfunds the campaign.",
+        ],
+        bodyEs: [
+          "Si uno de cada cinco leads se vuelve cliente y un cliente vale un monto conocido, esa cuenta te dice cuánto puedes pagar por lead y aun así ser rentable. Trabajar hacia adelante desde un número mensual redondo se salta este paso por completo y muchas veces gasta de más o financia de menos la campaña.",
+        ],
+      },
+      {
+        id: "el-cpc-de-tu-categoria",
+        heading: "Your category's cost per click sets the floor",
+        headingEs: "El costo por clic de tu categoría marca el piso",
+        body: [
+          "Competitive categories (legal, finance, real estate) carry a higher cost per click than low-competition local services. A budget that doesn't account for your category's actual auction dynamics either buys too few clicks to learn anything or runs out mid-month.",
+        ],
+        bodyEs: [
+          "Las categorías competidas (legal, finanzas, bienes raíces) tienen un costo por clic más alto que servicios locales de baja competencia. Un presupuesto que no toma en cuenta la dinámica real de subasta de tu categoría, o compra muy pocos clics para aprender algo, o se acaba a media del mes.",
+        ],
+      },
+      {
+        id: "presupuesto-de-aprendizaje",
+        heading: "Budget the learning phase separately",
+        headingEs: "Presupuesta la fase de aprendizaje aparte",
+        body: [
+          "The first few weeks of a new campaign are for gathering data, not for judging final performance. Setting aside a specific budget for this period, and expecting a higher cost per result during it, avoids the common mistake of shutting a campaign down too early.",
+        ],
+        bodyEs: [
+          "Las primeras semanas de una campaña nueva son para reunir datos, no para juzgar el rendimiento final. Apartar un presupuesto específico para este periodo, y esperar un costo por resultado más alto durante él, evita el error común de apagar una campaña demasiado pronto.",
+        ],
+      },
+      {
+        id: "como-ajustar-con-el-tiempo",
+        heading: "How to adjust once real data comes in",
+        headingEs: "Cómo ajustar una vez que llegan datos reales",
+        body: [
+          "Once a campaign has enough conversion volume to read reliably, the budget conversation shifts from guessing to scaling: increasing spend on what's already converting at an acceptable cost, and cutting what isn't, rather than adjusting the total number blindly.",
+        ],
+        bodyEs: [
+          "Una vez que una campaña tiene suficiente volumen de conversión para leerse con confianza, la conversación de presupuesto cambia de adivinar a escalar: subir el gasto en lo que ya convierte a un costo aceptable, y cortar lo que no, en vez de ajustar el número total a ciegas.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Cuál es un presupuesto mínimo razonable para empezar?",
+        qEn: "What's a reasonable minimum budget to get started?",
+        a: "Depende del costo por clic de tu categoría, pero como referencia general, la mayoría de las cuentas necesita al menos unos cuantos miles de pesos mensuales para generar suficiente volumen de datos y salir de la fase de aprendizaje en un plazo razonable.",
+        aEn: "It depends on your category's cost per click, but as a general reference, most accounts need at least a few thousand pesos per month to generate enough data volume and exit the learning phase within a reasonable timeframe.",
+      },
+      {
+        q: "¿Debo bajar el presupuesto si los primeros resultados se ven caros?",
+        qEn: "Should I lower the budget if the first results look expensive?",
+        a: "No de inmediato. Los primeros resultados suelen verse más caros mientras el sistema aprende. Bajar el presupuesto en ese momento suele alargar el aprendizaje en vez de resolver el problema.",
+        aEn: "Not immediately. Early results usually look more expensive while the system is learning. Lowering the budget at that point usually extends the learning period instead of solving the problem.",
+      },
+      {
+        q: "¿Cómo sé cuándo es momento de subir el presupuesto?",
+        qEn: "How do I know when it's time to increase the budget?",
+        a: "Cuando el costo por resultado ya se estabilizó en un rango aceptable durante varias semanas seguidas. Subir presupuesto sobre una campaña que ya convierte de forma consistente suele escalar bien; subirlo sobre una que todavía no se estabiliza rara vez ayuda.",
+        aEn: "When cost per result has already stabilized in an acceptable range for several weeks in a row. Increasing budget on a campaign that's already converting consistently usually scales well; increasing it on one that hasn't stabilized yet rarely helps.",
+      },
+      {
+        q: "¿El presupuesto debe ser el mismo todos los meses?",
+        qEn: "Should the budget be the same every month?",
+        a: "No necesariamente. Muchos negocios ajustan el gasto según estacionalidad o momentos clave, mientras mantienen un piso mínimo constante para no perder el aprendizaje acumulado de la cuenta.",
+        aEn: "Not necessarily. Many businesses adjust spend based on seasonality or key moments, while keeping a constant minimum floor so they don't lose the account's accumulated learning.",
+      },
+    ],
+    schema: {
+      keywords: ["Google Ads budget", "how much to spend on Google Ads"],
+      keywordsEs: ["presupuesto para google ads", "cuanto gastar en google ads"],
+    },
+  },
+  {
+    slug: "agencia-google-ads-o-hacerlo-yo",
+    title: "Agency or DIY: Who Should Run Your Google Ads",
+    titleEs: "Agencia o hacerlo tú mismo: quién debería manejar tu Google Ads",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Running Google Ads yourself is possible. Whether it's the best use of your time depends less on the platform's complexity and more on what your time is worth doing something else.",
+    excerptEs:
+      "Manejar Google Ads tú mismo es posible. Si es el mejor uso de tu tiempo depende menos de qué tan compleja sea la plataforma y más de cuánto vale tu tiempo haciendo otra cosa.",
+    readingTime: 5,
+    date: "2026-09-12",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Google Ads' interface is accessible enough that anyone can launch a campaign in an afternoon. The real question isn't whether you're capable of running it, it's whether the hours it takes to run it well are better spent somewhere else in your business.",
+    ledeEs:
+      "La interfaz de Google Ads es lo bastante accesible como para que cualquiera lance una campaña en una tarde. La pregunta real no es si eres capaz de manejarla, es si las horas que toma manejarla bien están mejor invertidas en otra parte de tu negocio.",
+    sections: [
+      {
+        id: "lo-que-si-puedes-hacer-solo",
+        heading: "What's genuinely doable on your own",
+        headingEs: "Lo que sí es genuinamente posible hacer solo",
+        body: [
+          "A small, simple campaign with a modest budget and one clear goal is realistic to run yourself, especially if you're willing to spend real time learning the platform. The tools are built to be usable by a beginner, and plenty of small businesses run their own account successfully.",
+        ],
+        bodyEs: [
+          "Una campaña pequeña y simple, con un presupuesto modesto y un objetivo claro, es realista de manejar tú mismo, especialmente si estás dispuesto a invertir tiempo real en aprender la plataforma. Las herramientas están hechas para ser usables por un principiante, y muchos negocios pequeños manejan su propia cuenta con éxito.",
+        ],
+      },
+      {
+        id: "donde-se-complica",
+        heading: "Where it stops being simple",
+        headingEs: "Dónde deja de ser simple",
+        body: [
+          "Complexity shows up once you're running multiple campaign types, need to interpret conversion data correctly, or are trying to scale spend without wasting it. That's where the gap between a functioning campaign and a genuinely profitable one tends to open up, and where DIY accounts often plateau.",
+        ],
+        bodyEs: [
+          "La complejidad aparece cuando manejas varios tipos de campaña, necesitas interpretar bien los datos de conversión, o intentas escalar el gasto sin desperdiciarlo. Ahí es donde suele abrirse la brecha entre una campaña que funciona y una que realmente es rentable, y donde las cuentas manejadas por cuenta propia suelen estancarse.",
+        ],
+      },
+      {
+        id: "el-costo-real-del-tiempo",
+        heading: "The real cost isn't the agency fee, it's your time",
+        headingEs: "El costo real no es la cuota de la agencia, es tu tiempo",
+        body: [
+          "Managing an account well takes ongoing weekly attention, not a one-time setup. For a business owner, that time comes directly out of hours that could go toward sales, operations, or product, which is often worth more than what an agency would charge to handle it.",
+        ],
+        bodyEs: [
+          "Manejar bien una cuenta requiere atención semanal continua, no una configuración de una sola vez. Para un dueño de negocio, ese tiempo sale directamente de horas que podrían ir hacia ventas, operación o producto, lo cual muchas veces vale más que lo que cobraría una agencia por manejarla.",
+        ],
+      },
+      {
+        id: "cuando-si-conviene-una-agencia",
+        heading: "When bringing in outside help actually pays off",
+        headingEs: "Cuándo realmente conviene traer ayuda externa",
+        body: [
+          "An agency earns its cost when the account is complex enough, or the budget large enough, that expert management measurably improves results beyond what self-management would achieve, and when your own time is worth more spent elsewhere in the business.",
+        ],
+        bodyEs: [
+          "Una agencia justifica su costo cuando la cuenta es lo bastante compleja, o el presupuesto lo bastante grande, como para que el manejo experto mejore de forma medible los resultados más allá de lo que lograría el manejo propio, y cuando tu propio tiempo vale más invertido en otra parte del negocio.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿Puedo manejar Google Ads yo mismo sin experiencia previa?",
+        qEn: "Can I run Google Ads myself with no prior experience?",
+        a: "Sí, para una campaña simple y de presupuesto modesto es totalmente posible, sobre todo si dedicas tiempo real a aprender la plataforma antes de lanzar.",
+        aEn: "Yes, for a simple campaign with a modest budget it's entirely possible, especially if you dedicate real time to learning the platform before launching.",
+      },
+      {
+        q: "¿Cuánto tiempo a la semana toma manejar bien una cuenta?",
+        qEn: "How much time per week does it take to manage an account well?",
+        a: "Varía según el tamaño de la cuenta, pero un manejo serio requiere revisión y ajuste semanal constante, no solo la configuración inicial.",
+        aEn: "It varies with account size, but serious management requires consistent weekly review and adjustment, not just the initial setup.",
+      },
+      {
+        q: "¿En qué momento debería considerar contratar una agencia?",
+        qEn: "At what point should I consider hiring an agency?",
+        a: "Cuando el tiempo que te toma manejar la cuenta empieza a costarte más, en oportunidad perdida en otras áreas del negocio, que lo que costaría delegarlo a un experto.",
+        aEn: "When the time it takes you to manage the account starts costing you more, in lost opportunity elsewhere in the business, than it would cost to hand it to an expert.",
+      },
+      {
+        q: "¿Una agencia garantiza mejores resultados que hacerlo yo mismo?",
+        qEn: "Does an agency guarantee better results than doing it myself?",
+        a: "No hay garantías en publicidad paga, pero el manejo experto reduce errores comunes y suele acelerar el tiempo hasta encontrar lo que funciona.",
+        aEn: "There are no guarantees in paid advertising, but expert management reduces common mistakes and usually speeds up the time it takes to find what works.",
+      },
+    ],
+    schema: {
+      keywords: ["DIY Google Ads", "should I hire a Google Ads agency"],
+      keywordsEs: ["manejar google ads yo mismo", "agencia de google ads"],
+    },
+  },
+  {
+    slug: "que-es-remarketing",
+    title: "What Is Remarketing and Why It Usually Converts Better",
+    titleEs: "Qué es el remarketing y por qué suele convertir mejor",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Remarketing shows ads to people who already visited your site. It converts better than cold traffic for a simple reason: they already know who you are.",
+    excerptEs:
+      "El remarketing muestra anuncios a personas que ya visitaron tu sitio. Convierte mejor que el tráfico frío por una razón simple: ya saben quién eres.",
+    readingTime: 5,
+    date: "2026-09-14",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Remarketing targets people who already visited your website or interacted with your business, rather than strangers seeing your brand for the first time. Because that audience already has context, it typically converts at a noticeably higher rate than cold traffic, at a lower cost per result.",
+    ledeEs:
+      "El remarketing apunta a personas que ya visitaron tu sitio web o interactuaron con tu negocio, en vez de a extraños que ven tu marca por primera vez. Como esa audiencia ya tiene contexto, suele convertir a una tasa notablemente más alta que el tráfico frío, a un costo por resultado más bajo.",
+    sections: [
+      {
+        id: "como-funciona",
+        heading: "How it actually works",
+        headingEs: "Cómo funciona en realidad",
+        body: [
+          "A tracking tag on your site logs visitors into an audience list. Once someone is on that list, they can be shown ads specifically as they browse elsewhere online, reminding them of a business they already looked at instead of introducing them cold.",
+        ],
+        bodyEs: [
+          "Una etiqueta de rastreo en tu sitio registra a los visitantes en una lista de audiencia. Una vez que alguien está en esa lista, se le pueden mostrar anuncios específicamente mientras navega en otros lugares en línea, recordándole un negocio que ya conoció en vez de presentárselo desde cero.",
+        ],
+      },
+      {
+        id: "por-que-convierte-mejor",
+        heading: "Why it converts better than cold traffic",
+        headingEs: "Por qué convierte mejor que el tráfico frío",
+        body: [
+          "Someone who already visited your site has already decided you're relevant enough to click on once. Remarketing meets them at a later, often more decisive moment, rather than trying to earn attention and trust in a single first impression.",
+        ],
+        bodyEs: [
+          "Alguien que ya visitó tu sitio ya decidió que eras lo bastante relevante como para darle clic una vez. El remarketing lo encuentra en un momento posterior, muchas veces más decisivo, en vez de intentar ganar atención y confianza en una sola primera impresión.",
+        ],
+      },
+      {
+        id: "segmentos-comunes",
+        heading: "Common ways to segment a remarketing audience",
+        headingEs: "Formas comunes de segmentar una audiencia de remarketing",
+        body: [
+          "Not every past visitor should see the same ad. Common segments include people who viewed a specific service page but didn't convert, people who started a form and abandoned it, and past customers who might be ready to buy again. Each deserves different messaging.",
+        ],
+        bodyEs: [
+          "No todo visitante pasado debería ver el mismo anuncio. Segmentos comunes incluyen personas que vieron una página de servicio específica pero no convirtieron, personas que empezaron un formulario y lo abandonaron, y clientes pasados que podrían estar listos para comprar de nuevo. Cada uno merece un mensaje distinto.",
+        ],
+      },
+      {
+        id: "cuando-no-usarlo",
+        heading: "When remarketing isn't the right tool",
+        headingEs: "Cuándo el remarketing no es la herramienta correcta",
+        body: [
+          "A brand-new business with little to no website traffic doesn't have an audience large enough yet to remarket to effectively. In that case, the priority is building initial traffic and awareness first, with remarketing added once there's a real pool of past visitors to draw from.",
+        ],
+        bodyEs: [
+          "Un negocio completamente nuevo con poco o nada de tráfico en su sitio todavía no tiene una audiencia lo bastante grande como para hacer remarketing de forma efectiva. En ese caso, la prioridad es construir tráfico y conocimiento inicial primero, y agregar remarketing una vez que exista un grupo real de visitantes pasados del cual partir.",
+        ],
+      },
+    ],
+    gradient: "from-slate-700 to-neutral-900",
+    faq: [
+      {
+        q: "¿El remarketing es más barato que la publicidad normal?",
+        qEn: "Is remarketing cheaper than regular advertising?",
+        a: "Generalmente sí, en costo por resultado, porque se dirige a una audiencia que ya tiene contexto y familiaridad con tu marca, lo que suele traducirse en mejores tasas de conversión.",
+        aEn: "Generally yes, in cost per result, because it targets an audience that already has context and familiarity with your brand, which usually translates into better conversion rates.",
+      },
+      {
+        q: "¿Necesito mucho tráfico en mi sitio para que el remarketing funcione?",
+        qEn: "Do I need a lot of website traffic for remarketing to work?",
+        a: "Necesitas una audiencia mínima para que la segmentación tenga sentido. Un sitio nuevo con muy poco tráfico debería enfocarse primero en generar visitas antes de invertir en remarketing.",
+        aEn: "You need a minimum audience for segmentation to make sense. A new site with very little traffic should focus first on generating visits before investing in remarketing.",
+      },
+      {
+        q: "¿El remarketing se siente invasivo para el usuario?",
+        qEn: "Does remarketing feel invasive to the user?",
+        a: "Puede sentirse así si se ejecuta sin límites de frecuencia o sin segmentación cuidadosa. Bien configurado, con límites razonables, la mayoría de los usuarios lo percibe simplemente como un recordatorio relevante.",
+        aEn: "It can feel that way if it's run without frequency limits or careful segmentation. Well configured, with reasonable limits, most users perceive it simply as a relevant reminder.",
+      },
+      {
+        q: "¿Puedo usar remarketing junto con campañas normales de búsqueda?",
+        qEn: "Can I use remarketing alongside regular search campaigns?",
+        a: "Sí, de hecho suelen complementarse bien: la búsqueda captura intención activa y el remarketing recupera a quienes no convirtieron la primera vez.",
+        aEn: "Yes, in fact they usually complement each other well: search captures active intent and remarketing recovers people who didn't convert the first time.",
+      },
+    ],
+    schema: {
+      keywords: ["what is remarketing", "remarketing ads"],
+      keywordsEs: ["que es el remarketing", "anuncios de remarketing"],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
