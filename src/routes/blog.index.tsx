@@ -120,10 +120,10 @@ function BlogIndexPage() {
 
       <section className="px-5 py-10 sm:py-14">
         <div className="mx-auto max-w-6xl">
-          <div className="relative mb-6 max-w-md">
+          <div className="relative mx-auto mb-6 max-w-md">
             <Search
               aria-hidden
-              className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-400"
+              className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-600"
             />
             <input
               type="text"
