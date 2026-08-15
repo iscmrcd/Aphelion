@@ -930,10 +930,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why it converts better than a PDF price list",
         headingEs: "Por qué convierte mejor que una lista de precios en PDF",
         body: [
-          'A PDF goes out of date the moment a lot sells, which means buyers are often looking at inaccurate availability without knowing it — and salespeople waste time answering the same "is this one still available" question over and over. A live map removes that friction entirely: what the buyer sees is what\'s actually available, which builds trust and shortens the path from interest to reservation.',
+          'A PDF goes out of date the moment a lot sells, which means buyers are often looking at inaccurate availability without knowing it — and salespeople waste time answering the same "is this one still available" question over and over. A live map removes that friction entirely: what the buyer sees is what\'s actually available, which builds trust and shortens the path from interest to reservation. It also removes a specific bottleneck: on a development with 40 or more lots, a sales team can easily field a dozen "is this one still available" messages a day, time that a live map gives back entirely.',
         ],
         bodyEs: [
-          'Un PDF se desactualiza en el momento en que un lote se vende, lo que significa que los compradores muchas veces están viendo disponibilidad incorrecta sin saberlo, y el equipo de ventas pierde tiempo respondiendo la misma pregunta de "¿este sigue disponible?" una y otra vez. Un mapa en vivo elimina esa fricción por completo: lo que el comprador ve es lo que realmente está disponible, lo que genera confianza y acorta el camino de interés a apartado.',
+          'Un PDF se desactualiza en el momento en que un lote se vende, lo que significa que los compradores muchas veces están viendo disponibilidad incorrecta sin saberlo, y el equipo de ventas pierde tiempo respondiendo la misma pregunta de "¿este sigue disponible?" una y otra vez. Un mapa en vivo elimina esa fricción por completo: lo que el comprador ve es lo que realmente está disponible, lo que genera confianza y acorta el camino de interés a apartado. También elimina un cuello de botella específico: en un desarrollo con 40 lotes o más, un equipo de ventas fácilmente recibe una docena de mensajes al día preguntando "¿este sigue disponible?", tiempo que un mapa en vivo devuelve por completo.',
         ],
       },
       {
@@ -941,10 +941,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where we've built this: Bruma Norte and Enya",
         headingEs: "Dónde lo hemos construido: Bruma Norte y Enya",
         body: [
-          "We've built interactive lot maps for developments including Bruma Norte and Enya, where buyers can explore availability, pricing and lot dimensions without waiting on a sales team to respond. It's still a rare feature in the Mexican real estate market — most developments, even well-funded ones, still sell off a static PDF or a spreadsheet a sales rep updates by hand.",
+          "We've built interactive lot maps for developments including Bruma Norte and Enya, where buyers can explore availability, pricing and lot dimensions without waiting on a sales team to respond. It's still a rare feature in the Mexican real estate market — most developments, even well-funded ones, still sell off a static PDF or a spreadsheet a sales rep updates by hand. Buyers filter by price range or lot size and see results in real time, the same information a sales rep would otherwise take minutes to pull up manually for each inquiry.",
         ],
         bodyEs: [
-          "Hemos construido mapas interactivos de lotes para desarrollos como Bruma Norte y Enya, donde los compradores pueden explorar disponibilidad, precios y dimensiones de lote sin esperar a que un equipo de ventas responda. Sigue siendo una característica poco común en el mercado inmobiliario mexicano. La mayoría de los desarrollos, incluso los bien financiados, todavía venden desde un PDF estático o una hoja de cálculo que un vendedor actualiza a mano.",
+          "Hemos construido mapas interactivos de lotes para desarrollos como Bruma Norte y Enya, donde los compradores pueden explorar disponibilidad, precios y dimensiones de lote sin esperar a que un equipo de ventas responda. Sigue siendo una característica poco común en el mercado inmobiliario mexicano. La mayoría de los desarrollos, incluso los bien financiados, todavía venden desde un PDF estático o una hoja de cálculo que un vendedor actualiza a mano. Los compradores filtran por rango de precio o tamaño de lote y ven resultados en tiempo real, la misma información que un vendedor tardaría varios minutos en buscar manualmente para cada consulta.",
         ],
       },
       {
@@ -952,10 +952,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When it's worth building one",
         headingEs: "Cuándo vale la pena construir uno",
         body: [
-          "It makes the most sense for developments with multiple lots or units for sale simultaneously — land developments, multi-phase pre-sales, or any project where buyers are choosing between many similar options. For a single property or a small handful of units, the return doesn't justify the build; a well-structured landing page is enough. The bigger the inventory, the bigger the leverage.",
+          "It makes the most sense for developments with multiple lots or units for sale simultaneously — land developments, multi-phase pre-sales, or any project where buyers are choosing between many similar options. For a single property or a small handful of units, the return doesn't justify the build; a well-structured landing page is enough. The bigger the inventory, the bigger the leverage. As a rough threshold, developments under roughly 15-20 units rarely see enough volume of simultaneous inquiries to justify the build cost, while anything above that starts generating real time savings for the sales team every week.",
         ],
         bodyEs: [
-          "Tiene más sentido para desarrollos con múltiples lotes o unidades a la venta simultáneamente: desarrollos de terrenos, preventas de varias fases, o cualquier proyecto donde los compradores eligen entre muchas opciones parecidas. Para una sola propiedad o un puñado de unidades, el retorno no justifica construirlo; una landing page bien estructurada es suficiente. Entre más grande el inventario, mayor la palanca.",
+          "Tiene más sentido para desarrollos con múltiples lotes o unidades a la venta simultáneamente: desarrollos de terrenos, preventas de varias fases, o cualquier proyecto donde los compradores eligen entre muchas opciones parecidas. Para una sola propiedad o un puñado de unidades, el retorno no justifica construirlo; una landing page bien estructurada es suficiente. Entre más grande el inventario, mayor la palanca. Como referencia aproximada, los desarrollos con menos de unas 15 a 20 unidades rara vez tienen suficiente volumen de consultas simultáneas para justificar el costo de construcción, mientras que por encima de eso el ahorro de tiempo semanal para el equipo de ventas empieza a ser real.",
         ],
       },
       {
@@ -1394,10 +1394,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "1. No Google Business Profile optimization",
         headingEs: "1. Sin perfil de Google Business optimizado",
         body: [
-          'For any business with a physical location, an unclaimed or incomplete Google Business Profile is the single biggest missed opportunity — it\'s often the first thing a local customer sees, before your website. We cover exactly how to fix this in "local SEO: the complete guide."',
+          'For any business with a physical location, an unclaimed or incomplete Google Business Profile is the single biggest missed opportunity — it\'s often the first thing a local customer sees, before your website. We cover exactly how to fix this in "local SEO: the complete guide." Start by checking whether the listing is verified, has a current phone number and hours, and has at least a few recent photos, those three alone separate most claimed profiles from most unclaimed ones.',
         ],
         bodyEs: [
-          'Para cualquier negocio con ubicación física, un perfil de Google Business sin reclamar o incompleto es la oportunidad perdida más grande. Muchas veces es lo primero que ve un cliente local, antes que tu sitio web. Cubrimos exactamente cómo corregir esto en "SEO local: guía completa."',
+          'Para cualquier negocio con ubicación física, un perfil de Google Business sin reclamar o incompleto es la oportunidad perdida más grande. Muchas veces es lo primero que ve un cliente local, antes que tu sitio web. Cubrimos exactamente cómo corregir esto en "SEO local: guía completa." Empieza revisando si el perfil está verificado, tiene un teléfono y horario actualizados, y al menos algunas fotos recientes: esos tres puntos por sí solos separan a la mayoría de los perfiles reclamados de los que no lo están.',
         ],
       },
       {
@@ -1405,10 +1405,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "2. Duplicate or thin content across pages",
         headingEs: "2. Contenido duplicado o pobre entre páginas",
         body: [
-          "Multiple pages targeting the same keyword with barely different content confuse search engines about which page to rank, and neither ends up performing well. Each page needs a distinct purpose and enough real substance to be worth indexing on its own.",
+          'Multiple pages targeting the same keyword with barely different content confuse search engines about which page to rank, and neither ends up performing well. Each page needs a distinct purpose and enough real substance to be worth indexing on its own. A quick way to spot this: search "site:tudominio.com" plus your main keyword in Google and see how many of your own pages compete for the same term.',
         ],
         bodyEs: [
-          "Varias páginas apuntando a la misma palabra clave con contenido apenas distinto confunden a los buscadores sobre cuál posicionar, y ninguna termina rindiendo bien. Cada página necesita un propósito distinto y suficiente sustancia real para valer la pena indexarla por sí sola.",
+          'Varias páginas apuntando a la misma palabra clave con contenido apenas distinto confunden a los buscadores sobre cuál posicionar, y ninguna termina rindiendo bien. Cada página necesita un propósito distinto y suficiente sustancia real para valer la pena indexarla por sí sola. Una forma rápida de detectarlo: busca "site:tudominio.com" más tu palabra clave principal en Google y revisa cuántas páginas propias compiten por el mismo término.',
         ],
       },
       {
@@ -1416,10 +1416,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "3. Ignoring mobile page speed",
         headingEs: "3. Ignorar la velocidad en móvil",
         body: [
-          "More than half of searches in Mexico happen on mobile, and a slow-loading site loses both ranking and visitors before they see anything. Unoptimized images and bloated page builders are the most common culprits — often fixable without a full rebuild.",
+          "More than half of searches in Mexico happen on mobile, and a slow-loading site loses both ranking and visitors before they see anything. Unoptimized images and bloated page builders are the most common culprits — often fixable without a full rebuild. PageSpeed Insights (free, from Google) gives a specific score and a ranked list of what to fix first, rather than leaving it to guesswork.",
         ],
         bodyEs: [
-          "La mayoría de las búsquedas hoy ocurren en móvil, una tendencia global que Google documenta de forma consistente, y un sitio lento pierde tanto posicionamiento como visitantes antes de que vean algo. Imágenes sin optimizar y constructores de página pesados son los culpables más comunes, y muchas veces se corrigen sin necesidad de reconstruir todo el sitio.",
+          "La mayoría de las búsquedas hoy ocurren en móvil, una tendencia global que Google documenta de forma consistente, y un sitio lento pierde tanto posicionamiento como visitantes antes de que vean algo. Imágenes sin optimizar y constructores de página pesados son los culpables más comunes, y muchas veces se corrigen sin necesidad de reconstruir todo el sitio. PageSpeed Insights (gratis, de Google) da un puntaje específico y una lista priorizada de qué corregir primero, en vez de dejarlo a la adivinanza.",
         ],
       },
       {
@@ -1427,10 +1427,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "4. No SSL or mixed content warnings",
         headingEs: "4. Sin SSL o advertencias de contenido mixto",
         body: [
-          'A site without HTTPS gets flagged as "not secure" by browsers, which erodes trust instantly and is treated as a negative ranking signal. This is one of the cheapest fixes on this list and there\'s rarely a good reason to leave it unresolved.',
+          'A site without HTTPS gets flagged as "not secure" by browsers, which erodes trust instantly and is treated as a negative ranking signal. This is one of the cheapest fixes on this list and there\'s rarely a good reason to leave it unresolved. Most hosting providers now include a free SSL certificate by default, so in most cases this is a settings change, not a purchase.',
         ],
         bodyEs: [
-          'Un sitio sin HTTPS se marca como "no seguro" en los navegadores, lo que erosiona la confianza de inmediato y se trata como una señal negativa de posicionamiento. Es una de las correcciones más baratas de esta lista y rara vez hay una buena razón para dejarla sin resolver.',
+          'Un sitio sin HTTPS se marca como "no seguro" en los navegadores, lo que erosiona la confianza de inmediato y se trata como una señal negativa de posicionamiento. Es una de las correcciones más baratas de esta lista y rara vez hay una buena razón para dejarla sin resolver. La mayoría de los proveedores de hosting ya incluyen un certificado SSL gratuito por defecto, así que en la mayoría de los casos es un ajuste de configuración, no una compra.',
         ],
       },
       {
@@ -1438,10 +1438,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "5. Missing or duplicate title tags",
         headingEs: "5. Etiquetas de título faltantes o duplicadas",
         body: [
-          'Every page needs a unique, descriptive title tag — generic titles like "Home" or the same title repeated across a dozen pages waste one of the most direct ranking signals a site has. This is usually a fast fix once identified.',
+          'Every page needs a unique, descriptive title tag — generic titles like "Home" or the same title repeated across a dozen pages waste one of the most direct ranking signals a site has. This is usually a fast fix once identified. Google Search Console flags duplicate and missing titles directly under its "Coverage" and "Enhancements" reports, so it doesn\'t require manually checking every page.',
         ],
         bodyEs: [
-          'Cada página necesita una etiqueta de título única y descriptiva. Títulos genéricos como "Inicio", o el mismo título repetido en una docena de páginas, desperdician una de las señales de posicionamiento más directas que tiene un sitio. Suele ser una corrección rápida una vez identificada.',
+          'Cada página necesita una etiqueta de título única y descriptiva. Títulos genéricos como "Inicio", o el mismo título repetido en una docena de páginas, desperdician una de las señales de posicionamiento más directas que tiene un sitio. Suele ser una corrección rápida una vez identificada. Google Search Console marca directamente los títulos duplicados o faltantes en sus reportes de "Cobertura" y "Mejoras", así que no hace falta revisar cada página a mano.',
         ],
       },
       {
@@ -1449,10 +1449,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "6. Keyword stuffing",
         headingEs: "6. Saturar de palabras clave",
         body: [
-          "Repeating the same keyword unnaturally throughout a page, hoping to rank higher, reads poorly to visitors and gets flagged by modern search algorithms as manipulative. Writing naturally for the person reading, with the keyword appearing where it makes sense, outperforms stuffing every time.",
+          "Repeating the same keyword unnaturally throughout a page, hoping to rank higher, reads poorly to visitors and gets flagged by modern search algorithms as manipulative. Writing naturally for the person reading, with the keyword appearing where it makes sense, outperforms stuffing every time. A rough rule of thumb: if a sentence sounds odd read out loud because of how often a phrase repeats, it's already gone too far.",
         ],
         bodyEs: [
-          "Repetir la misma palabra clave de forma antinatural en toda una página, con la esperanza de posicionar mejor, se lee mal para los visitantes y los algoritmos modernos lo marcan como manipulación. Escribir de forma natural para la persona que lee, con la palabra clave apareciendo donde tiene sentido, supera al relleno siempre.",
+          "Repetir la misma palabra clave de forma antinatural en toda una página, con la esperanza de posicionar mejor, se lee mal para los visitantes y los algoritmos modernos lo marcan como manipulación. Escribir de forma natural para la persona que lee, con la palabra clave apareciendo donde tiene sentido, supera al relleno siempre. Una regla práctica: si una oración suena rara al leerla en voz alta por lo seguido que se repite una frase, ya se pasó de la raya.",
         ],
       },
       {
@@ -1460,10 +1460,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "7. No internal linking strategy",
         headingEs: "7. Sin estrategia de enlaces internos",
         body: [
-          "Pages that exist in isolation, with no links pointing to or from other relevant pages on the site, make it harder for search engines to understand which content matters most and harder for visitors to find related information. Every new article should link to at least one or two related pages.",
+          "Pages that exist in isolation, with no links pointing to or from other relevant pages on the site, make it harder for search engines to understand which content matters most and harder for visitors to find related information. Every new article should link to at least one or two related pages. A simple habit that covers most of the gap: whenever a new page publishes, add it as a related link from two or three existing pages that cover a similar topic.",
         ],
         bodyEs: [
-          "Páginas que existen aisladas, sin enlaces que apunten hacia o desde otras páginas relevantes del sitio, le dificultan a los buscadores entender qué contenido importa más y a los visitantes encontrar información relacionada. Todo artículo nuevo debería enlazar al menos a una o dos páginas relacionadas.",
+          "Páginas que existen aisladas, sin enlaces que apunten hacia o desde otras páginas relevantes del sitio, le dificultan a los buscadores entender qué contenido importa más y a los visitantes encontrar información relacionada. Todo artículo nuevo debería enlazar al menos a una o dos páginas relacionadas. Un hábito simple que cubre la mayor parte del hueco: cada vez que se publica una página nueva, agregarla como enlace relacionado desde dos o tres páginas existentes que cubran un tema similar.",
         ],
       },
       {
@@ -1471,10 +1471,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "8. Ignoring Core Web Vitals",
         headingEs: "8. Ignorar Core Web Vitals",
         body: [
-          "Google's Core Web Vitals measure loading speed, interactivity and visual stability — and they factor directly into ranking. Most small business sites have never checked their scores, let alone acted on them, leaving an easy technical win unclaimed.",
+          "Google's Core Web Vitals measure loading speed, interactivity and visual stability — and they factor directly into ranking. Most small business sites have never checked their scores, let alone acted on them, leaving an easy technical win unclaimed. The three specific metrics are Largest Contentful Paint (load speed), Interaction to Next Paint (responsiveness), and Cumulative Layout Shift (visual stability), all visible for free in Search Console's own Core Web Vitals report.",
         ],
         bodyEs: [
-          "Los Core Web Vitals de Google miden velocidad de carga, interactividad y estabilidad visual, y afectan directamente el posicionamiento. La mayoría de los sitios de pymes nunca ha revisado sus puntajes, mucho menos actuado sobre ellos, dejando una victoria técnica fácil sin reclamar.",
+          "Los Core Web Vitals de Google miden velocidad de carga, interactividad y estabilidad visual, y afectan directamente el posicionamiento. La mayoría de los sitios de pymes nunca ha revisado sus puntajes, mucho menos actuado sobre ellos, dejando una victoria técnica fácil sin reclamar. Las tres métricas específicas son Largest Contentful Paint (velocidad de carga), Interaction to Next Paint (capacidad de respuesta) y Cumulative Layout Shift (estabilidad visual), y las tres se ven gratis en el propio reporte de Core Web Vitals de Search Console.",
         ],
       },
       {
@@ -1482,10 +1482,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "9. Publishing and forgetting",
         headingEs: "9. Publicar y olvidar",
         body: [
-          "Content that was accurate two years ago — old prices, outdated services, stale statistics — quietly erodes both rankings and trust. Search engines favor content that shows signs of being maintained, and so do the people reading it.",
+          "Content that was accurate two years ago — old prices, outdated services, stale statistics — quietly erodes both rankings and trust. Search engines favor content that shows signs of being maintained, and so do the people reading it. A basic content review every six months, checking prices, service details, and any date-sensitive claims, catches most of what quietly goes stale.",
         ],
         bodyEs: [
-          "Contenido que era correcto hace dos años (precios viejos, servicios descontinuados, estadísticas desactualizadas) erosiona en silencio tanto el posicionamiento como la confianza. Los buscadores favorecen contenido que muestra señales de mantenimiento, y también lo hace la gente que lo lee.",
+          "Contenido que era correcto hace dos años (precios viejos, servicios descontinuados, estadísticas desactualizadas) erosiona en silencio tanto el posicionamiento como la confianza. Los buscadores favorecen contenido que muestra señales de mantenimiento, y también lo hace la gente que lo lee. Una revisión de contenido básica cada seis meses, revisando precios, detalles de servicio y cualquier afirmación sensible a la fecha, detecta la mayor parte de lo que se desactualiza sin que nadie lo note.",
         ],
       },
       {
@@ -1493,10 +1493,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "10. Broken links and unfixed 404s",
         headingEs: "10. Enlaces rotos y 404 sin corregir",
         body: [
-          "Links pointing to pages that no longer exist, whether internal or from other sites, waste the authority those links were passing and create a poor experience for anyone who clicks them. A quarterly check for broken links is a low-effort habit most sites skip entirely.",
+          "Links pointing to pages that no longer exist, whether internal or from other sites, waste the authority those links were passing and create a poor experience for anyone who clicks them. A quarterly check for broken links is a low-effort habit most sites skip entirely. Free tools like Screaming Frog (limited free tier) or Google Search Console's own crawl errors report can scan an entire site for broken links in minutes.",
         ],
         bodyEs: [
-          "Enlaces que apuntan a páginas que ya no existen, sea internos o desde otros sitios, desperdician la autoridad que esos enlaces transmitían y generan una mala experiencia para quien les da clic. Una revisión trimestral de enlaces rotos es un hábito de bajo esfuerzo que la mayoría de los sitios se salta por completo.",
+          "Enlaces que apuntan a páginas que ya no existen, sea internos o desde otros sitios, desperdician la autoridad que esos enlaces transmitían y generan una mala experiencia para quien les da clic. Una revisión trimestral de enlaces rotos es un hábito de bajo esfuerzo que la mayoría de los sitios se salta por completo. Herramientas gratuitas como Screaming Frog (con capa gratuita limitada) o el propio reporte de errores de rastreo de Search Console pueden escanear un sitio completo en busca de enlaces rotos en minutos.",
         ],
       },
       {
@@ -1504,10 +1504,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "11. No schema markup",
         headingEs: "11. Sin marcado de schema",
         body: [
-          "Schema markup tells search engines exactly what a page is about — a review, a product, an FAQ, an article — in a format they can read directly, which often earns richer, more clickable results. Most small business sites have none at all, leaving that extra visibility on the table.",
+          "Schema markup tells search engines exactly what a page is about — a review, a product, an FAQ, an article — in a format they can read directly, which often earns richer, more clickable results. Most small business sites have none at all, leaving that extra visibility on the table. Schema doesn't require custom development, most modern site platforms and plugins can generate it automatically once the right fields (reviews, FAQ, business info) are filled in.",
         ],
         bodyEs: [
-          "El marcado de schema le dice a los buscadores exactamente de qué trata una página (una reseña, un producto, un FAQ, un artículo) en un formato que pueden leer directamente, lo que muchas veces gana resultados más ricos y con más clics. La mayoría de los sitios de pymes no tiene ninguno, dejando esa visibilidad extra sobre la mesa.",
+          "El marcado de schema le dice a los buscadores exactamente de qué trata una página (una reseña, un producto, un FAQ, un artículo) en un formato que pueden leer directamente, lo que muchas veces gana resultados más ricos y con más clics. La mayoría de los sitios de pymes no tiene ninguno, dejando esa visibilidad extra sobre la mesa. El schema no requiere desarrollo a medida, la mayoría de las plataformas y plugins modernos lo generan automáticamente una vez que se llenan los campos correctos (reseñas, FAQ, datos del negocio).",
         ],
       },
       {
@@ -1515,10 +1515,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "12. Expecting results without patience",
         headingEs: "12. Esperar resultados sin paciencia",
         body: [
-          "SEO compounds over months, not weeks — businesses that abandon it after six or eight weeks because they haven't seen dramatic movement are quitting right before the curve typically starts to bend. Consistency beats intensity in SEO more than in almost any other marketing channel.",
+          "SEO compounds over months, not weeks — businesses that abandon it after six or eight weeks because they haven't seen dramatic movement are quitting right before the curve typically starts to bend. Consistency beats intensity in SEO more than in almost any other marketing channel. As a reference point, technical and structural fixes typically show measurable movement in 4 to 6 months, with results that compound meaningfully at 9 to 12 months.",
         ],
         bodyEs: [
-          "El SEO se acumula en meses, no en semanas. Los negocios que lo abandonan después de seis u ocho semanas porque no han visto un movimiento dramático suelen renunciar justo antes de que la curva empiece a doblarse. La consistencia le gana a la intensidad en SEO más que en casi cualquier otro canal de marketing.",
+          "El SEO se acumula en meses, no en semanas. Los negocios que lo abandonan después de seis u ocho semanas porque no han visto un movimiento dramático suelen renunciar justo antes de que la curva empiece a doblarse. La consistencia le gana a la intensidad en SEO más que en casi cualquier otro canal de marketing. Como referencia, las correcciones técnicas y de estructura suelen mostrar movimiento medible en 4 a 6 meses, con resultados que se acumulan de forma importante entre los 9 y 12 meses.",
         ],
       },
     ],
@@ -2769,137 +2769,137 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "optimizar-google-business-profile",
-    title: "How to Optimize Your Google Business Profile (Step by Step)",
-    titleEs: "Cómo Optimizar tu Perfil de Google Business (Paso a Paso)",
+    title: "How to Optimize Your Google Business Profile (7 Steps)",
+    titleEs: "Cómo Optimizar tu Perfil de Google Business (7 Pasos)",
     category: "SEO",
     categoryEs: "SEO",
     excerpt:
-      "A step-by-step, actionable process for optimizing a Google Business Profile — the single highest-leverage local SEO asset most businesses neglect.",
+      "The exact sequence: verify, complete every field, add real photos weekly, build a review system, post updates, keep your name/address/phone consistent everywhere, and treat it as an ongoing channel.",
     excerptEs:
-      "Un proceso paso a paso y accionable para optimizar un perfil de Google Business — el activo de SEO local de mayor impacto que la mayoría de los negocios descuida.",
-    readingTime: 9,
-    date: "2026-08-18",
+      "La secuencia exacta: verificar, completar cada campo, subir fotos reales cada semana, construir un sistema de reseñas, publicar actualizaciones, mantener nombre/dirección/teléfono consistentes en todas partes, y tratarlo como un canal continuo.",
+    readingTime: 6,
+    date: "2026-08-15",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Optimizing a Google Business Profile means claiming and verifying it, filling every field completely and accurately, uploading real photos regularly, and actively managing reviews, in that order. Most businesses claim it once and never touch it again, which leaves most of its ranking value unclaimed.",
+    lede: "Optimizing a Google Business Profile means claiming and verifying it, filling every field completely and accurately, uploading real photos on a regular schedule, and actively managing reviews, in that order. Most businesses claim it once and never touch it again, which is exactly why a profile that's kept active tends to outperform far larger competitors in the local map pack.",
     ledeEs:
-      "Optimizar un perfil de Google Business significa reclamarlo y verificarlo, llenar cada campo de forma completa y precisa, subir fotos reales con regularidad, y gestionar activamente las reseñas, en ese orden. La mayoría de los negocios lo reclama una vez y nunca lo vuelve a tocar, lo que deja la mayor parte de su valor de posicionamiento sin reclamar.",
-    gradient: "from-neutral-800 to-neutral-950",
+      "Optimizar un perfil de Google Business significa reclamarlo y verificarlo, llenar cada campo de forma completa y precisa, subir fotos reales con regularidad, y gestionar activamente las reseñas, en ese orden. La mayoría de los negocios lo reclama una vez y nunca vuelve a tocarlo, que es justo la razón por la que un perfil que se mantiene activo suele superar en el paquete de mapas local a competidores mucho más grandes.",
     sections: [
       {
         id: "paso-1-reclamar-verificar",
         heading: "Step 1: Claim and verify the profile",
-        headingEs: "Paso 1: Reclama y verifica el perfil",
+        headingEs: "Paso 1: Reclamar y verificar el perfil",
         body: [
-          "Search for your business on Google Maps, claim it if it already exists or create it if it doesn't, and complete Google's verification process — usually a postcard, phone call, or video verification depending on the business type. An unverified profile has limited ranking ability and can't be fully edited.",
+          'Search the business name on Google Maps, click "Claim this business" if it appears unclaimed, and complete verification, usually by postcard mailed to the business address (5-14 days) or, when available, by phone or video call for faster approval. An unverified or unclaimed listing can\'t be edited and often carries incomplete or outdated information nobody controls.',
         ],
         bodyEs: [
-          "Busca tu negocio en Google Maps, reclámalo si ya existe o créalo si no, y completa el proceso de verificación de Google: normalmente una postal, llamada telefónica o verificación por video según el tipo de negocio. Un perfil sin verificar tiene capacidad de posicionamiento limitada y no se puede editar por completo.",
+          'Busca el nombre del negocio en Google Maps, da clic en "Reclamar este negocio" si aparece sin reclamar, y completa la verificación, normalmente por postal enviada a la dirección del negocio (5 a 14 días) o, cuando está disponible, por teléfono o videollamada para una aprobación más rápida. Un listado sin verificar o sin reclamar no se puede editar y muchas veces trae información incompleta o desactualizada que nadie controla.',
         ],
       },
       {
         id: "paso-2-informacion-completa",
         heading: "Step 2: Complete every field accurately",
-        headingEs: "Paso 2: Completa cada campo con precisión",
+        headingEs: "Paso 2: Completar cada campo con precisión",
         body: [
-          "Business name exactly as it appears elsewhere (no keyword stuffing), the most specific and accurate category available, complete and accurate hours including holidays, a local phone number, and a description that clearly states what the business does. Incomplete profiles rank worse than complete ones with otherwise similar authority.",
+          "Business category (choose the most specific one available, not just the broadest), hours including holiday exceptions, service area, website, phone, and a full description using natural language, not keyword-stuffed copy. Profiles with every field completed get shown more often in relevant searches than partially filled ones, since Google explicitly favors complete listings in ranking.",
         ],
         bodyEs: [
-          "Nombre del negocio exactamente como aparece en cualquier otro lado (sin rellenar con palabras clave), la categoría más específica y precisa disponible, horarios completos y correctos incluyendo días festivos, un número telefónico local, y una descripción que declare claramente a qué se dedica el negocio. Los perfiles incompletos posicionan peor que los completos con autoridad similar.",
+          "Categoría del negocio (elige la más específica disponible, no la más genérica), horario incluyendo excepciones de días festivos, área de servicio, sitio web, teléfono, y una descripción completa en lenguaje natural, no copy relleno de palabras clave. Los perfiles con cada campo completo se muestran más seguido en búsquedas relevantes que los que están parcialmente llenos, ya que Google favorece explícitamente a los listados completos en el posicionamiento.",
         ],
       },
       {
         id: "paso-3-fotos",
         heading: "Step 3: Upload real photos regularly",
-        headingEs: "Paso 3: Sube fotos reales con regularidad",
+        headingEs: "Paso 3: Subir fotos reales con regularidad",
         body: [
-          "Profiles with more recent, real photos get more clicks and calls than those with stock images or none at all. Add exterior, interior, team and product or service photos, and keep adding new ones monthly — a profile with photos from three years ago signals inactivity even if everything else is current.",
+          "Listings with photos receive substantially more requests for directions and website clicks than those without, according to Google's own guidance to businesses. Upload real photos, not stock images, weekly if possible: the storefront, the team, products or work in progress, since Google's algorithm treats a profile with recent uploads as more active and trustworthy than one that hasn't changed in a year.",
         ],
         bodyEs: [
-          "Los perfiles con fotos más recientes y reales reciben más clics y llamadas que los que tienen imágenes de banco o ninguna. Suma fotos del exterior, interior, equipo y producto o servicio, y sigue agregando nuevas cada mes. Un perfil con fotos de hace tres años señala inactividad aunque todo lo demás esté al día.",
+          "Los listados con fotos reciben sustancialmente más solicitudes de direcciones y clics al sitio web que los que no tienen, según la propia guía de Google para negocios. Sube fotos reales, no imágenes de stock, idealmente cada semana: la fachada, el equipo, productos o trabajo en proceso, ya que el algoritmo de Google trata a un perfil con subidas recientes como más activo y confiable que uno que no ha cambiado en un año.",
         ],
       },
       {
         id: "paso-4-resenas",
         heading: "Step 4: Build a system for reviews",
-        headingEs: "Paso 4: Construye un sistema para reseñas",
+        headingEs: "Paso 4: Construir un sistema para reseñas",
         body: [
-          "Ask every satisfied customer for a review at the moment satisfaction is highest — right after the service, not days later. Respond to every review, positive and negative, professionally and promptly. A steady trickle of new reviews outperforms a large batch collected once and never repeated.",
+          "Reviews are one of the strongest local ranking factors, and both volume and recency matter, a business with 40 reviews from three years ago ranks worse than one with 15 recent ones. Ask every satisfied customer directly, ideally with a shareable review link sent right after the service, and respond to every review, positive or negative, within a few days.",
         ],
         bodyEs: [
-          "Pide una reseña a cada cliente satisfecho en el momento de mayor satisfacción: justo después del servicio, no días después. Responde a cada reseña, positiva y negativa, de forma profesional y oportuna. Un flujo constante de reseñas nuevas rinde mejor que un lote grande recolectado una vez y nunca repetido.",
+          "Las reseñas son uno de los factores de posicionamiento local más fuertes, y tanto el volumen como qué tan recientes son importan: un negocio con 40 reseñas de hace tres años posiciona peor que uno con 15 reseñas recientes. Pide reseñas directamente a cada cliente satisfecho, idealmente con un enlace para compartir enviado justo después del servicio, y responde a cada reseña, positiva o negativa, dentro de unos días.",
         ],
       },
       {
         id: "paso-5-publicaciones",
         heading: "Step 5: Use posts and Q&A actively",
-        headingEs: "Paso 5: Usa publicaciones y preguntas y respuestas activamente",
+        headingEs: "Paso 5: Usar publicaciones y preguntas y respuestas de forma activa",
         body: [
-          "Google Business posts — offers, updates, events — signal an active business and give you another surface to appear on. The Q&A section is also worth monitoring and pre-populating with the questions customers actually ask, since anyone can answer there, including competitors or bots giving wrong information.",
+          "Google Business Posts (offers, updates, events) expire after seven days and give the profile a reason to look active in search results, and the Q&A section is public, meaning unanswered questions sit visible to every future visitor. Seeding a few common questions with clear answers, and monitoring for new ones weekly, closes a gap most competitors leave wide open.",
         ],
         bodyEs: [
-          "Las publicaciones de Google Business (ofertas, actualizaciones, eventos) señalan un negocio activo y dan otra superficie donde aparecer. La sección de preguntas y respuestas también vale la pena monitorearla y prellenarla con las preguntas que realmente hacen los clientes, ya que cualquiera puede responder ahí, incluyendo competidores o bots dando información incorrecta.",
+          "Las publicaciones de Google Business (ofertas, actualizaciones, eventos) expiran después de siete días y le dan al perfil una razón para verse activo en los resultados de búsqueda, y la sección de preguntas y respuestas es pública, lo que significa que las preguntas sin responder quedan visibles para cada futuro visitante. Sembrar algunas preguntas comunes con respuestas claras, y revisar si hay preguntas nuevas cada semana, cierra un hueco que la mayoría de la competencia deja abierto de par en par.",
         ],
       },
       {
         id: "paso-6-consistencia-nap",
-        heading: "Step 6: Keep NAP consistent everywhere",
-        headingEs: "Paso 6: Mantén el NAP consistente en todos lados",
+        heading: "Step 6: Keep name, address and phone consistent everywhere",
+        headingEs: "Paso 6: Mantener nombre, dirección y teléfono consistentes en todas partes",
         body: [
-          "Name, Address and Phone need to match exactly across the website, the profile, social media and any directory listing. Even small inconsistencies confuse the algorithms that verify a business is real, which quietly caps ranking potential.",
+          "The business name, address, and phone number (NAP) need to match exactly across the website, the Google profile, Facebook, and any directory listing, down to how the street type is abbreviated. Inconsistent NAP data is one of the most common, and most overlooked, reasons a listing underperforms in local rankings even when everything else looks optimized.",
         ],
         bodyEs: [
-          "Nombre, Dirección y Teléfono necesitan coincidir exactamente en el sitio web, el perfil, redes sociales y cualquier directorio. Incluso inconsistencias pequeñas confunden a los algoritmos que verifican que un negocio es real, lo que limita el potencial de posicionamiento en silencio.",
+          "El nombre, dirección y teléfono del negocio (NAP) necesitan coincidir exactamente entre el sitio web, el perfil de Google, Facebook, y cualquier directorio, hasta en cómo se abrevia el tipo de calle. Los datos NAP inconsistentes son una de las razones más comunes, y más pasadas por alto, de que un listado rinda mal en el posicionamiento local aunque todo lo demás se vea optimizado.",
         ],
       },
       {
         id: "paso-7-mantenimiento",
-        heading: "Step 7: Treat it as an ongoing channel",
-        headingEs: "Paso 7: Trátalo como un canal continuo",
+        heading: "Step 7: Treat it as an ongoing channel, not a one-time setup",
+        headingEs: "Paso 7: Tratarlo como un canal continuo, no una configuración de una sola vez",
         body: [
-          'A profile optimized once and never revisited slowly loses the value all this work built. Review it monthly at minimum: new photos, response to recent reviews, and an updated post. This is the single asset covered in most depth as part of "local SEO: the complete guide."',
+          "A profile updated once at setup and never touched again gradually loses the activity signals that keep it competitive against businesses that post, photograph, and respond weekly. Setting a recurring 15-minute monthly check (new reviews answered, a few new photos, hours confirmed for any upcoming holiday) keeps the profile performing instead of quietly falling behind.",
         ],
         bodyEs: [
-          'Un perfil optimizado una vez y nunca revisado va perdiendo lentamente el valor que todo este trabajo construyó. Revísalo mensualmente como mínimo: fotos nuevas, respuesta a reseñas recientes, y una publicación actualizada. Este es el activo que cubrimos con más profundidad como parte de "SEO local: guía completa."',
+          "Un perfil que se actualiza una vez en la configuración inicial y nunca más se vuelve a tocar va perdiendo poco a poco las señales de actividad que lo mantienen competitivo frente a negocios que publican, fotografían y responden cada semana. Poner una revisión mensual recurrente de 15 minutos (reseñas nuevas respondidas, algunas fotos nuevas, horario confirmado para cualquier día festivo próximo) mantiene al perfil rindiendo en vez de irse quedando atrás sin que nadie lo note.",
         ],
       },
     ],
+    gradient: "from-neutral-800 to-neutral-950",
     faq: [
       {
-        q: "¿Cuánto tiempo toma optimizar un perfil de Google Business desde cero?",
-        qEn: "How long does it take to optimize a Google Business Profile from scratch?",
-        a: "La configuración inicial completa toma unas dos a tres horas de trabajo enfocado. El proceso de verificación puede tomar de unos días a dos semanas dependiendo del método que Google asigne.",
-        aEn: "The full initial setup takes about two to three focused hours of work. The verification process can take anywhere from a few days to two weeks depending on the method Google assigns.",
+        q: "¿Cuánto tiempo toma que se vea el efecto de optimizar mi perfil?",
+        qEn: "How long does it take to see the effect of optimizing my profile?",
+        a: "Los cambios de información (categoría, horario, fotos) pueden reflejarse en días. El efecto en el posicionamiento del paquete de mapas suele notarse en 4 a 8 semanas, conforme se acumulan reseñas nuevas y señales de actividad.",
+        aEn: "Information changes (category, hours, photos) can show up within days. The effect on map pack ranking usually becomes noticeable in 4 to 8 weeks, as new reviews and activity signals accumulate.",
       },
       {
-        q: "¿Puedo tener un perfil sin dirección física visible?",
-        qEn: "Can I have a profile without a visible physical address?",
-        a: "Sí, para negocios de servicio a domicilio que no reciben clientes en un local. Google permite ocultar la dirección exacta mientras se define un área de servicio, siempre que el negocio siga siendo verificable.",
-        aEn: "Yes, for service-area businesses that don't receive customers at a location — Google allows hiding the exact address while defining a service area, as long as the business remains verifiable.",
+        q: "¿Con qué frecuencia debo subir fotos nuevas?",
+        qEn: "How often should I upload new photos?",
+        a: "Idealmente cada semana. Google trata a los perfiles con subidas recientes como más activos, y eso influye en cómo se posicionan frente a competidores que no han subido nada en meses.",
+        aEn: "Ideally every week. Google treats profiles with recent uploads as more active, and that affects how they rank against competitors that haven't uploaded anything in months.",
       },
       {
-        q: "¿Qué tan seguido debo publicar en el perfil?",
-        qEn: "How often should I post to the profile?",
-        a: "Al menos una vez cada una o dos semanas mantiene el perfil visiblemente activo. Publicaciones más frecuentes ayudan, pero la consistencia importa más que el volumen.",
-        aEn: "At least once every one to two weeks keeps the profile visibly active. More frequent posting helps, but consistency matters more than volume.",
+        q: "¿Debo responder a las reseñas negativas?",
+        qEn: "Should I respond to negative reviews?",
+        a: "Sí, siempre, y de preferencia dentro de un par de días. Una respuesta profesional a una reseña negativa la ven todos los futuros visitantes, y suele importar más que la reseña misma.",
+        aEn: "Yes, always, and ideally within a couple of days. A professional response to a negative review is seen by every future visitor, and it often matters more than the review itself.",
       },
       {
-        q: "¿Debo responder a reseñas negativas o es mejor ignorarlas?",
-        qEn: "Should I respond to negative reviews or is it better to ignore them?",
-        a: "Siempre respóndelas, de forma profesional y sin ponerte a la defensiva. Los clientes potenciales leen las respuestas tanto como las reseñas mismas, y una respuesta bien manejada puede generar más confianza que ausencia de reseñas negativas.",
-        aEn: "Always respond to them, professionally and without getting defensive. Potential customers read the responses as much as the reviews themselves, and a well-handled response can build more trust than the absence of negative reviews.",
+        q: "¿Qué es NAP y por qué importa tanto?",
+        qEn: "What is NAP and why does it matter so much?",
+        a: "NAP es nombre, dirección y teléfono. Necesitan ser exactamente iguales en el sitio web, el perfil de Google y cualquier directorio. Una inconsistencia, aunque parezca menor, puede afectar el posicionamiento local sin que sea obvio por qué.",
+        aEn: "NAP is name, address, and phone. They need to be exactly the same on the website, the Google profile, and any directory. An inconsistency, even a minor-seeming one, can affect local ranking without it being obvious why.",
       },
       {
-        q: "¿El perfil de Google Business reemplaza a un sitio web?",
-        qEn: "Does a Google Business Profile replace a website?",
-        a: "No del todo: puede generar tráfico y llamadas por sí solo, pero un sitio web le da a los buscadores más contenido para indexar y es donde conviertes ese tráfico en algo más profundo que una llamada.",
-        aEn: "Not entirely — it can generate traffic and calls on its own, but a website gives search engines more content to index and is where you convert that traffic into something deeper than a phone call.",
+        q: "¿Puedo optimizar mi perfil yo mismo o necesito un experto?",
+        qEn: "Can I optimize my profile myself, or do I need an expert?",
+        a: "Los siete pasos son manejables por cuenta propia con disciplina y constancia. Donde suele fallar el esfuerzo propio es en la constancia a largo plazo, no en el conocimiento técnico inicial.",
+        aEn: "The seven steps are manageable on your own with discipline and consistency. Where DIY effort usually falls short is long-term consistency, not the initial technical knowledge.",
       },
     ],
     schema: {
-      keywords: ["optimize Google Business Profile", "Google My Business setup"],
-      keywordsEs: ["optimizar Google Business", "configurar perfil Google Business"],
+      keywords: ["Google Business Profile optimization", "GBP local SEO"],
+      keywordsEs: ["optimizar perfil de google business", "gbp seo local"],
     },
   },
   {
@@ -3942,93 +3942,104 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-cuesta-un-video-corporativo",
-    title: "How Much Does a Corporate Video Cost in Mexico?",
-    titleEs: "¿Cuánto cuesta un video corporativo en México?",
+    title: "How Much Does a Corporate Video Cost in Mexico? (2026 Prices)",
+    titleEs: "¿Cuánto Cuesta un Video Corporativo en México? (Precios 2026)",
     category: "Video & Drone",
     categoryEs: "Video y Drone",
     excerpt:
-      "Real corporate video pricing in Mexico: what changes the cost, what a single-location shoot runs versus a multi-location production, and where the money actually goes.",
+      "Real 2026 prices: a single-location corporate video with drone starts around $2,990 MXN. Multi-location productions with script and full post run into the tens of thousands.",
     excerptEs:
-      "Precios reales de video corporativo en México: qué cambia el costo, cuánto corre una grabación en una sola locación contra una producción multi-locación, y a dónde va realmente el dinero.",
-    readingTime: 5,
+      "Precios reales 2026: un video corporativo de una sola locación con dron arranca alrededor de $2,990 MXN. Producciones multi-locación con guion y postproducción completa suben a decenas de miles de pesos.",
+    readingTime: 6,
     date: "2026-09-06",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A single-location corporate video with basic editing runs a modest fixed cost measured in a few thousand pesos. A multi-location production with scripting, drone footage, and full post-production runs several times that, and takes weeks instead of days.",
+    lede: "A single-location corporate video with basic drone coverage runs from $2,990 MXN (up to one hour on site, one edited 30-45 second cut plus a vertical version, 10 selected aerial photos). A multi-visit production, like ongoing coverage of a construction project, runs $8,890 MXN for a 4-visit package. A fully scripted, multi-location brand documentary with a dedicated crew moves well past that, usually landing between $25,000 and $60,000 MXN depending on shoot days and post-production complexity.",
     ledeEs:
-      "Un video corporativo en una sola locación con edición básica cuesta un monto fijo modesto de unos cuantos miles de pesos. Una producción multi-locación con guion, tomas de dron y postproducción completa cuesta varias veces eso, y toma semanas en vez de días.",
+      "Un video corporativo de una sola locación con cobertura básica de dron arranca en $2,990 MXN (hasta una hora en sitio, un video editado de 30 a 45 segundos más versión vertical, 10 fotografías aéreas seleccionadas). Una producción de varias visitas, como el seguimiento continuo de una obra, cuesta $8,890 MXN por un paquete de 4 visitas. Un documental de marca guionizado y multi-locación con equipo dedicado sube bastante más de ahí, normalmente entre $25,000 y $60,000 MXN según los días de grabación y la complejidad de postproducción.",
     sections: [
       {
         id: "que-determina-el-precio",
-        heading: "What actually determines the price",
-        headingEs: "Qué determina realmente el precio",
+        heading: "The four variables that actually set the price",
+        headingEs: "Las cuatro variables que realmente definen el precio",
         body: [
-          "Four variables set the cost: how many locations, how many shooting days, how much scripting and pre-production planning, and how much post-production work (color, sound design, motion graphics) the final cut needs. A single-location product video and a multi-day brand documentary are not the same purchase, even if both get called corporate video.",
+          'Four things move the number: how many locations, how many shooting days, how much script and pre-production planning, and how much post-production work (color grading, sound design, motion graphics) the final cut needs. A single-location product video and a multi-day brand documentary both get called "corporate video," but they\'re not the same purchase, and pricing them the same way is how quotes end up feeling arbitrary.',
         ],
         bodyEs: [
-          "Cuatro variables definen el costo: cuántas locaciones, cuántos días de grabación, cuánta planeación de guion y preproducción, y cuánto trabajo de postproducción (color, sonido, motion graphics) necesita el corte final. Un video de producto en una sola locación y un documental de marca de varios días no son la misma compra, aunque a ambos se les llame video corporativo.",
+          'Cuatro cosas mueven el número: cuántas locaciones, cuántos días de grabación, cuánta planeación de guion y preproducción, y cuánto trabajo de postproducción (corrección de color, diseño de sonido, motion graphics) necesita el corte final. Un video de producto de una sola locación y un documental de marca de varios días se llaman los dos "video corporativo", pero no son la misma compra, y cotizarlos igual es la razón por la que las cotizaciones a veces se sienten arbitrarias.',
         ],
       },
       {
         id: "rangos-tipicos",
-        heading: "Typical price ranges",
-        headingEs: "Rangos de precio típicos",
+        heading: "Real price tiers",
+        headingEs: "Rangos reales de precio",
         body: [
-          "A single-location shoot with one edited video and basic color correction is the entry point. Adding multiple locations, drone footage, interview setups, and motion graphics moves the project into a considerably higher range. Enterprise-level brand films with multi-day shoots and full crews sit at the top end.",
+          "A single-location shoot with an edited video and basic drone coverage starts at $2,990 MXN, matching our own Captura package: up to one hour on site, one 30-45 second edited video plus a vertical cut, 10 selected aerial photos, and delivery in 5 business days. An event-coverage shoot (activations, openings, weddings) with up to 4 continuous hours runs $4,990 MXN. A multi-visit project, like documenting a construction site or vineyard over time, runs $8,890 MXN for a 4-visit package with one edited clip per visit plus a final summary video.",
         ],
         bodyEs: [
-          "Una sesión de una sola locación con un video editado y corrección de color básica es el punto de entrada. Sumar varias locaciones, tomas de dron, entrevistas y motion graphics mueve el proyecto a un rango considerablemente más alto. Los video-documentales de marca de nivel empresarial, con grabaciones de varios días y equipo completo, quedan en el extremo más alto.",
+          "Una grabación de una sola locación con video editado y cobertura básica de dron arranca en $2,990 MXN, el mismo precio de nuestro paquete Captura: hasta una hora en sitio, un video editado de 30 a 45 segundos más versión vertical, 10 fotografías aéreas seleccionadas, y entrega en 5 días hábiles. Una cobertura de evento (activaciones, inauguraciones, bodas) de hasta 4 horas continuas cuesta $4,990 MXN. Un proyecto de varias visitas, como documentar una obra o un viñedo con el tiempo, cuesta $8,890 MXN por un paquete de 4 visitas con un clip editado por visita más un video resumen final.",
         ],
       },
       {
         id: "que-incluye-la-cotizacion",
-        heading: "What a quote should actually include",
-        headingEs: "Qué debería incluir realmente una cotización",
+        heading: "What a real quote actually breaks down",
+        headingEs: "Qué desglosa realmente una cotización real",
         body: [
-          "A real quote breaks down pre-production (script, shot list, location scouting), production days, and post-production (editing rounds, color, sound, music licensing). If a quote is just one flat number with no breakdown, it's worth asking what happens if you need an extra round of edits.",
+          "A real quote itemizes pre-production (script, shot list, location scouting), production days, and post-production (edit rounds, color, sound, music licensing). If a quote is a single flat number with no breakdown, it's worth asking directly what happens if you need an extra round of edits, since that's almost always where an unclear quote turns into a surprise invoice later.",
         ],
         bodyEs: [
-          "Una cotización real desglosa preproducción (guion, lista de tomas, exploración de locación), días de producción, y postproducción (rondas de edición, color, sonido, licencia de música). Si una cotización es solo un número plano sin desglose, vale la pena preguntar qué pasa si necesitas una ronda extra de ediciones.",
+          "Una cotización real desglosa preproducción (guion, lista de tomas, exploración de locación), días de producción, y postproducción (rondas de edición, color, sonido, licencia de música). Si una cotización es un solo número plano sin desglose, vale la pena preguntar directamente qué pasa si necesitas una ronda extra de ediciones, porque ahí es casi siempre donde una cotización poco clara se convierte después en una factura sorpresa.",
         ],
       },
       {
-        id: "costos-ocultos",
-        heading: "Costs that catch people off guard",
-        headingEs: "Costos que agarran a la gente desprevenida",
+        id: "costos-ocultos-reales",
+        heading: "Real add-on costs, itemized",
+        headingEs: "Costos adicionales reales, con cifras",
         body: [
-          "Music licensing, talent fees if the video uses actors instead of real staff, additional revision rounds beyond what's included, and rush delivery all add to the base quote. None of these are hidden on purpose, they're just easy to forget when comparing two quotes side by side.",
+          "Raw footage (original unedited files) typically adds $999 MXN. Advanced editing, motion graphics, ad-cut versions, or sound design starts at $3,500 MXN. Extra time on site beyond what's included runs $499 MXN per 30-minute block. An additional revision round beyond what's included in the package also runs $499 MXN. Rush delivery under 72 hours typically adds 25% on top of the package price. None of these are hidden on purpose, they're simply the line items that get left off a headline number.",
         ],
         bodyEs: [
-          "La licencia de música, honorarios de talento si el video usa actores en vez de personal real, rondas de revisión adicionales fuera de las incluidas, y entrega urgente se suman a la cotización base. Ninguno de estos está escondido a propósito, simplemente son fáciles de olvidar al comparar dos cotizaciones lado a lado.",
+          "El material RAW (archivos originales sin editar) normalmente suma $999 MXN. La edición avanzada, motion graphics, versiones para pauta, o diseño de sonido arranca en $3,500 MXN. El tiempo adicional en sitio, fuera del incluido, cuesta $499 MXN por bloque de 30 minutos. Una ronda de revisión adicional fuera de las incluidas en el paquete también cuesta $499 MXN. La entrega urgente en menos de 72 horas normalmente suma un 25% sobre el precio del paquete. Ninguno de estos está escondido a propósito, simplemente son las líneas que se quedan fuera de un número de encabezado.",
+        ],
+      },
+      {
+        id: "cuando-vale-la-pena-el-nivel-alto",
+        heading: "When the higher tier is actually worth it",
+        headingEs: "Cuándo el nivel alto realmente vale la pena",
+        body: [
+          "A single-location package fits a restaurant, hotel, or property that needs solid content fast. A multi-location, scripted production is worth the extra cost when the video needs to carry a specific narrative for investors, a major campaign launch, or a brand story that a single location can't tell, and where the cost of looking amateurish outweighs the price difference between tiers.",
+        ],
+        bodyEs: [
+          "Un paquete de una sola locación le queda bien a un restaurante, hotel o propiedad que necesita contenido sólido y rápido. Una producción guionizada y multi-locación vale el costo extra cuando el video necesita cargar una narrativa específica para inversionistas, el lanzamiento de una campaña importante, o una historia de marca que una sola locación no puede contar, y donde el costo de verse amateur pesa más que la diferencia de precio entre niveles.",
         ],
       },
     ],
     gradient: "from-stone-700 to-neutral-950",
     faq: [
       {
-        q: "¿Cuánto tiempo toma producir un video corporativo?",
-        qEn: "How long does it take to produce a corporate video?",
-        a: "Un video de una sola locación puede entregarse en pocos días hábiles. Una producción multi-locación con guion completo y postproducción compleja toma de tres a seis semanas desde el brief hasta la entrega final.",
-        aEn: "A single-location video can be delivered in a few business days. A multi-location production with a full script and complex post-production takes three to six weeks from brief to final delivery.",
+        q: "¿Cuánto cuesta un video corporativo básico?",
+        qEn: "How much does a basic corporate video cost?",
+        a: "Un video de una sola locación con cobertura de dron básica arranca en $2,990 MXN, incluyendo hasta una hora en sitio, un video editado y 10 fotografías aéreas. Es nuestro paquete Captura.",
+        aEn: "A single-location video with basic drone coverage starts at $2,990 MXN, including up to one hour on site, one edited video, and 10 aerial photos. That's our Captura package.",
       },
       {
-        q: "¿El precio incluye el guion?",
-        qEn: "Does the price include the script?",
-        a: "Depende del alcance. Para producciones simples, el guion suele estar incluido en el costo base. Para producciones más grandes, el desarrollo de guion y storyboard puede cotizarse como una etapa separada de preproducción.",
-        aEn: "It depends on scope. For simple productions, scripting is usually included in the base cost. For larger productions, script and storyboard development may be quoted as a separate pre-production stage.",
+        q: "¿Cuánto cuesta un video corporativo con varias locaciones?",
+        qEn: "How much does a multi-location corporate video cost?",
+        a: "Depende de cuántas locaciones y días de grabación, pero una producción guionizada de nivel empresarial con postproducción completa normalmente cae entre $25,000 y $60,000 MXN.",
+        aEn: "It depends on how many locations and shooting days, but a scripted, enterprise-level production with full post-production typically falls between $25,000 and $60,000 MXN.",
       },
       {
-        q: "¿Puedo usar el mismo video en redes y en pauta pagada?",
-        qEn: "Can I use the same video on social media and paid ads?",
-        a: "Sí, pero casi siempre necesita versiones distintas: formato vertical para redes e historias, formato horizontal para YouTube o sitio web, y cortes más cortos específicos para pauta. Eso normalmente se cotiza como parte de la entrega, no como un proyecto aparte.",
-        aEn: "Yes, but it almost always needs different versions: vertical format for social and stories, horizontal format for YouTube or your website, and shorter specific cuts for paid ads. That's normally quoted as part of the delivery, not a separate project.",
+        q: "¿El material RAW está incluido en el precio?",
+        qEn: "Is raw footage included in the price?",
+        a: "No, se cobra aparte, normalmente $999 MXN por los archivos originales sin editar. La mayoría de los paquetes solo incluye el video ya editado.",
+        aEn: "No, it's billed separately, typically $999 MXN for the original unedited files. Most packages only include the already-edited video.",
       },
       {
-        q: "¿Qué pasa si no me gusta el primer corte?",
-        qEn: "What happens if I don't like the first cut?",
-        a: "Las cotizaciones normales incluyen una o dos rondas de ajustes dentro del precio. Rondas adicionales fuera de las incluidas se cobran aparte, así que vale la pena confirmar cuántas rondas trae la cotización antes de empezar.",
-        aEn: "Standard quotes include one or two rounds of revisions within the price. Additional rounds beyond those included are billed separately, so it's worth confirming how many rounds a quote includes before starting.",
+        q: "¿Cuánto cuesta agregar una ronda de revisión extra?",
+        qEn: "How much does an extra revision round cost?",
+        a: "$499 MXN por ronda adicional fuera de las incluidas en el paquete. Vale la pena confirmar cuántas rondas incluye la cotización antes de empezar el proyecto.",
+        aEn: "$499 MXN per additional round beyond what's included in the package. It's worth confirming how many rounds a quote includes before starting the project.",
       },
     ],
     schema: {
@@ -4327,31 +4338,31 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "que-es-remarketing",
     title: "What Is Remarketing and Why It Usually Converts Better",
-    titleEs: "Qué es el remarketing y por qué suele convertir mejor",
+    titleEs: "Qué es el Remarketing y Por Qué Suele Convertir Mejor",
     category: "Paid Ads",
     categoryEs: "Publicidad",
     excerpt:
-      "Remarketing shows ads to people who already visited your site. It converts better than cold traffic for a simple reason: they already know who you are.",
+      "Remarketing targets people who already visited your site with Meta Pixel or Google Ads tags. It typically runs at a lower cost per result than cold traffic because the audience already has context.",
     excerptEs:
-      "El remarketing muestra anuncios a personas que ya visitaron tu sitio. Convierte mejor que el tráfico frío por una razón simple: ya saben quién eres.",
+      "El remarketing apunta a personas que ya visitaron tu sitio usando el Pixel de Meta o las etiquetas de Google Ads. Normalmente corre a un costo por resultado más bajo que el tráfico frío porque la audiencia ya tiene contexto.",
     readingTime: 5,
     date: "2026-09-14",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Remarketing targets people who already visited your website or interacted with your business, rather than strangers seeing your brand for the first time. Because that audience already has context, it typically converts at a noticeably higher rate than cold traffic, at a lower cost per result.",
+    lede: "Remarketing targets people who already visited your website or interacted with your business, tagged through the Meta Pixel or Google Ads' own tracking, rather than strangers seeing your brand for the first time. Because that audience already has context, it typically converts at a meaningfully higher rate than cold traffic, and often at a lower cost per result, since the platform isn't paying to introduce your brand from zero.",
     ledeEs:
-      "El remarketing apunta a personas que ya visitaron tu sitio web o interactuaron con tu negocio, en vez de a extraños que ven tu marca por primera vez. Como esa audiencia ya tiene contexto, suele convertir a una tasa notablemente más alta que el tráfico frío, a un costo por resultado más bajo.",
+      "El remarketing apunta a personas que ya visitaron tu sitio web o interactuaron con tu negocio, etiquetadas mediante el Pixel de Meta o el propio seguimiento de Google Ads, en vez de a extraños que ven tu marca por primera vez. Como esa audiencia ya tiene contexto, suele convertir a una tasa notablemente más alta que el tráfico frío, y muchas veces a un costo por resultado más bajo, porque la plataforma no está pagando por presentar tu marca desde cero.",
     sections: [
       {
         id: "como-funciona",
         heading: "How it actually works",
         headingEs: "Cómo funciona en realidad",
         body: [
-          "A tracking tag on your site logs visitors into an audience list. Once someone is on that list, they can be shown ads specifically as they browse elsewhere online, reminding them of a business they already looked at instead of introducing them cold.",
+          'A tracking tag, the Meta Pixel on Facebook and Instagram, or a similar tag inside Google Ads, logs visitors into an audience list the moment they land on the site. Once someone is on that list, usually within 24 to 48 hours of the visit, they can be shown ads specifically as they browse elsewhere online, reminding them of a business they already looked at instead of introducing them cold. Most platforms let you build lists as narrow as "visited this specific page but didn\'t fill out the form."',
         ],
         bodyEs: [
-          "Una etiqueta de rastreo en tu sitio registra a los visitantes en una lista de audiencia. Una vez que alguien está en esa lista, se le pueden mostrar anuncios específicamente mientras navega en otros lugares en línea, recordándole un negocio que ya conoció en vez de presentárselo desde cero.",
+          'Una etiqueta de rastreo, el Pixel de Meta en Facebook e Instagram, o una etiqueta similar dentro de Google Ads, registra a los visitantes en una lista de audiencia en el momento que llegan al sitio. Una vez que alguien está en esa lista, normalmente dentro de las 24 a 48 horas después de la visita, se le pueden mostrar anuncios específicamente mientras navega en otros lugares en línea, recordándole un negocio que ya conoció en vez de presentárselo desde cero. La mayoría de las plataformas permiten construir listas tan específicas como "visitó esta página en particular pero no llenó el formulario".',
         ],
       },
       {
@@ -4359,10 +4370,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why it converts better than cold traffic",
         headingEs: "Por qué convierte mejor que el tráfico frío",
         body: [
-          "Someone who already visited your site has already decided you're relevant enough to click on once. Remarketing meets them at a later, often more decisive moment, rather than trying to earn attention and trust in a single first impression.",
+          "Someone who already visited your site has already decided you're relevant enough to click on once, which removes most of the trust-building work a cold ad still has to do. Remarketing campaigns commonly run at a lower cost per conversion than prospecting campaigns targeting cold audiences, because the platform's algorithm is optimizing toward people already primed to act, not toward strangers who need to be convinced from scratch.",
         ],
         bodyEs: [
-          "Alguien que ya visitó tu sitio ya decidió que eras lo bastante relevante como para darle clic una vez. El remarketing lo encuentra en un momento posterior, muchas veces más decisivo, en vez de intentar ganar atención y confianza en una sola primera impresión.",
+          "Alguien que ya visitó tu sitio ya decidió que eras lo bastante relevante como para darle clic una vez, lo que elimina la mayor parte del trabajo de generar confianza que todavía tiene que hacer un anuncio frío. Las campañas de remarketing suelen correr a un costo por conversión más bajo que las campañas de prospección dirigidas a audiencias frías, porque el algoritmo de la plataforma está optimizando hacia gente ya predispuesta a actuar, no hacia desconocidos que hay que convencer desde cero.",
         ],
       },
       {
@@ -4370,10 +4381,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Common ways to segment a remarketing audience",
         headingEs: "Formas comunes de segmentar una audiencia de remarketing",
         body: [
-          "Not every past visitor should see the same ad. Common segments include people who viewed a specific service page but didn't convert, people who started a form and abandoned it, and past customers who might be ready to buy again. Each deserves different messaging.",
+          "Not every past visitor should see the same ad. Common segments include people who viewed a specific service page but didn't convert (shown an ad addressing a likely objection), people who started a form and abandoned it (shown a reminder within a day or two, before intent fades), and past customers who might be ready to buy again (shown a different message entirely). Each deserves different messaging, and different messaging is exactly what most businesses skip, running one generic remarketing ad to everyone on the list.",
         ],
         bodyEs: [
-          "No todo visitante pasado debería ver el mismo anuncio. Segmentos comunes incluyen personas que vieron una página de servicio específica pero no convirtieron, personas que empezaron un formulario y lo abandonaron, y clientes pasados que podrían estar listos para comprar de nuevo. Cada uno merece un mensaje distinto.",
+          "No todo visitante pasado debería ver el mismo anuncio. Segmentos comunes incluyen personas que vieron una página de servicio específica pero no convirtieron (a quienes se les muestra un anuncio que atiende una objeción probable), personas que empezaron un formulario y lo abandonaron (a quienes se les muestra un recordatorio dentro de un día o dos, antes de que se enfríe la intención), y clientes pasados que podrían estar listos para comprar de nuevo (a quienes se les muestra un mensaje completamente distinto). Cada uno merece un mensaje distinto, y ese mensaje distinto es justo lo que la mayoría de los negocios se salta, corriendo un solo anuncio genérico de remarketing para toda la lista.",
         ],
       },
       {
@@ -4381,10 +4392,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When remarketing isn't the right tool",
         headingEs: "Cuándo el remarketing no es la herramienta correcta",
         body: [
-          "A brand-new business with little to no website traffic doesn't have an audience large enough yet to remarket to effectively. In that case, the priority is building initial traffic and awareness first, with remarketing added once there's a real pool of past visitors to draw from.",
+          "A brand-new business with little to no website traffic doesn't have an audience large enough yet to remarket to effectively, most platforms need at least a few hundred people in a list before an ad set can leave the learning phase reliably. In that case, the priority is building initial traffic and awareness first, with remarketing added once there's a real pool of past visitors to draw from, usually after the first month or two of active campaigns.",
         ],
         bodyEs: [
-          "Un negocio completamente nuevo con poco o nada de tráfico en su sitio todavía no tiene una audiencia lo bastante grande como para hacer remarketing de forma efectiva. En ese caso, la prioridad es construir tráfico y conocimiento inicial primero, y agregar remarketing una vez que exista un grupo real de visitantes pasados del cual partir.",
+          "Un negocio completamente nuevo con poco o nada de tráfico en su sitio todavía no tiene una audiencia lo bastante grande como para hacer remarketing de forma efectiva, la mayoría de las plataformas necesita al menos unos cientos de personas en una lista para que un conjunto de anuncios salga de forma confiable de la fase de aprendizaje. En ese caso, la prioridad es construir tráfico y conocimiento inicial primero, y agregar remarketing una vez que exista un grupo real de visitantes pasados del cual partir, normalmente después del primer mes o dos de campañas activas.",
         ],
       },
     ],
@@ -4393,31 +4404,31 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿El remarketing es más barato que la publicidad normal?",
         qEn: "Is remarketing cheaper than regular advertising?",
-        a: "Generalmente sí, en costo por resultado, porque se dirige a una audiencia que ya tiene contexto y familiaridad con tu marca, lo que suele traducirse en mejores tasas de conversión.",
-        aEn: "Generally yes, in cost per result, because it targets an audience that already has context and familiarity with your brand, which usually translates into better conversion rates.",
+        a: "Generalmente sí, en costo por resultado, porque se dirige a una audiencia que ya tiene contexto y familiaridad con tu marca, lo que suele traducirse en mejores tasas de conversión que una campaña de prospección hacia audiencias frías.",
+        aEn: "Generally yes, in cost per result, because it targets an audience that already has context and familiarity with your brand, which usually translates into better conversion rates than a prospecting campaign targeting cold audiences.",
       },
       {
         q: "¿Necesito mucho tráfico en mi sitio para que el remarketing funcione?",
         qEn: "Do I need a lot of website traffic for remarketing to work?",
-        a: "Necesitas una audiencia mínima para que la segmentación tenga sentido. Un sitio nuevo con muy poco tráfico debería enfocarse primero en generar visitas antes de invertir en remarketing.",
-        aEn: "You need a minimum audience for segmentation to make sense. A new site with very little traffic should focus first on generating visits before investing in remarketing.",
+        a: "Necesitas una audiencia mínima, normalmente al menos unos cientos de visitantes recientes, para que la segmentación tenga sentido. Un sitio nuevo con muy poco tráfico debería enfocarse primero en generar visitas antes de invertir en remarketing.",
+        aEn: "You need a minimum audience, typically at least a few hundred recent visitors, for segmentation to make sense. A new site with very little traffic should focus first on generating visits before investing in remarketing.",
       },
       {
         q: "¿El remarketing se siente invasivo para el usuario?",
         qEn: "Does remarketing feel invasive to the user?",
-        a: "Puede sentirse así si se ejecuta sin límites de frecuencia o sin segmentación cuidadosa. Bien configurado, con límites razonables, la mayoría de los usuarios lo percibe simplemente como un recordatorio relevante.",
-        aEn: "It can feel that way if it's run without frequency limits or careful segmentation. Well configured, with reasonable limits, most users perceive it simply as a relevant reminder.",
+        a: "Puede sentirse así si se ejecuta sin límites de frecuencia o sin segmentación cuidadosa. Bien configurado, con límites razonables (por ejemplo, no más de un puñado de impresiones por semana), la mayoría de los usuarios lo percibe simplemente como un recordatorio relevante.",
+        aEn: "It can feel that way if it's run without frequency limits or careful segmentation. Well configured, with reasonable limits (for example, no more than a handful of impressions per week), most users perceive it simply as a relevant reminder.",
       },
       {
         q: "¿Puedo usar remarketing junto con campañas normales de búsqueda?",
         qEn: "Can I use remarketing alongside regular search campaigns?",
-        a: "Sí, de hecho suelen complementarse bien: la búsqueda captura intención activa y el remarketing recupera a quienes no convirtieron la primera vez.",
-        aEn: "Yes, in fact they usually complement each other well: search captures active intent and remarketing recovers people who didn't convert the first time.",
+        a: "Sí, de hecho suelen complementarse bien: la búsqueda captura intención activa y el remarketing recupera a quienes no convirtieron la primera vez, muchas veces a un costo por conversión menor que la campaña de búsqueda misma.",
+        aEn: "Yes, in fact they usually complement each other well: search captures active intent and remarketing recovers people who didn't convert the first time, often at a lower cost per conversion than the search campaign itself.",
       },
     ],
     schema: {
-      keywords: ["what is remarketing", "remarketing ads"],
-      keywordsEs: ["que es el remarketing", "anuncios de remarketing"],
+      keywords: ["what is remarketing", "remarketing ads", "Meta Pixel remarketing"],
+      keywordsEs: ["que es el remarketing", "anuncios de remarketing", "remarketing con pixel"],
     },
   },
   {
@@ -4771,27 +4782,27 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Web Design",
     categoryEs: "Diseño Web",
     excerpt:
-      "The recurring mistakes that make an otherwise decent-looking website fail to convert: buried CTAs, no mobile testing, and copy that talks about the business instead of the visitor.",
+      "Five recurring, measurable mistakes: a CTA that only appears once, copy that opens with company history, untested mobile forms, competing CTAs, and launching with zero conversion tracking.",
     excerptEs:
-      "Los errores recurrentes que hacen que un sitio bien visto no convierta: llamados a la acción escondidos, cero pruebas en móvil, y copy que habla de la empresa en vez de hablarle a quien visita.",
+      "Cinco errores recurrentes y medibles: un CTA que solo aparece una vez, copy que abre con la historia de la empresa, formularios sin probar en móvil, CTAs que compiten entre sí, y lanzar sin ningún seguimiento de conversión.",
     readingTime: 6,
     date: "2026-09-22",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A website can look professional and still fail at its actual job. Most of the time it's not one dramatic mistake, it's a handful of small, recurring ones that each quietly cost a fraction of the visitors who would have otherwise converted.",
+    lede: "A website can look professional in every screenshot and still fail at its actual job. In practice, it's rarely one dramatic mistake, it's five specific, recurring ones, each measurable with a free tool, that each quietly cost a fraction of the visitors who would have otherwise converted.",
     ledeEs:
-      "Una página web puede verse profesional y aun así fallar en su verdadero trabajo. Casi siempre no es un error dramático, es un puñado de errores pequeños y recurrentes que, cada uno, le cuestan en silencio una fracción de los visitantes que de otra forma habrían convertido.",
+      "Una página web puede verse profesional en cada captura de pantalla y aun así fallar en su verdadero trabajo. En la práctica, casi nunca es un error dramático, son cinco errores específicos y recurrentes, cada uno medible con una herramienta gratuita, que le cuestan en conjunto una fracción de los visitantes que de otra forma habrían convertido.",
     sections: [
       {
         id: "cta-escondido",
         heading: "Burying the call to action",
         headingEs: "Esconder el llamado a la acción",
         body: [
-          "A call to action that only appears once, at the very bottom of a long page, misses every visitor who decides before scrolling that far. The CTA should repeat at natural decision points throughout the page, not exist as a single afterthought at the end.",
+          "A call to action that only appears once, at the very bottom of a long page, misses every visitor who decides before scrolling that far. Heatmap tools like Microsoft Clarity (free) show exactly how far down a page most visitors actually scroll, and on most service pages, fewer than half of visitors reach the bottom third. The CTA should repeat at natural decision points throughout the page, ideally after every section that answers a distinct objection, not exist as a single afterthought at the end.",
         ],
         bodyEs: [
-          "Un llamado a la acción que solo aparece una vez, hasta el fondo de una página larga, se pierde a todo visitante que decide antes de llegar tan lejos. El llamado a la acción debería repetirse en los puntos naturales de decisión a lo largo de la página, no existir como una idea tardía al final.",
+          "Un llamado a la acción que solo aparece una vez, hasta el fondo de una página larga, se pierde a todo visitante que decide antes de llegar tan lejos. Herramientas de mapa de calor como Microsoft Clarity (gratis) muestran exactamente hasta dónde hace scroll la mayoría de los visitantes, y en la mayoría de las páginas de servicio, menos de la mitad llega al tercio final. El llamado a la acción debería repetirse en los puntos naturales de decisión a lo largo de la página, idealmente después de cada sección que resuelve una objeción distinta, no existir como una idea tardía al final.",
         ],
       },
       {
@@ -4799,10 +4810,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Writing copy about the business instead of the visitor",
         headingEs: "Escribir copy sobre la empresa en vez de sobre quien visita",
         body: [
-          "Copy that opens with company history and credentials before addressing what the visitor actually came looking for loses attention in the first few seconds. Leading with the visitor's problem, and only introducing the business as the answer to it, holds attention far longer.",
+          "Copy that opens with company history and credentials ('Somos una empresa con 10 años de experiencia...') before addressing what the visitor actually came looking for loses attention in the first few seconds, before the visitor ever reaches the part meant to convince them. Leading with the visitor's problem or the outcome they want, and only introducing the business as the answer to it a few lines in, holds attention far longer and gets to the CTA with the visitor already convinced instead of still deciding whether to keep reading.",
         ],
         bodyEs: [
-          "El copy que abre con la historia y las credenciales de la empresa antes de atender lo que el visitante realmente vino a buscar pierde la atención en los primeros segundos. Empezar con el problema del visitante, y presentar a la empresa recién como la respuesta a eso, sostiene la atención mucho más tiempo.",
+          "El copy que abre con la historia y las credenciales de la empresa ('Somos una empresa con 10 años de experiencia...') antes de atender lo que el visitante realmente vino a buscar pierde la atención en los primeros segundos, antes de llegar siquiera a la parte pensada para convencerlo. Empezar con el problema del visitante o el resultado que busca, y presentar a la empresa recién unas líneas después como la respuesta a eso, sostiene la atención mucho más tiempo y llega al llamado a la acción con el visitante ya convencido, en vez de todavía decidiendo si seguir leyendo.",
         ],
       },
       {
@@ -4810,10 +4821,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Never testing on an actual phone",
         headingEs: "Nunca probar en un celular de verdad",
         body: [
-          "A site reviewed only on a desktop browser can hide layout problems, tiny tap targets, or slow load times that only show up on a real mobile connection. Testing on an actual phone, on real mobile data instead of office wifi, catches problems a desktop review never will.",
+          'A site reviewed only on a desktop browser can hide layout problems, tiny tap targets under the 44-pixel minimum Apple and Google both recommend, or slow load times that only show up on a real mobile connection. Testing on an actual phone, on real mobile data instead of office wifi, catches problems a desktop review never will, since browser "mobile preview" modes simulate screen size but not real touch behavior or connection speed.',
         ],
         bodyEs: [
-          "Un sitio revisado solo en un navegador de escritorio puede esconder problemas de layout, botones demasiado pequeños para tocar, o tiempos de carga lentos que solo se notan en una conexión móvil real. Probar en un celular de verdad, con datos móviles reales en vez de wifi de oficina, detecta problemas que una revisión en escritorio nunca va a mostrar.",
+          'Un sitio revisado solo en un navegador de escritorio puede esconder problemas de layout, botones más pequeños que el mínimo de 44 píxeles que recomiendan tanto Apple como Google, o tiempos de carga lentos que solo se notan en una conexión móvil real. Probar en un celular de verdad, con datos móviles reales en vez de wifi de oficina, detecta problemas que una revisión en escritorio nunca va a mostrar, porque los modos de "vista previa móvil" de los navegadores simulan el tamaño de pantalla pero no el comportamiento táctil real ni la velocidad de conexión.',
         ],
       },
       {
@@ -4821,10 +4832,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Giving the visitor too many competing options",
         headingEs: "Darle a quien visita demasiadas opciones que compiten entre sí",
         body: [
-          "A homepage with five different calls to action of equal visual weight forces the visitor to decide which one matters, and many will simply leave rather than choose. One primary action per page, with everything else visually secondary, converts more reliably than a page trying to accomplish five goals at once.",
+          "A homepage with five different calls to action of equal visual weight (Cotiza, Síguenos en Instagram, Suscríbete al boletín, Agenda una llamada, Descarga el catálogo) forces the visitor to decide which one matters, and many will simply leave rather than choose. One primary action per page, with everything else visually secondary (smaller, less contrast, positioned lower), converts more reliably than a page trying to accomplish five goals at once.",
         ],
         bodyEs: [
-          "Una página de inicio con cinco llamados a la acción distintos y del mismo peso visual obliga al visitante a decidir cuál importa, y muchos simplemente se van en vez de elegir. Una acción principal por página, con todo lo demás visualmente secundario, convierte de forma más confiable que una página que intenta lograr cinco objetivos a la vez.",
+          "Una página de inicio con cinco llamados a la acción distintos y del mismo peso visual (Cotiza, Síguenos en Instagram, Suscríbete al boletín, Agenda una llamada, Descarga el catálogo) obliga al visitante a decidir cuál importa, y muchos simplemente se van en vez de elegir. Una acción principal por página, con todo lo demás visualmente secundario (más pequeño, menos contraste, más abajo), convierte de forma más confiable que una página que intenta lograr cinco objetivos a la vez.",
         ],
       },
       {
@@ -4832,10 +4843,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Launching without any way to measure results",
         headingEs: "Lanzar sin ninguna forma de medir resultados",
         body: [
-          "A site that launches without analytics or conversion tracking makes every future decision a guess instead of a data-backed call. Setting up basic tracking before launch, not weeks after, is what turns a site into something that can actually be improved over time.",
+          "A site that launches without Google Analytics (GA4) or basic conversion tracking makes every future decision a guess instead of a data-backed call, there's no way to know which page, which headline, or which CTA is actually working. Setting up GA4 and a simple event for each conversion point (form submitted, WhatsApp clicked, phone number tapped) before launch, not weeks after, is what turns a site into something that can actually be improved over time instead of something judged purely on how it feels.",
         ],
         bodyEs: [
-          "Un sitio que se lanza sin analítica ni seguimiento de conversión convierte cada decisión futura en una suposición en vez de una decisión con datos. Configurar el seguimiento básico antes del lanzamiento, no semanas después, es lo que convierte a un sitio en algo que realmente se puede mejorar con el tiempo.",
+          "Un sitio que se lanza sin Google Analytics (GA4) ni seguimiento básico de conversión convierte cada decisión futura en una suposición en vez de una decisión con datos: no hay forma de saber qué página, qué titular o qué llamado a la acción realmente está funcionando. Configurar GA4 y un evento simple por cada punto de conversión (formulario enviado, clic en WhatsApp, toque en el número de teléfono) antes del lanzamiento, no semanas después, es lo que convierte a un sitio en algo que realmente se puede mejorar con el tiempo, en vez de algo que se juzga solo por cómo se siente.",
         ],
       },
     ],
@@ -4844,8 +4855,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cuál es el error de diseño web más común?",
         qEn: "What's the most common web design mistake?",
-        a: "Esconder o diluir el llamado a la acción, ya sea porque aparece solo una vez, hasta el final, o porque compite con demasiadas otras opciones en la misma página.",
-        aEn: "Burying or diluting the call to action, whether because it only appears once at the very end, or because it competes with too many other options on the same page.",
+        a: "Esconder o diluir el llamado a la acción, ya sea porque aparece solo una vez hasta el final, o porque compite con demasiadas otras opciones en la misma página. Un mapa de calor gratuito como Microsoft Clarity suele hacer visible este problema en la primera semana de uso.",
+        aEn: "Burying or diluting the call to action, whether because it only appears once at the very end, or because it competes with too many other options on the same page. A free heatmap tool like Microsoft Clarity usually makes this problem visible within the first week of use.",
       },
       {
         q: "¿Un sitio bonito puede convertir mal de todas formas?",
@@ -4856,8 +4867,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cómo sé si mi sitio tiene estos errores?",
         qEn: "How do I know if my site has these mistakes?",
-        a: "Una auditoría rápida ayuda: revisa el sitio en un celular real, cronometra cuánto tarda en cargar, y pregúntate si en los primeros cinco segundos queda claro qué debe hacer el visitante.",
-        aEn: "A quick audit helps: review the site on an actual phone, time how long it takes to load, and ask whether in the first five seconds it's clear what the visitor should do.",
+        a: "Una auditoría rápida ayuda: revisa el sitio en un celular real (no en modo vista previa del navegador), cronometra cuánto tarda en cargar en PageSpeed Insights, y pregúntate si en los primeros cinco segundos queda claro qué debe hacer el visitante.",
+        aEn: "A quick audit helps: review the site on an actual phone (not the browser's preview mode), time how long it takes to load in PageSpeed Insights, and ask whether in the first five seconds it's clear what the visitor should do.",
       },
       {
         q: "¿Corregir estos errores requiere rediseñar todo el sitio?",
@@ -5188,27 +5199,27 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Web Design",
     categoryEs: "Diseño Web",
     excerpt:
-      "Every extra second of load time loses a measurable share of visitors before they see anything. Speed isn't a technical detail, it's a direct factor in how many leads a site produces.",
+      "Google's own research ties a jump from 1 to 3 seconds of load time to a large increase in bounce rate. Under 2.5 seconds for Largest Contentful Paint is the specific bar Google uses for ranking.",
     excerptEs:
-      "Cada segundo extra de carga pierde una parte medible de los visitantes antes de que vean algo. La velocidad no es un detalle técnico, es un factor directo en cuántos leads produce un sitio.",
+      "La propia investigación de Google relaciona un salto de 1 a 3 segundos de carga con un aumento importante en la tasa de rebote. Menos de 2.5 segundos de Largest Contentful Paint es el estándar específico que usa Google para posicionar.",
     readingTime: 5,
     date: "2026-09-30",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A visitor decides whether to stay within the first few seconds a page loads, and each additional second of delay measurably increases how many leave before the site even finishes rendering. Speed isn't a nice-to-have polish item, it directly determines how many of the visitors a business paid to attract actually see the page.",
+    lede: "Google's own research found that as load time goes from 1 to 3 seconds, the probability of a visitor bouncing increases by 32%, and it keeps climbing from there. Speed isn't a nice-to-have polish item, it directly determines how many of the visitors a business paid to attract actually see the page, and it's one of the concrete signals Google's Core Web Vitals use for ranking.",
     ledeEs:
-      "Un visitante decide si se queda en los primeros segundos que tarda en cargar una página, y cada segundo adicional de demora aumenta de forma medible cuántos se van antes de que el sitio termine de mostrarse. La velocidad no es un detalle de pulido, determina directamente cuántos de los visitantes que un negocio pagó por atraer realmente llegan a ver la página.",
+      "La propia investigación de Google encontró que conforme el tiempo de carga sube de 1 a 3 segundos, la probabilidad de que un visitante rebote aumenta un 32%, y sigue subiendo de ahí. La velocidad no es un detalle de pulido, determina directamente cuántos de los visitantes que un negocio pagó por atraer realmente llegan a ver la página, y es una de las señales concretas que los Core Web Vitals de Google usan para el posicionamiento.",
     sections: [
       {
         id: "por-que-importa-tanto",
         heading: "Why speed matters more than it seems",
         headingEs: "Por qué la velocidad importa más de lo que parece",
         body: [
-          "A slow-loading site loses visitors who arrived through paid ads before they see any of the message the ad promised, which means the wasted spend happens silently, with no obvious error to point to. Speed problems don't show up as a broken feature, they show up as a quietly lower conversion rate nobody investigates.",
+          "A slow-loading site loses visitors who arrived through paid ads before they see any of the message the ad promised, which means the wasted spend happens silently, with no obvious error to point to. Google's own Core Web Vitals report grades sites specifically on Largest Contentful Paint (LCP), the time it takes the main content to become visible, and anything above 2.5 seconds is flagged as needing improvement, directly affecting search ranking, not just user experience.",
         ],
         bodyEs: [
-          "Un sitio de carga lenta pierde visitantes que llegaron por anuncios pagados antes de que vean nada del mensaje que el anuncio prometió, lo que significa que el gasto desperdiciado ocurre en silencio, sin un error obvio al cual apuntar. Los problemas de velocidad no se ven como una función rota, se ven como una tasa de conversión más baja que nadie investiga.",
+          "Un sitio de carga lenta pierde visitantes que llegaron por anuncios pagados antes de que vean nada del mensaje que el anuncio prometió, lo que significa que el gasto desperdiciado ocurre en silencio, sin un error obvio al cual apuntar. El propio reporte de Core Web Vitals de Google califica a los sitios específicamente en Largest Contentful Paint (LCP), el tiempo que tarda en verse el contenido principal, y cualquier cosa por encima de 2.5 segundos se marca como que necesita mejora, afectando directamente el posicionamiento en búsqueda, no solo la experiencia del usuario.",
         ],
       },
       {
@@ -5216,10 +5227,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The most common causes",
         headingEs: "Las causas más comunes",
         body: [
-          "Unoptimized images are the single most common culprit, a few full-resolution photos can add several seconds to load time on their own. After that, too many third-party scripts (chat widgets, tracking pixels, embedded fonts) and a hosting plan that isn't suited to the site's actual traffic round out the usual list.",
+          "Unoptimized images are the single most common culprit, a handful of full-resolution photos straight from a phone camera (often 3-5 MB each) can add several seconds to load time on their own, when a properly compressed version of the same image runs under 200 KB with no visible quality loss. After that, too many third-party scripts (chat widgets, tracking pixels, embedded fonts) and a hosting plan that isn't suited to the site's actual traffic round out the usual list.",
         ],
         bodyEs: [
-          "Las imágenes sin optimizar son la causa más común por sí sola, unas cuantas fotos en resolución completa pueden sumar varios segundos de carga por su cuenta. Después de eso, demasiados scripts de terceros (widgets de chat, pixeles de seguimiento, fuentes incrustadas) y un plan de hosting que no está a la altura del tráfico real del sitio completan la lista habitual.",
+          "Las imágenes sin optimizar son la causa más común por sí sola: un puñado de fotos en resolución completa directo de la cámara de un celular (muchas veces 3 a 5 MB cada una) pueden sumar varios segundos de carga por su cuenta, cuando una versión correctamente comprimida de la misma imagen pesa menos de 200 KB sin pérdida visible de calidad. Después de eso, demasiados scripts de terceros (widgets de chat, pixeles de seguimiento, fuentes incrustadas) y un plan de hosting que no está a la altura del tráfico real del sitio completan la lista habitual.",
         ],
       },
       {
@@ -5227,10 +5238,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How speed actually gets measured",
         headingEs: "Cómo se mide realmente la velocidad",
         body: [
-          "Free tools exist to test a site's real load time and get a specific breakdown of what's slowing it down, rather than guessing based on how fast it feels on a fast office connection. Testing on a throttled, simulated mobile connection gives a far more honest picture than testing on fiber internet in an office.",
+          "PageSpeed Insights, free from Google, tests a site's real load time and gives a specific 0-100 score plus a ranked breakdown of exactly what's slowing it down, rather than guessing based on how fast it feels on a fast office connection. It tests on a throttled, simulated mobile connection by default, which gives a far more honest picture than testing on fiber internet in an office, since that's closer to what a real visitor on a phone actually experiences.",
         ],
         bodyEs: [
-          "Existen herramientas gratuitas para medir el tiempo real de carga de un sitio y obtener un desglose específico de qué lo está frenando, en vez de adivinar según qué tan rápido se siente en una conexión rápida de oficina. Probar con una conexión móvil simulada y limitada da una imagen mucho más honesta que probar con fibra óptica en una oficina.",
+          "PageSpeed Insights, gratis y de Google, mide el tiempo real de carga de un sitio y da un puntaje específico de 0 a 100 más un desglose priorizado de qué lo está frenando exactamente, en vez de adivinar según qué tan rápido se siente en una conexión rápida de oficina. Por defecto prueba con una conexión móvil simulada y limitada, lo que da una imagen mucho más honesta que probar con fibra óptica en una oficina, ya que está más cerca de lo que realmente experimenta un visitante real desde su celular.",
         ],
       },
       {
@@ -5238,10 +5249,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What actually fixes it",
         headingEs: "Qué lo arregla realmente",
         body: [
-          "Compressing and properly sizing images almost always produces the biggest single improvement. After that, removing unnecessary scripts, using modern image formats, and choosing hosting that matches the site's traffic level close most of the remaining gap.",
+          "Compressing and properly sizing images almost always produces the biggest single improvement, often cutting load time by half or more on its own. After that, removing unnecessary scripts, using modern image formats like WebP (roughly 25-35% smaller than JPEG at equivalent quality), and choosing hosting that matches the site's traffic level close most of the remaining gap.",
         ],
         bodyEs: [
-          "Comprimir y dimensionar correctamente las imágenes casi siempre produce la mejora individual más grande. Después de eso, quitar scripts innecesarios, usar formatos de imagen modernos, y elegir un hosting acorde al nivel de tráfico del sitio cierran la mayor parte de lo que falta.",
+          "Comprimir y dimensionar correctamente las imágenes casi siempre produce la mejora individual más grande, muchas veces recortando el tiempo de carga a la mitad o más por su cuenta. Después de eso, quitar scripts innecesarios, usar formatos de imagen modernos como WebP (aproximadamente 25 a 35% más ligero que JPEG a calidad equivalente), y elegir un hosting acorde al nivel de tráfico del sitio cierran la mayor parte de lo que falta.",
         ],
       },
     ],
@@ -5250,20 +5261,20 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Qué tan rápido debería cargar mi página web?",
         qEn: "How fast should my website load?",
-        a: "Como referencia general, menos de tres segundos es un buen objetivo para la mayoría de los sitios de negocio. Cada segundo adicional aumenta de forma medible cuántos visitantes se van antes de ver el contenido.",
-        aEn: "As a general reference, under three seconds is a good target for most business sites. Every additional second measurably increases how many visitors leave before seeing the content.",
+        a: 'Google usa 2.5 segundos como el umbral de Largest Contentful Paint para considerar un sitio como "bueno" en Core Web Vitals. Por debajo de ese número afecta tanto el posicionamiento como cuántos visitantes se quedan a ver el contenido.',
+        aEn: 'Google uses 2.5 seconds as the Largest Contentful Paint threshold to consider a site "good" in Core Web Vitals. Staying under that number affects both ranking and how many visitors stick around to see the content.',
       },
       {
         q: "¿Cómo puedo saber si mi sitio es lento?",
         qEn: "How can I tell if my site is slow?",
-        a: "Hay herramientas gratuitas en línea que miden el tiempo de carga real y muestran un desglose de qué lo está frenando. Es mejor confiar en esa medición que en la sensación subjetiva de qué tan rápido se ve.",
-        aEn: "There are free online tools that measure real load time and show a breakdown of what's slowing it down. It's better to trust that measurement than the subjective feeling of how fast it looks.",
+        a: "PageSpeed Insights, gratis de Google, mide el tiempo de carga real y da un puntaje de 0 a 100 con un desglose de qué lo está frenando. Es mejor confiar en esa medición que en la sensación subjetiva de qué tan rápido se ve.",
+        aEn: "PageSpeed Insights, free from Google, measures real load time and gives a 0-100 score with a breakdown of what's slowing it down. It's better to trust that measurement than the subjective feeling of how fast it looks.",
       },
       {
         q: "¿Las imágenes son realmente la causa principal?",
         qEn: "Are images really the main cause?",
-        a: "En la mayoría de los casos sí. Unas cuantas fotos sin comprimir pueden sumar varios segundos de carga por sí solas, y suele ser el primer lugar donde buscar antes de revisar cualquier otra cosa.",
-        aEn: "In most cases, yes. A handful of uncompressed photos can add several seconds of load time on their own, and it's usually the first place to look before checking anything else.",
+        a: "En la mayoría de los casos sí. Una sola foto de celular sin comprimir puede pesar 3 a 5 MB, cuando la misma imagen bien comprimida pesa menos de 200 KB sin pérdida visible de calidad. Suele ser el primer lugar donde buscar.",
+        aEn: "In most cases, yes. A single uncompressed phone photo can weigh 3 to 5 MB, when the same properly compressed image weighs under 200 KB with no visible quality loss. It's usually the first place to look.",
       },
       {
         q: "¿Vale la pena invertir en mejor hosting solo por velocidad?",
@@ -5273,8 +5284,8 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     schema: {
-      keywords: ["website speed", "page load time"],
-      keywordsEs: ["velocidad de carga pagina web", "sitio web lento"],
+      keywords: ["website speed", "page load time", "Core Web Vitals"],
+      keywordsEs: ["velocidad de carga pagina web", "sitio web lento", "core web vitals"],
     },
   },
   {
@@ -5380,27 +5391,27 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Web Design",
     categoryEs: "Diseño Web",
     excerpt:
-      "A domain is a long-term decision, not a small technical detail. What actually matters: length, extension, and matching how customers already say your name.",
+      ".mx domains typically run $200-$400 MXN per year, .com around $250-$450 MXN. Both together protect the brand for under $1,000 MXN a year, cheap insurance against a competitor grabbing the other one.",
     excerptEs:
-      "El dominio es una decisión de largo plazo, no un detalle técnico menor. Lo que realmente importa: longitud, extensión, y que coincida con cómo tus clientes ya dicen tu nombre.",
+      "Los dominios .mx cuestan típicamente entre $200 y $400 MXN al año, los .com entre $250 y $450 MXN. Registrar ambos protege la marca por menos de $1,000 MXN al año, un seguro barato contra que un competidor tome el otro.",
     readingTime: 4,
     date: "2026-10-04",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A domain is the address customers will type, say out loud, and remember for years, which makes it a business decision, not just a technical checkbox during setup. Short, easy to say, and matching the name customers already use for the business beats clever or trend-driven every time.",
+    lede: "A domain is the address customers will type, say out loud, and remember for years, which makes it a business decision, not just a technical checkbox during setup. A .mx domain typically costs $200-$400 MXN per year and a .com runs $250-$450 MXN, registering both together to protect the brand costs under $1,000 MXN a year combined, cheap compared to the cost of a competitor grabbing the other one later.",
     ledeEs:
-      "El dominio es la dirección que los clientes van a escribir, decir en voz alta y recordar durante años, lo que lo convierte en una decisión de negocio, no solo en una casilla técnica que marcar durante la configuración. Corto, fácil de decir, y que coincida con el nombre que los clientes ya usan para el negocio le gana casi siempre a algo ingenioso o de moda.",
+      "El dominio es la dirección que los clientes van a escribir, decir en voz alta y recordar durante años, lo que lo convierte en una decisión de negocio, no solo en una casilla técnica que marcar durante la configuración. Un dominio .mx cuesta típicamente entre $200 y $400 MXN al año y un .com entre $250 y $450 MXN, registrar ambos juntos para proteger la marca cuesta menos de $1,000 MXN al año en conjunto, barato comparado con el costo de que un competidor tome el otro después.",
     sections: [
       {
         id: "que-hace-un-buen-dominio",
         heading: "What makes a good domain",
         headingEs: "Qué hace bueno a un dominio",
         body: [
-          "Short, easy to spell out loud over the phone, and free of hyphens or numbers that force an explanation every time someone shares it. If a customer has to spell it letter by letter, it's already working against the business.",
+          'Short (ideally under 15 characters), easy to spell out loud over the phone, and free of hyphens or numbers that force an explanation every time someone shares it. If a customer has to spell it letter by letter, or clarify "with a hyphen" every time, it\'s already working against the business every single time it gets shared.',
         ],
         bodyEs: [
-          "Corto, fácil de deletrear en voz alta por teléfono, y sin guiones ni números que obliguen a dar una explicación cada vez que alguien lo comparte. Si un cliente tiene que deletrearlo letra por letra, ya está trabajando en contra del negocio.",
+          'Corto (idealmente menos de 15 caracteres), fácil de deletrear en voz alta por teléfono, y sin guiones ni números que obliguen a dar una explicación cada vez que alguien lo comparte. Si un cliente tiene que deletrearlo letra por letra, o aclarar "con guion" cada vez, ya está trabajando en contra del negocio cada vez que se comparte.',
         ],
       },
       {
@@ -5408,10 +5419,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: ".mx, .com, or both",
         headingEs: ".mx, .com, o ambos",
         body: [
-          "A .com signals broader, sometimes international reach, while a .mx signals a specifically Mexican business, which can build trust with a local audience. When budget allows, registering both and pointing one to the other protects the brand from a competitor grabbing the other extension later.",
+          "A .com signals broader, sometimes international reach, while a .mx signals a specifically Mexican business, which can build trust with a local audience. Pricing runs similarly, roughly $200-$400 MXN per year for .mx and $250-$450 MXN for .com depending on the registrar. When budget allows, registering both (under $1,000 MXN a year combined) and pointing one to the other protects the brand from a competitor grabbing the other extension later, a much cheaper problem to prevent than to fix.",
         ],
         bodyEs: [
-          "Un .com transmite un alcance más amplio, a veces internacional, mientras que un .mx transmite un negocio específicamente mexicano, lo que puede generar confianza con una audiencia local. Cuando el presupuesto lo permite, registrar ambos y apuntar uno hacia el otro protege la marca de que un competidor tome la otra extensión después.",
+          "Un .com transmite un alcance más amplio, a veces internacional, mientras que un .mx transmite un negocio específicamente mexicano, lo que puede generar confianza con una audiencia local. El precio es similar, aproximadamente $200 a $400 MXN al año para .mx y $250 a $450 MXN para .com según el registrador. Cuando el presupuesto lo permite, registrar ambos (menos de $1,000 MXN al año en conjunto) y apuntar uno hacia el otro protege la marca de que un competidor tome la otra extensión después, un problema mucho más barato de prevenir que de arreglar.",
         ],
       },
       {
@@ -5419,10 +5430,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What to avoid",
         headingEs: "Qué evitar",
         body: [
-          "Avoid domains that only make sense with an explanation, that are hard to say out loud without spelling them, or that depend on a trendy extension that might not exist or be trusted in a few years. A domain chosen for being clever today can become a liability once nobody remembers the joke.",
+          "Avoid domains that only make sense with an explanation, that are hard to say out loud without spelling them, or that depend on a trendy extension (.io, .co, .biz) that might not exist or be trusted in a few years the way .com and .mx reliably will. A domain chosen for being clever today can become a liability once nobody remembers the joke, or once the novelty extension starts looking dated instead of fresh.",
         ],
         bodyEs: [
-          "Evita dominios que solo tienen sentido con una explicación, que son difíciles de decir en voz alta sin deletrearlos, o que dependen de una extensión de moda que podría no existir o no inspirar confianza en unos años. Un dominio elegido por ser ingenioso hoy puede volverse un lastre cuando ya nadie recuerda el chiste.",
+          "Evita dominios que solo tienen sentido con una explicación, que son difíciles de decir en voz alta sin deletrearlos, o que dependen de una extensión de moda (.io, .co, .biz) que podría no existir o no inspirar confianza en unos años de la forma confiable en que sí lo harán .com y .mx. Un dominio elegido por ser ingenioso hoy puede volverse un lastre cuando ya nadie recuerda el chiste, o cuando la extensión novedosa empieza a verse desactualizada en vez de fresca.",
         ],
       },
       {
@@ -5430,10 +5441,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What if the ideal domain is already taken",
         headingEs: "Qué pasa si el dominio ideal ya está tomado",
         body: [
-          "Adding a relevant, short word (the city, the core service) usually works better than adding a random number or an unrelated word just to make it available. Buying an already-registered domain from its owner is also an option worth pricing out before settling for a weaker alternative.",
+          "Adding a relevant, short word (the city, the core service, e.g. tunegocio-ensenada.com instead of tunegocio2024.com) usually works better than adding a random number or an unrelated word just to make it available. Buying an already-registered but unused domain from its owner is also an option, prices vary widely (anywhere from a few hundred to several thousand pesos) but it's worth pricing out before settling for a weaker alternative.",
         ],
         bodyEs: [
-          "Agregar una palabra relevante y corta (la ciudad, el servicio principal) suele funcionar mejor que agregar un número al azar o una palabra sin relación solo para que quede disponible. Comprarle el dominio ya registrado a su dueño también es una opción que vale la pena cotizar antes de conformarse con una alternativa más débil.",
+          "Agregar una palabra relevante y corta (la ciudad, el servicio principal, por ejemplo tunegocio-ensenada.com en vez de tunegocio2024.com) suele funcionar mejor que agregar un número al azar o una palabra sin relación solo para que quede disponible. Comprarle a su dueño un dominio ya registrado pero sin uso también es una opción, los precios varían mucho (desde unos cuantos cientos hasta varios miles de pesos) pero vale la pena cotizarlo antes de conformarse con una alternativa más débil.",
         ],
       },
     ],
@@ -5442,14 +5453,14 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Es mejor un dominio .com o .mx?",
         qEn: "Is a .com or a .mx domain better?",
-        a: "Depende del negocio. Un .mx refuerza que el negocio es local mexicano, mientras que un .com transmite un alcance más amplio. Si el presupuesto lo permite, registrar ambos es la opción más segura.",
-        aEn: "It depends on the business. A .mx reinforces that the business is local Mexican, while a .com conveys broader reach. If budget allows, registering both is the safest option.",
+        a: "Depende del negocio. Un .mx refuerza que el negocio es local mexicano, mientras que un .com transmite un alcance más amplio. Ambos cuestan de forma similar (entre $200 y $450 MXN al año), así que si el presupuesto lo permite, registrar ambos es la opción más segura.",
+        aEn: "It depends on the business. A .mx reinforces that the business is local Mexican, while a .com conveys broader reach. Both cost similarly (between $200 and $450 MXN per year), so if budget allows, registering both is the safest option.",
       },
       {
         q: "¿Puedo cambiar mi dominio después si elijo mal?",
         qEn: "Can I change my domain later if I choose wrong?",
-        a: "Sí, pero implica perder autoridad de SEO acumulada y confundir a clientes que ya conocen el dominio anterior. Es mucho más barato elegir bien desde el inicio que migrar después.",
-        aEn: "Yes, but it means losing accumulated SEO authority and confusing customers who already know the old domain. It's far cheaper to choose well from the start than to migrate later.",
+        a: "Sí, pero implica perder autoridad de SEO acumulada y confundir a clientes que ya conocen el dominio anterior. Es mucho más barato elegir bien desde el inicio (menos de $1,000 MXN al año por ambas extensiones) que migrar después.",
+        aEn: "Yes, but it means losing accumulated SEO authority and confusing customers who already know the old domain. It's far cheaper to choose well from the start (under $1,000 MXN a year for both extensions) than to migrate later.",
       },
       {
         q: "¿Debo incluir palabras clave de mi servicio en el dominio?",
@@ -5460,13 +5471,13 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Qué hago si el dominio que quiero ya está tomado?",
         qEn: "What do I do if the domain I want is already taken?",
-        a: "Agrega una palabra corta y relevante, como la ciudad o el servicio principal, en vez de un número al azar. También puedes intentar comprarle el dominio a su dueño actual.",
-        aEn: "Add a short, relevant word, like the city or main service, instead of a random number. You can also try buying the domain from its current owner.",
+        a: "Agrega una palabra corta y relevante, como la ciudad o el servicio principal, en vez de un número al azar. También puedes intentar comprarle el dominio a su dueño actual, con precios que van desde unos cientos hasta varios miles de pesos.",
+        aEn: "Add a short, relevant word, like the city or main service, instead of a random number. You can also try buying the domain from its current owner, with prices ranging from a few hundred to several thousand pesos.",
       },
     ],
     schema: {
-      keywords: ["how to choose a domain name", "domain name for business"],
-      keywordsEs: ["como elegir un dominio", "dominio para mi negocio"],
+      keywords: ["how to choose a domain name", "domain name for business", ".mx vs .com domain"],
+      keywordsEs: ["como elegir un dominio", "dominio para mi negocio", "dominio mx o com"],
     },
   },
   {
@@ -5476,38 +5487,38 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Web Design",
     categoryEs: "Diseño Web",
     excerpt:
-      "A redesign isn't about age alone. It's about whether the site still does its job: converting visitors, loading fast, and representing the business as it actually is today.",
+      "Eight measurable triggers: a PageSpeed score under 50, a bounce rate that's climbed over several months, a site that isn't mobile-friendly under Google's test, and five more.",
     excerptEs:
-      "Un rediseño no se trata solo de la edad del sitio. Se trata de si el sitio todavía cumple su trabajo: convertir visitantes, cargar rápido, y representar al negocio como es hoy.",
+      "Ocho señales medibles: un puntaje de PageSpeed por debajo de 50, una tasa de rebote que subió durante varios meses, un sitio que no pasa la prueba de compatibilidad móvil de Google, y cinco más.",
     readingTime: 5,
     date: "2026-10-06",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A website doesn't need a redesign just because a few years have passed, it needs one when it stops doing its actual job: converting visitors, loading fast, working properly on mobile, or representing a business that has genuinely changed since launch.",
+    lede: "A website doesn't need a redesign just because a few years have passed, it needs one when specific, measurable signals show up: a PageSpeed score consistently under 50, a bounce rate trending upward over several months in Google Analytics, or a site that fails Google's own mobile-friendliness test. Eight concrete triggers, not a vague feeling that the site \"looks old.\"",
     ledeEs:
-      "Una página web no necesita rediseñarse solo porque pasaron unos cuantos años, necesita rediseñarse cuando deja de cumplir su verdadero trabajo: convertir visitantes, cargar rápido, funcionar bien en móvil, o representar a un negocio que realmente cambió desde el lanzamiento.",
+      'Una página web no necesita rediseñarse solo porque pasaron unos cuantos años, necesita rediseñarse cuando aparecen señales específicas y medibles: un puntaje de PageSpeed consistentemente por debajo de 50, una tasa de rebote con tendencia al alza durante varios meses en Google Analytics, o un sitio que no pasa la propia prueba de compatibilidad móvil de Google. Ocho disparadores concretos, no una sensación vaga de que el sitio "se ve viejo".',
     sections: [
       {
         id: "las-senales-de-conversion",
-        heading: "Falling conversion rates and outdated visuals",
-        headingEs: "Tasas de conversión que bajan y visuales desactualizados",
+        heading: "Falling conversion rates, tracked over time",
+        headingEs: "Tasas de conversión que bajan, medidas con el tiempo",
         body: [
-          "If leads or sales from the site have been declining without an obvious external cause, the site itself is a reasonable place to look. Visual design that clearly looks dated compared to competitors also sends a quiet signal of being behind, even if the visitor can't articulate exactly why the site feels off.",
+          "If leads or sales from the site have been declining for three months or more without an obvious external cause (seasonality, a paused ad campaign), the site itself is a reasonable place to look, and Google Analytics' own conversion reports make the trend visible without guesswork. Visual design that clearly looks dated compared to competitors also sends a quiet signal of being behind, even if the visitor can't articulate exactly why the site feels off, but a measurable drop in the data is the stronger signal to act on first.",
         ],
         bodyEs: [
-          "Si los leads o ventas que llegan del sitio han venido bajando sin una causa externa obvia, el sitio mismo es un lugar razonable dónde buscar. Un diseño visual que claramente se ve desactualizado frente a la competencia también manda una señal silenciosa de estar atrasado, aunque el visitante no sepa articular exactamente por qué el sitio se siente mal.",
+          "Si los leads o ventas que llegan del sitio han venido bajando durante tres meses o más sin una causa externa obvia (estacionalidad, una campaña de anuncios pausada), el sitio mismo es un lugar razonable dónde buscar, y los propios reportes de conversión de Google Analytics hacen visible la tendencia sin necesidad de adivinar. Un diseño visual que claramente se ve desactualizado frente a la competencia también manda una señal silenciosa de estar atrasado, aunque el visitante no sepa articular exactamente por qué el sitio se siente mal, pero una caída medible en los datos es la señal más fuerte sobre la cual actuar primero.",
         ],
       },
       {
         id: "problemas-tecnicos-recurrentes",
-        heading: "Recurring technical problems",
-        headingEs: "Problemas técnicos recurrentes",
+        heading: "Recurring, measurable technical problems",
+        headingEs: "Problemas técnicos recurrentes y medibles",
         body: [
-          "A site that's slow despite basic optimization attempts, doesn't work properly on mobile, or has become difficult to update without a developer is signaling that its technical foundation has become the limiting factor, not just a cosmetic one.",
+          "A PageSpeed Insights score consistently under 50, a failing result on Google's Mobile-Friendly Test, or a site that's become difficult to update without a developer are all specific, checkable signals that the technical foundation itself has become the limiting factor, not just a cosmetic one. Any of these three can be checked in under five minutes with free tools, no audit required to get a first read.",
         ],
         bodyEs: [
-          "Un sitio que sigue lento a pesar de intentos básicos de optimización, no funciona bien en móvil, o se ha vuelto difícil de actualizar sin un desarrollador está señalando que su base técnica se convirtió en el factor limitante, no solo algo cosmético.",
+          "Un puntaje de PageSpeed Insights consistentemente por debajo de 50, un resultado fallido en la Prueba de Compatibilidad Móvil de Google, o un sitio que se ha vuelto difícil de actualizar sin un desarrollador son señales específicas y verificables de que la base técnica misma se convirtió en el factor limitante, no solo algo cosmético. Cualquiera de estas tres se puede revisar en menos de cinco minutos con herramientas gratuitas, sin necesidad de una auditoría para tener una primera lectura.",
         ],
       },
       {
@@ -5515,10 +5526,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The business itself has changed",
         headingEs: "El negocio mismo ya cambió",
         body: [
-          "New services, a different target audience, a rebrand, or expansion into new markets that the site doesn't reflect at all is one of the clearest redesign triggers. A site describing a business as it was two years ago actively misrepresents what a visitor will actually get.",
+          "New services, a different target audience, a rebrand, or expansion into new markets that the site doesn't reflect at all is one of the clearest redesign triggers, and unlike the technical signals, it doesn't need a tool to detect, just an honest read of whether the current site describes the business as it operates today. A site describing a business as it was two years ago actively misrepresents what a visitor will actually get.",
         ],
         bodyEs: [
-          "Nuevos servicios, una audiencia objetivo distinta, un cambio de marca, o una expansión a mercados nuevos que el sitio no refleja en absoluto es uno de los disparadores más claros de rediseño. Un sitio que describe al negocio como era hace dos años representa activamente mal lo que un visitante en realidad va a recibir.",
+          "Nuevos servicios, una audiencia objetivo distinta, un cambio de marca, o una expansión a mercados nuevos que el sitio no refleja en absoluto es uno de los disparadores más claros de rediseño, y a diferencia de las señales técnicas, no necesita una herramienta para detectarse, solo una lectura honesta de si el sitio actual describe al negocio como opera hoy. Un sitio que describe al negocio como era hace dos años representa activamente mal lo que un visitante en realidad va a recibir.",
         ],
       },
       {
@@ -5526,10 +5537,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When a redesign genuinely isn't needed",
         headingEs: "Cuándo un rediseño en realidad no hace falta",
         body: [
-          "If the site still converts well, loads fast, and accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost.",
+          "If PageSpeed scores above 70, the site passes the mobile-friendly test, conversion rates are flat or improving, and the site still accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost, roughly $6,000-$15,000 MXN for content and design touch-ups versus $25,000 MXN and up for a full rebuild.",
         ],
         bodyEs: [
-          "Si el sitio sigue convirtiendo bien, carga rápido, y representa bien al negocio, la edad por sí sola no es razón para reconstruirlo. Las actualizaciones puntuales (copy nuevo, fotos actualizadas, una sección renovada) muchas veces resuelven el problema real por una fracción del costo de un rediseño completo.",
+          "Si PageSpeed marca arriba de 70, el sitio pasa la prueba de compatibilidad móvil, las tasas de conversión están estables o mejorando, y el sitio sigue representando bien al negocio, la edad por sí sola no es razón para reconstruirlo. Las actualizaciones puntuales (copy nuevo, fotos actualizadas, una sección renovada) muchas veces resuelven el problema real por una fracción del costo de un rediseño completo, aproximadamente $6,000 a $15,000 MXN por retoques de contenido y diseño contra $25,000 MXN en adelante por una reconstrucción completa.",
         ],
       },
       {
@@ -5537,10 +5548,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to decide between a refresh and a full redesign",
         headingEs: "Cómo decidir entre un refresh y un rediseño completo",
         body: [
-          "A refresh fits when the underlying structure still works and the problems are cosmetic or content-related. A full redesign fits when the technical foundation itself is the limitation, or when the business has changed enough that the entire structure no longer matches what it needs to communicate.",
+          "A refresh fits when PageSpeed and mobile-friendliness scores are healthy and the problems are cosmetic or content-related. A full redesign fits when the technical foundation itself is failing those same checks, or when the business has changed enough that the entire structure no longer matches what it needs to communicate. Running the PageSpeed and Mobile-Friendly tests first, before deciding, turns this into a five-minute data check instead of a guess.",
         ],
         bodyEs: [
-          "Un refresh encaja cuando la estructura de fondo sigue funcionando y los problemas son cosméticos o de contenido. Un rediseño completo encaja cuando la base técnica misma es la limitante, o cuando el negocio cambió lo suficiente como para que toda la estructura ya no coincida con lo que necesita comunicar.",
+          "Un refresh encaja cuando los puntajes de PageSpeed y compatibilidad móvil están sanos y los problemas son cosméticos o de contenido. Un rediseño completo encaja cuando la base técnica misma está fallando esas mismas pruebas, o cuando el negocio cambió lo suficiente como para que toda la estructura ya no coincida con lo que necesita comunicar. Correr las pruebas de PageSpeed y Compatibilidad Móvil primero, antes de decidir, convierte esto en una revisión de datos de cinco minutos en vez de una suposición.",
         ],
       },
     ],
@@ -5549,31 +5560,31 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cada cuánto tiempo debería rediseñar mi página web?",
         qEn: "How often should I redesign my website?",
-        a: "No hay un plazo fijo. La señal real es si el sitio sigue convirtiendo bien y representando al negocio con precisión, no una cantidad de años determinada.",
-        aEn: "There's no fixed timeframe. The real signal is whether the site still converts well and accurately represents the business, not a set number of years.",
+        a: "No hay un plazo fijo. La señal real es si el sitio pasa las pruebas técnicas (PageSpeed arriba de 70, compatible con móvil) y sigue convirtiendo bien, no una cantidad de años determinada.",
+        aEn: "There's no fixed timeframe. The real signal is whether the site passes technical checks (PageSpeed above 70, mobile-friendly) and still converts well, not a set number of years.",
       },
       {
         q: "¿Un rediseño completo siempre es la mejor opción?",
         qEn: "Is a full redesign always the best option?",
-        a: "No. Si la estructura de fondo sigue funcionando, actualizaciones puntuales de contenido y diseño suelen resolver el problema por mucho menos costo que un rediseño completo.",
-        aEn: "No. If the underlying structure still works, targeted content and design updates usually solve the problem for far less than a full redesign.",
+        a: "No. Si la base técnica sigue funcionando bien, actualizaciones puntuales de contenido y diseño (unos $6,000 a $15,000 MXN) suelen resolver el problema por mucho menos costo que un rediseño completo.",
+        aEn: "No. If the technical foundation is still working well, targeted content and design updates (roughly $6,000-$15,000 MXN) usually solve the problem for far less than a full redesign.",
       },
       {
         q: "¿Cómo sé si mis problemas son técnicos o de diseño?",
         qEn: "How do I know if my problems are technical or design-related?",
-        a: "Si el sitio es lento o no funciona bien en móvil pase lo que pase, es probablemente técnico. Si carga bien pero no convierte, suele ser un problema de copy, jerarquía visual o estructura de conversión.",
-        aEn: "If the site is slow or doesn't work well on mobile no matter what, it's probably technical. If it loads fine but doesn't convert, it's usually a copy, visual hierarchy, or conversion structure problem.",
+        a: "Corre PageSpeed Insights y la Prueba de Compatibilidad Móvil de Google, ambas gratis. Si fallan, es técnico. Si el sitio pasa esas pruebas pero no convierte, suele ser un problema de copy, jerarquía visual o estructura de conversión.",
+        aEn: "Run PageSpeed Insights and Google's Mobile-Friendly Test, both free. If they fail, it's technical. If the site passes those tests but doesn't convert, it's usually a copy, visual hierarchy, or conversion structure problem.",
       },
       {
         q: "¿Perderé mi posicionamiento SEO si rediseño mi sitio?",
         qEn: "Will I lose my SEO rankings if I redesign my site?",
-        a: "Es un riesgo real si no se planea con cuidado, especialmente si cambian las URLs. Un rediseño bien ejecutado mantiene las redirecciones y la estructura SEO existente en vez de empezar de cero.",
-        aEn: "It's a real risk if not planned carefully, especially if URLs change. A well-executed redesign preserves redirects and existing SEO structure instead of starting from zero.",
+        a: "Es un riesgo real si no se planea con cuidado, especialmente si cambian las URLs. Un rediseño bien ejecutado mantiene las redirecciones 301 y la estructura SEO existente en vez de empezar de cero.",
+        aEn: "It's a real risk if not planned carefully, especially if URLs change. A well-executed redesign preserves 301 redirects and existing SEO structure instead of starting from zero.",
       },
     ],
     schema: {
-      keywords: ["when to redesign website", "website redesign signs"],
-      keywordsEs: ["cuando redisenar pagina web", "señales de rediseño web"],
+      keywords: ["when to redesign website", "website redesign signs", "PageSpeed score"],
+      keywordsEs: ["cuando redisenar pagina web", "señales de rediseño web", "puntaje pagespeed"],
     },
   },
 ];
