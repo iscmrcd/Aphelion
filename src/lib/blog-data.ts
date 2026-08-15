@@ -2274,17 +2274,16 @@ export const BLOG_POSTS: BlogPost[] = [
     lede: "SEO takes 4 to 6 months to show initial ranking movement, and 9 to 12 months to compound into meaningful, sustained traffic. Low-competition local categories can move faster; competitive national categories can take longer. Any timeline shorter than a couple of months is not realistic SEO — it's something else being sold under the same name.",
     ledeEs:
       "El SEO toma de 4 a 6 meses para mostrar movimiento inicial en el posicionamiento, y de 9 a 12 meses para acumularse en tráfico significativo y sostenido. Categorías locales de baja competencia pueden moverse más rápido; categorías nacionales competidas pueden tomar más. Cualquier plazo menor a un par de meses no es SEO real: es otra cosa vendida bajo el mismo nombre.",
-    gradient: "from-neutral-800 to-neutral-950",
     sections: [
       {
         id: "linea-de-tiempo-general",
         heading: "The general timeline",
         headingEs: "El cronograma general",
         body: [
-          "Weeks 1 to 4: technical fixes and foundational work, largely invisible in rankings. Months 2 to 4: initial movement on lower-competition keywords. Months 4 to 6: measurable traffic increase begins. Months 9 to 12: compounding effect where content and authority reinforce each other, and growth accelerates. This isn't a guarantee for every site, but it's the shape the curve typically takes.",
+          "Weeks 1 to 4: technical fixes and foundational work, largely invisible in rankings. Months 2 to 4: initial movement on lower-competition keywords. Months 4 to 6: measurable traffic increase begins. Months 9 to 12: compounding effect where content and authority reinforce each other, and growth accelerates. This isn't a guarantee for every site, but it's the shape the curve typically takes. As concrete reference points: technical fixes can show up in rankings within 2-4 weeks, but the qualified traffic and conversions that actually matter to the business typically take 4-6 months to become visible, and 9-12 months to compound into something dependable.",
         ],
         bodyEs: [
-          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en palabras clave de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar.",
+          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en palabras clave de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar. Como referencia concreta: las correcciones técnicas pueden reflejarse en el posicionamiento en 2 a 4 semanas, pero el tráfico calificado y las conversiones que realmente le importan al negocio normalmente tardan de 4 a 6 meses en volverse visibles, y de 9 a 12 meses en acumularse en algo confiable.",
         ],
       },
       {
@@ -2332,6 +2331,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    gradient: "from-neutral-800 to-neutral-950",
     faq: [
       {
         q: "¿Por qué el SEO tarda tanto comparado con los anuncios?",
@@ -2381,7 +2381,6 @@ export const BLOG_POSTS: BlogPost[] = [
     lede: 'Google Ads delivers traffic the day you turn it on and stops the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. The right first investment depends on how urgently you need results and how long you plan to be in business, not on which channel is objectively "better."',
     ledeEs:
       'Google Ads entrega tráfico el día que lo enciendes y se detiene el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La inversión correcta para empezar depende de qué tan urgente necesitas resultados y cuánto tiempo planeas seguir en el negocio, no de cuál canal es objetivamente "mejor."',
-    gradient: "from-neutral-800 to-neutral-950",
     sections: [
       {
         id: "la-diferencia-fundamental",
@@ -2399,10 +2398,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Cost compared over time",
         headingEs: "Costo comparado en el tiempo",
         body: [
-          "In the first six months, Google Ads usually costs less overall because SEO's investment hasn't paid off yet. Past month twelve, the comparison often flips — SEO's marginal cost per visit trends toward zero while Ads keeps costing the same per click indefinitely. The break-even point varies by category, but it's real.",
+          "In the first six months, Google Ads usually costs less overall because SEO's investment hasn't paid off yet. Past month twelve, the comparison often flips — SEO's marginal cost per visit trends toward zero while Ads keeps costing the same per click indefinitely. The break-even point varies by category, but it's real. As a rough comparison: a Google Ads campaign for a competitive category might run $8,000-$15,000 MXN a month in ad spend alone, while an SEO investment in the same range compounds into ongoing traffic that keeps arriving months after the invoice, rather than stopping the moment spend does.",
         ],
         bodyEs: [
-          "En los primeros seis meses, Google Ads suele costar menos en total porque la inversión en SEO todavía no ha rendido frutos. Después del mes doce, la comparación muchas veces se invierte: el costo marginal por visita del SEO tiende a cero, mientras que Ads sigue costando lo mismo por clic indefinidamente. El punto de equilibrio varía por categoría, pero es real.",
+          "En los primeros seis meses, Google Ads suele costar menos en total porque la inversión en SEO todavía no ha rendido frutos. Después del mes doce, la comparación muchas veces se invierte: el costo marginal por visita del SEO tiende a cero, mientras que Ads sigue costando lo mismo por clic indefinidamente. El punto de equilibrio varía por categoría, pero es real. Como comparación aproximada: una campaña de Google Ads para una categoría competida puede costar entre $8,000 y $15,000 MXN al mes solo en gasto de anuncios, mientras que una inversión de SEO en ese mismo rango se acumula en tráfico continuo que sigue llegando meses después de la factura, en vez de detenerse en el momento en que se detiene el gasto.",
         ],
       },
       {
@@ -2439,6 +2438,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    gradient: "from-neutral-800 to-neutral-950",
     faq: [
       {
         q: "¿Cuál da mejor retorno de inversión?",
@@ -2657,17 +2657,16 @@ export const BLOG_POSTS: BlogPost[] = [
     lede: "U.S. patients from California and Arizona come to Tijuana for dental and medical care that costs a fraction of U.S. prices, but they need a longer trust-building process than local patients before they'll cross the border. Bilingual content built specifically for an American audience, verifiable credentials, and reviews from other U.S. patients are what actually convert this audience, not translated Spanish marketing copy.",
     ledeEs:
       "Los pacientes de EE.UU. de California y Arizona llegan a Tijuana por atención dental y médica que cuesta una fracción del precio en EE.UU., pero necesitan un proceso de confianza más largo que los pacientes locales antes de cruzar la frontera. El contenido bilingüe construido específicamente para una audiencia estadounidense, credenciales verificables y reseñas de otros pacientes de EE.UU. son lo que realmente convierte a esta audiencia, no copy de marketing en español traducido.",
-    gradient: "from-neutral-800 to-zinc-950",
     sections: [
       {
         id: "por-que-cruzan-la-frontera",
         heading: "Why U.S. patients cross the border",
         headingEs: "Por qué los pacientes de EE.UU. cruzan la frontera",
         body: [
-          "Cost is the primary driver — dental implants, crowns, and many elective procedures in Tijuana commonly run a fraction of equivalent U.S. pricing, even accounting for travel. Proximity matters too: for patients in San Diego or Yuma, Tijuana is often closer than the nearest comparable U.S. provider. But cost alone doesn't convert a nervous first-time patient — trust does.",
+          "Cost is the primary driver — dental implants, crowns, and many elective procedures in Tijuana commonly run a fraction of equivalent U.S. pricing, even accounting for travel. Proximity matters too: for patients in San Diego or Yuma, Tijuana is often closer than the nearest comparable U.S. provider. But cost alone doesn't convert a nervous first-time patient — trust does. Dental and medical procedures in Tijuana and Ensenada commonly run at a fraction of equivalent U.S. pricing, often 40-70% less depending on the procedure, a gap large enough that it covers travel costs many times over even for a same-day visit.",
         ],
         bodyEs: [
-          "El costo es el motor principal: implantes dentales, coronas y muchos procedimientos electivos en Tijuana suelen costar una fracción del precio equivalente en EE.UU., incluso considerando el viaje. La cercanía también importa: para pacientes en San Diego o Yuma, Tijuana muchas veces está más cerca que el proveedor comparable más cercano en EE.UU. Pero el costo solo no convierte a un paciente nervioso de primera vez. La confianza sí.",
+          "El costo es el motor principal: implantes dentales, coronas y muchos procedimientos electivos en Tijuana suelen costar una fracción del precio equivalente en EE.UU., incluso considerando el viaje. La cercanía también importa: para pacientes en San Diego o Yuma, Tijuana muchas veces está más cerca que el proveedor comparable más cercano en EE.UU. Pero el costo solo no convierte a un paciente nervioso de primera vez. La confianza sí. Los procedimientos dentales y médicos en Tijuana y Ensenada normalmente cuestan una fracción del precio equivalente en EE.UU., muchas veces 40 a 70% menos según el procedimiento, una diferencia lo bastante grande como para cubrir los costos de viaje varias veces incluso en una visita de un solo día.",
         ],
       },
       {
@@ -2726,6 +2725,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
     ],
+    gradient: "from-neutral-800 to-zinc-950",
     faq: [
       {
         q: "¿Qué tan seguro es para un paciente de EE.UU. recibir atención dental en Tijuana?",
@@ -3500,10 +3500,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Who's actually on each one",
         headingEs: "Quién está realmente en cada una",
         body: [
-          "Instagram tends to skew younger, more visual, and more engaged with Stories and Reels. Facebook still holds a broader, often older audience, including decision-makers in B2B and service categories who spend real time in Facebook Groups and Marketplace. Neither is objectively better, they just reach different slices of the same market.",
+          "Instagram tends to skew younger, more visual, and more engaged with Stories and Reels. Facebook still holds a broader, often older audience, including decision-makers in B2B and service categories who spend real time in Facebook Groups and Marketplace. Neither is objectively better, they just reach different slices of the same market. Instagram's user base skews younger and more visual-first, while Facebook still holds a meaningfully older audience with higher average purchasing power in several categories, which is why the same budget split 50/50 doesn't perform the same for a med spa targeting 25-year-olds as it does for a home services business targeting homeowners in their 40s and 50s.",
         ],
         bodyEs: [
-          "Instagram tiende a un público más joven, visual y activo en Stories y Reels. Facebook todavía tiene una audiencia más amplia, muchas veces mayor, incluyendo tomadores de decisión en categorías B2B y de servicios que pasan tiempo real en Grupos y Marketplace de Facebook. Ninguna es objetivamente mejor, solo llegan a distintas partes del mismo mercado.",
+          "Instagram tiende a un público más joven, visual y activo en Stories y Reels. Facebook todavía tiene una audiencia más amplia, muchas veces mayor, incluyendo tomadores de decisión en categorías B2B y de servicios que pasan tiempo real en Grupos y Marketplace de Facebook. Ninguna es objetivamente mejor, solo llegan a distintas partes del mismo mercado. La base de usuarios de Instagram tiende a ser más joven y más visual, mientras que Facebook todavía tiene una audiencia notablemente mayor con más poder de compra promedio en varias categorías, y por eso el mismo presupuesto repartido 50/50 no rinde igual para un spa médico dirigido a personas de 25 años que para un negocio de servicios para el hogar dirigido a dueños de casa de 40 y 50 años.",
         ],
       },
       {
@@ -3611,10 +3611,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why the Pixel alone isn't enough anymore",
         headingEs: "Por qué el Pixel solo ya no basta",
         body: [
-          "Browser privacy changes, ad blockers, and Safari's tracking restrictions all cut into how many events the Pixel actually captures. It doesn't fail loudly, it just quietly under-reports, which makes campaigns look like they're converting less than they really are.",
+          "Browser privacy changes, ad blockers, and Safari's tracking restrictions all cut into how many events the Pixel actually captures. It doesn't fail loudly, it just quietly under-reports, which makes campaigns look like they're converting less than they really are. Apple's iOS 14.5+ privacy changes alone are estimated to have cut Pixel-only tracking accuracy by a meaningful double-digit percentage across the industry, which is the specific technical reason CAPI stopped being optional for any account spending real budget.",
         ],
         bodyEs: [
-          "Los cambios de privacidad en navegadores, los bloqueadores de anuncios y las restricciones de rastreo de Safari le quitan al Pixel una parte de los eventos que realmente captura. No falla de forma evidente, simplemente subreporta sin ninguna alerta, lo que hace que las campañas se vean como si convirtieran menos de lo que realmente convierten.",
+          "Los cambios de privacidad en navegadores, los bloqueadores de anuncios y las restricciones de rastreo de Safari le quitan al Pixel una parte de los eventos que realmente captura. No falla de forma evidente, simplemente subreporta sin ninguna alerta, lo que hace que las campañas se vean como si convirtieran menos de lo que realmente convierten. Solo los cambios de privacidad de iOS 14.5+ de Apple se estima que redujeron la precisión del rastreo únicamente con Pixel en un porcentaje importante de dos dígitos en toda la industria, y esa es la razón técnica específica por la que CAPI dejó de ser opcional para cualquier cuenta que mueve presupuesto real.",
         ],
       },
       {
@@ -4703,10 +4703,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "WordPress: the plugin ecosystem, and its cost",
         headingEs: "WordPress: el ecosistema de plugins, y su costo",
         body: [
-          "WordPress's real strength is its plugin ecosystem, almost any functionality already exists as a plugin, which makes it fast to add features without custom code. The tradeoff is that each plugin is a dependency that needs updates, can conflict with others, and adds a potential security vulnerability. A WordPress site with fifteen plugins is fifteen things that can break independently.",
+          "WordPress's real strength is its plugin ecosystem, almost any functionality already exists as a plugin, which makes it fast to add features without custom code. The tradeoff is that each plugin is a dependency that needs updates, can conflict with others, and adds a potential security vulnerability. A WordPress site with fifteen plugins is fifteen things that can break independently. As a cost reference, a WordPress site with premium plugins and a theme typically runs $15,000-$35,000 MXN to set up, with ongoing plugin licenses and maintenance adding $1,500-$4,000 MXN a year on top.",
         ],
         bodyEs: [
-          "La verdadera fortaleza de WordPress es su ecosistema de plugins: casi cualquier funcionalidad ya existe como plugin, lo que lo hace rápido para agregar funciones sin código a medida. El costo es que cada plugin es una dependencia que necesita actualizarse, puede entrar en conflicto con otros, y suma una posible vulnerabilidad de seguridad. Un sitio de WordPress con quince plugins son quince cosas que pueden fallar de forma independiente.",
+          "La verdadera fortaleza de WordPress es su ecosistema de plugins: casi cualquier funcionalidad ya existe como plugin, lo que lo hace rápido para agregar funciones sin código a medida. El costo es que cada plugin es una dependencia que necesita actualizarse, puede entrar en conflicto con otros, y suma una posible vulnerabilidad de seguridad. Un sitio de WordPress con quince plugins son quince cosas que pueden fallar de forma independiente. Como referencia de costo, un sitio de WordPress con plugins premium y un tema normalmente cuesta entre $15,000 y $35,000 MXN de configuración inicial, con licencias de plugins y mantenimiento continuo que suman $1,500 a $4,000 MXN al año adicionales.",
         ],
       },
       {
@@ -4714,10 +4714,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Custom development: full control, at a real cost",
         headingEs: "Desarrollo a medida: control total, a un costo real",
         body: [
-          "Custom development means every piece of the site is built specifically for the business, with no unused features, no plugin bloat, and full control over performance and structure. It costs more upfront and takes longer than a template-based approach, but it removes the ceiling that pre-built systems eventually hit as a business grows.",
+          "Custom development means every piece of the site is built specifically for the business, with no unused features, no plugin bloat, and full control over performance and structure. It costs more upfront and takes longer than a template-based approach, but it removes the ceiling that pre-built systems eventually hit as a business grows. That control comes at a higher entry price, typically starting around $25,000-$60,000 MXN for a Professional-tier custom build, but with no recurring plugin licenses and a codebase that doesn't accumulate the same maintenance debt over time.",
         ],
         bodyEs: [
-          "El desarrollo a medida significa que cada parte del sitio se construye específicamente para el negocio, sin funciones sin usar, sin exceso de plugins, y con control total sobre rendimiento y estructura. Cuesta más de entrada y toma más tiempo que un enfoque basado en plantillas, pero elimina el techo con el que los sistemas prefabricados eventualmente chocan conforme el negocio crece.",
+          "El desarrollo a medida significa que cada parte del sitio se construye específicamente para el negocio, sin funciones sin usar, sin exceso de plugins, y con control total sobre rendimiento y estructura. Cuesta más de entrada y toma más tiempo que un enfoque basado en plantillas, pero elimina el techo con el que los sistemas prefabricados eventualmente chocan conforme el negocio crece. Ese control viene con un precio de entrada más alto, normalmente arrancando alrededor de $25,000 a $60,000 MXN para una construcción a medida de nivel Profesional, pero sin licencias de plugins recurrentes y con una base de código que no acumula la misma deuda de mantenimiento con el tiempo.",
         ],
       },
       {
