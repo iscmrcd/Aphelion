@@ -4420,6 +4420,1162 @@ export const BLOG_POSTS: BlogPost[] = [
       keywordsEs: ["que es el remarketing", "anuncios de remarketing"],
     },
   },
+  {
+    slug: "guia-diseno-web",
+    title: "Web Design: The Complete 2026 Guide",
+    titleEs: "Diseño Web: Guía Completa 2026",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "Everything a website actually needs to work as a business asset: which tier fits your stage, real timelines, what drives cost, and the mistakes that quietly cost you leads.",
+    excerptEs:
+      "Todo lo que una página web realmente necesita para funcionar como un activo de negocio: qué nivel te conviene, tiempos reales, qué determina el costo, y los errores que te cuestan leads sin que se note.",
+    readingTime: 9,
+    date: "2026-09-16",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A website is not a digital brochure, it's a system that either moves a stranger toward becoming a customer or doesn't. Most businesses buy the wrong tier for their stage, skip the strategy work that makes a site convert, and treat the launch as the finish line instead of the starting point.",
+    ledeEs:
+      "Una página web no es un folleto digital, es un sistema que mueve a un desconocido hacia convertirse en cliente o no lo hace. La mayoría de los negocios compra el nivel equivocado para su etapa, se salta el trabajo de estrategia que hace que un sitio convierta, y trata el lanzamiento como la meta en vez del punto de partida.",
+    sections: [
+      {
+        id: "los-seis-niveles",
+        heading: "The six tiers, and which one you actually need",
+        headingEs: "Los seis niveles, y cuál necesitas en realidad",
+        body: [
+          "We group websites into six tiers: Presence (a digital business card), Professional (built to establish trust and answer objections), Lead-Gen (built around forms and calls-to-action), Automated (booking, quoting or scheduling built in), Commercial System (inventory, payments, client accounts), and custom SaaS (multi-tenant software). Most businesses overpay by buying tier four when tier two would do the job. The right tier depends on what the site needs to accomplish, not on what looks most impressive in a proposal.",
+        ],
+        bodyEs: [
+          "Agrupamos los sitios web en seis niveles: Presencial (una tarjeta de presentación digital), Profesional (construido para generar confianza y resolver objeciones), Captación (construido alrededor de formularios y llamados a la acción), Automatizada (con reservas, cotizaciones o citas integradas), Sistema Comercial (inventario, pagos, cuentas de cliente) y SaaS a medida (software multiusuario). La mayoría de los negocios paga de más comprando el nivel cuatro cuando el nivel dos resolvería el problema. El nivel correcto depende de lo que el sitio necesita lograr, no de lo que se ve más impresionante en una propuesta.",
+        ],
+      },
+      {
+        id: "estrategia-antes-de-diseno",
+        heading: "Strategy comes before any visual decision",
+        headingEs: "La estrategia va antes de cualquier decisión visual",
+        body: [
+          "Before a single screen gets designed, the real questions are: who lands on this site, what do they need to believe before they act, and what's the one action the page should push them toward. Skipping this step is why so many sites look polished but convert poorly, the design solved a visual problem instead of a business one.",
+        ],
+        bodyEs: [
+          "Antes de diseñar una sola pantalla, las preguntas reales son: quién llega a este sitio, qué necesita creer antes de actuar, y cuál es la única acción hacia la que debería empujarlo la página. Saltarse este paso es la razón por la que tantos sitios se ven pulidos pero convierten mal, el diseño resolvió un problema visual en vez de uno de negocio.",
+        ],
+      },
+      {
+        id: "copy-antes-que-diseno",
+        heading: "Copy carries more weight than most businesses expect",
+        headingEs: "El copy pesa más de lo que la mayoría de los negocios espera",
+        body: [
+          "A beautifully designed page with generic, self-focused copy still fails to convert, because visitors don't act on how a page looks, they act on whether it answers their specific doubt. Copy that speaks to a real objection (price, trust, timeline) consistently outperforms copy that just describes features, even on an identical layout.",
+        ],
+        bodyEs: [
+          "Una página bien diseñada con copy genérico y centrado en la empresa sigue sin convertir, porque quien visita no actúa según cómo se ve la página, actúa según si responde su duda específica. El copy que habla a una objeción real (precio, confianza, tiempo) le gana consistentemente al copy que solo describe características, incluso sobre el mismo diseño.",
+        ],
+      },
+      {
+        id: "mobile-first-no-es-opcional",
+        heading: "Mobile-first isn't a nice-to-have anymore",
+        headingEs: "Mobile-first ya no es un extra deseable",
+        body: [
+          "For most local and service businesses in Mexico, mobile traffic is the majority, not the exception. Designing for desktop first and adapting down produces sites that technically work on mobile but weren't actually built for how most visitors experience them. Designing mobile-first, then expanding up, tends to produce a cleaner result at every size.",
+        ],
+        bodyEs: [
+          "Para la mayoría de los negocios locales y de servicio en México, el tráfico móvil es la mayoría, no la excepción. Diseñar primero para escritorio y adaptar hacia abajo produce sitios que técnicamente funcionan en móvil pero que no fueron pensados para cómo la mayoría los experimenta. Diseñar primero para móvil, y expandir hacia arriba, suele dar un resultado más limpio en cualquier tamaño.",
+        ],
+      },
+      {
+        id: "velocidad-y-seo-tecnico",
+        heading: "Speed and technical SEO aren't separate from design",
+        headingEs: "Velocidad y SEO técnico no son algo aparte del diseño",
+        body: [
+          "A slow site loses visitors before they see any of the copy or design work that went into it, and search engines factor load speed into ranking. Technical foundations (clean code, optimized images, proper structure) aren't a phase that happens after design, they need to be part of the same decisions from the start.",
+        ],
+        bodyEs: [
+          "Un sitio lento pierde visitantes antes de que vean el copy o el trabajo de diseño que se invirtió. Los buscadores también toman en cuenta la velocidad de carga para el posicionamiento. Los fundamentos técnicos (código limpio, imágenes optimizadas, estructura adecuada) no son una fase que pasa después del diseño, tienen que ser parte de las mismas decisiones desde el inicio.",
+        ],
+      },
+      {
+        id: "costo-y-tiempo-realistas",
+        heading: "Realistic cost and timeline expectations",
+        headingEs: "Expectativas realistas de costo y tiempo",
+        body: [
+          "A Presence or Professional-tier site runs $6,000 to $60,000 MXN and takes 3 to 6 weeks once content is approved. Lead-Gen or Automated tiers run $80,000 to $150,000 MXN and take 6 to 10 weeks. Custom commercial systems or SaaS start above $150,000 MXN and can take several months. The bottleneck is almost always content and client decisions, not the development itself.",
+        ],
+        bodyEs: [
+          "Un sitio de nivel Presencial o Profesional cuesta entre $6,000 y $60,000 MXN y toma de 3 a 6 semanas desde que se aprueba el contenido. Los niveles de Captación o Automatizada van de $80,000 a $150,000 MXN y toman de 6 a 10 semanas. Los sistemas comerciales o SaaS a medida arrancan sobre los $150,000 MXN y pueden tomar varios meses. El cuello de botella casi siempre es el contenido y las decisiones del cliente, no el desarrollo en sí.",
+        ],
+      },
+      {
+        id: "el-lanzamiento-no-es-la-meta",
+        heading: "Launch is the starting line, not the finish line",
+        headingEs: "El lanzamiento es el punto de partida, no la meta",
+        body: [
+          "A site that never gets revisited after launch slowly falls behind: content ages, technology moves on, and what converted well at launch drifts as the market changes. Basic maintenance (security updates, backups, periodic content refreshes) keeps a site performing instead of quietly decaying while nobody's watching.",
+        ],
+        bodyEs: [
+          "Un sitio que nunca se revisa después de lanzarse se va quedando atrás poco a poco: el contenido envejece, la tecnología avanza, y lo que convertía bien al lanzamiento se desactualiza conforme cambia el mercado. El mantenimiento básico (actualizaciones de seguridad, respaldos, actualizaciones periódicas de contenido) mantiene un sitio funcionando en vez de dejarlo decaer en silencio sin que nadie lo note.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Qué nivel de página web necesita mi negocio?",
+        qEn: "What tier of website does my business actually need?",
+        a: "Depende de lo que el sitio necesita lograr: si solo necesitas existir y dar confianza básica, un nivel Presencial o Profesional basta. Si necesitas captar y calificar leads activamente, necesitas el nivel de Captación o Automatizada en adelante.",
+        aEn: "It depends on what the site needs to accomplish: if you just need to exist and provide basic trust, a Presence or Professional tier is enough. If you need to actively capture and qualify leads, you need Lead-Gen or Automated tier and up.",
+      },
+      {
+        q: "¿Cuánto cuesta una página web profesional en México?",
+        qEn: "How much does a professional website cost in Mexico?",
+        a: "Un sitio de nivel Profesional va de $25,000 a $60,000 MXN. Los niveles con captación de leads e integraciones suben de $80,000 a $150,000 MXN. El detalle completo de precios por nivel está en nuestra guía de precios.",
+        aEn: "A Professional-tier site runs $25,000 to $60,000 MXN. Tiers with lead capture and integrations run $80,000 to $150,000 MXN. Full pricing detail by tier is in our pricing guide.",
+      },
+      {
+        q: "¿Cuánto tiempo toma construir un sitio web?",
+        qEn: "How long does it take to build a website?",
+        a: "Un sitio Presencial o Profesional toma de 3 a 6 semanas desde que se aprueba el contenido. Uno con captación e integraciones toma de 6 a 10 semanas. El contenido y las decisiones del cliente son el factor que más alarga el proceso, no el desarrollo.",
+        aEn: "A Presence or Professional site takes 3 to 6 weeks once content is approved. One with lead capture and integrations takes 6 to 10 weeks. Content and client decisions are the factor that most extends the process, not development itself.",
+      },
+      {
+        q: "¿El diseño o el copy importa más para convertir visitantes?",
+        qEn: "Does design or copy matter more for converting visitors?",
+        a: "Los dos importan, pero el copy suele pesar más de lo que se espera. Un diseño impecable con copy genérico sigue sin convertir, porque el visitante actúa según si el texto responde su duda específica, no según qué tan bonita se ve la página.",
+        aEn: "Both matter, but copy usually carries more weight than expected. Flawless design with generic copy still fails to convert, because the visitor acts based on whether the text answers their specific doubt, not on how nice the page looks.",
+      },
+      {
+        q: "¿Es necesario dar mantenimiento a un sitio web después de lanzarlo?",
+        qEn: "Is website maintenance necessary after launch?",
+        a: "Sí. Un sitio sin mantenimiento acumula riesgos de seguridad y contenido desactualizado con el tiempo. El mantenimiento básico debería presupuestarse como parte continua del sitio, no como un gasto sorpresa.",
+        aEn: "Yes. A site without maintenance accumulates security risks and outdated content over time. Basic maintenance should be budgeted as an ongoing part of the site, not as a surprise expense.",
+      },
+      {
+        q: "¿Wix o Squarespace son suficientes o necesito desarrollo a medida?",
+        qEn: "Is Wix or Squarespace enough, or do I need custom development?",
+        a: "Para un sitio de nivel Presencial con presupuesto ajustado, un builder puede ser suficiente. En el momento en que necesitas control real de SEO, lógica de conversión o integraciones, el desarrollo a medida se vuelve la opción más rentable a mediano plazo.",
+        aEn: "For a Presence-tier site with a tight budget, a builder can be enough. The moment you need real SEO control, conversion logic, or integrations, custom development becomes the more cost-effective option in the medium term.",
+      },
+    ],
+    schema: {
+      keywords: ["web design guide", "professional website design", "website tiers pricing"],
+      keywordsEs: ["guia diseno web", "diseño web profesional", "niveles de pagina web"],
+    },
+  },
+  {
+    slug: "cuanto-tarda-hacer-una-pagina-web",
+    title: "How Long Does It Take to Build a Professional Website?",
+    titleEs: "¿Cuánto Tarda Hacer una Página Web Profesional?",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "Real timelines by tier: a Presence or Professional site takes 3 to 6 weeks, Lead-Gen or Automated tiers take 6 to 10. The real bottleneck is almost never development.",
+    excerptEs:
+      "Tiempos reales por nivel: un sitio Presencial o Profesional toma de 3 a 6 semanas, los niveles de Captación o Automatizada de 6 a 10. El cuello de botella real casi nunca es el desarrollo.",
+    readingTime: 4,
+    date: "2026-09-18",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A Presence or Professional-tier website takes 3 to 6 weeks once content is approved. A Lead-Gen or Automated site, with forms, integrations and conversion logic, takes 6 to 10 weeks. Custom commercial systems or SaaS can take several months. Development speed is rarely what determines these timelines.",
+    ledeEs:
+      "Un sitio de nivel Presencial o Profesional toma entre 3 y 6 semanas desde que se aprueba el contenido. Un sitio de Captación o Automatizado, con formularios, integraciones y lógica de conversión, toma de 6 a 10 semanas. Sistemas comerciales o SaaS a medida pueden tomar varios meses. La velocidad de desarrollo casi nunca es lo que determina estos tiempos.",
+    sections: [
+      {
+        id: "tiempos-por-nivel",
+        heading: "Timeline by tier",
+        headingEs: "Tiempos por nivel",
+        body: [
+          "Presence and Professional tiers: 3 to 6 weeks. Lead-Gen and Automated tiers: 6 to 10 weeks, since they add forms, integrations and conversion logic that need testing. Commercial systems and custom SaaS: several months, because they involve custom development and often a database architecture built from scratch.",
+        ],
+        bodyEs: [
+          "Niveles Presencial y Profesional: de 3 a 6 semanas. Niveles de Captación y Automatizada: de 6 a 10 semanas, porque suman formularios, integraciones y lógica de conversión que necesitan probarse. Sistemas comerciales y SaaS a medida: varios meses, porque implican desarrollo a la medida y muchas veces una arquitectura de base de datos construida desde cero.",
+        ],
+      },
+      {
+        id: "el-verdadero-cuello-de-botella",
+        heading: "The real bottleneck: content, not code",
+        headingEs: "El verdadero cuello de botella: el contenido, no el código",
+        body: [
+          "The clock starts once content is approved, not once the contract is signed, because most delays happen before that point: waiting on photos, copy revisions, or a final decision on messaging. A team that already has its content ready can move through a build noticeably faster than one that's writing copy as the project goes.",
+        ],
+        bodyEs: [
+          "El reloj arranca cuando se aprueba el contenido, no cuando se firma el contrato, porque la mayoría de los retrasos pasan antes de ese punto: esperar fotos, revisiones de copy, o una decisión final sobre el mensaje. Un equipo que ya tiene su contenido listo avanza notablemente más rápido que uno que está escribiendo el copy sobre la marcha.",
+        ],
+      },
+      {
+        id: "que-acelera-el-proceso",
+        heading: "What actually speeds things up",
+        headingEs: "Qué acelera realmente el proceso",
+        body: [
+          "Having brand assets ready (logo, photos, existing copy), giving fast feedback on drafts instead of batching revisions, and having one clear decision-maker instead of a committee reviewing every screen are the three factors that most reliably shorten a timeline, more than anything on the development side.",
+        ],
+        bodyEs: [
+          "Tener los activos de marca listos (logo, fotos, copy existente), dar retroalimentación rápida sobre los borradores en vez de acumular revisiones, y tener una sola persona que decide en vez de un comité revisando cada pantalla, son los tres factores que más confiablemente acortan un tiempo de entrega, más que cualquier cosa del lado del desarrollo.",
+        ],
+      },
+      {
+        id: "cuando-desconfiar-de-un-tiempo-prometido",
+        heading: "When to be skeptical of a promised timeline",
+        headingEs: "Cuándo desconfiar de un tiempo prometido",
+        body: [
+          "A quote promising a fully custom Lead-Gen site in a few days is either using a heavily templated base with minimal customization, or setting an expectation it won't meet. Realistic timelines account for real design, real copy, and real testing, not just filling in a pre-built shell.",
+        ],
+        bodyEs: [
+          "Una cotización que promete un sitio de Captación totalmente a medida en unos días o está usando una base muy basada en plantilla con personalización mínima, o está creando una expectativa que no va a cumplir. Los tiempos realistas contemplan diseño real, copy real y pruebas reales, no solo llenar una plantilla ya hecha.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Puedo tener mi página web lista en una semana?",
+        qEn: "Can I have my website ready in one week?",
+        a: "Para un sitio muy básico de nivel Presencial con contenido ya listo, es posible en casos específicos. Para cualquier sitio con estrategia, copy real y estructura de conversión, una semana no es un tiempo realista.",
+        aEn: "For a very basic Presence-tier site with content already ready, it's possible in specific cases. For any site with strategy, real copy, and conversion structure, one week isn't a realistic timeframe.",
+      },
+      {
+        q: "¿Qué es lo que más retrasa un proyecto de página web?",
+        qEn: "What most commonly delays a website project?",
+        a: "Casi siempre el contenido: fotos que faltan, copy que no se aprueba, o decisiones de mensaje que se posponen. El desarrollo en sí rara vez es el factor que más alarga el proceso.",
+        aEn: "It's almost always content: missing photos, copy that doesn't get approved, or messaging decisions that get postponed. Development itself is rarely the factor that most extends the process.",
+      },
+      {
+        q: "¿El tiempo incluye SEO y copywriting o son procesos aparte?",
+        qEn: "Does the timeline include SEO and copywriting, or are those separate processes?",
+        a: "La estructura SEO y el copywriting van integrados dentro del tiempo de construcción, no como fases separadas después. Es parte de por qué el proceso toma semanas y no días.",
+        aEn: "SEO structure and copywriting are integrated within the build timeline, not as separate phases afterward. That's part of why the process takes weeks, not days.",
+      },
+      {
+        q: "¿Cómo puedo acortar el tiempo de entrega de mi lado?",
+        qEn: "How can I shorten the delivery timeline on my end?",
+        a: "Ten listos tus activos de marca desde el inicio, responde revisiones rápido en vez de acumularlas, y designa a una sola persona con autoridad para aprobar decisiones, en vez de un comité.",
+        aEn: "Have your brand assets ready from the start, respond to revisions quickly instead of batching them, and designate one person with authority to approve decisions, instead of a committee.",
+      },
+    ],
+    schema: {
+      keywords: ["how long does website take", "website timeline"],
+      keywordsEs: ["cuanto tarda una pagina web", "tiempo de entrega pagina web"],
+    },
+  },
+  {
+    slug: "wordpress-vs-desarrollo-a-medida",
+    title: "WordPress vs. Custom Development vs. AI Builders",
+    titleEs: "WordPress vs Desarrollo a Medida vs Builders con IA",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "Three real paths to a website, and what each one actually trades off: WordPress's plugin ecosystem, custom development's control, and AI builders' speed.",
+    excerptEs:
+      "Tres caminos reales hacia una página web, y qué sacrifica cada uno en realidad: el ecosistema de plugins de WordPress, el control del desarrollo a medida, y la velocidad de los builders con IA.",
+    readingTime: 6,
+    date: "2026-09-20",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "WordPress, custom development, and AI-assisted builders each solve a different problem, not the same problem at different price points. Picking based on which one is trendiest, instead of which one fits the actual project, is how businesses end up migrating platforms a year later.",
+    ledeEs:
+      "WordPress, el desarrollo a medida y los builders asistidos por IA resuelven problemas distintos, no el mismo problema a distintos precios. Elegir según cuál está de moda, en vez de cuál encaja con el proyecto real, es la razón por la que tantos negocios terminan migrando de plataforma un año después.",
+    sections: [
+      {
+        id: "wordpress-lo-bueno-y-lo-malo",
+        heading: "WordPress: the plugin ecosystem, and its cost",
+        headingEs: "WordPress: el ecosistema de plugins, y su costo",
+        body: [
+          "WordPress's real strength is its plugin ecosystem, almost any functionality already exists as a plugin, which makes it fast to add features without custom code. The tradeoff is that each plugin is a dependency that needs updates, can conflict with others, and adds a potential security vulnerability. A WordPress site with fifteen plugins is fifteen things that can break independently.",
+        ],
+        bodyEs: [
+          "La verdadera fortaleza de WordPress es su ecosistema de plugins: casi cualquier funcionalidad ya existe como plugin, lo que lo hace rápido para agregar funciones sin código a medida. El costo es que cada plugin es una dependencia que necesita actualizarse, puede entrar en conflicto con otros, y suma una posible vulnerabilidad de seguridad. Un sitio de WordPress con quince plugins son quince cosas que pueden fallar de forma independiente.",
+        ],
+      },
+      {
+        id: "desarrollo-a-medida-lo-bueno-y-lo-malo",
+        heading: "Custom development: full control, at a real cost",
+        headingEs: "Desarrollo a medida: control total, a un costo real",
+        body: [
+          "Custom development means every piece of the site is built specifically for the business, with no unused features, no plugin bloat, and full control over performance and structure. It costs more upfront and takes longer than a template-based approach, but it removes the ceiling that pre-built systems eventually hit as a business grows.",
+        ],
+        bodyEs: [
+          "El desarrollo a medida significa que cada parte del sitio se construye específicamente para el negocio, sin funciones sin usar, sin exceso de plugins, y con control total sobre rendimiento y estructura. Cuesta más de entrada y toma más tiempo que un enfoque basado en plantillas, pero elimina el techo con el que los sistemas prefabricados eventualmente chocan conforme el negocio crece.",
+        ],
+      },
+      {
+        id: "builders-con-ia-lo-nuevo",
+        heading: "AI-assisted builders: real speed, with real limits",
+        headingEs: "Builders con IA: velocidad real, con límites reales",
+        body: [
+          "Newer AI-assisted builders can generate a working site from a description in a fraction of the time either WordPress setup or fully custom development takes. That speed is genuinely useful for a first version or a Presence-tier site. It's a weaker fit once a project needs precise conversion logic, complex integrations, or design decisions that a generic AI-generated layout won't get right without significant hands-on refinement.",
+        ],
+        bodyEs: [
+          "Los builders más nuevos asistidos por IA pueden generar un sitio funcional a partir de una descripción en una fracción del tiempo que toma tanto configurar WordPress como el desarrollo totalmente a medida. Esa velocidad es genuinamente útil para una primera versión o un sitio de nivel Presencial. Es un ajuste más débil en el momento en que un proyecto necesita lógica de conversión precisa, integraciones complejas, o decisiones de diseño que un layout genérico generado por IA no va a acertar sin un refinamiento manual importante.",
+        ],
+      },
+      {
+        id: "como-lo-usamos-en-aphelion",
+        heading: "Where this fits into how we actually build",
+        headingEs: "Dónde encaja esto en cómo construimos en realidad",
+        body: [
+          "In practice, the fastest path to a genuinely custom result combines both worlds: AI-assisted tooling accelerates the mechanical parts of building a site, while the strategy, copy, and conversion decisions stay entirely human. That combination produces something faster than pure custom development from scratch, without the generic feel of an unedited AI-generated site.",
+        ],
+        bodyEs: [
+          "En la práctica, el camino más rápido hacia un resultado genuinamente a medida combina ambos mundos: las herramientas asistidas por IA aceleran las partes mecánicas de construir un sitio, mientras que la estrategia, el copy y las decisiones de conversión se quedan completamente en manos humanas. Esa combinación produce algo más rápido que el desarrollo a medida puro desde cero, sin el aire genérico de un sitio generado por IA sin editar.",
+        ],
+      },
+      {
+        id: "como-decidir",
+        heading: "How to actually decide between the three",
+        headingEs: "Cómo decidir realmente entre los tres",
+        body: [
+          "If the site needs to launch fast with a tight budget and modest ambitions, an AI-assisted or template approach fits. If the business already knows it needs specific integrations and plans to scale the site over years, custom development is worth the extra time and cost. WordPress sits in between: useful when the plugin ecosystem covers most of what's needed and the ongoing maintenance tradeoff is acceptable.",
+        ],
+        bodyEs: [
+          "Si el sitio necesita lanzarse rápido con presupuesto ajustado y ambiciones modestas, un enfoque asistido por IA o basado en plantilla encaja. Si el negocio ya sabe que necesita integraciones específicas y planea escalar el sitio durante años, el desarrollo a medida vale el tiempo y costo extra. WordPress queda en medio: útil cuando el ecosistema de plugins cubre la mayor parte de lo necesario y el costo de mantenimiento continuo es aceptable.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿WordPress es mala opción para un negocio serio?",
+        qEn: "Is WordPress a bad choice for a serious business?",
+        a: "No necesariamente. Es una opción sólida cuando el ecosistema de plugins cubre lo que el negocio necesita y hay disposición a mantenerlo actualizado. El riesgo aparece cuando se acumulan demasiados plugins sin mantenimiento.",
+        aEn: "Not necessarily. It's a solid option when the plugin ecosystem covers what the business needs and there's willingness to keep it updated. The risk shows up when too many plugins pile up without maintenance.",
+      },
+      {
+        q: "¿Los builders con IA producen sitios de baja calidad?",
+        qEn: "Do AI builders produce low-quality sites?",
+        a: "No inherentemente, pero suelen necesitar refinamiento humano para no verse genéricos. Son más fuertes para velocidad inicial que para el resultado final sin edición.",
+        aEn: "Not inherently, but they usually need human refinement to avoid looking generic. They're stronger for initial speed than for the final result without editing.",
+      },
+      {
+        q: "¿El desarrollo a medida siempre vale la pena?",
+        qEn: "Is custom development always worth it?",
+        a: "Vale la pena cuando el negocio ya sabe que va a escalar el sitio con integraciones y funciones específicas. Para un sitio simple de presencia, puede ser más inversión de la que el proyecto necesita.",
+        aEn: "It's worth it when the business already knows it's going to scale the site with specific integrations and features. For a simple presence site, it can be more investment than the project needs.",
+      },
+      {
+        q: "¿Se puede migrar de WordPress a desarrollo a medida después?",
+        qEn: "Can you migrate from WordPress to custom development later?",
+        a: "Sí, es una migración común, pero implica reconstruir gran parte del sitio desde cero. Por eso conviene pensar el nivel correcto desde el inicio en vez de asumir que migrar después es trivial.",
+        aEn: "Yes, it's a common migration, but it involves rebuilding much of the site from scratch. That's why it's worth thinking through the right tier from the start instead of assuming migrating later is trivial.",
+      },
+    ],
+    schema: {
+      keywords: ["WordPress vs custom development", "AI website builders"],
+      keywordsEs: ["wordpress vs desarrollo a medida", "builders de paginas web con ia"],
+    },
+  },
+  {
+    slug: "errores-de-diseno-web",
+    title: "Web Design Mistakes That Quietly Kill Your Sales",
+    titleEs: "Errores de Diseño Web que Matan tus Ventas",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "The recurring mistakes that make an otherwise decent-looking website fail to convert: buried CTAs, no mobile testing, and copy that talks about the business instead of the visitor.",
+    excerptEs:
+      "Los errores recurrentes que hacen que un sitio bien visto no convierta: llamados a la acción escondidos, cero pruebas en móvil, y copy que habla de la empresa en vez de hablarle a quien visita.",
+    readingTime: 6,
+    date: "2026-09-22",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A website can look professional and still fail at its actual job. Most of the time it's not one dramatic mistake, it's a handful of small, recurring ones that each quietly cost a fraction of the visitors who would have otherwise converted.",
+    ledeEs:
+      "Una página web puede verse profesional y aun así fallar en su verdadero trabajo. Casi siempre no es un error dramático, es un puñado de errores pequeños y recurrentes que, cada uno, le cuestan en silencio una fracción de los visitantes que de otra forma habrían convertido.",
+    sections: [
+      {
+        id: "cta-escondido",
+        heading: "Burying the call to action",
+        headingEs: "Esconder el llamado a la acción",
+        body: [
+          "A call to action that only appears once, at the very bottom of a long page, misses every visitor who decides before scrolling that far. The CTA should repeat at natural decision points throughout the page, not exist as a single afterthought at the end.",
+        ],
+        bodyEs: [
+          "Un llamado a la acción que solo aparece una vez, hasta el fondo de una página larga, se pierde a todo visitante que decide antes de llegar tan lejos. El llamado a la acción debería repetirse en los puntos naturales de decisión a lo largo de la página, no existir como una idea tardía al final.",
+        ],
+      },
+      {
+        id: "copy-centrado-en-la-empresa",
+        heading: "Writing copy about the business instead of the visitor",
+        headingEs: "Escribir copy sobre la empresa en vez de sobre quien visita",
+        body: [
+          "Copy that opens with company history and credentials before addressing what the visitor actually came looking for loses attention in the first few seconds. Leading with the visitor's problem, and only introducing the business as the answer to it, holds attention far longer.",
+        ],
+        bodyEs: [
+          "El copy que abre con la historia y las credenciales de la empresa antes de atender lo que el visitante realmente vino a buscar pierde la atención en los primeros segundos. Empezar con el problema del visitante, y presentar a la empresa recién como la respuesta a eso, sostiene la atención mucho más tiempo.",
+        ],
+      },
+      {
+        id: "no-probar-en-movil-real",
+        heading: "Never testing on an actual phone",
+        headingEs: "Nunca probar en un celular de verdad",
+        body: [
+          "A site reviewed only on a desktop browser can hide layout problems, tiny tap targets, or slow load times that only show up on a real mobile connection. Testing on an actual phone, on real mobile data instead of office wifi, catches problems a desktop review never will.",
+        ],
+        bodyEs: [
+          "Un sitio revisado solo en un navegador de escritorio puede esconder problemas de layout, botones demasiado pequeños para tocar, o tiempos de carga lentos que solo se notan en una conexión móvil real. Probar en un celular de verdad, con datos móviles reales en vez de wifi de oficina, detecta problemas que una revisión en escritorio nunca va a mostrar.",
+        ],
+      },
+      {
+        id: "demasiadas-opciones",
+        heading: "Giving the visitor too many competing options",
+        headingEs: "Darle a quien visita demasiadas opciones que compiten entre sí",
+        body: [
+          "A homepage with five different calls to action of equal visual weight forces the visitor to decide which one matters, and many will simply leave rather than choose. One primary action per page, with everything else visually secondary, converts more reliably than a page trying to accomplish five goals at once.",
+        ],
+        bodyEs: [
+          "Una página de inicio con cinco llamados a la acción distintos y del mismo peso visual obliga al visitante a decidir cuál importa, y muchos simplemente se van en vez de elegir. Una acción principal por página, con todo lo demás visualmente secundario, convierte de forma más confiable que una página que intenta lograr cinco objetivos a la vez.",
+        ],
+      },
+      {
+        id: "no-medir-nada",
+        heading: "Launching without any way to measure results",
+        headingEs: "Lanzar sin ninguna forma de medir resultados",
+        body: [
+          "A site that launches without analytics or conversion tracking makes every future decision a guess instead of a data-backed call. Setting up basic tracking before launch, not weeks after, is what turns a site into something that can actually be improved over time.",
+        ],
+        bodyEs: [
+          "Un sitio que se lanza sin analítica ni seguimiento de conversión convierte cada decisión futura en una suposición en vez de una decisión con datos. Configurar el seguimiento básico antes del lanzamiento, no semanas después, es lo que convierte a un sitio en algo que realmente se puede mejorar con el tiempo.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuál es el error de diseño web más común?",
+        qEn: "What's the most common web design mistake?",
+        a: "Esconder o diluir el llamado a la acción, ya sea porque aparece solo una vez, hasta el final, o porque compite con demasiadas otras opciones en la misma página.",
+        aEn: "Burying or diluting the call to action, whether because it only appears once at the very end, or because it competes with too many other options on the same page.",
+      },
+      {
+        q: "¿Un sitio bonito puede convertir mal de todas formas?",
+        qEn: "Can a nice-looking site still convert poorly?",
+        a: "Sí, y es más común de lo que parece. El diseño visual y la conversión son cosas relacionadas pero distintas. Un sitio puede verse impecable y aun así fallar en guiar al visitante hacia una acción clara.",
+        aEn: "Yes, and it's more common than it seems. Visual design and conversion are related but different things. A site can look flawless and still fail to guide the visitor toward a clear action.",
+      },
+      {
+        q: "¿Cómo sé si mi sitio tiene estos errores?",
+        qEn: "How do I know if my site has these mistakes?",
+        a: "Una auditoría rápida ayuda: revisa el sitio en un celular real, cronometra cuánto tarda en cargar, y pregúntate si en los primeros cinco segundos queda claro qué debe hacer el visitante.",
+        aEn: "A quick audit helps: review the site on an actual phone, time how long it takes to load, and ask whether in the first five seconds it's clear what the visitor should do.",
+      },
+      {
+        q: "¿Corregir estos errores requiere rediseñar todo el sitio?",
+        qEn: "Does fixing these mistakes require redesigning the whole site?",
+        a: "No en la mayoría de los casos. Muchos de estos errores se corrigen con ajustes puntuales de copy, jerarquía visual y llamados a la acción, sin necesidad de reconstruir el sitio desde cero.",
+        aEn: "Not in most cases. Many of these mistakes get fixed with targeted adjustments to copy, visual hierarchy, and calls to action, without needing to rebuild the site from scratch.",
+      },
+    ],
+    schema: {
+      keywords: ["web design mistakes", "website conversion mistakes"],
+      keywordsEs: ["errores de diseño web", "errores que matan conversion"],
+    },
+  },
+  {
+    slug: "checklist-para-lanzar-pagina-web",
+    title: "Checklist Before Launching Your Website (30 Points)",
+    titleEs: "Checklist Antes de Lanzar tu Página Web (30 Puntos)",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "The five categories that matter most before going live: content accuracy, mobile testing, tracking setup, technical basics, and a real conversion path.",
+    excerptEs:
+      "Las cinco categorías que más importan antes de salir en vivo: precisión del contenido, pruebas en móvil, configuración de seguimiento, fundamentos técnicos, y un camino de conversión real.",
+    readingTime: 5,
+    date: "2026-09-24",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most launch-day problems fall into five categories: content that's wrong or outdated, a site that wasn't actually tested on mobile, missing analytics, technical basics left unchecked, and no clear path for a visitor to take action. Catching these before launch is far cheaper than fixing them after.",
+    ledeEs:
+      "La mayoría de los problemas del día del lanzamiento caen en cinco categorías: contenido incorrecto o desactualizado, un sitio que nunca se probó realmente en móvil, analítica ausente, fundamentos técnicos sin revisar, y ningún camino claro para que el visitante actúe. Detectar esto antes del lanzamiento sale mucho más barato que corregirlo después.",
+    sections: [
+      {
+        id: "contenido-y-precision",
+        heading: "Content accuracy",
+        headingEs: "Precisión del contenido",
+        body: [
+          "Every phone number, address, price, and business hour on the site needs to be verified against the actual current information, not copied from an old brochure. A single wrong phone number can quietly cost real leads for weeks before anyone notices.",
+        ],
+        bodyEs: [
+          "Cada teléfono, dirección, precio y horario en el sitio necesita verificarse contra la información real y actual, no copiarse de un folleto viejo. Un solo número de teléfono equivocado puede costar leads reales durante semanas antes de que alguien lo note.",
+        ],
+      },
+      {
+        id: "pruebas-en-movil-real",
+        heading: "Real mobile testing",
+        headingEs: "Pruebas reales en móvil",
+        body: [
+          "Every page needs to be checked on an actual phone, on real mobile data, not just in a browser's mobile preview mode. Forms, buttons, and load speed can all behave differently on a real device than they do in a simulated preview.",
+        ],
+        bodyEs: [
+          "Cada página necesita revisarse en un celular de verdad, con datos móviles reales, no solo en el modo de vista previa móvil de un navegador. Los formularios, botones y velocidad de carga pueden comportarse distinto en un dispositivo real que en una vista previa simulada.",
+        ],
+      },
+      {
+        id: "seguimiento-y-analitica",
+        heading: "Tracking and analytics",
+        headingEs: "Seguimiento y analítica",
+        body: [
+          "Analytics, conversion tracking, and any ad pixels need to be installed and verified as working before launch, not added afterward. Confirming a test conversion actually registers is the only way to know tracking is truly set up correctly, not just installed.",
+        ],
+        bodyEs: [
+          "La analítica, el seguimiento de conversión y cualquier pixel de anuncios necesitan estar instalados y verificados como funcionales antes del lanzamiento, no agregados después. Confirmar que una conversión de prueba realmente se registra es la única forma de saber que el seguimiento está bien configurado, no solo instalado.",
+        ],
+      },
+      {
+        id: "fundamentos-tecnicos",
+        heading: "Technical basics",
+        headingEs: "Fundamentos técnicos",
+        body: [
+          "SSL certificate active, all forms tested with a real submission, broken links checked, and page load speed confirmed on a real connection. These are unglamorous but they're the difference between a site that works and one that quietly fails for some visitors.",
+        ],
+        bodyEs: [
+          "Certificado SSL activo, todos los formularios probados con un envío real, enlaces rotos revisados, y velocidad de carga confirmada en una conexión real. No son detalles llamativos, pero son la diferencia entre un sitio que funciona y uno que falla en silencio para algunos visitantes.",
+        ],
+      },
+      {
+        id: "un-camino-de-conversion-claro",
+        heading: "One clear conversion path",
+        headingEs: "Un camino de conversión claro",
+        body: [
+          "Before launch, walk through the site as a first-time visitor would and confirm there's exactly one obvious next step at every point, not several competing ones. If it's not immediately clear what to do next, a real visitor won't figure it out either.",
+        ],
+        bodyEs: [
+          "Antes de lanzar, recorre el sitio como lo haría un visitante por primera vez y confirma que hay exactamente un siguiente paso obvio en cada punto, no varios compitiendo entre sí. Si no queda claro qué hacer a continuación, un visitante real tampoco lo va a averiguar.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuáles son los errores más comunes al lanzar una página web?",
+        qEn: "What are the most common mistakes when launching a website?",
+        a: "Información desactualizada, formularios sin probar, y analítica que nunca se verificó como funcional. Los tres son fáciles de detectar con una revisión metódica antes del lanzamiento.",
+        aEn: "Outdated information, untested forms, and analytics that was never verified as working. All three are easy to catch with a methodical review before launch.",
+      },
+      {
+        q: "¿Cuánto tiempo toma hacer esta revisión antes de lanzar?",
+        qEn: "How long does this pre-launch review take?",
+        a: "Para un sitio de tamaño moderado, una revisión completa suele tomar de un día a unos cuantos, dependiendo de cuántas páginas y formularios hay que verificar.",
+        aEn: "For a moderately sized site, a full review usually takes anywhere from a day to a few, depending on how many pages and forms need verification.",
+      },
+      {
+        q: "¿Es necesario probar el sitio en varios navegadores?",
+        qEn: "Is it necessary to test the site across multiple browsers?",
+        a: "Sí, al menos en los navegadores más usados por tu audiencia. Un sitio que se ve bien en un navegador puede tener problemas visuales o funcionales en otro.",
+        aEn: "Yes, at least across the browsers most used by your audience. A site that looks fine in one browser can have visual or functional issues in another.",
+      },
+      {
+        q: "¿Qué pasa si detecto un problema después de lanzar?",
+        qEn: "What happens if I find a problem after launching?",
+        a: "Se corrige lo antes posible, pero es mucho más caro en tiempo y en leads perdidos que haberlo detectado en la revisión previa al lanzamiento.",
+        aEn: "It gets fixed as soon as possible, but it's far more costly in time and lost leads than catching it in the pre-launch review.",
+      },
+    ],
+    schema: {
+      keywords: ["website launch checklist", "pre-launch website checklist"],
+      keywordsEs: ["checklist lanzar pagina web", "revision antes de lanzar sitio web"],
+    },
+  },
+  {
+    slug: "que-debe-incluir-una-pagina-web",
+    title: "What Should a Professional Website Actually Include?",
+    titleEs: "¿Qué Debe Incluir una Página Web Profesional?",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "The pages and elements a business site genuinely needs to do its job, and which commonly-added extras don't move the needle for most businesses.",
+    excerptEs:
+      "Las páginas y elementos que un sitio de negocio realmente necesita para cumplir su trabajo, y qué extras comunes no mueven la aguja para la mayoría de los negocios.",
+    readingTime: 5,
+    date: "2026-09-26",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A professional website needs a home page that states clearly what the business does and for whom, a services or products section, a way to establish trust, and one obvious way to take action. Everything beyond that should earn its place by serving a specific purpose, not by being expected.",
+    ledeEs:
+      "Una página web profesional necesita una página de inicio que diga con claridad qué hace el negocio y para quién, una sección de servicios o productos, una forma de generar confianza, y una manera obvia de tomar acción. Todo lo que va más allá de eso debería ganarse su lugar cumpliendo un propósito específico, no porque se espera que esté ahí.",
+    sections: [
+      {
+        id: "la-pagina-de-inicio",
+        heading: "The home page: clarity, not cleverness",
+        headingEs: "La página de inicio: claridad, no ingenio",
+        body: [
+          "A visitor should understand what the business does and who it's for within a few seconds of landing, without needing to scroll or interpret a clever tagline. A home page trying to be memorable before being clear usually loses visitors who came looking for a straightforward answer.",
+        ],
+        bodyEs: [
+          "Un visitante debería entender qué hace el negocio y para quién es en los primeros segundos, sin necesitar hacer scroll o interpretar un eslogan ingenioso. Una página de inicio que intenta ser memorable antes que clara suele perder visitantes que llegaron buscando una respuesta directa.",
+        ],
+      },
+      {
+        id: "servicios-o-productos",
+        heading: "A clear services or products section",
+        headingEs: "Una sección clara de servicios o productos",
+        body: [
+          "Whatever the business offers needs its own dedicated space, described in terms of what the visitor gets, not just a feature list. Pricing information, even as a range, tends to reduce friction rather than scare visitors away, since ambiguity about cost is a common reason people leave without contacting.",
+        ],
+        bodyEs: [
+          "Lo que sea que ofrezca el negocio necesita su propio espacio dedicado, descrito en términos de lo que recibe el visitante, no solo como una lista de características. La información de precio, aunque sea un rango, tiende a reducir la fricción en vez de espantar visitantes, ya que la ambigüedad sobre el costo es una razón común por la que la gente se va sin contactar.",
+        ],
+      },
+      {
+        id: "prueba-social-y-confianza",
+        heading: "Real trust signals, not generic ones",
+        headingEs: "Señales de confianza reales, no genéricas",
+        body: [
+          "Real client names, specific results, or recognizable logos build more trust than generic testimonials with no attribution. A single detailed case with real numbers usually outperforms five vague, unverifiable quotes.",
+        ],
+        bodyEs: [
+          "Nombres reales de clientes, resultados específicos, o logos reconocibles generan más confianza que testimonios genéricos sin atribución. Un solo caso detallado con números reales suele superar a cinco frases vagas y sin forma de verificarse.",
+        ],
+      },
+      {
+        id: "informacion-de-contacto-completa",
+        heading: "Contact information that removes friction",
+        headingEs: "Información de contacto que elimina fricción",
+        body: [
+          "Phone, WhatsApp, email, and physical address (if relevant) should be easy to find from any page, not buried three clicks deep. A visitor ready to act who can't quickly find how to reach the business often just leaves instead of hunting for it.",
+        ],
+        bodyEs: [
+          "Teléfono, WhatsApp, correo y dirección física (si aplica) deberían ser fáciles de encontrar desde cualquier página, no estar escondidos a tres clics de distancia. Un visitante listo para actuar que no encuentra rápido cómo contactar al negocio muchas veces simplemente se va en vez de buscarlo.",
+        ],
+      },
+      {
+        id: "lo-que-no-siempre-hace-falta",
+        heading: "What doesn't always need to be there",
+        headingEs: "Lo que no siempre hace falta",
+        body: [
+          "A blog, a full team-bios page, or a chat widget aren't universally necessary, they earn their place depending on the business. A blog only helps if it's maintained consistently; an abandoned one with three posts from two years ago hurts more than it helps.",
+        ],
+        bodyEs: [
+          "Un blog, una página completa de biografías del equipo, o un widget de chat no son universalmente necesarios, se ganan su lugar dependiendo del negocio. Un blog solo ayuda si se mantiene con constancia; uno abandonado con tres publicaciones de hace dos años perjudica más de lo que ayuda.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Es obligatorio tener un blog en mi página web?",
+        qEn: "Is it mandatory to have a blog on my website?",
+        a: "No. Un blog solo aporta si se mantiene con contenido nuevo de forma constante. Uno abandonado transmite lo contrario de lo que se busca: que el negocio ya no está activo.",
+        aEn: "No. A blog only helps if it's kept up with consistent new content. An abandoned one sends the opposite signal from what's intended: that the business isn't active anymore.",
+      },
+      {
+        q: "¿Debo mostrar precios en mi página web?",
+        qEn: "Should I show pricing on my website?",
+        a: "En la mayoría de los casos sí, al menos como rango. La ambigüedad sobre el costo es una razón común por la que la gente se va sin contactar, aunque el precio final varíe por proyecto.",
+        aEn: "In most cases, yes, at least as a range. Ambiguity about cost is a common reason people leave without contacting, even if the final price varies by project.",
+      },
+      {
+        q: "¿Qué páginas son realmente indispensables?",
+        qEn: "Which pages are genuinely indispensable?",
+        a: "Inicio, servicios o productos, una forma de generar confianza (casos, testimonios verificables), y contacto. Todo lo demás depende del tipo de negocio.",
+        aEn: "Home, services or products, a way to build trust (cases, verifiable testimonials), and contact. Everything else depends on the type of business.",
+      },
+      {
+        q: "¿Los testimonios genéricos ayudan o no sirven de nada?",
+        qEn: "Do generic testimonials help, or are they useless?",
+        a: "Ayudan poco comparados con un caso real con nombre y resultado específico. Un testimonio sin atribución es fácil de desconfiar, incluso si es genuino.",
+        aEn: "They help little compared to a real case with a name and specific result. A testimonial with no attribution is easy to distrust, even when it's genuine.",
+      },
+    ],
+    schema: {
+      keywords: ["what should a website include", "essential website pages"],
+      keywordsEs: ["que debe incluir una pagina web", "paginas esenciales sitio web"],
+    },
+  },
+  {
+    slug: "pagina-web-o-redes-sociales",
+    title: "Website or Just Social Media? What Fits Your Business",
+    titleEs: "¿Página Web o Solo Redes Sociales? Qué le Conviene a tu Negocio",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "Social media alone works for some businesses. For most, it's a channel that should point back to a website you actually own, not a replacement for having one.",
+    excerptEs:
+      "Solo redes sociales funciona para algunos negocios. Para la mayoría, es un canal que debería apuntar de vuelta a una página web que realmente les pertenece, no un reemplazo de tenerla.",
+    readingTime: 5,
+    date: "2026-09-28",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Instagram or Facebook alone can be enough for a very small, hyper-local business with no ambition to scale. For almost everyone else, relying only on social media means the business doesn't own its own presence, a platform algorithm change or account issue can take away access to customers overnight.",
+    ledeEs:
+      "Instagram o Facebook solos pueden ser suficientes para un negocio muy pequeño, hiperlocal, sin ambición de crecer. Para casi todos los demás, depender solo de redes sociales significa que el negocio no es dueño de su propia presencia. Un cambio de algoritmo o un problema de cuenta puede quitarle el acceso a sus clientes de un día para otro.",
+    sections: [
+      {
+        id: "cuando-redes-solas-si-alcanzan",
+        heading: "When social media alone genuinely works",
+        headingEs: "Cuándo solo redes sociales sí alcanza",
+        body: [
+          "A very small, informal business with a narrow local audience and no plans to grow beyond word of mouth can function on social media alone for a while. It works until the moment the business wants to run serious paid ads, needs to rank in search, or wants a professional presence that doesn't depend on a platform's rules.",
+        ],
+        bodyEs: [
+          "Un negocio muy pequeño e informal, con una audiencia local acotada y sin planes de crecer más allá del boca en boca, puede funcionar solo con redes sociales por un tiempo. Funciona hasta el momento en que el negocio quiere correr anuncios pagados en serio, necesita posicionar en buscadores, o quiere una presencia profesional que no dependa de las reglas de una plataforma.",
+        ],
+      },
+      {
+        id: "el-riesgo-de-no-ser-dueño",
+        heading: "The risk of not owning your own presence",
+        headingEs: "El riesgo de no ser dueño de tu propia presencia",
+        body: [
+          "A social media account can be suspended, algorithm changes can crater organic reach overnight, and a platform can change its rules with no notice. A website is the one piece of a business's digital presence that the business actually controls end to end, nobody else can take it away.",
+        ],
+        bodyEs: [
+          "Una cuenta de redes sociales puede suspenderse, un cambio de algoritmo puede desplomar el alcance orgánico de un día para otro, y una plataforma puede cambiar sus reglas sin previo aviso. La página web es la única parte de la presencia digital de un negocio que realmente controla de principio a fin, nadie más puede quitársela.",
+        ],
+      },
+      {
+        id: "busqueda-vs-descubrimiento",
+        heading: "Search intent vs. social discovery, a different job",
+        headingEs: "Intención de búsqueda vs descubrimiento social, un trabajo distinto",
+        body: [
+          "Social media is built for discovery, someone scrolling who wasn't necessarily looking for a business like yours. Search is built for intent, someone actively looking for exactly what you offer. A website captures that second group, the ones already looking, in a way a social profile alone cannot.",
+        ],
+        bodyEs: [
+          "Las redes sociales están hechas para el descubrimiento: alguien que hace scroll sin buscar necesariamente un negocio como el tuyo. La búsqueda está hecha para la intención: alguien buscando activamente justo lo que ofreces. Una página web captura a ese segundo grupo, los que ya están buscando, de una forma que un perfil social por sí solo no logra.",
+        ],
+      },
+      {
+        id: "la-combinacion-que-funciona",
+        heading: "The combination that actually works",
+        headingEs: "La combinación que realmente funciona",
+        body: [
+          "The strongest setup uses social media to build awareness and relationship, and a website as the destination that converts that attention into an actual lead or sale. Every social post that doesn't eventually point somewhere the business owns is attention that gets spent without being captured.",
+        ],
+        bodyEs: [
+          "El montaje más fuerte usa redes sociales para construir conocimiento y relación, y una página web como el destino que convierte esa atención en un lead o venta real. Cada publicación social que no termina apuntando a algo que el negocio posee es atención que se gasta sin capturarse.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Puedo tener solo Instagram y no página web?",
+        qEn: "Can I have just Instagram and no website?",
+        a: "Es posible para un negocio muy pequeño y local sin planes de crecer, pero deja de funcionar en el momento en que quieres pautar en serio, posicionar en buscadores, o dejar de depender de las reglas de una plataforma.",
+        aEn: "It's possible for a very small, local business with no growth plans, but it stops working the moment you want to run serious paid ads, rank in search, or stop depending on a platform's rules.",
+      },
+      {
+        q: "¿Las redes sociales reemplazan al SEO?",
+        qEn: "Does social media replace SEO?",
+        a: "No. Las redes sociales están hechas para el descubrimiento casual, mientras que el SEO captura a alguien que ya está buscando activamente lo que ofreces. Son complementarios, no sustitutos.",
+        aEn: "No. Social media is built for casual discovery, while SEO captures someone who's already actively searching for what you offer. They're complementary, not substitutes.",
+      },
+      {
+        q: "¿Qué pasa si mi cuenta de redes sociales se suspende?",
+        qEn: "What happens if my social media account gets suspended?",
+        a: "Pierdes acceso inmediato a esa audiencia sin ningún control sobre cuándo o si se restaura. Es el riesgo central de depender solo de una plataforma que no controlas.",
+        aEn: "You lose immediate access to that audience with no control over when or whether it gets restored. That's the central risk of relying solely on a platform you don't control.",
+      },
+      {
+        q: "¿Cómo deberían trabajar juntas la página web y las redes sociales?",
+        qEn: "How should the website and social media work together?",
+        a: "Las redes generan conocimiento y relación, y cada publicación debería apuntar de regreso al sitio, donde ocurre la conversión real. Sin ese puente, la atención social se gasta sin capturarse.",
+        aEn: "Social media generates awareness and relationship, and every post should point back to the site, where the real conversion happens. Without that bridge, social attention gets spent without being captured.",
+      },
+    ],
+    schema: {
+      keywords: ["website vs social media", "do I need a website or just Instagram"],
+      keywordsEs: ["pagina web o redes sociales", "necesito pagina web o solo instagram"],
+    },
+  },
+  {
+    slug: "velocidad-de-carga-pagina-web",
+    title: "Page Load Speed: Why a Slow Site Is Costing You Customers",
+    titleEs: "Velocidad de Carga: Por Qué tu Web Lenta te Cuesta Clientes",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "Every extra second of load time loses a measurable share of visitors before they see anything. Speed isn't a technical detail, it's a direct factor in how many leads a site produces.",
+    excerptEs:
+      "Cada segundo extra de carga pierde una parte medible de los visitantes antes de que vean algo. La velocidad no es un detalle técnico, es un factor directo en cuántos leads produce un sitio.",
+    readingTime: 5,
+    date: "2026-09-30",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A visitor decides whether to stay within the first few seconds a page loads, and each additional second of delay measurably increases how many leave before the site even finishes rendering. Speed isn't a nice-to-have polish item, it directly determines how many of the visitors a business paid to attract actually see the page.",
+    ledeEs:
+      "Un visitante decide si se queda en los primeros segundos que tarda en cargar una página, y cada segundo adicional de demora aumenta de forma medible cuántos se van antes de que el sitio termine de mostrarse. La velocidad no es un detalle de pulido, determina directamente cuántos de los visitantes que un negocio pagó por atraer realmente llegan a ver la página.",
+    sections: [
+      {
+        id: "por-que-importa-tanto",
+        heading: "Why speed matters more than it seems",
+        headingEs: "Por qué la velocidad importa más de lo que parece",
+        body: [
+          "A slow-loading site loses visitors who arrived through paid ads before they see any of the message the ad promised, which means the wasted spend happens silently, with no obvious error to point to. Speed problems don't show up as a broken feature, they show up as a quietly lower conversion rate nobody investigates.",
+        ],
+        bodyEs: [
+          "Un sitio de carga lenta pierde visitantes que llegaron por anuncios pagados antes de que vean nada del mensaje que el anuncio prometió, lo que significa que el gasto desperdiciado ocurre en silencio, sin un error obvio al cual apuntar. Los problemas de velocidad no se ven como una función rota, se ven como una tasa de conversión más baja que nadie investiga.",
+        ],
+      },
+      {
+        id: "las-causas-mas-comunes",
+        heading: "The most common causes",
+        headingEs: "Las causas más comunes",
+        body: [
+          "Unoptimized images are the single most common culprit, a few full-resolution photos can add several seconds to load time on their own. After that, too many third-party scripts (chat widgets, tracking pixels, embedded fonts) and a hosting plan that isn't suited to the site's actual traffic round out the usual list.",
+        ],
+        bodyEs: [
+          "Las imágenes sin optimizar son la causa más común por sí sola, unas cuantas fotos en resolución completa pueden sumar varios segundos de carga por su cuenta. Después de eso, demasiados scripts de terceros (widgets de chat, pixeles de seguimiento, fuentes incrustadas) y un plan de hosting que no está a la altura del tráfico real del sitio completan la lista habitual.",
+        ],
+      },
+      {
+        id: "como-se-mide",
+        heading: "How speed actually gets measured",
+        headingEs: "Cómo se mide realmente la velocidad",
+        body: [
+          "Free tools exist to test a site's real load time and get a specific breakdown of what's slowing it down, rather than guessing based on how fast it feels on a fast office connection. Testing on a throttled, simulated mobile connection gives a far more honest picture than testing on fiber internet in an office.",
+        ],
+        bodyEs: [
+          "Existen herramientas gratuitas para medir el tiempo real de carga de un sitio y obtener un desglose específico de qué lo está frenando, en vez de adivinar según qué tan rápido se siente en una conexión rápida de oficina. Probar con una conexión móvil simulada y limitada da una imagen mucho más honesta que probar con fibra óptica en una oficina.",
+        ],
+      },
+      {
+        id: "que-lo-arregla",
+        heading: "What actually fixes it",
+        headingEs: "Qué lo arregla realmente",
+        body: [
+          "Compressing and properly sizing images almost always produces the biggest single improvement. After that, removing unnecessary scripts, using modern image formats, and choosing hosting that matches the site's traffic level close most of the remaining gap.",
+        ],
+        bodyEs: [
+          "Comprimir y dimensionar correctamente las imágenes casi siempre produce la mejora individual más grande. Después de eso, quitar scripts innecesarios, usar formatos de imagen modernos, y elegir un hosting acorde al nivel de tráfico del sitio cierran la mayor parte de lo que falta.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Qué tan rápido debería cargar mi página web?",
+        qEn: "How fast should my website load?",
+        a: "Como referencia general, menos de tres segundos es un buen objetivo para la mayoría de los sitios de negocio. Cada segundo adicional aumenta de forma medible cuántos visitantes se van antes de ver el contenido.",
+        aEn: "As a general reference, under three seconds is a good target for most business sites. Every additional second measurably increases how many visitors leave before seeing the content.",
+      },
+      {
+        q: "¿Cómo puedo saber si mi sitio es lento?",
+        qEn: "How can I tell if my site is slow?",
+        a: "Hay herramientas gratuitas en línea que miden el tiempo de carga real y muestran un desglose de qué lo está frenando. Es mejor confiar en esa medición que en la sensación subjetiva de qué tan rápido se ve.",
+        aEn: "There are free online tools that measure real load time and show a breakdown of what's slowing it down. It's better to trust that measurement than the subjective feeling of how fast it looks.",
+      },
+      {
+        q: "¿Las imágenes son realmente la causa principal?",
+        qEn: "Are images really the main cause?",
+        a: "En la mayoría de los casos sí. Unas cuantas fotos sin comprimir pueden sumar varios segundos de carga por sí solas, y suele ser el primer lugar donde buscar antes de revisar cualquier otra cosa.",
+        aEn: "In most cases, yes. A handful of uncompressed photos can add several seconds of load time on their own, and it's usually the first place to look before checking anything else.",
+      },
+      {
+        q: "¿Vale la pena invertir en mejor hosting solo por velocidad?",
+        qEn: "Is it worth investing in better hosting just for speed?",
+        a: "Depende del tráfico del sitio. Para un sitio con volumen relevante de visitantes, un hosting adecuado puede ser la diferencia entre una experiencia consistente y una que se degrada en horas pico.",
+        aEn: "It depends on the site's traffic. For a site with meaningful visitor volume, proper hosting can be the difference between a consistent experience and one that degrades during peak hours.",
+      },
+    ],
+    schema: {
+      keywords: ["website speed", "page load time"],
+      keywordsEs: ["velocidad de carga pagina web", "sitio web lento"],
+    },
+  },
+  {
+    slug: "que-es-hosting",
+    title: "What Is Web Hosting and Which One to Choose in Mexico",
+    titleEs: "¿Qué es el Hosting y Cuál Elegir en México?",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "Hosting is the infrastructure that keeps a site online and accessible, not an optional add-on. What matters when choosing one, and what a $50 MXN/month plan usually can't handle.",
+    excerptEs:
+      "El hosting es la infraestructura que mantiene un sitio en línea y accesible, no un extra opcional. Qué importa al elegirlo, y qué es lo que un plan de $50 MXN al mes normalmente no puede manejar.",
+    readingTime: 5,
+    date: "2026-10-02",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Hosting is the server space where a website's files actually live, and it directly determines whether the site stays online, how fast it loads, and how well it holds up under real traffic. A cheap plan chosen without thinking about the site's actual needs is one of the most common causes of slow or unreliable sites.",
+    ledeEs:
+      "El hosting es el espacio en servidor donde realmente viven los archivos de un sitio web, y determina directamente si el sitio se mantiene en línea, qué tan rápido carga, y qué tan bien resiste tráfico real. Un plan barato elegido sin pensar en las necesidades reales del sitio es una de las causas más comunes de sitios lentos o poco confiables.",
+    sections: [
+      {
+        id: "que-hace-el-hosting",
+        heading: "What hosting actually does",
+        headingEs: "Qué hace realmente el hosting",
+        body: [
+          "Every website needs to be stored somewhere accessible around the clock, and hosting is that infrastructure. The quality of the hosting directly affects load speed, uptime reliability, and how the site performs when traffic spikes, it's not just a technical detail behind the scenes.",
+        ],
+        bodyEs: [
+          "Todo sitio web necesita almacenarse en algún lugar accesible las 24 horas, y el hosting es esa infraestructura. La calidad del hosting afecta directamente la velocidad de carga, la confiabilidad del tiempo activo, y cómo se comporta el sitio cuando hay picos de tráfico. No es solo un detalle técnico detrás de escena.",
+        ],
+      },
+      {
+        id: "tipos-de-hosting",
+        heading: "The main types of hosting",
+        headingEs: "Los tipos principales de hosting",
+        body: [
+          "Shared hosting splits server resources among many sites and is the cheapest option, fine for low-traffic sites but prone to slowdowns when a neighboring site spikes in traffic. VPS and cloud hosting dedicate resources specifically to one site, costing more but performing far more consistently. Managed hosting adds handled updates and security on top of either.",
+        ],
+        bodyEs: [
+          "El hosting compartido divide los recursos del servidor entre muchos sitios y es la opción más barata, funciona bien para sitios de bajo tráfico pero es propenso a lentitud cuando un sitio vecino tiene un pico de tráfico. El hosting VPS y en la nube dedica recursos específicamente a un sitio, cuesta más pero rinde de forma mucho más consistente. El hosting administrado suma actualizaciones y seguridad gestionadas sobre cualquiera de los dos.",
+        ],
+      },
+      {
+        id: "que-considerar-al-elegir",
+        heading: "What to actually consider when choosing",
+        headingEs: "Qué considerar realmente al elegir",
+        body: [
+          "Match the hosting to the site's real traffic and complexity, not to the cheapest available price. A site expecting steady traffic from ad campaigns needs more reliable infrastructure than a low-traffic informational page. Uptime guarantees, support responsiveness, and backup policies matter more than the sticker price once something goes wrong.",
+        ],
+        bodyEs: [
+          "Ajusta el hosting al tráfico y complejidad reales del sitio, no al precio más barato disponible. Un sitio que espera tráfico constante de campañas de anuncios necesita infraestructura más confiable que una página informativa de bajo tráfico. Las garantías de tiempo activo, la capacidad de respuesta del soporte, y las políticas de respaldo importan más que el precio de etiqueta en el momento en que algo falla.",
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "Common hosting mistakes",
+        headingEs: "Errores comunes con el hosting",
+        body: [
+          "Choosing the cheapest shared plan for a site that runs paid ad campaigns is a common mistake, the site can go down or slow to a crawl right when traffic (and ad spend) is highest. Never checking whether backups are actually running is another, a hosting failure without a backup can mean losing the entire site.",
+        ],
+        bodyEs: [
+          "Elegir el plan compartido más barato para un sitio que corre campañas de anuncios pagados es un error común: el sitio puede caerse o volverse lentísimo justo cuando el tráfico (y el gasto en anuncios) está más alto. Nunca revisar si los respaldos realmente se están haciendo es otro, una falla de hosting sin respaldo puede significar perder el sitio completo.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Necesito hosting caro para un sitio pequeño?",
+        qEn: "Do I need expensive hosting for a small site?",
+        a: "No necesariamente. Un plan compartido básico suele ser suficiente para un sitio de bajo tráfico. El hosting más robusto se vuelve necesario conforme sube el tráfico o la complejidad del sitio.",
+        aEn: "Not necessarily. A basic shared plan is usually enough for a low-traffic site. More robust hosting becomes necessary as traffic or site complexity increases.",
+      },
+      {
+        q: "¿Qué pasa si mi hosting falla mientras corro anuncios pagados?",
+        qEn: "What happens if my hosting fails while I'm running paid ads?",
+        a: "El gasto en anuncios sigue corriendo mientras el sitio está caído, así que cada minuto fuera de línea es presupuesto desperdiciado. Es una de las razones para no elegir el hosting más barato sin pensar en el tráfico real esperado.",
+        aEn: "Ad spend keeps running while the site is down, so every minute offline is wasted budget. It's one of the reasons not to pick the cheapest hosting without thinking about actual expected traffic.",
+      },
+      {
+        q: "¿El hosting incluye seguridad y respaldos automáticos?",
+        qEn: "Does hosting include security and automatic backups?",
+        a: "Depende del plan. Muchos planes básicos no incluyen respaldos automáticos por defecto, hay que verificarlo específicamente antes de asumir que están cubiertos.",
+        aEn: "It depends on the plan. Many basic plans don't include automatic backups by default, it needs to be specifically confirmed rather than assumed to be covered.",
+      },
+      {
+        q: "¿Cómo sé si mi hosting actual ya no es suficiente?",
+        qEn: "How do I know if my current hosting isn't enough anymore?",
+        a: "Señales claras: el sitio se vuelve notablemente lento en horas de tráfico alto, o cae con cierta frecuencia. Ahí es cuando vale la pena revisar si el plan actual sigue siendo adecuado.",
+        aEn: "Clear signs: the site becomes noticeably slow during high-traffic hours, or goes down with some frequency. That's when it's worth checking whether the current plan is still adequate.",
+      },
+    ],
+    schema: {
+      keywords: ["what is web hosting", "best hosting Mexico"],
+      keywordsEs: ["que es el hosting", "mejor hosting mexico"],
+    },
+  },
+  {
+    slug: "como-elegir-un-dominio",
+    title: "How to Choose the Right Domain Name for Your Business",
+    titleEs: "Cómo Elegir el Dominio Correcto para tu Empresa",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "A domain is a long-term decision, not a small technical detail. What actually matters: length, extension, and matching how customers already say your name.",
+    excerptEs:
+      "El dominio es una decisión de largo plazo, no un detalle técnico menor. Lo que realmente importa: longitud, extensión, y que coincida con cómo tus clientes ya dicen tu nombre.",
+    readingTime: 4,
+    date: "2026-10-04",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A domain is the address customers will type, say out loud, and remember for years, which makes it a business decision, not just a technical checkbox during setup. Short, easy to say, and matching the name customers already use for the business beats clever or trend-driven every time.",
+    ledeEs:
+      "El dominio es la dirección que los clientes van a escribir, decir en voz alta y recordar durante años, lo que lo convierte en una decisión de negocio, no solo en una casilla técnica que marcar durante la configuración. Corto, fácil de decir, y que coincida con el nombre que los clientes ya usan para el negocio le gana casi siempre a algo ingenioso o de moda.",
+    sections: [
+      {
+        id: "que-hace-un-buen-dominio",
+        heading: "What makes a good domain",
+        headingEs: "Qué hace bueno a un dominio",
+        body: [
+          "Short, easy to spell out loud over the phone, and free of hyphens or numbers that force an explanation every time someone shares it. If a customer has to spell it letter by letter, it's already working against the business.",
+        ],
+        bodyEs: [
+          "Corto, fácil de deletrear en voz alta por teléfono, y sin guiones ni números que obliguen a dar una explicación cada vez que alguien lo comparte. Si un cliente tiene que deletrearlo letra por letra, ya está trabajando en contra del negocio.",
+        ],
+      },
+      {
+        id: "mx-com-o-ambos",
+        heading: ".mx, .com, or both",
+        headingEs: ".mx, .com, o ambos",
+        body: [
+          "A .com signals broader, sometimes international reach, while a .mx signals a specifically Mexican business, which can build trust with a local audience. When budget allows, registering both and pointing one to the other protects the brand from a competitor grabbing the other extension later.",
+        ],
+        bodyEs: [
+          "Un .com transmite un alcance más amplio, a veces internacional, mientras que un .mx transmite un negocio específicamente mexicano, lo que puede generar confianza con una audiencia local. Cuando el presupuesto lo permite, registrar ambos y apuntar uno hacia el otro protege la marca de que un competidor tome la otra extensión después.",
+        ],
+      },
+      {
+        id: "que-evitar",
+        heading: "What to avoid",
+        headingEs: "Qué evitar",
+        body: [
+          "Avoid domains that only make sense with an explanation, that are hard to say out loud without spelling them, or that depend on a trendy extension that might not exist or be trusted in a few years. A domain chosen for being clever today can become a liability once nobody remembers the joke.",
+        ],
+        bodyEs: [
+          "Evita dominios que solo tienen sentido con una explicación, que son difíciles de decir en voz alta sin deletrearlos, o que dependen de una extensión de moda que podría no existir o no inspirar confianza en unos años. Un dominio elegido por ser ingenioso hoy puede volverse un lastre cuando ya nadie recuerda el chiste.",
+        ],
+      },
+      {
+        id: "que-pasa-si-ya-esta-tomado",
+        heading: "What if the ideal domain is already taken",
+        headingEs: "Qué pasa si el dominio ideal ya está tomado",
+        body: [
+          "Adding a relevant, short word (the city, the core service) usually works better than adding a random number or an unrelated word just to make it available. Buying an already-registered domain from its owner is also an option worth pricing out before settling for a weaker alternative.",
+        ],
+        bodyEs: [
+          "Agregar una palabra relevante y corta (la ciudad, el servicio principal) suele funcionar mejor que agregar un número al azar o una palabra sin relación solo para que quede disponible. Comprarle el dominio ya registrado a su dueño también es una opción que vale la pena cotizar antes de conformarse con una alternativa más débil.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Es mejor un dominio .com o .mx?",
+        qEn: "Is a .com or a .mx domain better?",
+        a: "Depende del negocio. Un .mx refuerza que el negocio es local mexicano, mientras que un .com transmite un alcance más amplio. Si el presupuesto lo permite, registrar ambos es la opción más segura.",
+        aEn: "It depends on the business. A .mx reinforces that the business is local Mexican, while a .com conveys broader reach. If budget allows, registering both is the safest option.",
+      },
+      {
+        q: "¿Puedo cambiar mi dominio después si elijo mal?",
+        qEn: "Can I change my domain later if I choose wrong?",
+        a: "Sí, pero implica perder autoridad de SEO acumulada y confundir a clientes que ya conocen el dominio anterior. Es mucho más barato elegir bien desde el inicio que migrar después.",
+        aEn: "Yes, but it means losing accumulated SEO authority and confusing customers who already know the old domain. It's far cheaper to choose well from the start than to migrate later.",
+      },
+      {
+        q: "¿Debo incluir palabras clave de mi servicio en el dominio?",
+        qEn: "Should I include service keywords in the domain?",
+        a: "Puede ayudar un poco, pero no es tan importante como que el dominio sea corto, fácil de decir, y coincida con el nombre real del negocio.",
+        aEn: "It can help a little, but it's not as important as the domain being short, easy to say, and matching the business's actual name.",
+      },
+      {
+        q: "¿Qué hago si el dominio que quiero ya está tomado?",
+        qEn: "What do I do if the domain I want is already taken?",
+        a: "Agrega una palabra corta y relevante, como la ciudad o el servicio principal, en vez de un número al azar. También puedes intentar comprarle el dominio a su dueño actual.",
+        aEn: "Add a short, relevant word, like the city or main service, instead of a random number. You can also try buying the domain from its current owner.",
+      },
+    ],
+    schema: {
+      keywords: ["how to choose a domain name", "domain name for business"],
+      keywordsEs: ["como elegir un dominio", "dominio para mi negocio"],
+    },
+  },
+  {
+    slug: "cuando-redisenar-pagina-web",
+    title: "When Should You Redesign Your Website? 8 Clear Signs",
+    titleEs: "¿Cuándo Rediseñar tu Página Web? 8 Señales Claras",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "A redesign isn't about age alone. It's about whether the site still does its job: converting visitors, loading fast, and representing the business as it actually is today.",
+    excerptEs:
+      "Un rediseño no se trata solo de la edad del sitio. Se trata de si el sitio todavía cumple su trabajo: convertir visitantes, cargar rápido, y representar al negocio como es hoy.",
+    readingTime: 5,
+    date: "2026-10-06",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A website doesn't need a redesign just because a few years have passed, it needs one when it stops doing its actual job: converting visitors, loading fast, working properly on mobile, or representing a business that has genuinely changed since launch.",
+    ledeEs:
+      "Una página web no necesita rediseñarse solo porque pasaron unos cuantos años, necesita rediseñarse cuando deja de cumplir su verdadero trabajo: convertir visitantes, cargar rápido, funcionar bien en móvil, o representar a un negocio que realmente cambió desde el lanzamiento.",
+    sections: [
+      {
+        id: "las-senales-de-conversion",
+        heading: "Falling conversion rates and outdated visuals",
+        headingEs: "Tasas de conversión que bajan y visuales desactualizados",
+        body: [
+          "If leads or sales from the site have been declining without an obvious external cause, the site itself is a reasonable place to look. Visual design that clearly looks dated compared to competitors also sends a quiet signal of being behind, even if the visitor can't articulate exactly why the site feels off.",
+        ],
+        bodyEs: [
+          "Si los leads o ventas que llegan del sitio han venido bajando sin una causa externa obvia, el sitio mismo es un lugar razonable dónde buscar. Un diseño visual que claramente se ve desactualizado frente a la competencia también manda una señal silenciosa de estar atrasado, aunque el visitante no sepa articular exactamente por qué el sitio se siente mal.",
+        ],
+      },
+      {
+        id: "problemas-tecnicos-recurrentes",
+        heading: "Recurring technical problems",
+        headingEs: "Problemas técnicos recurrentes",
+        body: [
+          "A site that's slow despite basic optimization attempts, doesn't work properly on mobile, or has become difficult to update without a developer is signaling that its technical foundation has become the limiting factor, not just a cosmetic one.",
+        ],
+        bodyEs: [
+          "Un sitio que sigue lento a pesar de intentos básicos de optimización, no funciona bien en móvil, o se ha vuelto difícil de actualizar sin un desarrollador está señalando que su base técnica se convirtió en el factor limitante, no solo algo cosmético.",
+        ],
+      },
+      {
+        id: "el-negocio-ya-cambio",
+        heading: "The business itself has changed",
+        headingEs: "El negocio mismo ya cambió",
+        body: [
+          "New services, a different target audience, a rebrand, or expansion into new markets that the site doesn't reflect at all is one of the clearest redesign triggers. A site describing a business as it was two years ago actively misrepresents what a visitor will actually get.",
+        ],
+        bodyEs: [
+          "Nuevos servicios, una audiencia objetivo distinta, un cambio de marca, o una expansión a mercados nuevos que el sitio no refleja en absoluto es uno de los disparadores más claros de rediseño. Un sitio que describe al negocio como era hace dos años representa activamente mal lo que un visitante en realidad va a recibir.",
+        ],
+      },
+      {
+        id: "cuando-no-hace-falta-redisenar",
+        heading: "When a redesign genuinely isn't needed",
+        headingEs: "Cuándo un rediseño en realidad no hace falta",
+        body: [
+          "If the site still converts well, loads fast, and accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost.",
+        ],
+        bodyEs: [
+          "Si el sitio sigue convirtiendo bien, carga rápido, y representa bien al negocio, la edad por sí sola no es razón para reconstruirlo. Las actualizaciones puntuales (copy nuevo, fotos actualizadas, una sección renovada) muchas veces resuelven el problema real por una fracción del costo de un rediseño completo.",
+        ],
+      },
+      {
+        id: "como-decidir-entre-refresh-y-rediseno",
+        heading: "How to decide between a refresh and a full redesign",
+        headingEs: "Cómo decidir entre un refresh y un rediseño completo",
+        body: [
+          "A refresh fits when the underlying structure still works and the problems are cosmetic or content-related. A full redesign fits when the technical foundation itself is the limitation, or when the business has changed enough that the entire structure no longer matches what it needs to communicate.",
+        ],
+        bodyEs: [
+          "Un refresh encaja cuando la estructura de fondo sigue funcionando y los problemas son cosméticos o de contenido. Un rediseño completo encaja cuando la base técnica misma es la limitante, o cuando el negocio cambió lo suficiente como para que toda la estructura ya no coincida con lo que necesita comunicar.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cada cuánto tiempo debería rediseñar mi página web?",
+        qEn: "How often should I redesign my website?",
+        a: "No hay un plazo fijo. La señal real es si el sitio sigue convirtiendo bien y representando al negocio con precisión, no una cantidad de años determinada.",
+        aEn: "There's no fixed timeframe. The real signal is whether the site still converts well and accurately represents the business, not a set number of years.",
+      },
+      {
+        q: "¿Un rediseño completo siempre es la mejor opción?",
+        qEn: "Is a full redesign always the best option?",
+        a: "No. Si la estructura de fondo sigue funcionando, actualizaciones puntuales de contenido y diseño suelen resolver el problema por mucho menos costo que un rediseño completo.",
+        aEn: "No. If the underlying structure still works, targeted content and design updates usually solve the problem for far less than a full redesign.",
+      },
+      {
+        q: "¿Cómo sé si mis problemas son técnicos o de diseño?",
+        qEn: "How do I know if my problems are technical or design-related?",
+        a: "Si el sitio es lento o no funciona bien en móvil pase lo que pase, es probablemente técnico. Si carga bien pero no convierte, suele ser un problema de copy, jerarquía visual o estructura de conversión.",
+        aEn: "If the site is slow or doesn't work well on mobile no matter what, it's probably technical. If it loads fine but doesn't convert, it's usually a copy, visual hierarchy, or conversion structure problem.",
+      },
+      {
+        q: "¿Perderé mi posicionamiento SEO si rediseño mi sitio?",
+        qEn: "Will I lose my SEO rankings if I redesign my site?",
+        a: "Es un riesgo real si no se planea con cuidado, especialmente si cambian las URLs. Un rediseño bien ejecutado mantiene las redirecciones y la estructura SEO existente en vez de empezar de cero.",
+        aEn: "It's a real risk if not planned carefully, especially if URLs change. A well-executed redesign preserves redirects and existing SEO structure instead of starting from zero.",
+      },
+    ],
+    schema: {
+      keywords: ["when to redesign website", "website redesign signs"],
+      keywordsEs: ["cuando redisenar pagina web", "señales de rediseño web"],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
