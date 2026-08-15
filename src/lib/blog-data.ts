@@ -1045,10 +1045,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Hot leads: respond in five minutes, close the visit",
         headingEs: "Leads hot: responde en cinco minutos, cierra la visita",
         body: [
-          "The script for a hot lead has one job: get a scheduled visit on the calendar before the conversation ends. Skip the general pitch — they already know what they're interested in. Confirm availability, offer two specific time slots, and follow up by phone if the WhatsApp message isn't answered within fifteen minutes. Every minute of delay here is a minute a competing development has to reach them first.",
+          "The script for a hot lead has one job: get a scheduled visit on the calendar before the conversation ends. Skip the general pitch — they already know what they're interested in. Confirm availability, offer two specific time slots, and follow up by phone if the WhatsApp message isn't answered within fifteen minutes. Every minute of delay here is a minute a competing development has to reach them first. Responding within 5 minutes versus 30 minutes measurably changes contact rates in real estate, the lead's interest is highest in that first window and drops fast after.",
         ],
         bodyEs: [
-          "El guion para un lead hot tiene un solo trabajo: agendar una visita antes de que termine la conversación. Sáltate el discurso general: ya sabe en qué está interesado. Confirma disponibilidad, ofrece dos horarios específicos, y da seguimiento por teléfono si el mensaje de WhatsApp no se contesta en quince minutos. Cada minuto de demora aquí es un minuto que un desarrollo competidor tiene para contactarlo primero.",
+          "El guion para un lead hot tiene un solo trabajo: agendar una visita antes de que termine la conversación. Sáltate el discurso general: ya sabe en qué está interesado. Confirma disponibilidad, ofrece dos horarios específicos, y da seguimiento por teléfono si el mensaje de WhatsApp no se contesta en quince minutos. Cada minuto de demora aquí es un minuto que un desarrollo competidor tiene para contactarlo primero. Responder en 5 minutos contra 30 minutos cambia de forma medible las tasas de contacto en bienes raíces. El interés del lead está en su punto más alto en esa primera ventana y baja rápido después.",
         ],
       },
       {
@@ -1160,10 +1160,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Business Profile: the single highest-leverage asset",
         headingEs: "Perfil de Google Business: el activo de mayor impacto",
         body: [
-          "A complete, verified, and actively maintained Google Business Profile is the foundation of local SEO — it's what shows up in the map pack, which gets more clicks than the organic results below it for local searches. That means accurate categories, complete business hours, real photos updated regularly, and posts published consistently. Businesses that set it up once and never touch it again are leaving most of its value on the table.",
+          'A complete, verified, and actively maintained Google Business Profile is the foundation of local SEO — it\'s what shows up in the map pack, which gets more clicks than the organic results below it for local searches. That means accurate categories, complete business hours, real photos updated regularly, and posts published consistently. Businesses that set it up once and never touch it again are leaving most of its value on the table. We cover the full seven-step process, with specific timelines, in "how to optimize your Google Business Profile."',
         ],
         bodyEs: [
-          "Un perfil de Google Business completo, verificado y activamente mantenido es la base del SEO local: es lo que aparece en el paquete de mapas, que recibe más clics que los resultados orgánicos debajo para búsquedas locales. Eso significa categorías correctas, horarios completos, fotos reales actualizadas con regularidad y publicaciones constantes. Los negocios que lo configuran una vez y nunca lo vuelven a tocar están dejando la mayor parte de su valor sobre la mesa.",
+          'Un perfil de Google Business completo, verificado y activamente mantenido es la base del SEO local: es lo que aparece en el paquete de mapas, que recibe más clics que los resultados orgánicos debajo para búsquedas locales. Eso significa categorías correctas, horarios completos, fotos reales actualizadas con regularidad y publicaciones constantes. Los negocios que lo configuran una vez y nunca lo vuelven a tocar están dejando la mayor parte de su valor sobre la mesa. Cubrimos el proceso completo de siete pasos, con tiempos específicos, en "cómo optimizar tu perfil de Google Business."',
         ],
       },
       {
@@ -1182,10 +1182,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Reviews: volume, recency and how you respond",
         headingEs: "Reseñas: volumen, frecuencia y cómo respondes",
         body: [
-          "Review count, average rating, and how recently reviews came in all factor into local ranking — a business with 200 reviews from three years ago ranks worse than one with 40 reviews trickling in every month. Responding to every review, positive or negative, signals an active business and often influences potential customers reading them more than the star rating itself.",
+          "Review count, average rating, and how recently reviews came in all factor into local ranking — a business with 200 reviews from three years ago ranks worse than one with 40 reviews trickling in every month. Responding to every review, positive or negative, signals an active business and often influences potential customers reading them more than the star rating itself. A business with 15 recent reviews often outranks one with 40 reviews that stopped coming in three years ago, recency carries real weight, not just total count.",
         ],
         bodyEs: [
-          "La cantidad de reseñas, el promedio y qué tan recientes son influyen en el posicionamiento local. Un negocio con 200 reseñas de hace tres años posiciona peor que uno con 40 reseñas que van llegando cada mes. Responder a cada reseña, positiva o negativa, señala un negocio activo y muchas veces influye más en los clientes potenciales que la leen que la calificación en estrellas por sí sola.",
+          "La cantidad de reseñas, el promedio y qué tan recientes son influyen en el posicionamiento local. Un negocio con 200 reseñas de hace tres años posiciona peor que uno con 40 reseñas que van llegando cada mes. Responder a cada reseña, positiva o negativa, señala un negocio activo y muchas veces influye más en los clientes potenciales que la leen que la calificación en estrellas por sí sola. Un negocio con 15 reseñas recientes muchas veces posiciona mejor que uno con 40 reseñas que dejaron de llegar hace tres años. Qué tan recientes son pesa de verdad, no solo el conteo total.",
         ],
       },
       {
@@ -3712,10 +3712,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "1. No CAPI backing up the Pixel",
         headingEs: "1. Sin CAPI respaldando al Pixel",
         body: [
-          "Running only the browser Pixel means losing a real share of conversion events to privacy restrictions and ad blockers. The fix is a one-time technical setup, not an ongoing cost, so there's rarely a good reason to skip it.",
+          "Running only the browser Pixel means losing a real share of conversion events to privacy restrictions and ad blockers. The fix is a one-time technical setup, not an ongoing cost, so there's rarely a good reason to skip it. Meta's own data shows that combining Pixel with CAPI typically recovers a meaningful share of conversions that browser-based tracking alone misses due to ad blockers and iOS privacy restrictions, real money left unmeasured, not just a technical gap.",
         ],
         bodyEs: [
-          "Correr solo el Pixel de navegador significa perder una parte real de eventos de conversión por restricciones de privacidad y bloqueadores de anuncios. La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela.",
+          "Correr solo el Pixel de navegador significa perder una parte real de eventos de conversión por restricciones de privacidad y bloqueadores de anuncios. La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela. Los propios datos de Meta muestran que combinar Pixel con CAPI normalmente recupera una parte importante de las conversiones que el rastreo solo desde el navegador pierde por bloqueadores de anuncios y restricciones de privacidad de iOS. Es dinero real sin medir, no solo un hueco técnico.",
         ],
       },
       {
@@ -3723,10 +3723,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "2. Budget split across too many ad sets",
         headingEs: "2. Presupuesto fragmentado en demasiados conjuntos",
         body: [
-          "Each ad set needs enough volume to exit the learning phase. Splitting a modest budget across five or six ad sets almost guarantees none of them ever stabilizes, which shows up as inconsistent, expensive results across the board.",
+          "Each ad set needs enough volume to exit the learning phase. Splitting a modest budget across five or six ad sets almost guarantees none of them ever stabilizes, which shows up as inconsistent, expensive results across the board. As a rule of thumb, an ad set needs roughly 50 conversions in a week to exit Meta's learning phase reliably, splitting a $3,000 MXN monthly budget across six ad sets means none of them ever gets there.",
         ],
         bodyEs: [
-          "Cada conjunto de anuncios necesita suficiente volumen para salir de la fase de aprendizaje. Repartir un presupuesto modesto entre cinco o seis conjuntos casi garantiza que ninguno se estabilice nunca, y eso se refleja en resultados inconsistentes y caros en toda la cuenta.",
+          "Cada conjunto de anuncios necesita suficiente volumen para salir de la fase de aprendizaje. Repartir un presupuesto modesto entre cinco o seis conjuntos casi garantiza que ninguno se estabilice nunca, y eso se refleja en resultados inconsistentes y caros en toda la cuenta. Como regla práctica, un conjunto de anuncios necesita unas 50 conversiones en una semana para salir de forma confiable de la fase de aprendizaje de Meta. Repartir un presupuesto mensual de $3,000 MXN entre seis conjuntos de anuncios significa que ninguno llega a eso.",
         ],
       },
       {
@@ -3841,10 +3841,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When it's actually worth investing",
         headingEs: "Cuándo realmente vale la pena invertir",
         body: [
-          "High-ticket categories (real estate, hospitality, construction) see the clearest return, because buyers make slower decisions and need more visual proof before committing. Lower-ticket, high-frequency businesses often get more mileage from consistent photography than from occasional big video shoots.",
+          "High-ticket categories (real estate, hospitality, construction) see the clearest return, because buyers make slower decisions and need more visual proof before committing. Lower-ticket, high-frequency businesses often get more mileage from consistent photography than from occasional big video shoots. A property listing with aerial and professional video content typically sees measurably more engagement than one with phone photos alone, and in high-ticket categories, that difference in engagement translates directly into more qualified inquiries per listing.",
         ],
         bodyEs: [
-          "Las categorías de ticket alto (bienes raíces, hospitalidad, construcción) tienen el retorno más claro, porque los compradores toman decisiones más lentas y necesitan más prueba visual antes de comprometerse. Los negocios de ticket bajo y alta frecuencia suelen sacarle más provecho a fotografía constante que a producciones de video grandes y ocasionales.",
+          "Las categorías de ticket alto (bienes raíces, hospitalidad, construcción) tienen el retorno más claro, porque los compradores toman decisiones más lentas y necesitan más prueba visual antes de comprometerse. Los negocios de ticket bajo y alta frecuencia suelen sacarle más provecho a fotografía constante que a producciones de video grandes y ocasionales. Un listado de propiedad con contenido aéreo y video profesional normalmente tiene un compromiso medible mayor que uno con solo fotos de celular, y en categorías de ticket alto, esa diferencia de compromiso se traduce directamente en más consultas calificadas por listado.",
         ],
       },
       {
@@ -3863,10 +3863,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Real costs, roughly",
         headingEs: "Costos reales, a grandes rasgos",
         body: [
-          "A single-location drone session runs a few thousand pesos for a few hours of work. A full corporate video production, with scripting, multiple locations, and post-production, runs considerably more and takes weeks rather than days. Photography sits somewhere in between, priced mostly by time on site and number of final images delivered.",
+          "A single-location drone session runs a few thousand pesos for a few hours of work. A full corporate video production, with scripting, multiple locations, and post-production, runs considerably more and takes weeks rather than days. Photography sits somewhere in between, priced mostly by time on site and number of final images delivered. As concrete reference points from our own pricing: a single-location aerial shoot starts at $2,990 MXN (up to one hour, one edited video plus 10 photos), event coverage runs $4,990 MXN (up to 4 hours), and an ongoing multi-visit project like construction progress runs $8,890 MXN for a 4-visit package.",
         ],
         bodyEs: [
-          "Una sesión de dron en una sola locación cuesta unos cuantos miles de pesos por unas horas de trabajo. Una producción de video corporativo completa, con guion, varias locaciones y postproducción, cuesta considerablemente más y toma semanas en vez de días. La fotografía queda en un punto intermedio, con precio definido sobre todo por el tiempo en sitio y el número de imágenes finales entregadas.",
+          "Una sesión de dron en una sola locación cuesta unos cuantos miles de pesos por unas horas de trabajo. Una producción de video corporativo completa, con guion, varias locaciones y postproducción, cuesta considerablemente más y toma semanas en vez de días. La fotografía queda en un punto intermedio, con precio definido sobre todo por el tiempo en sitio y el número de imágenes finales entregadas. Como referencia concreta de nuestros propios precios: una sesión aérea de una sola locación arranca en $2,990 MXN (hasta una hora, un video editado más 10 fotos), la cobertura de evento cuesta $4,990 MXN (hasta 4 horas), y un proyecto continuo de varias visitas como el avance de una obra cuesta $8,890 MXN por un paquete de 4 visitas.",
         ],
       },
       {
@@ -3889,6 +3889,17 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "El material en bruto por sí solo no vende nada, tiene que alimentar los canales donde ya vive tu marketing: una landing page para una campaña específica, un creativo de anuncio, una ficha de propiedad, una presentación de ventas. Planear la sesión alrededor de dónde se va a usar el contenido rinde más que grabar primero y decidir el uso después.",
+        ],
+      },
+      {
+        id: "como-elegir-el-paquete",
+        heading: "How to choose the right package for your project",
+        headingEs: "Cómo elegir el paquete correcto para tu proyecto",
+        body: [
+          "A single property, restaurant, or hotel that needs strong content fast fits a one-location package. A wedding, opening, or activation with a defined start and end time fits an event-coverage package built around continuous hours on site. A project that changes over time, like construction, a vineyard through a season, or a development being built out, fits a multi-visit package with a cadence agreed in advance rather than a one-off shoot.",
+        ],
+        bodyEs: [
+          "Una sola propiedad, restaurante u hotel que necesita contenido sólido rápido encaja con un paquete de una locación. Una boda, inauguración o activación con una hora de inicio y fin definida encaja con un paquete de cobertura de evento construido alrededor de horas continuas en sitio. Un proyecto que cambia con el tiempo, como una obra, un viñedo a lo largo de una temporada, o un desarrollo en construcción, encaja con un paquete de varias visitas con una cadencia acordada de antemano en vez de una sesión única.",
         ],
       },
     ],
@@ -4104,10 +4115,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What's actually at stake if this gets skipped",
         headingEs: "Qué está realmente en juego si se salta este paso",
         body: [
-          "Flying in restricted airspace without the proper coordination carries real regulatory risk for whoever is operating the drone, not just an inconvenience. It's one of the reasons it's worth confirming a production team actually checks this as a standard step, rather than assuming any location is fair game.",
+          "Flying in restricted airspace without the proper coordination carries real regulatory risk for whoever is operating the drone, not just an inconvenience. It's one of the reasons it's worth confirming a production team actually checks this as a standard step, rather than assuming any location is fair game. Beyond the regulatory risk, unauthorized flights near controlled airspace can also result in the equipment being grounded or confiscated during the investigation, a cost far higher than the $999 MXN permit management fee that would have avoided the problem entirely.",
         ],
         bodyEs: [
-          "Volar en espacio aéreo restringido sin la coordinación adecuada implica un riesgo regulatorio real para quien está operando el dron, no solo una molestia. Es una de las razones por las que vale la pena confirmar que un equipo de producción realmente revisa esto como paso estándar, en vez de asumir que cualquier ubicación es válida sin más.",
+          "Volar en espacio aéreo restringido sin la coordinación adecuada implica un riesgo regulatorio real para quien está operando el dron, no solo una molestia. Es una de las razones por las que vale la pena confirmar que un equipo de producción realmente revisa esto como paso estándar, en vez de asumir que cualquier ubicación es válida sin más. Más allá del riesgo regulatorio, los vuelos no autorizados cerca de espacio aéreo controlado también pueden resultar en que el equipo se quede en tierra o sea confiscado durante la investigación, un costo mucho mayor que los $999 MXN de la gestión de permiso que habría evitado el problema por completo.",
         ],
       },
     ],
@@ -4167,10 +4178,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Start from your close rate, not your budget comfort",
         headingEs: "Empieza por tu tasa de cierre, no por lo que se siente cómodo gastar",
         body: [
-          "If one in five leads becomes a customer and a customer is worth a known amount, that math tells you what you can afford to pay per lead and still profit. Working forward from a round monthly number skips this step entirely and often either overspends or underfunds the campaign.",
+          "If one in five leads becomes a customer and a customer is worth a known amount, that math tells you what you can afford to pay per lead and still profit. Working forward from a round monthly number skips this step entirely and often either overspends or underfunds the campaign. As a working example: if a customer is worth $15,000 MXN and one in five leads closes, the math says you can pay up to roughly $3,000 MXN per lead and still break even, which is the number that should drive the budget conversation, not a round figure picked because it feels affordable.",
         ],
         bodyEs: [
-          "Si uno de cada cinco leads se vuelve cliente y un cliente vale un monto conocido, esa cuenta te dice cuánto puedes pagar por lead y aun así ser rentable. Trabajar hacia adelante desde un número mensual redondo se salta este paso por completo y muchas veces gasta de más o financia de menos la campaña.",
+          "Si uno de cada cinco leads se vuelve cliente y un cliente vale un monto conocido, esa cuenta te dice cuánto puedes pagar por lead y aun así ser rentable. Trabajar hacia adelante desde un número mensual redondo se salta este paso por completo y muchas veces gasta de más o financia de menos la campaña. Como ejemplo concreto: si un cliente vale $15,000 MXN y uno de cada cinco leads cierra, la cuenta dice que puedes pagar hasta unos $3,000 MXN por lead y seguir en punto de equilibrio, y ese es el número que debería guiar la conversación de presupuesto, no una cifra redonda elegida porque se siente accesible.",
         ],
       },
       {
@@ -4178,10 +4189,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Your category's cost per click sets the floor",
         headingEs: "El costo por clic de tu categoría marca el piso",
         body: [
-          "Competitive categories (legal, finance, real estate) carry a higher cost per click than low-competition local services. A budget that doesn't account for your category's actual auction dynamics either buys too few clicks to learn anything or runs out mid-month.",
+          "Competitive categories (legal, finance, real estate) carry a higher cost per click than low-competition local services. A budget that doesn't account for your category's actual auction dynamics either buys too few clicks to learn anything or runs out mid-month. Competitive categories like legal or real estate can run cost-per-click well above $30-50 MXN in Mexico, while low-competition local services often sit under $10 MXN, which is why the same budget buys wildly different volumes of traffic depending on the category.",
         ],
         bodyEs: [
-          "Las categorías competidas (legal, finanzas, bienes raíces) tienen un costo por clic más alto que servicios locales de baja competencia. Un presupuesto que no toma en cuenta la dinámica real de subasta de tu categoría, o compra muy pocos clics para aprender algo, o se acaba a media del mes.",
+          "Las categorías competidas (legal, finanzas, bienes raíces) tienen un costo por clic más alto que servicios locales de baja competencia. Un presupuesto que no toma en cuenta la dinámica real de subasta de tu categoría, o compra muy pocos clics para aprender algo, o se acaba a media del mes. Las categorías competidas como legal o bienes raíces pueden tener un costo por clic muy por encima de $30 a $50 MXN en México, mientras que servicios locales de baja competencia suelen estar por debajo de $10 MXN, y por eso el mismo presupuesto compra volúmenes de tráfico muy distintos según la categoría.",
         ],
       },
       {
@@ -4285,10 +4296,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The real cost isn't the agency fee, it's your time",
         headingEs: "El costo real no es la cuota de la agencia, es tu tiempo",
         body: [
-          "Managing an account well takes ongoing weekly attention, not a one-time setup. For a business owner, that time comes directly out of hours that could go toward sales, operations, or product, which is often worth more than what an agency would charge to handle it.",
+          "Managing an account well takes ongoing weekly attention, not a one-time setup. For a business owner, that time comes directly out of hours that could go toward sales, operations, or product, which is often worth more than what an agency would charge to handle it. If managing an account well takes even 3-5 hours a week, and an hour of the owner's time is worth more than what an agency charges for that same hour of management, the math already favors delegating it, regardless of how capable the owner is.",
         ],
         bodyEs: [
-          "Manejar bien una cuenta requiere atención semanal continua, no una configuración de una sola vez. Para un dueño de negocio, ese tiempo sale directamente de horas que podrían ir hacia ventas, operación o producto, lo cual muchas veces vale más que lo que cobraría una agencia por manejarla.",
+          "Manejar bien una cuenta requiere atención semanal continua, no una configuración de una sola vez. Para un dueño de negocio, ese tiempo sale directamente de horas que podrían ir hacia ventas, operación o producto, lo cual muchas veces vale más que lo que cobraría una agencia por manejarla. Si manejar bien una cuenta toma incluso 3 a 5 horas a la semana, y una hora del tiempo del dueño vale más de lo que cobra una agencia por esa misma hora de manejo, la cuenta ya favorece delegarlo, sin importar qué tan capaz sea el dueño.",
         ],
       },
       {
@@ -4607,10 +4618,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The real bottleneck: content, not code",
         headingEs: "El verdadero cuello de botella: el contenido, no el código",
         body: [
-          "The clock starts once content is approved, not once the contract is signed, because most delays happen before that point: waiting on photos, copy revisions, or a final decision on messaging. A team that already has its content ready can move through a build noticeably faster than one that's writing copy as the project goes.",
+          "The clock starts once content is approved, not once the contract is signed, because most delays happen before that point: waiting on photos, copy revisions, or a final decision on messaging. A team that already has its content ready can move through a build noticeably faster than one that's writing copy as the project goes. On projects we've run, the gap between a client who has photos and copy ready on day one and one who's still gathering them two weeks in is often the single biggest swing factor in total delivery time, bigger than the tier or complexity of the site itself.",
         ],
         bodyEs: [
-          "El reloj arranca cuando se aprueba el contenido, no cuando se firma el contrato, porque la mayoría de los retrasos pasan antes de ese punto: esperar fotos, revisiones de copy, o una decisión final sobre el mensaje. Un equipo que ya tiene su contenido listo avanza notablemente más rápido que uno que está escribiendo el copy sobre la marcha.",
+          "El reloj arranca cuando se aprueba el contenido, no cuando se firma el contrato, porque la mayoría de los retrasos pasan antes de ese punto: esperar fotos, revisiones de copy, o una decisión final sobre el mensaje. Un equipo que ya tiene su contenido listo avanza notablemente más rápido que uno que está escribiendo el copy sobre la marcha. En proyectos que hemos manejado, la diferencia entre un cliente que tiene fotos y copy listos desde el día uno y uno que todavía los está reuniendo dos semanas después suele ser el factor que más mueve el tiempo total de entrega, más que el nivel o la complejidad del sitio en sí.",
         ],
       },
       {
@@ -4928,10 +4939,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Tracking and analytics",
         headingEs: "Seguimiento y analítica",
         body: [
-          "Analytics, conversion tracking, and any ad pixels need to be installed and verified as working before launch, not added afterward. Confirming a test conversion actually registers is the only way to know tracking is truly set up correctly, not just installed.",
+          "Analytics, conversion tracking, and any ad pixels need to be installed and verified as working before launch, not added afterward. Confirming a test conversion actually registers is the only way to know tracking is truly set up correctly, not just installed. Concretely: load the site in an incognito window, submit a test form or click a test WhatsApp button, and confirm the event actually shows up in GA4's real-time report within a minute or two, that single test catches most tracking failures before they cost a single real lead.",
         ],
         bodyEs: [
-          "La analítica, el seguimiento de conversión y cualquier pixel de anuncios necesitan estar instalados y verificados como funcionales antes del lanzamiento, no agregados después. Confirmar que una conversión de prueba realmente se registra es la única forma de saber que el seguimiento está bien configurado, no solo instalado.",
+          "La analítica, el seguimiento de conversión y cualquier pixel de anuncios necesitan estar instalados y verificados como funcionales antes del lanzamiento, no agregados después. Confirmar que una conversión de prueba realmente se registra es la única forma de saber que el seguimiento está bien configurado, no solo instalado. De forma concreta: carga el sitio en una ventana de incógnito, envía un formulario de prueba o da clic en un botón de WhatsApp de prueba, y confirma que el evento realmente aparece en el reporte en tiempo real de GA4 dentro de uno o dos minutos. Esa sola prueba detecta la mayoría de las fallas de seguimiento antes de que cuesten un solo lead real.",
         ],
       },
       {
@@ -4939,10 +4950,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Technical basics",
         headingEs: "Fundamentos técnicos",
         body: [
-          "SSL certificate active, all forms tested with a real submission, broken links checked, and page load speed confirmed on a real connection. These are unglamorous but they're the difference between a site that works and one that quietly fails for some visitors.",
+          "SSL certificate active, all forms tested with a real submission, broken links checked, and page load speed confirmed on a real connection. These are unglamorous but they're the difference between a site that works and one that quietly fails for some visitors. Running the site through PageSpeed Insights and Google's Mobile-Friendly Test, both free, takes under five minutes combined and catches most technical issues before a single visitor does.",
         ],
         bodyEs: [
-          "Certificado SSL activo, todos los formularios probados con un envío real, enlaces rotos revisados, y velocidad de carga confirmada en una conexión real. No son detalles llamativos, pero son la diferencia entre un sitio que funciona y uno que falla en silencio para algunos visitantes.",
+          "Certificado SSL activo, todos los formularios probados con un envío real, enlaces rotos revisados, y velocidad de carga confirmada en una conexión real. No son detalles llamativos, pero son la diferencia entre un sitio que funciona y uno que falla en silencio para algunos visitantes. Correr el sitio por PageSpeed Insights y la Prueba de Compatibilidad Móvil de Google, ambas gratis, toma menos de cinco minutos en conjunto y detecta la mayoría de los problemas técnicos antes de que lo haga un solo visitante.",
         ],
       },
       {
@@ -5024,10 +5035,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "A clear services or products section",
         headingEs: "Una sección clara de servicios o productos",
         body: [
-          "Whatever the business offers needs its own dedicated space, described in terms of what the visitor gets, not just a feature list. Pricing information, even as a range, tends to reduce friction rather than scare visitors away, since ambiguity about cost is a common reason people leave without contacting.",
+          'Whatever the business offers needs its own dedicated space, described in terms of what the visitor gets, not just a feature list. Pricing information, even as a range, tends to reduce friction rather than scare visitors away, since ambiguity about cost is a common reason people leave without contacting. Even a stated range, like "desde $2,990 MXN" instead of no number at all, measurably reduces the number of people who leave to "compare prices" elsewhere without ever reaching out.',
         ],
         bodyEs: [
-          "Lo que sea que ofrezca el negocio necesita su propio espacio dedicado, descrito en términos de lo que recibe el visitante, no solo como una lista de características. La información de precio, aunque sea un rango, tiende a reducir la fricción en vez de espantar visitantes, ya que la ambigüedad sobre el costo es una razón común por la que la gente se va sin contactar.",
+          'Lo que sea que ofrezca el negocio necesita su propio espacio dedicado, descrito en términos de lo que recibe el visitante, no solo como una lista de características. La información de precio, aunque sea un rango, tiende a reducir la fricción en vez de espantar visitantes, ya que la ambigüedad sobre el costo es una razón común por la que la gente se va sin contactar. Incluso un rango declarado, como "desde $2,990 MXN" en vez de ningún número, reduce de forma medible cuánta gente se va a "comparar precios" a otro lado sin llegar a contactar.',
         ],
       },
       {
@@ -5142,10 +5153,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Search intent vs. social discovery, a different job",
         headingEs: "Intención de búsqueda vs descubrimiento social, un trabajo distinto",
         body: [
-          "Social media is built for discovery, someone scrolling who wasn't necessarily looking for a business like yours. Search is built for intent, someone actively looking for exactly what you offer. A website captures that second group, the ones already looking, in a way a social profile alone cannot.",
+          "Social media is built for discovery, someone scrolling who wasn't necessarily looking for a business like yours. Search is built for intent, someone actively looking for exactly what you offer. A website captures that second group, the ones already looking, in a way a social profile alone cannot. In practical terms, someone typing \"dentista en Ensenada\" into Google has already decided to look for a dentist, while someone scrolling Instagram hasn't, which is why search traffic consistently converts at a higher rate than social discovery traffic across almost every industry.",
         ],
         bodyEs: [
-          "Las redes sociales están hechas para el descubrimiento: alguien que hace scroll sin buscar necesariamente un negocio como el tuyo. La búsqueda está hecha para la intención: alguien buscando activamente justo lo que ofreces. Una página web captura a ese segundo grupo, los que ya están buscando, de una forma que un perfil social por sí solo no logra.",
+          'Las redes sociales están hechas para el descubrimiento: alguien que hace scroll sin buscar necesariamente un negocio como el tuyo. La búsqueda está hecha para la intención: alguien buscando activamente justo lo que ofreces. Una página web captura a ese segundo grupo, los que ya están buscando, de una forma que un perfil social por sí solo no logra. En términos prácticos, alguien que escribe "dentista en Ensenada" en Google ya decidió buscar un dentista, mientras que alguien haciendo scroll en Instagram no, y por eso el tráfico de búsqueda convierte de forma consistente a una tasa más alta que el tráfico de descubrimiento social en casi cualquier industria.',
         ],
       },
       {
@@ -5323,10 +5334,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The main types of hosting",
         headingEs: "Los tipos principales de hosting",
         body: [
-          "Shared hosting splits server resources among many sites and is the cheapest option, fine for low-traffic sites but prone to slowdowns when a neighboring site spikes in traffic. VPS and cloud hosting dedicate resources specifically to one site, costing more but performing far more consistently. Managed hosting adds handled updates and security on top of either.",
+          "Shared hosting splits server resources among many sites and is the cheapest option, fine for low-traffic sites but prone to slowdowns when a neighboring site spikes in traffic. VPS and cloud hosting dedicate resources specifically to one site, costing more but performing far more consistently. Managed hosting adds handled updates and security on top of either. As a rough price reference, shared hosting typically runs $50-$200 MXN per month, while VPS or cloud hosting for a business site with real traffic runs $300-$1,500 MXN per month depending on the provider and resources allocated.",
         ],
         bodyEs: [
-          "El hosting compartido divide los recursos del servidor entre muchos sitios y es la opción más barata, funciona bien para sitios de bajo tráfico pero es propenso a lentitud cuando un sitio vecino tiene un pico de tráfico. El hosting VPS y en la nube dedica recursos específicamente a un sitio, cuesta más pero rinde de forma mucho más consistente. El hosting administrado suma actualizaciones y seguridad gestionadas sobre cualquiera de los dos.",
+          "El hosting compartido divide los recursos del servidor entre muchos sitios y es la opción más barata, funciona bien para sitios de bajo tráfico pero es propenso a lentitud cuando un sitio vecino tiene un pico de tráfico. El hosting VPS y en la nube dedica recursos específicamente a un sitio, cuesta más pero rinde de forma mucho más consistente. El hosting administrado suma actualizaciones y seguridad gestionadas sobre cualquiera de los dos. Como referencia de precio, el hosting compartido normalmente cuesta entre $50 y $200 MXN al mes, mientras que el hosting VPS o en la nube para un sitio de negocio con tráfico real cuesta entre $300 y $1,500 MXN al mes según el proveedor y los recursos asignados.",
         ],
       },
       {
