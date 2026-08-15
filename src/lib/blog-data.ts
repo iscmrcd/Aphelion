@@ -1174,7 +1174,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Your business Name, Address and Phone number (NAP) need to match exactly across your website, Google Business Profile, social media and any directory listing. Inconsistencies — a suite number here, an abbreviated street there — confuse the algorithms that verify your business is real and where it says it is, which quietly hurts ranking even when nothing else is wrong.",
         ],
         bodyEs: [
-          "El Nombre, Dirección y Teléfono (NAP) de tu negocio necesitan coincidir exactamente en tu sitio web, tu perfil de Google Business, redes sociales y cualquier directorio. Las inconsistencias (un número de suite aquí, una calle abreviada allá) confunden a los algoritmos que verifican que tu negocio es real y está donde dice, lo que afecta el posicionamiento en silencio incluso cuando todo lo demás está bien.",
+          "El Nombre, Dirección y Teléfono (NAP) de tu negocio necesitan coincidir exactamente en tu sitio web, tu perfil de Google Business, redes sociales y cualquier directorio. Las inconsistencias (un número de suite aquí, una calle abreviada allá) confunden a los algoritmos que verifican que tu negocio es real y está donde dice, lo que afecta el posicionamiento sin ninguna señal visible, incluso cuando todo lo demás está bien.",
         ],
       },
       {
@@ -1485,7 +1485,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Content that was accurate two years ago — old prices, outdated services, stale statistics — quietly erodes both rankings and trust. Search engines favor content that shows signs of being maintained, and so do the people reading it. A basic content review every six months, checking prices, service details, and any date-sensitive claims, catches most of what quietly goes stale.",
         ],
         bodyEs: [
-          "Contenido que era correcto hace dos años (precios viejos, servicios descontinuados, estadísticas desactualizadas) erosiona en silencio tanto el posicionamiento como la confianza. Los buscadores favorecen contenido que muestra señales de mantenimiento, y también lo hace la gente que lo lee. Una revisión de contenido básica cada seis meses, revisando precios, detalles de servicio y cualquier afirmación sensible a la fecha, detecta la mayor parte de lo que se desactualiza sin que nadie lo note.",
+          "Contenido que era correcto hace dos años (precios viejos, servicios descontinuados, estadísticas desactualizadas) erosiona poco a poco tanto el posicionamiento como la confianza. Los buscadores favorecen contenido que muestra señales de mantenimiento, y también lo hace la gente que lo lee. Una revisión de contenido básica cada seis meses, revisando precios, detalles de servicio y cualquier afirmación sensible a la fecha, detecta la mayor parte de lo que se desactualiza sin que nadie lo note.",
         ],
       },
       {
@@ -1747,7 +1747,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'Revisit the split every 4 to 6 weeks based on which channel is producing hot and warm leads, not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the cost per click looks attractive. The full classification system is in "real estate lead follow-up."',
         ],
         bodyEs: [
-          'Revisa el reparto cada 4 a 6 semanas según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto en silencio, aunque el costo por clic se vea atractivo. El sistema de clasificación completo está en "seguimiento de leads inmobiliarios."',
+          'Revisa el reparto cada 4 a 6 semanas según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el costo por clic se vea atractivo. El sistema de clasificación completo está en "seguimiento de leads inmobiliarios."',
         ],
       },
     ],
@@ -2975,7 +2975,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Duplicate conversion tags firing twice and inflating results, conversions still tracking an old form after a site redesign silently broke it, and phone calls with no tracking at all are the three issues that show up most often — including in accounts we've audited like Velport's, where fixing the same three gaps was the first step before any campaign optimization made sense. None of this requires guessing; it requires actually checking the tags fire correctly, which most accounts never do after initial setup.",
         ],
         bodyEs: [
-          "Etiquetas de conversión duplicadas disparándose dos veces e inflando los resultados, conversiones que siguen rastreando un formulario viejo después de que un rediseño del sitio lo rompió en silencio, y llamadas telefónicas sin ningún rastreo son los tres problemas que aparecen con más frecuencia. Los hemos visto, entre otras, en cuentas que hemos auditado como la de Velport, donde corregir esos mismos tres huecos fue el primer paso antes de que cualquier optimización de campaña tuviera sentido. Nada de esto requiere adivinar; requiere realmente revisar que las etiquetas disparen correctamente, algo que la mayoría de las cuentas nunca hace después de la configuración inicial.",
+          "Etiquetas de conversión duplicadas disparándose dos veces e inflando los resultados, conversiones que siguen rastreando un formulario viejo después de que un rediseño del sitio lo rompió sin que nadie se diera cuenta, y llamadas telefónicas sin ningún rastreo son los tres problemas que aparecen con más frecuencia. Los hemos visto, entre otras, en cuentas que hemos auditado como la de Velport, donde corregir esos mismos tres huecos fue el primer paso antes de que cualquier optimización de campaña tuviera sentido. Nada de esto requiere adivinar; requiere realmente revisar que las etiquetas disparen correctamente, algo que la mayoría de las cuentas nunca hace después de la configuración inicial.",
         ],
       },
       {
@@ -3614,7 +3614,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Browser privacy changes, ad blockers, and Safari's tracking restrictions all cut into how many events the Pixel actually captures. It doesn't fail loudly, it just quietly under-reports, which makes campaigns look like they're converting less than they really are.",
         ],
         bodyEs: [
-          "Los cambios de privacidad en navegadores, los bloqueadores de anuncios y las restricciones de rastreo de Safari le quitan al Pixel una parte de los eventos que realmente captura. No falla de forma ruidosa, simplemente subreporta en silencio, lo que hace que las campañas se vean como si convirtieran menos de lo que realmente convierten.",
+          "Los cambios de privacidad en navegadores, los bloqueadores de anuncios y las restricciones de rastreo de Safari le quitan al Pixel una parte de los eventos que realmente captura. No falla de forma evidente, simplemente subreporta sin ninguna alerta, lo que hace que las campañas se vean como si convirtieran menos de lo que realmente convierten.",
         ],
       },
       {
@@ -4535,7 +4535,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "A site that never gets revisited after launch slowly falls behind: content ages, technology moves on, and what converted well at launch drifts as the market changes. Basic maintenance (security updates, backups, periodic content refreshes) keeps a site performing instead of quietly decaying while nobody's watching.",
         ],
         bodyEs: [
-          "Un sitio que nunca se revisa después de lanzarse se va quedando atrás poco a poco: el contenido envejece, la tecnología avanza, y lo que convertía bien al lanzamiento se desactualiza conforme cambia el mercado. El mantenimiento básico (actualizaciones de seguridad, respaldos, actualizaciones periódicas de contenido) mantiene un sitio funcionando en vez de dejarlo decaer en silencio sin que nadie lo note.",
+          "Un sitio que nunca se revisa después de lanzarse se va quedando atrás poco a poco: el contenido envejece, la tecnología avanza, y lo que convertía bien al lanzamiento se desactualiza conforme cambia el mercado. El mantenimiento básico (actualizaciones de seguridad, respaldos, actualizaciones periódicas de contenido) mantiene un sitio funcionando en vez de dejarlo decaer poco a poco sin que nadie lo note.",
         ],
       },
     ],
@@ -4953,7 +4953,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "SSL certificate active, all forms tested with a real submission, broken links checked, and page load speed confirmed on a real connection. These are unglamorous but they're the difference between a site that works and one that quietly fails for some visitors. Running the site through PageSpeed Insights and Google's Mobile-Friendly Test, both free, takes under five minutes combined and catches most technical issues before a single visitor does.",
         ],
         bodyEs: [
-          "Certificado SSL activo, todos los formularios probados con un envío real, enlaces rotos revisados, y velocidad de carga confirmada en una conexión real. No son detalles llamativos, pero son la diferencia entre un sitio que funciona y uno que falla en silencio para algunos visitantes. Correr el sitio por PageSpeed Insights y la Prueba de Compatibilidad Móvil de Google, ambas gratis, toma menos de cinco minutos en conjunto y detecta la mayoría de los problemas técnicos antes de que lo haga un solo visitante.",
+          "Certificado SSL activo, todos los formularios probados con un envío real, enlaces rotos revisados, y velocidad de carga confirmada en una conexión real. No son detalles llamativos, pero son la diferencia entre un sitio que funciona y uno que falla sin avisar para algunos visitantes. Correr el sitio por PageSpeed Insights y la Prueba de Compatibilidad Móvil de Google, ambas gratis, toma menos de cinco minutos en conjunto y detecta la mayoría de los problemas técnicos antes de que lo haga un solo visitante.",
         ],
       },
       {
@@ -5230,7 +5230,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "A slow-loading site loses visitors who arrived through paid ads before they see any of the message the ad promised, which means the wasted spend happens silently, with no obvious error to point to. Google's own Core Web Vitals report grades sites specifically on Largest Contentful Paint (LCP), the time it takes the main content to become visible, and anything above 2.5 seconds is flagged as needing improvement, directly affecting search ranking, not just user experience.",
         ],
         bodyEs: [
-          "Un sitio de carga lenta pierde visitantes que llegaron por anuncios pagados antes de que vean nada del mensaje que el anuncio prometió, lo que significa que el gasto desperdiciado ocurre en silencio, sin un error obvio al cual apuntar. El propio reporte de Core Web Vitals de Google califica a los sitios específicamente en Largest Contentful Paint (LCP), el tiempo que tarda en verse el contenido principal, y cualquier cosa por encima de 2.5 segundos se marca como que necesita mejora, afectando directamente el posicionamiento en búsqueda, no solo la experiencia del usuario.",
+          "Un sitio de carga lenta pierde visitantes que llegaron por anuncios pagados antes de que vean nada del mensaje que el anuncio prometió, lo que significa que el gasto desperdiciado pasa desapercibido, sin un error obvio al cual apuntar. El propio reporte de Core Web Vitals de Google califica a los sitios específicamente en Largest Contentful Paint (LCP), el tiempo que tarda en verse el contenido principal, y cualquier cosa por encima de 2.5 segundos se marca como que necesita mejora, afectando directamente el posicionamiento en búsqueda, no solo la experiencia del usuario.",
         ],
       },
       {
