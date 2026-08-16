@@ -1,0 +1,344 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Check, MessageSquare, Sparkles } from "lucide-react";
+import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
+import { CTAFooter } from "@/components/servicios/CTAFooter";
+import { useT } from "@/lib/i18n";
+import { buildHead, SITE_URL } from "@/lib/seo";
+
+export const Route = createFileRoute("/servicios/whatsapp-ia")({
+  loaderDeps: ({ search }) => ({ lang: search.lang }),
+  loader: ({ deps }) => deps,
+  head: ({ loaderData }) =>
+    buildHead({
+      path: "/servicios/whatsapp-ia",
+      lang: loaderData?.lang ?? "en",
+      en: {
+        title: "WhatsApp AI for Business | Aphelion",
+        description:
+          "Automated and AI-powered WhatsApp agents that answer, qualify leads and book appointments. Try three live agents on the page before you decide.",
+        ogTitle: "WhatsApp AI — Aphelion",
+        ogDescription:
+          "Automated flows or a real conversational AI agent on WhatsApp. Try it live on the page, no signup.",
+      },
+      es: {
+        title: "WhatsApp con IA para Negocios | Aphelion",
+        description:
+          "Agentes de WhatsApp automatizados y con IA que responden, califican leads y agendan citas. Prueba tres agentes en vivo antes de decidir.",
+        ogTitle: "WhatsApp con IA — Aphelion",
+        ogDescription:
+          "Flujos automatizados o un agente de IA conversacional real en WhatsApp. Pruébalo en vivo en la página, sin registro.",
+      },
+      jsonLd: {
+        "@type": "Service",
+        serviceType: "WhatsApp automation and conversational AI agents",
+        provider: { "@type": "Organization", name: "Aphelion", url: SITE_URL },
+        areaServed: ["MX", "US"],
+        name: "WhatsApp IA",
+      },
+    }),
+  component: WhatsAppIAPage,
+});
+
+function WhatsAppIAPage() {
+  const t = useT();
+
+  return (
+    <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
+      {/* Hero */}
+      <section className="on-dark relative flex min-h-[460px] items-center overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:min-h-[560px] sm:pt-28 sm:pb-32">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-900 via-neutral-950 to-neutral-950"
+        />
+        <div className="relative mx-auto max-w-4xl text-center">
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/60">
+            {t("WhatsApp AI", "WhatsApp con IA")}
+          </p>
+          <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-white">
+            {t(
+              "Your WhatsApp, answering like your best salesperson.",
+              "Tu WhatsApp, respondiendo como tu mejor vendedor.",
+            )}
+          </h1>
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
+            {t(
+              "Automated flows for the predictable questions, or a real AI agent that understands, qualifies and books. This isn't a mockup — scroll down and talk to three live agents yourself.",
+              "Flujos automatizados para las preguntas predecibles, o un agente de IA real que entiende, califica y agenda. Esto no es un mockup: baja y platica tú mismo con tres agentes en vivo.",
+            )}
+          </p>
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
+            <a
+              href="#demo"
+              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+            >
+              {t("Try it yourself", "Pruébalo tú mismo")}
+            </a>
+            <Link
+              to="/contacto"
+              className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"
+            >
+              {t("Request a quote", "Solicitar cotización")}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Package comparison — no prices here, only what each one is */}
+      <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+              {t("Two ways to do it", "Dos formas de hacerlo")}
+            </p>
+            <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+              {t(
+                "Not every business needs conversational AI.",
+                "No todo negocio necesita IA conversacional.",
+              )}
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-neutral-500">
+              {t(
+                "If your questions repeat, automation solves it cheaper. If the conversation changes with every customer, that's where AI earns its cost.",
+                "Si tus preguntas se repiten, la automatización lo resuelve más barato. Si la conversación cambia con cada cliente, ahí es donde la IA justifica su costo.",
+              )}
+            </p>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2">
+            <TierCard
+              icon={<MessageSquare className="h-4 w-4" aria-hidden />}
+              eyebrow={t("Automated", "Automatizado")}
+              title={t("Preloaded flows", "Flujos precargados")}
+              description={t(
+                "A menu-style flow of questions and fixed answers. Predictable by design.",
+                "Un flujo tipo menú de preguntas y respuestas fijas. Predecible por diseño.",
+              )}
+              features={[
+                t(
+                  "Menu-style question and answer flow",
+                  "Flujo de preguntas y respuestas tipo menú",
+                ),
+                t("Fixed, predictable responses", "Respuestas fijas y predecibles"),
+                t("No real AI involved", "Sin IA real de por medio"),
+                t("Fast setup", "Implementación rápida"),
+              ]}
+              idealLabel={t("Ideal for", "Ideal para")}
+              ideal={[
+                t("Hours", "Horarios"),
+                t("FAQs", "Preguntas frecuentes"),
+                t("Basic catalog", "Catálogo básico"),
+                t("Location", "Ubicación"),
+              ]}
+            />
+
+            <TierCard
+              featured
+              icon={<Sparkles className="h-4 w-4" aria-hidden />}
+              eyebrow={t("Conversational AI", "IA Conversacional")}
+              title={t("A real agent", "Un agente real")}
+              description={t(
+                "Runs on Claude. Understands natural language and holds context through the whole conversation.",
+                "Corre con Claude. Entiende lenguaje natural y mantiene el contexto durante toda la conversación.",
+              )}
+              features={[
+                t(
+                  "Claude engine: understands natural language, keeps context",
+                  "Motor con Claude: entiende lenguaje natural, mantiene contexto",
+                ),
+                t(
+                  "Qualifies leads, books appointments, drafts preliminary quotes",
+                  "Califica leads, agenda citas, genera cotizaciones preliminares",
+                ),
+                t(
+                  "Adapts to your business: real estate, health, services, whatever it is",
+                  "Se adapta a tu negocio: real estate, salud, servicios, lo que sea",
+                ),
+                t("Escalates to a human when it should", "Escala a una persona cuando corresponde"),
+              ]}
+              idealLabel={t("Ideal for", "Ideal para")}
+              ideal={[
+                t(
+                  "Businesses where the conversation varies and the sale depends on understanding the customer",
+                  "Negocios donde la conversación varía y la venta depende de entender al cliente",
+                ),
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Demo */}
+      <section
+        id="demo"
+        className="scroll-mt-20 border-t border-neutral-200 bg-neutral-100 px-5 py-20 sm:py-28"
+      >
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+              {t("Live demo", "Demo en vivo")}
+            </p>
+            <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+              {t("Try it yourself.", "Pruébalo tú mismo.")}
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-neutral-500">
+              {t(
+                "Three agents, same engine, different context. Pick an industry and talk to it like a customer would — ask about prices, availability, whatever you want.",
+                "Tres agentes, mismo motor, distinto contexto. Elige una industria y háblale como lo haría un cliente: pregunta precios, disponibilidad, lo que quieras.",
+              )}
+            </p>
+          </div>
+
+          <WhatsAppDemo />
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
+        <div className="mx-auto max-w-4xl">
+          <div className="mb-12 text-center">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+              {t("Pricing", "Precios")}
+            </p>
+            <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+              {t("Every implementation is different.", "Cada implementación es distinta.")}
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-neutral-500">
+              {t(
+                "The price depends on message volume, the integrations you need (CRM, calendar, catalog) and how far the agent gets customized to your business. We quote after understanding those three.",
+                "El precio depende del volumen de mensajes, las integraciones que necesites (CRM, calendario, catálogo) y qué tanto se personaliza el agente a tu negocio. Cotizamos después de entender esos tres puntos.",
+              )}
+            </p>
+          </div>
+
+          {/* PENDIENTE: agregar precios cuando Isaac los defina */}
+          <div className="grid gap-5 sm:grid-cols-2">
+            <QuoteCard
+              eyebrow={t("Automated", "Automatizado")}
+              note={t(
+                "Scoped by number of flows and integrations.",
+                "Se define por número de flujos e integraciones.",
+              )}
+              label={t("Custom quote", "Cotización personalizada")}
+              cta={t("Request your quote", "Solicita tu cotización")}
+            />
+            <QuoteCard
+              eyebrow={t("Conversational AI", "IA Conversacional")}
+              note={t(
+                "Scoped by message volume, integrations and level of customization.",
+                "Se define por volumen de mensajes, integraciones y nivel de personalización.",
+              )}
+              label={t("Custom quote", "Cotización personalizada")}
+              cta={t("Request your quote", "Solicita tu cotización")}
+            />
+          </div>
+        </div>
+      </section>
+
+      <CTAFooter />
+    </main>
+  );
+}
+
+function TierCard({
+  icon,
+  eyebrow,
+  title,
+  description,
+  features,
+  idealLabel,
+  ideal,
+  featured = false,
+}: {
+  icon: React.ReactNode;
+  eyebrow: string;
+  title: string;
+  description: string;
+  features: string[];
+  idealLabel: string;
+  ideal: string[];
+  featured?: boolean;
+}) {
+  const t = useT();
+  return (
+    <div
+      className={`flex flex-col rounded-2xl border p-7 transition sm:p-8 ${
+        featured
+          ? "border-neutral-950 bg-white shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]"
+          : "border-neutral-200 bg-white"
+      }`}
+    >
+      <div className="mb-5 flex items-center gap-2">
+        <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-neutral-950 text-white">
+          {icon}
+        </span>
+        <span className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+          {eyebrow}
+        </span>
+      </div>
+
+      <h3 className="text-2xl font-medium tracking-[-0.02em] text-neutral-950">{title}</h3>
+      <p className="mt-2.5 text-sm leading-relaxed text-neutral-500">{description}</p>
+
+      <ul className="mt-7 space-y-2.5">
+        {features.map((f) => (
+          <li key={f} className="flex items-start gap-2.5 text-sm text-neutral-800">
+            <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-950" strokeWidth={2.5} />
+            <span className="leading-relaxed">{f}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-7">
+        <p className="mb-2.5 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+          {idealLabel}
+        </p>
+        <div className="flex flex-wrap gap-1.5">
+          {ideal.map((i) => (
+            <span
+              key={i}
+              className="rounded-full border border-neutral-200 px-2.5 py-1 text-xs leading-relaxed text-neutral-700"
+            >
+              {i}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <a
+        href="#demo"
+        className="mt-8 inline-flex items-center justify-center rounded-full border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
+      >
+        {t("See how it works", "Ver cómo funciona")}
+      </a>
+    </div>
+  );
+}
+
+function QuoteCard({
+  eyebrow,
+  note,
+  label,
+  cta,
+}: {
+  eyebrow: string;
+  note: string;
+  label: string;
+  cta: string;
+}) {
+  return (
+    <div className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-7 sm:p-8">
+      <span className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+        {eyebrow}
+      </span>
+      {/* PENDIENTE: agregar precios cuando Isaac los defina */}
+      <p className="mt-4 text-2xl font-medium tracking-[-0.02em] text-neutral-950">{label}</p>
+      <p className="mt-2.5 flex-1 text-sm leading-relaxed text-neutral-500">{note}</p>
+      <Link
+        to="/contacto"
+        className="mt-7 inline-flex items-center justify-center rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
+      >
+        {cta}
+      </Link>
+    </div>
+  );
+}
