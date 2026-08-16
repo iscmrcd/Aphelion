@@ -140,10 +140,14 @@ export function WhatsAppDemo() {
                   : "border-neutral-200 bg-white text-neutral-950 hover:border-neutral-950"
               }`}
             >
-              <span className="text-base" aria-hidden>
-                {a.emoji}
+              <span
+                className={`inline-flex h-7 w-7 items-center justify-center rounded-full transition ${
+                  active ? "bg-white text-neutral-950" : "bg-neutral-950 text-white"
+                }`}
+              >
+                <a.Icon className="h-4 w-4" aria-hidden strokeWidth={2} />
               </span>
-              <span className="mt-1.5 block text-sm font-medium leading-tight">
+              <span className="mt-2 block text-sm font-medium leading-tight">
                 {lang === "es" ? a.industryEs : a.industry}
               </span>
               <span

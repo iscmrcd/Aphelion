@@ -1,8 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, MessageSquare, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { Check, MessageSquare, Plus, Sparkles } from "lucide-react";
 import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
+import { AutomatedFlowDemo } from "@/components/servicios/AutomatedFlowDemo";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
-import { useT } from "@/lib/i18n";
+import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
+import { WHATSAPP_IA_FAQ } from "@/lib/whatsapp-ia-data";
+import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/servicios/whatsapp-ia")({
@@ -28,19 +32,33 @@ export const Route = createFileRoute("/servicios/whatsapp-ia")({
         ogDescription:
           "Flujos automatizados o un agente de IA conversacional real en WhatsApp. Pruébalo en vivo en la página, sin registro.",
       },
-      jsonLd: {
-        "@type": "Service",
-        serviceType: "WhatsApp automation and conversational AI agents",
-        provider: { "@type": "Organization", name: "Aphelion", url: SITE_URL },
-        areaServed: ["MX", "US"],
-        name: "WhatsApp IA",
-      },
+      jsonLd: [
+        {
+          "@type": "Service",
+          serviceType: "WhatsApp automation and conversational AI agents",
+          provider: { "@type": "Organization", name: "Aphelion", url: SITE_URL },
+          areaServed: ["MX", "US"],
+          name: "WhatsApp IA",
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: WHATSAPP_IA_FAQ.map((f) => ({
+            "@type": "Question",
+            name: loaderData?.lang === "es" ? f.q : f.qEn,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: loaderData?.lang === "es" ? f.a : f.aEn,
+            },
+          })),
+        },
+      ],
     }),
   component: WhatsAppIAPage,
 });
 
 function WhatsAppIAPage() {
   const t = useT();
+  const { lang } = useLang();
 
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
@@ -129,6 +147,7 @@ function WhatsAppIAPage() {
                 t("Basic catalog", "Catálogo básico"),
                 t("Location", "Ubicación"),
               ]}
+              demo={<AutomatedFlowDemo />}
             />
 
             <TierCard
@@ -234,8 +253,68 @@ function WhatsAppIAPage() {
         </div>
       </section>
 
+      <FAQSection />
+
+      {/* Renders nothing until posts in this category exist. */}
+      <BlogTeaserSection categories={["Automation", "Automatización"]} lang={lang} />
+
       <CTAFooter />
     </main>
+  );
+}
+
+function FAQSection() {
+  const t = useT();
+  const { lang } = useLang();
+  const [open, setOpen] = useState<number | null>(0);
+
+  return (
+    <section className="border-t border-neutral-200 bg-neutral-100 px-5 py-20 sm:py-28">
+      <div className="mx-auto max-w-3xl">
+        <div className="mb-10 text-center">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+            FAQ
+          </p>
+          <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
+            {t("Before you decide.", "Antes de decidir.")}
+          </h2>
+        </div>
+
+        <div className="divide-y divide-neutral-200 border-y border-neutral-200">
+          {WHATSAPP_IA_FAQ.map((f, i) => {
+            const isOpen = open === i;
+            const question = lang === "es" ? f.q : f.qEn;
+            const answer = lang === "es" ? f.a : f.aEn;
+            return (
+              <div key={i}>
+                <button
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  aria-expanded={isOpen}
+                  className="flex w-full items-center justify-between gap-4 py-5 text-left"
+                >
+                  <span className="text-base font-medium text-neutral-950">{question}</span>
+                  <Plus
+                    className={`h-4 w-4 flex-shrink-0 text-neutral-500 transition-transform duration-200 ${
+                      isOpen ? "rotate-45" : ""
+                    }`}
+                    strokeWidth={2}
+                  />
+                </button>
+                <div
+                  className={`grid transition-all duration-300 ${
+                    isOpen ? "grid-rows-[1fr] pb-5" : "grid-rows-[0fr]"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="pr-8 text-sm leading-relaxed text-neutral-500">{answer}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -247,6 +326,7 @@ function TierCard({
   features,
   idealLabel,
   ideal,
+  demo,
   featured = false,
 }: {
   icon: React.ReactNode;
@@ -256,6 +336,8 @@ function TierCard({
   features: string[];
   idealLabel: string;
   ideal: string[];
+  /** Optional inline demo rendered above the card's CTA. */
+  demo?: React.ReactNode;
   featured?: boolean;
 }) {
   const t = useT();
@@ -303,6 +385,8 @@ function TierCard({
           ))}
         </div>
       </div>
+
+      {demo}
 
       <a
         href="#demo"
