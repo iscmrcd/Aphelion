@@ -50,10 +50,31 @@ export type ChatReply = {
 
 type SupabaseConfig = { url: string; key: string };
 
+/**
+ * Resolves the Supabase connection from whichever env var names are present.
+ * The database is provisioned through Lovable, which may expose these under a
+ * few different names depending on how the integration is wired, so we accept
+ * the common variants rather than hard-coding one.
+ *
+ * A service-role key is required: RLS is enabled on demo_conversations with no
+ * policies, so an anon key can neither read nor write it. Without the service
+ * role we intentionally fall back to the degraded (history-derived) ceiling
+ * rather than failing open.
+ */
 function supabaseConfig(): SupabaseConfig | null {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) return null;
+  const env = process.env;
+  const url = env.SUPABASE_URL || env.VITE_SUPABASE_URL || env.SUPABASE_PROJECT_URL;
+  const key = env.SUPABASE_SERVICE_ROLE_KEY || env.SUPABASE_SERVICE_KEY || env.SUPABASE_SECRET_KEY;
+
+  if (!url || !key) {
+    if (url && !key) {
+      console.warn(
+        "[whatsapp-ia demo] Supabase URL found but no service-role key — " +
+          "guardrails are running in degraded mode and conversations are not being logged.",
+      );
+    }
+    return null;
+  }
   return { url: url.replace(/\/$/, ""), key };
 }
 
