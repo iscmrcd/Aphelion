@@ -123,37 +123,67 @@ function SecondLevel() {
   const parent = FLOW_OPTIONS.find((o) => o.followUps?.length);
   if (!parent?.followUps) return null;
 
+  const fixed = t("fixed answer", "respuesta fija");
+
   return (
     <div className="mx-auto max-w-[560px]">
-      {/* Drop + split, aligned under the third column */}
-      <div className="grid grid-cols-3">
-        <div />
-        <div />
-        <svg viewBox="0 0 100 40" className="h-10 w-full" aria-hidden preserveAspectRatio="none">
-          <path
-            d="M50 0 V16 M22 16 H78 M22 16 V40 M78 16 V40"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1"
-            className="text-neutral-300"
-          />
-        </svg>
-      </div>
-
-      <div className="grid grid-cols-3">
-        <div />
-        <div />
-        <div className="grid grid-cols-2 gap-2">
+      {/*
+        Mobile: stacked, full width.
+        Side by side, each sub-branch would land in a third of a third of the
+        card — about 25px of usable text width at 375px, which clipped both
+        labels. Shrinking the font doesn't buy enough room, so below sm they
+        stack and take the full container instead.
+      */}
+      <div className="mt-5 sm:hidden">
+        <p className="mb-2 text-center text-xs text-neutral-500">
+          {es ? parent.labelEs : parent.label} →
+        </p>
+        <div className="space-y-2">
           {parent.followUps.map((f) => (
-            <div key={f.id} className="text-center">
-              <div className="rounded-lg border border-neutral-200 bg-white px-2 py-2 text-xs font-medium leading-tight text-neutral-800">
+            <div
+              key={f.id}
+              className="flex items-center justify-between gap-3 rounded-lg border border-neutral-200 bg-white px-3 py-2.5"
+            >
+              <span className="text-xs font-medium leading-tight text-neutral-800">
                 {es ? f.labelEs : f.label}
-              </div>
-              <p className="mt-1.5 text-[11px] leading-tight text-neutral-500">
-                → {t("fixed answer", "respuesta fija")}
-              </p>
+              </span>
+              <span className="flex-shrink-0 text-[11px] leading-tight text-neutral-500">
+                → {fixed}
+              </span>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* sm and up: aligned under the third column, as a real branch */}
+      <div className="hidden sm:block">
+        <div className="grid grid-cols-3">
+          <div />
+          <div />
+          <svg viewBox="0 0 100 40" className="h-10 w-full" aria-hidden preserveAspectRatio="none">
+            <path
+              d="M50 0 V16 M22 16 H78 M22 16 V40 M78 16 V40"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              className="text-neutral-300"
+            />
+          </svg>
+        </div>
+
+        <div className="grid grid-cols-3">
+          <div />
+          <div />
+          <div className="grid grid-cols-2 gap-2">
+            {parent.followUps.map((f) => (
+              <div key={f.id} className="min-w-0 text-center">
+                <div className="rounded-lg border border-neutral-200 bg-white px-2 py-2 text-xs font-medium leading-tight text-neutral-800">
+                  {es ? f.labelEs : f.label}
+                </div>
+                <p className="mt-1.5 text-[11px] leading-tight text-neutral-500">→ {fixed}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

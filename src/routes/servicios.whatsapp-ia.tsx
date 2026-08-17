@@ -5,7 +5,7 @@ import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
 import { AutomatedFlowSection } from "@/components/servicios/AutomatedFlowSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
-import { WHATSAPP_IA_FAQ } from "@/lib/whatsapp-ia-data";
+import { AI_GRADIENT, AI_GRADIENT_TEXT, WHATSAPP_IA_FAQ } from "@/lib/whatsapp-ia-data";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
 
@@ -161,6 +161,7 @@ function WhatsAppIAPage() {
 
             <TierCard
               featured
+              accent
               icon={<Sparkles className="h-4 w-4" aria-hidden />}
               eyebrow={t("Conversational AI", "IA Conversacional")}
               title={t("A real agent", "Un agente real")}
@@ -206,6 +207,10 @@ function WhatsAppIAPage() {
         <div className="mx-auto max-w-5xl">
           <div className="mb-10 text-center">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+              <span className={AI_GRADIENT_TEXT}>
+                {t("Conversational AI", "IA Conversacional")}
+              </span>
+              <span aria-hidden> · </span>
               {t("Live demo", "Demo en vivo")}
             </p>
             <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
@@ -339,6 +344,7 @@ function TierCard({
   idealLabel,
   ideal,
   ctaHref,
+  accent = false,
   featured = false,
 }: {
   icon: React.ReactNode;
@@ -350,6 +356,8 @@ function TierCard({
   ideal: string[];
   /** Anchor the "See how it works" button scrolls to. */
   ctaHref: string;
+  /** Applies the AI gradient to the eyebrow and CTA. Conversational AI only. */
+  accent?: boolean;
   featured?: boolean;
 }) {
   const t = useT();
@@ -365,7 +373,11 @@ function TierCard({
         <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-neutral-950 text-white">
           {icon}
         </span>
-        <span className="text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
+        <span
+          className={`text-xs font-medium uppercase tracking-[0.14em] ${
+            accent ? AI_GRADIENT_TEXT : "text-neutral-500"
+          }`}
+        >
           {eyebrow}
         </span>
       </div>
@@ -400,7 +412,11 @@ function TierCard({
 
       <a
         href={ctaHref}
-        className="mt-8 inline-flex items-center justify-center rounded-full border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
+        className={`mt-8 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
+          accent
+            ? `border border-transparent text-white ${AI_GRADIENT} hover:opacity-90`
+            : "border border-neutral-200 text-neutral-950 hover:border-neutral-950"
+        }`}
       >
         {t("See how it works", "Ver cómo funciona")}
       </a>

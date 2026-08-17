@@ -106,6 +106,25 @@ export const DEMO_AGENTS: Record<AgentType, DemoAgent> = {
   },
 };
 
+/**
+ * Gradient reserved exclusively for the Conversational AI tier.
+ *
+ * STRICT SCOPE — it may only appear in three places:
+ *   1. the CTA button on the "IA Conversacional" comparison card
+ *   2. the "IA Conversacional" wording in that card's and the demo section's headings
+ *   3. the active state of the three industry tabs inside #demo
+ *
+ * It must never touch the "Automatizado" card, the fixed-flow diagram, or
+ * anything else on the site. The contrast between neutral (scripted) and
+ * gradient (AI) is what communicates the difference between the two tiers, so
+ * spreading it around would erase the signal it exists to carry.
+ */
+export const AI_GRADIENT = "bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-500";
+
+/** Same ramp for text via background-clip. */
+export const AI_GRADIENT_TEXT =
+  "bg-gradient-to-r from-violet-600 to-fuchsia-500 bg-clip-text text-transparent";
+
 export const AGENT_ORDER: AgentType[] = ["real-estate", "health", "professional"];
 
 export function isAgentType(value: unknown): value is AgentType {

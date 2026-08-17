@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Send, RotateCcw, Lock } from "lucide-react";
-import { AGENT_ORDER, DEMO_AGENTS, type AgentType } from "@/lib/whatsapp-ia-data";
+import { AGENT_ORDER, AI_GRADIENT, DEMO_AGENTS, type AgentType } from "@/lib/whatsapp-ia-data";
 import { sendDemoMessage, type ChatTurn } from "@/lib/whatsapp-ia-server";
 import { useT, useLang } from "@/lib/i18n";
 
@@ -124,7 +124,7 @@ export function WhatsAppDemo() {
   return (
     <div className="mx-auto max-w-2xl">
       {/* Industry selector */}
-      <div className="mb-6 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
+      <div className="mb-6 grid grid-cols-3 gap-2 sm:gap-2.5">
         {AGENT_ORDER.map((id) => {
           const a = DEMO_AGENTS[id];
           const active = id === agentType;
@@ -134,25 +134,27 @@ export function WhatsAppDemo() {
               type="button"
               onClick={() => setAgentType(id)}
               aria-pressed={active}
-              className={`rounded-2xl border px-4 py-3.5 text-left transition ${
+              className={`min-w-0 rounded-2xl border px-2 py-3 text-center transition sm:px-4 sm:py-3.5 sm:text-left ${
                 active
-                  ? "border-neutral-950 bg-neutral-950 text-white"
+                  ? `border-transparent text-white ${AI_GRADIENT}`
                   : "border-neutral-200 bg-white text-neutral-950 hover:border-neutral-950"
               }`}
             >
               <span
-                className={`inline-flex h-7 w-7 items-center justify-center rounded-full transition ${
-                  active ? "bg-white text-neutral-950" : "bg-neutral-950 text-white"
+                className={`mx-auto flex h-7 w-7 items-center justify-center rounded-full transition sm:mx-0 ${
+                  active ? "bg-white text-violet-700" : "bg-neutral-950 text-white"
                 }`}
               >
                 <a.Icon className="h-4 w-4" aria-hidden strokeWidth={2} />
               </span>
-              <span className="mt-2 block text-sm font-medium leading-tight">
+              <span className="mt-2 block text-xs font-medium leading-tight sm:text-sm">
                 {lang === "es" ? a.industryEs : a.industry}
               </span>
+              {/* Subtitle is dropped on mobile: at 375px each tab has ~90px of
+                  usable width, not enough for it without wrapping to 2 lines. */}
               <span
-                className={`mt-0.5 block text-xs leading-tight ${
-                  active ? "text-white/60" : "text-neutral-500"
+                className={`mt-0.5 hidden text-xs leading-tight sm:block ${
+                  active ? "text-white/70" : "text-neutral-500"
                 }`}
               >
                 {lang === "es" ? a.roleEs : a.role}
@@ -261,7 +263,10 @@ export function WhatsAppDemo() {
                 disabled={pending}
                 placeholder={t("Type a message", "Escribe un mensaje")}
                 aria-label={t("Type a message", "Escribe un mensaje")}
-                className="min-w-0 flex-1 rounded-full border-[0.5px] border-neutral-300 bg-neutral-50 px-4 py-2.5 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950 focus:bg-white disabled:opacity-60"
+                // text-base (16px) is deliberate: iOS Safari auto-zooms any focused input
+                // whose computed font-size is under 16px. Fixing it here keeps the
+                // page-wide pinch-zoom intact, unlike a maximum-scale viewport hack.
+                className="min-w-0 flex-1 rounded-full border-[0.5px] border-neutral-300 bg-neutral-50 px-4 py-2.5 text-base text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950 focus:bg-white disabled:opacity-60"
               />
               <button
                 type="submit"
