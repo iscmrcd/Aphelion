@@ -5,6 +5,7 @@ import { CategoryBento } from "@/components/servicios/CategoryBento";
 import { WebsitesOverview } from "@/components/servicios/WebsitesOverview";
 import { MarketingOverview } from "@/components/servicios/MarketingOverview";
 import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholders";
+import { WhatsAppIAPromo } from "@/components/servicios/WhatsAppIAPromo";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { buildHead, ORGANIZATION_JSONLD, SITE_URL } from "@/lib/seo";
 
@@ -45,6 +46,7 @@ export const Route = createFileRoute("/")({
           itemListElement: [
             "Websites",
             "Marketing & Content",
+            "WhatsApp AI",
             "Content Production",
             "Video & Drone",
             "Custom SaaS",
@@ -65,6 +67,7 @@ function Index() {
       <Hero onCta={goWebsites} />
       <TrustedLogos />
       <CategoryBento onWebsites={goWebsites} />
+      <WhatsAppIAPromo />
       <WebsitesOverview />
       <MarketingOverview />
       <CategoryPlaceholders />

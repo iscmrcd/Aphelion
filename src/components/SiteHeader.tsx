@@ -69,6 +69,7 @@ export function SiteHeader() {
     { to: "/", label: t("Services", "Servicios") },
     { to: "/servicios/websites", label: "Websites" },
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
+    { to: "/servicios/whatsapp-ia", label: t("WhatsApp AI", "WhatsApp IA") },
     { to: "/blog", label: t("Resources", "Recursos") },
     { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;
@@ -86,7 +87,9 @@ export function SiteHeader() {
           <AphelionLogo className="h-6 w-auto" />
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Main">
+        {/* lg, not md: six items need ~520px and md (768px) only leaves ~310px
+            between the logo and the right-hand controls. */}
+        <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -114,7 +117,7 @@ export function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? t("Close menu", "Cerrar menú") : t("Open menu", "Abrir menú")}
             aria-expanded={open}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-neutral-950 md:hidden"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-neutral-950 lg:hidden"
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
@@ -122,7 +125,7 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="border-t border-neutral-200 bg-white md:hidden">
+        <div className="border-t border-neutral-200 bg-white lg:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col px-5 py-2" aria-label="Mobile">
             {nav.map((item) => (
               <Link
