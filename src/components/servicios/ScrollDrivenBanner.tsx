@@ -177,7 +177,8 @@ export function ScrollDrivenBanner({
       window.removeEventListener("resize", onResize);
       if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
     };
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [variant]);
 
   return (
     <section
