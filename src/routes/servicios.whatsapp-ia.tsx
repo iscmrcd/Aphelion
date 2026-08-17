@@ -112,7 +112,7 @@ function WhatsAppIAPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </ScrollDrivenBanner>
 
       {/* Package comparison — no prices here, only what each one is */}
       <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
