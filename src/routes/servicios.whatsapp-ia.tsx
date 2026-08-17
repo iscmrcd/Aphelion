@@ -4,6 +4,7 @@ import { Check, MessageSquare, Plus, Sparkles } from "lucide-react";
 import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
 import { AutomatedFlowSection } from "@/components/servicios/AutomatedFlowSection";
 import { IntegrationsSection } from "@/components/servicios/IntegrationsSection";
+import { AiGradientDefs } from "@/components/servicios/AiGradientDefs";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import {
@@ -11,6 +12,7 @@ import {
   AI_GRADIENT,
   AI_GRADIENT_ON,
   AI_GRADIENT_TEXT,
+  aiIconGradientStyle,
   WHATSAPP_IA_FAQ,
 } from "@/lib/whatsapp-ia-data";
 import { useT, useLang } from "@/lib/i18n";
@@ -69,6 +71,7 @@ function WhatsAppIAPage() {
 
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
+      <AiGradientDefs />
       {/* Hero */}
       <section className="on-dark relative flex min-h-[460px] items-center overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:min-h-[560px] sm:pt-28 sm:pb-32">
         <div
@@ -169,7 +172,7 @@ function WhatsAppIAPage() {
             <TierCard
               featured
               accent
-              icon={<Sparkles className="h-4 w-4" aria-hidden />}
+              icon={<Sparkles className="h-4 w-4" style={aiIconGradientStyle} aria-hidden />}
               eyebrow={t("Conversational AI", "IA Conversacional")}
               title={t("A real agent", "Un agente real")}
               description={t(
@@ -380,7 +383,11 @@ function TierCard({
       }`}
     >
       <div className="mb-5 flex items-center gap-2">
-        <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-neutral-950 text-white">
+        <span
+          className={`inline-flex h-7 w-7 items-center justify-center rounded-full ${
+            accent ? "border border-neutral-200 bg-white" : "bg-neutral-950 text-white"
+          }`}
+        >
           {icon}
         </span>
         <span
@@ -400,8 +407,9 @@ function TierCard({
           <li key={f} className="flex items-start gap-2.5 text-sm text-neutral-800">
             <Check
               className="mt-0.5 h-4 w-4 flex-shrink-0"
-              style={{ color: AI_ACCENT }}
+              style={accent ? { color: AI_ACCENT } : undefined}
               strokeWidth={2.5}
+              color={accent ? undefined : "#0a0a0a"}
             />
             <span className="leading-relaxed">{f}</span>
           </li>
@@ -424,16 +432,26 @@ function TierCard({
         </div>
       </div>
 
-      <a
-        href={ctaHref}
-        className={`mt-8 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
-          accent
-            ? `border border-transparent ${AI_GRADIENT_ON} ${AI_GRADIENT} hover:opacity-90`
-            : "border border-neutral-200 text-neutral-950 hover:border-neutral-950"
-        }`}
-      >
-        {t("See how it works", "Ver cómo funciona")}
-      </a>
+      {accent ? (
+        <a
+          href={ctaHref}
+          className={`mt-8 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-2.5 text-sm font-medium transition hover:opacity-90 ${AI_GRADIENT_ON} ${AI_GRADIENT}`}
+        >
+          {t("See how it works", "Ver cómo funciona")}
+        </a>
+      ) : (
+        /* Hairline gradient outline: the gradient paints the wrapper, an inset
+           white pill covers all but 1px of it. A plain border can't carry a
+           gradient, and border-image doesn't follow border-radius. */
+        <span className={`mt-8 block rounded-full p-px ${AI_GRADIENT}`}>
+          <a
+            href={ctaHref}
+            className="flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-neutral-500 transition hover:text-neutral-950"
+          >
+            {t("See how it works", "Ver cómo funciona")}
+          </a>
+        </span>
+      )}
     </div>
   );
 }

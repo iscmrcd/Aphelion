@@ -4,6 +4,7 @@ import {
   AGENT_ORDER,
   AI_GRADIENT,
   AI_GRADIENT_ON,
+  aiIconGradientStyle,
   DEMO_AGENTS,
   type AgentType,
 } from "@/lib/whatsapp-ia-data";
@@ -148,10 +149,15 @@ export function WhatsAppDemo() {
             >
               <span
                 className={`mx-auto flex h-7 w-7 items-center justify-center rounded-full transition sm:mx-0 ${
-                  active ? "bg-neutral-950 text-white" : "bg-neutral-950 text-white"
+                  active ? "bg-white" : "bg-neutral-950 text-white"
                 }`}
               >
-                <a.Icon className="h-4 w-4" aria-hidden strokeWidth={2} />
+                <a.Icon
+                  className="h-4 w-4"
+                  style={active ? aiIconGradientStyle : undefined}
+                  aria-hidden
+                  strokeWidth={2}
+                />
               </span>
               <span className="mt-2 block text-xs font-medium leading-tight sm:text-sm">
                 {lang === "es" ? a.industryEs : a.industry}

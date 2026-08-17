@@ -109,33 +109,49 @@ export const DEMO_AGENTS: Record<AgentType, DemoAgent> = {
 /**
  * Gradient reserved exclusively for the Conversational AI tier.
  *
- * STRICT SCOPE — it may only appear in three places:
- *   1. the CTA button on the "IA Conversacional" comparison card
- *   2. the "IA Conversacional" wording in that card's and the demo section's headings
- *   3. the active state of the three industry tabs inside #demo
+ * STRICT SCOPE — six approved usages, all tied to the Conversational AI tier:
+ *   1. CTA on the "IA Conversacional" comparison card
+ *   2. CTA on the "IA Conversacional" pricing card
+ *   3. the "IA Conversacional" wording in headings
+ *   4. the active state of the three industry tabs inside #demo
+ *   5. the checkmarks on the "IA Conversacional" comparison card
+ *   6. the Sparkles glyph next to "IA Conversacional"
  *
- * It must never touch the "Automatizado" card, the fixed-flow diagram, or
- * anything else on the site. The contrast between neutral (scripted) and
- * gradient (AI) is what communicates the difference between the two tiers, so
- * spreading it around would erase the signal it exists to carry.
+ * Plus one deliberate exception: the "Automatizado" CTA carries a hairline
+ * gradient outline (white fill, muted text) so the two buttons read as one
+ * family without the neutral tier claiming the filled treatment.
+ *
+ * The fixed-flow diagram and the rest of the site stay neutral. The contrast
+ * between scripted and AI is what communicates the difference between tiers,
+ * so spreading the ramp further would erase the signal it exists to carry.
  */
-export const AI_GRADIENT = "bg-gradient-to-br from-[#C7B3EA] to-[#F0A8D2]";
+export const AI_GRADIENT = "bg-gradient-to-br from-[#B99AE8] to-[#EE96CB]";
 
 /** Same ramp for text via background-clip. */
 export const AI_GRADIENT_TEXT =
-  "bg-gradient-to-r from-[#C7B3EA] to-[#F0A8D2] bg-clip-text text-transparent";
+  "bg-gradient-to-r from-[#B99AE8] to-[#EE96CB] bg-clip-text text-transparent";
+
+/** Raw stops, for SVG <linearGradient> so icons use the exact same two colours. */
+export const AI_FROM = "#B99AE8";
+export const AI_TO = "#EE96CB";
+
+/** id of the SVG gradient rendered once per page by <AiGradientDefs />. */
+export const AI_ICON_GRADIENT_ID = "ai-icon-gradient";
+
+/** Paints a lucide glyph with the shared gradient (glyphs are stroked, not filled). */
+export const aiIconGradientStyle = { stroke: `url(#${AI_ICON_GRADIENT_ID})` } as const;
 
 /**
- * Text/icon colour to sit ON the gradient.
+ * Text/icon colour to sit ON a filled gradient surface.
  *
- * The ramp is pastel: white text over it measures ~1.9:1, well under the 4.5:1
- * WCAG AA minimum. Near-black over the same ramp measures ~10.4:1, so filled
- * gradient surfaces carry dark text instead of white.
+ * The ramp is pastel even after the saturation bump: white over it measures
+ * 2.1-2.4:1, under the 4.5:1 WCAG AA floor, while near-black measures
+ * 8.3-9.3:1. Filled gradient surfaces therefore carry dark text.
  */
 export const AI_GRADIENT_ON = "text-neutral-950";
 
-/** Solid accent for the comparison checkmarks — midpoint of the ramp. */
-export const AI_ACCENT = "#DCAEDE";
+/** Solid accent for the AI card's checkmarks — midpoint of the ramp. */
+export const AI_ACCENT = "#D398DA";
 
 export const AGENT_ORDER: AgentType[] = ["real-estate", "health", "professional"];
 

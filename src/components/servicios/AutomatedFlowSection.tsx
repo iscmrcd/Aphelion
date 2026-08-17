@@ -33,9 +33,9 @@ export function AutomatedFlowSection() {
           </p>
         </div>
 
-        <FlowDiagram />
-
-        <div className="mt-12">
+        {/* Side by side from lg up, where each column still clears ~496px. */}
+        <div className="grid items-start gap-8 lg:grid-cols-2">
+          <FlowDiagram />
           <AutomatedFlowChat />
         </div>
       </div>
@@ -52,7 +52,7 @@ function FlowDiagram() {
   const branchNote = t("fixed answer", "respuesta fija");
 
   return (
-    <div className="rounded-3xl border border-neutral-200 bg-white p-8 sm:p-12">
+    <div className="rounded-3xl border border-neutral-200 bg-white p-8 sm:p-12 lg:p-8 xl:p-10">
       {/* Level 0 */}
       <div className="flex justify-center">
         <span className="rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white">
@@ -125,66 +125,32 @@ function SecondLevel() {
 
   const fixed = t("fixed answer", "respuesta fija");
 
+  /*
+    Stacked at every width, not just on mobile.
+    Side by side, each sub-branch lands in a third of a third of the card: ~25px
+    of usable text width at 375px, and still only ~47px inside a half-row column
+    at 1440px, against labels that need 54-66px. The layout never earns the room,
+    so it stacks everywhere and the rows take the full width instead.
+  */
   return (
-    <div className="mx-auto max-w-[560px]">
-      {/*
-        Mobile: stacked, full width.
-        Side by side, each sub-branch would land in a third of a third of the
-        card — about 25px of usable text width at 375px, which clipped both
-        labels. Shrinking the font doesn't buy enough room, so below sm they
-        stack and take the full container instead.
-      */}
-      <div className="mt-5 sm:hidden">
-        <p className="mb-2 text-center text-xs text-neutral-500">
-          {es ? parent.labelEs : parent.label} →
-        </p>
-        <div className="space-y-2">
-          {parent.followUps.map((f) => (
-            <div
-              key={f.id}
-              className="flex items-center justify-between gap-3 rounded-lg border border-neutral-200 bg-white px-3 py-2.5"
-            >
-              <span className="text-xs font-medium leading-tight text-neutral-800">
-                {es ? f.labelEs : f.label}
-              </span>
-              <span className="flex-shrink-0 text-[11px] leading-tight text-neutral-500">
-                → {fixed}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* sm and up: aligned under the third column, as a real branch */}
-      <div className="hidden sm:block">
-        <div className="grid grid-cols-3">
-          <div />
-          <div />
-          <svg viewBox="0 0 100 40" className="h-10 w-full" aria-hidden preserveAspectRatio="none">
-            <path
-              d="M50 0 V16 M22 16 H78 M22 16 V40 M78 16 V40"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              className="text-neutral-300"
-            />
-          </svg>
-        </div>
-
-        <div className="grid grid-cols-3">
-          <div />
-          <div />
-          <div className="grid grid-cols-2 gap-2">
-            {parent.followUps.map((f) => (
-              <div key={f.id} className="min-w-0 text-center">
-                <div className="rounded-lg border border-neutral-200 bg-white px-2 py-2 text-xs font-medium leading-tight text-neutral-800">
-                  {es ? f.labelEs : f.label}
-                </div>
-                <p className="mt-1.5 text-[11px] leading-tight text-neutral-500">→ {fixed}</p>
-              </div>
-            ))}
+    <div className="mx-auto mt-5 max-w-[560px]">
+      <p className="mb-2 text-center text-xs text-neutral-500">
+        {es ? parent.labelEs : parent.label} →
+      </p>
+      <div className="space-y-2">
+        {parent.followUps.map((f) => (
+          <div
+            key={f.id}
+            className="flex items-center justify-between gap-3 rounded-lg border border-neutral-200 bg-white px-3 py-2.5"
+          >
+            <span className="text-xs font-medium leading-tight text-neutral-800">
+              {es ? f.labelEs : f.label}
+            </span>
+            <span className="flex-shrink-0 text-[11px] leading-tight text-neutral-500">
+              → {fixed}
+            </span>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
