@@ -44,9 +44,9 @@ export function WhatsAppIAPromo() {
             <Link
               to="/servicios/whatsapp-ia"
               hash="demo"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-100"
+              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium transition hover:bg-neutral-100"
             >
-              {t("Try it yourself", "Pruébalo tú mismo")}
+              <span className={AI_GRADIENT_TEXT}>{t("Try it yourself", "Pruébalo tú mismo")}</span>
             </Link>
           </GradientBorderFrame>
 
