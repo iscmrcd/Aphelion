@@ -7,6 +7,7 @@ import { IntegrationsSection } from "@/components/servicios/IntegrationsSection"
 import { AiGradientDefs } from "@/components/servicios/AiGradientDefs";
 import { GradientBorderFrame } from "@/components/servicios/GradientBorderFrame";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
+import { ScrollDrivenBanner } from "@/components/servicios/ScrollDrivenBanner";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import {
   AI_ACCENT,
