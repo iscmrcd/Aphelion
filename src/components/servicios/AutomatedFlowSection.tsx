@@ -49,8 +49,17 @@ function FlowDiagram() {
   const { lang } = useLang();
   const es = lang === "es";
 
-  const branchNote = t("fixed answer", "respuesta fija");
+  const parent = FLOW_OPTIONS.find((o) => o.followUps?.length);
 
+  /*
+    Connectors are derived from the grid instead of drawn on a fixed viewBox.
+    The previous SVG hard-coded drops at x=50/150/250, but with gap-3 the real
+    column centres land at 46/150/254 — a ~4px jog where the trunk met the
+    rail. These rails inset by exactly half a column, so they stay locked to
+    the node centres at any width:
+      3 columns -> half a column = (100% - 2*gap) / 6
+      2 columns -> half a column = (100% - gap) / 4
+  */
   return (
     <div className="rounded-3xl border border-neutral-200 bg-white p-8 sm:p-12 lg:p-8 xl:p-10">
       {/* Level 0 */}
@@ -60,49 +69,50 @@ function FlowDiagram() {
         </span>
       </div>
 
-      {/* Trunk + rail + three drops */}
-      <svg
-        viewBox="0 0 300 44"
-        className="mx-auto h-11 w-full max-w-[560px]"
-        aria-hidden
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M150 0 V18 M50 18 H250 M50 18 V44 M150 18 V44 M250 18 V44"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
-          className="text-neutral-300"
-        />
-      </svg>
+      <div className="mx-auto max-w-[560px]">
+        {/* trunk out of level 0 */}
+        <div className="mx-auto h-5 w-px bg-neutral-300" />
 
-      {/* Level 1 */}
-      <div className="mx-auto grid max-w-[560px] grid-cols-3 gap-3">
-        {FLOW_OPTIONS.map((o) => {
-          const hasChildren = Boolean(o.followUps?.length);
-          return (
-            <div key={o.id} className="text-center">
-              <div
-                className={`rounded-xl border px-3 py-3 text-sm font-medium leading-tight ${
-                  hasChildren
-                    ? "border-neutral-950 bg-neutral-50 text-neutral-950"
-                    : "border-neutral-200 bg-white text-neutral-800"
-                }`}
-              >
-                {es ? o.labelEs : o.label}
+        {/* rail + drops into the three branches */}
+        <div className="relative h-5">
+          <span className="absolute left-[calc((100%-24px)/6)] right-[calc((100%-24px)/6)] top-0 h-px bg-neutral-300" />
+          <div className="grid h-full grid-cols-3 gap-3">
+            {FLOW_OPTIONS.map((o) => (
+              <span key={o.id} className="mx-auto h-full w-px bg-neutral-300" />
+            ))}
+          </div>
+        </div>
+
+        {/* Level 1 */}
+        <div className="grid grid-cols-3 gap-3">
+          {FLOW_OPTIONS.map((o) => {
+            const hasChildren = Boolean(o.followUps?.length);
+            return (
+              <div key={o.id} className="text-center">
+                <div
+                  className={`rounded-xl border px-3 py-3 text-sm font-medium leading-tight ${
+                    hasChildren
+                      ? "border-neutral-950 bg-neutral-50 text-neutral-950"
+                      : "border-neutral-200 bg-white text-neutral-800"
+                  }`}
+                >
+                  {es ? o.labelEs : o.label}
+                </div>
+                {/* Terminal branches label themselves. The one that opens a second
+                    level says so by actually opening one, and a caption there would
+                    interrupt the trunk running down to its children. */}
+                {!hasChildren && (
+                  <p className="mt-2 text-xs leading-tight text-neutral-500">
+                    → {t("fixed answer", "respuesta fija")}
+                  </p>
+                )}
               </div>
-              <p className="mt-2 text-xs leading-tight text-neutral-500">
-                {hasChildren
-                  ? t("opens a second level", "abre un segundo nivel")
-                  : `→ ${branchNote}`}
-              </p>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
 
-      {/* Level 2, under the branch that has children */}
-      <SecondLevel />
+        {parent?.followUps ? <SecondLevel /> : null}
+      </div>
 
       <p className="mx-auto mt-10 max-w-2xl border-t border-neutral-200 pt-6 text-center text-sm leading-relaxed text-neutral-500">
         {t(
@@ -114,7 +124,7 @@ function FlowDiagram() {
   );
 }
 
-/** Renders the children of whichever level-1 branch has them (Pricing). */
+/** Children of the branch that opens further (Pricing). */
 function SecondLevel() {
   const t = useT();
   const { lang } = useLang();
@@ -123,40 +133,41 @@ function SecondLevel() {
   const parent = FLOW_OPTIONS.find((o) => o.followUps?.length);
   if (!parent?.followUps) return null;
 
-  const fixed = t("fixed answer", "respuesta fija");
-
   /*
-    One layout at every width, kept side by side so this still reads as a
-    branch of the tree rather than a detached list.
-
-    It fits because the children span columns 2-3 instead of squeezing inside
-    the third column alone: at 375px that leaves each node ~70px of inner
-    width, enough for "Residencial" on a single line at 11px. The connector
-    coordinates below are in the same 0-300 space the level-1 rail uses, so
-    the trunk drops from the "Precios" node (x=250) and the two children sit
-    at x=148 and x=252.
+    The children sit in columns 2-3 of the same 3-column grid, so with equal
+    gaps each child cell is exactly one outer column wide. That means child 2
+    shares its centre with the parent above it, and the trunk drops straight
+    down with no offset.
   */
   return (
-    <div className="mx-auto max-w-[560px]">
-      <svg viewBox="0 0 300 30" className="h-7 w-full" aria-hidden preserveAspectRatio="none">
-        <path
-          d="M250 0 V12 M148 12 H252 M148 12 V30 M252 12 V30"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
-          className="text-neutral-300"
-        />
-      </svg>
+    <div className="grid grid-cols-3 gap-3">
+      <div />
+      <div className="col-span-2">
+        {/* trunk out of the parent: aligned to the right child's centre */}
+        <div className="relative h-5">
+          <span className="absolute right-[calc((100%-12px)/4)] top-0 h-full w-px bg-neutral-300" />
+        </div>
 
-      <div className="grid grid-cols-3">
-        <div />
-        <div className="col-span-2 grid grid-cols-2 gap-3">
+        {/* rail + drops into the two children */}
+        <div className="relative h-5">
+          <span className="absolute left-[calc((100%-12px)/4)] right-[calc((100%-12px)/4)] top-0 h-px bg-neutral-300" />
+          <div className="grid h-full grid-cols-2 gap-3">
+            {parent.followUps.map((f) => (
+              <span key={f.id} className="mx-auto h-full w-px bg-neutral-300" />
+            ))}
+          </div>
+        </div>
+
+        {/* Level 2 */}
+        <div className="grid grid-cols-2 gap-3">
           {parent.followUps.map((f) => (
             <div key={f.id} className="min-w-0 text-center">
               <div className="rounded-xl border border-neutral-200 bg-white px-3 py-3 text-sm font-medium leading-tight text-neutral-800">
                 {es ? f.labelEs : f.label}
               </div>
-              <p className="mt-2 text-xs leading-tight text-neutral-500">→ {fixed}</p>
+              <p className="mt-2 text-xs leading-tight text-neutral-500">
+                → {t("fixed answer", "respuesta fija")}
+              </p>
             </div>
           ))}
         </div>

@@ -1,4 +1,4 @@
-import { AI_FROM, AI_ICON_GRADIENT_ID, AI_TO } from "@/lib/whatsapp-ia-data";
+import { AI_FROM, AI_ICON_GRADIENT_ID, AI_TO, AI_VIA } from "@/lib/whatsapp-ia-data";
 
 /**
  * Renders the SVG gradient that lucide icons reference via stroke="url(#id)".
@@ -31,6 +31,7 @@ export function AiGradientDefs() {
           y2="24"
         >
           <stop offset="0%" stopColor={AI_FROM} />
+          <stop offset="50%" stopColor={AI_VIA} />
           <stop offset="100%" stopColor={AI_TO} />
         </linearGradient>
       </defs>
