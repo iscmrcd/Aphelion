@@ -11,21 +11,43 @@ const mobileMods = import.meta.glob<AssetJson>(
   { eager: true, import: "default" },
 );
 
-const DESKTOP_URLS = Object.keys(desktopMods)
-  .sort()
-  .map((k) => desktopMods[k].url);
-const MOBILE_URLS = Object.keys(mobileMods)
-  .sort()
-  .map((k) => mobileMods[k].url);
+const waDesktopMods = import.meta.glob<AssetJson>(
+  "@/assets/banners/wa-scroll-desktop/*.asset.json",
+  { eager: true, import: "default" },
+);
+const waMobileMods = import.meta.glob<AssetJson>(
+  "@/assets/banners/wa-scroll-mobile/*.asset.json",
+  { eager: true, import: "default" },
+);
 
-function pickUrls(): string[] {
-  if (typeof window === "undefined") return DESKTOP_URLS;
-  return window.matchMedia("(max-width: 767px)").matches
-    ? MOBILE_URLS
-    : DESKTOP_URLS;
-}
+const toUrls = (mods: Record<string, AssetJson>) =>
+  Object.keys(mods)
+    .sort()
+    .map((k) => mods[k].url);
 
-export function ScrollDrivenBanner({ children }: { children?: ReactNode }) {
+const SETS = {
+  websites: { desktop: toUrls(desktopMods), mobile: toUrls(mobileMods) },
+  whatsapp: { desktop: toUrls(waDesktopMods), mobile: toUrls(waMobileMods) },
+} as const;
+
+export type ScrollBannerVariant = keyof typeof SETS;
+
+export function ScrollDrivenBanner({
+  children,
+  variant = "websites",
+  ariaLabel = "Banner",
+}: {
+  children?: ReactNode;
+  variant?: ScrollBannerVariant;
+  ariaLabel?: string;
+}) {
+  const pickUrls = (): string[] => {
+    const set = SETS[variant];
+    if (typeof window === "undefined") return set.desktop;
+    return window.matchMedia("(max-width: 767px)").matches
+      ? set.mobile
+      : set.desktop;
+  };
   const sectionRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const imagesRef = useRef<HTMLImageElement[]>([]);
