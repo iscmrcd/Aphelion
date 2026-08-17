@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Send, RotateCcw, Lock } from "lucide-react";
+import { Send, RotateCcw, Lock, ArrowUpRight } from "lucide-react";
 import {
   AGENT_ORDER,
   AI_GRADIENT,
@@ -50,6 +50,7 @@ export function WhatsAppDemo() {
   const agent = DEMO_AGENTS[agentType];
   const thread = threads[agentType];
   const scrollRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const greeting = lang === "es" ? agent.greetingEs : agent.greeting;
   const starters = lang === "es" ? agent.startersEs : agent.starters;
@@ -112,6 +113,13 @@ export function WhatsAppDemo() {
     },
     [agentType, threads, sessionId, lang, pending, limitReached, t],
   );
+
+  /** Suggestions prefill the composer rather than sending, so they read as
+      prompts to riff on instead of fixed options to pick. */
+  const suggest = useCallback((text: string) => {
+    setInput(text);
+    inputRef.current?.focus();
+  }, []);
 
   const restart = useCallback(() => {
     setSessionId(newSessionId());
@@ -226,18 +234,35 @@ export function WhatsAppDemo() {
             </div>
           )}
 
+          {/* Plain text, deliberately not buttons: the automated flow's chat uses
+              bordered pills, and these must not read as the same "pick one of
+              these" affordance. */}
           {showStarters && (
-            <div className="flex flex-wrap gap-2 pt-1">
-              {starters.map((s) => (
-                <button
-                  key={s}
-                  type="button"
-                  onClick={() => void send(s)}
-                  className="rounded-full border border-neutral-300 bg-white px-3 py-1.5 text-xs text-neutral-700 transition hover:border-neutral-950 hover:text-neutral-950"
-                >
-                  {s}
-                </button>
-              ))}
+            <div className="pt-2">
+              <p className="text-xs italic text-neutral-400">
+                {t(
+                  "Put it to the test — ask it anything",
+                  "Ponlo a prueba — pregúntale lo que quieras",
+                )}
+              </p>
+              <ul className="mt-2.5 space-y-2">
+                {starters.map((s) => (
+                  <li key={s}>
+                    <button
+                      type="button"
+                      onClick={() => suggest(s)}
+                      className="inline-flex items-start gap-1.5 text-left text-xs text-neutral-500 underline decoration-neutral-300 decoration-dotted underline-offset-4 transition hover:text-neutral-900 hover:decoration-neutral-500"
+                    >
+                      <ArrowUpRight
+                        className="mt-px h-3 w-3 flex-shrink-0 opacity-70"
+                        aria-hidden
+                        strokeWidth={2}
+                      />
+                      <span>{s}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
         </div>
@@ -271,6 +296,7 @@ export function WhatsAppDemo() {
               className="flex items-center gap-2"
             >
               <input
+                ref={inputRef}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 maxLength={1000}
