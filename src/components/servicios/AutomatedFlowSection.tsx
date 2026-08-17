@@ -134,28 +134,40 @@ function SecondLevel() {
   if (!parent?.followUps) return null;
 
   /*
-    The children sit in columns 2-3 of the same 3-column grid, so with equal
-    gaps each child cell is exactly one outer column wide. That means child 2
-    shares its centre with the parent above it, and the trunk drops straight
-    down with no offset.
+    One <path> draws the whole connector: trunk, rail and both drops.
+
+    The previous version composed it from three separately positioned elements
+    — a trunk anchored with right-[..], a rail spanning left-[..]/right-[..],
+    and drops centred with mx-auto. Those anchor a 1px line three different
+    ways, so the trunk's centre landed half a pixel off the drop's, which
+    rounds to a visible break. Coordinates inside a single path share one
+    space and cannot drift apart.
+
+    The wrapper's margins put its edges exactly on the two child centres
+    (half a column in from each side), so x=0 and x=100 in the viewBox are
+    those centres at any width. preserveAspectRatio="none" lets the box
+    stretch; non-scaling-stroke keeps the line 1px while it does.
   */
   return (
     <div className="grid grid-cols-3 gap-3">
       <div />
       <div className="col-span-2">
-        {/* trunk out of the parent: aligned to the right child's centre */}
-        <div className="relative h-5">
-          <span className="absolute right-[calc((100%-12px)/4)] top-0 h-full w-px bg-neutral-300" />
-        </div>
-
-        {/* rail + drops into the two children */}
-        <div className="relative h-5">
-          <span className="absolute left-[calc((100%-12px)/4)] right-[calc((100%-12px)/4)] top-0 h-px bg-neutral-300" />
-          <div className="grid h-full grid-cols-2 gap-3">
-            {parent.followUps.map((f) => (
-              <span key={f.id} className="mx-auto h-full w-px bg-neutral-300" />
-            ))}
-          </div>
+        <div className="mx-[calc((100%-12px)/4)]">
+          <svg
+            viewBox="0 0 100 40"
+            preserveAspectRatio="none"
+            className="block h-10 w-full overflow-visible"
+            aria-hidden
+          >
+            <path
+              d="M100 0 V40 M0 20 H100 M0 20 V40"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+              vectorEffect="non-scaling-stroke"
+              className="text-neutral-300"
+            />
+          </svg>
         </div>
 
         {/* Level 2 */}
