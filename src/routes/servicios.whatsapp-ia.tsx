@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Check, MessageSquare, Plus, Sparkles } from "lucide-react";
 import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
-import { AutomatedFlowDemo } from "@/components/servicios/AutomatedFlowDemo";
+import { AutomatedFlowSection } from "@/components/servicios/AutomatedFlowSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { WHATSAPP_IA_FAQ } from "@/lib/whatsapp-ia-data";
@@ -128,17 +128,26 @@ function WhatsAppIAPage() {
               eyebrow={t("Automated", "Automatizado")}
               title={t("Preloaded flows", "Flujos precargados")}
               description={t(
-                "A menu-style flow of questions and fixed answers. Predictable by design.",
-                "Un flujo tipo menú de preguntas y respuestas fijas. Predecible por diseño.",
+                "A menu-style flow of questions and preset answers. Predictable by design.",
+                "Un flujo tipo menú de preguntas y respuestas predefinidas. Predecible por diseño.",
               )}
               features={[
                 t(
-                  "Menu-style question and answer flow",
-                  "Flujo de preguntas y respuestas tipo menú",
+                  "Menu-style flow: the customer picks from preset options",
+                  "Flujo tipo menú: el cliente elige entre opciones predefinidas",
                 ),
-                t("Fixed, predictable responses", "Respuestas fijas y predecibles"),
-                t("No real AI involved", "Sin IA real de por medio"),
-                t("Fast setup", "Implementación rápida"),
+                t(
+                  "Answers are identical every time, nothing improvised",
+                  "Las respuestas son idénticas siempre, nada improvisado",
+                ),
+                t(
+                  "No AI: it answers what's in the tree and hands off the rest",
+                  "Sin IA: responde lo que está en el árbol y lo demás lo pasa a una persona",
+                ),
+                t(
+                  "Fast to set up, with no per-message model cost",
+                  "Rápido de implementar, sin costo de modelo por mensaje",
+                ),
               ]}
               idealLabel={t("Ideal for", "Ideal para")}
               ideal={[
@@ -147,7 +156,7 @@ function WhatsAppIAPage() {
                 t("Basic catalog", "Catálogo básico"),
                 t("Location", "Ubicación"),
               ]}
-              demo={<AutomatedFlowDemo />}
+              ctaHref="#flujo-automatizado"
             />
 
             <TierCard
@@ -181,10 +190,13 @@ function WhatsAppIAPage() {
                   "Negocios donde la conversación varía y la venta depende de entender al cliente",
                 ),
               ]}
+              ctaHref="#demo"
             />
           </div>
         </div>
       </section>
+
+      <AutomatedFlowSection />
 
       {/* Demo */}
       <section
@@ -326,7 +338,7 @@ function TierCard({
   features,
   idealLabel,
   ideal,
-  demo,
+  ctaHref,
   featured = false,
 }: {
   icon: React.ReactNode;
@@ -336,8 +348,8 @@ function TierCard({
   features: string[];
   idealLabel: string;
   ideal: string[];
-  /** Optional inline demo rendered above the card's CTA. */
-  demo?: React.ReactNode;
+  /** Anchor the "See how it works" button scrolls to. */
+  ctaHref: string;
   featured?: boolean;
 }) {
   const t = useT();
@@ -370,7 +382,7 @@ function TierCard({
         ))}
       </ul>
 
-      <div className="mt-7">
+      <div className="mt-7 flex-1">
         <p className="mb-2.5 text-xs font-medium uppercase tracking-[0.14em] text-neutral-500">
           {idealLabel}
         </p>
@@ -386,10 +398,8 @@ function TierCard({
         </div>
       </div>
 
-      {demo}
-
       <a
-        href="#demo"
+        href={ctaHref}
         className="mt-8 inline-flex items-center justify-center rounded-full border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
       >
         {t("See how it works", "Ver cómo funciona")}
