@@ -5,6 +5,7 @@ import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
 import { AutomatedFlowSection } from "@/components/servicios/AutomatedFlowSection";
 import { IntegrationsSection } from "@/components/servicios/IntegrationsSection";
 import { AiGradientDefs } from "@/components/servicios/AiGradientDefs";
+import { GradientBorderFrame } from "@/components/servicios/GradientBorderFrame";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import {
@@ -96,12 +97,15 @@ function WhatsAppIAPage() {
             )}
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">
-            <a
-              href="#demo"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
-            >
-              {t("Try it yourself", "Pruébalo tú mismo")}
-            </a>
+            {/* Represents both tiers, so it takes the ramp as an outline only. */}
+            <GradientBorderFrame>
+              <a
+                href="#demo"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+              >
+                {t("Try it yourself", "Pruébalo tú mismo")}
+              </a>
+            </GradientBorderFrame>
             <Link
               to="/contacto"
               className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"

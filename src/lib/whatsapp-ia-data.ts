@@ -117,8 +117,10 @@ export const DEMO_AGENTS: Record<AgentType, DemoAgent> = {
  *   5. the checkmarks on the "IA Conversacional" comparison card
  *   6. the Sparkles glyph next to "IA Conversacional"
  *
- * No exceptions: anything that isn't Conversational AI carries no gradient at
- * all, not even as an outline or a subtle accent.
+ * Non-AI elements carry no gradient FILL, ever. The single exception is
+ * <GradientBorderFrame>, used on CTAs that represent both tiers equally
+ * (the hero "Try it yourself" and the homepage promo): those take the ramp
+ * as a hairline outline while keeping a solid white fill and black text.
  *
  * The fixed-flow diagram and the rest of the site stay neutral. The contrast
  * between scripted and AI is what communicates the difference between tiers,

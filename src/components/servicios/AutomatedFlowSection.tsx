@@ -150,13 +150,13 @@ function SecondLevel() {
 
       <div className="grid grid-cols-3">
         <div />
-        <div className="col-span-2 grid grid-cols-2 gap-2">
+        <div className="col-span-2 grid grid-cols-2 gap-3">
           {parent.followUps.map((f) => (
             <div key={f.id} className="min-w-0 text-center">
-              <div className="rounded-lg border border-neutral-200 bg-white px-2 py-2 text-[11px] font-medium leading-tight text-neutral-800 sm:text-xs">
+              <div className="rounded-xl border border-neutral-200 bg-white px-3 py-3 text-[11px] font-medium leading-tight text-neutral-800 sm:text-xs">
                 {es ? f.labelEs : f.label}
               </div>
-              <p className="mt-1.5 text-[10px] leading-tight text-neutral-500 sm:text-[11px]">
+              <p className="mt-2 text-[10px] leading-tight text-neutral-500 sm:text-[11px]">
                 → {fixed}
               </p>
             </div>
