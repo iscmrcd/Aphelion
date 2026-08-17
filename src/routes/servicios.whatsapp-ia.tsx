@@ -11,6 +11,7 @@ import {
   AI_ACCENT,
   AI_GRADIENT,
   AI_GRADIENT_ON,
+  AI_ON_GRADIENT_SHADOW,
   AI_GRADIENT_TEXT,
   aiIconGradientStyle,
   WHATSAPP_IA_FAQ,
@@ -432,26 +433,17 @@ function TierCard({
         </div>
       </div>
 
-      {accent ? (
-        <a
-          href={ctaHref}
-          className={`mt-8 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-2.5 text-sm font-medium transition hover:opacity-90 ${AI_GRADIENT_ON} ${AI_GRADIENT}`}
-        >
-          {t("See how it works", "Ver cómo funciona")}
-        </a>
-      ) : (
-        /* Hairline gradient outline: the gradient paints the wrapper, an inset
-           white pill covers all but 1px of it. A plain border can't carry a
-           gradient, and border-image doesn't follow border-radius. */
-        <span className={`mt-8 block rounded-full p-px ${AI_GRADIENT}`}>
-          <a
-            href={ctaHref}
-            className="flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-neutral-500 transition hover:text-neutral-950"
-          >
-            {t("See how it works", "Ver cómo funciona")}
-          </a>
-        </span>
-      )}
+      <a
+        href={ctaHref}
+        style={accent ? AI_ON_GRADIENT_SHADOW : undefined}
+        className={`mt-8 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
+          accent
+            ? `border border-transparent ${AI_GRADIENT_ON} ${AI_GRADIENT} hover:opacity-90`
+            : "border border-neutral-200 text-neutral-950 hover:border-neutral-950"
+        }`}
+      >
+        {t("See how it works", "Ver cómo funciona")}
+      </a>
     </div>
   );
 }
@@ -480,6 +472,7 @@ function QuoteCard({
       <p className="mt-2.5 flex-1 text-sm leading-relaxed text-neutral-500">{note}</p>
       <Link
         to="/contacto"
+        style={accent ? AI_ON_GRADIENT_SHADOW : undefined}
         className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
           accent
             ? `${AI_GRADIENT_ON} ${AI_GRADIENT} hover:opacity-90`

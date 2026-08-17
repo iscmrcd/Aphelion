@@ -4,6 +4,7 @@ import {
   AGENT_ORDER,
   AI_GRADIENT,
   AI_GRADIENT_ON,
+  AI_ON_GRADIENT_SHADOW,
   aiIconGradientStyle,
   DEMO_AGENTS,
   type AgentType,
@@ -141,6 +142,7 @@ export function WhatsAppDemo() {
               type="button"
               onClick={() => setAgentType(id)}
               aria-pressed={active}
+              style={active ? AI_ON_GRADIENT_SHADOW : undefined}
               className={`min-w-0 rounded-2xl border px-2 py-3 text-center transition sm:px-4 sm:py-3.5 sm:text-left ${
                 active
                   ? `border-transparent ${AI_GRADIENT_ON} ${AI_GRADIENT}`
@@ -166,7 +168,7 @@ export function WhatsAppDemo() {
                   usable width, not enough for it without wrapping to 2 lines. */}
               <span
                 className={`mt-0.5 hidden text-xs leading-tight sm:block ${
-                  active ? "text-neutral-700" : "text-neutral-500"
+                  active ? "text-white/80" : "text-neutral-500"
                 }`}
               >
                 {lang === "es" ? a.roleEs : a.role}

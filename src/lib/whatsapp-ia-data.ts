@@ -117,9 +117,8 @@ export const DEMO_AGENTS: Record<AgentType, DemoAgent> = {
  *   5. the checkmarks on the "IA Conversacional" comparison card
  *   6. the Sparkles glyph next to "IA Conversacional"
  *
- * Plus one deliberate exception: the "Automatizado" CTA carries a hairline
- * gradient outline (white fill, muted text) so the two buttons read as one
- * family without the neutral tier claiming the filled treatment.
+ * No exceptions: anything that isn't Conversational AI carries no gradient at
+ * all, not even as an outline or a subtle accent.
  *
  * The fixed-flow diagram and the rest of the site stay neutral. The contrast
  * between scripted and AI is what communicates the difference between tiers,
@@ -142,13 +141,17 @@ export const AI_ICON_GRADIENT_ID = "ai-icon-gradient";
 export const aiIconGradientStyle = { stroke: `url(#${AI_ICON_GRADIENT_ID})` } as const;
 
 /**
- * Text/icon colour to sit ON a filled gradient surface.
+ * Text on a filled gradient surface: white everywhere, no exceptions.
  *
- * The ramp is pastel even after the saturation bump: white over it measures
- * 2.1-2.4:1, under the 4.5:1 WCAG AA floor, while near-black measures
- * 8.3-9.3:1. Filled gradient surfaces therefore carry dark text.
+ * Measured, so it's on the record: white over this ramp lands at 2.1-2.4:1,
+ * under the 4.5:1 WCAG AA floor (near-black would sit at 8.3-9.3:1). The
+ * shadow below is the agreed mitigation — it lifts legibility over the
+ * lightest part of the ramp without breaking the single white standard.
  */
-export const AI_GRADIENT_ON = "text-neutral-950";
+export const AI_GRADIENT_ON = "text-white";
+
+/** Subtle lift for white text sitting on the lightest end of the ramp. */
+export const AI_ON_GRADIENT_SHADOW = { textShadow: "0 1px 2px rgba(0,0,0,0.25)" } as const;
 
 /** Solid accent for the AI card's checkmarks — midpoint of the ramp. */
 export const AI_ACCENT = "#D398DA";
