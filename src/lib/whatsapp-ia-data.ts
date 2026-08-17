@@ -119,11 +119,23 @@ export const DEMO_AGENTS: Record<AgentType, DemoAgent> = {
  * gradient (AI) is what communicates the difference between the two tiers, so
  * spreading it around would erase the signal it exists to carry.
  */
-export const AI_GRADIENT = "bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-500";
+export const AI_GRADIENT = "bg-gradient-to-br from-[#C7B3EA] to-[#F0A8D2]";
 
 /** Same ramp for text via background-clip. */
 export const AI_GRADIENT_TEXT =
-  "bg-gradient-to-r from-violet-600 to-fuchsia-500 bg-clip-text text-transparent";
+  "bg-gradient-to-r from-[#C7B3EA] to-[#F0A8D2] bg-clip-text text-transparent";
+
+/**
+ * Text/icon colour to sit ON the gradient.
+ *
+ * The ramp is pastel: white text over it measures ~1.9:1, well under the 4.5:1
+ * WCAG AA minimum. Near-black over the same ramp measures ~10.4:1, so filled
+ * gradient surfaces carry dark text instead of white.
+ */
+export const AI_GRADIENT_ON = "text-neutral-950";
+
+/** Solid accent for the comparison checkmarks — midpoint of the ramp. */
+export const AI_ACCENT = "#DCAEDE";
 
 export const AGENT_ORDER: AgentType[] = ["real-estate", "health", "professional"];
 

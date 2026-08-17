@@ -3,9 +3,16 @@ import { useState } from "react";
 import { Check, MessageSquare, Plus, Sparkles } from "lucide-react";
 import { WhatsAppDemo } from "@/components/servicios/WhatsAppDemo";
 import { AutomatedFlowSection } from "@/components/servicios/AutomatedFlowSection";
+import { IntegrationsSection } from "@/components/servicios/IntegrationsSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
-import { AI_GRADIENT, AI_GRADIENT_TEXT, WHATSAPP_IA_FAQ } from "@/lib/whatsapp-ia-data";
+import {
+  AI_ACCENT,
+  AI_GRADIENT,
+  AI_GRADIENT_ON,
+  AI_GRADIENT_TEXT,
+  WHATSAPP_IA_FAQ,
+} from "@/lib/whatsapp-ia-data";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
 
@@ -228,6 +235,8 @@ function WhatsAppIAPage() {
         </div>
       </section>
 
+      <IntegrationsSection />
+
       {/* Pricing */}
       <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
         <div className="mx-auto max-w-4xl">
@@ -258,6 +267,7 @@ function WhatsAppIAPage() {
               cta={t("Request your quote", "Solicita tu cotización")}
             />
             <QuoteCard
+              accent
               eyebrow={t("Conversational AI", "IA Conversacional")}
               note={t(
                 "Scoped by message volume, integrations and level of customization.",
@@ -388,7 +398,11 @@ function TierCard({
       <ul className="mt-7 space-y-2.5">
         {features.map((f) => (
           <li key={f} className="flex items-start gap-2.5 text-sm text-neutral-800">
-            <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-neutral-950" strokeWidth={2.5} />
+            <Check
+              className="mt-0.5 h-4 w-4 flex-shrink-0"
+              style={{ color: AI_ACCENT }}
+              strokeWidth={2.5}
+            />
             <span className="leading-relaxed">{f}</span>
           </li>
         ))}
@@ -414,7 +428,7 @@ function TierCard({
         href={ctaHref}
         className={`mt-8 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
           accent
-            ? `border border-transparent text-white ${AI_GRADIENT} hover:opacity-90`
+            ? `border border-transparent ${AI_GRADIENT_ON} ${AI_GRADIENT} hover:opacity-90`
             : "border border-neutral-200 text-neutral-950 hover:border-neutral-950"
         }`}
       >
@@ -429,11 +443,14 @@ function QuoteCard({
   note,
   label,
   cta,
+  accent = false,
 }: {
   eyebrow: string;
   note: string;
   label: string;
   cta: string;
+  /** Gradient CTA. Conversational AI only — the Automated card stays neutral. */
+  accent?: boolean;
 }) {
   return (
     <div className="flex flex-col rounded-2xl border border-neutral-200 bg-white p-7 sm:p-8">
@@ -445,7 +462,11 @@ function QuoteCard({
       <p className="mt-2.5 flex-1 text-sm leading-relaxed text-neutral-500">{note}</p>
       <Link
         to="/contacto"
-        className="mt-7 inline-flex items-center justify-center rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
+        className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
+          accent
+            ? `${AI_GRADIENT_ON} ${AI_GRADIENT} hover:opacity-90`
+            : "bg-neutral-950 text-white hover:bg-neutral-800"
+        }`}
       >
         {cta}
       </Link>

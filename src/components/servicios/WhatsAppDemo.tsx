@@ -1,6 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Send, RotateCcw, Lock } from "lucide-react";
-import { AGENT_ORDER, AI_GRADIENT, DEMO_AGENTS, type AgentType } from "@/lib/whatsapp-ia-data";
+import {
+  AGENT_ORDER,
+  AI_GRADIENT,
+  AI_GRADIENT_ON,
+  DEMO_AGENTS,
+  type AgentType,
+} from "@/lib/whatsapp-ia-data";
 import { sendDemoMessage, type ChatTurn } from "@/lib/whatsapp-ia-server";
 import { useT, useLang } from "@/lib/i18n";
 
@@ -136,13 +142,13 @@ export function WhatsAppDemo() {
               aria-pressed={active}
               className={`min-w-0 rounded-2xl border px-2 py-3 text-center transition sm:px-4 sm:py-3.5 sm:text-left ${
                 active
-                  ? `border-transparent text-white ${AI_GRADIENT}`
+                  ? `border-transparent ${AI_GRADIENT_ON} ${AI_GRADIENT}`
                   : "border-neutral-200 bg-white text-neutral-950 hover:border-neutral-950"
               }`}
             >
               <span
                 className={`mx-auto flex h-7 w-7 items-center justify-center rounded-full transition sm:mx-0 ${
-                  active ? "bg-white text-violet-700" : "bg-neutral-950 text-white"
+                  active ? "bg-neutral-950 text-white" : "bg-neutral-950 text-white"
                 }`}
               >
                 <a.Icon className="h-4 w-4" aria-hidden strokeWidth={2} />
@@ -154,7 +160,7 @@ export function WhatsAppDemo() {
                   usable width, not enough for it without wrapping to 2 lines. */}
               <span
                 className={`mt-0.5 hidden text-xs leading-tight sm:block ${
-                  active ? "text-white/70" : "text-neutral-500"
+                  active ? "text-neutral-700" : "text-neutral-500"
                 }`}
               >
                 {lang === "es" ? a.roleEs : a.role}
