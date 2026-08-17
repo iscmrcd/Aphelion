@@ -9,26 +9,21 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as ContactoRouteImport } from './routes/contacto'
-import { Route as PrivacidadRouteImport } from './routes/privacidad'
 import { Route as ServiciosRouteImport } from './routes/servicios'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as PrivacidadRouteImport } from './routes/privacidad'
+import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
-import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
-import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
-import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ServiciosWhatsappIaRouteImport } from './routes/servicios.whatsapp-ia'
+import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
+import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
+import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactoRoute = ContactoRouteImport.update({
-  id: '/contacto',
-  path: '/contacto',
+const ServiciosRoute = ServiciosRouteImport.update({
+  id: '/servicios',
+  path: '/servicios',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacidadRoute = PrivacidadRouteImport.update({
@@ -36,19 +31,14 @@ const PrivacidadRoute = PrivacidadRouteImport.update({
   path: '/privacidad',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ServiciosRoute = ServiciosRouteImport.update({
-  id: '/servicios',
-  path: '/servicios',
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
@@ -56,14 +46,14 @@ const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
-  id: '/marketing',
-  path: '/marketing',
-  getParentRoute: () => ServiciosRoute,
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
 } as any)
-const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
-  id: '/video-con-dron',
-  path: '/video-con-dron',
+const ServiciosWhatsappIaRoute = ServiciosWhatsappIaRouteImport.update({
+  id: '/whatsapp-ia',
+  path: '/whatsapp-ia',
   getParentRoute: () => ServiciosRoute,
 } as any)
 const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
@@ -71,10 +61,20 @@ const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
   path: '/websites',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const ServiciosWhatsappIaRoute = ServiciosWhatsappIaRouteImport.update({
-  id: '/whatsapp-ia',
-  path: '/whatsapp-ia',
+const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
+  id: '/video-con-dron',
+  path: '/video-con-dron',
   getParentRoute: () => ServiciosRoute,
+} as any)
+const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
+  id: '/marketing',
+  path: '/marketing',
+  getParentRoute: () => ServiciosRoute,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -168,18 +168,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contacto': {
-      id: '/contacto'
-      path: '/contacto'
-      fullPath: '/contacto'
-      preLoaderRoute: typeof ContactoRouteImport
+    '/servicios': {
+      id: '/servicios'
+      path: '/servicios'
+      fullPath: '/servicios'
+      preLoaderRoute: typeof ServiciosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacidad': {
@@ -189,25 +182,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacidadRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/servicios': {
-      id: '/servicios'
-      path: '/servicios'
-      fullPath: '/servicios'
-      preLoaderRoute: typeof ServiciosRouteImport
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/servicios/': {
@@ -217,18 +203,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosIndexRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/servicios/marketing': {
-      id: '/servicios/marketing'
-      path: '/marketing'
-      fullPath: '/servicios/marketing'
-      preLoaderRoute: typeof ServiciosMarketingRouteImport
-      parentRoute: typeof ServiciosRoute
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
     }
-    '/servicios/video-con-dron': {
-      id: '/servicios/video-con-dron'
-      path: '/video-con-dron'
-      fullPath: '/servicios/video-con-dron'
-      preLoaderRoute: typeof ServiciosVideoConDronRouteImport
+    '/servicios/whatsapp-ia': {
+      id: '/servicios/whatsapp-ia'
+      path: '/whatsapp-ia'
+      fullPath: '/servicios/whatsapp-ia'
+      preLoaderRoute: typeof ServiciosWhatsappIaRouteImport
       parentRoute: typeof ServiciosRoute
     }
     '/servicios/websites': {
@@ -238,12 +224,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosWebsitesRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/servicios/whatsapp-ia': {
-      id: '/servicios/whatsapp-ia'
-      path: '/whatsapp-ia'
-      fullPath: '/servicios/whatsapp-ia'
-      preLoaderRoute: typeof ServiciosWhatsappIaRouteImport
+    '/servicios/video-con-dron': {
+      id: '/servicios/video-con-dron'
+      path: '/video-con-dron'
+      fullPath: '/servicios/video-con-dron'
+      preLoaderRoute: typeof ServiciosVideoConDronRouteImport
       parentRoute: typeof ServiciosRoute
+    }
+    '/servicios/marketing': {
+      id: '/servicios/marketing'
+      path: '/marketing'
+      fullPath: '/servicios/marketing'
+      preLoaderRoute: typeof ServiciosMarketingRouteImport
+      parentRoute: typeof ServiciosRoute
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
   }
 }

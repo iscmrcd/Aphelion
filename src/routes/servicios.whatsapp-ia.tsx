@@ -7,6 +7,7 @@ import { IntegrationsSection } from "@/components/servicios/IntegrationsSection"
 import { AiGradientDefs } from "@/components/servicios/AiGradientDefs";
 import { GradientBorderFrame } from "@/components/servicios/GradientBorderFrame";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
+import { ScrollDrivenBanner } from "@/components/servicios/ScrollDrivenBanner";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import {
   AI_ACCENT,
@@ -75,11 +76,7 @@ function WhatsAppIAPage() {
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
       <AiGradientDefs />
       {/* Hero */}
-      <section className="on-dark relative flex min-h-[460px] items-center overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:min-h-[560px] sm:pt-28 sm:pb-32">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-900 via-neutral-950 to-neutral-950"
-        />
+      <ScrollDrivenBanner variant="whatsapp" ariaLabel="WhatsApp IA banner">
         <div className="relative mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/60">
             {t("WhatsApp AI", "WhatsApp con IA")}
@@ -116,7 +113,7 @@ function WhatsAppIAPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </ScrollDrivenBanner>
 
       {/* Package comparison — no prices here, only what each one is */}
       <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
