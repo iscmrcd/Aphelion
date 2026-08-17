@@ -20,7 +20,12 @@ export function AiGradientDefs() {
           bounding boxes have zero width or height — a bounding-box gradient
           is undefined there, so those parts silently vanish and only the
           outer shape survives (Calculator rendered as a bare rectangle).
-          Mapping the ramp to lucide's fixed 24x24 viewBox avoids that.
+          Mapping the ramp to lucide's fixed 24x24 viewBox avoids that, which is
+          why this keeps user-space coordinates rather than 0%/100% — those are
+          bounding-box units and would bring the bug straight back.
+
+          Axis is horizontal (y1 == y2) to match AI_GRADIENT and
+          AI_GRADIENT_TEXT, both bg-gradient-to-r.
         */}
         <linearGradient
           id={AI_ICON_GRADIENT_ID}
@@ -28,7 +33,7 @@ export function AiGradientDefs() {
           x1="0"
           y1="0"
           x2="24"
-          y2="24"
+          y2="0"
         >
           <stop offset="0%" stopColor={AI_FROM} />
           <stop offset="50%" stopColor={AI_VIA} />
