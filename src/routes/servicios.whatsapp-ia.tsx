@@ -378,12 +378,11 @@ function TierCard({
   featured?: boolean;
 }) {
   const t = useT();
-  return (
+
+  const card = (
     <div
-      className={`flex flex-col rounded-2xl border p-7 transition sm:p-8 ${
-        featured
-          ? "border-neutral-950 bg-white shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)]"
-          : "border-neutral-200 bg-white"
+      className={`flex h-full flex-col rounded-2xl bg-white p-7 transition sm:p-8 ${
+        featured ? "" : "border border-neutral-200"
       }`}
     >
       <div className="mb-5 flex items-center gap-2">
@@ -447,6 +446,20 @@ function TierCard({
       >
         {t("See how it works", "Ver cómo funciona")}
       </a>
+    </div>
+  );
+
+  if (!featured) return card;
+
+  /*
+    Gradient outline instead of the solid black one. Same technique as
+    GradientBorderFrame — a CSS border can't hold a gradient and border-image
+    ignores border-radius — but inlined here because this one is a block that
+    has to stretch to the grid row's height, not an inline pill.
+  */
+  return (
+    <div className={`rounded-2xl p-px shadow-[0_8px_30px_-12px_rgba(0,0,0,0.18)] ${AI_GRADIENT}`}>
+      {card}
     </div>
   );
 }
