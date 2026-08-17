@@ -183,7 +183,7 @@ export function ScrollDrivenBanner({
     <section
       ref={sectionRef}
       className="on-dark relative flex min-h-[460px] items-center overflow-hidden bg-neutral-950 px-5 pt-20 pb-24 sm:min-h-[620px] sm:pt-28 sm:pb-32"
-      aria-label="Websites banner"
+      aria-label={ariaLabel}
     >
       <canvas
         ref={canvasRef}
