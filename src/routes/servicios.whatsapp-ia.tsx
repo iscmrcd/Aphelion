@@ -46,7 +46,9 @@ export const Route = createFileRoute("/servicios/whatsapp-ia")({
         ogDescription:
           "Flujos automatizados o un agente de IA conversacional real en WhatsApp. Pruébalo en vivo en la página, sin registro.",
       },
+      image: `${SITE_URL}${ogImage.url}`,
       jsonLd: [
+
         {
           "@type": "Service",
           serviceType: "WhatsApp automation and conversational AI agents",
