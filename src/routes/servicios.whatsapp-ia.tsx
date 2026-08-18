@@ -20,6 +20,8 @@ import {
 } from "@/lib/whatsapp-ia-data";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
+import ogImage from "@/assets/whatsapp-ia-og.png.asset.json";
+
 
 export const Route = createFileRoute("/servicios/whatsapp-ia")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -44,7 +46,9 @@ export const Route = createFileRoute("/servicios/whatsapp-ia")({
         ogDescription:
           "Flujos automatizados o un agente de IA conversacional real en WhatsApp. Pruébalo en vivo en la página, sin registro.",
       },
+      image: `${SITE_URL}${ogImage.url}`,
       jsonLd: [
+
         {
           "@type": "Service",
           serviceType: "WhatsApp automation and conversational AI agents",
