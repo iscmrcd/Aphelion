@@ -59,8 +59,14 @@ export function buildHead({
   ];
 
   if (image) {
+    // Same preview image for every language variant of the URL (?lang=es included).
     meta.push({ property: "og:image", content: image });
+    meta.push({ property: "og:image:secure_url", content: image });
+    meta.push({ property: "og:image:width", content: String(imageWidth ?? 1200) });
+    meta.push({ property: "og:image:height", content: String(imageHeight ?? 630) });
+    meta.push({ property: "og:image:alt", content: copy.ogTitle ?? copy.title });
     meta.push({ name: "twitter:image", content: image });
+    meta.push({ name: "twitter:image:alt", content: copy.ogTitle ?? copy.title });
   }
 
   const links = [
