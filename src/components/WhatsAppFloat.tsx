@@ -1,20 +1,14 @@
-import { useT } from "@/lib/i18n";
-
 const PHONE = "526461293352";
+const MESSAGE = "Hola Aphelion, me gustaría más información.";
 
 export function WhatsAppFloat() {
-  const t = useT();
-  const message = t(
-    "Hi Aphelion, I'd like more information.",
-    "Hola Aphelion, me gustaría más información.",
-  );
-  const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
+  const href = `https://wa.me/${PHONE}?text=${encodeURIComponent(MESSAGE)}`;
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={t("Message us on WhatsApp", "Escríbenos por WhatsApp")}
+      aria-label="Escríbenos por WhatsApp"
       className="fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-950 text-white shadow-lg shadow-black/20 ring-1 ring-white/10 transition hover:scale-105 hover:bg-neutral-800 sm:bottom-6 sm:right-6"
     >
       <svg
