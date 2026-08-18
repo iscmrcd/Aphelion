@@ -43,7 +43,7 @@ function ContactoPage() {
   const SERVICES = [
     t("Websites", "Websites"),
     t("Digital Marketing", "Marketing Digital"),
-    t("WhatsApp AI", "WhatsApp IA"),
+    t("AI Agent", "Agente IA"),
     t("Social Media Content", "Contenido para Redes"),
     t("Commercial & Drone Video", "Video Comercial & Drone"),
     t("Branding", "Branding"),

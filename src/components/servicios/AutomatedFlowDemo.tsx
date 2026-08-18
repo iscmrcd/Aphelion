@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { RotateCcw } from "lucide-react";
-import { FLOW_OPTIONS, type FlowOption } from "@/lib/whatsapp-flow-data";
+import { FLOW_OPTIONS, type FlowOption } from "@/lib/agente-flow-data";
 import { useT, useLang } from "@/lib/i18n";
 
 /**
@@ -15,7 +15,7 @@ import { useT, useLang } from "@/lib/i18n";
  */
 
 /**
- * The chat widget on its own. Sized to match WhatsAppDemo so both demos read
+ * The chat widget on its own. Sized to match AgentDemo so both demos read
  * as equally substantial on the page.
  */
 export function AutomatedFlowChat() {

@@ -8,8 +8,8 @@ import {
   aiIconGradientStyle,
   DEMO_AGENTS,
   type AgentType,
-} from "@/lib/whatsapp-ia-data";
-import { sendDemoMessage, type ChatTurn } from "@/lib/whatsapp-ia-server";
+} from "@/lib/agente-ia-data";
+import { sendDemoMessage, type ChatTurn } from "@/lib/agente-ia-server";
 import { useT, useLang } from "@/lib/i18n";
 
 const MAX_MESSAGES = 20;
@@ -33,7 +33,7 @@ function newSessionId(): string {
   return `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
-export function WhatsAppDemo() {
+export function AgentDemo() {
   const t = useT();
   const { lang } = useLang();
 

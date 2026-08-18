@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { AI_GRADIENT } from "@/lib/whatsapp-ia-data";
+import { AI_GRADIENT } from "@/lib/agente-ia-data";
 
 /**
  * Hairline gradient outline around a solid child.

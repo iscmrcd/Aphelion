@@ -1,4 +1,4 @@
-import { AI_FROM, AI_ICON_GRADIENT_ID, AI_TO, AI_VIA } from "@/lib/whatsapp-ia-data";
+import { AI_FROM, AI_ICON_GRADIENT_ID, AI_TO, AI_VIA } from "@/lib/agente-ia-data";
 
 /**
  * Renders the SVG gradient that lucide icons reference via stroke="url(#id)".

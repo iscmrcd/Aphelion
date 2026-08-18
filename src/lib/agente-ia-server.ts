@@ -1,5 +1,5 @@
 /**
- * Server-side chat endpoint for the WhatsApp IA demo.
+ * Server-side chat endpoint for the Agente IA demo.
  *
  * Runs exclusively on the server via createServerFn, so ANTHROPIC_API_KEY and
  * the Supabase service key never reach the client bundle.
@@ -15,8 +15,8 @@
 
 import { createServerFn } from "@tanstack/react-start";
 import { getRequestIP } from "@tanstack/react-start/server";
-import { DEMO_AGENTS, isAgentType, type AgentType } from "./whatsapp-ia-data";
-import { AGENT_PROMPTS } from "./whatsapp-ia-prompts";
+import { DEMO_AGENTS, isAgentType, type AgentType } from "./agente-ia-data";
+import { AGENT_PROMPTS } from "./agente-ia-prompts";
 
 const MODEL = "claude-haiku-4-5-20251001";
 
@@ -69,7 +69,7 @@ function supabaseConfig(): SupabaseConfig | null {
   if (!url || !key) {
     if (url && !key) {
       console.warn(
-        "[whatsapp-ia demo] Supabase URL found but no service-role key — " +
+        "[agente-ia demo] Supabase URL found but no service-role key — " +
           "guardrails are running in degraded mode and conversations are not being logged.",
       );
     }
@@ -334,7 +334,7 @@ export const sendDemoMessage = createServerFn({ method: "POST" })
 
       if (!reply) throw new Error("Empty completion");
     } catch (error) {
-      console.error("[whatsapp-ia demo]", error);
+      console.error("[agente-ia demo]", error);
       return {
         reply:
           lang === "es"

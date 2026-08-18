@@ -1,5 +1,5 @@
 import { AutomatedFlowChat } from "@/components/servicios/AutomatedFlowDemo";
-import { FLOW_OPTIONS } from "@/lib/whatsapp-flow-data";
+import { FLOW_OPTIONS } from "@/lib/agente-flow-data";
 import { useT, useLang } from "@/lib/i18n";
 
 /**

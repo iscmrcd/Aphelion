@@ -1,9 +1,9 @@
 /**
- * Client-safe display data for the WhatsApp IA demo agents.
+ * Client-safe display data for the Agente IA demo agents.
  *
  * This module IS bundled for the browser (the chat component needs names,
  * greetings and starters), so it deliberately contains no system prompts.
- * Those live in whatsapp-ia-prompts.ts, which only the server imports.
+ * Those live in agente-ia-prompts.ts, which only the server imports.
  *
  * Every agent runs on the same engine (claude-haiku-4-5) and differs only in
  * context. The businesses below are FICTIONAL demo data used to make the
@@ -166,16 +166,16 @@ export function isAgentType(value: unknown): value is AgentType {
 }
 
 /**
- * FAQ for the WhatsApp IA service page. Spanish is the default field (q/a) and
+ * FAQ for the Agente IA service page. Spanish is the default field (q/a) and
  * English carries the "En" suffix, matching BlogFaqItem so the shape is
  * familiar across the codebase.
  *
  * Deliberately contains no prices: pricing is still undefined and the page
  * quotes per implementation.
  */
-export type WhatsAppFaqItem = { q: string; qEn: string; a: string; aEn: string };
+export type AgentFaqItem = { q: string; qEn: string; a: string; aEn: string };
 
-export const WHATSAPP_IA_FAQ: WhatsAppFaqItem[] = [
+export const AGENTE_IA_FAQ: AgentFaqItem[] = [
   {
     q: "¿Cuál es la diferencia real entre Automatizado e IA Conversacional?",
     qEn: "What's the real difference between Automated and Conversational AI?",
@@ -201,10 +201,10 @@ export const WHATSAPP_IA_FAQ: WhatsAppFaqItem[] = [
     aEn: "A simple automated flow can be running within days. An AI agent takes longer, because most of that time isn't technical: it's gathering your real information (services, pricing, policies, how you talk to customers) and tuning the agent until it sounds like your business. The bottleneck is almost always that information, not the development.",
   },
   {
-    q: "¿Funciona con mi WhatsApp Business actual?",
-    qEn: "Does it work with my current WhatsApp Business?",
-    a: "Se conecta a través de la API oficial de WhatsApp Business, que es lo que permite que un sistema responda de forma automática. Si hoy usas la app de WhatsApp Business en un celular, hay un paso de migración del número hacia la API. Conservas el número; lo que cambia es cómo se administra. Lo revisamos contigo antes de cotizar porque afecta el alcance del proyecto.",
-    aEn: "It connects through the official WhatsApp Business API, which is what allows a system to reply automatically. If you're currently using the WhatsApp Business app on a phone, there's a migration step to move the number onto the API. You keep the number; what changes is how it's administered. We review this with you before quoting because it affects project scope.",
+    q: "¿Se puede instalar en cualquier sitio web?",
+    qEn: "Can it be installed on any website?",
+    a: "Sí. Es un widget que se integra con un snippet de código, así que funciona igual en WordPress, Shopify, Wix o un sitio hecho a la medida. No hay que reconstruir tu sitio ni migrar de plataforma: se agrega el snippet y el agente aparece. Si tu sitio lo administra un tercero, normalmente basta con pasarle ese fragmento.",
+    aEn: "Yes. It's a widget that goes in through a code snippet, so it works the same on WordPress, Shopify, Wix or a custom build. There's no rebuilding your site and no platform migration: the snippet goes in and the agent shows up. If someone else maintains your site, handing them that snippet is usually all it takes.",
   },
   {
     q: "¿Qué tan seguro es? ¿Quién puede ver las conversaciones?",

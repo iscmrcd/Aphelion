@@ -69,7 +69,7 @@ export function SiteHeader() {
     { to: "/", label: t("Services", "Servicios") },
     { to: "/servicios/websites", label: "Websites" },
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
-    { to: "/servicios/whatsapp-ia", label: t("WhatsApp AI", "WhatsApp IA") },
+    { to: "/servicios/agente-ia", label: t("AI Agent", "Agente IA") },
     { to: "/blog", label: t("Resources", "Recursos") },
     { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;

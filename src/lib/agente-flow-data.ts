@@ -1,5 +1,5 @@
 /**
- * Fixed-flow data for the "Automatizado" tier demo on /servicios/whatsapp-ia.
+ * Fixed-flow data for the "Automatizado" tier demo on /servicios/agente-ia.
  *
  * Lives in lib/ rather than beside the component so the component file only
  * exports components (fast refresh) and so the diagram and the chat widget can
