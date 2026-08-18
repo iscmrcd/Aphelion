@@ -20,6 +20,8 @@ import {
 } from "@/lib/whatsapp-ia-data";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
+import ogImage from "@/assets/whatsapp-ia-og.png.asset.json";
+
 
 export const Route = createFileRoute("/servicios/whatsapp-ia")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
