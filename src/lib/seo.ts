@@ -18,6 +18,8 @@ type BuildHeadArgs = {
   es: SeoCopy;
   ogType?: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 };
 
@@ -37,6 +39,8 @@ export function buildHead({
   es,
   ogType = "website",
   image,
+  imageWidth,
+  imageHeight,
   jsonLd,
 }: BuildHeadArgs) {
   const copy = lang === "es" ? es : en;
