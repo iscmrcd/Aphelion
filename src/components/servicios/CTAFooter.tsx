@@ -24,12 +24,15 @@ export function CTAFooter() {
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <Link
             to="/contacto"
+            search={(prev: Record<string, unknown>) => prev}
             className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
           >
             {t("Book a call", "Agendar llamada")}
           </Link>
           <a
-            href="https://wa.me/526461293352?text=Hola%20Aphelion%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+            href={`https://wa.me/526461293352?text=${encodeURIComponent(
+              t("Hi Aphelion, I'd like more information.", "Hola Aphelion, me gustaría más información."),
+            )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"

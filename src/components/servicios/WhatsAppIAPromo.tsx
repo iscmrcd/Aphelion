@@ -43,6 +43,7 @@ export function WhatsAppIAPromo() {
           <GradientBorderFrame>
             <Link
               to="/servicios/whatsapp-ia"
+              search={(prev: Record<string, unknown>) => prev}
               hash="demo"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium transition hover:bg-neutral-100"
             >
@@ -52,6 +53,7 @@ export function WhatsAppIAPromo() {
 
           <Link
             to="/servicios/whatsapp-ia"
+            search={(prev: Record<string, unknown>) => prev}
             className="inline-flex items-center justify-center rounded-full border border-neutral-200 px-6 py-3 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
           >
             {t("See how it works", "Ver cómo funciona")}
