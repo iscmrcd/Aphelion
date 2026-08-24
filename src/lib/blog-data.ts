@@ -5598,6 +5598,1385 @@ export const BLOG_POSTS: BlogPost[] = [
       keywordsEs: ["cuando redisenar pagina web", "señales de rediseño web", "puntaje pagespeed"],
     },
   },
+  {
+    slug: "guia-automatizacion-ia",
+    title: "Automation, CRM and AI: The Complete 2026 Guide",
+    titleEs: "Automatización, CRM e IA: Guía Completa 2026",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "What automation actually fixes in a small business: capturing every lead, following up without forgetting, and letting AI handle the conversations that vary. Where to start and what to skip.",
+    excerptEs:
+      "Qué arregla realmente la automatización en una pyme: capturar cada lead, dar seguimiento sin olvidos, y dejar que la IA maneje las conversaciones que varían. Por dónde empezar y qué saltarse.",
+    readingTime: 14,
+    date: "2026-10-08",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Automation in a small business is not about replacing people. It is about making sure no lead falls through a crack: every form arrives somewhere, every inquiry gets an answer, and every follow-up happens on schedule instead of when someone remembers.",
+    ledeEs:
+      "La automatización en una pyme no se trata de reemplazar personas. Se trata de que ningún lead se pierda: que cada formulario llegue a algún lado, que cada consulta reciba respuesta, y que cada seguimiento ocurra en su momento y no cuando alguien se acuerda.",
+    sections: [
+      {
+        id: "el-problema-real",
+        heading: "The real problem automation solves",
+        headingEs: "El problema real que resuelve la automatización",
+        body: [
+          "Most small businesses don't lose sales because their product is wrong. They lose them because a message arrived at 9pm and nobody saw it until Tuesday, or because the lead who asked for a quote in March was never contacted again. Automation is plumbing for those gaps: it moves information to the right place and triggers the next step without depending on anyone's memory.",
+        ],
+        bodyEs: [
+          "La mayoría de las pymes no pierde ventas porque su producto esté mal. Las pierde porque un mensaje llegó a las 9 de la noche y nadie lo vio hasta el martes, o porque al lead que pidió cotización en marzo nunca se le volvió a hablar. La automatización es plomería para esos huecos: mueve la información al lugar correcto y dispara el siguiente paso sin depender de la memoria de nadie.",
+        ],
+      },
+      {
+        id: "las-tres-capas",
+        heading: "The three layers: capture, store, follow up",
+        headingEs: "Las tres capas: capturar, guardar, dar seguimiento",
+        body: [
+          "Almost every automation project fits one of three layers. Capture is how a lead enters: a form, a chat, a call, a message. Storage is where it lives so the whole team can see it, which in practice means a CRM. Follow-up is what happens next, on a schedule that does not depend on someone being free. Skipping the middle layer is the most common mistake, because capture without storage just moves the pile from one inbox to another.",
+        ],
+        bodyEs: [
+          "Casi todo proyecto de automatización cae en una de tres capas. La captura es cómo entra un lead: un formulario, un chat, una llamada, un mensaje. El almacenamiento es dónde vive para que todo el equipo lo vea, que en la práctica significa un CRM. El seguimiento es lo que pasa después, en un calendario que no depende de que alguien esté libre. Saltarse la capa de en medio es el error más común, porque capturar sin guardar solo mueve el montón de una bandeja a otra.",
+        ],
+      },
+      {
+        id: "empezar-por-el-cuello-de-botella",
+        heading: "Start at the bottleneck, not at the tool",
+        headingEs: "Empieza por el cuello de botella, no por la herramienta",
+        body: [
+          "The useful question is not which platform to buy. It is where leads are actually dying today. If people write and nobody answers for hours, the bottleneck is response time. If they get answered but never contacted again, it is follow-up. If the team argues about who talked to whom, it is storage. Each of those points to a different first project, and buying a tool before naming the bottleneck usually produces an expensive subscription nobody opens.",
+        ],
+        bodyEs: [
+          "La pregunta útil no es qué plataforma comprar. Es dónde se están muriendo los leads hoy. Si la gente escribe y nadie contesta en horas, el cuello de botella es el tiempo de respuesta. Si les contestan pero nunca los vuelven a contactar, es el seguimiento. Si el equipo discute quién habló con quién, es el almacenamiento. Cada uno apunta a un primer proyecto distinto, y comprar herramienta antes de nombrar el cuello de botella suele producir una suscripción cara que nadie abre.",
+        ],
+      },
+      {
+        id: "que-es-un-crm-resumen",
+        heading: "The CRM is the spine of everything else",
+        headingEs: "El CRM es la columna de todo lo demás",
+        body: [
+          'A CRM is a shared record of every person who ever showed interest, what they asked for, and what happens next. Without it, automations have nowhere to write and reports have nothing to count. It does not need to be expensive or complex to start, and for many small businesses the first version is a lot simpler than what vendors sell. We cover how to choose one in "what is a CRM."',
+        ],
+        bodyEs: [
+          'Un CRM es un registro compartido de cada persona que alguna vez mostró interés, qué pidió y qué sigue con ella. Sin él, las automatizaciones no tienen dónde escribir y los reportes no tienen qué contar. No necesita ser caro ni complejo para arrancar, y para muchas pymes la primera versión es bastante más simple de lo que venden los proveedores. Cubrimos cómo elegir uno en "qué es un CRM."',
+        ],
+      },
+      {
+        id: "conectar-la-captura",
+        heading: "Connecting capture to storage",
+        headingEs: "Conectar la captura con el almacenamiento",
+        body: [
+          'A contact form that only sends an email is a leak waiting to happen: emails get buried, forwarded, or deleted. Wiring forms directly into the CRM means the lead exists as a record with an owner and a next step, not as a message someone has to notice. The setup is usually an afternoon of work and it is the single highest-return automation for most businesses. The step-by-step is in "connecting forms to your CRM."',
+        ],
+        bodyEs: [
+          'Un formulario de contacto que solo manda un correo es una fuga esperando a pasar: los correos se entierran, se reenvían o se borran. Conectar los formularios directo al CRM hace que el lead exista como registro con dueño y siguiente paso, no como un mensaje que alguien tiene que notar. La configuración suele ser una tarde de trabajo y es la automatización de mayor retorno para la mayoría de los negocios. El paso a paso está en "cómo conectar tus formularios al CRM."',
+        ],
+      },
+      {
+        id: "el-seguimiento-automatico",
+        heading: "Follow-up is where most of the money is",
+        headingEs: "El seguimiento es donde está la mayor parte del dinero",
+        body: [
+          'Most leads do not buy on the first contact, and most businesses stop after the first contact. An automated sequence that checks in a few times over the following weeks recovers sales that were already paid for through advertising. The point is not to spam: it is to make sure the second and third touch happen at all, because in practice they usually do not. We break the flow down in "automating sales follow-up."',
+        ],
+        bodyEs: [
+          'La mayoría de los leads no compra en el primer contacto, y la mayoría de los negocios se detiene en el primer contacto. Una secuencia automatizada que da seguimiento algunas veces en las semanas siguientes recupera ventas que ya pagaste con publicidad. El punto no es hacer spam: es que el segundo y tercer contacto sucedan, porque en la práctica normalmente no suceden. Desglosamos el flujo en "automatizar el seguimiento de ventas."',
+        ],
+      },
+      {
+        id: "donde-entra-la-ia",
+        heading: "Where AI actually changes the picture",
+        headingEs: "Dónde cambia la película la IA",
+        body: [
+          "Classic automation is rules: if this, then that. It works when the situation repeats. AI earns its place when the input varies, which is most real conversations. An agent can read a question it has never seen phrased that way, keep track of what was said earlier, and decide whether to answer, qualify or hand off. That is a different capability from a scheduled email, and it is worth paying for only where the variation is real.",
+        ],
+        bodyEs: [
+          "La automatización clásica son reglas: si pasa esto, haz aquello. Funciona cuando la situación se repite. La IA se gana su lugar cuando la entrada varía, que es la mayoría de las conversaciones reales. Un agente puede leer una pregunta que nunca vio formulada así, recordar lo que se dijo antes, y decidir si responde, califica o pasa a una persona. Esa es una capacidad distinta a un correo programado, y vale la pena pagarla solo donde la variación es real.",
+        ],
+      },
+      {
+        id: "chatbot-vs-agente",
+        heading: "A scripted bot and an AI agent are different products",
+        headingEs: "Un bot con guion y un agente de IA son productos distintos",
+        body: [
+          'A menu-style bot answers what is in its tree and fails on anything else, which is fine for hours, address and a price list. An AI agent understands phrasing outside the script. Both are legitimate, and picking the wrong one is expensive in opposite directions: a bot where you needed intelligence frustrates customers, and an agent where a menu would do is overbuilt. We compare them in "AI chatbots for business."',
+        ],
+        bodyEs: [
+          'Un bot tipo menú responde lo que está en su árbol y falla en todo lo demás, lo cual está bien para horarios, dirección y una lista de precios. Un agente de IA entiende formulaciones fuera del guion. Ambos son legítimos, y elegir mal sale caro en direcciones opuestas: un bot donde necesitabas inteligencia frustra clientes, y un agente donde bastaba un menú está sobrado. Los comparamos en "chatbots con IA para negocios."',
+        ],
+      },
+      {
+        id: "el-canal-importa-menos",
+        heading: "The channel matters less than the system",
+        headingEs: "El canal importa menos que el sistema",
+        body: [
+          "Whether the conversation happens on your website, over messaging, or by email, the underlying need is the same: capture it, record it, follow up. Teams often spend weeks debating channels and then wire none of them into a CRM, which leaves them exactly where they started. Pick the channel your customers already use, then spend the effort on what happens after the message arrives.",
+        ],
+        bodyEs: [
+          "Que la conversación ocurra en tu sitio web, por mensajería o por correo, la necesidad de fondo es la misma: capturarla, registrarla, dar seguimiento. Los equipos suelen pasar semanas debatiendo canales y después no conectan ninguno al CRM, lo que los deja exactamente donde empezaron. Elige el canal que tus clientes ya usan, y gasta el esfuerzo en lo que pasa después de que llega el mensaje.",
+        ],
+      },
+      {
+        id: "que-no-automatizar",
+        heading: "What not to automate",
+        headingEs: "Qué no automatizar",
+        body: [
+          'Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs three times a year rarely repays the hours it takes to wire up. The judgment calls are in "what to automate first in your business."',
+        ],
+        bodyEs: [
+          'Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre tres veces al año rara vez paga las horas que toma conectarlo. Los criterios están en "qué automatizar primero en tu negocio."',
+        ],
+      },
+      {
+        id: "como-medir",
+        heading: "How to know if it worked",
+        headingEs: "Cómo saber si funcionó",
+        body: [
+          "Three numbers tell you most of it: how long it takes to answer a new lead, what share of leads get a second contact, and how many close. If response time drops and second contacts go up while closings stay flat, the problem is further down the funnel and no amount of extra automation will fix it. Measuring before you build is what separates an investment from a subscription.",
+        ],
+        bodyEs: [
+          "Tres números te dicen casi todo: cuánto tardas en contestarle a un lead nuevo, qué porcentaje de leads recibe un segundo contacto, y cuántos cierran. Si el tiempo de respuesta baja y los segundos contactos suben mientras los cierres siguen planos, el problema está más abajo en el embudo y ninguna cantidad de automatización extra lo va a arreglar. Medir antes de construir es lo que separa una inversión de una suscripción.",
+        ],
+      },
+      {
+        id: "por-donde-empezar",
+        heading: "A sensible order to build in",
+        headingEs: "Un orden sensato para construir",
+        body: [
+          "Connect the forms to a CRM. Add an automatic acknowledgement so nobody waits in silence. Add a follow-up sequence for leads that go quiet. Only then consider an AI agent, and only for the conversations that genuinely vary. Each step is useful on its own, so if the budget stops after step two you still have something that works.",
+        ],
+        bodyEs: [
+          "Conecta los formularios a un CRM. Agrega un acuse automático para que nadie espere en silencio. Agrega una secuencia de seguimiento para los leads que se enfrían. Hasta entonces considera un agente de IA, y solo para las conversaciones que de verdad varían. Cada paso sirve por sí solo, así que si el presupuesto se detiene después del paso dos igual te queda algo que funciona.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Por dónde empiezo si no tengo nada automatizado?",
+        qEn: "Where do I start if I have nothing automated?",
+        a: "Por conectar tus formularios de contacto a un CRM. Es la pieza de mayor retorno porque hace que cada lead exista como registro con dueño, en vez de como un correo que alguien tiene que notar. Todo lo demás se construye encima de eso.",
+        aEn: "By connecting your contact forms to a CRM. It's the highest-return piece because it makes every lead exist as a record with an owner, instead of an email someone has to notice. Everything else builds on top of that.",
+      },
+      {
+        q: "¿Necesito IA o me basta con automatización normal?",
+        qEn: "Do I need AI, or is regular automation enough?",
+        a: "Depende de si tus conversaciones se repiten o varían. Si las preguntas son casi siempre las mismas, reglas fijas te resuelven más barato. Si cada cliente pregunta distinto y la venta depende de entenderlo, ahí es donde la IA justifica su costo.",
+        aEn: "It depends on whether your conversations repeat or vary. If the questions are almost always the same, fixed rules solve it more cheaply. If every customer asks differently and the sale depends on understanding them, that's where AI earns its cost.",
+      },
+      {
+        q: "¿Cuánto cuesta automatizar una pyme?",
+        qEn: "How much does it cost to automate a small business?",
+        a: "Varía mucho según cuántas integraciones necesites y qué tan a la medida sea. Lo que sí es constante: empezar por una pieza sencilla y bien conectada cuesta mucho menos que contratar una plataforma completa que nadie termina de configurar.",
+        aEn: "It varies a lot depending on how many integrations you need and how custom it is. What's constant: starting with one simple, well-connected piece costs far less than buying a full platform nobody finishes configuring.",
+      },
+      {
+        q: "¿La automatización va a reemplazar a mi equipo de ventas?",
+        qEn: "Will automation replace my sales team?",
+        a: "No, y los proyectos que se plantean así suelen fallar. Lo que reemplaza es el trabajo de acordarse: capturar, registrar y recordar el seguimiento. La conversación que cierra la venta sigue siendo humana en casi todos los negocios.",
+        aEn: "No, and projects framed that way tend to fail. What it replaces is the work of remembering: capturing, recording and chasing follow-ups. The conversation that closes the sale stays human in almost every business.",
+      },
+      {
+        q: "¿Cuánto tarda en verse el resultado?",
+        qEn: "How long before I see results?",
+        a: "El tiempo de respuesta mejora desde el primer día, porque es mecánico. El efecto en cierres tarda más, porque depende de que los leads recuperados avancen por tu ciclo de venta normal, que en algunos giros son semanas o meses.",
+        aEn: "Response time improves from day one, because it's mechanical. The effect on closings takes longer, because it depends on recovered leads moving through your normal sales cycle, which in some industries runs weeks or months.",
+      },
+      {
+        q: "¿Puedo automatizar sin saber programar?",
+        qEn: "Can I automate without knowing how to code?",
+        a: "Buena parte sí, con herramientas de conexión visual. El límite aparece cuando necesitas lógica específica de tu negocio o integrar un sistema que no tiene conector listo. Ahí es donde suele entrar ayuda técnica.",
+        aEn: "A good part of it, yes, using visual connection tools. The limit shows up when you need logic specific to your business or an integration with a system that has no ready-made connector. That's usually where technical help comes in.",
+      },
+    ],
+    schema: {
+      keywords: ["marketing automation guide", "CRM for small business", "AI automation"],
+      keywordsEs: ["automatizacion de marketing guia", "crm para pymes", "automatizacion con ia"],
+    },
+  },
+  {
+    slug: "que-es-un-crm",
+    title: "What Is a CRM and Which One Does Your Business Need?",
+    titleEs: "¿Qué es un CRM y Cuál Necesita tu Pyme?",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "A CRM is a shared record of everyone who showed interest and what happens next with them. What it actually replaces, when a spreadsheet is still fine, and how to pick without overbuying.",
+    excerptEs:
+      "Un CRM es un registro compartido de todos los que mostraron interés y qué sigue con ellos. Qué reemplaza de verdad, cuándo una hoja de cálculo todavía alcanza, y cómo elegir sin comprar de más.",
+    readingTime: 7,
+    date: "2026-10-11",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A CRM is a shared record of every person who contacted your business, what they wanted, and what the next step is. Its job is to make that information survive vacations, staff changes and busy weeks, instead of living in one person's phone.",
+    ledeEs:
+      "Un CRM es un registro compartido de cada persona que contactó a tu negocio, qué quería y cuál es el siguiente paso. Su trabajo es que esa información sobreviva vacaciones, cambios de personal y semanas ocupadas, en vez de vivir en el celular de una persona.",
+    sections: [
+      {
+        id: "que-hace-realmente",
+        heading: "What it actually does",
+        headingEs: "Qué hace realmente",
+        body: [
+          "Three things: it stores every contact with their history, it assigns an owner so there is no ambiguity about who is responsible, and it holds a next action with a date. Everything else vendors advertise is built on those three. If a tool does not do them well, the extra features will not save it.",
+        ],
+        bodyEs: [
+          "Tres cosas: guarda cada contacto con su historial, asigna un dueño para que no haya duda de quién es responsable, y sostiene una próxima acción con fecha. Todo lo demás que anuncian los proveedores se construye sobre esas tres. Si una herramienta no las hace bien, las funciones extra no la van a salvar.",
+        ],
+      },
+      {
+        id: "que-reemplaza",
+        heading: "What it replaces in practice",
+        headingEs: "Qué reemplaza en la práctica",
+        body: [
+          "Usually a mix of a chat inbox, a notebook, a spreadsheet somebody maintains, and the memory of whoever has been there longest. That mix works until the volume grows or that person is out. The failure mode is quiet: leads do not disappear dramatically, they just never get contacted again and nobody notices.",
+        ],
+        bodyEs: [
+          "Normalmente una mezcla de una bandeja de chat, una libreta, una hoja de cálculo que alguien mantiene, y la memoria del que lleva más tiempo. Esa mezcla funciona hasta que sube el volumen o esa persona no está. La falla es discreta: los leads no desaparecen de forma dramática, simplemente nunca se les vuelve a contactar y nadie lo nota.",
+        ],
+      },
+      {
+        id: "cuando-una-hoja-alcanza",
+        heading: "When a spreadsheet is still fine",
+        headingEs: "Cuándo una hoja de cálculo todavía alcanza",
+        body: [
+          "If one person handles all the leads, the volume is low, and the sales cycle is short, a well-kept sheet is honestly enough. The moment a second person needs to see the same information, or a lead takes weeks to close, the sheet starts costing more in coordination than a basic CRM would.",
+        ],
+        bodyEs: [
+          "Si una sola persona atiende todos los leads, el volumen es bajo y el ciclo de venta es corto, una hoja bien mantenida honestamente alcanza. En el momento en que una segunda persona necesita ver la misma información, o un lead tarda semanas en cerrar, la hoja empieza a costar más en coordinación de lo que costaría un CRM básico.",
+        ],
+      },
+      {
+        id: "como-elegir",
+        heading: "How to choose without overbuying",
+        headingEs: "Cómo elegir sin comprar de más",
+        body: [
+          "Start from what you will actually use in the first month. Most teams need contacts, a pipeline with a handful of stages, and reminders. Enterprise features like lead scoring or complex automations sound compelling in a demo and sit unused for a year. A tool the team opens daily beats a better tool nobody logs into.",
+        ],
+        bodyEs: [
+          "Parte de lo que realmente vas a usar el primer mes. La mayoría de los equipos necesita contactos, un pipeline con un puñado de etapas, y recordatorios. Las funciones de nivel empresarial como scoring de leads o automatizaciones complejas suenan convincentes en un demo y se quedan sin usar un año. Una herramienta que el equipo abre a diario le gana a una mejor en la que nadie entra.",
+        ],
+      },
+      {
+        id: "el-error-de-implementacion",
+        heading: "The mistake that kills most implementations",
+        headingEs: "El error que mata a la mayoría de las implementaciones",
+        body: [
+          "Buying the CRM and leaving data entry to willpower. If adding a lead is manual, it will happen on calm days and stop on busy ones, which are exactly the days that matter. Connecting your forms so records appear automatically is what makes adoption stick.",
+        ],
+        bodyEs: [
+          "Comprar el CRM y dejar la captura de datos a la fuerza de voluntad. Si agregar un lead es manual, va a pasar en los días tranquilos y a detenerse en los ocupados, que son justo los que importan. Conectar tus formularios para que los registros aparezcan solos es lo que hace que la adopción se sostenga.",
+        ],
+      },
+      {
+        id: "que-medir-desde-el-crm",
+        heading: "What to measure once it's running",
+        headingEs: "Qué medir una vez que corre",
+        body: [
+          "How many leads entered, how many got a first response and how fast, how many got a second contact, and how many closed. Those four turn the CRM from a filing cabinet into something that tells you where the funnel leaks. Without them you have a tidier version of the same guesswork.",
+        ],
+        bodyEs: [
+          "Cuántos leads entraron, cuántos recibieron primera respuesta y qué tan rápido, cuántos recibieron un segundo contacto, y cuántos cerraron. Esos cuatro convierten al CRM de archivero en algo que te dice dónde gotea el embudo. Sin ellos tienes una versión más ordenada de la misma adivinanza.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuál es la diferencia entre un CRM y una hoja de cálculo?",
+        qEn: "What's the difference between a CRM and a spreadsheet?",
+        a: "La hoja guarda datos; el CRM guarda datos y además asigna dueño, sostiene una próxima acción con fecha y deja historial. En la práctica la diferencia se siente cuando hay más de una persona involucrada o el ciclo de venta dura semanas.",
+        aEn: "The sheet stores data; a CRM stores data and also assigns an owner, holds a next action with a date, and keeps history. In practice the difference shows up once more than one person is involved or the sales cycle runs weeks.",
+      },
+      {
+        q: "¿Cuánto cuesta un CRM para una pyme?",
+        qEn: "How much does a CRM cost for a small business?",
+        a: "Hay opciones gratuitas funcionales para equipos chicos y planes de pago por usuario que suben según funciones. El costo que sorprende no suele ser la licencia, sino el tiempo de configurarlo y migrar lo que ya tienes.",
+        aEn: "There are functional free tiers for small teams and paid per-user plans that scale with features. The cost that surprises people usually isn't the license, it's the time to configure it and migrate what you already have.",
+      },
+      {
+        q: "¿Necesito un CRM si vendo por mensajería?",
+        qEn: "Do I need a CRM if I sell through messaging?",
+        a: "Sí, y probablemente más. Una bandeja de mensajes no tiene noción de etapas ni de próximas acciones, así que los leads se entierran conforme llegan mensajes nuevos. El CRM es lo que le da estructura a esas conversaciones.",
+        aEn: "Yes, and probably more so. A message inbox has no concept of stages or next actions, so leads get buried as new messages arrive. The CRM is what gives those conversations structure.",
+      },
+      {
+        q: "¿Puedo migrar después si elijo mal?",
+        qEn: "Can I migrate later if I choose wrong?",
+        a: "Sí, casi todos exportan a CSV. Lo que se pierde en una migración suele ser el historial de conversaciones y las automatizaciones configuradas, no los contactos. Por eso conviene no invertir meses en configuraciones complejas antes de confirmar que la herramienta te acomoda.",
+        aEn: "Yes, almost all of them export to CSV. What tends to get lost in a migration is conversation history and configured automations, not the contacts. That's why it's worth not sinking months into complex setups before confirming the tool fits.",
+      },
+    ],
+    schema: {
+      keywords: ["what is a CRM", "CRM for small business", "choose a CRM"],
+      keywordsEs: ["que es un crm", "crm para pymes", "como elegir un crm"],
+    },
+  },
+  {
+    slug: "whatsapp-business-api",
+    title: "WhatsApp Business API: A Practical Guide for Companies in Mexico",
+    titleEs: "WhatsApp Business API: Guía para Empresas en México",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "What the WhatsApp Business API is, how it differs from the free app, what it costs to run, and when a business actually needs it instead of the app on a phone.",
+    excerptEs:
+      "Qué es la API de WhatsApp Business, en qué se diferencia de la app gratuita, qué cuesta operarla, y cuándo un negocio realmente la necesita en vez de la app en un celular.",
+    readingTime: 8,
+    date: "2026-10-14",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "The WhatsApp Business API is the paid, programmatic version of WhatsApp for companies. Unlike the free app, it has no interface of its own: it exists so other systems can send and receive messages, which is what makes automation and multiple simultaneous agents possible.",
+    ledeEs:
+      "La API de WhatsApp Business es la versión programática y de paga de WhatsApp para empresas. A diferencia de la app gratuita, no tiene interfaz propia: existe para que otros sistemas manden y reciban mensajes, que es lo que hace posible la automatización y varios agentes al mismo tiempo.",
+    sections: [
+      {
+        id: "app-vs-api",
+        heading: "The app and the API are different products",
+        headingEs: "La app y la API son productos distintos",
+        body: [
+          "The free WhatsApp Business app runs on a phone, is operated by a person, and is limited to a handful of devices. The API has no app: you connect it to software, and that software decides what to send. One is a communication tool for a small team; the other is infrastructure for a system. Confusing them is the most common source of wasted budget in this area.",
+        ],
+        bodyEs: [
+          "La app gratuita de WhatsApp Business corre en un celular, la opera una persona y está limitada a unos cuantos dispositivos. La API no tiene app: la conectas a un software, y ese software decide qué mandar. Una es una herramienta de comunicación para un equipo chico; la otra es infraestructura para un sistema. Confundirlas es la fuente más común de presupuesto desperdiciado en este tema.",
+        ],
+      },
+      {
+        id: "que-habilita",
+        heading: "What the API actually enables",
+        headingEs: "Qué habilita realmente la API",
+        body: [
+          "Several people answering the same number without passing a phone around, automatic replies that do not depend on someone being awake, connecting conversations to a CRM, and sending notifications like appointment reminders or order updates. None of that is possible on the free app in a reliable way.",
+        ],
+        bodyEs: [
+          "Que varias personas atiendan el mismo número sin pasarse un celular, respuestas automáticas que no dependen de que alguien esté despierto, conectar las conversaciones a un CRM, y mandar notificaciones como recordatorios de cita o avisos de pedido. Nada de eso es posible en la app gratuita de forma confiable.",
+        ],
+      },
+      {
+        id: "como-se-accede",
+        heading: "How access works",
+        headingEs: "Cómo se accede",
+        body: [
+          "You do not buy it directly from a store. Access goes through a provider that is authorized to resell it, and they handle the technical connection plus billing. That means your real experience of the API depends a lot on which provider you pick, since the underlying service is the same but the tooling around it is not.",
+        ],
+        bodyEs: [
+          "No se compra directo en una tienda. El acceso va a través de un proveedor autorizado para revenderla, y ese proveedor maneja la conexión técnica y la facturación. Eso significa que tu experiencia real con la API depende bastante de qué proveedor elijas, porque el servicio de fondo es el mismo pero las herramientas alrededor no.",
+        ],
+      },
+      {
+        id: "el-modelo-de-cobro",
+        heading: "How billing generally works",
+        headingEs: "Cómo funciona el cobro en general",
+        body: [
+          "Billing is based on conversations rather than individual messages, and rates differ depending on whether the business or the customer started it. On top of that sits whatever the provider charges for their platform. The practical implication is that costs scale with volume, so a business with heavy traffic should model this before committing.",
+        ],
+        bodyEs: [
+          "El cobro se basa en conversaciones más que en mensajes individuales, y las tarifas cambian según si la inició el negocio o el cliente. Encima de eso va lo que cobre el proveedor por su plataforma. La implicación práctica es que el costo escala con el volumen, así que un negocio con mucho tráfico debería modelarlo antes de comprometerse.",
+        ],
+      },
+      {
+        id: "las-plantillas",
+        heading: "Templates and the 24-hour window",
+        headingEs: "Las plantillas y la ventana de 24 horas",
+        body: [
+          "If the customer wrote first, you can reply freely for a limited window. Outside it, business-initiated messages have to use pre-approved templates. This trips up teams who expect to send whatever they want whenever they want, and it is the rule that shapes most campaign designs on this channel.",
+        ],
+        bodyEs: [
+          "Si el cliente escribió primero, puedes responder libremente durante una ventana limitada. Fuera de ella, los mensajes iniciados por el negocio tienen que usar plantillas preaprobadas. Esto sorprende a equipos que esperan mandar lo que quieran cuando quieran, y es la regla que le da forma a la mayoría de las campañas en este canal.",
+        ],
+      },
+      {
+        id: "cuando-vale-la-pena",
+        heading: "When it's worth it and when it isn't",
+        headingEs: "Cuándo vale la pena y cuándo no",
+        body: [
+          "It is worth it when volume exceeds what a person can handle, when several people must answer the same number, or when you need conversations recorded in a CRM. It is not worth it for a business receiving a handful of messages a day that one person answers fine: the app already does that, for free.",
+        ],
+        bodyEs: [
+          "Vale la pena cuando el volumen supera lo que una persona puede atender, cuando varias personas deben responder el mismo número, o cuando necesitas las conversaciones registradas en un CRM. No vale la pena para un negocio que recibe un puñado de mensajes al día que una persona contesta bien: la app ya hace eso, gratis.",
+        ],
+      },
+      {
+        id: "alternativas",
+        heading: "It isn't the only channel worth automating",
+        headingEs: "No es el único canal que vale la pena automatizar",
+        body: [
+          "Messaging gets most of the attention in Mexico, but the same underlying need can be served by a chat on your own site, by email, or by a phone line, and those carry no per-conversation fee. The right question is where your customers already write to you, not which channel is fashionable.",
+        ],
+        bodyEs: [
+          "La mensajería se lleva casi toda la atención en México, pero la misma necesidad de fondo se puede resolver con un chat en tu propio sitio, con correo o con una línea telefónica, y esos no tienen costo por conversación. La pregunta correcta es dónde te escriben ya tus clientes, no qué canal está de moda.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿La API de WhatsApp Business es gratis?",
+        qEn: "Is the WhatsApp Business API free?",
+        a: "No. La app de WhatsApp Business sí es gratuita, pero la API se cobra por conversación, con tarifas que varían según quién inició el intercambio, más lo que cobre el proveedor por su plataforma.",
+        aEn: "No. The WhatsApp Business app is free, but the API is billed per conversation, at rates that vary depending on who started the exchange, plus whatever the provider charges for their platform.",
+      },
+      {
+        q: "¿Puedo conservar mi número actual?",
+        qEn: "Can I keep my current number?",
+        a: "Generalmente sí, pero un número solo puede estar en la app o en la API, no en ambas a la vez. Migrarlo implica sacarlo de la app, y ahí es donde conviene planear con calma para no quedarte incomunicado a media semana.",
+        aEn: "Generally yes, but a number can live either in the app or on the API, not both at once. Migrating means removing it from the app, and that's where it's worth planning carefully so you don't go dark mid-week.",
+      },
+      {
+        q: "¿Necesito la API para tener un chatbot?",
+        qEn: "Do I need the API to have a chatbot?",
+        a: "Para un bot en WhatsApp, sí. Pero si lo que quieres es un asistente automático que atienda a tus clientes, un chat en tu propio sitio web logra lo mismo sin costo por conversación ni plantillas preaprobadas.",
+        aEn: "For a bot on WhatsApp, yes. But if what you want is an automated assistant handling your customers, a chat on your own website achieves the same thing with no per-conversation cost and no pre-approved templates.",
+      },
+      {
+        q: "¿Qué son las plantillas y por qué las necesito?",
+        qEn: "What are templates and why do I need them?",
+        a: "Son mensajes preaprobados que se usan cuando el negocio inicia la conversación fuera de la ventana de respuesta libre. Existen para limitar el spam, y significan que no puedes improvisar el texto de una campaña saliente.",
+        aEn: "They're pre-approved messages used when the business starts a conversation outside the free-reply window. They exist to limit spam, and they mean you can't improvise the copy of an outbound campaign.",
+      },
+      {
+        q: "¿Cuánto tarda la aprobación?",
+        qEn: "How long does approval take?",
+        a: "Varía según el proveedor y qué tan completa esté la verificación de tu empresa. Lo que más suele retrasar el proceso no es la parte técnica, sino tener en orden los documentos que acreditan al negocio.",
+        aEn: "It varies by provider and how complete your business verification is. What usually delays the process isn't the technical side, it's having the documents that verify the business in order.",
+      },
+    ],
+    schema: {
+      keywords: ["WhatsApp Business API", "WhatsApp API Mexico", "business messaging API"],
+      keywordsEs: ["whatsapp business api", "api de whatsapp mexico", "mensajeria para empresas"],
+    },
+  },
+  {
+    slug: "que-automatizar-en-mi-negocio",
+    title: "What to Automate First in Your Business (and What Not To)",
+    titleEs: "Qué Automatizar Primero en tu Negocio (y Qué No)",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "A filter for deciding what deserves automating: how often it repeats, how costly a mistake is, and whether the process is even defined yet. Plus the tasks that are usually a bad idea.",
+    excerptEs:
+      "Un filtro para decidir qué merece automatizarse: qué tan seguido se repite, qué tan caro sale un error, y si el proceso siquiera está definido. Más las tareas que suelen ser mala idea.",
+    readingTime: 7,
+    date: "2026-10-17",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "The tasks worth automating first are the ones that repeat often, follow the same steps every time, and cost you money when they are forgotten. That description fits lead capture and follow-up in almost every business, which is why they are the usual starting point.",
+    ledeEs:
+      "Las tareas que vale la pena automatizar primero son las que se repiten seguido, siguen los mismos pasos siempre, y cuestan dinero cuando se olvidan. Esa descripción le queda a la captura y al seguimiento de leads en casi cualquier negocio, y por eso son el punto de partida habitual.",
+    sections: [
+      {
+        id: "el-filtro",
+        heading: "A three-question filter",
+        headingEs: "Un filtro de tres preguntas",
+        body: [
+          "How often does this happen? Does it follow the same steps every time? What does it cost when it gets skipped? A task that happens daily, always the same way, and costs a sale when forgotten is an obvious yes. One that happens twice a year and changes every time is an obvious no. Most of the judgment lives in between.",
+        ],
+        bodyEs: [
+          "¿Qué tan seguido pasa esto? ¿Sigue los mismos pasos siempre? ¿Qué cuesta cuando se salta? Una tarea que pasa a diario, siempre igual, y cuesta una venta cuando se olvida es un sí obvio. Una que pasa dos veces al año y cambia cada vez es un no obvio. Casi todo el criterio vive en medio.",
+        ],
+      },
+      {
+        id: "los-candidatos-obvios",
+        heading: "The usual first candidates",
+        headingEs: "Los primeros candidatos de siempre",
+        body: [
+          "Sending a lead from a form into the CRM. Acknowledging a new message so nobody waits in silence. Reminding a customer about an appointment. Chasing a quote that went quiet. These share a shape: high frequency, low variation, and a real cost when they slip.",
+        ],
+        bodyEs: [
+          "Mandar un lead de un formulario al CRM. Acusar recibo de un mensaje nuevo para que nadie espere en silencio. Recordarle a un cliente su cita. Perseguir una cotización que se enfrió. Todas comparten forma: alta frecuencia, poca variación, y un costo real cuando se pasan por alto.",
+        ],
+      },
+      {
+        id: "lo-que-no-conviene",
+        heading: "What usually shouldn't be automated",
+        headingEs: "Lo que normalmente no conviene",
+        body: [
+          "Anything rare enough that the setup outlives the need. Anything where an error is expensive or embarrassing to undo, like billing adjustments or anything legal. And anything where the personal touch is the product: a handwritten note from the owner stops meaning anything the moment it is generated.",
+        ],
+        bodyEs: [
+          "Todo lo bastante raro como para que la configuración sobreviva a la necesidad. Todo donde un error es caro o vergonzoso de deshacer, como ajustes de facturación o cualquier cosa legal. Y todo donde el trato personal es el producto: una nota escrita a mano por el dueño deja de significar algo en el momento en que se genera sola.",
+        ],
+      },
+      {
+        id: "definir-antes-de-automatizar",
+        heading: "Define the process before you wire it",
+        headingEs: "Define el proceso antes de conectarlo",
+        body: [
+          "Automating something nobody has written down just makes the confusion run faster and at scale. If two people on the team describe the follow-up process differently, that disagreement will end up hardcoded into the automation, and debugging it later is harder than settling it now.",
+        ],
+        bodyEs: [
+          "Automatizar algo que nadie ha escrito solo hace que la confusión corra más rápido y a escala. Si dos personas del equipo describen el proceso de seguimiento distinto, ese desacuerdo va a terminar grabado en la automatización, y depurarlo después es más difícil que resolverlo ahora.",
+        ],
+      },
+      {
+        id: "el-costo-oculto",
+        heading: "The hidden cost is maintenance",
+        headingEs: "El costo escondido es el mantenimiento",
+        body: [
+          "Every automation is a small system that breaks when something upstream changes: a form field renamed, a tool updated, a person who left owning the account. Before building, ask who notices when it stops working. An automation nobody monitors fails silently, which is worse than not having it.",
+        ],
+        bodyEs: [
+          "Cada automatización es un sistema chico que se rompe cuando algo aguas arriba cambia: un campo de formulario que se renombra, una herramienta que se actualiza, una persona que se fue siendo dueña de la cuenta. Antes de construir, pregunta quién se entera cuando deja de funcionar. Una automatización que nadie monitorea falla sin avisar, que es peor que no tenerla.",
+        ],
+      },
+      {
+        id: "empezar-chico",
+        heading: "Start small enough to finish",
+        headingEs: "Empieza lo bastante chico para terminar",
+        body: [
+          "A single automation that works end to end beats an ambitious system that stays half-configured. Pick the one task that annoys the team most this month, wire it properly, and let it run for a few weeks before adding the next. Momentum from something that visibly works is what carries the rest of the project.",
+        ],
+        bodyEs: [
+          "Una sola automatización que funcione de punta a punta le gana a un sistema ambicioso que se queda a medio configurar. Elige la tarea que más moleste al equipo este mes, conéctala bien, y déjala correr unas semanas antes de agregar la siguiente. El impulso de algo que visiblemente funciona es lo que carga el resto del proyecto.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué automatizo primero si solo puedo hacer una cosa?",
+        qEn: "What do I automate first if I can only do one thing?",
+        a: "La captura de leads hacia tu CRM. Es la que más se repite, la que menos varía, y la que más caro sale cuando falla, porque un lead que nunca se registró no se puede recuperar después.",
+        aEn: "Lead capture into your CRM. It repeats the most, varies the least, and costs the most when it fails, because a lead that was never recorded can't be recovered later.",
+      },
+      {
+        q: "¿Vale la pena automatizar si soy un negocio de una sola persona?",
+        qEn: "Is it worth automating if I'm a one-person business?",
+        a: "Muchas veces sí, y por una razón distinta: no es coordinación con un equipo, es que tú eres el único cuello de botella. Las automatizaciones de acuse y recordatorio te compran tiempo directamente.",
+        aEn: "Often yes, and for a different reason: it isn't team coordination, it's that you are the only bottleneck. Acknowledgement and reminder automations buy you time directly.",
+      },
+      {
+        q: "¿Cómo sé si una automatización dejó de funcionar?",
+        qEn: "How do I know if an automation stopped working?",
+        a: "Necesitas una señal que puedas revisar: un conteo de leads capturados por semana, una alerta cuando falla, o una revisión mensual. Sin eso, lo normal es enterarte semanas después porque alguien preguntó por un lead que nunca llegó.",
+        aEn: "You need a signal you can check: a weekly count of captured leads, an alert on failure, or a monthly review. Without that, the normal outcome is finding out weeks later because someone asked about a lead that never arrived.",
+      },
+      {
+        q: "¿Puedo automatizar sin cambiar mis herramientas actuales?",
+        qEn: "Can I automate without changing my current tools?",
+        a: "En buena medida sí, si tus herramientas tienen conectores. El punto donde se complica es cuando usas algo cerrado o muy viejo que no expone forma de conectarse, y ahí sí hay que valorar el cambio.",
+        aEn: "Largely yes, if your tools have connectors. Where it gets complicated is when you use something closed or very old that exposes no way to connect, and that's when a change is worth weighing.",
+      },
+    ],
+    schema: {
+      keywords: ["what to automate", "business process automation", "automation priorities"],
+      keywordsEs: [
+        "que automatizar en mi negocio",
+        "automatizacion de procesos",
+        "por donde empezar a automatizar",
+      ],
+    },
+  },
+  {
+    slug: "chatbot-con-ia-para-negocios",
+    title: "AI Chatbots: When They Help and When They Get in the Way",
+    titleEs: "Chatbots con IA: Cuándo Ayudan y Cuándo Estorban",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "The difference between a scripted bot and an AI agent, the situations where each one wins, and the setup mistakes that make customers hate both.",
+    excerptEs:
+      "La diferencia entre un bot con guion y un agente de IA, en qué situaciones gana cada uno, y los errores de configuración que hacen que los clientes odien a los dos.",
+    readingTime: 7,
+    date: "2026-10-20",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A chatbot helps when it answers faster than a person would and knows when to step aside. It gets in the way when it stands between the customer and a human who could have solved the problem in one sentence. The difference is design, not technology.",
+    ledeEs:
+      "Un chatbot ayuda cuando responde más rápido de lo que respondería una persona y sabe cuándo hacerse a un lado. Estorba cuando se interpone entre el cliente y un humano que habría resuelto el problema en una frase. La diferencia está en el diseño, no en la tecnología.",
+    sections: [
+      {
+        id: "dos-productos-distintos",
+        heading: "Scripted bot vs. AI agent",
+        headingEs: "Bot con guion vs. agente de IA",
+        body: [
+          "A scripted bot presents options and answers what is in its tree. Predictable, cheap, and useless the moment someone phrases a question outside the script. An AI agent reads natural language, holds context across the conversation, and can handle variation. They solve different problems and cost very different amounts.",
+        ],
+        bodyEs: [
+          "Un bot con guion presenta opciones y responde lo que está en su árbol. Predecible, barato, e inútil en el momento en que alguien formula una pregunta fuera del guion. Un agente de IA lee lenguaje natural, mantiene el contexto de la conversación, y aguanta la variación. Resuelven problemas distintos y cuestan cantidades muy distintas.",
+        ],
+      },
+      {
+        id: "cuando-gana-el-guion",
+        heading: "When the scripted one wins",
+        headingEs: "Cuándo gana el del guion",
+        body: [
+          "When the questions genuinely repeat: hours, location, whether you deliver, a base price. A menu answers those instantly and never invents anything. Paying for intelligence to answer what time you open is spending money to solve a problem you did not have.",
+        ],
+        bodyEs: [
+          "Cuando las preguntas de verdad se repiten: horarios, ubicación, si tienen entrega a domicilio, un precio base. Un menú responde eso al instante y nunca inventa nada. Pagar por inteligencia para contestar a qué hora abres es gastar dinero en resolver un problema que no tenías.",
+        ],
+      },
+      {
+        id: "cuando-gana-la-ia",
+        heading: "When AI earns its cost",
+        headingEs: "Cuándo la IA justifica su costo",
+        body: [
+          "When the conversation is the qualification. A customer describing a project, a patient describing a symptom, a buyer weighing options: each one arrives differently, and the value comes from understanding them well enough to route or quote. That is not something a decision tree does convincingly.",
+        ],
+        bodyEs: [
+          "Cuando la conversación es la calificación. Un cliente describiendo un proyecto, un paciente describiendo un síntoma, un comprador comparando opciones: cada uno llega distinto, y el valor está en entenderlo lo suficiente para canalizarlo o cotizarlo. Eso no es algo que un árbol de decisiones haga de forma convincente.",
+        ],
+      },
+      {
+        id: "el-error-que-los-hace-odiados",
+        heading: "The setup mistake that makes customers hate them",
+        headingEs: "El error de configuración que los hace odiados",
+        body: [
+          "Trapping people. If there is no visible way to reach a human, every limitation of the bot becomes a wall. A good implementation offers the handoff early and takes it without argument. The bot should be the fast path, never the only path.",
+        ],
+        bodyEs: [
+          "Atrapar a la gente. Si no hay una forma visible de llegar a un humano, cada limitación del bot se convierte en una pared. Una buena implementación ofrece el pase a una persona desde temprano y lo acepta sin discutir. El bot debería ser el camino rápido, nunca el único camino.",
+        ],
+      },
+      {
+        id: "no-debe-inventar",
+        heading: "It must be allowed to say it doesn't know",
+        headingEs: "Se le tiene que permitir decir que no sabe",
+        body: [
+          'An agent that improvises an answer about pricing or availability creates a problem your team has to clean up later, in front of a customer who now distrusts you. The instruction to say "I don\'t have that, let me connect you" is not a limitation to hide, it is the feature that makes the thing safe to deploy.',
+        ],
+        bodyEs: [
+          'Un agente que improvisa una respuesta sobre precios o disponibilidad crea un problema que tu equipo tiene que limpiar después, frente a un cliente que ahora desconfía. La instrucción de decir "eso no lo tengo, te conecto" no es una limitación que haya que esconder, es la característica que hace seguro ponerlo en producción.',
+        ],
+      },
+      {
+        id: "como-probarlo",
+        heading: "Test it as an unhappy customer",
+        headingEs: "Pruébalo como cliente molesto",
+        body: [
+          "Before launch, ask it the awkward questions: the price you would rather not quote, the thing you do not offer, the complaint. How it behaves in those three cases matters more than how it handles the happy path, because those are the moments that generate reviews. You can try three agents built this way on our AI Agent service page.",
+        ],
+        bodyEs: [
+          "Antes de lanzar, hazle las preguntas incómodas: el precio que preferirías no cotizar, lo que no ofreces, la queja. Cómo se comporta en esos tres casos importa más que cómo maneja el camino feliz, porque esos son los momentos que generan reseñas. Puedes probar tres agentes construidos así en nuestra página de servicio de Agente IA.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Un chatbot le va a molestar a mis clientes?",
+        qEn: "Will a chatbot annoy my customers?",
+        a: "Molesta cuando los atrapa. Si responde rápido lo que sí sabe y ofrece pasar a una persona sin pelear, la mayoría lo prefiere sobre esperar. El enojo casi siempre viene de no poder salirse.",
+        aEn: "It annoys them when it traps them. If it answers quickly what it does know and offers a handoff without fighting, most people prefer it to waiting. The frustration almost always comes from not being able to get out.",
+      },
+      {
+        q: "¿Cuál es la diferencia de costo entre un bot y un agente de IA?",
+        qEn: "What's the cost difference between a bot and an AI agent?",
+        a: "Un bot con guion es más barato de construir y no tiene costo por conversación. Un agente de IA cuesta más de configurar y consume por mensaje, porque hay un modelo procesando cada respuesta.",
+        aEn: "A scripted bot is cheaper to build and has no per-conversation cost. An AI agent costs more to set up and consumes per message, because there's a model processing each reply.",
+      },
+      {
+        q: "¿El agente puede inventar información sobre mi negocio?",
+        qEn: "Can the agent make up information about my business?",
+        a: "Puede, si no se le instruye lo contrario. Por eso una implementación seria incluye la regla explícita de no inventar y de pasar a una persona cuando el dato no está en su contexto. Eso hay que exigirlo, no asumirlo.",
+        aEn: "It can, if it isn't instructed otherwise. That's why a serious implementation includes an explicit rule not to invent and to hand off when the information isn't in its context. That's something to require, not assume.",
+      },
+      {
+        q: "¿Necesito mucha información para entrenarlo?",
+        qEn: "Do I need a lot of information to train it?",
+        a: "No es entrenamiento en el sentido técnico, es darle contexto: servicios, precios, políticas y cómo hablas con tus clientes. Reunir eso suele ser la parte que más tiempo toma del proyecto, más que la parte técnica.",
+        aEn: "It isn't training in the technical sense, it's giving it context: services, pricing, policies and how you talk to customers. Gathering that is usually the most time-consuming part of the project, more than the technical side.",
+      },
+    ],
+    schema: {
+      keywords: ["AI chatbot for business", "chatbot vs AI agent", "when to use a chatbot"],
+      keywordsEs: [
+        "chatbot con ia para negocios",
+        "chatbot vs agente de ia",
+        "cuando usar un chatbot",
+      ],
+    },
+  },
+  {
+    slug: "ia-en-marketing",
+    title: "AI in Marketing 2026: What Agencies Actually Use",
+    titleEs: "IA en Marketing 2026: Qué Usan las Agencias en Realidad",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "Where AI genuinely earns its place in a marketing workflow, where it produces confident nonsense, and what our own stack looks like in practice.",
+    excerptEs:
+      "Dónde se gana la IA su lugar en un flujo de marketing, dónde produce tonterías con seguridad, y cómo se ve nuestro propio stack en la práctica.",
+    readingTime: 8,
+    date: "2026-10-23",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "AI is useful in marketing where a draft, a summary or a classification saves a human from starting at zero. It is unreliable where the output must be factually correct without someone checking it. Most of the value sits in the first category and most of the disasters in the second.",
+    ledeEs:
+      "La IA sirve en marketing donde un borrador, un resumen o una clasificación le ahorra a una persona empezar de cero. Es poco confiable donde el resultado tiene que ser factualmente correcto sin que alguien lo revise. Casi todo el valor está en la primera categoría y casi todos los desastres en la segunda.",
+    sections: [
+      {
+        id: "donde-si-sirve",
+        heading: "Where it genuinely helps",
+        headingEs: "Dónde sirve de verdad",
+        body: [
+          "Turning a rough brief into a first draft. Summarizing a pile of customer feedback into themes. Classifying leads or messages by intent. Generating variations of ad copy to test. In all of these a human still decides, and the AI removes the blank-page cost rather than the judgment.",
+        ],
+        bodyEs: [
+          "Convertir un brief crudo en un primer borrador. Resumir un montón de comentarios de clientes en temas. Clasificar leads o mensajes por intención. Generar variaciones de copy de anuncios para probar. En todas, una persona sigue decidiendo, y la IA quita el costo de la hoja en blanco, no el criterio.",
+        ],
+      },
+      {
+        id: "donde-falla",
+        heading: "Where it fails, confidently",
+        headingEs: "Dónde falla, y con seguridad",
+        body: [
+          "Anything requiring a specific fact it was not given: your prices, your availability, a statistic, a competitor's claim. It will produce something plausible and well-written, which is precisely what makes the error expensive. Published content built this way is how businesses end up quoting numbers they cannot back.",
+        ],
+        bodyEs: [
+          "En todo lo que requiere un dato específico que no se le dio: tus precios, tu disponibilidad, una estadística, una afirmación de un competidor. Va a producir algo plausible y bien escrito, que es justo lo que hace caro el error. Contenido publicado hecho así es como los negocios terminan citando números que no pueden respaldar.",
+        ],
+      },
+      {
+        id: "contenido-generado",
+        heading: "The problem with fully generated content",
+        headingEs: "El problema del contenido totalmente generado",
+        body: [
+          "Search engines are not the main issue: readers are. Text produced without anyone who knows the business reviewing it tends to be technically fine and completely interchangeable with a competitor's. It says nothing only you could say, which is the one thing content has to do to be worth publishing.",
+        ],
+        bodyEs: [
+          "Los buscadores no son el problema principal: los lectores sí. El texto producido sin que nadie que conozca el negocio lo revise suele estar técnicamente bien y ser completamente intercambiable con el de un competidor. No dice nada que solo tú podrías decir, que es lo único que tiene que hacer un contenido para valer la pena publicarlo.",
+        ],
+      },
+      {
+        id: "nuestro-stack",
+        heading: "What our own stack looks like",
+        headingEs: "Cómo se ve nuestro propio stack",
+        body: [
+          "We use Claude for drafting and for the conversational agents we build, automation tooling to move data between systems, and AI-assisted development to ship interfaces faster. What we do not do is publish anything a person on the team has not read and corrected, because the failure mode above is not theoretical.",
+        ],
+        bodyEs: [
+          "Usamos Claude para redactar y para los agentes conversacionales que construimos, herramientas de automatización para mover datos entre sistemas, y desarrollo asistido por IA para lanzar interfaces más rápido. Lo que no hacemos es publicar nada que una persona del equipo no haya leído y corregido, porque la falla de arriba no es teórica.",
+        ],
+      },
+      {
+        id: "lo-que-no-cambio",
+        heading: "What AI did not change",
+        headingEs: "Lo que la IA no cambió",
+        body: [
+          "Strategy, positioning, and knowing which customer you are actually for. A tool that writes faster makes a clear strategy cheaper to execute and a confused one cheaper to broadcast. Teams that were unclear before mostly got louder, not better.",
+        ],
+        bodyEs: [
+          "La estrategia, el posicionamiento, y saber para qué cliente eres realmente. Una herramienta que escribe más rápido hace más barato ejecutar una estrategia clara, y más barato difundir una confusa. Los equipos que estaban confundidos antes sobre todo se volvieron más ruidosos, no mejores.",
+        ],
+      },
+      {
+        id: "como-evaluar-una-agencia",
+        heading: "How to evaluate an agency that says it uses AI",
+        headingEs: "Cómo evaluar a una agencia que dice usar IA",
+        body: [
+          "Ask what a human still checks before anything is published, and ask to see something they built with it rather than a description. Using AI is not a differentiator anymore; having a process that catches its mistakes is. That question separates the two quickly.",
+        ],
+        bodyEs: [
+          "Pregunta qué revisa una persona antes de que algo se publique, y pide ver algo que hayan construido con eso en vez de una descripción. Usar IA ya no es un diferenciador; tener un proceso que atrape sus errores sí lo es. Esa pregunta separa a los dos rápido.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿La IA puede escribir el contenido de mi blog?",
+        qEn: "Can AI write my blog content?",
+        a: "Puede escribir borradores útiles. Publicarlos sin que alguien que conoce tu negocio los revise es donde empiezan los problemas, porque el texto suena bien aunque los datos estén mal.",
+        aEn: "It can write useful drafts. Publishing them without someone who knows your business reviewing is where the problems start, because the text sounds fine even when the facts are wrong.",
+      },
+      {
+        q: "¿Google penaliza el contenido hecho con IA?",
+        qEn: "Does Google penalize AI-written content?",
+        a: "La postura pública se centra en la calidad y utilidad del contenido más que en cómo se produjo. En la práctica, el contenido genérico rinde mal venga de donde venga, y el generado sin revisión tiende a ser genérico.",
+        aEn: "The public stance centers on the quality and usefulness of the content rather than how it was produced. In practice, generic content performs poorly regardless of origin, and unreviewed generated content tends to be generic.",
+      },
+      {
+        q: "¿Qué herramientas de IA valen la pena para una pyme?",
+        qEn: "Which AI tools are worth it for a small business?",
+        a: "Depende del cuello de botella. Si el problema es producir contenido, una herramienta de redacción. Si es atender consultas, un agente conversacional. Comprar varias antes de saber cuál duele es la forma más común de gastar sin resultado.",
+        aEn: "It depends on the bottleneck. If the problem is producing content, a writing tool. If it's handling inquiries, a conversational agent. Buying several before knowing which one hurts is the most common way to spend without results.",
+      },
+      {
+        q: "¿La IA va a reemplazar a las agencias de marketing?",
+        qEn: "Will AI replace marketing agencies?",
+        a: "Reemplaza tareas, no criterio. Lo que sí cambió es la expectativa: si una agencia cobra por horas de producción que ahora toman minutos, ese modelo está bajo presión. El valor se movió hacia la estrategia y la ejecución medible.",
+        aEn: "It replaces tasks, not judgment. What did change is the expectation: if an agency bills for production hours that now take minutes, that model is under pressure. The value moved toward strategy and measurable execution.",
+      },
+    ],
+    schema: {
+      keywords: ["AI in marketing", "AI marketing tools", "AI content quality"],
+      keywordsEs: ["ia en marketing", "herramientas de ia para marketing", "contenido con ia"],
+    },
+  },
+  {
+    slug: "email-marketing-para-pymes",
+    title: "Basic Email Marketing: It Still Works (If You Do It Right)",
+    titleEs: "Email Marketing Básico: Sigue Funcionando (Si lo Haces Bien)",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "Why email still outperforms most channels for small businesses, the three automated sequences worth building first, and the habits that get you into spam.",
+    excerptEs:
+      "Por qué el correo sigue rindiendo más que casi cualquier canal para una pyme, las tres secuencias automatizadas que vale la pena construir primero, y los hábitos que te mandan a spam.",
+    readingTime: 7,
+    date: "2026-10-26",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Email still works for small businesses because you own the list. Unlike social platforms, nobody can change an algorithm and cut your reach overnight. The catch is that it only works if people opted in and the messages are worth opening.",
+    ledeEs:
+      "El correo sigue funcionando para las pymes porque la lista es tuya. A diferencia de las redes sociales, nadie puede cambiar un algoritmo y cortarte el alcance de un día para otro. El detalle es que solo funciona si la gente se suscribió y los mensajes valen la pena abrirlos.",
+    sections: [
+      {
+        id: "por-que-sigue-vigente",
+        heading: "Why it holds up",
+        headingEs: "Por qué sigue vigente",
+        body: [
+          "Reach on social platforms is rented and the rent changes without notice. An email list is an asset you keep, and it reaches people who already raised their hand. For a small business with a modest audience, that direct line is usually worth more than a larger number of followers you cannot reliably reach.",
+        ],
+        bodyEs: [
+          "El alcance en redes sociales es rentado y la renta cambia sin aviso. Una lista de correo es un activo que conservas, y llega a gente que ya levantó la mano. Para una pyme con una audiencia modesta, esa línea directa normalmente vale más que un número mayor de seguidores a los que no puedes llegar de forma confiable.",
+        ],
+      },
+      {
+        id: "las-tres-secuencias",
+        heading: "The three sequences worth building first",
+        headingEs: "Las tres secuencias que vale la pena construir primero",
+        body: [
+          "A welcome message the moment someone subscribes, while interest is highest. A follow-up for people who asked for something and went quiet. And a re-engagement message for contacts who have not opened anything in months. Those three cover most of the value before you ever write a newsletter.",
+        ],
+        bodyEs: [
+          "Un mensaje de bienvenida en el momento en que alguien se suscribe, cuando el interés está más alto. Un seguimiento para quienes pidieron algo y se enfriaron. Y un mensaje de reenganche para contactos que no abren nada desde hace meses. Esas tres cubren la mayor parte del valor antes de que escribas un solo boletín.",
+        ],
+      },
+      {
+        id: "lista-comprada",
+        heading: "Never buy a list",
+        headingEs: "Nunca compres una lista",
+        body: [
+          "Beyond the legal exposure, a purchased list poisons your sender reputation: people mark it as spam, and providers start filtering the messages you send to people who did want them. The damage lands on your legitimate contacts, and it takes months to undo.",
+        ],
+        bodyEs: [
+          "Más allá de la exposición legal, una lista comprada envenena tu reputación como remitente: la gente la marca como spam, y los proveedores empiezan a filtrar los mensajes que mandas a quienes sí los querían. El daño cae sobre tus contactos legítimos, y toma meses deshacerlo.",
+        ],
+      },
+      {
+        id: "frecuencia",
+        heading: "Frequency matters less than relevance",
+        headingEs: "La frecuencia importa menos que la relevancia",
+        body: [
+          "Teams agonize over whether to send weekly or monthly, when the actual driver of unsubscribes is sending things people did not sign up for. A useful message every two weeks outperforms a generic one every week. Pick a cadence you can sustain with something worth saying.",
+        ],
+        bodyEs: [
+          "Los equipos agonizan sobre si mandar semanal o mensual, cuando lo que de verdad provoca bajas es mandar cosas para las que la gente no se suscribió. Un mensaje útil cada dos semanas rinde más que uno genérico cada semana. Elige una cadencia que puedas sostener con algo que valga la pena decir.",
+        ],
+      },
+      {
+        id: "que-medir",
+        heading: "What to measure",
+        headingEs: "Qué medir",
+        body: [
+          "Open rates have become unreliable because of privacy features that pre-load images. Clicks and replies are the honest signals, along with unsubscribes as a warning light. If clicks fall while sends stay constant, the content drifted from what the list wanted.",
+        ],
+        bodyEs: [
+          "Las tasas de apertura se volvieron poco confiables por las funciones de privacidad que precargan imágenes. Los clics y las respuestas son las señales honestas, junto con las bajas como foco rojo. Si los clics caen mientras los envíos siguen constantes, el contenido se alejó de lo que la lista quería.",
+        ],
+      },
+      {
+        id: "conectarlo-al-crm",
+        heading: "Connect it to the CRM or it drifts",
+        headingEs: "Conéctalo al CRM o se despega",
+        body: [
+          "An email tool holding a separate list from your CRM produces two versions of the truth: someone becomes a customer and keeps receiving the prospect sequence. Syncing them is unglamorous and it prevents the most embarrassing mistakes in this channel.",
+        ],
+        bodyEs: [
+          "Una herramienta de correo con una lista aparte de tu CRM produce dos versiones de la verdad: alguien se vuelve cliente y sigue recibiendo la secuencia de prospecto. Sincronizarlos no es glamoroso y evita los errores más vergonzosos de este canal.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿El email marketing sigue funcionando en 2026?",
+        qEn: "Does email marketing still work in 2026?",
+        a: "Sí, sobre todo porque la lista es tuya y no depende de un algoritmo que puede cambiar. Lo que dejó de funcionar es mandar correos masivos a gente que no se suscribió.",
+        aEn: "Yes, mainly because the list is yours and doesn't depend on an algorithm that can change. What stopped working is blasting people who never subscribed.",
+      },
+      {
+        q: "¿Cuántos correos debo mandar al mes?",
+        qEn: "How many emails should I send per month?",
+        a: "Menos importante que qué mandas. Una cadencia sostenible con contenido útil vence a una frecuencia alta con relleno. Si no tienes algo que valga la pena decir esta semana, no lo mandes.",
+        aEn: "Less important than what you send. A sustainable cadence with useful content beats high frequency with filler. If you don't have something worth saying this week, don't send it.",
+      },
+      {
+        q: "¿Por qué mis correos caen en spam?",
+        qEn: "Why do my emails land in spam?",
+        a: "Las causas más comunes son mandar a contactos que no se suscribieron, no tener configurada la autenticación del dominio, y que mucha gente marque tus mensajes como no deseados. Las tres se corrigen, pero la reputación tarda en recuperarse.",
+        aEn: "The most common causes are sending to contacts who never subscribed, not having domain authentication configured, and too many people marking your messages as junk. All three are fixable, but reputation takes time to recover.",
+      },
+      {
+        q: "¿Necesito una herramienta de pago para empezar?",
+        qEn: "Do I need a paid tool to start?",
+        a: "No al inicio. Casi todas las plataformas tienen un plan gratuito suficiente para listas chicas. El momento de pagar llega cuando necesitas automatizaciones más finas o la lista crece.",
+        aEn: "Not at the start. Almost every platform has a free tier that's enough for small lists. The moment to pay arrives when you need finer automations or the list grows.",
+      },
+    ],
+    schema: {
+      keywords: ["email marketing small business", "email automation", "email sequences"],
+      keywordsEs: [
+        "email marketing para pymes",
+        "automatizacion de correo",
+        "secuencias de correo",
+      ],
+    },
+  },
+  {
+    slug: "conectar-formularios-a-crm",
+    title: "How to Connect Your Forms to the CRM (Without Losing Leads)",
+    titleEs: "Cómo Conectar tus Formularios al CRM (Sin Perder Leads)",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "Why a form that only sends an email leaks leads, the three ways to wire it into a CRM, and the field mapping mistakes that quietly break the connection.",
+    excerptEs:
+      "Por qué un formulario que solo manda correo pierde leads, las tres formas de conectarlo a un CRM, y los errores de mapeo de campos que rompen la conexión sin avisar.",
+    readingTime: 6,
+    date: "2026-10-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A contact form that only sends an email is a leak. Emails get buried under everything else, and a lead nobody saw is indistinguishable from a lead that never arrived. Wiring the form into a CRM makes each submission a record with an owner and a next step.",
+    ledeEs:
+      "Un formulario de contacto que solo manda un correo es una fuga. Los correos se entierran bajo todo lo demás, y un lead que nadie vio es indistinguible de un lead que nunca llegó. Conectar el formulario a un CRM convierte cada envío en un registro con dueño y siguiente paso.",
+    sections: [
+      {
+        id: "por-que-el-correo-falla",
+        heading: "Why the email-only setup fails",
+        headingEs: "Por qué falla el esquema de solo correo",
+        body: [
+          "It depends on a person noticing, at the moment it arrives, on a day that may be busy. It also has no state: nothing marks whether the lead was answered, who is handling it, or when to try again. Those are exactly the things that decide whether a lead becomes a sale.",
+        ],
+        bodyEs: [
+          "Depende de que una persona lo note, en el momento en que llega, en un día que puede estar ocupado. Además no tiene estado: nada marca si el lead fue atendido, quién lo lleva, ni cuándo volver a intentar. Esas son justo las cosas que deciden si un lead se vuelve venta.",
+        ],
+      },
+      {
+        id: "tres-formas",
+        heading: "Three ways to connect it",
+        headingEs: "Tres formas de conectarlo",
+        body: [
+          "Native integration, if your form builder and CRM already speak to each other, which is the least fragile option. A connector tool like a no-code automation platform, which covers most combinations. Or a direct webhook, which is the most flexible and needs someone technical. Try them in that order.",
+        ],
+        bodyEs: [
+          "Integración nativa, si tu constructor de formularios y tu CRM ya se hablan, que es la opción menos frágil. Una herramienta conectora tipo plataforma de automatización sin código, que cubre la mayoría de las combinaciones. O un webhook directo, que es el más flexible y necesita a alguien técnico. Pruébalas en ese orden.",
+        ],
+      },
+      {
+        id: "mapeo-de-campos",
+        heading: "Field mapping is where it breaks",
+        headingEs: "El mapeo de campos es donde se rompe",
+        body: [
+          "Renaming a form field, adding a required question, or changing a dropdown option can silently break the mapping. The submission still goes through, the record just arrives empty or not at all. This is the single most common cause of a connection that worked for three months and then stopped.",
+        ],
+        bodyEs: [
+          "Renombrar un campo del formulario, agregar una pregunta obligatoria, o cambiar una opción de lista puede romper el mapeo sin avisar. El envío igual pasa, el registro solo llega vacío o no llega. Esta es la causa más común de una conexión que funcionó tres meses y luego dejó de hacerlo.",
+        ],
+      },
+      {
+        id: "el-acuse-inmediato",
+        heading: "Add the acknowledgement in the same step",
+        headingEs: "Agrega el acuse en el mismo paso",
+        body: [
+          "While you are wiring it, add an automatic reply confirming the message arrived and saying roughly when a human will respond. It costs nothing extra to build and it removes the worst experience in the funnel, which is silence right after someone reached out.",
+        ],
+        bodyEs: [
+          "Mientras lo estás conectando, agrega una respuesta automática que confirme que el mensaje llegó y diga aproximadamente cuándo responderá una persona. No cuesta nada extra construirlo y elimina la peor experiencia del embudo, que es el silencio justo después de que alguien te escribió.",
+        ],
+      },
+      {
+        id: "probarlo-de-verdad",
+        heading: "Test it like a real visitor",
+        headingEs: "Pruébalo como visitante real",
+        body: [
+          "Submit the form from an incognito window with a real address you can check, then confirm three things: the record appeared in the CRM with the fields filled, the acknowledgement arrived, and the owner got notified. Testing from the admin view is how broken connections pass inspection.",
+        ],
+        bodyEs: [
+          "Envía el formulario desde una ventana de incógnito con una dirección real que puedas revisar, y luego confirma tres cosas: que el registro apareció en el CRM con los campos llenos, que llegó el acuse, y que el dueño fue notificado. Probar desde la vista de administrador es como pasan inspección las conexiones rotas.",
+        ],
+      },
+      {
+        id: "monitorearlo",
+        heading: "Give it a heartbeat",
+        headingEs: "Dale un pulso",
+        body: [
+          "Set a habit of checking the weekly count of captured leads. If it drops to zero and your traffic did not, the connection broke. Without that check the normal outcome is discovering it weeks later, when someone asks about a lead that never showed up.",
+        ],
+        bodyEs: [
+          "Toma la costumbre de revisar el conteo semanal de leads capturados. Si cae a cero y tu tráfico no, la conexión se rompió. Sin esa revisión, lo normal es descubrirlo semanas después, cuando alguien pregunta por un lead que nunca apareció.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Necesito saber programar para conectar un formulario al CRM?",
+        qEn: "Do I need to code to connect a form to a CRM?",
+        a: "En la mayoría de los casos no. Si existe integración nativa entre tus herramientas, es cuestión de autorizar y mapear campos. El código solo entra cuando la combinación no tiene conector listo.",
+        aEn: "In most cases, no. If there's a native integration between your tools, it's a matter of authorizing and mapping fields. Code only comes in when the combination has no ready connector.",
+      },
+      {
+        q: "¿Qué pasa con los leads que ya tengo en correo?",
+        qEn: "What about the leads I already have in email?",
+        a: "Se pueden importar a mano o con un CSV, pero no intentes recuperar años de historial. Lo práctico suele ser importar los últimos meses, que son los que todavía tienen posibilidad de cerrar.",
+        aEn: "You can import them manually or with a CSV, but don't try to recover years of history. The practical move is usually importing the last few months, which are the ones that still have a chance of closing.",
+      },
+      {
+        q: "¿Cómo sé si la conexión sigue funcionando?",
+        qEn: "How do I know the connection is still working?",
+        a: "Revisando el conteo de leads capturados por semana. Es la señal más simple: si hay tráfico y formularios enviados pero cero registros nuevos, algo se rompió en el camino.",
+        aEn: "By checking the weekly count of captured leads. It's the simplest signal: if there's traffic and form submissions but zero new records, something broke along the way.",
+      },
+      {
+        q: "¿Puedo conectar formularios de varias fuentes al mismo CRM?",
+        qEn: "Can I connect forms from several sources to the same CRM?",
+        a: "Sí, y conviene. Sitio web, campañas y landing pages deberían caer en el mismo lugar, idealmente con una marca de origen para saber qué canal trajo cada lead.",
+        aEn: "Yes, and it's worth doing. Website, campaigns and landing pages should all land in the same place, ideally with a source tag so you know which channel brought each lead.",
+      },
+    ],
+    schema: {
+      keywords: ["connect forms to CRM", "form to CRM integration", "lead capture setup"],
+      keywordsEs: ["conectar formularios a crm", "integracion formulario crm", "captura de leads"],
+    },
+  },
+  {
+    slug: "automatizar-seguimiento-de-ventas",
+    title: "Automating Sales Follow-Up: The Flow, Step by Step",
+    titleEs: "Automatizar el Seguimiento de Ventas: Flujo Paso a Paso",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "Most sales are lost after the first contact, not during it. The sequence that recovers them, how many touches is too many, and where a human has to take over.",
+    excerptEs:
+      "La mayoría de las ventas se pierde después del primer contacto, no durante. La secuencia que las recupera, cuántos toques son demasiados, y dónde tiene que entrar una persona.",
+    readingTime: 7,
+    date: "2026-11-01",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most businesses contact a lead once and move on. Most buyers are not ready on that first contact. Automated follow-up exists to close that gap: it guarantees the second and third touch happen at all, which in practice is where a large share of closed deals come from.",
+    ledeEs:
+      "La mayoría de los negocios contacta a un lead una vez y sigue adelante. La mayoría de los compradores no está lista en ese primer contacto. El seguimiento automatizado existe para cerrar ese hueco: garantiza que el segundo y tercer contacto sucedan, que en la práctica es de donde sale una buena parte de los cierres.",
+    sections: [
+      {
+        id: "el-hueco",
+        heading: "The gap this fixes",
+        headingEs: "El hueco que esto arregla",
+        body: [
+          "Ask any small sales team what happens to a quote that goes unanswered. The honest answer is usually nothing: it stays in someone's head for a week and then gets forgotten under new leads. That is not a discipline problem, it is a systems problem, and it is exactly what automation is for.",
+        ],
+        bodyEs: [
+          "Pregúntale a cualquier equipo de ventas chico qué pasa con una cotización que no fue contestada. La respuesta honesta suele ser nada: se queda en la cabeza de alguien una semana y después se olvida bajo leads nuevos. Eso no es un problema de disciplina, es un problema de sistema, y es exactamente para lo que sirve la automatización.",
+        ],
+      },
+      {
+        id: "el-primer-toque",
+        heading: "The first touch should be immediate",
+        headingEs: "El primer toque debe ser inmediato",
+        body: [
+          "An automatic acknowledgement within seconds does two jobs: it confirms the message arrived, and it buys your team time without the customer sitting in silence. It should say when a human will follow up and it should be honest about that window, because a promise you miss is worse than no promise.",
+        ],
+        bodyEs: [
+          "Un acuse automático en segundos hace dos trabajos: confirma que el mensaje llegó, y le compra tiempo a tu equipo sin que el cliente quede en silencio. Debe decir cuándo dará seguimiento una persona y debe ser honesto sobre esa ventana, porque una promesa que incumples es peor que no prometer.",
+        ],
+      },
+      {
+        id: "la-secuencia",
+        heading: "A sequence that doesn't feel like spam",
+        headingEs: "Una secuencia que no se siente spam",
+        body: [
+          'Three to four touches spread over two or three weeks, each with a different reason to write. A useful piece of information, a check-in on whether the need changed, a specific offer of a call. When every message says the same "just following up," people stop opening after the second one.',
+        ],
+        bodyEs: [
+          'Tres o cuatro toques repartidos en dos o tres semanas, cada uno con una razón distinta para escribir. Un dato útil, una revisión de si cambió la necesidad, un ofrecimiento concreto de llamada. Cuando cada mensaje dice el mismo "solo dando seguimiento", la gente deja de abrir después del segundo.',
+        ],
+      },
+      {
+        id: "cuando-para",
+        heading: "Knowing when to stop",
+        headingEs: "Saber cuándo parar",
+        body: [
+          "A sequence that never ends damages the relationship and your sender reputation. Build in a clear stop: after the last touch, the lead moves to a low-frequency list or gets closed with a reason. Leads that go quiet are not always lost, but chasing them forever is how you become the business people block.",
+        ],
+        bodyEs: [
+          "Una secuencia que nunca termina daña la relación y tu reputación como remitente. Construye un alto claro: después del último toque, el lead pasa a una lista de baja frecuencia o se cierra con un motivo. Los leads que se enfrían no siempre están perdidos, pero perseguirlos para siempre es como te conviertes en el negocio que la gente bloquea.",
+        ],
+      },
+      {
+        id: "donde-entra-el-humano",
+        heading: "Where the human takes over",
+        headingEs: "Dónde entra la persona",
+        body: [
+          "The moment there is a reply. An automated sequence that keeps firing after someone answered is the fastest way to look like nobody is reading. Any response, even a short one, should stop the sequence and hand the conversation to a person immediately.",
+        ],
+        bodyEs: [
+          "En el momento en que hay respuesta. Una secuencia automatizada que sigue disparando después de que alguien contestó es la forma más rápida de parecer que nadie está leyendo. Cualquier respuesta, aunque sea corta, debería detener la secuencia y pasar la conversación a una persona de inmediato.",
+        ],
+      },
+      {
+        id: "segmentar",
+        heading: "Segment by how ready they are",
+        headingEs: "Segmenta por qué tan listos están",
+        body: [
+          "Someone who asked for a quote and someone who downloaded a guide do not deserve the same cadence. The first needs speed, the second needs education over time. Sending both the same sequence makes it wrong for both, and it is the most common reason these flows underperform.",
+        ],
+        bodyEs: [
+          "Alguien que pidió una cotización y alguien que descargó una guía no merecen la misma cadencia. El primero necesita velocidad, el segundo necesita educación en el tiempo. Mandarles la misma secuencia la hace equivocada para los dos, y es la razón más común de que estos flujos rindan poco.",
+        ],
+      },
+    ],
+    gradient: "from-slate-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuántos mensajes de seguimiento son demasiados?",
+        qEn: "How many follow-up messages are too many?",
+        a: "Depende del ticket y del ciclo de compra, pero tres o cuatro repartidos en dos o tres semanas es un rango razonable para la mayoría. Lo que cansa no suele ser la cantidad sino que todos digan lo mismo.",
+        aEn: "It depends on the price point and buying cycle, but three or four spread over two or three weeks is a reasonable range for most. What wears people out usually isn't the count, it's that every message says the same thing.",
+      },
+      {
+        q: "¿Se nota que es automático?",
+        qEn: "Can people tell it's automated?",
+        a: "Se nota cuando el mensaje no tiene contexto de lo que la persona pidió, o cuando sigue llegando después de que contestó. Si la secuencia se detiene ante cualquier respuesta y menciona lo que pidieron, la diferencia deja de importar.",
+        aEn: "It shows when the message has no context about what the person asked for, or when it keeps arriving after they replied. If the sequence stops on any response and references what they asked about, the difference stops mattering.",
+      },
+      {
+        q: "¿Qué hago con los leads que nunca contestan?",
+        qEn: "What do I do with leads who never reply?",
+        a: "Muévelos a una lista de baja frecuencia en vez de borrarlos. Una parte cambia de situación meses después, y seguir presente de forma ligera cuesta casi nada comparado con conseguir un lead nuevo.",
+        aEn: "Move them to a low-frequency list instead of deleting them. A share of them change circumstances months later, and staying lightly present costs almost nothing compared to acquiring a new lead.",
+      },
+      {
+        q: "¿Necesito un CRM para automatizar el seguimiento?",
+        qEn: "Do I need a CRM to automate follow-up?",
+        a: "En la práctica sí, porque la secuencia necesita saber en qué etapa está cada lead y si ya respondió. Sin ese estado guardado en algún lado, la automatización no tiene forma de saber a quién dejar de escribirle.",
+        aEn: "In practice yes, because the sequence needs to know what stage each lead is in and whether they already replied. Without that state stored somewhere, the automation has no way to know who to stop writing to.",
+      },
+    ],
+    schema: {
+      keywords: ["automate sales follow-up", "follow-up sequence", "lead nurturing"],
+      keywordsEs: [
+        "automatizar seguimiento de ventas",
+        "secuencia de seguimiento",
+        "nutricion de leads",
+      ],
+    },
+  },
+  {
+    slug: "guia-landing-pages",
+    title: "Landing Pages and CRO: The Complete 2026 Guide",
+    titleEs: "Landing Pages y CRO: Guía Completa 2026",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "What a landing page is for, the structure that converts, how to write the copy, and how to test changes without fooling yourself. The full picture on lowering your cost per lead.",
+    excerptEs:
+      "Para qué sirve una landing page, la estructura que convierte, cómo escribir el copy, y cómo probar cambios sin engañarte solo. El panorama completo para bajar tu costo por lead.",
+    readingTime: 14,
+    date: "2026-11-05",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A landing page has one job: turn traffic from one campaign into one specific action. Everything on it either moves the visitor toward that action or competes with it. That constraint is what makes landing pages convert better than sending the same traffic to your homepage.",
+    ledeEs:
+      "Una landing page tiene un solo trabajo: convertir el tráfico de una campaña en una acción específica. Todo lo que está en ella o empuja al visitante hacia esa acción o compite con ella. Esa restricción es lo que hace que las landing pages conviertan mejor que mandar el mismo tráfico a tu página de inicio.",
+    sections: [
+      {
+        id: "que-es-y-que-no",
+        heading: "What a landing page is, and what it isn't",
+        headingEs: "Qué es una landing page y qué no",
+        body: [
+          'It is a single page built for a single campaign and a single conversion goal, usually with the site navigation removed on purpose. It is not a second homepage and not a general services page. If you are unsure which of the two you need, we compare them directly in "landing page vs. website."',
+        ],
+        bodyEs: [
+          'Es una sola página construida para una sola campaña y un solo objetivo de conversión, normalmente con la navegación del sitio quitada a propósito. No es una segunda página de inicio ni una página general de servicios. Si tienes duda de cuál de las dos necesitas, las comparamos directo en "landing page vs página web."',
+        ],
+      },
+      {
+        id: "por-que-convierte-mejor",
+        heading: "Why it converts better than a homepage",
+        headingEs: "Por qué convierte mejor que una página de inicio",
+        body: [
+          "A homepage serves everyone: existing customers, job seekers, curious visitors, and buyers. A landing page serves one person who clicked one ad. Removing every other option means the visitor has one decision to make instead of six, and that alone usually moves conversion more than any design change.",
+        ],
+        bodyEs: [
+          "Una página de inicio le sirve a todos: clientes actuales, gente buscando trabajo, visitantes curiosos y compradores. Una landing page le sirve a una persona que dio clic en un anuncio. Quitar todas las demás opciones significa que el visitante tiene una decisión que tomar en vez de seis, y eso solo normalmente mueve la conversión más que cualquier cambio de diseño.",
+        ],
+      },
+      {
+        id: "la-coincidencia-con-el-anuncio",
+        heading: "Message match is the first thing to fix",
+        headingEs: "La coincidencia con el anuncio es lo primero que hay que arreglar",
+        body: [
+          "If the ad promised a specific service at a specific price and the page opens with a generic company statement, the visitor has to work out whether they are in the right place. Most will not. The headline should echo the promise that got the click, close to word for word.",
+        ],
+        bodyEs: [
+          "Si el anuncio prometió un servicio específico a un precio específico y la página abre con una declaración genérica de la empresa, el visitante tiene que averiguar si está en el lugar correcto. La mayoría no lo hará. El titular debería hacer eco de la promesa que consiguió el clic, casi palabra por palabra.",
+        ],
+      },
+      {
+        id: "la-estructura",
+        heading: "The structure that works",
+        headingEs: "La estructura que funciona",
+        body: [
+          "Headline that repeats the promise. A subhead that says who it is for. Proof early, not buried at the bottom. The offer stated plainly. A form or button repeated at natural decision points. Objection handling near the end for the doubts that stop people. Order matters less than making sure none of these are missing.",
+        ],
+        bodyEs: [
+          "Titular que repite la promesa. Un subtítulo que dice para quién es. Prueba temprano, no enterrada hasta abajo. La oferta dicha con claridad. Un formulario o botón repetido en los puntos naturales de decisión. Manejo de objeciones cerca del final para las dudas que frenan a la gente. El orden importa menos que asegurarte de que ninguno falte.",
+        ],
+      },
+      {
+        id: "el-copy",
+        heading: "Copy carries more weight than design",
+        headingEs: "El copy pesa más que el diseño",
+        body: [
+          "A beautiful page with copy about how long your company has existed converts worse than a plain page that names the visitor's problem in their words. Lead with what they get, not with who you are. Company history belongs further down, as reassurance, once they already want the thing.",
+        ],
+        bodyEs: [
+          "Una página bonita con copy sobre cuántos años tiene tu empresa convierte peor que una página sencilla que nombra el problema del visitante con sus palabras. Empieza con lo que recibe, no con quién eres. La historia de la empresa va más abajo, como tranquilidad, una vez que ya quiere lo que ofreces.",
+        ],
+      },
+      {
+        id: "el-formulario",
+        heading: "Every extra field costs you leads",
+        headingEs: "Cada campo extra te cuesta leads",
+        body: [
+          "Ask for what you need to make the next call, not what would be nice for the database. Name and one contact method is usually enough. Fields like company size or budget filter out real prospects who are simply not ready to disclose that to a stranger, and you can ask on the call.",
+        ],
+        bodyEs: [
+          "Pide lo que necesitas para hacer la siguiente llamada, no lo que estaría bien tener en la base de datos. Nombre y un medio de contacto normalmente basta. Campos como tamaño de empresa o presupuesto filtran prospectos reales que simplemente no están listos para dárselo a un desconocido, y lo puedes preguntar en la llamada.",
+        ],
+      },
+      {
+        id: "velocidad",
+        heading: "Speed is a conversion feature",
+        headingEs: "La velocidad es una función de conversión",
+        body: [
+          "Paid traffic makes this expensive: you already paid for the click, so a visitor who leaves during loading is money spent for nothing. Google's own guidance treats load speed as a ranking and experience factor, and the practical target most teams use is keeping the main content visible in under two and a half seconds.",
+        ],
+        bodyEs: [
+          "El tráfico pagado hace esto caro: ya pagaste el clic, así que un visitante que se va durante la carga es dinero gastado en nada. La propia guía de Google trata la velocidad de carga como factor de posicionamiento y experiencia, y el objetivo práctico que usa la mayoría de los equipos es que el contenido principal se vea en menos de dos segundos y medio.",
+        ],
+      },
+      {
+        id: "movil-primero",
+        heading: "Design it on a phone first",
+        headingEs: "Diséñala primero en un celular",
+        body: [
+          "Most paid traffic in Mexico arrives on mobile. A page designed on a wide monitor and squeezed down afterwards puts the form below three screens of scrolling. Building the mobile version first forces the hard decisions about what actually earns its space.",
+        ],
+        bodyEs: [
+          "La mayor parte del tráfico pagado en México llega desde celular. Una página diseñada en un monitor ancho y luego apretada deja el formulario debajo de tres pantallas de scroll. Construir primero la versión móvil obliga a tomar las decisiones difíciles sobre qué se gana su espacio de verdad.",
+        ],
+      },
+      {
+        id: "que-es-cro",
+        heading: "What CRO actually means here",
+        headingEs: "Qué significa realmente CRO aquí",
+        body: [
+          "Conversion rate optimization is the habit of changing one thing, measuring, and keeping what wins. It is not a redesign. Most of the gains come from unglamorous fixes: clearer headline, fewer form fields, faster load, proof moved higher. The discipline is in measuring rather than in the size of the change.",
+        ],
+        bodyEs: [
+          "La optimización de conversión es el hábito de cambiar una cosa, medir, y quedarte con lo que gana. No es un rediseño. La mayor parte de las ganancias viene de arreglos poco glamorosos: titular más claro, menos campos, carga más rápida, prueba movida más arriba. La disciplina está en medir, no en el tamaño del cambio.",
+        ],
+      },
+      {
+        id: "como-probar",
+        heading: "How to test without fooling yourself",
+        headingEs: "Cómo probar sin engañarte",
+        body: [
+          "Change one element at a time, run it long enough to cover a full weekly cycle, and decide in advance what result would make you keep it. Calling a winner after two days and forty visits is the most common way teams convince themselves of something that was noise.",
+        ],
+        bodyEs: [
+          "Cambia un elemento a la vez, déjalo correr lo suficiente para cubrir un ciclo semanal completo, y decide de antemano qué resultado te haría conservarlo. Declarar un ganador después de dos días y cuarenta visitas es la forma más común en que los equipos se convencen de algo que era ruido.",
+        ],
+      },
+      {
+        id: "errores-comunes",
+        heading: "The mistakes that show up most",
+        headingEs: "Los errores que más aparecen",
+        body: [
+          "Leaving the site navigation on, so visitors wander off. A headline that does not match the ad. The form below the fold on mobile. No proof anywhere. And sending every campaign to the same page, which guarantees the message matches none of them well.",
+        ],
+        bodyEs: [
+          "Dejar la navegación del sitio, para que los visitantes se vayan a pasear. Un titular que no coincide con el anuncio. El formulario debajo del pliegue en celular. Nada de prueba social en ninguna parte. Y mandar todas las campañas a la misma página, lo que garantiza que el mensaje no le queda bien a ninguna.",
+        ],
+      },
+      {
+        id: "cuando-hacer-varias",
+        heading: "When to build several",
+        headingEs: "Cuándo construir varias",
+        body: [
+          "One page per offer, not one per business. If you run campaigns for two different services, two pages will beat one compromise page, because each can match its own ad. The cost of a second page is small next to the wasted ad spend of a page that half-fits.",
+        ],
+        bodyEs: [
+          "Una página por oferta, no una por negocio. Si corres campañas para dos servicios distintos, dos páginas le van a ganar a una página de compromiso, porque cada una puede coincidir con su propio anuncio. El costo de una segunda página es chico junto al gasto desperdiciado de una página que encaja a medias.",
+        ],
+      },
+    ],
+    gradient: "from-zinc-700 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuál es la diferencia entre una landing page y mi página web?",
+        qEn: "What's the difference between a landing page and my website?",
+        a: "La landing page sirve a una campaña y un objetivo, normalmente sin navegación. El sitio web representa al negocio completo y busca que te encuentren por búsqueda. La mayoría de los negocios termina necesitando ambas, no una en lugar de la otra.",
+        aEn: "A landing page serves one campaign and one goal, usually with no navigation. The website represents the whole business and exists to be found through search. Most businesses end up needing both, not one instead of the other.",
+      },
+      {
+        q: "¿Cuántos campos debe tener el formulario?",
+        qEn: "How many fields should the form have?",
+        a: "Los mínimos para poder hacer la siguiente llamada, normalmente nombre y un medio de contacto. Cada campo adicional cuesta leads, y datos como presupuesto o tamaño de empresa se pueden preguntar cuando ya estás hablando con la persona.",
+        aEn: "The minimum needed to make the next call, usually a name and one contact method. Every extra field costs leads, and details like budget or company size can be asked once you're already talking to the person.",
+      },
+      {
+        q: "¿Necesito una landing page por cada campaña?",
+        qEn: "Do I need a landing page for every campaign?",
+        a: "Una por oferta, más que una por campaña. Si dos campañas promueven el mismo servicio con el mismo mensaje, comparten página. Si prometen cosas distintas, cada una necesita la suya para que el titular coincida con el anuncio.",
+        aEn: "One per offer, more than one per campaign. If two campaigns promote the same service with the same message, they can share a page. If they promise different things, each needs its own so the headline matches the ad.",
+      },
+      {
+        q: "¿Cuánto tiempo debo correr una prueba A/B?",
+        qEn: "How long should I run an A/B test?",
+        a: "Lo suficiente para cubrir al menos un ciclo semanal completo y acumular volumen real. Decidir con dos días y unas decenas de visitas es cómo los equipos se convencen de resultados que eran ruido estadístico.",
+        aEn: "Long enough to cover at least a full weekly cycle and accumulate real volume. Deciding on two days and a few dozen visits is how teams convince themselves of results that were statistical noise.",
+      },
+      {
+        q: "¿Debo quitar el menú de navegación?",
+        qEn: "Should I remove the navigation menu?",
+        a: "En una landing page de campaña, sí. Cada enlace que no sea el botón de conversión es una puerta de salida. En una página de servicio dentro de tu sitio, la navegación se queda porque ahí el objetivo es distinto.",
+        aEn: "On a campaign landing page, yes. Every link that isn't the conversion button is an exit door. On a service page inside your site, navigation stays, because the goal there is different.",
+      },
+      {
+        q: "¿Qué conversión es buena para una landing page?",
+        qEn: "What's a good conversion rate for a landing page?",
+        a: "Varía demasiado por industria y por tipo de oferta como para dar una cifra útil. Lo accionable es comparar contra tu propio punto de partida: si la página anterior convertía en cierto porcentaje, esa es la barra que importa.",
+        aEn: "It varies too much by industry and offer type for a single number to be useful. What's actionable is comparing against your own baseline: if the previous page converted at a certain rate, that's the bar that matters.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "landing page guide",
+        "CRO",
+        "conversion rate optimization",
+        "landing page structure",
+      ],
+      keywordsEs: [
+        "que es una landing page",
+        "guia landing pages",
+        "cro",
+        "optimizacion de conversion",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
