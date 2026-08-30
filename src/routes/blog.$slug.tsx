@@ -179,7 +179,7 @@ function BlogArticlePage() {
                 <div className="mt-4 space-y-4">
                   {(lang === "es" ? s.bodyEs : s.body).map((p, i) => (
                     <p key={i} className="text-base leading-relaxed text-neutral-700">
-                      {p}
+                      <RichText text={p} />
                     </p>
                   ))}
                 </div>
@@ -203,6 +203,43 @@ function BlogArticlePage() {
 
       <CTAFooter />
     </main>
+  );
+}
+
+/**
+ * Renders inline links written as [label](/blog/slug) inside article body text.
+ * Body copy is authored in blog-data.ts as plain strings, so this is the only
+ * place internal cluster links become real crawlable anchors. Anything that is
+ * not a well-formed internal link is left as literal text.
+ */
+const INLINE_LINK = /\[([^\]]+)\]\((\/[a-z0-9/-]*)\)/g;
+
+function RichText({ text }: { text: string }) {
+  const nodes: Array<string | { label: string; to: string }> = [];
+  let last = 0;
+  for (const m of text.matchAll(INLINE_LINK)) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    nodes.push({ label: m[1], to: m[2] });
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+
+  return (
+    <>
+      {nodes.map((n, i) =>
+        typeof n === "string" ? (
+          <span key={i}>{n}</span>
+        ) : (
+          <Link
+            key={i}
+            to={n.to}
+            className="text-neutral-950 underline decoration-neutral-300 underline-offset-2 transition-colors hover:decoration-neutral-950"
+          >
+            {n.label}
+          </Link>
+        ),
+      )}
+    </>
   );
 }
 
