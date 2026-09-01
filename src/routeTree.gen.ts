@@ -15,6 +15,7 @@ import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as DisenoWebTijuanaRouteImport } from './routes/diseno-web-tijuana'
 import { Route as GoogleAdsTijuanaRouteImport } from './routes/google-ads-tijuana'
 import { Route as MetaAdsTijuanaRouteImport } from './routes/meta-ads-tijuana'
+import { Route as PreciosRouteImport } from './routes/precios'
 import { Route as PrivacidadRouteImport } from './routes/privacidad'
 import { Route as SeoTijuanaRouteImport } from './routes/seo-tijuana'
 import { Route as ServiciosRouteImport } from './routes/servicios'
@@ -56,6 +57,11 @@ const GoogleAdsTijuanaRoute = GoogleAdsTijuanaRouteImport.update({
 const MetaAdsTijuanaRoute = MetaAdsTijuanaRouteImport.update({
   id: '/meta-ads-tijuana',
   path: '/meta-ads-tijuana',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreciosRoute = PreciosRouteImport.update({
+  id: '/precios',
+  path: '/precios',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacidadRoute = PrivacidadRouteImport.update({
@@ -121,6 +127,7 @@ export interface FileRoutesByFullPath {
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
+  '/precios': typeof PreciosRoute
   '/privacidad': typeof PrivacidadRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/servicios': typeof ServiciosRouteWithChildren
@@ -140,6 +147,7 @@ export interface FileRoutesByTo {
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
+  '/precios': typeof PreciosRoute
   '/privacidad': typeof PrivacidadRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -159,6 +167,7 @@ export interface FileRoutesById {
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
+  '/precios': typeof PreciosRoute
   '/privacidad': typeof PrivacidadRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/servicios': typeof ServiciosRouteWithChildren
@@ -180,6 +189,7 @@ export interface FileRouteTypes {
     | '/diseno-web-tijuana'
     | '/google-ads-tijuana'
     | '/meta-ads-tijuana'
+    | '/precios'
     | '/privacidad'
     | '/seo-tijuana'
     | '/servicios'
@@ -199,6 +209,7 @@ export interface FileRouteTypes {
     | '/diseno-web-tijuana'
     | '/google-ads-tijuana'
     | '/meta-ads-tijuana'
+    | '/precios'
     | '/privacidad'
     | '/seo-tijuana'
     | '/blog/$slug'
@@ -217,6 +228,7 @@ export interface FileRouteTypes {
     | '/diseno-web-tijuana'
     | '/google-ads-tijuana'
     | '/meta-ads-tijuana'
+    | '/precios'
     | '/privacidad'
     | '/seo-tijuana'
     | '/servicios'
@@ -237,6 +249,7 @@ export interface RootRouteChildren {
   DisenoWebTijuanaRoute: typeof DisenoWebTijuanaRoute
   GoogleAdsTijuanaRoute: typeof GoogleAdsTijuanaRoute
   MetaAdsTijuanaRoute: typeof MetaAdsTijuanaRoute
+  PreciosRoute: typeof PreciosRoute
   PrivacidadRoute: typeof PrivacidadRoute
   SeoTijuanaRoute: typeof SeoTijuanaRoute
   ServiciosRoute: typeof ServiciosRouteWithChildren
@@ -286,6 +299,13 @@ declare module '@tanstack/react-router' {
       path: '/meta-ads-tijuana'
       fullPath: '/meta-ads-tijuana'
       preLoaderRoute: typeof MetaAdsTijuanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/precios': {
+      id: '/precios'
+      path: '/precios'
+      fullPath: '/precios'
+      preLoaderRoute: typeof PreciosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacidad': {
@@ -397,6 +417,7 @@ const rootRouteChildren: RootRouteChildren = {
   DisenoWebTijuanaRoute: DisenoWebTijuanaRoute,
   GoogleAdsTijuanaRoute: GoogleAdsTijuanaRoute,
   MetaAdsTijuanaRoute: MetaAdsTijuanaRoute,
+  PreciosRoute: PreciosRoute,
   PrivacidadRoute: PrivacidadRoute,
   SeoTijuanaRoute: SeoTijuanaRoute,
   ServiciosRoute: ServiciosRouteWithChildren,

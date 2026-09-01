@@ -70,6 +70,7 @@ export function SiteHeader() {
     { to: "/servicios/websites", label: "Websites" },
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
     { to: "/servicios/agente-ia", label: t("AI Agent", "Agente IA") },
+    { to: "/precios", label: t("Pricing", "Precios") },
     { to: "/blog", label: t("Resources", "Recursos") },
     { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;

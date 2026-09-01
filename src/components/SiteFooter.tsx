@@ -125,6 +125,11 @@ export function SiteFooter() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li>
+              <Link to="/precios" className="transition hover:text-white">
+                {t("Pricing", "Precios")}
+              </Link>
+            </li>
+            <li>
               <Link to="/contacto" className="transition hover:text-white">
                 {t("Contact", "Contacto")}
               </Link>
