@@ -94,17 +94,43 @@ export function buildHead({
   return { meta, links, scripts };
 }
 
-/** Shared Organization node used across routes. */
+/**
+ * Shared business node used across routes.
+ *
+ * Modelled as a service-area business: Aphelion serves Tijuana and the rest of
+ * Baja California but has no public street address in Tijuana, so no street
+ * address is published here. Claiming an address the business does not occupy
+ * is a Google Business Profile violation and risks profile suspension, and it
+ * would misrepresent the entity in structured data. areaServed carries the
+ * local signal instead, which is what the service-area model is for.
+ */
+export const PRIMARY_CITY = "Tijuana";
+
+export const AREAS_SERVED = [
+  "Tijuana",
+  "Rosarito",
+  "Tecate",
+  "Mexicali",
+  "Ensenada",
+  "Baja California",
+] as const;
+
 export const ORGANIZATION_JSONLD = {
-  "@type": "Organization",
+  "@type": "ProfessionalService",
+  "@id": `${SITE_URL}/#business`,
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Digital infrastructure agency: websites, marketing, content, video and custom SaaS.",
-  areaServed: ["MX", "US"],
+    "Agencia de marketing digital y desarrollo web en Tijuana: sitios web, SEO, Google Ads, Meta Ads, video con dron y automatización con IA.",
+  slogan: "Digital infrastructure for brands that refuse to settle.",
+  priceRange: "$$",
+  areaServed: AREAS_SERVED.map((name) => ({
+    "@type": "City",
+    name,
+  })),
   address: {
+    // Region-level only: no street address is published for a service-area business.
     "@type": "PostalAddress",
-    addressLocality: "Ensenada",
     addressRegion: "Baja California",
     addressCountry: "MX",
   },
@@ -113,7 +139,17 @@ export const ORGANIZATION_JSONLD = {
       "@type": "ContactPoint",
       contactType: "sales",
       telephone: "+52-646-129-3352",
-      availableLanguage: ["en", "es"],
+      areaServed: "MX",
+      availableLanguage: ["es", "en"],
+    },
+  ],
+  knowsLanguage: ["es-MX", "en-US"],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
     },
   ],
 };

@@ -376,17 +376,25 @@ function InlineCTA() {
       </h3>
       <p className="mx-auto mt-4 max-w-md text-sm text-white/60 sm:text-base">
         {t(
-          "Tell us what you're working with. We reply within 24 hours.",
-          "Cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.",
+          "We're a digital marketing agency serving Tijuana and Baja California. Tell us what you're working with and we reply within 24 hours.",
+          "Somos una agencia de marketing digital que atiende Tijuana y Baja California. Cuéntanos qué tienes en mente y te respondemos en menos de 24 horas.",
         )}
       </p>
-      <Link
-        to="/contacto"
-        className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
-      >
-        {t("Book a call", "Agendar llamada")}
-        <ArrowRight className="h-3.5 w-3.5" />
-      </Link>
+      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <Link
+          to="/contacto"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+        >
+          {t("Book a call", "Agendar llamada")}
+          <ArrowRight className="h-3.5 w-3.5" />
+        </Link>
+        <Link
+          to="/agencia-marketing-digital-tijuana"
+          className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"
+        >
+          {t("Marketing agency in Tijuana", "Agencia de marketing en Tijuana")}
+        </Link>
+      </div>
     </div>
   );
 }

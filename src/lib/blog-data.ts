@@ -114,6 +114,21 @@ export const BLOG_POSTS: BlogPost[] = [
           "Pide una muestra de auditoría técnica, casos reales con números de tráfico e ingresos (no solo capturas de rankings), y un cronograma honesto. El SEO toma mínimo 4 a 6 meses para mostrar movimiento real, y 9 a 12 meses para acumular resultados. Si una propuesta promete resultados en tres semanas, está prometiendo otra cosa: normalmente, tráfico pagado disfrazado de orgánico.",
         ],
       },
+      {
+        id: "costo-seo-tijuana",
+        heading: "What this looks like in Tijuana",
+        headingEs: "Cómo se ve esto en Tijuana",
+        body: [
+          "Local SEO in a border city carries work that a single-language market does not: keyword research done twice, and often a second set of pages.",
+          "That is a real cost difference and it is worth pricing explicitly rather than discovering halfway through. Whether you need it depends on whether you actually sell to English-speaking buyers, which your analytics can answer before anyone quotes you.",
+          "More on the local scope in [SEO en Tijuana](/seo-tijuana).",
+        ],
+        bodyEs: [
+          "El SEO local en una ciudad fronteriza carga trabajo que un mercado de un solo idioma no tiene: investigación de palabras clave hecha dos veces, y con frecuencia un segundo juego de páginas.",
+          "Esa es una diferencia real de costo y conviene cotizarla de forma explícita en lugar de descubrirla a medio camino. Si lo necesitas o no depende de si de verdad le vendes a compradores de habla inglesa, cosa que tu analítica puede responder antes de que alguien te cotice.",
+          "Más sobre el alcance local en [SEO en Tijuana](/seo-tijuana).",
+        ],
+      },
     ],
     gradient: "from-neutral-800 to-neutral-950",
     faq: [
@@ -247,6 +262,21 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Presencial: $6,000–$15,000 MXN. Profesional: $25,000–$60,000 MXN. Captación o Automatizada: $80,000–$150,000 MXN. Sistema Comercial o SaaS a medida: $150,000 MXN en adelante. Estos son costos de construcción única en pesos mexicanos para 2026; hosting, mantenimiento y contenido son costos continuos aparte, cubiertos arriba.",
+        ],
+      },
+      {
+        id: "costo-web-tijuana",
+        heading: "The bilingual question in Tijuana",
+        headingEs: "La pregunta bilingüe en Tijuana",
+        body: [
+          "The single biggest scope variable for a Tijuana business is whether the site needs to work in two languages.",
+          "A real bilingual site means separate indexable URLs per language, hreflang, and copy written rather than machine-translated, because the English terms your buyers search are not literal translations of the Spanish ones. That is closer to one and a half sites than to one.",
+          "Check your analytics for browser language and California-originated traffic before deciding. We break the local scope down in [diseño web en Tijuana](/diseno-web-tijuana).",
+        ],
+        bodyEs: [
+          "La variable de alcance más grande para un negocio de Tijuana es si el sitio necesita funcionar en dos idiomas.",
+          "Un sitio bilingüe real implica URLs separadas e indexables por idioma, hreflang y textos escritos y no traducidos por máquina, porque los términos en inglés que buscan tus compradores no son traducciones literales de los del español. Eso está más cerca de sitio y medio que de un sitio.",
+          "Revisa en tu analítica el idioma del navegador y el tráfico originado en California antes de decidir. Desglosamos el alcance local en [diseño web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],
@@ -1911,6 +1941,21 @@ export const BLOG_POSTS: BlogPost[] = [
           'Los errores de SEO más comunes que vemos (sin perfil de Google Business optimizado, contenido pobre o duplicado, ignorar la velocidad móvil) están cubiertos a fondo en "12 errores de SEO que cometen las pymes." Esta guía es el punto de partida; cada cluster enlazado profundiza en una pieza específica del sistema, y seguimos sumando nuevos conforme cambia el panorama del SEO.',
         ],
       },
+      {
+        id: "seo-local-tijuana",
+        heading: "If you are ranking in Tijuana",
+        headingEs: "Si estás posicionando en Tijuana",
+        body: [
+          "Everything above applies anywhere. A border city adds two wrinkles worth planning for.",
+          "Queries arrive in two languages, often from the same person, so keyword research done only in Spanish describes half your demand. And a share of the searches for Tijuana businesses originate in San Diego County, which changes both the terms used and the intent behind them.",
+          "We go through the local specifics, including how the Google Business Profile outranks your site for local queries, in [SEO en Tijuana](/seo-tijuana).",
+        ],
+        bodyEs: [
+          "Todo lo anterior aplica en cualquier lado. Una ciudad fronteriza agrega dos pliegues que vale la pena planear.",
+          "Las búsquedas llegan en dos idiomas, seguido de la misma persona, así que una investigación de palabras clave hecha solo en español describe la mitad de tu demanda. Y una parte de las búsquedas de negocios de Tijuana se origina en el condado de San Diego, lo que cambia tanto los términos usados como la intención detrás de ellos.",
+          "Repasamos los detalles locales, incluido cómo el Perfil de Empresa de Google pesa más que tu sitio en búsquedas locales, en [SEO en Tijuana](/seo-tijuana).",
+        ],
+      },
     ],
     faq: [
       {
@@ -2072,6 +2117,21 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Empieza con una sola campaña de Búsqueda bien acotada alrededor de tus palabras clave de mayor intención, una landing page construida para coincidir con esa intención específica, y el seguimiento de conversiones configurado antes de gastar el primer peso, no después. Todo lo demás en esta guía es sobre optimizar una base que primero necesita ser sólida.",
+        ],
+      },
+      {
+        id: "google-ads-tijuana-frontera",
+        heading: "The border setting that drains Tijuana budgets",
+        headingEs: "La configuración fronteriza que drena presupuestos en Tijuana",
+        body: [
+          "If you are advertising from Tijuana, one setting matters more than everything else on this page.",
+          "A radius drawn around a Tijuana location covers a large part of San Diego County, and Google's location options have historically defaulted to including people interested in your targeted area rather than only people physically in it. The result is competing against dollar budgets for clicks that will never cross the border.",
+          "The fix and the rest of the border configuration are in [Google Ads en Tijuana](/google-ads-tijuana).",
+        ],
+        bodyEs: [
+          "Si anuncias desde Tijuana, una configuración importa más que todo lo demás de esta página.",
+          "Un radio trazado alrededor de una ubicación de Tijuana cubre buena parte del condado de San Diego, y las opciones de ubicación de Google históricamente incluyen por defecto a personas interesadas en tu zona objetivo y no solo a quienes están físicamente en ella. El resultado es competir contra presupuestos en dólares por clics que nunca van a cruzar la frontera.",
+          "El arreglo y el resto de la configuración fronteriza están en [Google Ads en Tijuana](/google-ads-tijuana).",
         ],
       },
     ],
@@ -3408,6 +3468,21 @@ export const BLOG_POSTS: BlogPost[] = [
           "El costo por resultado dentro del panel de Meta solo cuenta parte de la historia; lo que cierra importa más que lo que convierte en la plataforma. Cruza las conversiones que reporta Meta contra GA4 y, si es posible, contra lo que realmente se vuelve ingreso en tu CRM. Los tres números casi nunca coinciden exactamente, y en esa diferencia está la lectura real.",
         ],
       },
+      {
+        id: "meta-ads-tijuana-publico",
+        heading: "Local audiences in a border city",
+        headingEs: "Públicos locales en una ciudad fronteriza",
+        body: [
+          "Meta's location targeting defaults to people recently in a location, not only residents. In most cities that distinction is minor. In Tijuana it decides who sees your ad.",
+          "Left on the default, a local campaign reaches visitors from across the border. That is a feature if you want them and an expense if you do not, and either way it should be a decision rather than an accident.",
+          "We cover the audience and creative side of this in [Meta Ads en Tijuana](/meta-ads-tijuana).",
+        ],
+        bodyEs: [
+          "La segmentación por ubicación de Meta viene por defecto en personas que estuvieron recientemente en un lugar, no solo residentes. En casi cualquier ciudad esa distinción es menor. En Tijuana decide quién ve tu anuncio.",
+          "Dejada en el valor por defecto, una campaña local alcanza a visitantes del otro lado de la frontera. Eso es una función si los quieres y un gasto si no, y en cualquier caso debería ser una decisión y no un accidente.",
+          "Cubrimos el lado de públicos y creativos en [Meta Ads en Tijuana](/meta-ads-tijuana).",
+        ],
+      },
     ],
     gradient: "from-slate-700 to-neutral-900",
     faq: [
@@ -4536,6 +4611,21 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Un sitio que nunca se revisa después de lanzarse se va quedando atrás poco a poco: el contenido envejece, la tecnología avanza, y lo que convertía bien al lanzamiento se desactualiza conforme cambia el mercado. El mantenimiento básico (actualizaciones de seguridad, respaldos, actualizaciones periódicas de contenido) mantiene un sitio funcionando en vez de dejarlo decaer poco a poco sin que nadie lo note.",
+        ],
+      },
+      {
+        id: "diseno-web-tijuana-bilingue",
+        heading: "Building for a bilingual market",
+        headingEs: "Construir para un mercado bilingüe",
+        body: [
+          "A site in Tijuana often has to convince two audiences at once: local buyers, and buyers across the border comparing you against options in the United States.",
+          "That raises the weight of the signals that read as legitimacy, and it makes the bilingual decision structural rather than cosmetic. A translate widget is not a bilingual site, because search engines cannot index what a script generates on the fly.",
+          "The specifics are in [diseño web en Tijuana](/diseno-web-tijuana).",
+        ],
+        bodyEs: [
+          "Un sitio en Tijuana muchas veces tiene que convencer a dos públicos a la vez: compradores locales, y compradores del otro lado de la frontera que te están comparando contra opciones en Estados Unidos.",
+          "Eso sube el peso de las señales que se leen como seriedad, y vuelve la decisión bilingüe estructural y no cosmética. Un widget de traducción no es un sitio bilingüe, porque los buscadores no pueden indexar lo que un script genera al vuelo.",
+          "Los detalles están en [diseño web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],

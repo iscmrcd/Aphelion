@@ -89,6 +89,37 @@ export function SiteFooter() {
         </div>
 
         <div>
+          <p className="text-xs font-medium uppercase tracking-[0.16em] text-white/40">Tijuana</p>
+          <ul className="mt-4 space-y-2 text-sm text-white/70">
+            <li>
+              <Link to="/agencia-marketing-digital-tijuana" className="transition hover:text-white">
+                {t("Marketing agency", "Agencia de marketing")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/seo-tijuana" className="transition hover:text-white">
+                SEO
+              </Link>
+            </li>
+            <li>
+              <Link to="/diseno-web-tijuana" className="transition hover:text-white">
+                {t("Web design", "Diseño web")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/google-ads-tijuana" className="transition hover:text-white">
+                Google Ads
+              </Link>
+            </li>
+            <li>
+              <Link to="/meta-ads-tijuana" className="transition hover:text-white">
+                Meta Ads
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
           <p className="text-xs font-medium uppercase tracking-[0.16em] text-white/40">
             {t("Company", "Compañía")}
           </p>
