@@ -85,6 +85,31 @@ export function SiteFooter() {
                 {t("Drone Video", "Video con Dron")}
               </Link>
             </li>
+            <li>
+              <Link to="/seo" className="transition hover:text-white">
+                SEO
+              </Link>
+            </li>
+            <li>
+              <Link to="/google-ads" className="transition hover:text-white">
+                Google Ads
+              </Link>
+            </li>
+            <li>
+              <Link to="/meta-ads" className="transition hover:text-white">
+                Meta Ads
+              </Link>
+            </li>
+            <li>
+              <Link to="/ecommerce" className="transition hover:text-white">
+                {t("Ecommerce", "Tiendas en línea")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/branding" className="transition hover:text-white">
+                Branding
+              </Link>
+            </li>
           </ul>
         </div>
 

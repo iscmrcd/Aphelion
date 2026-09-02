@@ -41,6 +41,14 @@ export type LocalPage = {
   faq: LocalFaq[];
   /** Related city pages rendered at the bottom. */
   related: string[];
+  /**
+   * The service page this city page belongs under. Diseño web points at
+   * /servicios/websites rather than a root /diseno-web, because that URL is
+   * already indexed and moving it was not worth the temporary ranking dip.
+   */
+  parentPath?: string;
+  parentLabel?: string;
+  parentLabelEs?: string;
 };
 
 export const TIJUANA_HUB: LocalPage = {
@@ -264,6 +272,9 @@ export const SEO_TIJUANA: LocalPage = {
     },
   ],
   related: ["/agencia-marketing-digital-tijuana", "/diseno-web-tijuana", "/google-ads-tijuana"],
+  parentPath: "/seo",
+  parentLabel: "SEO",
+  parentLabelEs: "SEO",
 };
 
 export const DISENO_WEB_TIJUANA: LocalPage = {
@@ -382,6 +393,9 @@ export const DISENO_WEB_TIJUANA: LocalPage = {
     },
   ],
   related: ["/agencia-marketing-digital-tijuana", "/seo-tijuana", "/meta-ads-tijuana"],
+  parentPath: "/servicios/websites",
+  parentLabel: "Web design",
+  parentLabelEs: "Diseño web",
 };
 
 export const GOOGLE_ADS_TIJUANA: LocalPage = {
@@ -504,6 +518,9 @@ export const GOOGLE_ADS_TIJUANA: LocalPage = {
     },
   ],
   related: ["/agencia-marketing-digital-tijuana", "/meta-ads-tijuana", "/seo-tijuana"],
+  parentPath: "/google-ads",
+  parentLabel: "Google Ads",
+  parentLabelEs: "Google Ads",
 };
 
 export const META_ADS_TIJUANA: LocalPage = {
@@ -622,6 +639,9 @@ export const META_ADS_TIJUANA: LocalPage = {
     },
   ],
   related: ["/agencia-marketing-digital-tijuana", "/google-ads-tijuana", "/diseno-web-tijuana"],
+  parentPath: "/meta-ads",
+  parentLabel: "Meta Ads",
+  parentLabelEs: "Meta Ads",
 };
 
 export const LOCAL_PAGES: LocalPage[] = [

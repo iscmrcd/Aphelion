@@ -109,6 +109,33 @@ export function LocalServicePage({
         </div>
       </section>
 
+      {page.parentPath && (
+        <section className="border-t border-neutral-200 px-5 py-14">
+          <div className="mx-auto max-w-3xl">
+            <Link
+              to={page.parentPath}
+              className="group flex items-center justify-between gap-6 rounded-2xl border border-neutral-200 p-6 transition hover:border-neutral-950"
+            >
+              <div>
+                <p className="text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
+                  {t("The service", "El servicio")}
+                </p>
+                <p className="mt-2 text-lg font-medium text-neutral-950">
+                  {t(page.parentLabel ?? "", page.parentLabelEs ?? "")}
+                </p>
+                <p className="mt-1 text-sm text-neutral-500">
+                  {t(
+                    "What we deliver, how we start and how it is priced.",
+                    "Qué entregamos, cómo arrancamos y cómo se cotiza.",
+                  )}
+                </p>
+              </div>
+              <ArrowRight className="h-4 w-4 shrink-0 text-neutral-400 transition group-hover:translate-x-1 group-hover:text-neutral-950" />
+            </Link>
+          </div>
+        </section>
+      )}
+
       {related.length > 0 && (
         <section className="border-t border-neutral-200 px-5 py-20 sm:py-24">
           <div className="mx-auto max-w-5xl">
