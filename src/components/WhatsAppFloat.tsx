@@ -9,7 +9,16 @@ export function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Escríbenos por WhatsApp"
-      className="fixed bottom-5 right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-950 text-white shadow-lg shadow-black/20 ring-1 ring-white/10 transition hover:scale-105 hover:bg-neutral-800 sm:bottom-6 sm:right-6"
+      className="fixed right-5 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-950 text-white shadow-lg shadow-black/20 ring-1 ring-white/10 transition hover:scale-105 hover:bg-neutral-800 sm:right-6"
+      style={{
+        // iOS Safari recalculates the viewport when its bottom toolbar
+        // shows/hides on scroll; anchoring to safe-area-inset-bottom and
+        // forcing its own compositing layer keeps the button stable.
+        bottom: "calc(1.25rem + env(safe-area-inset-bottom, 0px))",
+        transform: "translateZ(0)",
+        WebkitTransform: "translateZ(0)",
+        willChange: "transform",
+      }}
     >
       <svg
         viewBox="0 0 24 24"
