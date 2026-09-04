@@ -1,3 +1,7 @@
+import haimaDesk from "@/assets/portfolio/haima-desk.png.asset.json";
+import haimaIpad from "@/assets/portfolio/haima-ipad.png.asset.json";
+import haimaIphone from "@/assets/portfolio/haima-iphone.png.asset.json";
+
 export type PortfolioProject = {
   id: string;
   name: string;
@@ -10,22 +14,27 @@ export type PortfolioProject = {
   photos: string[];
   /** Live site URL, if public. */
   url?: string;
+  /** Project metadata fields */
+  client?: string;
+  location?: string;
+  diagnosis?: string;
+  solution?: string;
 };
 
-// Replace covers/photos with the real screenshots when available.
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
-    id: "proyecto-1",
-    name: "Proyecto 01",
-    type: "Sitio web",
-    typeEn: "Website",
-    photos: [],
-  },
-  {
-    id: "proyecto-2",
-    name: "Proyecto 02",
-    type: "Sitio web",
-    typeEn: "Website",
-    photos: [],
+    id: "haima-banco-de-sangre",
+    name: "HAIMA Banco de Sangre",
+    type: "Sistema web + IA",
+    typeEn: "Web system + AI",
+    client: "HAIMA Banco de Sangre",
+    location: "Tijuana",
+    diagnosis:
+      "25 años operando en Tijuana sin infraestructura digital. Alta dependencia de llamadas, conmutador y consultas manuales para verificar disponibilidad y agendar donadores.",
+    solution:
+      "Panel de inventario en vivo con sincronización pública, agenda de citas 24/7, asistente con IA en español e inglés, filtro de 8 preguntas previas y recordatorios por email, SMS y WhatsApp.",
+    cover: haimaDesk.url,
+    photos: [haimaIpad.url, haimaIphone.url],
+    url: "https://haima.health/",
   },
 ];

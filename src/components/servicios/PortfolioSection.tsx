@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ArrowUpRight, X } from "lucide-react";
-import { useT } from "@/lib/i18n";
+import { ArrowUpRight, X, MapPin, Building2, Stethoscope, Wrench } from "lucide-react";
+import { useT, useLang } from "@/lib/i18n";
 import { PORTFOLIO_PROJECTS, type PortfolioProject } from "@/lib/portfolio-data";
 
 /**
@@ -116,12 +116,52 @@ export function PortfolioSection() {
             <h3 className="mt-2 text-2xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-3xl">
               {selected.name}
             </h3>
+
+            <dl className="mt-6 grid gap-4 sm:grid-cols-2">
+              {selected.client && (
+                <div className="rounded-xl border border-neutral-200 p-4">
+                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
+                    <Building2 className="h-3.5 w-3.5" />
+                    {t("Client", "Cliente")}
+                  </dt>
+                  <dd className="mt-1 text-sm font-medium text-neutral-950">{selected.client}</dd>
+                </div>
+              )}
+              {selected.location && (
+                <div className="rounded-xl border border-neutral-200 p-4">
+                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
+                    <MapPin className="h-3.5 w-3.5" />
+                    {t("Location", "Ubicación")}
+                  </dt>
+                  <dd className="mt-1 text-sm font-medium text-neutral-950">{selected.location}</dd>
+                </div>
+              )}
+              {selected.diagnosis && (
+                <div className="rounded-xl border border-neutral-200 p-4 sm:col-span-2">
+                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
+                    <Stethoscope className="h-3.5 w-3.5" />
+                    {t("Diagnosis", "Diagnóstico")}
+                  </dt>
+                  <dd className="mt-1 text-sm leading-relaxed text-neutral-700">{selected.diagnosis}</dd>
+                </div>
+              )}
+              {selected.solution && (
+                <div className="rounded-xl border border-neutral-200 p-4 sm:col-span-2">
+                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
+                    <Wrench className="h-3.5 w-3.5" />
+                    {t("Solution", "Solución")}
+                  </dt>
+                  <dd className="mt-1 text-sm leading-relaxed text-neutral-700">{selected.solution}</dd>
+                </div>
+              )}
+            </dl>
+
             {selected.url && (
               <a
                 href={selected.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-neutral-950 underline decoration-neutral-300 underline-offset-4 transition hover:decoration-neutral-950"
+                className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
               >
                 {t("Visit live site", "Visitar sitio en vivo")}
                 <ArrowUpRight className="h-3.5 w-3.5" />
