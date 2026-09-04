@@ -4,6 +4,7 @@ import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { ScrollDrivenBanner } from "@/components/servicios/ScrollDrivenBanner";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
+import { PortfolioSection } from "@/components/servicios/PortfolioSection";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
 import { FAQ_WEB } from "@/lib/websites-data";
@@ -77,6 +78,7 @@ function WebsitesPage() {
 
       <WebsitesSection />
       <FAQ />
+      <PortfolioSection />
       <BlogTeaserSection categories={["Diseño Web"]} lang={lang} />
       <CTAFooter />
     </main>
