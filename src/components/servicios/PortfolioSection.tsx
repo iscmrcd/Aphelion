@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ArrowUpRight, X } from "lucide-react";
-import { useT } from "@/lib/i18n";
+import { ArrowUpRight, X, MapPin, Building2, Stethoscope, Wrench } from "lucide-react";
+import { useT, useLang } from "@/lib/i18n";
 import { PORTFOLIO_PROJECTS, type PortfolioProject } from "@/lib/portfolio-data";
 
 /**
