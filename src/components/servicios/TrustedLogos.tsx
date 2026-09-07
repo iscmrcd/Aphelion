@@ -135,13 +135,11 @@ function BrandItem({ brand }: { brand: Brand }) {
           </span>
         )}
       </div>
-      <span
-        style={{
-          color: `color-mix(in srgb, currentColor calc(var(--c, 0) * 0%), ${NEUTRAL})`,
-        }}
-        className="text-center text-[11px] font-medium leading-tight tracking-tight text-neutral-950 transition group-hover:text-neutral-950"
-      >
-        <span style={{ opacity: `calc(0.45 + var(--c, 0) * 0.55)` }} className="group-hover:opacity-100">
+      <span className="text-center text-[11px] font-medium leading-tight tracking-tight text-neutral-950">
+        <span
+          style={{ opacity: `calc(0.4 + var(--c, 0) * 0.6)` }}
+          className="group-hover:!opacity-100"
+        >
           {brand.label}
         </span>
       </span>
