@@ -152,12 +152,12 @@ export function SelfCheck() {
           {CHECKS.map((c, i) => (
             <div
               key={c.step}
-              className="rounded-2xl border p-5 sm:p-6"
+              className="rounded-2xl border p-4 sm:p-6"
               style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <span
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-medium"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-medium sm:h-9 sm:w-9"
                   style={{ backgroundImage: rampButton(C), color: C.onDeep }}
                 >
                   {i + 1}
