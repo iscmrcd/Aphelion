@@ -1,13 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Check } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { submitLead } from "@/lib/notify-server";
-import { buildHead, SITE_URL } from "@/lib/seo";
+import { buildHead, SITE_URL, validateLangSearch } from "@/lib/seo";
 
 export const Route = createFileRoute("/contacto")({
+  validateSearch: validateLangSearch,
   loaderDeps: ({ search }) => ({ lang: search.lang }),
   loader: ({ deps }) => deps,
+
   head: ({ loaderData }) =>
     buildHead({
       path: "/contacto",
