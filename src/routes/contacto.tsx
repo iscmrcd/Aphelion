@@ -247,6 +247,17 @@ function ContactoPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                {/* Confirms the visitor's context carried over, so they don't
+                    have to re-explain what they were just reading. */}
+                {contextLabel && (
+                  <div className="flex items-center gap-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-xs text-neutral-600">
+                    <span className="font-medium uppercase tracking-[0.12em] text-neutral-400">
+                      {t("About", "Sobre")}
+                    </span>
+                    <span className="font-medium text-neutral-950">{contextLabel}</span>
+                  </div>
+                )}
+
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field name="name" label={t("Name *", "Nombre *")} required />
                   <Field name="company" label={t("Company", "Empresa")} />
