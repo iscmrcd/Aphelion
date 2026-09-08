@@ -25,6 +25,33 @@ const newSessionId = () =>
 
 type Msg = { role: "user" | "assistant"; content: string };
 
+function renderMarkdown(text: string): React.ReactNode {
+  const safe = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  const lines = safe.split("\n");
+  return lines.map((line, i) => {
+    const parts = line.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
+    return (
+      <span key={i}>
+        {parts.map((part, j) => {
+          if (part.startsWith("**") && part.endsWith("**")) {
+            return <strong key={j}>{part.slice(2, -2)}</strong>;
+          }
+          if (part.startsWith("*") && part.endsWith("*")) {
+            return <em key={j}>{part.slice(1, -1)}</em>;
+          }
+          return <span key={j}>{part}</span>;
+        })}
+        {i < lines.length - 1 && <br />}
+      </span>
+    );
+  });
+}
+
+
 export function AphelionChatWidget() {
   const t = useT();
   const [open, setOpen] = useState(false);
