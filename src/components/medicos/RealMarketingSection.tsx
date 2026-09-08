@@ -148,19 +148,33 @@ export function RealMarketingSection() {
           </div>
         </div>
 
-        {/* the policy detail */}
+        {/* what a directory profile blocks */}
         <div
-          className="mt-4 rounded-2xl border p-6"
+          className="mt-4 rounded-2xl border p-5 sm:p-6"
           style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
         >
-          <p className="flex items-start gap-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            <X className="mt-0.5 h-4 w-4 shrink-0" style={{ color: C.mid }} />
-            <span>
-              {t(
-                "One detail most people never hit until they try. In a Google ad, the web address the reader sees has to be the same one the ad leads to. A directory profile lives at their address, not yours, so you cannot put it up as your practice's address in the ad.",
-                "Un detalle con el que casi nadie se topa hasta que lo intenta. En un anuncio de Google, la dirección web que se ve tiene que ser la misma a la que el anuncio lleva. Un perfil de directorio vive en la dirección de ellos, no en la tuya, así que no puedes ponerlo como la dirección de tu consultorio en el anuncio.",
-              )}
-            </span>
+          <p className="text-sm font-medium" style={{ color: C.deep }}>
+            {t(
+              "What a profile on Doctoralia or any directory does not let anyone do",
+              "Lo que un perfil en Doctoralia o cualquier directorio no deja hacer a nadie",
+            )}
+          </p>
+          <ul className="mt-4 space-y-3">
+            {directoryBlocks.map(([en, es]) => (
+              <li
+                key={en}
+                className="flex items-start gap-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300"
+              >
+                <X className="mt-0.5 h-4 w-4 shrink-0" style={{ color: C.mid }} />
+                <span>{t(en, es)}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm leading-relaxed" style={{ color: C.mid }}>
+            {t(
+              "None of this is a limit of ours. It is the page being theirs. On your own site we install all of it the same week.",
+              "Nada de esto es un límite nuestro. Es que la página es de ellos. En un sitio tuyo instalamos todo eso la misma semana.",
+            )}
           </p>
         </div>
 
