@@ -115,7 +115,14 @@ export function SmsDemo() {
         )}
       </div>
 
-      {done ? (
+      {!LIVE_SMS_ENABLED ? (
+        <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-300">
+          {t(
+            "Live sending is paused for maintenance. Write to us on WhatsApp and we will trigger a real reminder to your phone in front of you.",
+            "El envío en vivo está pausado por mantenimiento. Escríbenos por WhatsApp y disparamos un recordatorio real a tu teléfono en el momento.",
+          )}
+        </p>
+      ) : done ? (
         <p
           className="mt-4 flex items-start gap-2 text-sm font-medium"
           style={{ color: C.deep }}
