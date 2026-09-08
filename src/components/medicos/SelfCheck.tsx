@@ -186,7 +186,7 @@ export function SelfCheck() {
                     {c.outcomes.map((o) => (
                       <li
                         key={o.label}
-                        className="rounded-xl px-3.5 py-3"
+                        className="rounded-xl px-3 py-2.5 sm:px-3.5 sm:py-3"
                         style={{
                           backgroundColor: o.good ? `${C.soft}2e` : `${C.soft}14`,
                           border: o.good ? `1px solid ${C.mid}` : "1px solid transparent",
@@ -208,7 +208,7 @@ export function SelfCheck() {
         </div>
 
         <div
-          className="mt-8 rounded-2xl border p-6"
+          className="mt-8 rounded-2xl border p-5 sm:p-6"
           style={{ borderColor: C.mid, backgroundColor: `${C.soft}1f` }}
         >
           <p className="text-base leading-relaxed" style={{ color: C.deep }}>
