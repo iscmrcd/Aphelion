@@ -105,12 +105,6 @@ export function AppointmentPanelDemo() {
               >
                 {done ? <Check className="h-3 w-3" /> : n}
               </span>
-              {i < steps.length - 1 && (
-                <span
-                  className="h-px flex-1 transition-colors duration-500"
-                  style={{ backgroundColor: step > n ? C.mid : `${C.soft}40` }}
-                />
-              )}
             </li>
           );
         })}

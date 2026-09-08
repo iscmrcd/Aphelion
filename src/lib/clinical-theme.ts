@@ -62,6 +62,3 @@ export const rampProgress = (c: ClinicalPalette) => `linear-gradient(90deg, ${c.
 export const rampButton = (c: ClinicalPalette) =>
   `linear-gradient(120deg, ${c.mid} 0%, ${c.deep} 100%)`;
 
-/** Thin accent line, decorative only. */
-export const rampRule = (c: ClinicalPalette) =>
-  `linear-gradient(90deg, ${c.mid}, ${c.soft} 60%, transparent)`;
