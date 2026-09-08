@@ -79,11 +79,20 @@ export function normalisePhone(raw: string): string | null {
   return null;
 }
 
+/**
+ * Counts attempts that actually reached Twilio, in the last 24 h.
+ *
+ * Blocked rows are deliberately excluded. They are kept in the table as the
+ * audit trail, but counting them would let anyone knock the demo offline for
+ * everyone: hammer the endpoint until 150 "blocked" rows exist and the global
+ * ceiling is spent without a single message ever being sent.
+ */
 async function countSms(cfg: SupabaseConfig, filter: string): Promise<number | null> {
   const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
   try {
     const res = await fetch(
-      `${cfg.url}/rest/v1/demo_sms?${filter}&created_at=gte.${encodeURIComponent(since)}&select=id`,
+      `${cfg.url}/rest/v1/demo_sms?${filter}&status=in.(sent,failed)` +
+        `&created_at=gte.${encodeURIComponent(since)}&select=id`,
       { headers: { ...sbHeaders(cfg), Prefer: "count=exact", Range: "0-0" } },
     );
     if (!res.ok) return null;

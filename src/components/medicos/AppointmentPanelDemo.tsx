@@ -12,6 +12,7 @@ import {
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
 import { clinicalPalette, rampButton } from "@/lib/clinical-theme";
+import { SmsDemo } from "./SmsDemo";
 
 /**
  * Interactive illustration of an appointment flow.
@@ -253,6 +254,10 @@ export function AppointmentPanelDemo() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="mt-5">
+        <SmsDemo />
       </div>
 
       <p className="mt-5 text-[11px] leading-relaxed text-neutral-500 dark:text-neutral-400">

@@ -70,3 +70,7 @@ create index if not exists demo_sms_ip_idx      on public.demo_sms (ip_hash, cre
 create index if not exists demo_sms_created_idx on public.demo_sms (created_at desc);
 
 alter table public.demo_sms enable row level security;
+
+-- Applied to the live database on 2026-09-08 via the Lovable database tool.
+-- Verified afterwards: all three tables exist, RLS is on, and no policies are
+-- attached, so only the service-role key can read or write them.
