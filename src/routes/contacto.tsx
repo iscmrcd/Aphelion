@@ -35,8 +35,28 @@ export const Route = createFileRoute("/contacto")({
   component: ContactoPage,
 });
 
+/**
+ * Slugs the service pages and the diagnostic can send in ?servicio=…, mapped to
+ * the index of the chip they should pre-select. Language independent on purpose:
+ * the URL never has to know whether the visitor is reading English or Spanish.
+ */
+const SERVICE_SLUGS: Record<string, number> = {
+  websites: 0,
+  web: 0,
+  marketing: 1,
+  "agente-ia": 2,
+  "whatsapp-ia": 2,
+  contenido: 3,
+  video: 4,
+  dron: 4,
+  "video-con-dron": 4,
+  branding: 5,
+  saas: 6,
+};
+
 function ContactoPage() {
   const t = useT();
+  const { servicio, ref } = Route.useSearch();
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -62,6 +82,26 @@ function ContactoPage() {
     t("More than $150,000 MXN", "Más de $150,000 MXN"),
     t("Monthly / recurring contract", "Mensualidad / contrato recurrente"),
   ];
+
+  /**
+   * Preselect the chip the visitor already showed interest in. Kept in an
+   * effect (not initial state) because the chip labels depend on the language,
+   * which is only known after hydration.
+   */
+  const preselected = servicio ? SERVICE_SLUGS[servicio] : undefined;
+  useEffect(() => {
+    if (preselected !== undefined) setService(SERVICES[preselected]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preselected, t]);
+
+  const fromDiagnostic = ref === "diagnostico";
+  const contextLabel =
+    preselected !== undefined
+      ? SERVICES[preselected]
+      : fromDiagnostic
+        ? t("Diagnostic results", "Resultados del diagnóstico")
+        : "";
+
 
   /**
    * The old version built a WhatsApp link, opened it in a new tab and marked
