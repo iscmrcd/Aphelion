@@ -72,36 +72,32 @@ export function RealMarketingSection() {
 
         {/* logos */}
         <div
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-9 gap-y-6 rounded-2xl border px-6 py-7"
+          className="mt-8 grid grid-cols-3 items-start gap-x-4 gap-y-6 rounded-2xl border px-4 py-6 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-9 sm:px-6 sm:py-7"
           style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
         >
           {BRANDS.map((b) => (
-            <div key={b.label} className="flex flex-col items-center gap-2">
+            <div key={b.label} className="flex min-w-0 flex-col items-center gap-2">
               {b.inline ? (
-                <span
-                  className="flex h-7 w-7 items-center justify-center rounded-md text-[10px] font-semibold"
-                  style={{ backgroundColor: `${C.soft}40`, color: C.deep }}
-                  aria-hidden="true"
-                >
-                  GBP
-                </span>
+                <GoogleBusinessIcon className="h-7 w-7 shrink-0" />
               ) : (
                 <img
                   src={`https://cdn.simpleicons.org/${b.slug}`}
                   alt={`${b.label} logo`}
                   loading="lazy"
-                  className="h-7 w-7"
+                  className="h-7 w-7 shrink-0"
                 />
               )}
-              <span className="text-[11px] text-neutral-600 dark:text-neutral-400">{b.label}</span>
+              <span className="text-center text-[11px] leading-tight text-neutral-600 dark:text-neutral-400">
+                {b.label}
+              </span>
             </div>
           ))}
         </div>
 
         {/* what you can and cannot do */}
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="mt-4 grid gap-4 sm:mt-6 md:grid-cols-2">
           <div
-            className="rounded-2xl border p-6"
+            className="rounded-2xl border p-5 sm:p-6"
             style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
           >
             <p className="text-sm font-medium" style={{ color: C.deep }}>
