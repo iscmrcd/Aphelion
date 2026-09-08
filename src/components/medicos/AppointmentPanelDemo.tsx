@@ -21,8 +21,8 @@ import { clinicalPalette } from "@/lib/clinical-theme";
  * misrepresent it. The names and times below are obviously fictional.
  *
  * Honours prefers-reduced-motion: the sequence does not auto-play for visitors
- * who asked the OS to reduce motion, and they get the finished state plus a
- * manual replay instead.
+ * who asked the OS to reduce motion; they see the finished state instead.
+ * Otherwise it plays and loops on its own, with a numbered step tracker.
  */
 const STEP_MS = 1400;
 const TOTAL_STEPS = 5;
@@ -82,14 +82,51 @@ export function AppointmentPanelDemo() {
         </h3>
       </div>
 
+      {/* numbered step tracker: the active number and caption share the accent
+          colour of whatever is lighting up below, so the eye can follow */}
+      <ol className="mb-4 flex items-center gap-1 sm:gap-1.5">
+        {steps.map((s, i) => {
+          const n = i + 1;
+          const done = step > n;
+          const active = step === n;
+          return (
+            <li key={n} className="flex flex-1 items-center gap-1 last:flex-none sm:gap-1.5">
+              <span
+                aria-label={t(s.labelEn, s.label)}
+                aria-current={active ? "step" : undefined}
+                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-[11px] font-medium transition-all duration-500 ${
+                  active ? "scale-110" : ""
+                }`}
+                style={{
+                  borderColor: done || active ? C.mid : `${C.soft}59`,
+                  backgroundColor: done ? C.deep : active ? `${C.soft}33` : "transparent",
+                  color: done ? C.onDeep : active ? C.deep : C.soft,
+                }}
+              >
+                {done ? <Check className="h-3 w-3" /> : n}
+              </span>
+              {i < steps.length - 1 && (
+                <span
+                  className="h-px flex-1 transition-colors duration-500"
+                  style={{ backgroundColor: step > n ? C.mid : `${C.soft}40` }}
+                />
+              )}
+            </li>
+          );
+        })}
+      </ol>
+
       {/* current step caption */}
-      <p className="mb-5 text-sm" style={{ color: C.mid }}>
+      <p
+        className="mb-5 text-sm transition-colors duration-500"
+        style={{ color: step === 0 ? C.soft : C.deep, fontWeight: step === 0 ? 400 : 500 }}
+      >
         {step === 0
           ? t("Ready.", "Listo.")
-          : t(
+          : `${t(`Step ${step} of ${TOTAL_STEPS}`, `Paso ${step} de ${TOTAL_STEPS}`)} · ${t(
               steps[Math.min(step, TOTAL_STEPS) - 1].labelEn,
               steps[Math.min(step, TOTAL_STEPS) - 1].label,
-            )}
+            )}`}
       </p>
 
       <div className="grid gap-4 lg:grid-cols-[1.15fr_1fr]">
