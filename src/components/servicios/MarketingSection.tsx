@@ -434,7 +434,7 @@ function PackageCard({
 
           <div className="mt-7 flex flex-wrap gap-2.5">
             <a
-              href="/contacto"
+              href="/contacto?servicio=marketing"
               className={`inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
                 dark
                   ? "bg-white text-neutral-950 hover:bg-white/90"
@@ -444,7 +444,7 @@ function PackageCard({
               {t("Book this tier", "Reservar este nivel")}
             </a>
             <a
-              href="/contacto"
+              href="/contacto?servicio=marketing"
               className={`inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-medium transition ${
                 dark
                   ? "border-white/30 text-white hover:border-white"

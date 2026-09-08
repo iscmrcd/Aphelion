@@ -1,13 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Check } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { submitLead } from "@/lib/notify-server";
-import { buildHead, SITE_URL } from "@/lib/seo";
+import { buildHead, SITE_URL, validateLangSearch } from "@/lib/seo";
 
 export const Route = createFileRoute("/contacto")({
+  validateSearch: validateLangSearch,
   loaderDeps: ({ search }) => ({ lang: search.lang }),
   loader: ({ deps }) => deps,
+
   head: ({ loaderData }) =>
     buildHead({
       path: "/contacto",
@@ -35,8 +37,28 @@ export const Route = createFileRoute("/contacto")({
   component: ContactoPage,
 });
 
+/**
+ * Slugs the service pages and the diagnostic can send in ?servicio=…, mapped to
+ * the index of the chip they should pre-select. Language independent on purpose:
+ * the URL never has to know whether the visitor is reading English or Spanish.
+ */
+const SERVICE_SLUGS: Record<string, number> = {
+  websites: 0,
+  web: 0,
+  marketing: 1,
+  "agente-ia": 2,
+  "whatsapp-ia": 2,
+  contenido: 3,
+  video: 4,
+  dron: 4,
+  "video-con-dron": 4,
+  branding: 5,
+  saas: 6,
+};
+
 function ContactoPage() {
   const t = useT();
+  const { servicio, ref } = Route.useSearch();
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -62,6 +84,25 @@ function ContactoPage() {
     t("More than $150,000 MXN", "Más de $150,000 MXN"),
     t("Monthly / recurring contract", "Mensualidad / contrato recurrente"),
   ];
+
+  /**
+   * Preselect the chip the visitor already showed interest in. Kept in an
+   * effect (not initial state) because the chip labels depend on the language,
+   * which is only known after hydration.
+   */
+  const preselected = servicio ? SERVICE_SLUGS[servicio] : undefined;
+  useEffect(() => {
+    if (preselected !== undefined) setService(SERVICES[preselected]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preselected, t]);
+
+  const fromDiagnostic = ref === "diagnostico";
+  const contextLabel =
+    preselected !== undefined
+      ? SERVICES[preselected]
+      : fromDiagnostic
+        ? t("Diagnostic results", "Resultados del diagnóstico")
+        : "";
 
   /**
    * The old version built a WhatsApp link, opened it in a new tab and marked
@@ -114,7 +155,10 @@ function ContactoPage() {
           service: service || "",
           budget: budget || "",
           message: String(data.get("message") || ""),
-          path: typeof window !== "undefined" ? window.location.pathname : "",
+          // Includes the query string so the notification email shows which
+          // service page or diagnostic sent the visitor here.
+          path:
+            typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
       });
       if (res?.ok) setSent(true);
@@ -199,6 +243,17 @@ function ContactoPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                {/* Confirms the visitor's context carried over, so they don't
+                    have to re-explain what they were just reading. */}
+                {contextLabel && (
+                  <div className="flex items-center gap-2 rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-xs text-neutral-600">
+                    <span className="font-medium uppercase tracking-[0.12em] text-neutral-400">
+                      {t("About", "Sobre")}
+                    </span>
+                    <span className="font-medium text-neutral-950">{contextLabel}</span>
+                  </div>
+                )}
+
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field name="name" label={t("Name *", "Nombre *")} required />
                   <Field name="company" label={t("Company", "Empresa")} />
