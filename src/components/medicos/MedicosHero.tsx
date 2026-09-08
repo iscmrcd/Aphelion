@@ -38,21 +38,34 @@ export function MedicosHero() {
       setP(1);
       return;
     }
+    /** 0 at rest, 1 once the hero has scrolled by one of its own heights. */
+    const measure = () => {
+      const el = ref.current;
+      if (!el) return;
+      const h = el.offsetHeight || 1;
+      setP(Math.min(1, Math.max(0, window.scrollY / h)));
+    };
+
     const onScroll = () => {
+      // rAF is only a throttle here. It does not run in a hidden tab, which is
+      // fine mid-scroll but would leave a restored scroll position unmeasured,
+      // so the first read below is synchronous.
       if (raf.current !== null) return;
       raf.current = requestAnimationFrame(() => {
         raf.current = null;
-        const el = ref.current;
-        if (!el) return;
-        const h = el.offsetHeight || 1;
-        // 0 at rest, 1 once the hero has scrolled by one of its own heights.
-        setP(Math.min(1, Math.max(0, window.scrollY / h)));
+        measure();
       });
     };
-    onScroll();
+
+    measure();
+    const onVisible = () => {
+      if (!document.hidden) measure();
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("visibilitychange", onVisible);
     return () => {
       window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("visibilitychange", onVisible);
       if (raf.current !== null) cancelAnimationFrame(raf.current);
     };
   }, []);
