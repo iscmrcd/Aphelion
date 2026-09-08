@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { MessageSquare, Send, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { chatWithAphelion, type ChatTurn } from "@/lib/aphelion-agent-server";
