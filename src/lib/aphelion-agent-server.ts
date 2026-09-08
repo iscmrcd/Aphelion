@@ -69,12 +69,45 @@ async function hashIp(ip: string): Promise<string> {
  * False positives are cheap here because the extraction call vets it after.
  */
 const PHONE_RE = /(?:\+?52[\s.-]?)?(?:1[\s.-]?)?(?:\(?\d{2,3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}/;
+const PHONE_RE_SPLIT =
+  /(?:\+?52[\s.-]?)?(?:1[\s.-]?)?\(?\d{2,3}\)?[\s.-]?\d{3}[\s.-]?\d{2}[\s.-]?\d{2}/;
 
+/**
+ * The gate and the extractor must agree. If this said yes on a string the
+ * extractor then refused, the lead would be attempted and dropped; if it said
+ * no on one the extractor could read, the lead would never fire at all.
+ * Prices, years and counts fall out because a phone needs at least 10 digits.
+ */
 function looksLikePhone(text: string): boolean {
-  const m = text.match(PHONE_RE);
-  if (!m) return false;
-  // Reject prices and years: needs at least 10 digits to be a phone here.
-  return (m[0].match(/\d/g) ?? []).length >= 10;
+  return phoneFromText(text) !== null;
+}
+
+/**
+ * Pull the phone out of the visitor's own words, deterministically.
+ *
+ * The model is not trusted with this. Asked to extract "664 000 0000" it
+ * returned "+664000000": a digit short and with a country code it invented.
+ * A mangled number is a lost lead that still looks captured, which is worse
+ * than no capture at all, so the digits come from a regex over the raw text
+ * and the model only supplies the name and the interest.
+ *
+ * A country code is never assumed. Ten bare digits are stored as typed: on
+ * this border they are as likely to be American as Mexican, and guessing
+ * would repeat the same mistake in a different direction.
+ */
+function phoneFromText(text: string): string | null {
+  // Second pass for the common Mexican habit of splitting the tail into
+  // pairs: "664 123 45 67". PHONE_RE wants a four-digit run and misses it.
+  const m = text.match(PHONE_RE) ?? text.match(PHONE_RE_SPLIT);
+  if (!m) return null;
+  const digits = (m[0].match(/\d/g) ?? []).join("");
+  if (digits.length < 10 || digits.length > 15) return null;
+  const hadPlus = /\+/.test(m[0]);
+  if (digits.length === 13 && digits.startsWith("521")) return `+52${digits.slice(3)}`;
+  if (digits.length === 12 && digits.startsWith("52")) return `+${digits}`;
+  if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
+  if (digits.length === 10) return hadPlus ? `+${digits}` : digits;
+  return `+${digits}`;
 }
 
 /** Has this session already produced a lead? Avoids duplicate rows. */
@@ -337,15 +370,17 @@ export const chatWithAphelion = createServerFn({ method: "POST" })
       if (!done) {
         const full: ChatTurn[] = [...messages, { role: "assistant", content: reply }];
         const info = await extractLead(full);
-        if (info?.phone) {
+        // The regex wins; the model's version is only a fallback.
+        const phone = phoneFromText(userText) ?? info?.phone ?? null;
+        if (phone) {
           const transcript = full
             .map((m) => `${m.role === "user" ? "Visitante" : "Aphelion"}: ${m.content}`)
             .join("\n");
           const stored = await storeLeadRow(cfg, {
             source: "chat-widget",
-            name: info.name || "Visitante del chat",
-            phone: info.phone,
-            message: info.interest,
+            name: info?.name || "Visitante del chat",
+            phone,
+            message: info?.interest,
             transcript,
             path: data.path || null,
             ip_hash: ipHash,
@@ -354,9 +389,9 @@ export const chatWithAphelion = createServerFn({ method: "POST" })
           if (stored) {
             captured = true;
             await emailLead({
-              name: info.name || "",
-              phone: info.phone,
-              interest: info.interest || "",
+              name: info?.name || "",
+              phone,
+              interest: info?.interest || "",
               transcript,
               path: data.path || "",
             });
