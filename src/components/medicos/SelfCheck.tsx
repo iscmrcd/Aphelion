@@ -130,18 +130,23 @@ export function SelfCheck() {
   return (
     <section className="px-5 py-16 sm:py-20">
       <div className="mx-auto max-w-3xl">
-        <h2
-          className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
-          style={{ color: C.deep }}
-        >
-          {t("Try it on your phone", "Haz la prueba en tu teléfono")}
-        </h2>
-        <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
-          {t(
-            "Search your specialty + city like a stranger would, then try to book. Three checks, no marketing words.",
-            "Busca tu especialidad + ciudad como lo haría alguien que no te conoce, e intenta agendar. Tres comprobaciones, sin palabras de marketing.",
-          )}
-        </p>
+        <div className="grid items-center gap-8 sm:grid-cols-[1fr_auto]">
+          <div>
+            <h2
+              className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
+              style={{ color: C.deep }}
+            >
+              {t("Try it on your phone", "Haz la prueba en tu teléfono")}
+            </h2>
+            <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+              {t(
+                "Search your specialty + city like a stranger would, then try to book. Three checks, no marketing words.",
+                "Busca tu especialidad + ciudad como lo haría alguien que no te conoce, e intenta agendar. Tres comprobaciones, sin palabras de marketing.",
+              )}
+            </p>
+          </div>
+          <PhoneSearchIllustration C={C} />
+        </div>
 
         <div className="mt-9 space-y-4">
           {CHECKS.map((c, i) => (
