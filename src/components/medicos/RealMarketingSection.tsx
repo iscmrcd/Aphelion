@@ -128,7 +128,7 @@ export function RealMarketingSection() {
           </div>
 
           <div
-            className="rounded-2xl border p-6"
+            className="rounded-2xl border p-5 sm:p-6"
             style={{ borderColor: C.mid, backgroundColor: `${C.soft}1f` }}
           >
             <p className="text-sm font-medium" style={{ color: C.deep }}>
