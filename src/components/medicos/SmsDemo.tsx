@@ -27,6 +27,15 @@ type Reason = "config" | "limit" | "phone" | "provider" | "network";
 type State =
   { kind: "idle" } | { kind: "sending" } | { kind: "sent" } | { kind: "error"; reason: Reason };
 
+/**
+ * Live sending is paused while the Twilio account is upgraded (trial accounts
+ * hit a daily cap and can only text verified numbers). The panel still shows
+ * exactly what the patient receives; it just does not call the endpoint.
+ * Flip this back to true once TWILIO_FROM_NUMBER exists and the account is out
+ * of trial.
+ */
+const LIVE_SMS_ENABLED = false;
+
 export function SmsDemo() {
   const t = useT();
   const { theme } = useTheme();
@@ -88,10 +97,15 @@ export function SmsDemo() {
         {t("Do not take our word for it", "No nos creas, compruébalo")}
       </p>
       <p className="mt-1.5 text-sm text-neutral-600 dark:text-neutral-300">
-        {t(
-          "Enter your own number and we will send you the same reminder a patient would get. One per visit, and only to your own phone.",
-          "Escribe tu propio número y te mandamos el mismo recordatorio que recibiría un paciente. Uno por visita, y solo a tu propio teléfono.",
-        )}
+        {LIVE_SMS_ENABLED
+          ? t(
+              "Enter your own number and we will send you the same reminder a patient would get. One per visit, and only to your own phone.",
+              "Escribe tu propio número y te mandamos el mismo recordatorio que recibiría un paciente. Uno por visita, y solo a tu propio teléfono.",
+            )
+          : t(
+              "This is the exact reminder a patient receives on their phone the moment they book.",
+              "Este es el recordatorio exacto que recibe un paciente en su teléfono al momento de agendar.",
+            )}
       </p>
 
       {/* The visitor sees the exact text before it is sent. */}
@@ -106,7 +120,14 @@ export function SmsDemo() {
         )}
       </div>
 
-      {done ? (
+      {!LIVE_SMS_ENABLED ? (
+        <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-300">
+          {t(
+            "Live sending is paused for maintenance. Write to us on WhatsApp and we will trigger a real reminder to your phone in front of you.",
+            "El envío en vivo está pausado por mantenimiento. Escríbenos por WhatsApp y disparamos un recordatorio real a tu teléfono en el momento.",
+          )}
+        </p>
+      ) : done ? (
         <p
           className="mt-4 flex items-start gap-2 text-sm font-medium"
           style={{ color: C.deep }}
