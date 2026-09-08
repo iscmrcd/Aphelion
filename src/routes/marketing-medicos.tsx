@@ -1,16 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, Check, Minus, Plus, Stethoscope } from "lucide-react";
+import { ArrowRight, Check, Minus, Plus } from "lucide-react";
 import { AppointmentPanelDemo } from "@/components/medicos/AppointmentPanelDemo";
 import { MedicosHero } from "@/components/medicos/MedicosHero";
 import { PatientJourney } from "@/components/medicos/PatientJourney";
+import { SelfCheck } from "@/components/medicos/SelfCheck";
 import { RealMarketingSection } from "@/components/medicos/RealMarketingSection";
 import { WhyOwnSiteSection } from "@/components/medicos/WhyOwnSiteSection";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette, rampButton, rampRule } from "@/lib/clinical-theme";
+import { clinicalPalette } from "@/lib/clinical-theme";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD, AREAS_SERVED } from "@/lib/seo";
 import { MEDICOS_FAQ } from "@/lib/medicos-data";
 
@@ -70,7 +71,7 @@ function Page() {
       <MedicosHero />
 
       <PatientJourney />
-      <TwoAuctions />
+      <SelfCheck />
       <Contrast />
 
       {/* DEMO */}
@@ -115,63 +116,6 @@ function Page() {
 
       <CTAFooter />
     </main>
-  );
-}
-
-function TwoAuctions() {
-  const t = useT();
-  const { theme } = useTheme();
-  const C = clinicalPalette(theme);
-  return (
-    <section className="px-5 py-16 sm:py-20">
-      <div className="mx-auto max-w-3xl">
-        <h2
-          className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
-          style={{ color: C.deep }}
-        >
-          {t(
-            "Two auctions, and you own neither court",
-            "Dos subastas, y no eres dueño de ninguna cancha",
-          )}
-        </h2>
-        <div className="mt-8 space-y-4">
-          <div
-            className="rounded-2xl border p-6"
-            style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
-          >
-            <p className="text-xs font-medium tracking-[0.1em] uppercase" style={{ color: C.mid }}>
-              {t("Auction 1 · on Google", "Subasta 1 · en Google")}
-            </p>
-            <p className="mt-2.5 text-base leading-relaxed text-neutral-700 dark:text-neutral-200">
-              {t(
-                "The directory's website competes against yours. It usually wins, because a national directory carries weight with Google that a single practice cannot. You are not competing there. You are watching.",
-                "La página del directorio compite contra la tuya. Normalmente gana, porque un directorio nacional pesa ante Google lo que un consultorio solo no pesa. Ahí no estás compitiendo. Estás viendo.",
-              )}
-            </p>
-          </div>
-          <div
-            className="rounded-2xl border p-6"
-            style={{ borderColor: C.mid, backgroundColor: `${C.soft}1f` }}
-          >
-            <p className="text-xs font-medium tracking-[0.1em] uppercase" style={{ color: C.mid }}>
-              {t("Auction 2 · inside the directory", "Subasta 2 · dentro del directorio")}
-            </p>
-            <p className="mt-2.5 text-base leading-relaxed text-neutral-700 dark:text-neutral-200">
-              {t(
-                "The patient is in. Now you compete against every other doctor in your specialty in your city. And here is the part worth reading slowly, because Doctoralia publishes it on its own site: paid profiles appear higher in Doctoralia's search results than free ones.",
-                "El paciente entró. Ahora compites contra todos los demás médicos de tu especialidad en tu ciudad. Y aquí está la parte que conviene leer despacio, porque Doctoralia lo publica en su propio sitio: los perfiles de pago aparecen más arriba en los resultados de Doctoralia que los gratuitos.",
-              )}
-            </p>
-            <p className="mt-4 text-base leading-relaxed font-medium" style={{ color: C.deep }}>
-              {t(
-                "So you pay to compete better against your colleagues, inside a platform that is not yours, in an auction whose rules can change without you.",
-                "O sea: pagas para competir mejor contra tus colegas, dentro de una plataforma que no es tuya, en una subasta cuyas reglas pueden cambiar sin ti.",
-              )}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 }
 
