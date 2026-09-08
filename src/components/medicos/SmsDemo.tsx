@@ -27,6 +27,15 @@ type Reason = "config" | "limit" | "phone" | "provider" | "network";
 type State =
   { kind: "idle" } | { kind: "sending" } | { kind: "sent" } | { kind: "error"; reason: Reason };
 
+/**
+ * Live sending is paused while the Twilio account is upgraded (trial accounts
+ * hit a daily cap and can only text verified numbers). The panel still shows
+ * exactly what the patient receives; it just does not call the endpoint.
+ * Flip this back to true once TWILIO_FROM_NUMBER exists and the account is out
+ * of trial.
+ */
+const LIVE_SMS_ENABLED = false;
+
 export function SmsDemo() {
   const t = useT();
   const { theme } = useTheme();
