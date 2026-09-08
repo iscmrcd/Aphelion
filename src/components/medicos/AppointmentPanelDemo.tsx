@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette } from "@/lib/clinical-theme";
+import { clinicalPalette, rampButton } from "@/lib/clinical-theme";
 
 /**
  * Interactive illustration of an appointment flow.
@@ -98,9 +98,9 @@ export function AppointmentPanelDemo() {
                   active ? "scale-110" : ""
                 }`}
                 style={{
-                  borderColor: done || active ? C.mid : `${C.soft}59`,
-                  backgroundColor: done ? C.deep : active ? `${C.soft}33` : "transparent",
-                  color: done ? C.onDeep : active ? C.deep : C.soft,
+                  borderColor: done || active ? "transparent" : `${C.soft}59`,
+                  background: done || active ? rampButton(C) : "transparent",
+                  color: done || active ? C.onDeep : C.soft,
                 }}
               >
                 {done ? <Check className="h-3 w-3" /> : n}
