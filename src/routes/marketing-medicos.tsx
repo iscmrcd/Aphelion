@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Check, Minus, Plus, Stethoscope } from "lucide-react";
 import { AppointmentPanelDemo } from "@/components/medicos/AppointmentPanelDemo";
+import { MedicosHero } from "@/components/medicos/MedicosHero";
 import { PatientJourney } from "@/components/medicos/PatientJourney";
 import { RealMarketingSection } from "@/components/medicos/RealMarketingSection";
 import { WhyOwnSiteSection } from "@/components/medicos/WhyOwnSiteSection";
@@ -66,111 +67,7 @@ function Page() {
 
   return (
     <main style={{ background: C.bg }}>
-      {/*
-        HERO. The coat photograph is here for a structural reason, not only a
-        decorative one: the frosted cards elsewhere on this page float over a
-        flat gradient, so the blur has nothing to blur and the glass effect
-        barely reads. Over a photograph it actually works.
-
-        Text sits on a dark scrim rather than directly on the image, because
-        white copy over a photo is the classic glassmorphism accessibility
-        failure. The scrim is opaque enough to hold contrast wherever the image
-        happens to be light.
-      */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0" style={{ backgroundColor: "#080D10" }} />
-        <picture>
-          <source media="(max-width: 767px)" srcSet="/img/bata-aphelion-sm.webp" />
-          <img
-            src="/img/bata-aphelion.webp"
-            alt=""
-            aria-hidden="true"
-            fetchPriority="high"
-            className="pointer-events-none absolute top-0 right-0 h-full w-auto object-cover object-right opacity-60 md:opacity-100"
-          />
-        </picture>
-        {/*
-          Two scrims, one per breakpoint, because the text block does not sit in
-          the same place at every width. Below md the copy spans nearly the full
-          viewport, so a directional gradient would leave the last lines over the
-          bright part of the coat; above md the copy ends around 57% and the
-          gradient can open up and let the photograph show.
-
-          Both were checked against the brightest pixel in the image: white text
-          needs the scrim at 0.60 or more to clear 4.5:1, and white/85 needs 0.65.
-          Mobile sits at 0.78, desktop is still 0.83 where the text ends.
-        */}
-        <div
-          aria-hidden
-          className="absolute inset-0 md:hidden"
-          style={{ backgroundColor: "rgba(8,13,16,0.78)" }}
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0 hidden md:block"
-          style={{
-            background:
-              "linear-gradient(100deg, #080D10 0%, #080D10 46%, rgba(8,13,16,0.83) 62%, rgba(8,13,16,0.30) 80%, rgba(8,13,16,0) 100%)",
-          }}
-        />
-        <div className="relative mx-auto max-w-6xl px-5 pt-24 pb-20 sm:pt-32 sm:pb-28">
-          <div className="max-w-2xl">
-            <span
-              className="inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-xs font-medium tracking-[0.08em] text-white uppercase backdrop-blur-md"
-              style={{
-                borderColor: "rgba(255,255,255,0.22)",
-                backgroundColor: "rgba(255,255,255,0.10)",
-              }}
-            >
-              <Stethoscope className="h-3.5 w-3.5" />
-              {t("Doctors and clinics", "Médicos y clínicas")}
-            </span>
-            <h1 className="mt-6 text-4xl font-medium tracking-[-0.03em] text-white sm:text-5xl">
-              {t(
-                "Doctoralia can help patients find you. It should not be where you build your practice.",
-                "Doctoralia puede ayudarte a que te encuentren. No debería ser donde construyes tu consultorio.",
-              )}
-            </h1>
-            <div
-              className="mt-7 rounded-2xl border p-5 backdrop-blur-xl sm:p-6"
-              style={{
-                borderColor: "rgba(255,255,255,0.16)",
-                backgroundColor: "rgba(255,255,255,0.08)",
-              }}
-            >
-              <p className="text-base leading-relaxed text-white/85 sm:text-lg">
-                {t(
-                  "We register our own clients on Doctoralia, and we would tell you to take the free profile. The problem is not being there. The problem is that being there is all you have.",
-                  "Nosotros damos de alta a nuestros clientes en Doctoralia, y te diríamos que tomes el perfil gratuito. El problema no es estar ahí. El problema es que estar ahí sea todo lo que tienes.",
-                )}
-              </p>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                to="/recursos/diagnostico/$industria"
-                params={{ industria: "clinicas" }}
-                className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium text-white transition hover:opacity-90"
-                style={{ backgroundImage: "linear-gradient(120deg, #2A7488 0%, #12414F 100%)" }}
-              >
-                {t("Diagnose your practice, 2 min", "Diagnostica tu consultorio, 2 min")}
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-              <a
-                href="https://wa.me/526461293352?text=Hola%20Aphelion%2C%20soy%20de%20una%20cl%C3%ADnica."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border px-6 py-3.5 text-sm font-medium text-white backdrop-blur-md transition hover:border-white"
-                style={{
-                  borderColor: "rgba(255,255,255,0.28)",
-                  backgroundColor: "rgba(255,255,255,0.06)",
-                }}
-              >
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <MedicosHero />
 
       <PatientJourney />
       <TwoAuctions />
