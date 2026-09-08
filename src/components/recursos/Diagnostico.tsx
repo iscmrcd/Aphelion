@@ -3,6 +3,8 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, Gift, RotateCcw, Stethoscope } from "lucide-react";
 import { useT, useLang } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
+import { clinicalPalette, type ClinicalPalette } from "@/lib/clinical-theme";
+import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { bandaFor, totalWeight, type DiagnosticoVertical } from "@/lib/diagnostico-data";
 
 /**
@@ -16,54 +18,12 @@ import { bandaFor, totalWeight, type DiagnosticoVertical } from "@/lib/diagnosti
  * reserved for Conversational AI, so these are plain hex values scoped here
  * rather than new global tokens.
  */
-const CLINIC_LIGHT = {
-  deep: "#12414F", // headings and the primary button
-  mid: "#2A7488", // accents; clears 4.5:1 on white, on the glass and on the wash
-  soft: "#8FC2D4", // fills and borders, never used as text
-  wash: "#EAF3F7", // page background wash
-  glass: "rgba(255,255,255,0.72)",
-  glassBorder: "rgba(255,255,255,0.85)",
-  card: "rgba(255,255,255,0.85)",
-  bg: "linear-gradient(170deg, #EAF3F7 0%, #F7FAFC 45%, #FFFFFF 100%)",
-  onDeep: "#FFFFFF",
-} as const;
-
-/**
- * Dark counterpart. The site has a day/night toggle and the header and footer
- * render on every route, so a light-only page here would sit between a dark
- * header and a dark footer, and every neutral text utility would be remapped
- * to a light colour over a light card, making the copy invisible. Both
- * palettes were contrast-checked against their own surfaces.
- */
-const CLINIC_DARK = {
-  deep: "#CFE6EE", // headings, light on dark
-  mid: "#7FB8CC",
-  soft: "#2A7488",
-  wash: "#0E1A1F",
-  glass: "rgba(255,255,255,0.05)",
-  glassBorder: "rgba(255,255,255,0.10)",
-  card: "rgba(255,255,255,0.04)",
-  bg: "linear-gradient(170deg, #0E1A1F 0%, #101A1E 45%, #0C1215 100%)",
-  onDeep: "#0E1A1F",
-} as const;
-
-type Palette = {
-  deep: string;
-  mid: string;
-  soft: string;
-  wash: string;
-  glass: string;
-  glassBorder: string;
-  card: string;
-  bg: string;
-  onDeep: string;
-};
 
 export function Diagnostico({ vertical }: { vertical: DiagnosticoVertical }) {
   const t = useT();
   const { lang } = useLang();
   const { theme } = useTheme();
-  const C: Palette = theme === "dark" ? CLINIC_DARK : CLINIC_LIGHT;
+  const C = clinicalPalette(theme);
   const total = totalWeight(vertical);
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
@@ -233,7 +193,7 @@ function Resultado({
   lang: "en" | "es";
   onRestart: () => void;
   vertical: DiagnosticoVertical;
-  C: Palette;
+  C: ClinicalPalette;
 }) {
   const t = useT();
   const banda = bandaFor(score);
@@ -345,6 +305,19 @@ function Resultado({
               </li>
             ))}
           </ul>
+        </div>
+      )}
+
+      {/* Nothing to sell when there are no gaps, so content is the honest offer. */}
+      {gaps.length === 0 && (
+        <div className="mt-8">
+          <BlogTeaserSection
+            categories={["Medical Marketing", "Marketing Médico"]}
+            count={2}
+            lang={lang}
+            title="Worth reading anyway"
+            titleEs="Vale la pena leer de todos modos"
+          />
         </div>
       )}
 

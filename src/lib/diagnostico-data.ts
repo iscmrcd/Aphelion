@@ -155,6 +155,7 @@ export const CLINICAS: DiagnosticoVertical = {
         whyEn:
           "A patient who calls and gets no answer calls the next clinic. If you are also running ads, you are paying to generate calls for your competitors.",
         free: true,
+        href: "/servicios/agente-ia",
       },
     },
     {
@@ -267,6 +268,7 @@ export const CLINICAS: DiagnosticoVertical = {
         why: "Alguien que preguntó y no agendó ya te costó dinero conseguirlo. Un solo mensaje de seguimiento a los pocos días recupera una parte, y es de las cosas más baratas de esta lista.",
         whyEn:
           "Someone who asked and did not book already cost you money to acquire. A single follow-up message a few days later recovers a share of them, and it is among the cheapest items on this list.",
+        href: "/servicios/agente-ia",
       },
     },
     {
