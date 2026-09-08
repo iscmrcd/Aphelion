@@ -82,7 +82,7 @@ export function MedicosHero() {
   const waAlpha = 0.45 + 0.27 * p; // 0.45 -> 0.72
 
   return (
-    <section ref={ref} className="relative overflow-hidden">
+    <section ref={ref} className="on-dark relative overflow-hidden">
       <div className="absolute inset-0" style={{ backgroundColor: "#08141A" }} />
 
       <picture>
