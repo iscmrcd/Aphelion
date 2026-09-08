@@ -47,3 +47,21 @@ export const CLINIC_DARK: ClinicalPalette = {
 
 export const clinicalPalette = (theme: "light" | "dark") =>
   theme === "dark" ? CLINIC_DARK : CLINIC_LIGHT;
+
+/**
+ * Gradients.
+ *
+ * Two of them, and they are not interchangeable. The progress ramp runs from
+ * soft to mid and is only ever used as a fill behind nothing, because white
+ * text over its light end lands at 1.94:1. The button ramp runs mid to deep,
+ * which keeps the same family while clearing 4.5:1 at both stops.
+ */
+export const rampProgress = (c: ClinicalPalette) => `linear-gradient(90deg, ${c.soft}, ${c.mid})`;
+
+/** Safe behind white text in light theme, behind onDeep text in dark. */
+export const rampButton = (c: ClinicalPalette) =>
+  `linear-gradient(120deg, ${c.mid} 0%, ${c.deep} 100%)`;
+
+/** Thin accent line, decorative only. */
+export const rampRule = (c: ClinicalPalette) =>
+  `linear-gradient(90deg, ${c.mid}, ${c.soft} 60%, transparent)`;

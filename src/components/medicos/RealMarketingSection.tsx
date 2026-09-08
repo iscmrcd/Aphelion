@@ -41,10 +41,7 @@ export function RealMarketingSection() {
       "Tell the platform which clicks became patients",
       "Decirle a la plataforma qué clics se volvieron pacientes",
     ],
-    [
-      "Show your own domain as the ad's address",
-      "Mostrar tu propio dominio como dirección del anuncio",
-    ],
+    ["Show your own web address on the ad", "Mostrar tu propia dirección web en el anuncio"],
     ["Build audiences from your own visitors", "Construir públicos con tus propios visitantes"],
   ];
 
@@ -163,8 +160,8 @@ export function RealMarketingSection() {
             <X className="mt-0.5 h-4 w-4 shrink-0" style={{ color: C.mid }} />
             <span>
               {t(
-                "One detail most people never hit until they try: Google requires the domain of your ad's display URL to match the domain of its final URL. A profile lives on someone else's domain, so you cannot show it as your practice's address in the ad.",
-                "Un detalle con el que casi nadie se topa hasta que lo intenta: Google exige que el dominio de la URL visible del anuncio coincida con el dominio de la URL final. Un perfil vive en el dominio de alguien más, así que no puedes mostrarlo como la dirección de tu consultorio en el anuncio.",
+                "One detail most people never hit until they try. In a Google ad, the web address the reader sees has to be the same one the ad leads to. A directory profile lives at their address, not yours, so you cannot put it up as your practice's address in the ad.",
+                "Un detalle con el que casi nadie se topa hasta que lo intenta. En un anuncio de Google, la dirección web que se ve tiene que ser la misma a la que el anuncio lleva. Un perfil de directorio vive en la dirección de ellos, no en la tuya, así que no puedes ponerlo como la dirección de tu consultorio en el anuncio.",
               )}
             </span>
           </p>

@@ -2,13 +2,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Check, Minus, Plus, Stethoscope } from "lucide-react";
 import { AppointmentPanelDemo } from "@/components/medicos/AppointmentPanelDemo";
+import { PatientJourney } from "@/components/medicos/PatientJourney";
 import { RealMarketingSection } from "@/components/medicos/RealMarketingSection";
 import { WhyOwnSiteSection } from "@/components/medicos/WhyOwnSiteSection";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette } from "@/lib/clinical-theme";
+import { clinicalPalette, rampButton, rampRule } from "@/lib/clinical-theme";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD, AREAS_SERVED } from "@/lib/seo";
 import { MEDICOS_FAQ } from "@/lib/medicos-data";
 
@@ -148,7 +149,8 @@ function Page() {
               <Link
                 to="/recursos/diagnostico/$industria"
                 params={{ industria: "clinicas" }}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+                className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium text-white transition hover:opacity-90"
+                style={{ backgroundImage: "linear-gradient(120deg, #2A7488 0%, #12414F 100%)" }}
               >
                 {t("Diagnose your practice, 2 min", "Diagnostica tu consultorio, 2 min")}
                 <ArrowRight className="h-3.5 w-3.5" />
@@ -170,6 +172,7 @@ function Page() {
         </div>
       </section>
 
+      <PatientJourney />
       <TwoAuctions />
       <Contrast />
 
@@ -244,8 +247,8 @@ function TwoAuctions() {
             </p>
             <p className="mt-2.5 text-base leading-relaxed text-neutral-700 dark:text-neutral-200">
               {t(
-                "The directory's domain competes against yours. It usually wins, because a national directory carries the authority a single practice cannot. You are not competing there. You are watching.",
-                "El dominio del directorio compite contra el tuyo. Normalmente gana, porque un directorio nacional carga la autoridad que un consultorio solo no tiene. Ahí no estás compitiendo. Estás viendo.",
+                "The directory's website competes against yours. It usually wins, because a national directory carries weight with Google that a single practice cannot. You are not competing there. You are watching.",
+                "La página del directorio compite contra la tuya. Normalmente gana, porque un directorio nacional pesa ante Google lo que un consultorio solo no pesa. Ahí no estás compitiendo. Estás viendo.",
               )}
             </p>
           </div>
@@ -333,7 +336,7 @@ function Contrast() {
           style={{ borderColor: C.mid, backgroundColor: C.card }}
         >
           <p className="text-sm font-medium" style={{ color: C.deep }}>
-            {t("On your domain, they find you", "En tu dominio, te encuentran a ti")}
+            {t("On your own page, they find you", "En tu propia página, te encuentran a ti")}
           </p>
           <ul className="mt-4 space-y-2.5">
             {yours.map(([en, es]) => (

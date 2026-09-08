@@ -30,14 +30,14 @@ export const MEDICOS_FAQ = [
   {
     q: "I have no website, only profiles. Is that so bad?",
     qEs: "No tengo sitio, solo perfiles. ¿Tan malo es?",
-    a: "It is common and it is not a catastrophe, but it does cap you. Without a domain of your own there is nothing for Google to rank for your treatments, nowhere to run a campaign that you can measure, and no place to build the content and reviews that compound. The diagnostic on this page tells you specifically what is missing in your case.",
-    aEs: "Es común y no es una catástrofe, pero sí te pone un techo. Sin dominio propio no hay nada que Google pueda posicionar para tus tratamientos, no hay dónde correr una campaña que puedas medir, ni dónde acumular contenido y reseñas. El diagnóstico de esta página te dice específicamente qué te falta en tu caso.",
+    a: "It is common and it is not a catastrophe, but it does cap you. Without a page of your own there is nothing for Google to show for your treatments, nowhere to run a campaign that you can measure, and no place to build the content and reviews that compound. The diagnostic on this page tells you specifically what is missing in your case.",
+    aEs: "Es común y no es una catástrofe, pero sí te pone un techo. Sin página propia no hay nada que Google pueda mostrar para tus tratamientos, no hay dónde correr una campaña que puedas medir, ni dónde acumular contenido y reseñas. El diagnóstico de esta página te dice específicamente qué te falta en tu caso.",
   },
   {
     q: "Who owns the data and the accounts?",
     qEs: "¿De quién son los datos y las cuentas?",
-    a: "Yours: the domain, the site, the ad accounts, the analytics and the panel. What matters is that your practice has control, access and the ability to use that information lawfully, meeting your privacy and data protection obligations. Health data is sensitive personal data under Mexican law, and your privacy notice has to reflect the law in force since March 2025.",
-    aEs: "Tuyos: el dominio, el sitio, las cuentas de anuncios, la analítica y el panel. Lo importante es que tu consultorio tenga control, acceso y capacidad de usar esa información de forma lícita, cumpliendo tus obligaciones de privacidad y protección de datos. Los datos de salud son datos personales sensibles conforme a la ley mexicana, y tu aviso de privacidad tiene que reflejar la ley vigente desde marzo de 2025.",
+    a: "Yours: the web address, the site, the ad accounts, the analytics and the panel. What matters is that your practice has control, access and the ability to use that information lawfully, meeting your privacy and data protection obligations. Health data is sensitive personal data under Mexican law, and your privacy notice has to reflect the law in force since March 2025.",
+    aEs: "Tuyos: la dirección web, el sitio, las cuentas de anuncios, la analítica y el panel. Lo importante es que tu consultorio tenga control, acceso y capacidad de usar esa información de forma lícita, cumpliendo tus obligaciones de privacidad y protección de datos. Los datos de salud son datos personales sensibles conforme a la ley mexicana, y tu aviso de privacidad tiene que reflejar la ley vigente desde marzo de 2025.",
   },
   {
     q: "Can a bot really handle my patients?",

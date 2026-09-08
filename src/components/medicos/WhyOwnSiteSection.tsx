@@ -32,9 +32,9 @@ const REASONS: Reason[] = [
     icon: <TrendingUp className="h-4 w-4" />,
     title: "It accumulates. A subscription does not.",
     titleEs: "Se acumula. Una suscripción no.",
-    body: "A year of paying a directory buys a year of visibility, and it stops the month you stop. A year of publishing on your own domain leaves articles, treatment pages and rankings that keep working whether or not you paid this month.",
+    body: "A year of paying a directory buys a year of visibility, and it stops the month you stop. A year of publishing on your own page leaves articles, treatment pages and rankings that keep working whether or not you paid this month.",
     bodyEs:
-      "Un año pagando un directorio compra un año de visibilidad, y se detiene el mes que dejas de pagar. Un año publicando en tu dominio deja artículos, páginas de tratamiento y posiciones que siguen trabajando hayas pagado este mes o no.",
+      "Un año pagando un directorio compra un año de visibilidad, y se detiene el mes que dejas de pagar. Un año publicando en tu propia página deja artículos, páginas de tratamiento y posiciones que siguen trabajando hayas pagado este mes o no.",
   },
   {
     icon: <Layers className="h-4 w-4" />,

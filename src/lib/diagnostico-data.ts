@@ -90,11 +90,11 @@ export const CLINICAS: DiagnosticoVertical = {
       id: "sitio",
       topic: "Sitio propio",
       topicEn: "Own website",
-      question: "¿Tienes página web propia, con tu propio dominio?",
-      questionEn: "Do you have your own website, on your own domain?",
+      question: "¿Tienes tu propia página web, con tu propia dirección de internet?",
+      questionEn: "Do you have your own website, at your own web address?",
       weight: 10,
       options: [
-        { label: "Sí, con dominio propio", labelEn: "Yes, on my own domain", value: 1 },
+        { label: "Sí, es mía", labelEn: "Yes, it is mine", value: 1 },
         {
           label: "Solo perfiles (Doctoralia, redes, Google)",
           labelEn: "Only profiles (directories, social, Google)",
@@ -105,9 +105,9 @@ export const CLINICAS: DiagnosticoVertical = {
       gap: {
         title: "No tienes un sitio propio",
         titleEn: "You have no site of your own",
-        why: "Todo lo demás de esta lista se construye encima de un dominio tuyo. Sin eso, cada paciente que ganas se lo acreditas a la plataforma donde te encontró.",
+        why: "Todo lo demás de esta lista se construye encima de una página que sea tuya. Sin eso, cada paciente que ganas se lo acreditas a la plataforma donde te encontró.",
         whyEn:
-          "Everything else on this list is built on top of a domain you own. Without one, every patient you win is credited to the platform that found them.",
+          "Everything else on this list is built on top of a page you own. Without one, every patient you win is credited to the platform that found them.",
         href: "/blog/sitio-web-para-clinicas",
       },
     },

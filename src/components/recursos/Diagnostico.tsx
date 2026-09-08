@@ -3,7 +3,12 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Check, Gift, RotateCcw, Stethoscope } from "lucide-react";
 import { useT, useLang } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette, type ClinicalPalette } from "@/lib/clinical-theme";
+import {
+  clinicalPalette,
+  rampButton,
+  rampProgress,
+  type ClinicalPalette,
+} from "@/lib/clinical-theme";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { bandaFor, totalWeight, type DiagnosticoVertical } from "@/lib/diagnostico-data";
 
@@ -110,7 +115,7 @@ export function Diagnostico({ vertical }: { vertical: DiagnosticoVertical }) {
                 className="h-full rounded-full transition-all duration-500"
                 style={{
                   width: `${progress}%`,
-                  background: `linear-gradient(90deg, ${C.soft}, ${C.mid})`,
+                  background: rampProgress(C),
                 }}
               />
             </div>
@@ -235,8 +240,8 @@ function Resultado({
               >
                 <div className="flex items-start gap-3">
                   <span
-                    className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-medium "
-                    style={{ backgroundColor: C.deep, color: C.onDeep }}
+                    className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-medium"
+                    style={{ backgroundImage: rampButton(C), color: C.onDeep }}
                   >
                     {i + 1}
                   </span>
@@ -337,7 +342,7 @@ function Resultado({
         <Link
           to="/contacto"
           className="inline-flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium transition hover:opacity-90"
-          style={{ backgroundColor: C.deep, color: C.onDeep }}
+          style={{ backgroundImage: rampButton(C), color: C.onDeep }}
         >
           {t("Talk through the plan", "Revisar el plan en una llamada")}
           <ArrowRight className="h-3.5 w-3.5" />
