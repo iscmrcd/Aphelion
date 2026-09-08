@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Check } from "lucide-react";
 import { useT } from "@/lib/i18n";
+import { submitLead } from "@/lib/notify-server";
 import { buildHead, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/contacto")({
@@ -37,6 +38,9 @@ export const Route = createFileRoute("/contacto")({
 function ContactoPage() {
   const t = useT();
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const [waHref, setWaHref] = useState("");
   const [service, setService] = useState<string>("");
   const [budget, setBudget] = useState<string>("");
 
@@ -59,12 +63,25 @@ function ContactoPage() {
     t("Monthly / recurring contract", "Mensualidad / contrato recurrente"),
   ];
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  /**
+   * The old version built a WhatsApp link, opened it in a new tab and marked
+   * itself sent regardless of what happened next. A blocked popup, a desktop
+   * without WhatsApp Web, or second thoughts before pressing send all lost the
+   * lead silently. Now the submission goes to the server first and the success
+   * state depends on what the server actually reported. WhatsApp stays, but as
+   * a second, optional route the visitor takes on purpose.
+   */
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (sending) return;
+    setSending(true);
+    setFailed(false);
+
     const data = new FormData(e.currentTarget);
+    const name = String(data.get("name") || "").trim();
     const lines = t(
       [
-        `Hi, I'm ${data.get("name")}.`,
+        `Hi, I'm ${name}.`,
         `Company: ${data.get("company") || "—"}`,
         `Email: ${data.get("email")}`,
         `Phone: ${data.get("phone") || "—"}`,
@@ -74,7 +91,7 @@ function ContactoPage() {
         `${data.get("message")}`,
       ],
       [
-        `Hola, soy ${data.get("name")}.`,
+        `Hola, soy ${name}.`,
         `Empresa: ${data.get("company") || "—"}`,
         `Email: ${data.get("email")}`,
         `Teléfono: ${data.get("phone") || "—"}`,
@@ -84,9 +101,29 @@ function ContactoPage() {
         `${data.get("message")}`,
       ],
     ).join("\n");
-    const url = `https://wa.me/526461293352?text=${encodeURIComponent(lines)}`;
-    window.open(url, "_blank");
-    setSent(true);
+    setWaHref(`https://wa.me/526461293352?text=${encodeURIComponent(lines)}`);
+
+    try {
+      const res = await submitLead({
+        data: {
+          source: "contact-form",
+          name,
+          email: String(data.get("email") || ""),
+          phone: String(data.get("phone") || ""),
+          company: String(data.get("company") || ""),
+          service: service || "",
+          budget: budget || "",
+          message: String(data.get("message") || ""),
+          path: typeof window !== "undefined" ? window.location.pathname : "",
+        },
+      });
+      if (res?.ok) setSent(true);
+      else setFailed(true);
+    } catch {
+      setFailed(true);
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -135,14 +172,24 @@ function ContactoPage() {
                   <Check className="h-5 w-5" />
                 </div>
                 <h2 className="text-2xl font-medium tracking-[-0.02em]">
-                  {t("Message ready to send", "Mensaje listo para enviar")}
+                  {t("We have your message", "Ya tenemos tu mensaje")}
                 </h2>
                 <p className="mt-3 max-w-sm text-sm text-neutral-500">
                   {t(
-                    "We opened WhatsApp with your message pre-filled. You can also write to us at hola@aphelion.mx.",
-                    "Abrimos WhatsApp con tu mensaje precargado. Si prefieres, también puedes escribirnos a hola@aphelion.mx.",
+                    "It reached us and we reply within 24 hours. If you would rather talk now, WhatsApp is below.",
+                    "Nos llegó y respondemos en menos de 24 horas. Si prefieres hablar ahora, abajo está el WhatsApp.",
                   )}
                 </p>
+                {waHref && (
+                  <a
+                    href={waHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-flex items-center justify-center rounded-full border border-neutral-300 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
+                  >
+                    {t("Continue on WhatsApp", "Seguir por WhatsApp")}
+                  </a>
+                )}
                 <button
                   onClick={() => setSent(false)}
                   className="mt-6 text-xs font-medium text-neutral-500 underline-offset-4 hover:text-neutral-950 hover:underline"
@@ -214,10 +261,42 @@ function ContactoPage() {
 
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-medium text-white transition hover:bg-neutral-800 sm:w-auto"
+                  disabled={sending}
+                  className="inline-flex w-full items-center justify-center rounded-full bg-neutral-950 px-6 py-3.5 text-sm font-medium text-white transition hover:bg-neutral-800 disabled:opacity-60 sm:w-auto"
                 >
-                  {t("Send message", "Enviar mensaje")}
+                  {sending ? t("Sending…", "Enviando…") : t("Send message", "Enviar mensaje")}
                 </button>
+
+                {/* If the server could not take it, say so and give a route
+                    that does not depend on us, instead of a false success. */}
+                {failed && (
+                  <div className="rounded-2xl border border-neutral-300 bg-white p-4 text-sm">
+                    <p className="text-neutral-800">
+                      {t(
+                        "We could not register your message. Nothing was lost on your side, but please use one of these so it reaches us:",
+                        "No pudimos registrar tu mensaje. No perdiste nada de tu lado, pero usa una de estas para que sí nos llegue:",
+                      )}
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {waHref && (
+                        <a
+                          href={waHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center rounded-full bg-neutral-950 px-4 py-2 text-xs font-medium text-white"
+                        >
+                          WhatsApp
+                        </a>
+                      )}
+                      <a
+                        href="mailto:hola@aphelion.mx"
+                        className="inline-flex items-center rounded-full border border-neutral-300 px-4 py-2 text-xs font-medium text-neutral-950"
+                      >
+                        hola@aphelion.mx
+                      </a>
+                    </div>
+                  </div>
+                )}
                 <p className="text-xs text-neutral-400">
                   {t(
                     "By submitting you agree to be contacted about your request. We don't share your information.",
