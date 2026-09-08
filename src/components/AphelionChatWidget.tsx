@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { MessageSquare, Send, X } from "lucide-react";
+import { Send, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { chatWithAphelion, type ChatTurn } from "@/lib/aphelion-agent-server";
+import { AphelionOrb } from "./AphelionOrb";
 
 /**
  * Aphelion's own assistant, replacing the button that used to jump straight to
@@ -108,7 +109,7 @@ export function AphelionChatWidget() {
           willChange: "transform",
         }}
       >
-        {open ? <X className="h-5 w-5" /> : <MessageSquare className="h-5 w-5" />}
+        {open ? <X className="h-5 w-5" /> : <AphelionOrb size={26} busy={pending} />}
       </button>
 
       {open && (
@@ -122,9 +123,7 @@ export function AphelionChatWidget() {
           }}
         >
           <div className="flex items-center gap-3 border-b border-neutral-200 px-4 py-3 dark:border-white/10">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-950 text-xs font-medium text-white dark:bg-white dark:text-neutral-950">
-              A
-            </span>
+            <AphelionOrb size={32} busy={pending} />
             <div className="min-w-0">
               <p className="text-sm font-medium text-neutral-950 dark:text-neutral-100">Aphelion</p>
               <p className="text-[11px] text-neutral-500 dark:text-neutral-400">

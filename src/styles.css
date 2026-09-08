@@ -333,3 +333,102 @@
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee { animation: none; }
 }
+
+
+/* ---------------------------------------------------------------------------
+   Aphelion assistant orb.
+
+   Built in CSS rather than shipped as a video or GIF. At the sizes this is
+   used (32px in the chat header, 44px on the launcher) a 720p clip would be
+   hundreds of times the bytes of the pixels it paints, would need an autoplay
+   video element running on every page, and could not stay sharp on a retina
+   screen. This is about 1 KB, is vector-crisp at any size, and can react to
+   state — it speeds up while the assistant is thinking.
+
+   Three colour fields orbit the centre at coprime periods (7s, 11s, 13s) so
+   the loop never visibly repeats. They are blurred and screen-blended over a
+   dark base, which is what produces the iridescent, liquid look rather than
+   three discs sliding past each other.
+--------------------------------------------------------------------------- */
+.aph-orb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+  isolation: isolate;
+  background: radial-gradient(circle at 50% 42%, #1a2142 0%, #0a0d1c 62%, #05070f 100%);
+}
+
+.aph-orb-blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 78%;
+  height: 78%;
+  margin: -39% 0 0 -39%;
+  border-radius: 9999px;
+  mix-blend-mode: screen;
+  filter: blur(calc(var(--orb-size, 32px) * 0.16));
+  will-change: transform;
+}
+
+.aph-orb-a {
+  background: radial-gradient(circle, #33dfe8 0%, rgba(51, 223, 232, 0) 70%);
+  animation: aph-orbit 7s linear infinite;
+  --orb-r: 16%;
+}
+.aph-orb-b {
+  background: radial-gradient(circle, #6f4cf2 0%, rgba(111, 76, 242, 0) 70%);
+  animation: aph-orbit 11s linear infinite reverse;
+  --orb-r: 21%;
+}
+.aph-orb-c {
+  background: radial-gradient(circle, #f25cae 0%, rgba(242, 92, 174, 0) 72%);
+  animation: aph-orbit 13s linear infinite;
+  --orb-r: 13%;
+  opacity: 0.85;
+}
+
+@keyframes aph-orbit {
+  from { transform: rotate(0deg) translateX(var(--orb-r)) rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) translateX(var(--orb-r)) rotate(-180deg) scale(1.18); }
+  to   { transform: rotate(360deg) translateX(var(--orb-r)) rotate(-360deg) scale(1); }
+}
+
+/* Glass: a specular highlight up top and a rim light, both static. Motion in
+   the highlight is what makes a CSS orb look like a spinning ball instead of
+   a lit sphere, so it stays put. */
+.aph-orb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background:
+    radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 42%),
+    radial-gradient(circle at 50% 118%, rgba(120, 200, 255, 0.28) 0%, rgba(255, 255, 255, 0) 55%);
+  box-shadow:
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.22),
+    inset 0 calc(var(--orb-size, 32px) * -0.06) calc(var(--orb-size, 32px) * 0.12) rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+}
+
+/* Thinking: the whole thing quickens and brightens. Same trick Siri uses to
+   say "I heard you" without a spinner. */
+.aph-orb-busy .aph-orb-a { animation-duration: 2.1s; }
+.aph-orb-busy .aph-orb-b { animation-duration: 3.1s; }
+.aph-orb-busy .aph-orb-c { animation-duration: 3.9s; }
+.aph-orb-busy { animation: aph-orb-breathe 1.6s ease-in-out infinite; }
+
+@keyframes aph-orb-breathe {
+  0%, 100% { filter: brightness(1); }
+  50%      { filter: brightness(1.35); }
+}
+
+/* Still, and still good-looking: the blobs park in a spread-out arrangement
+   rather than stacking on the centre, so the orb keeps its colour. */
+@media (prefers-reduced-motion: reduce) {
+  .aph-orb-blob { animation: none !important; }
+  .aph-orb-busy { animation: none !important; }
+  .aph-orb-a { transform: translate(-6%, -14%) scale(1.05); }
+  .aph-orb-b { transform: translate(14%, 10%) scale(1.1); }
+  .aph-orb-c { transform: translate(-12%, 16%); }
+}
