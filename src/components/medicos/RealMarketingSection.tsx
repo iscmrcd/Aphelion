@@ -3,6 +3,7 @@ import { AlertTriangle, ArrowRight, Check, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
 import { clinicalPalette } from "@/lib/clinical-theme";
+import { GoogleBusinessIcon } from "./GoogleBusinessIcon";
 
 /**
  * "Are you actually doing marketing?" section.
@@ -45,6 +46,25 @@ export function RealMarketingSection() {
     ["Build audiences from your own visitors", "Construir públicos con tus propios visitantes"],
   ];
 
+  const directoryBlocks: [string, string][] = [
+    [
+      "Install the Meta pixel, so Meta never learns which ad brought a real patient.",
+      "Instalar el pixel de Meta, así que Meta nunca aprende qué anuncio trajo un paciente real.",
+    ],
+    [
+      "Install GA4, so nobody can see what people did before they wrote or left.",
+      "Instalar GA4, así que nadie ve qué hizo la gente antes de escribirte o irse.",
+    ],
+    [
+      "Get you indexed on your own terms: the page that Google ranks is theirs, with your competition listed underneath.",
+      "Posicionarte en Google en tus términos: la página que Google indexa es de ellos, con tu competencia listada abajo.",
+    ],
+    [
+      "Show your own web address in a Google ad, because the address the ad displays has to be the one it leads to.",
+      "Mostrar tu propia dirección web en un anuncio de Google, porque la dirección que se ve tiene que ser a la que el anuncio lleva.",
+    ],
+  ];
+
   const withoutSite: [string, string][] = [
     ["Run lead ads and click-to-WhatsApp", "Correr anuncios de leads y clic a WhatsApp"],
     ["Pay for clicks and reach", "Pagar por clics y alcance"],
@@ -72,36 +92,32 @@ export function RealMarketingSection() {
 
         {/* logos */}
         <div
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-9 gap-y-6 rounded-2xl border px-6 py-7"
+          className="mt-8 grid grid-cols-3 items-start gap-x-4 gap-y-6 rounded-2xl border px-4 py-6 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-9 sm:px-6 sm:py-7"
           style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
         >
           {BRANDS.map((b) => (
-            <div key={b.label} className="flex flex-col items-center gap-2">
+            <div key={b.label} className="flex min-w-0 flex-col items-center gap-2">
               {b.inline ? (
-                <span
-                  className="flex h-7 w-7 items-center justify-center rounded-md text-[10px] font-semibold"
-                  style={{ backgroundColor: `${C.soft}40`, color: C.deep }}
-                  aria-hidden="true"
-                >
-                  GBP
-                </span>
+                <GoogleBusinessIcon className="h-7 w-7 shrink-0" />
               ) : (
                 <img
                   src={`https://cdn.simpleicons.org/${b.slug}`}
                   alt={`${b.label} logo`}
                   loading="lazy"
-                  className="h-7 w-7"
+                  className="h-7 w-7 shrink-0"
                 />
               )}
-              <span className="text-[11px] text-neutral-600 dark:text-neutral-400">{b.label}</span>
+              <span className="text-center text-[11px] leading-tight text-neutral-600 dark:text-neutral-400">
+                {b.label}
+              </span>
             </div>
           ))}
         </div>
 
         {/* what you can and cannot do */}
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="mt-4 grid gap-4 sm:mt-6 md:grid-cols-2">
           <div
-            className="rounded-2xl border p-6"
+            className="rounded-2xl border p-5 sm:p-6"
             style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
           >
             <p className="text-sm font-medium" style={{ color: C.deep }}>
@@ -131,7 +147,7 @@ export function RealMarketingSection() {
           </div>
 
           <div
-            className="rounded-2xl border p-6"
+            className="rounded-2xl border p-5 sm:p-6"
             style={{ borderColor: C.mid, backgroundColor: `${C.soft}1f` }}
           >
             <p className="text-sm font-medium" style={{ color: C.deep }}>
@@ -151,19 +167,33 @@ export function RealMarketingSection() {
           </div>
         </div>
 
-        {/* the policy detail */}
+        {/* what a directory profile blocks */}
         <div
-          className="mt-4 rounded-2xl border p-6"
+          className="mt-4 rounded-2xl border p-5 sm:p-6"
           style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
         >
-          <p className="flex items-start gap-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-            <X className="mt-0.5 h-4 w-4 shrink-0" style={{ color: C.mid }} />
-            <span>
-              {t(
-                "One detail most people never hit until they try. In a Google ad, the web address the reader sees has to be the same one the ad leads to. A directory profile lives at their address, not yours, so you cannot put it up as your practice's address in the ad.",
-                "Un detalle con el que casi nadie se topa hasta que lo intenta. En un anuncio de Google, la dirección web que se ve tiene que ser la misma a la que el anuncio lleva. Un perfil de directorio vive en la dirección de ellos, no en la tuya, así que no puedes ponerlo como la dirección de tu consultorio en el anuncio.",
-              )}
-            </span>
+          <p className="text-sm font-medium" style={{ color: C.deep }}>
+            {t(
+              "What a profile on Doctoralia or any directory does not let anyone do",
+              "Lo que un perfil en Doctoralia o cualquier directorio no deja hacer a nadie",
+            )}
+          </p>
+          <ul className="mt-4 space-y-3">
+            {directoryBlocks.map(([en, es]) => (
+              <li
+                key={en}
+                className="flex items-start gap-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300"
+              >
+                <X className="mt-0.5 h-4 w-4 shrink-0" style={{ color: C.mid }} />
+                <span>{t(en, es)}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm leading-relaxed" style={{ color: C.mid }}>
+            {t(
+              "None of this is a limit of ours. It is the page being theirs. On your own site we install all of it the same week.",
+              "Nada de esto es un límite nuestro. Es que la página es de ellos. En un sitio tuyo instalamos todo eso la misma semana.",
+            )}
           </p>
         </div>
 

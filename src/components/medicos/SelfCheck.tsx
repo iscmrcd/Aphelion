@@ -152,22 +152,24 @@ export function SelfCheck() {
           {CHECKS.map((c, i) => (
             <div
               key={c.step}
-              className="rounded-2xl border p-5 sm:p-6"
+              className="rounded-2xl border p-4 sm:p-6"
               style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <span
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-medium"
+                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-medium sm:h-9 sm:w-9"
                   style={{ backgroundImage: rampButton(C), color: C.onDeep }}
                 >
                   {i + 1}
                 </span>
                 <div className="min-w-0 flex-1">
                   <p
-                    className="flex items-center gap-2 text-base font-medium"
+                    className="flex items-start gap-2 text-[15px] leading-snug font-medium text-balance sm:text-base"
                     style={{ color: C.deep }}
                   >
-                    <span style={{ color: C.mid }}>{c.icon}</span>
+                    <span className="mt-0.5 shrink-0" style={{ color: C.mid }}>
+                      {c.icon}
+                    </span>
                     {t(c.step, c.stepEs)}
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
@@ -184,7 +186,7 @@ export function SelfCheck() {
                     {c.outcomes.map((o) => (
                       <li
                         key={o.label}
-                        className="rounded-xl px-3.5 py-3"
+                        className="rounded-xl px-3 py-2.5 sm:px-3.5 sm:py-3"
                         style={{
                           backgroundColor: o.good ? `${C.soft}2e` : `${C.soft}14`,
                           border: o.good ? `1px solid ${C.mid}` : "1px solid transparent",
@@ -206,7 +208,7 @@ export function SelfCheck() {
         </div>
 
         <div
-          className="mt-8 rounded-2xl border p-6"
+          className="mt-8 rounded-2xl border p-5 sm:p-6"
           style={{ borderColor: C.mid, backgroundColor: `${C.soft}1f` }}
         >
           <p className="text-base leading-relaxed" style={{ color: C.deep }}>
