@@ -11,7 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { AphelionChatWidget } from "@/components/AphelionChatWidget";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { LangProvider } from "@/lib/i18n";
@@ -163,7 +163,7 @@ function RootComponent() {
             </div>
             <SiteFooter />
           </div>
-          <WhatsAppFloat />
+          <AphelionChatWidget />
         </LangProvider>
       </ThemeProvider>
     </QueryClientProvider>

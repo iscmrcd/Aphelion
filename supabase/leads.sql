@@ -20,6 +20,8 @@ create table if not exists public.leads (
   message     text,
   transcript  text,
   path        text,
+  -- Set by the chat widget so a session can only ever produce one lead row.
+  session_id  text,
   ip_hash     text        not null default 'unknown',
   -- Set from the future panel once someone has actually followed up.
   status      text        not null default 'new' check (status in ('new','contacted','qualified','won','lost'))
@@ -28,5 +30,24 @@ create table if not exists public.leads (
 create index if not exists leads_created_at_idx on public.leads (created_at desc);
 create index if not exists leads_status_idx     on public.leads (status);
 create index if not exists leads_ip_hash_idx    on public.leads (ip_hash, created_at desc);
+create unique index if not exists leads_session_id_uidx on public.leads (session_id) where session_id is not null;
 
 alter table public.leads enable row level security;
+
+-- Turn log for Aphelion's own site assistant. Separate from
+-- demo_conversations so the demo's tight limits and this widget's looser ones
+-- never read each other's counters.
+create table if not exists public.agent_messages (
+  id                bigint generated always as identity primary key,
+  created_at        timestamptz not null default now(),
+  session_id        text        not null,
+  ip_hash           text        not null default 'unknown',
+  user_message      text        not null,
+  assistant_message text        not null,
+  message_index     integer     not null default 0
+);
+
+create index if not exists agent_messages_session_idx on public.agent_messages (session_id);
+create index if not exists agent_messages_ip_idx      on public.agent_messages (ip_hash, created_at desc);
+
+alter table public.agent_messages enable row level security;
