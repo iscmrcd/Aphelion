@@ -186,28 +186,26 @@ export function SelfCheck() {
 
                 {i === 0 && <PatientSearchForm C={C} />}
 
-                <p
-                  className="mt-4 text-xs font-medium tracking-[0.1em] uppercase"
-                  style={{ color: C.mid }}
-                >
-                  {t("What you might see", "Qué puedes encontrar")}
-                </p>
-                <ul className="mt-2.5 space-y-2.5">
+                {/*
+                  These outcomes used to be three stacked cards per check,
+                  which on a phone made this the longest section on the page.
+                  Same information, one line each: the result in the accent
+                  colour, what it means right after it.
+                */}
+                <ul className="mt-3.5 space-y-2">
                   {c.outcomes.map((o) => (
-                    <li
-                      key={o.label}
-                      className="rounded-xl px-3 py-2.5 sm:px-3.5 sm:py-3"
-                      style={{
-                        backgroundColor: o.good ? `${C.soft}2e` : `${C.soft}14`,
-                        border: o.good ? `1px solid ${C.mid}` : "1px solid transparent",
-                      }}
-                    >
-                      <p className="text-sm font-medium" style={{ color: C.deep }}>
-                        {t(o.label, o.labelEs)}
-                      </p>
-                      <p className="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+                    <li key={o.label} className="flex gap-2.5 text-sm leading-relaxed">
+                      <span
+                        aria-hidden
+                        className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full"
+                        style={{ backgroundColor: o.good ? C.mid : `${C.soft}99` }}
+                      />
+                      <span className="text-neutral-600 dark:text-neutral-300">
+                        <span className="font-medium" style={{ color: o.good ? C.mid : C.deep }}>
+                          {t(o.label, o.labelEs)}.
+                        </span>{" "}
                         {t(o.means, o.meansEs)}
-                      </p>
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -279,4 +277,3 @@ function PatientSearchForm({ C }: { C: ReturnType<typeof clinicalPalette> }) {
     </form>
   );
 }
-

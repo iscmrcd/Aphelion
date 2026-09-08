@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, Check, Minus, Plus } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 import { AppointmentPanelDemo } from "@/components/medicos/AppointmentPanelDemo";
 import { MedicosHero } from "@/components/medicos/MedicosHero";
 import { PatientJourney } from "@/components/medicos/PatientJourney";
@@ -72,7 +72,6 @@ function Page() {
 
       <PatientJourney />
       <SelfCheck />
-      <Contrast />
 
       {/* DEMO */}
       <section className="px-5 py-16 sm:py-20">
@@ -116,86 +115,6 @@ function Page() {
 
       <CTAFooter />
     </main>
-  );
-}
-
-function Contrast() {
-  const t = useT();
-  const { theme } = useTheme();
-  const C = clinicalPalette(theme);
-  const others = [
-    "Dr. García ★ 4.9",
-    "Dr. López ★ 5.0",
-    "Clínica Norte ★ 4.8",
-    "Dr. Ramírez ★ 4.9",
-  ];
-  const yours = [
-    ["Your specialists", "Tus especialistas"],
-    ["Your treatments, one page each", "Tus tratamientos, una página cada uno"],
-    ["Your cases and credentials", "Tus casos y credenciales"],
-    ["Your booking and your data", "Tu agenda y tus datos"],
-  ];
-  return (
-    <section className="px-5 py-16 sm:py-20">
-      <div className="mx-auto grid max-w-4xl gap-4 md:grid-cols-2">
-        <div
-          className="rounded-2xl border p-6"
-          style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
-        >
-          <p className="text-sm font-medium" style={{ color: C.deep }}>
-            {t(
-              "On a directory, they find you and ten more",
-              "En un directorio, te encuentran a ti y a diez más",
-            )}
-          </p>
-          <div
-            className="mt-4 rounded-xl p-3"
-            style={{ backgroundColor: `${C.soft}26`, border: `1px solid ${C.mid}` }}
-          >
-            <p className="text-sm font-medium" style={{ color: C.deep }}>
-              {t("Your profile ★ 4.9", "Tu perfil ★ 4.9")}
-            </p>
-          </div>
-          <p className="mt-3 text-[11px] tracking-wide text-neutral-500 uppercase dark:text-neutral-400">
-            {t("You may also like", "También te puede interesar")}
-          </p>
-          <ul className="mt-2 space-y-1.5">
-            {others.map((o) => (
-              <li
-                key={o}
-                className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-neutral-600 dark:text-neutral-300"
-                style={{ backgroundColor: `${C.soft}14` }}
-              >
-                <Minus className="h-3 w-3 shrink-0" style={{ color: C.soft }} />
-                {o}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div
-          className="rounded-2xl border p-6"
-          style={{ borderColor: C.mid, backgroundColor: C.card }}
-        >
-          <p className="text-sm font-medium" style={{ color: C.deep }}>
-            {t("On your own page, they find you", "En tu propia página, te encuentran a ti")}
-          </p>
-          <ul className="mt-4 space-y-2.5">
-            {yours.map(([en, es]) => (
-              <li
-                key={en}
-                className="flex items-start gap-2.5 text-sm text-neutral-700 dark:text-neutral-200"
-              >
-                <Check className="mt-0.5 h-4 w-4 shrink-0" style={{ color: C.mid }} />
-                {t(en, es)}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
-            {t("No competitors on the same screen.", "Sin competencia en la misma pantalla.")}
-          </p>
-        </div>
-      </div>
-    </section>
   );
 }
 
