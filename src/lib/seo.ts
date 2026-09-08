@@ -154,8 +154,22 @@ export const ORGANIZATION_JSONLD = {
   ],
 };
 
-/** Search-param validator shared by every route so ?lang=es is typed. */
-export function validateLangSearch(search: Record<string, unknown>): { lang?: Lang } {
+/**
+ * Search-param validator shared by every route so ?lang=es is typed.
+ * `servicio` and `ref` ride along so a service page or the diagnostic can hand
+ * the contact form the context the visitor arrived with.
+ */
+export function validateLangSearch(search: Record<string, unknown>): {
+  lang?: Lang;
+  servicio?: string;
+  ref?: string;
+} {
+  const out: { lang?: Lang; servicio?: string; ref?: string } = {};
   const raw = search.lang;
-  return raw === "es" || raw === "en" ? { lang: raw } : {};
+  if (raw === "es" || raw === "en") out.lang = raw;
+  if (typeof search.servicio === "string" && search.servicio)
+    out.servicio = search.servicio.slice(0, 40);
+  if (typeof search.ref === "string" && search.ref) out.ref = search.ref.slice(0, 40);
+  return out;
 }
+
