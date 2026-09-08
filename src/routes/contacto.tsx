@@ -156,7 +156,13 @@ function ContactoPage() {
           service: service || "",
           budget: budget || "",
           message: String(data.get("message") || ""),
-          path: typeof window !== "undefined" ? window.location.pathname : "",
+          // Includes the query string so the notification email shows which
+          // service page or diagnostic sent the visitor here.
+          path:
+            typeof window !== "undefined"
+              ? window.location.pathname + window.location.search
+              : "",
+
         },
       });
       if (res?.ok) setSent(true);
