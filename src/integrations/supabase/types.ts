@@ -14,6 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      agent_messages: {
+        Row: {
+          assistant_message: string
+          created_at: string
+          id: number
+          ip_hash: string
+          message_index: number
+          session_id: string
+          user_message: string
+        }
+        Insert: {
+          assistant_message: string
+          created_at?: string
+          id?: never
+          ip_hash?: string
+          message_index?: number
+          session_id: string
+          user_message: string
+        }
+        Update: {
+          assistant_message?: string
+          created_at?: string
+          id?: never
+          ip_hash?: string
+          message_index?: number
+          session_id?: string
+          user_message?: string
+        }
+        Relationships: []
+      }
       demo_conversations: {
         Row: {
           agent_type: string
@@ -44,6 +74,87 @@ export type Database = {
           message_index?: number
           session_id?: string
           user_message?: string
+        }
+        Relationships: []
+      }
+      demo_sms: {
+        Row: {
+          created_at: string
+          id: number
+          ip_hash: string
+          phone_e164: string
+          session_id: string
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          id?: never
+          ip_hash?: string
+          phone_e164: string
+          session_id: string
+          status: string
+        }
+        Update: {
+          created_at?: string
+          id?: never
+          ip_hash?: string
+          phone_e164?: string
+          session_id?: string
+          status?: string
+        }
+        Relationships: []
+      }
+      leads: {
+        Row: {
+          budget: string | null
+          company: string | null
+          created_at: string
+          email: string | null
+          id: number
+          ip_hash: string
+          message: string | null
+          name: string
+          path: string | null
+          phone: string | null
+          service: string | null
+          session_id: string | null
+          source: string
+          status: string
+          transcript: string | null
+        }
+        Insert: {
+          budget?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string | null
+          id?: never
+          ip_hash?: string
+          message?: string | null
+          name: string
+          path?: string | null
+          phone?: string | null
+          service?: string | null
+          session_id?: string | null
+          source: string
+          status?: string
+          transcript?: string | null
+        }
+        Update: {
+          budget?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string | null
+          id?: never
+          ip_hash?: string
+          message?: string | null
+          name?: string
+          path?: string | null
+          phone?: string | null
+          service?: string | null
+          session_id?: string | null
+          source?: string
+          status?: string
+          transcript?: string | null
         }
         Relationships: []
       }
