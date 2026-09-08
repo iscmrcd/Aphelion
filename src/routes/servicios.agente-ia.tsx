@@ -110,7 +110,7 @@ function AgenteIAPage() {
               </a>
             </GradientBorderFrame>
             <Link
-              to="/contacto"
+              to="/contacto" search={{ servicio: "agente-ia" }}
               className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"
             >
               {t("Request a quote", "Solicitar cotización")}
@@ -491,7 +491,7 @@ function QuoteCard({
       <p className="mt-4 text-2xl font-medium tracking-[-0.02em] text-neutral-950">{label}</p>
       <p className="mt-2.5 flex-1 text-sm leading-relaxed text-neutral-500">{note}</p>
       <Link
-        to="/contacto"
+        to="/contacto" search={{ servicio: "agente-ia" }}
         style={accent ? AI_ON_GRADIENT_SHADOW : undefined}
         className={`mt-7 inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
           accent

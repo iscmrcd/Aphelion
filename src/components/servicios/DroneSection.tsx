@@ -218,7 +218,7 @@ function PackageCard({
               {t("Book by WhatsApp", "Cotizar por WhatsApp")}
             </a>
             <a
-              href="/contacto"
+              href="/contacto?servicio=dron"
               className="inline-flex items-center justify-center rounded-full border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
             >
               {t("Talk to strategy", "Hablar con estrategia")}
