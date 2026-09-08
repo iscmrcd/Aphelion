@@ -3,6 +3,7 @@ import { AlertTriangle, ArrowRight, Check, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
 import { clinicalPalette } from "@/lib/clinical-theme";
+import { GoogleBusinessIcon } from "./GoogleBusinessIcon";
 
 /**
  * "Are you actually doing marketing?" section.
