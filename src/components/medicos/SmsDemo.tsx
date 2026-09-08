@@ -97,10 +97,15 @@ export function SmsDemo() {
         {t("Do not take our word for it", "No nos creas, compruébalo")}
       </p>
       <p className="mt-1.5 text-sm text-neutral-600 dark:text-neutral-300">
-        {t(
-          "Enter your own number and we will send you the same reminder a patient would get. One per visit, and only to your own phone.",
-          "Escribe tu propio número y te mandamos el mismo recordatorio que recibiría un paciente. Uno por visita, y solo a tu propio teléfono.",
-        )}
+        {LIVE_SMS_ENABLED
+          ? t(
+              "Enter your own number and we will send you the same reminder a patient would get. One per visit, and only to your own phone.",
+              "Escribe tu propio número y te mandamos el mismo recordatorio que recibiría un paciente. Uno por visita, y solo a tu propio teléfono.",
+            )
+          : t(
+              "This is the exact reminder a patient receives on their phone the moment they book.",
+              "Este es el recordatorio exacto que recibe un paciente en su teléfono al momento de agendar.",
+            )}
       </p>
 
       {/* The visitor sees the exact text before it is sent. */}
