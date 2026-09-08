@@ -130,21 +130,16 @@ export function SelfCheck() {
   return (
     <section className="px-5 py-16 sm:py-20">
       <div className="mx-auto max-w-3xl">
-        <span
-          aria-hidden
-          className="mb-5 block h-[3px] w-16 rounded-full"
-          style={{ backgroundImage: rampRule(C) }}
-        />
         <h2
           className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
           style={{ color: C.deep }}
         >
-          {t("Do not take our word for it. Check it now.", "No nos creas. Compruébalo ahora.")}
+          {t("Try it on your phone", "Haz la prueba en tu teléfono")}
         </h2>
         <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
           {t(
-            "Three minutes on your phone, right now, while you are on this page. Everything above is a claim until you have seen it yourself.",
-            "Tres minutos en tu teléfono, ahora mismo, mientras estás en esta página. Todo lo de arriba es una afirmación hasta que lo veas tú.",
+            "Search your specialty + city like a stranger would, then try to book. Three checks, no marketing words.",
+            "Busca tu especialidad + ciudad como lo haría alguien que no te conoce, e intenta agendar. Tres comprobaciones, sin palabras de marketing.",
           )}
         </p>
 
