@@ -248,6 +248,7 @@ export function SelfCheck() {
  */
 function PatientSearchForm({ C }: { C: ReturnType<typeof clinicalPalette> }) {
   const t = useT();
+  const { theme } = useTheme();
   return (
     <form
       action="https://www.google.com/search"
