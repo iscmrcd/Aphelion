@@ -45,19 +45,14 @@ export function AppointmentPanelDemo() {
   useEffect(() => {
     if (!playing) return;
     if (step >= TOTAL_STEPS) {
-      setPlaying(false);
-      return;
+      const id = window.setTimeout(() => setStep(0), 1200);
+      return () => window.clearTimeout(id);
     }
     const id = window.setTimeout(() => setStep((s) => s + 1), STEP_MS);
     return () => window.clearTimeout(id);
   }, [playing, step]);
 
   const on = (n: number) => step >= n;
-
-  function replay() {
-    setStep(0);
-    setPlaying(true);
-  }
 
   const steps: { label: string; labelEn: string }[] = [
     { label: "El paciente agenda desde tu sitio", labelEn: "The patient books from your site" },
