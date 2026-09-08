@@ -129,79 +129,88 @@ export function SelfCheck() {
 
   return (
     <section className="px-5 py-16 sm:py-20">
-      <div className="mx-auto max-w-3xl">
-        <div className="grid items-center gap-8 sm:grid-cols-[1fr_auto]">
-          <div>
-            <h2
-              className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
-              style={{ color: C.deep }}
-            >
-              {t("Try it on your phone", "Haz la prueba en tu teléfono")}
-            </h2>
-            <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
-              {t(
-                "Search your specialty + city like a stranger would, then try to book. Three checks, no marketing words.",
-                "Busca tu especialidad + ciudad como lo haría alguien que no te conoce, e intenta agendar. Tres comprobaciones, sin palabras de marketing.",
-              )}
-            </p>
-          </div>
-          <PhoneSearchIllustration C={C} />
+      <div className="mx-auto max-w-2xl">
+        <div className="space-y-3 text-center sm:text-left">
+          <h2
+            className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
+            style={{ color: C.deep }}
+          >
+            {t("Try it on your phone", "Haz la prueba en tu teléfono")}
+          </h2>
+          <p className="text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
+            {t(
+              "Search your specialty + city like a new patient would. Three quick, real checks.",
+              "Busca tu especialidad + ciudad como lo haría un paciente nuevo. Tres comprobaciones rápidas y reales.",
+            )}
+          </p>
         </div>
 
-        <div className="mt-9 space-y-4">
-          {CHECKS.map((c, i) => (
-            <div
-              key={c.step}
-              className="rounded-2xl border p-4 sm:p-6"
-              style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
-            >
-              <div className="flex items-start gap-3 sm:gap-4">
-                <span
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-medium sm:h-9 sm:w-9"
-                  style={{ backgroundImage: rampButton(C), color: C.onDeep }}
-                >
-                  {i + 1}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p
-                    className="flex items-start gap-2 text-[15px] leading-snug font-medium text-balance sm:text-base"
-                    style={{ color: C.deep }}
-                  >
-                    <span className="mt-0.5 shrink-0" style={{ color: C.mid }}>
-                      {c.icon}
-                    </span>
-                    {t(c.step, c.stepEs)}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-                    {t(c.how, c.howEs)}
-                  </p>
+        <div className="relative mt-9 space-y-5">
+          {/* Vertical connector line behind the numbered circles */}
+          <span
+            aria-hidden="true"
+            className="absolute top-4 bottom-4 left-[19px] w-0.5 sm:left-[23px]"
+            style={{ backgroundColor: `${C.soft}66` }}
+          />
 
-                  <p
-                    className="mt-4 text-xs font-medium tracking-[0.1em] uppercase"
-                    style={{ color: C.mid }}
-                  >
-                    {t("What you might see", "Qué puedes encontrar")}
-                  </p>
-                  <ul className="mt-2.5 space-y-2.5">
-                    {c.outcomes.map((o) => (
-                      <li
-                        key={o.label}
-                        className="rounded-xl px-3 py-2.5 sm:px-3.5 sm:py-3"
-                        style={{
-                          backgroundColor: o.good ? `${C.soft}2e` : `${C.soft}14`,
-                          border: o.good ? `1px solid ${C.mid}` : "1px solid transparent",
-                        }}
-                      >
-                        <p className="text-sm font-medium" style={{ color: C.deep }}>
-                          {t(o.label, o.labelEs)}
-                        </p>
-                        <p className="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
-                          {t(o.means, o.meansEs)}
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+          {CHECKS.map((c, i) => (
+            <div key={c.step} className="relative flex items-start gap-4">
+              <span
+                className="z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold ring-4 sm:h-12 sm:w-12"
+                style={{
+                  backgroundImage: rampButton(C),
+                  color: C.onDeep,
+                  // ring colour matches the section backdrop so the line
+                  // appears to pass behind the circles
+                  ["--tw-ring-color" as string]: theme === "dark" ? "#0E1A1F" : "#F2F8FB",
+                }}
+              >
+                {i + 1}
+              </span>
+              <div
+                className="min-w-0 flex-1 rounded-2xl border p-4 shadow-sm sm:p-6"
+                style={{ borderColor: `${C.soft}59`, backgroundColor: C.card }}
+              >
+                <p
+                  className="flex items-start gap-2 text-[15px] leading-snug font-semibold text-balance sm:text-base"
+                  style={{ color: C.deep }}
+                >
+                  <span className="mt-0.5 shrink-0" style={{ color: C.mid }}>
+                    {c.icon}
+                  </span>
+                  {t(c.step, c.stepEs)}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+                  {t(c.how, c.howEs)}
+                </p>
+
+                {i === 0 && <PatientSearchForm C={C} />}
+
+                <p
+                  className="mt-4 text-xs font-medium tracking-[0.1em] uppercase"
+                  style={{ color: C.mid }}
+                >
+                  {t("What you might see", "Qué puedes encontrar")}
+                </p>
+                <ul className="mt-2.5 space-y-2.5">
+                  {c.outcomes.map((o) => (
+                    <li
+                      key={o.label}
+                      className="rounded-xl px-3 py-2.5 sm:px-3.5 sm:py-3"
+                      style={{
+                        backgroundColor: o.good ? `${C.soft}2e` : `${C.soft}14`,
+                        border: o.good ? `1px solid ${C.mid}` : "1px solid transparent",
+                      }}
+                    >
+                      <p className="text-sm font-medium" style={{ color: C.deep }}>
+                        {t(o.label, o.labelEs)}
+                      </p>
+                      <p className="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+                        {t(o.means, o.meansEs)}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
@@ -220,7 +229,7 @@ export function SelfCheck() {
           <Link
             to="/recursos/diagnostico/$industria"
             params={{ industria: "clinicas" }}
-            className="mt-5 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition hover:opacity-90"
+            className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-medium transition hover:opacity-90 sm:w-auto"
             style={{ backgroundImage: rampButton(C), color: C.onDeep }}
           >
             {t("Turn this into a plan, 2 min", "Convertirlo en un plan, 2 min")}
@@ -233,76 +242,41 @@ export function SelfCheck() {
 }
 
 /**
- * Little phone mockup that shows, not tells: a Google search bar with a
- * specialty + city typed in, the map block underneath, and plain results
- * below. Exists because "search like a patient would" is obvious to us and
- * not necessarily to a doctor in his fifties reading the page.
+ * Real search bar inside step 1: typing a specialty + city and submitting
+ * opens that Google search in a new tab, so the check starts from the page
+ * itself instead of asking the doctor to imagine it.
  */
-function PhoneSearchIllustration({ C }: { C: ReturnType<typeof clinicalPalette> }) {
+function PatientSearchForm({ C }: { C: ReturnType<typeof clinicalPalette> }) {
   const t = useT();
-  const line = `${C.soft}59`;
+  const { theme } = useTheme();
   return (
-    <div className="mx-auto w-44 shrink-0" aria-hidden="true">
-      <div
-        className="rounded-[1.9rem] border p-1.5 shadow-[0_18px_40px_-24px_rgba(18,65,79,0.45)]"
-        style={{ borderColor: line, backgroundColor: C.card }}
+    <form
+      action="https://www.google.com/search"
+      method="GET"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative mt-3"
+    >
+      <input
+        type="text"
+        name="q"
+        placeholder={t("dentist in tijuana", "dentista en tijuana")}
+        className="w-full rounded-xl border py-3 pr-11 pl-3.5 text-sm shadow-inner transition focus:outline-none"
+        style={{
+          borderColor: `${C.soft}80`,
+          backgroundColor: theme === "dark" ? "rgba(255,255,255,0.04)" : "#F4F9FB",
+          color: C.deep,
+        }}
+      />
+      <button
+        type="submit"
+        aria-label={t("Search on Google", "Buscar en Google")}
+        className="absolute top-1/2 right-1.5 -translate-y-1/2 rounded-lg p-2 transition"
+        style={{ color: C.mid }}
       >
-        <div
-          className="space-y-2 rounded-[1.5rem] border px-2.5 pt-3 pb-2.5"
-          style={{ borderColor: `${C.soft}40`, backgroundColor: C.bg }}
-        >
-          {/* notch */}
-          <span className="mx-auto block h-1 w-8 rounded-full" style={{ backgroundColor: line }} />
-          {/* search bar */}
-          <div
-            className="flex items-center gap-1.5 rounded-full border px-2.5 py-1.5"
-            style={{ borderColor: line, backgroundColor: C.card }}
-          >
-            <Search className="h-3 w-3 shrink-0" style={{ color: C.mid }} />
-            <span className="text-[10px]" style={{ color: C.deep }}>
-              {t("dentist tijuana", "dentista tijuana")}
-            </span>
-          </div>
-          {/* map block */}
-          <div className="rounded-lg p-2" style={{ backgroundColor: `${C.soft}26` }}>
-            <p
-              className="flex items-center gap-1 text-[9px] font-medium tracking-wide uppercase"
-              style={{ color: C.mid }}
-            >
-              <MapPin className="h-2.5 w-2.5" />
-              {t("Map", "Mapa")}
-            </p>
-            <div className="mt-1.5 space-y-1">
-              {[0, 1, 2].map((i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-1.5 rounded px-1.5 py-1"
-                  style={{ backgroundColor: C.card, border: `1px solid ${line}` }}
-                >
-                  <MapPin className="h-2 w-2 shrink-0" style={{ color: C.soft }} />
-                  <span
-                    className="h-1 rounded-full"
-                    style={{ backgroundColor: line, width: `${52 - i * 12}%` }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-          {/* plain results */}
-          <div className="space-y-1.5 px-0.5 pt-0.5">
-            {[70, 55].map((w) => (
-              <span
-                key={w}
-                className="block h-1 rounded-full"
-                style={{ backgroundColor: `${C.soft}33`, width: `${w}%` }}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-      <p className="mt-2 text-center text-[11px] text-neutral-500 dark:text-neutral-400">
-        {t("This is what a patient sees", "Esto es lo que ve un paciente")}
-      </p>
-    </div>
+        <Search className="h-5 w-5" />
+      </button>
+    </form>
   );
 }
+
