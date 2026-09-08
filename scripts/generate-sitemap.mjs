@@ -26,6 +26,12 @@ function readPosts() {
   return slugs.map((slug, i) => ({ slug, date: dates[i] }));
 }
 
+/** Diagnostic verticals, so the dynamic route emits one URL per industry. */
+function readVerticales() {
+  const src = readFileSync(join(root, "src/lib/diagnostico-data.ts"), "utf8");
+  return [...src.matchAll(/^ {2}slug: "([^"]+)",$/gm)].map((m) => m[1]);
+}
+
 /** Every file route that should be indexed, derived from src/routes. */
 function readRoutes() {
   const skip = new Set([
@@ -35,6 +41,7 @@ function readRoutes() {
     "servicios", // layout wrapper
     "servicios.whatsapp-ia", // 301 redirect stub, must stay out of the sitemap
     "privacidad",
+    "recursos.diagnostico.$industria", // emitted per vertical below
   ]);
   return readdirSync(join(root, "src/routes"))
     .filter((f) => f.endsWith(".tsx"))
@@ -68,6 +75,7 @@ function entry(path, { priority, lastmod, changefreq }) {
 
 const posts = readPosts();
 const routes = readRoutes();
+const verticales = readVerticales();
 
 // Local city pages outrank generic service pages for the queries that convert,
 // so they carry the highest priority after the homepage.
@@ -85,6 +93,13 @@ const urls = [
       }),
     ),
   entry("/blog", { priority: "0.8", lastmod: today, changefreq: "weekly" }),
+  ...verticales.map((v) =>
+    entry(`/recursos/diagnostico/${v}`, {
+      priority: "0.8",
+      lastmod: today,
+      changefreq: "monthly",
+    }),
+  ),
   ...posts.map((p) =>
     entry(`/blog/${p.slug}`, { priority: "0.7", lastmod: p.date, changefreq: "monthly" }),
   ),
@@ -99,4 +114,6 @@ ${urls.join("\n")}
 `;
 
 writeFileSync(join(root, "public/sitemap.xml"), xml);
-console.log(`sitemap.xml: ${urls.length} URLs (${routes.length} routes + ${posts.length} posts)`);
+console.log(
+  `sitemap.xml: ${urls.length} URLs (${routes.length} routes + ${verticales.length} diagnostics + ${posts.length} posts)`,
+);

@@ -9,93 +9,34 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as ServiciosRouteImport } from './routes/servicios'
-import { Route as SeoTijuanaRouteImport } from './routes/seo-tijuana'
-import { Route as SeoRouteImport } from './routes/seo'
-import { Route as PrivacidadRouteImport } from './routes/privacidad'
-import { Route as PreciosRouteImport } from './routes/precios'
-import { Route as MetaAdsTijuanaRouteImport } from './routes/meta-ads-tijuana'
-import { Route as MetaAdsRouteImport } from './routes/meta-ads'
-import { Route as GoogleAdsTijuanaRouteImport } from './routes/google-ads-tijuana'
-import { Route as GoogleAdsRouteImport } from './routes/google-ads'
-import { Route as EcommerceRouteImport } from './routes/ecommerce'
-import { Route as DisenoWebTijuanaRouteImport } from './routes/diseno-web-tijuana'
-import { Route as ContactoRouteImport } from './routes/contacto'
-import { Route as BrandingRouteImport } from './routes/branding'
-import { Route as AgenciaMarketingDigitalTijuanaRouteImport } from './routes/agencia-marketing-digital-tijuana'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
+import { Route as AgenciaMarketingDigitalTijuanaRouteImport } from './routes/agencia-marketing-digital-tijuana'
+import { Route as BrandingRouteImport } from './routes/branding'
+import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as DisenoWebTijuanaRouteImport } from './routes/diseno-web-tijuana'
+import { Route as EcommerceRouteImport } from './routes/ecommerce'
+import { Route as GoogleAdsRouteImport } from './routes/google-ads'
+import { Route as GoogleAdsTijuanaRouteImport } from './routes/google-ads-tijuana'
+import { Route as MetaAdsRouteImport } from './routes/meta-ads'
+import { Route as MetaAdsTijuanaRouteImport } from './routes/meta-ads-tijuana'
+import { Route as PreciosRouteImport } from './routes/precios'
+import { Route as PrivacidadRouteImport } from './routes/privacidad'
+import { Route as SeoRouteImport } from './routes/seo'
+import { Route as SeoTijuanaRouteImport } from './routes/seo-tijuana'
+import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as ServiciosWhatsappIaRouteImport } from './routes/servicios.whatsapp-ia'
-import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
-import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
-import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
-import { Route as ServiciosAgenteIaRouteImport } from './routes/servicios.agente-ia'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
+import { Route as ServiciosAgenteIaRouteImport } from './routes/servicios.agente-ia'
+import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
+import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
+import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
+import { Route as ServiciosWhatsappIaRouteImport } from './routes/servicios.whatsapp-ia'
+import { Route as RecursosDiagnosticoIndustriaRouteImport } from './routes/recursos.diagnostico.$industria'
 
-const ServiciosRoute = ServiciosRouteImport.update({
-  id: '/servicios',
-  path: '/servicios',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SeoTijuanaRoute = SeoTijuanaRouteImport.update({
-  id: '/seo-tijuana',
-  path: '/seo-tijuana',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SeoRoute = SeoRouteImport.update({
-  id: '/seo',
-  path: '/seo',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacidadRoute = PrivacidadRouteImport.update({
-  id: '/privacidad',
-  path: '/privacidad',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PreciosRoute = PreciosRouteImport.update({
-  id: '/precios',
-  path: '/precios',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MetaAdsTijuanaRoute = MetaAdsTijuanaRouteImport.update({
-  id: '/meta-ads-tijuana',
-  path: '/meta-ads-tijuana',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MetaAdsRoute = MetaAdsRouteImport.update({
-  id: '/meta-ads',
-  path: '/meta-ads',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GoogleAdsTijuanaRoute = GoogleAdsTijuanaRouteImport.update({
-  id: '/google-ads-tijuana',
-  path: '/google-ads-tijuana',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GoogleAdsRoute = GoogleAdsRouteImport.update({
-  id: '/google-ads',
-  path: '/google-ads',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EcommerceRoute = EcommerceRouteImport.update({
-  id: '/ecommerce',
-  path: '/ecommerce',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DisenoWebTijuanaRoute = DisenoWebTijuanaRouteImport.update({
-  id: '/diseno-web-tijuana',
-  path: '/diseno-web-tijuana',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactoRoute = ContactoRouteImport.update({
-  id: '/contacto',
-  path: '/contacto',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BrandingRoute = BrandingRouteImport.update({
-  id: '/branding',
-  path: '/branding',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgenciaMarketingDigitalTijuanaRoute =
@@ -104,9 +45,79 @@ const AgenciaMarketingDigitalTijuanaRoute =
     path: '/agencia-marketing-digital-tijuana',
     getParentRoute: () => rootRouteImport,
   } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const BrandingRoute = BrandingRouteImport.update({
+  id: '/branding',
+  path: '/branding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactoRoute = ContactoRouteImport.update({
+  id: '/contacto',
+  path: '/contacto',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisenoWebTijuanaRoute = DisenoWebTijuanaRouteImport.update({
+  id: '/diseno-web-tijuana',
+  path: '/diseno-web-tijuana',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcommerceRoute = EcommerceRouteImport.update({
+  id: '/ecommerce',
+  path: '/ecommerce',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoogleAdsRoute = GoogleAdsRouteImport.update({
+  id: '/google-ads',
+  path: '/google-ads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoogleAdsTijuanaRoute = GoogleAdsTijuanaRouteImport.update({
+  id: '/google-ads-tijuana',
+  path: '/google-ads-tijuana',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetaAdsRoute = MetaAdsRouteImport.update({
+  id: '/meta-ads',
+  path: '/meta-ads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetaAdsTijuanaRoute = MetaAdsTijuanaRouteImport.update({
+  id: '/meta-ads-tijuana',
+  path: '/meta-ads-tijuana',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreciosRoute = PreciosRouteImport.update({
+  id: '/precios',
+  path: '/precios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacidadRoute = PrivacidadRouteImport.update({
+  id: '/privacidad',
+  path: '/privacidad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoRoute = SeoRouteImport.update({
+  id: '/seo',
+  path: '/seo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoTijuanaRoute = SeoTijuanaRouteImport.update({
+  id: '/seo-tijuana',
+  path: '/seo-tijuana',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiciosRoute = ServiciosRouteImport.update({
+  id: '/servicios',
+  path: '/servicios',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
@@ -114,24 +125,9 @@ const ServiciosIndexRoute = ServiciosIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ServiciosWhatsappIaRoute = ServiciosWhatsappIaRouteImport.update({
-  id: '/whatsapp-ia',
-  path: '/whatsapp-ia',
-  getParentRoute: () => ServiciosRoute,
-} as any)
-const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
-  id: '/websites',
-  path: '/websites',
-  getParentRoute: () => ServiciosRoute,
-} as any)
-const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
-  id: '/video-con-dron',
-  path: '/video-con-dron',
+const ServiciosAgenteIaRoute = ServiciosAgenteIaRouteImport.update({
+  id: '/agente-ia',
+  path: '/agente-ia',
   getParentRoute: () => ServiciosRoute,
 } as any)
 const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
@@ -139,16 +135,27 @@ const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
   path: '/marketing',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const ServiciosAgenteIaRoute = ServiciosAgenteIaRouteImport.update({
-  id: '/agente-ia',
-  path: '/agente-ia',
+const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
+  id: '/video-con-dron',
+  path: '/video-con-dron',
   getParentRoute: () => ServiciosRoute,
 } as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
-  getParentRoute: () => rootRouteImport,
+const ServiciosWebsitesRoute = ServiciosWebsitesRouteImport.update({
+  id: '/websites',
+  path: '/websites',
+  getParentRoute: () => ServiciosRoute,
 } as any)
+const ServiciosWhatsappIaRoute = ServiciosWhatsappIaRouteImport.update({
+  id: '/whatsapp-ia',
+  path: '/whatsapp-ia',
+  getParentRoute: () => ServiciosRoute,
+} as any)
+const RecursosDiagnosticoIndustriaRoute =
+  RecursosDiagnosticoIndustriaRouteImport.update({
+    id: '/recursos/diagnostico/$industria',
+    path: '/recursos/diagnostico/$industria',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -174,6 +181,7 @@ export interface FileRoutesByFullPath {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog/': typeof BlogIndexRoute
   '/servicios/': typeof ServiciosIndexRoute
+  '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -198,6 +206,7 @@ export interface FileRoutesByTo {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog': typeof BlogIndexRoute
   '/servicios': typeof ServiciosIndexRoute
+  '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -224,6 +233,7 @@ export interface FileRoutesById {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog/': typeof BlogIndexRoute
   '/servicios/': typeof ServiciosIndexRoute
+  '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -251,6 +261,7 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog/'
     | '/servicios/'
+    | '/recursos/diagnostico/$industria'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -275,6 +286,7 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog'
     | '/servicios'
+    | '/recursos/diagnostico/$industria'
   id:
     | '__root__'
     | '/'
@@ -300,6 +312,7 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog/'
     | '/servicios/'
+    | '/recursos/diagnostico/$industria'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -320,99 +333,16 @@ export interface RootRouteChildren {
   ServiciosRoute: typeof ServiciosRouteWithChildren
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
+  RecursosDiagnosticoIndustriaRoute: typeof RecursosDiagnosticoIndustriaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/servicios': {
-      id: '/servicios'
-      path: '/servicios'
-      fullPath: '/servicios'
-      preLoaderRoute: typeof ServiciosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/seo-tijuana': {
-      id: '/seo-tijuana'
-      path: '/seo-tijuana'
-      fullPath: '/seo-tijuana'
-      preLoaderRoute: typeof SeoTijuanaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/seo': {
-      id: '/seo'
-      path: '/seo'
-      fullPath: '/seo'
-      preLoaderRoute: typeof SeoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacidad': {
-      id: '/privacidad'
-      path: '/privacidad'
-      fullPath: '/privacidad'
-      preLoaderRoute: typeof PrivacidadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/precios': {
-      id: '/precios'
-      path: '/precios'
-      fullPath: '/precios'
-      preLoaderRoute: typeof PreciosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/meta-ads-tijuana': {
-      id: '/meta-ads-tijuana'
-      path: '/meta-ads-tijuana'
-      fullPath: '/meta-ads-tijuana'
-      preLoaderRoute: typeof MetaAdsTijuanaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/meta-ads': {
-      id: '/meta-ads'
-      path: '/meta-ads'
-      fullPath: '/meta-ads'
-      preLoaderRoute: typeof MetaAdsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/google-ads-tijuana': {
-      id: '/google-ads-tijuana'
-      path: '/google-ads-tijuana'
-      fullPath: '/google-ads-tijuana'
-      preLoaderRoute: typeof GoogleAdsTijuanaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/google-ads': {
-      id: '/google-ads'
-      path: '/google-ads'
-      fullPath: '/google-ads'
-      preLoaderRoute: typeof GoogleAdsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/ecommerce': {
-      id: '/ecommerce'
-      path: '/ecommerce'
-      fullPath: '/ecommerce'
-      preLoaderRoute: typeof EcommerceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/diseno-web-tijuana': {
-      id: '/diseno-web-tijuana'
-      path: '/diseno-web-tijuana'
-      fullPath: '/diseno-web-tijuana'
-      preLoaderRoute: typeof DisenoWebTijuanaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contacto': {
-      id: '/contacto'
-      path: '/contacto'
-      fullPath: '/contacto'
-      preLoaderRoute: typeof ContactoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/branding': {
-      id: '/branding'
-      path: '/branding'
-      fullPath: '/branding'
-      preLoaderRoute: typeof BrandingRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agencia-marketing-digital-tijuana': {
@@ -422,11 +352,109 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AgenciaMarketingDigitalTijuanaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/branding': {
+      id: '/branding'
+      path: '/branding'
+      fullPath: '/branding'
+      preLoaderRoute: typeof BrandingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contacto': {
+      id: '/contacto'
+      path: '/contacto'
+      fullPath: '/contacto'
+      preLoaderRoute: typeof ContactoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diseno-web-tijuana': {
+      id: '/diseno-web-tijuana'
+      path: '/diseno-web-tijuana'
+      fullPath: '/diseno-web-tijuana'
+      preLoaderRoute: typeof DisenoWebTijuanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecommerce': {
+      id: '/ecommerce'
+      path: '/ecommerce'
+      fullPath: '/ecommerce'
+      preLoaderRoute: typeof EcommerceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/google-ads': {
+      id: '/google-ads'
+      path: '/google-ads'
+      fullPath: '/google-ads'
+      preLoaderRoute: typeof GoogleAdsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/google-ads-tijuana': {
+      id: '/google-ads-tijuana'
+      path: '/google-ads-tijuana'
+      fullPath: '/google-ads-tijuana'
+      preLoaderRoute: typeof GoogleAdsTijuanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meta-ads': {
+      id: '/meta-ads'
+      path: '/meta-ads'
+      fullPath: '/meta-ads'
+      preLoaderRoute: typeof MetaAdsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meta-ads-tijuana': {
+      id: '/meta-ads-tijuana'
+      path: '/meta-ads-tijuana'
+      fullPath: '/meta-ads-tijuana'
+      preLoaderRoute: typeof MetaAdsTijuanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/precios': {
+      id: '/precios'
+      path: '/precios'
+      fullPath: '/precios'
+      preLoaderRoute: typeof PreciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacidad': {
+      id: '/privacidad'
+      path: '/privacidad'
+      fullPath: '/privacidad'
+      preLoaderRoute: typeof PrivacidadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo': {
+      id: '/seo'
+      path: '/seo'
+      fullPath: '/seo'
+      preLoaderRoute: typeof SeoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-tijuana': {
+      id: '/seo-tijuana'
+      path: '/seo-tijuana'
+      fullPath: '/seo-tijuana'
+      preLoaderRoute: typeof SeoTijuanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicios': {
+      id: '/servicios'
+      path: '/servicios'
+      fullPath: '/servicios'
+      preLoaderRoute: typeof ServiciosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/servicios/': {
@@ -436,32 +464,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosIndexRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/servicios/whatsapp-ia': {
-      id: '/servicios/whatsapp-ia'
-      path: '/whatsapp-ia'
-      fullPath: '/servicios/whatsapp-ia'
-      preLoaderRoute: typeof ServiciosWhatsappIaRouteImport
-      parentRoute: typeof ServiciosRoute
-    }
-    '/servicios/websites': {
-      id: '/servicios/websites'
-      path: '/websites'
-      fullPath: '/servicios/websites'
-      preLoaderRoute: typeof ServiciosWebsitesRouteImport
-      parentRoute: typeof ServiciosRoute
-    }
-    '/servicios/video-con-dron': {
-      id: '/servicios/video-con-dron'
-      path: '/video-con-dron'
-      fullPath: '/servicios/video-con-dron'
-      preLoaderRoute: typeof ServiciosVideoConDronRouteImport
+    '/servicios/agente-ia': {
+      id: '/servicios/agente-ia'
+      path: '/agente-ia'
+      fullPath: '/servicios/agente-ia'
+      preLoaderRoute: typeof ServiciosAgenteIaRouteImport
       parentRoute: typeof ServiciosRoute
     }
     '/servicios/marketing': {
@@ -471,18 +478,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosMarketingRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/servicios/agente-ia': {
-      id: '/servicios/agente-ia'
-      path: '/agente-ia'
-      fullPath: '/servicios/agente-ia'
-      preLoaderRoute: typeof ServiciosAgenteIaRouteImport
+    '/servicios/video-con-dron': {
+      id: '/servicios/video-con-dron'
+      path: '/video-con-dron'
+      fullPath: '/servicios/video-con-dron'
+      preLoaderRoute: typeof ServiciosVideoConDronRouteImport
       parentRoute: typeof ServiciosRoute
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
+    '/servicios/websites': {
+      id: '/servicios/websites'
+      path: '/websites'
+      fullPath: '/servicios/websites'
+      preLoaderRoute: typeof ServiciosWebsitesRouteImport
+      parentRoute: typeof ServiciosRoute
+    }
+    '/servicios/whatsapp-ia': {
+      id: '/servicios/whatsapp-ia'
+      path: '/whatsapp-ia'
+      fullPath: '/servicios/whatsapp-ia'
+      preLoaderRoute: typeof ServiciosWhatsappIaRouteImport
+      parentRoute: typeof ServiciosRoute
+    }
+    '/recursos/diagnostico/$industria': {
+      id: '/recursos/diagnostico/$industria'
+      path: '/recursos/diagnostico/$industria'
+      fullPath: '/recursos/diagnostico/$industria'
+      preLoaderRoute: typeof RecursosDiagnosticoIndustriaRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -528,6 +549,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServiciosRoute: ServiciosRouteWithChildren,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
+  RecursosDiagnosticoIndustriaRoute: RecursosDiagnosticoIndustriaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
