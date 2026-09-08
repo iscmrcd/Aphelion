@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { MessageSquare, Send, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { chatWithAphelion, type ChatTurn } from "@/lib/aphelion-agent-server";
@@ -24,6 +24,33 @@ const newSessionId = () =>
   `aph-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 
 type Msg = { role: "user" | "assistant"; content: string };
+
+function renderMarkdown(text: string): ReactNode {
+  const safe = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  const lines = safe.split("\n");
+  return lines.map((line, i) => {
+    const parts = line.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g).filter(Boolean);
+    return (
+      <span key={i}>
+        {parts.map((part, j) => {
+          if (part.startsWith("**") && part.endsWith("**")) {
+            return <strong key={j}>{part.slice(2, -2)}</strong>;
+          }
+          if (part.startsWith("*") && part.endsWith("*")) {
+            return <em key={j}>{part.slice(1, -1)}</em>;
+          }
+          return <span key={j}>{part}</span>;
+        })}
+        {i < lines.length - 1 && <br />}
+      </span>
+    );
+  });
+}
+
 
 export function AphelionChatWidget() {
   const t = useT();
@@ -142,7 +169,7 @@ export function AphelionChatWidget() {
                     : "bg-neutral-100 text-neutral-800 dark:bg-white/10 dark:text-neutral-100"
                 }`}
               >
-                {m.content}
+                {renderMarkdown(m.content)}
               </div>
             ))}
             {pending && (
