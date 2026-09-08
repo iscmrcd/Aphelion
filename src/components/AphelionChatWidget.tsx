@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Send, X } from "lucide-react";
+import { MessageSquare, Send, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { chatWithAphelion, type ChatTurn } from "@/lib/aphelion-agent-server";
 import { AphelionOrb } from "./AphelionOrb";
@@ -109,7 +109,7 @@ export function AphelionChatWidget() {
           willChange: "transform",
         }}
       >
-        {open ? <X className="h-5 w-5" /> : <AphelionOrb size={26} busy={pending} />}
+        {open ? <X className="h-5 w-5" /> : <MessageSquare className="h-5 w-5" />}
       </button>
 
       {open && (
