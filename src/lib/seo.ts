@@ -172,4 +172,3 @@ export function validateLangSearch(search: Record<string, unknown>): {
   if (typeof search.ref === "string" && search.ref) out.ref = search.ref.slice(0, 40);
   return out;
 }
-

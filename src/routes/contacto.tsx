@@ -104,7 +104,6 @@ function ContactoPage() {
         ? t("Diagnostic results", "Resultados del diagnóstico")
         : "";
 
-
   /**
    * The old version built a WhatsApp link, opened it in a new tab and marked
    * itself sent regardless of what happened next. A blocked popup, a desktop
@@ -159,10 +158,7 @@ function ContactoPage() {
           // Includes the query string so the notification email shows which
           // service page or diagnostic sent the visitor here.
           path:
-            typeof window !== "undefined"
-              ? window.location.pathname + window.location.search
-              : "",
-
+            typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
       });
       if (res?.ok) setSent(true);
