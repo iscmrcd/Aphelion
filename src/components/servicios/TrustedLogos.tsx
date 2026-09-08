@@ -151,10 +151,10 @@ export function TrustedLogos() {
   const t = useT();
   const trackRef = useRef<HTMLDivElement>(null);
 
-  // Position-driven colouring: every frame, measure each item's distance to
-  // the strip's horizontal centre and map it to a 0–1 colour intensity. The
-  // central third of the strip is full colour; outside it fades linearly to
-  // grey at the edges, so logos "light up" as they travel through the middle.
+  // Viewport-centred colouring: every frame, measure each item's distance to
+  // the centre of the visible screen. Logos are neutral grey by default and
+  // only light up to their brand colour when they pass through the middle of
+  // the carousel, instead of a static gradient across the whole strip.
   useEffect(() => {
     const track = trackRef.current;
     if (!track) return;
@@ -163,14 +163,13 @@ export function TrustedLogos() {
 
     let raf = 0;
     const tick = () => {
-      const rect = track.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2;
-      const half = rect.width / 2;
+      const viewportCenter = window.innerWidth / 2;
+      const half = viewportCenter;
       for (const el of items) {
         const r = el.getBoundingClientRect();
-        const d = Math.abs(r.left + r.width / 2 - centerX) / half; // 0 centre → 1 edge
-        // Full colour within the central third (d ≤ 1/3), then linear fade.
-        const c = Math.min(1, Math.max(0, (1 - d) / (2 / 3)) ** 1.2);
+        const d = Math.abs(r.left + r.width / 2 - viewportCenter) / half; // 0 centre → 1 edge
+        // Full colour in the central ~25 % of the screen, fading to grey by ~65 %.
+        const c = Math.min(1, Math.max(0, (0.65 - d) / 0.4)) ** 1.2;
         el.style.setProperty("--c", c.toFixed(3));
       }
       raf = requestAnimationFrame(tick);
