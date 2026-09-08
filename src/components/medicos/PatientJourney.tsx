@@ -1,7 +1,7 @@
 import { ArrowDown, Building2, Search, Users } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette, rampButton, rampRule } from "@/lib/clinical-theme";
+import { clinicalPalette, rampButton } from "@/lib/clinical-theme";
 
 /**
  * The same argument as the two-auction section, told as what happens to one
@@ -56,11 +56,6 @@ export function PatientJourney() {
   return (
     <section className="px-5 py-16 sm:py-20">
       <div className="mx-auto max-w-3xl">
-        <span
-          aria-hidden
-          className="mb-5 block h-[3px] w-16 rounded-full"
-          style={{ backgroundImage: rampRule(C) }}
-        />
         <h2
           className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
           style={{ color: C.deep }}
