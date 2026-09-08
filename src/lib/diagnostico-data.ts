@@ -108,7 +108,7 @@ export const CLINICAS: DiagnosticoVertical = {
         why: "Todo lo demás de esta lista se construye encima de un dominio tuyo. Sin eso, cada paciente que ganas se lo acreditas a la plataforma donde te encontró.",
         whyEn:
           "Everything else on this list is built on top of a domain you own. Without one, every patient you win is credited to the platform that found them.",
-        href: "/sitio-web-para-clinicas",
+        href: "/blog/sitio-web-para-clinicas",
       },
     },
     {

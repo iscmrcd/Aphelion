@@ -77,6 +77,45 @@ const posts = readPosts();
 const routes = readRoutes();
 const verticales = readVerticales();
 
+/**
+ * Internal links written as data (diagnostic gap hrefs, article inline links)
+ * are typed as plain strings, so TypeScript cannot catch a wrong path. One
+ * shipped broken before this check existed. Validate them here and fail the
+ * build instead of discovering it in production.
+ */
+function validateInternalLinks() {
+  const slugs = new Set(posts.map((p) => p.slug));
+  const routeSet = new Set(routes);
+  const files = ["src/lib/diagnostico-data.ts", "src/lib/blog-data.ts", "src/lib/local-data.ts"];
+  const broken = [];
+  for (const f of files) {
+    let src;
+    try {
+      src = readFileSync(join(root, f), "utf8");
+    } catch {
+      continue;
+    }
+    const hrefs = [
+      ...[...src.matchAll(/href: "(\/[^"]*)"/g)].map((m) => m[1]),
+      ...[...src.matchAll(/\]\((\/[a-z0-9/-]+)\)/g)].map((m) => m[1]),
+      ...[...src.matchAll(/parentPath: "(\/[^"]*)"/g)].map((m) => m[1]),
+    ];
+    for (const h of new Set(hrefs)) {
+      const ok = h.startsWith("/blog/")
+        ? slugs.has(h.slice("/blog/".length))
+        : routeSet.has(h) || h === "/blog" || h === "/";
+      if (!ok) broken.push(`${f}: ${h}`);
+    }
+  }
+  if (broken.length) {
+    console.error("Broken internal links:\n  " + broken.join("\n  "));
+    process.exit(1);
+  }
+  console.log(`internal links: all resolve`);
+}
+
+validateInternalLinks();
+
 // Local city pages outrank generic service pages for the queries that convert,
 // so they carry the highest priority after the homepage.
 const isLocal = (p) => /-tijuana$|-ensenada$|tijuana$/.test(p);
