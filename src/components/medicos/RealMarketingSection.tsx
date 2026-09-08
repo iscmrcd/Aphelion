@@ -46,6 +46,25 @@ export function RealMarketingSection() {
     ["Build audiences from your own visitors", "Construir públicos con tus propios visitantes"],
   ];
 
+  const directoryBlocks: [string, string][] = [
+    [
+      "Install the Meta pixel, so Meta never learns which ad brought a real patient.",
+      "Instalar el pixel de Meta, así que Meta nunca aprende qué anuncio trajo un paciente real.",
+    ],
+    [
+      "Install GA4, so nobody can see what people did before they wrote or left.",
+      "Instalar GA4, así que nadie ve qué hizo la gente antes de escribirte o irse.",
+    ],
+    [
+      "Get you indexed on your own terms: the page that Google ranks is theirs, with your competition listed underneath.",
+      "Posicionarte en Google en tus términos: la página que Google indexa es de ellos, con tu competencia listada abajo.",
+    ],
+    [
+      "Show your own web address in a Google ad, because the address the ad displays has to be the one it leads to.",
+      "Mostrar tu propia dirección web en un anuncio de Google, porque la dirección que se ve tiene que ser a la que el anuncio lleva.",
+    ],
+  ];
+
   const withoutSite: [string, string][] = [
     ["Run lead ads and click-to-WhatsApp", "Correr anuncios de leads y clic a WhatsApp"],
     ["Pay for clicks and reach", "Pagar por clics y alcance"],
