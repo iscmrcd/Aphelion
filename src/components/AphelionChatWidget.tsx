@@ -25,7 +25,7 @@ const newSessionId = () =>
 
 type Msg = { role: "user" | "assistant"; content: string };
 
-function renderMarkdown(text: string): React.ReactNode {
+function renderMarkdown(text: string): ReactNode {
   const safe = text
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
