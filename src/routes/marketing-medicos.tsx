@@ -4,6 +4,7 @@ import { ArrowRight, Plus } from "lucide-react";
 import { AppointmentPanelDemo } from "@/components/medicos/AppointmentPanelDemo";
 import { MedicosHero } from "@/components/medicos/MedicosHero";
 import { PatientJourney } from "@/components/medicos/PatientJourney";
+import { ReceptionSection } from "@/components/medicos/ReceptionSection";
 import { SelfCheck } from "@/components/medicos/SelfCheck";
 import { RealMarketingSection } from "@/components/medicos/RealMarketingSection";
 import { WhyOwnSiteSection } from "@/components/medicos/WhyOwnSiteSection";
@@ -72,6 +73,8 @@ function Page() {
 
       <PatientJourney />
       <SelfCheck />
+
+      <ReceptionSection />
 
       {/* DEMO */}
       <section className="px-5 py-16 sm:py-20">

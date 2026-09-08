@@ -33,11 +33,27 @@ function newSessionId(): string {
   return `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
-export function AgentDemo() {
+/**
+ * Optional props so a vertical landing can embed the demo with its own agent
+ * already selected. /servicios/agente-ia calls this with no props and keeps
+ * the three-industry picker, which is what it is for.
+ */
+export function AgentDemo({
+  initialAgent = "real-estate",
+  hideSelector = false,
+}: {
+  initialAgent?: AgentType;
+  /**
+   * On a vertical page the other industries are noise: a dentist does not care
+   * about the real-estate agent, and three tabs make it read as a generic
+   * product tour instead of "this is your receptionist".
+   */
+  hideSelector?: boolean;
+} = {}) {
   const t = useT();
   const { lang } = useLang();
 
-  const [agentType, setAgentType] = useState<AgentType>("real-estate");
+  const [agentType, setAgentType] = useState<AgentType>(initialAgent);
   // One session id for the whole demo: switching agents must NOT reset the
   // shared 20-message budget, so the id is deliberately created only once.
   const [sessionId, setSessionId] = useState(newSessionId);
@@ -207,7 +223,7 @@ export function AgentDemo() {
   return (
     <div className="mx-auto max-w-2xl">
       {/* Industry selector */}
-      <div className="mb-6 grid grid-cols-3 gap-2 sm:gap-2.5">
+      <div className={`mb-6 grid grid-cols-3 gap-2 sm:gap-2.5 ${hideSelector ? "hidden" : ""}`}>
         {AGENT_ORDER.map((id) => {
           const a = DEMO_AGENTS[id];
           const active = id === agentType;
