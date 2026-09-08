@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin, Search, Smartphone } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette, rampButton, rampRule } from "@/lib/clinical-theme";
+import { clinicalPalette, rampButton } from "@/lib/clinical-theme";
 
 /**
  * Replaces the two-auction section, which the four-step journey already covers.
@@ -30,9 +30,9 @@ const CHECKS: Check[] = [
     icon: <Search className="h-4 w-4" />,
     step: "Search what a patient would search",
     stepEs: "Busca lo que buscaría un paciente",
-    how: "Open Google on your phone, not your computer, and type your specialty plus your city. Not your name. A patient who does not know you cannot type your name.",
+    how: "Open Google on your phone and type your specialty + city. Not your name. A stranger cannot type your name.",
     howEs:
-      "Abre Google en tu teléfono, no en la computadora, y escribe tu especialidad más tu ciudad. No tu nombre. Un paciente que no te conoce no puede escribir tu nombre.",
+      "Abre Google en tu teléfono y escribe tu especialidad + ciudad. No tu nombre. Alguien que no te conoce no puede escribir tu nombre.",
     outcomes: [
       {
         label: "You do not appear on the first screen",
@@ -59,9 +59,9 @@ const CHECKS: Check[] = [
     icon: <MapPin className="h-4 w-4" />,
     step: "Look at the map block, above the normal results",
     stepEs: "Mira el bloque de mapa, arriba de los resultados normales",
-    how: "That block with three businesses and a map is where most local searches end. It is fed by Google Business Profiles, not by websites.",
+    how: "The map block is where most local searches end. It is fed by Google Business Profiles.",
     howEs:
-      "Ese bloque con tres negocios y un mapa es donde termina la mayoría de las búsquedas locales. Se alimenta de los Perfiles de Empresa de Google, no de los sitios web.",
+      "El bloque del mapa es donde termina la mayoría de las búsquedas locales. Se alimenta del Perfil de Empresa de Google.",
     outcomes: [
       {
         label: "You are not in it",
@@ -91,9 +91,9 @@ const CHECKS: Check[] = [
     icon: <Smartphone className="h-4 w-4" />,
     step: "Try to book with yourself, as a stranger would",
     stepEs: "Intenta agendar contigo mismo, como lo haría un desconocido",
-    how: "From whatever came up in the search, try to get an appointment without using anything you know as the owner. Time it.",
+    how: "From whatever came up, try to book without using anything you know as the owner. Time it.",
     howEs:
-      "Desde lo que haya salido en la búsqueda, intenta conseguir una cita sin usar nada de lo que sabes por ser el dueño. Tómale el tiempo.",
+      "Desde lo que salga, intenta agendar sin usar lo que sabes como dueño. Tómale el tiempo.",
     outcomes: [
       {
         label: "There is no way to book, only a phone number",
@@ -130,21 +130,16 @@ export function SelfCheck() {
   return (
     <section className="px-5 py-16 sm:py-20">
       <div className="mx-auto max-w-3xl">
-        <span
-          aria-hidden
-          className="mb-5 block h-[3px] w-16 rounded-full"
-          style={{ backgroundImage: rampRule(C) }}
-        />
         <h2
           className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
           style={{ color: C.deep }}
         >
-          {t("Do not take our word for it. Check it now.", "No nos creas. Compruébalo ahora.")}
+          {t("Try it on your phone", "Haz la prueba en tu teléfono")}
         </h2>
         <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
           {t(
-            "Three minutes on your phone, right now, while you are on this page. Everything above is a claim until you have seen it yourself.",
-            "Tres minutos en tu teléfono, ahora mismo, mientras estás en esta página. Todo lo de arriba es una afirmación hasta que lo veas tú.",
+            "Search your specialty + city like a stranger would, then try to book. Three checks, no marketing words.",
+            "Busca tu especialidad + ciudad como lo haría alguien que no te conoce, e intenta agendar. Tres comprobaciones, sin palabras de marketing.",
           )}
         </p>
 
