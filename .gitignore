@@ -30,3 +30,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local secrets. The committed .env only carries the public Supabase URL and
+# publishable key, which ship to the browser anyway. Anything private lives in
+# Lovable environment variables and must never land in a file here.
+.env.local
+.env.*.local

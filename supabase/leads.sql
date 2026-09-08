@@ -51,3 +51,22 @@ create index if not exists agent_messages_session_idx on public.agent_messages (
 create index if not exists agent_messages_ip_idx      on public.agent_messages (ip_hash, created_at desc);
 
 alter table public.agent_messages enable row level security;
+
+-- Every demo SMS attempt, sent or blocked. This is the rate-limit ledger and
+-- the audit trail: because the endpoint is publicly reachable and sends to a
+-- number the caller supplies, being able to answer "who did we text and why"
+-- is not optional. Blocked attempts are recorded too, so a spike is visible.
+create table if not exists public.demo_sms (
+  id          bigint generated always as identity primary key,
+  created_at  timestamptz not null default now(),
+  session_id  text        not null,
+  ip_hash     text        not null default 'unknown',
+  phone_e164  text        not null,
+  status      text        not null check (status in ('sent','blocked','failed'))
+);
+
+create index if not exists demo_sms_session_idx on public.demo_sms (session_id);
+create index if not exists demo_sms_ip_idx      on public.demo_sms (ip_hash, created_at desc);
+create index if not exists demo_sms_created_idx on public.demo_sms (created_at desc);
+
+alter table public.demo_sms enable row level security;
