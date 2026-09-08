@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Check, Minus, Plus, Stethoscope } from "lucide-react";
 import { AppointmentPanelDemo } from "@/components/medicos/AppointmentPanelDemo";
+import { RealMarketingSection } from "@/components/medicos/RealMarketingSection";
+import { WhyOwnSiteSection } from "@/components/medicos/WhyOwnSiteSection";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
@@ -136,6 +138,8 @@ function Page() {
         </div>
       </section>
 
+      <RealMarketingSection />
+      <WhyOwnSiteSection />
       <Ladder />
 
       <section className="px-5 py-16 sm:py-20">
