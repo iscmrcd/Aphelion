@@ -70,41 +70,16 @@ export function AppointmentPanelDemo() {
       className="rounded-[28px] border p-5 shadow-[0_20px_60px_-30px_rgba(18,65,79,0.4)] backdrop-blur-xl sm:p-8"
       style={{ borderColor: C.glassBorder, backgroundColor: C.glass }}
     >
-      <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <p className="text-xs font-medium tracking-[0.14em] uppercase" style={{ color: C.mid }}>
-            {t("Interactive illustration", "Ilustración interactiva")}
-          </p>
-          <h3
-            className="mt-1.5 text-lg font-medium tracking-[-0.02em] sm:text-xl"
-            style={{ color: C.deep }}
-          >
-            {t("What happens after a patient books", "Qué pasa cuando un paciente agenda")}
-          </h3>
-        </div>
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => (step >= TOTAL_STEPS ? replay() : setPlaying(!playing))}
-            aria-label={
-              step >= TOTAL_STEPS
-                ? t("Replay", "Repetir")
-                : playing
-                  ? t("Pause", "Pausar")
-                  : t("Play", "Reproducir")
-            }
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border transition hover:brightness-[1.05]"
-            style={{ borderColor: `${C.soft}66`, backgroundColor: C.card, color: C.deep }}
-          >
-            {step >= TOTAL_STEPS ? (
-              <RotateCcw className="h-4 w-4" />
-            ) : playing ? (
-              <Pause className="h-4 w-4" />
-            ) : (
-              <Play className="h-4 w-4" />
-            )}
-          </button>
-        </div>
+      <div className="mb-6">
+        <p className="text-xs font-medium tracking-[0.14em] uppercase" style={{ color: C.mid }}>
+          {t("Interactive illustration", "Ilustración interactiva")}
+        </p>
+        <h3
+          className="mt-1.5 text-lg font-medium tracking-[-0.02em] sm:text-xl"
+          style={{ color: C.deep }}
+        >
+          {t("What happens after a patient books", "Qué pasa cuando un paciente agenda")}
+        </h3>
       </div>
 
       {/* current step caption */}
