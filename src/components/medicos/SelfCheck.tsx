@@ -164,10 +164,12 @@ export function SelfCheck() {
                 </span>
                 <div className="min-w-0 flex-1">
                   <p
-                    className="flex items-center gap-2 text-base font-medium"
+                    className="flex items-start gap-2 text-[15px] leading-snug font-medium text-balance sm:text-base"
                     style={{ color: C.deep }}
                   >
-                    <span style={{ color: C.mid }}>{c.icon}</span>
+                    <span className="mt-0.5 shrink-0" style={{ color: C.mid }}>
+                      {c.icon}
+                    </span>
                     {t(c.step, c.stepEs)}
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
