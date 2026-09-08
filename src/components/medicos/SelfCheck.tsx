@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin, Search, Smartphone } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
-import { clinicalPalette, rampButton, rampRule } from "@/lib/clinical-theme";
+import { clinicalPalette, rampButton } from "@/lib/clinical-theme";
 
 /**
  * Replaces the two-auction section, which the four-step journey already covers.
