@@ -220,7 +220,7 @@ export function AphelionChatWidget() {
               href={WA_HREF}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2.5 flex items-center justify-center gap-2 rounded-full border border-neutral-200 py-2 text-xs font-medium text-neutral-600 transition hover:border-neutral-950 hover:text-neutral-950 dark:border-white/15 dark:text-neutral-300 dark:hover:border-white dark:hover:text-white"
+              className="mt-2.5 flex items-center justify-center gap-2 rounded-full border border-[#25D366] bg-[#25D366]/5 py-2 text-xs font-medium text-[#25D366] transition hover:bg-[#25D366] hover:text-white dark:border-[#25D366] dark:text-[#25D366] dark:hover:bg-[#25D366] dark:hover:text-white"
             >
               <svg
                 viewBox="0 0 24 24"
