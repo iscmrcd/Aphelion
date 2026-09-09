@@ -182,7 +182,11 @@ export function AphelionChatWidget() {
               </div>
             ))}
             {pending && (
-              <div className="w-16 rounded-2xl bg-neutral-100 px-3.5 py-3 dark:bg-white/10">
+              <div className="relative w-16 rounded-2xl rounded-bl-md bg-neutral-100 px-3.5 py-3 dark:bg-white/10">
+                <span
+                  aria-hidden="true"
+                  className="absolute bottom-0 -left-1 h-3 w-3 bg-inherit [clip-path:polygon(100%_0,100%_100%,0_100%)]"
+                />
                 <span className="flex gap-1">
                   {[0, 1, 2].map((i) => (
                     <span
