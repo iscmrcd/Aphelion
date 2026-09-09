@@ -143,7 +143,7 @@ export function AphelionChatWidget() {
         <div
           role="dialog"
           aria-label={t("Chat with Aphelion", "Chat con Aphelion")}
-          className="fixed right-3 left-3 z-50 flex flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white shadow-2xl sm:right-6 sm:left-auto sm:w-[380px] dark:border-white/10 dark:bg-neutral-900"
+          className="fixed right-3 left-3 z-50 flex flex-col overflow-hidden rounded-3xl border border-white/30 bg-white/75 shadow-2xl shadow-black/10 backdrop-blur-2xl sm:right-6 sm:left-auto sm:w-[380px] dark:border-white/15 dark:bg-neutral-900/75"
           style={{
             bottom: "calc(5rem + env(safe-area-inset-bottom, 0px))",
             maxHeight: "min(70vh, 560px)",
