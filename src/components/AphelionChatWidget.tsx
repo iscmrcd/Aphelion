@@ -163,17 +163,30 @@ export function AphelionChatWidget() {
             {msgs.map((m, i) => (
               <div
                 key={i}
-                className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${
+                className={`relative max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${
                   m.role === "user"
-                    ? "ml-auto bg-neutral-950 text-white dark:bg-white dark:text-neutral-950"
-                    : "bg-neutral-100 text-neutral-800 dark:bg-white/10 dark:text-neutral-100"
+                    ? "ml-auto rounded-br-md bg-neutral-950 text-white dark:bg-white dark:text-neutral-950"
+                    : "rounded-bl-md bg-neutral-100 text-neutral-800 dark:bg-white/10 dark:text-neutral-100"
                 }`}
               >
                 {renderMarkdown(m.content)}
+                {/* Piquito estilo iMessage para saber de qué lado viene. */}
+                <span
+                  aria-hidden="true"
+                  className={`absolute bottom-0 h-3 w-3 bg-inherit ${
+                    m.role === "user"
+                      ? "-right-1 [clip-path:polygon(0_0,0_100%,100%_100%)]"
+                      : "-left-1 [clip-path:polygon(100%_0,100%_100%,0_100%)]"
+                  }`}
+                />
               </div>
             ))}
             {pending && (
-              <div className="w-16 rounded-2xl bg-neutral-100 px-3.5 py-3 dark:bg-white/10">
+              <div className="relative w-16 rounded-2xl rounded-bl-md bg-neutral-100 px-3.5 py-3 dark:bg-white/10">
+                <span
+                  aria-hidden="true"
+                  className="absolute bottom-0 -left-1 h-3 w-3 bg-inherit [clip-path:polygon(100%_0,100%_100%,0_100%)]"
+                />
                 <span className="flex gap-1">
                   {[0, 1, 2].map((i) => (
                     <span
