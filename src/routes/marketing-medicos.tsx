@@ -71,6 +71,9 @@ function Page() {
     <main style={{ background: C.bg }}>
       <MedicosHero />
 
+      <PatientJourney />
+      <SelfCheck />
+
       <ReceptionSection />
 
       {/* DEMO */}
