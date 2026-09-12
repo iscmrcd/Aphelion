@@ -122,7 +122,7 @@ export function MedicosHero() {
             }}
           >
             <Stethoscope className="h-3.5 w-3.5" />
-            {t("Doctors and clinics", "Médicos y clínicas")}
+            {t("Websites and scheduling for practices", "Páginas web y agenda para consultorios")}
           </span>
 
           {/*
@@ -138,27 +138,26 @@ export function MedicosHero() {
             }}
           >
             <h1 className="text-4xl font-medium tracking-[-0.03em] text-white sm:text-5xl">
-              {t(
-                "Doctoralia can help patients find you. It should not be where you build your practice.",
-                "Doctoralia puede ayudarte a que te encuentren. No debería ser donde construyes tu consultorio.",
-              )}
+            {t(
+              "Get found, get known, get booked.",
+              "Que te encuentren, te conozcan y agenden contigo.",
+            )}
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-              {t(
-                "We register our own clients on Doctoralia, and we would tell you to take the free profile. The problem is not being there. The problem is that being there is all you have.",
-                "Nosotros damos de alta a nuestros clientes en Doctoralia, y te diríamos que tomes el perfil gratuito. El problema no es estar ahí. El problema es que estar ahí sea todo lo que tienes.",
-              )}
+            {t(
+              "We build your practice's website and connect it to online booking, WhatsApp and automatic reminders. Patients book on their own; your front desk stops repeating the same answers all day.",
+              "Construimos la página de tu consultorio y la conectamos con agenda en línea, WhatsApp y recordatorios automáticos. Tus pacientes agendan solos y tu recepción deja de repetir lo mismo todo el día.",
+            )}
             </p>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              to="/recursos/diagnostico/$industria"
-              params={{ industria: "clinicas" }}
+              to="/contacto"
               className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium text-white transition hover:opacity-90"
               style={{ backgroundImage: "linear-gradient(120deg, #2A7488 0%, #12414F 100%)" }}
             >
-              {t("Diagnose your practice, 2 min", "Diagnostica tu consultorio, 2 min")}
+              {t("Get a quote for your practice", "Cotiza tu consultorio")}
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
             <a
@@ -174,6 +173,17 @@ export function MedicosHero() {
               WhatsApp
             </a>
           </div>
+
+          <Link
+            to="/recursos/diagnostico/$industria"
+            params={{ industria: "clinicas" }}
+            className="mt-5 inline-flex items-center gap-1.5 text-sm text-white/75 underline underline-offset-4 transition hover:text-white"
+          >
+            {t(
+              "Or check how your practice is doing first, 2 min",
+              "O primero revisa cómo está tu consultorio, 2 min",
+            )}
+          </Link>
         </div>
       </div>
     </section>
