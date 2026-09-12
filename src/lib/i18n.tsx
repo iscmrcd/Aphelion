@@ -56,9 +56,29 @@ const LangContext = createContext<Ctx>({
   ready: false,
 });
 
-export function LangProvider({ children }: { children: ReactNode }) {
-  // SSR always renders the default (English) markup; detection runs after hydration.
-  const [lang, setLangState] = useState<Lang>(DEFAULT_LANG);
+export function LangProvider({
+  children,
+  initialLang,
+}: {
+  children: ReactNode;
+  initialLang?: Lang;
+}) {
+  /*
+   * initialLang comes from ?lang in the URL, which the server already knows.
+   *
+   * This provider used to hardcode English on the server and only detect the
+   * language after hydration. The head() of every route did read ?lang, so a
+   * crawler received a Spanish <title> wrapped around an English body — and,
+   * worse, an explicit lang="en" telling it the page was English. Measured on
+   * /marketing-medicos?lang=es: 258 English words against 1 Spanish one. The
+   * sitemap has been advertising a ?lang=es alternate for all 84 URLs that
+   * never actually rendered in Spanish.
+   *
+   * Initialising from the URL makes the server and the client agree on the
+   * first paint, so there is no hydration mismatch and no flash of English on
+   * a Spanish ad click.
+   */
+  const [lang, setLangState] = useState<Lang>(initialLang ?? DEFAULT_LANG);
   const [ready, setReady] = useState(false);
   const navigate = useNavigate();
 
@@ -79,11 +99,17 @@ export function LangProvider({ children }: { children: ReactNode }) {
   );
 
   useEffect(() => {
+    // An explicit ?lang is a decision already made; re-detecting would let a
+    // stale saved preference override the link the visitor actually opened.
+    if (initialLang) {
+      setReady(true);
+      return;
+    }
     const detected = detectLang();
     setLangState(detected);
     setReady(true);
     if (detected !== DEFAULT_LANG) syncUrl(detected);
-  }, [syncUrl]);
+  }, [syncUrl, initialLang]);
 
   useEffect(() => {
     if (typeof document !== "undefined") {
