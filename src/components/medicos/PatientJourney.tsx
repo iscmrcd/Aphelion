@@ -21,9 +21,9 @@ export function PatientJourney() {
       icon: <Search className="h-4 w-4" />,
       title: "Your patient looks for a doctor on Google",
       titleEs: "Tu paciente busca un médico en Google",
-      body: "They type something like “dentist near me” or “orthodontist in Tijuana”. Nobody types your name, because they do not know it yet.",
+      body: "They type something like “dentist near me” or “orthodontist in Tijuana”. Someone who does not know you yet cannot type your name.",
       bodyEs:
-        "Escribe algo como “dentista cerca de mí” u “ortodoncista en Tijuana”. Nadie escribe tu nombre, porque todavía no te conoce.",
+        "Escribe algo como “dentista cerca de mí” u “ortodoncista en Tijuana”. Quien todavía no te conoce no puede escribir tu nombre.",
     },
     {
       icon: <Building2 className="h-4 w-4" />,
@@ -38,17 +38,17 @@ export function PatientJourney() {
       icon: <Users className="h-4 w-4" />,
       title: "Your patient clicks Doctoralia and lands on a list",
       titleEs: "Tu paciente entra a Doctoralia y cae en una lista",
-      body: "They did not land on you. They landed on a page showing you and every colleague in your specialty in your city, side by side, with stars and prices.",
+      body: "That page shows you next to every colleague in your specialty in your city, side by side, with stars and prices. The patient compares.",
       bodyEs:
-        "No cayó contigo. Cayó en una página que los muestra a ti y a todos tus colegas de la especialidad en tu ciudad, uno junto al otro, con estrellas y precios.",
+        "Esa página te muestra junto a todos tus colegas de la especialidad en tu ciudad, uno al lado del otro, con estrellas y precios. El paciente compara.",
     },
     {
       icon: <Users className="h-4 w-4" />,
       title: "And there you compete all over again",
       titleEs: "Y ahí vuelves a competir",
-      body: "You already lost the first round on Google. Now you are in the second one, inside a list you do not control, where profiles that pay appear above profiles that do not. Doctoralia says so on its own site.",
+      body: "That is a second comparison, inside a list you do not control, where profiles that pay appear above profiles that do not. Doctoralia says so on its own site.",
       bodyEs:
-        "La primera ronda ya la perdiste en Google. Ahora estás en la segunda, dentro de una lista que no controlas, donde los perfiles que pagan aparecen arriba de los que no. Doctoralia lo dice en su propio sitio.",
+        "Es una segunda comparación, dentro de una lista que no controlas, donde los perfiles que pagan aparecen arriba de los que no. Doctoralia lo dice en su propio sitio.",
       highlight: true,
     },
   ];
@@ -117,8 +117,8 @@ export function PatientJourney() {
           style={{ borderColor: C.mid, backgroundColor: `${C.soft}1f`, color: C.deep }}
         >
           {t(
-            "With your own page, that patient can land on you: your treatments, your credentials, your booking. Nobody else on the screen.",
-            "Con tu propia página, ese paciente puede caer contigo: tus tratamientos, tus credenciales, tu agenda. Nadie más en la pantalla.",
+            "With your own page, that patient sees your treatments, your credentials and your availability, and can request an appointment right there. Nobody else on the screen.",
+            "Con tu propia página, ese paciente ve tus tratamientos, tus credenciales y tu disponibilidad, y puede solicitar cita ahí mismo. Nadie más en la pantalla.",
           )}
         </p>
       </div>

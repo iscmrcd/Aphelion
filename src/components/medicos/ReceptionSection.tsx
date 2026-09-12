@@ -63,8 +63,8 @@ export function ReceptionSection() {
         </h2>
         <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
           {t(
-            "Most enquiries arrive outside clinic hours, and the patient comparing three practices books with whoever answered first. This is the step before the appointment exists.",
-            "La mayoría de las consultas llegan fuera del horario del consultorio, y el paciente que compara tres clínicas agenda con quien contestó primero. Este es el paso anterior a que la cita exista.",
+            "An assistant answers questions and takes appointment requests outside clinic hours too. A patient comparing three practices tends to book with whoever answered first.",
+            "Un asistente responde dudas y recibe solicitudes de cita también fuera del horario. El paciente que compara tres clínicas suele agendar con quien le contestó primero.",
           )}
         </p>
 
@@ -85,8 +85,8 @@ export function ReceptionSection() {
 
         <p className="mt-8 mb-4 text-sm" style={{ color: C.mid }}>
           {t(
-            "Try it. It is playing a dental clinic, and its data is invented for the demo.",
-            "Pruébalo. Está haciendo de consultorio dental y sus datos son inventados para la demo.",
+            "Try the assistant of a sample dental clinic. The data is fictional.",
+            "Prueba el asistente de una clínica dental de ejemplo. Los datos son ficticios.",
           )}
         </p>
 

@@ -94,8 +94,8 @@ export function WhyOwnSiteSection() {
           style={{ color: C.deep }}
         >
           {t(
-            "Why the site is the part worth owning",
-            "Por qué el sitio es la parte que vale la pena que sea tuya",
+            "Six things that only exist if the page is yours",
+            "Seis cosas que solo existen si la página es tuya",
           )}
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
