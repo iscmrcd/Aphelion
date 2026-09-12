@@ -98,9 +98,6 @@ function Page() {
         </div>
       </section>
 
-      <PatientJourney />
-      <SelfCheck />
-
       <RealMarketingSection />
       <WhyOwnSiteSection />
       <Ladder />
