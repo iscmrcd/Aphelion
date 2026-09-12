@@ -27,12 +27,12 @@ export const Route = createFileRoute("/marketing-medicos")({
       en: {
         title: "Marketing for Doctors and Clinics | Aphelion",
         description:
-          "Be on Doctoralia. Just do not build your practice inside it. Websites, AI booking, reminders and measurement your clinic owns. Tijuana and Baja California.",
+          "Websites for practices, connected to online booking, WhatsApp and automatic reminders. Patients find you, get to know you and book. Tijuana and Baja California.",
       },
       es: {
         title: "Marketing para Médicos y Clínicas | Aphelion",
         description:
-          "Está en Doctoralia. Solo no construyas tu consultorio adentro. Sitio, agenda con IA, recordatorios y medición que son tuyos. Tijuana y Baja California.",
+          "Páginas web para consultorios, conectadas a agenda en línea, WhatsApp y recordatorios automáticos. Que te encuentren, te conozcan y agenden. Tijuana y Baja California.",
       },
       jsonLd: [
         ORGANIZATION_JSONLD,
@@ -71,9 +71,6 @@ function Page() {
     <main style={{ background: C.bg }}>
       <MedicosHero />
 
-      <PatientJourney />
-      <SelfCheck />
-
       <ReceptionSection />
 
       {/* DEMO */}
@@ -84,19 +81,22 @@ function Page() {
             style={{ color: C.deep }}
           >
             {t(
-              "What a patient booking on your own site sets off",
-              "Lo que dispara una cita agendada en tu propio sitio",
+              "Every appointment, confirmed and remembered without anyone doing it by hand",
+              "Cada cita, confirmada y recordada sin que nadie lo haga a mano",
             )}
           </h2>
           <p className="mb-8 max-w-2xl text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
             {t(
-              "On a directory, the booking is theirs and you get a notification. On your own system, the booking triggers a chain you control end to end.",
-              "En un directorio, la cita es de ellos y a ti te llega un aviso. En tu propio sistema, la cita dispara una cadena que controlas de principio a fin.",
+              "On a directory, the booking is theirs and you get a notification. On your own site it lands in your panel, the patient gets a confirmation and the reminder is scheduled on its own.",
+              "En un directorio, la cita es de ellos y a ti te llega un aviso. En tu propia página entra a tu panel, el paciente recibe confirmación y el recordatorio queda programado solo.",
             )}
           </p>
           <AppointmentPanelDemo />
         </div>
       </section>
+
+      <PatientJourney />
+      <SelfCheck />
 
       <RealMarketingSection />
       <WhyOwnSiteSection />
@@ -127,22 +127,22 @@ function Ladder() {
   const C = clinicalPalette(theme);
   const levels: [string, string, string, string][] = [
     [
-      "Presence",
-      "Presencia",
-      "Exist online: a site, your information, contact and WhatsApp.",
-      "Existir en internet: sitio, tu información, contacto y WhatsApp.",
+      "Website",
+      "Página web",
+      "Your treatments, credentials, location and contact, on an address of your own.",
+      "Tus tratamientos, credenciales, ubicación y contacto, en una dirección tuya.",
     ],
     [
-      "Acquisition",
-      "Captación",
-      "The site works: a page per treatment, local SEO, booking, measurement.",
-      "El sitio trabaja: una página por tratamiento, SEO local, agenda, medición.",
+      "Website with booking",
+      "Página con agenda",
+      "Adds a page per treatment, local SEO, online booking and measurement of what arrives.",
+      "Agrega una página por tratamiento, SEO local, agenda en línea y medición de lo que llega.",
     ],
     [
-      "Ecosystem",
-      "Ecosistema",
-      "Infrastructure you own: panel, AI, reminders, payments, CRM, campaigns connected.",
-      "Infraestructura tuya: panel, IA, recordatorios, pagos, CRM y campañas conectadas.",
+      "Website with automation",
+      "Página con automatización",
+      "Adds the assistant, reminders, your appointment panel, payments and connected campaigns.",
+      "Agrega el asistente, recordatorios, tu panel de citas, pagos y campañas conectadas.",
     ],
   ];
   return (
@@ -153,12 +153,15 @@ function Ladder() {
           style={{ color: C.deep }}
         >
           {t(
-            "The question is not what a website costs",
-            "La pregunta no es cuánto cuesta una página",
+            "Pick what your practice actually needs",
+            "Elige lo que necesita tu consultorio",
           )}
         </h2>
         <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
-          {t("It is what you are building.", "Es qué estás construyendo.")}
+          {t(
+            "Three levels. You can start at one and add the next later.",
+            "Tres niveles. Puedes empezar en uno y agregar el siguiente después.",
+          )}
         </p>
         <div className="mt-8 space-y-3">
           {levels.map(([en, es, den, des], i) => (
