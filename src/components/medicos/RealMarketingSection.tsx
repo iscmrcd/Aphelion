@@ -85,8 +85,8 @@ export function RealMarketingSection() {
         </h2>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
           {t(
-            "These platforms are where your patients are. Connecting to them properly needs a place you control, because the code that measures what happens after the click has to live somewhere, and a directory profile is not somewhere you can put code.",
-            "En estas plataformas están tus pacientes. Conectarte bien a ellas necesita un lugar que controles, porque el código que mide lo que pasa después del clic tiene que vivir en algún lado, y un perfil de directorio no es un lado donde puedas poner código.",
+            "Your patients are on these platforms. To connect them properly you need a page of your own: it is the only place where you can see what each ad actually produced, and send every click to the treatment it promised.",
+            "Tus pacientes están en estas plataformas. Para conectarlas bien necesitas una página tuya: es el único lugar donde puedes ver qué produjo cada anuncio y llevar cada clic al tratamiento que prometió.",
           )}
         </p>
 
@@ -191,8 +191,8 @@ export function RealMarketingSection() {
           </ul>
           <p className="mt-4 text-sm leading-relaxed" style={{ color: C.mid }}>
             {t(
-              "None of this is a limit of ours. It is the page being theirs. On your own site we install all of it the same week.",
-              "Nada de esto es un límite nuestro. Es que la página es de ellos. En un sitio tuyo instalamos todo eso la misma semana.",
+              "None of this is a limit of ours. The page simply belongs to them. On a site of your own, all of it can be set up.",
+              "Nada de esto es un límite nuestro. Simplemente la página es de ellos. En un sitio tuyo todo esto sí se puede configurar.",
             )}
           </p>
         </div>

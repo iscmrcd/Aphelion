@@ -67,9 +67,9 @@ const CHECKS: Check[] = [
         label: "You are not in it",
         labelEs: "No estás ahí",
         means:
-          "This is the cheapest thing on the whole list to fix, and it is free. It is also the one we do not charge for.",
+          "Claiming and completing it is free, and we help you do it without charging for it.",
         meansEs:
-          "Es lo más barato de arreglar de toda la lista, y es gratis. Es también lo que no te cobramos.",
+          "Reclamarlo y completarlo es gratis, y te ayudamos a hacerlo sin cobrarte por ello.",
       },
       {
         label: "You are in it with no photos or old hours",
@@ -81,8 +81,8 @@ const CHECKS: Check[] = [
       {
         label: "You are in it, complete, with recent reviews",
         labelEs: "Estás completo y con reseñas recientes",
-        means: "You already have the highest-return asset. The rest is building on top of it.",
-        meansEs: "Ya tienes el activo de mayor retorno. Lo demás es construir encima.",
+        means: "You already have a solid base of local presence. The rest is building on top of it.",
+        meansEs: "Ya tienes una buena base de presencia local. Lo demás es construir encima.",
         good: true,
       },
     ],
@@ -99,9 +99,9 @@ const CHECKS: Check[] = [
         label: "There is no way to book, only a phone number",
         labelEs: "No hay forma de agendar, solo un teléfono",
         means:
-          "Then everything depends on somebody answering. Count your missed calls this week before deciding that is fine.",
+          "Then everything depends on somebody answering. A booking form takes requests even when nobody can pick up.",
         meansEs:
-          "Entonces todo depende de que alguien conteste. Cuenta tus llamadas perdidas de esta semana antes de decidir que está bien.",
+          "Entonces todo depende de que alguien conteste. Un formulario de citas recibe solicitudes aunque nadie pueda contestar.",
       },
       {
         label: "You can write, but nobody replies for hours",
@@ -220,8 +220,8 @@ export function SelfCheck() {
         >
           <p className="text-base leading-relaxed" style={{ color: C.deep }}>
             {t(
-              "If all three came out well, you do not need us for this and we will say so on the call. If any of them stung, the diagnostic turns what you just saw into a list in order of what it is costing you.",
-              "Si las tres salieron bien, no nos necesitas para esto y te lo vamos a decir en la llamada. Si alguna incomodó, el diagnóstico convierte lo que acabas de ver en una lista ordenada por lo que te está costando.",
+              "If all three came out well, you do not need us for this and we will say so on the call. If any of them stung, the check turns what you just saw into a short list of what to fix first.",
+              "Si las tres salieron bien, no nos necesitas para esto y te lo vamos a decir en la llamada. Si alguna incomodó, la revisión convierte lo que acabas de ver en una lista corta de qué arreglar primero.",
             )}
           </p>
           <Link
