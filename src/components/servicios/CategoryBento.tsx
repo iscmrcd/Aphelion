@@ -39,7 +39,10 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
     {
       key: "web",
       title: t("Websites", "Websites"),
-      desc: t("Six tiers, from presence to SaaS.", "Seis niveles, de presencia a SaaS."),
+      desc: t(
+        "From a page that presents you to one with booking and payments.",
+        "Desde una página que te presenta hasta una con agenda y pagos.",
+      ),
       icon: Code2,
       status: "active" as const,
       route: "/servicios/websites" as const,
@@ -47,7 +50,10 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
     {
       key: "marketing",
       title: t("Marketing & Content", "Marketing & Contenido"),
-      desc: t("Content + Meta · Google · TikTok.", "Contenido + Meta · Google · TikTok."),
+      desc: t(
+        "Campaigns on Meta, Google and TikTok, and the content that feeds them.",
+        "Campañas en Meta, Google y TikTok, con el contenido que las alimenta.",
+      ),
       icon: Megaphone,
       status: "active" as const,
       route: "/servicios/marketing" as const,
@@ -55,14 +61,20 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
     {
       key: "contenido",
       title: t("Content Production", "Producción de Contenido"),
-      desc: t("Photo, video, reels, and monthly editorial.", "Foto, video, reels y editorial mensual."),
+      desc: t(
+        "Photos, video and reels for your social channels, every month.",
+        "Fotos, video y reels para tus redes, cada mes.",
+      ),
       icon: Camera,
       status: "soon" as const,
     },
     {
       key: "dron",
       title: t("Drone", "Drone"),
-      desc: t("Aerial video and photography.", "Video y fotografía aérea."),
+      desc: t(
+        "Aerial shots of your spaces, properties and events.",
+        "Tomas aéreas de tus espacios, propiedades y eventos.",
+      ),
       icon: DroneIcon,
       status: "active" as const,
       route: "/servicios/video-con-dron" as const,
@@ -70,15 +82,21 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
 
     {
       key: "saas",
-      title: t("Custom SaaS", "SaaS a Medida"),
-      desc: t("Multi-user platforms.", "Plataformas multiusuario."),
+      title: t("Custom systems", "Sistemas a medida"),
+      desc: t(
+        "A panel to organise clients, documents and your team's processes.",
+        "Un panel para organizar clientes, documentos y los procesos de tu equipo.",
+      ),
       icon: Boxes,
       status: "soon" as const,
     },
     {
       key: "branding",
       title: t("Branding", "Branding"),
-      desc: t("Identity and visual systems.", "Identidad y sistema visual."),
+      desc: t(
+        "Logo, colours and the guide for applying them everywhere.",
+        "Logotipo, colores y la guía para aplicarlos en todo.",
+      ),
       icon: Sparkles,
       status: "soon" as const,
     },
@@ -92,7 +110,7 @@ export function CategoryBento({ onWebsites }: { onWebsites: () => void }) {
             {t("Services", "Servicios")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            {t("One agency. Your entire infrastructure.", "Una agencia. Toda tu infraestructura.")}
+            {t("What do you want to improve?", "¿Qué quieres mejorar en tu negocio?")}
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
