@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -126,8 +127,15 @@ fbq('track', 'PageView');
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  /*
+   * Read straight from the router rather than from the provider: this element
+   * is outside LangProvider, and lang="en" on a Spanish page is the single
+   * strongest signal telling a search engine to file it as English.
+   */
+  const urlLang = useRouterState({ select: (s) => s.location.search?.lang });
+
   return (
-    <html lang="en">
+    <html lang={urlLang === "es" ? "es-MX" : "en"}>
       <head>
         <HeadContent />
       </head>
@@ -150,11 +158,13 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  // Known on the server, so the first paint is already in the right language.
+  const { lang } = Route.useSearch();
 
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <LangProvider>
+        <LangProvider initialLang={lang}>
           <div className="flex min-h-screen flex-col bg-neutral-50">
             <SiteHeader />
             <div className="flex-1">
