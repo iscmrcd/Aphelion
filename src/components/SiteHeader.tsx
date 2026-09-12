@@ -66,7 +66,6 @@ export function SiteHeader() {
   }, []);
 
   const nav = [
-    { to: "/", label: t("Services", "Servicios") },
     { to: "/servicios/websites", label: "Websites" },
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
     { to: "/servicios/agente-ia", label: t("AI Agent", "Agente IA") },

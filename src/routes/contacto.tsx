@@ -67,14 +67,14 @@ function ContactoPage() {
   const [budget, setBudget] = useState<string>("");
 
   const SERVICES = [
-    t("Websites", "Websites"),
-    t("Digital Marketing", "Marketing Digital"),
-    t("AI Agent", "Agente IA"),
-    t("Social Media Content", "Contenido para Redes"),
-    t("Commercial & Drone Video", "Video Comercial & Drone"),
-    t("Branding", "Branding"),
-    t("Custom SaaS", "SaaS Personalizado"),
-    t("Not sure yet", "Aún no estoy seguro"),
+    t("A website", "Página web"),
+    t("Ads and campaigns", "Publicidad y campañas"),
+    t("Assistant and automation", "Asistente y automatización"),
+    t("Content for social", "Contenido para redes"),
+    t("Photo and video", "Foto y video"),
+    t("Brand design", "Diseño de marca"),
+    t("A custom system", "Sistema a medida"),
+    t("Not sure yet", "Aún no sé"),
   ];
 
   const BUDGETS = [
@@ -82,7 +82,7 @@ function ContactoPage() {
     t("$20,000 – $50,000 MXN", "$20,000 – $50,000 MXN"),
     t("$50,000 – $150,000 MXN", "$50,000 – $150,000 MXN"),
     t("More than $150,000 MXN", "Más de $150,000 MXN"),
-    t("Monthly / recurring contract", "Mensualidad / contrato recurrente"),
+    t("I'd rather you advise me", "Prefiero que me orienten"),
   ];
 
   /**
@@ -269,7 +269,7 @@ function ContactoPage() {
 
                 <div>
                   <label className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
-                    {t("Service", "Servicio")}
+                    {t("What do you want to improve?", "¿Qué quieres mejorar?")}
                   </label>
                   <div className="flex flex-wrap gap-2">
                     {SERVICES.map((s) => (

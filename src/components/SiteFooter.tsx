@@ -16,8 +16,8 @@ export function SiteFooter() {
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/50">
             {t(
-              "Digital infrastructure for brands that refuse to settle.",
-              "Infraestructura digital para marcas que no se conforman.",
+              "Websites, campaigns and systems for your business.",
+              "Páginas web, campañas y sistemas para tu negocio.",
             )}
           </p>
           <div className="mt-5 flex items-center gap-4">
