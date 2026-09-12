@@ -27,12 +27,12 @@ export const Route = createFileRoute("/marketing-medicos")({
       en: {
         title: "Marketing for Doctors and Clinics | Aphelion",
         description:
-          "Websites for practices, connected to online booking, WhatsApp and automatic reminders. Patients find you, get to know you and book. Tijuana and Baja California.",
+          "Doctoralia can help patients find you, but it should not be the only thing you have. Websites, booking and automation your practice owns. Tijuana and Baja California.",
       },
       es: {
         title: "Marketing para Médicos y Clínicas | Aphelion",
         description:
-          "Páginas web para consultorios, conectadas a agenda en línea, WhatsApp y recordatorios automáticos. Que te encuentren, te conozcan y agenden. Tijuana y Baja California.",
+          "Doctoralia puede ayudarte a que te encuentren, pero no debería ser lo único que tienes. Páginas web, agenda y automatización que son tuyas. Tijuana y Baja California.",
       },
       jsonLd: [
         ORGANIZATION_JSONLD,
