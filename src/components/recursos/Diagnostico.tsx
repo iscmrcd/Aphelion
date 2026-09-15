@@ -243,7 +243,7 @@ function Resultado({
       {top.length > 0 && (
         <div className="mt-10">
           <h3 className="text-sm font-medium tracking-[0.08em] text-neutral-500 uppercase dark:text-neutral-400">
-            {t("Fix these first, in this order", "Arregla esto primero, en este orden")}
+            {t("Priorities, in order", "Prioridades, en orden")}
           </h3>
           <ol className="mt-4 space-y-3">
             {top.map((g, i) => (
@@ -269,7 +269,7 @@ function Resultado({
                         style={{ backgroundColor: `${C.soft}40`, color: C.deep }}
                       >
                         <Check className="h-3 w-3" />
-                        {t("Free tool — we set it up and run it for you", "Herramienta gratuita — nosotros la configuramos por ti")}
+                        {t("Free tool — included in our setup service", "Herramienta gratuita — incluida en el servicio de configuración")}
                       </span>
                     )}
                     <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
@@ -296,7 +296,7 @@ function Resultado({
       {rest.length > 0 && (
         <div className="mt-7">
           <h3 className="text-sm font-medium tracking-[0.08em] text-neutral-500 uppercase dark:text-neutral-400">
-            {t("Then these", "Después estos")}
+            {t("Next steps", "Siguientes pasos")}
           </h3>
           <ul className="mt-3 space-y-1.5">
             {rest.map((g) => (
@@ -311,7 +311,7 @@ function Resultado({
       {wins.length > 0 && (
         <div className="mt-7 rounded-2xl p-5" style={{ backgroundColor: `${C.soft}26` }}>
           <h3 className="text-sm font-medium" style={{ color: C.deep }}>
-            {t("What you already have right", "Lo que ya tienes bien")}
+            {t("What is already working", "Lo que ya funciona")}
           </h3>
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">
             {wins.map((w) => (
@@ -359,7 +359,7 @@ function Resultado({
           className="inline-flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium transition hover:opacity-90"
           style={{ backgroundImage: rampButton(C), color: C.onDeep }}
         >
-          {t("Talk through the plan", "Revisar el plan en una llamada")}
+          {t("Schedule a review call", "Agendar una llamada de revisión")}
           <ArrowRight className="h-3.5 w-3.5" />
         </button>
         <button
@@ -369,14 +369,14 @@ function Resultado({
           style={{ borderColor: `${C.soft}66`, backgroundColor: C.card }}
         >
           <RotateCcw className="h-3.5 w-3.5" />
-          {t("Start over", "Empezar de nuevo")}
+          {t("Retake diagnostic", "Volver a hacer el diagnóstico")}
         </button>
       </div>
 
       <p className="mt-5 text-center text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
         {t(
-          `Scored across ${vertical.questions.length} factors weighted by how much each one typically costs a practice.`,
-          `Calculado sobre ${vertical.questions.length} factores, ponderados por lo que cada uno suele costarle a un consultorio.`,
+          `Scored across ${vertical.questions.length} weighted factors based on the typical cost each represents for a practice.`,
+          `Puntuación sobre ${vertical.questions.length} factores ponderados según el costo típico que representan para un consultorio.`,
         )}
       </p>
     </div>
@@ -454,7 +454,7 @@ function PlanForm({
           phone: form.phone,
           company: form.company,
           service: lang === "es" ? vertical.title : vertical.titleEn,
-          message: lang === "es" ? "Quiere que le armemos un paquete donde nosotros nos encargamos de dar de alta, revisar y mover todo lo que salió en el diagnóstico." : "Wants us to put together a package where we handle the setup, review and ongoing management of everything flagged in the diagnostic.",
+          message: lang === "es" ? "Solicita una propuesta de servicio para implementar, revisar y operar los puntos detectados en el diagnóstico." : "Requests a service proposal to implement, review and operate the gaps identified in the diagnostic.",
           transcript,
           path: typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
@@ -475,12 +475,12 @@ function PlanForm({
           <Check className="h-5 w-5" />
         </span>
         <h2 className="mt-5 text-xl font-medium" style={{ color: C.deep }}>
-          {t("Done, we will talk soon", "Listo, hablamos pronto")}
+          {t("Request received", "Solicitud recibida")}
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
           {t(
-            "We received your diagnostic. We will contact you with no commitment to put together the package and review it on a call.",
-            "Recibimos tu diagnóstico. Te contactamos sin compromiso para armar el paquete y revisarlo en una llamada.",
+            "We received your diagnostic. Our team will contact you to schedule a no-commitment review call and prepare a tailored proposal.",
+            "Recibimos tu diagnóstico. Nuestro equipo se pondrá en contacto para agendar una llamada sin compromiso y preparar una propuesta a la medida.",
           )}
         </p>
       </div>
@@ -493,12 +493,12 @@ function PlanForm({
   return (
     <form onSubmit={submit}>
       <h2 className="text-xl leading-snug font-medium tracking-[-0.02em] sm:text-2xl" style={{ color: C.deep }}>
-        {t("Leave your details so we can build your package", "Déjanos tus datos para armar tu paquete")}
+        {t("Schedule your diagnostic review", "Agenda la revisión de tu diagnóstico")}
       </h2>
       <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
         {t(
-          "We will contact you with no commitment to put together a package where we handle the setup, review and ongoing management of everything flagged in your diagnostic.",
-          "Te contactamos sin compromiso para armar un paquete donde nosotros nos encargamos de dar de alta, revisar y mover todo lo que salió en tu diagnóstico.",
+          "Leave your details and our team will contact you to schedule a no-commitment call. We will prepare a tailored proposal based on the gaps identified in your diagnostic.",
+          "Déjanos tus datos y nuestro equipo se pondrá en contacto para agendar una llamada sin compromiso. Prepararemos una propuesta a la medida a partir de los puntos detectados en tu diagnóstico.",
         )}
       </p>
 
