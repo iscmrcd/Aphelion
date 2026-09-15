@@ -100,6 +100,8 @@ function Precios() {
 function Block({ block }: { block: PriceBlock }) {
   const t = useT();
   const { lang } = useLang();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "A cotizar") : `$${n.toLocaleString(lang === "es" ? "es-MX" : "en-US")}`;
   return (
     <section id={block.id} className="scroll-mt-28">
       <div className="flex flex-wrap items-end justify-between gap-4">
