@@ -381,3 +381,193 @@ function Resultado({
     </div>
   );
 }
+
+/**
+ * A plain-text summary of the result. This is what lands in the inbox, so it
+ * has to be readable without opening the site: score, band, ordered gaps,
+ * strengths, and the language the visitor answered in.
+ */
+function buildSummary({
+  vertical,
+  score,
+  gaps,
+  wins,
+  lang,
+}: {
+  vertical: DiagnosticoVertical;
+  score: number;
+  gaps: DiagnosticoVertical["questions"];
+  wins: DiagnosticoVertical["questions"];
+  lang: "en" | "es";
+}): string {
+  const banda = bandaFor(score);
+  const es = lang === "es";
+  const lines: string[] = [
+    `${es ? "Diagnóstico" : "Diagnostic"}: ${es ? vertical.title : vertical.titleEn}`,
+    `${es ? "Idioma en que respondió" : "Answered in"}: ${es ? "Español" : "English"}`,
+    `${es ? "Puntaje" : "Score"}: ${score}/100 — ${es ? banda.label : banda.labelEn}`,
+    "",
+    `${es ? "Huecos, en orden de costo" : "Gaps, ordered by cost"}:`,
+    ...(gaps.length
+      ? gaps.map((g, i) => `${i + 1}. ${es ? g.gap.title : g.gap.titleEn}`)
+      : [es ? "— Ninguno" : "— None"]),
+    "",
+    `${es ? "Lo que ya tiene bien" : "Already right"}:`,
+    ...(wins.length
+      ? wins.map((w) => `· ${es ? w.topic : w.topicEn}`)
+      : [es ? "— Nada por ahora" : "— Nothing yet"]),
+  ];
+  return lines.join("\n");
+}
+
+function PlanForm({
+  C,
+  lang,
+  onBack,
+  transcript,
+  vertical,
+}: {
+  C: ClinicalPalette;
+  lang: "en" | "es";
+  onBack: () => void;
+  transcript: string;
+  vertical: DiagnosticoVertical;
+}) {
+  const t = useT();
+  const [form, setForm] = useState({ name: "", company: "", phone: "", email: "" });
+  const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
+    setForm((f) => ({ ...f, [k]: e.target.value }));
+
+  async function submit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!form.name.trim() || (!form.phone.trim() && !form.email.trim())) return;
+    setState("sending");
+    try {
+      const res = await submitLead({
+        data: {
+          source: "diagnostic",
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          company: form.company,
+          service: lang === "es" ? vertical.title : vertical.titleEn,
+          message: lang === "es" ? "Quiere revisar su plan en una llamada." : "Wants to review the plan on a call.",
+          transcript,
+          path: typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
+        },
+      });
+      setState(res?.ok ? "sent" : "error");
+    } catch {
+      setState("error");
+    }
+  }
+
+  if (state === "sent") {
+    return (
+      <div className="py-6 text-center">
+        <span
+          className="mx-auto flex h-12 w-12 items-center justify-center rounded-full"
+          style={{ backgroundImage: rampButton(C), color: C.onDeep }}
+        >
+          <Check className="h-5 w-5" />
+        </span>
+        <h2 className="mt-5 text-xl font-medium" style={{ color: C.deep }}>
+          {t("We have your diagnostic", "Ya tenemos tu diagnóstico")}
+        </h2>
+        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+          {t(
+            "We received your results and we will contact you to go through the plan.",
+            "Recibimos tus resultados y te contactamos para revisar el plan contigo.",
+          )}
+        </p>
+      </div>
+    );
+  }
+
+  const field =
+    "w-full rounded-2xl border px-4 py-3 text-sm outline-none transition focus:brightness-[1.03]";
+
+  return (
+    <form onSubmit={submit}>
+      <h2 className="text-xl leading-snug font-medium tracking-[-0.02em] sm:text-2xl" style={{ color: C.deep }}>
+        {t("Where do we send your plan?", "¿A dónde te mandamos tu plan?")}
+      </h2>
+      <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+        {t(
+          "We send your results with it and we call you to go through the plan.",
+          "Te enviamos tus resultados y te llamamos para revisar el plan.",
+        )}
+      </p>
+
+      <div className="mt-6 space-y-3">
+        <input
+          className={field}
+          style={{ borderColor: `${C.soft}66`, backgroundColor: C.card }}
+          placeholder={t("Name", "Nombre")}
+          value={form.name}
+          onChange={set("name")}
+          required
+          maxLength={120}
+        />
+        <input
+          className={field}
+          style={{ borderColor: `${C.soft}66`, backgroundColor: C.card }}
+          placeholder={t("Company or practice", "Empresa o consultorio")}
+          value={form.company}
+          onChange={set("company")}
+          maxLength={120}
+        />
+        <input
+          className={field}
+          style={{ borderColor: `${C.soft}66`, backgroundColor: C.card }}
+          placeholder={t("Phone or WhatsApp", "Teléfono o WhatsApp")}
+          value={form.phone}
+          onChange={set("phone")}
+          inputMode="tel"
+          maxLength={40}
+        />
+        <input
+          className={field}
+          style={{ borderColor: `${C.soft}66`, backgroundColor: C.card }}
+          placeholder={t("Email", "Correo")}
+          value={form.email}
+          onChange={set("email")}
+          type="email"
+          maxLength={160}
+        />
+      </div>
+
+      {state === "error" && (
+        <p className="mt-4 text-sm text-red-600 dark:text-red-400">
+          {t(
+            "We could not send it. Try again in a moment.",
+            "No pudimos enviarlo. Inténtalo de nuevo en un momento.",
+          )}
+        </p>
+      )}
+
+      <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+        <button
+          type="submit"
+          disabled={state === "sending"}
+          className="inline-flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium transition hover:opacity-90 disabled:opacity-60"
+          style={{ backgroundImage: rampButton(C), color: C.onDeep }}
+        >
+          {state === "sending" ? t("Sending…", "Enviando…") : t("Send", "Enviar")}
+          <ArrowRight className="h-3.5 w-3.5" />
+        </button>
+        <button
+          type="button"
+          onClick={onBack}
+          className="inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3.5 text-sm font-medium text-neutral-700 transition hover:brightness-[1.03] dark:text-neutral-200"
+          style={{ borderColor: `${C.soft}66`, backgroundColor: C.card }}
+        >
+          <ArrowLeft className="h-3.5 w-3.5" />
+          {t("Back to my result", "Volver a mi resultado")}
+        </button>
+      </div>
+    </form>
+  );
+}
