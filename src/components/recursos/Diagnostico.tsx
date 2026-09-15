@@ -189,6 +189,7 @@ function Resultado({
   wins,
   lang,
   onRestart,
+  onRequestPlan,
   vertical,
   C,
 }: {
@@ -197,6 +198,7 @@ function Resultado({
   wins: DiagnosticoVertical["questions"];
   lang: "en" | "es";
   onRestart: () => void;
+  onRequestPlan: () => void;
   vertical: DiagnosticoVertical;
   C: ClinicalPalette;
 }) {
