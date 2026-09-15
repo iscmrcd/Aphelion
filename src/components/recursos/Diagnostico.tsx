@@ -493,12 +493,12 @@ function PlanForm({
   return (
     <form onSubmit={submit}>
       <h2 className="text-xl leading-snug font-medium tracking-[-0.02em] sm:text-2xl" style={{ color: C.deep }}>
-        {t("Where do we send your plan?", "¿A dónde te mandamos tu plan?")}
+        {t("Leave your details so we can contact you", "Déjanos tus datos para contactarte")}
       </h2>
       <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
         {t(
-          "We send your results with it and we call you to go through the plan.",
-          "Te enviamos tus resultados y te llamamos para revisar el plan.",
+          "We will contact you with no commitment to structure a plan that fits your practice.",
+          "Te contactamos sin compromiso para estructurar un plan a la medida de tu consultorio.",
         )}
       </p>
 
