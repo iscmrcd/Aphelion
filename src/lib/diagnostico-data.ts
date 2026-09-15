@@ -77,9 +77,9 @@ export const CLINICAS: DiagnosticoVertical = {
   title: "¿Qué tan preparada está tu clínica para captar pacientes?",
   titleEn: "How ready is your practice to attract patients?",
   intro:
-    "Diez preguntas, dos minutos. Al final te decimos qué te falta y en qué orden conviene arreglarlo. Lo gratuito lo damos de alta y lo movemos bien; lo demás lo estructuramos en un paquete.",
+    "Contesta diez preguntas en dos minutos y te decimos qué le falta a tu clínica y qué conviene atender primero. Si algo se puede resolver con una herramienta gratuita, nosotros la configuramos y la dejamos funcionando por ti.",
   introEn:
-    "Ten questions, two minutes. At the end you get what is missing and the order worth fixing it in. The free items get set up and run properly; everything else is structured into a package.",
+    "Answer ten questions in two minutes and we will show you what your practice is missing and what to fix first. If something can be solved with a free tool, we set it up and run it for you.",
   seoTitle: "Diagnóstico digital para clínicas y consultorios | Aphelion",
   seoTitleEs: "Diagnóstico digital para clínicas y consultorios | Aphelion",
   seoDescription:

@@ -269,7 +269,7 @@ function Resultado({
                         style={{ backgroundColor: `${C.soft}40`, color: C.deep }}
                       >
                         <Check className="h-3 w-3" />
-                        {t("We set it up and run it properly", "Te lo damos de alta y lo movemos bien")}
+                        {t("Free tool — we set it up and run it for you", "Herramienta gratuita — nosotros la configuramos por ti")}
                       </span>
                     )}
                     <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
