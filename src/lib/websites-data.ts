@@ -18,7 +18,7 @@ export const WEB_LEVELS: WebLevel[] = [
     name: "Web Presencial",
     tagline: "Presencia profesional y contacto directo.",
     setup: 9900,
-    men: 490,
+    men: 190,
     ideal: ["Negocios locales", "Emprendedores", "Marcas personales", "Negocios nuevos"],
     includes: [
       "Sitio o landing profesional",
@@ -38,7 +38,7 @@ export const WEB_LEVELS: WebLevel[] = [
     name: "Web Profesional",
     tagline: "Imagen sólida y estructura comercial clara.",
     setup: 18500,
-    men: 890,
+    men: 490,
     ideal: ["Restaurantes", "Talleres", "Despachos", "Hoteles boutique", "Marcas locales"],
     includes: [
       "Todo lo de Presencial",
@@ -58,7 +58,7 @@ export const WEB_LEVELS: WebLevel[] = [
     name: "Web de Captación",
     tagline: "Genera prospectos y mide campañas.",
     setup: 34900,
-    men: 1900,
+    men: 590,
     ideal: ["Clínicas", "Constructoras", "Inmobiliarias", "Catering", "Servicios profesionales"],
     includes: [
       "Todo lo de Profesional",
@@ -79,7 +79,7 @@ export const WEB_LEVELS: WebLevel[] = [
     name: "Web Automatizada",
     tagline: "Automatiza citas, cotizaciones y seguimiento.",
     setup: 59500,
-    men: 5500,
+    men: 890,
     ideal: ["Spas", "E-commerce", "Clínicas grandes", "Academias", "Servicios a domicilio"],
     includes: [
       "Todo lo de Captación",
@@ -100,7 +100,7 @@ export const WEB_LEVELS: WebLevel[] = [
     name: "Sistema Comercial",
     tagline: "Centraliza tu operación completa.",
     setup: 94900,
-    men: 10000,
+    men: 4500,
     ideal: ["Constructoras", "Astilleros", "Agencias", "Empresas con varios empleados"],
     includes: [
       "Todo lo de Automatizada",
