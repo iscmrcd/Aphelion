@@ -7,7 +7,7 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     name: "Presence Site",
     tagline: "Professional presence and direct contact.",
     setup: 9900,
-    men: 490,
+    men: 190,
     ideal: ["Local businesses", "Entrepreneurs", "Personal brands", "New businesses"],
     includes: [
       "Professional site or landing page",
@@ -27,7 +27,7 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     name: "Professional Site",
     tagline: "Solid image and clear commercial structure.",
     setup: 18500,
-    men: 890,
+    men: 490,
     ideal: ["Restaurants", "Repair shops", "Law/consulting firms", "Boutique hotels", "Local brands"],
     includes: [
       "Everything in Presence",
@@ -47,7 +47,7 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     name: "Lead-Gen Site",
     tagline: "Generate leads and measure your campaigns.",
     setup: 34900,
-    men: 1900,
+    men: 590,
     ideal: ["Clinics", "Construction firms", "Real estate", "Catering", "Professional services"],
     includes: [
       "Everything in Professional",
@@ -68,7 +68,7 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     name: "Automated Site",
     tagline: "Automate appointments, quotes and follow-up.",
     setup: 59500,
-    men: 5500,
+    men: 890,
     ideal: ["Spas", "E-commerce", "Large clinics", "Academies", "On-demand services"],
     includes: [
       "Everything in Lead-Gen",
@@ -89,7 +89,7 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     name: "Commercial System",
     tagline: "Centralize your entire operation.",
     setup: 94900,
-    men: 10000,
+    men: 4500,
     ideal: ["Construction firms", "Shipyards", "Agencies", "Companies with multiple employees"],
     includes: [
       "Everything in Automated",
