@@ -11,8 +11,9 @@
  * 1. The score must be able to come out high. A quiz rigged to always report a
  *    problem gets sniffed out, and a clinic scoring 80 is not bad news, it is
  *    the best prospect for the top tier.
- * 2. The first recommendation must be something free that Aphelion does not
- *    sell. That is what makes the paid recommendations below it believable.
+ * 2. The first recommendation is usually a free tool or process, but Aphelion
+ *    charges to set it up correctly, review it and keep it moving as part of a
+ *    package. That honesty is what makes the paid work below it believable.
  */
 
 export type DiagnosticoOption = {
@@ -33,9 +34,9 @@ export type DiagnosticoQuestion = {
   weight: number;
   options: DiagnosticoOption[];
   /**
-   * Shown in the result when this question scores low. `free` marks advice the
-   * clinic can act on without hiring anyone, which is what earns the trust to
-   * make the rest of the plan credible.
+   * Shown in the result when this question scores low. `free` marks a tool or
+   * process that costs nothing by itself, but Aphelion packages the proper
+   * setup, review and ongoing handling as a paid service.
    */
   gap: {
     title: string;
@@ -76,9 +77,9 @@ export const CLINICAS: DiagnosticoVertical = {
   title: "¿Qué tan preparada está tu clínica para captar pacientes?",
   titleEn: "How ready is your practice to attract patients?",
   intro:
-    "Diez preguntas, dos minutos. Al final te decimos qué te falta y en qué orden conviene arreglarlo. La primera recomendación casi siempre es gratis.",
+    "Diez preguntas, dos minutos. Al final te decimos qué te falta y en qué orden conviene arreglarlo. Lo gratuito lo damos de alta y lo movemos bien; lo demás lo estructuramos en un paquete.",
   introEn:
-    "Ten questions, two minutes. At the end you get what is missing and the order worth fixing it in. The first recommendation is almost always free.",
+    "Ten questions, two minutes. At the end you get what is missing and the order worth fixing it in. The free items get set up and run properly; everything else is structured into a package.",
   seoTitle: "Diagnóstico digital para clínicas y consultorios | Aphelion",
   seoTitleEs: "Diagnóstico digital para clínicas y consultorios | Aphelion",
   seoDescription:
@@ -126,9 +127,9 @@ export const CLINICAS: DiagnosticoVertical = {
       gap: {
         title: "Tu Perfil de Empresa de Google no está trabajando",
         titleEn: "Your Google Business Profile is not working",
-        why: "Es lo que decide el bloque de mapas, que es donde cae la mayoría de la búsqueda local de pacientes. Es gratis, lo administras tú, y pesa más que cualquier página que alguien te pueda vender.",
+        why: "Es lo que decide el bloque de mapas, que es donde cae la mayoría de la búsqueda local de pacientes. La herramienta es gratis, pero la mayoría no la da de alta ni la revisa bien. Nosotros lo hacemos como parte del paquete de alta.",
         whyEn:
-          "It decides the map block, which is where most local patient search lands. It is free, you control it, and it outweighs any page anyone can sell you.",
+          "It decides the map block, which is where most local patient search lands. The tool is free, but most practices never set it up or review it properly. We do that as part of the setup package.",
         free: true,
       },
     },
@@ -198,9 +199,9 @@ export const CLINICAS: DiagnosticoVertical = {
       gap: {
         title: "No sabes qué está funcionando",
         titleEn: "You cannot tell what is working",
-        why: "Mientras no puedas responder esto, cualquier decisión de presupuesto es apuesta. Se arregla con una columna en la agenda donde recepción anota cómo se enteró el paciente, preguntado al agendar y no en el sillón.",
+        why: "Mientras no puedas responder esto, cualquier decisión de presupuesto es apuesta. Se arregla con una columna en la agenda donde recepción anota cómo se enteró el paciente, preguntado al agendar y no en el sillón. Nosotros te ayudamos a implementarlo y a leer los números.",
         whyEn:
-          "Until you can answer this, every budget decision is a bet. It is fixed with a column in the appointment book where reception notes how the patient heard about you, asked at booking rather than in the chair.",
+          "Until you can answer this, every budget decision is a bet. It is fixed with a column in the appointment book where reception notes how the patient heard about you, asked at booking rather than in the chair. We help you implement it and read the numbers.",
         free: true,
       },
     },
