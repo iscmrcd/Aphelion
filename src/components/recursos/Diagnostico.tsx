@@ -475,12 +475,12 @@ function PlanForm({
           <Check className="h-5 w-5" />
         </span>
         <h2 className="mt-5 text-xl font-medium" style={{ color: C.deep }}>
-          {t("We have your diagnostic", "Ya tenemos tu diagnóstico")}
+          {t("Done, we will talk soon", "Listo, hablamos pronto")}
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
           {t(
-            "We received your results and we will contact you to go through the plan.",
-            "Recibimos tus resultados y te contactamos para revisar el plan contigo.",
+            "We received your diagnostic. We will contact you with no commitment to review the plan on a call.",
+            "Recibimos tu diagnóstico. Te contactamos sin compromiso para revisar el plan en una llamada.",
           )}
         </p>
       </div>
