@@ -77,9 +77,9 @@ export const CLINICAS: DiagnosticoVertical = {
   title: "¿Qué tan preparada está tu clínica para captar pacientes?",
   titleEn: "How ready is your practice to attract patients?",
   intro:
-    "Contesta diez preguntas en dos minutos y te decimos qué le falta a tu clínica y qué conviene atender primero. Si algo se puede resolver con una herramienta gratuita, nosotros la configuramos y la dejamos funcionando por ti.",
+    "Responde diez preguntas en dos minutos y recibe un diagnóstico claro de qué le falta a tu clínica y qué conviene atender primero. Si una herramienta gratuita resuelve el punto, nosotros la configuramos y la operamos como parte del servicio.",
   introEn:
-    "Answer ten questions in two minutes and we will show you what your practice is missing and what to fix first. If something can be solved with a free tool, we set it up and run it for you.",
+    "Answer ten questions in two minutes and receive a clear diagnostic of what your practice is missing and what to address first. When a free tool solves the gap, we configure and operate it as part of the service.",
   seoTitle: "Diagnóstico digital para clínicas y consultorios | Aphelion",
   seoTitleEs: "Diagnóstico digital para clínicas y consultorios | Aphelion",
   seoDescription:
@@ -104,11 +104,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No tengo nada", labelEn: "Nothing yet", value: 0 },
       ],
       gap: {
-        title: "No tienes un sitio propio",
-        titleEn: "You have no site of your own",
-        why: "Todo lo demás de esta lista se construye encima de una página que sea tuya. Sin eso, cada paciente que ganas se lo acreditas a la plataforma donde te encontró.",
+        title: "No cuentas con un sitio propio",
+        titleEn: "You do not have a website of your own",
+        why: "El resto de los puntos dependen de una página bajo tu control. Sin ella, cada paciente que atraes se lo atribuye a la plataforma en la que te encontró.",
         whyEn:
-          "Everything else on this list is built on top of a page you own. Without one, every patient you win is credited to the platform that found them.",
+          "The rest of the diagnostic depends on a page you control. Without it, every patient you attract is attributed to the platform where they found you.",
         href: "/blog/sitio-web-para-clinicas",
       },
     },
@@ -125,11 +125,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No lo tengo o no sé", labelEn: "I do not have one, or I am not sure", value: 0 },
       ],
       gap: {
-        title: "Tu Perfil de Empresa de Google no está trabajando",
-        titleEn: "Your Google Business Profile is not working",
-        why: "Es lo que decide el bloque de mapas, que es donde cae la mayoría de la búsqueda local de pacientes. La herramienta es gratis, pero la mayoría no la da de alta ni la revisa bien. Nosotros lo hacemos como parte del paquete de alta.",
+        title: "Tu Perfil de Empresa de Google no está optimizado",
+        titleEn: "Your Google Business Profile is not optimised",
+        why: "El bloque de mapas concentra la mayor parte de la búsqueda local de pacientes. La herramienta no tiene costo, pero requiere alta, verificación y revisión periódica para que genere citas. Eso lo hacemos como parte del paquete de configuración.",
         whyEn:
-          "It decides the map block, which is where most local patient search lands. The tool is free, but most practices never set it up or review it properly. We do that as part of the setup package.",
+          "The map block captures most local patient searches. The tool itself is free, but it needs setup, verification and regular review to generate appointments. We handle that as part of the configuration package.",
         free: true,
       },
     },
@@ -150,11 +150,11 @@ export const CLINICAS: DiagnosticoVertical = {
         },
       ],
       gap: {
-        title: "Estás perdiendo pacientes que ya te buscaron",
-        titleEn: "You are losing patients who already reached out",
-        why: "Un paciente que llama y no recibe respuesta le llama a la siguiente clínica. Si además estás pagando anuncios, estás pagando por generarle llamadas a tu competencia.",
+        title: "Estás perdiendo pacientes que ya te contactaron",
+        titleEn: "You are losing patients who already contacted you",
+        why: "Un paciente que no recibe respuesta llama a la siguiente opción. Si además inviertes en anuncios, terminas pagando para que tu competencia atienda esas llamadas.",
         whyEn:
-          "A patient who calls and gets no answer calls the next clinic. If you are also running ads, you are paying to generate calls for your competitors.",
+          "A patient who does not get an answer calls the next option. If you are also running ads, you end up paying for your competitors to take those calls.",
         free: true,
         href: "/servicios/agente-ia",
       },
@@ -176,11 +176,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No mandamos recordatorios", labelEn: "We do not send reminders", value: 0 },
       ],
       gap: {
-        title: "Las inasistencias te están costando espacios ya vendidos",
-        titleEn: "No-shows are costing you slots you already sold",
-        why: "Una inasistencia es un espacio que no generó nada y no se recupera. Recuperar una cita agendada es mucho más barato que comprar un paciente nuevo, y casi nadie trabaja en ello.",
+        title: "Las inasistencias te dejan espacios sin producir",
+        titleEn: "No-shows leave you with unproductive slots",
+        why: "Un espacio cancelado no se recupera. Recuperar una cita agendada cuesta menos que generar un paciente nuevo, por eso los recordatorios y la confirmación automática son prioridad.",
         whyEn:
-          "A no-show is a slot that generated nothing and cannot be recovered. Recovering a booked appointment is far cheaper than buying a new patient, and almost nobody works on it.",
+          "A cancelled slot cannot be recovered. Recovering a booked appointment costs less than acquiring a new patient, which is why automated reminders and confirmations are a priority.",
         href: "/blog/whatsapp-para-clinicas",
       },
     },
@@ -197,11 +197,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No tengo idea", labelEn: "No idea", value: 0 },
       ],
       gap: {
-        title: "No sabes qué está funcionando",
-        titleEn: "You cannot tell what is working",
-        why: "Mientras no puedas responder esto, cualquier decisión de presupuesto es apuesta. Se arregla con una columna en la agenda donde recepción anota cómo se enteró el paciente, preguntado al agendar y no en el sillón. Nosotros te ayudamos a implementarlo y a leer los números.",
+        title: "No hay trazabilidad de qué genera pacientes",
+        titleEn: "There is no traceability of what generates patients",
+        why: "Sin este dato, cada decisión de presupuesto es una apuesta. Se resuelve registrando en la agenda cómo se enteró el paciente, preguntado al momento de agendar. Te ayudamos a implementar el proceso y a interpretar los resultados.",
         whyEn:
-          "Until you can answer this, every budget decision is a bet. It is fixed with a column in the appointment book where reception notes how the patient heard about you, asked at booking rather than in the chair. We help you implement it and read the numbers.",
+          "Without this data, every budget decision is a guess. It is solved by recording in the appointment book how the patient heard about you, asked at the time of booking. We help you implement the process and interpret the results.",
         free: true,
       },
     },
@@ -222,11 +222,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No tengo sitio", labelEn: "I have no site", value: 0 },
       ],
       gap: {
-        title: "Una sola página de servicios no posiciona para ninguno",
-        titleEn: "A single services page ranks for none of them",
-        why: "Los pacientes buscan por procedimiento, y cada procedimiento trae preocupaciones distintas. Una lista de veinte viñetas no responde ninguna de esas búsquedas.",
+        title: "Una sola página de servicios no posiciona",
+        titleEn: "A single services page does not rank",
+        why: "Los pacientes buscan por procedimiento, y cada uno tiene preguntas distintas. Una lista genérica no responde esas búsquedas específicas ni genera confianza.",
         whyEn:
-          "Patients search by procedure, and each procedure carries different worries. A list of twenty bullets answers none of those searches.",
+          "Patients search by procedure, and each one raises different questions. A generic list does not answer those specific searches or build trust.",
         href: "/blog/sitio-web-para-clinicas",
       },
     },
@@ -243,11 +243,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No pedimos reseñas", labelEn: "We do not ask", value: 0 },
       ],
       gap: {
-        title: "Tus reseñas dependen de la suerte",
-        titleEn: "Your reviews depend on luck",
-        why: "Las reseñas espontáneas se inclinan a lo negativo, porque el enojo motiva más que la satisfacción. Pedírselas a todos, sin filtrar, es lo que cumple las reglas de Google y además da mejor promedio.",
+        title: "Tus reseñas dependen del azar",
+        titleEn: "Your reviews are left to chance",
+        why: "Las reseñas espontáneas suelen inclinarse a lo negativo. Solicitarlas a todos los pacientes, sin filtrar, cumple con las políticas de Google y mejora el promedio de calificación.",
         whyEn:
-          "Unprompted reviews skew negative, because irritation motivates more than satisfaction. Asking everyone, without filtering, is what complies with Google's rules and also produces a better average.",
+          "Unprompted reviews tend to skew negative. Asking every patient, without filtering, complies with Google's policies and improves the average rating.",
         href: "/blog/como-conseguir-resenas-google-medicos",
       },
     },
@@ -264,11 +264,11 @@ export const CLINICAS: DiagnosticoVertical = {
         { label: "No", labelEn: "No", value: 0 },
       ],
       gap: {
-        title: "Dejas enfriar prospectos que ya pagaste",
-        titleEn: "You let already-paid-for prospects go cold",
-        why: "Alguien que preguntó y no agendó ya te costó dinero conseguirlo. Un solo mensaje de seguimiento a los pocos días recupera una parte, y es de las cosas más baratas de esta lista.",
+        title: "Se pierden prospectos que ya costaron conseguir",
+        titleEn: "Already-acquired prospects are lost",
+        why: "Quien preguntó y no agendó representa una inversión de marketing. Un mensaje de seguimiento oportuno recupera parte de esos casos y es uno de los puntos de menor costo de esta lista.",
         whyEn:
-          "Someone who asked and did not book already cost you money to acquire. A single follow-up message a few days later recovers a share of them, and it is among the cheapest items on this list.",
+          "Someone who asked and did not book represents a marketing investment. A timely follow-up message recovers some of those cases and is one of the lowest-cost items on this list.",
         href: "/servicios/agente-ia",
       },
     },
