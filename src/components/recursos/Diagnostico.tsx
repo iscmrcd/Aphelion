@@ -454,7 +454,7 @@ function PlanForm({
           phone: form.phone,
           company: form.company,
           service: lang === "es" ? vertical.title : vertical.titleEn,
-          message: lang === "es" ? "Quiere revisar su plan en una llamada." : "Wants to review the plan on a call.",
+          message: lang === "es" ? "Quiere revisar su plan en una llamada sin compromiso." : "Wants to review the plan on a call, no commitment.",
           transcript,
           path: typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
