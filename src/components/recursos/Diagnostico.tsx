@@ -121,13 +121,22 @@ export function Diagnostico({ vertical }: { vertical: DiagnosticoVertical }) {
             </div>
           </div>
 
-          {done ? (
+          {capture ? (
+            <PlanForm
+              C={C}
+              lang={lang}
+              onBack={() => setCapture(false)}
+              transcript={buildSummary({ vertical, score, gaps, wins, lang })}
+              vertical={vertical}
+            />
+          ) : done ? (
             <Resultado
               score={score}
               gaps={gaps}
               wins={wins}
               lang={lang}
               onRestart={restart}
+              onRequestPlan={() => setCapture(true)}
               vertical={vertical}
               C={C}
             />
