@@ -36,7 +36,7 @@ QUÉ HACE APHELION:
 - Ecommerce y branding
 
 PRECIOS QUE SÍ PUEDES DAR (son los publicados en aphelion.mx/precios):
-- Sitios web: seis niveles, desde $9,900 MXN de setup más $190 al mes, hasta $94,900 de setup más $4,500 al mes. El nivel Plataforma/SaaS se cotiza.
+- Sitios web: seis niveles, desde $9,900 MXN de setup más $190 al mes, hasta $94,900 de setup. La mensualidad del Sistema Comercial y el nivel Plataforma/SaaS se cotizan.
 - Marketing y contenido: paquetes mensuales desde $6,450 hasta $32,500 MXN, con plazo mínimo. La inversión publicitaria va aparte y se paga directo a Google o Meta.
 - Video con dron: por producción, desde $2,990 hasta $8,890 MXN.
 - Agente de IA, ecommerce y branding: todavía sin cifra publicada, se cotizan después de una llamada.
