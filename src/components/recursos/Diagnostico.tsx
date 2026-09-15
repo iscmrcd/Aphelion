@@ -339,15 +339,15 @@ function Resultado({
       )}
 
       <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-        <Link
-          to="/contacto"
-          search={{ ref: "diagnostico" }}
+        <button
+          type="button"
+          onClick={onRequestPlan}
           className="inline-flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-medium transition hover:opacity-90"
           style={{ backgroundImage: rampButton(C), color: C.onDeep }}
         >
           {t("Talk through the plan", "Revisar el plan en una llamada")}
           <ArrowRight className="h-3.5 w-3.5" />
-        </Link>
+        </button>
         <button
           type="button"
           onClick={onRestart}
