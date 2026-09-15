@@ -52,10 +52,10 @@ export const Route = createFileRoute("/precios")({
   component: Precios,
 });
 
-const fmt = (n: number) => `$${n.toLocaleString("es-MX")}`;
-
 function Precios() {
   const t = useT();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "A cotizar") : `$${n.toLocaleString("es-MX")}`;
 
   return (
     <main>
@@ -100,6 +100,8 @@ function Precios() {
 function Block({ block }: { block: PriceBlock }) {
   const t = useT();
   const { lang } = useLang();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "A cotizar") : `$${n.toLocaleString(lang === "es" ? "es-MX" : "en-US")}`;
   return (
     <section id={block.id} className="scroll-mt-28">
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -158,18 +160,10 @@ function Block({ block }: { block: PriceBlock }) {
                     )}
                   </td>
                   <td className="px-5 py-4 align-top whitespace-nowrap text-neutral-800">
-                    {r.setup === null ? (
-                      <span className="text-neutral-400">{t("On request", "A cotizar")}</span>
-                    ) : (
-                      fmt(r.setup)
-                    )}
+                    {fmt(r.setup)}
                   </td>
                   <td className="px-5 py-4 align-top whitespace-nowrap text-neutral-800">
-                    {r.monthly === null ? (
-                      <span className="text-neutral-400">—</span>
-                    ) : (
-                      fmt(r.monthly)
-                    )}
+                    {fmt(r.monthly)}
                   </td>
                 </tr>
               ))}

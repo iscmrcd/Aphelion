@@ -89,7 +89,7 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     name: "Commercial System",
     tagline: "Centralize your entire operation.",
     setup: 94900,
-    men: 4500,
+    men: null,
     ideal: ["Construction firms", "Shipyards", "Agencies", "Companies with multiple employees"],
     includes: [
       "Everything in Automated",
