@@ -11,6 +11,7 @@ import {
 } from "@/lib/clinical-theme";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { bandaFor, totalWeight, type DiagnosticoVertical } from "@/lib/diagnostico-data";
+import { submitLead } from "@/lib/notify-server";
 
 /**
  * Diagnostic runner.
