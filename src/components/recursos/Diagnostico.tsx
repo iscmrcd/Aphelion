@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, Check, Gift, RotateCcw, Stethoscope } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, RotateCcw, Stethoscope } from "lucide-react";
 import { useT, useLang } from "@/lib/i18n";
 import { useTheme } from "@/lib/theme";
 import {
@@ -268,8 +268,8 @@ function Resultado({
                         className="mt-2 inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium"
                         style={{ backgroundColor: `${C.soft}40`, color: C.deep }}
                       >
-                        <Gift className="h-3 w-3" />
-                        {t("Free, and we do not sell it", "Gratis, y no te lo vendemos")}
+                        <Check className="h-3 w-3" />
+                        {t("We set it up and run it properly", "Te lo damos de alta y lo movemos bien")}
                       </span>
                     )}
                     <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
@@ -454,7 +454,7 @@ function PlanForm({
           phone: form.phone,
           company: form.company,
           service: lang === "es" ? vertical.title : vertical.titleEn,
-          message: lang === "es" ? "Quiere revisar su plan en una llamada sin compromiso." : "Wants to review the plan on a call, no commitment.",
+          message: lang === "es" ? "Quiere que le armemos un paquete donde nosotros nos encargamos de dar de alta, revisar y mover todo lo que salió en el diagnóstico." : "Wants us to put together a package where we handle the setup, review and ongoing management of everything flagged in the diagnostic.",
           transcript,
           path: typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
@@ -479,8 +479,8 @@ function PlanForm({
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
           {t(
-            "We received your diagnostic. We will contact you with no commitment to review the plan on a call.",
-            "Recibimos tu diagnóstico. Te contactamos sin compromiso para revisar el plan en una llamada.",
+            "We received your diagnostic. We will contact you with no commitment to put together the package and review it on a call.",
+            "Recibimos tu diagnóstico. Te contactamos sin compromiso para armar el paquete y revisarlo en una llamada.",
           )}
         </p>
       </div>
@@ -493,12 +493,12 @@ function PlanForm({
   return (
     <form onSubmit={submit}>
       <h2 className="text-xl leading-snug font-medium tracking-[-0.02em] sm:text-2xl" style={{ color: C.deep }}>
-        {t("Leave your details so we can contact you", "Déjanos tus datos para contactarte")}
+        {t("Leave your details so we can build your package", "Déjanos tus datos para armar tu paquete")}
       </h2>
       <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
         {t(
-          "We will contact you with no commitment to structure a plan that fits your practice.",
-          "Te contactamos sin compromiso para estructurar un plan a la medida de tu consultorio.",
+          "We will contact you with no commitment to put together a package where we handle the setup, review and ongoing management of everything flagged in your diagnostic.",
+          "Te contactamos sin compromiso para armar un paquete donde nosotros nos encargamos de dar de alta, revisar y mover todo lo que salió en tu diagnóstico.",
         )}
       </p>
 
