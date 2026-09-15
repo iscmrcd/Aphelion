@@ -52,11 +52,10 @@ export const Route = createFileRoute("/precios")({
   component: Precios,
 });
 
-const fmt = (n: number | null) =>
-  n === null ? t("Quote", "A cotizar") : `$${n.toLocaleString("es-MX")}`;
-
 function Precios() {
   const t = useT();
+  const fmt = (n: number | null) =>
+    n === null ? t("Quote", "A cotizar") : `$${n.toLocaleString("es-MX")}`;
 
   return (
     <main>
