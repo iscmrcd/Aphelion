@@ -72,6 +72,7 @@ export function Diagnostico({ vertical }: { vertical: DiagnosticoVertical }) {
     setAnswers({});
     setStep(0);
     setDone(false);
+    setCapture(false);
   }
 
   return (
