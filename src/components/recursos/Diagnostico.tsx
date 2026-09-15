@@ -33,6 +33,7 @@ export function Diagnostico({ vertical }: { vertical: DiagnosticoVertical }) {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [done, setDone] = useState(false);
+  const [capture, setCapture] = useState(false);
 
   const q = vertical.questions[step];
   const answered = Object.keys(answers).length;
