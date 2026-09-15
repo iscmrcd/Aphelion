@@ -454,7 +454,7 @@ function PlanForm({
           phone: form.phone,
           company: form.company,
           service: lang === "es" ? vertical.title : vertical.titleEn,
-          message: lang === "es" ? "Quiere revisar su plan en una llamada." : "Wants to review the plan on a call.",
+          message: lang === "es" ? "Quiere revisar su plan en una llamada sin compromiso." : "Wants to review the plan on a call, no commitment.",
           transcript,
           path: typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
@@ -475,12 +475,12 @@ function PlanForm({
           <Check className="h-5 w-5" />
         </span>
         <h2 className="mt-5 text-xl font-medium" style={{ color: C.deep }}>
-          {t("We have your diagnostic", "Ya tenemos tu diagnóstico")}
+          {t("Done, we will talk soon", "Listo, hablamos pronto")}
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
           {t(
-            "We received your results and we will contact you to go through the plan.",
-            "Recibimos tus resultados y te contactamos para revisar el plan contigo.",
+            "We received your diagnostic. We will contact you with no commitment to review the plan on a call.",
+            "Recibimos tu diagnóstico. Te contactamos sin compromiso para revisar el plan en una llamada.",
           )}
         </p>
       </div>
@@ -493,12 +493,12 @@ function PlanForm({
   return (
     <form onSubmit={submit}>
       <h2 className="text-xl leading-snug font-medium tracking-[-0.02em] sm:text-2xl" style={{ color: C.deep }}>
-        {t("Where do we send your plan?", "¿A dónde te mandamos tu plan?")}
+        {t("Leave your details so we can contact you", "Déjanos tus datos para contactarte")}
       </h2>
       <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
         {t(
-          "We send your results with it and we call you to go through the plan.",
-          "Te enviamos tus resultados y te llamamos para revisar el plan.",
+          "We will contact you with no commitment to structure a plan that fits your practice.",
+          "Te contactamos sin compromiso para estructurar un plan a la medida de tu consultorio.",
         )}
       </p>
 
