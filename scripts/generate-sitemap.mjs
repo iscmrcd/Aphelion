@@ -39,6 +39,7 @@ function readRoutes() {
     "blog.$slug", // emitted per post below
     "blog.index",
     "servicios", // layout wrapper
+    "servicios.index", // redirects to /, a redirect does not belong in a sitemap
     "servicios.whatsapp-ia", // 301 redirect stub, must stay out of the sitemap
     "privacidad",
     "recursos.diagnostico.$industria", // emitted per vertical below

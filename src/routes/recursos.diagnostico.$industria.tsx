@@ -42,8 +42,9 @@ export const Route = createFileRoute("/recursos/diagnostico/$industria")({
             {
               "@type": "ListItem",
               position: 2,
-              name: lang === "es" ? "Recursos" : "Resources",
-              item: `${SITE_URL}/recursos`,
+              // Was /recursos, which does not exist. The selector is the real parent.
+              name: lang === "es" ? "Diagnóstico" : "Diagnostic",
+              item: `${SITE_URL}/recursos/diagnostico`,
             },
             {
               "@type": "ListItem",

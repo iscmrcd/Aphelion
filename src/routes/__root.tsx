@@ -18,6 +18,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { LangProvider } from "@/lib/i18n";
 import { ThemeProvider } from "@/lib/theme";
 import { validateLangSearch } from "@/lib/seo";
+import { captureAttribution } from "@/lib/attribution";
 
 function NotFoundComponent() {
   return (
@@ -160,6 +161,12 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   // Known on the server, so the first paint is already in the right language.
   const { lang } = Route.useSearch();
+
+  // First touch, before the first client-side navigation drops utm_* from the
+  // URL. No PageView here: the Pixel already fires one on history changes.
+  useEffect(() => {
+    captureAttribution();
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
