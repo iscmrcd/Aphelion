@@ -33,6 +33,7 @@ import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.vi
 import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
 import { Route as ServiciosAgenteIaRouteImport } from './routes/servicios.agente-ia'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as RecursosDiagnosticoIndexRouteImport } from './routes/recursos.diagnostico.index'
 import { Route as RecursosDiagnosticoIndustriaRouteImport } from './routes/recursos.diagnostico.$industria'
 
 const ServiciosRoute = ServiciosRouteImport.update({
@@ -156,6 +157,12 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RecursosDiagnosticoIndexRoute =
+  RecursosDiagnosticoIndexRouteImport.update({
+    id: '/recursos/diagnostico/',
+    path: '/recursos/diagnostico/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const RecursosDiagnosticoIndustriaRoute =
   RecursosDiagnosticoIndustriaRouteImport.update({
     id: '/recursos/diagnostico/$industria',
@@ -188,6 +195,7 @@ export interface FileRoutesByFullPath {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog/': typeof BlogIndexRoute
   '/servicios/': typeof ServiciosIndexRoute
+  '/recursos/diagnostico/': typeof RecursosDiagnosticoIndexRoute
   '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
 }
 export interface FileRoutesByTo {
@@ -214,6 +222,7 @@ export interface FileRoutesByTo {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog': typeof BlogIndexRoute
   '/servicios': typeof ServiciosIndexRoute
+  '/recursos/diagnostico': typeof RecursosDiagnosticoIndexRoute
   '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
 }
 export interface FileRoutesById {
@@ -242,6 +251,7 @@ export interface FileRoutesById {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog/': typeof BlogIndexRoute
   '/servicios/': typeof ServiciosIndexRoute
+  '/recursos/diagnostico/': typeof RecursosDiagnosticoIndexRoute
   '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
 }
 export interface FileRouteTypes {
@@ -271,6 +281,7 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog/'
     | '/servicios/'
+    | '/recursos/diagnostico/'
     | '/recursos/diagnostico/$industria'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -297,6 +308,7 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog'
     | '/servicios'
+    | '/recursos/diagnostico'
     | '/recursos/diagnostico/$industria'
   id:
     | '__root__'
@@ -324,6 +336,7 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog/'
     | '/servicios/'
+    | '/recursos/diagnostico/'
     | '/recursos/diagnostico/$industria'
   fileRoutesById: FileRoutesById
 }
@@ -346,6 +359,7 @@ export interface RootRouteChildren {
   ServiciosRoute: typeof ServiciosRouteWithChildren
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
+  RecursosDiagnosticoIndexRoute: typeof RecursosDiagnosticoIndexRoute
   RecursosDiagnosticoIndustriaRoute: typeof RecursosDiagnosticoIndustriaRoute
 }
 
@@ -519,6 +533,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/recursos/diagnostico/': {
+      id: '/recursos/diagnostico/'
+      path: '/recursos/diagnostico'
+      fullPath: '/recursos/diagnostico/'
+      preLoaderRoute: typeof RecursosDiagnosticoIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/recursos/diagnostico/$industria': {
       id: '/recursos/diagnostico/$industria'
       path: '/recursos/diagnostico/$industria'
@@ -570,6 +591,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServiciosRoute: ServiciosRouteWithChildren,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
+  RecursosDiagnosticoIndexRoute: RecursosDiagnosticoIndexRoute,
   RecursosDiagnosticoIndustriaRoute: RecursosDiagnosticoIndustriaRoute,
 }
 export const routeTree = rootRouteImport

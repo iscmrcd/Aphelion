@@ -35,17 +35,24 @@ export type LeadPayload = {
   transcript?: string;
   /** Page the lead came from, for attribution. */
   path?: string;
+  /**
+   * Diagnostic attempt id. Stored in leads.session_id, whose unique index makes
+   * a double submit harmless, and which joins the lead to its row in
+   * diagnosticos (attempt_id) without copying answers into the lead.
+   */
+  sessionId?: string;
 };
 
 const MAX_FIELD = 2000;
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const MAX_TRANSCRIPT = 12000;
 
 const clean = (v: unknown, max = MAX_FIELD) =>
   typeof v === "string" ? v.trim().slice(0, max) : "";
 
-type SupabaseConfig = { url: string; key: string };
+export type SupabaseConfig = { url: string; key: string };
 
-function supabaseConfig(): SupabaseConfig | null {
+export function supabaseConfig(): SupabaseConfig | null {
   const env = process.env;
   const url = env.SUPABASE_URL || env.VITE_SUPABASE_URL || env.SUPABASE_PROJECT_URL;
   const key = env.SUPABASE_SERVICE_ROLE_KEY || env.SUPABASE_SERVICE_KEY || env.SUPABASE_SECRET_KEY;
@@ -53,13 +60,13 @@ function supabaseConfig(): SupabaseConfig | null {
   return { url: url.replace(/\/+$/, ""), key };
 }
 
-const supabaseHeaders = (cfg: SupabaseConfig) => ({
+export const supabaseHeaders = (cfg: SupabaseConfig) => ({
   apikey: cfg.key,
   Authorization: `Bearer ${cfg.key}`,
   "Content-Type": "application/json",
 });
 
-async function hashIp(ip: string): Promise<string> {
+export async function hashIp(ip: string): Promise<string> {
   try {
     const data = new TextEncoder().encode(`aphelion-lead:${ip}`);
     const digest = await crypto.subtle.digest("SHA-256", data);
@@ -94,6 +101,7 @@ async function storeLead(lead: LeadPayload, ipHash: string): Promise<boolean> {
         message: lead.message || null,
         transcript: lead.transcript || null,
         path: lead.path || null,
+        session_id: lead.sessionId || null,
         ip_hash: ipHash,
       }),
     });
@@ -195,6 +203,12 @@ export const submitLead = createServerFn({ method: "POST" })
       message: clean(d.message),
       transcript: clean(d.transcript, MAX_TRANSCRIPT),
       path: clean(d.path, 300),
+      // Only diagnostic leads carry an attempt id; the chat widget writes its
+      // own session id through its own server function.
+      sessionId:
+        source === "diagnostic" && typeof d.sessionId === "string" && UUID_RE.test(d.sessionId)
+          ? d.sessionId
+          : undefined,
     };
   })
   .handler(async ({ data }) => {

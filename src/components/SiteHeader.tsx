@@ -70,6 +70,7 @@ export function SiteHeader() {
     { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
     { to: "/servicios/agente-ia", label: t("AI Agent", "Agente IA") },
     { to: "/precios", label: t("Pricing", "Precios") },
+    { to: "/recursos/diagnostico", label: t("Diagnostic", "Diagnóstico") },
     { to: "/blog", label: t("Resources", "Recursos") },
     { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;
@@ -87,9 +88,10 @@ export function SiteHeader() {
           <AphelionLogo className="h-6 w-auto" />
         </Link>
 
-        {/* lg, not md: six items need ~520px and md (768px) only leaves ~310px
-            between the logo and the right-hand controls. */}
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
+        {/* lg, not md: seven items need ~560px and md (768px) only leaves ~310px
+            between the logo and the right-hand controls. gap-5 until xl so the
+            Spanish labels still fit at exactly 1024px. */}
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-6" aria-label="Main">
           {nav.map((item) => (
             <Link
               key={item.to}
