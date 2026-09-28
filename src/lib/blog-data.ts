@@ -8592,6 +8592,407 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "como-evalua-google-a-tu-negocio",
+    title: "How Google Evaluates Your Business in 2026 (and What You Can Check Today)",
+    titleEs: "Cómo evalúa Google a tu negocio en 2026 (y qué puedes revisar hoy)",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "Google does not give your business a grade. It compares you with everyone else, search by search. These are the signals it uses in Maps, in regular results and in AI Overviews, what changed in 2026, and a 30-minute check you can run yourself.",
+    excerptEs:
+      "Google no le pone calificación a tu negocio: te compara con los demás en cada búsqueda. Estas son las señales que usa en Maps, en los resultados normales y en las respuestas con IA, qué cambió en 2026 y una revisión de 30 minutos que puedes hacer tú.",
+    readingTime: 10,
+    date: "2026-09-28",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Google does not score your business. For every search it decides which businesses and pages answer that person best, and ranks them. In Maps, Google says local results are based mainly on relevance, distance and prominence. In regular results, it rewards pages that are genuinely useful and trustworthy. In 2026 the same foundations feed AI Overviews and AI Mode. Almost everything that moves your position is under your control, except distance, and none of it can be bought.",
+    ledeEs:
+      "Google no le pone calificación a tu negocio. En cada búsqueda decide qué negocios y qué páginas le responden mejor a esa persona, y los ordena. En Maps, Google dice que los resultados locales se basan principalmente en relevancia, distancia y prominencia. En los resultados normales, premia las páginas realmente útiles y confiables. En 2026 esas mismas bases alimentan las respuestas con IA. Casi todo lo que mueve tu posición depende de ti, menos la distancia, y nada de eso se puede comprar.",
+    sections: [
+      {
+        id: "google-no-califica-compara",
+        heading: "Google does not grade you, it compares you",
+        headingEs: "Google no te califica: te compara",
+        body: [
+          "The question most owners ask is “what score does Google give my business?”. There is no such score. The star rating on your profile is your customers’ average, not Google’s opinion of you. What Google does is rank: for each search it compares every business and page that could answer it, and orders them.",
+          "That has a practical consequence. Your business does not have one position on Google, it has hundreds. You can be first for “dentista en Playas de Tijuana” searched two blocks away and not appear for “dentista Tijuana” searched from Otay. Before deciding whether you are doing well or badly, you need to know for which searches, from where, and against whom.",
+        ],
+        bodyEs: [
+          "La pregunta que más hacen los dueños es “¿qué calificación le da Google a mi empresa?”. Esa calificación no existe. Las estrellas de tu perfil son el promedio de tus clientes, no la opinión de Google sobre ti. Lo que Google hace es ordenar: en cada búsqueda compara a todos los negocios y páginas que podrían responderla y los pone en fila.",
+          "Eso tiene una consecuencia práctica. Tu negocio no tiene una posición en Google, tiene cientos. Puedes salir primero en “dentista en Playas de Tijuana” buscado a dos cuadras y no aparecer en “dentista Tijuana” buscado desde Otay. Antes de decidir si vas bien o mal, necesitas saber en qué búsquedas, desde dónde y contra quién.",
+        ],
+      },
+      {
+        id: "maps-relevancia-distancia-prominencia",
+        heading: "In Maps: relevance, distance and prominence",
+        headingEs: "En Maps: relevancia, distancia y prominencia",
+        body: [
+          "Google states it plainly in its Business Profile help: local results are based mainly on relevance, distance and prominence. It also states that you cannot request or pay for a better local ranking.",
+          "Relevance is how well your profile matches what the person searched. It depends on your primary category, secondary categories, listed services and products, and the description. A clinic that picks “Medical clinic” as its category when what it sells is dermatology is competing in the wrong search.",
+          "Distance is how far you are from the person searching, or from the place named in the search. It is the one factor you cannot optimise, which is why a business can rank very differently in Zona Río and in Rosarito on the same day.",
+          "Prominence (Google’s Spanish help calls it “popularidad”) is how well known your business is. Google says it is based on things like how many websites link to your business and how many reviews you have, and that more reviews and positive ratings can help your local ranking. In practice, it is your reputation beyond your own profile.",
+          "The profile itself has to be complete and true: exact name, category, hours including holidays, phone, real photos, services. We go step by step in [how to optimize your Google Business Profile](/blog/optimizar-google-business-profile).",
+        ],
+        bodyEs: [
+          "Google lo dice tal cual en la ayuda del Perfil de Empresa: los resultados locales se basan principalmente en la relevancia, la distancia y la prominencia. Y también dice que no se puede solicitar ni pagar por obtener un mejor posicionamiento local.",
+          "La relevancia es qué tan bien coincide tu perfil con lo que la persona buscó. Depende de tu categoría principal, las categorías secundarias, los servicios y productos que registras y la descripción. Una clínica que elige “Clínica médica” como categoría cuando lo que vende es dermatología está compitiendo en la búsqueda equivocada.",
+          "La distancia es qué tan lejos estás de quien busca, o del lugar que menciona en la búsqueda. Es el único factor que no puedes optimizar, y por eso un negocio puede salir muy distinto en Zona Río que en Rosarito el mismo día.",
+          "La prominencia (en la ayuda en español Google le llama “popularidad”) es qué tan conocido es tu negocio. Google dice que se basa en cosas como cuántos sitios web enlazan a tu negocio y cuántas reseñas tienes, y que más reseñas y valoraciones positivas pueden ayudar a tu posición local. En la práctica, es tu reputación más allá de tu propio perfil.",
+          "El perfil tiene que estar completo y ser verdadero: nombre exacto, categoría, horario incluyendo días festivos, teléfono, fotos reales y servicios. Lo explicamos paso a paso en [cómo optimizar tu Perfil de Empresa de Google](/blog/optimizar-google-business-profile).",
+        ],
+      },
+      {
+        id: "resultados-web-contenido-util",
+        heading: "In regular results: useful, trustworthy content",
+        headingEs: "En los resultados normales: contenido útil y confiable",
+        body: [
+          "For the blue links, Google’s guidance is to create helpful, reliable, people-first content, and it evaluates signals of experience, expertise, authoritativeness and trustworthiness, known as E-E-A-T. Of the four, Google says trust is the most important.",
+          "Translated to a small business, that means a page per service that answers what a customer actually asks before hiring you: what it includes, who it is for, how long it takes, a price or at least a range, where you work, and who is behind it. A single “Services” page with a list of bullets rarely wins a specific search, because it does not answer any of them in full.",
+          "It also means real signals of who you are: your address, your team, your work, your permits or certifications when your industry has them. We list what a business site needs in [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+        bodyEs: [
+          "En los enlaces azules, la guía de Google es crear contenido útil, confiable y pensado para personas, y evalúa señales de experiencia, conocimiento, autoridad y confianza, lo que se conoce como E-E-A-T. De las cuatro, Google dice que la confianza es la más importante.",
+          "Aterrizado a un negocio pequeño, eso significa una página por servicio que responda lo que un cliente de verdad pregunta antes de contratarte: qué incluye, para quién es, cuánto tarda, un precio o al menos un rango, dónde trabajas y quién está detrás. Una sola página de “Servicios” con una lista de viñetas casi nunca gana una búsqueda específica, porque no responde ninguna completa.",
+          "También significa señales reales de quién eres: tu dirección, tu equipo, tus trabajos, tus permisos o certificaciones cuando tu giro los tiene. Lo que necesita el sitio de un negocio está en [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+      },
+      {
+        id: "lo-tecnico-que-si-pesa",
+        heading: "The technical part that does matter",
+        headingEs: "Lo técnico que sí pesa",
+        body: [
+          "No content helps if Google cannot find it. The first check is indexing: in Google Search Console you can see which of your pages are indexed and why the rest are not. A page that is not indexed does not exist for Google, and it cannot appear in AI Overviews either.",
+          "Then page experience on a phone. Google measures it with Core Web Vitals, and the thresholds for a good experience are: the main content loads in 2.5 seconds or less (LCP), the page responds to a tap in 200 milliseconds or less (INP) and the layout does not jump while loading (CLS of 0.1 or less). They are not the most important factor, but a slow site loses customers before it loses positions. More in [website loading speed](/blog/velocidad-de-carga-pagina-web).",
+        ],
+        bodyEs: [
+          "Ningún contenido ayuda si Google no lo encuentra. La primera revisión es la indexación: en Google Search Console ves cuáles de tus páginas están indexadas y por qué el resto no. Una página que no está indexada no existe para Google, y tampoco puede aparecer en las respuestas con IA.",
+          "Después, la experiencia en el celular. Google la mide con las Core Web Vitals, y los umbrales de una buena experiencia son: el contenido principal carga en 2.5 segundos o menos (LCP), la página responde a un toque en 200 milisegundos o menos (INP) y el diseño no brinca mientras carga (CLS de 0.1 o menos). No son el factor más importante, pero un sitio lento pierde clientes antes de perder posiciones. Más en [velocidad de carga de una página web](/blog/velocidad-de-carga-pagina-web).",
+        ],
+      },
+      {
+        id: "resenas-como-pedirlas",
+        heading: "Reviews: how many, how recent, and how you ask",
+        headingEs: "Reseñas: cuántas, qué tan recientes y cómo las pides",
+        body: [
+          "Google says more positive reviews and ratings can help local ranking, but there is no magic number. What matters is how you compare with the businesses you compete against in that search, and whether the reviews keep coming. A profile with 200 reviews, the last one a year ago, looks abandoned next to one with 60 from the last few months.",
+          "How you get them matters as much as how many. Google’s policies prohibit fake reviews, reviews paid for with discounts or gifts, and asking only happy customers for them. The penalties go beyond deleting those reviews: a profile can lose the ability to receive new ones for a while. The safe system is to ask every customer, the same way, right after the service. The details are in [how to get Google reviews](/blog/como-conseguir-resenas-google-medicos).",
+          "Replying also counts, for the people reading more than for the algorithm. A calm, specific reply to a bad review tells the next customer more than the review itself.",
+        ],
+        bodyEs: [
+          "Google dice que más reseñas y valoraciones positivas pueden ayudar a tu posición local, pero no hay un número mágico. Lo que importa es cómo te comparas con los negocios contra los que compites en esa búsqueda, y que las reseñas sigan llegando. Un perfil con 200 reseñas y la última de hace un año se ve abandonado junto a uno con 60 de los últimos meses.",
+          "Cómo las consigues importa tanto como cuántas. Las políticas de Google prohíben las reseñas falsas, las que se pagan con descuentos o regalos y pedírselas solo a los clientes contentos. Las consecuencias van más allá de borrar esas reseñas: un perfil puede quedarse un tiempo sin poder recibir reseñas nuevas. El sistema seguro es pedírselas a todos los clientes, igual, justo después del servicio. Los detalles están en [cómo conseguir reseñas en Google](/blog/como-conseguir-resenas-google-medicos).",
+          "Contestar también cuenta, más por la gente que las lee que por el algoritmo. Una respuesta tranquila y concreta a una reseña mala le dice más al siguiente cliente que la reseña misma.",
+        ],
+      },
+      {
+        id: "respuestas-con-ia",
+        heading: "AI Overviews and AI Mode: same foundations, new format",
+        headingEs: "Respuestas con IA de Google: las mismas bases, otro formato",
+        body: [
+          "More and more searches get an AI-written answer at the top, the AI Overviews, and AI Mode lets people have a whole conversation with Search. AI Mode has worked in Spanish since September 2025, so it reaches your customers in Tijuana and Ensenada too.",
+          "The good news is that there is no separate game to learn. Google’s own documentation says there are no additional requirements or special optimizations to appear in these features, that you do not need new machine-readable files, AI text files or special structured data, and that a page only needs to be indexed and eligible to be shown with a snippet. The same practices apply: allow crawling, link your pages to each other, put the important information in text, and keep your Business Profile up to date.",
+          "Be wary of anyone selling a special “AI optimization” package that does not start with those basics. If your page is not indexed or does not answer the question, no extra file will fix it.",
+        ],
+        bodyEs: [
+          "Cada vez más búsquedas muestran arriba una respuesta escrita por IA, los llamados resúmenes de IA, y el Modo IA permite tener una conversación completa con el buscador. El Modo IA funciona en español desde septiembre de 2025, así que también les llega a tus clientes en Tijuana y Ensenada.",
+          "La buena noticia es que no hay un juego aparte que aprender. La documentación de Google dice que no hay requisitos adicionales ni optimizaciones especiales para aparecer en estas funciones, que no necesitas archivos nuevos para máquinas, archivos de texto para IA ni datos estructurados especiales, y que basta con que la página esté indexada y pueda mostrarse con un fragmento. Aplican las mismas prácticas: permitir el rastreo, enlazar tus páginas entre sí, poner la información importante en texto y tener tu Perfil de Empresa al día.",
+          "Desconfía de quien te venda un paquete especial de “optimización para IA” que no empiece por esas bases. Si tu página no está indexada o no responde la pregunta, ningún archivo extra lo arregla.",
+        ],
+      },
+      {
+        id: "que-cambio-en-2026",
+        heading: "What changed in 2026",
+        headingEs: "Qué cambió en 2026",
+        body: [
+          "Google confirmed two core updates so far this year: one that started on 27 March and took about 12 days, and another that started on 21 May and took about 12 days. It also ran spam updates in March, June, August and September.",
+          "A core update does not target a specific tactic. Google reassesses which content best answers each search, so pages can go up or down without having done anything wrong. The mistake we see most is changing everything in the first week. Positions move for days while an update rolls out; compare in Search Console two or three weeks after it ends, and only then decide what to fix.",
+          "Spam updates are different: they target practices Google prohibits, such as mass-produced content made to rank rather than to help, which Google calls scaled content abuse. If someone is filling your site with dozens of near-identical generic pages, that is the risk you are running.",
+        ],
+        bodyEs: [
+          "Google confirmó dos actualizaciones principales en lo que va del año: una que empezó el 27 de marzo y tardó unos 12 días, y otra que empezó el 21 de mayo y tardó unos 12 días. También hizo actualizaciones contra spam en marzo, junio, agosto y septiembre.",
+          "Una actualización principal no ataca una táctica en particular. Google vuelve a evaluar qué contenido responde mejor cada búsqueda, así que una página puede subir o bajar sin haber hecho nada mal. El error que más vemos es cambiar todo en la primera semana. Las posiciones se mueven durante días mientras la actualización se despliega; compara en Search Console dos o tres semanas después de que termine y solo entonces decide qué corregir.",
+          "Las actualizaciones contra spam son distintas: van contra prácticas que Google prohíbe, como el contenido producido en masa para posicionar y no para ayudar, que Google llama abuso de contenido a escala. Si alguien está llenando tu sitio con decenas de páginas genéricas casi iguales, ese es el riesgo que estás corriendo.",
+        ],
+      },
+      {
+        id: "tijuana-ensenada",
+        heading: "What this looks like in Tijuana and Ensenada",
+        headingEs: "Cómo se ve esto en Tijuana y Ensenada",
+        body: [
+          "The border adds a variable most markets do not have: part of your customers search from the United States, in English, and often by city name rather than “near me”. Distance works against you there, so relevance and prominence carry more of the weight: a profile with the right category, services written in both languages when you actually serve both, and reviews that mention what you do.",
+          "In Ensenada and the Valle, tourist searches spike by season and are made from a phone on the road. Hours, phone and location being correct matters more there than any blog article. We cover the local picture in [SEO in Tijuana](/seo-tijuana).",
+        ],
+        bodyEs: [
+          "La frontera agrega una variable que casi ningún mercado tiene: parte de tus clientes busca desde Estados Unidos, en inglés, y muchas veces por nombre de ciudad en lugar de “cerca de mí”. Ahí la distancia juega en tu contra, así que la relevancia y la prominencia cargan más peso: un perfil con la categoría correcta, servicios escritos en los dos idiomas cuando de verdad atiendes en los dos, y reseñas que mencionan lo que haces.",
+          "En Ensenada y el Valle, las búsquedas turísticas suben por temporada y se hacen desde el celular, en camino. Ahí importa más que el horario, el teléfono y la ubicación estén correctos que cualquier artículo de blog. El panorama local lo explicamos en [SEO en Tijuana](/seo-tijuana).",
+        ],
+      },
+      {
+        id: "revision-de-30-minutos",
+        heading: "A 30-minute check you can run today",
+        headingEs: "Una revisión de 30 minutos que puedes hacer hoy",
+        body: [
+          "First, search the three or four phrases a customer would use for what you sell, plus your city, from your phone and with location on. Write down who appears in the map and in the first results. Those are your real competitors, not the ones you imagine.",
+          "Second, open your Business Profile as if you were a customer: category, hours, phone, photos, the date of your last review and whether you replied. Compare it, point by point, with the first business that appeared.",
+          "Third, in Search Console check that your service pages are indexed, and in PageSpeed Insights look at how your home page does on mobile.",
+          "Fourth, search your business name. What appears besides your site: directories, articles, social profiles, reviews on other platforms? That is what feeds prominence, and it is also what AI assistants read about you, as we explain in [how ChatGPT decides which businesses to recommend](/blog/como-recomienda-chatgpt-a-tu-negocio).",
+          "If you want a structured version of this, our [free diagnostic](/recursos/diagnostico) asks the same questions for your industry and gives you your priorities in order.",
+        ],
+        bodyEs: [
+          "Primero, busca las tres o cuatro frases que usaría un cliente para lo que vendes, más tu ciudad, desde tu celular y con la ubicación activada. Anota quién aparece en el mapa y en los primeros resultados. Esa es tu competencia real, no la que imaginas.",
+          "Segundo, abre tu Perfil de Empresa como si fueras cliente: categoría, horario, teléfono, fotos, la fecha de tu última reseña y si la contestaste. Compáralo, punto por punto, con el primer negocio que apareció.",
+          "Tercero, en Search Console revisa que tus páginas de servicios estén indexadas, y en PageSpeed Insights mira cómo sale tu página de inicio en celular.",
+          "Cuarto, busca el nombre de tu negocio. ¿Qué aparece además de tu sitio: directorios, artículos, redes, reseñas en otras plataformas? Eso es lo que alimenta la prominencia, y también es lo que leen de ti los asistentes de IA, como explicamos en [cómo decide ChatGPT qué negocios recomendar](/blog/como-recomienda-chatgpt-a-tu-negocio).",
+          "Si quieres una versión ordenada de esto, nuestro [diagnóstico gratuito](/recursos/diagnostico) hace las mismas preguntas para tu giro y te da tus prioridades en orden.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-700 to-stone-900",
+    faq: [
+      {
+        q: "¿Puedo pagar para salir primero en Google Maps?",
+        qEn: "Can I pay to rank first on Google Maps?",
+        a: "No. Google dice que no se puede solicitar ni pagar por un mejor posicionamiento local. Lo que sí existe son los anuncios de Google Ads, que aparecen marcados como patrocinados y no cambian tu posición orgánica. Tu lugar en el mapa depende de la relevancia, la distancia y la prominencia de tu negocio.",
+        aEn: "No. Google states that you cannot request or pay for a better local ranking. What does exist is Google Ads, which appear labeled as sponsored and do not change your organic position. Your place on the map depends on your business’s relevance, distance and prominence.",
+      },
+      {
+        q: "¿Cuántas reseñas necesito para aparecer arriba?",
+        qEn: "How many reviews do I need to rank higher?",
+        a: "No hay un número fijo. Google dice que más reseñas y valoraciones positivas pueden ayudar, pero lo que cuenta es cómo te comparas con los negocios que compiten contigo en esa búsqueda y que sigan llegando reseñas recientes. Pídeselas a todos tus clientes de la misma forma; pedirlas solo a los contentos o pagarlas con descuentos va contra las políticas de Google.",
+        aEn: "There is no fixed number. Google says more positive reviews and ratings can help, but what counts is how you compare with the businesses competing with you for that search, and whether recent reviews keep coming in. Ask every customer the same way; asking only happy customers or paying for reviews with discounts breaks Google’s policies.",
+      },
+      {
+        q: "¿Por qué un día aparezco y otro no?",
+        qEn: "Why do I appear one day and not the next?",
+        a: "Porque no tienes una sola posición. El resultado cambia según desde dónde se busca, con qué palabras y qué más encuentra Google en ese momento. También hay actualizaciones: en 2026 hubo actualizaciones principales en marzo y en mayo. Para saber si de verdad bajaste, revisa la tendencia en Search Console durante varias semanas, no una búsqueda suelta.",
+        aEn: "Because you do not have a single position. Results change depending on where the search is made, the exact words and what else Google finds at that moment. There are also updates: in 2026 there were core updates in March and May. To know whether you really dropped, look at the trend in Search Console over several weeks, not a single search.",
+      },
+      {
+        q: "¿Necesito un archivo especial para aparecer en las respuestas con IA de Google?",
+        qEn: "Do I need a special file to appear in Google’s AI answers?",
+        a: "No. La documentación de Google dice que no hay requisitos adicionales para aparecer en los resúmenes de IA ni en el Modo IA, y que no necesitas archivos nuevos, archivos de texto para IA ni datos estructurados especiales. La página tiene que estar indexada y poder mostrarse con un fragmento. Aplican las mismas bases del SEO.",
+        aEn: "No. Google’s documentation says there are no additional requirements to appear in AI Overviews or AI Mode, and that you do not need new files, AI text files or special structured data. The page has to be indexed and eligible to be shown with a snippet. The usual SEO fundamentals apply.",
+      },
+      {
+        q: "¿Cuánto tarda en notarse una mejora en Google?",
+        qEn: "How long does an improvement take to show on Google?",
+        a: "Depende del cambio. Corregir datos del Perfil de Empresa puede notarse en días o semanas. El contenido nuevo y la reputación en otros sitios toman meses, normalmente de 4 a 6 para ver movimiento y más para que se acumule. Si alguien te promete el primer lugar en semanas, pregunta exactamente qué va a hacer.",
+        aEn: "It depends on the change. Fixing Business Profile details can show within days or weeks. New content and reputation on other sites take months, usually 4 to 6 to see movement and longer to compound. If someone promises you first place within weeks, ask exactly what they are going to do.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "how Google ranks local businesses",
+        "Google Maps ranking factors 2026",
+        "Google Business Profile ranking",
+        "E-E-A-T small business",
+        "AI Overviews small business",
+        "Google core update 2026",
+      ],
+      keywordsEs: [
+        "cómo califica Google a mi empresa",
+        "cómo posicionar mi negocio en Google 2026",
+        "factores de posicionamiento en Google Maps",
+        "relevancia distancia prominencia Google",
+        "reseñas de Google posicionamiento",
+        "actualización de Google 2026",
+        "aparecer en resúmenes de IA de Google",
+      ],
+    },
+  },
+  {
+    slug: "como-recomienda-chatgpt-a-tu-negocio",
+    title: "Does ChatGPT Recommend Your Business? How It Chooses in 2026",
+    titleEs: "¿ChatGPT recomienda tu negocio? Cómo elige a quién mencionar en 2026",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "When someone asks ChatGPT for a dentist in Tijuana or a restaurant in Ensenada, it searches the web, reads what it can and summarises. What decides whether your business gets named, what OpenAI confirms, what nobody can sell you, and how to measure it.",
+    excerptEs:
+      "Cuando alguien le pide a ChatGPT un dentista en Tijuana o un restaurante en Ensenada, busca en internet, lee lo que puede y resume. Qué decide si tu negocio aparece, qué confirma OpenAI, qué nadie te puede vender y cómo medirlo.",
+    readingTime: 10,
+    date: "2026-09-28",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "ChatGPT has no list of recommended businesses and no one can pay to be named in its answers. For current or local questions it searches the web, reads the pages it is allowed to read, pulls business listings from third-party providers and summarises. So whether your business appears comes down to four things: that ChatGPT can read your site, that your information matches everywhere, that other people talk about you, and that your pages answer the question in full. OpenAI confirms the first; the other three follow from how it builds its answers.",
+    ledeEs:
+      "ChatGPT no tiene una lista de negocios recomendados y nadie puede pagar para salir en sus respuestas. Para preguntas actuales o locales busca en internet, lee las páginas que tiene permitido leer, toma fichas de negocios de proveedores externos y resume. Así que si tu negocio aparece o no depende de cuatro cosas: que ChatGPT pueda leer tu sitio, que tu información coincida en todos lados, que otros hablen de ti y que tus páginas respondan la pregunta completa. OpenAI confirma la primera; las otras tres se desprenden de cómo arma sus respuestas.",
+    sections: [
+      {
+        id: "memoria-y-busqueda",
+        heading: "Two ways ChatGPT knows about you: memory and search",
+        headingEs: "Dos formas en que ChatGPT te conoce: memoria y búsqueda",
+        body: [
+          "ChatGPT can answer from what it learned during training, or by searching the web at the moment of the question. For anything that changes, like which businesses are open, where they are or what they charge, it leans on search, and it shows the sources it used as links.",
+          "That matters because the two depend on different things. What the model learned is fixed until the next version and you cannot influence it this month. What it finds when it searches depends on what is published about you today. For a local business, search is almost the whole game.",
+          "OpenAI’s own help page is candid about the rest: ChatGPT ranks search results using multiple factors intended to find relevant, reliable information, and placement is not guaranteed. Anyone who promises you a guaranteed position in ChatGPT is promising something OpenAI does not.",
+        ],
+        bodyEs: [
+          "ChatGPT puede responder con lo que aprendió durante su entrenamiento o buscando en internet en el momento de la pregunta. Para todo lo que cambia, como qué negocios están abiertos, dónde están o cuánto cobran, se apoya en la búsqueda y muestra como enlaces las fuentes que usó.",
+          "Eso importa porque las dos dependen de cosas distintas. Lo que el modelo aprendió queda fijo hasta la siguiente versión y no lo puedes influir este mes. Lo que encuentra cuando busca depende de lo que está publicado sobre ti hoy. Para un negocio local, la búsqueda es casi todo.",
+          "La página de ayuda de OpenAI es clara con lo demás: ChatGPT ordena los resultados de búsqueda con varios factores pensados para encontrar información relevante y confiable, y el lugar no está garantizado. Quien te prometa una posición garantizada en ChatGPT te promete algo que OpenAI no promete.",
+        ],
+      },
+      {
+        id: "que-te-pueda-leer",
+        heading: "First filter: it has to be able to read you",
+        headingEs: "Primer filtro: que te pueda leer",
+        body: [
+          "OpenAI uses different robots for different jobs, and your site’s robots.txt file decides which ones get in. OAI-SearchBot is the one that finds sites for ChatGPT’s search. OpenAI says sites that block it will not be shown in ChatGPT search answers, only, at most, as a plain link. GPTBot is the one that collects content for training future models.",
+          "They are independent: you can allow OAI-SearchBot so you appear in answers and block GPTBot so your content is not used for training. OpenAI says changes to robots.txt take about 24 hours to apply.",
+          "It is worth checking, because some hosting and security services offer to block “AI bots” with one switch, and some site owners flipped it without knowing it also takes them out of ChatGPT’s answers.",
+          "Reading also means text. A menu uploaded only as a photo, prices inside an image or services described only in a video are practically invisible to a system that summarises text. What you want ChatGPT to repeat has to be written on the page.",
+        ],
+        bodyEs: [
+          "OpenAI usa robots distintos para tareas distintas, y el archivo robots.txt de tu sitio decide cuáles entran. OAI-SearchBot es el que encuentra sitios para la búsqueda de ChatGPT. OpenAI dice que los sitios que lo bloquean no se muestran en las respuestas de búsqueda de ChatGPT, cuando mucho como un enlace suelto. GPTBot es el que recopila contenido para entrenar modelos futuros.",
+          "Son independientes: puedes permitir OAI-SearchBot para aparecer en las respuestas y bloquear GPTBot para que tu contenido no se use en entrenamiento. OpenAI dice que los cambios en robots.txt tardan unas 24 horas en aplicarse.",
+          "Vale la pena revisarlo, porque algunos servicios de hosting y seguridad ofrecen bloquear “bots de IA” con un solo botón, y hay dueños que lo activaron sin saber que también los saca de las respuestas de ChatGPT.",
+          "Leer también significa texto. Un menú subido solo como foto, precios dentro de una imagen o servicios explicados solo en video son prácticamente invisibles para un sistema que resume texto. Lo que quieres que ChatGPT repita tiene que estar escrito en la página.",
+        ],
+      },
+      {
+        id: "informacion-que-coincida",
+        heading: "Second filter: your information has to match everywhere",
+        headingEs: "Segundo filtro: que tu información coincida en todos lados",
+        body: [
+          "For local questions, OpenAI says ChatGPT may share the user’s location with trusted third-party providers that supply local information such as nearby business listings, and on the phone apps the answer can include a map. OpenAI does not name those providers, and its help page also mentions working with other search providers.",
+          "Since you cannot know exactly which listing ChatGPT is reading on a given day, the practical answer is to have the same name, address, phone, hours and category everywhere your business appears: Google Business Profile, Bing Places, Apple Business Connect, Facebook, and the directories that matter in your industry. This is our recommendation, not something OpenAI publishes: an AI that finds two different phone numbers for the same business has a reason to doubt both.",
+          "If your business is in several listings with an old address or a number that no longer works, fixing that is the cheapest improvement on this list.",
+        ],
+        bodyEs: [
+          "Para preguntas locales, OpenAI dice que ChatGPT puede compartir la ubicación del usuario con proveedores externos de confianza que dan información local, como fichas de negocios cercanos, y en las apps del celular la respuesta puede incluir un mapa. OpenAI no dice quiénes son esos proveedores, y su página de ayuda también menciona que trabaja con otros proveedores de búsqueda.",
+          "Como no puedes saber exactamente qué ficha está leyendo ChatGPT en un día dado, la respuesta práctica es tener el mismo nombre, dirección, teléfono, horario y categoría en todos los lugares donde aparece tu negocio: Perfil de Empresa de Google, Bing Places, Apple Business Connect, Facebook y los directorios que importan en tu giro. Esto es recomendación nuestra, no algo que OpenAI publique: una IA que encuentra dos teléfonos distintos para el mismo negocio tiene razones para dudar de los dos.",
+          "Si tu negocio está en varias fichas con una dirección vieja o un número que ya no sirve, corregirlo es la mejora más barata de esta lista.",
+        ],
+      },
+      {
+        id: "que-dicen-otros",
+        heading: "Third filter: what other people say about you",
+        headingEs: "Tercer filtro: qué dicen otros de ti",
+        body: [
+          "When someone asks “what is the best taquería in Ensenada?”, the answer usually leans on sources that compare: reviews, local guides, press notes, “best of” lists and forums. OpenAI does not publish a list of these signals, so treat this as a reasonable hypothesis rather than a rule: if answers are built from what can be found on the web, a business that is only described by its own website gives ChatGPT less to work with than one that other people mention too.",
+          "That is the same reputation that helps you on Google, which is why the two efforts overlap. Reviews on several platforms, a mention in a local media outlet, being listed in your professional association or chamber of commerce, and collaborations with other businesses all add up. None of it is quick, and all of it is also useful with human customers.",
+        ],
+        bodyEs: [
+          "Cuando alguien pregunta “¿cuál es la mejor taquería de Ensenada?”, la respuesta normalmente se apoya en fuentes que comparan: reseñas, guías locales, notas de prensa, listas de recomendaciones y foros. OpenAI no publica una lista de estas señales, así que tómalo como una hipótesis razonable y no como regla: si las respuestas se arman con lo que se encuentra en internet, un negocio del que solo habla su propio sitio le da a ChatGPT menos material que uno del que también hablan otros.",
+          "Es la misma reputación que te ayuda en Google, y por eso los dos esfuerzos se enciman. Reseñas en varias plataformas, una mención en un medio local, aparecer en tu colegio o cámara empresarial y colaboraciones con otros negocios suman. Nada de eso es rápido, y todo sirve también con clientes de carne y hueso.",
+        ],
+      },
+      {
+        id: "que-responda-completo",
+        heading: "Fourth filter: your page has to answer the whole question",
+        headingEs: "Cuarto filtro: que tu página responda la pregunta completa",
+        body: [
+          "People ask ChatGPT long, specific questions: “a pediatric dentist in Tijuana who takes Saturday appointments and speaks English”. The page that gets cited is the one that answers those details in writing: the service, the city and area, hours, languages, a price range, who it is for, and frequent questions.",
+          "Clear structure helps: one page per service, headings that say what each part is about, and answers in the first lines rather than buried after three paragraphs of introduction. It is the same structure that works on Google, which we explain in the [SEO guide](/blog/guia-seo).",
+        ],
+        bodyEs: [
+          "A ChatGPT la gente le hace preguntas largas y específicas: “un dentista pediátrico en Tijuana que dé citas en sábado y hable inglés”. La página que se cita es la que responde esos detalles por escrito: el servicio, la ciudad y la zona, el horario, los idiomas, un rango de precio, para quién es y preguntas frecuentes.",
+          "Una estructura clara ayuda: una página por servicio, títulos que dicen de qué trata cada parte y respuestas en las primeras líneas, no enterradas después de tres párrafos de introducción. Es la misma estructura que funciona en Google, y la explicamos en la [guía de SEO](/blog/guia-seo).",
+        ],
+      },
+      {
+        id: "lo-que-no-funciona",
+        heading: "What does not work, or is not proven",
+        headingEs: "Lo que no funciona, o no está probado",
+        body: [
+          "Paying for the answer. OpenAI started testing ads in ChatGPT in the United States on 9 February 2026 and is rolling them out gradually to Free and Go users in select regions. Its rules are explicit: ads do not influence ChatGPT’s answers, they run on separate systems, and they appear labeled as sponsored below the response. Advertising can put you under an answer; it cannot put you inside one.",
+          "Special files. There is a lot of talk about llms.txt. OpenAI’s publisher documentation does not mention it, and Google says you do not need new AI text files to appear in its AI features. It is not harmful, but it does not replace anything on this list.",
+          "Mass-produced content. Filling a site with dozens of generic AI-written pages does not make you more visible to ChatGPT, and it can hurt you on Google, whose spam policies call it scaled content abuse. Since ChatGPT often finds pages through search, losing ground on search engines is also losing ground here.",
+        ],
+        bodyEs: [
+          "Pagar por la respuesta. OpenAI empezó a probar anuncios en ChatGPT en Estados Unidos el 9 de febrero de 2026 y los está extendiendo poco a poco a usuarios de los planes Free y Go en algunas regiones. Sus reglas son explícitas: los anuncios no influyen en las respuestas de ChatGPT, funcionan en sistemas separados y aparecen marcados como patrocinados, debajo de la respuesta. La publicidad te puede poner debajo de una respuesta; no te puede meter dentro de ella.",
+          "Archivos especiales. Se habla mucho del llms.txt. La documentación de OpenAI para sitios web no lo menciona, y Google dice que no necesitas archivos de texto para IA para aparecer en sus funciones de IA. No hace daño, pero no sustituye nada de esta lista.",
+          "Contenido en masa. Llenar un sitio con decenas de páginas genéricas escritas con IA no te hace más visible para ChatGPT, y te puede perjudicar en Google, cuyas políticas contra spam lo llaman abuso de contenido a escala. Como ChatGPT muchas veces encuentra páginas a través de búsquedas, perder terreno en los buscadores también es perderlo aquí.",
+        ],
+      },
+      {
+        id: "a-ti-te-sale-distinto",
+        heading: "Why it answers you differently",
+        headingEs: "Por qué a ti te contesta distinto",
+        body: [
+          "If you ask ChatGPT about your own business and your cousin asks the same thing, you can get different answers. OpenAI says that when memory is on, saved memories can shape how it rewrites a search, and a saved location can influence the results. The same wording can also produce different answers from one day to the next.",
+          "So one test proves nothing. Use a temporary chat, which does not use memory, ask the same questions several times, and track the pattern over months, not a single screenshot.",
+        ],
+        bodyEs: [
+          "Si tú le preguntas a ChatGPT por tu negocio y tu primo le pregunta lo mismo, pueden recibir respuestas distintas. OpenAI dice que cuando la memoria está activada, lo guardado puede influir en cómo reescribe una búsqueda, y una ubicación guardada puede influir en los resultados. Además, la misma pregunta puede dar respuestas distintas de un día a otro.",
+          "Por eso una sola prueba no demuestra nada. Usa un chat temporal, que no usa la memoria, haz las mismas preguntas varias veces y sigue el patrón durante meses, no una captura de pantalla.",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "The hard data first. OpenAI says ChatGPT automatically adds utm_source=chatgpt.com to the links it sends to websites. In Google Analytics you can see those visits as their own source and which pages they land on. If you get none, ChatGPT is not sending people to your site, whatever a screenshot says.",
+          "Then the question nobody asks: when a new customer arrives, ask how they found you, and add “ChatGPT or another AI” as an option. Many people read the recommendation and then search your name on Google or send a WhatsApp, and that visit never shows up as coming from ChatGPT.",
+          "Finally, a monthly test. Write ten questions a real customer would ask, run them in a temporary chat, and note whether you appear, in what position and next to whom. Ten questions a month tell you more than a hundred on one afternoon.",
+          "Knowing where your customers come from is one of the questions in our [free diagnostic](/recursos/diagnostico), because without that data every decision is a guess. And since a good part of what ChatGPT reads comes from search engines, start with [how Google evaluates your business](/blog/como-evalua-google-a-tu-negocio).",
+        ],
+        bodyEs: [
+          "Primero el dato duro. OpenAI dice que ChatGPT agrega automáticamente utm_source=chatgpt.com a los enlaces que manda a los sitios. En Google Analytics puedes ver esas visitas como una fuente propia y a qué páginas llegan. Si no tienes ninguna, ChatGPT no te está mandando gente a tu sitio, diga lo que diga una captura.",
+          "Luego la pregunta que nadie hace: cuando llegue un cliente nuevo, pregúntale cómo te encontró y agrega “ChatGPT u otra IA” como opción. Mucha gente lee la recomendación y luego busca tu nombre en Google o te manda un WhatsApp, y esa visita nunca aparece como si viniera de ChatGPT.",
+          "Por último, una prueba mensual. Escribe diez preguntas que haría un cliente real, hazlas en un chat temporal y anota si apareces, en qué lugar y junto a quién. Diez preguntas al mes te dicen más que cien en una tarde.",
+          "Saber de dónde llegan tus clientes es una de las preguntas de nuestro [diagnóstico gratuito](/recursos/diagnostico), porque sin ese dato cada decisión es una apuesta. Y como buena parte de lo que lee ChatGPT viene de los buscadores, empieza por [cómo evalúa Google a tu negocio](/blog/como-evalua-google-a-tu-negocio).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Puedo pagar para que ChatGPT recomiende mi negocio?",
+        qEn: "Can I pay for ChatGPT to recommend my business?",
+        a: "No. OpenAI dice que los anuncios no influyen en las respuestas de ChatGPT y que los anunciantes no pueden cambiar, ordenar ni modificar lo que responde. Los anuncios, que empezaron a probarse en Estados Unidos en febrero de 2026, aparecen marcados como patrocinados y separados, debajo de la respuesta.",
+        aEn: "No. OpenAI states that ads do not influence ChatGPT’s answers and that advertisers cannot shape, rank or alter its responses. Ads, which started testing in the United States in February 2026, appear labeled as sponsored and separated, below the response.",
+      },
+      {
+        q: "Si bloqueo a los robots de IA en mi sitio, ¿desaparezco de ChatGPT?",
+        qEn: "If I block AI bots on my site, do I disappear from ChatGPT?",
+        a: "Depende de cuál bloquees. Si bloqueas OAI-SearchBot, OpenAI dice que tu sitio no se muestra en las respuestas de búsqueda de ChatGPT. Si bloqueas solo GPTBot, tu contenido no se usa para entrenar modelos, pero puedes seguir apareciendo en las búsquedas. Son permisos independientes en tu archivo robots.txt.",
+        aEn: "It depends on which one you block. If you block OAI-SearchBot, OpenAI says your site will not be shown in ChatGPT search answers. If you only block GPTBot, your content is not used to train models, but you can still appear in searches. They are independent settings in your robots.txt file.",
+      },
+      {
+        q: "¿Necesito un archivo llms.txt para salir en ChatGPT?",
+        qEn: "Do I need an llms.txt file to appear in ChatGPT?",
+        a: "No es necesario. La documentación de OpenAI para sitios web no lo menciona, y Google dice que no hacen falta archivos de texto para IA en sus funciones de IA. Lo que sí cuenta es que OAI-SearchBot pueda entrar a tu sitio y que la información importante esté escrita en tus páginas.",
+        aEn: "It is not necessary. OpenAI’s documentation for websites does not mention it, and Google says AI text files are not needed for its AI features. What does count is that OAI-SearchBot can access your site and that the important information is written on your pages.",
+      },
+      {
+        q: "¿Por qué ChatGPT recomienda a mi competencia y no a mí?",
+        qEn: "Why does ChatGPT recommend my competitor and not me?",
+        a: "Las causas más comunes son que tu sitio bloquea a OAI-SearchBot, que tu información no coincide entre fichas y directorios, que casi nadie más habla de tu negocio o que tus páginas no responden lo que la gente pregunta. Revisa los cuatro en ese orden. Y recuerda que las respuestas cambian según la persona y el día: una sola prueba no basta.",
+        aEn: "The most common causes are that your site blocks OAI-SearchBot, that your information does not match across listings and directories, that hardly anyone else mentions your business, or that your pages do not answer what people ask. Check the four in that order. And remember that answers vary by person and day: one test is not enough.",
+      },
+      {
+        q: "¿Cómo sé si ChatGPT me está mandando clientes?",
+        qEn: "How do I know whether ChatGPT is sending me customers?",
+        a: "OpenAI dice que ChatGPT agrega utm_source=chatgpt.com a los enlaces que manda, así que en Google Analytics puedes ver esas visitas por separado. Además, pregúntale a cada cliente nuevo cómo te encontró e incluye “ChatGPT u otra IA” como opción, porque mucha gente lee la recomendación y luego te busca por nombre.",
+        aEn: "OpenAI says ChatGPT adds utm_source=chatgpt.com to the links it sends, so you can see those visits separately in Google Analytics. Also ask every new customer how they found you and include “ChatGPT or another AI” as an option, because many people read the recommendation and then search for you by name.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "how ChatGPT recommends businesses",
+        "appear in ChatGPT answers",
+        "ChatGPT local business recommendations 2026",
+        "OAI-SearchBot robots.txt",
+        "ChatGPT ads 2026",
+        "AI search visibility small business",
+      ],
+      keywordsEs: [
+        "cómo aparecer en ChatGPT",
+        "cómo recomienda ChatGPT a mi empresa",
+        "ChatGPT recomienda negocios 2026",
+        "posicionamiento en ChatGPT",
+        "OAI-SearchBot robots.txt",
+        "anuncios en ChatGPT 2026",
+        "visibilidad en buscadores con IA",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
