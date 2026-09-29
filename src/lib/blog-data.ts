@@ -9406,6 +9406,16 @@ export const BLOG_CATEGORIES: BlogCategory[] = Array.from(
 export const postCover = (post: BlogPost, size: "hero" | "card" = "hero") =>
   post.cover ? `/images/blog/${post.slug}${size === "card" ? "-card" : ""}.webp` : undefined;
 
+/**
+ * Hero srcset: 1440px and 2880px, both without grain. Grain baked into a
+ * 2880px image costs ~1.1MB; without it the file is ~60KB, and the article
+ * hero lays grain.png over it so the texture stays sharp on any screen.
+ */
+export const postCoverSrcSet = (post: BlogPost) =>
+  post.cover
+    ? `/images/blog/${post.slug}.webp 1440w, /images/blog/${post.slug}-2x.webp 2880w`
+    : undefined;
+
 /** Share-preview image (1600x840, title baked in), or undefined. */
 export const postOgImage = (post: BlogPost) =>
   post.cover ? `/images/blog/${post.slug}-og.jpg` : undefined;

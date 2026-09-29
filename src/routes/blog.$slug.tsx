@@ -14,6 +14,7 @@ import {
   postAuthorRole,
   formatPostDate,
   postCover,
+  postCoverSrcSet,
   postOgImage,
   type BlogPost,
 } from "@/lib/blog-data";
@@ -261,12 +262,25 @@ function ArticleHero({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
       {cover && (
         <img
           src={cover}
+          srcSet={postCoverSrcSet(post)}
+          // On phones the hero is taller than the image's ratio, so the image
+          // is scaled by height and renders about 1.5x the viewport width.
+          sizes="(max-width: 767px) 155vw, 100vw"
           alt=""
           aria-hidden
           width={1440}
           height={756}
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
+      {/* Film grain as a 128px tile (256px file, so one grain per device
+          pixel on retina) instead of baked into the image. */}
+      {cover && (
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{ backgroundImage: "url(/images/blog/grain.png)", backgroundSize: "128px 128px" }}
         />
       )}
       {/* Lighter veil over cover art so its colour survives; the gradient
