@@ -9584,6 +9584,643 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "reservas-directas-hotel",
+    cover: true,
+    title: "Direct Bookings: How to Depend Less on Booking and Airbnb Without Disappearing From Them",
+    titleEs: "Reservas directas: cómo depender menos de Booking y Airbnb sin desaparecer de ellos",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Booking and Airbnb fill rooms, but they charge a commission on every stay, including the guest who comes back every year. Leaving them is a mistake; letting them keep your repeat guests is another. How to use them as a shop window and bring the next booking to your own website.",
+    excerptEs:
+      "Booking y Airbnb llenan cuartos, pero cobran comisión en cada estancia, incluida la del huésped que regresa cada año. Salirte de ellos es un error; dejar que se queden con tus clientes que repiten es otro. Cómo usarlos de escaparate y traer la siguiente reserva a tu propia página.",
+    readingTime: 9,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "The most common mistake we see in hotels, cabins and vacation rentals is not being on Booking or Airbnb. It is being only there. [[OTAs|ota]] charge a commission on every stay: Booking charges a percentage of each reservation that varies by country and property type, and Airbnb has moved almost all hosts outside Europe to a fee of around 15.5% paid by the host. That is a fair price for a guest who did not know you. It is an expensive price for the guest who already stayed with you and comes back next year through the same app. The goal is not to leave those platforms. It is to make sure the second booking happens on your own website.",
+    ledeEs:
+      "El error más común que vemos en hoteles, cabañas y rentas vacacionales no es estar en Booking o Airbnb. Es estar solo ahí. Las [[OTA|ota]] cobran comisión en cada estancia: Booking cobra un porcentaje de cada reserva que varía por país y tipo de propiedad, y Airbnb pasó a casi todos los anfitriones fuera de Europa a una tarifa de alrededor de 15.5% que paga el anfitrión. Es un precio justo por un huésped que no te conocía. Es un precio caro por el huésped que ya se quedó contigo y regresa el próximo año por la misma aplicación. La meta no es salirte de esas plataformas. Es lograr que la segunda reserva suceda en tu propia página.",
+    sections: [
+      {
+        id: "cuanto-te-cuesta-depender",
+        heading: "What depending on them really costs",
+        headingEs: "Lo que de verdad te cuesta depender de ellos",
+        body: [
+          "Booking explains in its partner help centre that it charges “a set percentage of the value of each reservation”, calculated on the total value of the stay, and that the percentage varies by country and by property type. Many hotels end up paying around 15%, according to industry guides, and more if they pay for extra visibility. In Airbnb’s case, the host-only fee is around 15.5% of each booking.",
+          "A round-number example to size it: a property that receives 1,000 nights a year through these platforms at 2,000 pesos a night pays around 300,000 pesos in commissions at 15%. If a third of those guests had already stayed before, about 100,000 pesos went to platforms for customers who were already yours.",
+        ],
+        bodyEs: [
+          "Booking explica en su centro de ayuda para socios que cobra “un porcentaje fijo del valor de cada reserva”, calculado sobre el valor total de la estancia, y que ese porcentaje varía por país y por tipo de propiedad. Muchos hoteles terminan pagando alrededor de 15%, según guías de la industria, y más si pagan por visibilidad extra. En el caso de Airbnb, la tarifa que paga solo el anfitrión ronda el 15.5% de cada reserva.",
+          "Un ejemplo con números redondos para dimensionarlo: una propiedad que recibe 1,000 noches al año por estas plataformas a 2,000 pesos la noche paga unos 300,000 pesos de comisión al 15%. Si un tercio de esos huéspedes ya se había quedado antes, cerca de 100,000 pesos se fueron a las plataformas por clientes que ya eran tuyos.",
+        ],
+      },
+      {
+        id: "no-te-salgas",
+        heading: "Why you should not leave the platforms",
+        headingEs: "Por qué no conviene salirte de las plataformas",
+        body: [
+          "A Cornell study by Chris Anderson, published in 2011 with InterContinental Hotels data, found what the industry calls the billboard effect: being listed on an online travel agency also increases bookings on the hotel’s own website. Nearly 75% of the guests who booked directly had visited an online travel agency first. Anderson concluded that part of those commissions should be seen as a marketing expense.",
+          "In practice: many new guests discover you on Booking or Airbnb, compare, and then look for you by name. If at that moment they find a clear website where they can book, some of them will book there. If they find nothing, they go back to the app. The platform is your shop window; your website is where you want the sale to close.",
+        ],
+        bodyEs: [
+          "Un estudio de Cornell de Chris Anderson, publicado en 2011 con datos de InterContinental Hotels, encontró lo que la industria llama efecto escaparate: aparecer en una agencia de viajes en línea también aumenta las reservas en la página propia del hotel. Casi el 75% de los huéspedes que reservaron directo había visitado antes una agencia en línea. Anderson concluyó que parte de esas comisiones debe verse como un gasto de publicidad.",
+          "En la práctica: muchos huéspedes nuevos te descubren en Booking o Airbnb, comparan y luego te buscan por nombre. Si en ese momento encuentran una página clara donde reservar, una parte reserva ahí. Si no encuentran nada, regresan a la aplicación. La plataforma es tu escaparate; tu página es donde quieres que se cierre la venta.",
+        ],
+      },
+      {
+        id: "tu-pagina-tiene-que-poder-cobrar",
+        heading: "Your website has to be able to take the booking",
+        headingEs: "Tu página tiene que poder cobrar la reserva",
+        body: [
+          "A website with photos and a “message us on WhatsApp” button is not enough. The guest who compares at 11 p.m. wants to see dates, prices and pay, not wait for a reply the next morning. For that you need a [[booking engine|motor-de-reservas]] on your own [[domain|dominio]], connected to a [[channel manager|channel-manager]] so a room sold on Booking disappears from your website at the same moment.",
+          "It also has to load fast and work on a phone, because that is where most guests compare. What a complete website must include is covered in [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+        bodyEs: [
+          "Una página con fotos y un botón de “escríbenos por WhatsApp” no basta. El huésped que compara a las 11 de la noche quiere ver fechas, precios y pagar, no esperar una respuesta a la mañana siguiente. Para eso necesitas un [[motor de reservas|motor-de-reservas]] en tu propio [[dominio|dominio]], conectado a un [[channel manager|channel-manager]] para que un cuarto vendido en Booking desaparezca de tu página en ese mismo momento.",
+          "También tiene que cargar rápido y funcionar en el celular, porque ahí compara la mayoría. Lo que debe tener una página completa lo explicamos en [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+      },
+      {
+        id: "google-reservas-gratis",
+        heading: "Google can send you direct bookings for free",
+        headingEs: "Google te puede mandar reservas directas gratis",
+        body: [
+          "Few small hotels know this. Google has free booking links: when someone searches for your hotel, your own website can appear next to Booking and Expedia with its price, and Google charges nothing for those clicks. According to Google’s Hotel Center help, many hotels are already connected through their reservation system provider. If yours offers it, it is one of the cheapest direct bookings you can get.",
+          "Before that, your [[Google Business Profile|google-business-profile]] has to be complete: photos, services, correct phone number and recent reviews. It is the first thing a guest sees when searching for you by name.",
+        ],
+        bodyEs: [
+          "Pocos hoteles pequeños lo saben. Google tiene enlaces de reserva gratuitos: cuando alguien busca tu hotel, tu propia página puede aparecer junto a Booking y Expedia con su precio, y Google no cobra nada por esos clics. Según la ayuda de Hotel Center de Google, muchos hoteles ya están conectados a través de su proveedor de sistema de reservas. Si el tuyo lo ofrece, es de las reservas directas más baratas que puedes conseguir.",
+          "Antes de eso, tu [[Perfil de Google|google-business-profile]] tiene que estar completo: fotos, servicios, teléfono correcto y reseñas recientes. Es lo primero que ve un huésped cuando te busca por nombre.",
+        ],
+      },
+      {
+        id: "quedate-con-el-huesped",
+        heading: "Keep the guest, not just the booking",
+        headingEs: "Quédate con el huésped, no solo con la reserva",
+        body: [
+          "The guest who arrived through Booking is physically at your front desk. That is when to invite them into your own channel: ask for their email at check-in or through the Wi-Fi login page, with your [[privacy notice|aviso-de-privacidad]] visible, and tell them what they gain by booking directly next time. We explain the Wi-Fi idea in [QR menus for restaurants](/blog/menu-qr-para-restaurante), and it works the same way in a hotel.",
+          "With that list you can do [[email marketing|email-marketing]]: an anniversary of their stay, the low season, a local event. And with the [[Meta Pixel|pixel]] installed on your website, you can show ads to those who visited it and did not book, which is [[remarketing|remarketing]].",
+        ],
+        bodyEs: [
+          "El huésped que llegó por Booking está físicamente en tu recepción. Ese es el momento de invitarlo a tu propio canal: pide su correo en el registro o en la página de acceso al WiFi, con tu [[aviso de privacidad|aviso-de-privacidad]] a la vista, y dile qué gana si la próxima vez reserva directo. La idea del WiFi la explicamos en [menú QR para restaurante](/blog/menu-qr-para-restaurante), y en un hotel funciona igual.",
+          "Con esa lista puedes hacer [[email marketing|email-marketing]]: el aniversario de su estancia, la temporada baja, un evento en la zona. Y con el [[Pixel de Meta|pixel]] instalado en tu página, puedes mostrarle anuncios a quien la visitó y no reservó, que es [[remarketing|remarketing]].",
+        ],
+      },
+      {
+        id: "que-ofrecer-por-reservar-directo",
+        heading: "What to offer for booking direct (and what to check first)",
+        headingEs: "Qué ofrecer por reservar directo (y qué revisar antes)",
+        body: [
+          "The instinct is to offer a lower price on your website. Before you do, read your contract with each platform: some ask that your prices are not lower elsewhere. A safer route is to offer something extra instead of a discount: breakfast, late check-out, a welcome bottle, free cancellation or a better room if available. It costs you less than the commission and does not break any agreement.",
+          "Say it clearly on your website (“booking here includes breakfast”) and at the front desk. A benefit nobody knows about does not move a single booking.",
+        ],
+        bodyEs: [
+          "El instinto es ofrecer un precio más bajo en tu página. Antes de hacerlo, lee tu contrato con cada plataforma: algunas piden que tus precios no sean más bajos en otros lados. Un camino más seguro es ofrecer algo extra en lugar de descuento: desayuno, salida tarde, una botella de bienvenida, cancelación gratuita o un mejor cuarto si hay disponible. Te cuesta menos que la comisión y no rompe ningún acuerdo.",
+          "Dilo claro en tu página (“reservando aquí incluye desayuno”) y en la recepción. Un beneficio que nadie conoce no mueve ni una reserva.",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure whether it is working",
+        headingEs: "Cómo medir si está funcionando",
+        body: [
+          "Track one number every month: the share of nights booked directly versus through platforms. Also record how many direct guests had stayed before. If that share rises season after season, you are keeping your customers; if not, the platforms are keeping them.",
+          "If you want to know what to fix first on your website, Google profile or channels, our [free diagnostic for hotels and lodging](/recursos/diagnostico/hospedaje) gives you the list in order in a few minutes.",
+        ],
+        bodyEs: [
+          "Lleva un número cada mes: qué parte de las noches se reservó directo y qué parte por plataformas. Anota también cuántos huéspedes directos ya se habían quedado antes. Si esa proporción sube temporada tras temporada, te estás quedando con tus clientes; si no, se los están quedando las plataformas.",
+          "Si quieres saber qué corregir primero en tu página, tu perfil de Google o tus canales, nuestro [diagnóstico gratuito para hospedaje](/recursos/diagnostico/hospedaje) te da la lista en orden en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto cobra Booking de comisión?",
+        qEn: "How much commission does Booking charge?",
+        a: "Booking cobra un porcentaje de cada reserva que varía por país y por tipo de propiedad, calculado sobre el valor total de la estancia. Según guías de la industria, muchos hoteles pagan alrededor de 15%, y más si contratan visibilidad extra. El porcentaje exacto de tu propiedad aparece en tu extranet.",
+        aEn: "Booking charges a percentage of each reservation that varies by country and property type, calculated on the total value of the stay. According to industry guides, many hotels pay around 15%, and more if they pay for extra visibility. Your property’s exact rate appears in your extranet.",
+      },
+      {
+        q: "¿Me conviene salirme de Booking y Airbnb?",
+        qEn: "Should I leave Booking and Airbnb?",
+        a: "Por lo general no. Un estudio de Cornell encontró que aparecer en agencias en línea también aumenta las reservas en la página del hotel: casi el 75% de quienes reservaron directo había visitado antes una agencia. Úsalas como escaparate para huéspedes nuevos y enfócate en que los que regresan reserven contigo.",
+        aEn: "Usually not. A Cornell study found that being listed on online travel agencies also increases bookings on the hotel’s own website: nearly 75% of those who booked directly had visited an agency first. Use them as a shop window for new guests and focus on getting returning guests to book with you.",
+      },
+      {
+        q: "¿Qué necesito para recibir reservas directas en mi página?",
+        qEn: "What do I need to take direct bookings on my website?",
+        a: "Un motor de reservas en tu propio dominio donde el huésped vea disponibilidad y pague, conectado a un channel manager para no vender dos veces el mismo cuarto. Además, un perfil de Google completo y, si tu proveedor lo ofrece, los enlaces de reserva gratuitos de Google.",
+        aEn: "A booking engine on your own domain where guests can check availability and pay, connected to a channel manager so you never sell the same room twice. Also a complete Google profile and, if your provider offers it, Google’s free booking links.",
+      },
+      {
+        q: "¿Puedo dar un precio más bajo en mi página que en Booking?",
+        qEn: "Can I offer a lower price on my website than on Booking?",
+        a: "Revisa primero tu contrato con cada plataforma, porque algunas piden que tus tarifas no sean más bajas en otros canales. Lo más seguro es ofrecer un beneficio en lugar de descuento: desayuno, salida tarde o cancelación gratuita al reservar directo.",
+        aEn: "Check your contract with each platform first, because some ask that your rates are not lower on other channels. The safest option is to offer a perk instead of a discount: breakfast, late check-out or free cancellation when booking direct.",
+      },
+      {
+        q: "¿Qué son los enlaces de reserva gratuitos de Google?",
+        qEn: "What are Google’s free booking links?",
+        a: "Son enlaces que pueden mostrar tu propia página de reservas, con su precio, cuando alguien busca tu hotel en Google, junto a las agencias en línea. Google no cobra por esos clics. Muchos hoteles ya pueden activarlos a través de su sistema de reservas.",
+        aEn: "They are links that can show your own booking website, with its price, when someone searches for your hotel on Google, next to the online agencies. Google does not charge for those clicks. Many hotels can already activate them through their reservation system.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "direct hotel bookings",
+        "reduce Booking.com commission",
+        "Airbnb host fee 15.5%",
+        "Google free booking links hotel",
+        "hotel marketing Mexico",
+      ],
+      keywordsEs: [
+        "reservas directas hotel",
+        "comisión Booking hotel",
+        "comisión Airbnb anfitrión",
+        "cómo depender menos de Booking",
+        "motor de reservas para hotel",
+        "marketing para hoteles y cabañas",
+      ],
+    },
+  },
+  {
+    slug: "reservas-directas-tours",
+    cover: true,
+    title: "Viator, GetYourGuide or Direct Bookings? How to Sell Your Tours Without Giving Away the Commission",
+    titleEs: "¿Viator, GetYourGuide o reservas directas? Cómo vender tus tours sin regalar la comisión",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Most tour operators live between two extremes: platforms that charge a big cut, and a WhatsApp inbox that loses bookings every night. How to use the platforms for what they are good at, stop losing tourists who write at 10 p.m., and sell more tours from your own website.",
+    excerptEs:
+      "La mayoría de los operadores de tours vive entre dos extremos: plataformas que se llevan una buena tajada y un WhatsApp que pierde reservas cada noche. Cómo usar las plataformas para lo que sirven, dejar de perder al turista que escribe a las 10 de la noche y vender más tours desde tu propia página.",
+    readingTime: 9,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "If you run tours or experiences, you probably sell in two ways: through platforms like Viator or GetYourGuide, which charge a commission on every seat, and through WhatsApp, where you answer each question by hand. Both leak money. The platforms are worth it for the tourist who did not know you; the problem is paying that commission on everyone else. And WhatsApp is where you lose the tourist who asked at night, did not get an answer, and booked the next option that let them pay in the moment. The fix is a website that sells on its own and a clear process for the questions that still come in.",
+    ledeEs:
+      "Si tienes tours o experiencias, seguramente vendes de dos formas: por plataformas como Viator o GetYourGuide, que cobran comisión por cada lugar, y por WhatsApp, donde contestas cada pregunta a mano. Las dos pierden dinero. Las plataformas valen la pena para el turista que no te conocía; el problema es pagarles esa comisión por todos los demás. Y en WhatsApp pierdes al turista que preguntó en la noche, no recibió respuesta y reservó la siguiente opción que le dejó pagar en ese momento. La solución es una página que venda sola y un proceso claro para las preguntas que sí lleguen.",
+    sections: [
+      {
+        id: "cuanto-cobran-las-plataformas",
+        heading: "How much the platforms charge",
+        headingEs: "Cuánto cobran las plataformas",
+        body: [
+          "There is no single published rate. GetYourGuide’s supplier terms say its commission is “a percentage of the Retail Price for a Booking, as specified in the Supplier Account”, so each operator has its own. Industry guides for tour operators report ranges of 20% to 30% for both Viator and GetYourGuide, with 25% as a common figure on Viator.",
+          "A round-number example: on a 1,500-peso tour, a 25% commission is 375 pesos per person. On a boat with 12 seats, that is 4,500 pesos per departure going to the platform. For a tourist who found you there, it can be worth it. For one who was recommended by your hotel or saw you on Instagram, it is money you did not need to spend.",
+        ],
+        bodyEs: [
+          "No hay una tarifa única publicada. Los términos para proveedores de GetYourGuide dicen que su comisión es “un porcentaje del precio de venta de la reserva, según se especifica en la cuenta del proveedor”, así que cada operador tiene la suya. Guías de la industria para operadores reportan rangos de 20% a 30% tanto en Viator como en GetYourGuide, con 25% como cifra común en Viator.",
+          "Un ejemplo con números redondos: en un tour de 1,500 pesos, una comisión de 25% son 375 pesos por persona. En un barco con 12 lugares, son 4,500 pesos por salida que se van a la plataforma. Por un turista que te encontró ahí puede valer la pena. Por uno que te recomendó su hotel o te vio en Instagram, es dinero que no necesitabas gastar.",
+        ],
+      },
+      {
+        id: "para-que-si-sirven",
+        heading: "What the platforms are good for",
+        headingEs: "Para qué sí sirven las plataformas",
+        body: [
+          "They bring foreign tourists who plan from home, they give you reviews in English and they sell in currencies and languages you might not handle. They are also where many travellers first discover an experience and then search for it by name. That is why leaving them is rarely a good idea.",
+          "Treat them like the [[OTAs|ota]] are treated in hotels: a shop window for new customers. The strategy is to make sure that when someone searches for you by name, they find a website where they can book without the middleman.",
+        ],
+        bodyEs: [
+          "Traen turistas extranjeros que planean desde casa, te dan reseñas en inglés y venden en monedas e idiomas que tal vez tú no manejas. También son donde muchos viajeros descubren una experiencia para después buscarla por nombre. Por eso salirte de ellas rara vez es buena idea.",
+          "Trátalas como se tratan las [[OTA|ota]] en los hoteles: un escaparate para clientes nuevos. La estrategia es que cuando alguien te busque por nombre, encuentre una página donde pueda reservar sin intermediario.",
+        ],
+      },
+      {
+        id: "whatsapp-pierde-reservas",
+        heading: "Selling only through WhatsApp loses bookings",
+        headingEs: "Vender solo por WhatsApp pierde reservas",
+        body: [
+          "The typical conversation goes: “Is there space on Saturday?”, “How much?”, “What time?”, “Can I pay by card?”. Four messages before the tourist can pay, and each one waits for you to be free. A 2011 Harvard Business Review study audited 2,241 US companies and found that those who responded to an online inquiry within an hour were nearly seven times as likely to qualify the [[lead|lead]] as those who responded later. Only 37% responded within the hour.",
+          "A tourist has even less patience: they are on holiday, with several options open on their phone. The answer is a [[booking engine|motor-de-reservas]] on your website with a calendar, available seats, a deposit and a confirmation that arrives on its own. WhatsApp stays for real questions, and your automatic reply can include the link to book. We explain how to automate those replies in [WhatsApp Business API](/blog/whatsapp-business-api).",
+        ],
+        bodyEs: [
+          "La conversación típica va así: “¿Hay lugar el sábado?”, “¿Cuánto cuesta?”, “¿A qué hora sale?”, “¿Aceptan tarjeta?”. Cuatro mensajes antes de que el turista pueda pagar, y cada uno espera a que tú estés libre. Un estudio de Harvard Business Review de 2011 revisó 2,241 empresas en Estados Unidos y encontró que las que respondían una consulta en línea en menos de una hora tenían casi siete veces más probabilidad de calificar al [[prospecto|lead]] que las que respondían después. Solo el 37% respondió en menos de una hora.",
+          "Un turista tiene todavía menos paciencia: está de vacaciones, con varias opciones abiertas en el celular. La respuesta es un [[motor de reservas|motor-de-reservas]] en tu página con calendario, lugares disponibles, anticipo y una confirmación que llega sola. WhatsApp se queda para las dudas reales, y tu respuesta automática puede incluir el enlace para reservar. Cómo automatizar esas respuestas lo explicamos en [WhatsApp Business API](/blog/whatsapp-business-api).",
+        ],
+      },
+      {
+        id: "google-cosas-que-hacer",
+        heading: "Google can show your tour for free",
+        headingEs: "Google puede mostrar tu tour gratis",
+        body: [
+          "Google has a section called Things to do that shows tours and activities when someone searches for a destination, and it includes free listings. According to Google, the recommended way to appear is through a connectivity partner, which is usually the same booking software a tour operator uses. When choosing your booking system, ask whether it connects to Google Things to do.",
+          "The basics come first: a complete [[Google Business Profile|google-business-profile]] with photos of the experience, the meeting point on the map, hours and recent reviews. A tourist who searches “whale watching Ensenada” sees the map and the reviews before any website.",
+        ],
+        bodyEs: [
+          "Google tiene una sección llamada Cosas que hacer (Things to do) que muestra tours y actividades cuando alguien busca un destino, e incluye listados gratuitos. Según Google, la forma recomendada de aparecer es a través de un socio de conectividad, que normalmente es el mismo software de reservas que usa un operador de tours. Cuando elijas tu sistema de reservas, pregunta si se conecta con Google Things to do.",
+          "Lo básico va primero: un [[Perfil de Google|google-business-profile]] completo con fotos de la experiencia, el punto de encuentro en el mapa, horarios y reseñas recientes. Un turista que busca “avistamiento de ballenas Ensenada” ve el mapa y las reseñas antes que cualquier página.",
+        ],
+      },
+      {
+        id: "politica-clara",
+        heading: "A clear policy for weather, cancellations and deposits",
+        headingEs: "Una política clara de clima, cancelaciones y anticipos",
+        body: [
+          "Many tours depend on the weather, and that is where most arguments start. Write your policy before anyone pays: what happens if the trip is cancelled for weather, how much notice the customer needs to give to cancel, and whether the deposit is refunded or moved to another date. Show it on the booking page and in the confirmation.",
+          "A clear policy does not scare customers away. It removes the doubt that makes them hesitate, and it protects you on the day the port closes.",
+        ],
+        bodyEs: [
+          "Muchos tours dependen del clima, y ahí empiezan la mayoría de los conflictos. Escribe tu política antes de que alguien pague: qué pasa si se cancela por clima, con cuánta anticipación puede cancelar el cliente y si el anticipo se devuelve o se cambia a otra fecha. Muéstrala en la página de reserva y en la confirmación.",
+          "Una política clara no espanta clientes. Quita la duda que los hace dudar, y te protege el día que cierran el puerto.",
+        ],
+      },
+      {
+        id: "en-ingles-y-en-video",
+        heading: "In English, and on video",
+        headingEs: "En inglés y en video",
+        body: [
+          "In Baja California a large share of tourists come from the United States. A website only in Spanish loses them before they read the price. The experience also sells better when people can see it: a short video of the boat, the landscape or the activity says more than ten photos. We explain how to use it in our [video marketing guide](/blog/guia-video-marketing), and aerial shots have rules in Mexico we cover in [drone regulation](/blog/regulacion-de-drones-en-mexico).",
+        ],
+        bodyEs: [
+          "En Baja California buena parte de los turistas viene de Estados Unidos. Una página solo en español los pierde antes de que lean el precio. La experiencia además se vende mejor cuando se ve: un video corto del barco, el paisaje o la actividad dice más que diez fotos. Cómo usarlo lo explicamos en nuestra [guía de video marketing](/blog/guia-video-marketing), y las tomas aéreas tienen reglas en México que cubrimos en [regulación de drones](/blog/regulacion-de-drones-en-mexico).",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "Every month, count how many seats you sold through each channel: platforms, your website and WhatsApp. Also note how many WhatsApp conversations ended in a booking. If the website share grows and the platforms’ share falls without losing total sales, you are keeping the commission.",
+          "Our [free diagnostic for tourism](/recursos/diagnostico/turismo) tells you in a few minutes what to fix first in your website, your Google profile and your booking process.",
+        ],
+        bodyEs: [
+          "Cada mes cuenta cuántos lugares vendiste por cada canal: plataformas, tu página y WhatsApp. Anota también cuántas conversaciones de WhatsApp terminaron en reserva. Si la parte de tu página crece y la de las plataformas baja sin perder ventas totales, te estás quedando con la comisión.",
+          "Nuestro [diagnóstico gratuito para turismo](/recursos/diagnostico/turismo) te dice en unos minutos qué corregir primero en tu página, tu perfil de Google y tu proceso de reservas.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto cobra Viator o GetYourGuide de comisión?",
+        qEn: "How much commission do Viator and GetYourGuide charge?",
+        a: "No publican una tarifa única. GetYourGuide dice en sus términos que la comisión es un porcentaje del precio de venta definido en la cuenta de cada proveedor. Guías de la industria reportan rangos de 20% a 30% en ambas plataformas, con 25% como cifra común en Viator.",
+        aEn: "They do not publish a single rate. GetYourGuide’s terms say the commission is a percentage of the retail price set in each supplier’s account. Industry guides report ranges of 20% to 30% on both platforms, with 25% as a common figure on Viator.",
+      },
+      {
+        q: "¿Me conviene dejar de vender en Viator y GetYourGuide?",
+        qEn: "Should I stop selling on Viator and GetYourGuide?",
+        a: "Normalmente no. Te traen turistas extranjeros y reseñas que difícilmente conseguirías solo. Úsalas como escaparate para clientes nuevos y enfócate en que quienes te buscan por nombre, te recomiendan o regresan reserven en tu propia página.",
+        aEn: "Usually not. They bring foreign tourists and reviews you would struggle to get on your own. Use them as a shop window for new customers and focus on getting those who search for you by name, are referred or come back to book on your own website.",
+      },
+      {
+        q: "¿Por qué pierdo reservas por WhatsApp?",
+        qEn: "Why do I lose bookings through WhatsApp?",
+        a: "Porque cada pregunta espera a que estés libre, y el turista tiene otras opciones abiertas. Un estudio de Harvard Business Review encontró que responder en menos de una hora hace casi siete veces más probable calificar a un prospecto. Un motor de reservas en tu página deja pagar en el momento, a cualquier hora.",
+        aEn: "Because every question waits until you are free, and the tourist has other options open. A Harvard Business Review study found that responding within an hour makes qualifying a lead nearly seven times more likely. A booking engine on your website lets people pay in the moment, at any hour.",
+      },
+      {
+        q: "¿Cómo aparezco en Google Things to do?",
+        qEn: "How do I appear on Google Things to do?",
+        a: "Google recomienda hacerlo a través de un socio de conectividad, que suele ser tu software de reservas. Al elegir sistema, pregunta si se conecta con Google Things to do. Mientras tanto, ten completo tu perfil de Google con fotos, punto de encuentro y reseñas.",
+        aEn: "Google recommends doing it through a connectivity partner, which is usually your booking software. When choosing a system, ask whether it connects to Google Things to do. In the meantime, keep your Google profile complete with photos, meeting point and reviews.",
+      },
+      {
+        q: "¿Qué política de cancelación conviene para un tour?",
+        qEn: "What cancellation policy works for a tour?",
+        a: "Una que diga por escrito qué pasa si se cancela por clima, con cuánta anticipación puede cancelar el cliente y si el anticipo se devuelve o se cambia de fecha. Lo importante es mostrarla antes del pago y repetirla en la confirmación.",
+        aEn: "One that states in writing what happens if the trip is cancelled for weather, how much notice the customer needs to give to cancel, and whether the deposit is refunded or moved to another date. What matters is showing it before payment and repeating it in the confirmation.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Viator commission tour operators",
+        "GetYourGuide commission",
+        "direct bookings tours",
+        "Google Things to do tour operators",
+        "tour marketing Baja California",
+      ],
+      keywordsEs: [
+        "comisión Viator operadores",
+        "comisión GetYourGuide",
+        "reservas directas tours",
+        "vender tours sin comisión",
+        "sistema de reservas para tours",
+        "marketing para tours Baja California",
+      ],
+    },
+  },
+  {
+    slug: "citas-que-no-llegan-salon",
+    cover: true,
+    title: "No-Shows: How to Reduce Missed Appointments in Your Salon, Spa or Barbershop",
+    titleEs: "Citas que no llegan: cómo reducir las inasistencias en tu salón, spa o barbería",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "An empty chair costs you twice: the service you did not charge and the time of the person who was waiting. Most no-shows are not bad faith but forgetting and friction. What the evidence says about reminders, when to ask for a deposit and how to stop running your calendar from WhatsApp.",
+    excerptEs:
+      "Una silla vacía te cuesta dos veces: el servicio que no cobraste y el tiempo de quien lo estaba esperando. La mayoría de las inasistencias no son mala fe sino olvido y fricción. Qué dice la evidencia sobre los recordatorios, cuándo pedir anticipo y cómo dejar de llevar tu agenda por WhatsApp.",
+    readingTime: 8,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In a salon, spa or barbershop, the most expensive customer is not the one who asks for a discount. It is the one who books and does not show up. That hour cannot be sold again, and your team is paid anyway. Most no-shows are not bad faith: the customer forgot, something came up and it felt awkward to cancel, or they booked “just in case”. That is why the fix is not scolding anyone, but three simple things: automatic reminders, a clear deposit policy for the cases that need it, and a [[booking system|sistema-de-citas]] that makes rescheduling easier than not showing up.",
+    ledeEs:
+      "En un salón, spa o barbería, el cliente más caro no es el que pide descuento. Es el que agenda y no llega. Esa hora ya no se puede vender, y a tu equipo le pagas de todas formas. La mayoría de las inasistencias no son mala fe: al cliente se le olvidó, le surgió algo y le dio pena cancelar, o apartó “por si acaso”. Por eso la solución no es regañar a nadie, sino tres cosas sencillas: recordatorios automáticos, una política de anticipo clara para los casos que la necesitan y un [[sistema de citas|sistema-de-citas]] que haga más fácil cambiar la cita que simplemente no llegar.",
+    sections: [
+      {
+        id: "lo-que-cuesta-una-silla-vacia",
+        heading: "What an empty chair costs",
+        headingEs: "Lo que cuesta una silla vacía",
+        body: [
+          "A round-number example: if a colour service costs 800 pesos and you get three no-shows a week, that is 2,400 pesos a week and around 10,000 pesos a month you do not charge. Add the time of the stylist who was waiting and the customer you turned away because that slot looked taken.",
+          "Most salons do not measure it, so it feels like “it happens sometimes”. The first step is to write down every week how many appointments did not show up. With that number you will know whether this problem deserves your attention before others.",
+        ],
+        bodyEs: [
+          "Un ejemplo con números redondos: si un servicio de color cuesta 800 pesos y tienes tres inasistencias a la semana, son 2,400 pesos semanales y cerca de 10,000 pesos al mes que no cobras. Súmale el tiempo de la estilista que estaba esperando y la clienta que rechazaste porque ese horario parecía ocupado.",
+          "La mayoría de los salones no lo mide, así que se siente como “a veces pasa”. El primer paso es anotar cada semana cuántas citas no llegaron. Con ese número vas a saber si este problema merece tu atención antes que otros.",
+        ],
+      },
+      {
+        id: "los-recordatorios-si-funcionan",
+        heading: "Reminders work, and the evidence shows it",
+        headingEs: "Los recordatorios sí funcionan, y hay evidencia",
+        body: [
+          "The best evidence comes from healthcare, where missed appointments have been studied for years. A Cochrane review published in 2013, with eight trials and 6,615 participants, found that text message reminders increased attendance compared with no reminder (risk ratio 1.14), and that they worked about as well as a phone call (risk ratio 0.99), which costs far more time. The mechanism is the same in a salon: many people simply forget.",
+          "What works best in practice is two reminders: one the day before and one a few hours before, each with a simple way to confirm or reschedule. The problem is doing it by hand: on the busiest days, which are exactly when you most need them, nobody has time to send them. A [[booking system|sistema-de-citas]] sends them on its own. We cover other tasks worth automating in [what to automate in your business](/blog/que-automatizar-en-mi-negocio).",
+        ],
+        bodyEs: [
+          "La mejor evidencia viene de salud, donde las citas perdidas se estudian desde hace años. Una revisión Cochrane publicada en 2013, con ocho ensayos y 6,615 participantes, encontró que los recordatorios por mensaje de texto aumentaron la asistencia frente a no mandar recordatorio (razón de riesgo de 1.14), y que funcionaron más o menos igual que una llamada (razón de riesgo de 0.99), que cuesta mucho más tiempo. El mecanismo es el mismo en un salón: a mucha gente simplemente se le olvida.",
+          "Lo que mejor funciona en la práctica son dos recordatorios: uno el día anterior y otro unas horas antes, cada uno con una forma sencilla de confirmar o cambiar la cita. El problema es hacerlo a mano: los días de más trabajo, que es justo cuando más los necesitas, nadie tiene tiempo de mandarlos. Un [[sistema de citas|sistema-de-citas]] los manda solo. Otras tareas que conviene automatizar las repasamos en [qué automatizar en mi negocio](/blog/que-automatizar-en-mi-negocio).",
+        ],
+      },
+      {
+        id: "cuando-pedir-anticipo",
+        heading: "When to ask for a deposit",
+        headingEs: "Cuándo pedir anticipo",
+        body: [
+          "Asking every customer for a deposit can scare away the loyal ones who have come for years. It makes sense in three cases: new customers, long or expensive services (colour, extensions, a full spa package) and customers who have already missed before. The deposit is applied to the service, so for whoever shows up it costs nothing extra.",
+          "The rule has to be written and visible before booking: how much, until when they can cancel without losing it, and what happens if they arrive late. A clear policy avoids the awkward conversation at the reception desk.",
+        ],
+        bodyEs: [
+          "Pedir anticipo a todos puede espantar a las clientas fieles que llevan años contigo. Tiene sentido en tres casos: clientes nuevos, servicios largos o caros (color, extensiones, un paquete completo de spa) y clientes que ya faltaron antes. El anticipo se abona al servicio, así que para quien sí llega no cuesta nada extra.",
+          "La regla tiene que estar por escrito y a la vista antes de agendar: cuánto es, hasta cuándo se puede cancelar sin perderlo y qué pasa si llegan tarde. Una política clara evita la plática incómoda en la recepción.",
+        ],
+      },
+      {
+        id: "que-cancelar-sea-facil",
+        heading: "Make cancelling easy (yes, really)",
+        headingEs: "Que cancelar sea fácil (sí, en serio)",
+        body: [
+          "It sounds backwards, but it works: if cancelling means calling and explaining yourself, many people prefer not to show up. If the reminder includes a button to change the time, they use it, and you get the slot back hours in advance instead of discovering it with an empty chair.",
+          "Pair that with a waiting list: customers who wanted a time that was full get a message when it frees up. An early cancellation stops being a loss and becomes an appointment for someone else.",
+        ],
+        bodyEs: [
+          "Suena al revés, pero funciona: si cancelar implica llamar y dar explicaciones, mucha gente prefiere no llegar. Si el recordatorio trae un botón para cambiar de horario, lo usan, y tú recuperas el espacio con horas de anticipación en lugar de descubrirlo con la silla vacía.",
+          "Combínalo con una lista de espera: las clientas que querían un horario lleno reciben un mensaje cuando se libera. Una cancelación a tiempo deja de ser una pérdida y se convierte en la cita de alguien más.",
+        ],
+      },
+      {
+        id: "tu-agenda-no-puede-vivir-en-whatsapp",
+        heading: "Your calendar cannot live in WhatsApp",
+        headingEs: "Tu agenda no puede vivir en WhatsApp",
+        body: [
+          "Running appointments from chat means answering “do you have anything on Friday?” at 11 p.m., double-booking two customers at the same time and depending on whoever holds the phone. An online booking system lets the customer choose service, stylist, day and time by themselves, at any hour, and keeps their history: what they had done, when, and whether they missed. That history is a basic [[CRM|crm]].",
+          "Put the booking link where people look for you: your Instagram bio and your [[Google Business Profile|google-business-profile]]. WhatsApp stays for questions, not for playing calendar Tetris.",
+        ],
+        bodyEs: [
+          "Llevar las citas por chat significa contestar “¿tienes algo el viernes?” a las 11 de la noche, empalmar a dos clientas en el mismo horario y depender de quien tenga el celular. Un sistema de citas en línea deja que el cliente elija servicio, estilista, día y hora por su cuenta, a cualquier hora, y guarda su historial: qué se hizo, cuándo y si faltó. Ese historial ya es un [[CRM|crm]] básico.",
+          "Pon el enlace para agendar donde te buscan: la biografía de tu Instagram y tu [[Perfil de Google|google-business-profile]]. WhatsApp se queda para las dudas, no para jugar Tetris con la agenda.",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "Your number is the no-show rate: appointments that did not show up divided by appointments booked, every week. Write it down before changing anything, turn on reminders, and compare after a month. If it falls, you already know how much money it is worth.",
+          "Our [free diagnostic for beauty and wellness businesses](/recursos/diagnostico/belleza-bienestar) tells you in a few minutes what to fix first: calendar, Google profile, reviews or social media.",
+        ],
+        bodyEs: [
+          "Tu número es la tasa de inasistencia: citas que no llegaron entre citas agendadas, cada semana. Anótalo antes de cambiar nada, activa los recordatorios y compara después de un mes. Si baja, ya sabes cuánto dinero vale.",
+          "Nuestro [diagnóstico gratuito para belleza y bienestar](/recursos/diagnostico/belleza-bienestar) te dice en unos minutos qué corregir primero: agenda, perfil de Google, reseñas o redes sociales.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Los recordatorios de verdad reducen las inasistencias?",
+        qEn: "Do reminders really reduce no-shows?",
+        a: "Sí. La mejor evidencia viene de salud: una revisión Cochrane de 2013 con 6,615 participantes encontró que los recordatorios por mensaje de texto aumentan la asistencia frente a no mandar nada, y que funcionan casi igual que una llamada. En un salón el mecanismo es el mismo: a mucha gente se le olvida.",
+        aEn: "Yes. The best evidence comes from healthcare: a 2013 Cochrane review with 6,615 participants found that text message reminders increase attendance compared with sending nothing, and that they work about as well as a phone call. In a salon the mechanism is the same: many people forget.",
+      },
+      {
+        q: "¿Cuántos recordatorios debo mandar?",
+        qEn: "How many reminders should I send?",
+        a: "Dos suelen bastar: uno el día anterior y otro unas horas antes de la cita. Cada uno debe incluir una forma sencilla de confirmar o cambiar el horario, para que recuperes el espacio si la persona no puede ir.",
+        aEn: "Two are usually enough: one the day before and one a few hours before the appointment. Each should include a simple way to confirm or change the time, so you get the slot back if the person cannot come.",
+      },
+      {
+        q: "¿Es mala idea cobrar anticipo en un salón de belleza?",
+        qEn: "Is it a bad idea to charge a deposit in a salon?",
+        a: "No, si lo usas donde tiene sentido: clientes nuevos, servicios largos o caros y clientes que ya faltaron. El anticipo se abona al servicio y la política debe estar por escrito antes de agendar. A las clientas frecuentes que siempre llegan puedes no pedírselo.",
+        aEn: "No, if you use it where it makes sense: new customers, long or expensive services and customers who have missed before. The deposit is applied to the service and the policy should be written before booking. You can skip it for regulars who always show up.",
+      },
+      {
+        q: "¿Recordatorio por WhatsApp o por llamada?",
+        qEn: "Reminder by WhatsApp or by phone call?",
+        a: "En los estudios, un mensaje de texto funcionó casi igual que una llamada, y cuesta mucho menos tiempo. Lo ideal es que el mensaje salga solo desde tu sistema de citas, para que no dependa de que alguien se acuerde de mandarlo.",
+        aEn: "In the studies, a text message worked about as well as a phone call, and it takes far less time. Ideally the message goes out automatically from your booking system, so it does not depend on someone remembering to send it.",
+      },
+      {
+        q: "¿Necesito un sistema de citas o me basta WhatsApp?",
+        qEn: "Do I need a booking system or is WhatsApp enough?",
+        a: "Si tienes pocas citas, WhatsApp puede bastar un tiempo. En cuanto hay varias estilistas o empalmes, un sistema de citas en línea te ahorra horas: el cliente agenda solo a cualquier hora, recibe recordatorios automáticos y tú guardas su historial.",
+        aEn: "With few appointments, WhatsApp can be enough for a while. As soon as there are several stylists or double bookings, an online booking system saves you hours: customers book on their own at any hour, get automatic reminders, and you keep their history.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "reduce no-shows salon",
+        "missed appointments beauty salon",
+        "appointment reminders",
+        "salon deposit policy",
+        "online booking system salon",
+      ],
+      keywordsEs: [
+        "citas que no llegan salón",
+        "reducir inasistencias salón de belleza",
+        "recordatorios de citas",
+        "anticipo para citas salón",
+        "sistema de citas en línea",
+        "agenda para barbería",
+      ],
+    },
+  },
+  {
+    slug: "constructora-cotiza-mucho-cierra-poco",
+    cover: true,
+    title: "Why Does Your Construction Company Quote a Lot and Close Little?",
+    titleEs: "¿Por qué tu constructora cotiza mucho y cierra poco?",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Site visits, measurements, hours of estimating, and then silence. In construction, many quotes are not lost on price but on slow replies, unqualified requests, quotes nobody understands and a follow-up that never happens. How to fix each one.",
+    excerptEs:
+      "Visitas, medidas, horas armando el presupuesto y luego silencio. En construcción, muchas cotizaciones no se pierden por precio sino por responder tarde, cotizar a quien no estaba listo, entregar números que nadie entiende y no dar seguimiento. Cómo corregir cada uno.",
+    readingTime: 9,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In construction every quote costs real time: a visit to the site, measurements, calls to suppliers and hours of estimating. That is why quoting a lot and closing little hurts more than in almost any other business. The usual reaction is to think the price was too high, but many quotes are lost earlier and for simpler reasons: you replied a day late, you quoted someone who did not even have the land yet, you sent a single number over WhatsApp, and nobody called back. Each of these has a concrete fix, and none requires lowering your price.",
+    ledeEs:
+      "En construcción cada cotización cuesta tiempo real: una visita a la obra, medidas, llamadas a proveedores y horas armando el presupuesto. Por eso cotizar mucho y cerrar poco duele más que en casi cualquier otro negocio. La reacción de siempre es pensar que el precio estuvo alto, pero muchas cotizaciones se pierden antes y por razones más simples: respondiste un día tarde, cotizaste a alguien que ni siquiera tenía el terreno, mandaste un solo número por WhatsApp y nadie volvió a llamar. Cada una tiene un arreglo concreto, y ninguno requiere bajar tu precio.",
+    sections: [
+      {
+        id: "responder-rapido",
+        heading: "Reply fast: the first hour matters",
+        headingEs: "Responde rápido: la primera hora importa",
+        body: [
+          "A 2011 Harvard Business Review study audited 2,241 US companies and found that those who responded to an online inquiry within an hour were nearly seven times as likely to qualify the [[lead|lead]] as those who responded even an hour later. Only 37% of companies responded within the hour, and the average response took 42 hours.",
+          "In construction the same thing happens: someone who wants to build or remodel asks several companies at once. Whoever replies first, with a clear next step, sets the tone. If you are on site all day, at least make sure an automatic reply confirms receipt and says when you will call.",
+        ],
+        bodyEs: [
+          "Un estudio de Harvard Business Review de 2011 revisó 2,241 empresas en Estados Unidos y encontró que las que respondían una consulta en línea en menos de una hora tenían casi siete veces más probabilidad de calificar al [[prospecto|lead]] que las que respondían aunque fuera una hora después. Solo el 37% de las empresas respondió en menos de una hora, y la respuesta promedio tardó 42 horas.",
+          "En construcción pasa lo mismo: quien quiere construir o remodelar le pregunta a varias empresas a la vez. La que responde primero, con un siguiente paso claro, marca el tono. Si estás en obra todo el día, al menos asegúrate de que una respuesta automática confirme que recibiste la solicitud y diga cuándo vas a llamar.",
+        ],
+      },
+      {
+        id: "filtrar-antes-de-visitar",
+        heading: "Qualify before you visit",
+        headingEs: "Filtra antes de visitar",
+        body: [
+          "Not every request is a project. Some people are “just getting an idea”, others do not have the land or the financing yet. Visiting all of them uses the time you need for the ones who are ready. The fix is a short form before the visit: type of project, location, whether they already own the land, an approximate budget range and when they want to start.",
+          "It is not rude; it saves both sides time. Put that form on a [[landing page|landing-page]] or your website, and send the answers straight to your [[CRM|crm]] so nothing gets lost in a chat. We explain how in [connecting forms to a CRM](/blog/conectar-formularios-a-crm).",
+        ],
+        bodyEs: [
+          "No toda solicitud es un proyecto. Hay quien “solo quiere darse una idea”, y hay quien todavía no tiene terreno ni financiamiento. Visitar a todos consume el tiempo que necesitas para los que sí están listos. La solución es un formulario corto antes de la visita: tipo de obra, ubicación, si ya tiene el terreno, un rango aproximado de presupuesto y cuándo quiere empezar.",
+          "No es de mala educación; les ahorra tiempo a los dos. Pon ese formulario en una [[landing page|landing-page]] o en tu página, y manda las respuestas directo a tu [[CRM|crm]] para que nada se pierda en un chat. Cómo hacerlo lo explicamos en [conectar formularios a un CRM](/blog/conectar-formularios-a-crm).",
+        ],
+      },
+      {
+        id: "cotizacion-que-se-entiende",
+        heading: "A quote people can understand",
+        headingEs: "Una cotización que se entienda",
+        body: [
+          "A single number over WhatsApp invites the customer to compare only on price. A quote broken down by stage, with the scope, what is included and what is not, timelines, payment schedule and how long the price is valid, lets them compare what they are actually getting. It also shows the order and experience they will find on site.",
+          "Present it in a clean format with your brand, and walk through it on a call or in person when you can. A quote the customer understands is a quote they can defend in front of their partner or family, which is often where the decision is made.",
+        ],
+        bodyEs: [
+          "Un solo número por WhatsApp invita al cliente a comparar solo por precio. Una cotización desglosada por etapas, con el alcance, lo que incluye y lo que no, tiempos, forma de pago y vigencia del precio, le permite comparar lo que de verdad está recibiendo. Además, le muestra el orden y la experiencia que va a encontrar en la obra.",
+          "Preséntala en un formato limpio con tu marca y explícala en una llamada o en persona cuando puedas. Una cotización que el cliente entiende es una cotización que puede defender frente a su pareja o su familia, que es muchas veces donde se toma la decisión.",
+        ],
+      },
+      {
+        id: "el-seguimiento-que-nadie-hace",
+        heading: "The follow-up nobody does",
+        headingEs: "El seguimiento que nadie hace",
+        body: [
+          "Many quotes are not rejected; they simply go cold. The customer had a question, travelled, or was waiting on a loan, and nobody called back. A simple follow-up sequence changes that: on day two, ask whether they have questions; on day seven, share a similar project you completed; on day fifteen, remind them when the price expires.",
+          "Doing it by memory fails when you have ten open quotes. A CRM or an automatic sequence makes sure it happens, which we cover in [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas). And when you lose a project, write down why: price, timing, trust or someone else replied first. After a few months, that list tells you what to fix.",
+        ],
+        bodyEs: [
+          "Muchas cotizaciones no se rechazan; simplemente se enfrían. El cliente tenía una duda, salió de viaje o estaba esperando un crédito, y nadie volvió a llamar. Una secuencia de seguimiento sencilla cambia eso: al segundo día, pregunta si tiene dudas; al séptimo, comparte una obra parecida que hayas terminado; al día quince, recuérdale cuándo vence el precio.",
+          "Hacerlo de memoria falla cuando tienes diez cotizaciones abiertas. Un CRM o una secuencia automática se asegura de que pase, como explicamos en [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas). Y cuando pierdas un proyecto, anota por qué: precio, tiempos, confianza u otro respondió primero. En unos meses, esa lista te dice qué corregir.",
+        ],
+      },
+      {
+        id: "portafolio-que-da-confianza",
+        heading: "A portfolio that builds trust",
+        headingEs: "Un portafolio que dé confianza",
+        body: [
+          "Building is expensive and customers are afraid of choosing wrong. A gallery of loose photos does not settle that fear. A portfolio does when each project is a short case: type of work, square metres, time it took, location, and before and after. It answers the question the customer does not dare to ask: “have they done something like mine?”.",
+          "Video helps even more. A drone flyover shows the scale of a project and how it progressed in a way photos cannot, and it is useful on your website, in ads and in the follow-up messages. See our [drone video service](/servicios/video-con-dron) and the rules that apply in [drone regulation in Mexico](/blog/regulacion-de-drones-en-mexico).",
+        ],
+        bodyEs: [
+          "Construir es caro y el cliente tiene miedo de equivocarse. Una galería de fotos sueltas no resuelve ese miedo. Un portafolio sí, cuando cada obra es un caso corto: tipo de obra, metros cuadrados, tiempo que tomó, ubicación, y antes y después. Responde la pregunta que el cliente no se atreve a hacer: “¿ya hicieron algo como lo mío?”.",
+          "El video ayuda todavía más. Un recorrido con dron muestra la escala de una obra y cómo avanzó de una forma que las fotos no pueden, y sirve en tu página, en anuncios y en los mensajes de seguimiento. Mira nuestro [servicio de video con dron](/servicios/video-con-dron) y las reglas que aplican en [regulación de drones en México](/blog/regulacion-de-drones-en-mexico).",
+        ],
+      },
+      {
+        id: "que-te-encuentren-sin-recomendacion",
+        heading: "Get found without a referral",
+        headingEs: "Que te encuentren sin recomendación",
+        body: [
+          "Most construction companies live on referrals, which is good until they stop coming. The next customer who does not know anyone who can recommend you will search on Google. Your [[Google Business Profile|google-business-profile]] should show photos of finished projects, the areas you work in and reviews from real clients; ask for one at every handover, when satisfaction is highest.",
+          "Beyond that, [[local SEO|seo-local]] is what makes you appear when someone searches “construction company in Ensenada” or “home remodelling in Tijuana”. We explain it step by step in our [local SEO guide](/blog/seo-local-guia).",
+        ],
+        bodyEs: [
+          "La mayoría de las constructoras vive de recomendaciones, lo cual es bueno hasta que dejan de llegar. El siguiente cliente que no conoce a nadie que te recomiende va a buscar en Google. Tu [[Perfil de Google|google-business-profile]] debe mostrar fotos de obras terminadas, las zonas donde trabajas y reseñas de clientes reales; pide una en cada entrega, que es cuando la satisfacción está más alta.",
+          "Además, el [[SEO local|seo-local]] es lo que hace que aparezcas cuando alguien busca “constructora en Ensenada” o “remodelación de casas en Tijuana”. Lo explicamos paso a paso en nuestra [guía de SEO local](/blog/seo-local-guia).",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "Track four numbers each month: requests received, site visits, quotes sent and projects closed. The ratio between quotes sent and projects closed is your close rate, and the list of reasons you lost tells you where to act first. If most requests never become a visit, the problem is qualification; if many quotes go cold, it is follow-up.",
+          "Our [free diagnostic for construction companies](/recursos/diagnostico/construccion) tells you in a few minutes what to fix first in your website, your Google profile and your sales process.",
+        ],
+        bodyEs: [
+          "Lleva cuatro números cada mes: solicitudes recibidas, visitas realizadas, cotizaciones enviadas y obras cerradas. La relación entre cotizaciones enviadas y obras cerradas es tu tasa de cierre, y la lista de motivos por los que perdiste te dice dónde actuar primero. Si la mayoría de las solicitudes nunca llega a visita, el problema es el filtro; si muchas cotizaciones se enfrían, es el seguimiento.",
+          "Nuestro [diagnóstico gratuito para construcción](/recursos/diagnostico/construccion) te dice en unos minutos qué corregir primero en tu página, tu perfil de Google y tu proceso de ventas.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Por qué mis clientes no contestan después de mandarles la cotización?",
+        qEn: "Why don’t customers reply after I send the quote?",
+        a: "Muchas veces no la rechazaron: tenían una duda, estaban esperando un crédito o simplemente nadie les volvió a llamar. Una secuencia de seguimiento sencilla, al segundo, séptimo y quinceavo día, recupera buena parte de esas cotizaciones. Anota siempre el motivo cuando pierdas un proyecto.",
+        aEn: "Often they did not reject it: they had a question, were waiting on a loan, or nobody called them back. A simple follow-up sequence on days two, seven and fifteen recovers a good share of those quotes. Always write down the reason when you lose a project.",
+      },
+      {
+        q: "¿Qué debe incluir una cotización de construcción?",
+        qEn: "What should a construction quote include?",
+        a: "Desglose por etapas, alcance del trabajo, lo que incluye y lo que no, tiempos estimados, forma de pago y vigencia del precio. Un solo número por WhatsApp invita a comparar solo por precio; un documento claro deja comparar lo que de verdad se recibe.",
+        aEn: "A breakdown by stage, the scope of work, what is included and what is not, estimated timelines, payment schedule and how long the price is valid. A single number over WhatsApp invites comparison on price alone; a clear document lets customers compare what they actually get.",
+      },
+      {
+        q: "¿Qué tan rápido debo responder una solicitud de cotización?",
+        qEn: "How fast should I reply to a quote request?",
+        a: "Lo antes posible, idealmente en menos de una hora. Un estudio de Harvard Business Review encontró que las empresas que respondían en menos de una hora tenían casi siete veces más probabilidad de calificar al prospecto. Si estás en obra, una respuesta automática que confirme y diga cuándo llamarás ayuda mucho.",
+        aEn: "As soon as possible, ideally within an hour. A Harvard Business Review study found that companies responding within an hour were nearly seven times as likely to qualify the lead. If you are on site, an automatic reply that confirms receipt and says when you will call helps a lot.",
+      },
+      {
+        q: "¿Cómo filtro a los clientes que no van en serio?",
+        qEn: "How do I filter out customers who are not serious?",
+        a: "Con un formulario corto antes de la visita: tipo de obra, ubicación, si ya tiene terreno, rango aproximado de presupuesto y fecha de inicio. Así dedicas las visitas a quien está listo y das seguimiento más ligero a quien apenas se está informando.",
+        aEn: "With a short form before the site visit: type of project, location, whether they own the land, approximate budget range and start date. That way you spend visits on those who are ready and give lighter follow-up to those who are just researching.",
+      },
+      {
+        q: "¿Cómo consigo proyectos sin depender de recomendaciones?",
+        qEn: "How do I win projects without relying on referrals?",
+        a: "Haciendo que te encuentren en Google: un perfil completo con fotos de obras y reseñas reales, una página con casos concretos y SEO local para búsquedas como “constructora en Ensenada”. El video con dron de tus obras ayuda a que un desconocido confíe más rápido.",
+        aEn: "By being found on Google: a complete profile with project photos and real reviews, a website with concrete case studies and local SEO for searches like “construction company in Ensenada”. Drone video of your projects helps a stranger trust you faster.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "construction company close more quotes",
+        "construction quote follow up",
+        "marketing for construction companies",
+        "construction leads Mexico",
+        "construction company portfolio",
+      ],
+      keywordsEs: [
+        "constructora cotiza mucho cierra poco",
+        "cómo cerrar más cotizaciones construcción",
+        "seguimiento de cotizaciones",
+        "marketing para constructoras",
+        "qué debe incluir una cotización de construcción",
+        "conseguir clientes constructora",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

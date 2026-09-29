@@ -139,4 +139,34 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     defEn: "Your free listing on Google and Google Maps with your address, hours, photos and reviews. It is the first thing many people see when they search for your business.",
     href: "/blog/optimizar-google-business-profile",
   },
+  ota: {
+    term: "OTA (agencia de viajes en línea)",
+    termEn: "OTA (online travel agency)",
+    def: "Plataformas como Booking, Expedia, Airbnb, Viator o GetYourGuide. Te traen clientes a cambio de una comisión por cada reserva.",
+    defEn: "Platforms like Booking, Expedia, Airbnb, Viator or GetYourGuide. They bring you customers in exchange for a commission on every booking.",
+  },
+  "motor-de-reservas": {
+    term: "Motor de reservas",
+    termEn: "Booking engine",
+    def: "El sistema dentro de tu propia página donde el cliente ve disponibilidad, elige fecha y paga, sin pasar por una plataforma que cobre comisión.",
+    defEn: "The system on your own website where customers check availability, pick a date and pay, without going through a platform that charges commission.",
+  },
+  "channel-manager": {
+    term: "Channel manager",
+    termEn: "Channel manager",
+    def: "Un programa que sincroniza tu disponibilidad y tus precios entre Booking, Airbnb y tu propia página, para no vender dos veces el mismo cuarto o el mismo lugar.",
+    defEn: "Software that keeps your availability and prices in sync across Booking, Airbnb and your own website, so you never sell the same room or seat twice.",
+  },
+  lead: {
+    term: "Lead (prospecto)",
+    termEn: "Lead",
+    def: "Una persona que mostró interés en lo que vendes y te dejó sus datos o te escribió, pero todavía no te compra.",
+    defEn: "Someone who showed interest in what you sell and left their details or messaged you, but has not bought yet.",
+  },
+  "sistema-de-citas": {
+    term: "Sistema de citas en línea",
+    termEn: "Online booking system",
+    def: "Una agenda en internet donde el cliente elige servicio, día y hora sin mandarte mensaje. Guarda su teléfono y puede enviarle recordatorios automáticos.",
+    defEn: "An online calendar where customers pick a service, day and time without messaging you. It stores their phone number and can send automatic reminders.",
+  },
 };

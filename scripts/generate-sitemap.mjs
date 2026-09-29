@@ -86,7 +86,7 @@ const verticales = readVerticales();
  */
 function validateInternalLinks() {
   const slugs = new Set(posts.map((p) => p.slug));
-  const routeSet = new Set(routes);
+  const routeSet = new Set([...routes, ...verticales.map((v) => `/recursos/diagnostico/${v}`)]);
   const files = [
     "src/lib/diagnostico-data.ts",
     "src/lib/blog-data.ts",

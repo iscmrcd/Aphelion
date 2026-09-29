@@ -875,4 +875,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/reservas-directas-hotel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/reservas-directas-hotel" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/reservas-directas-hotel?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/reservas-directas-hotel" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/reservas-directas-tours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/reservas-directas-tours" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/reservas-directas-tours?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/reservas-directas-tours" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/citas-que-no-llegan-salon</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/citas-que-no-llegan-salon" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/citas-que-no-llegan-salon?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/citas-que-no-llegan-salon" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/constructora-cotiza-mucho-cierra-poco</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/constructora-cotiza-mucho-cierra-poco" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/constructora-cotiza-mucho-cierra-poco?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/constructora-cotiza-mucho-cierra-poco" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
