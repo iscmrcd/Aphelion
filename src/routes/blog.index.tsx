@@ -128,7 +128,7 @@ function BlogIndexPage() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder={t("Search articles", "Buscar en el blog")}
               aria-label={t("Search articles", "Buscar artículos")}
-              className="w-full rounded-full border-[0.5px] border-neutral-300 bg-white py-2.5 pl-10 pr-10 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950"
+              className="w-full rounded-full border-[0.5px] border-neutral-300 bg-white py-2.5 pl-10 pr-10 text-base text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950"
             />
             {query && (
               <button
