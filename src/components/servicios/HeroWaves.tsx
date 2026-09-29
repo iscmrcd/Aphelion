@@ -46,20 +46,18 @@ export function HeroWaves() {
       ctx.fillStyle = background;
       ctx.fillRect(0, 0, width, height);
 
-      // Each translucent ribbon follows the same slow current, at its own depth.
+      // Diffuse bands, not hard-edged polygons: the current stays behind the copy.
+      ctx.save();
+      ctx.filter = `blur(${Math.max(38, Math.min(90, width * 0.055))}px)`;
       for (let layer = 0; layer < 4; layer++) {
         const yAt = (x: number) => height * (
           [-0.18, 0.18, 0.76, 1.08][layer] +
           Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.22, 0.16, 0.2, 0.13][layer] +
           Math.sin(x / width * 9.2 - phase * 0.45 + layer) * 0.035
         );
-        const ribbon = ctx.createLinearGradient(0, yAt(0) - height * 0.14, 0, yAt(0) + height * 0.14);
-        ribbon.addColorStop(0, palette.base);
-        ribbon.addColorStop(0.5, layer % 2 ? palette.waveAlt : palette.wave);
-        ribbon.addColorStop(1, palette.base);
-        ctx.globalAlpha = dark ? 0.3 : 0.46;
-        ctx.strokeStyle = ribbon;
-        ctx.lineWidth = height * (layer % 2 ? 0.24 : 0.3);
+        ctx.globalAlpha = dark ? 0.33 : 0.55;
+        ctx.strokeStyle = layer % 2 ? palette.waveAlt : palette.wave;
+        ctx.lineWidth = height * (layer % 2 ? 0.15 : 0.19);
         ctx.lineCap = "round";
         ctx.beginPath();
         for (let x = -width * 0.1; x <= width * 1.1; x += 12) {
@@ -69,7 +67,7 @@ export function HeroWaves() {
         }
         ctx.stroke();
       }
-      ctx.globalAlpha = 1;
+      ctx.restore();
 
       // The dotted weave echoes the reference, but recedes around the headline.
       const gap = width < 600 ? 9 : 10;
