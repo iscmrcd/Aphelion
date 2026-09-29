@@ -8993,6 +8993,332 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "mejor-punto-de-venta-mexico",
+    title:
+      "What Is the Best POS System in Mexico in 2026? A Quick Top 3, and When a Custom One Wins",
+    titleEs:
+      "¿Cuál es el mejor punto de venta (POS) en México en 2026? Top 3 y cuándo conviene uno a la medida",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "Loyverse, eleventa and Soft Restaurant cover most small businesses that are starting out, with real 2026 prices. For an established business with its own way of working, the best POS is the one built around it: fewer screens, fewer distractions and everything connected.",
+    excerptEs:
+      "Loyverse, eleventa y Soft Restaurant cubren a la mayoría de los negocios que van empezando, con precios reales de 2026. Para un negocio establecido con su propia forma de trabajar, el mejor punto de venta es el que se hace a su medida: menos pantallas, menos distracciones y todo conectado.",
+    readingTime: 8,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "If you are starting out, one of three covers you: Loyverse if you want to start for free on a tablet, eleventa if you run a store and prefer a one-time licence, and Soft Restaurant if you run a restaurant. If your business is already established and works in its own way, the best point of sale is usually one built around your process: it only shows what your team uses, it handles the steps generic systems leave to a notebook, and it connects to your website, WhatsApp and invoicing. It costs more up front, so it is not for everyone.",
+    ledeEs:
+      "Si vas empezando, uno de tres te resuelve: Loyverse si quieres arrancar gratis en una tablet, eleventa si tienes una tienda y prefieres pagar una licencia una sola vez, y Soft Restaurant si tienes un restaurante. Si tu negocio ya está establecido y trabaja a su manera, el mejor punto de venta suele ser uno hecho a la medida de tu proceso: muestra solo lo que tu equipo usa, resuelve los pasos que los sistemas genéricos dejan en una libreta y se conecta con tu página, tu WhatsApp y tu facturación. Cuesta más al inicio, así que no es para todos.",
+    sections: [
+      {
+        id: "que-hace-un-punto-de-venta",
+        heading: "What a point of sale does today",
+        headingEs: "Qué hace hoy un punto de venta",
+        body: [
+          "A point of sale stopped being just a cash register a long time ago. A good one records every sale, controls stock, closes the till at the end of each shift, tells you what sells and what does not, keeps a customer history and connects to how you get paid and how you invoice.",
+          "In Mexico, invoicing is part of the decision. Sales to the general public still have to be covered by a global invoice, and many of your customers will ask for their own CFDI. Before choosing any system, ask exactly how it handles both, and what it costs.",
+        ],
+        bodyEs: [
+          "Un punto de venta hace mucho que dejó de ser solo una caja registradora. Uno bueno registra cada venta, controla el inventario, hace el corte de caja de cada turno, te dice qué se vende y qué no, guarda el historial de tus clientes y se conecta con cómo cobras y cómo facturas.",
+          "En México, la facturación es parte de la decisión. Las ventas al público en general tienen que ampararse con una factura global, y muchos de tus clientes te van a pedir su propio CFDI. Antes de elegir cualquier sistema, pregunta exactamente cómo resuelve las dos cosas y cuánto cuesta.",
+        ],
+      },
+      {
+        id: "top-3",
+        heading: "The quick top 3 for 2026",
+        headingEs: "El top 3 rápido de 2026",
+        body: [
+          "1. Loyverse, to start for free. It runs on a phone or tablet. The point of sale, sales reports, basic inventory, a loyalty program, kitchen display and multi-store management are free. You pay if you want more: employee management and advanced inventory cost USD $25 per month per store each, and unlimited sales history USD $5 per month. It is a good fit for cafés and small shops. It is built for businesses all over the world, so confirm how you will handle Mexican invoicing.",
+          "2. eleventa, for stores. It is a Mexican system installed on a computer, very common in grocery stores, stationery shops and hardware stores. It is paid once: MonoCaja costs $1,499 MXN for one register and MultiCaja $3,499 MXN to share products, inventory and sales across several computers on the same network. Both include 12 months of updates and support, which you can renew if you want.",
+          "3. Soft Restaurant, for restaurants. It is the standard in many Mexican restaurants, with tables, orders and kitchen. Version 12 costs $799 MXN per month plus VAT in its LITE plan, for up to 2 devices, and $1,099 MXN per month plus VAT in PRO, for up to 10, with a discount if you pay the year upfront.",
+          "Prices are the ones each company published in September 2026. Check them again before buying, because they change.",
+        ],
+        bodyEs: [
+          "1. Loyverse, para empezar gratis. Funciona en celular o tablet. Son gratis el punto de venta, los reportes de ventas, el inventario básico, un programa de lealtad, la pantalla de cocina y el manejo de varias sucursales. Pagas si quieres más: la gestión de empleados y el inventario avanzado cuestan 25 dólares al mes por tienda cada uno, y el historial ilimitado de ventas 5 dólares al mes. Le queda bien a cafeterías y tiendas pequeñas. Está hecho para negocios de todo el mundo, así que confirma cómo vas a resolver la facturación mexicana.",
+          "2. eleventa, para tiendas. Es un sistema mexicano que se instala en una computadora, muy común en abarrotes, papelerías y ferreterías. Se paga una sola vez: MonoCaja cuesta $1,499 MXN para una caja y MultiCaja $3,499 MXN para compartir productos, inventario y ventas entre varias computadoras de la misma red. Las dos incluyen 12 meses de actualizaciones y soporte, que puedes renovar si quieres.",
+          "3. Soft Restaurant, para restaurantes. Es el estándar en muchos restaurantes de México, con mesas, comandas y cocina. La versión 12 cuesta $799 MXN al mes más IVA en su plan LITE, para hasta 2 equipos, y $1,099 MXN al mes más IVA en PRO, para hasta 10, con descuento si pagas el año por adelantado.",
+          "Los precios son los que cada empresa publicaba en septiembre de 2026. Revísalos de nuevo antes de comprar, porque cambian.",
+        ],
+      },
+      {
+        id: "limite-de-lo-generico",
+        heading: "Where a generic system falls short",
+        headingEs: "Dónde se queda corto un sistema genérico",
+        body: [
+          "A generic point of sale is built to serve thousands of different businesses at once. That is its strength and its limit. It comes with dozens of screens, buttons and options you will never use, and every one of them is a chance for a new employee to get lost, press the wrong thing or take longer to learn.",
+          "And the one step your business does differently is usually missing: deposits and layaways, orders that arrive by WhatsApp, rentals that come back, packages of sessions, commissions per salesperson, special prices per customer. That step ends up in a notebook or a spreadsheet, and from then on your information lives in two places that never quite match.",
+          "The third limit is cost as you grow. Many systems charge per device, per store or per add-on. What was cheap with one register becomes a fixed monthly bill that grows with every expansion.",
+        ],
+        bodyEs: [
+          "Un punto de venta genérico está hecho para servir a miles de negocios distintos al mismo tiempo. Esa es su fuerza y su límite. Trae decenas de pantallas, botones y opciones que nunca vas a usar, y cada una es una oportunidad para que alguien nuevo se pierda, presione lo que no es o tarde más en aprender.",
+          "Y casi siempre le falta el único paso que tu negocio hace distinto: anticipos y apartados, pedidos que llegan por WhatsApp, rentas que regresan, paquetes de sesiones, comisiones por vendedor, precios especiales por cliente. Ese paso termina en una libreta o en un Excel, y desde ese momento tu información vive en dos lugares que nunca cuadran del todo.",
+          "El tercer límite es el costo cuando creces. Muchos sistemas cobran por equipo, por sucursal o por complemento. Lo que era barato con una caja se vuelve una mensualidad fija que crece con cada expansión.",
+        ],
+      },
+      {
+        id: "por-que-a-la-medida",
+        heading: "Why a custom POS is usually better for an established business",
+        headingEs: "Por qué uno a la medida suele ser mejor para un negocio establecido",
+        body: [
+          "Fewer distractions. Your team only sees the screens and buttons your business uses, in the order it uses them. A new cashier learns in an afternoon, not in a week, and there are fewer mistakes because there are fewer places to make them.",
+          "Everything dedicated to your business. The special step that lived in a notebook becomes part of the system: deposits, commissions, rentals, packages, whatever your operation needs. There is one source of truth instead of three.",
+          "Connected to what you already use. The same system can take orders from your website, send confirmations by WhatsApp, feed your invoicing and your accounting, and work with your payment terminal. Nobody copies data from one screen to another.",
+          "Your data is yours. Sales history, customers and products live where you decide, in a format you can take with you. You do not depend on a provider changing its prices or its rules.",
+          "It grows with you. Adding a register, a branch or a new service does not add a line to the monthly bill; it is a change you plan once.",
+        ],
+        bodyEs: [
+          "Menos distracciones. Tu equipo solo ve las pantallas y los botones que tu negocio usa, en el orden en que los usa. Un cajero nuevo aprende en una tarde, no en una semana, y hay menos errores porque hay menos lugares donde cometerlos.",
+          "Todo dedicado a tu negocio. El paso especial que vivía en una libreta se vuelve parte del sistema: anticipos, comisiones, rentas, paquetes, lo que tu operación necesite. Hay una sola fuente de verdad en lugar de tres.",
+          "Conectado con lo que ya usas. El mismo sistema puede recibir pedidos de tu página, mandar confirmaciones por WhatsApp, alimentar tu facturación y tu contabilidad, y trabajar con tu terminal de cobro. Nadie copia datos de una pantalla a otra.",
+          "Tus datos son tuyos. El historial de ventas, los clientes y los productos viven donde tú decides, en un formato que puedes llevarte. No dependes de que un proveedor cambie sus precios o sus reglas.",
+          "Crece contigo. Agregar una caja, una sucursal o un servicio nuevo no suma un renglón a la mensualidad; es un cambio que planeas una vez.",
+        ],
+      },
+      {
+        id: "cuando-no-conviene",
+        heading: "When a custom POS is not worth it",
+        headingEs: "Cuándo no te conviene uno a la medida",
+        body: [
+          "If you are starting out, if your process is the same as any other store of your kind, or if the monthly fee of a generic system is small next to what you sell, a custom system is a bad investment. Start with one of the top 3 and learn what your business really needs.",
+          "Our rule of thumb, not an industry standard: consider a custom system when you are paying for two or more tools plus a spreadsheet to cover what your point of sale does not do, or when your team spends several hours a week on workarounds. That time and that disorder are what a custom system recovers.",
+        ],
+        bodyEs: [
+          "Si vas empezando, si tu proceso es igual al de cualquier otro negocio de tu tipo o si la mensualidad de un sistema genérico es poca comparada con lo que vendes, uno a la medida es mala inversión. Empieza con uno del top 3 y aprende qué necesita de verdad tu negocio.",
+          "Nuestra regla práctica, no un estándar de la industria: considera uno a la medida cuando estés pagando dos o más herramientas y además un Excel para cubrir lo que tu punto de venta no hace, o cuando tu equipo pierda varias horas a la semana en parches. Ese tiempo y ese desorden es lo que un sistema a la medida recupera.",
+        ],
+      },
+      {
+        id: "como-decidir",
+        heading: "How to decide in 30 minutes",
+        headingEs: "Cómo decidirlo en 30 minutos",
+        body: [
+          "Write down, in order, everything that happens from the moment a customer arrives until the money is in your account and the invoice is issued. Mark which of those steps a generic system handles and which ones end up in a notebook, a spreadsheet or someone's memory.",
+          "Then compare costs over three years, not one month. For example, Soft Restaurant PRO at $1,099 MXN a month adds up to $39,564 MXN plus VAT in 36 months, before add-ons and extra devices. Put that number next to a quote for a custom system that covers your marked steps, and add the hours your team would stop losing.",
+          "If you want to see the rest of your operation from the outside, our [free diagnostic](/recursos/diagnostico) orders your priorities in a few minutes. And if it is not the point of sale but the rest of the process that hurts, start with [what to automate in your business](/blog/que-automatizar-en-mi-negocio) and [what a CRM is](/blog/que-es-un-crm).",
+        ],
+        bodyEs: [
+          "Escribe, en orden, todo lo que pasa desde que llega un cliente hasta que el dinero está en tu cuenta y la factura está emitida. Marca cuáles de esos pasos resuelve un sistema genérico y cuáles terminan en una libreta, un Excel o la memoria de alguien.",
+          "Después compara costos a tres años, no a un mes. Por ejemplo, Soft Restaurant PRO a $1,099 MXN al mes suma $39,564 MXN más IVA en 36 meses, antes de complementos y equipos extra. Pon ese número junto a una cotización de un sistema a la medida que cubra tus pasos marcados, y súmale las horas que tu equipo dejaría de perder.",
+          "Si quieres ver el resto de tu operación desde fuera, nuestro [diagnóstico gratuito](/recursos/diagnostico) te ordena las prioridades en unos minutos. Y si lo que duele no es el punto de venta sino el resto del proceso, empieza por [qué automatizar en tu negocio](/blog/que-automatizar-en-mi-negocio) y [qué es un CRM](/blog/que-es-un-crm).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-700 to-stone-900",
+    faq: [
+      {
+        q: "¿Cuál es el mejor punto de venta gratis en México?",
+        qEn: "What is the best free POS in Mexico?",
+        a: "Loyverse es de los más completos gratis: incluye punto de venta, reportes, inventario básico, programa de lealtad y varias sucursales sin costo, y cobra aparte funciones como gestión de empleados o inventario avanzado. Antes de elegirlo confirma cómo vas a resolver la facturación CFDI, porque no es un sistema hecho específicamente para México.",
+        aEn: "Loyverse is one of the most complete free options: it includes the point of sale, reports, basic inventory, a loyalty program and multiple stores at no cost, and charges separately for features like employee management or advanced inventory. Before choosing it, confirm how you will handle CFDI invoicing, because it is not built specifically for Mexico.",
+      },
+      {
+        q: "¿Cuánto cuesta un punto de venta a la medida?",
+        qEn: "How much does a custom POS cost?",
+        a: "Depende de cuántos procesos cubre y con qué se conecta: pagos, facturación, página web, WhatsApp, inventario. Pide que te coticen por módulos y compara el total contra tres años de mensualidades del sistema genérico que usarías, más las horas que tu equipo pierde hoy en parches.",
+        aEn: "It depends on how many processes it covers and what it connects to: payments, invoicing, website, WhatsApp, inventory. Ask for a quote by module and compare the total with three years of fees for the generic system you would use, plus the hours your team loses today on workarounds.",
+      },
+      {
+        q: "¿Mi punto de venta tiene que facturar?",
+        qEn: "Does my POS have to issue invoices?",
+        a: "Tu negocio tiene que facturar: las ventas al público en general se amparan con una factura global y muchos clientes te pedirán su CFDI. Que lo haga el punto de venta o un sistema aparte es decisión tuya, pero pregunta exactamente cómo funciona y cuánto cuesta antes de contratar, y confirma los detalles con tu contador.",
+        aEn: "Your business has to invoice: sales to the general public are covered by a global invoice and many customers will ask for their CFDI. Whether the point of sale does it or a separate system does is up to you, but ask exactly how it works and what it costs before signing up, and confirm the details with your accountant.",
+      },
+      {
+        q: "¿Puedo seguir usando mi terminal de cobro con otro sistema?",
+        qEn: "Can I keep using my card terminal with another system?",
+        a: "Muchas veces sí, pero depende de la terminal y del sistema. Con un punto de venta genérico, revisa su lista de integraciones. Con uno a la medida, la conexión con tu terminal y tu banco se diseña desde el principio para que el cobro quede registrado sin capturarlo dos veces.",
+        aEn: "Often yes, but it depends on the terminal and the system. With a generic point of sale, check its list of integrations. With a custom one, the connection to your terminal and your bank is designed from the start so the payment is recorded without entering it twice.",
+      },
+      {
+        q: "¿Qué pasa con mi información si cambio de sistema?",
+        qEn: "What happens to my data if I switch systems?",
+        a: "Antes de contratar, pregunta si puedes exportar productos, clientes e historial de ventas en un formato estándar como Excel o CSV. Si la respuesta no es clara, cambiar después te va a costar trabajo. En un sistema a la medida la información es tuya desde el primer día.",
+        aEn: "Before signing up, ask whether you can export products, customers and sales history in a standard format like Excel or CSV. If the answer is unclear, switching later will be painful. In a custom system the data is yours from day one.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "best POS Mexico 2026",
+        "point of sale system Mexico",
+        "Loyverse vs eleventa vs Soft Restaurant",
+        "custom POS system",
+        "POS for small business Mexico",
+      ],
+      keywordsEs: [
+        "mejor punto de venta México",
+        "mejor POS México 2026",
+        "sistema punto de venta para negocio",
+        "punto de venta gratis",
+        "punto de venta a la medida",
+        "Loyverse eleventa Soft Restaurant precios",
+      ],
+    },
+  },
+  {
+    slug: "negocio-exitoso-necesita-modernizarse",
+    title:
+      "Does a Successful Business Need to Modernize? Your Next Customers Are Another Generation",
+    titleEs:
+      "¿Un negocio exitoso necesita modernizarse? Tus próximos clientes son de otra generación",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "If your business grew on referrals and good service, you did something right. But your customers have an age, and the next generation looks for you on the phone first. What the data says, what to modernize without breaking what works, and why doing it early matters if you plan to hand the business on.",
+    excerptEs:
+      "Si tu negocio creció por recomendación y buen servicio, hiciste algo bien. Pero tus clientes tienen una edad, y la siguiente generación te busca primero en el celular. Qué dicen los datos, qué modernizar sin romper lo que funciona y por qué adelantarte importa si piensas heredar el negocio.",
+    readingTime: 8,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A successful business does not need to change what made it successful. It needs to make sure the next generation of customers can find it, trust it and buy from it the way they buy everything else: from a phone. In Mexico, 96.5% of people aged 25 to 34 use the internet, against 57.8% of those aged 65 to 74, according to INEGI. If your customers have grown older with you, the ones who replace them already live online. And if you plan to hand the business to the next generation, modernizing gradually now costs far less than rebuilding everything at the moment of the handover.",
+    ledeEs:
+      "Un negocio exitoso no necesita cambiar lo que lo hizo exitoso. Necesita asegurarse de que la siguiente generación de clientes lo pueda encontrar, confiar en él y comprarle como compra todo lo demás: desde el celular. En México, 96.5% de las personas de 25 a 34 años usa internet, contra 57.8% de las de 65 a 74, según el INEGI. Si tus clientes han crecido contigo, los que los van a reemplazar ya viven en línea. Y si piensas dejarle el negocio a la siguiente generación, modernizarte poco a poco desde ahora cuesta mucho menos que reconstruir todo en el momento de la entrega.",
+    sections: [
+      {
+        id: "tu-exito-tiene-edad",
+        heading: "Your success has an age",
+        headingEs: "Tu éxito tiene una edad",
+        body: [
+          "Most businesses that have lasted twenty or thirty years share a story: good work, customers who came back, and customers who brought their friends. For years that was enough. Nobody needed a website when half the town already knew who to call.",
+          "The catch is that those customers are usually in a similar age range, the one you had when you started or the one of the people who trusted you first. As they retire, move or simply buy less, the network that kept you busy shrinks. It is not that you are doing something wrong. It is that the people who recommend you are getting older at the same pace you are.",
+        ],
+        bodyEs: [
+          "La mayoría de los negocios que llevan veinte o treinta años comparten una historia: buen trabajo, clientes que regresaron y clientes que trajeron a sus conocidos. Durante años eso bastó. Nadie necesitaba página web cuando medio pueblo ya sabía a quién llamarle.",
+          "El detalle es que esos clientes suelen estar en un rango de edad parecido, el que tenías cuando empezaste o el de la gente que confió primero en ti. Conforme se retiran, se mudan o simplemente compran menos, la red que te mantenía ocupado se achica. No es que estés haciendo algo mal. Es que quienes te recomiendan van envejeciendo al mismo ritmo que tú.",
+        ],
+      },
+      {
+        id: "lo-que-dicen-los-datos",
+        heading: "What the data says",
+        headingEs: "Lo que dicen los datos",
+        body: [
+          "INEGI’s 2025 survey on technology use, published in June 2026, found that 104.9 million people in Mexico, 86.1% of the population aged 6 and over, used the internet. The gap between generations is what matters here: 97.6% of people aged 15 to 24 and 96.5% of those aged 25 to 34 are online, against 57.8% of those aged 65 to 74 and 30.3% of those over 75.",
+          "The same survey found that 97.3% of internet users connect from a smartphone, and that 37.3% bought something online in 2025. In practice, your next customer carries your competition in their pocket and compares before calling.",
+        ],
+        bodyEs: [
+          "La encuesta del INEGI sobre uso de tecnologías de 2025, publicada en junio de 2026, encontró que 104.9 millones de personas en México, el 86.1% de la población de 6 años y más, usó internet. Lo que importa aquí es la brecha entre generaciones: está en línea 97.6% de las personas de 15 a 24 años y 96.5% de las de 25 a 34, contra 57.8% de las de 65 a 74 y 30.3% de las mayores de 75.",
+          "La misma encuesta encontró que 97.3% de quienes usan internet se conectan desde un celular, y que 37.3% compró algo en línea en 2025. En la práctica, tu siguiente cliente trae a tu competencia en el bolsillo y compara antes de llamar.",
+        ],
+      },
+      {
+        id: "la-recomendacion-pasa-por-el-celular",
+        heading: "Referrals still work, but now they go through the phone",
+        headingEs: "La recomendación sigue funcionando, pero ahora pasa por el celular",
+        body: [
+          "Word of mouth has not died. What changed is what happens right after it. When someone tells a younger person “go to so-and-so, they are the best”, the first thing that person does is search your name: your hours, your location, your reviews, some photos, a way to send you a message.",
+          "If they find nothing, or find a profile with an old phone number and three reviews from five years ago, the recommendation loses strength. The referral brought them to your door and your absence online sent them to the next result. We explain what Google looks at in [how Google evaluates your business](/blog/como-evalua-google-a-tu-negocio).",
+        ],
+        bodyEs: [
+          "La recomendación de boca en boca no ha muerto. Lo que cambió es lo que pasa justo después. Cuando alguien le dice a una persona más joven “ve con fulano, es el mejor”, lo primero que esa persona hace es buscar tu nombre: tu horario, tu ubicación, tus reseñas, unas fotos, una forma de mandarte mensaje.",
+          "Si no encuentra nada, o encuentra un perfil con un teléfono viejo y tres reseñas de hace cinco años, la recomendación pierde fuerza. El referido lo trajo hasta tu puerta y tu ausencia en internet lo mandó al siguiente resultado. Lo que revisa Google lo explicamos en [cómo evalúa Google a tu negocio](/blog/como-evalua-google-a-tu-negocio).",
+        ],
+      },
+      {
+        id: "modernizar-no-es-cambiar",
+        heading: "Modernizing is not changing what works",
+        headingEs: "Modernizarse no es cambiar lo que funciona",
+        body: [
+          "The fear we hear most is “I don’t want to lose what makes us different”. You do not have to. The service, the people, the way you treat customers and the quality of your work stay exactly the same. What changes are the channels around them.",
+          "Being found: an up-to-date Google profile and a website that says what you do, for whom and how to reach you. Being contacted: WhatsApp, a form or an online booking that someone actually answers. Keeping a record: customers, sales and pending work in a system, not in a notebook or in one person’s head. Getting paid: cards and transfers without friction.",
+          "None of this replaces the relationship with your customers. It makes it possible for new customers to start one. If you do not know where to begin, [what to automate in your business](/blog/que-automatizar-en-mi-negocio) and [which point of sale to choose](/blog/mejor-punto-de-venta-mexico) are good first steps.",
+        ],
+        bodyEs: [
+          "El miedo que más escuchamos es “no quiero perder lo que nos hace distintos”. No tienes por qué. El servicio, la gente, la forma de tratar a los clientes y la calidad de tu trabajo se quedan exactamente igual. Lo que cambia son los canales alrededor.",
+          "Que te encuentren: un perfil de Google al día y una página que diga qué haces, para quién y cómo contactarte. Que te contacten: WhatsApp, un formulario o una reserva en línea que alguien de verdad conteste. Que quede registro: clientes, ventas y pendientes en un sistema, no en una libreta ni en la cabeza de una sola persona. Que te paguen: tarjeta y transferencia sin complicaciones.",
+          "Nada de eso sustituye la relación con tus clientes. Hace posible que los nuevos empiecen una. Si no sabes por dónde empezar, [qué automatizar en tu negocio](/blog/que-automatizar-en-mi-negocio) y [qué punto de venta elegir](/blog/mejor-punto-de-venta-mexico) son buenos primeros pasos.",
+        ],
+      },
+      {
+        id: "si-piensas-heredar",
+        heading: "If you plan to hand the business on",
+        headingEs: "Si piensas dejarle el negocio a la siguiente generación",
+        body: [
+          "Family businesses are the backbone of the Mexican economy. According to Alfonso Bolio, a professor at IPADE Business School, they make up between 85% and 95% of the country’s economic units. But few survive the handover: a study on the continuity of Mexican family businesses published in 2022 found that only 24% reach the second generation and 7% the third.",
+          "One reason is that the business lives in the founder’s head: which customer pays late, which supplier delivers on time, how a job is quoted, what was agreed with whom. When the founder steps back, that knowledge leaves with them. A business whose customers, sales and processes are recorded in a system can be handed over; one that depends on memory is much harder to pass on.",
+          "The next generation will want to run it with the tools they use every day. If everything has to be built at the moment of the handover, the website, the system, moving years of information and training the team, it all lands at once: a big expense in the most stressful moment, with the founder less available to help. Done gradually, the cost is spread over years, the founder validates each piece while still in charge, and customers get used to the new channels before anyone changes behind the counter.",
+        ],
+        bodyEs: [
+          "Las empresas familiares son la columna de la economía mexicana. Según Alfonso Bolio, profesor del IPADE, son entre 85% y 95% de las unidades económicas del país. Pero pocas sobreviven al relevo: un estudio sobre la continuidad de las empresas familiares en México, difundido en 2022, encontró que solo 24% llega a la segunda generación y 7% a la tercera.",
+          "Una de las razones es que el negocio vive en la cabeza del fundador: qué cliente paga tarde, qué proveedor cumple, cómo se cotiza un trabajo, qué se acordó con quién. Cuando el fundador se hace a un lado, ese conocimiento se va con él. Un negocio con sus clientes, ventas y procesos registrados en un sistema se puede entregar; uno que depende de la memoria es mucho más difícil de heredar.",
+          "La siguiente generación va a querer manejarlo con las herramientas que usa todos los días. Si todo se tiene que construir en el momento del relevo, la página, el sistema, pasar años de información y capacitar al equipo, cae todo junto: un gasto grande en el momento de más estrés, con el fundador menos disponible para ayudar. Hecho poco a poco, el costo se reparte en años, el fundador valida cada pieza mientras todavía está al frente y los clientes se acostumbran a los canales nuevos antes de que cambie nadie detrás del mostrador.",
+        ],
+      },
+      {
+        id: "por-donde-empezar",
+        heading: "Where to start without breaking anything",
+        headingEs: "Por dónde empezar sin romper nada",
+        body: [
+          "First, what people see: correct your Google profile and make sure your website, if you have one, says what you do today. It is free or cheap and it protects every referral you already get.",
+          "Second, your customer list: move it from the notebook to a system, even a simple one. It is the most valuable asset you will hand over.",
+          "Third, write down the five processes that only you know how to do: how you quote, how you buy, how you charge, how you follow up, how you solve the usual problem. Whoever comes next will need them.",
+          "Fourth, involve the next generation now, not at the handover. Let them lead the digital part while you lead the business; both learn in the process.",
+          "Fifth, measure: ask every new customer how they found you. In a year you will know whether the new channels are working. Our [free diagnostic](/recursos/diagnostico) gives you this list in order for your industry in a few minutes.",
+        ],
+        bodyEs: [
+          "Primero, lo que la gente ve: corrige tu perfil de Google y asegúrate de que tu página, si tienes, diga lo que haces hoy. Es gratis o barato y protege cada recomendación que ya recibes.",
+          "Segundo, tu lista de clientes: pásala de la libreta a un sistema, aunque sea sencillo. Es el activo más valioso que vas a entregar.",
+          "Tercero, escribe los cinco procesos que solo tú sabes hacer: cómo cotizas, cómo compras, cómo cobras, cómo das seguimiento, cómo resuelves el problema de siempre. Quien venga después los va a necesitar.",
+          "Cuarto, involucra a la siguiente generación desde ahora, no en el relevo. Que ellos lleven la parte digital mientras tú llevas el negocio; los dos aprenden en el proceso.",
+          "Quinto, mide: pregúntale a cada cliente nuevo cómo te encontró. En un año vas a saber si los canales nuevos están funcionando. Nuestro [diagnóstico gratuito](/recursos/diagnostico) te da esta lista en orden para tu giro en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "Mi negocio va bien, ¿para qué modernizarme?",
+        qEn: "My business is doing well, why modernize?",
+        a: "Justamente porque va bien tienes margen para hacerlo sin prisa. El riesgo no es hoy: es que tus clientes actuales compren menos con los años y los que los reemplacen no te encuentren. Modernizarte desde una posición fuerte es más barato y tranquilo que hacerlo cuando las ventas ya bajaron.",
+        aEn: "Precisely because it is doing well, you have room to do it without rushing. The risk is not today: it is that your current customers buy less over the years and the ones who replace them cannot find you. Modernizing from a position of strength is cheaper and calmer than doing it once sales have dropped.",
+      },
+      {
+        q: "Mis clientes son mayores y casi no usan internet, ¿me afecta?",
+        qEn: "My customers are older and barely use the internet, does this affect me?",
+        a: "Hoy tal vez poco, pero según el INEGI el 57.8% de las personas de 65 a 74 años ya usa internet, y entre los de 25 a 34 es el 96.5%. Tus clientes actuales te seguirán buscando como siempre; los que los van a reemplazar te buscarán en el celular. Lo que conviene es estar en los dos lugares.",
+        aEn: "Maybe little today, but according to INEGI 57.8% of people aged 65 to 74 already use the internet, and among those aged 25 to 34 it is 96.5%. Your current customers will keep finding you as always; the ones who replace them will look for you on their phone. The sensible move is to be in both places.",
+      },
+      {
+        q: "¿Cuánto cuesta modernizar un negocio?",
+        qEn: "How much does it cost to modernize a business?",
+        a: "Depende de por dónde empieces. Corregir tu perfil de Google no cuesta nada, una página profesional y un sistema de clientes son inversiones medianas, y un sistema a la medida es la más grande. Hacerlo por etapas te permite pagar cada paso cuando el anterior ya está dando resultados.",
+        aEn: "It depends on where you start. Fixing your Google profile costs nothing, a professional website and a customer system are medium investments, and a custom system is the largest. Doing it in stages lets you pay for each step once the previous one is already working.",
+      },
+      {
+        q: "¿Qué debo digitalizar primero?",
+        qEn: "What should I digitize first?",
+        a: "Lo que protege lo que ya tienes: que tu información en Google sea correcta y que tu lista de clientes esté en un sistema y no en una libreta. Después, la forma en que te contactan y te pagan. Lo más vistoso, como anuncios o redes, va al final, cuando lo básico ya funciona.",
+        aEn: "What protects what you already have: making sure your information on Google is correct and that your customer list lives in a system, not a notebook. Then, how people contact you and pay you. The flashiest parts, like ads or social media, come last, once the basics work.",
+      },
+      {
+        q: "¿Cómo preparo mi negocio para la siguiente generación?",
+        qEn: "How do I prepare my business for the next generation?",
+        a: "Saca el conocimiento de tu cabeza: clientes, proveedores, precios y procesos registrados en un sistema, y los cinco procesos clave por escrito. Involucra a quien te va a suceder desde ahora, empezando por la parte digital. Y ve haciendo los cambios por etapas para que el relevo no llegue con una lista enorme de pendientes y gastos.",
+        aEn: "Get the knowledge out of your head: customers, suppliers, prices and processes recorded in a system, and the five key processes in writing. Involve your successor now, starting with the digital side. And make the changes in stages so the handover does not arrive with a huge list of pending work and expenses.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "should my business modernize",
+        "digital transformation small business Mexico",
+        "family business succession Mexico",
+        "generational change customers",
+        "modernize family business",
+      ],
+      keywordsEs: [
+        "un negocio exitoso necesita modernizarse",
+        "modernizar mi negocio",
+        "transformación digital pymes México",
+        "empresa familiar sucesión México",
+        "negocio familiar siguiente generación",
+        "uso de internet por edad México INEGI",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
