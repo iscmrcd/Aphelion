@@ -224,15 +224,17 @@ function BlogArticlePage() {
  * place internal cluster links become real crawlable anchors. Anything that is
  * not a well-formed internal link is left as literal text.
  */
-const INLINE_TOKEN = /\[\[([^\]|]+)\|([a-z0-9-]+)\]\]|\[([^\]]+)\]\((\/[a-z0-9/-]*)\)/g;
+const INLINE_TOKEN =
+  /\*\*([^*]+)\*\*|\[\[([^\]|]+)\|([a-z0-9-]+)\]\]|\[([^\]]+)\]\((\/[a-z0-9/-]*)\)/g;
 
 type RichNode =
   | string
   | { kind: "link"; label: string; to: string }
-  | { kind: "term"; label: string; key: string };
+  | { kind: "term"; label: string; key: string }
+  | { kind: "bold"; text: string };
 
 /**
- * Also renders glossary terms written as [[visible text|key]]: the word gets a
+ * Also renders **bold** for key data, and glossary terms written as [[visible text|key]]: the word gets a
  * dotted underline and explains itself in a bubble (see GlossaryTerm and
  * src/lib/glossary.ts), so readers learn it without leaving the article.
  */
@@ -241,8 +243,9 @@ function RichText({ text, lang }: { text: string; lang: "en" | "es" }) {
   let last = 0;
   for (const m of text.matchAll(INLINE_TOKEN)) {
     if (m.index > last) nodes.push(text.slice(last, m.index));
-    if (m[1] !== undefined) nodes.push({ kind: "term", label: m[1], key: m[2] });
-    else nodes.push({ kind: "link", label: m[3], to: m[4] });
+    if (m[1] !== undefined) nodes.push({ kind: "bold", text: m[1] });
+    else if (m[2] !== undefined) nodes.push({ kind: "term", label: m[2], key: m[3] });
+    else nodes.push({ kind: "link", label: m[4], to: m[5] });
     last = m.index + m[0].length;
   }
   if (last < text.length) nodes.push(text.slice(last));
@@ -252,6 +255,11 @@ function RichText({ text, lang }: { text: string; lang: "en" | "es" }) {
       {nodes.map((n, i) =>
         typeof n === "string" ? (
           <span key={i}>{n}</span>
+        ) : n.kind === "bold" ? (
+          // **text** marks the data and ideas worth catching at a glance
+          <strong key={i} className="font-semibold text-neutral-950">
+            <RichText text={n.text} lang={lang} />
+          </strong>
         ) : n.kind === "term" ? (
           <GlossaryTerm key={i} label={n.label} k={n.key} lang={lang} />
         ) : (

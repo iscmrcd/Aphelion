@@ -67,9 +67,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: '[[SEO|seo]] in Mexico typically runs $8,000–$35,000 MXN per month for ongoing work, or $15,000–$60,000 MXN for a one-time technical audit. Price depends on competition, site size, and whether content production is included. Anyone quoting a flat $3,000/month "complete SEO" package is selling volume, not results.',
+    lede: '[[SEO|seo]] in Mexico typically runs **$8,000–$35,000 MXN per month for ongoing work**, or $15,000–$60,000 MXN for a one-time technical audit. Price depends on competition, site size, and whether content production is included. Anyone quoting a flat $3,000/month "complete SEO" package is selling volume, not results.',
     ledeEs:
-      'El [[SEO|seo]] en México cuesta entre $8,000 y $35,000 MXN mensuales para trabajo continuo, o $15,000–$60,000 MXN por una auditoría técnica única. El precio depende de la competencia, el tamaño del sitio y si incluye producción de contenido. Quien cotiza un paquete de "SEO completo" fijo en $3,000/mes vende volumen, no resultados.',
+      'El [[SEO|seo]] en México cuesta entre **$8,000 y $35,000 MXN mensuales para trabajo continuo**, o $15,000–$60,000 MXN por una auditoría técnica única. El precio depende de la competencia, el tamaño del sitio y si incluye producción de contenido. Quien cotiza un paquete de "SEO completo" fijo en $3,000/mes vende volumen, no resultados.',
     sections: [
       {
         id: "que-determina-el-precio",
@@ -87,10 +87,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Typical price ranges in Mexico",
         headingEs: "Rangos de precio típicos en México",
         body: [
-          "Local businesses (one city, low-to-medium competition) typically pay $8,000–$15,000 MXN/month. National e-commerce or service businesses with real competition sit at $18,000–$35,000 MXN/month. Enterprise or highly competitive categories — legal, finance, real estate developers — run $40,000 MXN/month and up, often with a dedicated content budget on top of the retainer.",
+          "Local businesses (one city, low-to-medium competition) typically pay **$8,000–$15,000 MXN/month**. National e-commerce or service businesses with real competition sit at $18,000–$35,000 MXN/month. Enterprise or highly competitive categories — legal, finance, real estate developers — run $40,000 MXN/month and up, often with a dedicated content budget on top of the retainer.",
         ],
         bodyEs: [
-          "Negocios locales (una ciudad, competencia baja o media) suelen pagar $8,000–$15,000 MXN/mes. E-commerce nacional o servicios con competencia real están en $18,000–$35,000 MXN/mes. Empresas grandes o categorías muy competidas (legal, finanzas, desarrolladoras inmobiliarias) corren desde $40,000 MXN/mes, muchas veces con presupuesto de contenido aparte de la tarifa base.",
+          "Negocios locales (una ciudad, competencia baja o media) suelen pagar **$8,000–$15,000 MXN/mes**. E-commerce nacional o servicios con competencia real están en $18,000–$35,000 MXN/mes. Empresas grandes o categorías muy competidas (legal, finanzas, desarrolladoras inmobiliarias) corren desde $40,000 MXN/mes, muchas veces con presupuesto de contenido aparte de la tarifa base.",
         ],
       },
       {
@@ -98,10 +98,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "One-time audit vs. monthly retainer",
         headingEs: "Auditoría única vs. tarifa mensual",
         body: [
-          "A technical audit ($15,000–$60,000 MXN depending on site size) is a diagnostic: crawl errors, site speed, indexation issues, competitive gap analysis. It tells you what's broken. A monthly retainer is the ongoing work of fixing it, publishing content, and building authority. Buying only an audit without executing on it is money spent on a report that sits in a drawer.",
+          "A technical audit (**$15,000–$60,000 MXN depending on site size**) is a diagnostic: crawl errors, site speed, indexation issues, competitive gap analysis. It tells you what's broken. A monthly retainer is the ongoing work of fixing it, publishing content, and building authority. Buying only an audit without executing on it is money spent on a report that sits in a drawer.",
         ],
         bodyEs: [
-          "Una auditoría técnica ($15,000–$60,000 MXN según el tamaño del sitio) es un diagnóstico: errores de rastreo, velocidad, problemas de indexación, análisis de brecha competitiva. Te dice qué está roto. Una tarifa mensual es el trabajo continuo de arreglarlo, publicar contenido y construir autoridad. Comprar solo la auditoría sin ejecutarla es dinero gastado en un reporte que termina en un cajón.",
+          "Una auditoría técnica (**$15,000–$60,000 MXN según el tamaño del sitio**) es un diagnóstico: errores de rastreo, velocidad, problemas de indexación, análisis de brecha competitiva. Te dice qué está roto. Una tarifa mensual es el trabajo continuo de arreglarlo, publicar contenido y construir autoridad. Comprar solo la auditoría sin ejecutarla es dinero gastado en un reporte que termina en un cajón.",
         ],
       },
       {
@@ -123,7 +123,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ask for a sample technical audit, real case studies with traffic and revenue numbers (not just ranking screenshots), and an honest timeline. SEO takes 4–6 months minimum to show meaningful movement, and 9–12 months to compound. If a proposal promises results in three weeks, it's promising something else — usually paid traffic dressed up as organic.",
         ],
         bodyEs: [
-          "Pide una muestra de auditoría técnica, casos reales con números de tráfico e ingresos (no solo capturas de rankings), y un cronograma honesto. El SEO toma mínimo 4 a 6 meses para mostrar movimiento real, y 9 a 12 meses para acumular resultados. Si una propuesta promete resultados en tres semanas, está prometiendo otra cosa: normalmente, tráfico pagado disfrazado de orgánico.",
+          "Pide una muestra de auditoría técnica, casos reales con números de tráfico e ingresos (no solo capturas de rankings), y un cronograma honesto. El SEO toma mínimo **4 a 6 meses para mostrar movimiento real**, y 9 a 12 meses para acumular resultados. Si una propuesta promete resultados en tres semanas, está prometiendo otra cosa: normalmente, tráfico pagado disfrazado de orgánico.",
         ],
       },
       {
@@ -136,7 +136,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "More on the local scope in [SEO en Tijuana](/seo-tijuana).",
         ],
         bodyEs: [
-          "El [[SEO local|seo-local]] en una ciudad fronteriza carga trabajo que un mercado de un solo idioma no tiene: investigación de palabras clave hecha dos veces, y con frecuencia un segundo juego de páginas.",
+          "El [[SEO local|seo-local]] en una ciudad fronteriza carga trabajo que un mercado de un solo idioma no tiene: investigación de palabras clave hecha **dos veces**, y con frecuencia un segundo juego de páginas.",
           "Esa es una diferencia real de costo y conviene cotizarla de forma explícita en lugar de descubrirla a medio camino. Si lo necesitas o no depende de si de verdad le vendes a compradores de habla inglesa, cosa que tu analítica puede responder antes de que alguien te cotice.",
           "Más sobre el alcance local en [SEO en Tijuana](/seo-tijuana).",
         ],
@@ -196,9 +196,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A basic template website in Mexico costs $6,000–$15,000 MXN. A professional custom site runs $25,000–$60,000 MXN. A lead-generation or e-commerce platform starts around $80,000 MXN. The gap isn't design — it's strategy, copywriting, [[conversion|conversion]] setup, and whether the site is actually built to sell.",
+    lede: "A basic template website in Mexico costs **$6,000–$15,000 MXN**. A professional custom site runs $25,000–$60,000 MXN. A lead-generation or e-commerce platform starts around $80,000 MXN. The gap isn't design — it's strategy, copywriting, [[conversion|conversion]] setup, and whether the site is actually built to sell.",
     ledeEs:
-      "Un sitio web básico con plantilla en México cuesta entre $6,000 y $15,000 MXN. Un sitio profesional a medida va de $25,000 a $60,000 MXN. Una plataforma de captación o e-commerce arranca en $80,000 MXN. La diferencia no está en el diseño, sino en la estrategia, el copy, la configuración de [[conversión|conversion]] y en si el sitio está realmente construido para vender.",
+      "Un sitio web básico con plantilla en México cuesta entre **$6,000 y $15,000 MXN**. Un sitio profesional a medida va de $25,000 a $60,000 MXN. Una plataforma de captación o e-commerce arranca en $80,000 MXN. La diferencia no está en el diseño, sino en la estrategia, el copy, la configuración de [[conversión|conversion]] y en si el sitio está realmente construido para vender.",
     sections: [
       {
         id: "los-seis-niveles",
@@ -216,10 +216,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What's included at each price point",
         headingEs: "Qué incluye cada nivel de precio",
         body: [
-          "A Presence site ($6,000–$15,000 MXN) covers a handful of pages, a template, and basic copy. A Professional site ($25,000–$60,000 MXN) adds custom design, real copywriting, [[SEO|seo]] structure and mobile optimization. Lead-Gen and Automated tiers ($80,000–$150,000 MXN) add conversion-focused [[landing pages|landing-page]], [[CRM|crm]] integration, and automated workflows. Commercial Systems and SaaS ($150,000 MXN+) involve custom development, databases and ongoing engineering.",
+          "A Presence site ($6,000–$15,000 MXN) covers a handful of pages, a template, and basic copy. A Professional site (**$25,000–$60,000 MXN**) adds custom design, real copywriting, [[SEO|seo]] structure and mobile optimization. Lead-Gen and Automated tiers ($80,000–$150,000 MXN) add conversion-focused [[landing pages|landing-page]], [[CRM|crm]] integration, and automated workflows. Commercial Systems and SaaS ($150,000 MXN+) involve custom development, databases and ongoing engineering.",
         ],
         bodyEs: [
-          "Un sitio Presencial ($6,000–$15,000 MXN) cubre unas cuantas páginas, una plantilla y copy básico. Un sitio Profesional ($25,000–$60,000 MXN) suma diseño a medida, copywriting real, estructura [[SEO|seo]] y optimización móvil. Los niveles de Captación y Automatizada ($80,000–$150,000 MXN) suman [[landing pages|landing-page]] enfocadas en conversión, integración con [[CRM|crm]] y flujos automatizados. Sistema Comercial y SaaS ($150,000 MXN+) implican desarrollo a medida, bases de datos e ingeniería continua.",
+          "Un sitio Presencial (**$6,000–$15,000 MXN**) cubre unas cuantas páginas, una plantilla y copy básico. Un sitio Profesional ($25,000–$60,000 MXN) suma diseño a medida, copywriting real, estructura [[SEO|seo]] y optimización móvil. Los niveles de Captación y Automatizada ($80,000–$150,000 MXN) suman [[landing pages|landing-page]] enfocadas en conversión, integración con [[CRM|crm]] y flujos automatizados. Sistema Comercial y SaaS ($150,000 MXN+) implican desarrollo a medida, bases de datos e ingeniería continua.",
         ],
       },
       {
@@ -227,10 +227,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Hidden costs agencies don't mention",
         headingEs: "Costos ocultos que las agencias no mencionan",
         body: [
-          "The quote you get is rarely the total cost of ownership. [[Domain|dominio]] and [[hosting|hosting]] run $1,500–$6,000 MXN/year depending on traffic. Professional photography or video for the site can add $10,000–$30,000 MXN. Copywriting, if not included, is another line item. And maintenance — security updates, backups, small edits — should be budgeted at $1,500–$4,000 MXN/month, not treated as a surprise.",
+          "The quote you get is rarely the total cost of ownership. [[Domain|dominio]] and [[hosting|hosting]] run **$1,500–$6,000 MXN/year depending on traffic**. Professional photography or video for the site can add $10,000–$30,000 MXN. Copywriting, if not included, is another line item. And maintenance — security updates, backups, small edits — should be budgeted at $1,500–$4,000 MXN/month, not treated as a surprise.",
         ],
         bodyEs: [
-          "La cotización que recibes casi nunca es el costo total de tenencia. [[Dominio|dominio]] y [[hosting|hosting]] cuestan $1,500–$6,000 MXN/año según el tráfico. Fotografía o video profesional para el sitio puede sumar $10,000–$30,000 MXN. El copywriting, si no está incluido, es otra línea. Y el mantenimiento (actualizaciones de seguridad, respaldos, cambios menores) debe presupuestarse en $1,500–$4,000 MXN/mes, no tratarse como una sorpresa.",
+          "La cotización que recibes casi nunca es el costo total de tenencia. [[Dominio|dominio]] y [[hosting|hosting]] cuestan **$1,500–$6,000 MXN/año según el tráfico**. Fotografía o video profesional para el sitio puede sumar $10,000–$30,000 MXN. El copywriting, si no está incluido, es otra línea. Y el mantenimiento (actualizaciones de seguridad, respaldos, cambios menores) debe presupuestarse en $1,500–$4,000 MXN/mes, no tratarse como una sorpresa.",
         ],
       },
       {
@@ -271,10 +271,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The 2026 price ranges at a glance",
         headingEs: "Los rangos de precio 2026 de un vistazo",
         body: [
-          "Presence: $6,000–$15,000 MXN. Professional: $25,000–$60,000 MXN. Lead-Gen or Automated: $80,000–$150,000 MXN. Commercial System or custom SaaS: $150,000 MXN and up. These are one-time build costs in Mexican pesos as of 2026; hosting, maintenance and content are separate ongoing costs covered above.",
+          "Presence: $6,000–$15,000 MXN. Professional: $25,000–$60,000 MXN. Lead-Gen or Automated: **$80,000–$150,000 MXN**. Commercial System or custom SaaS: $150,000 MXN and up. These are one-time build costs in Mexican pesos as of 2026; hosting, maintenance and content are separate ongoing costs covered above.",
         ],
         bodyEs: [
-          "Presencial: $6,000–$15,000 MXN. Profesional: $25,000–$60,000 MXN. Captación o Automatizada: $80,000–$150,000 MXN. Sistema Comercial o SaaS a medida: $150,000 MXN en adelante. Estos son costos de construcción única en pesos mexicanos para 2026; hosting, mantenimiento y contenido son costos continuos aparte, cubiertos arriba.",
+          "Presencial: $6,000–$15,000 MXN. Profesional: **$25,000–$60,000 MXN**. Captación o Automatizada: $80,000–$150,000 MXN. Sistema Comercial o SaaS a medida: $150,000 MXN en adelante. Estos son costos de construcción única en pesos mexicanos para 2026; hosting, mantenimiento y contenido son costos continuos aparte, cubiertos arriba.",
         ],
       },
       {
@@ -401,10 +401,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Cost per lead: what to expect in Mexico",
         headingEs: "Costo por lead: qué esperar en México",
         body: [
-          "As a rough range for 2026: local service [[leads|lead]] on Google Ads run $150–$600 MXN each depending on category competition. Meta lead-form campaigns often come in lower per-lead ($80–$350 MXN) but with lower purchase intent, meaning more follow-up work to qualify them. High-ticket categories — real estate, medical, legal — run higher on both platforms and should be measured on cost-per-qualified-lead, not raw cost-per-click.",
+          "As a rough range for 2026: local service [[leads|lead]] on Google Ads run **$150–$600 MXN** each depending on category competition. Meta lead-form campaigns often come in lower per-lead ($80–$350 MXN) but with lower purchase intent, meaning more follow-up work to qualify them. High-ticket categories — real estate, medical, legal — run higher on both platforms and should be measured on cost-per-qualified-lead, not raw cost-per-click.",
         ],
         bodyEs: [
-          "Como rango aproximado para 2026: los [[leads|lead]] de servicios locales en Google Ads cuestan entre $150 y $600 MXN cada uno según la competencia de la categoría. Las campañas de formulario de leads en Meta suelen salir más bajas por lead ($80–$350 MXN) pero con menor intención de compra, lo que implica más trabajo de seguimiento para calificarlos. Las categorías de alto valor (bienes raíces, médico, legal) cuestan más en ambas plataformas y deben medirse por costo por lead calificado, no por [[costo por clic|cpc]] bruto.",
+          "Como rango aproximado para 2026: los [[leads|lead]] de servicios locales en Google Ads cuestan entre **$150 y $600 MXN** cada uno según la competencia de la categoría. Las campañas de formulario de leads en Meta suelen salir más bajas por lead ($80–$350 MXN) pero con menor intención de compra, lo que implica más trabajo de seguimiento para calificarlos. Las categorías de alto valor (bienes raíces, médico, legal) cuestan más en ambas plataformas y deben medirse por costo por lead calificado, no por [[costo por clic|cpc]] bruto.",
         ],
       },
       {
@@ -415,7 +415,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "The common mistake is splitting a tight budget 50/50 between both platforms from day one. Better sequencing: prove the offer works on the platform with clearer intent signals first, get the [[landing page|landing-page]] and follow-up converting, then add the second platform to scale reach once you know your numbers. Running both platforms badly is worse than running one platform well.",
         ],
         bodyEs: [
-          "El error común es dividir un presupuesto ajustado 50/50 entre ambas plataformas desde el primer día. Un mejor orden: comprobar que la oferta funciona primero en la plataforma con señales de intención más claras, lograr que la [[landing page|landing-page]] y el seguimiento conviertan, y luego sumar la segunda plataforma para escalar alcance una vez que conoces tus números. Correr ambas plataformas mal es peor que correr una sola bien.",
+          "**El error común es dividir un presupuesto ajustado 50/50 entre ambas plataformas desde el primer día.** Un mejor orden: comprobar que la oferta funciona primero en la plataforma con señales de intención más claras, lograr que la [[landing page|landing-page]] y el seguimiento conviertan, y luego sumar la segunda plataforma para escalar alcance una vez que conoces tus números. Correr ambas plataformas mal es peor que correr una sola bien.",
         ],
       },
     ],
@@ -483,9 +483,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Most wasted [[Google Ads|google-ads]] budget in Mexico comes from broad match [[keywords|palabra-clave]] with no negatives, Smart Campaigns left on autopilot, and [[landing pages|landing-page]] that don't match search intent. Fixing these three alone typically recovers 20–40% of spend within the first billing cycle.",
+    lede: "Most wasted [[Google Ads|google-ads]] budget in Mexico comes from broad match [[keywords|palabra-clave]] with no negatives, Smart Campaigns left on autopilot, and [[landing pages|landing-page]] that don't match search intent. Fixing these three alone typically recovers 20–**40%** of spend within the first billing cycle.",
     ledeEs:
-      "La mayor parte del presupuesto desperdiciado en [[Google Ads|google-ads]] en México viene de [[palabras clave|palabra-clave]] en concordancia amplia sin negativas, Smart Campaigns en piloto automático y [[landing pages|landing-page]] que no coinciden con la intención de búsqueda. En las cuentas que hemos auditado, no es raro recuperar entre 20% y 40% del gasto solo corrigiendo estos tres puntos en el primer ciclo de facturación.",
+      "La mayor parte del presupuesto desperdiciado en [[Google Ads|google-ads]] en México viene de [[palabras clave|palabra-clave]] en concordancia amplia sin negativas, Smart Campaigns en piloto automático y [[landing pages|landing-page]] que no coinciden con la intención de búsqueda. En las cuentas que hemos auditado, no es raro recuperar entre **20%** y 40% del gasto solo corrigiendo estos tres puntos en el primer ciclo de facturación.",
     sections: [
       {
         id: "concordancia-amplia",
@@ -748,10 +748,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a real estate marketing system actually costs",
         headingEs: "Cuánto cuesta realmente un sistema de marketing inmobiliario",
         body: [
-          'Budget varies enormously by ticket size and inventory volume, but as a market range for 2026, a mid-size development running paid traffic, a proper [[landing page|landing-page]] and CRM should plan for $15,000 to $25,000 MXN monthly in media spend, plus the one-time cost of the landing infrastructure. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point. We break the full range down channel by channel in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          'Budget varies enormously by ticket size and inventory volume, but as a market range for 2026, a mid-size development running paid traffic, a proper [[landing page|landing-page]] and CRM should plan for **$15,000 to $25,000 MXN monthly in media spend**, plus the one-time cost of the landing infrastructure. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point. We break the full range down channel by channel in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
         bodyEs: [
-          'El presupuesto varía enormemente según el ticket y el volumen de inventario, pero como rango de mercado para 2026, un desarrollo mediano que corre tráfico pagado, una landing adecuada y CRM debe planear entre $15,000 y $25,000 MXN mensuales en medios, más el costo único de la infraestructura de landing. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket. Desglosamos el rango completo canal por canal en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          'El presupuesto varía enormemente según el ticket y el volumen de inventario, pero como rango de mercado para 2026, un desarrollo mediano que corre tráfico pagado, una landing adecuada y CRM debe planear entre **$15,000 y $25,000 MXN mensuales en medios**, más el costo único de la infraestructura de landing. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket. Desglosamos el rango completo canal por canal en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
       },
       {
@@ -889,10 +889,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a realistic lead-generation budget looks like",
         headingEs: "Cómo luce un presupuesto realista de generación de leads",
         body: [
-          'As a market range for 2026, expect to invest $15,000 to $25,000 MXN monthly across paid channels for a mid-size development, not counting the [[landing page|landing-page]] and [[CRM|crm]] setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          'As a market range for 2026, expect to invest **$15,000 to $25,000 MXN** monthly across paid channels for a mid-size development, not counting the [[landing page|landing-page]] and [[CRM|crm]] setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
         bodyEs: [
-          'Como rango de mercado para 2026, considera invertir entre $15,000 y $25,000 MXN mensuales en canales pagados para un desarrollo mediano, sin contar la [[landing page|landing-page]] ni la configuración del [[CRM|crm]]. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          'Como rango de mercado para 2026, considera invertir entre **$15,000 y $25,000 MXN** mensuales en canales pagados para un desarrollo mediano, sin contar la [[landing page|landing-page]] ni la configuración del [[CRM|crm]]. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
       },
     ],
@@ -1108,7 +1108,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Warm leads respond well to specific, useful follow-up — new availability, financing options, or an invitation to a low-pressure open house — every five to seven days. Cold leads need a slower cadence: monthly updates on inventory or pricing changes, without a hard sell, because pushing too hard too early is what turns a cold lead into a ghost. The goal with both is staying present until they're ready, not rushing them there.",
         ],
         bodyEs: [
-          "Los leads warm responden bien a seguimiento específico y útil (nueva disponibilidad, opciones de financiamiento, o una invitación a un open house sin presión) cada cinco a siete días. Los leads cold necesitan una cadencia más lenta: actualizaciones mensuales de inventario o cambios de precio, sin presionar la venta, porque insistir demasiado pronto es lo que convierte a un lead cold en un ghost. El objetivo con ambos es mantenerse presente hasta que estén listos, no apurarlos a llegar ahí.",
+          "Los leads warm responden bien a seguimiento específico y útil (nueva disponibilidad, opciones de financiamiento, o una invitación a un open house sin presión) cada cinco a siete días. Los leads cold necesitan una cadencia más lenta: actualizaciones mensuales de inventario o cambios de precio, sin presionar la venta, porque insistir demasiado pronto es lo que convierte a un lead cold en un ghost. **El objetivo con ambos es mantenerse presente hasta que estén listos, no apurarlos a llegar ahí.**",
         ],
       },
       {
@@ -1315,19 +1315,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "As a 2026 market range for Mexico, a realistic [[Meta Ads|meta-ads]] budget starts at $8,000 to $12,000 MXN per month for a local business and rises to $20,000 MXN or more for national or high-ticket categories. Below that floor, the algorithm doesn't get enough data to optimize, and results become unpredictable regardless of how good the creative is.",
+    lede: "As a 2026 market range for Mexico, a realistic [[Meta Ads|meta-ads]] budget starts at **$8,000 to $12,000 MXN per month for a local business** and rises to $20,000 MXN or more for national or high-ticket categories. Below that floor, the algorithm doesn't get enough data to optimize, and results become unpredictable regardless of how good the creative is.",
     ledeEs:
-      "Como rango de mercado 2026 para México, un presupuesto realista de [[Meta Ads|meta-ads]] arranca en $8,000 a $12,000 MXN mensuales para un negocio local y sube a $20,000 MXN o más para categorías nacionales o de alto valor. Por debajo de ese piso, el algoritmo no recibe suficientes datos para optimizar, y los resultados se vuelven impredecibles sin importar qué tan bueno sea el creativo.",
+      "Como rango de mercado 2026 para México, un presupuesto realista de [[Meta Ads|meta-ads]] arranca en **$8,000 a $12,000 MXN mensuales para un negocio local** y sube a $20,000 MXN o más para categorías nacionales o de alto valor. Por debajo de ese piso, el algoritmo no recibe suficientes datos para optimizar, y los resultados se vuelven impredecibles sin importar qué tan bueno sea el creativo.",
     sections: [
       {
         id: "piso-minimo",
         heading: "The minimum floor to get real data",
         headingEs: "El piso mínimo para obtener datos reales",
         body: [
-          "Meta's algorithm needs a minimum volume of clicks and [[conversions|conversion]] to exit the learning phase and start optimizing efficiently — roughly 50 conversions per ad set per week is the commonly cited benchmark. Below $8,000 MXN monthly, most Mexican businesses can't generate that volume, which means the algorithm never fully learns who to show the ad to, and cost per result stays erratic.",
+          "Meta's algorithm needs a minimum volume of clicks and [[conversions|conversion]] to exit the learning phase and start optimizing efficiently — roughly 50 conversions per ad set per week is the commonly cited benchmark. Below **$8,000 MXN monthly**, most Mexican businesses can't generate that volume, which means the algorithm never fully learns who to show the ad to, and cost per result stays erratic.",
         ],
         bodyEs: [
-          "El algoritmo de Meta necesita un volumen mínimo de clics y [[conversiones|conversion]] para salir de la fase de aprendizaje y empezar a optimizar de forma eficiente. Aproximadamente 50 conversiones por conjunto de anuncios a la semana es el punto de referencia más citado. Por debajo de $8,000 MXN mensuales, la mayoría de los negocios mexicanos no puede generar ese volumen, lo que significa que el algoritmo nunca aprende del todo a quién mostrarle el anuncio, y el costo por resultado se mantiene errático.",
+          "El algoritmo de Meta necesita un volumen mínimo de clics y [[conversiones|conversion]] para salir de la fase de aprendizaje y empezar a optimizar de forma eficiente. Aproximadamente 50 conversiones por conjunto de anuncios a la semana es el punto de referencia más citado. Por debajo de **$8,000 MXN mensuales**, la mayoría de los negocios mexicanos no puede generar ese volumen, lo que significa que el algoritmo nunca aprende del todo a quién mostrarle el anuncio, y el costo por resultado se mantiene errático.",
         ],
       },
       {
@@ -1335,10 +1335,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Budget ranges by business type",
         headingEs: "Rangos de presupuesto por tipo de negocio",
         body: [
-          "Local services (restaurants, clinics, retail): $8,000–$15,000 MXN/month. E-commerce with a national audience: $15,000–$30,000 MXN/month, scaling with catalog size and margin. High-ticket categories (real estate, medical procedures, B2B): $20,000–$40,000 MXN/month, because cost per qualified lead is naturally higher and volume requirements to test creative are steeper.",
+          "Local services (restaurants, clinics, retail): **$8,000–$15,000 MXN/month**. E-commerce with a national audience: $15,000–$30,000 MXN/month, scaling with catalog size and margin. High-ticket categories (real estate, medical procedures, B2B): $20,000–$40,000 MXN/month, because cost per qualified lead is naturally higher and volume requirements to test creative are steeper.",
         ],
         bodyEs: [
-          "Servicios locales (restaurantes, clínicas, retail): $8,000–$15,000 MXN/mes. E-commerce con audiencia nacional: $15,000–$30,000 MXN/mes, escalando con el tamaño del catálogo y el margen. Categorías de alto valor (bienes raíces, procedimientos médicos, B2B): $20,000–$40,000 MXN/mes, porque el costo por [[lead|lead]] calificado es naturalmente más alto y se necesita más volumen para probar creativos.",
+          "Servicios locales (restaurantes, clínicas, retail): **$8,000–$15,000 MXN/mes**. E-commerce con audiencia nacional: $15,000–$30,000 MXN/mes, escalando con el tamaño del catálogo y el margen. Categorías de alto valor (bienes raíces, procedimientos médicos, B2B): $20,000–$40,000 MXN/mes, porque el costo por [[lead|lead]] calificado es naturalmente más alto y se necesita más volumen para probar creativos.",
         ],
       },
       {
@@ -1346,10 +1346,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What cost per result actually looks like",
         headingEs: "Cómo luce realmente el costo por resultado",
         body: [
-          "As typical market ranges for 2026, expect $15–$50 MXN per link click depending on category competition, and $80–$350 MXN per qualified lead-form submission for most local service categories. High-ticket categories like real estate routinely run higher because the buyer pool is smaller and the algorithm has to work harder to find them.",
+          "As typical market ranges for 2026, expect **$15–$50 MXN** per link click depending on category competition, and $80–$350 MXN per qualified lead-form submission for most local service categories. High-ticket categories like real estate routinely run higher because the buyer pool is smaller and the algorithm has to work harder to find them.",
         ],
         bodyEs: [
-          "Como rangos de mercado típicos para 2026, espera entre $15 y $50 MXN por clic al enlace según la competencia de la categoría, y entre $80 y $350 MXN por envío de formulario de lead calificado en la mayoría de las categorías de servicios locales. Las categorías de alto valor como bienes raíces suelen correr más alto porque el grupo de compradores es más pequeño y el algoritmo tiene que trabajar más para encontrarlos.",
+          "Como rangos de mercado típicos para 2026, espera entre **$15 y $50 MXN** por clic al enlace según la competencia de la categoría, y entre $80 y $350 MXN por envío de formulario de lead calificado en la mayoría de las categorías de servicios locales. Las categorías de alto valor como bienes raíces suelen correr más alto porque el grupo de compradores es más pequeño y el algoritmo tiene que trabajar más para encontrarlos.",
         ],
       },
       {
@@ -1357,10 +1357,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When it's too soon to scale",
         headingEs: "Cuándo es muy pronto para escalar",
         body: [
-          "Don't increase budget until an ad set has generated at least a week or two of stable, consistent results — scaling too early just amplifies an unoptimized campaign, and scaling too fast (more than roughly 20% per adjustment) resets the algorithm's learning phase and temporarily raises costs. Slow, steady increases beat aggressive jumps almost every time.",
+          "Don't increase budget until an ad set has generated at least a week or two of stable, consistent results — scaling too early just amplifies an unoptimized campaign, and scaling too fast (more than roughly **20% per adjustment**) resets the algorithm's learning phase and temporarily raises costs. Slow, steady increases beat aggressive jumps almost every time.",
         ],
         bodyEs: [
-          "No subas el presupuesto hasta que un conjunto de anuncios haya generado al menos una o dos semanas de resultados estables y consistentes. Escalar demasiado pronto solo amplifica una campaña sin optimizar, y escalar demasiado rápido (más de aproximadamente 20% por ajuste) reinicia la fase de aprendizaje del algoritmo y sube los costos temporalmente. Incrementos lentos y constantes le ganan a los saltos agresivos casi siempre.",
+          "No subas el presupuesto hasta que un conjunto de anuncios haya generado al menos una o dos semanas de resultados estables y consistentes. Escalar demasiado pronto solo amplifica una campaña sin optimizar, y escalar demasiado rápido (más de aproximadamente **20% por ajuste**) reinicia la fase de aprendizaje del algoritmo y sube los costos temporalmente. Incrementos lentos y constantes le ganan a los saltos agresivos casi siempre.",
         ],
       },
       {
@@ -1567,10 +1567,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "12. Expecting results without patience",
         headingEs: "12. Esperar resultados sin paciencia",
         body: [
-          "SEO compounds over months, not weeks — businesses that abandon it after six or eight weeks because they haven't seen dramatic movement are quitting right before the curve typically starts to bend. Consistency beats intensity in SEO more than in almost any other marketing channel. As a reference point, technical and structural fixes typically show measurable movement in 4 to 6 months, with results that compound meaningfully at 9 to 12 months.",
+          "SEO compounds over months, not weeks — businesses that abandon it after six or eight weeks because they haven't seen dramatic movement are quitting right before the curve typically starts to bend. Consistency beats intensity in SEO more than in almost any other marketing channel. As a reference point, technical and structural fixes typically show measurable movement in **4 to 6 months**, with results that compound meaningfully at 9 to 12 months.",
         ],
         bodyEs: [
-          "El SEO se acumula en meses, no en semanas. Los negocios que lo abandonan después de seis u ocho semanas porque no han visto un movimiento dramático suelen renunciar justo antes de que la curva empiece a doblarse. La consistencia le gana a la intensidad en SEO más que en casi cualquier otro canal de marketing. Como referencia, las correcciones técnicas y de estructura suelen mostrar movimiento medible en 4 a 6 meses, con resultados que se acumulan de forma importante entre los 9 y 12 meses.",
+          "El SEO se acumula en meses, no en semanas. Los negocios que lo abandonan después de seis u ocho semanas porque no han visto un movimiento dramático suelen renunciar justo antes de que la curva empiece a doblarse. La consistencia le gana a la intensidad en SEO más que en casi cualquier otro canal de marketing. Como referencia, las correcciones técnicas y de estructura suelen mostrar movimiento medible en **4 a 6 meses**, con resultados que se acumulan de forma importante entre los 9 y 12 meses.",
         ],
       },
     ],
@@ -1653,10 +1653,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When an in-house team pays for itself",
         headingEs: "Cuándo un equipo interno se paga solo",
         body: [
-          "Building an in-house team starts to make financial sense once monthly marketing spend and complexity are high enough that a full-time salary costs less than the equivalent agency retainer — commonly somewhere north of $60,000–$80,000 MXN monthly in combined marketing activity. Below that, the fixed cost of salary, benefits and management overhead usually outweighs what an agency or freelancer would charge for the same output.",
+          "Building an in-house team starts to make financial sense once monthly marketing spend and complexity are high enough that a full-time salary costs less than the equivalent agency retainer — commonly somewhere north of **$60,000–$80,000 MXN** monthly in combined marketing activity. Below that, the fixed cost of salary, benefits and management overhead usually outweighs what an agency or freelancer would charge for the same output.",
         ],
         bodyEs: [
-          "Armar un equipo interno empieza a tener sentido financiero cuando el gasto y la complejidad mensual de marketing son suficientemente altos para que un sueldo de tiempo completo cueste menos que la tarifa equivalente de una agencia: comúnmente por arriba de $60,000–$80,000 MXN mensuales en actividad de marketing combinada. Por debajo de eso, el costo fijo de sueldo, prestaciones y gestión suele superar lo que cobraría una agencia o freelancer por el mismo resultado.",
+          "Armar un equipo interno empieza a tener sentido financiero cuando el gasto y la complejidad mensual de marketing son suficientemente altos para que un sueldo de tiempo completo cueste menos que la tarifa equivalente de una agencia: comúnmente por arriba de **$60,000–$80,000 MXN** mensuales en actividad de marketing combinada. Por debajo de eso, el costo fijo de sueldo, prestaciones y gestión suele superar lo que cobraría una agencia o freelancer por el mismo resultado.",
         ],
       },
       {
@@ -1664,10 +1664,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Costs compared, side by side",
         headingEs: "Costos comparados, lado a lado",
         body: [
-          "As typical 2026 market ranges: a freelancer specialist runs $8,000–$20,000 MXN monthly for a single channel. A small agency retainer covering strategy plus two or three channels runs $20,000–$50,000 MXN monthly. A junior in-house marketing hire, fully loaded with benefits, runs $18,000–$30,000 MXN monthly — but covers only one person's skill set, not a full team's.",
+          "As typical 2026 market ranges: a freelancer specialist runs **$8,000–$20,000 MXN monthly for a single channel**. A small agency retainer covering strategy plus two or three channels runs $20,000–$50,000 MXN monthly. A junior in-house marketing hire, fully loaded with benefits, runs $18,000–$30,000 MXN monthly — but covers only one person's skill set, not a full team's.",
         ],
         bodyEs: [
-          "Como rangos de mercado típicos para 2026: un freelancer especializado cuesta $8,000–$20,000 MXN mensuales por un solo canal. Una tarifa de agencia pequeña que cubre estrategia más dos o tres canales cuesta $20,000–$50,000 MXN mensuales. Una contratación interna junior de marketing, con prestaciones incluidas, cuesta $18,000–$30,000 MXN mensuales, pero cubre solo el conjunto de habilidades de una persona, no las de un equipo completo.",
+          "Como rangos de mercado típicos para 2026: un freelancer especializado cuesta **$8,000–$20,000 MXN mensuales por un solo canal**. Una tarifa de agencia pequeña que cubre estrategia más dos o tres canales cuesta $20,000–$50,000 MXN mensuales. Una contratación interna junior de marketing, con prestaciones incluidas, cuesta $18,000–$30,000 MXN mensuales, pero cubre solo el conjunto de habilidades de una persona, no las de un equipo completo.",
         ],
       },
       {
@@ -1745,19 +1745,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "As a 2026 market range, a mid-size real estate development should plan for $15,000 to $25,000 MXN monthly in paid traffic across Meta and Google, plus a one-time investment in landing infrastructure and [[CRM|crm]] setup. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point.",
+    lede: "As a 2026 market range, a mid-size real estate development should plan for **$15,000 to $25,000 MXN monthly in paid traffic across Meta** and Google, plus a one-time investment in landing infrastructure and [[CRM|crm]] setup. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point.",
     ledeEs:
-      "Como rango de mercado 2026, un desarrollo inmobiliario mediano debe planear entre $15,000 y $25,000 MXN mensuales en tráfico pagado entre Meta y Google, más una inversión única en infraestructura de landing y configuración de [[CRM|crm]]. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket.",
+      "Como rango de mercado 2026, un desarrollo inmobiliario mediano debe planear entre **$15,000 y $25,000 MXN** mensuales en tráfico pagado entre Meta y Google, más una inversión única en infraestructura de landing y configuración de [[CRM|crm]]. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket.",
     sections: [
       {
         id: "desglose-por-canal",
         heading: "The budget broken down by channel",
         headingEs: "El presupuesto desglosado por canal",
         body: [
-          "As typical 2026 ranges: [[Meta Ads|meta-ads]] $6,000–$12,000 MXN/month for visual, awareness-driven traffic; [[Google Ads|google-ads]] $5,000–$10,000 MXN/month for buyers actively searching by area or type; portal listings (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/month for additional volume. Most developments split spend across at least two channels rather than betting everything on one.",
+          "As typical 2026 ranges: [[Meta Ads|meta-ads]] **$6,000–$12,000 MXN/month for visual**, awareness-driven traffic; [[Google Ads|google-ads]] $5,000–$10,000 MXN/month for buyers actively searching by area or type; portal listings (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/month for additional volume. Most developments split spend across at least two channels rather than betting everything on one.",
         ],
         bodyEs: [
-          "Como rangos típicos para 2026: [[Meta Ads|meta-ads]] $6,000–$12,000 MXN/mes para tráfico visual orientado a generar interés; [[Google Ads|google-ads]] $5,000–$10,000 MXN/mes para compradores que ya buscan activamente por zona o tipo; listados en portales (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/mes para volumen adicional. La mayoría de los desarrollos reparte el gasto entre al menos dos canales en vez de apostarlo todo a uno.",
+          "Como rangos típicos para 2026: [[Meta Ads|meta-ads]] **$6,000–$12,000 MXN**/mes para tráfico visual orientado a generar interés; [[Google Ads|google-ads]] $5,000–$10,000 MXN/mes para compradores que ya buscan activamente por zona o tipo; listados en portales (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/mes para volumen adicional. La mayoría de los desarrollos reparte el gasto entre al menos dos canales en vez de apostarlo todo a uno.",
         ],
       },
       {
@@ -1765,10 +1765,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The one-time infrastructure investment",
         headingEs: "La inversión única en infraestructura",
         body: [
-          "Beyond monthly media spend, expect a one-time cost for a proper [[landing page|landing-page]] ($25,000–$60,000 MXN) and, for land or multi-unit developments, an interactive lot map ($40,000–$90,000 MXN depending on complexity). CRM setup and integration typically adds $10,000–$25,000 MXN. These are build-once costs, not recurring ones.",
+          "Beyond monthly media spend, expect a one-time cost for a proper [[landing page|landing-page]] (**$25,000–$60,000 MXN**) and, for land or multi-unit developments, an interactive lot map ($40,000–$90,000 MXN depending on complexity). CRM setup and integration typically adds $10,000–$25,000 MXN. These are build-once costs, not recurring ones.",
         ],
         bodyEs: [
-          "Más allá del gasto mensual en medios, considera un costo único por una [[landing page|landing-page]] adecuada ($25,000–$60,000 MXN) y, para desarrollos de terrenos o multiunidad, un mapa interactivo de lotes ($40,000–$90,000 MXN según la complejidad). La configuración e integración del CRM suele sumar $10,000–$25,000 MXN. Son costos de construcción única, no recurrentes.",
+          "Más allá del gasto mensual en medios, considera un costo único por una [[landing page|landing-page]] adecuada (**$25,000–$60,000 MXN**) y, para desarrollos de terrenos o multiunidad, un mapa interactivo de lotes ($40,000–$90,000 MXN según la complejidad). La configuración e integración del CRM suele sumar $10,000–$25,000 MXN. Son costos de construcción única, no recurrentes.",
         ],
       },
       {
@@ -1787,10 +1787,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What return to expect",
         headingEs: "Qué retorno esperar",
         body: [
-          "Cost per qualified lead in real estate typically runs $300–$1,200 MXN depending on price point and category, higher than most other industries because the buyer pool is smaller and the decision more considered. Measuring against cost per closing, not just cost per lead, gives a truer picture of whether the budget is working.",
+          "Cost per qualified lead in real estate typically runs **$300–$1,200 MXN depending on price point** and category, higher than most other industries because the buyer pool is smaller and the decision more considered. Measuring against cost per closing, not just cost per lead, gives a truer picture of whether the budget is working.",
         ],
         bodyEs: [
-          "El costo por [[lead|lead]] calificado en bienes raíces suele correr entre $300 y $1,200 MXN según el ticket y la categoría, más alto que en la mayoría de las industrias porque el grupo de compradores es más pequeño y la decisión más meditada. Medir contra el costo por cierre, no solo contra el costo por lead, da una imagen más real de si el presupuesto está funcionando.",
+          "El costo por [[lead|lead]] calificado en bienes raíces suele correr entre **$300 y $1,200 MXN según el ticket** y la categoría, más alto que en la mayoría de las industrias porque el grupo de compradores es más pequeño y la decisión más meditada. Medir contra el costo por cierre, no solo contra el costo por lead, da una imagen más real de si el presupuesto está funcionando.",
         ],
       },
       {
@@ -1798,10 +1798,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When to adjust the budget",
         headingEs: "Cuándo ajustar el presupuesto",
         body: [
-          'Revisit the split every 4 to 6 weeks based on which channel is producing hot and warm [[leads|lead]], not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the [[cost per click|cpc]] looks attractive. The full classification system is in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
+          'Revisit the split every **4 to 6 weeks** based on which channel is producing hot and warm [[leads|lead]], not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the [[cost per click|cpc]] looks attractive. The full classification system is in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
         bodyEs: [
-          'Revisa el reparto cada 4 a 6 semanas según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el [[costo por clic|cpc]] se vea atractivo. El sistema de clasificación completo está en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
+          'Revisa el reparto cada **4 a 6 semanas** según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el [[costo por clic|cpc]] se vea atractivo. El sistema de clasificación completo está en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
       },
     ],
@@ -1938,10 +1938,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How long it takes and what it costs",
         headingEs: "Cuánto tarda y cuánto cuesta",
         body: [
-          'SEO takes 4 to 6 months for initial movement and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in [how long does SEO take](/blog/cuanto-tarda-el-seo) and [how much does SEO cost in Mexico](/blog/cuanto-cuesta-el-seo-en-mexico).',
+          'SEO takes **4 to 6 months for initial movement** and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in [how long does SEO take](/blog/cuanto-tarda-el-seo) and [how much does SEO cost in Mexico](/blog/cuanto-cuesta-el-seo-en-mexico).',
         ],
         bodyEs: [
-          'El SEO toma de 4 a 6 meses para mostrar movimiento inicial y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en [cuánto tarda el SEO](/blog/cuanto-tarda-el-seo) y [cuánto cuesta el SEO en México](/blog/cuanto-cuesta-el-seo-en-mexico).',
+          'El SEO toma de **4 a 6 meses para mostrar movimiento inicial** y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en [cuánto tarda el SEO](/blog/cuanto-tarda-el-seo) y [cuánto cuesta el SEO en México](/blog/cuanto-cuesta-el-seo-en-mexico).',
         ],
       },
       {
@@ -2073,10 +2073,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What it actually costs",
         headingEs: "Cuánto cuesta realmente",
         body: [
-          '[[Cost per click|cpc]] in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over $100 MXN in competitive ones like legal or medical services. We publish real CPC ranges by industry in [how much does Google Ads cost in Mexico](/blog/cuanto-cuesta-google-ads-en-mexico).',
+          '[[Cost per click|cpc]] in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over **$100 MXN** in competitive ones like legal or medical services. We publish real CPC ranges by industry in [how much does Google Ads cost in Mexico](/blog/cuanto-cuesta-google-ads-en-mexico).',
         ],
         bodyEs: [
-          'El [[costo por clic|cpc]] en México varía enormemente por industria: desde unos cuantos pesos en categorías de baja competencia hasta más de $100 MXN en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en [cuánto cuesta Google Ads en México](/blog/cuanto-cuesta-google-ads-en-mexico).',
+          'El [[costo por clic|cpc]] en México varía enormemente por industria: desde unos cuantos pesos en categorías de baja competencia hasta más de **$100 MXN** en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en [cuánto cuesta Google Ads en México](/blog/cuanto-cuesta-google-ads-en-mexico).',
         ],
       },
       {
@@ -2152,7 +2152,7 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "If you are advertising from Tijuana, one setting matters more than everything else on this page.",
           "A radius drawn around a Tijuana location covers a large part of San Diego County, and Google's location options have historically defaulted to including people interested in your targeted area rather than only people physically in it. The result is competing against dollar budgets for clicks that will never cross the border.",
-          "The fix and the rest of the border configuration are in [Google Ads en Tijuana](/google-ads-tijuana).",
+          "**The fix and the rest of the border configuration are in [Google Ads en Tijuana](/google-ads-tijuana).**",
         ],
         bodyEs: [
           "Si anuncias desde Tijuana, una configuración importa más que todo lo demás de esta página.",
@@ -2220,9 +2220,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "[[Google Ads|google-ads]] in Mexico costs anywhere from $5 to over $150 MXN per click depending on industry, with legal, medical and financial services at the high end and local retail or home services at the low end. Total monthly spend, not just CPC, is what determines whether a budget is viable — a low CPC with weak [[conversion|conversion]] still wastes money.",
+    lede: "[[Google Ads|google-ads]] in Mexico costs anywhere from **$5** to over $150 MXN per click depending on industry, with legal, medical and financial services at the high end and local retail or home services at the low end. Total monthly spend, not just CPC, is what determines whether a budget is viable — a low CPC with weak [[conversion|conversion]] still wastes money.",
     ledeEs:
-      "[[Google Ads|google-ads]] en México cuesta desde $5 hasta más de $150 MXN por clic según la industria, con servicios legales, médicos y financieros en el rango alto, y retail local o servicios del hogar en el rango bajo. El gasto mensual total, no solo el CPC, es lo que determina si un presupuesto es viable. Un CPC bajo con mala [[conversión|conversion]] igual desperdicia dinero.",
+      "[[Google Ads|google-ads]] en México cuesta desde **$5** hasta más de $150 MXN por clic según la industria, con servicios legales, médicos y financieros en el rango alto, y retail local o servicios del hogar en el rango bajo. El gasto mensual total, no solo el CPC, es lo que determina si un presupuesto es viable. Un CPC bajo con mala [[conversión|conversion]] igual desperdicia dinero.",
     gradient: "from-slate-700 to-neutral-900",
     sections: [
       {
@@ -2231,20 +2231,20 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Rangos típicos de CPC por industria (estimaciones de mercado 2026)",
         body: [
           "As typical market estimates for Mexico in 2026 — not guarantees — these are the cost-per-click ranges we see most often by industry:",
-          "Legal services: $60–$180 MXN per click.",
-          "Medical and dental: $40–$120 MXN per click.",
-          "Real estate: $25–$80 MXN per click.",
-          "B2B / professional services: $30–$100 MXN per click.",
+          "Legal services: **$60–$180 MXN per click**.",
+          "Medical and dental: **$40–$120 MXN per click**.",
+          "Real estate: **$25–$80 MXN per click**.",
+          "B2B / professional services: **$30–$100 MXN per click**.",
           "Home services (plumbing, electrical, contractors): $15–$45 MXN per click.",
           "Restaurants and local retail: $5–$20 MXN per click.",
           "E-commerce (general): $8–$30 MXN per click.",
         ],
         bodyEs: [
           "Como estimaciones de mercado típicas para México en 2026 (no garantías), estos son los rangos de costo por clic que vemos con más frecuencia por industria:",
-          "Servicios legales: $60–$180 MXN por clic.",
-          "Médico y dental: $40–$120 MXN por clic.",
-          "Bienes raíces: $25–$80 MXN por clic.",
-          "B2B / servicios profesionales: $30–$100 MXN por clic.",
+          "Servicios legales: **$60–$180 MXN por clic**.",
+          "Médico y dental: **$40–$120 MXN por clic**.",
+          "Bienes raíces: **$25–$80 MXN por clic**.",
+          "B2B / servicios profesionales: **$30–$100 MXN por clic**.",
           "Servicios del hogar (plomería, electricidad, contratistas): $15–$45 MXN por clic.",
           "Restaurantes y retail local: $5–$20 MXN por clic.",
           "E-commerce (general): $8–$30 MXN por clic.",
@@ -2359,9 +2359,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "[[SEO|seo]] takes 4 to 6 months to show initial ranking movement, and 9 to 12 months to compound into meaningful, sustained traffic. Low-competition local categories can move faster; competitive national categories can take longer. Any timeline shorter than a couple of months is not realistic SEO — it's something else being sold under the same name.",
+    lede: "[[SEO|seo]] takes **4 to 6 months to show initial ranking movement**, and 9 to 12 months to compound into meaningful, sustained traffic. Low-competition local categories can move faster; competitive national categories can take longer. Any timeline shorter than a couple of months is not realistic SEO — it's something else being sold under the same name.",
     ledeEs:
-      "El SEO toma de 4 a 6 meses para mostrar movimiento inicial en el posicionamiento, y de 9 a 12 meses para acumularse en tráfico significativo y sostenido. Categorías locales de baja competencia pueden moverse más rápido; categorías nacionales competidas pueden tomar más. Cualquier plazo menor a un par de meses no es [[SEO|seo]] real: es otra cosa vendida bajo el mismo nombre.",
+      "El SEO toma de **4 a 6 meses** para mostrar movimiento inicial en el posicionamiento, y de 9 a 12 meses para acumularse en tráfico significativo y sostenido. Categorías locales de baja competencia pueden moverse más rápido; categorías nacionales competidas pueden tomar más. Cualquier plazo menor a un par de meses no es [[SEO|seo]] real: es otra cosa vendida bajo el mismo nombre.",
     sections: [
       {
         id: "linea-de-tiempo-general",
@@ -2371,7 +2371,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Weeks 1 to 4: technical fixes and foundational work, largely invisible in rankings. Months 2 to 4: initial movement on lower-competition [[keywords|palabra-clave]]. Months 4 to 6: measurable traffic increase begins. Months 9 to 12: compounding effect where content and authority reinforce each other, and growth accelerates. This isn't a guarantee for every site, but it's the shape the curve typically takes. As concrete reference points: technical fixes can show up in rankings within 2-4 weeks, but the qualified traffic and [[conversions|conversion]] that actually matter to the business typically take 4-6 months to become visible, and 9-12 months to compound into something dependable.",
         ],
         bodyEs: [
-          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en [[palabras clave|palabra-clave]] de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar. Como referencia concreta: las correcciones técnicas pueden reflejarse en el posicionamiento en 2 a 4 semanas, pero el tráfico calificado y las [[conversiones|conversion]] que realmente le importan al negocio normalmente tardan de 4 a 6 meses en volverse visibles, y de 9 a 12 meses en acumularse en algo confiable.",
+          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en [[palabras clave|palabra-clave]] de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar. Como referencia concreta: las correcciones técnicas pueden reflejarse en el posicionamiento en **2 a 4 semanas**, pero el tráfico calificado y las [[conversiones|conversion]] que realmente le importan al negocio normalmente tardan de 4 a 6 meses en volverse visibles, y de 9 a 12 meses en acumularse en algo confiable.",
         ],
       },
       {
@@ -2379,10 +2379,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What makes it faster",
         headingEs: "Qué lo hace más rápido",
         body: [
-          "Low local competition, a [[domain|dominio]] with some existing history and authority, and a business category with clear, specific search intent all shorten the timeline. A local business in a low-competition category with a clean technical foundation can see meaningful movement in as little as 8 to 10 weeks.",
+          "Low local competition, a [[domain|dominio]] with some existing history and authority, and a business category with clear, specific search intent all shorten the timeline. A local business in a low-competition category with a clean technical foundation can see meaningful movement in as little as **8 to 10 weeks**.",
         ],
         bodyEs: [
-          "Baja competencia local, un [[dominio|dominio]] con algo de historial y autoridad existente, y una categoría de negocio con intención de búsqueda clara y específica acortan el cronograma. Un negocio local en una categoría de baja competencia con una base técnica limpia puede ver movimiento significativo en tan solo 8 a 10 semanas.",
+          "Baja competencia local, un [[dominio|dominio]] con algo de historial y autoridad existente, y una categoría de negocio con intención de búsqueda clara y específica acortan el cronograma. Un negocio local en una categoría de baja competencia con una base técnica limpia puede ver movimiento significativo en tan solo **8 a 10 semanas**.",
         ],
       },
       {
@@ -2487,10 +2487,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Cost compared over time",
         headingEs: "Costo comparado en el tiempo",
         body: [
-          "In the first six months, Google Ads usually costs less overall because SEO's investment hasn't paid off yet. Past month twelve, the comparison often flips — SEO's marginal cost per visit trends toward zero while Ads keeps costing the same per click indefinitely. The break-even point varies by category, but it's real. As a rough comparison: a Google Ads campaign for a competitive category might run $8,000-$15,000 MXN a month in ad spend alone, while an SEO investment in the same range compounds into ongoing traffic that keeps arriving months after the invoice, rather than stopping the moment spend does.",
+          "In the first six months, Google Ads usually costs less overall because SEO's investment hasn't paid off yet. Past month twelve, the comparison often flips — SEO's marginal cost per visit trends toward zero while Ads keeps costing the same per click indefinitely. The break-even point varies by category, but it's real. As a rough comparison: a Google Ads campaign for a competitive category might run **$8,000-$15,000 MXN a month in ad spend alone**, while an SEO investment in the same range compounds into ongoing traffic that keeps arriving months after the invoice, rather than stopping the moment spend does.",
         ],
         bodyEs: [
-          "En los primeros seis meses, Google Ads suele costar menos en total porque la inversión en SEO todavía no ha rendido frutos. Después del mes doce, la comparación muchas veces se invierte: el costo marginal por visita del SEO tiende a cero, mientras que Ads sigue costando lo mismo por clic indefinidamente. El punto de equilibrio varía por categoría, pero es real. Como comparación aproximada: una campaña de Google Ads para una categoría competida puede costar entre $8,000 y $15,000 MXN al mes solo en gasto de anuncios, mientras que una inversión de SEO en ese mismo rango se acumula en tráfico continuo que sigue llegando meses después de la factura, en vez de detenerse en el momento en que se detiene el gasto.",
+          "En los primeros seis meses, Google Ads suele costar menos en total porque la inversión en SEO todavía no ha rendido frutos. Después del mes doce, la comparación muchas veces se invierte: el costo marginal por visita del SEO tiende a cero, mientras que Ads sigue costando lo mismo por clic indefinidamente. El punto de equilibrio varía por categoría, pero es real. Como comparación aproximada: una campaña de Google Ads para una categoría competida puede costar entre **$8,000 y $15,000 MXN al mes solo en gasto de anuncios**, mientras que una inversión de SEO en ese mismo rango se acumula en tráfico continuo que sigue llegando meses después de la factura, en vez de detenerse en el momento en que se detiene el gasto.",
         ],
       },
       {
@@ -2754,10 +2754,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why U.S. patients cross the border",
         headingEs: "Por qué los pacientes de EE.UU. cruzan la frontera",
         body: [
-          "Cost is the primary driver — dental implants, crowns, and many elective procedures in Tijuana commonly run a fraction of equivalent U.S. pricing, even accounting for travel. Proximity matters too: for patients in San Diego or Yuma, Tijuana is often closer than the nearest comparable U.S. provider. But cost alone doesn't convert a nervous first-time patient — trust does. Dental and medical procedures in Tijuana and Ensenada commonly run at a fraction of equivalent U.S. pricing, often 40-70% less depending on the procedure, a gap large enough that it covers travel costs many times over even for a same-day visit.",
+          "Cost is the primary driver — dental implants, crowns, and many elective procedures in Tijuana commonly run a fraction of equivalent U.S. pricing, even accounting for travel. Proximity matters too: for patients in San Diego or Yuma, Tijuana is often closer than the nearest comparable U.S. provider. But cost alone doesn't convert a nervous first-time patient — trust does. Dental and medical procedures in Tijuana and Ensenada commonly run at a fraction of equivalent U.S. pricing, often 40-**70% less depending on the procedure**, a gap large enough that it covers travel costs many times over even for a same-day visit.",
         ],
         bodyEs: [
-          "El costo es el motor principal: implantes dentales, coronas y muchos procedimientos electivos en Tijuana suelen costar una fracción del precio equivalente en EE.UU., incluso considerando el viaje. La cercanía también importa: para pacientes en San Diego o Yuma, Tijuana muchas veces está más cerca que el proveedor comparable más cercano en EE.UU. Pero el costo solo no convierte a un paciente nervioso de primera vez. La confianza sí. Los procedimientos dentales y médicos en Tijuana y Ensenada normalmente cuestan una fracción del precio equivalente en EE.UU., muchas veces 40 a 70% menos según el procedimiento, una diferencia lo bastante grande como para cubrir los costos de viaje varias veces incluso en una visita de un solo día.",
+          "El costo es el motor principal: implantes dentales, coronas y muchos procedimientos electivos en Tijuana suelen costar una fracción del precio equivalente en EE.UU., incluso considerando el viaje. La cercanía también importa: para pacientes en San Diego o Yuma, Tijuana muchas veces está más cerca que el proveedor comparable más cercano en EE.UU. Pero el costo solo no convierte a un paciente nervioso de primera vez. La confianza sí. Los procedimientos dentales y médicos en Tijuana y Ensenada normalmente cuestan una fracción del precio equivalente en EE.UU., muchas veces 40 a **70% menos según el procedimiento**, una diferencia lo bastante grande como para cubrir los costos de viaje varias veces incluso en una visita de un solo día.",
         ],
       },
       {
@@ -2886,7 +2886,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'Search the business name on Google Maps, click "Claim this business" if it appears unclaimed, and complete verification, usually by postcard mailed to the business address (5-14 days) or, when available, by phone or video call for faster approval. An unverified or unclaimed listing can\'t be edited and often carries incomplete or outdated information nobody controls.',
         ],
         bodyEs: [
-          'Busca el nombre del negocio en Google Maps, da clic en "Reclamar este negocio" si aparece sin reclamar, y completa la verificación, normalmente por postal enviada a la dirección del negocio (5 a 14 días) o, cuando está disponible, por teléfono o videollamada para una aprobación más rápida. Un listado sin verificar o sin reclamar no se puede editar y muchas veces trae información incompleta o desactualizada que nadie controla.',
+          'Busca el nombre del negocio en Google Maps, da clic en "Reclamar este negocio" si aparece sin reclamar, y completa la verificación, normalmente por postal enviada a la dirección del negocio (**5 a 14 días**) o, cuando está disponible, por teléfono o videollamada para una aprobación más rápida. Un listado sin verificar o sin reclamar no se puede editar y muchas veces trae información incompleta o desactualizada que nadie controla.',
         ],
       },
       {
@@ -3068,7 +3068,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Duplicate conversion tags firing twice and inflating results, conversions still tracking an old form after a site redesign silently broke it, and phone calls with no tracking at all are the three issues that show up most often — including in accounts we've audited like Velport's, where fixing the same three gaps was the first step before any campaign optimization made sense. None of this requires guessing; it requires actually checking the tags fire correctly, which most accounts never do after initial setup.",
         ],
         bodyEs: [
-          "Etiquetas de conversión duplicadas disparándose dos veces e inflando los resultados, conversiones que siguen rastreando un formulario viejo después de que un rediseño del sitio lo rompió sin que nadie se diera cuenta, y llamadas telefónicas sin ningún rastreo son los tres problemas que aparecen con más frecuencia. Los hemos visto, entre otras, en cuentas que hemos auditado como la de Velport, donde corregir esos mismos tres huecos fue el primer paso antes de que cualquier optimización de campaña tuviera sentido. Nada de esto requiere adivinar; requiere realmente revisar que las etiquetas disparen correctamente, algo que la mayoría de las cuentas nunca hace después de la configuración inicial.",
+          "Etiquetas de conversión duplicadas disparándose **dos veces e inflando los resultados**, conversiones que siguen rastreando un formulario viejo después de que un rediseño del sitio lo rompió sin que nadie se diera cuenta, y llamadas telefónicas sin ningún rastreo son los tres problemas que aparecen con más frecuencia. Los hemos visto, entre otras, en cuentas que hemos auditado como la de Velport, donde corregir esos mismos tres huecos fue el primer paso antes de que cualquier optimización de campaña tuviera sentido. Nada de esto requiere adivinar; requiere realmente revisar que las etiquetas disparen correctamente, algo que la mayoría de las cuentas nunca hace después de la configuración inicial.",
         ],
       },
       {
@@ -3144,9 +3144,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "As a 2026 market range, a small business in Mexico should plan for roughly 7% to 12% of revenue on digital marketing if actively growing, or $10,000 to $60,000 MXN monthly depending on size — micro-businesses at the low end, established mid-size companies at the high end. Businesses spending far below this range typically plateau; those spending far above it without a clear system usually have a [[conversion|conversion]] problem, not a budget problem.",
+    lede: "As a 2026 market range, a small business in Mexico should plan for roughly **7%** to 12% of revenue on digital marketing if actively growing, or $10,000 to $60,000 MXN monthly depending on size — micro-businesses at the low end, established mid-size companies at the high end. Businesses spending far below this range typically plateau; those spending far above it without a clear system usually have a [[conversion|conversion]] problem, not a budget problem.",
     ledeEs:
-      "Como rango de mercado 2026, un negocio pequeño en México debe planear entre 7% y 12% de sus ingresos en marketing digital si está en crecimiento activo, o entre $10,000 y $60,000 MXN mensuales según el tamaño: micronegocios en el rango bajo, empresas medianas establecidas en el rango alto. Los negocios que gastan muy por debajo de este rango suelen estancarse; los que gastan muy por encima sin un sistema claro suelen tener un problema de [[conversión|conversion]], no de presupuesto.",
+      "Como rango de mercado 2026, un negocio pequeño en México debe planear entre **7%** y 12% de sus ingresos en marketing digital si está en crecimiento activo, o entre $10,000 y $60,000 MXN mensuales según el tamaño: micronegocios en el rango bajo, empresas medianas establecidas en el rango alto. Los negocios que gastan muy por debajo de este rango suelen estancarse; los que gastan muy por encima sin un sistema claro suelen tener un problema de [[conversión|conversion]], no de presupuesto.",
     gradient: "from-neutral-800 to-zinc-950",
     sections: [
       {
@@ -3155,17 +3155,17 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Rangos de presupuesto por tamaño de negocio",
         body: [
           "As typical 2026 market ranges for Mexico:",
-          "Solo operator or micro-business: $10,000–$18,000 MXN/month.",
-          "Small business (a handful of employees, one location): $18,000–$35,000 MXN/month.",
-          "Established small-to-medium business (multiple locations or a national footprint): $35,000–$60,000 MXN/month.",
-          "Larger, competitive categories or aggressive growth targets: $60,000 MXN/month and up.",
+          "Solo operator or micro-business: **$10,000–$18,000 MXN/month**.",
+          "Small business (a handful of employees, one location): **$18,000–$35,000 MXN/month**.",
+          "Established small-to-medium business (multiple locations or a national footprint): **$35,000–$60,000 MXN/month**.",
+          "Larger, competitive categories or aggressive growth targets: **$60,000 MXN/month** and up.",
         ],
         bodyEs: [
           "Como rangos de mercado típicos 2026 para México:",
-          "Operador individual o micronegocio: $10,000–$18,000 MXN/mes.",
-          "Negocio pequeño (un puñado de empleados, una ubicación): $18,000–$35,000 MXN/mes.",
-          "Pyme establecida (varias ubicaciones o presencia nacional): $35,000–$60,000 MXN/mes.",
-          "Categorías más grandes y competidas o metas de crecimiento agresivas: $60,000 MXN/mes en adelante.",
+          "Operador individual o micronegocio: **$10,000–$18,000 MXN/mes**.",
+          "Negocio pequeño (un puñado de empleados, una ubicación): **$18,000–$35,000 MXN/mes**.",
+          "Pyme establecida (varias ubicaciones o presencia nacional): **$35,000–$60,000 MXN/mes**.",
+          "Categorías más grandes y competidas o metas de crecimiento agresivas: **$60,000 MXN/mes en adelante**.",
         ],
       },
       {
@@ -3341,10 +3341,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The real cost and time difference",
         headingEs: "La diferencia real de costo y tiempo",
         body: [
-          "A standalone landing page typically falls in the same $25,000–$60,000 MXN range as a Professional-tier website, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. A Professional site with multiple pages takes 3 to 6 weeks to build, while a single landing page usually lands on the faster end of that same window. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
+          "A standalone landing page typically falls in the same **$25,000–$60,000 MXN range as a Professional-tier website**, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. A Professional site with multiple pages takes 3 to 6 weeks to build, while a single landing page usually lands on the faster end of that same window. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
         ],
         bodyEs: [
-          "Una landing page independiente suele caer en el mismo rango de $25,000 a $60,000 MXN que un sitio de nivel Profesional, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. Un sitio Profesional con varias páginas toma de 3 a 6 semanas construirlo, mientras que una sola landing page suele quedar en el extremo más rápido de esa misma ventana. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
+          "Una landing page independiente suele caer en el mismo rango de **$25,000 a $60,000 MXN que un sitio de nivel Profesional**, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. Un sitio Profesional con varias páginas toma de 3 a 6 semanas construirlo, mientras que una sola landing page suele quedar en el extremo más rápido de esa misma ventana. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
         ],
       },
     ],
@@ -3829,7 +3829,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Running only the browser [[Pixel|pixel]] means losing a real share of [[conversion|conversion]] events to privacy restrictions and ad blockers. The fix is a one-time technical setup, not an ongoing cost, so there's rarely a good reason to skip it. Meta's own data shows that combining Pixel with CAPI typically recovers a meaningful share of conversions that browser-based tracking alone misses due to ad blockers and iOS privacy restrictions, real money left unmeasured, not just a technical gap.",
         ],
         bodyEs: [
-          "Correr solo el [[Pixel|pixel]] de navegador significa perder una parte real de eventos de [[conversión|conversion]] por restricciones de privacidad y bloqueadores de anuncios. La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela. Los propios datos de Meta muestran que combinar Pixel con CAPI normalmente recupera una parte importante de las conversiones que el rastreo solo desde el navegador pierde por bloqueadores de anuncios y restricciones de privacidad de iOS. Es dinero real sin medir, no solo un hueco técnico.",
+          "Correr solo el [[Pixel|pixel]] de navegador significa perder una parte real de eventos de [[conversión|conversion]] por restricciones de privacidad y bloqueadores de anuncios. **La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela.** Los propios datos de Meta muestran que combinar Pixel con CAPI normalmente recupera una parte importante de las conversiones que el rastreo solo desde el navegador pierde por bloqueadores de anuncios y restricciones de privacidad de iOS. Es dinero real sin medir, no solo un hueco técnico.",
         ],
       },
       {
@@ -3837,10 +3837,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "2. Budget split across too many ad sets",
         headingEs: "2. Presupuesto fragmentado en demasiados conjuntos",
         body: [
-          "Each ad set needs enough volume to exit the learning phase. Splitting a modest budget across five or six ad sets almost guarantees none of them ever stabilizes, which shows up as inconsistent, expensive results across the board. As a rule of thumb, an ad set needs roughly 50 conversions in a week to exit Meta's learning phase reliably, splitting a $3,000 MXN monthly budget across six ad sets means none of them ever gets there.",
+          "Each ad set needs enough volume to exit the learning phase. Splitting a modest budget across five or six ad sets almost guarantees none of them ever stabilizes, which shows up as inconsistent, expensive results across the board. As a rule of thumb, an ad set needs roughly 50 conversions in a week to exit Meta's learning phase reliably, splitting a **$3,000 MXN** monthly budget across six ad sets means none of them ever gets there.",
         ],
         bodyEs: [
-          "Cada conjunto de anuncios necesita suficiente volumen para salir de la fase de aprendizaje. Repartir un presupuesto modesto entre cinco o seis conjuntos casi garantiza que ninguno se estabilice nunca, y eso se refleja en resultados inconsistentes y caros en toda la cuenta. Como regla práctica, un conjunto de anuncios necesita unas 50 conversiones en una semana para salir de forma confiable de la fase de aprendizaje de Meta. Repartir un presupuesto mensual de $3,000 MXN entre seis conjuntos de anuncios significa que ninguno llega a eso.",
+          "Cada conjunto de anuncios necesita suficiente volumen para salir de la fase de aprendizaje. Repartir un presupuesto modesto entre cinco o seis conjuntos casi garantiza que ninguno se estabilice nunca, y eso se refleja en resultados inconsistentes y caros en toda la cuenta. Como regla práctica, un conjunto de anuncios necesita unas 50 conversiones en una semana para salir de forma confiable de la fase de aprendizaje de Meta. Repartir un presupuesto mensual de **$3,000 MXN** entre seis conjuntos de anuncios significa que ninguno llega a eso.",
         ],
       },
       {
@@ -3978,10 +3978,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Real costs, roughly",
         headingEs: "Costos reales, a grandes rasgos",
         body: [
-          "A single-location drone session runs a few thousand pesos for a few hours of work. A full corporate video production, with scripting, multiple locations, and post-production, runs considerably more and takes weeks rather than days. Photography sits somewhere in between, priced mostly by time on site and number of final images delivered. As concrete reference points from our own pricing: a single-location aerial shoot starts at $2,990 MXN (up to one hour, one edited video plus 10 photos), event coverage runs $4,990 MXN (up to 4 hours), and an ongoing multi-visit project like construction progress runs $8,890 MXN for a 4-visit package.",
+          "A single-location drone session runs a few thousand pesos for a few hours of work. A full corporate video production, with scripting, multiple locations, and post-production, runs considerably more and takes weeks rather than days. Photography sits somewhere in between, priced mostly by time on site and number of final images delivered. As concrete reference points from our own pricing: a single-location aerial shoot starts at **$2,990 MXN (up to one hour**, one edited video plus 10 photos), event coverage runs $4,990 MXN (up to 4 hours), and an ongoing multi-visit project like construction progress runs $8,890 MXN for a 4-visit package.",
         ],
         bodyEs: [
-          "Una sesión de dron en una sola locación cuesta unos cuantos miles de pesos por unas horas de trabajo. Una producción de video corporativo completa, con guion, varias locaciones y postproducción, cuesta considerablemente más y toma semanas en vez de días. La fotografía queda en un punto intermedio, con precio definido sobre todo por el tiempo en sitio y el número de imágenes finales entregadas. Como referencia concreta de nuestros propios precios: una sesión aérea de una sola locación arranca en $2,990 MXN (hasta una hora, un video editado más 10 fotos), la cobertura de evento cuesta $4,990 MXN (hasta 4 horas), y un proyecto continuo de varias visitas como el avance de una obra cuesta $8,890 MXN por un paquete de 4 visitas.",
+          "Una sesión de dron en una sola locación cuesta unos cuantos miles de pesos por unas horas de trabajo. Una producción de video corporativo completa, con guion, varias locaciones y postproducción, cuesta considerablemente más y toma semanas en vez de días. La fotografía queda en un punto intermedio, con precio definido sobre todo por el tiempo en sitio y el número de imágenes finales entregadas. Como referencia concreta de nuestros propios precios: una sesión aérea de una sola locación arranca en **$2,990 MXN (hasta una hora**, un video editado más 10 fotos), la cobertura de evento cuesta $4,990 MXN (hasta 4 horas), y un proyecto continuo de varias visitas como el avance de una obra cuesta $8,890 MXN por un paquete de 4 visitas.",
         ],
       },
       {
@@ -4082,9 +4082,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A single-location corporate video with basic drone coverage runs from $2,990 MXN (up to one hour on site, one edited 30-45 second cut plus a vertical version, 10 selected aerial photos). A multi-visit production, like ongoing coverage of a construction project, runs $8,890 MXN for a 4-visit package. A fully scripted, multi-location brand documentary with a dedicated crew moves well past that, usually landing between $25,000 and $60,000 MXN depending on shoot days and post-production complexity.",
+    lede: "A single-location corporate video with basic drone coverage runs from **$2,990 MXN (up to one hour on site**, one edited 30-45 second cut plus a vertical version, 10 selected aerial photos). A multi-visit production, like ongoing coverage of a construction project, runs $8,890 MXN for a 4-visit package. A fully scripted, multi-location brand documentary with a dedicated crew moves well past that, usually landing between $25,000 and $60,000 MXN depending on shoot days and post-production complexity.",
     ledeEs:
-      "Un video corporativo de una sola locación con cobertura básica de dron arranca en $2,990 MXN (hasta una hora en sitio, un video editado de 30 a 45 segundos más versión vertical, 10 fotografías aéreas seleccionadas). Una producción de varias visitas, como el seguimiento continuo de una obra, cuesta $8,890 MXN por un paquete de 4 visitas. Un documental de marca guionizado y multi-locación con equipo dedicado sube bastante más de ahí, normalmente entre $25,000 y $60,000 MXN según los días de grabación y la complejidad de postproducción.",
+      "Un video corporativo de una sola locación con cobertura básica de dron arranca en **$2,990 MXN (hasta una hora en sitio**, un video editado de 30 a 45 segundos más versión vertical, 10 fotografías aéreas seleccionadas). Una producción de varias visitas, como el seguimiento continuo de una obra, cuesta $8,890 MXN por un paquete de 4 visitas. Un documental de marca guionizado y multi-locación con equipo dedicado sube bastante más de ahí, normalmente entre $25,000 y $60,000 MXN según los días de grabación y la complejidad de postproducción.",
     sections: [
       {
         id: "que-determina-el-precio",
@@ -4102,10 +4102,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Real price tiers",
         headingEs: "Rangos reales de precio",
         body: [
-          "A single-location shoot with an edited video and basic drone coverage starts at $2,990 MXN, matching our own Captura package: up to one hour on site, one 30-45 second edited video plus a vertical cut, 10 selected aerial photos, and delivery in 5 business days. An event-coverage shoot (activations, openings, weddings) with up to 4 continuous hours runs $4,990 MXN. A multi-visit project, like documenting a construction site or vineyard over time, runs $8,890 MXN for a 4-visit package with one edited clip per visit plus a final summary video.",
+          "A single-location shoot with an edited video and basic drone coverage starts at $2,990 MXN, matching our own Captura package: up to one hour on site, one 30-45 second edited video plus a vertical cut, 10 selected aerial photos, and delivery in 5 business days. An event-coverage shoot (activations, openings, weddings) with up to 4 continuous hours runs **$4,990 MXN**. A multi-visit project, like documenting a construction site or vineyard over time, runs $8,890 MXN for a 4-visit package with one edited clip per visit plus a final summary video.",
         ],
         bodyEs: [
-          "Una grabación de una sola locación con video editado y cobertura básica de dron arranca en $2,990 MXN, el mismo precio de nuestro paquete Captura: hasta una hora en sitio, un video editado de 30 a 45 segundos más versión vertical, 10 fotografías aéreas seleccionadas, y entrega en 5 días hábiles. Una cobertura de evento (activaciones, inauguraciones, bodas) de hasta 4 horas continuas cuesta $4,990 MXN. Un proyecto de varias visitas, como documentar una obra o un viñedo con el tiempo, cuesta $8,890 MXN por un paquete de 4 visitas con un clip editado por visita más un video resumen final.",
+          "Una grabación de una sola locación con video editado y cobertura básica de dron arranca en $2,990 MXN, el mismo precio de nuestro paquete Captura: hasta una hora en sitio, un video editado de 30 a 45 segundos más versión vertical, 10 fotografías aéreas seleccionadas, y entrega en 5 días hábiles. Una cobertura de evento (activaciones, inauguraciones, bodas) de hasta 4 horas continuas cuesta **$4,990 MXN**. Un proyecto de varias visitas, como documentar una obra o un viñedo con el tiempo, cuesta $8,890 MXN por un paquete de 4 visitas con un clip editado por visita más un video resumen final.",
         ],
       },
       {
@@ -4124,10 +4124,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Real add-on costs, itemized",
         headingEs: "Costos adicionales reales, con cifras",
         body: [
-          "Raw footage (original unedited files) typically adds $999 MXN. Advanced editing, motion graphics, ad-cut versions, or sound design starts at $3,500 MXN. Extra time on site beyond what's included runs $499 MXN per 30-minute block. An additional revision round beyond what's included in the package also runs $499 MXN. Rush delivery under 72 hours typically adds 25% on top of the package price. None of these are hidden on purpose, they're simply the line items that get left off a headline number.",
+          "Raw footage (original unedited files) typically adds **$999 MXN**. Advanced editing, motion graphics, ad-cut versions, or sound design starts at $3,500 MXN. Extra time on site beyond what's included runs $499 MXN per 30-minute block. An additional revision round beyond what's included in the package also runs $499 MXN. Rush delivery under 72 hours typically adds 25% on top of the package price. None of these are hidden on purpose, they're simply the line items that get left off a headline number.",
         ],
         bodyEs: [
-          "El material RAW (archivos originales sin editar) normalmente suma $999 MXN. La edición avanzada, motion graphics, versiones para pauta, o diseño de sonido arranca en $3,500 MXN. El tiempo adicional en sitio, fuera del incluido, cuesta $499 MXN por bloque de 30 minutos. Una ronda de revisión adicional fuera de las incluidas en el paquete también cuesta $499 MXN. La entrega urgente en menos de 72 horas normalmente suma un 25% sobre el precio del paquete. Ninguno de estos está escondido a propósito, simplemente son las líneas que se quedan fuera de un número de encabezado.",
+          "El material RAW (archivos originales sin editar) normalmente suma **$999 MXN**. La edición avanzada, motion graphics, versiones para pauta, o diseño de sonido arranca en $3,500 MXN. El tiempo adicional en sitio, fuera del incluido, cuesta $499 MXN por bloque de 30 minutos. Una ronda de revisión adicional fuera de las incluidas en el paquete también cuesta $499 MXN. La entrega urgente en menos de 72 horas normalmente suma un 25% sobre el precio del paquete. Ninguno de estos está escondido a propósito, simplemente son las líneas que se quedan fuera de un número de encabezado.",
         ],
       },
       {
@@ -4232,10 +4232,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What's actually at stake if this gets skipped",
         headingEs: "Qué está realmente en juego si se salta este paso",
         body: [
-          "Flying in restricted airspace without the proper coordination carries real regulatory risk for whoever is operating the drone, not just an inconvenience. It's one of the reasons it's worth confirming a production team actually checks this as a standard step, rather than assuming any location is fair game. Beyond the regulatory risk, unauthorized flights near controlled airspace can also result in the equipment being grounded or confiscated during the investigation, a cost far higher than the $999 MXN permit management fee that would have avoided the problem entirely.",
+          "Flying in restricted airspace without the proper coordination carries real regulatory risk for whoever is operating the drone, not just an inconvenience. It's one of the reasons it's worth confirming a production team actually checks this as a standard step, rather than assuming any location is fair game. Beyond the regulatory risk, unauthorized flights near controlled airspace can also result in the equipment being grounded or confiscated during the investigation, a cost far higher than the **$999 MXN** permit management fee that would have avoided the problem entirely.",
         ],
         bodyEs: [
-          "Volar en espacio aéreo restringido sin la coordinación adecuada implica un riesgo regulatorio real para quien está operando el dron, no solo una molestia. Es una de las razones por las que vale la pena confirmar que un equipo de producción realmente revisa esto como paso estándar, en vez de asumir que cualquier ubicación es válida sin más. Más allá del riesgo regulatorio, los vuelos no autorizados cerca de espacio aéreo controlado también pueden resultar en que el equipo se quede en tierra o sea confiscado durante la investigación, un costo mucho mayor que los $999 MXN de la gestión de permiso que habría evitado el problema por completo.",
+          "Volar en espacio aéreo restringido sin la coordinación adecuada implica un riesgo regulatorio real para quien está operando el dron, no solo una molestia. Es una de las razones por las que vale la pena confirmar que un equipo de producción realmente revisa esto como paso estándar, en vez de asumir que cualquier ubicación es válida sin más. Más allá del riesgo regulatorio, los vuelos no autorizados cerca de espacio aéreo controlado también pueden resultar en que el equipo se quede en tierra o sea confiscado durante la investigación, un costo mucho mayor que los **$999 MXN** de la gestión de permiso que habría evitado el problema por completo.",
         ],
       },
     ],
@@ -4296,10 +4296,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Start from your close rate, not your budget comfort",
         headingEs: "Empieza por tu tasa de cierre, no por lo que se siente cómodo gastar",
         body: [
-          "If one in five leads becomes a customer and a customer is worth a known amount, that math tells you what you can afford to pay per lead and still profit. Working forward from a round monthly number skips this step entirely and often either overspends or underfunds the campaign. As a working example: if a customer is worth $15,000 MXN and one in five leads closes, the math says you can pay up to roughly $3,000 MXN per lead and still break even, which is the number that should drive the budget conversation, not a round figure picked because it feels affordable.",
+          "If one in five leads becomes a customer and a customer is worth a known amount, that math tells you what you can afford to pay per lead and still profit. Working forward from a round monthly number skips this step entirely and often either overspends or underfunds the campaign. As a working example: if a customer is worth **$15,000 MXN** and one in five leads closes, the math says you can pay up to roughly $3,000 MXN per lead and still break even, which is the number that should drive the budget conversation, not a round figure picked because it feels affordable.",
         ],
         bodyEs: [
-          "Si uno de cada cinco leads se vuelve cliente y un cliente vale un monto conocido, esa cuenta te dice cuánto puedes pagar por lead y aun así ser rentable. Trabajar hacia adelante desde un número mensual redondo se salta este paso por completo y muchas veces gasta de más o financia de menos la campaña. Como ejemplo concreto: si un cliente vale $15,000 MXN y uno de cada cinco leads cierra, la cuenta dice que puedes pagar hasta unos $3,000 MXN por lead y seguir en punto de equilibrio, y ese es el número que debería guiar la conversación de presupuesto, no una cifra redonda elegida porque se siente accesible.",
+          "Si uno de cada cinco leads se vuelve cliente y un cliente vale un monto conocido, esa cuenta te dice cuánto puedes pagar por lead y aun así ser rentable. Trabajar hacia adelante desde un número mensual redondo se salta este paso por completo y muchas veces gasta de más o financia de menos la campaña. Como ejemplo concreto: si un cliente vale **$15,000 MXN** y uno de cada cinco leads cierra, la cuenta dice que puedes pagar hasta unos $3,000 MXN por lead y seguir en punto de equilibrio, y ese es el número que debería guiar la conversación de presupuesto, no una cifra redonda elegida porque se siente accesible.",
         ],
       },
       {
@@ -4307,10 +4307,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Your category's cost per click sets the floor",
         headingEs: "El costo por clic de tu categoría marca el piso",
         body: [
-          "Competitive categories (legal, finance, real estate) carry a higher cost per click than low-competition local services. A budget that doesn't account for your category's actual auction dynamics either buys too few clicks to learn anything or runs out mid-month. Competitive categories like legal or real estate can run cost-per-click well above $30-50 MXN in Mexico, while low-competition local services often sit under $10 MXN, which is why the same budget buys wildly different volumes of traffic depending on the category.",
+          "Competitive categories (legal, finance, real estate) carry a higher cost per click than low-competition local services. A budget that doesn't account for your category's actual auction dynamics either buys too few clicks to learn anything or runs out mid-month. Competitive categories like legal or real estate can run cost-per-click well above **$30**-50 MXN in Mexico, while low-competition local services often sit under $10 MXN, which is why the same budget buys wildly different volumes of traffic depending on the category.",
         ],
         bodyEs: [
-          "Las categorías competidas (legal, finanzas, bienes raíces) tienen un costo por clic más alto que servicios locales de baja competencia. Un presupuesto que no toma en cuenta la dinámica real de subasta de tu categoría, o compra muy pocos clics para aprender algo, o se acaba a media del mes. Las categorías competidas como legal o bienes raíces pueden tener un costo por clic muy por encima de $30 a $50 MXN en México, mientras que servicios locales de baja competencia suelen estar por debajo de $10 MXN, y por eso el mismo presupuesto compra volúmenes de tráfico muy distintos según la categoría.",
+          "Las categorías competidas (legal, finanzas, bienes raíces) tienen un costo por clic más alto que servicios locales de baja competencia. Un presupuesto que no toma en cuenta la dinámica real de subasta de tu categoría, o compra muy pocos clics para aprender algo, o se acaba a media del mes. Las categorías competidas como legal o bienes raíces pueden tener un costo por clic muy por encima de **$30 a $50 MXN en México**, mientras que servicios locales de baja competencia suelen estar por debajo de $10 MXN, y por eso el mismo presupuesto compra volúmenes de tráfico muy distintos según la categoría.",
         ],
       },
       {
@@ -4418,7 +4418,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Managing an account well takes ongoing weekly attention, not a one-time setup. For a business owner, that time comes directly out of hours that could go toward sales, operations, or product, which is often worth more than what an agency would charge to handle it. If managing an account well takes even 3-5 hours a week, and an hour of the owner's time is worth more than what an agency charges for that same hour of management, the math already favors delegating it, regardless of how capable the owner is.",
         ],
         bodyEs: [
-          "Manejar bien una cuenta requiere atención semanal continua, no una configuración de una sola vez. Para un dueño de negocio, ese tiempo sale directamente de horas que podrían ir hacia ventas, operación o producto, lo cual muchas veces vale más que lo que cobraría una agencia por manejarla. Si manejar bien una cuenta toma incluso 3 a 5 horas a la semana, y una hora del tiempo del dueño vale más de lo que cobra una agencia por esa misma hora de manejo, la cuenta ya favorece delegarlo, sin importar qué tan capaz sea el dueño.",
+          "Manejar bien una cuenta requiere atención semanal continua, no una configuración de una sola vez. Para un dueño de negocio, ese tiempo sale directamente de horas que podrían ir hacia ventas, operación o producto, lo cual muchas veces vale más que lo que cobraría una agencia por manejarla. Si manejar bien una cuenta toma incluso **3 a 5 horas a la semana**, y una hora del tiempo del dueño vale más de lo que cobra una agencia por esa misma hora de manejo, la cuenta ya favorece delegarlo, sin importar qué tan capaz sea el dueño.",
         ],
       },
       {
@@ -4490,10 +4490,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How it actually works",
         headingEs: "Cómo funciona en realidad",
         body: [
-          'A tracking tag, the Meta Pixel on Facebook and Instagram, or a similar tag inside Google Ads, logs visitors into an audience list the moment they land on the site. Once someone is on that list, usually within 24 to 48 hours of the visit, they can be shown ads specifically as they browse elsewhere online, reminding them of a business they already looked at instead of introducing them cold. Most platforms let you build lists as narrow as "visited this specific page but didn\'t fill out the form."',
+          'A tracking tag, the Meta Pixel on Facebook and Instagram, or a similar tag inside Google Ads, logs visitors into an audience list the moment they land on the site. Once someone is on that list, usually within **24 to 48 hours of the visit**, they can be shown ads specifically as they browse elsewhere online, reminding them of a business they already looked at instead of introducing them cold. Most platforms let you build lists as narrow as "visited this specific page but didn\'t fill out the form."',
         ],
         bodyEs: [
-          'Una etiqueta de rastreo, el Pixel de Meta en Facebook e Instagram, o una etiqueta similar dentro de Google Ads, registra a los visitantes en una lista de audiencia en el momento que llegan al sitio. Una vez que alguien está en esa lista, normalmente dentro de las 24 a 48 horas después de la visita, se le pueden mostrar anuncios específicamente mientras navega en otros lugares en línea, recordándole un negocio que ya conoció en vez de presentárselo desde cero. La mayoría de las plataformas permiten construir listas tan específicas como "visitó esta página en particular pero no llenó el formulario".',
+          'Una etiqueta de rastreo, el Pixel de Meta en Facebook e Instagram, o una etiqueta similar dentro de Google Ads, registra a los visitantes en una lista de audiencia en el momento que llegan al sitio. Una vez que alguien está en esa lista, normalmente dentro de las **24 a 48 horas después de la visita**, se le pueden mostrar anuncios específicamente mientras navega en otros lugares en línea, recordándole un negocio que ya conoció en vez de presentárselo desde cero. La mayoría de las plataformas permiten construir listas tan específicas como "visitó esta página en particular pero no llenó el formulario".',
         ],
       },
       {
@@ -4642,10 +4642,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Realistic cost and timeline expectations",
         headingEs: "Expectativas realistas de costo y tiempo",
         body: [
-          "A Presence or Professional-tier site runs $6,000 to $60,000 MXN and takes 3 to 6 weeks once content is approved. Lead-Gen or Automated tiers run $80,000 to $150,000 MXN and take 6 to 10 weeks. Custom commercial systems or SaaS start above $150,000 MXN and can take several months. The bottleneck is almost always content and client decisions, not the development itself.",
+          "A Presence or Professional-tier site runs **$6,000 to $60,000 MXN** and takes 3 to 6 weeks once content is approved. Lead-Gen or Automated tiers run $80,000 to $150,000 MXN and take 6 to 10 weeks. Custom commercial systems or SaaS start above $150,000 MXN and can take several months. The bottleneck is almost always content and client decisions, not the development itself.",
         ],
         bodyEs: [
-          "Un sitio de nivel Presencial o Profesional cuesta entre $6,000 y $60,000 MXN y toma de 3 a 6 semanas desde que se aprueba el contenido. Los niveles de Captación o Automatizada van de $80,000 a $150,000 MXN y toman de 6 a 10 semanas. Los sistemas comerciales o SaaS a medida arrancan sobre los $150,000 MXN y pueden tomar varios meses. El cuello de botella casi siempre es el contenido y las decisiones del cliente, no el desarrollo en sí.",
+          "Un sitio de nivel Presencial o Profesional cuesta entre **$6,000 y $60,000 MXN** y toma de 3 a 6 semanas desde que se aprueba el contenido. Los niveles de Captación o Automatizada van de $80,000 a $150,000 MXN y toman de 6 a 10 semanas. Los sistemas comerciales o SaaS a medida arrancan sobre los $150,000 MXN y pueden tomar varios meses. El cuello de botella casi siempre es el contenido y las decisiones del cliente, no el desarrollo en sí.",
         ],
       },
       {
@@ -4735,7 +4735,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A Presence or Professional-tier website takes 3 to 6 weeks once content is approved. A Lead-Gen or Automated site, with forms, integrations and conversion logic, takes 6 to 10 weeks. Custom commercial systems or SaaS can take several months. Development speed is rarely what determines these timelines.",
+    lede: "A Presence or Professional-tier website takes **3 to 6 weeks once content is approved**. A Lead-Gen or Automated site, with forms, integrations and conversion logic, takes 6 to 10 weeks. Custom commercial systems or SaaS can take several months. Development speed is rarely what determines these timelines.",
     ledeEs:
       "Un sitio de nivel Presencial o Profesional toma entre 3 y 6 semanas desde que se aprueba el contenido. Un sitio de Captación o Automatizado, con formularios, integraciones y lógica de conversión, toma de 6 a 10 semanas. Sistemas comerciales o SaaS a medida pueden tomar varios meses. La velocidad de desarrollo casi nunca es lo que determina estos tiempos.",
     sections: [
@@ -4744,10 +4744,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Timeline by tier",
         headingEs: "Tiempos por nivel",
         body: [
-          "Presence and Professional tiers: 3 to 6 weeks. Lead-Gen and Automated tiers: 6 to 10 weeks, since they add forms, integrations and [[conversion|conversion]] logic that need testing. Commercial systems and custom SaaS: several months, because they involve custom development and often a database architecture built from scratch.",
+          "Presence and Professional tiers: 3 to 6 weeks. Lead-Gen and Automated tiers: **6 to 10 weeks**, since they add forms, integrations and [[conversion|conversion]] logic that need testing. Commercial systems and custom SaaS: several months, because they involve custom development and often a database architecture built from scratch.",
         ],
         bodyEs: [
-          "Niveles Presencial y Profesional: de 3 a 6 semanas. Niveles de Captación y Automatizada: de 6 a 10 semanas, porque suman formularios, integraciones y lógica de [[conversión|conversion]] que necesitan probarse. Sistemas comerciales y SaaS a medida: varios meses, porque implican desarrollo a la medida y muchas veces una arquitectura de base de datos construida desde cero.",
+          "Niveles Presencial y Profesional: de **3 a 6 semanas**. Niveles de Captación y Automatizada: de 6 a 10 semanas, porque suman formularios, integraciones y lógica de [[conversión|conversion]] que necesitan probarse. Sistemas comerciales y SaaS a medida: varios meses, porque implican desarrollo a la medida y muchas veces una arquitectura de base de datos construida desde cero.",
         ],
       },
       {
@@ -4841,10 +4841,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "WordPress: the plugin ecosystem, and its cost",
         headingEs: "WordPress: el ecosistema de plugins, y su costo",
         body: [
-          "WordPress's real strength is its plugin ecosystem, almost any functionality already exists as a plugin, which makes it fast to add features without custom code. The tradeoff is that each plugin is a dependency that needs updates, can conflict with others, and adds a potential security vulnerability. A WordPress site with fifteen plugins is fifteen things that can break independently. As a cost reference, a WordPress site with premium plugins and a theme typically runs $15,000-$35,000 MXN to set up, with ongoing plugin licenses and maintenance adding $1,500-$4,000 MXN a year on top.",
+          "WordPress's real strength is its plugin ecosystem, almost any functionality already exists as a plugin, which makes it fast to add features without custom code. The tradeoff is that each plugin is a dependency that needs updates, can conflict with others, and adds a potential security vulnerability. A WordPress site with fifteen plugins is fifteen things that can break independently. As a cost reference, a WordPress site with premium plugins and a theme typically runs **$15,000-$35,000 MXN to set up**, with ongoing plugin licenses and maintenance adding $1,500-$4,000 MXN a year on top.",
         ],
         bodyEs: [
-          "La verdadera fortaleza de WordPress es su ecosistema de plugins: casi cualquier funcionalidad ya existe como plugin, lo que lo hace rápido para agregar funciones sin código a medida. El costo es que cada plugin es una dependencia que necesita actualizarse, puede entrar en conflicto con otros, y suma una posible vulnerabilidad de seguridad. Un sitio de WordPress con quince plugins son quince cosas que pueden fallar de forma independiente. Como referencia de costo, un sitio de WordPress con plugins premium y un tema normalmente cuesta entre $15,000 y $35,000 MXN de configuración inicial, con licencias de plugins y mantenimiento continuo que suman $1,500 a $4,000 MXN al año adicionales.",
+          "La verdadera fortaleza de WordPress es su ecosistema de plugins: casi cualquier funcionalidad ya existe como plugin, lo que lo hace rápido para agregar funciones sin código a medida. El costo es que cada plugin es una dependencia que necesita actualizarse, puede entrar en conflicto con otros, y suma una posible vulnerabilidad de seguridad. Un sitio de WordPress con quince plugins son quince cosas que pueden fallar de forma independiente. Como referencia de costo, un sitio de WordPress con plugins premium y un tema normalmente cuesta entre **$15,000 y $35,000 MXN de configuración inicial**, con licencias de plugins y mantenimiento continuo que suman $1,500 a $4,000 MXN al año adicionales.",
         ],
       },
       {
@@ -4852,10 +4852,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Custom development: full control, at a real cost",
         headingEs: "Desarrollo a medida: control total, a un costo real",
         body: [
-          "Custom development means every piece of the site is built specifically for the business, with no unused features, no plugin bloat, and full control over performance and structure. It costs more upfront and takes longer than a template-based approach, but it removes the ceiling that pre-built systems eventually hit as a business grows. That control comes at a higher entry price, typically starting around $25,000-$60,000 MXN for a Professional-tier custom build, but with no recurring plugin licenses and a codebase that doesn't accumulate the same maintenance debt over time.",
+          "Custom development means every piece of the site is built specifically for the business, with no unused features, no plugin bloat, and full control over performance and structure. It costs more upfront and takes longer than a template-based approach, but it removes the ceiling that pre-built systems eventually hit as a business grows. That control comes at a higher entry price, typically starting around **$25,000-$60,000 MXN for a Professional-tier custom build**, but with no recurring plugin licenses and a codebase that doesn't accumulate the same maintenance debt over time.",
         ],
         bodyEs: [
-          "El desarrollo a medida significa que cada parte del sitio se construye específicamente para el negocio, sin funciones sin usar, sin exceso de plugins, y con control total sobre rendimiento y estructura. Cuesta más de entrada y toma más tiempo que un enfoque basado en plantillas, pero elimina el techo con el que los sistemas prefabricados eventualmente chocan conforme el negocio crece. Ese control viene con un precio de entrada más alto, normalmente arrancando alrededor de $25,000 a $60,000 MXN para una construcción a medida de nivel Profesional, pero sin licencias de plugins recurrentes y con una base de código que no acumula la misma deuda de mantenimiento con el tiempo.",
+          "El desarrollo a medida significa que cada parte del sitio se construye específicamente para el negocio, sin funciones sin usar, sin exceso de plugins, y con control total sobre rendimiento y estructura. Cuesta más de entrada y toma más tiempo que un enfoque basado en plantillas, pero elimina el techo con el que los sistemas prefabricados eventualmente chocan conforme el negocio crece. Ese control viene con un precio de entrada más alto, normalmente arrancando alrededor de **$25,000 a $60,000 MXN** para una construcción a medida de nivel Profesional, pero sin licencias de plugins recurrentes y con una base de código que no acumula la misma deuda de mantenimiento con el tiempo.",
         ],
       },
       {
@@ -5361,9 +5361,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Google's own research found that as load time goes from 1 to 3 seconds, the probability of a visitor bouncing increases by 32%, and it keeps climbing from there. Speed isn't a nice-to-have polish item, it directly determines how many of the visitors a business paid to attract actually see the page, and it's one of the concrete signals Google's Core Web Vitals use for ranking.",
+    lede: "Google's own research found that as load time goes from 1 to 3 seconds, the probability of a visitor bouncing increases by **32%**, and it keeps climbing from there. Speed isn't a nice-to-have polish item, it directly determines how many of the visitors a business paid to attract actually see the page, and it's one of the concrete signals Google's Core Web Vitals use for ranking.",
     ledeEs:
-      "La propia investigación de Google encontró que conforme el tiempo de carga sube de 1 a 3 segundos, la probabilidad de que un visitante rebote aumenta un 32%, y sigue subiendo de ahí. La velocidad no es un detalle de pulido, determina directamente cuántos de los visitantes que un negocio pagó por atraer realmente llegan a ver la página, y es una de las señales concretas que los Core Web Vitals de Google usan para el posicionamiento.",
+      "La propia investigación de Google encontró que conforme el tiempo de carga sube de 1 a 3 segundos, la probabilidad de que un visitante rebote aumenta un **32%**, y sigue subiendo de ahí. La velocidad no es un detalle de pulido, determina directamente cuántos de los visitantes que un negocio pagó por atraer realmente llegan a ver la página, y es una de las señales concretas que los Core Web Vitals de Google usan para el posicionamiento.",
     sections: [
       {
         id: "por-que-importa-tanto",
@@ -5403,10 +5403,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What actually fixes it",
         headingEs: "Qué lo arregla realmente",
         body: [
-          "Compressing and properly sizing images almost always produces the biggest single improvement, often cutting load time by half or more on its own. After that, removing unnecessary scripts, using modern image formats like WebP (roughly 25-35% smaller than JPEG at equivalent quality), and choosing hosting that matches the site's traffic level close most of the remaining gap.",
+          "Compressing and properly sizing images almost always produces the biggest single improvement, often cutting load time by half or more on its own. After that, removing unnecessary scripts, using modern image formats like WebP (roughly 25-**35%** smaller than JPEG at equivalent quality), and choosing hosting that matches the site's traffic level close most of the remaining gap.",
         ],
         bodyEs: [
-          "Comprimir y dimensionar correctamente las imágenes casi siempre produce la mejora individual más grande, muchas veces recortando el tiempo de carga a la mitad o más por su cuenta. Después de eso, quitar scripts innecesarios, usar formatos de imagen modernos como WebP (aproximadamente 25 a 35% más ligero que JPEG a calidad equivalente), y elegir un hosting acorde al nivel de tráfico del sitio cierran la mayor parte de lo que falta.",
+          "Comprimir y dimensionar correctamente las imágenes casi siempre produce la mejora individual más grande, muchas veces recortando el tiempo de carga a la mitad o más por su cuenta. Después de eso, quitar scripts innecesarios, usar formatos de imagen modernos como WebP (aproximadamente 25 a **35%** más ligero que JPEG a calidad equivalente), y elegir un hosting acorde al nivel de tráfico del sitio cierran la mayor parte de lo que falta.",
         ],
       },
     ],
@@ -5478,10 +5478,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The main types of hosting",
         headingEs: "Los tipos principales de hosting",
         body: [
-          "Shared hosting splits server resources among many sites and is the cheapest option, fine for low-traffic sites but prone to slowdowns when a neighboring site spikes in traffic. VPS and cloud hosting dedicate resources specifically to one site, costing more but performing far more consistently. Managed hosting adds handled updates and security on top of either. As a rough price reference, shared hosting typically runs $50-$200 MXN per month, while VPS or cloud hosting for a business site with real traffic runs $300-$1,500 MXN per month depending on the provider and resources allocated.",
+          "Shared hosting splits server resources among many sites and is the cheapest option, fine for low-traffic sites but prone to slowdowns when a neighboring site spikes in traffic. VPS and cloud hosting dedicate resources specifically to one site, costing more but performing far more consistently. Managed hosting adds handled updates and security on top of either. As a rough price reference, shared hosting typically runs **$50-$200 MXN per month**, while VPS or cloud hosting for a business site with real traffic runs $300-$1,500 MXN per month depending on the provider and resources allocated.",
         ],
         bodyEs: [
-          "El hosting compartido divide los recursos del servidor entre muchos sitios y es la opción más barata, funciona bien para sitios de bajo tráfico pero es propenso a lentitud cuando un sitio vecino tiene un pico de tráfico. El hosting VPS y en la nube dedica recursos específicamente a un sitio, cuesta más pero rinde de forma mucho más consistente. El hosting administrado suma actualizaciones y seguridad gestionadas sobre cualquiera de los dos. Como referencia de precio, el hosting compartido normalmente cuesta entre $50 y $200 MXN al mes, mientras que el hosting VPS o en la nube para un sitio de negocio con tráfico real cuesta entre $300 y $1,500 MXN al mes según el proveedor y los recursos asignados.",
+          "El hosting compartido divide los recursos del servidor entre muchos sitios y es la opción más barata, funciona bien para sitios de bajo tráfico pero es propenso a lentitud cuando un sitio vecino tiene un pico de tráfico. El hosting VPS y en la nube dedica recursos específicamente a un sitio, cuesta más pero rinde de forma mucho más consistente. El hosting administrado suma actualizaciones y seguridad gestionadas sobre cualquiera de los dos. Como referencia de precio, el hosting compartido normalmente cuesta entre **$50 y $200 MXN al mes**, mientras que el hosting VPS o en la nube para un sitio de negocio con tráfico real cuesta entre $300 y $1,500 MXN al mes según el proveedor y los recursos asignados.",
         ],
       },
       {
@@ -5555,9 +5555,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A domain is the address customers will type, say out loud, and remember for years, which makes it a business decision, not just a technical checkbox during setup. A .mx domain typically costs $200-$400 MXN per year and a .com runs $250-$450 MXN, registering both together to protect the brand costs under $1,000 MXN a year combined, cheap compared to the cost of a competitor grabbing the other one later.",
+    lede: "A domain is the address customers will type, say out loud, and remember for years, which makes it a business decision, not just a technical checkbox during setup. A .mx domain typically costs **$200-$400 MXN per year** and a .com runs $250-$450 MXN, registering both together to protect the brand costs under $1,000 MXN a year combined, cheap compared to the cost of a competitor grabbing the other one later.",
     ledeEs:
-      "El dominio es la dirección que los clientes van a escribir, decir en voz alta y recordar durante años, lo que lo convierte en una decisión de negocio, no solo en una casilla técnica que marcar durante la configuración. Un dominio .mx cuesta típicamente entre $200 y $400 MXN al año y un .com entre $250 y $450 MXN, registrar ambos juntos para proteger la marca cuesta menos de $1,000 MXN al año en conjunto, barato comparado con el costo de que un competidor tome el otro después.",
+      "El dominio es la dirección que los clientes van a escribir, decir en voz alta y recordar durante años, lo que lo convierte en una decisión de negocio, no solo en una casilla técnica que marcar durante la configuración. Un dominio .mx cuesta típicamente entre **$200 y $400 MXN al año** y un .com entre $250 y $450 MXN, registrar ambos juntos para proteger la marca cuesta menos de $1,000 MXN al año en conjunto, barato comparado con el costo de que un competidor tome el otro después.",
     sections: [
       {
         id: "que-hace-un-buen-dominio",
@@ -5575,10 +5575,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: ".mx, .com, or both",
         headingEs: ".mx, .com, o ambos",
         body: [
-          "A .com signals broader, sometimes international reach, while a .mx signals a specifically Mexican business, which can build trust with a local audience. Pricing runs similarly, roughly $200-$400 MXN per year for .mx and $250-$450 MXN for .com depending on the registrar. When budget allows, registering both (under $1,000 MXN a year combined) and pointing one to the other protects the brand from a competitor grabbing the other extension later, a much cheaper problem to prevent than to fix.",
+          "A .com signals broader, sometimes international reach, while a .mx signals a specifically Mexican business, which can build trust with a local audience. Pricing runs similarly, roughly $200-$400 MXN per year for .mx and **$250-$450 MXN for **.com depending on the registrar. When budget allows, registering both (under $1,000 MXN a year combined) and pointing one to the other protects the brand from a competitor grabbing the other extension later, a much cheaper problem to prevent than to fix.",
         ],
         bodyEs: [
-          "Un .com transmite un alcance más amplio, a veces internacional, mientras que un .mx transmite un negocio específicamente mexicano, lo que puede generar confianza con una audiencia local. El precio es similar, aproximadamente $200 a $400 MXN al año para .mx y $250 a $450 MXN para .com según el registrador. Cuando el presupuesto lo permite, registrar ambos (menos de $1,000 MXN al año en conjunto) y apuntar uno hacia el otro protege la marca de que un competidor tome la otra extensión después, un problema mucho más barato de prevenir que de arreglar.",
+          "Un .com transmite un alcance más amplio, a veces internacional, mientras que un .mx transmite un negocio específicamente mexicano, lo que puede generar confianza con una audiencia local. El precio es similar, aproximadamente **$200 a $400 MXN al año para **.mx y $250 a $450 MXN para .com según el registrador. Cuando el presupuesto lo permite, registrar ambos (menos de $1,000 MXN al año en conjunto) y apuntar uno hacia el otro protege la marca de que un competidor tome la otra extensión después, un problema mucho más barato de prevenir que de arreglar.",
         ],
       },
       {
@@ -5694,10 +5694,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When a redesign genuinely isn't needed",
         headingEs: "Cuándo un rediseño en realidad no hace falta",
         body: [
-          "If PageSpeed scores above 70, the site passes the mobile-friendly test, [[conversion rate|tasa-de-conversion]]s are flat or improving, and the site still accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost, roughly $6,000-$15,000 MXN for content and design touch-ups versus $25,000 MXN and up for a full rebuild.",
+          "If PageSpeed scores above 70, the site passes the mobile-friendly test, [[conversion rate|tasa-de-conversion]]s are flat or improving, and the site still accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost, roughly **$6,000-$15,000 MXN for content** and design touch-ups versus $25,000 MXN and up for a full rebuild.",
         ],
         bodyEs: [
-          "Si PageSpeed marca arriba de 70, el sitio pasa la prueba de compatibilidad móvil, las tasas de conversión están estables o mejorando, y el sitio sigue representando bien al negocio, la edad por sí sola no es razón para reconstruirlo. Las actualizaciones puntuales (copy nuevo, fotos actualizadas, una sección renovada) muchas veces resuelven el problema real por una fracción del costo de un rediseño completo, aproximadamente $6,000 a $15,000 MXN por retoques de contenido y diseño contra $25,000 MXN en adelante por una reconstrucción completa.",
+          "Si PageSpeed marca arriba de 70, el sitio pasa la prueba de compatibilidad móvil, las tasas de conversión están estables o mejorando, y el sitio sigue representando bien al negocio, la edad por sí sola no es razón para reconstruirlo. Las actualizaciones puntuales (copy nuevo, fotos actualizadas, una sección renovada) muchas veces resuelven el problema real por una fracción del costo de un rediseño completo, aproximadamente **$6,000 a $15,000 MXN por retoques de contenido** y diseño contra $25,000 MXN en adelante por una reconstrucción completa.",
         ],
       },
       {
@@ -5868,10 +5868,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What not to automate",
         headingEs: "Qué no automatizar",
         body: [
-          'Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs three times a year rarely repays the hours it takes to wire up. The judgment calls are in [what to automate first in your business](/blog/que-automatizar-en-mi-negocio).',
+          'Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs **three times** a year rarely repays the hours it takes to wire up. The judgment calls are in [what to automate first in your business](/blog/que-automatizar-en-mi-negocio).',
         ],
         bodyEs: [
-          'Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre tres veces al año rara vez paga las horas que toma conectarlo. Los criterios están en [qué automatizar primero en tu negocio](/blog/que-automatizar-en-mi-negocio).',
+          'Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre **tres veces** al año rara vez paga las horas que toma conectarlo. Los criterios están en [qué automatizar primero en tu negocio](/blog/que-automatizar-en-mi-negocio).',
         ],
       },
       {
@@ -6224,7 +6224,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "How often does this happen? Does it follow the same steps every time? What does it cost when it gets skipped? A task that happens daily, always the same way, and costs a sale when forgotten is an obvious yes. One that happens twice a year and changes every time is an obvious no. Most of the judgment lives in between.",
         ],
         bodyEs: [
-          "¿Qué tan seguido pasa esto? ¿Sigue los mismos pasos siempre? ¿Qué cuesta cuando se salta? Una tarea que pasa a diario, siempre igual, y cuesta una venta cuando se olvida es un sí obvio. Una que pasa dos veces al año y cambia cada vez es un no obvio. Casi todo el criterio vive en medio.",
+          "¿Qué tan seguido pasa esto? ¿Sigue los mismos pasos siempre? ¿Qué cuesta cuando se salta? Una tarea que pasa a diario, siempre igual, y cuesta una venta cuando se olvida es un sí obvio. Una que pasa **dos veces al año** y cambia cada vez es un no obvio. Casi todo el criterio vive en medio.",
         ],
       },
       {
@@ -6831,7 +6831,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ask any small sales team what happens to a quote that goes unanswered. The honest answer is usually nothing: it stays in someone's head for a week and then gets forgotten under new [[leads|lead]]. That is not a discipline problem, it is a systems problem, and it is exactly what automation is for.",
         ],
         bodyEs: [
-          "Pregúntale a cualquier equipo de ventas chico qué pasa con una cotización que no fue contestada. La respuesta honesta suele ser nada: se queda en la cabeza de alguien una semana y después se olvida bajo leads nuevos. Eso no es un problema de disciplina, es un problema de sistema, y es exactamente para lo que sirve la automatización.",
+          "Pregúntale a cualquier equipo de ventas chico qué pasa con una cotización que no fue contestada. **La respuesta honesta suele ser nada: se queda en la cabeza de alguien una semana y después se olvida bajo leads nuevos.** Eso no es un problema de disciplina, es un problema de sistema, y es exactamente para lo que sirve la automatización.",
         ],
       },
       {
@@ -7402,7 +7402,7 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Existen dos trámites distintos y cuál aplica depende de quién anuncia, no del medio.",
           "El artículo 86 enumera lo que requiere aviso, una notificación presentada ante la autoridad, y su primera fracción son las actividades profesionales, técnicas, auxiliares y las especialidades. Este es el profesional individual que anuncia su propio ejercicio.",
-          "El artículo 79 enumera lo que requiere permiso, una autorización, y su primera fracción es la prestación de servicios de salud, salvo cuando se trate de servicios otorgados en forma individual. Una clínica u hospital como establecimiento queda entonces del lado del permiso. La fracción sexta del mismo artículo cubre servicios y procedimientos de embellecimiento, sin excepción individual, y esa es la que los consultorios estéticos y de odontología cosmética deberían leer dos veces.",
+          "El artículo 79 enumera lo que requiere permiso, una autorización, y su primera fracción es la prestación de servicios de salud, salvo cuando se trate de servicios otorgados en forma individual. Una clínica u hospital como establecimiento queda entonces del lado del permiso. La fracción sexta del mismo artículo cubre servicios y procedimientos de embellecimiento, sin excepción individual, y esa es la que los consultorios estéticos y de odontología cosmética deberían leer **dos veces**.",
           "Ahora el plazo, que es el detalle que casi todos los resúmenes invierten. El artículo 87 fija la regla general de que el aviso se presenta dentro de los cinco días posteriores al inicio de la difusión. Y luego su párrafo final saca expresamente a las actividades profesionales: ese aviso debe presentarse dentro de los cinco días previos al inicio de la difusión. Antes, no después. Mismo artículo, dirección contraria.",
           "El artículo 78 cierra el círculo por el otro lado. Los medios de difusión deben asegurarse de que la publicidad que transmiten cuente con el permiso correspondiente o con aviso presentado, y el anunciante tiene que entregarle al medio una copia. Las plataformas no lo verifican en la práctica, que es exactamente la razón por la que nadie nota que está fuera de cumplimiento hasta que alguien se queja.",
           "Esto es resumen normativo, no asesoría legal. Antes de presentar cualquier trámite, confirma el procedimiento y los requisitos vigentes con COFEPRIS o con un abogado especializado, porque estas disposiciones se han reformado varias veces.",
@@ -7742,7 +7742,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Este es a la vez el elemento de confianza más fuerte y una obligación legal, lo que lo convierte en la decisión más fácil de la lista.",
           "El artículo 19 del Reglamento de la Ley General de Salud en Materia de Publicidad exige que los profesionales que ejercen las actividades y especialidades que cubre la ley expresen, en la publicidad que realicen y cualquiera que sea el medio publicitario, la institución educativa que les expidió el título, diploma o certificado y, en su caso, el número de cédula profesional.",
           "Así que ponlo donde un paciente lo lea, no en el pie de página. Nombre completo, especialidad, institución que expidió el título, número de cédula, y para especialistas la certificación del consejo si la tienen.",
-          "Dale a cada profesional una página en vez de un párrafo en una página de equipo compartida. Formación, años de práctica, afiliaciones hospitalarias, los procedimientos que efectivamente realiza, una fotografía real. Esta página sirve dos veces: es lo que lee un paciente cauteloso antes de agendar, y es la señal de autoría que el contenido de salud necesita, que cubrimos en [E-E-A-T en contenido médico](/blog/eeat-contenido-medico).",
+          "Dale a cada profesional una página en vez de un párrafo en una página de equipo compartida. Formación, años de práctica, afiliaciones hospitalarias, los procedimientos que efectivamente realiza, una fotografía real. Esta página sirve **dos veces**: es lo que lee un paciente cauteloso antes de agendar, y es la señal de autoría que el contenido de salud necesita, que cubrimos en [E-E-A-T en contenido médico](/blog/eeat-contenido-medico).",
           "El artículo 18 agrega la restricción desde el otro lado: no se autorizará la publicidad cuando no se acredite que el establecimiento cuenta con personal capacitado y con los recursos técnicos y materiales adecuados. Si afirmas una capacidad en el sitio, el edificio debería sostenerla.",
         ],
       },
@@ -7758,7 +7758,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Keep claims defensible. Article 18 withholds authorisation from advertising that offers preventive, curative or rehabilitative treatments whose efficacy has not been scientifically proven, so the phrasing on procedure pages is not purely a marketing choice.",
         ],
         bodyEs: [
-          "El error estructural más común es una sola página de servicios que enlista veinte tratamientos en viñetas. No posiciona para nada y no le responde a nadie.",
+          "**El error estructural más común es una sola página de servicios que enlista veinte tratamientos en viñetas.** No posiciona para nada y no le responde a nadie.",
           "Los pacientes buscan por procedimiento, y cada procedimiento carga un conjunto distinto de preocupaciones. Quien investiga endodoncia quiere saber del dolor y de cuántas visitas. Quien investiga implantes quiere saber de injerto óseo, tiempo de cicatrización y costo total. La misma página no puede servirle a los dos.",
           "Una página de procedimiento útil cubre qué es el tratamiento en lenguaje llano, para quién es apropiado, qué ocurre realmente paso a paso, cuánto tarda la recuperación, cuánto cuesta o qué determina el costo, cuáles son las alternativas y cuáles son los riesgos.",
           "Ese último punto vale la pena defenderlo. Las clínicas se resisten a publicar riesgos porque se siente como desalentar la venta. En la práctica es la sección que separa a una clínica que trata al paciente como adulto de una que está vendiendo. El paciente va a encontrar los riesgos en otro lado; la única pregunta es si los encuentra contigo.",
@@ -7907,7 +7907,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "La ventaja no es la novedad, es que la fricción ya no está. El paciente tiene la aplicación abierta, el contacto cuesta un toque y la respuesta llega a un lugar donde sí la va a ver.",
-          "Un formulario web le pide a alguien teclear un correo que revisa dos veces al día y luego esperar sin saber si llegó. Para un paciente con dolor de muela a las nueve de la noche, ese hueco es donde se va a escribirle a la siguiente clínica.",
+          "Un formulario web le pide a alguien teclear un correo que revisa **dos veces al día** y luego esperar sin saber si llegó. Para un paciente con dolor de muela a las nueve de la noche, ese hueco es donde se va a escribirle a la siguiente clínica.",
           "También sostiene el hilo. Una llamada que termina sin cita no deja nada. Una conversación de WhatsApp sigue ahí mañana cuando el paciente se decide, lo que significa que el seguimiento tiene dónde ocurrir.",
           "Nada de eso es un argumento para poner el consultorio entero en un teléfono personal, que es lo que la mayoría de las clínicas ha hecho sin querer.",
         ],
@@ -8287,7 +8287,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Todos los demás números dependen de este, y la mayoría de las clínicas nunca lo ha calculado.",
-          "Toma el valor de la primera visita: lo que factura la consulta inicial y cualquier tratamiento iniciado ese día. Después suma lo que el paciente promedio de esa categoría termina gastando a lo largo de la relación. Un paciente de higiene que regresa dos veces al año durante varios años vale muchas veces su primera cita. Un caso de implantes puede valer casi todo su valor en seis meses.",
+          "Toma el valor de la primera visita: lo que factura la consulta inicial y cualquier tratamiento iniciado ese día. Después suma lo que el paciente promedio de esa categoría termina gastando a lo largo de la relación. Un paciente de higiene que regresa **dos veces** al año durante varios años vale muchas veces su primera cita. Un caso de implantes puede valer casi todo su valor en seis meses.",
           "Luego aplica la realidad de la [[conversión|conversion]]. No todo el que llama agenda, y no todo el que agenda acepta el plan de tratamiento. Si diez consultas producen seis citas y cuatro planes aceptados, el valor de una consulta es cuatro planes aceptados entre diez, no el valor de un tratamiento.",
           "Este último paso es donde se descomponen casi todos los presupuestos, porque las clínicas comparan su costo por consulta contra el valor de un tratamiento y concluyen que el marketing es enormemente rentable. Es rentable contra el valor de una consulta, que es un número mucho más chico.",
           "Si no puedes separar valor de primera visita de valor de por vida, usa solo el de primera visita. Subestima el retorno y te da un presupuesto conservador, que es la dirección correcta en la que equivocarse.",
@@ -8457,7 +8457,7 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "This is first because it makes every other decision guesswork, and because it is close to universal.",
           "Ask a practice which channel produced last month's new patients and you usually get an impression rather than a count. Without the count, budget decisions are made on the basis of which channel was discussed most recently.",
-          "The fix does not require software. A column in the appointment book where reception writes how the patient heard about you, asked at booking rather than at the visit, gets you most of the way. Add call tracking numbers when the volume justifies it.",
+          "**The fix does not require software.** A column in the appointment book where reception writes how the patient heard about you, asked at booking rather than at the visit, gets you most of the way. Add call tracking numbers when the volume justifies it.",
           "Ask at booking, not in the chair. By the time the patient is being treated they have forgotten, and they will say a recommendation because it feels like the polite answer.",
           "Do this for two months before changing what you spend. Two months of real attribution is worth more than a year of opinion.",
         ],
@@ -8500,7 +8500,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Una inasistencia es un espacio que ya estaba vendido y se evaporó. Recuperarlo es más barato que conseguir un reemplazo por un margen amplio, y casi nadie trabaja en ello.",
-          "El mecanismo es una confirmación al agendar y un recordatorio el día anterior que el paciente pueda responder. La respuesta es lo que importa, porque una cancelación de la que te enteras el día anterior es un espacio que puedes volver a llenar.",
+          "El mecanismo es una confirmación al agendar y un recordatorio el día anterior que el paciente pueda responder. **La respuesta es lo que importa, porque una cancelación de la que te enteras el día anterior es un espacio que puedes volver a llenar.**",
           "Las clínicas seguido ponen difícil cancelar con la teoría de que la fricción conserva citas. Lo que hace es convertir cancelaciones en inasistencias, que es peor: te enteras cuando el sillón está vacío y ya no hay tiempo de llenarlo.",
           "Además es una de las pocas intervenciones en una clínica con un número limpio de antes y después, lo que la hace satisfactoria de medir. La mecánica está en [WhatsApp para clínicas](/blog/whatsapp-para-clinicas).",
         ],
@@ -8782,12 +8782,12 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué cambió en 2026",
         body: [
           "Google confirmed two core updates so far this year: one that started on 27 March and took about 12 days, and another that started on 21 May and took about 12 days. It also ran spam updates in March, June, August and September.",
-          "A core update does not target a specific tactic. Google reassesses which content best answers each search, so pages can go up or down without having done anything wrong. The mistake we see most is changing everything in the first week. Positions move for days while an update rolls out; compare in Search Console two or three weeks after it ends, and only then decide what to fix.",
+          "A core update does not target a specific tactic. Google reassesses which content best answers each search, so pages can go up or down without having done anything wrong. **The mistake we see most is changing everything in the first week.** Positions move for days while an update rolls out; compare in Search Console two or three weeks after it ends, and only then decide what to fix.",
           "Spam updates are different: they target practices Google prohibits, such as mass-produced content made to rank rather than to help, which Google calls scaled content abuse. If someone is filling your site with dozens of near-identical generic pages, that is the risk you are running.",
         ],
         bodyEs: [
           "Google confirmó dos actualizaciones principales en lo que va del año: una que empezó el 27 de marzo y tardó unos 12 días, y otra que empezó el 21 de mayo y tardó unos 12 días. También hizo actualizaciones contra spam en marzo, junio, agosto y septiembre.",
-          "Una actualización principal no ataca una táctica en particular. Google vuelve a evaluar qué contenido responde mejor cada búsqueda, así que una página puede subir o bajar sin haber hecho nada mal. El error que más vemos es cambiar todo en la primera semana. Las posiciones se mueven durante días mientras la actualización se despliega; compara en Search Console dos o tres semanas después de que termine y solo entonces decide qué corregir.",
+          "Una actualización principal no ataca una táctica en particular. Google vuelve a evaluar qué contenido responde mejor cada búsqueda, así que una página puede subir o bajar sin haber hecho nada mal. **El error que más vemos es cambiar todo en la primera semana.** Las posiciones se mueven durante días mientras la actualización se despliega; compara en Search Console dos o tres semanas después de que termine y solo entonces decide qué corregir.",
           "Las actualizaciones contra spam son distintas: van contra prácticas que Google prohíbe, como el contenido producido en masa para posicionar y no para ayudar, que Google llama abuso de contenido a escala. Si alguien está llenando tu sitio con decenas de páginas genéricas casi iguales, ese es el riesgo que estás corriendo.",
         ],
       },
@@ -9109,15 +9109,15 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The quick top 3 for 2026",
         headingEs: "El top 3 rápido de 2026",
         body: [
-          "1. Loyverse, to start for free. It runs on a phone or tablet. The point of sale, sales reports, basic inventory, a loyalty program, kitchen display and multi-store management are free. You pay if you want more: employee management and advanced inventory cost USD $25 per month per store each, and unlimited sales history USD $5 per month. It is a good fit for cafés and small shops. It is built for businesses all over the world, so confirm how you will handle Mexican invoicing.",
-          "2. eleventa, for stores. It is a Mexican system installed on a computer, very common in grocery stores, stationery shops and hardware stores. It is paid once: MonoCaja costs $1,499 MXN for one register and MultiCaja $3,499 MXN to share products, inventory and sales across several computers on the same network. Both include 12 months of updates and support, which you can renew if you want.",
-          "3. Soft Restaurant, for restaurants. It is the standard in many Mexican restaurants, with tables, orders and kitchen. Version 12 costs $799 MXN per month plus VAT in its LITE plan, for up to 2 devices, and $1,099 MXN per month plus VAT in PRO, for up to 10, with a discount if you pay the year upfront.",
+          "1. Loyverse, to start for free. It runs on a phone or tablet. The point of sale, sales reports, basic inventory, a loyalty program, kitchen display and multi-store management are free. You pay if you want more: employee management and advanced inventory cost USD **$25 per month per store each**, and unlimited sales history USD $5 per month. It is a good fit for cafés and small shops. It is built for businesses all over the world, so confirm how you will handle Mexican invoicing.",
+          "2. eleventa, for stores. It is a Mexican system installed on a computer, very common in grocery stores, stationery shops and hardware stores. It is paid once: MonoCaja costs **$1,499 MXN for one register** and MultiCaja $3,499 MXN to share products, inventory and sales across several computers on the same network. Both include 12 months of updates and support, which you can renew if you want.",
+          "3. Soft Restaurant, for restaurants. It is the standard in many Mexican restaurants, with tables, orders and kitchen. Version 12 costs **$799 MXN per month plus VAT in its LITE plan**, for up to 2 devices, and $1,099 MXN per month plus VAT in PRO, for up to 10, with a discount if you pay the year upfront.",
           "Prices are the ones each company published in September 2026. Check them again before buying, because they change.",
         ],
         bodyEs: [
           "1. Loyverse, para empezar gratis. Funciona en celular o tablet. Son gratis el punto de venta, los reportes de ventas, el inventario básico, un programa de lealtad, la pantalla de cocina y el manejo de varias sucursales. Pagas si quieres más: la gestión de empleados y el inventario avanzado cuestan 25 dólares al mes por tienda cada uno, y el historial ilimitado de ventas 5 dólares al mes. Le queda bien a cafeterías y tiendas pequeñas. Está hecho para negocios de todo el mundo, así que confirma cómo vas a resolver la facturación mexicana.",
-          "2. eleventa, para tiendas. Es un sistema mexicano que se instala en una computadora, muy común en abarrotes, papelerías y ferreterías. Se paga una sola vez: MonoCaja cuesta $1,499 MXN para una caja y MultiCaja $3,499 MXN para compartir productos, inventario y ventas entre varias computadoras de la misma red. Las dos incluyen 12 meses de actualizaciones y soporte, que puedes renovar si quieres.",
-          "3. Soft Restaurant, para restaurantes. Es el estándar en muchos restaurantes de México, con mesas, comandas y cocina. La versión 12 cuesta $799 MXN al mes más IVA en su plan LITE, para hasta 2 equipos, y $1,099 MXN al mes más IVA en PRO, para hasta 10, con descuento si pagas el año por adelantado.",
+          "2. eleventa, para tiendas. Es un sistema mexicano que se instala en una computadora, muy común en abarrotes, papelerías y ferreterías. Se paga una sola vez: MonoCaja cuesta **$1,499 MXN para una caja** y MultiCaja $3,499 MXN para compartir productos, inventario y ventas entre varias computadoras de la misma red. Las dos incluyen 12 meses de actualizaciones y soporte, que puedes renovar si quieres.",
+          "3. Soft Restaurant, para restaurantes. Es el estándar en muchos restaurantes de México, con mesas, comandas y cocina. La versión 12 cuesta **$799 MXN al mes más IVA en su plan LITE**, para hasta 2 equipos, y $1,099 MXN al mes más IVA en PRO, para hasta 10, con descuento si pagas el año por adelantado.",
           "Los precios son los que cada empresa publicaba en septiembre de 2026. Revísalos de nuevo antes de comprar, porque cambian.",
         ],
       },
@@ -9174,12 +9174,12 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo decidirlo en 30 minutos",
         body: [
           "Write down, in order, everything that happens from the moment a customer arrives until the money is in your account and the invoice is issued. Mark which of those steps a generic system handles and which ones end up in a notebook, a spreadsheet or someone's memory.",
-          "Then compare costs over three years, not one month. For example, Soft Restaurant PRO at $1,099 MXN a month adds up to $39,564 MXN plus VAT in 36 months, before add-ons and extra devices. Put that number next to a quote for a custom system that covers your marked steps, and add the hours your team would stop losing.",
+          "Then compare costs over three years, not one month. For example, Soft Restaurant PRO at **$1,099 MXN** a month adds up to $39,564 MXN plus VAT in 36 months, before add-ons and extra devices. Put that number next to a quote for a custom system that covers your marked steps, and add the hours your team would stop losing.",
           "If you want to see the rest of your operation from the outside, our [free diagnostic](/recursos/diagnostico) orders your priorities in a few minutes. And if it is not the point of sale but the rest of the process that hurts, start with [what to automate in your business](/blog/que-automatizar-en-mi-negocio) and [what a CRM is](/blog/que-es-un-crm).",
         ],
         bodyEs: [
           "Escribe, en orden, todo lo que pasa desde que llega un cliente hasta que el dinero está en tu cuenta y la factura está emitida. Marca cuáles de esos pasos resuelve un sistema genérico y cuáles terminan en una libreta, un Excel o la memoria de alguien.",
-          "Después compara costos a tres años, no a un mes. Por ejemplo, Soft Restaurant PRO a $1,099 MXN al mes suma $39,564 MXN más IVA en 36 meses, antes de complementos y equipos extra. Pon ese número junto a una cotización de un sistema a la medida que cubra tus pasos marcados, y súmale las horas que tu equipo dejaría de perder.",
+          "Después compara costos a tres años, no a un mes. Por ejemplo, Soft Restaurant PRO a **$1,099 MXN** al mes suma $39,564 MXN más IVA en 36 meses, antes de complementos y equipos extra. Pon ese número junto a una cotización de un sistema a la medida que cubra tus pasos marcados, y súmale las horas que tu equipo dejaría de perder.",
           "Si quieres ver el resto de tu operación desde fuera, nuestro [diagnóstico gratuito](/recursos/diagnostico) te ordena las prioridades en unos minutos. Y si lo que duele no es el punto de venta sino el resto del proceso, empieza por [qué automatizar en tu negocio](/blog/que-automatizar-en-mi-negocio) y [qué es un CRM](/blog/que-es-un-crm).",
         ],
       },
@@ -9253,9 +9253,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A successful business does not need to change what made it successful. It needs to make sure the next generation of customers can find it, trust it and buy from it the way they buy everything else: from a phone. In Mexico, 96.5% of people aged 25 to 34 use the internet, against 57.8% of those aged 65 to 74, according to INEGI. If your customers have grown older with you, the ones who replace them already live online. And if you plan to hand the business to the next generation, modernizing gradually now costs far less than rebuilding everything at the moment of the handover.",
+    lede: "A successful business does not need to change what made it successful. It needs to make sure the next generation of customers can find it, trust it and buy from it the way they buy everything else: from a phone. In Mexico, **96.5%** of people aged 25 to 34 use the internet, against 57.8% of those aged 65 to 74, according to INEGI. If your customers have grown older with you, the ones who replace them already live online. And if you plan to hand the business to the next generation, modernizing gradually now costs far less than rebuilding everything at the moment of the handover.",
     ledeEs:
-      "Un negocio exitoso no necesita cambiar lo que lo hizo exitoso. Necesita asegurarse de que la siguiente generación de clientes lo pueda encontrar, confiar en él y comprarle como compra todo lo demás: desde el celular. En México, 96.5% de las personas de 25 a 34 años usa internet, contra 57.8% de las de 65 a 74, según el INEGI. Si tus clientes han crecido contigo, los que los van a reemplazar ya viven en línea. Y si piensas dejarle el negocio a la siguiente generación, modernizarte poco a poco desde ahora cuesta mucho menos que reconstruir todo en el momento de la entrega.",
+      "Un negocio exitoso no necesita cambiar lo que lo hizo exitoso. Necesita asegurarse de que la siguiente generación de clientes lo pueda encontrar, confiar en él y comprarle como compra todo lo demás: desde el celular. En México, **96.5%** de las personas de 25 a 34 años usa internet, contra 57.8% de las de 65 a 74, según el INEGI. Si tus clientes han crecido contigo, los que los van a reemplazar ya viven en línea. Y si piensas dejarle el negocio a la siguiente generación, modernizarte poco a poco desde ahora cuesta mucho menos que reconstruir todo en el momento de la entrega.",
     sections: [
       {
         id: "tu-exito-tiene-edad",
@@ -9275,12 +9275,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What the data says",
         headingEs: "Lo que dicen los datos",
         body: [
-          "INEGI’s 2025 survey on technology use, published in June 2026, found that 104.9 million people in Mexico, 86.1% of the population aged 6 and over, used the internet. The gap between generations is what matters here: 97.6% of people aged 15 to 24 and 96.5% of those aged 25 to 34 are online, against 57.8% of those aged 65 to 74 and 30.3% of those over 75.",
-          "The same survey found that 97.3% of internet users connect from a smartphone, and that 37.3% bought something online in 2025. In practice, your next customer carries your competition in their pocket and compares before calling.",
+          "INEGI’s 2025 survey on technology use, published in June 2026, found that **104.9 million people in Mexico**, 86.1% of the population aged 6 and over, used the internet. The gap between generations is what matters here: 97.6% of people aged 15 to 24 and 96.5% of those aged 25 to 34 are online, against 57.8% of those aged 65 to 74 and 30.3% of those over 75.",
+          "The same survey found that **97.3%** of internet users connect from a smartphone, and that 37.3% bought something online in 2025. In practice, your next customer carries your competition in their pocket and compares before calling.",
         ],
         bodyEs: [
-          "La encuesta del INEGI sobre uso de tecnologías de 2025, publicada en junio de 2026, encontró que 104.9 millones de personas en México, el 86.1% de la población de 6 años y más, usó internet. Lo que importa aquí es la brecha entre generaciones: está en línea 97.6% de las personas de 15 a 24 años y 96.5% de las de 25 a 34, contra 57.8% de las de 65 a 74 y 30.3% de las mayores de 75.",
-          "La misma encuesta encontró que 97.3% de quienes usan internet se conectan desde un celular, y que 37.3% compró algo en línea en 2025. En la práctica, tu siguiente cliente trae a tu competencia en el bolsillo y compara antes de llamar.",
+          "La encuesta del INEGI sobre uso de tecnologías de 2025, publicada en junio de 2026, encontró que **104.9 millones de personas en México**, el 86.1% de la población de 6 años y más, usó internet. Lo que importa aquí es la brecha entre generaciones: está en línea 97.6% de las personas de 15 a 24 años y 96.5% de las de 25 a 34, contra 57.8% de las de 65 a 74 y 30.3% de las mayores de 75.",
+          "La misma encuesta encontró que **97.3%** de quienes usan internet se conectan desde un celular, y que 37.3% compró algo en línea en 2025. En la práctica, tu siguiente cliente trae a tu competencia en el bolsillo y compara antes de llamar.",
         ],
       },
       {
@@ -9316,12 +9316,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "If you plan to hand the business on",
         headingEs: "Si piensas dejarle el negocio a la siguiente generación",
         body: [
-          "Family businesses are the backbone of the Mexican economy. According to Alfonso Bolio, a professor at IPADE Business School, they make up between 85% and 95% of the country’s economic units. But few survive the handover: a study on the continuity of Mexican family businesses published in 2022 found that only 24% reach the second generation and 7% the third.",
+          "Family businesses are the backbone of the Mexican economy. According to Alfonso Bolio, a professor at IPADE Business School, they make up between **85%** and 95% of the country’s economic units. But few survive the handover: a study on the continuity of Mexican family businesses published in 2022 found that only 24% reach the second generation and 7% the third.",
           "One reason is that the business lives in the founder’s head: which customer pays late, which supplier delivers on time, how a job is quoted, what was agreed with whom. When the founder steps back, that knowledge leaves with them. A business whose customers, sales and processes are recorded in a system can be handed over; one that depends on memory is much harder to pass on.",
           "The next generation will want to run it with the tools they use every day. If everything has to be built at the moment of the handover, the website, the system, moving years of information and training the team, it all lands at once: a big expense in the most stressful moment, with the founder less available to help. Done gradually, the cost is spread over years, the founder validates each piece while still in charge, and customers get used to the new channels before anyone changes behind the counter.",
         ],
         bodyEs: [
-          "Las empresas familiares son la columna de la economía mexicana. Según Alfonso Bolio, profesor del IPADE, son entre 85% y 95% de las unidades económicas del país. Pero pocas sobreviven al relevo: un estudio sobre la continuidad de las empresas familiares en México, difundido en 2022, encontró que solo 24% llega a la segunda generación y 7% a la tercera.",
+          "Las empresas familiares son la columna de la economía mexicana. Según Alfonso Bolio, profesor del IPADE, son entre **85%** y 95% de las unidades económicas del país. Pero pocas sobreviven al relevo: un estudio sobre la continuidad de las empresas familiares en México, difundido en 2022, encontró que solo 24% llega a la segunda generación y 7% a la tercera.",
           "Una de las razones es que el negocio vive en la cabeza del fundador: qué cliente paga tarde, qué proveedor cumple, cómo se cotiza un trabajo, qué se acordó con quién. Cuando el fundador se hace a un lado, ese conocimiento se va con él. Un negocio con sus clientes, ventas y procesos registrados en un sistema se puede entregar; uno que depende de la memoria es mucho más difícil de heredar.",
           "La siguiente generación va a querer manejarlo con las herramientas que usa todos los días. Si todo se tiene que construir en el momento del relevo, la página, el sistema, pasar años de información y capacitar al equipo, cae todo junto: un gasto grande en el momento de más estrés, con el fundador menos disponible para ayudar. Hecho poco a poco, el costo se reparte en años, el fundador valida cada pieza mientras todavía está al frente y los clientes se acostumbran a los canales nuevos antes de que cambie nadie detrás del mostrador.",
         ],
@@ -9414,21 +9414,21 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A QR code menu is good for your restaurant when it opens your own website and sits next to a printed menu. It is bad when it replaces the printed menu or sends your customers to someone else’s platform. The reason is simple: in a September 2024 Toast survey of 850 US adults, 81% said they prefer a physical menu and only 1% preferred a QR code. Nobody scans for fun, so every scan is worth a lot. If the QR opens your own website and the [[Meta Pixel|pixel]] is installed on it (a free code, added once when the site is set up, that tells Meta who visited), you can later show ads on Facebook and Instagram to the people who already ate with you and to people like them. If it opens a PDF or a Linktree page, you pay for the printing and that visit is usually lost.",
+    lede: "A QR code menu is good for your restaurant when it opens your own website and sits next to a printed menu. It is bad when it replaces the printed menu or sends your customers to someone else’s platform. The reason is simple: in a September 2024 Toast survey of 850 US adults, **81% said they prefer a physical menu** and only 1% preferred a QR code. Nobody scans for fun, so every scan is worth a lot. If the QR opens your own website and the [[Meta Pixel|pixel]] is installed on it (a free code, added once when the site is set up, that tells Meta who visited), you can later show ads on Facebook and Instagram to the people who already ate with you and to people like them. If it opens a PDF or a Linktree page, you pay for the printing and that visit is usually lost.",
     ledeEs:
-      "Un menú QR es bueno para tu restaurante cuando abre tu propia página web y convive con un menú impreso. Es malo cuando sustituye al menú impreso o manda a tus clientes a la plataforma de alguien más. La razón es sencilla: en una encuesta de Toast de septiembre de 2024 a 850 adultos en Estados Unidos, el 81% dijo que prefiere un menú físico y solo el 1% prefirió el QR. Nadie escanea por gusto, así que cada escaneo vale mucho. Si el QR abre tu propia página web y en ella está instalado el [[Pixel de Meta|pixel]] (un código gratuito que se pone una sola vez al configurar la página y le avisa a Meta quién la visitó), después puedes mostrarle anuncios en Facebook e Instagram a quienes ya comieron contigo y a gente parecida a ellos. Si abre un PDF o un Linktree, tú pagas la impresión y esa visita casi siempre se pierde.",
+      "Un menú QR es bueno para tu restaurante cuando abre tu propia página web y convive con un menú impreso. Es malo cuando sustituye al menú impreso o manda a tus clientes a la plataforma de alguien más. La razón es sencilla: en una encuesta de Toast de septiembre de 2024 a 850 adultos en Estados Unidos, el **81% dijo que prefiere un menú físico** y solo el 1% prefirió el QR. Nadie escanea por gusto, así que cada escaneo vale mucho. Si el QR abre tu propia página web y en ella está instalado el [[Pixel de Meta|pixel]] (un código gratuito que se pone una sola vez al configurar la página y le avisa a Meta quién la visitó), después puedes mostrarle anuncios en Facebook e Instagram a quienes ya comieron contigo y a gente parecida a ellos. Si abre un PDF o un Linktree, tú pagas la impresión y esa visita casi siempre se pierde.",
     sections: [
       {
         id: "lo-que-dicen-los-datos",
         heading: "What the data says about QR menus",
         headingEs: "Lo que dicen los datos sobre los menús QR",
         body: [
-          "The most recent public survey we found is Toast’s, from September 2024: 850 adults in the United States. 81% prefer a physical menu, rising to 90% among people aged 55 and over, and only 1% prefer to order from a QR code. The most common complaint about QR menus was small print (26%), followed by having to use a phone at all (20%). The same survey found that 66% prefer menus with photos of the dishes.",
-          "An earlier Technomic survey, from May 2022 with 1,000 people, pointed the same way: 88% preferred paper, and 66% disliked having to take out their phone when they sit down. Both studies are from the United States; we did not find a comparable public study for Mexico. Even so, the conclusion carries over to any restaurant: the QR code does not win as a replacement for the menu. It wins as a complement that offers something paper cannot.",
+          "The most recent public survey we found is Toast’s, from September 2024: 850 adults in the United States. 81% prefer a physical menu, rising to **90%** among people aged 55 and over, and only 1% prefer to order from a QR code. The most common complaint about QR menus was small print (26%), followed by having to use a phone at all (20%). The same survey found that 66% prefer menus with photos of the dishes.",
+          "An earlier Technomic survey, from May 2022 with 1,000 people, pointed the same way: **88% preferred paper**, and 66% disliked having to take out their phone when they sit down. Both studies are from the United States; we did not find a comparable public study for Mexico. Even so, the conclusion carries over to any restaurant: the QR code does not win as a replacement for the menu. It wins as a complement that offers something paper cannot.",
         ],
         bodyEs: [
-          "La encuesta pública más reciente que encontramos es la de Toast, de septiembre de 2024: 850 adultos en Estados Unidos. El 81% prefiere un menú físico, cifra que sube al 90% entre los mayores de 55 años, y solo el 1% prefiere pedir desde un QR. La queja más común sobre los menús QR fue la letra pequeña (26%), seguida de tener que usar el celular para empezar (20%). La misma encuesta encontró que el 66% prefiere menús con fotos de los platillos.",
-          "Una encuesta anterior de Technomic, de mayo de 2022 con 1,000 personas, apuntó en la misma dirección: el 88% prefería papel y al 66% le molestaba tener que sacar el celular al sentarse. Los dos estudios son de Estados Unidos; no encontramos un estudio público comparable para México. Aun así, la conclusión aplica a cualquier restaurante: el QR no gana como reemplazo del menú. Gana como complemento que ofrece algo que el papel no puede.",
+          "La encuesta pública más reciente que encontramos es la de Toast, de septiembre de 2024: 850 adultos en Estados Unidos. El 81% prefiere un menú físico, cifra que sube al **90%** entre los mayores de 55 años, y solo el 1% prefiere pedir desde un QR. La queja más común sobre los menús QR fue la letra pequeña (26%), seguida de tener que usar el celular para empezar (20%). La misma encuesta encontró que el 66% prefiere menús con fotos de los platillos.",
+          "Una encuesta anterior de Technomic, de mayo de 2022 con 1,000 personas, apuntó en la misma dirección: el **88% prefería papel** y al 66% le molestaba tener que sacar el celular al sentarse. Los dos estudios son de Estados Unidos; no encontramos un estudio público comparable para México. Aun así, la conclusión aplica a cualquier restaurante: el QR no gana como reemplazo del menú. Gana como complemento que ofrece algo que el papel no puede.",
         ],
       },
       {
@@ -9471,7 +9471,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Un menú QR necesita conexión, y dentro de muchos restaurantes la señal del celular es mala. Eso es un problema y una oportunidad al mismo tiempo. Si ofreces WiFi con una [[página de acceso|pagina-de-acceso]] que pide el correo, resuelves la conexión y al mismo tiempo armas una lista de clientes para tu [[email marketing|email-marketing]].",
-          "Lo importante es hacerlo dentro de la ley. En México se publicó una nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares el 20 de marzo de 2025, vigente desde el 21 de marzo de 2025. Sigue exigiendo mostrar un [[aviso de privacidad|aviso-de-privacidad]] antes de recabar datos, en su versión simplificada cuando los recabas por medios electrónicos, y obtener el consentimiento del cliente. En la práctica: un enlace visible a tu aviso de privacidad en la página del WiFi y una casilla sin marcar para aceptar promociones. No somos abogados; para tu caso concreto, revísalo con uno.",
+          "**Lo importante es hacerlo dentro de la ley.** En México se publicó una nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares el 20 de marzo de 2025, vigente desde el 21 de marzo de 2025. Sigue exigiendo mostrar un [[aviso de privacidad|aviso-de-privacidad]] antes de recabar datos, en su versión simplificada cuando los recabas por medios electrónicos, y obtener el consentimiento del cliente. En la práctica: un enlace visible a tu aviso de privacidad en la página del WiFi y una casilla sin marcar para aceptar promociones. No somos abogados; para tu caso concreto, revísalo con uno.",
         ],
       },
       {
@@ -9607,20 +9607,20 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "The most common mistake we see in hotels, cabins and vacation rentals is not being on Booking or Airbnb. It is being only there. [[OTAs|ota]] charge a commission on every stay: Booking charges a percentage of each reservation that varies by country and property type, and Airbnb has moved almost all hosts outside Europe to a fee of around 15.5% paid by the host. That is a fair price for a guest who did not know you. It is an expensive price for the guest who already stayed with you and comes back next year through the same app. The goal is not to leave those platforms. It is to make sure the second booking happens on your own website.",
+    lede: "The most common mistake we see in hotels, cabins and vacation rentals is not being on Booking or Airbnb. It is being only there. [[OTAs|ota]] charge a commission on every stay: Booking charges a percentage of each reservation that varies by country and property type, and Airbnb has moved almost all hosts outside Europe to a fee of around **15.5% paid by the host**. That is a fair price for a guest who did not know you. It is an expensive price for the guest who already stayed with you and comes back next year through the same app. The goal is not to leave those platforms. It is to make sure the second booking happens on your own website.",
     ledeEs:
-      "El error más común que vemos en hoteles, cabañas y rentas vacacionales no es estar en Booking o Airbnb. Es estar solo ahí. Las [[OTA|ota]] cobran comisión en cada estancia: Booking cobra un porcentaje de cada reserva que varía por país y tipo de propiedad, y Airbnb pasó a casi todos los anfitriones fuera de Europa a una tarifa de alrededor de 15.5% que paga el anfitrión. Es un precio justo por un huésped que no te conocía. Es un precio caro por el huésped que ya se quedó contigo y regresa el próximo año por la misma aplicación. La meta no es salirte de esas plataformas. Es lograr que la segunda reserva suceda en tu propia página.",
+      "El error más común que vemos en hoteles, cabañas y rentas vacacionales no es estar en Booking o Airbnb. Es estar solo ahí. Las [[OTA|ota]] cobran comisión en cada estancia: Booking cobra un porcentaje de cada reserva que varía por país y tipo de propiedad, y Airbnb pasó a casi todos los anfitriones fuera de Europa a una tarifa de alrededor de **15.5% que paga el anfitrión**. Es un precio justo por un huésped que no te conocía. Es un precio caro por el huésped que ya se quedó contigo y regresa el próximo año por la misma aplicación. La meta no es salirte de esas plataformas. Es lograr que la segunda reserva suceda en tu propia página.",
     sections: [
       {
         id: "cuanto-te-cuesta-depender",
         heading: "What depending on them really costs",
         headingEs: "Lo que de verdad te cuesta depender de ellos",
         body: [
-          "Booking explains in its partner help centre that it charges “a set percentage of the value of each reservation”, calculated on the total value of the stay, and that the percentage varies by country and by property type. Many hotels end up paying around 15%, according to industry guides, and more if they pay for extra visibility. In Airbnb’s case, the host-only fee is around 15.5% of each booking.",
+          "Booking explains in its partner help centre that it charges “a set percentage of the value of each reservation”, calculated on the total value of the stay, and that the percentage varies by country and by property type. Many hotels end up paying around **15%**, according to industry guides, and more if they pay for extra visibility. In Airbnb’s case, the host-only fee is around 15.5% of each booking.",
           "A round-number example to size it: a property that receives 1,000 nights a year through these platforms at 2,000 pesos a night pays around 300,000 pesos in commissions at 15%. If a third of those guests had already stayed before, about 100,000 pesos went to platforms for customers who were already yours.",
         ],
         bodyEs: [
-          "Booking explica en su centro de ayuda para socios que cobra “un porcentaje fijo del valor de cada reserva”, calculado sobre el valor total de la estancia, y que ese porcentaje varía por país y por tipo de propiedad. Muchos hoteles terminan pagando alrededor de 15%, según guías de la industria, y más si pagan por visibilidad extra. En el caso de Airbnb, la tarifa que paga solo el anfitrión ronda el 15.5% de cada reserva.",
+          "Booking explica en su centro de ayuda para socios que cobra “un porcentaje fijo del valor de cada reserva”, calculado sobre el valor total de la estancia, y que ese porcentaje varía por país y por tipo de propiedad. Muchos hoteles terminan pagando alrededor de **15%**, según guías de la industria, y más si pagan por visibilidad extra. En el caso de Airbnb, la tarifa que paga solo el anfitrión ronda el 15.5% de cada reserva.",
           "Un ejemplo con números redondos para dimensionarlo: una propiedad que recibe 1,000 noches al año por estas plataformas a 2,000 pesos la noche paga unos 300,000 pesos de comisión al 15%. Si un tercio de esos huéspedes ya se había quedado antes, cerca de 100,000 pesos se fueron a las plataformas por clientes que ya eran tuyos.",
         ],
       },
@@ -9629,11 +9629,11 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why you should not leave the platforms",
         headingEs: "Por qué no conviene salirte de las plataformas",
         body: [
-          "A Cornell study by Chris Anderson, published in 2011 with InterContinental Hotels data, found what the industry calls the billboard effect: being listed on an online travel agency also increases bookings on the hotel’s own website. Nearly 75% of the guests who booked directly had visited an online travel agency first. Anderson concluded that part of those commissions should be seen as a marketing expense.",
+          "A Cornell study by Chris Anderson, published in 2011 with InterContinental Hotels data, found what the industry calls the billboard effect: being listed on an online travel agency also increases bookings on the hotel’s own website. Nearly **75%** of the guests who booked directly had visited an online travel agency first. Anderson concluded that part of those commissions should be seen as a marketing expense.",
           "In practice: many new guests discover you on Booking or Airbnb, compare, and then look for you by name. If at that moment they find a clear website where they can book, some of them will book there. If they find nothing, they go back to the app. The platform is your shop window; your website is where you want the sale to close.",
         ],
         bodyEs: [
-          "Un estudio de Cornell de Chris Anderson, publicado en 2011 con datos de InterContinental Hotels, encontró lo que la industria llama efecto escaparate: aparecer en una agencia de viajes en línea también aumenta las reservas en la página propia del hotel. Casi el 75% de los huéspedes que reservaron directo había visitado antes una agencia en línea. Anderson concluyó que parte de esas comisiones debe verse como un gasto de publicidad.",
+          "Un estudio de Cornell de Chris Anderson, publicado en 2011 con datos de InterContinental Hotels, encontró lo que la industria llama efecto escaparate: aparecer en una agencia de viajes en línea también aumenta las reservas en la página propia del hotel. Casi el **75%** de los huéspedes que reservaron directo había visitado antes una agencia en línea. Anderson concluyó que parte de esas comisiones debe verse como un gasto de publicidad.",
           "En la práctica: muchos huéspedes nuevos te descubren en Booking o Airbnb, comparan y luego te buscan por nombre. Si en ese momento encuentran una página clara donde reservar, una parte reserva ahí. Si no encuentran nada, regresan a la aplicación. La plataforma es tu escaparate; tu página es donde quieres que se cierre la venta.",
         ],
       },
@@ -9780,11 +9780,11 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How much the platforms charge",
         headingEs: "Cuánto cobran las plataformas",
         body: [
-          "There is no single published rate. GetYourGuide’s supplier terms say its commission is “a percentage of the Retail Price for a Booking, as specified in the Supplier Account”, so each operator has its own. Industry guides for tour operators report ranges of 20% to 30% for both Viator and GetYourGuide, with 25% as a common figure on Viator.",
+          "There is no single published rate. GetYourGuide’s supplier terms say its commission is “a percentage of the Retail Price for a Booking, as specified in the Supplier Account”, so each operator has its own. Industry guides for tour operators report ranges of **20%** to 30% for both Viator and GetYourGuide, with 25% as a common figure on Viator.",
           "A round-number example: on a 1,500-peso tour, a 25% commission is 375 pesos per person. On a boat with 12 seats, that is 4,500 pesos per departure going to the platform. For a tourist who found you there, it can be worth it. For one who was recommended by your hotel or saw you on Instagram, it is money you did not need to spend.",
         ],
         bodyEs: [
-          "No hay una tarifa única publicada. Los términos para proveedores de GetYourGuide dicen que su comisión es “un porcentaje del precio de venta de la reserva, según se especifica en la cuenta del proveedor”, así que cada operador tiene la suya. Guías de la industria para operadores reportan rangos de 20% a 30% tanto en Viator como en GetYourGuide, con 25% como cifra común en Viator.",
+          "No hay una tarifa única publicada. Los términos para proveedores de GetYourGuide dicen que su comisión es “un porcentaje del precio de venta de la reserva, según se especifica en la cuenta del proveedor”, así que cada operador tiene la suya. Guías de la industria para operadores reportan rangos de **20%** a 30% tanto en Viator como en GetYourGuide, con 25% como cifra común en Viator.",
           "Un ejemplo con números redondos: en un tour de 1,500 pesos, una comisión de 25% son 375 pesos por persona. En un barco con 12 lugares, son 4,500 pesos por salida que se van a la plataforma. Por un turista que te encontró ahí puede valer la pena. Por uno que te recomendó su hotel o te vio en Instagram, es dinero que no necesitabas gastar.",
         ],
       },
@@ -9806,11 +9806,11 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Selling only through WhatsApp loses bookings",
         headingEs: "Vender solo por WhatsApp pierde reservas",
         body: [
-          "The typical conversation goes: “Is there space on Saturday?”, “How much?”, “What time?”, “Can I pay by card?”. Four messages before the tourist can pay, and each one waits for you to be free. A 2011 Harvard Business Review study audited 2,241 US companies and found that those who responded to an online inquiry within an hour were nearly seven times as likely to qualify the [[lead|lead]] as those who responded later. Only 37% responded within the hour.",
+          "The typical conversation goes: “Is there space on Saturday?”, “How much?”, “What time?”, “Can I pay by card?”. Four messages before the tourist can pay, and each one waits for you to be free. A 2011 Harvard Business Review study audited 2,241 US companies and found that those who responded to an online inquiry within an hour were nearly seven times as likely to qualify the [[lead|lead]] as those who responded later. Only **37% responded within the hour**.",
           "A tourist has even less patience: they are on holiday, with several options open on their phone. The answer is a [[booking engine|motor-de-reservas]] on your website with a calendar, available seats, a deposit and a confirmation that arrives on its own. WhatsApp stays for real questions, and your automatic reply can include the link to book. We explain how to automate those replies in [WhatsApp Business API](/blog/whatsapp-business-api).",
         ],
         bodyEs: [
-          "La conversación típica va así: “¿Hay lugar el sábado?”, “¿Cuánto cuesta?”, “¿A qué hora sale?”, “¿Aceptan tarjeta?”. Cuatro mensajes antes de que el turista pueda pagar, y cada uno espera a que tú estés libre. Un estudio de Harvard Business Review de 2011 revisó 2,241 empresas en Estados Unidos y encontró que las que respondían una consulta en línea en menos de una hora tenían casi siete veces más probabilidad de calificar al [[prospecto|lead]] que las que respondían después. Solo el 37% respondió en menos de una hora.",
+          "La conversación típica va así: “¿Hay lugar el sábado?”, “¿Cuánto cuesta?”, “¿A qué hora sale?”, “¿Aceptan tarjeta?”. Cuatro mensajes antes de que el turista pueda pagar, y cada uno espera a que tú estés libre. Un estudio de Harvard Business Review de 2011 revisó 2,241 empresas en Estados Unidos y encontró que las que respondían una consulta en línea en menos de una hora tenían casi siete veces más probabilidad de calificar al [[prospecto|lead]] que las que respondían después. Solo el **37% respondió en menos de una hora**.",
           "Un turista tiene todavía menos paciencia: está de vacaciones, con varias opciones abiertas en el celular. La respuesta es un [[motor de reservas|motor-de-reservas]] en tu página con calendario, lugares disponibles, anticipo y una confirmación que llega sola. WhatsApp se queda para las dudas reales, y tu respuesta automática puede incluir el enlace para reservar. Cómo automatizar esas respuestas lo explicamos en [WhatsApp Business API](/blog/whatsapp-business-api).",
         ],
       },
@@ -9956,11 +9956,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Los recordatorios sí funcionan, y hay evidencia",
         body: [
           "The best evidence comes from healthcare, where missed appointments have been studied for years. A Cochrane review published in 2013, with eight trials and 6,615 participants, found that text message reminders increased attendance compared with no reminder (risk ratio 1.14), and that they worked about as well as a phone call (risk ratio 0.99), which costs far more time. The mechanism is the same in a salon: many people simply forget.",
-          "What works best in practice is two reminders: one the day before and one a few hours before, each with a simple way to confirm or reschedule. The problem is doing it by hand: on the busiest days, which are exactly when you most need them, nobody has time to send them. A [[booking system|sistema-de-citas]] sends them on its own. We cover other tasks worth automating in [what to automate in your business](/blog/que-automatizar-en-mi-negocio).",
+          "What works best in practice is two reminders: one the day before and one a few hours before, each with a simple way to confirm or reschedule. **The problem is doing it by hand: on the busiest days, which are exactly when you most need them, nobody has time to send them.** A [[booking system|sistema-de-citas]] sends them on its own. We cover other tasks worth automating in [what to automate in your business](/blog/que-automatizar-en-mi-negocio).",
         ],
         bodyEs: [
           "La mejor evidencia viene de salud, donde las citas perdidas se estudian desde hace años. Una revisión Cochrane publicada en 2013, con ocho ensayos y 6,615 participantes, encontró que los recordatorios por mensaje de texto aumentaron la asistencia frente a no mandar recordatorio (razón de riesgo de 1.14), y que funcionaron más o menos igual que una llamada (razón de riesgo de 0.99), que cuesta mucho más tiempo. El mecanismo es el mismo en un salón: a mucha gente simplemente se le olvida.",
-          "Lo que mejor funciona en la práctica son dos recordatorios: uno el día anterior y otro unas horas antes, cada uno con una forma sencilla de confirmar o cambiar la cita. El problema es hacerlo a mano: los días de más trabajo, que es justo cuando más los necesitas, nadie tiene tiempo de mandarlos. Un [[sistema de citas|sistema-de-citas]] los manda solo. Otras tareas que conviene automatizar las repasamos en [qué automatizar en mi negocio](/blog/que-automatizar-en-mi-negocio).",
+          "Lo que mejor funciona en la práctica son dos recordatorios: uno el día anterior y otro unas horas antes, cada uno con una forma sencilla de confirmar o cambiar la cita. **El problema es hacerlo a mano: los días de más trabajo, que es justo cuando más los necesitas, nadie tiene tiempo de mandarlos.** Un [[sistema de citas|sistema-de-citas]] los manda solo. Otras tareas que conviene automatizar las repasamos en [qué automatizar en mi negocio](/blog/que-automatizar-en-mi-negocio).",
         ],
       },
       {
@@ -10093,11 +10093,11 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Reply fast: the first hour matters",
         headingEs: "Responde rápido: la primera hora importa",
         body: [
-          "A 2011 Harvard Business Review study audited 2,241 US companies and found that those who responded to an online inquiry within an hour were nearly seven times as likely to qualify the [[lead|lead]] as those who responded even an hour later. Only 37% of companies responded within the hour, and the average response took 42 hours.",
+          "A 2011 Harvard Business Review study audited 2,241 US companies and found that those who responded to an online inquiry within an hour were nearly seven times as likely to qualify the [[lead|lead]] as those who responded even an hour later. Only **37%** of companies responded within the hour, and the average response took 42 hours.",
           "In construction the same thing happens: someone who wants to build or remodel asks several companies at once. Whoever replies first, with a clear next step, sets the tone. If you are on site all day, at least make sure an automatic reply confirms receipt and says when you will call.",
         ],
         bodyEs: [
-          "Un estudio de Harvard Business Review de 2011 revisó 2,241 empresas en Estados Unidos y encontró que las que respondían una consulta en línea en menos de una hora tenían casi siete veces más probabilidad de calificar al [[prospecto|lead]] que las que respondían aunque fuera una hora después. Solo el 37% de las empresas respondió en menos de una hora, y la respuesta promedio tardó 42 horas.",
+          "Un estudio de Harvard Business Review de 2011 revisó 2,241 empresas en Estados Unidos y encontró que las que respondían una consulta en línea en menos de una hora tenían casi siete veces más probabilidad de calificar al [[prospecto|lead]] que las que respondían aunque fuera una hora después. Solo el **37%** de las empresas respondió en menos de una hora, y la respuesta promedio tardó 42 horas.",
           "En construcción pasa lo mismo: quien quiere construir o remodelar le pregunta a varias empresas a la vez. La que responde primero, con un siguiente paso claro, marca el tono. Si estás en obra todo el día, al menos asegúrate de que una respuesta automática confirme que recibiste la solicitud y diga cuándo vas a llamar.",
         ],
       },
