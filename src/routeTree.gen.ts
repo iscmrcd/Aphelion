@@ -195,8 +195,8 @@ export interface FileRoutesByFullPath {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog/': typeof BlogIndexRoute
   '/servicios/': typeof ServiciosIndexRoute
-  '/recursos/diagnostico/': typeof RecursosDiagnosticoIndexRoute
   '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
+  '/recursos/diagnostico/': typeof RecursosDiagnosticoIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -222,8 +222,8 @@ export interface FileRoutesByTo {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog': typeof BlogIndexRoute
   '/servicios': typeof ServiciosIndexRoute
-  '/recursos/diagnostico': typeof RecursosDiagnosticoIndexRoute
   '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
+  '/recursos/diagnostico': typeof RecursosDiagnosticoIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -251,8 +251,8 @@ export interface FileRoutesById {
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
   '/blog/': typeof BlogIndexRoute
   '/servicios/': typeof ServiciosIndexRoute
-  '/recursos/diagnostico/': typeof RecursosDiagnosticoIndexRoute
   '/recursos/diagnostico/$industria': typeof RecursosDiagnosticoIndustriaRoute
+  '/recursos/diagnostico/': typeof RecursosDiagnosticoIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -281,8 +281,8 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog/'
     | '/servicios/'
-    | '/recursos/diagnostico/'
     | '/recursos/diagnostico/$industria'
+    | '/recursos/diagnostico/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -308,8 +308,8 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog'
     | '/servicios'
-    | '/recursos/diagnostico'
     | '/recursos/diagnostico/$industria'
+    | '/recursos/diagnostico'
   id:
     | '__root__'
     | '/'
@@ -336,8 +336,8 @@ export interface FileRouteTypes {
     | '/servicios/whatsapp-ia'
     | '/blog/'
     | '/servicios/'
-    | '/recursos/diagnostico/'
     | '/recursos/diagnostico/$industria'
+    | '/recursos/diagnostico/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -359,8 +359,8 @@ export interface RootRouteChildren {
   ServiciosRoute: typeof ServiciosRouteWithChildren
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
-  RecursosDiagnosticoIndexRoute: typeof RecursosDiagnosticoIndexRoute
   RecursosDiagnosticoIndustriaRoute: typeof RecursosDiagnosticoIndustriaRoute
+  RecursosDiagnosticoIndexRoute: typeof RecursosDiagnosticoIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -591,8 +591,8 @@ const rootRouteChildren: RootRouteChildren = {
   ServiciosRoute: ServiciosRouteWithChildren,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
-  RecursosDiagnosticoIndexRoute: RecursosDiagnosticoIndexRoute,
   RecursosDiagnosticoIndustriaRoute: RecursosDiagnosticoIndustriaRoute,
+  RecursosDiagnosticoIndexRoute: RecursosDiagnosticoIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
