@@ -7,6 +7,7 @@ import {
   useRouterState,
   HeadContent,
   Scripts,
+  retainSearchParams,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -84,6 +85,12 @@ const META_PIXEL_ID = "2813619889012734";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   validateSearch: validateLangSearch,
+  // Every internal <Link> keeps ?lang. Without this a Spanish visitor clicking
+  // a related article landed on /blog/x with no lang, LangProvider re-synced
+  // the URL with a second navigation, and that one (resetScroll: false)
+  // cancelled the scroll to top: the new article opened at the bottom.
+  // Switching language still works: syncUrl sets lang explicitly.
+  search: { middlewares: [retainSearchParams(["lang"])] },
   head: () => ({
     meta: [
       { charSet: "utf-8" },

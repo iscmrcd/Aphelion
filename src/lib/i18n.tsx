@@ -84,7 +84,11 @@ export function LangProvider({
 
   /** Keeps ?lang in sync so route head() metadata renders in the right language. */
   const syncUrl = useCallback(
-    (l: Lang) => {
+    // resetScroll stays false for the EN/ES toggle, so switching language
+    // does not jump the reader to the top. Auto-detection passes true: it
+    // runs right after a navigation, and a false there would cancel that
+    // navigation's scroll to top.
+    (l: Lang, resetScroll = false) => {
       navigate({
         // @ts-expect-error — search is validated at the root route
         search: (prev: Record<string, unknown>) => ({
@@ -92,7 +96,7 @@ export function LangProvider({
           lang: l === DEFAULT_LANG ? undefined : l,
         }),
         replace: true,
-        resetScroll: false,
+        resetScroll,
       });
     },
     [navigate]
@@ -108,7 +112,7 @@ export function LangProvider({
     const detected = detectLang();
     setLangState(detected);
     setReady(true);
-    if (detected !== DEFAULT_LANG) syncUrl(detected);
+    if (detected !== DEFAULT_LANG) syncUrl(detected, true);
   }, [syncUrl, initialLang]);
 
   useEffect(() => {
