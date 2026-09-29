@@ -2,17 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { AphelionLogo } from "@/components/Brand";
 import { Button } from "@/components/ui/button";
 import { useT } from "@/lib/i18n";
-import lightHero from "@/assets/home-hero-light.jpg";
-import darkHero from "@/assets/home-hero-dark.jpg";
+import { HeroWaves } from "./HeroWaves";
 
 export function Hero({ onCta }: { onCta: () => void }) {
   const t = useT();
   return (
     <section className="home-hero relative isolate overflow-hidden px-5 pt-24 pb-20 sm:pt-32 sm:pb-28">
-      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <img src={lightHero} width={1536} height={1024} fetchPriority="high" alt="" className="home-hero-image home-hero-light absolute inset-0 h-full w-full object-cover" />
-        <img src={darkHero} width={1536} height={1024} alt="" className="home-hero-image home-hero-dark absolute inset-0 h-full w-full object-cover" />
-      </div>
+      <HeroWaves />
       <div className="relative mx-auto max-w-5xl text-center">
         <div className="mb-10 inline-flex items-center justify-center">
           <AphelionLogo className="h-8 w-auto sm:h-9" />
