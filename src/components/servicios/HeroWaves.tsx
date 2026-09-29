@@ -35,8 +35,8 @@ export function HeroWaves() {
     const render = (seconds: number) => {
       if (!width || !height) return;
       const palette = colors();
-      const drift = motion.matches ? 0 : seconds * 0.095;
-      const phase = scroll * 2.2 + drift;
+      const drift = motion.matches ? 0 : seconds * 0.3;
+      const phase = scroll * 3.6 + drift;
 
       const background = ctx.createLinearGradient(0, 0, width, height);
       background.addColorStop(0, palette.edge);
@@ -52,8 +52,8 @@ export function HeroWaves() {
       for (let layer = 0; layer < 4; layer++) {
         const yAt = (x: number) => height * (
           [-0.18, 0.18, 0.76, 1.08][layer] +
-          Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.22, 0.16, 0.2, 0.13][layer] +
-          Math.sin(x / width * 9.2 - phase * 0.45 + layer) * 0.035
+          Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.3, 0.22, 0.27, 0.18][layer] +
+          Math.sin(x / width * 9.2 - phase * 0.6 + layer) * 0.06
         );
         ctx.globalAlpha = dark ? 0.33 : 0.55;
         ctx.strokeStyle = layer % 2 ? palette.waveAlt : palette.wave;
@@ -76,11 +76,11 @@ export function HeroWaves() {
         for (let x = gap / 2; x < width; x += gap) {
           const nx = x / width;
           const ny = y / height;
-          const field = Math.sin(nx * 8 + ny * 7 + phase) * 0.5 + Math.sin(nx * 13 - ny * 4 - phase * 0.7) * 0.3;
+          const field = Math.sin(nx * 8 + ny * 7 + phase) * 0.5 + Math.sin(nx * 13 - ny * 4 - phase * 1.1) * 0.3 + Math.sin(ny * 9 + phase * 1.4) * 0.2;
           const center = Math.exp(-((nx - 0.5) ** 2 / 0.105 + (ny - 0.46) ** 2 / 0.15));
-          const strength = (dark ? 0.18 : 0.17) + Math.max(0, field) * 0.25;
+          const strength = (dark ? 0.18 : 0.17) + Math.max(0, field) * 0.32;
           ctx.globalAlpha = strength * (1 - center * 0.88);
-          const radius = 0.75 + Math.max(0, field) * 0.35;
+          const radius = 0.75 + Math.max(0, field) * 0.45;
           ctx.fillRect(x - radius, y - radius, radius * 2, radius * 2);
         }
       }
@@ -104,7 +104,7 @@ export function HeroWaves() {
       frame = requestAnimationFrame(tick);
       if (!visible || now - lastDraw < 32) return;
       lastDraw = now;
-      scroll += (target - scroll) * 0.065;
+      scroll += (target - scroll) * 0.09;
       render(now / 1000);
     };
     const observer = new ResizeObserver(measure);
