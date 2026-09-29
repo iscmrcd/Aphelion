@@ -48,6 +48,7 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "cuanto-cuesta-el-seo-en-mexico",
+    cover: true,
     title: "How Much Does SEO Cost in Mexico? Real 2026 Prices",
     titleEs: "¿Cuánto cuesta el SEO en México? Precios reales 2026",
     category: "SEO",
@@ -176,6 +177,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-cuesta-una-pagina-web-en-mexico",
+    cover: true,
     title: "How Much Does a Website Cost in Mexico? (2026 Prices)",
     titleEs: "¿Cuánto Cuesta una Página Web en México? (Precios 2026)",
     category: "Web Design",
@@ -338,6 +340,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-ads-vs-meta-ads",
+    cover: true,
     title: "Google Ads vs. Meta Ads: Which Is Right for Your Business?",
     titleEs: "Google Ads vs Meta Ads: cuál le conviene a tu negocio",
     category: "Paid Ads",
@@ -461,6 +464,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "errores-de-google-ads",
+    cover: true,
     title: "10 Google Ads Mistakes That Burn Your Budget",
     titleEs: "10 errores de Google Ads que queman tu presupuesto",
     category: "Paid Ads",
@@ -639,6 +643,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-marketing-inmobiliario",
+    cover: true,
     title: "Real Estate Marketing: The Complete 2026 Guide",
     titleEs: "Marketing Inmobiliario: Guía Completa 2026",
     category: "Real Estate Marketing",
@@ -812,6 +817,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-generar-leads-inmobiliarios",
+    cover: true,
     title: "How to Generate Real Estate Leads (Complete System)",
     titleEs: "Cómo Generar Leads Inmobiliarios (Sistema Completo)",
     category: "Real Estate Marketing",
@@ -933,6 +939,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mapa-interactivo-de-lotes",
+    cover: true,
     title: "Interactive Lot Maps: The Secret Weapon of Pre-Sales",
     titleEs: "Mapas Interactivos de Lotes: el Arma Secreta de las Preventas",
     category: "Real Estate Marketing",
@@ -1048,6 +1055,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "seguimiento-de-leads-inmobiliarios",
+    cover: true,
     title: "Real Estate Lead Follow-Up: Scripts and Timing",
     titleEs: "Seguimiento de Leads Inmobiliarios: Guiones y Tiempos",
     category: "Real Estate Marketing",
@@ -1163,6 +1171,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "seo-local-guia",
+    cover: true,
     title: "Local SEO: The Complete Guide for Businesses in Mexico",
     titleEs: "SEO Local: Guía Completa para Negocios en México",
     category: "SEO",
@@ -1287,6 +1296,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-invertir-en-facebook-ads",
+    cover: true,
     title: "How Much Should You Invest in Facebook and Instagram Ads?",
     titleEs: "¿Cuánto Invertir en Publicidad de Facebook e Instagram?",
     category: "Paid Ads",
@@ -1408,6 +1418,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "errores-de-seo",
+    cover: true,
     title: "12 SEO Mistakes Small Businesses Make",
     titleEs: "12 Errores de SEO que Cometen las Pymes",
     category: "SEO",
@@ -1592,6 +1603,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "agencia-o-freelancer-marketing",
+    cover: true,
     title: "Agency, Freelancer or In-House Team? An Honest Comparison",
     titleEs: "¿Agencia, Freelancer o Equipo Interno? Comparación Honesta",
     category: "Marketing Strategy",
@@ -1714,6 +1726,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-invertir-en-marketing-inmobiliario",
+    cover: true,
     title: "How Much Should You Invest in Real Estate Marketing?",
     titleEs: "¿Cuánto Invertir en Marketing Inmobiliario?",
     category: "Real Estate Marketing",
@@ -1830,6 +1843,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-seo",
+    cover: true,
     title: "SEO: The Complete 2026 Guide",
     titleEs: "SEO: Guía Completa 2026",
     category: "SEO",
@@ -2008,6 +2022,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-google-ads",
+    cover: true,
     title: "Google Ads: The Complete 2026 Guide",
     titleEs: "Google Ads: Guía Completa 2026",
     category: "Paid Ads",
@@ -2186,6 +2201,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-cuesta-google-ads-en-mexico",
+    cover: true,
     title: "How Much Does Google Ads Cost in Mexico? (Real 2026 CPCs)",
     titleEs: "¿Cuánto Cuesta Google Ads en México? (CPCs Reales 2026)",
     category: "Paid Ads",
@@ -2324,6 +2340,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-tarda-el-seo",
+    cover: true,
     title: "How Long Does SEO Take to Show Results?",
     titleEs: "¿Cuánto Tarda el SEO en Dar Resultados?",
     category: "SEO",
@@ -2431,6 +2448,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "seo-vs-google-ads",
+    cover: true,
     title: "SEO vs Google Ads: Where Should You Invest First?",
     titleEs: "SEO vs Google Ads: ¿Dónde Invertir Primero?",
     category: "SEO",
@@ -2544,6 +2562,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-marketing-medico",
+    cover: true,
     title: "Medical & Dental Marketing: The Complete 2026 Guide",
     titleEs: "Marketing Médico y Dental: Guía Completa 2026",
     category: "Medical Marketing",
@@ -2707,6 +2726,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-atraer-pacientes-de-estados-unidos",
+    cover: true,
     title: "Medical Tourism in Tijuana: How to Attract U.S. Patients",
     titleEs: "Turismo Médico en Tijuana: Cómo Captar Pacientes de EE.UU.",
     category: "Medical Marketing",
@@ -2835,6 +2855,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "optimizar-google-business-profile",
+    cover: true,
     title: "How to Optimize Your Google Business Profile (7 Steps)",
     titleEs: "Cómo Optimizar tu Perfil de Google Business (7 Pasos)",
     category: "SEO",
@@ -2970,6 +2991,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-medir-conversiones-google-ads",
+    cover: true,
     title: "How to Actually Measure Conversions (GA4 + GTM)",
     titleEs: "Cómo Medir Conversiones de Verdad (GA4 + GTM)",
     category: "Paid Ads",
@@ -3103,6 +3125,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-invertir-en-marketing-digital",
+    cover: true,
     title: "How Much Should a Small Business Invest in Digital Marketing?",
     titleEs: "¿Cuánto Debe Invertir una Pyme en Marketing Digital?",
     category: "Marketing Strategy",
@@ -3224,6 +3247,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "landing-page-vs-pagina-web",
+    cover: true,
     title: "Landing Page vs. Website: When to Use Each One",
     titleEs: "Landing Page vs Página Web: Cuándo Usar Cada Una",
     category: "Web Design",
@@ -3369,6 +3393,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-meta-ads",
+    cover: true,
     title: "Meta Ads: The Complete 2026 Guide",
     titleEs: "Meta Ads: guía completa 2026",
     category: "Paid Ads",
@@ -3548,6 +3573,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "facebook-ads-o-instagram-ads",
+    cover: true,
     title: "Facebook Ads or Instagram Ads? Where Your Customer Actually Is",
     titleEs: "¿Facebook Ads o Instagram Ads? Dónde está tu cliente",
     category: "Paid Ads",
@@ -3659,6 +3685,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-es-el-pixel-de-meta",
+    cover: true,
     title: "Pixel and CAPI: Why Your Campaigns Measure Poorly Without Them",
     titleEs: "Pixel y CAPI: por qué tus campañas miden mal sin ellos",
     category: "Paid Ads",
@@ -3771,6 +3798,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "errores-de-facebook-ads",
+    cover: true,
     title: "10 Meta Ads Mistakes Businesses Keep Making",
     titleEs: "10 errores de Meta Ads que cometen los negocios",
     category: "Paid Ads",
@@ -3889,6 +3917,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-video-marketing",
+    cover: true,
     title: "Video, Photography & Drone: The Complete 2026 Guide",
     titleEs: "Video, fotografía y dron: guía completa 2026",
     category: "Video & Drone",
@@ -4034,6 +4063,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-cuesta-un-video-corporativo",
+    cover: true,
     title: "How Much Does a Corporate Video Cost in Mexico? (2026 Prices)",
     titleEs: "¿Cuánto Cuesta un Video Corporativo en México? (Precios 2026)",
     category: "Video & Drone",
@@ -4141,6 +4171,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "regulacion-de-drones-en-mexico",
+    cover: true,
     title: "Drones in Mexico: Regulation and Permits for Commercial Use",
     titleEs: "Drones en México: regulación y permisos para uso comercial",
     category: "Video & Drone",
@@ -4237,6 +4268,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "presupuesto-para-google-ads",
+    cover: true,
     title: "How to Set Your Google Ads Budget",
     titleEs: "Cómo definir tu presupuesto de Google Ads",
     category: "Paid Ads",
@@ -4333,6 +4365,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "agencia-google-ads-o-hacerlo-yo",
+    cover: true,
     title: "Agency or DIY: Who Should Run Your Google Ads",
     titleEs: "Agencia o hacerlo tú mismo: quién debería manejar tu Google Ads",
     category: "Paid Ads",
@@ -4429,6 +4462,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-es-remarketing",
+    cover: true,
     title: "What Is Remarketing and Why It Usually Converts Better",
     titleEs: "Qué es el Remarketing y Por Qué Suele Convertir Mejor",
     category: "Paid Ads",
@@ -4525,6 +4559,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-diseno-web",
+    cover: true,
     title: "Web Design: The Complete 2026 Guide",
     titleEs: "Diseño Web: Guía Completa 2026",
     category: "Web Design",
@@ -4681,6 +4716,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-tarda-hacer-una-pagina-web",
+    cover: true,
     title: "How Long Does It Take to Build a Professional Website?",
     titleEs: "¿Cuánto Tarda Hacer una Página Web Profesional?",
     category: "Web Design",
@@ -4777,6 +4813,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "wordpress-vs-desarrollo-a-medida",
+    cover: true,
     title: "WordPress vs. Custom Development vs. AI Builders",
     titleEs: "WordPress vs Desarrollo a Medida vs Builders con IA",
     category: "Web Design",
@@ -4884,6 +4921,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "errores-de-diseno-web",
+    cover: true,
     title: "Web Design Mistakes That Quietly Kill Your Sales",
     titleEs: "Errores de Diseño Web que Matan tus Ventas",
     category: "Web Design",
@@ -4991,6 +5029,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "checklist-para-lanzar-pagina-web",
+    cover: true,
     title: "Checklist Before Launching Your Website (30 Points)",
     titleEs: "Checklist Antes de Lanzar tu Página Web (30 Puntos)",
     category: "Web Design",
@@ -5098,6 +5137,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-debe-incluir-una-pagina-web",
+    cover: true,
     title: "What Should a Professional Website Actually Include?",
     titleEs: "¿Qué Debe Incluir una Página Web Profesional?",
     category: "Web Design",
@@ -5205,6 +5245,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "pagina-web-o-redes-sociales",
+    cover: true,
     title: "Website or Just Social Media? What Fits Your Business",
     titleEs: "¿Página Web o Solo Redes Sociales? Qué le Conviene a tu Negocio",
     category: "Web Design",
@@ -5301,6 +5342,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "velocidad-de-carga-pagina-web",
+    cover: true,
     title: "Page Load Speed: Why a Slow Site Is Costing You Customers",
     titleEs: "Velocidad de Carga: Por Qué tu Web Lenta te Cuesta Clientes",
     category: "Web Design",
@@ -5397,6 +5439,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-es-hosting",
+    cover: true,
     title: "What Is Web Hosting and Which One to Choose in Mexico",
     titleEs: "¿Qué es el Hosting y Cuál Elegir en México?",
     category: "Web Design",
@@ -5493,6 +5536,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-elegir-un-dominio",
+    cover: true,
     title: "How to Choose the Right Domain Name for Your Business",
     titleEs: "Cómo Elegir el Dominio Correcto para tu Empresa",
     category: "Web Design",
@@ -5589,6 +5633,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuando-redisenar-pagina-web",
+    cover: true,
     title: "When Should You Redesign Your Website? 8 Clear Signs",
     titleEs: "¿Cuándo Rediseñar tu Página Web? 8 Señales Claras",
     category: "Web Design",
@@ -5696,6 +5741,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-automatizacion-ia",
+    cover: true,
     title: "Automation, CRM and AI: The Complete 2026 Guide",
     titleEs: "Automatización, CRM e IA: Guía Completa 2026",
     category: "Automation",
@@ -5892,6 +5938,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-es-un-crm",
+    cover: true,
     title: "What Is a CRM and Which One Does Your Business Need?",
     titleEs: "¿Qué es un CRM y Cuál Necesita tu Pyme?",
     category: "Automation",
@@ -6010,6 +6057,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "whatsapp-business-api",
+    cover: true,
     title: "WhatsApp Business API: A Practical Guide for Companies in Mexico",
     titleEs: "WhatsApp Business API: Guía para Empresas en México",
     category: "Automation",
@@ -6145,6 +6193,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "que-automatizar-en-mi-negocio",
+    cover: true,
     title: "What to Automate First in Your Business (and What Not To)",
     titleEs: "Qué Automatizar Primero en tu Negocio (y Qué No)",
     category: "Automation",
@@ -6267,6 +6316,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "chatbot-con-ia-para-negocios",
+    cover: true,
     title: "AI Chatbots: When They Help and When They Get in the Way",
     titleEs: "Chatbots con IA: Cuándo Ayudan y Cuándo Estorban",
     category: "Automation",
@@ -6389,6 +6439,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "ia-en-marketing",
+    cover: true,
     title: "AI in Marketing 2026: What Agencies Actually Use",
     titleEs: "IA en Marketing 2026: Qué Usan las Agencias en Realidad",
     category: "Automation",
@@ -6507,6 +6558,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "email-marketing-para-pymes",
+    cover: true,
     title: "Basic Email Marketing: It Still Works (If You Do It Right)",
     titleEs: "Email Marketing Básico: Sigue Funcionando (Si lo Haces Bien)",
     category: "Automation",
@@ -6629,6 +6681,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "conectar-formularios-a-crm",
+    cover: true,
     title: "How to Connect Your Forms to the CRM (Without Losing Leads)",
     titleEs: "Cómo Conectar tus Formularios al CRM (Sin Perder Leads)",
     category: "Automation",
@@ -6747,6 +6800,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "automatizar-seguimiento-de-ventas",
+    cover: true,
     title: "Automating Sales Follow-Up: The Flow, Step by Step",
     titleEs: "Automatizar el Seguimiento de Ventas: Flujo Paso a Paso",
     category: "Automation",
@@ -6869,6 +6923,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "guia-landing-pages",
+    cover: true,
     title: "Landing Pages and CRO: The Complete 2026 Guide",
     titleEs: "Landing Pages y CRO: Guía Completa 2026",
     category: "Web Design",
@@ -7075,6 +7130,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-conseguir-resenas-google-medicos",
+    cover: true,
     title: "Google Reviews for Doctors: A System That Doesn't Break the Rules",
     titleEs: "Reseñas de Google para médicos: un sistema que no rompe las reglas",
     category: "Medical Marketing",
@@ -7253,6 +7309,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "google-ads-para-medicos-restricciones",
+    cover: true,
     title: "Google Ads for Doctors: The Restrictions That Actually Stop Clinics",
     titleEs: "Google Ads para médicos: las restricciones que de verdad frenan a las clínicas",
     category: "Medical Marketing",
@@ -7445,6 +7502,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "eeat-contenido-medico",
+    cover: true,
     title: "E-E-A-T for Medical Content: Why Google Is Stricter With Health",
     titleEs: "E-E-A-T en contenido médico: por qué Google es más estricto con la salud",
     category: "Medical Marketing",
@@ -7629,6 +7687,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "sitio-web-para-clinicas",
+    cover: true,
     title: "What a Clinic's Website Actually Needs",
     titleEs: "Qué debe tener el sitio web de una clínica",
     category: "Medical Marketing",
@@ -7813,6 +7872,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "whatsapp-para-clinicas",
+    cover: true,
     title: "WhatsApp for Clinics: Booking Appointments Without Mishandling Data",
     titleEs: "WhatsApp para clínicas: agendar citas sin manejar mal los datos",
     category: "Medical Marketing",
@@ -7991,6 +8051,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "redes-sociales-para-doctores",
+    cover: true,
     title: "Social Media for Doctors: What to Post and What Not To",
     titleEs: "Redes sociales para doctores: qué sí y qué no publicar",
     category: "Medical Marketing",
@@ -8173,6 +8234,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "cuanto-invertir-en-marketing-medico",
+    cover: true,
     title: "How Much Should a Clinic Invest in Marketing?",
     titleEs: "¿Cuánto invertir en marketing una clínica o consultorio?",
     category: "Medical Marketing",
@@ -8365,6 +8427,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "errores-marketing-dental",
+    cover: true,
     title: "Marketing Mistakes Dentists and Doctors Make",
     titleEs: "Errores de marketing que cometen dentistas y médicos",
     category: "Medical Marketing",
