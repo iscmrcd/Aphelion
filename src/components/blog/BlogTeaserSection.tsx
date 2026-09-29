@@ -1,7 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { useT, type Lang } from "@/lib/i18n";
-import { BLOG_POSTS, postTitle, postExcerpt, postCategory, type BlogPost } from "@/lib/blog-data";
+import {
+  BLOG_POSTS,
+  postTitle,
+  postExcerpt,
+  postCategory,
+  postCover,
+  type BlogPost,
+} from "@/lib/blog-data";
 
 type BlogTeaserSectionProps = {
   /** Post categories (English key, matches BlogPost.category) to pull from. */
@@ -63,14 +70,26 @@ export function BlogTeaserSection({
               params={{ slug: post.slug }}
               className="group flex flex-col overflow-hidden rounded-2xl border-[0.5px] border-neutral-200 bg-white transition hover:border-neutral-950"
             >
-              <div
-                aria-hidden
-                className={`m-3 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
-              >
-                <span className="text-xs font-medium uppercase tracking-[0.16em] text-white opacity-60">
-                  {postCategory(post, lang)}
-                </span>
-              </div>
+              {postCover(post, "card") ? (
+                <img
+                  src={postCover(post, "card")}
+                  alt=""
+                  aria-hidden
+                  width={800}
+                  height={420}
+                  loading="lazy"
+                  className="m-3 h-40 w-[calc(100%-1.5rem)] rounded-xl object-cover"
+                />
+              ) : (
+                <div
+                  aria-hidden
+                  className={`m-3 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
+                >
+                  <span className="text-xs font-medium uppercase tracking-[0.16em] text-white opacity-60">
+                    {postCategory(post, lang)}
+                  </span>
+                </div>
+              )}
               <div className="flex flex-1 flex-col px-6 pb-6">
                 <span className="mb-3 w-fit rounded-full border-[0.5px] border-neutral-300 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-neutral-500">
                   {postCategory(post, lang)}

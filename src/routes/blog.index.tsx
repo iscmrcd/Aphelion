@@ -10,6 +10,7 @@ import {
   postTitle,
   postExcerpt,
   postCategory,
+  postCover,
   type BlogPost,
 } from "@/lib/blog-data";
 
@@ -183,14 +184,26 @@ function BlogIndexPage() {
                 params={{ slug: post.slug }}
                 className="group flex flex-col overflow-hidden rounded-2xl border-[0.5px] border-neutral-200 bg-white p-3 transition hover:border-neutral-950"
               >
-                <div
-                  aria-hidden
-                  className={`flex h-48 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
-                >
-                  <span className="text-sm font-medium uppercase tracking-[0.16em] text-white opacity-60">
-                    {postCategory(post, lang)}
-                  </span>
-                </div>
+                {postCover(post, "card") ? (
+                  <img
+                    src={postCover(post, "card")}
+                    alt=""
+                    aria-hidden
+                    width={800}
+                    height={420}
+                    loading="lazy"
+                    className="h-48 w-full rounded-xl object-cover"
+                  />
+                ) : (
+                  <div
+                    aria-hidden
+                    className={`flex h-48 items-center justify-center rounded-xl bg-gradient-to-br ${post.gradient}`}
+                  >
+                    <span className="text-sm font-medium uppercase tracking-[0.16em] text-white opacity-60">
+                      {postCategory(post, lang)}
+                    </span>
+                  </div>
+                )}
 
                 <div className="flex flex-1 flex-col px-3 pb-3 pt-6">
                   <div className="mb-3 flex items-center gap-2">

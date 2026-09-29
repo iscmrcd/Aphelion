@@ -32,6 +32,12 @@ export type BlogPost = {
   ledeEs: string;
   sections: BlogSection[];
   gradient: string;
+  /**
+   * Cover art in public/images/blog/: <slug>.webp (header), <slug>-card.webp
+   * (listing cards) and <slug>-og.jpg (share preview, with the title baked in).
+   * Posts without it keep their gradient.
+   */
+  cover?: boolean;
   faq: BlogFaqItem[];
   schema: {
     keywords: string[];
@@ -8594,6 +8600,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-evalua-google-a-tu-negocio",
+    cover: true,
     title: "How Google Evaluates Your Business in 2026 (and What You Can Check Today)",
     titleEs: "Cómo evalúa Google a tu negocio en 2026 (y qué puedes revisar hoy)",
     category: "SEO",
@@ -8804,6 +8811,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "como-recomienda-chatgpt-a-tu-negocio",
+    cover: true,
     title: "Does ChatGPT Recommend Your Business? How It Chooses in 2026",
     titleEs: "¿ChatGPT recomienda tu negocio? Cómo elige a quién mencionar en 2026",
     category: "SEO",
@@ -8995,6 +9003,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "mejor-punto-de-venta-mexico",
+    cover: true,
     title:
       "What Is the Best POS System in Mexico in 2026? A Quick Top 3, and When a Custom One Wins",
     titleEs:
@@ -9160,6 +9169,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "negocio-exitoso-necesita-modernizarse",
+    cover: true,
     title:
       "Does a Successful Business Need to Modernize? Your Next Customers Are Another Generation",
     titleEs:
@@ -9328,6 +9338,14 @@ export const BLOG_CATEGORIES: BlogCategory[] = Array.from(
     BLOG_POSTS.map((p) => [p.category, { key: p.category, en: p.category, es: p.categoryEs }]),
   ).values(),
 );
+
+/** Header / card cover, or undefined when the post still uses its gradient. */
+export const postCover = (post: BlogPost, size: "hero" | "card" = "hero") =>
+  post.cover ? `/images/blog/${post.slug}${size === "card" ? "-card" : ""}.webp` : undefined;
+
+/** Share-preview image (1600x840, title baked in), or undefined. */
+export const postOgImage = (post: BlogPost) =>
+  post.cover ? `/images/blog/${post.slug}-og.jpg` : undefined;
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);

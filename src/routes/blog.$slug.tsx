@@ -13,6 +13,8 @@ import {
   postLede,
   postAuthorRole,
   formatPostDate,
+  postCover,
+  postOgImage,
   type BlogPost,
 } from "@/lib/blog-data";
 
@@ -28,6 +30,8 @@ export const Route = createFileRoute("/blog/$slug")({
     if (!post) return {};
     const lang = loaderData?.lang ?? "en";
     const url = `${SITE_URL}/blog/${post.slug}`;
+    const og = postOgImage(post);
+    const ogUrl = og ? `${SITE_URL}${og}` : undefined;
 
     return buildHead({
       path: `/blog/${post.slug}`,
@@ -45,6 +49,9 @@ export const Route = createFileRoute("/blog/$slug")({
         ogDescription: post.excerptEs,
       },
       ogType: "article",
+      image: ogUrl,
+      imageWidth: 1600,
+      imageHeight: 840,
       jsonLd: [
         {
           "@type": "Article",
@@ -54,6 +61,7 @@ export const Route = createFileRoute("/blog/$slug")({
           dateModified: post.date,
           mainEntityOfPage: { "@type": "WebPage", "@id": url },
           url,
+          ...(ogUrl ? { image: ogUrl } : {}),
           keywords: (lang === "es" ? post.schema.keywordsEs : post.schema.keywords).join(", "),
           author: { "@type": "Person", name: post.author, jobTitle: post.authorRole },
           publisher: ORGANIZATION_JSONLD,
@@ -245,11 +253,28 @@ function RichText({ text }: { text: string }) {
 
 function ArticleHero({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
   const t = useT();
+  const cover = postCover(post);
   return (
     <section
       className={`on-dark relative overflow-hidden bg-gradient-to-br ${post.gradient} px-5 pt-24 pb-14 sm:pt-32 sm:pb-16`}
     >
-      <div aria-hidden className="absolute inset-0 bg-black/50" />
+      {cover && (
+        <img
+          src={cover}
+          alt=""
+          aria-hidden
+          width={1440}
+          height={756}
+          fetchPriority="high"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
+      {/* Lighter veil over cover art so its colour survives; the gradient
+          fallback keeps the original darker veil. */}
+      <div
+        aria-hidden
+        className={`absolute inset-0 ${cover ? "bg-gradient-to-t from-black/55 via-black/25 to-black/10" : "bg-black/50"}`}
+      />
       <div className="relative mx-auto max-w-3xl">
         <Link
           to="/blog"
