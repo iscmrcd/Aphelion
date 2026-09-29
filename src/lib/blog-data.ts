@@ -38,6 +38,11 @@ export type BlogPost = {
    * Posts without it keep their gradient.
    */
   cover?: boolean;
+  /**
+   * Slug of the diagnostic this post leads to (/recursos/diagnostico/<slug>).
+   * Optional: medical and real estate posts get theirs from the category.
+   */
+  vertical?: string;
   faq: BlogFaqItem[];
   schema: {
     keywords: string[];
@@ -62,19 +67,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: 'SEO in Mexico typically runs $8,000–$35,000 MXN per month for ongoing work, or $15,000–$60,000 MXN for a one-time technical audit. Price depends on competition, site size, and whether content production is included. Anyone quoting a flat $3,000/month "complete SEO" package is selling volume, not results.',
+    lede: '[[SEO|seo]] in Mexico typically runs $8,000–$35,000 MXN per month for ongoing work, or $15,000–$60,000 MXN for a one-time technical audit. Price depends on competition, site size, and whether content production is included. Anyone quoting a flat $3,000/month "complete SEO" package is selling volume, not results.',
     ledeEs:
-      'El SEO en México cuesta entre $8,000 y $35,000 MXN mensuales para trabajo continuo, o $15,000–$60,000 MXN por una auditoría técnica única. El precio depende de la competencia, el tamaño del sitio y si incluye producción de contenido. Quien cotiza un paquete de "SEO completo" fijo en $3,000/mes vende volumen, no resultados.',
+      'El [[SEO|seo]] en México cuesta entre $8,000 y $35,000 MXN mensuales para trabajo continuo, o $15,000–$60,000 MXN por una auditoría técnica única. El precio depende de la competencia, el tamaño del sitio y si incluye producción de contenido. Quien cotiza un paquete de "SEO completo" fijo en $3,000/mes vende volumen, no resultados.',
     sections: [
       {
         id: "que-determina-el-precio",
         heading: "What actually determines the price",
         headingEs: "Qué determina el precio realmente",
         body: [
-          'Four variables set the price of an SEO engagement: how competitive your keywords are, how large and technically broken your site already is, how much new content you need to publish, and whether you\'re competing locally or nationally. A dentist in Ensenada competing for "dentista Ensenada" and a fintech competing for "préstamos personales México" are not buying the same service, even if both call it SEO.',
+          'Four variables set the price of an SEO engagement: how competitive your [[keywords|palabra-clave]] are, how large and technically broken your site already is, how much new content you need to publish, and whether you\'re competing locally or nationally. A dentist in Ensenada competing for "dentista Ensenada" and a fintech competing for "préstamos personales México" are not buying the same service, even if both call it SEO.',
         ],
         bodyEs: [
-          'Cuatro variables definen el precio de un proyecto de SEO: qué tan competidas están tus palabras clave, qué tan grande y técnicamente roto está tu sitio, cuánto contenido nuevo necesitas publicar, y si compites a nivel local o nacional. Un dentista en Ensenada compitiendo por "dentista Ensenada" y una fintech compitiendo por "préstamos personales México" no están comprando el mismo servicio, aunque ambos le llamen SEO.',
+          'Cuatro variables definen el precio de un proyecto de SEO: qué tan competidas están tus [[palabras clave|palabra-clave]], qué tan grande y técnicamente roto está tu sitio, cuánto contenido nuevo necesitas publicar, y si compites a nivel local o nacional. Un dentista en Ensenada compitiendo por "dentista Ensenada" y una fintech compitiendo por "préstamos personales México" no están comprando el mismo servicio, aunque ambos le llamen SEO.',
         ],
       },
       {
@@ -104,10 +109,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Red flags in cheap SEO packages",
         headingEs: "Señales de alerta en paquetes baratos",
         body: [
-          'Watch for: guaranteed #1 rankings (Google makes no such guarantees to anyone), no access to your own Search Console or analytics, reports that only show "keywords ranked" without traffic or conversion data, and pricing so low it can only mean templated content or manipulative link schemes that put your domain at risk of a penalty.',
+          'Watch for: guaranteed #1 rankings (Google makes no such guarantees to anyone), no access to your own [[Search Console|search-console]] or analytics, reports that only show "keywords ranked" without traffic or [[conversion|conversion]] data, and pricing so low it can only mean templated content or manipulative link schemes that put your [[domain|dominio]] at risk of a penalty.',
         ],
         bodyEs: [
-          'Cuidado con: rankings #1 garantizados (Google no le garantiza eso a nadie), no darte acceso a tu propio Search Console o analítica, reportes que solo muestran "palabras posicionadas" sin datos de tráfico o conversión, y precios tan bajos que solo pueden significar contenido genérico o esquemas de enlaces manipulados que ponen tu dominio en riesgo de penalización.',
+          'Cuidado con: rankings #1 garantizados (Google no le garantiza eso a nadie), no darte acceso a tu propio [[Search Console|search-console]] o analítica, reportes que solo muestran "palabras posicionadas" sin datos de tráfico o [[conversión|conversion]], y precios tan bajos que solo pueden significar contenido genérico o esquemas de enlaces manipulados que ponen tu [[dominio|dominio]] en riesgo de penalización.',
         ],
       },
       {
@@ -126,12 +131,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What this looks like in Tijuana",
         headingEs: "Cómo se ve esto en Tijuana",
         body: [
-          "Local SEO in a border city carries work that a single-language market does not: keyword research done twice, and often a second set of pages.",
+          "[[Local SEO|seo-local]] in a border city carries work that a single-language market does not: keyword research done twice, and often a second set of pages.",
           "That is a real cost difference and it is worth pricing explicitly rather than discovering halfway through. Whether you need it depends on whether you actually sell to English-speaking buyers, which your analytics can answer before anyone quotes you.",
           "More on the local scope in [SEO en Tijuana](/seo-tijuana).",
         ],
         bodyEs: [
-          "El SEO local en una ciudad fronteriza carga trabajo que un mercado de un solo idioma no tiene: investigación de palabras clave hecha dos veces, y con frecuencia un segundo juego de páginas.",
+          "El [[SEO local|seo-local]] en una ciudad fronteriza carga trabajo que un mercado de un solo idioma no tiene: investigación de palabras clave hecha dos veces, y con frecuencia un segundo juego de páginas.",
           "Esa es una diferencia real de costo y conviene cotizarla de forma explícita en lugar de descubrirla a medio camino. Si lo necesitas o no depende de si de verdad le vendes a compradores de habla inglesa, cosa que tu analítica puede responder antes de que alguien te cotice.",
           "Más sobre el alcance local en [SEO en Tijuana](/seo-tijuana).",
         ],
@@ -191,9 +196,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A basic template website in Mexico costs $6,000–$15,000 MXN. A professional custom site runs $25,000–$60,000 MXN. A lead-generation or e-commerce platform starts around $80,000 MXN. The gap isn't design — it's strategy, copywriting, conversion setup, and whether the site is actually built to sell.",
+    lede: "A basic template website in Mexico costs $6,000–$15,000 MXN. A professional custom site runs $25,000–$60,000 MXN. A lead-generation or e-commerce platform starts around $80,000 MXN. The gap isn't design — it's strategy, copywriting, [[conversion|conversion]] setup, and whether the site is actually built to sell.",
     ledeEs:
-      "Un sitio web básico con plantilla en México cuesta entre $6,000 y $15,000 MXN. Un sitio profesional a medida va de $25,000 a $60,000 MXN. Una plataforma de captación o e-commerce arranca en $80,000 MXN. La diferencia no está en el diseño, sino en la estrategia, el copy, la configuración de conversión y en si el sitio está realmente construido para vender.",
+      "Un sitio web básico con plantilla en México cuesta entre $6,000 y $15,000 MXN. Un sitio profesional a medida va de $25,000 a $60,000 MXN. Una plataforma de captación o e-commerce arranca en $80,000 MXN. La diferencia no está en el diseño, sino en la estrategia, el copy, la configuración de [[conversión|conversion]] y en si el sitio está realmente construido para vender.",
     sections: [
       {
         id: "los-seis-niveles",
@@ -211,10 +216,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What's included at each price point",
         headingEs: "Qué incluye cada nivel de precio",
         body: [
-          "A Presence site ($6,000–$15,000 MXN) covers a handful of pages, a template, and basic copy. A Professional site ($25,000–$60,000 MXN) adds custom design, real copywriting, SEO structure and mobile optimization. Lead-Gen and Automated tiers ($80,000–$150,000 MXN) add conversion-focused landing pages, CRM integration, and automated workflows. Commercial Systems and SaaS ($150,000 MXN+) involve custom development, databases and ongoing engineering.",
+          "A Presence site ($6,000–$15,000 MXN) covers a handful of pages, a template, and basic copy. A Professional site ($25,000–$60,000 MXN) adds custom design, real copywriting, [[SEO|seo]] structure and mobile optimization. Lead-Gen and Automated tiers ($80,000–$150,000 MXN) add conversion-focused [[landing pages|landing-page]], [[CRM|crm]] integration, and automated workflows. Commercial Systems and SaaS ($150,000 MXN+) involve custom development, databases and ongoing engineering.",
         ],
         bodyEs: [
-          "Un sitio Presencial ($6,000–$15,000 MXN) cubre unas cuantas páginas, una plantilla y copy básico. Un sitio Profesional ($25,000–$60,000 MXN) suma diseño a medida, copywriting real, estructura SEO y optimización móvil. Los niveles de Captación y Automatizada ($80,000–$150,000 MXN) suman landing pages enfocadas en conversión, integración con CRM y flujos automatizados. Sistema Comercial y SaaS ($150,000 MXN+) implican desarrollo a medida, bases de datos e ingeniería continua.",
+          "Un sitio Presencial ($6,000–$15,000 MXN) cubre unas cuantas páginas, una plantilla y copy básico. Un sitio Profesional ($25,000–$60,000 MXN) suma diseño a medida, copywriting real, estructura [[SEO|seo]] y optimización móvil. Los niveles de Captación y Automatizada ($80,000–$150,000 MXN) suman [[landing pages|landing-page]] enfocadas en conversión, integración con [[CRM|crm]] y flujos automatizados. Sistema Comercial y SaaS ($150,000 MXN+) implican desarrollo a medida, bases de datos e ingeniería continua.",
         ],
       },
       {
@@ -222,10 +227,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Hidden costs agencies don't mention",
         headingEs: "Costos ocultos que las agencias no mencionan",
         body: [
-          "The quote you get is rarely the total cost of ownership. Domain and hosting run $1,500–$6,000 MXN/year depending on traffic. Professional photography or video for the site can add $10,000–$30,000 MXN. Copywriting, if not included, is another line item. And maintenance — security updates, backups, small edits — should be budgeted at $1,500–$4,000 MXN/month, not treated as a surprise.",
+          "The quote you get is rarely the total cost of ownership. [[Domain|dominio]] and [[hosting|hosting]] run $1,500–$6,000 MXN/year depending on traffic. Professional photography or video for the site can add $10,000–$30,000 MXN. Copywriting, if not included, is another line item. And maintenance — security updates, backups, small edits — should be budgeted at $1,500–$4,000 MXN/month, not treated as a surprise.",
         ],
         bodyEs: [
-          "La cotización que recibes casi nunca es el costo total de tenencia. Dominio y hosting cuestan $1,500–$6,000 MXN/año según el tráfico. Fotografía o video profesional para el sitio puede sumar $10,000–$30,000 MXN. El copywriting, si no está incluido, es otra línea. Y el mantenimiento (actualizaciones de seguridad, respaldos, cambios menores) debe presupuestarse en $1,500–$4,000 MXN/mes, no tratarse como una sorpresa.",
+          "La cotización que recibes casi nunca es el costo total de tenencia. [[Dominio|dominio]] y [[hosting|hosting]] cuestan $1,500–$6,000 MXN/año según el tráfico. Fotografía o video profesional para el sitio puede sumar $10,000–$30,000 MXN. El copywriting, si no está incluido, es otra línea. Y el mantenimiento (actualizaciones de seguridad, respaldos, cambios menores) debe presupuestarse en $1,500–$4,000 MXN/mes, no tratarse como una sorpresa.",
         ],
       },
       {
@@ -354,9 +359,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Google Ads wins when people already search for what you sell — plumbers, lawyers, SaaS with a known category. Meta Ads wins when you need to interrupt attention and build desire — new products, high-ticket real estate, anything visual. Most businesses need both eventually, but rarely at the same time or the same budget split.",
+    lede: "[[Google Ads|google-ads]] wins when people already search for what you sell — plumbers, lawyers, SaaS with a known category. [[Meta Ads|meta-ads]] wins when you need to interrupt attention and build desire — new products, high-ticket real estate, anything visual. Most businesses need both eventually, but rarely at the same time or the same budget split.",
     ledeEs:
-      "Google Ads gana cuando la gente ya busca lo que vendes: plomeros, abogados, SaaS con categoría conocida. Meta Ads gana cuando necesitas interrumpir la atención y generar deseo, con productos nuevos, bienes raíces de alto valor o cualquier cosa visual. La mayoría de los negocios necesita ambos eventualmente, pero rara vez al mismo tiempo o con el mismo reparto de presupuesto.",
+      "[[Google Ads|google-ads]] gana cuando la gente ya busca lo que vendes: plomeros, abogados, SaaS con categoría conocida. [[Meta Ads|meta-ads]] gana cuando necesitas interrumpir la atención y generar deseo, con productos nuevos, bienes raíces de alto valor o cualquier cosa visual. La mayoría de los negocios necesita ambos eventualmente, pero rara vez al mismo tiempo o con el mismo reparto de presupuesto.",
     sections: [
       {
         id: "intencion-vs-interrupcion",
@@ -396,10 +401,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Cost per lead: what to expect in Mexico",
         headingEs: "Costo por lead: qué esperar en México",
         body: [
-          "As a rough range for 2026: local service leads on Google Ads run $150–$600 MXN each depending on category competition. Meta lead-form campaigns often come in lower per-lead ($80–$350 MXN) but with lower purchase intent, meaning more follow-up work to qualify them. High-ticket categories — real estate, medical, legal — run higher on both platforms and should be measured on cost-per-qualified-lead, not raw cost-per-click.",
+          "As a rough range for 2026: local service [[leads|lead]] on Google Ads run $150–$600 MXN each depending on category competition. Meta lead-form campaigns often come in lower per-lead ($80–$350 MXN) but with lower purchase intent, meaning more follow-up work to qualify them. High-ticket categories — real estate, medical, legal — run higher on both platforms and should be measured on cost-per-qualified-lead, not raw cost-per-click.",
         ],
         bodyEs: [
-          "Como rango aproximado para 2026: los leads de servicios locales en Google Ads cuestan entre $150 y $600 MXN cada uno según la competencia de la categoría. Las campañas de formulario de leads en Meta suelen salir más bajas por lead ($80–$350 MXN) pero con menor intención de compra, lo que implica más trabajo de seguimiento para calificarlos. Las categorías de alto valor (bienes raíces, médico, legal) cuestan más en ambas plataformas y deben medirse por costo por lead calificado, no por costo por clic bruto.",
+          "Como rango aproximado para 2026: los [[leads|lead]] de servicios locales en Google Ads cuestan entre $150 y $600 MXN cada uno según la competencia de la categoría. Las campañas de formulario de leads en Meta suelen salir más bajas por lead ($80–$350 MXN) pero con menor intención de compra, lo que implica más trabajo de seguimiento para calificarlos. Las categorías de alto valor (bienes raíces, médico, legal) cuestan más en ambas plataformas y deben medirse por costo por lead calificado, no por [[costo por clic|cpc]] bruto.",
         ],
       },
       {
@@ -407,10 +412,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The sequencing most businesses get wrong",
         headingEs: "El orden que la mayoría de los negocios hace mal",
         body: [
-          "The common mistake is splitting a tight budget 50/50 between both platforms from day one. Better sequencing: prove the offer works on the platform with clearer intent signals first, get the landing page and follow-up converting, then add the second platform to scale reach once you know your numbers. Running both platforms badly is worse than running one platform well.",
+          "The common mistake is splitting a tight budget 50/50 between both platforms from day one. Better sequencing: prove the offer works on the platform with clearer intent signals first, get the [[landing page|landing-page]] and follow-up converting, then add the second platform to scale reach once you know your numbers. Running both platforms badly is worse than running one platform well.",
         ],
         bodyEs: [
-          "El error común es dividir un presupuesto ajustado 50/50 entre ambas plataformas desde el primer día. Un mejor orden: comprobar que la oferta funciona primero en la plataforma con señales de intención más claras, lograr que la landing page y el seguimiento conviertan, y luego sumar la segunda plataforma para escalar alcance una vez que conoces tus números. Correr ambas plataformas mal es peor que correr una sola bien.",
+          "El error común es dividir un presupuesto ajustado 50/50 entre ambas plataformas desde el primer día. Un mejor orden: comprobar que la oferta funciona primero en la plataforma con señales de intención más claras, lograr que la [[landing page|landing-page]] y el seguimiento conviertan, y luego sumar la segunda plataforma para escalar alcance una vez que conoces tus números. Correr ambas plataformas mal es peor que correr una sola bien.",
         ],
       },
     ],
@@ -478,9 +483,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Most wasted Google Ads budget in Mexico comes from broad match keywords with no negatives, Smart Campaigns left on autopilot, and landing pages that don't match search intent. Fixing these three alone typically recovers 20–40% of spend within the first billing cycle.",
+    lede: "Most wasted [[Google Ads|google-ads]] budget in Mexico comes from broad match [[keywords|palabra-clave]] with no negatives, Smart Campaigns left on autopilot, and [[landing pages|landing-page]] that don't match search intent. Fixing these three alone typically recovers 20–40% of spend within the first billing cycle.",
     ledeEs:
-      "La mayor parte del presupuesto desperdiciado en Google Ads en México viene de palabras clave en concordancia amplia sin negativas, Smart Campaigns en piloto automático y landing pages que no coinciden con la intención de búsqueda. En las cuentas que hemos auditado, no es raro recuperar entre 20% y 40% del gasto solo corrigiendo estos tres puntos en el primer ciclo de facturación.",
+      "La mayor parte del presupuesto desperdiciado en [[Google Ads|google-ads]] en México viene de [[palabras clave|palabra-clave]] en concordancia amplia sin negativas, Smart Campaigns en piloto automático y [[landing pages|landing-page]] que no coinciden con la intención de búsqueda. En las cuentas que hemos auditado, no es raro recuperar entre 20% y 40% del gasto solo corrigiendo estos tres puntos en el primer ciclo de facturación.",
     sections: [
       {
         id: "concordancia-amplia",
@@ -509,10 +514,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "3. One generic landing page for every ad",
         headingEs: "3. Una sola landing genérica para todos los anuncios",
         body: [
-          'Sending every keyword group to your homepage kills conversion rate. Someone who searched "cotización remodelación cocina" should land on a page about kitchen remodels with a quote form, not a general homepage they now have to navigate. Message match between the ad, the keyword, and the landing page is what conversion rate is actually made of.',
+          'Sending every keyword group to your homepage kills [[conversion rate|tasa-de-conversion]]. Someone who searched "cotización remodelación cocina" should land on a page about kitchen remodels with a quote form, not a general homepage they now have to navigate. Message match between the ad, the keyword, and the landing page is what [[conversion|conversion]] rate is actually made of.',
         ],
         bodyEs: [
-          'Mandar todos los grupos de palabras clave a tu página de inicio mata la tasa de conversión. Alguien que buscó "cotización remodelación cocina" debería llegar a una página sobre remodelación de cocinas con un formulario de cotización, no a una página de inicio genérica que ahora tiene que navegar. La coherencia entre el anuncio, la palabra clave y la landing page es de lo que realmente está hecha la tasa de conversión.',
+          'Mandar todos los grupos de palabras clave a tu página de inicio mata la [[tasa de conversión|tasa-de-conversion]]. Alguien que buscó "cotización remodelación cocina" debería llegar a una página sobre remodelación de cocinas con un formulario de cotización, no a una página de inicio genérica que ahora tiene que navegar. La coherencia entre el anuncio, la palabra clave y la landing page es de lo que realmente está hecha la tasa de [[conversión|conversion]].',
         ],
       },
       {
@@ -553,10 +558,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "7. No dayparting or geo exclusions",
         headingEs: "7. Sin dayparting ni exclusiones geográficas",
         body: [
-          "If your business only takes calls 9am–6pm, running ads at 2am wastes budget on leads nobody answers. Same with geography: a business that serves Tijuana shouldn't be paying for clicks from Mexico City unless it can actually fulfill there. Both are five-minute fixes that most accounts never make.",
+          "If your business only takes calls 9am–6pm, running ads at 2am wastes budget on [[leads|lead]] nobody answers. Same with geography: a business that serves Tijuana shouldn't be paying for clicks from Mexico City unless it can actually fulfill there. Both are five-minute fixes that most accounts never make.",
         ],
         bodyEs: [
-          "Si tu negocio solo contesta llamadas de 9am a 6pm, correr anuncios a las 2am desperdicia presupuesto en leads que nadie contesta. Lo mismo con la geografía: un negocio que atiende Tijuana no debería pagar por clics de Ciudad de México a menos que realmente pueda atender ahí. Ambos son ajustes de cinco minutos que la mayoría de las cuentas nunca hace.",
+          "Si tu negocio solo contesta llamadas de 9am a 6pm, correr anuncios a las 2am desperdicia presupuesto en [[leads|lead]] que nadie contesta. Lo mismo con la geografía: un negocio que atiende Tijuana no debería pagar por clics de Ciudad de México a menos que realmente pueda atender ahí. Ambos son ajustes de cinco minutos que la mayoría de las cuentas nunca hace.",
         ],
       },
       {
@@ -567,7 +572,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "A generic ad running across dozens of unrelated keyword groups gets a low Quality Score and a high cost-per-click as a result. Tighter ad groups with copy written specifically to the keyword's intent lower your costs and raise your click-through rate at the same time.",
         ],
         bodyEs: [
-          "Un anuncio genérico corriendo en docenas de grupos de palabras clave sin relación obtiene un Nivel de Calidad bajo y, como resultado, un costo por clic alto. Grupos de anuncios más específicos con copy escrito para la intención exacta de la palabra clave bajan tus costos y suben tu tasa de clics al mismo tiempo.",
+          "Un anuncio genérico corriendo en docenas de grupos de palabras clave sin relación obtiene un Nivel de Calidad bajo y, como resultado, un [[costo por clic|cpc]] alto. Grupos de anuncios más específicos con copy escrito para la intención exacta de la palabra clave bajan tus costos y suben tu tasa de clics al mismo tiempo.",
         ],
       },
       {
@@ -657,9 +662,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Real estate marketing is the system that turns traffic into signed contracts: paid campaigns that reach the right buyer, a landing experience built around the property (not a brochure), a follow-up process that responds in minutes, and a CRM that never lets a lead go cold. Developments that treat these as one connected system consistently outsell those that treat them as separate tasks.",
+    lede: "Real estate marketing is the system that turns traffic into signed contracts: paid campaigns that reach the right buyer, a landing experience built around the property (not a brochure), a follow-up process that responds in minutes, and a [[CRM|crm]] that never lets a lead go cold. Developments that treat these as one connected system consistently outsell those that treat them as separate tasks.",
     ledeEs:
-      "El marketing inmobiliario es el sistema que convierte tráfico en contratos firmados: campañas pagadas que llegan al comprador correcto, una experiencia de aterrizaje construida alrededor de la propiedad (no un folleto), un proceso de seguimiento que responde en minutos, y un CRM que nunca deja enfriar un lead. Los desarrollos que tratan esto como un solo sistema conectado venden consistentemente más que los que lo tratan como tareas separadas.",
+      "El marketing inmobiliario es el sistema que convierte tráfico en contratos firmados: campañas pagadas que llegan al comprador correcto, una experiencia de aterrizaje construida alrededor de la propiedad (no un folleto), un proceso de seguimiento que responde en minutos, y un [[CRM|crm]] que nunca deja enfriar un [[lead|lead]]. Los desarrollos que tratan esto como un solo sistema conectado venden consistentemente más que los que lo tratan como tareas separadas.",
     sections: [
       {
         id: "que-es-marketing-inmobiliario",
@@ -688,10 +693,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where real estate traffic actually comes from",
         headingEs: "De dónde viene realmente el tráfico inmobiliario",
         body: [
-          'Meta Ads works best for visual, lifestyle-driven selling and for pre-sales where nothing is built yet — renders and drone footage generate desire before a search exists. Google Ads captures buyers who already search by area or property type. Portals like Inmuebles24 and Vivanuncios generate volume with weaker intent, and work best as a top-of-funnel source feeding your own retargeting rather than the final destination. See how we break down when to invest in each channel and how much in "how much to invest in real estate marketing."',
+          '[[Meta Ads|meta-ads]] works best for visual, lifestyle-driven selling and for pre-sales where nothing is built yet — renders and drone footage generate desire before a search exists. [[Google Ads|google-ads]] captures buyers who already search by area or property type. Portals like Inmuebles24 and Vivanuncios generate volume with weaker intent, and work best as a top-of-[[funnel|embudo]] source feeding your own [[retargeting|remarketing]] rather than the final destination. See how we break down when to invest in each channel and how much in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
         bodyEs: [
-          'Meta Ads funciona mejor para venta visual y de estilo de vida, y para preventas donde todavía no hay nada construido: ahí, renders y tomas de dron generan deseo incluso antes de que exista la búsqueda. Google Ads captura compradores que ya buscan por zona o tipo de propiedad. Portales como Inmuebles24 y Vivanuncios generan volumen con menor intención, y funcionan mejor como fuente de la parte alta del embudo que alimenta tu propio retargeting, no como destino final. Revisa cómo desglosamos cuánto invertir en cada canal en nuestra guía de "cuánto invertir en marketing inmobiliario."',
+          '[[Meta Ads|meta-ads]] funciona mejor para venta visual y de estilo de vida, y para preventas donde todavía no hay nada construido: ahí, renders y tomas de dron generan deseo incluso antes de que exista la búsqueda. [[Google Ads|google-ads]] captura compradores que ya buscan por zona o tipo de propiedad. Portales como Inmuebles24 y Vivanuncios generan volumen con menor intención, y funcionan mejor como fuente de la parte alta del [[embudo|embudo]] que alimenta tu propio [[retargeting|remarketing]], no como destino final. Revisa cómo desglosamos cuánto invertir en cada canal en nuestra guía de [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
       },
       {
@@ -699,10 +704,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Landing pages and interactive lot maps",
         headingEs: "Landing pages y mapas interactivos de lotes",
         body: [
-          'A property page that shows everything for free — every photo, the full price list, every available lot — gives visitors no reason to leave their contact information. For land and pre-sale developments specifically, an interactive lot map that lets buyers explore availability and pricing in real time converts dramatically better than a static PDF brochure, because it turns browsing into an action. We cover exactly how these maps work in "interactive lot maps."',
+          'A property page that shows everything for free — every photo, the full price list, every available lot — gives visitors no reason to leave their contact information. For land and pre-sale developments specifically, an interactive lot map that lets buyers explore availability and pricing in real time converts dramatically better than a static PDF brochure, because it turns browsing into an action. We cover exactly how these maps work in [interactive lot maps](/blog/mapa-interactivo-de-lotes).',
         ],
         bodyEs: [
-          'Una página de propiedad que muestra todo gratis (cada foto, la lista de precios completa, cada lote disponible) no le da al visitante ninguna razón para dejar su contacto. Para desarrollos de terrenos y preventas específicamente, un mapa interactivo de lotes que permite a los compradores explorar disponibilidad y precios en tiempo real convierte dramáticamente mejor que un PDF estático, porque convierte el navegar en una acción. Cubrimos exactamente cómo funcionan estos mapas en "mapas interactivos de lotes."',
+          'Una página de propiedad que muestra todo gratis (cada foto, la lista de precios completa, cada lote disponible) no le da al visitante ninguna razón para dejar su contacto. Para desarrollos de terrenos y preventas específicamente, un mapa interactivo de lotes que permite a los compradores explorar disponibilidad y precios en tiempo real convierte dramáticamente mejor que un PDF estático, porque convierte el navegar en una acción. Cubrimos exactamente cómo funcionan estos mapas en [mapas interactivos de lotes](/blog/mapa-interactivo-de-lotes).',
         ],
       },
       {
@@ -710,10 +715,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Follow-up and lead classification: hot, warm, cold, ghost",
         headingEs: "Seguimiento y clasificación de leads: hot, warm, cold, ghost",
         body: [
-          'Not every lead deserves the same follow-up. We classify every real estate lead into one of four buckets: hot (ready to schedule a visit this week), warm (interested but comparing options), cold (early research, months from deciding), and ghost (stopped responding entirely). Each bucket gets a different cadence and script — treating a cold lead like a hot one burns goodwill, and treating a hot lead like a cold one loses the sale to whoever calls back first. The full scripts and timing are in "real estate lead follow-up."',
+          'Not every lead deserves the same follow-up. We classify every real estate lead into one of four buckets: hot (ready to schedule a visit this week), warm (interested but comparing options), cold (early research, months from deciding), and ghost (stopped responding entirely). Each bucket gets a different cadence and script — treating a cold lead like a hot one burns goodwill, and treating a hot lead like a cold one loses the sale to whoever calls back first. The full scripts and timing are in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
         bodyEs: [
-          'No todos los leads merecen el mismo seguimiento. Clasificamos cada lead inmobiliario en una de cuatro categorías: hot (listo para agendar una visita esta semana), warm (interesado pero comparando opciones), cold (investigación temprana, a meses de decidir), y ghost (dejó de responder por completo). Cada categoría recibe una cadencia y un guion distintos. Tratar a un lead cold como uno hot desgasta la relación, y tratar a un lead hot como uno cold pierde la venta frente a quien llame primero. Los guiones y tiempos completos están en "seguimiento de leads inmobiliarios."',
+          'No todos los leads merecen el mismo seguimiento. Clasificamos cada lead inmobiliario en una de cuatro categorías: hot (listo para agendar una visita esta semana), warm (interesado pero comparando opciones), cold (investigación temprana, a meses de decidir), y ghost (dejó de responder por completo). Cada categoría recibe una cadencia y un guion distintos. Tratar a un lead cold como uno hot desgasta la relación, y tratar a un lead hot como uno cold pierde la venta frente a quien llame primero. Los guiones y tiempos completos están en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
       },
       {
@@ -721,7 +726,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "CRM and long-term nurture",
         headingEs: "CRM y nutrición a largo plazo",
         body: [
-          "The real estate sales cycle runs weeks to months, which means most leads won't close from the first call — they close from consistent presence over time. Every lead needs a home in a CRM with an automated nurture sequence: new inventory matching their criteria, market updates, and a human check-in every one to two weeks. Leads that fall out of a spreadsheet after the first missed call are leads you already paid for and threw away.",
+          "The real estate sales cycle runs weeks to months, which means most [[leads|lead]] won't close from the first call — they close from consistent presence over time. Every lead needs a home in a CRM with an automated nurture sequence: new inventory matching their criteria, market updates, and a human check-in every one to two weeks. Leads that fall out of a spreadsheet after the first missed call are leads you already paid for and threw away.",
         ],
         bodyEs: [
           "El ciclo de venta inmobiliario dura semanas o meses, lo que significa que la mayoría de los leads no cierran en la primera llamada: cierran porque alguien estuvo presente, con constancia, el tiempo suficiente. Todo lead necesita un hogar en un CRM con una secuencia de nutrición automatizada: inventario nuevo que coincida con sus criterios, actualizaciones de mercado y un contacto humano cada una o dos semanas. Los leads que se caen de una hoja de cálculo después de la primera llamada perdida son leads que ya pagaste y tiraste a la basura.",
@@ -743,10 +748,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a real estate marketing system actually costs",
         headingEs: "Cuánto cuesta realmente un sistema de marketing inmobiliario",
         body: [
-          'Budget varies enormously by ticket size and inventory volume, but as a market range for 2026, a mid-size development running paid traffic, a proper landing page and CRM should plan for $15,000 to $25,000 MXN monthly in media spend, plus the one-time cost of the landing infrastructure. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point. We break the full range down channel by channel in "how much to invest in real estate marketing."',
+          'Budget varies enormously by ticket size and inventory volume, but as a market range for 2026, a mid-size development running paid traffic, a proper [[landing page|landing-page]] and CRM should plan for $15,000 to $25,000 MXN monthly in media spend, plus the one-time cost of the landing infrastructure. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point. We break the full range down channel by channel in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
         bodyEs: [
-          'El presupuesto varía enormemente según el ticket y el volumen de inventario, pero como rango de mercado para 2026, un desarrollo mediano que corre tráfico pagado, una landing adecuada y CRM debe planear entre $15,000 y $25,000 MXN mensuales en medios, más el costo único de la infraestructura de landing. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket. Desglosamos el rango completo canal por canal en "cuánto invertir en marketing inmobiliario."',
+          'El presupuesto varía enormemente según el ticket y el volumen de inventario, pero como rango de mercado para 2026, un desarrollo mediano que corre tráfico pagado, una landing adecuada y CRM debe planear entre $15,000 y $25,000 MXN mensuales en medios, más el costo único de la infraestructura de landing. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket. Desglosamos el rango completo canal por canal en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
       },
       {
@@ -831,19 +836,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Generating real estate leads is a three-part system: paid traffic that targets buyer intent, a landing experience that captures contact before revealing the full listing, and an automated response within five minutes of the first inquiry. Skip any of the three and the other two lose most of their value — traffic without capture just raises your ad costs.",
+    lede: "Generating real estate [[leads|lead]] is a three-part system: paid traffic that targets buyer intent, a landing experience that captures contact before revealing the full listing, and an automated response within five minutes of the first inquiry. Skip any of the three and the other two lose most of their value — traffic without capture just raises your ad costs.",
     ledeEs:
-      "Generar leads inmobiliarios es un sistema de tres partes: tráfico pagado dirigido a intención de compra, una experiencia de aterrizaje que captura el contacto antes de revelar todo el listado, y una respuesta automática en los primeros cinco minutos de la primera consulta. Si falta una de las tres, las otras dos pierden casi todo su valor: el tráfico sin captación solo sube tu costo publicitario, sin traerte nada a cambio.",
+      "Generar [[leads|lead]] inmobiliarios es un sistema de tres partes: tráfico pagado dirigido a intención de compra, una experiencia de aterrizaje que captura el contacto antes de revelar todo el listado, y una respuesta automática en los primeros cinco minutos de la primera consulta. Si falta una de las tres, las otras dos pierden casi todo su valor: el tráfico sin captación solo sube tu costo publicitario, sin traerte nada a cambio.",
     sections: [
       {
         id: "canales-que-funcionan",
         heading: "Which channels actually generate leads",
         headingEs: "Qué canales realmente generan leads",
         body: [
-          "Meta Ads generates volume through visual, interruption-based selling — video walkthroughs and drone footage that stop the scroll of people who weren't actively searching yet. Google Ads captures buyers already searching by area or property type, at a higher cost per click but with stronger intent. Portals like Inmuebles24 and Vivanuncios add volume but weaker intent, and work best feeding your own retargeting rather than as a final destination. Most developments need at least two of the three to keep a full pipeline.",
+          "[[Meta Ads|meta-ads]] generates volume through visual, interruption-based selling — video walkthroughs and drone footage that stop the scroll of people who weren't actively searching yet. [[Google Ads|google-ads]] captures buyers already searching by area or property type, at a higher [[cost per click|cpc]] but with stronger intent. Portals like Inmuebles24 and Vivanuncios add volume but weaker intent, and work best feeding your own [[retargeting|remarketing]] rather than as a final destination. Most developments need at least two of the three to keep a full pipeline.",
         ],
         bodyEs: [
-          "Meta Ads genera volumen a través de venta visual e interruptiva: recorridos en video y tomas de dron que detienen el scroll de gente que todavía no buscaba activamente. Google Ads captura compradores que ya buscan por zona o tipo de propiedad, con un costo por clic más alto pero mayor intención. Portales como Inmuebles24 y Vivanuncios suman volumen con menor intención, y funcionan mejor alimentando tu propio retargeting que como destino final. La mayoría de los desarrollos necesita al menos dos de los tres para mantener un flujo completo.",
+          "[[Meta Ads|meta-ads]] genera volumen a través de venta visual e interruptiva: recorridos en video y tomas de dron que detienen el scroll de gente que todavía no buscaba activamente. [[Google Ads|google-ads]] captura compradores que ya buscan por zona o tipo de propiedad, con un [[costo por clic|cpc]] más alto pero mayor intención. Portales como Inmuebles24 y Vivanuncios suman volumen con menor intención, y funcionan mejor alimentando tu propio [[retargeting|remarketing]] que como destino final. La mayoría de los desarrollos necesita al menos dos de los tres para mantener un flujo completo.",
         ],
       },
       {
@@ -862,10 +867,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "For land and pre-sales, add an interactive map",
         headingEs: "Para terrenos y preventas, suma un mapa interactivo",
         body: [
-          "When you're selling individual lots or units rather than a single property, a static price list forces the buyer to ask you for information you could just show them. An interactive lot map that displays real-time availability and pricing lets serious buyers self-qualify and reserve without a back-and-forth over WhatsApp. We go deeper on how these maps work and when they're worth building in \"interactive lot maps.\"",
+          "When you're selling individual lots or units rather than a single property, a static price list forces the buyer to ask you for information you could just show them. An interactive lot map that displays real-time availability and pricing lets serious buyers self-qualify and reserve without a back-and-forth over WhatsApp. We go deeper on how these maps work and when they're worth building in [interactive lot maps](/blog/mapa-interactivo-de-lotes).",
         ],
         bodyEs: [
-          'Cuando vendes lotes o unidades individuales en vez de una sola propiedad, una lista de precios estática obliga al comprador a pedirte información que podrías simplemente mostrarle. Un mapa interactivo de lotes que muestra disponibilidad y precios en tiempo real permite que los compradores serios se autocalifiquen y aparten sin ida y vuelta por WhatsApp. Profundizamos en cómo funcionan estos mapas y cuándo vale la pena construirlos en "mapas interactivos de lotes."',
+          'Cuando vendes lotes o unidades individuales en vez de una sola propiedad, una lista de precios estática obliga al comprador a pedirte información que podrías simplemente mostrarle. Un mapa interactivo de lotes que muestra disponibilidad y precios en tiempo real permite que los compradores serios se autocalifiquen y aparten sin ida y vuelta por WhatsApp. Profundizamos en cómo funcionan estos mapas y cuándo vale la pena construirlos en [mapas interactivos de lotes](/blog/mapa-interactivo-de-lotes).',
         ],
       },
       {
@@ -873,10 +878,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The five-minute response window",
         headingEs: "La ventana de respuesta de cinco minutos",
         body: [
-          'Real estate leads decay fast, because buyers are often browsing several developments in the same session. A lead contacted within five minutes converts dramatically better than one contacted an hour later. That means an automated WhatsApp or SMS response the moment a form is submitted, followed by a human call within the same window — not a callback queued for later in the day. The full scripts and cadence by lead type are in "real estate lead follow-up."',
+          'Real estate leads decay fast, because buyers are often browsing several developments in the same session. A lead contacted within five minutes converts dramatically better than one contacted an hour later. That means an automated WhatsApp or SMS response the moment a form is submitted, followed by a human call within the same window — not a callback queued for later in the day. The full scripts and cadence by lead type are in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
         bodyEs: [
-          'Los leads inmobiliarios se enfrían rápido, porque los compradores suelen estar viendo varios desarrollos en la misma sesión. Un lead contactado en cinco minutos convierte dramáticamente mejor que uno contactado una hora después. Eso significa una respuesta automática por WhatsApp o SMS en el momento en que se envía el formulario, seguida de una llamada humana dentro de esa misma ventana, no de una devolución de llamada agendada para más tarde. Los guiones y la cadencia completa por tipo de lead están en "seguimiento de leads inmobiliarios."',
+          'Los leads inmobiliarios se enfrían rápido, porque los compradores suelen estar viendo varios desarrollos en la misma sesión. Un lead contactado en cinco minutos convierte dramáticamente mejor que uno contactado una hora después. Eso significa una respuesta automática por WhatsApp o SMS en el momento en que se envía el formulario, seguida de una llamada humana dentro de esa misma ventana, no de una devolución de llamada agendada para más tarde. Los guiones y la cadencia completa por tipo de lead están en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
       },
       {
@@ -884,10 +889,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a realistic lead-generation budget looks like",
         headingEs: "Cómo luce un presupuesto realista de generación de leads",
         body: [
-          'As a market range for 2026, expect to invest $15,000 to $25,000 MXN monthly across paid channels for a mid-size development, not counting the landing page and CRM setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in "how much to invest in real estate marketing."',
+          'As a market range for 2026, expect to invest $15,000 to $25,000 MXN monthly across paid channels for a mid-size development, not counting the [[landing page|landing-page]] and [[CRM|crm]] setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
         bodyEs: [
-          'Como rango de mercado para 2026, considera invertir entre $15,000 y $25,000 MXN mensuales en canales pagados para un desarrollo mediano, sin contar la landing page ni la configuración del CRM. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en "cuánto invertir en marketing inmobiliario."',
+          'Como rango de mercado para 2026, considera invertir entre $15,000 y $25,000 MXN mensuales en canales pagados para un desarrollo mediano, sin contar la [[landing page|landing-page]] ni la configuración del [[CRM|crm]]. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
         ],
       },
     ],
@@ -995,10 +1000,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When it's worth building one",
         headingEs: "Cuándo vale la pena construir uno",
         body: [
-          "It makes the most sense for developments with multiple lots or units for sale simultaneously — land developments, multi-phase pre-sales, or any project where buyers are choosing between many similar options. For a single property or a small handful of units, the return doesn't justify the build; a well-structured landing page is enough. The bigger the inventory, the bigger the leverage. As a rough threshold, developments under roughly 15-20 units rarely see enough volume of simultaneous inquiries to justify the build cost, while anything above that starts generating real time savings for the sales team every week.",
+          "It makes the most sense for developments with multiple lots or units for sale simultaneously — land developments, multi-phase pre-sales, or any project where buyers are choosing between many similar options. For a single property or a small handful of units, the return doesn't justify the build; a well-structured [[landing page|landing-page]] is enough. The bigger the inventory, the bigger the leverage. As a rough threshold, developments under roughly 15-20 units rarely see enough volume of simultaneous inquiries to justify the build cost, while anything above that starts generating real time savings for the sales team every week.",
         ],
         bodyEs: [
-          "Tiene más sentido para desarrollos con múltiples lotes o unidades a la venta simultáneamente: desarrollos de terrenos, preventas de varias fases, o cualquier proyecto donde los compradores eligen entre muchas opciones parecidas. Para una sola propiedad o un puñado de unidades, el retorno no justifica construirlo; una landing page bien estructurada es suficiente. Entre más grande el inventario, mayor la palanca. Como referencia aproximada, los desarrollos con menos de unas 15 a 20 unidades rara vez tienen suficiente volumen de consultas simultáneas para justificar el costo de construcción, mientras que por encima de eso el ahorro de tiempo semanal para el equipo de ventas empieza a ser real.",
+          "Tiene más sentido para desarrollos con múltiples lotes o unidades a la venta simultáneamente: desarrollos de terrenos, preventas de varias fases, o cualquier proyecto donde los compradores eligen entre muchas opciones parecidas. Para una sola propiedad o un puñado de unidades, el retorno no justifica construirlo; una [[landing page|landing-page]] bien estructurada es suficiente. Entre más grande el inventario, mayor la palanca. Como referencia aproximada, los desarrollos con menos de unas 15 a 20 unidades rara vez tienen suficiente volumen de consultas simultáneas para justificar el costo de construcción, mientras que por encima de eso el ahorro de tiempo semanal para el equipo de ventas empieza a ser real.",
         ],
       },
       {
@@ -1006,10 +1011,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How it fits into the rest of the lead system",
         headingEs: "Cómo encaja en el resto del sistema de leads",
         body: [
-          'The map itself is a capture tool, not a replacement for follow-up — when a buyer reserves a lot through the map, that action should trigger the same five-minute response and CRM entry as any other lead. The map increases the quality of interest you capture; the follow-up system is still what turns that interest into a signed contract. See the complete framework in "how to generate real estate leads."',
+          'The map itself is a capture tool, not a replacement for follow-up — when a buyer reserves a lot through the map, that action should trigger the same five-minute response and [[CRM|crm]] entry as any other lead. The map increases the quality of interest you capture; the follow-up system is still what turns that interest into a signed contract. See the complete framework in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).',
         ],
         bodyEs: [
-          'El mapa en sí es una herramienta de captación, no un reemplazo del seguimiento. Cuando un comprador aparta un lote a través del mapa, esa acción debe disparar la misma respuesta de cinco minutos y el mismo registro en CRM que cualquier otro lead. El mapa aumenta la calidad del interés que capturas; el sistema de seguimiento sigue siendo lo que convierte ese interés en un contrato firmado. Revisa el marco completo en "cómo generar leads inmobiliarios."',
+          'El mapa en sí es una herramienta de captación, no un reemplazo del seguimiento. Cuando un comprador aparta un lote a través del mapa, esa acción debe disparar la misma respuesta de cinco minutos y el mismo registro en [[CRM|crm]] que cualquier otro [[lead|lead]]. El mapa aumenta la calidad del interés que capturas; el sistema de seguimiento sigue siendo lo que convierte ese interés en un contrato firmado. Revisa el marco completo en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).',
         ],
       },
     ],
@@ -1069,9 +1074,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Real estate leads need to be classified the moment they arrive — hot, warm, cold or ghost — because each category requires a different response speed, script and cadence. Treating every lead the same is the single most common reason developments generate plenty of leads but close few sales.",
+    lede: "Real estate [[leads|lead]] need to be classified the moment they arrive — hot, warm, cold or ghost — because each category requires a different response speed, script and cadence. Treating every lead the same is the single most common reason developments generate plenty of leads but close few sales.",
     ledeEs:
-      "Los leads inmobiliarios necesitan clasificarse en el momento en que llegan (hot, warm, cold o ghost), porque cada categoría requiere una velocidad de respuesta, un guion y una cadencia distintos. Tratar a todos los leads igual es la razón más común por la que los desarrollos generan muchos leads pero cierran pocas ventas.",
+      "Los [[leads|lead]] inmobiliarios necesitan clasificarse en el momento en que llegan (hot, warm, cold o ghost), porque cada categoría requiere una velocidad de respuesta, un guion y una cadencia distintos. Tratar a todos los leads igual es la razón más común por la que los desarrollos generan muchos leads pero cierran pocas ventas.",
     sections: [
       {
         id: "la-clasificacion",
@@ -1122,10 +1127,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where this whole system needs to live",
         headingEs: "Dónde tiene que vivir todo este sistema",
         body: [
-          'None of this works from a WhatsApp inbox and memory — every lead, its classification, and its next follow-up date needs to live in a CRM that the whole sales team can see. Without it, classification decays within days as new leads arrive and old ones get forgotten. The complete lead-generation system this follow-up process fits into is in "how to generate real estate leads."',
+          'None of this works from a WhatsApp inbox and memory — every lead, its classification, and its next follow-up date needs to live in a [[CRM|crm]] that the whole sales team can see. Without it, classification decays within days as new leads arrive and old ones get forgotten. The complete lead-generation system this follow-up process fits into is in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).',
         ],
         bodyEs: [
-          'Nada de esto funciona desde un chat de WhatsApp y la memoria del equipo. Cada lead, su clasificación y su próxima fecha de seguimiento necesitan vivir en un CRM que todo el equipo de ventas pueda ver. Sin eso, la clasificación se degrada en días conforme llegan leads nuevos y se olvidan los anteriores. El sistema completo de generación de leads en el que encaja este proceso de seguimiento está en "cómo generar leads inmobiliarios."',
+          'Nada de esto funciona desde un chat de WhatsApp y la memoria del equipo. Cada lead, su clasificación y su próxima fecha de seguimiento necesitan vivir en un [[CRM|crm]] que todo el equipo de ventas pueda ver. Sin eso, la clasificación se degrada en días conforme llegan leads nuevos y se olvidan los anteriores. El sistema completo de generación de leads en el que encaja este proceso de seguimiento está en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).',
         ],
       },
     ],
@@ -1185,9 +1190,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Local SEO is the set of tactics that make a business show up when someone nearby searches for what it sells — a Google Business Profile that's fully optimized, consistent business information across the web, and a steady stream of real reviews. For any business that serves customers in a specific city or region, local SEO usually returns more per peso than national SEO.",
+    lede: "Local SEO is the set of tactics that make a business show up when someone nearby searches for what it sells — a [[Google Business Profile|google-business-profile]] that's fully optimized, consistent business information across the web, and a steady stream of real reviews. For any business that serves customers in a specific city or region, local SEO usually returns more per peso than national SEO.",
     ledeEs:
-      "El SEO local es el conjunto de tácticas que hacen que un negocio aparezca cuando alguien cercano busca lo que vende: un perfil de Google Business totalmente optimizado, información de negocio consistente en toda la web y un flujo constante de reseñas reales. Para cualquier negocio que atiende clientes en una ciudad o región específica, el SEO local suele rendir más por peso que el SEO nacional.",
+      "El SEO local es el conjunto de tácticas que hacen que un negocio aparezca cuando alguien cercano busca lo que vende: un [[perfil de Google Business|google-business-profile]] totalmente optimizado, información de negocio consistente en toda la web y un flujo constante de reseñas reales. Para cualquier negocio que atiende clientes en una ciudad o región específica, el SEO local suele rendir más por peso que el [[SEO|seo]] nacional.",
     sections: [
       {
         id: "que-es-seo-local",
@@ -1205,10 +1210,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Business Profile: the single highest-leverage asset",
         headingEs: "Perfil de Google Business: el activo de mayor impacto",
         body: [
-          'A complete, verified, and actively maintained Google Business Profile is the foundation of local SEO — it\'s what shows up in the map pack, which gets more clicks than the organic results below it for local searches. That means accurate categories, complete business hours, real photos updated regularly, and posts published consistently. Businesses that set it up once and never touch it again are leaving most of its value on the table. We cover the full seven-step process, with specific timelines, in "how to optimize your Google Business Profile."',
+          'A complete, verified, and actively maintained Google Business Profile is the foundation of local SEO — it\'s what shows up in the map pack, which gets more clicks than the organic results below it for local searches. That means accurate categories, complete business hours, real photos updated regularly, and posts published consistently. Businesses that set it up once and never touch it again are leaving most of its value on the table. We cover the full seven-step process, with specific timelines, in [how to optimize your Google Business Profile](/blog/optimizar-google-business-profile).',
         ],
         bodyEs: [
-          'Un perfil de Google Business completo, verificado y activamente mantenido es la base del SEO local: es lo que aparece en el paquete de mapas, que recibe más clics que los resultados orgánicos debajo para búsquedas locales. Eso significa categorías correctas, horarios completos, fotos reales actualizadas con regularidad y publicaciones constantes. Los negocios que lo configuran una vez y nunca lo vuelven a tocar están dejando la mayor parte de su valor sobre la mesa. Cubrimos el proceso completo de siete pasos, con tiempos específicos, en "cómo optimizar tu perfil de Google Business."',
+          'Un perfil de Google Business completo, verificado y activamente mantenido es la base del SEO local: es lo que aparece en el paquete de mapas, que recibe más clics que los resultados orgánicos debajo para búsquedas locales. Eso significa categorías correctas, horarios completos, fotos reales actualizadas con regularidad y publicaciones constantes. Los negocios que lo configuran una vez y nunca lo vuelven a tocar están dejando la mayor parte de su valor sobre la mesa. Cubrimos el proceso completo de siete pasos, con tiempos específicos, en [cómo optimizar tu perfil de Google Business](/blog/optimizar-google-business-profile).',
         ],
       },
       {
@@ -1249,10 +1254,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The most common local SEO mistakes",
         headingEs: "Los errores más comunes de SEO local",
         body: [
-          'Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with keywords it doesn\'t actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see "12 SEO mistakes small businesses make."',
+          'Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with [[keywords|palabra-clave]] it doesn\'t actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see [12 SEO mistakes small businesses make](/blog/errores-de-seo).',
         ],
         bodyEs: [
-          'Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con palabras clave que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa "12 errores de SEO que cometen las pymes."',
+          'Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con [[palabras clave|palabra-clave]] que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa [12 errores de SEO que cometen las pymes](/blog/errores-de-seo).',
         ],
       },
     ],
@@ -1310,19 +1315,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "As a 2026 market range for Mexico, a realistic Meta Ads budget starts at $8,000 to $12,000 MXN per month for a local business and rises to $20,000 MXN or more for national or high-ticket categories. Below that floor, the algorithm doesn't get enough data to optimize, and results become unpredictable regardless of how good the creative is.",
+    lede: "As a 2026 market range for Mexico, a realistic [[Meta Ads|meta-ads]] budget starts at $8,000 to $12,000 MXN per month for a local business and rises to $20,000 MXN or more for national or high-ticket categories. Below that floor, the algorithm doesn't get enough data to optimize, and results become unpredictable regardless of how good the creative is.",
     ledeEs:
-      "Como rango de mercado 2026 para México, un presupuesto realista de Meta Ads arranca en $8,000 a $12,000 MXN mensuales para un negocio local y sube a $20,000 MXN o más para categorías nacionales o de alto valor. Por debajo de ese piso, el algoritmo no recibe suficientes datos para optimizar, y los resultados se vuelven impredecibles sin importar qué tan bueno sea el creativo.",
+      "Como rango de mercado 2026 para México, un presupuesto realista de [[Meta Ads|meta-ads]] arranca en $8,000 a $12,000 MXN mensuales para un negocio local y sube a $20,000 MXN o más para categorías nacionales o de alto valor. Por debajo de ese piso, el algoritmo no recibe suficientes datos para optimizar, y los resultados se vuelven impredecibles sin importar qué tan bueno sea el creativo.",
     sections: [
       {
         id: "piso-minimo",
         heading: "The minimum floor to get real data",
         headingEs: "El piso mínimo para obtener datos reales",
         body: [
-          "Meta's algorithm needs a minimum volume of clicks and conversions to exit the learning phase and start optimizing efficiently — roughly 50 conversions per ad set per week is the commonly cited benchmark. Below $8,000 MXN monthly, most Mexican businesses can't generate that volume, which means the algorithm never fully learns who to show the ad to, and cost per result stays erratic.",
+          "Meta's algorithm needs a minimum volume of clicks and [[conversions|conversion]] to exit the learning phase and start optimizing efficiently — roughly 50 conversions per ad set per week is the commonly cited benchmark. Below $8,000 MXN monthly, most Mexican businesses can't generate that volume, which means the algorithm never fully learns who to show the ad to, and cost per result stays erratic.",
         ],
         bodyEs: [
-          "El algoritmo de Meta necesita un volumen mínimo de clics y conversiones para salir de la fase de aprendizaje y empezar a optimizar de forma eficiente. Aproximadamente 50 conversiones por conjunto de anuncios a la semana es el punto de referencia más citado. Por debajo de $8,000 MXN mensuales, la mayoría de los negocios mexicanos no puede generar ese volumen, lo que significa que el algoritmo nunca aprende del todo a quién mostrarle el anuncio, y el costo por resultado se mantiene errático.",
+          "El algoritmo de Meta necesita un volumen mínimo de clics y [[conversiones|conversion]] para salir de la fase de aprendizaje y empezar a optimizar de forma eficiente. Aproximadamente 50 conversiones por conjunto de anuncios a la semana es el punto de referencia más citado. Por debajo de $8,000 MXN mensuales, la mayoría de los negocios mexicanos no puede generar ese volumen, lo que significa que el algoritmo nunca aprende del todo a quién mostrarle el anuncio, y el costo por resultado se mantiene errático.",
         ],
       },
       {
@@ -1333,7 +1338,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Local services (restaurants, clinics, retail): $8,000–$15,000 MXN/month. E-commerce with a national audience: $15,000–$30,000 MXN/month, scaling with catalog size and margin. High-ticket categories (real estate, medical procedures, B2B): $20,000–$40,000 MXN/month, because cost per qualified lead is naturally higher and volume requirements to test creative are steeper.",
         ],
         bodyEs: [
-          "Servicios locales (restaurantes, clínicas, retail): $8,000–$15,000 MXN/mes. E-commerce con audiencia nacional: $15,000–$30,000 MXN/mes, escalando con el tamaño del catálogo y el margen. Categorías de alto valor (bienes raíces, procedimientos médicos, B2B): $20,000–$40,000 MXN/mes, porque el costo por lead calificado es naturalmente más alto y se necesita más volumen para probar creativos.",
+          "Servicios locales (restaurantes, clínicas, retail): $8,000–$15,000 MXN/mes. E-commerce con audiencia nacional: $15,000–$30,000 MXN/mes, escalando con el tamaño del catálogo y el margen. Categorías de alto valor (bienes raíces, procedimientos médicos, B2B): $20,000–$40,000 MXN/mes, porque el costo por [[lead|lead]] calificado es naturalmente más alto y se necesita más volumen para probar creativos.",
         ],
       },
       {
@@ -1363,10 +1368,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When Meta Ads is the right first platform",
         headingEs: "Cuándo Meta Ads es la plataforma correcta para empezar",
         body: [
-          'Meta Ads makes the most sense for visual, aspirational products and for categories where demand needs to be created rather than captured — new products, real estate pre-sales, restaurants, fashion. For categories where people already actively search by name or category, Google Ads often deserves the first dollar instead. We compare both directly in "Google Ads vs Meta Ads."',
+          'Meta Ads makes the most sense for visual, aspirational products and for categories where demand needs to be created rather than captured — new products, real estate pre-sales, restaurants, fashion. For categories where people already actively search by name or category, [[Google Ads|google-ads]] often deserves the first dollar instead. We compare both directly in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
         ],
         bodyEs: [
-          'Meta Ads tiene más sentido para productos visuales y aspiracionales, y para categorías donde la demanda hay que crearla en vez de capturarla: productos nuevos, preventas inmobiliarias, restaurantes, moda. Para categorías donde la gente ya busca activamente por nombre o categoría, Google Ads suele merecer el primer peso en su lugar. Comparamos ambos directamente en "Google Ads vs Meta Ads."',
+          'Meta Ads tiene más sentido para productos visuales y aspiracionales, y para categorías donde la demanda hay que crearla en vez de capturarla: productos nuevos, preventas inmobiliarias, restaurantes, moda. Para categorías donde la gente ya busca activamente por nombre o categoría, [[Google Ads|google-ads]] suele merecer el primer peso en su lugar. Comparamos ambos directamente en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
         ],
       },
     ],
@@ -1432,19 +1437,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Most small business SEO problems in Mexico trace back to a handful of repeated mistakes: no Google Business Profile optimization, duplicate or thin content, a site that's slow on mobile, and simply publishing nothing new for months at a time. Fixing the first three alone usually recovers more visibility than any single new tactic.",
+    lede: "Most small business [[SEO|seo]] problems in Mexico trace back to a handful of repeated mistakes: no [[Google Business Profile|google-business-profile]] optimization, duplicate or thin content, a site that's slow on mobile, and simply publishing nothing new for months at a time. Fixing the first three alone usually recovers more visibility than any single new tactic.",
     ledeEs:
-      "La mayoría de los problemas de SEO en pymes mexicanas se reducen a un puñado de errores repetidos: no optimizar el perfil de Google Business, contenido duplicado o pobre, un sitio lento en móvil, y simplemente no publicar nada nuevo durante meses. Corregir solo los primeros tres suele recuperar más visibilidad que cualquier táctica nueva por sí sola.",
+      "La mayoría de los problemas de [[SEO|seo]] en pymes mexicanas se reducen a un puñado de errores repetidos: no optimizar el [[perfil de Google Business|google-business-profile]], contenido duplicado o pobre, un sitio lento en móvil, y simplemente no publicar nada nuevo durante meses. Corregir solo los primeros tres suele recuperar más visibilidad que cualquier táctica nueva por sí sola.",
     sections: [
       {
         id: "sin-google-business",
         heading: "1. No Google Business Profile optimization",
         headingEs: "1. Sin perfil de Google Business optimizado",
         body: [
-          'For any business with a physical location, an unclaimed or incomplete Google Business Profile is the single biggest missed opportunity — it\'s often the first thing a local customer sees, before your website. We cover exactly how to fix this in "local SEO: the complete guide." Start by checking whether the listing is verified, has a current phone number and hours, and has at least a few recent photos, those three alone separate most claimed profiles from most unclaimed ones.',
+          'For any business with a physical location, an unclaimed or incomplete Google Business Profile is the single biggest missed opportunity — it\'s often the first thing a local customer sees, before your website. We cover exactly how to fix this in [local SEO: the complete guide](/blog/seo-local-guia). Start by checking whether the listing is verified, has a current phone number and hours, and has at least a few recent photos, those three alone separate most claimed profiles from most unclaimed ones.',
         ],
         bodyEs: [
-          'Para cualquier negocio con ubicación física, un perfil de Google Business sin reclamar o incompleto es la oportunidad perdida más grande. Muchas veces es lo primero que ve un cliente local, antes que tu sitio web. Cubrimos exactamente cómo corregir esto en "SEO local: guía completa." Empieza revisando si el perfil está verificado, tiene un teléfono y horario actualizados, y al menos algunas fotos recientes: esos tres puntos por sí solos separan a la mayoría de los perfiles reclamados de los que no lo están.',
+          'Para cualquier negocio con ubicación física, un perfil de Google Business sin reclamar o incompleto es la oportunidad perdida más grande. Muchas veces es lo primero que ve un cliente local, antes que tu sitio web. Cubrimos exactamente cómo corregir esto en [SEO local: guía completa](/blog/seo-local-guia). Empieza revisando si el perfil está verificado, tiene un teléfono y horario actualizados, y al menos algunas fotos recientes: esos tres puntos por sí solos separan a la mayoría de los perfiles reclamados de los que no lo están.',
         ],
       },
       {
@@ -1452,10 +1457,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "2. Duplicate or thin content across pages",
         headingEs: "2. Contenido duplicado o pobre entre páginas",
         body: [
-          'Multiple pages targeting the same keyword with barely different content confuse search engines about which page to rank, and neither ends up performing well. Each page needs a distinct purpose and enough real substance to be worth indexing on its own. A quick way to spot this: search "site:tudominio.com" plus your main keyword in Google and see how many of your own pages compete for the same term.',
+          'Multiple pages targeting the same [[keyword|palabra-clave]] with barely different content confuse search engines about which page to rank, and neither ends up performing well. Each page needs a distinct purpose and enough real substance to be worth indexing on its own. A quick way to spot this: search "site:tudominio.com" plus your main keyword in Google and see how many of your own pages compete for the same term.',
         ],
         bodyEs: [
-          'Varias páginas apuntando a la misma palabra clave con contenido apenas distinto confunden a los buscadores sobre cuál posicionar, y ninguna termina rindiendo bien. Cada página necesita un propósito distinto y suficiente sustancia real para valer la pena indexarla por sí sola. Una forma rápida de detectarlo: busca "site:tudominio.com" más tu palabra clave principal en Google y revisa cuántas páginas propias compiten por el mismo término.',
+          'Varias páginas apuntando a la misma [[palabra clave|palabra-clave]] con contenido apenas distinto confunden a los buscadores sobre cuál posicionar, y ninguna termina rindiendo bien. Cada página necesita un propósito distinto y suficiente sustancia real para valer la pena indexarla por sí sola. Una forma rápida de detectarlo: busca "site:tudominio.com" más tu palabra clave principal en Google y revisa cuántas páginas propias compiten por el mismo término.',
         ],
       },
       {
@@ -1474,10 +1479,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "4. No SSL or mixed content warnings",
         headingEs: "4. Sin SSL o advertencias de contenido mixto",
         body: [
-          'A site without HTTPS gets flagged as "not secure" by browsers, which erodes trust instantly and is treated as a negative ranking signal. This is one of the cheapest fixes on this list and there\'s rarely a good reason to leave it unresolved. Most hosting providers now include a free SSL certificate by default, so in most cases this is a settings change, not a purchase.',
+          'A site without HTTPS gets flagged as "not secure" by browsers, which erodes trust instantly and is treated as a negative ranking signal. This is one of the cheapest fixes on this list and there\'s rarely a good reason to leave it unresolved. Most [[hosting|hosting]] providers now include a free [[SSL certificate|ssl]] by default, so in most cases this is a settings change, not a purchase.',
         ],
         bodyEs: [
-          'Un sitio sin HTTPS se marca como "no seguro" en los navegadores, lo que erosiona la confianza de inmediato y se trata como una señal negativa de posicionamiento. Es una de las correcciones más baratas de esta lista y rara vez hay una buena razón para dejarla sin resolver. La mayoría de los proveedores de hosting ya incluyen un certificado SSL gratuito por defecto, así que en la mayoría de los casos es un ajuste de configuración, no una compra.',
+          'Un sitio sin HTTPS se marca como "no seguro" en los navegadores, lo que erosiona la confianza de inmediato y se trata como una señal negativa de posicionamiento. Es una de las correcciones más baratas de esta lista y rara vez hay una buena razón para dejarla sin resolver. La mayoría de los proveedores de [[hosting|hosting]] ya incluyen un [[certificado SSL|ssl]] gratuito por defecto, así que en la mayoría de los casos es un ajuste de configuración, no una compra.',
         ],
       },
       {
@@ -1485,10 +1490,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "5. Missing or duplicate title tags",
         headingEs: "5. Etiquetas de título faltantes o duplicadas",
         body: [
-          'Every page needs a unique, descriptive title tag — generic titles like "Home" or the same title repeated across a dozen pages waste one of the most direct ranking signals a site has. This is usually a fast fix once identified. Google Search Console flags duplicate and missing titles directly under its "Coverage" and "Enhancements" reports, so it doesn\'t require manually checking every page.',
+          'Every page needs a unique, descriptive title tag — generic titles like "Home" or the same title repeated across a dozen pages waste one of the most direct ranking signals a site has. This is usually a fast fix once identified. [[Google Search Console|search-console]] flags duplicate and missing titles directly under its "Coverage" and "Enhancements" reports, so it doesn\'t require manually checking every page.',
         ],
         bodyEs: [
-          'Cada página necesita una etiqueta de título única y descriptiva. Títulos genéricos como "Inicio", o el mismo título repetido en una docena de páginas, desperdician una de las señales de posicionamiento más directas que tiene un sitio. Suele ser una corrección rápida una vez identificada. Google Search Console marca directamente los títulos duplicados o faltantes en sus reportes de "Cobertura" y "Mejoras", así que no hace falta revisar cada página a mano.',
+          'Cada página necesita una etiqueta de título única y descriptiva. Títulos genéricos como "Inicio", o el mismo título repetido en una docena de páginas, desperdician una de las señales de posicionamiento más directas que tiene un sitio. Suele ser una corrección rápida una vez identificada. [[Google Search Console|search-console]] marca directamente los títulos duplicados o faltantes en sus reportes de "Cobertura" y "Mejoras", así que no hace falta revisar cada página a mano.',
         ],
       },
       {
@@ -1518,10 +1523,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "8. Ignoring Core Web Vitals",
         headingEs: "8. Ignorar Core Web Vitals",
         body: [
-          "Google's Core Web Vitals measure loading speed, interactivity and visual stability — and they factor directly into ranking. Most small business sites have never checked their scores, let alone acted on them, leaving an easy technical win unclaimed. The three specific metrics are Largest Contentful Paint (load speed), Interaction to Next Paint (responsiveness), and Cumulative Layout Shift (visual stability), all visible for free in Search Console's own Core Web Vitals report.",
+          "Google's [[Core Web Vitals|core-web-vitals]] measure loading speed, interactivity and visual stability — and they factor directly into ranking. Most small business sites have never checked their scores, let alone acted on them, leaving an easy technical win unclaimed. The three specific metrics are Largest Contentful Paint (load speed), Interaction to Next Paint (responsiveness), and Cumulative Layout Shift (visual stability), all visible for free in Search Console's own Core Web Vitals report.",
         ],
         bodyEs: [
-          "Los Core Web Vitals de Google miden velocidad de carga, interactividad y estabilidad visual, y afectan directamente el posicionamiento. La mayoría de los sitios de pymes nunca ha revisado sus puntajes, mucho menos actuado sobre ellos, dejando una victoria técnica fácil sin reclamar. Las tres métricas específicas son Largest Contentful Paint (velocidad de carga), Interaction to Next Paint (capacidad de respuesta) y Cumulative Layout Shift (estabilidad visual), y las tres se ven gratis en el propio reporte de Core Web Vitals de Search Console.",
+          "Los [[Core Web Vitals|core-web-vitals]] de Google miden velocidad de carga, interactividad y estabilidad visual, y afectan directamente el posicionamiento. La mayoría de los sitios de pymes nunca ha revisado sus puntajes, mucho menos actuado sobre ellos, dejando una victoria técnica fácil sin reclamar. Las tres métricas específicas son Largest Contentful Paint (velocidad de carga), Interaction to Next Paint (capacidad de respuesta) y Cumulative Layout Shift (estabilidad visual), y las tres se ven gratis en el propio reporte de Core Web Vitals de Search Console.",
         ],
       },
       {
@@ -1626,10 +1631,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When a freelancer is the right call",
         headingEs: "Cuándo un freelancer es la decisión correcta",
         body: [
-          "Freelancers work best for narrow, well-defined deliverables — a logo, a batch of ad creative, a single landing page — where you already know exactly what you need and don't require ongoing strategy. Costs run lower than an agency for the same task, but there's no backup if the freelancer is unavailable, and coordinating multiple freelancers across channels becomes a part-time job in itself.",
+          "Freelancers work best for narrow, well-defined deliverables — a logo, a batch of ad creative, a single [[landing page|landing-page]] — where you already know exactly what you need and don't require ongoing strategy. Costs run lower than an agency for the same task, but there's no backup if the freelancer is unavailable, and coordinating multiple freelancers across channels becomes a part-time job in itself.",
         ],
         bodyEs: [
-          "Los freelancers funcionan mejor para entregables acotados y bien definidos (un logo, un lote de creativos para anuncios, una landing page) donde ya sabes exactamente qué necesitas y no requieres estrategia continua. Los costos son más bajos que una agencia para la misma tarea, pero no hay respaldo si el freelancer no está disponible, y coordinar a varios freelancers en distintos canales se vuelve un trabajo de medio tiempo en sí mismo.",
+          "Los freelancers funcionan mejor para entregables acotados y bien definidos (un logo, un lote de creativos para anuncios, una [[landing page|landing-page]]) donde ya sabes exactamente qué necesitas y no requieres estrategia continua. Los costos son más bajos que una agencia para la misma tarea, pero no hay respaldo si el freelancer no está disponible, y coordinar a varios freelancers en distintos canales se vuelve un trabajo de medio tiempo en sí mismo.",
         ],
       },
       {
@@ -1637,10 +1642,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When an agency makes more sense",
         headingEs: "Cuándo una agencia tiene más sentido",
         body: [
-          "An agency makes sense when you need strategy and execution connected across multiple channels — SEO, ads, content, design — working from the same plan instead of disconnected freelancers pulling in different directions. The trade-off is cost: agencies typically run higher monthly retainers than a single freelancer, because you're paying for coordination and accountability, not just hours of work.",
+          "An agency makes sense when you need strategy and execution connected across multiple channels — [[SEO|seo]], ads, content, design — working from the same plan instead of disconnected freelancers pulling in different directions. The trade-off is cost: agencies typically run higher monthly retainers than a single freelancer, because you're paying for coordination and accountability, not just hours of work.",
         ],
         bodyEs: [
-          "Una agencia tiene sentido cuando necesitas estrategia y ejecución conectadas en varios canales (SEO, anuncios, contenido, diseño) trabajando desde el mismo plan en vez de freelancers desconectados jalando en direcciones distintas. El trade-off es el costo: las agencias suelen tener tarifas mensuales más altas que un solo freelancer, porque estás pagando por coordinación y responsabilidad, no solo por horas de trabajo.",
+          "Una agencia tiene sentido cuando necesitas estrategia y ejecución conectadas en varios canales ([[SEO|seo]], anuncios, contenido, diseño) trabajando desde el mismo plan en vez de freelancers desconectados jalando en direcciones distintas. El trade-off es el costo: las agencias suelen tener tarifas mensuales más altas que un solo freelancer, porque estás pagando por coordinación y responsabilidad, no solo por horas de trabajo.",
         ],
       },
       {
@@ -1740,19 +1745,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "As a 2026 market range, a mid-size real estate development should plan for $15,000 to $25,000 MXN monthly in paid traffic across Meta and Google, plus a one-time investment in landing infrastructure and CRM setup. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point.",
+    lede: "As a 2026 market range, a mid-size real estate development should plan for $15,000 to $25,000 MXN monthly in paid traffic across Meta and Google, plus a one-time investment in landing infrastructure and [[CRM|crm]] setup. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point.",
     ledeEs:
-      "Como rango de mercado 2026, un desarrollo inmobiliario mediano debe planear entre $15,000 y $25,000 MXN mensuales en tráfico pagado entre Meta y Google, más una inversión única en infraestructura de landing y configuración de CRM. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket.",
+      "Como rango de mercado 2026, un desarrollo inmobiliario mediano debe planear entre $15,000 y $25,000 MXN mensuales en tráfico pagado entre Meta y Google, más una inversión única en infraestructura de landing y configuración de [[CRM|crm]]. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket.",
     sections: [
       {
         id: "desglose-por-canal",
         heading: "The budget broken down by channel",
         headingEs: "El presupuesto desglosado por canal",
         body: [
-          "As typical 2026 ranges: Meta Ads $6,000–$12,000 MXN/month for visual, awareness-driven traffic; Google Ads $5,000–$10,000 MXN/month for buyers actively searching by area or type; portal listings (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/month for additional volume. Most developments split spend across at least two channels rather than betting everything on one.",
+          "As typical 2026 ranges: [[Meta Ads|meta-ads]] $6,000–$12,000 MXN/month for visual, awareness-driven traffic; [[Google Ads|google-ads]] $5,000–$10,000 MXN/month for buyers actively searching by area or type; portal listings (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/month for additional volume. Most developments split spend across at least two channels rather than betting everything on one.",
         ],
         bodyEs: [
-          "Como rangos típicos para 2026: Meta Ads $6,000–$12,000 MXN/mes para tráfico visual orientado a generar interés; Google Ads $5,000–$10,000 MXN/mes para compradores que ya buscan activamente por zona o tipo; listados en portales (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/mes para volumen adicional. La mayoría de los desarrollos reparte el gasto entre al menos dos canales en vez de apostarlo todo a uno.",
+          "Como rangos típicos para 2026: [[Meta Ads|meta-ads]] $6,000–$12,000 MXN/mes para tráfico visual orientado a generar interés; [[Google Ads|google-ads]] $5,000–$10,000 MXN/mes para compradores que ya buscan activamente por zona o tipo; listados en portales (Inmuebles24, Vivanuncios) $2,000–$5,000 MXN/mes para volumen adicional. La mayoría de los desarrollos reparte el gasto entre al menos dos canales en vez de apostarlo todo a uno.",
         ],
       },
       {
@@ -1760,10 +1765,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The one-time infrastructure investment",
         headingEs: "La inversión única en infraestructura",
         body: [
-          "Beyond monthly media spend, expect a one-time cost for a proper landing page ($25,000–$60,000 MXN) and, for land or multi-unit developments, an interactive lot map ($40,000–$90,000 MXN depending on complexity). CRM setup and integration typically adds $10,000–$25,000 MXN. These are build-once costs, not recurring ones.",
+          "Beyond monthly media spend, expect a one-time cost for a proper [[landing page|landing-page]] ($25,000–$60,000 MXN) and, for land or multi-unit developments, an interactive lot map ($40,000–$90,000 MXN depending on complexity). CRM setup and integration typically adds $10,000–$25,000 MXN. These are build-once costs, not recurring ones.",
         ],
         bodyEs: [
-          "Más allá del gasto mensual en medios, considera un costo único por una landing page adecuada ($25,000–$60,000 MXN) y, para desarrollos de terrenos o multiunidad, un mapa interactivo de lotes ($40,000–$90,000 MXN según la complejidad). La configuración e integración del CRM suele sumar $10,000–$25,000 MXN. Son costos de construcción única, no recurrentes.",
+          "Más allá del gasto mensual en medios, considera un costo único por una [[landing page|landing-page]] adecuada ($25,000–$60,000 MXN) y, para desarrollos de terrenos o multiunidad, un mapa interactivo de lotes ($40,000–$90,000 MXN según la complejidad). La configuración e integración del CRM suele sumar $10,000–$25,000 MXN. Son costos de construcción única, no recurrentes.",
         ],
       },
       {
@@ -1785,7 +1790,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Cost per qualified lead in real estate typically runs $300–$1,200 MXN depending on price point and category, higher than most other industries because the buyer pool is smaller and the decision more considered. Measuring against cost per closing, not just cost per lead, gives a truer picture of whether the budget is working.",
         ],
         bodyEs: [
-          "El costo por lead calificado en bienes raíces suele correr entre $300 y $1,200 MXN según el ticket y la categoría, más alto que en la mayoría de las industrias porque el grupo de compradores es más pequeño y la decisión más meditada. Medir contra el costo por cierre, no solo contra el costo por lead, da una imagen más real de si el presupuesto está funcionando.",
+          "El costo por [[lead|lead]] calificado en bienes raíces suele correr entre $300 y $1,200 MXN según el ticket y la categoría, más alto que en la mayoría de las industrias porque el grupo de compradores es más pequeño y la decisión más meditada. Medir contra el costo por cierre, no solo contra el costo por lead, da una imagen más real de si el presupuesto está funcionando.",
         ],
       },
       {
@@ -1793,10 +1798,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When to adjust the budget",
         headingEs: "Cuándo ajustar el presupuesto",
         body: [
-          'Revisit the split every 4 to 6 weeks based on which channel is producing hot and warm leads, not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the cost per click looks attractive. The full classification system is in "real estate lead follow-up."',
+          'Revisit the split every 4 to 6 weeks based on which channel is producing hot and warm [[leads|lead]], not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the [[cost per click|cpc]] looks attractive. The full classification system is in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
         bodyEs: [
-          'Revisa el reparto cada 4 a 6 semanas según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el costo por clic se vea atractivo. El sistema de clasificación completo está en "seguimiento de leads inmobiliarios."',
+          'Revisa el reparto cada 4 a 6 semanas según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el [[costo por clic|cpc]] se vea atractivo. El sistema de clasificación completo está en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
         ],
       },
     ],
@@ -1878,10 +1883,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How Google actually decides what to rank",
         headingEs: "Cómo decide Google realmente qué posicionar",
         body: [
-          "Search engines crawl the web with automated bots, index what they find, and rank pages for a given search using hundreds of signals — relevance to the query, page speed and mobile usability, how authoritative the domain is, and increasingly, how directly and clearly a page answers the question. There's no single trick that moves rankings; it's the accumulation of many small, correct decisions over time.",
+          "Search engines crawl the web with automated bots, index what they find, and rank pages for a given search using hundreds of signals — relevance to the query, page speed and mobile usability, how authoritative the [[domain|dominio]] is, and increasingly, how directly and clearly a page answers the question. There's no single trick that moves rankings; it's the accumulation of many small, correct decisions over time.",
         ],
         bodyEs: [
-          "Los buscadores rastrean la web con bots automatizados, indexan lo que encuentran, y posicionan páginas para una búsqueda usando cientos de señales: relevancia con la consulta, velocidad y usabilidad móvil, qué tan autorizado es el dominio y, cada vez más, qué tan directa y claramente responde una página la pregunta. No hay un solo truco que mueva el posicionamiento; es la acumulación de muchas decisiones correctas y pequeñas en el tiempo.",
+          "Los buscadores rastrean la web con bots automatizados, indexan lo que encuentran, y posicionan páginas para una búsqueda usando cientos de señales: relevancia con la consulta, velocidad y usabilidad móvil, qué tan autorizado es el [[dominio|dominio]] y, cada vez más, qué tan directa y claramente responde una página la pregunta. No hay un solo truco que mueva el posicionamiento; es la acumulación de muchas decisiones correctas y pequeñas en el tiempo.",
         ],
       },
       {
@@ -1911,10 +1916,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Local SEO: for businesses that serve a specific area",
         headingEs: "SEO local: para negocios que atienden una zona específica",
         body: [
-          'For any business with a physical location or a defined service area, local SEO — an optimized Google Business Profile, consistent business information, and real reviews — usually returns more per peso than national SEO. We cover it in full depth in "local SEO: the complete guide."',
+          'For any business with a physical location or a defined service area, local SEO — an optimized [[Google Business Profile|google-business-profile]], consistent business information, and real reviews — usually returns more per peso than national SEO. We cover it in full depth in [local SEO: the complete guide](/blog/seo-local-guia).',
         ],
         bodyEs: [
-          'Para cualquier negocio con ubicación física o un área de servicio definida, el SEO local (un perfil de Google Business optimizado, información de negocio consistente y reseñas reales) suele rendir más por peso que el SEO nacional. Lo cubrimos a fondo en "SEO local: guía completa."',
+          'Para cualquier negocio con ubicación física o un área de servicio definida, el SEO local (un [[perfil de Google Business|google-business-profile]] optimizado, información de negocio consistente y reseñas reales) suele rendir más por peso que el SEO nacional. Lo cubrimos a fondo en [SEO local: guía completa](/blog/seo-local-guia).',
         ],
       },
       {
@@ -1933,10 +1938,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How long it takes and what it costs",
         headingEs: "Cuánto tarda y cuánto cuesta",
         body: [
-          'SEO takes 4 to 6 months for initial movement and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in "how long does SEO take" and "how much does SEO cost in Mexico."',
+          'SEO takes 4 to 6 months for initial movement and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in [how long does SEO take](/blog/cuanto-tarda-el-seo) and [how much does SEO cost in Mexico](/blog/cuanto-cuesta-el-seo-en-mexico).',
         ],
         bodyEs: [
-          'El SEO toma de 4 a 6 meses para mostrar movimiento inicial y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en "cuánto tarda el SEO" y "cuánto cuesta el SEO en México."',
+          'El SEO toma de 4 a 6 meses para mostrar movimiento inicial y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en [cuánto tarda el SEO](/blog/cuanto-tarda-el-seo) y [cuánto cuesta el SEO en México](/blog/cuanto-cuesta-el-seo-en-mexico).',
         ],
       },
       {
@@ -1944,10 +1949,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How SEO compares to paid channels",
         headingEs: "Cómo se compara el SEO con canales pagados",
         body: [
-          'SEO and Google Ads solve different problems on different timelines — ads deliver traffic the day you turn them on and stop the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. Most businesses eventually need both, but rarely at the same intensity from day one. We go deeper on how to sequence the two in "SEO vs Google Ads."',
+          'SEO and [[Google Ads|google-ads]] solve different problems on different timelines — ads deliver traffic the day you turn them on and stop the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. Most businesses eventually need both, but rarely at the same intensity from day one. We go deeper on how to sequence the two in [SEO vs Google Ads](/blog/seo-vs-google-ads).',
         ],
         bodyEs: [
-          'El SEO y Google Ads resuelven problemas distintos en cronogramas distintos. Los anuncios entregan tráfico el día que los enciendes y se detienen el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La mayoría de los negocios eventualmente necesita ambos, pero rara vez con la misma intensidad desde el día uno. Profundizamos en cómo secuenciar los dos en "SEO vs Google Ads."',
+          'El SEO y [[Google Ads|google-ads]] resuelven problemas distintos en cronogramas distintos. Los anuncios entregan tráfico el día que los enciendes y se detienen el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La mayoría de los negocios eventualmente necesita ambos, pero rara vez con la misma intensidad desde el día uno. Profundizamos en cómo secuenciar los dos en [SEO vs Google Ads](/blog/seo-vs-google-ads).',
         ],
       },
       {
@@ -1955,10 +1960,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Common mistakes and where to go next",
         headingEs: "Errores comunes y siguientes pasos",
         body: [
-          'The most common SEO mistakes we see — no Google Business Profile optimization, thin or duplicate content, ignoring mobile speed — are covered in full in "12 SEO mistakes small businesses make." This guide is the starting point; each linked cluster goes deeper into one specific piece of the system, and we keep adding new ones as the SEO landscape shifts.',
+          'The most common SEO mistakes we see — no Google Business Profile optimization, thin or duplicate content, ignoring mobile speed — are covered in full in [12 SEO mistakes small businesses make](/blog/errores-de-seo). This guide is the starting point; each linked cluster goes deeper into one specific piece of the system, and we keep adding new ones as the SEO landscape shifts.',
         ],
         bodyEs: [
-          'Los errores de SEO más comunes que vemos (sin perfil de Google Business optimizado, contenido pobre o duplicado, ignorar la velocidad móvil) están cubiertos a fondo en "12 errores de SEO que cometen las pymes." Esta guía es el punto de partida; cada cluster enlazado profundiza en una pieza específica del sistema, y seguimos sumando nuevos conforme cambia el panorama del SEO.',
+          'Los errores de SEO más comunes que vemos (sin perfil de Google Business optimizado, contenido pobre o duplicado, ignorar la velocidad móvil) están cubiertos a fondo en [12 errores de SEO que cometen las pymes](/blog/errores-de-seo). Esta guía es el punto de partida; cada cluster enlazado profundiza en una pieza específica del sistema, y seguimos sumando nuevos conforme cambia el panorama del SEO.',
         ],
       },
       {
@@ -2036,9 +2041,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Google Ads is a pay-per-click advertising system that shows your business at the top of search results, on YouTube, and across millions of partner sites, and charges only when someone clicks or takes a specific action. It works by intercepting existing demand — people already searching for what you sell — which is why it can generate leads within days rather than the months SEO takes.",
+    lede: "Google Ads is a pay-per-click advertising system that shows your business at the top of search results, on YouTube, and across millions of partner sites, and charges only when someone clicks or takes a specific action. It works by intercepting existing demand — people already searching for what you sell — which is why it can generate [[leads|lead]] within days rather than the months [[SEO|seo]] takes.",
     ledeEs:
-      "Google Ads es un sistema de publicidad de pago por clic que muestra tu negocio arriba de los resultados de búsqueda, en YouTube y en millones de sitios asociados, y cobra solo cuando alguien hace clic o realiza una acción específica. Funciona interceptando demanda que ya existe: gente que ya está buscando lo que vendes. Por eso puede generar leads en días, no en los meses que toma el SEO.",
+      "Google Ads es un sistema de publicidad de pago por clic que muestra tu negocio arriba de los resultados de búsqueda, en YouTube y en millones de sitios asociados, y cobra solo cuando alguien hace clic o realiza una acción específica. Funciona interceptando demanda que ya existe: gente que ya está buscando lo que vendes. Por eso puede generar [[leads|lead]] en días, no en los meses que toma el [[SEO|seo]].",
     gradient: "from-slate-700 to-neutral-900",
     sections: [
       {
@@ -2046,10 +2051,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How Google Ads actually works",
         headingEs: "Cómo funciona realmente Google Ads",
         body: [
-          "Advertisers bid on keywords relevant to their business, and Google runs an auction every time someone searches — the winner isn't just the highest bidder, but the combination of bid, ad relevance and expected click-through rate (Quality Score). A highly relevant, well-written ad can beat a bigger budget with a sloppy one. You pay only when someone clicks, not for the impression.",
+          "Advertisers bid on [[keywords|palabra-clave]] relevant to their business, and Google runs an auction every time someone searches — the winner isn't just the highest bidder, but the combination of bid, ad relevance and expected click-through rate ([[Quality Score|nivel-de-calidad]]). A highly relevant, well-written ad can beat a bigger budget with a sloppy one. You pay only when someone clicks, not for the impression.",
         ],
         bodyEs: [
-          "Los anunciantes pujan por palabras clave relevantes para su negocio, y Google corre una subasta cada vez que alguien busca. El ganador no es solo quien puja más alto, sino la combinación de la puja, la relevancia del anuncio y la tasa de clics esperada (Nivel de Calidad). Un anuncio muy relevante y bien escrito puede ganarle a un presupuesto mayor pero descuidado. Pagas solo cuando alguien da clic, no por la impresión.",
+          "Los anunciantes pujan por [[palabras clave|palabra-clave]] relevantes para su negocio, y Google corre una subasta cada vez que alguien busca. El ganador no es solo quien puja más alto, sino la combinación de la puja, la relevancia del anuncio y la tasa de clics esperada ([[Nivel de Calidad|nivel-de-calidad]]). Un anuncio muy relevante y bien escrito puede ganarle a un presupuesto mayor pero descuidado. Pagas solo cuando alguien da clic, no por la impresión.",
         ],
       },
       {
@@ -2068,10 +2073,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What it actually costs",
         headingEs: "Cuánto cuesta realmente",
         body: [
-          'Cost per click in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over $100 MXN in competitive ones like legal or medical services. We publish real CPC ranges by industry in "how much does Google Ads cost in Mexico."',
+          '[[Cost per click|cpc]] in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over $100 MXN in competitive ones like legal or medical services. We publish real CPC ranges by industry in [how much does Google Ads cost in Mexico](/blog/cuanto-cuesta-google-ads-en-mexico).',
         ],
         bodyEs: [
-          'El costo por clic en México varía enormemente por industria: desde unos cuantos pesos en categorías de baja competencia hasta más de $100 MXN en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en "cuánto cuesta Google Ads en México."',
+          'El [[costo por clic|cpc]] en México varía enormemente por industria: desde unos cuantos pesos en categorías de baja competencia hasta más de $100 MXN en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en [cuánto cuesta Google Ads en México](/blog/cuanto-cuesta-google-ads-en-mexico).',
         ],
       },
       {
@@ -2079,10 +2084,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Measuring what actually matters",
         headingEs: "Medir lo que realmente importa",
         body: [
-          'Google Ads is only as good as the data feeding its algorithm — without accurate conversion tracking through GA4 and Google Tag Manager, both you and Google are optimizing blind. This is the single most common gap we find when auditing accounts. The full setup process is in "how to actually measure conversions."',
+          'Google Ads is only as good as the data feeding its algorithm — without accurate [[conversion|conversion]] tracking through [[GA4|google-analytics]] and Google Tag Manager, both you and Google are optimizing blind. This is the single most common gap we find when auditing accounts. The full setup process is in [how to actually measure conversions](/blog/como-medir-conversiones-google-ads).',
         ],
         bodyEs: [
-          'Google Ads es tan bueno como los datos que alimentan su algoritmo. Sin seguimiento de conversiones preciso a través de GA4 y Google Tag Manager, tanto tú como Google están optimizando a ciegas. Este es el hueco más común que encontramos al auditar cuentas. El proceso completo de configuración está en "cómo medir conversiones de verdad."',
+          'Google Ads es tan bueno como los datos que alimentan su algoritmo. Sin seguimiento de [[conversiones|conversion]] preciso a través de [[GA4|google-analytics]] y Google Tag Manager, tanto tú como Google están optimizando a ciegas. Este es el hueco más común que encontramos al auditar cuentas. El proceso completo de configuración está en [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).',
         ],
       },
       {
@@ -2090,10 +2095,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The mistakes that burn the most budget",
         headingEs: "Los errores que más queman presupuesto",
         body: [
-          'Broad match keywords with no negatives, broken conversion tracking, and landing pages that do not match search intent account for most of the wasted spend we find in account audits. The full list of ten is in "10 Google Ads mistakes that burn your budget."',
+          'Broad match keywords with no negatives, broken conversion tracking, and [[landing pages|landing-page]] that do not match search intent account for most of the wasted spend we find in account audits. The full list of ten is in [10 Google Ads mistakes that burn your budget](/blog/errores-de-google-ads).',
         ],
         bodyEs: [
-          'La concordancia amplia sin negativas, el seguimiento de conversiones roto y las landing pages que no coinciden con la intención de búsqueda explican la mayor parte del gasto desperdiciado que encontramos en auditorías de cuenta. La lista completa de diez está en "10 errores de Google Ads que queman tu presupuesto."',
+          'La concordancia amplia sin negativas, el seguimiento de conversiones roto y las [[landing pages|landing-page]] que no coinciden con la intención de búsqueda explican la mayor parte del gasto desperdiciado que encontramos en auditorías de cuenta. La lista completa de diez está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).',
         ],
       },
       {
@@ -2101,10 +2106,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Ads vs. organic SEO",
         headingEs: "Google Ads vs. SEO orgánico",
         body: [
-          'Google Ads delivers traffic immediately but stops the moment you stop paying; SEO takes months to build but keeps working without an ongoing per-click cost. Most businesses eventually run both — Ads for immediate demand, SEO to lower acquisition cost over time. We compare the two directly in "SEO vs Google Ads."',
+          'Google Ads delivers traffic immediately but stops the moment you stop paying; SEO takes months to build but keeps working without an ongoing per-click cost. Most businesses eventually run both — Ads for immediate demand, SEO to lower acquisition cost over time. We compare the two directly in [SEO vs Google Ads](/blog/seo-vs-google-ads).',
         ],
         bodyEs: [
-          'Google Ads entrega tráfico de inmediato pero se detiene en cuanto dejas de pagar; el SEO toma meses en construirse pero sigue funcionando sin un costo continuo por clic. La mayoría de los negocios eventualmente corre ambos: Ads para demanda inmediata, SEO para bajar el costo de adquisición con el tiempo. Comparamos los dos directamente en "SEO vs Google Ads."',
+          'Google Ads entrega tráfico de inmediato pero se detiene en cuanto dejas de pagar; el SEO toma meses en construirse pero sigue funcionando sin un costo continuo por clic. La mayoría de los negocios eventualmente corre ambos: Ads para demanda inmediata, SEO para bajar el costo de adquisición con el tiempo. Comparamos los dos directamente en [SEO vs Google Ads](/blog/seo-vs-google-ads).',
         ],
       },
       {
@@ -2112,10 +2117,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Ads vs. Meta Ads",
         headingEs: "Google Ads vs. Meta Ads",
         body: [
-          'Google Ads captures people already searching for what you sell; Meta Ads creates demand through visual, interruption-based selling. Which deserves the first dollar depends on whether your category has real search volume. We break down exactly how to decide in "Google Ads vs Meta Ads."',
+          'Google Ads captures people already searching for what you sell; [[Meta Ads|meta-ads]] creates demand through visual, interruption-based selling. Which deserves the first dollar depends on whether your category has real search volume. We break down exactly how to decide in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
         ],
         bodyEs: [
-          'Google Ads captura gente que ya está buscando lo que vendes; Meta Ads genera demanda a través de venta visual e interruptiva. Cuál merece el primer peso depende de si tu categoría tiene volumen de búsqueda real. Desglosamos exactamente cómo decidir en "Google Ads vs Meta Ads."',
+          'Google Ads captura gente que ya está buscando lo que vendes; [[Meta Ads|meta-ads]] genera demanda a través de venta visual e interruptiva. Cuál merece el primer peso depende de si tu categoría tiene volumen de búsqueda real. Desglosamos exactamente cómo decidir en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
         ],
       },
       {
@@ -2215,9 +2220,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Google Ads in Mexico costs anywhere from $5 to over $150 MXN per click depending on industry, with legal, medical and financial services at the high end and local retail or home services at the low end. Total monthly spend, not just CPC, is what determines whether a budget is viable — a low CPC with weak conversion still wastes money.",
+    lede: "[[Google Ads|google-ads]] in Mexico costs anywhere from $5 to over $150 MXN per click depending on industry, with legal, medical and financial services at the high end and local retail or home services at the low end. Total monthly spend, not just CPC, is what determines whether a budget is viable — a low CPC with weak [[conversion|conversion]] still wastes money.",
     ledeEs:
-      "Google Ads en México cuesta desde $5 hasta más de $150 MXN por clic según la industria, con servicios legales, médicos y financieros en el rango alto, y retail local o servicios del hogar en el rango bajo. El gasto mensual total, no solo el CPC, es lo que determina si un presupuesto es viable. Un CPC bajo con mala conversión igual desperdicia dinero.",
+      "[[Google Ads|google-ads]] en México cuesta desde $5 hasta más de $150 MXN por clic según la industria, con servicios legales, médicos y financieros en el rango alto, y retail local o servicios del hogar en el rango bajo. El gasto mensual total, no solo el CPC, es lo que determina si un presupuesto es viable. Un CPC bajo con mala [[conversión|conversion]] igual desperdicia dinero.",
     gradient: "from-slate-700 to-neutral-900",
     sections: [
       {
@@ -2261,10 +2266,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why CPC alone doesn't tell the full story",
         headingEs: "Por qué el CPC solo no cuenta toda la historia",
         body: [
-          "A lower CPC with a poor conversion rate can cost more per sale than a higher CPC with a landing page that actually converts. The number that matters most is cost per qualified lead or cost per sale, not cost per click in isolation — CPC is just one input into that larger equation.",
+          "A lower CPC with a poor [[conversion rate|tasa-de-conversion]] can cost more per sale than a higher CPC with a [[landing page|landing-page]] that actually converts. The number that matters most is cost per qualified lead or cost per sale, not cost per click in isolation — CPC is just one input into that larger equation.",
         ],
         bodyEs: [
-          "Un CPC más bajo con una mala tasa de conversión puede costar más por venta que un CPC más alto con una landing page que sí convierte. El número que más importa es el costo por lead calificado o costo por venta, no el CPC de forma aislada. El CPC es solo un insumo dentro de esa ecuación más grande.",
+          "Un CPC más bajo con una mala [[tasa de conversión|tasa-de-conversion]] puede costar más por venta que un CPC más alto con una [[landing page|landing-page]] que sí convierte. El número que más importa es el costo por [[lead|lead]] calificado o costo por venta, no el CPC de forma aislada. El CPC es solo un insumo dentro de esa ecuación más grande.",
         ],
       },
       {
@@ -2283,10 +2288,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to actually lower your CPC",
         headingEs: "Cómo bajar realmente tu CPC",
         body: [
-          "Improving Quality Score — through tighter ad groups, more relevant ad copy, and a landing page that matches the keyword — lowers CPC more reliably than simply lowering bids, which just loses you the auction. Negative keywords that filter out irrelevant clicks also reduce wasted spend, which functionally lowers your effective cost per useful click.",
+          "Improving [[Quality Score|nivel-de-calidad]] — through tighter ad groups, more relevant ad copy, and a landing page that matches the [[keyword|palabra-clave]] — lowers CPC more reliably than simply lowering bids, which just loses you the auction. Negative keywords that filter out irrelevant clicks also reduce wasted spend, which functionally lowers your effective cost per useful click.",
         ],
         bodyEs: [
-          "Mejorar el Nivel de Calidad (con grupos de anuncios más específicos, copy más relevante y una landing page que coincida con la palabra clave) baja el CPC de forma más confiable que simplemente bajar las pujas, que solo te hace perder la subasta. Las palabras clave negativas que filtran clics irrelevantes también reducen el gasto desperdiciado, lo que en la práctica baja tu costo efectivo por clic útil.",
+          "Mejorar el [[Nivel de Calidad|nivel-de-calidad]] (con grupos de anuncios más específicos, copy más relevante y una landing page que coincida con la [[palabra clave|palabra-clave]]) baja el CPC de forma más confiable que simplemente bajar las pujas, que solo te hace perder la subasta. Las palabras clave negativas que filtran clics irrelevantes también reducen el gasto desperdiciado, lo que en la práctica baja tu costo efectivo por clic útil.",
         ],
       },
       {
@@ -2294,10 +2299,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where to go deeper",
         headingEs: "Dónde profundizar",
         body: [
-          'For the full picture on campaign types, measurement and common mistakes, start with "Google Ads: the complete guide." For the tracking setup that makes any of these numbers trustworthy, see "how to actually measure conversions."',
+          'For the full picture on campaign types, measurement and common mistakes, start with "Google Ads: the complete guide." For the tracking setup that makes any of these numbers trustworthy, see [how to actually measure conversions](/blog/como-medir-conversiones-google-ads).',
         ],
         bodyEs: [
-          'Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con "Google Ads: guía completa." Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa "cómo medir conversiones de verdad."',
+          'Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con [Google Ads: guía completa](/blog/guia-google-ads). Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).',
         ],
       },
     ],
@@ -2354,19 +2359,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "SEO takes 4 to 6 months to show initial ranking movement, and 9 to 12 months to compound into meaningful, sustained traffic. Low-competition local categories can move faster; competitive national categories can take longer. Any timeline shorter than a couple of months is not realistic SEO — it's something else being sold under the same name.",
+    lede: "[[SEO|seo]] takes 4 to 6 months to show initial ranking movement, and 9 to 12 months to compound into meaningful, sustained traffic. Low-competition local categories can move faster; competitive national categories can take longer. Any timeline shorter than a couple of months is not realistic SEO — it's something else being sold under the same name.",
     ledeEs:
-      "El SEO toma de 4 a 6 meses para mostrar movimiento inicial en el posicionamiento, y de 9 a 12 meses para acumularse en tráfico significativo y sostenido. Categorías locales de baja competencia pueden moverse más rápido; categorías nacionales competidas pueden tomar más. Cualquier plazo menor a un par de meses no es SEO real: es otra cosa vendida bajo el mismo nombre.",
+      "El SEO toma de 4 a 6 meses para mostrar movimiento inicial en el posicionamiento, y de 9 a 12 meses para acumularse en tráfico significativo y sostenido. Categorías locales de baja competencia pueden moverse más rápido; categorías nacionales competidas pueden tomar más. Cualquier plazo menor a un par de meses no es [[SEO|seo]] real: es otra cosa vendida bajo el mismo nombre.",
     sections: [
       {
         id: "linea-de-tiempo-general",
         heading: "The general timeline",
         headingEs: "El cronograma general",
         body: [
-          "Weeks 1 to 4: technical fixes and foundational work, largely invisible in rankings. Months 2 to 4: initial movement on lower-competition keywords. Months 4 to 6: measurable traffic increase begins. Months 9 to 12: compounding effect where content and authority reinforce each other, and growth accelerates. This isn't a guarantee for every site, but it's the shape the curve typically takes. As concrete reference points: technical fixes can show up in rankings within 2-4 weeks, but the qualified traffic and conversions that actually matter to the business typically take 4-6 months to become visible, and 9-12 months to compound into something dependable.",
+          "Weeks 1 to 4: technical fixes and foundational work, largely invisible in rankings. Months 2 to 4: initial movement on lower-competition [[keywords|palabra-clave]]. Months 4 to 6: measurable traffic increase begins. Months 9 to 12: compounding effect where content and authority reinforce each other, and growth accelerates. This isn't a guarantee for every site, but it's the shape the curve typically takes. As concrete reference points: technical fixes can show up in rankings within 2-4 weeks, but the qualified traffic and [[conversions|conversion]] that actually matter to the business typically take 4-6 months to become visible, and 9-12 months to compound into something dependable.",
         ],
         bodyEs: [
-          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en palabras clave de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar. Como referencia concreta: las correcciones técnicas pueden reflejarse en el posicionamiento en 2 a 4 semanas, pero el tráfico calificado y las conversiones que realmente le importan al negocio normalmente tardan de 4 a 6 meses en volverse visibles, y de 9 a 12 meses en acumularse en algo confiable.",
+          "Semanas 1 a 4: correcciones técnicas y trabajo de base, en gran parte invisible en el posicionamiento. Meses 2 a 4: movimiento inicial en [[palabras clave|palabra-clave]] de menor competencia. Meses 4 a 6: empieza un aumento medible de tráfico. Meses 9 a 12: efecto acumulativo donde contenido y autoridad se refuerzan entre sí, y el crecimiento se acelera. No es una garantía para cada sitio, pero es la forma que la curva suele tomar. Como referencia concreta: las correcciones técnicas pueden reflejarse en el posicionamiento en 2 a 4 semanas, pero el tráfico calificado y las [[conversiones|conversion]] que realmente le importan al negocio normalmente tardan de 4 a 6 meses en volverse visibles, y de 9 a 12 meses en acumularse en algo confiable.",
         ],
       },
       {
@@ -2374,10 +2379,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What makes it faster",
         headingEs: "Qué lo hace más rápido",
         body: [
-          "Low local competition, a domain with some existing history and authority, and a business category with clear, specific search intent all shorten the timeline. A local business in a low-competition category with a clean technical foundation can see meaningful movement in as little as 8 to 10 weeks.",
+          "Low local competition, a [[domain|dominio]] with some existing history and authority, and a business category with clear, specific search intent all shorten the timeline. A local business in a low-competition category with a clean technical foundation can see meaningful movement in as little as 8 to 10 weeks.",
         ],
         bodyEs: [
-          "Baja competencia local, un dominio con algo de historial y autoridad existente, y una categoría de negocio con intención de búsqueda clara y específica acortan el cronograma. Un negocio local en una categoría de baja competencia con una base técnica limpia puede ver movimiento significativo en tan solo 8 a 10 semanas.",
+          "Baja competencia local, un [[dominio|dominio]] con algo de historial y autoridad existente, y una categoría de negocio con intención de búsqueda clara y específica acortan el cronograma. Un negocio local en una categoría de baja competencia con una base técnica limpia puede ver movimiento significativo en tan solo 8 a 10 semanas.",
         ],
       },
       {
@@ -2407,10 +2412,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What to do while you wait",
         headingEs: "Qué hacer mientras tanto",
         body: [
-          'If you need traffic before SEO compounds, running Google Ads or Meta Ads in parallel fills the gap without waiting. We cover how to think about that sequencing in "SEO vs Google Ads."',
+          'If you need traffic before SEO compounds, running [[Google Ads|google-ads]] or [[Meta Ads|meta-ads]] in parallel fills the gap without waiting. We cover how to think about that sequencing in [SEO vs Google Ads](/blog/seo-vs-google-ads).',
         ],
         bodyEs: [
-          'Si necesitas tráfico antes de que el SEO se acumule, correr Google Ads o Meta Ads en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en "SEO vs Google Ads."',
+          'Si necesitas tráfico antes de que el SEO se acumule, correr [[Google Ads|google-ads]] o [[Meta Ads|meta-ads]] en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en [SEO vs Google Ads](/blog/seo-vs-google-ads).',
         ],
       },
     ],
@@ -2462,9 +2467,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: 'Google Ads delivers traffic the day you turn it on and stops the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. The right first investment depends on how urgently you need results and how long you plan to be in business, not on which channel is objectively "better."',
+    lede: '[[Google Ads|google-ads]] delivers traffic the day you turn it on and stops the day you stop paying; [[SEO|seo]] takes months to build but keeps generating traffic without an ongoing per-click cost. The right first investment depends on how urgently you need results and how long you plan to be in business, not on which channel is objectively "better."',
     ledeEs:
-      'Google Ads entrega tráfico el día que lo enciendes y se detiene el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La inversión correcta para empezar depende de qué tan urgente necesitas resultados y cuánto tiempo planeas seguir en el negocio, no de cuál canal es objetivamente "mejor."',
+      '[[Google Ads|google-ads]] entrega tráfico el día que lo enciendes y se detiene el día que dejas de pagar; el [[SEO|seo]] toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La inversión correcta para empezar depende de qué tan urgente necesitas resultados y cuánto tiempo planeas seguir en el negocio, no de cuál canal es objetivamente "mejor."',
     sections: [
       {
         id: "la-diferencia-fundamental",
@@ -2515,10 +2520,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why it's rarely either/or",
         headingEs: "Por qué rara vez es uno u otro",
         body: [
-          'Most established businesses eventually run both — Ads to fill the gap while SEO compounds, and SEO to lower blended acquisition cost over time. The sequencing question matters more than the choice itself. For platform-to-platform paid comparisons, see "Google Ads vs Meta Ads."',
+          'Most established businesses eventually run both — Ads to fill the gap while SEO compounds, and SEO to lower blended acquisition cost over time. The sequencing question matters more than the choice itself. For platform-to-platform paid comparisons, see [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
         ],
         bodyEs: [
-          'La mayoría de los negocios establecidos eventualmente corre ambos: Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo de adquisición combinado con el tiempo. La pregunta de secuencia importa más que la elección en sí. Para comparaciones entre plataformas pagadas, revisa "Google Ads vs Meta Ads."',
+          'La mayoría de los negocios establecidos eventualmente corre ambos: Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo de adquisición combinado con el tiempo. La pregunta de secuencia importa más que la elección en sí. Para comparaciones entre plataformas pagadas, revisa [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
         ],
       },
     ],
@@ -2608,10 +2613,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a clinic's website actually needs",
         headingEs: "Qué necesita realmente el sitio de una clínica",
         body: [
-          "Beyond standard trust signals, a medical or dental site needs visible credentials, clear service and pricing pages, and — this matters more here than in almost any other industry — content that meets Google's E-E-A-T standard (experience, expertise, authoritativeness, trustworthiness), since health content faces extra scrutiny in search rankings. We go deeper on this in [E-E-A-T for medical content](/blog/eeat-contenido-medico) and [websites for clinics](/blog/sitio-web-para-clinicas).",
+          "Beyond standard trust signals, a medical or dental site needs visible credentials, clear service and pricing pages, and — this matters more here than in almost any other industry — content that meets Google's [[E-E-A-T|eeat]] standard (experience, expertise, authoritativeness, trustworthiness), since health content faces extra scrutiny in search rankings. We go deeper on this in [E-E-A-T for medical content](/blog/eeat-contenido-medico) and [websites for clinics](/blog/sitio-web-para-clinicas).",
         ],
         bodyEs: [
-          "Más allá de las señales de confianza estándar, un sitio médico o dental necesita credenciales visibles, páginas claras de servicios y precios, y, esto importa más aquí que en casi cualquier otra industria, contenido que cumpla con el estándar E-E-A-T de Google (experiencia, especialización, autoridad, confiabilidad), ya que el contenido de salud enfrenta escrutinio extra en el posicionamiento de búsqueda. Profundizamos en esto en [E-E-A-T para contenido médico](/blog/eeat-contenido-medico) y [sitios web para clínicas](/blog/sitio-web-para-clinicas).",
+          "Más allá de las señales de confianza estándar, un sitio médico o dental necesita credenciales visibles, páginas claras de servicios y precios, y, esto importa más aquí que en casi cualquier otra industria, contenido que cumpla con el estándar [[E-E-A-T|eeat]] de Google (experiencia, especialización, autoridad, confiabilidad), ya que el contenido de salud enfrenta escrutinio extra en el posicionamiento de búsqueda. Profundizamos en esto en [E-E-A-T para contenido médico](/blog/eeat-contenido-medico) y [sitios web para clínicas](/blog/sitio-web-para-clinicas).",
         ],
       },
       {
@@ -2619,10 +2624,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The U.S. patient opportunity at the border",
         headingEs: "La oportunidad de pacientes de EE.UU. en la frontera",
         body: [
-          'For clinics in Tijuana and other border cities, patients from California and Arizona represent one of the highest-value opportunities in Mexican healthcare marketing — driven by dental and medical costs that can run a fraction of U.S. prices for comparable care. This audience requires bilingual content, U.S.-facing advertising, and a completely different trust-building process. We cover the full system in "medical tourism in Tijuana: how to attract U.S. patients."',
+          'For clinics in Tijuana and other border cities, patients from California and Arizona represent one of the highest-value opportunities in Mexican healthcare marketing — driven by dental and medical costs that can run a fraction of U.S. prices for comparable care. This audience requires bilingual content, U.S.-facing advertising, and a completely different trust-building process. We cover the full system in [medical tourism in Tijuana: how to attract U.S. patients](/blog/como-atraer-pacientes-de-estados-unidos).',
         ],
         bodyEs: [
-          'Para clínicas en Tijuana y otras ciudades fronterizas, los pacientes de California y Arizona representan una de las oportunidades de mayor valor en el marketing de salud mexicano, impulsada por costos dentales y médicos que pueden ser una fracción del precio en EE.UU. para atención comparable. Esta audiencia requiere contenido bilingüe, publicidad orientada a EE.UU., y un proceso de confianza completamente distinto. Cubrimos el sistema completo en "turismo médico en Tijuana: cómo captar pacientes de EE.UU."',
+          'Para clínicas en Tijuana y otras ciudades fronterizas, los pacientes de California y Arizona representan una de las oportunidades de mayor valor en el marketing de salud mexicano, impulsada por costos dentales y médicos que pueden ser una fracción del precio en EE.UU. para atención comparable. Esta audiencia requiere contenido bilingüe, publicidad orientada a EE.UU., y un proceso de confianza completamente distinto. Cubrimos el sistema completo en [turismo médico en Tijuana: cómo captar pacientes de EE.UU](/blog/como-atraer-pacientes-de-estados-unidos).',
         ],
       },
       {
@@ -2630,10 +2635,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Compliance and advertising restrictions",
         headingEs: "Cumplimiento y restricciones publicitarias",
         body: [
-          "Medical and dental advertising faces restrictions that most other industries don't — on both the Mexican regulatory side (COFEPRIS) and the platform side (Google Ads has specific healthcare policies). Getting this wrong risks more than a wasted budget; it can mean a suspended ad account or regulatory issues. See the specific Google Ads restrictions in [Google Ads for doctors: the restrictions](/blog/google-ads-para-medicos-restricciones).",
+          "Medical and dental advertising faces restrictions that most other industries don't — on both the Mexican regulatory side ([[COFEPRIS|cofepris]]) and the platform side ([[Google Ads|google-ads]] has specific healthcare policies). Getting this wrong risks more than a wasted budget; it can mean a suspended ad account or regulatory issues. See the specific Google Ads restrictions in [Google Ads for doctors: the restrictions](/blog/google-ads-para-medicos-restricciones).",
         ],
         bodyEs: [
-          "La publicidad médica y dental enfrenta restricciones que la mayoría de las otras industrias no tienen: tanto del lado regulatorio mexicano (COFEPRIS) como del lado de las plataformas (Google Ads tiene políticas específicas de salud). Hacerlo mal arriesga más que un presupuesto desperdiciado; puede significar una cuenta de anuncios suspendida o problemas regulatorios. Revisa las restricciones específicas de Google Ads en [Google Ads para médicos: las restricciones](/blog/google-ads-para-medicos-restricciones).",
+          "La publicidad médica y dental enfrenta restricciones que la mayoría de las otras industrias no tienen: tanto del lado regulatorio mexicano ([[COFEPRIS|cofepris]]) como del lado de las plataformas ([[Google Ads|google-ads]] tiene políticas específicas de salud). Hacerlo mal arriesga más que un presupuesto desperdiciado; puede significar una cuenta de anuncios suspendida o problemas regulatorios. Revisa las restricciones específicas de Google Ads en [Google Ads para médicos: las restricciones](/blog/google-ads-para-medicos-restricciones).",
         ],
       },
       {
@@ -2674,7 +2679,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Common mistakes in medical marketing",
         headingEs: "Errores comunes en marketing médico",
         body: [
-          'The most frequent ones we see: generic stock-photo websites with no real credentials shown, ignoring reviews entirely, and advertising claims that violate platform or regulatory rules without the practice realizing it. The full list is in "medical marketing mistakes."',
+          'The most frequent ones we see: generic stock-photo websites with no real credentials shown, ignoring reviews entirely, and advertising claims that violate platform or regulatory rules without the practice realizing it. The full list is in [medical marketing mistakes](/blog/errores-marketing-dental).',
         ],
         bodyEs: [
           "Los más frecuentes que vemos: sitios web con fotos genéricas de banco de imágenes sin credenciales reales mostradas, ignorar las reseñas por completo, y declaraciones publicitarias que violan reglas de plataforma o regulatorias sin que el consultorio se dé cuenta. La lista completa está en [errores de marketing dental](/blog/errores-marketing-dental).",
@@ -2793,10 +2798,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where to actually reach them",
         headingEs: "Dónde realmente encontrarlos",
         body: [
-          'Google Ads targeting U.S. border-area zip codes for specific procedure searches, Meta Ads targeting the same geography with educational, testimonial-driven creative, and English-language SEO content built around the specific searches U.S. patients run — "dental implants Tijuana cost," "is it safe to get dental work in Mexico" — all outperform generic Spanish-language campaigns for this specific audience.',
+          '[[Google Ads|google-ads]] targeting U.S. border-area zip codes for specific procedure searches, [[Meta Ads|meta-ads]] targeting the same geography with educational, testimonial-driven creative, and English-language [[SEO|seo]] content built around the specific searches U.S. patients run — "dental implants Tijuana cost," "is it safe to get dental work in Mexico" — all outperform generic Spanish-language campaigns for this specific audience.',
         ],
         bodyEs: [
-          'Google Ads dirigido a códigos postales de zonas fronterizas de EE.UU. para búsquedas de procedimientos específicos, Meta Ads dirigido a la misma geografía con creativos educativos y basados en testimonios, y contenido SEO en inglés construido alrededor de las búsquedas específicas que hacen los pacientes de EE.UU. (como "dental implants Tijuana cost" o "is it safe to get dental work in Mexico") superan a las campañas genéricas en español para esta audiencia específica.',
+          '[[Google Ads|google-ads]] dirigido a códigos postales de zonas fronterizas de EE.UU. para búsquedas de procedimientos específicos, [[Meta Ads|meta-ads]] dirigido a la misma geografía con creativos educativos y basados en testimonios, y contenido [[SEO|seo]] en inglés construido alrededor de las búsquedas específicas que hacen los pacientes de EE.UU. (como "dental implants Tijuana cost" o "is it safe to get dental work in Mexico") superan a las campañas genéricas en español para esta audiencia específica.',
         ],
       },
       {
@@ -2804,10 +2809,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What happens after the first contact",
         headingEs: "Qué pasa después del primer contacto",
         body: [
-          'A fast, clear response — ideally bilingual and available by WhatsApp or a direct phone line, not just an email form — often decides whether a nervous first-time patient books at all. The broader follow-up principles are the same ones covered in "real estate lead follow-up," adapted to a patient instead of a buyer: speed and reassurance win.',
+          'A fast, clear response — ideally bilingual and available by WhatsApp or a direct phone line, not just an email form — often decides whether a nervous first-time patient books at all. The broader follow-up principles are the same ones covered in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios), adapted to a patient instead of a buyer: speed and reassurance win.',
         ],
         bodyEs: [
-          'Una respuesta rápida y clara, idealmente bilingüe y disponible por WhatsApp o una línea telefónica directa (no solo un formulario de correo), muchas veces decide si un paciente nervioso de primera vez agenda o no. Los principios generales de seguimiento son los mismos que cubrimos en "seguimiento de leads inmobiliarios," adaptados a un paciente en vez de un comprador: velocidad y tranquilidad ganan.',
+          'Una respuesta rápida y clara, idealmente bilingüe y disponible por WhatsApp o una línea telefónica directa (no solo un formulario de correo), muchas veces decide si un paciente nervioso de primera vez agenda o no. Los principios generales de seguimiento son los mismos que cubrimos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios), adaptados a un paciente en vez de un comprador: velocidad y tranquilidad ganan.',
         ],
       },
     ],
@@ -2889,10 +2894,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Step 2: Complete every field accurately",
         headingEs: "Paso 2: Completar cada campo con precisión",
         body: [
-          "Business category (choose the most specific one available, not just the broadest), hours including holiday exceptions, service area, website, phone, and a full description using natural language, not keyword-stuffed copy. Profiles with every field completed get shown more often in relevant searches than partially filled ones, since Google explicitly favors complete listings in ranking.",
+          "Business category (choose the most specific one available, not just the broadest), hours including holiday exceptions, service area, website, phone, and a full description using natural language, not [[keyword|palabra-clave]]-stuffed copy. Profiles with every field completed get shown more often in relevant searches than partially filled ones, since Google explicitly favors complete listings in ranking.",
         ],
         bodyEs: [
-          "Categoría del negocio (elige la más específica disponible, no la más genérica), horario incluyendo excepciones de días festivos, área de servicio, sitio web, teléfono, y una descripción completa en lenguaje natural, no copy relleno de palabras clave. Los perfiles con cada campo completo se muestran más seguido en búsquedas relevantes que los que están parcialmente llenos, ya que Google favorece explícitamente a los listados completos en el posicionamiento.",
+          "Categoría del negocio (elige la más específica disponible, no la más genérica), horario incluyendo excepciones de días festivos, área de servicio, sitio web, teléfono, y una descripción completa en lenguaje natural, no copy relleno de [[palabras clave|palabra-clave]]. Los perfiles con cada campo completo se muestran más seguido en búsquedas relevantes que los que están parcialmente llenos, ya que Google favorece explícitamente a los listados completos en el posicionamiento.",
         ],
       },
       {
@@ -3005,9 +3010,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Measuring conversions correctly means GA4 tracking real business actions (calls, form fills, purchases) through Google Tag Manager, connected properly to Google Ads, not just pageviews mislabeled as conversions. In nearly every account audit we run, broken or incomplete conversion tracking is the first thing we find, and it invalidates every other optimization until it's fixed.",
+    lede: "Measuring conversions correctly means [[GA4|google-analytics]] tracking real business actions (calls, form fills, purchases) through Google Tag Manager, connected properly to [[Google Ads|google-ads]], not just pageviews mislabeled as conversions. In nearly every account audit we run, broken or incomplete conversion tracking is the first thing we find, and it invalidates every other optimization until it's fixed.",
     ledeEs:
-      "Medir conversiones correctamente significa que GA4 rastree acciones de negocio reales (llamadas, formularios, compras) a través de Google Tag Manager, conectado correctamente a Google Ads, no solo vistas de página mal etiquetadas como conversiones. En casi cada auditoría de cuenta que hacemos, el seguimiento de conversiones roto o incompleto es lo primero que encontramos, e invalida cualquier otra optimización hasta que se corrige.",
+      "Medir conversiones correctamente significa que [[GA4|google-analytics]] rastree acciones de negocio reales (llamadas, formularios, compras) a través de Google Tag Manager, conectado correctamente a [[Google Ads|google-ads]], no solo vistas de página mal etiquetadas como conversiones. En casi cada auditoría de cuenta que hacemos, el seguimiento de conversiones roto o incompleto es lo primero que encontramos, e invalida cualquier otra optimización hasta que se corrige.",
     gradient: "from-slate-700 to-neutral-900",
     sections: [
       {
@@ -3015,10 +3020,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why this matters more than any single ad tweak",
         headingEs: "Por qué esto importa más que cualquier ajuste de anuncio",
         body: [
-          "Google Ads' bidding algorithm optimizes toward whatever it's told counts as a conversion. If that signal is wrong — counting every pageview instead of actual leads, or missing conversions that happen by phone — the algorithm spends money chasing the wrong outcome, confidently and consistently. No amount of creative or keyword optimization fixes a measurement problem underneath it.",
+          "Google Ads' bidding algorithm optimizes toward whatever it's told counts as a conversion. If that signal is wrong — counting every pageview instead of actual [[leads|lead]], or missing conversions that happen by phone — the algorithm spends money chasing the wrong outcome, confidently and consistently. No amount of creative or [[keyword|palabra-clave]] optimization fixes a measurement problem underneath it.",
         ],
         bodyEs: [
-          "El algoritmo de puja de Google Ads optimiza hacia lo que se le indique que cuenta como conversión. Si esa señal está mal (contando cada vista de página en vez de leads reales, o perdiendo conversiones que ocurren por teléfono), el algoritmo gasta dinero persiguiendo el resultado equivocado, de forma consistente y segura de sí mismo. Ninguna optimización de creativo o palabra clave corrige un problema de medición debajo de todo eso.",
+          "El algoritmo de puja de Google Ads optimiza hacia lo que se le indique que cuenta como conversión. Si esa señal está mal (contando cada vista de página en vez de [[leads|lead]] reales, o perdiendo conversiones que ocurren por teléfono), el algoritmo gasta dinero persiguiendo el resultado equivocado, de forma consistente y segura de sí mismo. Ninguna optimización de creativo o [[palabra clave|palabra-clave]] corrige un problema de medición debajo de todo eso.",
         ],
       },
       {
@@ -3071,10 +3076,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to verify it's actually working",
         headingEs: "Cómo verificar que realmente funciona",
         body: [
-          "Use GTM's Preview mode and GA4's DebugView to watch events fire in real time before trusting any report, and periodically complete a test conversion yourself to confirm it shows up correctly in both GA4 and Google Ads. The full list of related account mistakes, including tracking, is in \"10 Google Ads mistakes that burn your budget.\"",
+          "Use GTM's Preview mode and GA4's DebugView to watch events fire in real time before trusting any report, and periodically complete a test conversion yourself to confirm it shows up correctly in both GA4 and Google Ads. The full list of related account mistakes, including tracking, is in [10 Google Ads mistakes that burn your budget](/blog/errores-de-google-ads).",
         ],
         bodyEs: [
-          'Usa el modo Vista Previa de GTM y el DebugView de GA4 para ver los eventos dispararse en tiempo real antes de confiar en cualquier reporte, y periódicamente completa tú mismo una conversión de prueba para confirmar que aparece correctamente tanto en GA4 como en Google Ads. La lista completa de errores de cuenta relacionados, incluyendo seguimiento, está en "10 errores de Google Ads que queman tu presupuesto."',
+          'Usa el modo Vista Previa de GTM y el DebugView de GA4 para ver los eventos dispararse en tiempo real antes de confiar en cualquier reporte, y periódicamente completa tú mismo una conversión de prueba para confirmar que aparece correctamente tanto en GA4 como en Google Ads. La lista completa de errores de cuenta relacionados, incluyendo seguimiento, está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).',
         ],
       },
     ],
@@ -3139,9 +3144,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "As a 2026 market range, a small business in Mexico should plan for roughly 7% to 12% of revenue on digital marketing if actively growing, or $10,000 to $60,000 MXN monthly depending on size — micro-businesses at the low end, established mid-size companies at the high end. Businesses spending far below this range typically plateau; those spending far above it without a clear system usually have a conversion problem, not a budget problem.",
+    lede: "As a 2026 market range, a small business in Mexico should plan for roughly 7% to 12% of revenue on digital marketing if actively growing, or $10,000 to $60,000 MXN monthly depending on size — micro-businesses at the low end, established mid-size companies at the high end. Businesses spending far below this range typically plateau; those spending far above it without a clear system usually have a [[conversion|conversion]] problem, not a budget problem.",
     ledeEs:
-      "Como rango de mercado 2026, un negocio pequeño en México debe planear entre 7% y 12% de sus ingresos en marketing digital si está en crecimiento activo, o entre $10,000 y $60,000 MXN mensuales según el tamaño: micronegocios en el rango bajo, empresas medianas establecidas en el rango alto. Los negocios que gastan muy por debajo de este rango suelen estancarse; los que gastan muy por encima sin un sistema claro suelen tener un problema de conversión, no de presupuesto.",
+      "Como rango de mercado 2026, un negocio pequeño en México debe planear entre 7% y 12% de sus ingresos en marketing digital si está en crecimiento activo, o entre $10,000 y $60,000 MXN mensuales según el tamaño: micronegocios en el rango bajo, empresas medianas establecidas en el rango alto. Los negocios que gastan muy por debajo de este rango suelen estancarse; los que gastan muy por encima sin un sistema claro suelen tener un problema de [[conversión|conversion]], no de presupuesto.",
     gradient: "from-neutral-800 to-zinc-950",
     sections: [
       {
@@ -3179,10 +3184,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to split the budget across channels",
         headingEs: "Cómo repartir el presupuesto entre canales",
         body: [
-          "There's no universal split, but a common starting point for a small business is roughly 40% paid ads (Google and Meta combined), 30% SEO and content, 20% website and conversion infrastructure, and 10% held in reserve for testing new channels. This shifts significantly by industry — a real estate developer weighs differently than a local restaurant.",
+          "There's no universal split, but a common starting point for a small business is roughly 40% paid ads (Google and Meta combined), 30% [[SEO|seo]] and content, 20% website and conversion infrastructure, and 10% held in reserve for testing new channels. This shifts significantly by industry — a real estate developer weighs differently than a local restaurant.",
         ],
         bodyEs: [
-          "No existe un reparto universal, pero un punto de partida común para un negocio pequeño es aproximadamente 40% anuncios pagados (Google y Meta combinados), 30% SEO y contenido, 20% sitio web e infraestructura de conversión, y 10% en reserva para probar canales nuevos. Esto cambia significativamente por industria: una desarrolladora inmobiliaria pesa distinto que un restaurante local.",
+          "No existe un reparto universal, pero un punto de partida común para un negocio pequeño es aproximadamente 40% anuncios pagados (Google y Meta combinados), 30% [[SEO|seo]] y contenido, 20% sitio web e infraestructura de conversión, y 10% en reserva para probar canales nuevos. Esto cambia significativamente por industria: una desarrolladora inmobiliaria pesa distinto que un restaurante local.",
         ],
       },
       {
@@ -3201,10 +3206,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Signs the problem isn't budget, it's allocation",
         headingEs: "Señales de que el problema no es presupuesto, es asignación",
         body: [
-          'A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken landing page or a slow response process just wastes more money faster. Before increasing budget, it\'s worth auditing where the current spend is actually going. See "agency, freelancer or in-house team" for who should be managing that allocation.',
+          'A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken [[landing page|landing-page]] or a slow response process just wastes more money faster. Before increasing budget, it\'s worth auditing where the current spend is actually going. See [agency, freelancer or in-house team](/blog/agencia-o-freelancer-marketing) for who should be managing that allocation.',
         ],
         bodyEs: [
-          'Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto. Más tráfico a una landing page rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa "¿agencia, freelancer o equipo interno?" para saber quién debería gestionar esa asignación.',
+          'Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto. Más tráfico a una [[landing page|landing-page]] rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa [¿agencia, freelancer o equipo interno?](/blog/agencia-o-freelancer-marketing) para saber quién debería gestionar esa asignación.',
         ],
       },
     ],
@@ -3261,19 +3266,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A landing page is one page built for one campaign and one conversion goal: no navigation, no distractions, sent traffic that already knows what it's there for. A website is a permanent, multi-page presence built to be found through search and represent your entire business. Most businesses eventually need both, not one instead of the other.",
+    lede: "A [[landing page|landing-page]] is one page built for one campaign and one [[conversion|conversion]] goal: no navigation, no distractions, sent traffic that already knows what it's there for. A website is a permanent, multi-page presence built to be found through search and represent your entire business. Most businesses eventually need both, not one instead of the other.",
     ledeEs:
-      "Una landing page es una sola página para una campaña y un objetivo de conversión: sin navegación, para tráfico que ya sabe a qué llegó. Una página web es una presencia permanente con varias páginas, hecha para que te encuentren por búsqueda y representar tu negocio completo. La mayoría necesita ambas, no una en lugar de la otra.",
+      "Una [[landing page|landing-page]] es una sola página para una campaña y un objetivo de [[conversión|conversion]]: sin navegación, para tráfico que ya sabe a qué llegó. Una página web es una presencia permanente con varias páginas, hecha para que te encuentren por búsqueda y representar tu negocio completo. La mayoría necesita ambas, no una en lugar de la otra.",
     sections: [
       {
         id: "que-es-una-landing-page",
         heading: "What a landing page actually is",
         headingEs: "Qué es realmente una landing page",
         body: [
-          "A landing page is a single page with a single objective: turn a visitor into a lead, a sale, or a booked call. It usually drops the site's main navigation on purpose, because every link that isn't the conversion button is an exit door. It exists to receive traffic from one specific source (a Google Ads campaign, a Meta Ads campaign, an email send) and to keep that visitor focused on the one offer that brought them there. The same call to action tends to repeat several times down the page, because the only path forward that matters is the one that converts.",
+          "A landing page is a single page with a single objective: turn a visitor into a lead, a sale, or a booked call. It usually drops the site's main navigation on purpose, because every link that isn't the conversion button is an exit door. It exists to receive traffic from one specific source (a [[Google Ads|google-ads]] campaign, a [[Meta Ads|meta-ads]] campaign, an email send) and to keep that visitor focused on the one offer that brought them there. The same call to action tends to repeat several times down the page, because the only path forward that matters is the one that converts.",
         ],
         bodyEs: [
-          "Una landing page es una sola página con un solo objetivo: convertir a la persona que llega en un lead, una venta o una llamada agendada. Suele quitar la navegación principal del sitio a propósito, porque cada enlace que no sea el botón de conversión es una puerta de salida. Existe para recibir tráfico de una fuente específica (una campaña de Google Ads, una de Meta Ads, un envío de correo) y mantener a esa persona enfocada en la única oferta que la trajo ahí. El mismo llamado a la acción suele repetirse varias veces a lo largo de la página, porque el único camino que importa es el que convierte.",
+          "Una landing page es una sola página con un solo objetivo: convertir a la persona que llega en un [[lead|lead]], una venta o una llamada agendada. Suele quitar la navegación principal del sitio a propósito, porque cada enlace que no sea el botón de conversión es una puerta de salida. Existe para recibir tráfico de una fuente específica (una campaña de [[Google Ads|google-ads]], una de [[Meta Ads|meta-ads]], un envío de correo) y mantener a esa persona enfocada en la única oferta que la trajo ahí. El mismo llamado a la acción suele repetirse varias veces a lo largo de la página, porque el único camino que importa es el que convierte.",
         ],
       },
       {
@@ -3314,10 +3319,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why mixing them up is a common, expensive mistake",
         headingEs: "Por qué mezclarlas es un error común y caro",
         body: [
-          "The most common version of this mistake is running a paid campaign and sending all of that traffic to the site's homepage instead of a dedicated landing page. The visitor clicked an ad about one specific thing, lands on a page built to represent everything, and now has to search the navigation to find what was promised. That extra step is where most of the conversion leaks out, and it happens quietly: the campaign still generates clicks, the cost per click still looks normal, but the cost per actual lead climbs because fewer of those clicks turn into anything. It's not that the website is bad, it's the wrong page for that particular job.",
+          "The most common version of this mistake is running a paid campaign and sending all of that traffic to the site's homepage instead of a dedicated landing page. The visitor clicked an ad about one specific thing, lands on a page built to represent everything, and now has to search the navigation to find what was promised. That extra step is where most of the conversion leaks out, and it happens quietly: the campaign still generates clicks, the [[cost per click|cpc]] still looks normal, but the cost per actual lead climbs because fewer of those clicks turn into anything. It's not that the website is bad, it's the wrong page for that particular job.",
         ],
         bodyEs: [
-          "La versión más común de este error es correr una campaña pagada y mandar todo ese tráfico a la página de inicio del sitio en vez de a una landing page dedicada. La persona dio clic en un anuncio sobre algo específico, llega a una página construida para representar todo, y ahora tiene que buscar en la navegación lo que se le prometió. Ese paso extra es donde se pierde la mayor parte de la conversión, y pasa de forma silenciosa: la campaña sigue generando clics, el costo por clic se ve normal, pero el costo por lead real sube porque menos de esos clics se convierten en algo. No es que la página web esté mal, es la página equivocada para ese trabajo específico.",
+          "La versión más común de este error es correr una campaña pagada y mandar todo ese tráfico a la página de inicio del sitio en vez de a una landing page dedicada. La persona dio clic en un anuncio sobre algo específico, llega a una página construida para representar todo, y ahora tiene que buscar en la navegación lo que se le prometió. Ese paso extra es donde se pierde la mayor parte de la conversión, y pasa de forma silenciosa: la campaña sigue generando clics, el [[costo por clic|cpc]] se ve normal, pero el costo por lead real sube porque menos de esos clics se convierten en algo. No es que la página web esté mal, es la página equivocada para ese trabajo específico.",
         ],
       },
       {
@@ -3336,10 +3341,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The real cost and time difference",
         headingEs: "La diferencia real de costo y tiempo",
         body: [
-          "A standalone landing page typically falls in the same $25,000–$60,000 MXN range as a Professional-tier website, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. A Professional site with multiple pages takes 3 to 6 weeks to build, while a single landing page usually lands on the faster end of that same window. If you need landing pages built into ongoing campaign infrastructure with CRM integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. Domain and hosting still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
+          "A standalone landing page typically falls in the same $25,000–$60,000 MXN range as a Professional-tier website, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. A Professional site with multiple pages takes 3 to 6 weeks to build, while a single landing page usually lands on the faster end of that same window. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
         ],
         bodyEs: [
-          "Una landing page independiente suele caer en el mismo rango de $25,000 a $60,000 MXN que un sitio de nivel Profesional, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. Un sitio Profesional con varias páginas toma de 3 a 6 semanas construirlo, mientras que una sola landing page suele quedar en el extremo más rápido de esa misma ventana. Si necesitas landing pages integradas a infraestructura de campaña continua con CRM, eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. Dominio y hosting aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
+          "Una landing page independiente suele caer en el mismo rango de $25,000 a $60,000 MXN que un sitio de nivel Profesional, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. Un sitio Profesional con varias páginas toma de 3 a 6 semanas construirlo, mientras que una sola landing page suele quedar en el extremo más rápido de esa misma ventana. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
         ],
       },
     ],
@@ -3407,19 +3412,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Meta Ads works differently from Google Ads: instead of capturing a search, it interrupts attention and creates demand. That means the creative carries more weight than the targeting, tracking has to be set up correctly from day one, and results take longer to read than a search campaign's.",
+    lede: "Meta Ads works differently from [[Google Ads|google-ads]]: instead of capturing a search, it interrupts attention and creates demand. That means the creative carries more weight than the targeting, tracking has to be set up correctly from day one, and results take longer to read than a search campaign's.",
     ledeEs:
-      "Meta Ads funciona distinto a Google Ads: en vez de capturar una búsqueda, interrumpe la atención y genera demanda. Eso significa que el creativo pesa más que la segmentación, el tracking hay que configurarlo bien desde el día uno, y los resultados tardan más en leerse que en una campaña de búsqueda.",
+      "Meta Ads funciona distinto a [[Google Ads|google-ads]]: en vez de capturar una búsqueda, interrumpe la atención y genera demanda. Eso significa que el creativo pesa más que la segmentación, el tracking hay que configurarlo bien desde el día uno, y los resultados tardan más en leerse que en una campaña de búsqueda.",
     sections: [
       {
         id: "que-es-meta-ads",
         heading: "What Meta Ads actually is",
         headingEs: "Qué es realmente Meta Ads",
         body: [
-          "Meta Ads is the ad platform behind Facebook and Instagram: image, video, carousel, and Reels placements bought through the same auction and the same campaign structure (campaign, ad set, ad). It runs on interruption, not search intent, so the algorithm optimizes toward whoever the creative and the initial targeting attract, not toward a keyword someone typed.",
+          "Meta Ads is the ad platform behind Facebook and Instagram: image, video, carousel, and Reels placements bought through the same auction and the same campaign structure (campaign, ad set, ad). It runs on interruption, not search intent, so the algorithm optimizes toward whoever the creative and the initial targeting attract, not toward a [[keyword|palabra-clave]] someone typed.",
         ],
         bodyEs: [
-          "Meta Ads es la plataforma de anuncios detrás de Facebook e Instagram: ubicaciones de imagen, video, carrusel y Reels compradas a través de la misma subasta y la misma estructura de campaña (campaña, conjunto de anuncios, anuncio). Funciona por interrupción, no por intención de búsqueda, así que el algoritmo optimiza hacia quien atraiga el creativo y la segmentación inicial, no hacia una palabra clave que alguien escribió.",
+          "Meta Ads es la plataforma de anuncios detrás de Facebook e Instagram: ubicaciones de imagen, video, carrusel y Reels compradas a través de la misma subasta y la misma estructura de campaña (campaña, conjunto de anuncios, anuncio). Funciona por interrupción, no por intención de búsqueda, así que el algoritmo optimiza hacia quien atraiga el creativo y la segmentación inicial, no hacia una [[palabra clave|palabra-clave]] que alguien escribió.",
         ],
       },
       {
@@ -3427,10 +3432,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Campaign structure that actually scales",
         headingEs: "Estructura de cuenta que sí escala",
         body: [
-          "A campaign sets the objective (leads, sales, traffic). Ad sets define budget, audience, and placement. Ads are the actual creative. Most wasted spend comes from too many ad sets splitting a small budget into pieces too thin for the algorithm to learn from. Fewer ad sets with real budget behind each one almost always outperforms a wide, thin spread.",
+          "A campaign sets the objective ([[leads|lead]], sales, traffic). Ad sets define budget, audience, and placement. Ads are the actual creative. Most wasted spend comes from too many ad sets splitting a small budget into pieces too thin for the algorithm to learn from. Fewer ad sets with real budget behind each one almost always outperforms a wide, thin spread.",
         ],
         bodyEs: [
-          "Una campaña define el objetivo (leads, ventas, tráfico). Los conjuntos de anuncios definen presupuesto, audiencia y ubicación. Los anuncios son el creativo en sí. La mayor parte del gasto desperdiciado viene de tener demasiados conjuntos de anuncios repartiendo un presupuesto pequeño en pedazos muy delgados para que el algoritmo aprenda. Menos conjuntos con presupuesto real detrás casi siempre le gana a un reparto amplio y delgado.",
+          "Una campaña define el objetivo ([[leads|lead]], ventas, tráfico). Los conjuntos de anuncios definen presupuesto, audiencia y ubicación. Los anuncios son el creativo en sí. La mayor parte del gasto desperdiciado viene de tener demasiados conjuntos de anuncios repartiendo un presupuesto pequeño en pedazos muy delgados para que el algoritmo aprenda. Menos conjuntos con presupuesto real detrás casi siempre le gana a un reparto amplio y delgado.",
         ],
       },
       {
@@ -3449,10 +3454,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why the Pixel and CAPI aren't optional",
         headingEs: "Por qué el Pixel y el CAPI no son opcionales",
         body: [
-          "Meta's Pixel tracks conversions on your site through the browser; the Conversions API (CAPI) sends the same events server-to-server, which keeps tracking accurate even when browsers block cookies. Running Meta Ads without both means the algorithm is optimizing on incomplete data, which shows up as campaigns that look worse than they actually perform.",
+          "Meta's [[Pixel|pixel]] tracks [[conversions|conversion]] on your site through the browser; the [[Conversions API|api-conversiones]] (CAPI) sends the same events server-to-server, which keeps tracking accurate even when browsers block cookies. Running Meta Ads without both means the algorithm is optimizing on incomplete data, which shows up as campaigns that look worse than they actually perform.",
         ],
         bodyEs: [
-          "El Pixel de Meta rastrea conversiones en tu sitio desde el navegador; la API de Conversiones (CAPI) envía los mismos eventos servidor a servidor, lo que mantiene el rastreo preciso incluso cuando los navegadores bloquean cookies. Correr Meta Ads sin ambos significa que el algoritmo está optimizando con datos incompletos, y eso se refleja en campañas que se ven peor de lo que realmente rinden.",
+          "El [[Pixel de Meta|pixel]] rastrea [[conversiones|conversion]] en tu sitio desde el navegador; la [[API de Conversiones|api-conversiones]] (CAPI) envía los mismos eventos servidor a servidor, lo que mantiene el rastreo preciso incluso cuando los navegadores bloquean cookies. Correr Meta Ads sin ambos significa que el algoritmo está optimizando con datos incompletos, y eso se refleja en campañas que se ven peor de lo que realmente rinden.",
         ],
       },
       {
@@ -3493,10 +3498,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to actually read results",
         headingEs: "Cómo leer los resultados de verdad",
         body: [
-          "Cost per result inside Meta's dashboard only tells part of the story; what closes matters more than what converts on the platform. Cross-check Meta's reported conversions against GA4 and, ideally, against what actually turns into revenue in your CRM. The three numbers rarely match exactly, and the gap is where the real read comes from.",
+          "Cost per result inside Meta's dashboard only tells part of the story; what closes matters more than what converts on the platform. Cross-check Meta's reported conversions against [[GA4|google-analytics]] and, ideally, against what actually turns into revenue in your [[CRM|crm]]. The three numbers rarely match exactly, and the gap is where the real read comes from.",
         ],
         bodyEs: [
-          "El costo por resultado dentro del panel de Meta solo cuenta parte de la historia; lo que cierra importa más que lo que convierte en la plataforma. Cruza las conversiones que reporta Meta contra GA4 y, si es posible, contra lo que realmente se vuelve ingreso en tu CRM. Los tres números casi nunca coinciden exactamente, y en esa diferencia está la lectura real.",
+          "El costo por resultado dentro del panel de Meta solo cuenta parte de la historia; lo que cierra importa más que lo que convierte en la plataforma. Cruza las conversiones que reporta Meta contra [[GA4|google-analytics]] y, si es posible, contra lo que realmente se vuelve ingreso en tu [[CRM|crm]]. Los tres números casi nunca coinciden exactamente, y en esa diferencia está la lectura real.",
         ],
       },
       {
@@ -3587,9 +3592,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Facebook and Instagram run on the same Meta Ads platform, so the question isn't really which platform, it's which placement fits your audience and your creative. Instagram skews younger and more visual; Facebook still reaches an older, broader audience with real purchasing power in many categories.",
+    lede: "Facebook and Instagram run on the same [[Meta Ads|meta-ads]] platform, so the question isn't really which platform, it's which placement fits your audience and your creative. Instagram skews younger and more visual; Facebook still reaches an older, broader audience with real purchasing power in many categories.",
     ledeEs:
-      "Facebook e Instagram corren sobre la misma plataforma de Meta Ads, así que la pregunta no es realmente qué plataforma, sino qué ubicación le queda mejor a tu audiencia y a tu creativo. Instagram tiende a un público más joven y visual; Facebook todavía llega a una audiencia mayor y más amplia con poder de compra real en muchas categorías.",
+      "Facebook e Instagram corren sobre la misma plataforma de [[Meta Ads|meta-ads]], así que la pregunta no es realmente qué plataforma, sino qué ubicación le queda mejor a tu audiencia y a tu creativo. Instagram tiende a un público más joven y visual; Facebook todavía llega a una audiencia mayor y más amplia con poder de compra real en muchas categorías.",
     sections: [
       {
         id: "misma-plataforma",
@@ -3730,10 +3735,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What CAPI adds",
         headingEs: "Qué suma el CAPI",
         body: [
-          "The Conversions API sends the same conversion events from your server directly to Meta, bypassing the browser entirely. It doesn't replace the Pixel, it backs it up: when the browser misses an event, the server-side event fills the gap, which is what keeps measurement accurate.",
+          "The Conversions API sends the same [[conversion|conversion]] events from your server directly to Meta, bypassing the browser entirely. It doesn't replace the Pixel, it backs it up: when the browser misses an event, the server-side event fills the gap, which is what keeps measurement accurate.",
         ],
         bodyEs: [
-          "La API de Conversiones manda los mismos eventos de conversión desde tu servidor directamente a Meta, sin pasar por el navegador. No reemplaza al Pixel, lo respalda: cuando el navegador se pierde un evento, el evento del lado del servidor llena ese hueco, y eso es lo que mantiene la medición precisa.",
+          "La API de Conversiones manda los mismos eventos de [[conversión|conversion]] desde tu servidor directamente a Meta, sin pasar por el navegador. No reemplaza al Pixel, lo respalda: cuando el navegador se pierde un evento, el evento del lado del servidor llena ese hueco, y eso es lo que mantiene la medición precisa.",
         ],
       },
       {
@@ -3812,19 +3817,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Most wasted Meta Ads budget doesn't come from one dramatic mistake, it comes from a handful of small, quiet ones stacking up: incomplete tracking, split budgets, and creative left running long past its useful life.",
+    lede: "Most wasted [[Meta Ads|meta-ads]] budget doesn't come from one dramatic mistake, it comes from a handful of small, quiet ones stacking up: incomplete tracking, split budgets, and creative left running long past its useful life.",
     ledeEs:
-      "La mayor parte del presupuesto desperdiciado en Meta Ads no viene de un error dramático, viene de un puñado de errores chicos y silenciosos que se acumulan: rastreo incompleto, presupuesto repartido de más, y creativo que sigue corriendo mucho después de cumplir su ciclo.",
+      "La mayor parte del presupuesto desperdiciado en [[Meta Ads|meta-ads]] no viene de un error dramático, viene de un puñado de errores chicos y silenciosos que se acumulan: rastreo incompleto, presupuesto repartido de más, y creativo que sigue corriendo mucho después de cumplir su ciclo.",
     sections: [
       {
         id: "sin-capi",
         heading: "1. No CAPI backing up the Pixel",
         headingEs: "1. Sin CAPI respaldando al Pixel",
         body: [
-          "Running only the browser Pixel means losing a real share of conversion events to privacy restrictions and ad blockers. The fix is a one-time technical setup, not an ongoing cost, so there's rarely a good reason to skip it. Meta's own data shows that combining Pixel with CAPI typically recovers a meaningful share of conversions that browser-based tracking alone misses due to ad blockers and iOS privacy restrictions, real money left unmeasured, not just a technical gap.",
+          "Running only the browser [[Pixel|pixel]] means losing a real share of [[conversion|conversion]] events to privacy restrictions and ad blockers. The fix is a one-time technical setup, not an ongoing cost, so there's rarely a good reason to skip it. Meta's own data shows that combining Pixel with CAPI typically recovers a meaningful share of conversions that browser-based tracking alone misses due to ad blockers and iOS privacy restrictions, real money left unmeasured, not just a technical gap.",
         ],
         bodyEs: [
-          "Correr solo el Pixel de navegador significa perder una parte real de eventos de conversión por restricciones de privacidad y bloqueadores de anuncios. La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela. Los propios datos de Meta muestran que combinar Pixel con CAPI normalmente recupera una parte importante de las conversiones que el rastreo solo desde el navegador pierde por bloqueadores de anuncios y restricciones de privacidad de iOS. Es dinero real sin medir, no solo un hueco técnico.",
+          "Correr solo el [[Pixel|pixel]] de navegador significa perder una parte real de eventos de [[conversión|conversion]] por restricciones de privacidad y bloqueadores de anuncios. La solución es una configuración técnica de una sola vez, no un costo continuo, así que rara vez hay una buena razón para saltársela. Los propios datos de Meta muestran que combinar Pixel con CAPI normalmente recupera una parte importante de las conversiones que el rastreo solo desde el navegador pierde por bloqueadores de anuncios y restricciones de privacidad de iOS. Es dinero real sin medir, no solo un hueco técnico.",
         ],
       },
       {
@@ -3854,10 +3859,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "4. Optimizing for traffic instead of the real goal",
         headingEs: "4. Optimizar para tráfico en vez del objetivo real",
         body: [
-          "A traffic-optimized campaign brings clicks, but Meta's algorithm isn't looking for people likely to buy, it's looking for people likely to click. If the goal is leads or sales, the campaign objective needs to say so directly.",
+          "A traffic-optimized campaign brings clicks, but Meta's algorithm isn't looking for people likely to buy, it's looking for people likely to click. If the goal is [[leads|lead]] or sales, the campaign objective needs to say so directly.",
         ],
         bodyEs: [
-          "Una campaña optimizada para tráfico trae clics, pero el algoritmo de Meta no está buscando gente que probablemente compre, busca gente que probablemente haga clic. Si el objetivo es leads o ventas, la campaña tiene que decirlo directamente.",
+          "Una campaña optimizada para tráfico trae clics, pero el algoritmo de Meta no está buscando gente que probablemente compre, busca gente que probablemente haga clic. Si el objetivo es [[leads|lead]] o ventas, la campaña tiene que decirlo directamente.",
         ],
       },
       {
@@ -3984,10 +3989,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Permits and regulation, briefly",
         headingEs: "Permisos y regulación, brevemente",
         body: [
-          "Most locations in Mexico can be flown freely, but areas near airports or other restricted airspace require permit management through AFAC before the shoot. A production team that checks this before quoting, not the day of the shoot, is the difference between a smooth session and a cancelled one.",
+          "Most locations in Mexico can be flown freely, but areas near airports or other restricted airspace require permit management through [[AFAC|afac]] before the shoot. A production team that checks this before quoting, not the day of the shoot, is the difference between a smooth session and a cancelled one.",
         ],
         bodyEs: [
-          "La mayoría de las ubicaciones en México se pueden volar libremente, pero las zonas cercanas a aeropuertos u otro espacio aéreo restringido requieren gestión de permiso ante AFAC antes de la sesión. Un equipo de producción que revisa esto antes de cotizar, no el día de la sesión, es la diferencia entre una sesión fluida y una cancelada.",
+          "La mayoría de las ubicaciones en México se pueden volar libremente, pero las zonas cercanas a aeropuertos u otro espacio aéreo restringido requieren gestión de permiso ante [[AFAC|afac]] antes de la sesión. Un equipo de producción que revisa esto antes de cotizar, no el día de la sesión, es la diferencia entre una sesión fluida y una cancelada.",
         ],
       },
       {
@@ -3995,10 +4000,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to integrate it into the rest of your marketing",
         headingEs: "Cómo integrarlo al resto de tu marketing",
         body: [
-          "Raw footage on its own doesn't sell anything, it needs to feed the channels that already carry your marketing: a landing page for a specific campaign, an ad creative, a listing, a proposal deck. Planning the shoot around where the content will actually be used gets more mileage than shooting first and figuring out placement later.",
+          "Raw footage on its own doesn't sell anything, it needs to feed the channels that already carry your marketing: a [[landing page|landing-page]] for a specific campaign, an ad creative, a listing, a proposal deck. Planning the shoot around where the content will actually be used gets more mileage than shooting first and figuring out placement later.",
         ],
         bodyEs: [
-          "El material en bruto por sí solo no vende nada, tiene que alimentar los canales donde ya vive tu marketing: una landing page para una campaña específica, un creativo de anuncio, una ficha de propiedad, una presentación de ventas. Planear la sesión alrededor de dónde se va a usar el contenido rinde más que grabar primero y decidir el uso después.",
+          "El material en bruto por sí solo no vende nada, tiene que alimentar los canales donde ya vive tu marketing: una [[landing page|landing-page]] para una campaña específica, un creativo de anuncio, una ficha de propiedad, una presentación de ventas. Planear la sesión alrededor de dónde se va a usar el contenido rinde más que grabar primero y decidir el uso después.",
         ],
       },
       {
@@ -4282,9 +4287,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "The right Google Ads budget isn't a round number picked because it feels affordable, it's worked out backward from how much a customer is worth, what share of leads actually close, and how much competition drives up your cost per click.",
+    lede: "The right [[Google Ads|google-ads]] budget isn't a round number picked because it feels affordable, it's worked out backward from how much a customer is worth, what share of [[leads|lead]] actually close, and how much competition drives up your [[cost per click|cpc]].",
     ledeEs:
-      "El presupuesto correcto de Google Ads no es un número redondo que se elige porque se siente accesible, se calcula al revés: cuánto vale un cliente, qué porcentaje de leads realmente cierra, y qué tanto la competencia sube tu costo por clic.",
+      "El presupuesto correcto de [[Google Ads|google-ads]] no es un número redondo que se elige porque se siente accesible, se calcula al revés: cuánto vale un cliente, qué porcentaje de [[leads|lead]] realmente cierra, y qué tanto la competencia sube tu [[costo por clic|cpc]].",
     sections: [
       {
         id: "empieza-por-el-cierre",
@@ -4324,10 +4329,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to adjust once real data comes in",
         headingEs: "Cómo ajustar una vez que llegan datos reales",
         body: [
-          "Once a campaign has enough conversion volume to read reliably, the budget conversation shifts from guessing to scaling: increasing spend on what's already converting at an acceptable cost, and cutting what isn't, rather than adjusting the total number blindly.",
+          "Once a campaign has enough [[conversion|conversion]] volume to read reliably, the budget conversation shifts from guessing to scaling: increasing spend on what's already converting at an acceptable cost, and cutting what isn't, rather than adjusting the total number blindly.",
         ],
         bodyEs: [
-          "Una vez que una campaña tiene suficiente volumen de conversión para leerse con confianza, la conversación de presupuesto cambia de adivinar a escalar: subir el gasto en lo que ya convierte a un costo aceptable, y cortar lo que no, en vez de ajustar el número total a ciegas.",
+          "Una vez que una campaña tiene suficiente volumen de [[conversión|conversion]] para leerse con confianza, la conversación de presupuesto cambia de adivinar a escalar: subir el gasto en lo que ya convierte a un costo aceptable, y cortar lo que no, en vez de ajustar el número total a ciegas.",
         ],
       },
     ],
@@ -4381,7 +4386,7 @@ export const BLOG_POSTS: BlogPost[] = [
     authorRoleEs: "Director Creativo, Aphelion",
     lede: "Google Ads' interface is accessible enough that anyone can launch a campaign in an afternoon. The real question isn't whether you're capable of running it, it's whether the hours it takes to run it well are better spent somewhere else in your business.",
     ledeEs:
-      "La interfaz de Google Ads es lo bastante accesible como para que cualquiera lance una campaña en una tarde. La pregunta real no es si eres capaz de manejarla, es si las horas que toma manejarla bien están mejor invertidas en otra parte de tu negocio.",
+      "La interfaz de [[Google Ads|google-ads]] es lo bastante accesible como para que cualquiera lance una campaña en una tarde. La pregunta real no es si eres capaz de manejarla, es si las horas que toma manejarla bien están mejor invertidas en otra parte de tu negocio.",
     sections: [
       {
         id: "lo-que-si-puedes-hacer-solo",
@@ -4399,10 +4404,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where it stops being simple",
         headingEs: "Dónde deja de ser simple",
         body: [
-          "Complexity shows up once you're running multiple campaign types, need to interpret conversion data correctly, or are trying to scale spend without wasting it. That's where the gap between a functioning campaign and a genuinely profitable one tends to open up, and where DIY accounts often plateau.",
+          "Complexity shows up once you're running multiple campaign types, need to interpret [[conversion|conversion]] data correctly, or are trying to scale spend without wasting it. That's where the gap between a functioning campaign and a genuinely profitable one tends to open up, and where DIY accounts often plateau.",
         ],
         bodyEs: [
-          "La complejidad aparece cuando manejas varios tipos de campaña, necesitas interpretar bien los datos de conversión, o intentas escalar el gasto sin desperdiciarlo. Ahí es donde suele abrirse la brecha entre una campaña que funciona y una que realmente es rentable, y donde las cuentas manejadas por cuenta propia suelen estancarse.",
+          "La complejidad aparece cuando manejas varios tipos de campaña, necesitas interpretar bien los datos de [[conversión|conversion]], o intentas escalar el gasto sin desperdiciarlo. Ahí es donde suele abrirse la brecha entre una campaña que funciona y una que realmente es rentable, y donde las cuentas manejadas por cuenta propia suelen estancarse.",
         ],
       },
       {
@@ -4476,9 +4481,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "Remarketing targets people who already visited your website or interacted with your business, tagged through the Meta Pixel or Google Ads' own tracking, rather than strangers seeing your brand for the first time. Because that audience already has context, it typically converts at a meaningfully higher rate than cold traffic, and often at a lower cost per result, since the platform isn't paying to introduce your brand from zero.",
+    lede: "Remarketing targets people who already visited your website or interacted with your business, tagged through the [[Meta Pixel|pixel]] or [[Google Ads|google-ads]]' own tracking, rather than strangers seeing your brand for the first time. Because that audience already has context, it typically converts at a meaningfully higher rate than cold traffic, and often at a lower cost per result, since the platform isn't paying to introduce your brand from zero.",
     ledeEs:
-      "El remarketing apunta a personas que ya visitaron tu sitio web o interactuaron con tu negocio, etiquetadas mediante el Pixel de Meta o el propio seguimiento de Google Ads, en vez de a extraños que ven tu marca por primera vez. Como esa audiencia ya tiene contexto, suele convertir a una tasa notablemente más alta que el tráfico frío, y muchas veces a un costo por resultado más bajo, porque la plataforma no está pagando por presentar tu marca desde cero.",
+      "El remarketing apunta a personas que ya visitaron tu sitio web o interactuaron con tu negocio, etiquetadas mediante el [[Pixel de Meta|pixel]] o el propio seguimiento de [[Google Ads|google-ads]], en vez de a extraños que ven tu marca por primera vez. Como esa audiencia ya tiene contexto, suele convertir a una tasa notablemente más alta que el tráfico frío, y muchas veces a un costo por resultado más bajo, porque la plataforma no está pagando por presentar tu marca desde cero.",
     sections: [
       {
         id: "como-funciona",
@@ -4496,10 +4501,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why it converts better than cold traffic",
         headingEs: "Por qué convierte mejor que el tráfico frío",
         body: [
-          "Someone who already visited your site has already decided you're relevant enough to click on once, which removes most of the trust-building work a cold ad still has to do. Remarketing campaigns commonly run at a lower cost per conversion than prospecting campaigns targeting cold audiences, because the platform's algorithm is optimizing toward people already primed to act, not toward strangers who need to be convinced from scratch.",
+          "Someone who already visited your site has already decided you're relevant enough to click on once, which removes most of the trust-building work a cold ad still has to do. Remarketing campaigns commonly run at a lower cost per [[conversion|conversion]] than prospecting campaigns targeting cold audiences, because the platform's algorithm is optimizing toward people already primed to act, not toward strangers who need to be convinced from scratch.",
         ],
         bodyEs: [
-          "Alguien que ya visitó tu sitio ya decidió que eras lo bastante relevante como para darle clic una vez, lo que elimina la mayor parte del trabajo de generar confianza que todavía tiene que hacer un anuncio frío. Las campañas de remarketing suelen correr a un costo por conversión más bajo que las campañas de prospección dirigidas a audiencias frías, porque el algoritmo de la plataforma está optimizando hacia gente ya predispuesta a actuar, no hacia desconocidos que hay que convencer desde cero.",
+          "Alguien que ya visitó tu sitio ya decidió que eras lo bastante relevante como para darle clic una vez, lo que elimina la mayor parte del trabajo de generar confianza que todavía tiene que hacer un anuncio frío. Las campañas de remarketing suelen correr a un costo por [[conversión|conversion]] más bajo que las campañas de prospección dirigidas a audiencias frías, porque el algoritmo de la plataforma está optimizando hacia gente ya predispuesta a actuar, no hacia desconocidos que hay que convencer desde cero.",
         ],
       },
       {
@@ -4739,10 +4744,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Timeline by tier",
         headingEs: "Tiempos por nivel",
         body: [
-          "Presence and Professional tiers: 3 to 6 weeks. Lead-Gen and Automated tiers: 6 to 10 weeks, since they add forms, integrations and conversion logic that need testing. Commercial systems and custom SaaS: several months, because they involve custom development and often a database architecture built from scratch.",
+          "Presence and Professional tiers: 3 to 6 weeks. Lead-Gen and Automated tiers: 6 to 10 weeks, since they add forms, integrations and [[conversion|conversion]] logic that need testing. Commercial systems and custom SaaS: several months, because they involve custom development and often a database architecture built from scratch.",
         ],
         bodyEs: [
-          "Niveles Presencial y Profesional: de 3 a 6 semanas. Niveles de Captación y Automatizada: de 6 a 10 semanas, porque suman formularios, integraciones y lógica de conversión que necesitan probarse. Sistemas comerciales y SaaS a medida: varios meses, porque implican desarrollo a la medida y muchas veces una arquitectura de base de datos construida desde cero.",
+          "Niveles Presencial y Profesional: de 3 a 6 semanas. Niveles de Captación y Automatizada: de 6 a 10 semanas, porque suman formularios, integraciones y lógica de [[conversión|conversion]] que necesitan probarse. Sistemas comerciales y SaaS a medida: varios meses, porque implican desarrollo a la medida y muchas veces una arquitectura de base de datos construida desde cero.",
         ],
       },
       {
@@ -4858,10 +4863,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "AI-assisted builders: real speed, with real limits",
         headingEs: "Builders con IA: velocidad real, con límites reales",
         body: [
-          "Newer AI-assisted builders can generate a working site from a description in a fraction of the time either WordPress setup or fully custom development takes. That speed is genuinely useful for a first version or a Presence-tier site. It's a weaker fit once a project needs precise conversion logic, complex integrations, or design decisions that a generic AI-generated layout won't get right without significant hands-on refinement.",
+          "Newer AI-assisted builders can generate a working site from a description in a fraction of the time either WordPress setup or fully custom development takes. That speed is genuinely useful for a first version or a Presence-tier site. It's a weaker fit once a project needs precise [[conversion|conversion]] logic, complex integrations, or design decisions that a generic AI-generated layout won't get right without significant hands-on refinement.",
         ],
         bodyEs: [
-          "Los builders más nuevos asistidos por IA pueden generar un sitio funcional a partir de una descripción en una fracción del tiempo que toma tanto configurar WordPress como el desarrollo totalmente a medida. Esa velocidad es genuinamente útil para una primera versión o un sitio de nivel Presencial. Es un ajuste más débil en el momento en que un proyecto necesita lógica de conversión precisa, integraciones complejas, o decisiones de diseño que un layout genérico generado por IA no va a acertar sin un refinamiento manual importante.",
+          "Los builders más nuevos asistidos por IA pueden generar un sitio funcional a partir de una descripción en una fracción del tiempo que toma tanto configurar WordPress como el desarrollo totalmente a medida. Esa velocidad es genuinamente útil para una primera versión o un sitio de nivel Presencial. Es un ajuste más débil en el momento en que un proyecto necesita lógica de [[conversión|conversion]] precisa, integraciones complejas, o decisiones de diseño que un layout genérico generado por IA no va a acertar sin un refinamiento manual importante.",
         ],
       },
       {
@@ -4988,10 +4993,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Launching without any way to measure results",
         headingEs: "Lanzar sin ninguna forma de medir resultados",
         body: [
-          "A site that launches without Google Analytics (GA4) or basic conversion tracking makes every future decision a guess instead of a data-backed call, there's no way to know which page, which headline, or which CTA is actually working. Setting up GA4 and a simple event for each conversion point (form submitted, WhatsApp clicked, phone number tapped) before launch, not weeks after, is what turns a site into something that can actually be improved over time instead of something judged purely on how it feels.",
+          "A site that launches without [[Google Analytics|google-analytics]] (GA4) or basic [[conversion|conversion]] tracking makes every future decision a guess instead of a data-backed call, there's no way to know which page, which headline, or which CTA is actually working. Setting up GA4 and a simple event for each conversion point (form submitted, WhatsApp clicked, phone number tapped) before launch, not weeks after, is what turns a site into something that can actually be improved over time instead of something judged purely on how it feels.",
         ],
         bodyEs: [
-          "Un sitio que se lanza sin Google Analytics (GA4) ni seguimiento básico de conversión convierte cada decisión futura en una suposición en vez de una decisión con datos: no hay forma de saber qué página, qué titular o qué llamado a la acción realmente está funcionando. Configurar GA4 y un evento simple por cada punto de conversión (formulario enviado, clic en WhatsApp, toque en el número de teléfono) antes del lanzamiento, no semanas después, es lo que convierte a un sitio en algo que realmente se puede mejorar con el tiempo, en vez de algo que se juzga solo por cómo se siente.",
+          "Un sitio que se lanza sin [[Google Analytics|google-analytics]] (GA4) ni seguimiento básico de [[conversión|conversion]] convierte cada decisión futura en una suposición en vez de una decisión con datos: no hay forma de saber qué página, qué titular o qué llamado a la acción realmente está funcionando. Configurar GA4 y un evento simple por cada punto de conversión (formulario enviado, clic en WhatsApp, toque en el número de teléfono) antes del lanzamiento, no semanas después, es lo que convierte a un sitio en algo que realmente se puede mejorar con el tiempo, en vez de algo que se juzga solo por cómo se siente.",
         ],
       },
     ],
@@ -5052,10 +5057,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Content accuracy",
         headingEs: "Precisión del contenido",
         body: [
-          "Every phone number, address, price, and business hour on the site needs to be verified against the actual current information, not copied from an old brochure. A single wrong phone number can quietly cost real leads for weeks before anyone notices.",
+          "Every phone number, address, price, and business hour on the site needs to be verified against the actual current information, not copied from an old brochure. A single wrong phone number can quietly cost real [[leads|lead]] for weeks before anyone notices.",
         ],
         bodyEs: [
-          "Cada teléfono, dirección, precio y horario en el sitio necesita verificarse contra la información real y actual, no copiarse de un folleto viejo. Un solo número de teléfono equivocado puede costar leads reales durante semanas antes de que alguien lo note.",
+          "Cada teléfono, dirección, precio y horario en el sitio necesita verificarse contra la información real y actual, no copiarse de un folleto viejo. Un solo número de teléfono equivocado puede costar [[leads|lead]] reales durante semanas antes de que alguien lo note.",
         ],
       },
       {
@@ -5074,10 +5079,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Tracking and analytics",
         headingEs: "Seguimiento y analítica",
         body: [
-          "Analytics, conversion tracking, and any ad pixels need to be installed and verified as working before launch, not added afterward. Confirming a test conversion actually registers is the only way to know tracking is truly set up correctly, not just installed. Concretely: load the site in an incognito window, submit a test form or click a test WhatsApp button, and confirm the event actually shows up in GA4's real-time report within a minute or two, that single test catches most tracking failures before they cost a single real lead.",
+          "Analytics, [[conversion|conversion]] tracking, and any ad pixels need to be installed and verified as working before launch, not added afterward. Confirming a test conversion actually registers is the only way to know tracking is truly set up correctly, not just installed. Concretely: load the site in an incognito window, submit a test form or click a test WhatsApp button, and confirm the event actually shows up in [[GA4|google-analytics]]'s real-time report within a minute or two, that single test catches most tracking failures before they cost a single real lead.",
         ],
         bodyEs: [
-          "La analítica, el seguimiento de conversión y cualquier pixel de anuncios necesitan estar instalados y verificados como funcionales antes del lanzamiento, no agregados después. Confirmar que una conversión de prueba realmente se registra es la única forma de saber que el seguimiento está bien configurado, no solo instalado. De forma concreta: carga el sitio en una ventana de incógnito, envía un formulario de prueba o da clic en un botón de WhatsApp de prueba, y confirma que el evento realmente aparece en el reporte en tiempo real de GA4 dentro de uno o dos minutos. Esa sola prueba detecta la mayoría de las fallas de seguimiento antes de que cuesten un solo lead real.",
+          "La analítica, el seguimiento de [[conversión|conversion]] y cualquier [[pixel|pixel]] de anuncios necesitan estar instalados y verificados como funcionales antes del lanzamiento, no agregados después. Confirmar que una conversión de prueba realmente se registra es la única forma de saber que el seguimiento está bien configurado, no solo instalado. De forma concreta: carga el sitio en una ventana de incógnito, envía un formulario de prueba o da clic en un botón de WhatsApp de prueba, y confirma que el evento realmente aparece en el reporte en tiempo real de [[GA4|google-analytics]] dentro de uno o dos minutos. Esa sola prueba detecta la mayoría de las fallas de seguimiento antes de que cuesten un solo lead real.",
         ],
       },
       {
@@ -5304,7 +5309,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "The strongest setup uses social media to build awareness and relationship, and a website as the destination that converts that attention into an actual lead or sale. Every social post that doesn't eventually point somewhere the business owns is attention that gets spent without being captured.",
         ],
         bodyEs: [
-          "El montaje más fuerte usa redes sociales para construir conocimiento y relación, y una página web como el destino que convierte esa atención en un lead o venta real. Cada publicación social que no termina apuntando a algo que el negocio posee es atención que se gasta sin capturarse.",
+          "El montaje más fuerte usa redes sociales para construir conocimiento y relación, y una página web como el destino que convierte esa atención en un [[lead|lead]] o venta real. Cada publicación social que no termina apuntando a algo que el negocio posee es atención que se gasta sin capturarse.",
         ],
       },
     ],
@@ -5376,10 +5381,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The most common causes",
         headingEs: "Las causas más comunes",
         body: [
-          "Unoptimized images are the single most common culprit, a handful of full-resolution photos straight from a phone camera (often 3-5 MB each) can add several seconds to load time on their own, when a properly compressed version of the same image runs under 200 KB with no visible quality loss. After that, too many third-party scripts (chat widgets, tracking pixels, embedded fonts) and a hosting plan that isn't suited to the site's actual traffic round out the usual list.",
+          "Unoptimized images are the single most common culprit, a handful of full-resolution photos straight from a phone camera (often 3-5 MB each) can add several seconds to load time on their own, when a properly compressed version of the same image runs under 200 KB with no visible quality loss. After that, too many third-party scripts (chat widgets, tracking pixels, embedded fonts) and a [[hosting|hosting]] plan that isn't suited to the site's actual traffic round out the usual list.",
         ],
         bodyEs: [
-          "Las imágenes sin optimizar son la causa más común por sí sola: un puñado de fotos en resolución completa directo de la cámara de un celular (muchas veces 3 a 5 MB cada una) pueden sumar varios segundos de carga por su cuenta, cuando una versión correctamente comprimida de la misma imagen pesa menos de 200 KB sin pérdida visible de calidad. Después de eso, demasiados scripts de terceros (widgets de chat, pixeles de seguimiento, fuentes incrustadas) y un plan de hosting que no está a la altura del tráfico real del sitio completan la lista habitual.",
+          "Las imágenes sin optimizar son la causa más común por sí sola: un puñado de fotos en resolución completa directo de la cámara de un celular (muchas veces 3 a 5 MB cada una) pueden sumar varios segundos de carga por su cuenta, cuando una versión correctamente comprimida de la misma imagen pesa menos de 200 KB sin pérdida visible de calidad. Después de eso, demasiados scripts de terceros (widgets de chat, pixeles de seguimiento, fuentes incrustadas) y un plan de [[hosting|hosting]] que no está a la altura del tráfico real del sitio completan la lista habitual.",
         ],
       },
       {
@@ -5647,19 +5652,19 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A website doesn't need a redesign just because a few years have passed, it needs one when specific, measurable signals show up: a PageSpeed score consistently under 50, a bounce rate trending upward over several months in Google Analytics, or a site that fails Google's own mobile-friendliness test. Eight concrete triggers, not a vague feeling that the site \"looks old.\"",
+    lede: "A website doesn't need a redesign just because a few years have passed, it needs one when specific, measurable signals show up: a PageSpeed score consistently under 50, a bounce rate trending upward over several months in [[Google Analytics|google-analytics]], or a site that fails Google's own mobile-friendliness test. Eight concrete triggers, not a vague feeling that the site \"looks old.\"",
     ledeEs:
-      'Una página web no necesita rediseñarse solo porque pasaron unos cuantos años, necesita rediseñarse cuando aparecen señales específicas y medibles: un puntaje de PageSpeed consistentemente por debajo de 50, una tasa de rebote con tendencia al alza durante varios meses en Google Analytics, o un sitio que no pasa la propia prueba de compatibilidad móvil de Google. Ocho disparadores concretos, no una sensación vaga de que el sitio "se ve viejo".',
+      'Una página web no necesita rediseñarse solo porque pasaron unos cuantos años, necesita rediseñarse cuando aparecen señales específicas y medibles: un puntaje de PageSpeed consistentemente por debajo de 50, una tasa de rebote con tendencia al alza durante varios meses en [[Google Analytics|google-analytics]], o un sitio que no pasa la propia prueba de compatibilidad móvil de Google. Ocho disparadores concretos, no una sensación vaga de que el sitio "se ve viejo".',
     sections: [
       {
         id: "las-senales-de-conversion",
         heading: "Falling conversion rates, tracked over time",
         headingEs: "Tasas de conversión que bajan, medidas con el tiempo",
         body: [
-          "If leads or sales from the site have been declining for three months or more without an obvious external cause (seasonality, a paused ad campaign), the site itself is a reasonable place to look, and Google Analytics' own conversion reports make the trend visible without guesswork. Visual design that clearly looks dated compared to competitors also sends a quiet signal of being behind, even if the visitor can't articulate exactly why the site feels off, but a measurable drop in the data is the stronger signal to act on first.",
+          "If [[leads|lead]] or sales from the site have been declining for three months or more without an obvious external cause (seasonality, a paused ad campaign), the site itself is a reasonable place to look, and Google Analytics' own [[conversion|conversion]] reports make the trend visible without guesswork. Visual design that clearly looks dated compared to competitors also sends a quiet signal of being behind, even if the visitor can't articulate exactly why the site feels off, but a measurable drop in the data is the stronger signal to act on first.",
         ],
         bodyEs: [
-          "Si los leads o ventas que llegan del sitio han venido bajando durante tres meses o más sin una causa externa obvia (estacionalidad, una campaña de anuncios pausada), el sitio mismo es un lugar razonable dónde buscar, y los propios reportes de conversión de Google Analytics hacen visible la tendencia sin necesidad de adivinar. Un diseño visual que claramente se ve desactualizado frente a la competencia también manda una señal silenciosa de estar atrasado, aunque el visitante no sepa articular exactamente por qué el sitio se siente mal, pero una caída medible en los datos es la señal más fuerte sobre la cual actuar primero.",
+          "Si los [[leads|lead]] o ventas que llegan del sitio han venido bajando durante tres meses o más sin una causa externa obvia (estacionalidad, una campaña de anuncios pausada), el sitio mismo es un lugar razonable dónde buscar, y los propios reportes de [[conversión|conversion]] de Google Analytics hacen visible la tendencia sin necesidad de adivinar. Un diseño visual que claramente se ve desactualizado frente a la competencia también manda una señal silenciosa de estar atrasado, aunque el visitante no sepa articular exactamente por qué el sitio se siente mal, pero una caída medible en los datos es la señal más fuerte sobre la cual actuar primero.",
         ],
       },
       {
@@ -5689,7 +5694,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When a redesign genuinely isn't needed",
         headingEs: "Cuándo un rediseño en realidad no hace falta",
         body: [
-          "If PageSpeed scores above 70, the site passes the mobile-friendly test, conversion rates are flat or improving, and the site still accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost, roughly $6,000-$15,000 MXN for content and design touch-ups versus $25,000 MXN and up for a full rebuild.",
+          "If PageSpeed scores above 70, the site passes the mobile-friendly test, [[conversion rate|tasa-de-conversion]]s are flat or improving, and the site still accurately represents the business, age alone isn't a reason to rebuild it. Targeted updates (fresh copy, updated photos, a refreshed section) often solve the actual problem for a fraction of a full redesign's cost, roughly $6,000-$15,000 MXN for content and design touch-ups versus $25,000 MXN and up for a full rebuild.",
         ],
         bodyEs: [
           "Si PageSpeed marca arriba de 70, el sitio pasa la prueba de compatibilidad móvil, las tasas de conversión están estables o mejorando, y el sitio sigue representando bien al negocio, la edad por sí sola no es razón para reconstruirlo. Las actualizaciones puntuales (copy nuevo, fotos actualizadas, una sección renovada) muchas veces resuelven el problema real por una fracción del costo de un rediseño completo, aproximadamente $6,000 a $15,000 MXN por retoques de contenido y diseño contra $25,000 MXN en adelante por una reconstrucción completa.",
@@ -5757,7 +5762,7 @@ export const BLOG_POSTS: BlogPost[] = [
     authorRoleEs: "Director Creativo, Aphelion",
     lede: "Automation in a small business is not about replacing people. It is about making sure no lead falls through a crack: every form arrives somewhere, every inquiry gets an answer, and every follow-up happens on schedule instead of when someone remembers.",
     ledeEs:
-      "La automatización en una pyme no se trata de reemplazar personas. Se trata de que ningún lead se pierda: que cada formulario llegue a algún lado, que cada consulta reciba respuesta, y que cada seguimiento ocurra en su momento y no cuando alguien se acuerda.",
+      "La automatización en una pyme no se trata de reemplazar personas. Se trata de que ningún [[lead|lead]] se pierda: que cada formulario llegue a algún lado, que cada consulta reciba respuesta, y que cada seguimiento ocurra en su momento y no cuando alguien se acuerda.",
     sections: [
       {
         id: "el-problema-real",
@@ -5775,10 +5780,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The three layers: capture, store, follow up",
         headingEs: "Las tres capas: capturar, guardar, dar seguimiento",
         body: [
-          "Almost every automation project fits one of three layers. Capture is how a lead enters: a form, a chat, a call, a message. Storage is where it lives so the whole team can see it, which in practice means a CRM. Follow-up is what happens next, on a schedule that does not depend on someone being free. Skipping the middle layer is the most common mistake, because capture without storage just moves the pile from one inbox to another.",
+          "Almost every automation project fits one of three layers. Capture is how a lead enters: a form, a chat, a call, a message. Storage is where it lives so the whole team can see it, which in practice means a [[CRM|crm]]. Follow-up is what happens next, on a schedule that does not depend on someone being free. Skipping the middle layer is the most common mistake, because capture without storage just moves the pile from one inbox to another.",
         ],
         bodyEs: [
-          "Casi todo proyecto de automatización cae en una de tres capas. La captura es cómo entra un lead: un formulario, un chat, una llamada, un mensaje. El almacenamiento es dónde vive para que todo el equipo lo vea, que en la práctica significa un CRM. El seguimiento es lo que pasa después, en un calendario que no depende de que alguien esté libre. Saltarse la capa de en medio es el error más común, porque capturar sin guardar solo mueve el montón de una bandeja a otra.",
+          "Casi todo proyecto de automatización cae en una de tres capas. La captura es cómo entra un lead: un formulario, un chat, una llamada, un mensaje. El almacenamiento es dónde vive para que todo el equipo lo vea, que en la práctica significa un [[CRM|crm]]. El seguimiento es lo que pasa después, en un calendario que no depende de que alguien esté libre. Saltarse la capa de en medio es el error más común, porque capturar sin guardar solo mueve el montón de una bandeja a otra.",
         ],
       },
       {
@@ -5786,7 +5791,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Start at the bottleneck, not at the tool",
         headingEs: "Empieza por el cuello de botella, no por la herramienta",
         body: [
-          "The useful question is not which platform to buy. It is where leads are actually dying today. If people write and nobody answers for hours, the bottleneck is response time. If they get answered but never contacted again, it is follow-up. If the team argues about who talked to whom, it is storage. Each of those points to a different first project, and buying a tool before naming the bottleneck usually produces an expensive subscription nobody opens.",
+          "The useful question is not which platform to buy. It is where [[leads|lead]] are actually dying today. If people write and nobody answers for hours, the bottleneck is response time. If they get answered but never contacted again, it is follow-up. If the team argues about who talked to whom, it is storage. Each of those points to a different first project, and buying a tool before naming the bottleneck usually produces an expensive subscription nobody opens.",
         ],
         bodyEs: [
           "La pregunta útil no es qué plataforma comprar. Es dónde se están muriendo los leads hoy. Si la gente escribe y nadie contesta en horas, el cuello de botella es el tiempo de respuesta. Si les contestan pero nunca los vuelven a contactar, es el seguimiento. Si el equipo discute quién habló con quién, es el almacenamiento. Cada uno apunta a un primer proyecto distinto, y comprar herramienta antes de nombrar el cuello de botella suele producir una suscripción cara que nadie abre.",
@@ -5797,10 +5802,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The CRM is the spine of everything else",
         headingEs: "El CRM es la columna de todo lo demás",
         body: [
-          'A CRM is a shared record of every person who ever showed interest, what they asked for, and what happens next. Without it, automations have nowhere to write and reports have nothing to count. It does not need to be expensive or complex to start, and for many small businesses the first version is a lot simpler than what vendors sell. We cover how to choose one in "what is a CRM."',
+          'A CRM is a shared record of every person who ever showed interest, what they asked for, and what happens next. Without it, automations have nowhere to write and reports have nothing to count. It does not need to be expensive or complex to start, and for many small businesses the first version is a lot simpler than what vendors sell. We cover how to choose one in [what is a CRM](/blog/que-es-un-crm).',
         ],
         bodyEs: [
-          'Un CRM es un registro compartido de cada persona que alguna vez mostró interés, qué pidió y qué sigue con ella. Sin él, las automatizaciones no tienen dónde escribir y los reportes no tienen qué contar. No necesita ser caro ni complejo para arrancar, y para muchas pymes la primera versión es bastante más simple de lo que venden los proveedores. Cubrimos cómo elegir uno en "qué es un CRM."',
+          'Un CRM es un registro compartido de cada persona que alguna vez mostró interés, qué pidió y qué sigue con ella. Sin él, las automatizaciones no tienen dónde escribir y los reportes no tienen qué contar. No necesita ser caro ni complejo para arrancar, y para muchas pymes la primera versión es bastante más simple de lo que venden los proveedores. Cubrimos cómo elegir uno en [qué es un CRM](/blog/que-es-un-crm).',
         ],
       },
       {
@@ -5808,10 +5813,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Connecting capture to storage",
         headingEs: "Conectar la captura con el almacenamiento",
         body: [
-          'A contact form that only sends an email is a leak waiting to happen: emails get buried, forwarded, or deleted. Wiring forms directly into the CRM means the lead exists as a record with an owner and a next step, not as a message someone has to notice. The setup is usually an afternoon of work and it is the single highest-return automation for most businesses. The step-by-step is in "connecting forms to your CRM."',
+          'A contact form that only sends an email is a leak waiting to happen: emails get buried, forwarded, or deleted. Wiring forms directly into the CRM means the lead exists as a record with an owner and a next step, not as a message someone has to notice. The setup is usually an afternoon of work and it is the single highest-return automation for most businesses. The step-by-step is in [connecting forms to your CRM](/blog/conectar-formularios-a-crm).',
         ],
         bodyEs: [
-          'Un formulario de contacto que solo manda un correo es una fuga esperando a pasar: los correos se entierran, se reenvían o se borran. Conectar los formularios directo al CRM hace que el lead exista como registro con dueño y siguiente paso, no como un mensaje que alguien tiene que notar. La configuración suele ser una tarde de trabajo y es la automatización de mayor retorno para la mayoría de los negocios. El paso a paso está en "cómo conectar tus formularios al CRM."',
+          'Un formulario de contacto que solo manda un correo es una fuga esperando a pasar: los correos se entierran, se reenvían o se borran. Conectar los formularios directo al CRM hace que el lead exista como registro con dueño y siguiente paso, no como un mensaje que alguien tiene que notar. La configuración suele ser una tarde de trabajo y es la automatización de mayor retorno para la mayoría de los negocios. El paso a paso está en [cómo conectar tus formularios al CRM](/blog/conectar-formularios-a-crm).',
         ],
       },
       {
@@ -5819,10 +5824,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Follow-up is where most of the money is",
         headingEs: "El seguimiento es donde está la mayor parte del dinero",
         body: [
-          'Most leads do not buy on the first contact, and most businesses stop after the first contact. An automated sequence that checks in a few times over the following weeks recovers sales that were already paid for through advertising. The point is not to spam: it is to make sure the second and third touch happen at all, because in practice they usually do not. We break the flow down in "automating sales follow-up."',
+          'Most leads do not buy on the first contact, and most businesses stop after the first contact. An automated sequence that checks in a few times over the following weeks recovers sales that were already paid for through advertising. The point is not to spam: it is to make sure the second and third touch happen at all, because in practice they usually do not. We break the flow down in [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas).',
         ],
         bodyEs: [
-          'La mayoría de los leads no compra en el primer contacto, y la mayoría de los negocios se detiene en el primer contacto. Una secuencia automatizada que da seguimiento algunas veces en las semanas siguientes recupera ventas que ya pagaste con publicidad. El punto no es hacer spam: es que el segundo y tercer contacto sucedan, porque en la práctica normalmente no suceden. Desglosamos el flujo en "automatizar el seguimiento de ventas."',
+          'La mayoría de los leads no compra en el primer contacto, y la mayoría de los negocios se detiene en el primer contacto. Una secuencia automatizada que da seguimiento algunas veces en las semanas siguientes recupera ventas que ya pagaste con publicidad. El punto no es hacer spam: es que el segundo y tercer contacto sucedan, porque en la práctica normalmente no suceden. Desglosamos el flujo en [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas).',
         ],
       },
       {
@@ -5841,10 +5846,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "A scripted bot and an AI agent are different products",
         headingEs: "Un bot con guion y un agente de IA son productos distintos",
         body: [
-          'A menu-style bot answers what is in its tree and fails on anything else, which is fine for hours, address and a price list. An AI agent understands phrasing outside the script. Both are legitimate, and picking the wrong one is expensive in opposite directions: a bot where you needed intelligence frustrates customers, and an agent where a menu would do is overbuilt. We compare them in "AI chatbots for business."',
+          'A menu-style bot answers what is in its tree and fails on anything else, which is fine for hours, address and a price list. An AI agent understands phrasing outside the script. Both are legitimate, and picking the wrong one is expensive in opposite directions: a bot where you needed intelligence frustrates customers, and an agent where a menu would do is overbuilt. We compare them in [AI chatbots for business](/blog/chatbot-con-ia-para-negocios).',
         ],
         bodyEs: [
-          'Un bot tipo menú responde lo que está en su árbol y falla en todo lo demás, lo cual está bien para horarios, dirección y una lista de precios. Un agente de IA entiende formulaciones fuera del guion. Ambos son legítimos, y elegir mal sale caro en direcciones opuestas: un bot donde necesitabas inteligencia frustra clientes, y un agente donde bastaba un menú está sobrado. Los comparamos en "chatbots con IA para negocios."',
+          'Un bot tipo menú responde lo que está en su árbol y falla en todo lo demás, lo cual está bien para horarios, dirección y una lista de precios. Un agente de IA entiende formulaciones fuera del guion. Ambos son legítimos, y elegir mal sale caro en direcciones opuestas: un bot donde necesitabas inteligencia frustra clientes, y un agente donde bastaba un menú está sobrado. Los comparamos en [chatbots con IA para negocios](/blog/chatbot-con-ia-para-negocios).',
         ],
       },
       {
@@ -5863,10 +5868,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What not to automate",
         headingEs: "Qué no automatizar",
         body: [
-          'Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs three times a year rarely repays the hours it takes to wire up. The judgment calls are in "what to automate first in your business."',
+          'Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs three times a year rarely repays the hours it takes to wire up. The judgment calls are in [what to automate first in your business](/blog/que-automatizar-en-mi-negocio).',
         ],
         bodyEs: [
-          'Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre tres veces al año rara vez paga las horas que toma conectarlo. Los criterios están en "qué automatizar primero en tu negocio."',
+          'Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre tres veces al año rara vez paga las horas que toma conectarlo. Los criterios están en [qué automatizar primero en tu negocio](/blog/que-automatizar-en-mi-negocio).',
         ],
       },
       {
@@ -5874,10 +5879,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to know if it worked",
         headingEs: "Cómo saber si funcionó",
         body: [
-          "Three numbers tell you most of it: how long it takes to answer a new lead, what share of leads get a second contact, and how many close. If response time drops and second contacts go up while closings stay flat, the problem is further down the funnel and no amount of extra automation will fix it. Measuring before you build is what separates an investment from a subscription.",
+          "Three numbers tell you most of it: how long it takes to answer a new lead, what share of leads get a second contact, and how many close. If response time drops and second contacts go up while closings stay flat, the problem is further down the [[funnel|embudo]] and no amount of extra automation will fix it. Measuring before you build is what separates an investment from a subscription.",
         ],
         bodyEs: [
-          "Tres números te dicen casi todo: cuánto tardas en contestarle a un lead nuevo, qué porcentaje de leads recibe un segundo contacto, y cuántos cierran. Si el tiempo de respuesta baja y los segundos contactos suben mientras los cierres siguen planos, el problema está más abajo en el embudo y ninguna cantidad de automatización extra lo va a arreglar. Medir antes de construir es lo que separa una inversión de una suscripción.",
+          "Tres números te dicen casi todo: cuánto tardas en contestarle a un lead nuevo, qué porcentaje de leads recibe un segundo contacto, y cuántos cierran. Si el tiempo de respuesta baja y los segundos contactos suben mientras los cierres siguen planos, el problema está más abajo en el [[embudo|embudo]] y ninguna cantidad de automatización extra lo va a arreglar. Medir antes de construir es lo que separa una inversión de una suscripción.",
         ],
       },
       {
@@ -5972,10 +5977,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What it replaces in practice",
         headingEs: "Qué reemplaza en la práctica",
         body: [
-          "Usually a mix of a chat inbox, a notebook, a spreadsheet somebody maintains, and the memory of whoever has been there longest. That mix works until the volume grows or that person is out. The failure mode is quiet: leads do not disappear dramatically, they just never get contacted again and nobody notices.",
+          "Usually a mix of a chat inbox, a notebook, a spreadsheet somebody maintains, and the memory of whoever has been there longest. That mix works until the volume grows or that person is out. The failure mode is quiet: [[leads|lead]] do not disappear dramatically, they just never get contacted again and nobody notices.",
         ],
         bodyEs: [
-          "Normalmente una mezcla de una bandeja de chat, una libreta, una hoja de cálculo que alguien mantiene, y la memoria del que lleva más tiempo. Esa mezcla funciona hasta que sube el volumen o esa persona no está. La falla es discreta: los leads no desaparecen de forma dramática, simplemente nunca se les vuelve a contactar y nadie lo nota.",
+          "Normalmente una mezcla de una bandeja de chat, una libreta, una hoja de cálculo que alguien mantiene, y la memoria del que lleva más tiempo. Esa mezcla funciona hasta que sube el volumen o esa persona no está. La falla es discreta: los [[leads|lead]] no desaparecen de forma dramática, simplemente nunca se les vuelve a contactar y nadie lo nota.",
         ],
       },
       {
@@ -6016,10 +6021,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What to measure once it's running",
         headingEs: "Qué medir una vez que corre",
         body: [
-          "How many leads entered, how many got a first response and how fast, how many got a second contact, and how many closed. Those four turn the CRM from a filing cabinet into something that tells you where the funnel leaks. Without them you have a tidier version of the same guesswork.",
+          "How many leads entered, how many got a first response and how fast, how many got a second contact, and how many closed. Those four turn the CRM from a filing cabinet into something that tells you where the [[funnel|embudo]] leaks. Without them you have a tidier version of the same guesswork.",
         ],
         bodyEs: [
-          "Cuántos leads entraron, cuántos recibieron primera respuesta y qué tan rápido, cuántos recibieron un segundo contacto, y cuántos cerraron. Esos cuatro convierten al CRM de archivero en algo que te dice dónde gotea el embudo. Sin ellos tienes una versión más ordenada de la misma adivinanza.",
+          "Cuántos leads entraron, cuántos recibieron primera respuesta y qué tan rápido, cuántos recibieron un segundo contacto, y cuántos cerraron. Esos cuatro convierten al CRM de archivero en algo que te dice dónde gotea el [[embudo|embudo]]. Sin ellos tienes una versión más ordenada de la misma adivinanza.",
         ],
       },
     ],
@@ -6080,10 +6085,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The app and the API are different products",
         headingEs: "La app y la API son productos distintos",
         body: [
-          "The free WhatsApp Business app runs on a phone, is operated by a person, and is limited to a handful of devices. The API has no app: you connect it to software, and that software decides what to send. One is a communication tool for a small team; the other is infrastructure for a system. Confusing them is the most common source of wasted budget in this area.",
+          "The free WhatsApp Business app runs on a phone, is operated by a person, and is limited to a handful of devices. The [[API|api]] has no app: you connect it to software, and that software decides what to send. One is a communication tool for a small team; the other is infrastructure for a system. Confusing them is the most common source of wasted budget in this area.",
         ],
         bodyEs: [
-          "La app gratuita de WhatsApp Business corre en un celular, la opera una persona y está limitada a unos cuantos dispositivos. La API no tiene app: la conectas a un software, y ese software decide qué mandar. Una es una herramienta de comunicación para un equipo chico; la otra es infraestructura para un sistema. Confundirlas es la fuente más común de presupuesto desperdiciado en este tema.",
+          "La app gratuita de WhatsApp Business corre en un celular, la opera una persona y está limitada a unos cuantos dispositivos. La [[API|api]] no tiene app: la conectas a un software, y ese software decide qué mandar. Una es una herramienta de comunicación para un equipo chico; la otra es infraestructura para un sistema. Confundirlas es la fuente más común de presupuesto desperdiciado en este tema.",
         ],
       },
       {
@@ -6091,10 +6096,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What the API actually enables",
         headingEs: "Qué habilita realmente la API",
         body: [
-          "Several people answering the same number without passing a phone around, automatic replies that do not depend on someone being awake, connecting conversations to a CRM, and sending notifications like appointment reminders or order updates. None of that is possible on the free app in a reliable way.",
+          "Several people answering the same number without passing a phone around, automatic replies that do not depend on someone being awake, connecting conversations to a [[CRM|crm]], and sending notifications like appointment reminders or order updates. None of that is possible on the free app in a reliable way.",
         ],
         bodyEs: [
-          "Que varias personas atiendan el mismo número sin pasarse un celular, respuestas automáticas que no dependen de que alguien esté despierto, conectar las conversaciones a un CRM, y mandar notificaciones como recordatorios de cita o avisos de pedido. Nada de eso es posible en la app gratuita de forma confiable.",
+          "Que varias personas atiendan el mismo número sin pasarse un celular, respuestas automáticas que no dependen de que alguien esté despierto, conectar las conversaciones a un [[CRM|crm]], y mandar notificaciones como recordatorios de cita o avisos de pedido. Nada de eso es posible en la app gratuita de forma confiable.",
         ],
       },
       {
@@ -6209,7 +6214,7 @@ export const BLOG_POSTS: BlogPost[] = [
     authorRoleEs: "Director Creativo, Aphelion",
     lede: "The tasks worth automating first are the ones that repeat often, follow the same steps every time, and cost you money when they are forgotten. That description fits lead capture and follow-up in almost every business, which is why they are the usual starting point.",
     ledeEs:
-      "Las tareas que vale la pena automatizar primero son las que se repiten seguido, siguen los mismos pasos siempre, y cuestan dinero cuando se olvidan. Esa descripción le queda a la captura y al seguimiento de leads en casi cualquier negocio, y por eso son el punto de partida habitual.",
+      "Las tareas que vale la pena automatizar primero son las que se repiten seguido, siguen los mismos pasos siempre, y cuestan dinero cuando se olvidan. Esa descripción le queda a la captura y al seguimiento de [[leads|lead]] en casi cualquier negocio, y por eso son el punto de partida habitual.",
     sections: [
       {
         id: "el-filtro",
@@ -6227,10 +6232,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The usual first candidates",
         headingEs: "Los primeros candidatos de siempre",
         body: [
-          "Sending a lead from a form into the CRM. Acknowledging a new message so nobody waits in silence. Reminding a customer about an appointment. Chasing a quote that went quiet. These share a shape: high frequency, low variation, and a real cost when they slip.",
+          "Sending a lead from a form into the [[CRM|crm]]. Acknowledging a new message so nobody waits in silence. Reminding a customer about an appointment. Chasing a quote that went quiet. These share a shape: high frequency, low variation, and a real cost when they slip.",
         ],
         bodyEs: [
-          "Mandar un lead de un formulario al CRM. Acusar recibo de un mensaje nuevo para que nadie espere en silencio. Recordarle a un cliente su cita. Perseguir una cotización que se enfrió. Todas comparten forma: alta frecuencia, poca variación, y un costo real cuando se pasan por alto.",
+          "Mandar un lead de un formulario al [[CRM|crm]]. Acusar recibo de un mensaje nuevo para que nadie espere en silencio. Recordarle a un cliente su cita. Perseguir una cotización que se enfrió. Todas comparten forma: alta frecuencia, poca variación, y un costo real cuando se pasan por alto.",
         ],
       },
       {
@@ -6462,10 +6467,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where it genuinely helps",
         headingEs: "Dónde sirve de verdad",
         body: [
-          "Turning a rough brief into a first draft. Summarizing a pile of customer feedback into themes. Classifying leads or messages by intent. Generating variations of ad copy to test. In all of these a human still decides, and the AI removes the blank-page cost rather than the judgment.",
+          "Turning a rough brief into a first draft. Summarizing a pile of customer feedback into themes. Classifying [[leads|lead]] or messages by intent. Generating variations of ad copy to test. In all of these a human still decides, and the AI removes the blank-page cost rather than the judgment.",
         ],
         bodyEs: [
-          "Convertir un brief crudo en un primer borrador. Resumir un montón de comentarios de clientes en temas. Clasificar leads o mensajes por intención. Generar variaciones de copy de anuncios para probar. En todas, una persona sigue decidiendo, y la IA quita el costo de la hoja en blanco, no el criterio.",
+          "Convertir un brief crudo en un primer borrador. Resumir un montón de comentarios de clientes en temas. Clasificar [[leads|lead]] o mensajes por intención. Generar variaciones de copy de anuncios para probar. En todas, una persona sigue decidiendo, y la IA quita el costo de la hoja en blanco, no el criterio.",
         ],
       },
       {
@@ -6636,10 +6641,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Connect it to the CRM or it drifts",
         headingEs: "Conéctalo al CRM o se despega",
         body: [
-          "An email tool holding a separate list from your CRM produces two versions of the truth: someone becomes a customer and keeps receiving the prospect sequence. Syncing them is unglamorous and it prevents the most embarrassing mistakes in this channel.",
+          "An email tool holding a separate list from your [[CRM|crm]] produces two versions of the truth: someone becomes a customer and keeps receiving the prospect sequence. Syncing them is unglamorous and it prevents the most embarrassing mistakes in this channel.",
         ],
         bodyEs: [
-          "Una herramienta de correo con una lista aparte de tu CRM produce dos versiones de la verdad: alguien se vuelve cliente y sigue recibiendo la secuencia de prospecto. Sincronizarlos no es glamoroso y evita los errores más vergonzosos de este canal.",
+          "Una herramienta de correo con una lista aparte de tu [[CRM|crm]] produce dos versiones de la verdad: alguien se vuelve cliente y sigue recibiendo la secuencia de prospecto. Sincronizarlos no es glamoroso y evita los errores más vergonzosos de este canal.",
         ],
       },
     ],
@@ -6695,9 +6700,9 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A contact form that only sends an email is a leak. Emails get buried under everything else, and a lead nobody saw is indistinguishable from a lead that never arrived. Wiring the form into a CRM makes each submission a record with an owner and a next step.",
+    lede: "A contact form that only sends an email is a leak. Emails get buried under everything else, and a lead nobody saw is indistinguishable from a lead that never arrived. Wiring the form into a [[CRM|crm]] makes each submission a record with an owner and a next step.",
     ledeEs:
-      "Un formulario de contacto que solo manda un correo es una fuga. Los correos se entierran bajo todo lo demás, y un lead que nadie vio es indistinguible de un lead que nunca llegó. Conectar el formulario a un CRM convierte cada envío en un registro con dueño y siguiente paso.",
+      "Un formulario de contacto que solo manda un correo es una fuga. Los correos se entierran bajo todo lo demás, y un [[lead|lead]] que nadie vio es indistinguible de un lead que nunca llegó. Conectar el formulario a un [[CRM|crm]] convierte cada envío en un registro con dueño y siguiente paso.",
     sections: [
       {
         id: "por-que-el-correo-falla",
@@ -6737,10 +6742,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Add the acknowledgement in the same step",
         headingEs: "Agrega el acuse en el mismo paso",
         body: [
-          "While you are wiring it, add an automatic reply confirming the message arrived and saying roughly when a human will respond. It costs nothing extra to build and it removes the worst experience in the funnel, which is silence right after someone reached out.",
+          "While you are wiring it, add an automatic reply confirming the message arrived and saying roughly when a human will respond. It costs nothing extra to build and it removes the worst experience in the [[funnel|embudo]], which is silence right after someone reached out.",
         ],
         bodyEs: [
-          "Mientras lo estás conectando, agrega una respuesta automática que confirme que el mensaje llegó y diga aproximadamente cuándo responderá una persona. No cuesta nada extra construirlo y elimina la peor experiencia del embudo, que es el silencio justo después de que alguien te escribió.",
+          "Mientras lo estás conectando, agrega una respuesta automática que confirme que el mensaje llegó y diga aproximadamente cuándo responderá una persona. No cuesta nada extra construirlo y elimina la peor experiencia del [[embudo|embudo]], que es el silencio justo después de que alguien te escribió.",
         ],
       },
       {
@@ -6759,7 +6764,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Give it a heartbeat",
         headingEs: "Dale un pulso",
         body: [
-          "Set a habit of checking the weekly count of captured leads. If it drops to zero and your traffic did not, the connection broke. Without that check the normal outcome is discovering it weeks later, when someone asks about a lead that never showed up.",
+          "Set a habit of checking the weekly count of captured [[leads|lead]]. If it drops to zero and your traffic did not, the connection broke. Without that check the normal outcome is discovering it weeks later, when someone asks about a lead that never showed up.",
         ],
         bodyEs: [
           "Toma la costumbre de revisar el conteo semanal de leads capturados. Si cae a cero y tu tráfico no, la conexión se rompió. Sin esa revisión, lo normal es descubrirlo semanas después, cuando alguien pregunta por un lead que nunca apareció.",
@@ -6816,14 +6821,14 @@ export const BLOG_POSTS: BlogPost[] = [
     authorRoleEs: "Director Creativo, Aphelion",
     lede: "Most businesses contact a lead once and move on. Most buyers are not ready on that first contact. Automated follow-up exists to close that gap: it guarantees the second and third touch happen at all, which in practice is where a large share of closed deals come from.",
     ledeEs:
-      "La mayoría de los negocios contacta a un lead una vez y sigue adelante. La mayoría de los compradores no está lista en ese primer contacto. El seguimiento automatizado existe para cerrar ese hueco: garantiza que el segundo y tercer contacto sucedan, que en la práctica es de donde sale una buena parte de los cierres.",
+      "La mayoría de los negocios contacta a un [[lead|lead]] una vez y sigue adelante. La mayoría de los compradores no está lista en ese primer contacto. El seguimiento automatizado existe para cerrar ese hueco: garantiza que el segundo y tercer contacto sucedan, que en la práctica es de donde sale una buena parte de los cierres.",
     sections: [
       {
         id: "el-hueco",
         heading: "The gap this fixes",
         headingEs: "El hueco que esto arregla",
         body: [
-          "Ask any small sales team what happens to a quote that goes unanswered. The honest answer is usually nothing: it stays in someone's head for a week and then gets forgotten under new leads. That is not a discipline problem, it is a systems problem, and it is exactly what automation is for.",
+          "Ask any small sales team what happens to a quote that goes unanswered. The honest answer is usually nothing: it stays in someone's head for a week and then gets forgotten under new [[leads|lead]]. That is not a discipline problem, it is a systems problem, and it is exactly what automation is for.",
         ],
         bodyEs: [
           "Pregúntale a cualquier equipo de ventas chico qué pasa con una cotización que no fue contestada. La respuesta honesta suele ser nada: se queda en la cabeza de alguien una semana y después se olvida bajo leads nuevos. Eso no es un problema de disciplina, es un problema de sistema, y es exactamente para lo que sirve la automatización.",
@@ -6946,10 +6951,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a landing page is, and what it isn't",
         headingEs: "Qué es una landing page y qué no",
         body: [
-          'It is a single page built for a single campaign and a single conversion goal, usually with the site navigation removed on purpose. It is not a second homepage and not a general services page. If you are unsure which of the two you need, we compare them directly in "landing page vs. website."',
+          'It is a single page built for a single campaign and a single [[conversion|conversion]] goal, usually with the site navigation removed on purpose. It is not a second homepage and not a general services page. If you are unsure which of the two you need, we compare them directly in [landing page vs. website](/blog/landing-page-vs-pagina-web).',
         ],
         bodyEs: [
-          'Es una sola página construida para una sola campaña y un solo objetivo de conversión, normalmente con la navegación del sitio quitada a propósito. No es una segunda página de inicio ni una página general de servicios. Si tienes duda de cuál de las dos necesitas, las comparamos directo en "landing page vs página web."',
+          'Es una sola página construida para una sola campaña y un solo objetivo de [[conversión|conversion]], normalmente con la navegación del sitio quitada a propósito. No es una segunda página de inicio ni una página general de servicios. Si tienes duda de cuál de las dos necesitas, las comparamos directo en [landing page vs página web](/blog/landing-page-vs-pagina-web).',
         ],
       },
       {
@@ -7034,7 +7039,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What CRO actually means here",
         headingEs: "Qué significa realmente CRO aquí",
         body: [
-          "Conversion rate optimization is the habit of changing one thing, measuring, and keeping what wins. It is not a redesign. Most of the gains come from unglamorous fixes: clearer headline, fewer form fields, faster load, proof moved higher. The discipline is in measuring rather than in the size of the change.",
+          "[[Conversion rate|tasa-de-conversion]] optimization is the habit of changing one thing, measuring, and keeping what wins. It is not a redesign. Most of the gains come from unglamorous fixes: clearer headline, fewer form fields, faster load, proof moved higher. The discipline is in measuring rather than in the size of the change.",
         ],
         bodyEs: [
           "La optimización de conversión es el hábito de cambiar una cosa, medir, y quedarte con lo que gana. No es un rediseño. La mayor parte de las ganancias viene de arreglos poco glamorosos: titular más claro, menos campos, carga más rápida, prueba movida más arriba. La disciplina está en medir, no en el tamaño del cambio.",
@@ -7350,14 +7355,14 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "La restricción que de verdad rompe campañas",
         body: [
           "The policy that stops medical campaigns is not the healthcare one. It is the personalized advertising policy, and specifically its treatment of health as a sensitive interest category.",
-          "Google classifies personal health content — physical and mental health conditions, diseases, sexual health, chronic conditions requiring long-term management — as sensitive. Advertisers cannot use sensitive interest categories to target users or to promote their products and services, and Google states these principles apply to remarketing, including remarketing with Customer Match. You also cannot use Customer Match data to identify sensitive interest categories about your customers.",
+          "Google classifies personal health content — physical and mental health conditions, diseases, sexual health, chronic conditions requiring long-term management — as sensitive. Advertisers cannot use sensitive interest categories to target users or to promote their products and services, and Google states these principles apply to [[remarketing|remarketing]], including remarketing with Customer Match. You also cannot use Customer Match data to identify sensitive interest categories about your customers.",
           "Translate that into clinic practice and several standard tactics disappear. A remarketing list of everyone who visited your diabetes treatment page is a list segmented by health condition. Uploading a patient list to Customer Match and letting Google build a similar audience is inference from health data. An ad addressed to the reader's condition in the second person, of the \"do you suffer from chronic pain?\" variety, is the pattern Google's rule against exploiting personal hardships is aimed at.",
           "Google clarified that content directed at healthcare professionals in their professional capacity is excluded from the sensitive health category. That helps a lab marketing to physicians. It does not help a clinic marketing to patients.",
           "What still works: targeting by search intent rather than by person. Someone typing a query is telling you what they want right now, and bidding on the query is not the same as building a profile of the human. Geography, device and time of day remain available. So does advertising the practice rather than the condition.",
         ],
         bodyEs: [
           "La política que frena campañas médicas no es la de salud. Es la de publicidad personalizada, y en concreto su tratamiento de la salud como categoría de interés sensible.",
-          "Google clasifica el contenido personal de salud como sensible: padecimientos físicos y mentales, enfermedades, salud sexual y condiciones crónicas que requieren manejo de largo plazo. Los anunciantes no pueden usar categorías de interés sensibles para segmentar usuarios ni para promover sus productos y servicios, y Google indica que estos principios aplican al remarketing, incluido el remarketing con Customer Match. Tampoco puedes usar los datos de Customer Match para identificar categorías sensibles sobre tus clientes.",
+          "Google clasifica el contenido personal de salud como sensible: padecimientos físicos y mentales, enfermedades, salud sexual y condiciones crónicas que requieren manejo de largo plazo. Los anunciantes no pueden usar categorías de interés sensibles para segmentar usuarios ni para promover sus productos y servicios, y Google indica que estos principios aplican al [[remarketing|remarketing]], incluido el remarketing con Customer Match. Tampoco puedes usar los datos de Customer Match para identificar categorías sensibles sobre tus clientes.",
           'Traducido a la práctica de una clínica, varias tácticas estándar desaparecen. Una lista de remarketing con todos los que visitaron tu página de tratamiento de diabetes es una lista segmentada por padecimiento. Subir una lista de pacientes a Customer Match y dejar que Google construya un público similar es inferencia a partir de datos de salud. Un anuncio que se dirige al padecimiento del lector en segunda persona, del tipo "¿sufres de dolor crónico?", es justo el patrón al que apunta la regla de Google contra explotar dificultades personales.',
           "Google aclaró que el contenido dirigido a profesionales de la salud en su capacidad profesional queda excluido de la categoría sensible de salud. Eso le sirve a un laboratorio que le vende a médicos. No le sirve a una clínica que le habla a pacientes.",
           "Lo que sí sigue funcionando: segmentar por intención de búsqueda en lugar de por persona. Quien teclea una consulta te está diciendo qué quiere en ese momento, y pujar por la consulta no es lo mismo que construir un perfil del humano. La geografía, el dispositivo y la hora siguen disponibles. También anunciar el consultorio en lugar del padecimiento.",
@@ -7369,14 +7374,14 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "La norma mexicana que nadie mete en el anuncio",
         body: [
           "Google's policies are a platform's terms. Mexican health advertising regulation is law, and it applies to the ad regardless of where it runs.",
-          "The Reglamento de la Ley General de Salud en Materia de Publicidad, article 19, requires that anyone practising the professional, technical and auxiliary activities and specialties covered by the law must state, in whatever advertising they do and by whatever medium, the educational institution that issued their title, diploma or certificate and, where applicable, their professional licence number. In whatever medium means the Google ad, the landing page and the Instagram post.",
+          "The Reglamento de la Ley General de Salud en Materia de Publicidad, article 19, requires that anyone practising the professional, technical and auxiliary activities and specialties covered by the law must state, in whatever advertising they do and by whatever medium, the educational institution that issued their title, diploma or certificate and, where applicable, their professional licence number. In whatever medium means the Google ad, the [[landing page|landing-page]] and the Instagram post.",
           "Most clinic ads in Mexico do not carry this. A responsive search ad has limited headline and description space, which is precisely why the credential usually belongs on the landing page the ad points to, prominently rather than buried in a footer.",
           "Article 18 sets out when advertising will not be authorised, and two grounds matter commercially. Advertising cannot offer preventive, curative or rehabilitative treatments of a medical or paramedical nature whose efficacy has not been scientifically proven. And it will not be authorised where the establishment or person cannot demonstrate qualified personnel and adequate technical and material resources. The first is the one that catches aggressive copy about results.",
           "Article 16 sets the positive obligation: advertising of health services must inform the public about the type, characteristics and purposes of the services and the general ways of accessing them.",
         ],
         bodyEs: [
           "Las políticas de Google son los términos de una plataforma. La regulación mexicana de publicidad sanitaria es ley, y aplica al anuncio sin importar dónde corra.",
-          "El Reglamento de la Ley General de Salud en Materia de Publicidad, artículo 19, exige que quienes ejerzan las actividades profesionales, técnicas y auxiliares y las especialidades que cubre la ley expresen, en la publicidad que realicen y cualquiera que sea el medio publicitario, la institución educativa que les expidió el título, diploma o certificado y, en su caso, el número de cédula profesional. Cualquiera que sea el medio incluye el anuncio de Google, la landing page y el post de Instagram.",
+          "El Reglamento de la Ley General de Salud en Materia de Publicidad, artículo 19, exige que quienes ejerzan las actividades profesionales, técnicas y auxiliares y las especialidades que cubre la ley expresen, en la publicidad que realicen y cualquiera que sea el medio publicitario, la institución educativa que les expidió el título, diploma o certificado y, en su caso, el número de cédula profesional. Cualquiera que sea el medio incluye el anuncio de Google, la [[landing page|landing-page]] y el post de Instagram.",
           "La mayoría de los anuncios de clínicas en México no lo llevan. Un anuncio de búsqueda responsivo tiene espacio limitado de títulos y descripciones, que es justo la razón por la que la credencial normalmente va en la landing page a la que apunta el anuncio, visible y no enterrada en el pie.",
           "El artículo 18 establece cuándo no se autorizará la publicidad, y dos supuestos importan comercialmente. La publicidad no puede ofrecer tratamientos preventivos, curativos o rehabilitatorios de naturaleza médica o paramédica cuya eficacia no haya sido comprobada científicamente. Y no se autorizará cuando no se acredite que el establecimiento o la persona cuenta con personal capacitado y con los recursos técnicos y materiales adecuados. El primero es el que atrapa a los textos agresivos sobre resultados.",
           "El artículo 16 fija la obligación positiva: la publicidad de la prestación de servicios de salud informará al público sobre el tipo, características y finalidades de los servicios y las modalidades generales de acceso a los mismos.",
@@ -7408,20 +7413,20 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Measuring a medical campaign properly",
         headingEs: "Medir bien una campaña médica",
         body: [
-          "The measurement problem in this category is specific: the conversion happens on the phone, and the outcome that matters happens weeks later in an operatory.",
+          "The measurement problem in this category is specific: the [[conversion|conversion]] happens on the phone, and the outcome that matters happens weeks later in an operatory.",
           "Start with call tracking. A dynamic number on the landing page that reports which campaign and which query produced the call is the difference between optimising toward appointments and optimising toward clicks. Without it the platform reports its best guess, and its best guess flatters whichever campaign got the most impressions.",
           "Then close the loop backwards. The metric that matters is not the call, it is whether the caller booked, attended and accepted a plan. That means the front desk has to record the outcome against the source, which is unglamorous and is the step that gets dropped.",
           "Feed those outcomes back as offline conversions where the platform supports it, so bidding optimises toward callers who became patients rather than toward callers. A campaign trained on raw call volume will happily buy you people asking for a service you do not offer.",
           "Be careful about what you upload. Importing conversions is not the same as uploading a patient list for targeting, and the personalized advertising restrictions on health data still apply to anything that could identify a condition.",
-          "Judge on cost per attending patient, not cost per click or even cost per call. It is the only number that connects the spend to the chair.",
+          "Judge on cost per attending patient, not [[cost per click|cpc]] or even cost per call. It is the only number that connects the spend to the chair.",
         ],
         bodyEs: [
-          "El problema de medición en esta categoría es específico: la conversión ocurre en el teléfono, y el resultado que importa ocurre semanas después en un consultorio.",
+          "El problema de medición en esta categoría es específico: la [[conversión|conversion]] ocurre en el teléfono, y el resultado que importa ocurre semanas después en un consultorio.",
           "Empieza por el rastreo de llamadas. Un número dinámico en la landing page que reporte qué campaña y qué búsqueda produjeron la llamada es la diferencia entre optimizar hacia citas y optimizar hacia clics. Sin eso la plataforma reporta su mejor suposición, y su mejor suposición favorece a la campaña que consiguió más impresiones.",
           "Después cierra el circuito hacia atrás. La métrica que importa no es la llamada, es si quien llamó agendó, asistió y aceptó un plan. Eso significa que recepción tiene que registrar el desenlace contra la fuente, lo cual es poco vistoso y es el paso que se cae.",
           "Devuelve esos desenlaces como conversiones offline donde la plataforma lo permita, para que la puja optimice hacia quienes llamaron y se volvieron pacientes, no hacia quienes llamaron. Una campaña entrenada con volumen bruto de llamadas te va a comprar con gusto gente que pregunta por un servicio que no ofreces.",
           "Cuida qué subes. Importar conversiones no es lo mismo que subir una lista de pacientes para segmentar, y las restricciones de publicidad personalizada sobre datos de salud siguen aplicando a cualquier cosa que pueda identificar un padecimiento.",
-          "Juzga por costo por paciente que asiste, no por costo por clic ni siquiera por costo por llamada. Es el único número que conecta el gasto con el sillón.",
+          "Juzga por costo por paciente que asiste, no por [[costo por clic|cpc]] ni siquiera por costo por llamada. Es el único número que conecta el gasto con el sillón.",
         ],
       },
       {
@@ -7600,7 +7605,7 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "La confiabilidad es sobre todo infraestructura",
         body: [
           "Google describes trust as the most important member of the family, and much of it is unglamorous site work rather than writing.",
-          "A findable physical address, a phone number that a human answers, and consistent details between the site and the Google Business Profile. Inconsistency here is both a ranking problem and a credibility problem.",
+          "A findable physical address, a phone number that a human answers, and consistent details between the site and the [[Google Business Profile|google-business-profile]]. Inconsistency here is both a ranking problem and a credibility problem.",
           "A privacy notice that reflects the law actually in force, not a template from a decade ago. For a clinic this is not decorative: health data is sensitive personal data, and the notice is where you tell patients what you collect and why.",
           "Clear separation between information and promotion. A page that explains a condition and then pivots into a hard sell reads as an advertisement wearing an article's clothes, and both readers and raters are good at spotting it.",
           "No claims you cannot support. This is the point where E-E-A-T and Mexican regulation say the same thing, since article 18 of the health advertising regulation withholds authorisation from advertising offering treatments whose efficacy has not been scientifically proven.",
@@ -7608,7 +7613,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "Google describe la confianza como el miembro más importante de la familia, y buena parte de ella es trabajo de sitio poco vistoso más que redacción.",
-          "Una dirección física localizable, un teléfono que contesta un humano y datos consistentes entre el sitio y el Perfil de Empresa de Google. La inconsistencia aquí es a la vez un problema de posicionamiento y un problema de credibilidad.",
+          "Una dirección física localizable, un teléfono que contesta un humano y datos consistentes entre el sitio y el [[Perfil de Empresa de Google|google-business-profile]]. La inconsistencia aquí es a la vez un problema de posicionamiento y un problema de credibilidad.",
           "Un aviso de privacidad que refleje la ley efectivamente vigente, no una plantilla de hace una década. Para una clínica esto no es decorativo: los datos de salud son datos personales sensibles, y el aviso es donde le dices al paciente qué recabas y para qué.",
           "Separación clara entre información y promoción. Una página que explica un padecimiento y luego gira hacia la venta dura se lee como un anuncio disfrazado de artículo, y tanto los lectores como los evaluadores lo detectan bien.",
           "Ninguna afirmación que no puedas sostener. Este es el punto donde E-E-A-T y la norma mexicana dicen lo mismo, ya que el artículo 18 del reglamento de publicidad sanitaria niega la autorización a la publicidad que ofrezca tratamientos cuya eficacia no haya sido comprobada científicamente.",
@@ -7808,17 +7813,17 @@ export const BLOG_POSTS: BlogPost[] = [
           "None of the above survives a site that loads badly, because the patient leaves before reading any of it.",
           "Mobile first, genuinely. The majority of medical searches happen on a phone, often in a moment of discomfort, and a site that requires pinching to read a phone number has lost.",
           "Speed matters more here than in most categories because the traffic is impatient by construction. Compress images, especially the clinical photography that tends to be uploaded at full camera resolution.",
-          "Local SEO basics: name, address and phone identical across the site and the Google Business Profile, embedded map, and a page per location if there is more than one.",
+          "[[Local SEO|seo-local]] basics: name, address and phone identical across the site and the [[Google Business Profile|google-business-profile]], embedded map, and a page per location if there is more than one.",
           "Accessibility is not optional for a clinic in the way it might be elsewhere. A meaningful share of medical traffic has a visual, motor or cognitive impairment. Readable contrast, real text instead of text baked into images, and forms that work with a keyboard.",
-          "Structured data for the organisation, the physicians and the frequently asked questions helps search engines understand who you are, though it describes the signals rather than creating them.",
+          "[[Structured data|datos-estructurados]] for the organisation, the physicians and the frequently asked questions helps search engines understand who you are, though it describes the signals rather than creating them.",
         ],
         bodyEs: [
           "Nada de lo anterior sobrevive a un sitio que carga mal, porque el paciente se va antes de leer cualquier cosa.",
           "Móvil primero, de verdad. La mayoría de las búsquedas médicas ocurren en un teléfono, con frecuencia en un momento de molestia, y un sitio que obliga a hacer zoom para leer un teléfono ya perdió.",
           "La velocidad importa aquí más que en otras categorías porque el tráfico es impaciente por construcción. Comprime imágenes, sobre todo la fotografía clínica que suele subirse a resolución completa de cámara.",
-          "Fundamentos de SEO local: nombre, dirección y teléfono idénticos entre el sitio y el Perfil de Empresa de Google, mapa embebido y una página por ubicación si hay más de una.",
+          "Fundamentos de [[SEO local|seo-local]]: nombre, dirección y teléfono idénticos entre el sitio y el [[Perfil de Empresa de Google|google-business-profile]], mapa embebido y una página por ubicación si hay más de una.",
           "La accesibilidad no es opcional para una clínica del modo en que podría serlo en otro lado. Una parte relevante del tráfico médico tiene alguna discapacidad visual, motriz o cognitiva. Contraste legible, texto real en lugar de texto incrustado en imágenes y formularios que funcionen con teclado.",
-          "Los datos estructurados de la organización, los médicos y las preguntas frecuentes ayudan a que los buscadores entiendan quién eres, aunque describen las señales en lugar de crearlas.",
+          "Los [[datos estructurados|datos-estructurados]] de la organización, los médicos y las preguntas frecuentes ayudan a que los buscadores entiendan quién eres, aunque describen las señales en lugar de crearlas.",
         ],
       },
     ],
@@ -8173,14 +8178,14 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ad platforms restrict targeting based on health conditions, in the same spirit as the search-side restrictions we cover in [Google Ads para médicos](/blog/google-ads-para-medicos-restricciones). Building an audience around a condition is generally not available, and copy that addresses the reader's health status in the second person tends to be rejected.",
           "The workable framing is to advertise the practice and the service rather than the reader's condition, which is also the framing least likely to make a stranger feel identified.",
           "The Mexican rules do not stop applying because the medium is paid social. Article 19 still applies to the credential. Article 18 still applies to efficacy claims. And article 78 places a duty on media outlets to ensure the advertising they carry has the corresponding permiso or filed aviso, with the advertiser required to give the outlet a copy, which is a duty platforms do not enforce and clinics therefore forget exists.",
-          "This is a summary of the regulation, not legal advice. Confirm your specific situation with COFEPRIS or a specialised lawyer before running a campaign.",
+          "This is a summary of the regulation, not legal advice. Confirm your specific situation with [[COFEPRIS|cofepris]] or a specialised lawyer before running a campaign.",
         ],
         bodyEs: [
           "La publicidad pagada en redes agrega un cuarto reglamento, y se lleva mal con la salud.",
           "Las plataformas de anuncios restringen la segmentación basada en condiciones de salud, en el mismo espíritu que las restricciones del lado de búsqueda que cubrimos en [Google Ads para médicos](/blog/google-ads-para-medicos-restricciones). Construir un público alrededor de un padecimiento en general no está disponible, y los textos que se dirigen al estado de salud del lector en segunda persona suelen rechazarse.",
           "El encuadre que funciona es anunciar el consultorio y el servicio en lugar del padecimiento del lector, que además es el encuadre con menos probabilidad de hacer que un desconocido se sienta identificado.",
           "Las reglas mexicanas no dejan de aplicar porque el medio sea publicidad pagada en redes. El artículo 19 sigue aplicando a la credencial. El artículo 18 sigue aplicando a las afirmaciones de eficacia. Y el artículo 78 impone a los medios de difusión el deber de asegurarse de que la publicidad que transmiten cuente con el permiso correspondiente o con aviso presentado, con el anunciante obligado a entregarle copia al medio, un deber que las plataformas no verifican y que las clínicas por lo tanto olvidan que existe.",
-          "Esto es un resumen de la norma, no asesoría legal. Confirma tu situación específica con COFEPRIS o con un abogado especializado antes de correr una campaña.",
+          "Esto es un resumen de la norma, no asesoría legal. Confirma tu situación específica con [[COFEPRIS|cofepris]] o con un abogado especializado antes de correr una campaña.",
         ],
       },
     ],
@@ -8276,14 +8281,14 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Every other number depends on this one, and most clinics have never calculated it.",
           "Take the first-visit value: what the initial consultation and any treatment started that day bill. Then add what the average patient in that category goes on to spend over the relationship. A hygiene patient returning twice a year for several years is worth many times their first appointment. An implant case may be worth most of its value in six months.",
-          "Then apply the conversion reality. Not everyone who calls books, and not everyone who books accepts the treatment plan. If ten enquiries produce six appointments and four accepted plans, the value of an enquiry is four accepted plans divided by ten, not the value of a treatment.",
+          "Then apply the [[conversion|conversion]] reality. Not everyone who calls books, and not everyone who books accepts the treatment plan. If ten enquiries produce six appointments and four accepted plans, the value of an enquiry is four accepted plans divided by ten, not the value of a treatment.",
           "This last step is where most budgets go wrong, because clinics compare their cost per enquiry against the value of a treatment and conclude that marketing is enormously profitable. It is profitable against the value of an enquiry, which is a much smaller number.",
           "If you cannot separate first-visit value from lifetime value, use first-visit value only. It understates the return and gives you a conservative budget, which is the right direction to be wrong in.",
         ],
         bodyEs: [
           "Todos los demás números dependen de este, y la mayoría de las clínicas nunca lo ha calculado.",
           "Toma el valor de la primera visita: lo que factura la consulta inicial y cualquier tratamiento iniciado ese día. Después suma lo que el paciente promedio de esa categoría termina gastando a lo largo de la relación. Un paciente de higiene que regresa dos veces al año durante varios años vale muchas veces su primera cita. Un caso de implantes puede valer casi todo su valor en seis meses.",
-          "Luego aplica la realidad de la conversión. No todo el que llama agenda, y no todo el que agenda acepta el plan de tratamiento. Si diez consultas producen seis citas y cuatro planes aceptados, el valor de una consulta es cuatro planes aceptados entre diez, no el valor de un tratamiento.",
+          "Luego aplica la realidad de la [[conversión|conversion]]. No todo el que llama agenda, y no todo el que agenda acepta el plan de tratamiento. Si diez consultas producen seis citas y cuatro planes aceptados, el valor de una consulta es cuatro planes aceptados entre diez, no el valor de un tratamiento.",
           "Este último paso es donde se descomponen casi todos los presupuestos, porque las clínicas comparan su costo por consulta contra el valor de un tratamiento y concluyen que el marketing es enormemente rentable. Es rentable contra el valor de una consulta, que es un número mucho más chico.",
           "Si no puedes separar valor de primera visita de valor de por vida, usa solo el de primera visita. Subestima el retorno y te da un presupuesto conservador, que es la dirección correcta en la que equivocarse.",
         ],
@@ -8336,18 +8341,18 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "A dónde va el primer peso",
         body: [
           "The order matters more than the amount, because the early items make the later ones work.",
-          "First, the free asset. A complete, accurate Google Business Profile with real photographs and a review system that follows the platform's rules. This is where local medical searches land and it costs time rather than money. The system for it is in [reseñas de Google para médicos](/blog/como-conseguir-resenas-google-medicos).",
+          "First, the free asset. A complete, accurate [[Google Business Profile|google-business-profile]] with real photographs and a review system that follows the platform's rules. This is where local medical searches land and it costs time rather than money. The system for it is in [reseñas de Google para médicos](/blog/como-conseguir-resenas-google-medicos).",
           "Second, measurement. Call tracking and a written record of where each new patient came from, even if it is a column in a spreadsheet the receptionist fills in. Without this every later decision is guesswork, and most clinics skip it because it is the least interesting item on the list.",
           "Third, the site doing its job. Credentials visible, a page per procedure, a booking path that works on a phone. Paid traffic sent to a site that does not convert is the most expensive way to discover the site does not convert. That checklist is in [sitio web para clínicas](/blog/sitio-web-para-clinicas).",
-          "Fourth, capturing existing demand. Search advertising and local SEO reach people already looking for what you do, which is the shortest path from spend to appointment.",
+          "Fourth, capturing existing demand. Search advertising and [[local SEO|seo-local]] reach people already looking for what you do, which is the shortest path from spend to appointment.",
           "Fifth, and only once the above is running, demand generation: social, content, awareness. It works, it takes longer, and it is very hard to evaluate if step two never happened.",
         ],
         bodyEs: [
           "El orden importa más que el monto, porque los primeros puntos hacen que los siguientes funcionen.",
-          "Primero, el activo gratuito. Un Perfil de Empresa de Google completo y exacto, con fotografías reales y un sistema de reseñas que cumpla las reglas de la plataforma. Ahí caen las búsquedas médicas locales y cuesta tiempo, no dinero. El sistema está en [reseñas de Google para médicos](/blog/como-conseguir-resenas-google-medicos).",
+          "Primero, el activo gratuito. Un [[Perfil de Empresa de Google|google-business-profile]] completo y exacto, con fotografías reales y un sistema de reseñas que cumpla las reglas de la plataforma. Ahí caen las búsquedas médicas locales y cuesta tiempo, no dinero. El sistema está en [reseñas de Google para médicos](/blog/como-conseguir-resenas-google-medicos).",
           "Segundo, medición. Rastreo de llamadas y un registro escrito de dónde vino cada paciente nuevo, aunque sea una columna en una hoja de cálculo que llena la recepcionista. Sin esto toda decisión posterior es adivinanza, y casi todas las clínicas se lo saltan porque es lo menos interesante de la lista.",
           "Tercero, que el sitio haga su trabajo. Credenciales visibles, una página por procedimiento, una ruta de agendado que funcione en un teléfono. Mandar tráfico pagado a un sitio que no convierte es la forma más cara de descubrir que el sitio no convierte. Esa lista está en [sitio web para clínicas](/blog/sitio-web-para-clinicas).",
-          "Cuarto, capturar la demanda existente. Publicidad de búsqueda y SEO local alcanzan a quien ya está buscando lo que haces, que es el camino más corto entre el gasto y la cita.",
+          "Cuarto, capturar la demanda existente. Publicidad de búsqueda y [[SEO local|seo-local]] alcanzan a quien ya está buscando lo que haces, que es el camino más corto entre el gasto y la cita.",
           "Quinto, y solo cuando lo anterior ya corre, generación de demanda: redes, contenido, reconocimiento. Funciona, tarda más y es muy difícil de evaluar si el paso dos nunca ocurrió.",
         ],
       },
@@ -8470,14 +8475,14 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Comprar llamadas que nadie contesta",
         body: [
           "A clinic paying for search advertising while its phone goes to voicemail during consultation hours is paying to generate calls for its competitors.",
-          "The pattern is easy to miss because the ad platform reports the call as a conversion. It happened. It just did not turn into anything.",
+          "The pattern is easy to miss because the ad platform reports the call as a [[conversion|conversion]]. It happened. It just did not turn into anything.",
           "Count the missed calls for a week. Most practices are surprised, and the number is usually concentrated in the hours the clinician is treating and reception is assisting.",
           "The options are ordinary: someone whose job is the phone during clinical hours, an answering service, or a message channel that holds the conversation until someone is free. What does not work is assuming patients call back. In a category where three clinics are being compared, they call the next one.",
           "Same for the messages. An unanswered WhatsApp is a lead that arrived and was allowed to cool, and it cost exactly as much as one that got answered.",
         ],
         bodyEs: [
           "Una clínica que paga publicidad de búsqueda mientras su teléfono manda a buzón en horario de consulta está pagando por generarle llamadas a su competencia.",
-          "El patrón es fácil de pasar por alto porque la plataforma de anuncios reporta la llamada como conversión. Sí ocurrió. Solo que no se convirtió en nada.",
+          "El patrón es fácil de pasar por alto porque la plataforma de anuncios reporta la llamada como [[conversión|conversion]]. Sí ocurrió. Solo que no se convirtió en nada.",
           "Cuenta las llamadas perdidas durante una semana. La mayoría de los consultorios se sorprende, y el número suele concentrarse en las horas en que el clínico está atendiendo y recepción está asistiendo.",
           "Las opciones son ordinarias: alguien cuyo trabajo sea el teléfono en horario clínico, un servicio de recepción de llamadas, o un canal de mensajes que sostenga la conversación hasta que alguien se desocupe. Lo que no funciona es suponer que los pacientes vuelven a llamar. En una categoría donde se comparan tres clínicas, le llaman a la siguiente.",
           "Lo mismo con los mensajes. Un WhatsApp sin contestar es un prospecto que llegó y se dejó enfriar, y costó exactamente lo mismo que uno que sí se atendió.",
@@ -8529,7 +8534,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Before-and-after photos without written authorisation. NOM-004-SSA3-2012 requires the patient's written authorisation to publish photographs that could identify them, plus measures so they cannot be identified. Verbal consent in the chair is not that.",
           "Advertising with no credential. Article 19 of the Reglamento de la Ley General de Salud en Materia de Publicidad requires stating the institution that issued the title, diploma or certificate and, where applicable, the professional licence number, in whatever advertising medium. Most clinic ads and profiles in Mexico do not carry it, and it happens to be a strong trust element as well as an obligation.",
           "None of these is enforced by the platforms, which is exactly why they persist. The consequence usually arrives as a complaint rather than an audit.",
-          "This is a summary of published rules, not legal advice. Confirm your situation with COFEPRIS or a specialised lawyer.",
+          "This is a summary of published rules, not legal advice. Confirm your situation with [[COFEPRIS|cofepris]] or a specialised lawyer.",
         ],
         bodyEs: [
           "Tres de estas aparecen constantemente, y cada una está descrita en una regla publicada que el consultorio nunca leyó.",
@@ -8537,7 +8542,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Fotos de antes y después sin autorización escrita. La NOM-004-SSA3-2012 exige autorización por escrito del paciente para publicar fotografías que puedan identificarlo, más las medidas para que no se le identifique. El consentimiento verbal en el sillón no es eso.",
           "Anunciarse sin credencial. El artículo 19 del Reglamento de la Ley General de Salud en Materia de Publicidad exige expresar la institución que expidió el título, diploma o certificado y, en su caso, el número de cédula profesional, cualquiera que sea el medio publicitario. La mayoría de los anuncios y perfiles de clínicas en México no lo lleva, y resulta que además de obligación es un elemento fuerte de confianza.",
           "Ninguna de estas la hacen cumplir las plataformas, que es justo por lo que persisten. La consecuencia normalmente llega como queja, no como auditoría.",
-          "Esto es un resumen de reglas publicadas, no asesoría legal. Confirma tu situación con COFEPRIS o con un abogado especializado.",
+          "Esto es un resumen de reglas publicadas, no asesoría legal. Confirma tu situación con [[COFEPRIS|cofepris]] o con un abogado especializado.",
         ],
       },
       {
@@ -8581,14 +8586,14 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Abandoning channels before they could work",
         headingEs: "Abandonar canales antes de que pudieran funcionar",
         body: [
-          "A practice tries search advertising for three weeks, sees an unimpressive cost per call, stops. Tries Instagram for two months, sees little, stops. Tries local SEO, gets impatient, stops.",
-          "Each channel has a different time to signal and they are being judged on the same impatience. Search advertising captures existing demand and produces calls quickly, though the cost per enquiry takes weeks to stabilise as you learn which queries convert. Local SEO and content take months by construction.",
+          "A practice tries search advertising for three weeks, sees an unimpressive cost per call, stops. Tries Instagram for two months, sees little, stops. Tries [[local SEO|seo-local]], gets impatient, stops.",
+          "Each channel has a different time to signal and they are being judged on the same impatience. Search advertising captures existing demand and produces calls quickly, though the cost per enquiry takes weeks to stabilise as you learn which queries convert. Local [[SEO|seo]] and content take months by construction.",
           "Stopping early also destroys the data. A channel run for three weeks has not told you whether it works, so the next decision is made from the same ignorance as the last one.",
           "Decide the evaluation window before starting, along with the number that would make you continue. Written down, because the number invented after seeing the result is always the one that justifies what you already wanted to do.",
         ],
         bodyEs: [
-          "Un consultorio prueba publicidad de búsqueda tres semanas, ve un costo por llamada poco impresionante, para. Prueba Instagram dos meses, ve poco, para. Prueba SEO local, se impacienta, para.",
-          "Cada canal tiene un tiempo distinto hasta dar señal y se les está juzgando con la misma impaciencia. La publicidad de búsqueda captura demanda existente y produce llamadas rápido, aunque el costo por consulta tarda semanas en estabilizarse mientras aprendes qué búsquedas convierten. El SEO local y el contenido tardan meses por construcción.",
+          "Un consultorio prueba publicidad de búsqueda tres semanas, ve un costo por llamada poco impresionante, para. Prueba Instagram dos meses, ve poco, para. Prueba [[SEO local|seo-local]], se impacienta, para.",
+          "Cada canal tiene un tiempo distinto hasta dar señal y se les está juzgando con la misma impaciencia. La publicidad de búsqueda captura demanda existente y produce llamadas rápido, aunque el costo por consulta tarda semanas en estabilizarse mientras aprendes qué búsquedas convierten. El [[SEO|seo]] local y el contenido tardan meses por construcción.",
           "Parar temprano además destruye el dato. Un canal corrido tres semanas no te dijo si funciona, así que la siguiente decisión se toma desde la misma ignorancia que la anterior.",
           "Define la ventana de evaluación antes de empezar, junto con el número que te haría continuar. Por escrito, porque el número inventado después de ver el resultado siempre es el que justifica lo que ya querías hacer.",
         ],
@@ -8718,12 +8723,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "In regular results: useful, trustworthy content",
         headingEs: "En los resultados normales: contenido útil y confiable",
         body: [
-          "For the blue links, Google’s guidance is to create helpful, reliable, people-first content, and it evaluates signals of experience, expertise, authoritativeness and trustworthiness, known as E-E-A-T. Of the four, Google says trust is the most important.",
+          "For the blue links, Google’s guidance is to create helpful, reliable, people-first content, and it evaluates signals of experience, expertise, authoritativeness and trustworthiness, known as [[E-E-A-T|eeat]]. Of the four, Google says trust is the most important.",
           "Translated to a small business, that means a page per service that answers what a customer actually asks before hiring you: what it includes, who it is for, how long it takes, a price or at least a range, where you work, and who is behind it. A single “Services” page with a list of bullets rarely wins a specific search, because it does not answer any of them in full.",
           "It also means real signals of who you are: your address, your team, your work, your permits or certifications when your industry has them. We list what a business site needs in [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
         ],
         bodyEs: [
-          "En los enlaces azules, la guía de Google es crear contenido útil, confiable y pensado para personas, y evalúa señales de experiencia, conocimiento, autoridad y confianza, lo que se conoce como E-E-A-T. De las cuatro, Google dice que la confianza es la más importante.",
+          "En los enlaces azules, la guía de Google es crear contenido útil, confiable y pensado para personas, y evalúa señales de experiencia, conocimiento, autoridad y confianza, lo que se conoce como [[E-E-A-T|eeat]]. De las cuatro, Google dice que la confianza es la más importante.",
           "Aterrizado a un negocio pequeño, eso significa una página por servicio que responda lo que un cliente de verdad pregunta antes de contratarte: qué incluye, para quién es, cuánto tarda, un precio o al menos un rango, dónde trabajas y quién está detrás. Una sola página de “Servicios” con una lista de viñetas casi nunca gana una búsqueda específica, porque no responde ninguna completa.",
           "También significa señales reales de quién eres: tu dirección, tu equipo, tus trabajos, tus permisos o certificaciones cuando tu giro los tiene. Lo que necesita el sitio de un negocio está en [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
         ],
@@ -8733,12 +8738,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The technical part that does matter",
         headingEs: "Lo técnico que sí pesa",
         body: [
-          "No content helps if Google cannot find it. The first check is indexing: in Google Search Console you can see which of your pages are indexed and why the rest are not. A page that is not indexed does not exist for Google, and it cannot appear in AI Overviews either.",
-          "Then page experience on a phone. Google measures it with Core Web Vitals, and the thresholds for a good experience are: the main content loads in 2.5 seconds or less (LCP), the page responds to a tap in 200 milliseconds or less (INP) and the layout does not jump while loading (CLS of 0.1 or less). They are not the most important factor, but a slow site loses customers before it loses positions. More in [website loading speed](/blog/velocidad-de-carga-pagina-web).",
+          "No content helps if Google cannot find it. The first check is indexing: in [[Google Search Console|search-console]] you can see which of your pages are indexed and why the rest are not. A page that is not indexed does not exist for Google, and it cannot appear in AI Overviews either.",
+          "Then page experience on a phone. Google measures it with [[Core Web Vitals|core-web-vitals]], and the thresholds for a good experience are: the main content loads in 2.5 seconds or less (LCP), the page responds to a tap in 200 milliseconds or less (INP) and the layout does not jump while loading (CLS of 0.1 or less). They are not the most important factor, but a slow site loses customers before it loses positions. More in [website loading speed](/blog/velocidad-de-carga-pagina-web).",
         ],
         bodyEs: [
-          "Ningún contenido ayuda si Google no lo encuentra. La primera revisión es la indexación: en Google Search Console ves cuáles de tus páginas están indexadas y por qué el resto no. Una página que no está indexada no existe para Google, y tampoco puede aparecer en las respuestas con IA.",
-          "Después, la experiencia en el celular. Google la mide con las Core Web Vitals, y los umbrales de una buena experiencia son: el contenido principal carga en 2.5 segundos o menos (LCP), la página responde a un toque en 200 milisegundos o menos (INP) y el diseño no brinca mientras carga (CLS de 0.1 o menos). No son el factor más importante, pero un sitio lento pierde clientes antes de perder posiciones. Más en [velocidad de carga de una página web](/blog/velocidad-de-carga-pagina-web).",
+          "Ningún contenido ayuda si Google no lo encuentra. La primera revisión es la indexación: en [[Google Search Console|search-console]] ves cuáles de tus páginas están indexadas y por qué el resto no. Una página que no está indexada no existe para Google, y tampoco puede aparecer en las respuestas con IA.",
+          "Después, la experiencia en el celular. Google la mide con las [[Core Web Vitals|core-web-vitals]], y los umbrales de una buena experiencia son: el contenido principal carga en 2.5 segundos o menos (LCP), la página responde a un toque en 200 milisegundos o menos (INP) y el diseño no brinca mientras carga (CLS de 0.1 o menos). No son el factor más importante, pero un sitio lento pierde clientes antes de perder posiciones. Más en [velocidad de carga de una página web](/blog/velocidad-de-carga-pagina-web).",
         ],
       },
       {
@@ -8762,12 +8767,12 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Respuestas con IA de Google: las mismas bases, otro formato",
         body: [
           "More and more searches get an AI-written answer at the top, the AI Overviews, and AI Mode lets people have a whole conversation with Search. AI Mode has worked in Spanish since September 2025, so it reaches your customers in Tijuana and Ensenada too.",
-          "The good news is that there is no separate game to learn. Google’s own documentation says there are no additional requirements or special optimizations to appear in these features, that you do not need new machine-readable files, AI text files or special structured data, and that a page only needs to be indexed and eligible to be shown with a snippet. The same practices apply: allow crawling, link your pages to each other, put the important information in text, and keep your Business Profile up to date.",
+          "The good news is that there is no separate game to learn. Google’s own documentation says there are no additional requirements or special optimizations to appear in these features, that you do not need new machine-readable files, AI text files or special [[structured data|datos-estructurados]], and that a page only needs to be indexed and eligible to be shown with a snippet. The same practices apply: allow crawling, link your pages to each other, put the important information in text, and keep your Business Profile up to date.",
           "Be wary of anyone selling a special “AI optimization” package that does not start with those basics. If your page is not indexed or does not answer the question, no extra file will fix it.",
         ],
         bodyEs: [
           "Cada vez más búsquedas muestran arriba una respuesta escrita por IA, los llamados resúmenes de IA, y el Modo IA permite tener una conversación completa con el buscador. El Modo IA funciona en español desde septiembre de 2025, así que también les llega a tus clientes en Tijuana y Ensenada.",
-          "La buena noticia es que no hay un juego aparte que aprender. La documentación de Google dice que no hay requisitos adicionales ni optimizaciones especiales para aparecer en estas funciones, que no necesitas archivos nuevos para máquinas, archivos de texto para IA ni datos estructurados especiales, y que basta con que la página esté indexada y pueda mostrarse con un fragmento. Aplican las mismas prácticas: permitir el rastreo, enlazar tus páginas entre sí, poner la información importante en texto y tener tu Perfil de Empresa al día.",
+          "La buena noticia es que no hay un juego aparte que aprender. La documentación de Google dice que no hay requisitos adicionales ni optimizaciones especiales para aparecer en estas funciones, que no necesitas archivos nuevos para máquinas, archivos de texto para IA ni [[datos estructurados|datos-estructurados]] especiales, y que basta con que la página esté indexada y pueda mostrarse con un fragmento. Aplican las mismas prácticas: permitir el rastreo, enlazar tus páginas entre sí, poner la información importante en texto y tener tu Perfil de Empresa al día.",
           "Desconfía de quien te venda un paquete especial de “optimización para IA” que no empiece por esas bases. Si tu página no está indexada o no responde la pregunta, ningún archivo extra lo arregla.",
         ],
       },
@@ -8914,13 +8919,13 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "OpenAI uses different robots for different jobs, and your site’s robots.txt file decides which ones get in. OAI-SearchBot is the one that finds sites for ChatGPT’s search. OpenAI says sites that block it will not be shown in ChatGPT search answers, only, at most, as a plain link. GPTBot is the one that collects content for training future models.",
           "They are independent: you can allow OAI-SearchBot so you appear in answers and block GPTBot so your content is not used for training. OpenAI says changes to robots.txt take about 24 hours to apply.",
-          "It is worth checking, because some hosting and security services offer to block “AI bots” with one switch, and some site owners flipped it without knowing it also takes them out of ChatGPT’s answers.",
+          "It is worth checking, because some [[hosting|hosting]] and security services offer to block “AI bots” with one switch, and some site owners flipped it without knowing it also takes them out of ChatGPT’s answers.",
           "Reading also means text. A menu uploaded only as a photo, prices inside an image or services described only in a video are practically invisible to a system that summarises text. What you want ChatGPT to repeat has to be written on the page.",
         ],
         bodyEs: [
           "OpenAI usa robots distintos para tareas distintas, y el archivo robots.txt de tu sitio decide cuáles entran. OAI-SearchBot es el que encuentra sitios para la búsqueda de ChatGPT. OpenAI dice que los sitios que lo bloquean no se muestran en las respuestas de búsqueda de ChatGPT, cuando mucho como un enlace suelto. GPTBot es el que recopila contenido para entrenar modelos futuros.",
           "Son independientes: puedes permitir OAI-SearchBot para aparecer en las respuestas y bloquear GPTBot para que tu contenido no se use en entrenamiento. OpenAI dice que los cambios en robots.txt tardan unas 24 horas en aplicarse.",
-          "Vale la pena revisarlo, porque algunos servicios de hosting y seguridad ofrecen bloquear “bots de IA” con un solo botón, y hay dueños que lo activaron sin saber que también los saca de las respuestas de ChatGPT.",
+          "Vale la pena revisarlo, porque algunos servicios de [[hosting|hosting]] y seguridad ofrecen bloquear “bots de IA” con un solo botón, y hay dueños que lo activaron sin saber que también los saca de las respuestas de ChatGPT.",
           "Leer también significa texto. Un menú subido solo como foto, precios dentro de una imagen o servicios explicados solo en video son prácticamente invisibles para un sistema que resume texto. Lo que quieres que ChatGPT repita tiene que estar escrito en la página.",
         ],
       },
@@ -8930,12 +8935,12 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Segundo filtro: que tu información coincida en todos lados",
         body: [
           "For local questions, OpenAI says ChatGPT may share the user’s location with trusted third-party providers that supply local information such as nearby business listings, and on the phone apps the answer can include a map. OpenAI does not name those providers, and its help page also mentions working with other search providers.",
-          "Since you cannot know exactly which listing ChatGPT is reading on a given day, the practical answer is to have the same name, address, phone, hours and category everywhere your business appears: Google Business Profile, Bing Places, Apple Business Connect, Facebook, and the directories that matter in your industry. This is our recommendation, not something OpenAI publishes: an AI that finds two different phone numbers for the same business has a reason to doubt both.",
+          "Since you cannot know exactly which listing ChatGPT is reading on a given day, the practical answer is to have the same name, address, phone, hours and category everywhere your business appears: [[Google Business Profile|google-business-profile]], Bing Places, Apple Business Connect, Facebook, and the directories that matter in your industry. This is our recommendation, not something OpenAI publishes: an AI that finds two different phone numbers for the same business has a reason to doubt both.",
           "If your business is in several listings with an old address or a number that no longer works, fixing that is the cheapest improvement on this list.",
         ],
         bodyEs: [
           "Para preguntas locales, OpenAI dice que ChatGPT puede compartir la ubicación del usuario con proveedores externos de confianza que dan información local, como fichas de negocios cercanos, y en las apps del celular la respuesta puede incluir un mapa. OpenAI no dice quiénes son esos proveedores, y su página de ayuda también menciona que trabaja con otros proveedores de búsqueda.",
-          "Como no puedes saber exactamente qué ficha está leyendo ChatGPT en un día dado, la respuesta práctica es tener el mismo nombre, dirección, teléfono, horario y categoría en todos los lugares donde aparece tu negocio: Perfil de Empresa de Google, Bing Places, Apple Business Connect, Facebook y los directorios que importan en tu giro. Esto es recomendación nuestra, no algo que OpenAI publique: una IA que encuentra dos teléfonos distintos para el mismo negocio tiene razones para dudar de los dos.",
+          "Como no puedes saber exactamente qué ficha está leyendo ChatGPT en un día dado, la respuesta práctica es tener el mismo nombre, dirección, teléfono, horario y categoría en todos los lugares donde aparece tu negocio: [[Perfil de Empresa de Google|google-business-profile]], Bing Places, Apple Business Connect, Facebook y los directorios que importan en tu giro. Esto es recomendación nuestra, no algo que OpenAI publique: una IA que encuentra dos teléfonos distintos para el mismo negocio tiene razones para dudar de los dos.",
           "Si tu negocio está en varias fichas con una dirección vieja o un número que ya no sirve, corregirlo es la mejora más barata de esta lista.",
         ],
       },
@@ -8998,13 +9003,13 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to measure it",
         headingEs: "Cómo medirlo",
         body: [
-          "The hard data first. OpenAI says ChatGPT automatically adds utm_source=chatgpt.com to the links it sends to websites. In Google Analytics you can see those visits as their own source and which pages they land on. If you get none, ChatGPT is not sending people to your site, whatever a screenshot says.",
+          "The hard data first. OpenAI says ChatGPT automatically adds utm_source=chatgpt.com to the links it sends to websites. In [[Google Analytics|google-analytics]] you can see those visits as their own source and which pages they land on. If you get none, ChatGPT is not sending people to your site, whatever a screenshot says.",
           "Then the question nobody asks: when a new customer arrives, ask how they found you, and add “ChatGPT or another AI” as an option. Many people read the recommendation and then search your name on Google or send a WhatsApp, and that visit never shows up as coming from ChatGPT.",
           "Finally, a monthly test. Write ten questions a real customer would ask, run them in a temporary chat, and note whether you appear, in what position and next to whom. Ten questions a month tell you more than a hundred on one afternoon.",
           "Knowing where your customers come from is one of the questions in our [free diagnostic](/recursos/diagnostico), because without that data every decision is a guess. And since a good part of what ChatGPT reads comes from search engines, start with [how Google evaluates your business](/blog/como-evalua-google-a-tu-negocio).",
         ],
         bodyEs: [
-          "Primero el dato duro. OpenAI dice que ChatGPT agrega automáticamente utm_source=chatgpt.com a los enlaces que manda a los sitios. En Google Analytics puedes ver esas visitas como una fuente propia y a qué páginas llegan. Si no tienes ninguna, ChatGPT no te está mandando gente a tu sitio, diga lo que diga una captura.",
+          "Primero el dato duro. OpenAI dice que ChatGPT agrega automáticamente utm_source=chatgpt.com a los enlaces que manda a los sitios. En [[Google Analytics|google-analytics]] puedes ver esas visitas como una fuente propia y a qué páginas llegan. Si no tienes ninguna, ChatGPT no te está mandando gente a tu sitio, diga lo que diga una captura.",
           "Luego la pregunta que nadie hace: cuando llegue un cliente nuevo, pregúntale cómo te encontró y agrega “ChatGPT u otra IA” como opción. Mucha gente lee la recomendación y luego busca tu nombre en Google o te manda un WhatsApp, y esa visita nunca aparece como si viniera de ChatGPT.",
           "Por último, una prueba mensual. Escribe diez preguntas que haría un cliente real, hazlas en un chat temporal y anota si apareces, en qué lugar y junto a quién. Diez preguntas al mes te dicen más que cien en una tarde.",
           "Saber de dónde llegan tus clientes es una de las preguntas de nuestro [diagnóstico gratuito](/recursos/diagnostico), porque sin ese dato cada decisión es una apuesta. Y como buena parte de lo que lee ChatGPT viene de los buscadores, empieza por [cómo evalúa Google a tu negocio](/blog/como-evalua-google-a-tu-negocio).",
@@ -9302,7 +9307,7 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         bodyEs: [
           "El miedo que más escuchamos es “no quiero perder lo que nos hace distintos”. No tienes por qué. El servicio, la gente, la forma de tratar a los clientes y la calidad de tu trabajo se quedan exactamente igual. Lo que cambia son los canales alrededor.",
-          "Que te encuentren: un perfil de Google al día y una página que diga qué haces, para quién y cómo contactarte. Que te contacten: WhatsApp, un formulario o una reserva en línea que alguien de verdad conteste. Que quede registro: clientes, ventas y pendientes en un sistema, no en una libreta ni en la cabeza de una sola persona. Que te paguen: tarjeta y transferencia sin complicaciones.",
+          "Que te encuentren: un [[perfil de Google|google-business-profile]] al día y una página que diga qué haces, para quién y cómo contactarte. Que te contacten: WhatsApp, un formulario o una reserva en línea que alguien de verdad conteste. Que quede registro: clientes, ventas y pendientes en un sistema, no en una libreta ni en la cabeza de una sola persona. Que te paguen: tarjeta y transferencia sin complicaciones.",
           "Nada de eso sustituye la relación con tus clientes. Hace posible que los nuevos empiecen una. Si no sabes por dónde empezar, [qué automatizar en tu negocio](/blog/que-automatizar-en-mi-negocio) y [qué punto de venta elegir](/blog/mejor-punto-de-venta-mexico) son buenos primeros pasos.",
         ],
       },
@@ -9395,6 +9400,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "menu-qr-para-restaurante",
     cover: true,
+    vertical: "restaurantes",
     title: "QR Code Menus for Restaurants: Good or Bad? How to Use Them to Sell More",
     titleEs: "Menú QR para restaurante: ¿bueno o malo? Cómo usarlo para vender más",
     category: "Marketing Strategy",
@@ -9587,6 +9593,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "reservas-directas-hotel",
     cover: true,
+    vertical: "hospedaje",
     title: "Direct Bookings: How to Depend Less on Booking and Airbnb Without Disappearing From Them",
     titleEs: "Reservas directas: cómo depender menos de Booking y Airbnb sin desaparecer de ellos",
     category: "Marketing Strategy",
@@ -9750,6 +9757,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "reservas-directas-tours",
     cover: true,
+    vertical: "turismo",
     title: "Viator, GetYourGuide or Direct Bookings? How to Sell Your Tours Without Giving Away the Commission",
     titleEs: "¿Viator, GetYourGuide o reservas directas? Cómo vender tus tours sin regalar la comisión",
     category: "Marketing Strategy",
@@ -9911,6 +9919,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "citas-que-no-llegan-salon",
     cover: true,
+    vertical: "belleza-bienestar",
     title: "No-Shows: How to Reduce Missed Appointments in Your Salon, Spa or Barbershop",
     titleEs: "Citas que no llegan: cómo reducir las inasistencias en tu salón, spa o barbería",
     category: "Automation",
@@ -10061,6 +10070,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "constructora-cotiza-mucho-cierra-poco",
     cover: true,
+    vertical: "construccion",
     title: "Why Does Your Construction Company Quote a Lot and Close Little?",
     titleEs: "¿Por qué tu constructora cotiza mucho y cierra poco?",
     category: "Marketing Strategy",
@@ -10257,9 +10267,22 @@ export function getRelatedPosts(slug: string, count = 2): BlogPost[] {
   const current = getPostBySlug(slug);
   if (!current) return BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, count);
 
-  const sameCategory = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === current.category);
-  const rest = BLOG_POSTS.filter((p) => p.slug !== slug && p.category !== current.category);
-  return [...sameCategory, ...rest].slice(0, count);
+  // The next posts in the same category, wrapping around. Always taking the
+  // first two meant most posts in a category were never shown as related, so
+  // they received no internal links; rotating gives every post inbound links.
+  const category = BLOG_POSTS.filter((p) => p.category === current.category);
+  const i = category.findIndex((p) => p.slug === slug);
+  const next = [...category.slice(i + 1), ...category.slice(0, i)];
+  const rest = BLOG_POSTS.filter((p) => p.category !== current.category);
+  return [...next, ...rest].slice(0, count);
+}
+
+/** Diagnostic vertical for a post's closing call to action, if it has one. */
+export function postVertical(post: BlogPost): string | undefined {
+  if (post.vertical) return post.vertical;
+  if (post.category === "Medical Marketing") return /dental/.test(post.slug) ? "dental" : "clinicas";
+  if (post.category === "Real Estate Marketing") return "inmobiliarias";
+  return undefined;
 }
 
 export function postTitle(post: BlogPost, lang: Lang): string {

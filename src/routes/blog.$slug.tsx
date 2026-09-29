@@ -15,10 +15,12 @@ import {
   formatPostDate,
   postCover,
   postCoverSrcSet,
+  postVertical,
   postOgImage,
   type BlogPost,
 } from "@/lib/blog-data";
 import { GlossaryTerm } from "@/components/blog/GlossaryTerm";
+import { getVertical } from "@/lib/diagnostico-data";
 
 export const Route = createFileRoute("/blog/$slug")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -199,7 +201,7 @@ function BlogArticlePage() {
 
           <ArticleFAQ post={post} lang={lang} />
 
-          <InlineCTA />
+          <InlineCTA post={post} />
         </div>
       </article>
 
@@ -417,8 +419,15 @@ function ArticleFAQ({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
   );
 }
 
-function InlineCTA() {
+function InlineCTA({ post }: { post: BlogPost }) {
   const t = useT();
+  const { lang } = useLang();
+  // Point readers to the diagnostic for their own industry when the post has
+  // one: it is the step that turns a reader into a lead.
+  const v = getVertical(postVertical(post) ?? "");
+  const diagLabel = v
+    ? t(`Free diagnostic: ${v.labelEn.toLowerCase()}`, `Diagnóstico gratuito: ${v.label.toLowerCase()}`)
+    : t("Free diagnostic", "Diagnóstico gratuito");
   return (
     <div className="on-dark mt-16 rounded-3xl bg-neutral-950 px-6 py-12 text-center text-white sm:px-12 sm:py-16">
       <h3 className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl">
@@ -429,25 +438,42 @@ function InlineCTA() {
       </h3>
       <p className="mx-auto mt-4 max-w-md text-sm text-white/60 sm:text-base">
         {t(
-          "We're a digital marketing agency serving Tijuana and Baja California. Tell us what you're working with and we reply within 24 hours.",
-          "Somos una agencia de marketing digital que atiende Tijuana y Baja California. Cuéntanos qué tienes en mente y te respondemos en menos de 24 horas.",
+          "Find out in a few minutes what to fix first in your business, or tell us what you're working with and we reply within 24 hours.",
+          "Descubre en unos minutos qué corregir primero en tu negocio, o cuéntanos qué tienes en mente y te respondemos en menos de 24 horas.",
         )}
       </p>
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        {v ? (
+          <Link
+            to="/recursos/diagnostico/$industria"
+            params={{ industria: v.slug }}
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+          >
+            {diagLabel}
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        ) : (
+          <Link
+            to="/recursos/diagnostico"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+          >
+            {diagLabel}
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        )}
         <Link
           to="/contacto"
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
-        >
-          {t("Book a call", "Agendar llamada")}
-          <ArrowRight className="h-3.5 w-3.5" />
-        </Link>
-        <Link
-          to="/agencia-marketing-digital-tijuana"
           className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:border-white"
         >
-          {t("Marketing agency in Tijuana", "Agencia de marketing en Tijuana")}
+          {t("Book a call", "Agendar llamada")}
         </Link>
       </div>
+      <Link
+        to="/agencia-marketing-digital-tijuana"
+        className="mt-6 inline-block text-xs text-white/50 underline underline-offset-2 transition hover:text-white"
+      >
+        {lang === "es" ? "Agencia de marketing en Tijuana" : "Marketing agency in Tijuana"}
+      </Link>
     </div>
   );
 }
