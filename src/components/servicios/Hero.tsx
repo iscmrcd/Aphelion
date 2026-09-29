@@ -1,12 +1,19 @@
 import { Link } from "@tanstack/react-router";
 import { AphelionLogo } from "@/components/Brand";
+import { Button } from "@/components/ui/button";
 import { useT } from "@/lib/i18n";
+import lightHero from "@/assets/home-hero-light.jpg";
+import darkHero from "@/assets/home-hero-dark.jpg";
 
 export function Hero({ onCta }: { onCta: () => void }) {
   const t = useT();
   return (
-    <section className="relative px-5 pt-24 pb-20 sm:pt-32 sm:pb-28">
-      <div className="mx-auto max-w-5xl text-center">
+    <section className="home-hero relative isolate overflow-hidden px-5 pt-24 pb-20 sm:pt-32 sm:pb-28">
+      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+        <img src={lightHero} width={1536} height={1024} fetchPriority="high" alt="" className="home-hero-image home-hero-light absolute inset-0 h-full w-full object-cover" />
+        <img src={darkHero} width={1536} height={1024} alt="" className="home-hero-image home-hero-dark absolute inset-0 h-full w-full object-cover" />
+      </div>
+      <div className="relative mx-auto max-w-5xl text-center">
         <div className="mb-10 inline-flex items-center justify-center">
           <AphelionLogo className="h-8 w-auto sm:h-9" />
         </div>
@@ -23,18 +30,16 @@ export function Hero({ onCta }: { onCta: () => void }) {
           )}
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link
-            to="/contacto"
-            className="inline-flex items-center justify-center rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
-          >
-            {t("Tell us what you need", "Cuéntanos qué necesitas")}
-          </Link>
-          <button
+          <Button asChild className="h-auto rounded-full bg-primary px-6 py-3 text-primary-foreground hover:bg-primary/90">
+            <Link to="/contacto">{t("Tell us what you need", "Cuéntanos qué necesitas")}</Link>
+          </Button>
+          <Button
+            variant="outline"
             onClick={onCta}
-            className="inline-flex items-center justify-center rounded-full border border-neutral-200 bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
+            className="h-auto rounded-full border-border bg-background/75 px-6 py-3 text-foreground hover:bg-background"
           >
             {t("See prices and packages →", "Ver precios y paquetes →")}
-          </button>
+          </Button>
         </div>
       </div>
     </section>

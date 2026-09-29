@@ -334,6 +334,32 @@
   .animate-marquee { animation: none; }
 }
 
+/* Home banner: restrained photographic color drift, with a separate night exposure. */
+.home-hero {
+  background: var(--background);
+}
+.home-hero-image {
+  transform: scale(1.08);
+  animation: home-hero-drift 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.home-hero-dark {
+  opacity: 0;
+  transition: opacity 650ms ease;
+}
+.dark .home-hero-dark { opacity: 1; }
+.dark .home-hero .text-neutral-950 { color: var(--foreground); }
+.dark .home-hero .text-neutral-500 { color: oklch(0.87 0.01 250); }
+.dark .home-hero img[alt="Aphelion"] { filter: invert(1); }
+@keyframes home-hero-drift {
+  from { transform: scale(1.08) translate3d(-1.2%, -0.8%, 0); }
+  to { transform: scale(1.14) translate3d(1.2%, 0.8%, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-image { animation: none; transform: none; will-change: auto; }
+  .home-hero-dark { transition: none; }
+}
+
 
 /* ---------------------------------------------------------------------------
    Aphelion assistant orb.

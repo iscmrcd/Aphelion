@@ -104,6 +104,96 @@ export type Database = {
         }
         Relationships: []
       }
+      diagnosticos: {
+        Row: {
+          answers: Json
+          attempt_id: string
+          band: string | null
+          click_source: string | null
+          context: Json
+          coverage: number
+          created_at: string
+          entry: string
+          gaps: string[]
+          id: number
+          ip_hash: string
+          landing_path: string | null
+          lang: string
+          not_applicable: string[]
+          partial: boolean
+          raw_score: number
+          referrer: string | null
+          score: number | null
+          unknown: string[]
+          updated_at: string
+          utm_campaign: string | null
+          utm_content: string | null
+          utm_medium: string | null
+          utm_source: string | null
+          utm_term: string | null
+          version: string
+          vertical: string
+        }
+        Insert: {
+          answers: Json
+          attempt_id: string
+          band?: string | null
+          click_source?: string | null
+          context?: Json
+          coverage: number
+          created_at?: string
+          entry?: string
+          gaps?: string[]
+          id?: never
+          ip_hash?: string
+          landing_path?: string | null
+          lang?: string
+          not_applicable?: string[]
+          partial?: boolean
+          raw_score: number
+          referrer?: string | null
+          score?: number | null
+          unknown?: string[]
+          updated_at?: string
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          utm_term?: string | null
+          version: string
+          vertical: string
+        }
+        Update: {
+          answers?: Json
+          attempt_id?: string
+          band?: string | null
+          click_source?: string | null
+          context?: Json
+          coverage?: number
+          created_at?: string
+          entry?: string
+          gaps?: string[]
+          id?: never
+          ip_hash?: string
+          landing_path?: string | null
+          lang?: string
+          not_applicable?: string[]
+          partial?: boolean
+          raw_score?: number
+          referrer?: string | null
+          score?: number | null
+          unknown?: string[]
+          updated_at?: string
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
+          utm_term?: string | null
+          version?: string
+          vertical?: string
+        }
+        Relationships: []
+      }
       leads: {
         Row: {
           budget: string | null
