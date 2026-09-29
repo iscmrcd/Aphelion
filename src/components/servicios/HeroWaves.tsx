@@ -52,8 +52,8 @@ export function HeroWaves() {
       for (let layer = 0; layer < 4; layer++) {
         const yAt = (x: number) => height * (
           [-0.18, 0.18, 0.76, 1.08][layer] +
-          Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.22, 0.16, 0.2, 0.13][layer] +
-          Math.sin(x / width * 9.2 - phase * 0.45 + layer) * 0.035
+          Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.3, 0.22, 0.27, 0.18][layer] +
+          Math.sin(x / width * 9.2 - phase * 0.6 + layer) * 0.06
         );
         ctx.globalAlpha = dark ? 0.33 : 0.55;
         ctx.strokeStyle = layer % 2 ? palette.waveAlt : palette.wave;
