@@ -18,6 +18,7 @@ import {
   postOgImage,
   type BlogPost,
 } from "@/lib/blog-data";
+import { GlossaryTerm } from "@/components/blog/GlossaryTerm";
 
 export const Route = createFileRoute("/blog/$slug")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -173,7 +174,7 @@ function BlogArticlePage() {
 
           <div className="my-10 border-l-[3px] border-neutral-950 pl-6">
             <p className="text-lg leading-relaxed text-neutral-800 sm:text-xl">
-              {postLede(post, lang)}
+              <RichText text={postLede(post, lang)} lang={lang} />
             </p>
           </div>
 
@@ -188,7 +189,7 @@ function BlogArticlePage() {
                 <div className="mt-4 space-y-4">
                   {(lang === "es" ? s.bodyEs : s.body).map((p, i) => (
                     <p key={i} className="text-base leading-relaxed text-neutral-700">
-                      <RichText text={p} />
+                      <RichText text={p} lang={lang} />
                     </p>
                   ))}
                 </div>
@@ -221,14 +222,25 @@ function BlogArticlePage() {
  * place internal cluster links become real crawlable anchors. Anything that is
  * not a well-formed internal link is left as literal text.
  */
-const INLINE_LINK = /\[([^\]]+)\]\((\/[a-z0-9/-]*)\)/g;
+const INLINE_TOKEN = /\[\[([^\]|]+)\|([a-z0-9-]+)\]\]|\[([^\]]+)\]\((\/[a-z0-9/-]*)\)/g;
 
-function RichText({ text }: { text: string }) {
-  const nodes: Array<string | { label: string; to: string }> = [];
+type RichNode =
+  | string
+  | { kind: "link"; label: string; to: string }
+  | { kind: "term"; label: string; key: string };
+
+/**
+ * Also renders glossary terms written as [[visible text|key]]: the word gets a
+ * dotted underline and explains itself in a bubble (see GlossaryTerm and
+ * src/lib/glossary.ts), so readers learn it without leaving the article.
+ */
+function RichText({ text, lang }: { text: string; lang: "en" | "es" }) {
+  const nodes: RichNode[] = [];
   let last = 0;
-  for (const m of text.matchAll(INLINE_LINK)) {
+  for (const m of text.matchAll(INLINE_TOKEN)) {
     if (m.index > last) nodes.push(text.slice(last, m.index));
-    nodes.push({ label: m[1], to: m[2] });
+    if (m[1] !== undefined) nodes.push({ kind: "term", label: m[1], key: m[2] });
+    else nodes.push({ kind: "link", label: m[3], to: m[4] });
     last = m.index + m[0].length;
   }
   if (last < text.length) nodes.push(text.slice(last));
@@ -238,6 +250,8 @@ function RichText({ text }: { text: string }) {
       {nodes.map((n, i) =>
         typeof n === "string" ? (
           <span key={i}>{n}</span>
+        ) : n.kind === "term" ? (
+          <GlossaryTerm key={i} label={n.label} k={n.key} lang={lang} />
         ) : (
           <Link
             key={i}

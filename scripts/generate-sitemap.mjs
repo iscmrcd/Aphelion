@@ -87,7 +87,12 @@ const verticales = readVerticales();
 function validateInternalLinks() {
   const slugs = new Set(posts.map((p) => p.slug));
   const routeSet = new Set(routes);
-  const files = ["src/lib/diagnostico-data.ts", "src/lib/blog-data.ts", "src/lib/local-data.ts"];
+  const files = [
+    "src/lib/diagnostico-data.ts",
+    "src/lib/blog-data.ts",
+    "src/lib/local-data.ts",
+    "src/lib/glossary.ts",
+  ];
   const broken = [];
   for (const f of files) {
     let src;
@@ -107,6 +112,15 @@ function validateInternalLinks() {
         : routeSet.has(h) || h === "/blog" || h === "/";
       if (!ok) broken.push(`${f}: ${h}`);
     }
+  }
+  // Glossary terms in posts, written [[visible text|key]], must exist in glossary.ts.
+  const glossarySrc = readFileSync(join(root, "src/lib/glossary.ts"), "utf8");
+  const glossaryKeys = new Set(
+    [...glossarySrc.matchAll(/^  "?([a-z0-9-]+)"?: \{/gm)].map((m) => m[1]),
+  );
+  const blogSrc = readFileSync(join(root, "src/lib/blog-data.ts"), "utf8");
+  for (const m of blogSrc.matchAll(/\[\[[^\]|]+\|([a-z0-9-]+)\]\]/g)) {
+    if (!glossaryKeys.has(m[1])) broken.push(`src/lib/blog-data.ts: glossary key "${m[1]}"`);
   }
   if (broken.length) {
     console.error("Broken internal links:\n  " + broken.join("\n  "));
