@@ -51,8 +51,8 @@ export const Route = createFileRoute("/blog/$slug")({
       },
       ogType: "article",
       image: ogUrl,
-      imageWidth: 1600,
-      imageHeight: 840,
+      imageWidth: 1200,
+      imageHeight: 630,
       jsonLd: [
         {
           "@type": "Article",

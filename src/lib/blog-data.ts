@@ -9416,7 +9416,7 @@ export const postCoverSrcSet = (post: BlogPost) =>
     ? `/images/blog/${post.slug}.webp 1440w, /images/blog/${post.slug}-2x.webp 2880w`
     : undefined;
 
-/** Share-preview image (1600x840, title baked in), or undefined. */
+/** Share-preview image (1200x630, title baked in), or undefined. */
 export const postOgImage = (post: BlogPost) =>
   post.cover ? `/images/blog/${post.slug}-og.jpg` : undefined;
 
