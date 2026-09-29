@@ -9392,6 +9392,190 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "menu-qr-para-restaurante",
+    cover: true,
+    title: "QR Code Menus for Restaurants: Good or Bad? How to Use Them to Sell More",
+    titleEs: "Menú QR para restaurante: ¿bueno o malo? Cómo usarlo para vender más",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Most diners still prefer a printed menu, and a QR code that opens a PDF or a Linktree wastes the best marketing moment your restaurant has. Built well, the same QR turns every table into an audience for your ads, keeps your menu in sync with your stock and builds an email list. What the data says and how to do it right.",
+    excerptEs:
+      "La mayoría de los comensales todavía prefiere el menú impreso, y un QR que abre un PDF o un Linktree desperdicia el mejor momento de marketing que tiene tu restaurante. Bien hecho, ese mismo QR convierte cada mesa en audiencia para tus anuncios, mantiene tu menú al día con tu inventario y te arma una lista de correos. Qué dicen los datos y cómo hacerlo bien.",
+    readingTime: 9,
+    date: "2026-09-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A QR code menu is good for your restaurant when it opens your own website and sits next to a printed menu. It is bad when it replaces the printed menu or sends your customers to someone else’s platform. The reason is simple: in a September 2024 Toast survey of 850 US adults, 81% said they prefer a physical menu and only 1% preferred a QR code. Customers do not scan for the pleasure of it, so the few seconds they spend on your menu are worth a lot. If those seconds happen on your domain, with your pixel installed, every table feeds your advertising. If they happen on a PDF or a Linktree page, you pay for the printing and someone else keeps the traffic.",
+    ledeEs:
+      "Un menú QR es bueno para tu restaurante cuando abre tu propia página web y convive con un menú impreso. Es malo cuando sustituye al menú impreso o manda a tus clientes a la plataforma de alguien más. La razón es sencilla: en una encuesta de Toast de septiembre de 2024 a 850 adultos en Estados Unidos, el 81% dijo que prefiere un menú físico y solo el 1% prefirió el QR. Nadie escanea por gusto, así que los segundos que un cliente pasa en tu menú valen mucho. Si esos segundos pasan en tu dominio, con tu pixel instalado, cada mesa alimenta tu publicidad. Si pasan en un PDF o en un Linktree, tú pagas la impresión y alguien más se queda con el tráfico.",
+    sections: [
+      {
+        id: "lo-que-dicen-los-datos",
+        heading: "What the data says about QR menus",
+        headingEs: "Lo que dicen los datos sobre los menús QR",
+        body: [
+          "The most recent public survey we found is Toast’s, from September 2024: 850 adults in the United States. 81% prefer a physical menu, rising to 90% among people aged 55 and over, and only 1% prefer to order from a QR code. The most common complaint about QR menus was small print (26%), followed by having to use a phone at all (20%). The same survey found that 66% prefer menus with photos of the dishes.",
+          "An earlier Technomic survey, from May 2022 with 1,000 people, pointed the same way: 88% preferred paper, and 66% disliked having to take out their phone when they sit down. Both studies are from the United States; we did not find a comparable public study for Mexico. Even so, the conclusion carries over to any restaurant: the QR code does not win as a replacement for the menu. It wins as a complement that offers something paper cannot.",
+        ],
+        bodyEs: [
+          "La encuesta pública más reciente que encontramos es la de Toast, de septiembre de 2024: 850 adultos en Estados Unidos. El 81% prefiere un menú físico, cifra que sube al 90% entre los mayores de 55 años, y solo el 1% prefiere pedir desde un QR. La queja más común sobre los menús QR fue la letra pequeña (26%), seguida de tener que usar el celular para empezar (20%). La misma encuesta encontró que el 66% prefiere menús con fotos de los platillos.",
+          "Una encuesta anterior de Technomic, de mayo de 2022 con 1,000 personas, apuntó en la misma dirección: el 88% prefería papel y al 66% le molestaba tener que sacar el celular al sentarse. Los dos estudios son de Estados Unidos; no encontramos un estudio público comparable para México. Aun así, la conclusión aplica a cualquier restaurante: el QR no gana como reemplazo del menú. Gana como complemento que ofrece algo que el papel no puede.",
+        ],
+      },
+      {
+        id: "el-qr-como-herramienta-de-marketing",
+        heading: "What a QR menu does well: turn diners into an audience",
+        headingEs: "Lo que el QR sí hace bien: convertir comensales en audiencia",
+        body: [
+          "Here is the part most restaurants miss. Someone who scans your menu is someone who already chose you, sat down and is about to spend. There is no more valuable visitor for your advertising. If the QR opens a page on your own domain with the [Meta Pixel](/blog/que-es-el-pixel-de-meta) and Google Analytics installed, every scan is recorded as a visit to your website.",
+          "With those visits you can build a custom audience of people who viewed your menu (Meta keeps website visitors for up to 180 days) and show them ads for your specials, events or new dishes. That is [remarketing](/blog/que-es-remarketing), and it works because you are talking to people who already know you. On top of that audience Meta can build a lookalike audience: people who resemble your customers. Meta asks for a source of at least 100 people from the same country, and it works better with around a thousand or more.",
+          "A round-number example to size it: a restaurant with 80 diners a day where one in four scans the menu gets about 600 visits a month. In a couple of months it has a source audience big enough for lookalikes, built with real customers from its own tables and no extra spend on ads.",
+        ],
+        bodyEs: [
+          "Aquí está la parte que la mayoría de los restaurantes se pierde. Quien escanea tu menú ya te eligió, ya se sentó y está a punto de gastar. No hay visitante más valioso para tu publicidad. Si el QR abre una página en tu propio dominio con el [Pixel de Meta](/blog/que-es-el-pixel-de-meta) y Google Analytics instalados, cada escaneo queda registrado como una visita a tu página.",
+          "Con esas visitas puedes crear un público personalizado de las personas que vieron tu menú (Meta guarda a los visitantes de tu sitio hasta 180 días) y mostrarles anuncios de tus promociones, eventos o platillos nuevos. Eso es [remarketing](/blog/que-es-remarketing), y funciona porque le hablas a gente que ya te conoce. Sobre ese público Meta puede crear un público similar (lookalike): personas que se parecen a tus clientes. Meta pide un origen de al menos 100 personas del mismo país, y funciona mejor a partir de unas mil.",
+          "Un ejemplo con números redondos para dimensionarlo: un restaurante con 80 comensales al día en el que uno de cada cuatro escanea el menú suma unas 600 visitas al mes. En un par de meses ya tiene un público de origen suficiente para crear similares, formado con clientes reales de sus propias mesas y sin gastar un peso extra en anuncios.",
+        ],
+      },
+      {
+        id: "menu-sincronizado-con-tu-punto-de-venta",
+        heading: "The next level: a menu synced with your POS and inventory",
+        headingEs: "El siguiente nivel: menú sincronizado con tu punto de venta e inventario",
+        body: [
+          "A printed menu cannot tell a customer that the fish of the day ran out at 3 p.m. A menu that reads from your point of sale can. When the menu on your website takes prices and availability from the same system you use to charge, a dish that runs out disappears from the menu on its own, a price change is made once and applies everywhere, and nobody orders something the kitchen no longer has.",
+          "It saves the uncomfortable “sorry, we are out of that”, it saves reprinting and it gives your waiters one less thing to remember. This requires a point of sale that allows integrations or a custom system; we compare the options in [the best POS in Mexico](/blog/mejor-punto-de-venta-mexico). From there, ordering or paying from the table is an optional step, not a requirement.",
+        ],
+        bodyEs: [
+          "Un menú impreso no le puede avisar al cliente que el pescado del día se acabó a las 3 de la tarde. Un menú que lee de tu punto de venta sí. Cuando el menú de tu página toma precios y disponibilidad del mismo sistema con el que cobras, un platillo agotado desaparece solo del menú, un cambio de precio se hace una vez y aplica en todos lados, y nadie pide algo que la cocina ya no tiene.",
+          "Te ahorra el incómodo “disculpe, ya no nos queda”, te ahorra reimpresiones y le quita a tus meseros una cosa más que recordar. Para esto necesitas un punto de venta que permita integraciones o un sistema a la medida; comparamos las opciones en [el mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico). A partir de ahí, pedir o pagar desde la mesa es un paso opcional, no un requisito.",
+        ],
+      },
+      {
+        id: "wifi-a-cambio-de-correo",
+        heading: "Wi-Fi in exchange for an email, done properly",
+        headingEs: "WiFi a cambio del correo, bien hecho",
+        body: [
+          "A QR menu needs a connection, and inside many restaurants the mobile signal is weak. That is a problem and an opportunity at the same time. If you offer Wi-Fi through a login page that asks for an email address, you solve the connection and build a customer list for your [email marketing](/blog/email-marketing-para-pymes) at the same time.",
+          "The important part is doing it within the law. Mexico published a new Federal Law on the Protection of Personal Data Held by Private Parties on March 20, 2025, in force since March 21, 2025. It still requires you to show a privacy notice before collecting data, in its simplified form when you collect it electronically, and to obtain the customer’s consent. In practice: a visible link to your privacy notice on the Wi-Fi page and an unticked box to accept promotions. We are not lawyers; for your specific case, check with one.",
+        ],
+        bodyEs: [
+          "Un menú QR necesita conexión, y dentro de muchos restaurantes la señal del celular es mala. Eso es un problema y una oportunidad al mismo tiempo. Si ofreces WiFi con una página de acceso que pide el correo, resuelves la conexión y al mismo tiempo armas una lista de clientes para tu [email marketing](/blog/email-marketing-para-pymes).",
+          "Lo importante es hacerlo dentro de la ley. En México se publicó una nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares el 20 de marzo de 2025, vigente desde el 21 de marzo de 2025. Sigue exigiendo mostrar un aviso de privacidad antes de recabar datos, en su versión simplificada cuando los recabas por medios electrónicos, y obtener el consentimiento del cliente. En la práctica: un enlace visible a tu aviso de privacidad en la página del WiFi y una casilla sin marcar para aceptar promociones. No somos abogados; para tu caso concreto, revísalo con uno.",
+        ],
+      },
+      {
+        id: "no-quites-el-menu-fisico",
+        heading: "Do not remove the printed menu",
+        headingEs: "No quites el menú físico",
+        body: [
+          "With 81% of diners preferring paper, removing it means making most of your customers uncomfortable to save on printing. There are also practical reasons: a phone with no battery, older customers, a table that wants to look at the menu together, or simply someone who came to disconnect.",
+          "The combination that works is a printed menu on every table and a QR that offers what paper cannot: photos of every dish, allergens, the full wine list, daily specials and the menu in English. In Tijuana and Ensenada, where many diners come from the United States, that last point alone justifies the QR.",
+        ],
+        bodyEs: [
+          "Con el 81% de los comensales prefiriendo papel, quitarlo es incomodar a la mayoría de tus clientes para ahorrarte la impresión. Además hay razones prácticas: un celular sin batería, clientes mayores, una mesa que quiere ver la carta junta o simplemente alguien que vino a desconectarse.",
+          "La combinación que funciona es menú impreso en cada mesa y un QR que ofrezca lo que el papel no puede: fotos de cada platillo, alérgenos, la carta completa de vinos, las sugerencias del día y el menú en inglés. En Tijuana y Ensenada, donde muchos comensales vienen de Estados Unidos, ese último punto por sí solo justifica el QR.",
+        ],
+      },
+      {
+        id: "por-que-evitar-linktree",
+        heading: "Why not to use Linktree and similar tools for your menu",
+        headingEs: "Por qué no usar Linktree y similares para tu menú",
+        body: [
+          "Many restaurants point their QR to a link-in-bio page: Linktree, Beacons, Taplink or Later’s Linkin.bio. They are useful for an Instagram profile, but for your menu they give away exactly what makes the QR valuable. The visit happens on their domain, not yours, so it adds nothing to your website’s authority on Google or to your [local SEO](/blog/seo-local-guia).",
+          "To be fair: Linktree does let you connect the Meta Pixel, but only on its Pro and Premium plans, and it records two events, page views and link clicks. What you cannot do is connect that page to your point of sale, control how the menu looks and loads, or keep the traffic if you ever leave the platform.",
+          "And platforms change. Bento, a link-in-bio tool Linktree acquired, shut down on February 13, 2026: its users’ content was deleted and their links started redirecting to Linktree. Something similar happens with many free QR generators: at qr-code-generator.com, when the trial ends, dynamic codes are deactivated and point to a service page. If that code is printed on 40 tables, your menu stops working overnight.",
+          "The alternative costs little: a menu page on your own domain (for example, yourrestaurant.com/menu) and a static QR that points to it. You can change the contents as often as you want without reprinting anything, and the traffic, the data and the Google authority stay with you. If you do not have a domain yet, we explain [how to choose one](/blog/como-elegir-un-dominio).",
+        ],
+        bodyEs: [
+          "Muchos restaurantes apuntan su QR a una página de enlaces: Linktree, Beacons, Taplink o Linkin.bio de Later. Sirven para el perfil de Instagram, pero para tu menú regalan justo lo que hace valioso al QR. La visita sucede en el dominio de ellos, no en el tuyo, así que no suma nada a la autoridad de tu página en Google ni a tu [SEO local](/blog/seo-local-guia).",
+          "Para ser justos: Linktree sí permite conectar el Pixel de Meta, pero solo en sus planes Pro y Premium, y registra dos eventos: visitas a la página y clics en enlaces. Lo que no puedes hacer es conectar esa página con tu punto de venta, controlar cómo se ve y qué tan rápido carga el menú, ni llevarte el tráfico si algún día dejas la plataforma.",
+          "Y las plataformas cambian. Bento, una herramienta de enlaces que compró Linktree, cerró el 13 de febrero de 2026: el contenido de sus usuarios se borró y sus enlaces empezaron a redirigir a Linktree. Algo parecido pasa con muchos generadores de QR gratuitos: en qr-code-generator.com, cuando termina la prueba, los códigos dinámicos se desactivan y apuntan a una página del servicio. Si ese código está impreso en 40 mesas, tu menú deja de funcionar de un día para otro.",
+          "La alternativa cuesta poco: una página de menú en tu propio dominio (por ejemplo, turestaurante.com/menu) y un QR estático que apunte ahí. Puedes cambiar el contenido cuantas veces quieras sin reimprimir nada, y el tráfico, los datos y la autoridad en Google se quedan contigo. Si todavía no tienes dominio, te explicamos [cómo elegir uno](/blog/como-elegir-un-dominio).",
+        ],
+      },
+      {
+        id: "seguridad-del-qr",
+        heading: "Security: make sure your QR is not a door to a scam",
+        headingEs: "Seguridad: que tu QR no sea la puerta de un fraude",
+        body: [
+          "In December 2023 the US Federal Trade Commission warned that scammers replace legitimate QR codes, for example on parking meters, with their own to steal data. A loose sticker on a table is easy to cover with another one.",
+          "Three simple measures: print the QR as part of the table card or menu, not as a separate sticker; write your address under the code (turestaurante.com/menu) so the customer can check where it leads; and have someone check the tables every so often. Having your own domain helps here too: a customer trusts your restaurant’s name more than an unfamiliar link.",
+        ],
+        bodyEs: [
+          "En diciembre de 2023 la Comisión Federal de Comercio de Estados Unidos (FTC) advirtió que los estafadores sustituyen códigos QR legítimos, por ejemplo en parquímetros, por los suyos para robar datos. Una calcomanía suelta en una mesa es fácil de tapar con otra.",
+          "Tres medidas sencillas: imprime el QR como parte del tarjetón o de la carta, no como calcomanía aparte; escribe tu dirección debajo del código (turestaurante.com/menu) para que el cliente pueda comprobar a dónde lo lleva; y que alguien revise las mesas cada cierto tiempo. Tener tu propio dominio también ayuda aquí: el cliente confía más en el nombre de tu restaurante que en un enlace desconocido.",
+        ],
+      },
+      {
+        id: "como-implementarlo",
+        heading: "How to set it up: a checklist",
+        headingEs: "Cómo implementarlo: lista de pasos",
+        body: [
+          "First, put the menu on your own domain, with large text, photos, English and Spanish versions, and fast loading; a slow menu gets abandoned at the table ([why speed matters](/blog/velocidad-de-carga-pagina-web)). Second, install the Meta Pixel and Google Analytics, measuring menu views and clicks on WhatsApp or reservations.",
+          "Third, generate a static QR pointing to your domain and print it as part of your table card, with the address written underneath. Fourth, keep the printed menu. Fifth, if you offer Wi-Fi, add a login page with your privacy notice and a box to accept promotions.",
+          "Sixth, when your volume justifies it, connect the menu to your point of sale so it updates on its own. And seventh, measure: compare menu visits with diners per day. If few people scan, the problem is usually where the QR is placed or what it offers. Our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to prioritize for your restaurant.",
+        ],
+        bodyEs: [
+          "Primero, pon el menú en tu propio dominio, con letra grande, fotos, versión en español e inglés y carga rápida; un menú lento se abandona en la mesa ([por qué importa la velocidad](/blog/velocidad-de-carga-pagina-web)). Segundo, instala el Pixel de Meta y Google Analytics, midiendo las vistas del menú y los clics a WhatsApp o reservaciones.",
+          "Tercero, genera un QR estático que apunte a tu dominio e imprímelo como parte del tarjetón de mesa, con la dirección escrita debajo. Cuarto, conserva el menú impreso. Quinto, si ofreces WiFi, agrega una página de acceso con tu aviso de privacidad y una casilla para aceptar promociones.",
+          "Sexto, cuando tu volumen lo justifique, conecta el menú con tu punto de venta para que se actualice solo. Y séptimo, mide: compara las visitas al menú con los comensales del día. Si escanea poca gente, el problema suele estar en dónde está el QR o en lo que ofrece. Nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué priorizar para tu restaurante.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Es mejor el menú QR o el menú físico?",
+        qEn: "Is a QR menu or a printed menu better?",
+        a: "Los dos juntos. En la encuesta de Toast de 2024, el 81% prefirió el menú físico y solo el 1% el QR. El menú impreso atiende a la mayoría y el QR agrega lo que el papel no puede: fotos, inglés, alérgenos, disponibilidad al momento y la posibilidad de medir y hacer publicidad a quienes lo vieron.",
+        aEn: "Both together. In Toast’s 2024 survey, 81% preferred a printed menu and only 1% a QR code. The printed menu serves most customers and the QR adds what paper cannot: photos, English, allergens, live availability and the ability to measure and advertise to the people who viewed it.",
+      },
+      {
+        q: "¿Puedo usar Linktree para el menú de mi restaurante?",
+        qEn: "Can I use Linktree for my restaurant menu?",
+        a: "Puedes, pero pierdes lo más valioso. La visita sucede en el dominio de Linktree y no suma a tu posicionamiento en Google, el Pixel de Meta solo está en sus planes Pro y Premium, y no se conecta con tu punto de venta. Una página de menú en tu propio dominio cuesta poco y todo el tráfico y los datos se quedan contigo.",
+        aEn: "You can, but you lose the most valuable part. The visit happens on Linktree’s domain and adds nothing to your Google ranking, the Meta Pixel is only available on its Pro and Premium plans, and it does not connect with your point of sale. A menu page on your own domain costs little and all the traffic and data stay with you.",
+      },
+      {
+        q: "¿Qué pasa si se vence mi generador de códigos QR?",
+        qEn: "What happens if my QR code generator subscription expires?",
+        a: "Si usaste un código dinámico de un servicio de terceros, puede dejar de funcionar: en qr-code-generator.com, al terminar la prueba, los códigos dinámicos se desactivan y apuntan a una página del servicio. Para evitarlo, usa un QR estático que apunte directo a tu dominio; así el código nunca vence y cambias el menú sin reimprimir.",
+        aEn: "If you used a dynamic code from a third-party service, it can stop working: at qr-code-generator.com, when the trial ends, dynamic codes are deactivated and point to a service page. To avoid it, use a static QR that points straight to your domain; the code never expires and you can change the menu without reprinting.",
+      },
+      {
+        q: "¿Es legal pedir el correo del cliente a cambio del WiFi?",
+        qEn: "Is it legal to ask for a customer’s email in exchange for Wi-Fi?",
+        a: "Sí, siempre que cumplas la ley de datos personales: la nueva LFPDPPP, vigente desde el 21 de marzo de 2025, exige mostrar un aviso de privacidad (en versión simplificada si recabas los datos por medios electrónicos) y obtener el consentimiento. Pon un enlace visible al aviso y una casilla sin marcar para aceptar promociones. Para tu caso concreto, consulta a un abogado.",
+        aEn: "Yes, as long as you comply with Mexico’s personal data law: the new LFPDPPP, in force since March 21, 2025, requires you to show a privacy notice (in its simplified form if you collect data electronically) and to obtain consent. Add a visible link to the notice and an unticked box to accept promotions. For your specific case, consult a lawyer.",
+      },
+      {
+        q: "¿Cuántas visitas necesito para crear un público similar en Meta?",
+        qEn: "How many visits do I need to build a lookalike audience on Meta?",
+        a: "Meta pide un público de origen de al menos 100 personas del mismo país, y funciona mejor a partir de unas mil. Un restaurante con 80 comensales al día donde uno de cada cuatro escanea el menú junta unas 600 visitas al mes, así que en un par de meses ya tiene un origen suficiente.",
+        aEn: "Meta requires a source audience of at least 100 people from the same country, and it works better from around a thousand. A restaurant with 80 diners a day where one in four scans the menu collects about 600 visits a month, so within a couple of months it has a large enough source.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "QR code menu restaurant",
+        "are QR menus good or bad",
+        "digital menu restaurant Mexico",
+        "QR menu marketing",
+        "Linktree for restaurant menu",
+      ],
+      keywordsEs: [
+        "menú QR para restaurante",
+        "menú QR bueno o malo",
+        "menú digital restaurante",
+        "menú QR marketing",
+        "Linktree para restaurante",
+        "menú sincronizado con punto de venta",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

@@ -866,4 +866,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/menu-qr-para-restaurante</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/menu-qr-para-restaurante" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/menu-qr-para-restaurante?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/menu-qr-para-restaurante" />
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
