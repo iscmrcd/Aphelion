@@ -336,22 +336,22 @@
 
 /* Home banner: palette for the scroll-responsive canvas wave field. */
 .home-hero {
-  --hero-base: oklch(0.985 0.006 242);
-  --hero-edge: oklch(0.915 0.025 248);
-  --hero-wave: oklch(0.83 0.056 242);
-  --hero-wave-alt: oklch(0.91 0.018 258);
-  --hero-dot: oklch(0.49 0.055 244);
+  --hero-base: oklch(0.985 0 0);
+  --hero-edge: oklch(0.92 0 0);
+  --hero-wave: oklch(0.84 0 0);
+  --hero-wave-alt: oklch(0.92 0 0);
+  --hero-dot: oklch(0.5 0 0);
   background: var(--hero-base);
 }
 .dark .home-hero {
-  --hero-base: oklch(0.16 0.012 252);
-  --hero-edge: oklch(0.11 0.014 250);
-  --hero-wave: oklch(0.31 0.05 246);
-  --hero-wave-alt: oklch(0.24 0.025 255);
-  --hero-dot: oklch(0.8 0.024 244);
+  --hero-base: oklch(0.16 0 0);
+  --hero-edge: oklch(0.11 0 0);
+  --hero-wave: oklch(0.32 0 0);
+  --hero-wave-alt: oklch(0.25 0 0);
+  --hero-dot: oklch(0.8 0 0);
 }
 .dark .home-hero .text-neutral-950 { color: var(--foreground); }
-.dark .home-hero .text-neutral-500 { color: oklch(0.87 0.01 250); }
+.dark .home-hero .text-neutral-500 { color: oklch(0.87 0 0); }
 .dark .home-hero img[alt="Aphelion"] { filter: invert(1); }
 
 
