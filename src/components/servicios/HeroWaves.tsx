@@ -46,18 +46,16 @@ export function HeroWaves() {
       ctx.fillStyle = background;
       ctx.fillRect(0, 0, width, height);
 
-      // Diffuse bands, not hard-edged polygons: the current stays behind the copy.
+      // Feather each ribbon with translucent strokes. Safari on iOS can ignore
+      // canvas context.filter, which otherwise exposes hard-edged bands.
       ctx.save();
-      ctx.filter = `blur(${Math.max(38, Math.min(90, width * 0.055))}px)`;
       for (let layer = 0; layer < 4; layer++) {
         const yAt = (x: number) => height * (
           [-0.18, 0.18, 0.76, 1.08][layer] +
           Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.3, 0.22, 0.27, 0.18][layer] +
           Math.sin(x / width * 9.2 - phase * 0.6 + layer) * 0.06
         );
-        ctx.globalAlpha = dark ? 0.33 : 0.55;
         ctx.strokeStyle = layer % 2 ? palette.waveAlt : palette.wave;
-        ctx.lineWidth = height * (layer % 2 ? 0.15 : 0.19);
         ctx.lineCap = "round";
         ctx.beginPath();
         for (let x = -width * 0.1; x <= width * 1.1; x += 12) {
@@ -65,7 +63,13 @@ export function HeroWaves() {
           if (x === -width * 0.1) ctx.moveTo(x, y);
           else ctx.lineTo(x, y);
         }
-        ctx.stroke();
+        // The widest stroke is nearly invisible; opacity accumulates gradually
+        // toward the center without relying on browser-specific blur support.
+        for (let pass = 0; pass < 10; pass++) {
+          ctx.lineWidth = height * (layer % 2 ? 0.34 : 0.4) * (1 - pass * 0.085);
+          ctx.globalAlpha = (dark ? 0.026 : 0.036) + pass * 0.002;
+          ctx.stroke();
+        }
       }
       ctx.restore();
 
