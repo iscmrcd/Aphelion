@@ -71,7 +71,7 @@ export function SiteHeader() {
     { to: "/servicios/agente-ia", label: t("AI Agent", "Agente IA") },
     { to: "/precios", label: t("Pricing", "Precios") },
     { to: "/recursos/diagnostico", label: t("Diagnostic", "Diagnóstico") },
-    { to: "/blog", label: t("Resources", "Recursos") },
+    { to: "/blog", label: "Blog" },
     { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;
 
