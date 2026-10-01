@@ -147,7 +147,7 @@ function BlogArticleNotFound() {
           to="/blog"
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
         >
-          {t("Back to Resources", "Volver a Recursos")}
+          {t("Back to Blog", "Volver al Blog")}
         </Link>
       </div>
     </main>
@@ -318,7 +318,7 @@ function ArticleHero({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
           to="/blog"
           className="mb-6 inline-flex items-center gap-1.5 text-sm text-white/70 transition hover:text-white"
         >
-          ← {t("Resources", "Recursos")}
+          ← Blog
         </Link>
         <div className="mb-5">
           <span className="rounded-full border-[0.5px] border-white/30 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-wider text-white backdrop-blur-sm">

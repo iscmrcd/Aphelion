@@ -51,24 +51,24 @@ export const Route = createFileRoute("/blog/")({
       path: "/blog",
       lang: loaderData?.lang ?? "en",
       en: {
-        title: "Resources — SEO, Ads & Marketing Guides | Aphelion",
+        title: "Blog — SEO, Ads & Marketing Guides | Aphelion",
         description:
           "Practical guides on SEO pricing, website costs, Google Ads, Meta Ads and real estate marketing in Mexico — written by the team that runs the campaigns.",
-        ogTitle: "Resources — Aphelion",
+        ogTitle: "Blog — Aphelion",
         ogDescription:
           "SEO, Ads and marketing guides for Mexican businesses, written by the team that runs the campaigns.",
       },
       es: {
-        title: "Recursos — Guías de SEO, Ads y Marketing | Aphelion",
+        title: "Blog — Guías de SEO, Ads y Marketing | Aphelion",
         description:
           "Guías prácticas sobre precios de SEO, costos de páginas web, Google Ads, Meta Ads y marketing inmobiliario en México — escritas por el equipo que corre las campañas.",
-        ogTitle: "Recursos — Aphelion",
+        ogTitle: "Blog — Aphelion",
         ogDescription:
           "Guías de SEO, Ads y marketing para negocios mexicanos, escritas por el equipo que corre las campañas.",
       },
       jsonLd: {
         "@type": "CollectionPage",
-        name: "Aphelion Resources",
+        name: "Blog de Aphelion",
         url: `${SITE_URL}/blog`,
         mainEntity: {
           "@type": "ItemList",
@@ -102,7 +102,7 @@ function BlogIndexPage() {
       <section className="border-b border-neutral-200 px-5 pt-20 pb-14 sm:pt-28 sm:pb-20">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
-            {t("Resources", "Recursos")}
+            Blog
           </p>
           <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-neutral-950">
             {t(
