@@ -10231,6 +10231,184 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "buen-fin-para-negocios",
+    cover: true,
+    title: "Buen Fin 2026 for Businesses: How to Sell More Without Giving Away Your Margin",
+    titleEs: "Buen Fin 2026 para negocios: cómo vender más sin regalar tu margen",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Buen Fin 2026 runs from November 13 to 17. Many businesses arrive late, set discounts by gut feeling and end up selling more while earning less. How to build an offer that leaves a profit, stay on the right side of Profeco and keep the customers after the weekend.",
+    excerptEs:
+      "El Buen Fin 2026 va del 13 al 17 de noviembre. Muchos negocios llegan tarde, ponen descuentos al tanteo y terminan vendiendo más pero ganando menos. Cómo armar una oferta que sí deje utilidad, cumplir con Profeco y quedarte con los clientes después del fin de semana.",
+    readingTime: 9,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Buen Fin 2026 runs from Friday, November 13 to Tuesday, November 17. For many small businesses it goes the same way every year: a week before, someone decides to put 20% off everything, posts a flyer on Instagram and waits. The weekend is busy, the till fills up and, when the numbers are done, there was more work for the same money or less. The problem is rarely the discount itself; it is not calculating it, starting late and letting every buyer leave without a way to sell to them again.",
+    ledeEs:
+      "El Buen Fin 2026 va del viernes 13 al martes 17 de noviembre. Para muchos negocios pequeños pasa igual cada año: una semana antes alguien decide poner 20% de descuento en todo, sube un flyer a Instagram y espera. El fin de semana hay movimiento, la caja se llena y, cuando se hacen las cuentas, hubo más trabajo por el mismo dinero o menos. El problema casi nunca es el descuento en sí; es no calcularlo, empezar tarde y dejar que cada comprador se vaya sin forma de volver a venderle.",
+    sections: [
+      {
+        id: "el-descuento-que-se-come-tu-margen",
+        heading: "The discount that eats your margin",
+        headingEs: "El descuento que se come tu margen",
+        body: [
+          "An example with round numbers: you sell a product for $100 that costs you $70, so your [[margin|margen]] is $30. With 20% off you sell it for $80 and keep $10. To earn the same $30 as before, **you need to sell three times as many units**. If your margin is thinner, the hit is even bigger. That is why the percentage should be the last decision, not the first: start with your margin and work out how many extra sales the discount requires.",
+          "Profeco distinguishes between an offer, which is a direct price reduction, and a promotion, which adds a benefit: a gift, the second item at half price, a bundle or free delivery. A promotion usually protects your margin better because the customer feels they are getting more without your price dropping. And if you accept [[interest-free installments|meses-sin-intereses]], ask your bank or terminal how much each term costs you, because that fee also comes out of your margin. We compare options in [the best point of sale in Mexico](/blog/mejor-punto-de-venta-mexico).",
+        ],
+        bodyEs: [
+          "Un ejemplo con números redondos: vendes en $100 un producto que te cuesta $70, así que tu [[margen|margen]] es de $30. Con 20% de descuento lo vendes en $80 y te quedan $10. Para ganar los mismos $30 de antes, **necesitas vender el triple de piezas**. Si tu margen es más delgado, el golpe es todavía mayor. Por eso el porcentaje debe ser la última decisión, no la primera: empieza por tu margen y calcula cuántas ventas extra exige el descuento.",
+          "Profeco distingue entre oferta, que es una rebaja directa en el precio, y promoción, que agrega un beneficio: un regalo, el segundo artículo a mitad de precio, un paquete o el envío gratis. Una promoción suele cuidar mejor tu margen porque el cliente siente que se lleva más sin que tu precio baje. Y si aceptas [[meses sin intereses|meses-sin-intereses]], pregunta a tu banco o terminal cuánto te cuesta cada plazo, porque esa comisión también sale de tu margen. Comparamos opciones en [el mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico).",
+        ],
+      },
+      {
+        id: "lo-que-dejo-el-buen-fin-2025",
+        heading: "What Buen Fin 2025 left behind",
+        headingEs: "Qué dejó el Buen Fin 2025",
+        body: [
+          "According to Concanaco-Servytur, Buen Fin 2025 reached record sales of **219 billion pesos**, 46 billion more than the previous edition, and registered businesses grew from 190,000 to 216,000. Credit and debit cards were the most used payment methods, and most purchases happened in physical stores, complemented by digital channels.",
+          "For a small business that means two things. There is more competition for the same customers' attention, so a generic flyer gets lost. And Buen Fin is not only for online stores: people still go to the shop, so your [[Google Business Profile|google-business-profile]] with your hours, photos and a post announcing your promotion matters as much as your social media. We explain how in [optimising your Google Business Profile](/blog/optimizar-google-business-profile).",
+        ],
+        bodyEs: [
+          "Según la Concanaco-Servytur, el Buen Fin 2025 alcanzó ventas récord de **219 mil millones de pesos**, 46 mil millones más que la edición anterior, y los negocios inscritos pasaron de 190 mil a 216 mil. Las tarjetas de crédito y débito fueron los métodos de pago más usados, y la mayor parte de las compras fue en tiendas físicas, complementada por canales digitales.",
+          "Para un negocio pequeño eso significa dos cosas. Hay más competencia por la atención de los mismos clientes, así que un flyer genérico se pierde. Y el Buen Fin no es solo para tiendas en línea: la gente sigue yendo al local, así que tu [[Perfil de Google|google-business-profile]] con horarios, fotos y una publicación que anuncie tu promoción importa tanto como tus redes. Cómo hacerlo lo explicamos en [optimizar tu Perfil de Google](/blog/optimizar-google-business-profile).",
+        ],
+      },
+      {
+        id: "profeco-no-infles-precios",
+        heading: "Profeco is watching: don't inflate prices",
+        headingEs: "Profeco está revisando: no infles precios",
+        body: [
+          "During Buen Fin 2025, [[Profeco|profeco]] reviewed **399 businesses in 29 cities** and nearly 46,000 products, and found at least three national chains that raised prices shortly before the event to make their discounts look bigger. It publishes who complied and who did not in its “Quién es Quién en los Precios” tool, so a fake discount costs you more in reputation than it earns.",
+          "The basic rules: the price on display must match the price charged, conditions and restrictions must be stated (unit limits, payment methods), and no discount cancels the minimum 90-day warranty or the right to a return. A simple habit protects you: save screenshots of your October prices so you can show the discount is real.",
+        ],
+        bodyEs: [
+          "Durante el Buen Fin 2025, la [[Profeco|profeco]] revisó **399 establecimientos en 29 ciudades** y casi 46 mil productos, y encontró al menos tres cadenas nacionales que subieron precios poco antes del evento para que sus descuentos se vieran más grandes. Publica quién cumplió y quién no en su herramienta “Quién es Quién en los Precios”, así que un descuento simulado te cuesta más en reputación de lo que te deja.",
+          "Las reglas básicas: el precio exhibido debe coincidir con el que se cobra, hay que informar condiciones y restricciones (límite de piezas, formas de pago), y ningún descuento anula la garantía mínima de 90 días ni el derecho a devolución. Un hábito sencillo te protege: guarda capturas de tus precios de octubre para poder demostrar que el descuento es real.",
+        ],
+      },
+      {
+        id: "inscribete-a-tiempo",
+        heading: "Register: it's free and closes on November 12",
+        headingEs: "Inscríbete: es gratis y cierra el 12 de noviembre",
+        body: [
+          "Registration is done at elbuenfin.org under “Inscripción de empresas”, and there is no charge to register or to use the logo. You need a valid RFC, a contact name, phone and email, your physical and tax address, your line of business and your website if you have one. The deadline is **November 12 at 11:59 p.m.**, the day before Buen Fin starts.",
+          "In return you get the official logo, a QR code customers can scan to confirm you are registered, a place in the official portal's advertising carousel with a link to your website, free online sales training from the Ministry of Economy, and the option to have Profeco review your advertising beforehand.",
+        ],
+        bodyEs: [
+          "La inscripción se hace en elbuenfin.org, en “Inscripción de empresas”, y no se cobra nada por registrarse ni por usar el logo. Necesitas RFC vigente, nombre de contacto, teléfono y correo, domicilio físico y fiscal, tu giro y tu página web si tienes. La fecha límite es el **12 de noviembre a las 23:59**, un día antes de que empiece el Buen Fin.",
+          "A cambio obtienes el logo oficial, un código QR para que el cliente confirme que estás inscrito, un lugar en el carrusel de publicidad del portal oficial con liga a tu página, capacitación gratuita en ventas en línea de la Secretaría de Economía y la opción de que Profeco revise tu publicidad antes de lanzarla.",
+        ],
+      },
+      {
+        id: "junta-tu-audiencia-antes",
+        heading: "Build your audience before, not on Friday",
+        headingEs: "Junta tu audiencia antes, no el viernes",
+        body: [
+          "[[Meta Ads|meta-ads]] and [[Google Ads|google-ads]] work as auctions: when more businesses compete for the same people, reaching each person tends to cost more, and that week everyone is competing. That is why the cheapest part of the work happens before. From now on, send people to a [[landing page|landing-page]] with a preview of your promotion and a “notify me” button via WhatsApp or email.",
+          "With the [[pixel|pixel]] installed on that page, during Buen Fin you can show your ads to the people who already showed interest; that is [[remarketing|remarketing]], and someone who already raised their hand is easier to convince than a stranger. We explain both in [what the Meta pixel is](/blog/que-es-el-pixel-de-meta) and [what remarketing is](/blog/que-es-remarketing), and how much to put in ads in [how much to invest in Facebook Ads](/blog/cuanto-invertir-en-facebook-ads).",
+        ],
+        bodyEs: [
+          "[[Meta Ads|meta-ads]] y [[Google Ads|google-ads]] funcionan como subastas: cuando más negocios compiten por la misma gente, llegar a cada persona tiende a costar más, y esa semana todos están compitiendo. Por eso la parte barata del trabajo se hace antes. Desde ya, manda a la gente a una [[landing page|landing-page]] con un adelanto de tu promoción y un botón de “avísame” por WhatsApp o correo.",
+          "Con el [[pixel|pixel]] instalado en esa página, durante el Buen Fin puedes mostrarle tus anuncios a quien ya mostró interés; eso es [[remarketing|remarketing]], y a alguien que ya levantó la mano es más fácil convencerlo que a un desconocido. Explicamos ambos en [qué es el pixel de Meta](/blog/que-es-el-pixel-de-meta) y [qué es el remarketing](/blog/que-es-remarketing), y cuánto meterle a anuncios en [cuánto invertir en Facebook Ads](/blog/cuanto-invertir-en-facebook-ads).",
+        ],
+      },
+      {
+        id: "durante-responde-y-guarda-el-dato",
+        heading: "During: reply fast and keep the contact",
+        headingEs: "Durante: responde rápido y guarda el dato",
+        body: [
+          "For five days, WhatsApp messages pile up, and every unanswered question is a sale that goes to whoever replied first. Prepare quick replies with prices, conditions and stock, keep your catalogue up to date and assign someone to answer. If the volume is high, [WhatsApp Business API](/blog/whatsapp-business-api) lets several people answer from the same number.",
+          "At every sale, capture name, WhatsApp, email with permission and what they bought, in your [[CRM|crm]] or at least in your [[point of sale|punto-de-venta]], and have your [[privacy notice|aviso-de-privacidad]] ready because you are collecting personal data. **Buen Fin is not won over the weekend; it is won with the customers who buy from you again in December.**",
+        ],
+        bodyEs: [
+          "Durante cinco días los mensajes de WhatsApp se acumulan, y cada pregunta sin responder es una venta que se va con quien contestó primero. Prepara respuestas rápidas con precios, condiciones y existencias, mantén tu catálogo al día y asigna a alguien para contestar. Si el volumen es alto, [WhatsApp Business API](/blog/whatsapp-business-api) permite que varias personas respondan desde el mismo número.",
+          "En cada venta, guarda nombre, WhatsApp, correo con permiso y qué compró, en tu [[CRM|crm]] o al menos en tu [[punto de venta|punto-de-venta]], y ten listo tu [[aviso de privacidad|aviso-de-privacidad]] porque estás recabando datos personales. **El Buen Fin no se gana el fin de semana; se gana con los clientes que te vuelven a comprar en diciembre.**",
+        ],
+      },
+      {
+        id: "despues-del-buen-fin",
+        heading: "After: December starts on November 18",
+        headingEs: "Después: diciembre empieza el 18 de noviembre",
+        body: [
+          "Within the following week, thank your buyers, ask for a Google review while the purchase is fresh and offer them something for December: a complementary product, a gift card or early access to your next promotion. [[Email marketing|email-marketing]] does this at almost no cost, as we explain in [email marketing for small businesses](/blog/email-marketing-para-pymes).",
+          "Service businesses can use Buen Fin differently: salons, clinics, restaurants and hotels can pre-sell packages or vouchers to be used in January. You get cash in November and fill dates that, in many businesses, are slow. The rule is the same: calculate the margin first and state the conditions clearly.",
+        ],
+        bodyEs: [
+          "En la semana siguiente, agradece a tus compradores, pide una reseña en Google mientras la compra está fresca y ofréceles algo para diciembre: un producto complementario, una tarjeta de regalo o acceso anticipado a tu próxima promoción. El [[email marketing|email-marketing]] hace esto casi sin costo, como explicamos en [email marketing para pymes](/blog/email-marketing-para-pymes).",
+          "Los negocios de servicios pueden usar el Buen Fin de otra forma: salones, clínicas, restaurantes y hoteles pueden prevender paquetes o certificados para usarse en enero. Entra dinero en noviembre y llenas fechas que, en muchos negocios, son flojas. La regla es la misma: calcula el margen primero y deja claras las condiciones.",
+        ],
+      },
+      {
+        id: "plan-de-tres-semanas",
+        heading: "A three-week plan",
+        headingEs: "Plan de tres semanas",
+        body: [
+          "Week of October 26: calculate your margin, decide between offer and promotion, register at elbuenfin.org and save screenshots of your current prices. Week of November 2: publish your landing page with the pixel, open your “notify me” list and post the preview on your Google profile and social media.",
+          "Week of November 9: start ads aimed at your list and the people who visited your page, prepare quick replies and decide who answers. From the 13th to the 17th: reply fast and capture every customer's details. From the 18th: follow-up, reviews and your December offer.",
+          "If you are not sure where to start, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first in your website, your ads and your follow-up.",
+        ],
+        bodyEs: [
+          "Semana del 26 de octubre: calcula tu margen, decide entre oferta y promoción, inscríbete en elbuenfin.org y guarda capturas de tus precios actuales. Semana del 2 de noviembre: publica tu landing page con el pixel, abre tu lista de “avísame” y sube el adelanto a tu Perfil de Google y a tus redes.",
+          "Semana del 9 de noviembre: arranca anuncios dirigidos a tu lista y a quien visitó tu página, prepara respuestas rápidas y define quién contesta. Del 13 al 17: responde rápido y guarda los datos de cada cliente. Del 18 en adelante: seguimiento, reseñas y tu oferta de diciembre.",
+          "Si no sabes por dónde empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero en tu página, tus anuncios y tu seguimiento.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuándo es el Buen Fin 2026?",
+        qEn: "When is Buen Fin 2026?",
+        a: "Del viernes 13 al martes 17 de noviembre de 2026, cinco días continuos. Los negocios pueden inscribirse gratis en elbuenfin.org hasta el 12 de noviembre a las 23:59.",
+        aEn: "From Friday, November 13 to Tuesday, November 17, 2026, five consecutive days. Businesses can register for free at elbuenfin.org until November 12 at 11:59 p.m.",
+      },
+      {
+        q: "¿Cuesta inscribir mi negocio en el Buen Fin?",
+        qEn: "Does it cost anything to register my business for Buen Fin?",
+        a: "No. La inscripción y el uso del logo oficial son gratuitos. Necesitas RFC vigente, datos de contacto, domicilio físico y fiscal, tu giro y tu página web si tienes.",
+        aEn: "No. Registration and use of the official logo are free. You need a valid RFC, contact details, physical and tax address, your line of business and your website if you have one.",
+      },
+      {
+        q: "¿Qué descuento conviene dar en el Buen Fin?",
+        qEn: "What discount should I offer during Buen Fin?",
+        a: "Depende de tu margen. Si ganas $30 de cada $100 y das 20% de descuento, necesitas vender el triple para ganar lo mismo. Calcula primero cuántas ventas extra necesitas y considera promociones como regalos o paquetes, que suelen cuidar mejor tu margen.",
+        aEn: "It depends on your margin. If you earn $30 out of every $100 and give 20% off, you need to sell three times as much to earn the same. Work out first how many extra sales you need and consider promotions such as gifts or bundles, which usually protect your margin better.",
+      },
+      {
+        q: "¿Qué pasa si subo mis precios antes del Buen Fin?",
+        qEn: "What happens if I raise my prices before Buen Fin?",
+        a: "Profeco vigila los precios antes y durante el evento. En 2025 revisó 399 establecimientos en 29 ciudades y exhibió a cadenas que simularon descuentos. Además del riesgo de una queja, pierdes la confianza del cliente. Guarda capturas de tus precios previos.",
+        aEn: "Profeco monitors prices before and during the event. In 2025 it reviewed 399 businesses in 29 cities and exposed chains that faked discounts. Beyond the risk of a complaint, you lose customer trust. Keep screenshots of your previous prices.",
+      },
+      {
+        q: "¿Cuándo debo empezar a anunciarme para el Buen Fin?",
+        qEn: "When should I start advertising for Buen Fin?",
+        a: "Unas tres semanas antes. Las primeras dos sirven para juntar audiencia con una landing page, el pixel y una lista de “avísame”; la última, para anunciarte con remarketing a quien ya mostró interés, antes de que la competencia encarezca los anuncios.",
+        aEn: "About three weeks before. The first two are for building an audience with a landing page, the pixel and a “notify me” list; the last one is for advertising with remarketing to people who already showed interest, before competition makes ads more expensive.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Buen Fin 2026 for businesses",
+        "Buen Fin 2026 dates",
+        "how to register for Buen Fin",
+        "Buen Fin discount strategy",
+        "Buen Fin Profeco rules",
+      ],
+      keywordsEs: [
+        "Buen Fin 2026 para negocios",
+        "cuándo es el Buen Fin 2026",
+        "cómo inscribir mi negocio en el Buen Fin",
+        "qué descuento dar en el Buen Fin",
+        "Profeco Buen Fin reglas",
+        "estrategia Buen Fin pymes",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

@@ -313,4 +313,22 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Una conexión entre dos sistemas para que se pasen información solos, por ejemplo tu página web y tu CRM, sin que nadie tenga que copiar y pegar.",
     defEn: "A connection between two systems so they pass information on their own, for example your website and your CRM, without anyone copying and pasting.",
   },
+  margen: {
+    term: "Margen",
+    termEn: "Margin",
+    def: "Lo que te queda de cada venta después de pagar lo que te costó el producto o servicio. Si vendes en $100 algo que te costó $70, tu margen es de $30.",
+    defEn: "What you keep from each sale after paying what the product or service cost you. If you sell for $100 something that cost you $70, your margin is $30.",
+  },
+  "meses-sin-intereses": {
+    term: "Meses sin intereses",
+    termEn: "Interest-free installments",
+    def: "El cliente paga en plazos sin intereses, pero el banco o la terminal le cobra una comisión al negocio por cada plazo. Esa comisión sale de tu ganancia.",
+    defEn: "The customer pays in installments with no interest, but the bank or card terminal charges the business a fee for each term. That fee comes out of your profit.",
+  },
+  profeco: {
+    term: "Profeco",
+    termEn: "Profeco",
+    def: "La Procuraduría Federal del Consumidor: la autoridad que vigila que los negocios respeten precios, ofertas y garantías, y que recibe las quejas de los clientes.",
+    defEn: "Mexico's Federal Consumer Protection Agency: the authority that checks that businesses honour prices, offers and warranties, and that handles customer complaints.",
+  },
 };
