@@ -12430,6 +12430,170 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "como-lanzar-una-preventa-inmobiliaria",
+    cover: true,
+    vertical: "inmobiliarias",
+    title: "How to Launch a Real Estate Pre-Sale: A Week-by-Week Plan",
+    titleEs: "Cómo lanzar una preventa inmobiliaria: el plan semana por semana",
+    category: "Real Estate Marketing",
+    categoryEs: "Marketing Inmobiliario",
+    excerpt:
+      "Many developments launch with renders and a PDF price list, start the ads and wait. A pre-sale is won before sales open: with everything ready, a waiting list, a launch week with momentum and construction progress turned into content. A step-by-step plan.",
+    excerptEs:
+      "Muchos desarrollos lanzan con renders y una lista de precios en PDF, prenden anuncios y esperan. Una preventa se gana antes de abrir la venta: con todo listo, una lista de espera, una semana de lanzamiento con impulso y el avance de obra convertido en contenido. Un plan paso a paso.",
+    readingTime: 9,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In a pre-sale, the buyer is not buying a house or a lot; they are buying a promise. That is why the first weeks decide a lot: a launch that sells well generates the trust and the cash flow to keep building, and one that starts slowly has to fight the doubt of “why is nobody buying?”. The usual mistake is to launch with renders, a PDF price list and ads pointing to an inbox. Here is a week-by-week plan to do it in order.",
+    ledeEs:
+      "En una preventa el comprador no está comprando una casa o un lote; está comprando una promesa. Por eso las primeras semanas deciden mucho: un lanzamiento que vende bien genera la confianza y el flujo para seguir construyendo, y uno que arranca lento tiene que pelear contra la duda de “¿por qué nadie está comprando?”. El error común es lanzar con renders, una lista de precios en PDF y anuncios que llevan a un correo. Este es un plan semana por semana para hacerlo en orden.",
+    sections: [
+      {
+        id: "lo-que-compra-el-cliente",
+        heading: "What the pre-sale buyer needs to see",
+        headingEs: "Lo que necesita ver quien compra en preventa",
+        body: [
+          "A pre-sale buyer accepts risk in exchange for a better price, and they reduce that risk by checking: who the developer is and what they have built before, which permits are in place, when the project will be delivered, what is included and how payments work. If those answers are not easy to find, the launch price is not enough.",
+          "So the first job of marketing in a pre-sale is not to generate traffic; it is to make the promise verifiable. Renders and a beautiful video help, but they must come with plans, timelines, payment schedules and the developer's track record.",
+        ],
+        bodyEs: [
+          "Quien compra en preventa acepta un riesgo a cambio de un mejor precio, y reduce ese riesgo revisando: quién es el desarrollador y qué ha construido antes, qué permisos tiene, cuándo se entrega, qué incluye y cómo son los pagos. Si esas respuestas no son fáciles de encontrar, el precio de lanzamiento no alcanza.",
+          "Por eso el primer trabajo del marketing en una preventa no es generar tráfico; es hacer la promesa comprobable. Los renders y un video bonito ayudan, pero tienen que ir con planos, tiempos, esquemas de pago y la trayectoria del desarrollador.",
+        ],
+      },
+      {
+        id: "antes-de-anunciar",
+        heading: "Before advertising: what must exist",
+        headingEs: "Antes de anunciar: lo que tiene que existir",
+        body: [
+          "Eight to four weeks before launch, as an example: renders and a virtual tour, a [[landing page|landing-page]] for the project with plans, amenities and location, a price list with payment schedules, the permits and documents you can show, a page of frequent questions and a [[CRM|crm]] ready to receive every contact. For lots and developments, an interactive map with real-time availability does what a PDF cannot, as we explain in [interactive lot maps](/blog/mapa-interactivo-de-lotes).",
+          "Prepare the sales team as well: the same answers to the same questions, a defined response time and a clear process to reserve. A launch that generates contacts nobody follows up wastes the most expensive part of the investment.",
+        ],
+        bodyEs: [
+          "Entre ocho y cuatro semanas antes del lanzamiento, como ejemplo: renders y recorrido virtual, una [[landing page|landing-page]] del proyecto con planos, amenidades y ubicación, lista de precios con esquemas de pago, los permisos y documentos que puedas mostrar, una página de preguntas frecuentes y un [[CRM|crm]] listo para recibir cada contacto. Para lotes y desarrollos, un mapa interactivo con disponibilidad en tiempo real hace lo que un PDF no puede, como explicamos en [mapa interactivo de lotes](/blog/mapa-interactivo-de-lotes).",
+          "Prepara también al equipo de ventas: las mismas respuestas a las mismas preguntas, un tiempo de respuesta definido y un proceso claro para apartar. Un lanzamiento que genera contactos que nadie atiende desperdicia la parte más cara de la inversión.",
+        ],
+      },
+      {
+        id: "lista-de-espera",
+        heading: "The waiting list: sell before you open",
+        headingEs: "La lista de espera: vende antes de abrir",
+        body: [
+          "Four weeks before launch, open a waiting list with a concrete benefit: early access to choose the unit or lot, or the launch price for the first ones. Ask two simple questions, such as whether they are buying to live or to invest and what budget range they have, so sales knows whom to call first.",
+          "**A pre-sale is won before sales open: on launch day you should have a list of interested buyers, not an empty page.** Feed the list with ads, your contacts, partner brokers and content about the project and the area.",
+        ],
+        bodyEs: [
+          "Cuatro semanas antes del lanzamiento, abre una lista de espera con un beneficio concreto: acceso anticipado para elegir unidad o lote, o el precio de lanzamiento para los primeros. Haz dos preguntas sencillas, como si compran para vivir o para invertir y qué rango de presupuesto tienen, para que ventas sepa a quién llamar primero.",
+          "**Una preventa se gana antes de abrir la venta: el día del lanzamiento deberías tener una lista de interesados, no una página vacía.** Alimenta la lista con anuncios, tus contactos, brokers aliados y contenido del proyecto y de la zona.",
+        ],
+      },
+      {
+        id: "semana-de-lanzamiento",
+        heading: "Launch week",
+        headingEs: "La semana de lanzamiento",
+        body: [
+          "Give the waiting list a head start of a day or two before opening to the public, with a clear deadline for the launch price. Hold an event on site or in the showroom, and stream it or record it for those who cannot come. Run [[Meta Ads|meta-ads]] to the list and to a [[lookalike audience|publico-similar]], and [[remarketing|remarketing]] to everyone who visited the page.",
+          "Every reservation is proof for the next buyer: with the buyers' permission, show progress publicly, such as “phase one, 60% reserved”, only if it is true. Honest scarcity sells; invented scarcity destroys trust as soon as someone checks.",
+        ],
+        bodyEs: [
+          "Dale a la lista de espera una ventaja de uno o dos días antes de abrir al público, con una fecha límite clara para el precio de lanzamiento. Haz un evento en el sitio o en el showroom, y transmítelo o grábalo para quien no pueda ir. Corre anuncios en [[Meta Ads|meta-ads]] a la lista y a un [[público similar|publico-similar]], y [[remarketing|remarketing]] a todos los que visitaron la página.",
+          "Cada apartado es prueba para el siguiente comprador: con permiso de los compradores, muestra el avance de forma pública, como “etapa uno, 60% apartada”, solo si es verdad. La escasez honesta vende; la inventada destruye la confianza en cuanto alguien la comprueba.",
+        ],
+      },
+      {
+        id: "avance-de-obra",
+        heading: "After launch: construction progress as content",
+        headingEs: "Después del lanzamiento: el avance de obra como contenido",
+        body: [
+          "Once the first wave passes, construction progress becomes your best content. A monthly drone video showing how the project advances answers the main fear of the pre-sale buyer, “will they deliver?”, and keeps the project alive in ads, social media and follow-up messages. Drone flights must follow the rules we explain in [drone regulation in Mexico](/blog/regulacion-de-drones-en-mexico).",
+          "If prices rise by stage, announce each increase in advance to the list and to brokers: it creates a real reason to decide and rewards those who trusted early.",
+        ],
+        bodyEs: [
+          "Pasada la primera ola, el avance de obra se vuelve tu mejor contenido. Un video mensual con dron que muestre cómo avanza el proyecto contesta el miedo principal de quien compra en preventa, “¿sí van a entregar?”, y mantiene vivo el proyecto en anuncios, redes y mensajes de seguimiento. Los vuelos con dron deben seguir las reglas que explicamos en [regulación de drones en México](/blog/regulacion-de-drones-en-mexico).",
+          "Si los precios suben por etapa, anuncia cada aumento con anticipación a la lista y a los brokers: crea una razón real para decidir y premia a quien confió primero.",
+        ],
+      },
+      {
+        id: "brokers-aliados",
+        heading: "Partner brokers as a channel",
+        headingEs: "Los brokers aliados como canal",
+        body: [
+          "External brokers can sell a significant part of a development if you make their job easy: a kit with the project sheet, photos, video, plans, price list and payment schedules, a clear commission and a fast way to check availability. If the project targets foreign buyers, prepare the kit in English too, as we explain in [selling to buyers from the United States and Canada](/blog/vender-a-compradores-extranjeros-baja-california).",
+          "Track which broker brings each reservation in your CRM; it tells you whom to support and whom to stop sending material to.",
+        ],
+        bodyEs: [
+          "Los brokers externos pueden vender una parte importante de un desarrollo si les facilitas el trabajo: un kit con la ficha del proyecto, fotos, video, planos, lista de precios y esquemas de pago, una comisión clara y una forma rápida de consultar disponibilidad. Si el proyecto apunta a compradores extranjeros, prepara el kit también en inglés, como explicamos en [venderle a compradores de Estados Unidos y Canadá](/blog/vender-a-compradores-extranjeros-baja-california).",
+          "Registra en tu CRM qué broker trae cada apartado; te dice a quién apoyar y a quién dejar de mandarle material.",
+        ],
+      },
+      {
+        id: "que-medir",
+        heading: "What to measure",
+        headingEs: "Qué medir",
+        body: [
+          "Each week: new contacts by source, visits to the site or showroom, reservations and cost per reservation. That last number is the one that matters: a cheap [[lead|lead]] that never visits is worth less than an expensive one who reserves. We explain how budgets differ between pre-sale and finished inventory in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).",
+          "Our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first before your next launch.",
+        ],
+        bodyEs: [
+          "Cada semana: contactos nuevos por fuente, visitas al sitio o al showroom, apartados y costo por apartado. Ese último número es el que importa: un [[prospecto|lead]] barato que nunca visita vale menos que uno caro que aparta. Explicamos cómo cambian los presupuestos entre preventa e inventario terminado en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).",
+          "Nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero antes de tu próximo lanzamiento.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Con cuánto tiempo se prepara el lanzamiento de una preventa?",
+        qEn: "How far in advance should a pre-sale launch be prepared?",
+        a: "Como referencia, entre ocho y cuatro semanas antes para tener renders, página, precios, documentos y CRM, y cuatro semanas antes para abrir una lista de espera. Depende del tamaño del proyecto.",
+        aEn: "As a reference, eight to four weeks before to have renders, the website, prices, documents and a CRM, and four weeks before to open a waiting list. It depends on the size of the project.",
+      },
+      {
+        q: "¿Qué necesita ver un comprador en preventa?",
+        qEn: "What does a pre-sale buyer need to see?",
+        a: "Quién es el desarrollador y qué ha construido, qué permisos tiene, cuándo se entrega, qué incluye y cómo son los pagos, además de renders, planos y ubicación.",
+        aEn: "Who the developer is and what they have built, which permits are in place, when it will be delivered, what is included and how payments work, as well as renders, plans and location.",
+      },
+      {
+        q: "¿Para qué sirve una lista de espera en una preventa?",
+        qEn: "What is a waiting list for in a pre-sale?",
+        a: "Para llegar al lanzamiento con interesados ya identificados y no con una página vacía. Ofrece un beneficio concreto, como acceso anticipado o precio de lanzamiento, y pregunta si compran para vivir o invertir.",
+        aEn: "To reach launch day with buyers already identified rather than an empty page. Offer a concrete benefit, such as early access or the launch price, and ask whether they are buying to live or to invest.",
+      },
+      {
+        q: "¿Qué contenido publicar después del lanzamiento?",
+        qEn: "What content should be published after launch?",
+        a: "El avance de obra, sobre todo en video mensual con dron. Contesta la duda principal del comprador en preventa, si sí van a entregar, y mantiene vivo el proyecto en anuncios y seguimiento.",
+        aEn: "Construction progress, especially in a monthly drone video. It answers the pre-sale buyer's main doubt, whether the project will be delivered, and keeps it alive in ads and follow-up.",
+      },
+      {
+        q: "¿Cómo trabajo con brokers externos en una preventa?",
+        qEn: "How do I work with external brokers on a pre-sale?",
+        a: "Dales un kit con ficha, fotos, video, planos, precios y esquemas de pago, una comisión clara y una forma rápida de consultar disponibilidad. Registra en tu CRM qué broker trae cada apartado.",
+        aEn: "Give them a kit with the project sheet, photos, video, plans, prices and payment schedules, a clear commission and a fast way to check availability. Track in your CRM which broker brings each reservation.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "real estate pre-sale launch plan",
+        "how to launch a development",
+        "pre-sale marketing Mexico",
+        "real estate waiting list",
+        "development launch week",
+      ],
+      keywordsEs: [
+        "cómo lanzar una preventa inmobiliaria",
+        "marketing para preventa",
+        "lanzamiento de desarrollo inmobiliario",
+        "lista de espera preventa",
+        "vender lotes en preventa",
+        "brokers aliados desarrollo",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
