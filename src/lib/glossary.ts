@@ -367,4 +367,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Cuando alguien agrega productos al carrito de tu tienda y se va sin pagar. Un correo o WhatsApp automático que le recuerda lo que dejó ayuda a recuperar parte de esas ventas.",
     defEn: "When someone adds products to your store's cart and leaves without paying. An automatic email or WhatsApp reminding them of what they left helps recover some of those sales.",
   },
+  "video-log": {
+    term: "Video en LOG",
+    termEn: "LOG video",
+    def: "Un modo de grabación que guarda más detalle en luces y sombras, útil en interiores con ventanas brillantes. Se ve deslavado hasta que le corriges el color al editar.",
+    defEn: "A recording mode that keeps more detail in highlights and shadows, useful in interiors with bright windows. It looks washed out until you colour-correct it in editing.",
+  },
 };

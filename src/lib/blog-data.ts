@@ -11188,6 +11188,170 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "marketing-digital-para-broker-inmobiliario",
+    cover: true,
+    vertical: "inmobiliarias",
+    title: "How to Start Your Digital Marketing as a Real Estate Agent, in Stages and Without Wasting Money",
+    titleEs: "Cómo empezar tu marketing digital como broker inmobiliario, por etapas y sin tirar dinero",
+    category: "Real Estate Marketing",
+    categoryEs: "Marketing Inmobiliario",
+    excerpt:
+      "Many new agents spend their first commission on a photographer, a drone and ads before having a single follower; others wait for everything to be perfect and never publish. The healthy path goes in stages: your phone and a microphone, consistent content, then your brand, then ads, then professionals.",
+    excerptEs:
+      "Muchos brokers que empiezan gastan su primera comisión en fotógrafo, dron y anuncios antes de tener un solo seguidor; otros esperan a tenerlo todo perfecto y nunca publican. El camino sano va por etapas: tu celular y un micrófono, constancia, luego tu marca, luego anuncios y después profesionales.",
+    readingTime: 9,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "When you start as a real estate agent, it is tempting to think you need everything at once: professional photos, drone video, a website and ads. Some spend their first commission before earning it; others wait until they have it all and never publish anything. Neither works. What works is going in stages, where each one pays for the next: first consistency with what you already have, then your brand, then advertising and, when the properties justify it, professionals.",
+    ledeEs:
+      "Cuando empiezas como broker inmobiliario es tentador pensar que necesitas todo de golpe: fotos profesionales, video con dron, página web y anuncios. Hay quien se gasta su primera comisión antes de cobrarla y hay quien espera a tenerlo todo y nunca publica nada. Ninguna de las dos funciona. Lo que funciona es ir por etapas, donde cada una paga la siguiente: primero constancia con lo que ya tienes, luego tu marca, después publicidad y, cuando las propiedades lo justifiquen, profesionales.",
+    sections: [
+      {
+        id: "etapa-1-tu-celular",
+        heading: "Stage 1: your phone is enough",
+        headingEs: "Etapa 1: tu celular es suficiente",
+        body: [
+          "A recent phone records video good enough for property tours and reels. What makes the difference is technique: record in the morning with curtains open, move slowly, keep the phone level and use a small tripod or a gimbal. Record vertical for reels and horizontal for full tours on YouTube.",
+          "If you have an iPhone Pro from the 15 Pro onwards, it can record in [[LOG|video-log]], which keeps more detail in interiors with bright windows. It only helps if you are going to edit: LOG footage looks washed out until you colour-correct it, and the files are heavy. If you are not going to edit, the normal mode with HDR gives you a better result with less work.",
+        ],
+        bodyEs: [
+          "Un celular reciente graba video suficiente para recorridos de propiedades y reels. Lo que hace la diferencia es la técnica: graba en la mañana con las cortinas abiertas, muévete despacio, mantén el celular nivelado y usa un tripié pequeño o un estabilizador. Graba vertical para reels y horizontal para recorridos completos en YouTube.",
+          "Si tienes un iPhone Pro del 15 Pro en adelante, puede grabar en [[LOG|video-log]], que guarda más detalle en interiores con ventanas brillantes. Solo sirve si vas a editar: el video en LOG se ve deslavado hasta que le corriges el color, y los archivos pesan mucho. Si no vas a editar, el modo normal con HDR te da mejor resultado con menos trabajo.",
+        ],
+      },
+      {
+        id: "el-audio-importa",
+        heading: "Sound matters more than the image",
+        headingEs: "El audio importa más que la imagen",
+        body: [
+          "A video that looks average but sounds clear gets watched to the end; one with wind, echo or distant sound gets skipped. A wireless clip-on microphone, such as the DJI Mic or similar, is probably the best first investment you can make: it removes the echo of empty houses and the wind on terraces and beaches.",
+          "Talk to the camera as you would talk to a client on a visit: what the property has, who it is for and what is nearby. **Your face and your voice are what turn a listing into a reason to call you and not another agent.**",
+        ],
+        bodyEs: [
+          "Un video que se ve normal pero se oye claro se termina de ver; uno con viento, eco o sonido lejano se salta. Un micrófono inalámbrico de solapa, como el DJI Mic o similar, probablemente es la mejor primera inversión que puedes hacer: quita el eco de las casas vacías y el viento en terrazas y playas.",
+          "Háblale a la cámara como le hablarías a un cliente en una visita: qué tiene la propiedad, para quién es y qué hay cerca. **Tu cara y tu voz son lo que convierte un listado en una razón para llamarte a ti y no a otro agente.**",
+        ],
+      },
+      {
+        id: "date-de-alta",
+        heading: "Set up where people will look for you",
+        headingEs: "Date de alta donde te van a buscar",
+        body: [
+          "According to DataReportal, in late 2025 Facebook's advertising tools reached **93.5 million users in Mexico**, YouTube 85 million and Instagram 53.6 million. Open professional accounts on Instagram, Facebook and TikTok, a YouTube channel for full tours, and WhatsApp Business with a catalogue of your properties and quick replies.",
+          "If you work a specific area, create your [[Google Business Profile|google-business-profile]] too: many people search for “real estate agent in Ensenada” and choose from the map. We explain how to set it up in [optimising your Google Business Profile](/blog/optimizar-google-business-profile).",
+        ],
+        bodyEs: [
+          "Según DataReportal, a finales de 2025 las herramientas de publicidad de Facebook alcanzaban **93.5 millones de usuarios en México**, YouTube 85 millones e Instagram 53.6 millones. Abre cuentas profesionales en Instagram, Facebook y TikTok, un canal de YouTube para recorridos completos y WhatsApp Business con un catálogo de tus propiedades y respuestas rápidas.",
+          "Si trabajas una zona concreta, crea también tu [[Perfil de Google|google-business-profile]]: mucha gente busca “agente inmobiliario en Ensenada” y elige desde el mapa. Explicamos cómo configurarlo en [optimizar tu Perfil de Google](/blog/optimizar-google-business-profile).",
+        ],
+      },
+      {
+        id: "reels-que-traen-clientes",
+        heading: "Reels that bring clients, not just likes",
+        headingEs: "Reels que traen clientes, no solo likes",
+        body: [
+          "Mix three kinds of content: tours of your properties, guides to the areas you work (what living in that neighbourhood is like, schools, prices, traffic) and short explanations of the process, such as costs at the notary or how a foreigner buys on the coast through a bank trust. The first sells a property; the other two make people remember you when they are ready to buy or sell.",
+          "Getting paid for your content starts with turning views into conversations: end each reel with a clear next step, such as “send me a WhatsApp for the price and location”, and save every contact as a [[lead|lead]]. Consistency beats perfection: a few videos every week for months do more than one perfect video a month. We cover the rest in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).",
+        ],
+        bodyEs: [
+          "Combina tres tipos de contenido: recorridos de tus propiedades, guías de las zonas donde trabajas (cómo es vivir en esa colonia, escuelas, precios, tráfico) y explicaciones cortas del proceso, como los gastos de notaría o cómo compra un extranjero en la costa con un fideicomiso bancario. El primero vende una propiedad; los otros dos hacen que te recuerden cuando estén listos para comprar o vender.",
+          "Monetizar tu contenido empieza por convertir vistas en conversaciones: cierra cada reel con un siguiente paso claro, como “mándame WhatsApp para precio y ubicación”, y guarda cada contacto como [[prospecto|lead]]. La constancia le gana a la perfección: unos cuantos videos cada semana durante meses hacen más que un video perfecto al mes. Lo demás lo explicamos en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).",
+        ],
+      },
+      {
+        id: "etapa-2-tu-marca",
+        heading: "Stage 2: your first investment is your brand",
+        headingEs: "Etapa 2: tu primera inversión es tu marca",
+        body: [
+          "With your first commissions, invest in looking professional everywhere: a logo, colours, templates for your listings and reels, and a simple page with your properties and a contact form. A consistent brand makes a seller trust you with their property and a buyer remember your name. We explain what each level includes in [how much branding costs in Mexico](/blog/cuanto-cuesta-un-branding-en-mexico).",
+          "**Invest in order: first consistency, then brand, then ads.** Advertising an inconsistent profile with three videos is paying to send people somewhere that does not convince them.",
+        ],
+        bodyEs: [
+          "Con tus primeras comisiones, invierte en verte profesional en todos lados: logo, colores, plantillas para tus listados y reels, y una página sencilla con tus propiedades y un formulario de contacto. Una marca consistente hace que un vendedor te confíe su propiedad y que un comprador recuerde tu nombre. Explicamos qué incluye cada nivel en [cuánto cuesta un branding en México](/blog/cuanto-cuesta-un-branding-en-mexico).",
+          "**Invierte en orden: primero constancia, luego marca, luego anuncios.** Anunciar un perfil inconsistente con tres videos es pagar para mandar gente a un lugar que no la convence.",
+        ],
+      },
+      {
+        id: "etapa-3-anuncios",
+        heading: "Stage 3: now, ads",
+        headingEs: "Etapa 3: ahora sí, anuncios",
+        body: [
+          "When you already publish consistently and your profile inspires trust, [[Meta Ads|meta-ads]] multiply what works: promote your best tours to people in your area, use lead forms and, with the [[pixel|pixel]] on your page, show [[remarketing|remarketing]] ads to those who already viewed a property. Start with a small budget, measure what each conversation costs and scale what works.",
+          "How much to invest depends on your ticket and your area; we break it down in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario). And every lead you pay for needs fast follow-up, as we explain in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).",
+        ],
+        bodyEs: [
+          "Cuando ya publicas con constancia y tu perfil da confianza, [[Meta Ads|meta-ads]] multiplica lo que funciona: promueve tus mejores recorridos a gente de tu zona, usa formularios de contacto y, con el [[pixel|pixel]] en tu página, muestra anuncios de [[remarketing|remarketing]] a quien ya vio una propiedad. Empieza con un presupuesto chico, mide cuánto te cuesta cada conversación y escala lo que funciona.",
+          "Cuánto invertir depende de tu ticket y tu zona; lo desglosamos en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario). Y cada prospecto que pagas necesita seguimiento rápido, como explicamos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).",
+        ],
+      },
+      {
+        id: "etapa-4-profesionales",
+        heading: "Stage 4: photographer, videographer and drone",
+        headingEs: "Etapa 4: fotógrafo, videógrafo y dron",
+        body: [
+          "Hire professionals when the property justifies it, such as homes with a view, coastal properties, land or high-ticket listings, or when your time is worth more selling than editing. Aerial video shows the location, the view and the surroundings in a way the phone cannot, and drone flights must follow [[AFAC|afac]] rules, which we explain in [drone regulation in Mexico](/blog/regulacion-de-drones-en-mexico).",
+          "At this stage a [[CRM|crm]] also stops being optional, because you will have more leads than you can remember. If you want to know what to fix first, our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes.",
+        ],
+        bodyEs: [
+          "Contrata profesionales cuando la propiedad lo justifique, como casas con vista, propiedades en la costa, terrenos o listados de ticket alto, o cuando tu tiempo valga más vendiendo que editando. El video aéreo muestra la ubicación, la vista y el entorno como el celular no puede, y los vuelos con dron deben seguir las reglas de la [[AFAC|afac]], que explicamos en [regulación de drones en México](/blog/regulacion-de-drones-en-mexico).",
+          "En esta etapa un [[CRM|crm]] también deja de ser opcional, porque vas a tener más prospectos de los que puedes recordar. Si quieres saber qué corregir primero, nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te lo dice en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué necesito para empezar mi marketing como broker inmobiliario?",
+        qEn: "What do I need to start my marketing as a real estate agent?",
+        a: "Tu celular, un micrófono inalámbrico de solapa, un tripié o estabilizador y cuentas profesionales en Instagram, Facebook, TikTok, YouTube y WhatsApp Business. Lo más importante es publicar con constancia.",
+        aEn: "Your phone, a wireless clip-on microphone, a tripod or gimbal and professional accounts on Instagram, Facebook, TikTok, YouTube and WhatsApp Business. The most important thing is to publish consistently.",
+      },
+      {
+        q: "¿Conviene grabar en LOG con el celular?",
+        qEn: "Should I record in LOG with my phone?",
+        a: "Solo si vas a editar. El LOG guarda más detalle en interiores con ventanas brillantes, pero se ve deslavado hasta que corriges el color y los archivos pesan mucho. Si no editas, usa el modo normal con HDR.",
+        aEn: "Only if you are going to edit. LOG keeps more detail in interiors with bright windows, but it looks washed out until you colour-correct it and the files are heavy. If you do not edit, use the normal mode with HDR.",
+      },
+      {
+        q: "¿Cuál debe ser mi primera inversión?",
+        qEn: "What should my first investment be?",
+        a: "Un buen micrófono al empezar, y con tus primeras comisiones, tu marca: logo, colores, plantillas y una página sencilla con tus propiedades. Los anuncios vienen después, cuando tu perfil ya da confianza.",
+        aEn: "A good microphone at the start and, with your first commissions, your brand: logo, colours, templates and a simple page with your properties. Ads come later, once your profile inspires trust.",
+      },
+      {
+        q: "¿Qué tipo de contenido publicar como agente inmobiliario?",
+        qEn: "What content should a real estate agent publish?",
+        a: "Recorridos de propiedades, guías de las zonas donde trabajas y explicaciones cortas del proceso de compra o venta. Cierra cada video con un siguiente paso claro, como escribirte por WhatsApp.",
+        aEn: "Property tours, guides to the areas you work and short explanations of the buying or selling process. End each video with a clear next step, such as messaging you on WhatsApp.",
+      },
+      {
+        q: "¿Cuándo contratar fotógrafo o video con dron?",
+        qEn: "When should I hire a photographer or drone video?",
+        a: "Cuando la propiedad lo justifique, como casas con vista, costa, terrenos o ticket alto, o cuando tu tiempo valga más vendiendo que editando. Los vuelos con dron deben cumplir las reglas de la AFAC.",
+        aEn: "When the property justifies it, such as homes with a view, coastal properties, land or high-ticket listings, or when your time is worth more selling than editing. Drone flights must follow AFAC rules.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "real estate agent digital marketing",
+        "how to start as a real estate agent online",
+        "real estate reels",
+        "real estate agent branding",
+        "real estate video with phone",
+      ],
+      keywordsEs: [
+        "marketing digital para broker inmobiliario",
+        "cómo empezar como agente inmobiliario en redes",
+        "reels inmobiliarios",
+        "grabar propiedades con celular",
+        "branding para agente inmobiliario",
+        "anuncios para inmobiliarias",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
