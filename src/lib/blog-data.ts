@@ -10560,6 +10560,170 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "posadas-y-cenas-de-fin-de-ano-restaurante",
+    cover: true,
+    vertical: "restaurantes",
+    title: "Christmas Parties and Year-End Dinners: How to Fill Your Restaurant with Groups in December",
+    titleEs: "Posadas y cenas de fin de año: cómo llenar tu restaurante con grupos en diciembre",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "December is the month when groups book, but many restaurants wait for the phone to ring, quote by hand and hold dates without a deposit. How to prepare packages, a page that sells them and a booking process that reduces cancellations, before your competitors do.",
+    excerptEs:
+      "Diciembre es el mes en que los grupos reservan, pero muchos restaurantes esperan a que suene el teléfono, cotizan a mano y apartan fechas sin anticipo. Cómo preparar paquetes, una página que los venda y un proceso de reservas que reduzca cancelaciones, antes que tu competencia.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Every year the same thing happens: in mid-November the messages start arriving asking for “a quote for 40 people”, and the restaurant replies days later with a number written in a chat. Meanwhile, the person organising the party has already received three clear proposals from other places. Christmas parties and year-end dinners are not won in December; they are won in the weeks before, by whoever has their packages ready, replies first and makes booking easy.",
+    ledeEs:
+      "Cada año pasa lo mismo: a mediados de noviembre empiezan a llegar mensajes pidiendo “una cotización para 40 personas”, y el restaurante responde días después con un número escrito en un chat. Mientras tanto, quien organiza la posada ya recibió tres propuestas claras de otros lugares. Las posadas y cenas de fin de año no se ganan en diciembre; se ganan en las semanas previas, con quien tiene sus paquetes listos, responde primero y hace fácil reservar.",
+    sections: [
+      {
+        id: "los-grupos-reservan-antes",
+        heading: "Groups book earlier than you think",
+        headingEs: "Los grupos reservan antes de lo que crees",
+        body: [
+          "For the 2025 season, Canirac Baja California expected an increase of **around 25%** in December restaurant sales, driven by Christmas parties, work gatherings and celebrations with family and friends. It also pointed out that year-end menus and group packages intensify right after the first and second week of November, and that Christmas dinner bookings were already coming in by late November.",
+          "The person who organises a company party usually compares two or three options and decides early, because they need to confirm with their boss and their team. If your packages are not ready by early November, you are competing for the dates and groups that are left.",
+        ],
+        bodyEs: [
+          "Para la temporada 2025, la Canirac Baja California esperaba un incremento de **alrededor de 25%** en las ventas de restaurantes en diciembre, impulsado por posadas, reuniones de trabajo y celebraciones entre familia y amigos. También señaló que los menús de fin de año y los paquetes para grupos se intensifican justo después de la primera y segunda semana de noviembre, y que a finales de noviembre ya se registraban reservaciones para cenas navideñas.",
+          "Quien organiza la posada de una empresa suele comparar dos o tres opciones y decide pronto, porque tiene que confirmar con su jefe y con su equipo. Si tus paquetes no están listos a principios de noviembre, compites por las fechas y los grupos que quedan.",
+        ],
+      },
+      {
+        id: "paquetes-no-cotizaciones",
+        heading: "Packages, not quotes by hand",
+        headingEs: "Paquetes, no cotizaciones a mano",
+        body: [
+          "Prepare two or three closed packages with a price per person: for example, a three-course menu; the same menu with drinks for three hours; and a premium option with a private area. State the minimum number of guests, the duration, what is included and what is not (tip, decoration, music, extra hours) and the available dates.",
+          "A clear package lets the organiser decide without calling you five times and compare what they actually get, not only the price. It also lets your team answer in minutes instead of building a quote from scratch for every request.",
+        ],
+        bodyEs: [
+          "Prepara dos o tres paquetes cerrados con precio por persona: por ejemplo, un menú de tres tiempos; el mismo menú con bebidas por tres horas, y una opción premium con área privada. Indica el mínimo de personas, la duración, qué incluye y qué no (propina, decoración, música, horas extra) y las fechas disponibles.",
+          "Un paquete claro deja que el organizador decida sin llamarte cinco veces y compare lo que de verdad recibe, no solo el precio. Además, permite que tu equipo responda en minutos en vez de armar una cotización desde cero para cada solicitud.",
+        ],
+      },
+      {
+        id: "una-pagina-para-tus-eventos",
+        heading: "A page for your December events",
+        headingEs: "Una página para tus eventos de diciembre",
+        body: [
+          "Put the packages on a [[landing page|landing-page]] with photos of the space set up for groups, capacity, location, parking and a short form: date, number of people, company and preferred package. Each request is a [[lead|lead]] that should arrive straight in your WhatsApp or your [[CRM|crm]], not get lost in an inbox. We explain how in [connecting forms to a CRM](/blog/conectar-formularios-a-crm).",
+          "The same page is the link you share in every reply, every ad and your Google profile. It does not need to be complex; it needs to answer the organiser's questions before they ask. Our [landing page guide](/blog/guia-landing-pages) covers what to include.",
+        ],
+        bodyEs: [
+          "Pon los paquetes en una [[landing page|landing-page]] con fotos del espacio montado para grupos, capacidad, ubicación, estacionamiento y un formulario corto: fecha, número de personas, empresa y paquete de interés. Cada solicitud es un [[prospecto|lead]] que debe llegar directo a tu WhatsApp o a tu [[CRM|crm]], no perderse en un correo. Cómo hacerlo lo explicamos en [conectar formularios a un CRM](/blog/conectar-formularios-a-crm).",
+          "Esa misma página es la liga que compartes en cada respuesta, en cada anuncio y en tu Perfil de Google. No tiene que ser compleja; tiene que contestar las dudas del organizador antes de que las pregunte. Nuestra [guía de landing pages](/blog/guia-landing-pages) explica qué incluir.",
+        ],
+      },
+      {
+        id: "anticipo-y-confirmacion",
+        heading: "Deposit and confirmation",
+        headingEs: "Anticipo y confirmación",
+        body: [
+          "A date held without a deposit is a date you can lose in the busiest month of the year. Ask for a deposit to confirm, according to your own policy, and send a written confirmation with the date, time, package, number of guests, the deadline to give the final headcount and the cancellation conditions.",
+          "Stating the conditions in advance avoids arguments later and is part of informing the customer clearly. A reminder a week before and another two days before, by WhatsApp, helps confirm the final number and reduces surprises in the kitchen.",
+        ],
+        bodyEs: [
+          "Una fecha apartada sin anticipo es una fecha que puedes perder en el mes más ocupado del año. Pide un anticipo para confirmar, según tu propia política, y manda una confirmación por escrito con fecha, horario, paquete, número de personas, el plazo para dar el número final y las condiciones de cancelación.",
+          "Dejar claras las condiciones desde el inicio evita discusiones después y es parte de informar bien al cliente. Un recordatorio una semana antes y otro dos días antes, por WhatsApp, ayuda a confirmar el número final y reduce sorpresas en la cocina.",
+        ],
+      },
+      {
+        id: "donde-anunciarlo",
+        heading: "Where to promote it",
+        headingEs: "Dónde anunciarlo",
+        body: [
+          "Start with who already knows you: the companies and groups that celebrated with you last year and your regular customers. A personal message with the packages to them is worth more than any ad. Then publish the packages on your [[Google Business Profile|google-business-profile]] with photos of past events, as we explain in [optimising your Google Business Profile](/blog/optimizar-google-business-profile).",
+          "For new groups, [[Meta Ads|meta-ads]] segmented by area work well, especially around offices, industrial parks and business areas. With the [[pixel|pixel]] on your events page you can show [[remarketing|remarketing]] ads to those who visited it and did not book. We explain the setup in our [Meta Ads guide](/blog/guia-meta-ads).",
+        ],
+        bodyEs: [
+          "Empieza por quien ya te conoce: las empresas y grupos que celebraron contigo el año pasado y tus clientes frecuentes. Un mensaje personal con los paquetes vale más que cualquier anuncio. Después publica los paquetes en tu [[Perfil de Google|google-business-profile]] con fotos de eventos anteriores, como explicamos en [optimizar tu Perfil de Google](/blog/optimizar-google-business-profile).",
+          "Para grupos nuevos, funcionan bien los anuncios en [[Meta Ads|meta-ads]] segmentados por zona, sobre todo cerca de oficinas, parques industriales y zonas de negocios. Con el [[pixel|pixel]] en tu página de eventos puedes mostrar anuncios de [[remarketing|remarketing]] a quien la visitó y no reservó. Explicamos la configuración en nuestra [guía de Meta Ads](/blog/guia-meta-ads).",
+        ],
+      },
+      {
+        id: "despues-de-la-posada",
+        heading: "After the party",
+        headingEs: "Después de la posada",
+        body: [
+          "The day after, thank the organiser, ask for a Google review and, with their permission, keep some photos for next year's page. Save their details: that person also organises birthdays, team meetings and client dinners throughout the year.",
+          "In January, send them a message with your options for corporate events. **A well-served Christmas party is next year's corporate client.**",
+        ],
+        bodyEs: [
+          "Al día siguiente, agradece al organizador, pide una reseña en Google y, con su permiso, guarda algunas fotos para la página del próximo año. Guarda sus datos: esa persona también organiza cumpleaños, juntas de equipo y cenas con clientes durante el año.",
+          "En enero, mándale un mensaje con tus opciones para eventos corporativos. **Una posada bien atendida es el cliente corporativo de todo el año siguiente.**",
+        ],
+      },
+      {
+        id: "plan-de-las-proximas-semanas",
+        heading: "A plan for the coming weeks",
+        headingEs: "Plan para las próximas semanas",
+        body: [
+          "This week: define your packages, prices and conditions, and take photos of the space set up for groups. First week of November: publish the events page and send the packages to last year's clients and to companies near you. Rest of November: ads, Google profile and replies within the hour. December: confirmations, final headcounts and reminders. January: reviews and follow-up.",
+          "If you are also preparing for the Buen Fin, read [Buen Fin 2026 for businesses](/blog/buen-fin-para-negocios). And our [free diagnostic for restaurants](/recursos/diagnostico/restaurantes) tells you in a few minutes what to fix first in your Google profile, your website and your booking process.",
+        ],
+        bodyEs: [
+          "Esta semana: define tus paquetes, precios y condiciones, y toma fotos del espacio montado para grupos. Primera semana de noviembre: publica la página de eventos y manda los paquetes a los clientes del año pasado y a empresas cercanas. Resto de noviembre: anuncios, Perfil de Google y respuestas en menos de una hora. Diciembre: confirmaciones, números finales y recordatorios. Enero: reseñas y seguimiento.",
+          "Si también te estás preparando para el Buen Fin, lee [Buen Fin 2026 para negocios](/blog/buen-fin-para-negocios). Y nuestro [diagnóstico gratuito para restaurantes](/recursos/diagnostico/restaurantes) te dice en unos minutos qué corregir primero en tu Perfil de Google, tu página y tu proceso de reservas.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Con cuánto tiempo se reservan las posadas en restaurantes?",
+        qEn: "How far in advance are Christmas parties booked at restaurants?",
+        a: "Según la Canirac Baja California, los paquetes para grupos se intensifican después de la primera y segunda semana de noviembre, y a finales de noviembre ya se registran reservaciones para cenas navideñas. Lo ideal es tener tus paquetes listos a principios de noviembre.",
+        aEn: "According to Canirac Baja California, group packages intensify after the first and second week of November, and Christmas dinner bookings are already coming in by late November. Ideally, have your packages ready by early November.",
+      },
+      {
+        q: "¿Qué debe incluir un paquete de posada?",
+        qEn: "What should a Christmas party package include?",
+        a: "Precio por persona, menú, bebidas si aplica, duración, mínimo de personas, qué incluye y qué no (propina, decoración, música, horas extra), fechas disponibles y condiciones de anticipo y cancelación.",
+        aEn: "Price per person, menu, drinks if applicable, duration, minimum number of guests, what is included and what is not (tip, decoration, music, extra hours), available dates and deposit and cancellation conditions.",
+      },
+      {
+        q: "¿Debo pedir anticipo para una posada?",
+        qEn: "Should I ask for a deposit for a Christmas party?",
+        a: "Sí. Una fecha apartada sin anticipo se puede perder en el mes más ocupado del año. Define tu política y mándala por escrito junto con la confirmación, el plazo para dar el número final de personas y las condiciones de cancelación.",
+        aEn: "Yes. A date held without a deposit can be lost in the busiest month of the year. Define your policy and send it in writing with the confirmation, the deadline for the final headcount and the cancellation conditions.",
+      },
+      {
+        q: "¿Cómo consigo posadas de empresas?",
+        qEn: "How do I win company Christmas parties?",
+        a: "Empieza por las empresas que celebraron contigo el año pasado y tus clientes frecuentes. Luego publica tus paquetes en tu Perfil de Google y en una página con formulario, y usa anuncios segmentados por zona cerca de oficinas y parques industriales.",
+        aEn: "Start with the companies that celebrated with you last year and your regular customers. Then publish your packages on your Google profile and on a page with a form, and use ads segmented by area near offices and industrial parks.",
+      },
+      {
+        q: "¿Qué hago después de la posada?",
+        qEn: "What should I do after the party?",
+        a: "Agradece al organizador, pide una reseña en Google y guarda sus datos. En enero ofrécele tus opciones para eventos corporativos: la misma persona organiza cumpleaños, juntas y cenas durante todo el año.",
+        aEn: "Thank the organiser, ask for a Google review and keep their details. In January, offer your options for corporate events: the same person organises birthdays, meetings and dinners all year.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "restaurant Christmas party packages",
+        "how to get group bookings restaurant",
+        "year-end dinner restaurant marketing",
+        "company Christmas party Tijuana",
+        "restaurant December sales",
+      ],
+      keywordsEs: [
+        "paquetes de posada restaurante",
+        "cómo conseguir posadas de empresas",
+        "cenas de fin de año restaurante",
+        "posadas en Tijuana",
+        "marketing para restaurantes diciembre",
+        "reservaciones de grupos restaurante",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
