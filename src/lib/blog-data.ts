@@ -10724,6 +10724,169 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "cuanto-cuesta-un-branding-en-mexico",
+    cover: true,
+    title: "How Much Does Branding Cost in Mexico? 2026 Prices and What Each Level Includes",
+    titleEs: "¿Cuánto cuesta un branding en México? Precios 2026 y qué incluye cada nivel",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "A logo can cost $1,500 or a full branding project can cost $120,000, and both get called “branding”. What each level includes, reference price ranges, the trademark registration almost nobody budgets for and how to compare quotes without overpaying or falling short.",
+    excerptEs:
+      "Un logo puede costar $1,500 y un branding completo $120,000, y a los dos les dicen “branding”. Qué incluye cada nivel, rangos de precio de referencia, el registro de marca que casi nadie presupuesta y cómo comparar cotizaciones sin pagar de más ni quedarte corto.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "When someone asks how much branding costs, they usually receive quotes that range from a few thousand to over a hundred thousand pesos, and it seems that someone is overcharging. Most of the time they are quoting different things: a logo, a visual identity or a complete brand with strategy. The common mistake is paying for a logo, believing you have a brand, and discovering a year later that your name cannot be registered or that nobody has the files to print a sign.",
+    ledeEs:
+      "Cuando alguien pregunta cuánto cuesta un branding, recibe cotizaciones que van de unos cuantos miles a más de cien mil pesos, y parece que alguien está cobrando de más. Casi siempre están cotizando cosas distintas: un logo, una identidad visual o una marca completa con estrategia. El error común es pagar un logo, creer que ya tienes marca y descubrir un año después que tu nombre no se puede registrar o que nadie tiene los archivos para imprimir un letrero.",
+    sections: [
+      {
+        id: "logo-no-es-branding",
+        heading: "A logo is not branding",
+        headingEs: "Un logo no es un branding",
+        body: [
+          "A logo is the symbol or the way your name is written. Visual identity adds what makes it consistent everywhere: colour palette, typefaces, logo variants and rules for using them. Branding goes further: it defines who you are for, what makes you different, how you speak and how all of that shows up on your website, social media, packaging, uniforms and signage.",
+          "None of the three is better in itself; each solves a different problem. A business that is still validating its idea needs a decent logo and basic consistency. A business that is going to open branches, raise prices or sell to companies needs a brand that holds up across every point of contact.",
+        ],
+        bodyEs: [
+          "Un logo es el símbolo o la forma en que se escribe tu nombre. La identidad visual agrega lo que lo vuelve consistente en todos lados: paleta de colores, tipografías, variantes del logo y reglas para usarlo. El branding va más allá: define para quién eres, qué te hace distinto, cómo hablas y cómo se ve todo eso en tu página, tus redes, tu empaque, tus uniformes y tu letrero.",
+          "Ninguno de los tres es mejor por sí mismo; cada uno resuelve un problema distinto. Un negocio que todavía está validando su idea necesita un logo decente y consistencia básica. Un negocio que va a abrir sucursales, subir precios o venderle a empresas necesita una marca que aguante en cada punto de contacto.",
+        ],
+      },
+      {
+        id: "rangos-de-precio",
+        heading: "Reference price ranges in Mexico",
+        headingEs: "Rangos de precio de referencia en México",
+        body: [
+          "These are reference ranges based on what we see in the market and handle at Aphelion; they are not official figures and they vary with the scope, the team's experience and the city. A logo only, from a freelancer or a marketplace, usually costs between $1,500 and $8,000 MXN. A basic visual identity, with logo, palette, typefaces, a short guide and a few applications, between $15,000 and $40,000 MXN.",
+          "A complete branding project, with research, positioning, identity, a full [[brand manual|manual-de-marca]] and applications, ranges between **$40,000 and $120,000 MXN**. Corporate rebrands by large agencies, with naming, several markets and dozens of applications, start above $150,000 MXN. The price rises with the number of applications, the research involved and whether naming is included.",
+        ],
+        bodyEs: [
+          "Estos son rangos de referencia basados en lo que vemos en el mercado y manejamos en Aphelion; no son cifras oficiales y varían según el alcance, la experiencia del equipo y la ciudad. Un logo solo, con un freelancer o en un marketplace, suele costar entre $1,500 y $8,000 MXN. Una identidad visual básica, con logo, paleta, tipografías, una guía corta y algunas aplicaciones, entre $15,000 y $40,000 MXN.",
+          "Un branding completo, con investigación, posicionamiento, identidad, un [[manual de marca|manual-de-marca]] completo y aplicaciones, va de **$40,000 a $120,000 MXN**. Los rebrandings corporativos de agencias grandes, con naming, varios mercados y decenas de aplicaciones, arrancan arriba de $150,000 MXN. El precio sube con el número de aplicaciones, la investigación que implica y si incluye crear el nombre.",
+        ],
+      },
+      {
+        id: "que-incluye-un-branding-completo",
+        heading: "What complete branding includes",
+        headingEs: "Qué incluye un branding completo",
+        body: [
+          "Research on your customers and competitors; positioning, that is, what you want to be remembered for; naming if you need a name; the logo and its variants; palette and typefaces; tone of voice and key messages; and applications: stationery, social media, signage, packaging, uniforms and the visual base for your website.",
+          "All of this should end up in a brand manual that anyone can follow, a designer, a print shop or your own team, and in [[vector files|archivo-vectorial]] that can be enlarged to any size without losing quality. If you only receive a JPG of the logo, you did not receive a brand.",
+        ],
+        bodyEs: [
+          "Investigación de tus clientes y tu competencia; posicionamiento, es decir, por qué quieres que te recuerden; naming si necesitas nombre; el logo y sus variantes; paleta y tipografías; tono de voz y mensajes clave, y aplicaciones: papelería, redes sociales, letreros, empaque, uniformes y la base visual de tu página web.",
+          "Todo eso debe terminar en un manual de marca que cualquiera pueda seguir, un diseñador, una imprenta o tu propio equipo, y en [[archivos vectoriales|archivo-vectorial]] que se pueden ampliar a cualquier tamaño sin perder calidad. Si solo recibes un JPG del logo, no recibiste una marca.",
+        ],
+      },
+      {
+        id: "registrar-tu-marca",
+        heading: "The cost nobody mentions: registering your trademark",
+        headingEs: "El costo que nadie menciona: registrar tu marca",
+        body: [
+          "Your brand is only yours once it is registered with the [[IMPI|impi]]. The official fee to file a trademark application is **$2,695.18 plus VAT per class**, with a 10% discount if you file online, and the registration lasts ten years, renewable. Three years after it is granted you must file a declaration of use. Check the exact amount on the payment reference before paying.",
+          "The most expensive mistake is designing first and searching later. **Before paying for a logo, check that your name is available.** IMPI has a public search system, and a specialist in industrial property can tell you whether a similar name in your category could block you. Changing names after printing signs, uniforms and packaging costs far more than the search.",
+        ],
+        bodyEs: [
+          "Tu marca solo es tuya cuando está registrada ante el [[IMPI|impi]]. La tarifa oficial para solicitar el registro de una marca es de **$2,695.18 más IVA por clase**, con 10% de descuento si lo tramitas en línea, y el registro dura diez años, renovables. A los tres años de otorgado hay que presentar una declaración de uso. Confirma el monto exacto en la línea de captura antes de pagar.",
+          "El error más caro es diseñar primero y buscar después. **Antes de pagar un logo, revisa que tu nombre esté libre.** El IMPI tiene un sistema público de búsqueda, y un especialista en propiedad industrial te puede decir si un nombre parecido en tu categoría te puede bloquear. Cambiar de nombre después de imprimir letreros, uniformes y empaques cuesta mucho más que la búsqueda.",
+        ],
+      },
+      {
+        id: "cuando-invertir-mas",
+        heading: "When it is worth investing more",
+        headingEs: "Cuándo vale la pena invertir más",
+        body: [
+          "It makes sense to invest in complete branding when you are going to open more branches or franchise, when you want to raise prices and need to look the part, when you sell to companies that compare suppliers, or when you are entering a new market, such as customers in the United States. In those cases an inconsistent brand costs you sales every day.",
+          "It does not make sense when you are still validating whether the business works. At that stage, a clean logo, two colours, one typeface and a well-made [[Google Business Profile|google-business-profile]] are enough. Spend the rest on getting customers and come back to the brand when you know what works.",
+        ],
+        bodyEs: [
+          "Conviene invertir en un branding completo cuando vas a abrir más sucursales o franquiciar, cuando quieres subir precios y necesitas verte a la altura, cuando le vendes a empresas que comparan proveedores, o cuando vas a entrar a un mercado nuevo, como clientes en Estados Unidos. En esos casos, una marca inconsistente te cuesta ventas todos los días.",
+          "No conviene cuando todavía estás validando si el negocio funciona. En esa etapa basta con un logo limpio, dos colores, una tipografía y un [[Perfil de Google|google-business-profile]] bien hecho. Invierte el resto en conseguir clientes y regresa a la marca cuando sepas qué funciona.",
+        ],
+      },
+      {
+        id: "como-comparar-cotizaciones",
+        heading: "How to compare quotes",
+        headingEs: "Cómo comparar cotizaciones",
+        body: [
+          "Ask each provider the same questions: what deliverables are included, how many proposals and rounds of changes, whether you receive editable and vector files, whether there is a brand manual, which applications are designed and how long it takes. Two quotes are only comparable when they answer the same list.",
+          "And ask for the transfer of rights in writing. Without it, the designer can legally keep the rights to what you paid for. It is a short clause in the contract that avoids a serious problem when you want to register the trademark or change suppliers.",
+        ],
+        bodyEs: [
+          "Hazle a cada proveedor las mismas preguntas: qué entregables incluye, cuántas propuestas y rondas de cambios, si recibes archivos editables y vectoriales, si hay manual de marca, qué aplicaciones se diseñan y cuánto tiempo toma. Dos cotizaciones solo se pueden comparar cuando responden a la misma lista.",
+          "Y pide por escrito la cesión de derechos. Sin ella, el diseñador puede conservar legalmente los derechos de lo que pagaste. Es una cláusula corta en el contrato que evita un problema serio cuando quieras registrar la marca o cambiar de proveedor.",
+        ],
+      },
+      {
+        id: "que-la-marca-trabaje",
+        heading: "Make the brand work",
+        headingEs: "Que la marca trabaje",
+        body: [
+          "A brand that lives only in a PDF does not sell. Apply it the same way on your website, your Google profile, your social media and your premises, so the customer recognises you wherever they find you. If your website is next, see [how much a website costs in Mexico](/blog/cuanto-cuesta-una-pagina-web-en-mexico) and [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
+          "If you are not sure whether your problem is the brand or something else, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first.",
+        ],
+        bodyEs: [
+          "Una marca que vive solo en un PDF no vende. Aplícala igual en tu página, tu Perfil de Google, tus redes y tu local, para que el cliente te reconozca donde te encuentre. Si lo que sigue es tu página web, revisa [cuánto cuesta una página web en México](/blog/cuanto-cuesta-una-pagina-web-en-mexico) y [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
+          "Si no sabes si tu problema es la marca o algo más, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto cuesta un branding en México?",
+        qEn: "How much does branding cost in Mexico?",
+        a: "Como referencia no oficial: un logo solo va de $1,500 a $8,000 MXN, una identidad visual básica de $15,000 a $40,000 MXN y un branding completo con estrategia de $40,000 a $120,000 MXN. Varía según el alcance, el equipo y la ciudad.",
+        aEn: "As a non-official reference: a logo alone ranges from $1,500 to $8,000 MXN, a basic visual identity from $15,000 to $40,000 MXN and complete branding with strategy from $40,000 to $120,000 MXN. It varies with scope, team and city.",
+      },
+      {
+        q: "¿Cuál es la diferencia entre logo y branding?",
+        qEn: "What is the difference between a logo and branding?",
+        a: "El logo es el símbolo o la forma de escribir tu nombre. El branding define para quién eres, qué te hace distinto, cómo hablas y cómo se aplica todo eso en tu página, redes, empaque y local, con un manual que cualquiera pueda seguir.",
+        aEn: "The logo is the symbol or the way your name is written. Branding defines who you are for, what makes you different, how you speak and how all of that is applied on your website, social media, packaging and premises, with a manual anyone can follow.",
+      },
+      {
+        q: "¿Cuánto cuesta registrar una marca en el IMPI?",
+        qEn: "How much does it cost to register a trademark with IMPI?",
+        a: "La tarifa oficial de solicitud es de $2,695.18 más IVA por clase, con 10% de descuento si se tramita en línea. El registro dura diez años y se puede renovar. Confirma el monto en la línea de captura antes de pagar.",
+        aEn: "The official application fee is $2,695.18 plus VAT per class, with a 10% discount if filed online. Registration lasts ten years and can be renewed. Check the amount on the payment reference before paying.",
+      },
+      {
+        q: "¿Qué archivos me deben entregar en un branding?",
+        qEn: "What files should I receive with branding?",
+        a: "Archivos vectoriales y editables del logo y sus variantes, la paleta con sus códigos de color, las tipografías, el manual de marca y las aplicaciones diseñadas. Pide también por escrito la cesión de derechos.",
+        aEn: "Vector and editable files of the logo and its variants, the palette with colour codes, the typefaces, the brand manual and the designed applications. Also ask for the transfer of rights in writing.",
+      },
+      {
+        q: "¿Cuándo conviene invertir en un branding completo?",
+        qEn: "When is complete branding worth it?",
+        a: "Cuando vas a abrir sucursales o franquiciar, subir precios, venderle a empresas o entrar a un mercado nuevo. Si todavía estás validando tu negocio, basta con un logo limpio y consistencia básica.",
+        aEn: "When you are going to open branches or franchise, raise prices, sell to companies or enter a new market. If you are still validating your business, a clean logo and basic consistency are enough.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "branding cost Mexico",
+        "how much does a logo cost Mexico",
+        "brand identity price",
+        "IMPI trademark registration cost",
+        "logo vs branding",
+      ],
+      keywordsEs: [
+        "cuánto cuesta un branding en México",
+        "precio de un logo",
+        "costo identidad de marca",
+        "cuánto cuesta registrar una marca en el IMPI",
+        "diferencia entre logo y branding",
+        "manual de marca qué incluye",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

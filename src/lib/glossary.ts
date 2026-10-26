@@ -337,4 +337,22 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "La parte de un pago que una plataforma o un cliente se queda para entregarla al SAT a tu nombre. No es un cobro extra: cuenta como adelanto de tus impuestos, pero reduce el dinero que te llega.",
     defEn: "The part of a payment that a platform or a client keeps to hand over to the tax authority on your behalf. It is not an extra charge: it counts as an advance on your taxes, but it reduces the cash you receive.",
   },
+  "manual-de-marca": {
+    term: "Manual de marca",
+    termEn: "Brand manual",
+    def: "Un documento con las reglas de tu marca: cómo usar el logo, colores, tipografías y tono, para que cualquier diseñador, imprenta o empleado la aplique igual.",
+    defEn: "A document with your brand's rules: how to use the logo, colours, typefaces and tone, so any designer, print shop or employee applies it the same way.",
+  },
+  "archivo-vectorial": {
+    term: "Archivo vectorial",
+    termEn: "Vector file",
+    def: "Un archivo de diseño (como AI, SVG o PDF editable) que se puede agrandar a cualquier tamaño, de una tarjeta a un espectacular, sin que se pixele.",
+    defEn: "A design file (such as AI, SVG or an editable PDF) that can be enlarged to any size, from a business card to a billboard, without pixelating.",
+  },
+  impi: {
+    term: "IMPI",
+    termEn: "IMPI",
+    def: "El Instituto Mexicano de la Propiedad Industrial: la autoridad donde se registran las marcas en México. Sin ese registro, otra persona podría quedarse con tu nombre.",
+    defEn: "The Mexican Institute of Industrial Property: the authority where trademarks are registered in Mexico. Without that registration, someone else could claim your name.",
+  },
 };
