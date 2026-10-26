@@ -10887,6 +10887,156 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "cuanto-cuesta-una-tienda-en-linea-en-mexico",
+    cover: true,
+    title: "How Much Does an Online Store Cost in Mexico? Platform, Fees and Hidden Costs",
+    titleEs: "¿Cuánto cuesta una tienda en línea en México? Plataforma, comisiones y costos ocultos",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "The monthly platform fee is the cheapest part of an online store. What Tiendanube, Shopify, WooCommerce and a custom store cost, the per-sale fees that grow with you, the costs almost nobody budgets for, and why a store without traffic does not sell.",
+    excerptEs:
+      "La mensualidad de la plataforma es la parte más barata de una tienda en línea. Cuánto cuestan Tiendanube, Shopify, WooCommerce y una tienda a medida, las comisiones por venta que crecen contigo, los costos que casi nadie presupuesta y por qué una tienda sin tráfico no vende.",
+    readingTime: 9,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "When someone asks how much an online store costs, they usually compare monthly plans: one platform charges a few hundred pesos, another a few dollars more. That is the smallest part of the bill. The real cost is in the per-sale fees, product photos, loading the catalogue, shipping, invoicing and, above all, bringing people to the store. Many stores open, receive no visits and get blamed on the platform when the problem was never the platform.",
+    ledeEs:
+      "Cuando alguien pregunta cuánto cuesta una tienda en línea, normalmente compara mensualidades: una plataforma cobra unos cientos de pesos, otra unos dólares más. Esa es la parte más chica de la cuenta. El costo real está en las comisiones por venta, las fotos de producto, cargar el catálogo, los envíos, la facturación y, sobre todo, llevarle gente a la tienda. Muchas tiendas abren, no reciben visitas y se culpa a la plataforma cuando el problema nunca fue la plataforma.",
+    sections: [
+      {
+        id: "tres-caminos",
+        heading: "Three ways to build it",
+        headingEs: "Tres caminos para hacerla",
+        body: [
+          "A ready-made platform, such as Tiendanube or Shopify, gives you the store, the checkout and the hosting for a monthly fee; you choose a template and load your products. WooCommerce turns a WordPress site into a store: the plugin is free, but you pay for [[hosting|hosting]], themes, extensions and maintenance. A custom store is built for your processes, such as wholesale prices, integration with your inventory or your [[point of sale|punto-de-venta]].",
+          "There is no best option in general. A business starting with a few dozen products rarely needs a custom store, and a business with its own logistics and special price lists rarely fits well in a template. In our [website price guide](/blog/cuanto-cuesta-una-pagina-web-en-mexico) a custom e-commerce platform starts at $80,000 MXN.",
+        ],
+        bodyEs: [
+          "Una plataforma lista, como Tiendanube o Shopify, te da la tienda, el cobro y el alojamiento por una mensualidad; eliges una plantilla y cargas tus productos. WooCommerce convierte un sitio en WordPress en tienda: el plugin es gratis, pero pagas [[hosting|hosting]], temas, extensiones y mantenimiento. Una tienda a medida se construye para tus procesos, como precios de mayoreo o la conexión con tu inventario o tu [[punto de venta|punto-de-venta]].",
+          "No hay una opción mejor en general. Un negocio que empieza con unas decenas de productos casi nunca necesita una tienda a medida, y uno con logística propia y listas de precios especiales casi nunca cabe bien en una plantilla. En nuestra [guía de precios de páginas web](/blog/cuanto-cuesta-una-pagina-web-en-mexico), una plataforma de e-commerce a medida arranca en $80,000 MXN.",
+        ],
+      },
+      {
+        id: "cuanto-cuesta-la-plataforma",
+        heading: "What the platform costs",
+        headingEs: "Lo que cuesta la plataforma",
+        body: [
+          "Tiendanube publishes its plans for Mexico in pesos: a free plan, Básico at **$149 MXN a month**, the Tiendanube plan at $374 and Avanzado at $999, plus a custom plan for large stores. Shopify charges in dollars: according to a 2026 price review, the Basic plan is around 36 USD a month, with a discount for annual billing; prices change by region, so confirm them on its site before deciding.",
+          "With WooCommerce the cost is spread out: hosting, a domain, an SSL certificate, a theme, paid extensions and someone to update everything so the store does not break or get hacked. It is cheaper only if someone on your team already handles WordPress; we explain the difference in [WordPress vs custom development](/blog/wordpress-vs-desarrollo-a-medida).",
+        ],
+        bodyEs: [
+          "Tiendanube publica sus planes para México en pesos: un plan gratis, Básico a **$149 MXN al mes**, el plan Tiendanube a $374 y Avanzado a $999, además de un plan a la medida para tiendas grandes. Shopify cobra en dólares: según una revisión de precios de 2026, el plan Basic ronda los 36 USD al mes, con descuento si pagas anual; los precios cambian por región, así que confírmalos en su sitio antes de decidir.",
+          "Con WooCommerce el costo está repartido: hosting, dominio, certificado SSL, un tema, extensiones de pago y alguien que actualice todo para que la tienda no se rompa ni la hackeen. Solo sale más barato si alguien de tu equipo ya maneja WordPress; explicamos la diferencia en [WordPress vs desarrollo a medida](/blog/wordpress-vs-desarrollo-a-medida).",
+        ],
+      },
+      {
+        id: "comisiones-por-venta",
+        heading: "Per-sale fees: the cost that grows with you",
+        headingEs: "Comisiones por venta: el costo que crece contigo",
+        body: [
+          "Every card payment goes through a [[payment gateway|pasarela-de-pago]] that charges a fee. Stripe charges 3.6% plus $3 MXN per domestic card transaction, plus VAT, and 0.5% more for international cards. Tiendanube's own gateway, Pago Nube, starts at between 3.29% and 3.99% plus $3 plus VAT, depending on the plan. On top of that, some platforms charge an extra percentage if you use a gateway other than their own: Tiendanube from 0.7% to 2% depending on the plan, and Shopify, according to the same review, from 0.6% to 2% on its main plans.",
+          "An example with round numbers: if you sell $50,000 a month in 100 orders of $500, a fee of 3.6% plus $3 per order comes to $2,100 plus VAT, **about $2,436 a month**. If your platform also charges 2% for using an external gateway, that is $1,000 more. That is why fees matter more than the monthly plan once the store starts selling.",
+        ],
+        bodyEs: [
+          "Cada pago con tarjeta pasa por una [[pasarela de pago|pasarela-de-pago]] que cobra comisión. Stripe cobra 3.6% más $3 MXN por transacción con tarjeta nacional, más IVA, y 0.5% adicional en tarjetas internacionales. La pasarela propia de Tiendanube, Pago Nube, va desde 3.29% hasta 3.99% más $3 más IVA, según el plan. Encima de eso, algunas plataformas cobran un porcentaje extra si usas una pasarela distinta a la suya: Tiendanube de 0.7% a 2% según el plan, y Shopify, según la misma revisión, de 0.6% a 2% en sus planes principales.",
+          "Un ejemplo con números redondos: si vendes $50,000 al mes en 100 pedidos de $500, una comisión de 3.6% más $3 por pedido suma $2,100 más IVA, **unos $2,436 al mes**. Si además tu plataforma cobra 2% por usar una pasarela externa, son $1,000 más. Por eso las comisiones importan más que la mensualidad en cuanto la tienda empieza a vender.",
+        ],
+      },
+      {
+        id: "costos-que-nadie-presupuesta",
+        heading: "The costs nobody budgets for",
+        headingEs: "Los costos que nadie presupuesta",
+        body: [
+          "Product photos on a clean background and in use, because online the photo is the product. Loading the catalogue with descriptions, sizes, variants and stock, which takes days if you have hundreds of products. Shipping labels and packaging, with a clear policy for who pays and how long it takes. Electronic invoicing, because many customers will ask for one.",
+          "Also the time to answer questions on WhatsApp, handle returns and keep stock up to date. And publish your [[privacy notice|aviso-de-privacidad]], your terms and your exchange and returns policy before the first sale: they build trust and avoid disputes.",
+        ],
+        bodyEs: [
+          "Fotos de producto con fondo limpio y en uso, porque en línea la foto es el producto. Cargar el catálogo con descripciones, tallas, variantes y existencias, que toma días si tienes cientos de productos. Guías de envío y empaque, con una política clara de quién paga y cuánto tarda. Facturación electrónica, porque muchos clientes te la van a pedir.",
+          "También el tiempo para contestar dudas por WhatsApp, atender devoluciones y mantener el inventario al día. Y publica tu [[aviso de privacidad|aviso-de-privacidad]], tus términos y tu política de cambios y devoluciones antes de la primera venta: dan confianza y evitan problemas.",
+        ],
+      },
+      {
+        id: "una-tienda-sin-trafico",
+        heading: "A store without traffic does not sell",
+        headingEs: "Una tienda sin tráfico no vende",
+        body: [
+          "**An online store without traffic is a shop on a street nobody walks down.** Opening it is the start; the ongoing work is bringing people to it. [[Meta Ads|meta-ads]] can show your catalogue to people with interests similar to your customers', and [[Google Ads|google-ads]] can show your products to people who are already searching for them. We explain both in our [Meta Ads guide](/blog/guia-meta-ads) and our [Google Ads guide](/blog/guia-google-ads).",
+          "Most visitors do not buy on their first visit. With the [[pixel|pixel]] installed you can show [[remarketing|remarketing]] ads to those who viewed a product, and an automatic message for each [[abandoned cart|carrito-abandonado]] reminds them of what they left behind. [[Email marketing|email-marketing]] does the rest with customers who already bought.",
+        ],
+        bodyEs: [
+          "**Una tienda en línea sin tráfico es un local en una calle por donde no pasa nadie.** Abrirla es el inicio; el trabajo constante es llevarle gente. [[Meta Ads|meta-ads]] puede mostrar tu catálogo a personas con intereses parecidos a los de tus clientes, y [[Google Ads|google-ads]] puede mostrar tus productos a quien ya los está buscando. Explicamos ambos en nuestra [guía de Meta Ads](/blog/guia-meta-ads) y nuestra [guía de Google Ads](/blog/guia-google-ads).",
+          "La mayoría de los visitantes no compra en su primera visita. Con el [[pixel|pixel]] instalado puedes mostrar anuncios de [[remarketing|remarketing]] a quien vio un producto, y un mensaje automático por cada [[carrito abandonado|carrito-abandonado]] le recuerda lo que dejó. El [[email marketing|email-marketing]] hace el resto con quienes ya compraron.",
+        ],
+      },
+      {
+        id: "como-elegir",
+        heading: "How to choose",
+        headingEs: "Cómo elegir",
+        body: [
+          "If you are starting, have up to a few hundred products and want to sell soon, a ready-made platform is enough. If you already have a WordPress site and someone who maintains it, WooCommerce makes sense. If you sell wholesale and retail with different prices, need to connect inventory, invoicing and your point of sale, or the templates hold you back, it is time for a custom store; see [the best point of sale in Mexico](/blog/mejor-punto-de-venta-mexico) for the inventory side.",
+          "Whichever you choose, measure three things from the first month: [[conversion rate|tasa-de-conversion]], average ticket and what each sale costs you in advertising. If you are not sure where to start, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first.",
+        ],
+        bodyEs: [
+          "Si estás empezando, tienes hasta unos cientos de productos y quieres vender pronto, una plataforma lista es suficiente. Si ya tienes un sitio en WordPress y alguien que lo mantiene, WooCommerce tiene sentido. Si vendes mayoreo y menudeo con precios distintos, necesitas conectar inventario, facturación y tu punto de venta, o las plantillas te quedan cortas, es momento de una tienda a medida; revisa [el mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico) para la parte de inventario.",
+          "Elijas la que elijas, mide tres cosas desde el primer mes: [[tasa de conversión|tasa-de-conversion]], ticket promedio y cuánto te cuesta cada venta en publicidad. Si no sabes por dónde empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto cuesta una tienda en línea en México?",
+        qEn: "How much does an online store cost in Mexico?",
+        a: "Una plataforma lista va desde un plan gratis hasta unos cientos de pesos al mes, como Tiendanube Básico a $149 MXN. Una tienda a medida arranca alrededor de $80,000 MXN. A eso se suman comisiones por venta, fotos, carga del catálogo, envíos y publicidad.",
+        aEn: "A ready-made platform ranges from a free plan to a few hundred pesos a month, such as Tiendanube Básico at $149 MXN. A custom store starts at around $80,000 MXN. On top of that come per-sale fees, photos, catalogue loading, shipping and advertising.",
+      },
+      {
+        q: "¿Cuánto cobra Stripe por venta en México?",
+        qEn: "How much does Stripe charge per sale in Mexico?",
+        a: "3.6% más $3 MXN por transacción con tarjeta nacional, más IVA, y 0.5% adicional con tarjetas internacionales, según su página de precios.",
+        aEn: "3.6% plus $3 MXN per domestic card transaction, plus VAT, and an extra 0.5% for international cards, according to its pricing page.",
+      },
+      {
+        q: "¿Qué conviene más, Tiendanube o Shopify?",
+        qEn: "Which is better, Tiendanube or Shopify?",
+        a: "Tiendanube cobra en pesos y está pensada para el mercado latinoamericano; Shopify cobra en dólares y tiene un ecosistema de apps más grande. Compara la mensualidad, la comisión de la pasarela y el cargo extra por usar una pasarela externa con tus ventas esperadas.",
+        aEn: "Tiendanube charges in pesos and is built for the Latin American market; Shopify charges in dollars and has a larger app ecosystem. Compare the monthly fee, the gateway fee and the extra charge for using an external gateway against your expected sales.",
+      },
+      {
+        q: "¿Cuándo conviene una tienda en línea a medida?",
+        qEn: "When does a custom online store make sense?",
+        a: "Cuando vendes mayoreo y menudeo con precios distintos, necesitas conectar inventario, facturación o punto de venta, o cuando las plantillas ya limitan cómo vendes. Si estás empezando, una plataforma lista suele ser suficiente.",
+        aEn: "When you sell wholesale and retail with different prices, need to connect inventory, invoicing or point of sale, or when templates already limit how you sell. If you are starting out, a ready-made platform is usually enough.",
+      },
+      {
+        q: "¿Por qué mi tienda en línea no vende?",
+        qEn: "Why is my online store not selling?",
+        a: "Casi siempre por falta de tráfico o por desconfianza: pocas visitas, fotos pobres, envíos poco claros o sin políticas visibles. Lleva gente con anuncios, usa remarketing y recordatorios de carrito abandonado, y mide tu tasa de conversión.",
+        aEn: "Almost always because of a lack of traffic or trust: few visits, poor photos, unclear shipping or no visible policies. Bring people in with ads, use remarketing and abandoned-cart reminders, and measure your conversion rate.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "online store cost Mexico",
+        "Tiendanube vs Shopify Mexico",
+        "Stripe fees Mexico",
+        "ecommerce hidden costs",
+        "custom online store Mexico",
+      ],
+      keywordsEs: [
+        "cuánto cuesta una tienda en línea en México",
+        "Tiendanube o Shopify",
+        "comisión Stripe México",
+        "costos de una tienda online",
+        "tienda en línea a medida",
+        "por qué mi tienda en línea no vende",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

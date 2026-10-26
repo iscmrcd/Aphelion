@@ -355,4 +355,16 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "El Instituto Mexicano de la Propiedad Industrial: la autoridad donde se registran las marcas en México. Sin ese registro, otra persona podría quedarse con tu nombre.",
     defEn: "The Mexican Institute of Industrial Property: the authority where trademarks are registered in Mexico. Without that registration, someone else could claim your name.",
   },
+  "pasarela-de-pago": {
+    term: "Pasarela de pago",
+    termEn: "Payment gateway",
+    def: "El servicio que cobra la tarjeta del cliente en tu tienda en línea, como Stripe, Mercado Pago o Pago Nube, y te deposita el dinero a cambio de una comisión por venta.",
+    defEn: "The service that charges the customer's card in your online store, such as Stripe, Mercado Pago or Pago Nube, and deposits the money to you in exchange for a fee per sale.",
+  },
+  "carrito-abandonado": {
+    term: "Carrito abandonado",
+    termEn: "Abandoned cart",
+    def: "Cuando alguien agrega productos al carrito de tu tienda y se va sin pagar. Un correo o WhatsApp automático que le recuerda lo que dejó ayuda a recuperar parte de esas ventas.",
+    defEn: "When someone adds products to your store's cart and leaves without paying. An automatic email or WhatsApp reminding them of what they left helps recover some of those sales.",
+  },
 };
