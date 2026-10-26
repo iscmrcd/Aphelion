@@ -11037,6 +11037,157 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "resenas-google-restaurante",
+    cover: true,
+    vertical: "restaurantes",
+    title: "How to Get More Google Reviews for Your Restaurant (Without Breaking the Rules)",
+    titleEs: "Cómo conseguir más reseñas en Google para tu restaurante (sin romper las reglas)",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "Hundreds of happy diners a month and a handful of old reviews: it happens to many restaurants. Why reviews weigh so much, what Google prohibits (yes, including the free dessert in exchange for a review), how to ask at the right moment and how to respond to bad ones.",
+    excerptEs:
+      "Cientos de comensales contentos al mes y un puñado de reseñas viejas: le pasa a muchos restaurantes. Por qué pesan tanto las reseñas, qué prohíbe Google (sí, incluido el postre gratis a cambio de una reseña), cómo pedirlas en el momento correcto y cómo responder las malas.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most restaurants have many more happy customers than reviews. The happy diner pays, says thank you and leaves; the one who had a bad night is the one who writes. The result is a profile with few reviews, old ones, and a rating that does not reflect how you actually serve. The fix is not to buy reviews or offer something in exchange, which Google prohibits, but to ask everyone, at the right moment and with a link that makes it take less than a minute.",
+    ledeEs:
+      "La mayoría de los restaurantes tiene muchos más clientes contentos que reseñas. El comensal contento paga, da las gracias y se va; el que tuvo una mala noche es el que escribe. El resultado es un perfil con pocas reseñas, viejas, y una calificación que no refleja cómo atiendes de verdad. La solución no es comprar reseñas ni ofrecer algo a cambio, que Google prohíbe, sino pedírsela a todos, en el momento correcto y con una liga que haga que tome menos de un minuto.",
+    sections: [
+      {
+        id: "por-que-pesan-las-resenas",
+        heading: "Why reviews weigh so much",
+        headingEs: "Por qué pesan tanto las reseñas",
+        body: [
+          "BrightLocal's 2026 survey of 1,002 consumers in the United States found that 97% read reviews when choosing a local business, that **68% need at least four stars** and that 74% look for reviews written in the last three months. It is US data, but it describes something you can see at any table: before choosing where to eat, people check the stars and read the most recent comments.",
+          "Reviews also affect whether you appear. Google explains that the prominence of a business in local results depends in part on the number of reviews, and that more reviews and positive ratings improve local ranking. Your [[Google Business Profile|google-business-profile]] competes on the map with every restaurant around you, as we explain in [how Google evaluates your business](/blog/como-evalua-google-a-tu-negocio).",
+        ],
+        bodyEs: [
+          "La encuesta 2026 de BrightLocal, con 1,002 consumidores en Estados Unidos, encontró que 97% lee reseñas al elegir un negocio local, que **68% necesita al menos cuatro estrellas** y que 74% busca reseñas escritas en los últimos tres meses. Son datos de Estados Unidos, pero describen algo que puedes ver en cualquier mesa: antes de elegir dónde comer, la gente revisa las estrellas y lee los comentarios más recientes.",
+          "Las reseñas también influyen en si apareces. Google explica que la prominencia de un negocio en los resultados locales depende en parte del número de reseñas, y que más reseñas y valoraciones positivas mejoran el posicionamiento local. Tu [[Perfil de Google|google-business-profile]] compite en el mapa con cada restaurante a tu alrededor, como explicamos en [cómo evalúa Google a tu negocio](/blog/como-evalua-google-a-tu-negocio).",
+        ],
+      },
+      {
+        id: "lo-que-google-prohibe",
+        heading: "What Google prohibits",
+        headingEs: "Lo que Google prohíbe",
+        body: [
+          "Google's policies prohibit offering incentives such as payments, discounts or free goods or services in exchange for reviews. **A free dessert in exchange for a review breaks Google's rules.** They also prohibit discouraging negative reviews or selectively asking only satisfied customers, and content with a conflict of interest, such as reviews from people who work at the business.",
+          "The consequences are not minor: Google can remove reviews, temporarily block new ones and show a warning on profiles that violate its policies. Building reviews honestly takes longer, but it does not put your profile at risk.",
+        ],
+        bodyEs: [
+          "Las políticas de Google prohíben ofrecer incentivos como pagos, descuentos o productos o servicios gratis a cambio de reseñas. **Un postre gratis a cambio de una reseña rompe las reglas de Google.** También prohíben desalentar las reseñas negativas o pedírselas solo a los clientes contentos, y el contenido con conflicto de interés, como reseñas de gente que trabaja en el negocio.",
+          "Las consecuencias no son menores: Google puede quitar reseñas, bloquear temporalmente las nuevas y mostrar una advertencia en los perfiles que violan sus políticas. Construir reseñas de forma honesta toma más tiempo, pero no pone en riesgo tu perfil.",
+        ],
+      },
+      {
+        id: "pide-en-el-momento-correcto",
+        heading: "Ask at the right moment",
+        headingEs: "Pide en el momento correcto",
+        body: [
+          "The best moment is when the diner is still at the table, after dessert or when paying. A short, natural line from the waiter works better than any sign: “If you enjoyed it, a review on Google helps us a lot.” Ask everyone, not only those who look happy; that is both the rule and the way to get an honest rating.",
+          "Back it up with a QR code on the bill folder, the receipt or a table card that opens the review window directly. Google Business Profile gives you a short link to request reviews; put it behind a [[dynamic QR|qr-dinamico]] so you can change it without reprinting. We cover table QR codes in [QR menus for restaurants](/blog/menu-qr-para-restaurante).",
+        ],
+        bodyEs: [
+          "El mejor momento es cuando el comensal todavía está en la mesa, después del postre o al pagar. Una frase corta y natural del mesero funciona mejor que cualquier letrero: “Si le gustó, una reseña en Google nos ayuda mucho.” Pídesela a todos, no solo a quien se ve contento; es la regla y también la forma de tener una calificación honesta.",
+          "Refuérzalo con un QR en la cuenta, el ticket o una tarjeta en la mesa que abra directo la ventana para escribir la reseña. El Perfil de Google te da una liga corta para pedir reseñas; ponla detrás de un [[QR dinámico|qr-dinamico]] para poder cambiarla sin reimprimir. Hablamos de los QR en mesa en [menús QR para restaurantes](/blog/menu-qr-para-restaurante).",
+        ],
+      },
+      {
+        id: "pedidos-y-reservaciones",
+        heading: "Orders and reservations: ask the next day",
+        headingEs: "Pedidos y reservaciones: pide al día siguiente",
+        body: [
+          "Customers who order delivery directly or book a table leave you a WhatsApp number. A short message the next day, thanking them and including the review link, reaches people who would never have thought of writing one. It can be automated so nobody has to remember it, as we explain in [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas).",
+          "One more reason to sell direct and not only through apps: in the app, the customer and the review belong to the app. With your own channel, each order can also become a Google review. We explain how in [delivery apps and selling direct](/blog/apps-de-delivery-comisiones-restaurante).",
+        ],
+        bodyEs: [
+          "Los clientes que piden a domicilio directo o reservan mesa te dejan un WhatsApp. Un mensaje corto al día siguiente, agradeciendo y con la liga para la reseña, llega a gente que nunca hubiera pensado en escribir una. Se puede automatizar para que nadie tenga que acordarse, como explicamos en [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas).",
+          "Una razón más para vender directo y no solo por apps: en la app, el cliente y la reseña son de la app. Con tu propio canal, cada pedido también puede convertirse en una reseña en Google. Lo explicamos en [apps de delivery y venta directa](/blog/apps-de-delivery-comisiones-restaurante).",
+        ],
+      },
+      {
+        id: "responde-todas",
+        heading: "Respond to all of them, especially the bad ones",
+        headingEs: "Responde todas, sobre todo las malas",
+        body: [
+          "In the same BrightLocal survey, 89% of consumers expect owners to respond to reviews. A short reply to a good review, mentioning the dish or the occasion, shows there is someone behind the business. A reply to a bad review is read more by future customers than by the person who wrote it.",
+          "For bad reviews: thank them, acknowledge what went wrong without excuses, explain what you are doing to fix it and offer to continue the conversation privately. Never argue in public. If a review is fake or offensive, report it from your Google profile instead of answering it angrily.",
+        ],
+        bodyEs: [
+          "En la misma encuesta de BrightLocal, 89% de los consumidores espera que los dueños respondan las reseñas. Una respuesta corta a una buena reseña, mencionando el platillo o la ocasión, muestra que hay alguien detrás del negocio. Una respuesta a una mala reseña la leen más los futuros clientes que quien la escribió.",
+          "Para las malas: agradece, reconoce lo que salió mal sin excusas, explica qué estás haciendo para corregirlo y ofrece seguir la conversación en privado. Nunca discutas en público. Si una reseña es falsa u ofensiva, repórtala desde tu Perfil de Google en vez de contestarla enojado.",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "Track four numbers each month: new reviews, average rating, percentage of reviews answered and the date of the most recent one. Also read what people mention most: if three reviews in a month talk about slow service at lunchtime, that is not a marketing problem; it is an operations problem worth fixing. Our [local SEO guide](/blog/seo-local-guia) and [optimising your Google Business Profile](/blog/optimizar-google-business-profile) cover the rest of the profile.",
+          "Our [free diagnostic for restaurants](/recursos/diagnostico/restaurantes) tells you in a few minutes what to fix first in your Google profile, your menu and your ordering channel.",
+        ],
+        bodyEs: [
+          "Lleva cuatro números cada mes: reseñas nuevas, calificación promedio, porcentaje de reseñas respondidas y la fecha de la más reciente. Lee también lo que más se menciona: si tres reseñas en un mes hablan de servicio lento a la hora de la comida, no es un problema de marketing; es un problema de operación que vale la pena corregir. Nuestra [guía de SEO local](/blog/seo-local-guia) y [optimizar tu Perfil de Google](/blog/optimizar-google-business-profile) cubren el resto del perfil.",
+          "Nuestro [diagnóstico gratuito para restaurantes](/recursos/diagnostico/restaurantes) te dice en unos minutos qué corregir primero en tu Perfil de Google, tu menú y tu canal de pedidos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Puedo dar un descuento a cambio de una reseña en Google?",
+        qEn: "Can I offer a discount in exchange for a Google review?",
+        a: "No. Las políticas de Google prohíben ofrecer pagos, descuentos o productos gratis a cambio de reseñas. Google puede quitar reseñas, bloquear nuevas y mostrar una advertencia en tu perfil. Pide la reseña sin ofrecer nada a cambio.",
+        aEn: "No. Google's policies prohibit offering payments, discounts or free products in exchange for reviews. Google can remove reviews, block new ones and show a warning on your profile. Ask for the review without offering anything in return.",
+      },
+      {
+        q: "¿Cuál es el mejor momento para pedir una reseña en un restaurante?",
+        qEn: "When is the best time to ask for a review at a restaurant?",
+        a: "Cuando el comensal sigue en la mesa, después del postre o al pagar, con una frase corta del mesero y un QR en la cuenta o el ticket. Para pedidos y reservaciones, un WhatsApp al día siguiente con la liga.",
+        aEn: "While the diner is still at the table, after dessert or when paying, with a short line from the waiter and a QR code on the bill or receipt. For orders and reservations, a WhatsApp message the next day with the link.",
+      },
+      {
+        q: "¿Puedo pedir reseñas solo a los clientes contentos?",
+        qEn: "Can I ask only happy customers for reviews?",
+        a: "No. Google prohíbe pedir reseñas positivas de forma selectiva y desalentar las negativas. Pídesela a todos: además de cumplir la regla, tu calificación será más creíble.",
+        aEn: "No. Google prohibits selectively asking for positive reviews and discouraging negative ones. Ask everyone: besides following the rule, your rating will be more credible.",
+      },
+      {
+        q: "¿Cómo respondo una mala reseña?",
+        qEn: "How do I respond to a bad review?",
+        a: "Agradece, reconoce lo que salió mal sin excusas, explica qué estás corrigiendo y ofrece seguir en privado. No discutas en público. Si es falsa u ofensiva, repórtala desde tu Perfil de Google.",
+        aEn: "Thank them, acknowledge what went wrong without excuses, explain what you are fixing and offer to continue privately. Do not argue in public. If it is fake or offensive, report it from your Google profile.",
+      },
+      {
+        q: "¿Las reseñas ayudan a aparecer más arriba en Google Maps?",
+        qEn: "Do reviews help me rank higher on Google Maps?",
+        a: "Sí. Google explica que la prominencia de un negocio depende en parte del número de reseñas, y que más reseñas y valoraciones positivas mejoran el posicionamiento local. También importan la relevancia y la distancia.",
+        aEn: "Yes. Google explains that a business's prominence depends in part on the number of reviews, and that more reviews and positive ratings improve local ranking. Relevance and distance also matter.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Google reviews restaurant",
+        "how to get more Google reviews",
+        "respond to bad restaurant review",
+        "Google review policy incentives",
+        "restaurant local SEO",
+      ],
+      keywordsEs: [
+        "reseñas en Google restaurante",
+        "cómo conseguir más reseñas en Google",
+        "cómo responder una mala reseña",
+        "dar descuento por reseña Google",
+        "QR para reseñas de Google",
+        "SEO local restaurantes",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
