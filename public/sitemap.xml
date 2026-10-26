@@ -1010,4 +1010,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/responder-rapido-a-tus-leads</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/responder-rapido-a-tus-leads" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/responder-rapido-a-tus-leads?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/responder-rapido-a-tus-leads" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
