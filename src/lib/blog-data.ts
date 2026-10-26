@@ -10242,7 +10242,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Buen Fin 2026 runs from November 13 to 17. Many businesses arrive late, set discounts by gut feeling and end up selling more while earning less. How to build an offer that leaves a profit, stay on the right side of Profeco and keep the customers after the weekend.",
     excerptEs:
       "El Buen Fin 2026 va del 13 al 17 de noviembre. Muchos negocios llegan tarde, ponen descuentos al tanteo y terminan vendiendo más pero ganando menos. Cómo armar una oferta que sí deje utilidad, cumplir con Profeco y quedarte con los clientes después del fin de semana.",
-    readingTime: 9,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -10343,6 +10343,45 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        id: "cuanto-mas-tienes-que-vender",
+        heading: "Work out how much more you need to sell",
+        headingEs: "Calcula cuánto más tienes que vender",
+        body: [
+          "The calculation fits in one line: **divide your margin by your margin minus the discount.** With a 30% margin and a 20% discount: 0.30 ÷ 0.10 = 3, so you need to sell three times as much. With a 40% margin and a 10% discount: 0.40 ÷ 0.30 = 1.33, a third more. With a 50% margin and a 20% discount: 0.50 ÷ 0.30 = 1.67. If the discount is equal to or larger than your margin, you sell at a loss no matter how much you sell.",
+          "Do this calculation per product or service, not for the whole business, and apply the discount only where your margin can take it. A practical rule: a strong discount on a few products that bring people in, and normal-margin products to complete the ticket. The customer comes for the offer and leaves with something else.",
+        ],
+        bodyEs: [
+          "La cuenta cabe en una línea: **divide tu margen entre tu margen menos el descuento.** Con margen de 30% y descuento de 20%: 0.30 ÷ 0.10 = 3, es decir, necesitas vender el triple. Con margen de 40% y descuento de 10%: 0.40 ÷ 0.30 = 1.33, un tercio más. Con margen de 50% y descuento de 20%: 0.50 ÷ 0.30 = 1.67. Si el descuento es igual o mayor que tu margen, vendes con pérdida sin importar cuánto vendas.",
+          "Haz esta cuenta por producto o servicio, no para todo el negocio, y aplica el descuento solo donde tu margen lo aguanta. Una regla práctica: descuento fuerte en pocos productos que atraen gente, y productos con margen normal para completar el ticket. El cliente entra por la oferta y se lleva algo más.",
+        ],
+      },
+      {
+        id: "meses-sin-intereses-cuanto-cuestan",
+        heading: "Interest-free installments: what they really cost you",
+        headingEs: "Meses sin intereses: cuánto te cuestan de verdad",
+        body: [
+          "An example with round numbers and a hypothetical rate, because each bank and terminal has its own: a $10,000 sale at 6 interest-free months with a 7% fee for that term, plus VAT, costs you $812. If your margin on that sale is 30%, or $3,000, the installments eat 27% of your profit before any discount.",
+          "Ask your bank or terminal for the fee table by term and add it to your calculation. Two ways to control it: offer installments only above a minimum amount, and only on short terms. Say it clearly in the ad, because the customer will ask at the register.",
+        ],
+        bodyEs: [
+          "Un ejemplo con números redondos y una tasa hipotética, porque cada banco y terminal tiene la suya: una venta de $10,000 a 6 meses sin intereses con una comisión de 7% por ese plazo, más IVA, te cuesta $812. Si tu margen en esa venta es de 30%, o $3,000, los meses se comen 27% de tu ganancia antes de cualquier descuento.",
+          "Pide a tu banco o terminal la tabla de comisiones por plazo y súmala a tu cuenta. Dos formas de controlarlo: ofrecer meses solo a partir de un monto mínimo, y solo a plazos cortos. Dilo claro en el anuncio, porque el cliente lo va a preguntar en la caja.",
+        ],
+      },
+      {
+        id: "una-oferta-que-cumple-y-vende",
+        heading: "Writing an offer that complies and sells",
+        headingEs: "Cómo redactar una oferta que cumple y vende",
+        body: [
+          "A clear offer says what is discounted, the previous price and the new one or the percentage, the dates it is valid, the restrictions, such as limited units, sizes or branches, and which payment methods apply. Avoid “up to 70%” if only one product has that discount: the customer arrives expecting it on everything and leaves disappointed.",
+          "An example: “Buen Fin, November 13 to 17: 20% off the whole [product] line, from $1,000 to $800. While stocks last (50 units). Card or cash; cannot be combined with other promotions.” It is short, it can be checked and it does not create arguments at the register.",
+        ],
+        bodyEs: [
+          "Una oferta clara dice qué tiene descuento, el precio anterior y el nuevo o el porcentaje, las fechas en que aplica, las restricciones, como piezas limitadas, tallas o sucursales, y qué formas de pago aplican. Evita el “hasta 70%” si solo un producto tiene ese descuento: el cliente llega esperándolo en todo y se va decepcionado.",
+          "Un ejemplo: “Buen Fin, del 13 al 17 de noviembre: 20% en toda la línea de [producto], de $1,000 a $800. Hasta agotar existencias (50 piezas). Aplica con tarjeta y efectivo; no acumulable con otras promociones.” Es corto, se puede comprobar y no genera discusiones en la caja.",
+        ],
+      },
+      {
         id: "plan-de-tres-semanas",
         heading: "A three-week plan",
         headingEs: "Plan de tres semanas",
@@ -10421,7 +10460,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Delivery apps bring orders, but between commission, the VAT on that commission and tax withholdings, a large part of each sale never reaches you. How to calculate what each channel really costs and move your regular customers to direct orders without leaving the apps.",
     excerptEs:
       "Las apps de delivery traen pedidos, pero entre la comisión, el IVA de esa comisión y las retenciones, una buena parte de cada venta no llega a tu caja. Cómo calcular lo que de verdad te cuesta cada canal y pasar a tus clientes frecuentes a pedidos directos sin salirte de las apps.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -10493,6 +10532,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "En la app, el cliente es de la app: casi nunca tienes su teléfono ni sabes cada cuánto pide. En tu canal directo, cada pedido te deja un nombre, un WhatsApp y lo que le gusta. Guárdalo en un [[CRM|crm]] o al menos en tu [[punto de venta|punto-de-venta]], con tu [[aviso de privacidad|aviso-de-privacidad]] en orden.",
           "Con esa lista puedes mandar la promoción de la semana, avisar de un platillo nuevo o recordarle a quien no ha pedido en un mes, casi sin costo. Esa es la diferencia entre pagar por cada pedido y ser dueño de tu clientela. Explicamos la herramienta en [qué es un CRM](/blog/que-es-un-crm).",
+        ],
+      },
+      {
+        id: "precio-en-la-app",
+        heading: "If you change prices in the app, do it with numbers",
+        headingEs: "Si cambias precios en la app, hazlo con números",
+        body: [
+          "To receive the same per order in the app as in your direct channel, divide your direct price by one minus the commission multiplied by 1.16, which adds the VAT on the commission. A $100 dish with a 30% commission: 100 ÷ (1 − 0.348) = $153.37. With a 15% commission: 100 ÷ 0.826 = $121.07.",
+          "Raising prices 53% scares customers away, which is why many restaurants adjust only partially and protect the ticket with combos that have a better margin. If you use different prices in the app, the price shown must be the one charged, and check your contract, as some apps have rules on price parity.",
+        ],
+        bodyEs: [
+          "Para recibir lo mismo por pedido en la app que en tu canal directo, divide tu precio directo entre uno menos la comisión multiplicada por 1.16, que suma el IVA de la comisión. Un platillo de $100 con comisión de 30%: 100 ÷ (1 − 0.348) = $153.37. Con comisión de 15%: 100 ÷ 0.826 = $121.07.",
+          "Subir 53% los precios espanta clientes, por eso muchos restaurantes ajustan solo una parte y cuidan el ticket con combos de mejor margen. Si manejas precios distintos en la app, el precio mostrado debe ser el que se cobra, y revisa tu contrato, porque algunas apps tienen reglas sobre igualdad de precios.",
+        ],
+      },
+      {
+        id: "que-debe-tener-tu-menu-directo",
+        heading: "What your direct menu needs",
+        headingEs: "Qué debe tener tu menú directo",
+        body: [
+          "Real photos of each dish, updated prices, preparation and delivery times, delivery areas and their cost, opening hours, minimum order and payment methods: bank transfer, a card payment link or cash on delivery. Add a WhatsApp button with a pre-filled message, such as “Hi, I'd like to order”, so the customer does not have to think about what to write.",
+          "Keep it as easy as the app: if ordering directly takes five messages and the app takes three taps, the customer goes back to the app. Fixed replies with the menu link, the delivery cost and the payment details turn a conversation into an order in minutes.",
+        ],
+        bodyEs: [
+          "Fotos reales de cada platillo, precios actualizados, tiempos de preparación y entrega, zonas de entrega y su costo, horarios, pedido mínimo y formas de pago: transferencia, liga de pago con tarjeta o efectivo contra entrega. Agrega un botón de WhatsApp con un mensaje prellenado, como “Hola, quiero hacer un pedido”, para que el cliente no tenga que pensar qué escribir.",
+          "Que sea tan fácil como la app: si pedir directo toma cinco mensajes y en la app son tres toques, el cliente regresa a la app. Respuestas fijas con la liga del menú, el costo de envío y los datos de pago convierten una conversación en pedido en minutos.",
+        ],
+      },
+      {
+        id: "entrega-propia-o-por-pedido",
+        heading: "Your own driver or pay per delivery",
+        headingEs: "Repartidor propio o pago por entrega",
+        body: [
+          "An in-house driver is a fixed cost: salary, vehicle, fuel and insurance. It pays off when you have steady volume in a small radius. An example with round numbers: $12,000 a month divided by 400 deliveries is $30 per order; with 150 deliveries it is $80. On-demand courier services charge per trip, which suits you when you are starting out or for peaks.",
+          "Compare that cost per order with what you charge for delivery and with what the app would have cost you. And promote pickup: it is the cheapest channel for both sides, and many customers are happy to collect if it is quick and they skip the delivery fee.",
+        ],
+        bodyEs: [
+          "Un repartidor propio es un costo fijo: sueldo, vehículo, gasolina y seguro. Conviene cuando tienes volumen constante en un radio chico. Un ejemplo con números redondos: $12,000 al mes entre 400 entregas son $30 por pedido; con 150 entregas son $80. Los servicios de mensajería por pedido cobran por viaje, lo que te conviene al empezar o en horas pico.",
+          "Compara ese costo por pedido con lo que cobras de envío y con lo que te habría costado la app. Y promueve que pasen a recoger: es el canal más barato para los dos, y muchos clientes recogen con gusto si es rápido y se ahorran el envío.",
         ],
       },
       {
@@ -10572,7 +10650,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "December is the month when groups book, but many restaurants wait for the phone to ring, quote by hand and hold dates without a deposit. How to prepare packages, a page that sells them and a booking process that reduces cancellations, before your competitors do.",
     excerptEs:
       "Diciembre es el mes en que los grupos reservan, pero muchos restaurantes esperan a que suene el teléfono, cotizan a mano y apartan fechas sin anticipo. Cómo preparar paquetes, una página que los venda y un proceso de reservas que reduzca cancelaciones, antes que tu competencia.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -10660,6 +10738,45 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        id: "como-ponerle-precio-al-paquete",
+        heading: "How to price the package",
+        headingEs: "Cómo ponerle precio al paquete",
+        body: [
+          "An example with round numbers: food and drinks cost you $250 per person and extra staff and set-up another $60, so $310 per person. If you want a 35% margin on the price, divide the cost by 0.65: $310 ÷ 0.65 = $477, which you can round to $480 or $490. Do this for each package and do not forget the cost of the area you block for the group.",
+          "State whether prices include VAT and whether the tip is included, and set a minimum number of guests or a minimum spend for private areas. A clear quote avoids the most common argument of December: the bill that does not match what the organiser expected.",
+        ],
+        bodyEs: [
+          "Un ejemplo con números redondos: comida y bebidas te cuestan $250 por persona y personal extra y montaje otros $60, es decir $310 por persona. Si quieres un margen de 35% sobre el precio, divide el costo entre 0.65: $310 ÷ 0.65 = $477, que puedes redondear a $480 o $490. Haz esto para cada paquete y no olvides el costo del área que bloqueas para el grupo.",
+          "Aclara si los precios incluyen IVA y si la propina va incluida, y pon un mínimo de personas o un consumo mínimo para áreas privadas. Una cotización clara evita la discusión más común de diciembre: la cuenta que no coincide con lo que el organizador esperaba.",
+        ],
+      },
+      {
+        id: "mensaje-para-empresas",
+        heading: "A message for companies",
+        headingEs: "Un mensaje para empresas",
+        body: [
+          "A short message works better than a long PDF on the first contact. An example: “Hi [name], this is [your name] from [restaurant]. We are organising this year's Christmas parties and I am sharing three packages for groups of 20 to 80 people, from $480 per person, with a private area and a three-course menu. December dates are being booked; shall I send you the full proposal?”",
+          "Send it to last year's organisers first, then to companies near you, and follow up once a week later if there is no answer. A specific price and a reason to decide now get more replies than “we have packages, ask for more information”.",
+        ],
+        bodyEs: [
+          "Un mensaje corto funciona mejor que un PDF largo en el primer contacto. Un ejemplo: “Hola [nombre], soy [tu nombre] de [restaurante]. Estamos armando las posadas de este año y te comparto tres paquetes para grupos de 20 a 80 personas, desde $480 por persona, con área privada y menú de tres tiempos. Las fechas de diciembre se están apartando; ¿te mando la propuesta completa?”",
+          "Mándalo primero a los organizadores del año pasado, luego a empresas cercanas, y da seguimiento una vez a la semana si no contestan. Un precio concreto y una razón para decidir ahora consiguen más respuestas que “tenemos paquetes, pide informes”.",
+        ],
+      },
+      {
+        id: "el-dia-del-evento",
+        heading: "On the day of the event",
+        headingEs: "El día del evento",
+        body: [
+          "Confirm the final headcount a few days before and adjust purchases. Assign one person from your team as the group's host, agree on a timeline with the organiser (arrival, food, toast, raffle or activity) and check sound and music if they apply. Ask in advance whether they will need an invoice and collect the tax details, so you do not delay the bill at the end of the night.",
+          "Agree on whether there will be a single bill or split bills, and take some photos for the organiser, with their permission. Small details are what make them come back next year.",
+        ],
+        bodyEs: [
+          "Confirma el número final de personas unos días antes y ajusta compras. Asigna a una persona de tu equipo como anfitrión del grupo, acuerda con el organizador el orden del evento (llegada, comida, brindis, rifa o dinámica) y revisa sonido y música si aplican. Pregunta con anticipación si van a necesitar factura y pide los datos fiscales, para no atrasar la cuenta al final de la noche.",
+          "Acuerda si habrá una sola cuenta o cuentas separadas, y toma algunas fotos para el organizador, con su permiso. Los detalles pequeños son los que hacen que regresen el próximo año.",
+        ],
+      },
+      {
         id: "plan-de-las-proximas-semanas",
         heading: "A plan for the coming weeks",
         headingEs: "Plan para las próximas semanas",
@@ -10735,7 +10852,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "A logo can cost $1,500 or a full branding project can cost $120,000, and both get called “branding”. What each level includes, reference price ranges, the trademark registration almost nobody budgets for and how to compare quotes without overpaying or falling short.",
     excerptEs:
       "Un logo puede costar $1,500 y un branding completo $120,000, y a los dos les dicen “branding”. Qué incluye cada nivel, rangos de precio de referencia, el registro de marca que casi nadie presupuesta y cómo comparar cotizaciones sin pagar de más ni quedarte corto.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -10820,6 +10937,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Hazle a cada proveedor las mismas preguntas: qué entregables incluye, cuántas propuestas y rondas de cambios, si recibes archivos editables y vectoriales, si hay manual de marca, qué aplicaciones se diseñan y cuánto tiempo toma. Dos cotizaciones solo se pueden comparar cuando responden a la misma lista.",
           "Y pide por escrito la cesión de derechos. Sin ella, el diseñador puede conservar legalmente los derechos de lo que pagaste. Es una cláusula corta en el contrato que evita un problema serio cuando quieras registrar la marca o cambiar de proveedor.",
+        ],
+      },
+      {
+        id: "proceso-y-tiempos",
+        heading: "The process and how long it takes",
+        headingEs: "El proceso y cuánto tarda",
+        body: [
+          "A serious branding project follows the same steps: brief, research, proposals, adjustments, applications and delivery of the manual and files. As reference times we work with, not official ones: a logo alone takes one to two weeks, a basic visual identity three to six weeks and complete branding with strategy six to twelve weeks, depending on how quickly decisions are made.",
+          "The step that delays projects the most is not the design; it is approval. Decide in advance who has the final word and limit opinions to two or three people. A brand designed to please ten partners ends up pleasing none of the customers.",
+        ],
+        bodyEs: [
+          "Un branding serio sigue los mismos pasos: brief, investigación, propuestas, ajustes, aplicaciones y entrega del manual y los archivos. Como tiempos de referencia que manejamos, no oficiales: un logo solo toma de una a dos semanas, una identidad visual básica de tres a seis semanas y un branding completo con estrategia de seis a doce semanas, según qué tan rápido se tomen las decisiones.",
+          "El paso que más retrasa los proyectos no es el diseño; es la aprobación. Decide desde el inicio quién tiene la última palabra y limita las opiniones a dos o tres personas. Una marca diseñada para quedar bien con diez socios termina sin convencer a ningún cliente.",
+        ],
+      },
+      {
+        id: "brief-antes-de-cotizar",
+        heading: "What to prepare before asking for quotes",
+        headingEs: "Qué preparar antes de pedir cotización",
+        body: [
+          "A one-page brief makes quotes more precise and comparable: who your customer is, three competitors and what you like or dislike about them, three words for what you want to convey, what you definitely do not want, where the brand will be applied (sign, packaging, uniforms, website, social media, vehicles), your deadline and your budget range.",
+          "Include what already exists, such as a previous logo, colours you want to keep or photos of your premises. The more the designer knows at the start, the fewer rounds of changes you pay for later.",
+        ],
+        bodyEs: [
+          "Un brief de una página hace que las cotizaciones sean más precisas y comparables: quién es tu cliente, tres competidores y qué te gusta o no de ellos, tres palabras de lo que quieres transmitir, lo que definitivamente no quieres, dónde se va a aplicar la marca (letrero, empaque, uniformes, página, redes, vehículos), tu fecha límite y tu rango de presupuesto.",
+          "Incluye lo que ya existe, como un logo anterior, colores que quieras conservar o fotos de tu local. Entre más sepa el diseñador al inicio, menos rondas de cambios pagas después.",
+        ],
+      },
+      {
+        id: "clases-de-niza",
+        heading: "Which class to register your trademark in",
+        headingEs: "En qué clase registrar tu marca",
+        body: [
+          "IMPI uses the Nice Classification, which divides products and services into 45 classes: 1 to 34 are products and 35 to 45 are services. Some common examples: class 43 for restaurant and food services, 36 for real estate, 35 for advertising and business management, 41 for education and entertainment, and 44 for medical services. Each class is a separate application and fee.",
+          "Register in the classes where you actually operate and plan to operate soon. A restaurant that also bottles its own sauces may need class 30, which covers condiments, in addition to 43. A specialist can confirm the right classes before you pay.",
+        ],
+        bodyEs: [
+          "El IMPI usa la Clasificación de Niza, que divide productos y servicios en 45 clases: de la 1 a la 34 son productos y de la 35 a la 45 son servicios. Algunos ejemplos comunes: la clase 43 para restaurantes y servicios de alimentación, la 36 para negocios inmobiliarios, la 35 para publicidad y gestión de negocios, la 41 para educación y entretenimiento, y la 44 para servicios médicos. Cada clase es una solicitud y un pago aparte.",
+          "Registra en las clases donde de verdad operas y planeas operar pronto. Un restaurante que además embotella sus propias salsas puede necesitar la clase 30, que cubre condimentos, además de la 43. Un especialista puede confirmar las clases correctas antes de que pagues.",
         ],
       },
       {
