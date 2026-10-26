@@ -11054,7 +11054,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "The monthly platform fee is the cheapest part of an online store. What Tiendanube, Shopify, WooCommerce and a custom store cost, the per-sale fees that grow with you, the costs almost nobody budgets for, and why a store without traffic does not sell.",
     excerptEs:
       "La mensualidad de la plataforma es la parte más barata de una tienda en línea. Cuánto cuestan Tiendanube, Shopify, WooCommerce y una tienda a medida, las comisiones por venta que crecen contigo, los costos que casi nadie presupuesta y por qué una tienda sin tráfico no vende.",
-    readingTime: 9,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -11126,6 +11126,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "**Una tienda en línea sin tráfico es un local en una calle por donde no pasa nadie.** Abrirla es el inicio; el trabajo constante es llevarle gente. [[Meta Ads|meta-ads]] puede mostrar tu catálogo a personas con intereses parecidos a los de tus clientes, y [[Google Ads|google-ads]] puede mostrar tus productos a quien ya los está buscando. Explicamos ambos en nuestra [guía de Meta Ads](/blog/guia-meta-ads) y nuestra [guía de Google Ads](/blog/guia-google-ads).",
           "La mayoría de los visitantes no compra en su primera visita. Con el [[pixel|pixel]] instalado puedes mostrar anuncios de [[remarketing|remarketing]] a quien vio un producto, y un mensaje automático por cada [[carrito abandonado|carrito-abandonado]] le recuerda lo que dejó. El [[email marketing|email-marketing]] hace el resto con quienes ya compraron.",
+        ],
+      },
+      {
+        id: "presupuesto-del-primer-ano",
+        heading: "An example first-year budget",
+        headingEs: "Un ejemplo de presupuesto del primer año",
+        body: [
+          "An example with round numbers, not a quote: a mid-tier plan at $374 a month is $4,488 a year; photos of 50 products, $8,000; loading the catalogue with descriptions and variants, $5,000; and advertising at $5,000 a month, $60,000 a year. Total: $77,488 before per-sale fees and shipping. In this example the platform is less than 6% of the budget.",
+          "That is the point most people miss: **the platform is the cheapest line; bringing in buyers is the most expensive.** If your budget only covers the store and not the advertising, launch with fewer products and keep money for the first three months of ads.",
+        ],
+        bodyEs: [
+          "Un ejemplo con números redondos, no una cotización: un plan intermedio de $374 al mes son $4,488 al año; fotos de 50 productos, $8,000; carga del catálogo con descripciones y variantes, $5,000, y publicidad de $5,000 al mes, $60,000 al año. Total: $77,488 antes de comisiones por venta y envíos. En este ejemplo, la plataforma es menos del 6% del presupuesto.",
+          "Ese es el punto que casi todos pasan por alto: **la plataforma es la línea más barata; traer compradores es la más cara.** Si tu presupuesto solo alcanza para la tienda y no para la publicidad, lanza con menos productos y guarda dinero para los primeros tres meses de anuncios.",
+        ],
+      },
+      {
+        id: "como-paga-el-cliente-mexicano",
+        heading: "How Mexican customers pay",
+        headingEs: "Cómo paga el cliente mexicano",
+        body: [
+          "Card is not the only way. Many customers prefer to pay in cash at OXXO with a voucher, by SPEI bank transfer, with a digital wallet such as Mercado Pago, or with interest-free installments on credit cards. Gateways such as Stripe and Mercado Pago offer cash payment at OXXO; keep in mind that confirmation is not immediate and the voucher expires if it is not paid.",
+          "Offering the payment methods your customer actually uses can matter as much as the price. Check which ones your platform and gateway support before choosing, and show them clearly on each product page, not only at checkout.",
+        ],
+        bodyEs: [
+          "La tarjeta no es la única forma. Muchos clientes prefieren pagar en efectivo en OXXO con una ficha, por transferencia SPEI, con una cartera digital como Mercado Pago o a meses sin intereses con tarjeta de crédito. Pasarelas como Stripe y Mercado Pago ofrecen pago en efectivo en OXXO; considera que la confirmación no es inmediata y la ficha vence si no se paga.",
+          "Ofrecer las formas de pago que tu cliente de verdad usa puede pesar tanto como el precio. Revisa cuáles acepta tu plataforma y tu pasarela antes de elegir, y muéstralas claro en cada producto, no solo al pagar.",
+        ],
+      },
+      {
+        id: "envios-sin-sorpresas",
+        heading: "Shipping without surprises",
+        headingEs: "Envíos sin sorpresas",
+        body: [
+          "Carriers charge the higher of the actual weight and the volumetric weight, which depends on the size of the box, so a light but bulky product can cost more than you think. Weigh and measure each product packed before setting shipping prices, and check which postcodes are “extended zones”, which usually cost more and take longer.",
+          "A free-shipping threshold, such as “free shipping on orders over $999”, helps raise the average ticket. Send the tracking number by email or WhatsApp as soon as the order ships and publish how long deliveries take: most complaints in online stores are about not knowing where the order is.",
+        ],
+        bodyEs: [
+          "Las paqueterías cobran el mayor entre el peso real y el peso volumétrico, que depende del tamaño de la caja, así que un producto ligero pero voluminoso puede costar más de lo que crees. Pesa y mide cada producto ya empacado antes de fijar precios de envío, y revisa qué códigos postales son “zona extendida”, que suele costar más y tardar más.",
+          "Un monto mínimo para envío gratis, como “envío gratis en compras mayores a $999”, ayuda a subir el ticket promedio. Manda el número de guía por correo o WhatsApp en cuanto sale el pedido y publica cuánto tardan las entregas: la mayoría de las quejas en tiendas en línea son por no saber dónde está el pedido.",
         ],
       },
       {
@@ -11205,7 +11244,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Hundreds of happy diners a month and a handful of old reviews: it happens to many restaurants. Why reviews weigh so much, what Google prohibits (yes, including the free dessert in exchange for a review), how to ask at the right moment and how to respond to bad ones.",
     excerptEs:
       "Cientos de comensales contentos al mes y un puñado de reseñas viejas: le pasa a muchos restaurantes. Por qué pesan tanto las reseñas, qué prohíbe Google (sí, incluido el postre gratis a cambio de una reseña), cómo pedirlas en el momento correcto y cómo responder las malas.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -11277,6 +11316,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "En la misma encuesta de BrightLocal, 89% de los consumidores espera que los dueños respondan las reseñas. Una respuesta corta a una buena reseña, mencionando el platillo o la ocasión, muestra que hay alguien detrás del negocio. Una respuesta a una mala reseña la leen más los futuros clientes que quien la escribió.",
           "Para las malas: agradece, reconoce lo que salió mal sin excusas, explica qué estás haciendo para corregirlo y ofrece seguir la conversación en privado. Nunca discutas en público. Si una reseña es falsa u ofensiva, repórtala desde tu Perfil de Google en vez de contestarla enojado.",
+        ],
+      },
+      {
+        id: "como-crear-tu-liga",
+        heading: "How to create your review link",
+        headingEs: "Cómo crear tu liga para pedir reseñas",
+        body: [
+          "In your Google Business Profile, the “Ask for reviews” option gives you a short link that opens the review window directly. Copy it, open it on your phone to check that it works, and use it everywhere: the QR on the table and receipt, your WhatsApp message after orders, your email signature and your website.",
+          "If you have several branches, each one has its own profile and its own link; do not mix them, or reviews will end up in the wrong location. And keep the link behind a dynamic QR, so if it ever changes you only update it in one place.",
+        ],
+        bodyEs: [
+          "En tu Perfil de Google, la opción “Pedir reseñas” te da una liga corta que abre directo la ventana para escribir la reseña. Cópiala, ábrela en tu celular para comprobar que funciona y úsala en todos lados: el QR en la mesa y el ticket, tu mensaje de WhatsApp después de los pedidos, la firma de tu correo y tu página.",
+          "Si tienes varias sucursales, cada una tiene su perfil y su liga; no las mezcles, o las reseñas terminan en la ubicación equivocada. Y deja la liga detrás de un QR dinámico, para que si algún día cambia solo la actualices en un lugar.",
+        ],
+      },
+      {
+        id: "plantillas-de-respuesta",
+        heading: "Reply templates",
+        headingEs: "Plantillas de respuesta",
+        body: [
+          "For a good review: “Thank you, [name]! We are glad you enjoyed the [dish]. We look forward to seeing you again.” Mentioning something specific shows that a person read it. For a bad review: “[Name], thank you for telling us. You are right that [what went wrong] was not acceptable, and we are already [what you are changing]. We would like to make it up to you; please write to us at [contact].”",
+          "For a review you believe is fake: reply briefly and calmly, without accusing, such as “We have no record of this visit; if you were with us, please contact us at [contact] so we can look into it”, and report it from your profile. Future customers read the reply more than the review.",
+        ],
+        bodyEs: [
+          "Para una buena reseña: “¡Gracias, [nombre]! Nos da gusto que te haya gustado el [platillo]. Te esperamos pronto.” Mencionar algo concreto demuestra que una persona la leyó. Para una mala: “[Nombre], gracias por decírnoslo. Tienes razón en que [lo que salió mal] no estuvo bien, y ya estamos [lo que estás cambiando]. Nos gustaría compensarte; escríbenos a [contacto].”",
+          "Para una reseña que crees falsa: contesta corto y tranquilo, sin acusar, como “No tenemos registro de esta visita; si estuviste con nosotros, escríbenos a [contacto] para revisarlo”, y repórtala desde tu perfil. Los futuros clientes leen más la respuesta que la reseña.",
+        ],
+      },
+      {
+        id: "capacita-a-tu-equipo",
+        heading: "Train your team",
+        headingEs: "Capacita a tu equipo",
+        body: [
+          "Give waiters a single, natural line and the moment to say it, and explain why it matters: reviews bring tables, and tables bring tips. If something went wrong at a table, the priority is to fix it, not to ask for a review; once fixed, asking is fine, because the rule is to ask everyone.",
+          "Do not tie bonuses to five-star reviews: it pushes the team to ask only happy customers, which goes against Google's rules, and to pressure diners. Measure instead how many reviews arrive each week and celebrate the trend as a team.",
+        ],
+        bodyEs: [
+          "Dale a los meseros una sola frase natural y el momento para decirla, y explícales por qué importa: las reseñas traen mesas y las mesas traen propinas. Si algo salió mal en una mesa, la prioridad es resolverlo, no pedir la reseña; ya resuelto, pedirla está bien, porque la regla es pedírsela a todos.",
+          "No ligues bonos a reseñas de cinco estrellas: empuja al equipo a pedírselas solo a los contentos, lo que va contra las reglas de Google, y a presionar a los comensales. Mejor mide cuántas reseñas llegan cada semana y celebren la tendencia en equipo.",
         ],
       },
       {
@@ -11356,7 +11434,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Many new agents spend their first commission on a photographer, a drone and ads before having a single follower; others wait for everything to be perfect and never publish. The healthy path goes in stages: your phone and a microphone, consistent content, then your brand, then ads, then professionals.",
     excerptEs:
       "Muchos brokers que empiezan gastan su primera comisión en fotógrafo, dron y anuncios antes de tener un solo seguidor; otros esperan a tenerlo todo perfecto y nunca publican. El camino sano va por etapas: tu celular y un micrófono, constancia, luego tu marca, luego anuncios y después profesionales.",
-    readingTime: 9,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -11376,6 +11454,19 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Un celular reciente graba video suficiente para recorridos de propiedades y reels. Lo que hace la diferencia es la técnica: graba en la mañana con las cortinas abiertas, muévete despacio, mantén el celular nivelado y usa un tripié pequeño o un estabilizador. Graba vertical para reels y horizontal para recorridos completos en YouTube.",
           "Si tienes un iPhone Pro del 15 Pro en adelante, puede grabar en [[LOG|video-log]], que guarda más detalle en interiores con ventanas brillantes. Solo sirve si vas a editar: el video en LOG se ve deslavado hasta que le corriges el color, y los archivos pesan mucho. Si no vas a editar, el modo normal con HDR te da mejor resultado con menos trabajo.",
+        ],
+      },
+      {
+        id: "configura-tu-celular",
+        heading: "Set up your phone before recording",
+        headingEs: "Configura tu celular antes de grabar",
+        body: [
+          "Clean the lens, record in 4K at 30 frames per second for tours, and lock focus and exposure by pressing and holding on the screen, so the image does not change brightness every time you pass a window. Use the wide-angle lens for interiors but keep the phone level so walls stay straight, and avoid digital zoom.",
+          "Record short clips of five to ten seconds per space instead of one long take: they are easier to edit and to reuse in reels. Turn on all the lights, open the curtains and record exteriors in the morning or late afternoon, when the light is softer.",
+        ],
+        bodyEs: [
+          "Limpia el lente, graba en 4K a 30 cuadros por segundo para recorridos, y bloquea el enfoque y la exposición manteniendo presionada la pantalla, para que la imagen no cambie de brillo cada vez que pasas por una ventana. Usa el gran angular en interiores pero mantén el celular nivelado para que las paredes se vean rectas, y evita el zoom digital.",
+          "Graba tomas cortas de cinco a diez segundos por espacio en vez de un solo recorrido largo: son más fáciles de editar y de reutilizar en reels. Prende todas las luces, abre las cortinas y graba exteriores en la mañana o al final de la tarde, cuando la luz es más suave.",
         ],
       },
       {
@@ -11415,6 +11506,32 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Combina tres tipos de contenido: recorridos de tus propiedades, guías de las zonas donde trabajas (cómo es vivir en esa colonia, escuelas, precios, tráfico) y explicaciones cortas del proceso, como los gastos de notaría o cómo compra un extranjero en la costa con un fideicomiso bancario. El primero vende una propiedad; los otros dos hacen que te recuerden cuando estén listos para comprar o vender.",
           "Monetizar tu contenido empieza por convertir vistas en conversaciones: cierra cada reel con un siguiente paso claro, como “mándame WhatsApp para precio y ubicación”, y guarda cada contacto como [[prospecto|lead]]. La constancia le gana a la perfección: unos cuantos videos cada semana durante meses hacen más que un video perfecto al mes. Lo demás lo explicamos en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).",
+        ],
+      },
+      {
+        id: "guion-de-un-reel",
+        heading: "The script of a 30-second reel",
+        headingEs: "El guion de un reel de 30 segundos",
+        body: [
+          "Seconds 0 to 3: a hook that stops the scroll, such as the view, the price or a question (“What does $4 million buy in Rosarito?”). Seconds 3 to 20: three things that make the property special, one per shot. Seconds 20 to 27: the area, such as the beach, schools or the border crossing. Seconds 27 to 30: the next step, “Message me on WhatsApp for the price and a visit”.",
+          "Add subtitles, because many people watch without sound, and put the price or the area in the first frame. A reel that answers “where, how much and why” in 30 seconds generates more conversations than a long, silent tour.",
+        ],
+        bodyEs: [
+          "Segundos 0 a 3: un gancho que detenga el scroll, como la vista, el precio o una pregunta (“¿Qué compras con 4 millones en Rosarito?”). Segundos 3 a 20: tres cosas que hacen especial la propiedad, una por toma. Segundos 20 a 27: la zona, como la playa, las escuelas o la garita. Segundos 27 a 30: el siguiente paso, “Mándame WhatsApp para precio y visita”.",
+          "Agrega subtítulos, porque mucha gente ve sin sonido, y pon el precio o la zona en el primer cuadro. Un reel que contesta “dónde, cuánto y por qué” en 30 segundos genera más conversaciones que un recorrido largo y sin voz.",
+        ],
+      },
+      {
+        id: "una-semana-de-contenido",
+        heading: "A week of content",
+        headingEs: "Una semana de contenido",
+        body: [
+          "An example to start with: Monday, a property tour; Wednesday, a guide to an area you work; Friday, an explanation of the process or the market, such as notary costs or what is selling. Every day, stories with visits, keys handed over and behind the scenes.",
+          "Record everything in one or two days a week and schedule the posts, so content does not depend on having free time every day. Consistency for months matters more than any individual video.",
+        ],
+        bodyEs: [
+          "Un ejemplo para empezar: lunes, recorrido de una propiedad; miércoles, guía de una zona que trabajas; viernes, explicación del proceso o del mercado, como gastos de notaría o qué se está vendiendo. Todos los días, historias con visitas, entregas de llaves y detrás de cámaras.",
+          "Graba todo en uno o dos días a la semana y programa las publicaciones, para que el contenido no dependa de tener tiempo libre cada día. La constancia durante meses pesa más que cualquier video individual.",
         ],
       },
       {
@@ -11519,7 +11636,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "OpenAI started showing ads in ChatGPT in Mexico, but only to users on the free and Go plans. What that means for who you can reach, which businesses can benefit, which ones should wait, and why being recommended in the answer is still worth more than an ad below it.",
     excerptEs:
       "OpenAI empezó a mostrar anuncios en ChatGPT en México, pero solo a usuarios de los planes gratis y Go. Qué significa eso para a quién puedes llegar, qué negocios pueden aprovecharlos, cuáles deberían esperar y por qué que te recomiende la respuesta sigue valiendo más que un anuncio debajo.",
-    readingTime: 8,
+    readingTime: 10,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -11591,6 +11708,32 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "El anuncio aparece debajo de la respuesta; la respuesta es lo primero que la persona lee. **En ChatGPT, que te recomiende la respuesta vale más que un anuncio debajo de ella**, y le llega a todos los usuarios, incluidos los que pagan. Trabajar esa presencia se llama [[GEO|geo]]: información clara y consistente de tu negocio, reseñas reales, contenido que responde las preguntas de tus clientes y [[datos estructurados|datos-estructurados]] en tu página.",
           "Explicamos cómo deciden las herramientas de IA a quién recomendar en [cómo recomienda ChatGPT a tu negocio](/blog/como-recomienda-chatgpt-a-tu-negocio), y por qué pesan tanto las reseñas en [cómo conseguir más reseñas en Google](/blog/resenas-google-restaurante).",
+        ],
+      },
+      {
+        id: "que-dice-chatgpt-de-tu-giro",
+        heading: "Check what ChatGPT says about your category",
+        headingEs: "Revisa qué dice ChatGPT de tu giro",
+        body: [
+          "A useful exercise before spending anything: ask ChatGPT the questions your customers would ask, such as “best seafood restaurant in Ensenada” or “real estate agent in Rosarito for foreigners”. Note who appears, what it says about each one and which sources it cites. Repeat it every month.",
+          "If you do not appear, or the information about your business is wrong, start there: your Google profile, your website, directories and reviews are the raw material these tools read. Fixing inconsistent hours, addresses or services is cheap and benefits you on Google too.",
+        ],
+        bodyEs: [
+          "Un ejercicio útil antes de gastar nada: pregúntale a ChatGPT lo que preguntarían tus clientes, como “mejor restaurante de mariscos en Ensenada” o “agente inmobiliario en Rosarito para extranjeros”. Anota quién aparece, qué dice de cada uno y qué fuentes cita. Repítelo cada mes.",
+          "Si no apareces, o la información de tu negocio está mal, empieza por ahí: tu Perfil de Google, tu página, los directorios y las reseñas son la materia prima que leen estas herramientas. Corregir horarios, direcciones o servicios inconsistentes es barato y también te beneficia en Google.",
+        ],
+      },
+      {
+        id: "como-medirlo-con-utm",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "Add tags to the link of each ad so [[Google Analytics|google-analytics]] knows where the visit came from, for example ?utm_source=chatgpt&utm_medium=paid&utm_campaign=november-test. That way you can compare visits, leads and sales from ChatGPT with those from Google and Meta.",
+          "Look at organic traffic too: many visits that arrive from ChatGPT's answers appear in Analytics with chatgpt.com as the source. If that number grows, your organic presence is working, which is worth knowing before paying for ads.",
+        ],
+        bodyEs: [
+          "Agrega etiquetas a la liga de cada anuncio para que [[Google Analytics|google-analytics]] sepa de dónde vino la visita, por ejemplo ?utm_source=chatgpt&utm_medium=paid&utm_campaign=prueba-noviembre. Así puedes comparar visitas, prospectos y ventas de ChatGPT con las de Google y Meta.",
+          "Revisa también el tráfico orgánico: muchas visitas que llegan desde las respuestas de ChatGPT aparecen en Analytics con chatgpt.com como fuente. Si ese número crece, tu presencia orgánica está funcionando, algo que vale la pena saber antes de pagar anuncios.",
         ],
       },
       {
