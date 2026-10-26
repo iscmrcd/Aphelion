@@ -11802,6 +11802,182 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "donde-anunciarte-segun-tu-giro",
+    cover: true,
+    title: "Where to Advertise by Type of Business: Google, Meta, TikTok, LinkedIn or ChatGPT",
+    titleEs: "¿Dónde anunciarte según tu giro? Google, Meta, TikTok, LinkedIn o ChatGPT",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "“Facebook or Google?” has no general answer. It depends on whether your customer is already searching for you or needs to discover you, on your ticket and on who makes the decision. A guide by type of business, from clinics and restaurants to real estate, industry and online stores.",
+    excerptEs:
+      "“¿Facebook o Google?” no tiene una respuesta general. Depende de si tu cliente ya te está buscando o te tiene que descubrir, de tu ticket y de quién toma la decisión. Una guía por giro, de clínicas y restaurantes a inmobiliarias, industria y tiendas en línea.",
+    readingTime: 10,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Almost every business owner asks the same thing: where should I advertise? The usual answer is “wherever your customers are”, which helps very little, because your customers are on all of them. The useful question is different: is your customer already searching for what you sell, or do they need to discover it? How much is a customer worth to you? And who makes the decision? With those three answers, the right channel for your type of business becomes fairly clear.",
+    ledeEs:
+      "Casi todos los dueños de negocio preguntan lo mismo: ¿dónde me anuncio? La respuesta de siempre es “donde estén tus clientes”, que ayuda muy poco, porque tus clientes están en todas. La pregunta útil es otra: ¿tu cliente ya está buscando lo que vendes o lo tiene que descubrir? ¿Cuánto vale un cliente para ti? ¿Y quién toma la decisión? Con esas tres respuestas, el canal correcto para tu giro queda bastante claro.",
+    sections: [
+      {
+        id: "te-buscan-o-te-descubren",
+        heading: "The rule: do they search for you or discover you?",
+        headingEs: "La regla: ¿te buscan o te tienen que descubrir?",
+        body: [
+          "[[Google Ads|google-ads]] captures demand that already exists: someone types “dentist in Tijuana” because they need one now. [[Meta Ads|meta-ads]] and TikTok create demand: they show your product to people who were not looking for it but might want it. LinkedIn reaches people by their job and company. ChatGPT ads, still in a pilot in Mexico, only reach users on the free and Go plans.",
+          "**If people already search for what you sell, start on Google; if they need to see it to want it, start on Meta.** Most businesses end up using both, but starting with the right one saves months and money. We compare the two in depth in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
+        ],
+        bodyEs: [
+          "[[Google Ads|google-ads]] captura demanda que ya existe: alguien escribe “dentista en Tijuana” porque lo necesita ahora. [[Meta Ads|meta-ads]] y TikTok crean demanda: le muestran tu producto a gente que no lo buscaba pero podría quererlo. LinkedIn llega a las personas por su puesto y su empresa. Los anuncios de ChatGPT, todavía en piloto en México, solo llegan a usuarios de los planes gratis y Go.",
+          "**Si la gente ya busca lo que vendes, empieza en Google; si necesita verlo para quererlo, empieza en Meta.** La mayoría de los negocios termina usando ambos, pero empezar con el correcto ahorra meses y dinero. Comparamos los dos a fondo en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
+        ],
+      },
+      {
+        id: "salud",
+        heading: "Clinics and dental practices",
+        headingEs: "Clínicas y consultorios dentales",
+        body: [
+          "Patients search when they have a need: “orthodontist near me”, “gastroenterologist in Tijuana”. Start with a complete [[Google Business Profile|google-business-profile]] and Google Ads on specific searches, and use Meta for remarketing and for treatments people plan ahead, such as aesthetics. Health advertising has restrictions on every platform and in [[COFEPRIS|cofepris]] rules; we cover them in [Google Ads for doctors: restrictions](/blog/google-ads-para-medicos-restricciones).",
+          "Take the free diagnostic for [clinics](/recursos/diagnostico/clinicas) or for [dental practices](/recursos/diagnostico/dental) to see what to fix first.",
+        ],
+        bodyEs: [
+          "Los pacientes buscan cuando tienen una necesidad: “ortodoncista cerca de mí”, “gastroenterólogo en Tijuana”. Empieza con un [[Perfil de Google|google-business-profile]] completo y Google Ads en búsquedas específicas, y usa Meta para remarketing y para tratamientos que la gente planea con tiempo, como los estéticos. La publicidad de salud tiene restricciones en cada plataforma y en las reglas de la [[COFEPRIS|cofepris]]; las explicamos en [Google Ads para médicos: restricciones](/blog/google-ads-para-medicos-restricciones).",
+          "Haz el diagnóstico gratuito para [clínicas](/recursos/diagnostico/clinicas) o para [consultorios dentales](/recursos/diagnostico/dental) y ve qué corregir primero.",
+        ],
+      },
+      {
+        id: "restaurantes-y-belleza",
+        heading: "Restaurants, beauty and wellness",
+        headingEs: "Restaurantes, belleza y bienestar",
+        body: [
+          "These are visual businesses with a local customer who decides fast. Instagram and Facebook ads segmented by area, a Google profile with photos and recent reviews, and organic TikTok content are usually the best combination. TikTok ads can work for them, but its minimum budget is high for a single location, as we explain in [TikTok Ads: does it work for your business?](/blog/tiktok-ads-para-negocios).",
+          "For both, reviews and the booking or ordering channel matter as much as the ads: see [how to get more Google reviews](/blog/resenas-google-restaurante) and [appointments that never show up](/blog/citas-que-no-llegan-salon). Diagnostics for [restaurants](/recursos/diagnostico/restaurantes) and [beauty and wellness](/recursos/diagnostico/belleza-bienestar).",
+        ],
+        bodyEs: [
+          "Son negocios visuales con un cliente local que decide rápido. Anuncios en Instagram y Facebook segmentados por zona, un Perfil de Google con fotos y reseñas recientes, y contenido orgánico en TikTok suelen ser la mejor combinación. Los anuncios de TikTok pueden funcionarles, pero su presupuesto mínimo es alto para un solo local, como explicamos en [TikTok Ads: ¿sirve para tu negocio?](/blog/tiktok-ads-para-negocios).",
+          "En ambos, las reseñas y el canal de reservas o pedidos importan tanto como los anuncios: revisa [cómo conseguir más reseñas en Google](/blog/resenas-google-restaurante) y [citas que no llegan](/blog/citas-que-no-llegan-salon). Diagnósticos para [restaurantes](/recursos/diagnostico/restaurantes) y [belleza y bienestar](/recursos/diagnostico/belleza-bienestar).",
+        ],
+      },
+      {
+        id: "hospedaje-y-turismo",
+        heading: "Lodging and tourism",
+        headingEs: "Hospedaje y turismo",
+        body: [
+          "Travellers do both: they get inspired on Instagram and TikTok and then search on Google with dates and places. Meta and TikTok build the desire; Google captures the search when they are ready to book. The key is that the ad leads to your own booking engine and not only to an [[OTA|ota]], so the booking and the customer are yours.",
+          "We explain how in [direct bookings for hotels](/blog/reservas-directas-hotel) and [direct bookings for tours](/blog/reservas-directas-tours). Diagnostics for [lodging](/recursos/diagnostico/hospedaje) and [tourism](/recursos/diagnostico/turismo).",
+        ],
+        bodyEs: [
+          "Los viajeros hacen las dos cosas: se inspiran en Instagram y TikTok y luego buscan en Google con fechas y lugares. Meta y TikTok construyen el deseo; Google captura la búsqueda cuando ya están listos para reservar. La clave es que el anuncio lleve a tu propio motor de reservas y no solo a una [[OTA|ota]], para que la reserva y el cliente sean tuyos.",
+          "Explicamos cómo en [reservas directas para hoteles](/blog/reservas-directas-hotel) y [reservas directas para tours](/blog/reservas-directas-tours). Diagnósticos para [hospedaje](/recursos/diagnostico/hospedaje) y [turismo](/recursos/diagnostico/turismo).",
+        ],
+      },
+      {
+        id: "inmobiliarias-y-construccion",
+        heading: "Real estate and construction",
+        headingEs: "Inmobiliarias y construcción",
+        body: [
+          "Real estate sells with images: Meta ads with video tours and lead forms, plus [[remarketing|remarketing]] for those who viewed a property, are the starting point. Construction is different: people search on Google when they already have a project, such as “construction company in Ensenada”, so search ads and a portfolio with real projects come first.",
+          "See [digital marketing for real estate agents](/blog/marketing-digital-para-broker-inmobiliario) and [why your construction company quotes a lot and closes little](/blog/constructora-cotiza-mucho-cierra-poco). Diagnostics for [real estate](/recursos/diagnostico/inmobiliarias) and [construction](/recursos/diagnostico/construccion).",
+        ],
+        bodyEs: [
+          "Las inmobiliarias venden con imágenes: anuncios en Meta con recorridos en video y formularios de contacto, más [[remarketing|remarketing]] para quien vio una propiedad, son el punto de partida. La construcción es distinta: la gente busca en Google cuando ya tiene un proyecto, como “constructora en Ensenada”, así que primero van los anuncios de búsqueda y un portafolio con obras reales.",
+          "Revisa [marketing digital para broker inmobiliario](/blog/marketing-digital-para-broker-inmobiliario) y [por qué tu constructora cotiza mucho y cierra poco](/blog/constructora-cotiza-mucho-cierra-poco). Diagnósticos para [inmobiliarias](/recursos/diagnostico/inmobiliarias) y [construcción](/recursos/diagnostico/construccion).",
+        ],
+      },
+      {
+        id: "industria-y-b2b",
+        heading: "Industry and B2B",
+        headingEs: "Industria y B2B",
+        body: [
+          "When the client is a company and the ticket is high, few people decide, and they decide slowly. Google on very specific terms, a technical bilingual website, LinkedIn and plant video do more than any mass-market social network. TikTok and ChatGPT ads are rarely the channel: decision-makers are a tiny segment and many of them use paid tools without ads.",
+          "We go deeper in [marketing for industrial companies in Tijuana](/blog/marketing-industrial-tijuana).",
+        ],
+        bodyEs: [
+          "Cuando el cliente es una empresa y el ticket es alto, deciden pocas personas, y deciden despacio. Google en términos muy específicos, una página técnica y bilingüe, LinkedIn y video de la planta hacen más que cualquier red de consumo masivo. Los anuncios de TikTok y de ChatGPT casi nunca son el canal: quienes deciden son un segmento mínimo y muchos usan herramientas de pago sin anuncios.",
+          "Lo explicamos a fondo en [marketing para empresas industriales en Tijuana](/blog/marketing-industrial-tijuana).",
+        ],
+      },
+      {
+        id: "tiendas-en-linea",
+        heading: "Online stores",
+        headingEs: "Tiendas en línea",
+        body: [
+          "Online stores can use almost everything: Meta to show the catalogue, Google to appear when someone searches for the product, TikTok if the product is visual and easy to demonstrate, and they are among the businesses that can best test ChatGPT ads when access opens, as we explain in [ChatGPT ads in Mexico](/blog/anuncios-en-chatgpt).",
+          "What decides profitability is the margin after advertising, fees and shipping, which we break down in [how much an online store costs in Mexico](/blog/cuanto-cuesta-una-tienda-en-linea-en-mexico).",
+        ],
+        bodyEs: [
+          "Las tiendas en línea pueden usar casi todo: Meta para mostrar el catálogo, Google para aparecer cuando alguien busca el producto, TikTok si el producto es visual y fácil de demostrar, y están entre los negocios que mejor pueden probar los anuncios de ChatGPT cuando se abra el acceso, como explicamos en [anuncios en ChatGPT en México](/blog/anuncios-en-chatgpt).",
+          "Lo que decide si es rentable es el margen después de publicidad, comisiones y envíos, que desglosamos en [cuánto cuesta una tienda en línea en México](/blog/cuanto-cuesta-una-tienda-en-linea-en-mexico).",
+        ],
+      },
+      {
+        id: "decide-con-tus-numeros",
+        heading: "Decide with your own numbers",
+        headingEs: "Decide con tus números",
+        body: [
+          "Start with one channel, one offer and a fixed budget and date. Measure what each [[lead|lead]] and each sale costs you, which is your [[CPA|cpa]], and compare it with what a customer is worth to you. **A channel is good for your business when a customer costs you less than they leave you, not when everyone else is using it.**",
+          "To decide how much to invest, see [how much to invest in digital marketing](/blog/cuanto-invertir-en-marketing-digital). And if you want a recommendation for your business, our [free diagnostic](/recursos/diagnostico) gives you one in a few minutes.",
+        ],
+        bodyEs: [
+          "Empieza con un canal, una oferta y un presupuesto y fecha fijos. Mide cuánto te cuesta cada [[prospecto|lead]] y cada venta, que es tu [[CPA|cpa]], y compáralo con lo que vale un cliente para ti. **Un canal es bueno para tu negocio cuando un cliente te cuesta menos de lo que te deja, no cuando todos lo están usando.**",
+          "Para decidir cuánto invertir, revisa [cuánto invertir en marketing digital](/blog/cuanto-invertir-en-marketing-digital). Y si quieres una recomendación para tu negocio, nuestro [diagnóstico gratuito](/recursos/diagnostico) te la da en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Dónde me conviene anunciarme, en Facebook o en Google?",
+        qEn: "Should I advertise on Facebook or Google?",
+        a: "Si la gente ya busca lo que vendes, empieza en Google; si necesita verlo para quererlo, empieza en Meta (Facebook e Instagram). La mayoría de los negocios termina usando ambos.",
+        aEn: "If people already search for what you sell, start on Google; if they need to see it to want it, start on Meta (Facebook and Instagram). Most businesses end up using both.",
+      },
+      {
+        q: "¿Dónde anunciar una clínica o consultorio?",
+        qEn: "Where should a clinic or medical practice advertise?",
+        a: "Primero en Google: Perfil de Google completo y anuncios en búsquedas específicas. Meta sirve para remarketing y tratamientos que se planean con tiempo. Respeta las restricciones de publicidad de salud.",
+        aEn: "Google first: a complete Google Business Profile and ads on specific searches. Meta helps with remarketing and treatments people plan ahead. Respect health advertising restrictions.",
+      },
+      {
+        q: "¿Dónde anunciar un restaurante o un salón de belleza?",
+        qEn: "Where should a restaurant or beauty salon advertise?",
+        a: "Instagram y Facebook segmentados por zona, un Perfil de Google con fotos y reseñas recientes, y contenido orgánico en TikTok. Los anuncios de TikTok tienen un mínimo de 50 USD diarios por campaña.",
+        aEn: "Instagram and Facebook segmented by area, a Google profile with photos and recent reviews, and organic TikTok content. TikTok ads have a minimum of 50 USD a day per campaign.",
+      },
+      {
+        q: "¿Dónde anunciar una empresa industrial o B2B?",
+        qEn: "Where should an industrial or B2B company advertise?",
+        a: "Google en términos muy específicos, una página técnica y bilingüe, LinkedIn y video de la planta. TikTok y los anuncios de ChatGPT casi nunca son el canal para ticket alto.",
+        aEn: "Google on very specific terms, a technical bilingual website, LinkedIn and plant video. TikTok and ChatGPT ads are rarely the channel for high-ticket B2B.",
+      },
+      {
+        q: "¿Cómo sé si un canal de publicidad me funciona?",
+        qEn: "How do I know if an advertising channel works for me?",
+        a: "Prueba un canal con una oferta, presupuesto y fecha fijos, mide cuánto te cuesta cada prospecto y cada venta, y compáralo con lo que te deja un cliente. Si un cliente te cuesta menos de lo que te deja, el canal funciona.",
+        aEn: "Test one channel with a fixed offer, budget and date, measure what each lead and each sale costs, and compare it with what a customer leaves you. If a customer costs less than they leave you, the channel works.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "where to advertise my business",
+        "Facebook or Google ads",
+        "best advertising channel by industry",
+        "TikTok vs Meta vs Google",
+        "advertising for small business Mexico",
+      ],
+      keywordsEs: [
+        "dónde anunciar mi negocio",
+        "Facebook o Google para mi negocio",
+        "mejor canal de publicidad por giro",
+        "TikTok, Meta o Google",
+        "publicidad para pymes en México",
+        "dónde anunciar un restaurante",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

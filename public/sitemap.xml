@@ -1001,4 +1001,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/donde-anunciarte-segun-tu-giro</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/donde-anunciarte-segun-tu-giro" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/donde-anunciarte-segun-tu-giro?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/donde-anunciarte-segun-tu-giro" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
