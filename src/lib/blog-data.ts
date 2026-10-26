@@ -12595,7 +12595,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Foreign buyers research from far away, compare with what they know at home and do not understand the bank trust. How to explain the trust before they ask, build a real English website, advertise where they live and earn trust at a distance.",
     excerptEs:
       "El comprador extranjero investiga desde lejos, compara con lo que conoce en su país y no entiende el fideicomiso. Cómo explicarlo antes de que pregunte, tener una página en inglés de verdad, anunciarte donde vive y ganarte su confianza a distancia.",
-    readingTime: 9,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -12667,6 +12667,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Da la cara: videos donde expliques la propiedad y la zona, videollamadas antes del viaje y testimonios de clientes extranjeros que de verdad atendiste, con su permiso. Menciona tus afiliaciones, como asociaciones del tipo AMPI, y los notarios y bancos con los que trabajas. Cada una de esas cosas baja el miedo de comprar en otro país.",
           "Contesta en inglés y a tiempo. Baja California comparte horario con California, lo que facilita responder dentro de su jornada; aprovéchalo. Explicamos por qué importa la rapidez en [el lead que no contestas en una hora se enfría](/blog/responder-rapido-a-tus-leads).",
+        ],
+      },
+      {
+        id: "costos-que-pregunta-el-comprador",
+        heading: "The costs a foreign buyer will ask about",
+        headingEs: "Los costos que va a preguntar el comprador extranjero",
+        body: [
+          "Beyond the price, a foreign buyer wants to know the total. The usual items are the property acquisition tax, which each municipality sets; notary fees; the appraisal; the SRE permit for the trust, whose fee for 2026 is **$21,650 pesos**; the bank's fees to set up the trust and its annual fee, which vary by bank; the annual property tax; and maintenance fees if the property is in a development.",
+          "Prepare an estimated closing-cost sheet for each property with figures from your notary and bank, in pesos and dollars. Showing it before they ask is one of the strongest trust signals you can give, because it is exactly what they fear will be hidden.",
+        ],
+        bodyEs: [
+          "Además del precio, el comprador extranjero quiere saber el total. Los conceptos habituales son el impuesto sobre adquisición de inmuebles, que fija cada municipio; los honorarios del notario; el avalúo; el permiso de la SRE para el fideicomiso, cuyo derecho para 2026 es de **$21,650 pesos**; las comisiones del banco por constituir el fideicomiso y su cuota anual, que varían según el banco; el predial anual, y las cuotas de mantenimiento si la propiedad está en un desarrollo.",
+          "Prepara para cada propiedad una hoja de gastos de cierre estimados con cifras de tu notario y tu banco, en pesos y en dólares. Mostrarla antes de que la pidan es una de las señales de confianza más fuertes que puedes dar, porque es justo lo que temen que se les oculte.",
+        ],
+      },
+      {
+        id: "glosario-para-tu-pagina",
+        heading: "A short glossary for your English pages",
+        headingEs: "Un glosario corto para tus páginas en inglés",
+        body: [
+          "Some terms do not translate directly and cause confusion: escritura is the deed; predial is the property tax; avalúo is the appraisal; enganche is the down payment; cuota de mantenimiento is the HOA fee; garita is the border crossing; and fideicomiso is the bank trust. The most important one is notario: in Mexico it is a lawyer with public authority who certifies and registers the transaction, very different from a notary public in the United States.",
+          "Explaining that last difference on your website avoids a common misunderstanding and shows that you know where foreign buyers get confused. Small explanations like these are what make your page more useful than a portal listing.",
+        ],
+        bodyEs: [
+          "Algunos términos no se traducen directo y generan confusión: la escritura es el deed; el predial es el property tax; el avalúo es el appraisal; el enganche es el down payment; la cuota de mantenimiento es el HOA fee; la garita es el border crossing, y el fideicomiso es el bank trust. El más importante es notario: en México es un abogado con fe pública que certifica y registra la operación, muy distinto a un notary public de Estados Unidos.",
+          "Explicar esa última diferencia en tu página evita una confusión común y demuestra que sabes dónde se confunde el comprador extranjero. Explicaciones pequeñas como estas hacen que tu página sea más útil que un listado en un portal.",
+        ],
+      },
+      {
+        id: "visitas-que-cierran",
+        heading: "Trips that close",
+        headingEs: "Visitas que cierran",
+        body: [
+          "A foreign buyer may only come once or twice, so each trip should be planned: filter properties beforehand with video tours and calls, and prepare an agenda of three to five properties in one day, with a map, the order of visits and times. Include a tour of the area, such as the supermarket, the hospital, the beach and the route to the border crossing.",
+          "If they are serious, schedule a meeting with the notary or the bank during the same trip to resolve legal doubts in person. A buyer who goes home with every question answered decides much faster than one who leaves with homework.",
+        ],
+        bodyEs: [
+          "Un comprador extranjero quizá venga solo una o dos veces, así que cada viaje se planea: filtra antes las propiedades con recorridos en video y llamadas, y arma una agenda de tres a cinco propiedades en un día, con mapa, orden de visitas y horarios. Incluye un recorrido por la zona, como el supermercado, el hospital, la playa y la ruta a la garita.",
+          "Si va en serio, agenda en el mismo viaje una reunión con el notario o el banco para resolver las dudas legales en persona. Un comprador que regresa a su casa con todas sus preguntas contestadas decide mucho más rápido que uno que se va con tarea.",
         ],
       },
       {
@@ -12746,7 +12785,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Both Bajas have some of the most expensive homes in Mexico and Los Cabos receives far more travellers than before the pandemic. But not everything grows the same way. What the data says, what it does not say, and what it means for how you sell properties.",
     excerptEs:
       "Las dos Bajas tienen de la vivienda más cara del país y Los Cabos recibe muchos más viajeros que antes de la pandemia. Pero no todo crece igual. Qué dicen los datos, qué no dicen y qué significa para la forma en que vendes propiedades.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -12805,6 +12844,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "La demanda de costa y turística depende mucho de compradores de Estados Unidos y Canadá, que investigan en línea, en inglés, y necesitan entender el fideicomiso antes de comprar. Venderles requiere una página en inglés, precios en dólares, anuncios en sus ciudades y confianza a distancia.",
           "Lo explicamos paso a paso en [cómo venderle a compradores de Estados Unidos y Canadá en Baja California](/blog/vender-a-compradores-extranjeros-baja-california).",
+        ],
+      },
+      {
+        id: "como-leer-estos-datos",
+        heading: "How to read these figures",
+        headingEs: "Cómo leer estas cifras",
+        body: [
+          "The SHF index measures price changes using appraisals of homes bought with mortgage credit, so it reflects that market well and the cash-purchase or luxury market less well. An average price can be pulled up by a few very expensive properties, so it does not describe the typical home. Prices on portals are asking prices, not closing prices. And airport passengers measure tourist demand, not property purchases.",
+          "None of this makes the data useless; it means each figure answers a specific question. **Use data to explain the market to your clients, but say where it comes from and what it does not measure.** That honesty is what builds authority.",
+        ],
+        bodyEs: [
+          "El índice de la SHF mide el cambio de precios con avalúos de viviendas compradas con crédito hipotecario, así que refleja bien ese mercado y menos el de compras de contado o de lujo. Un precio promedio puede subir por unas cuantas propiedades muy caras, así que no describe la vivienda típica. Los precios en los portales son precios de oferta, no de cierre. Y los pasajeros de un aeropuerto miden demanda turística, no compras de propiedades.",
+          "Nada de esto hace inútiles los datos; significa que cada cifra contesta una pregunta concreta. **Usa datos para explicarle el mercado a tus clientes, pero di de dónde vienen y qué no miden.** Esa honestidad es la que construye autoridad.",
+        ],
+      },
+      {
+        id: "fuentes-que-puedes-consultar",
+        heading: "Sources you can check yourself",
+        headingEs: "Fuentes que puedes consultar tú mismo",
+        body: [
+          "The Federal Mortgage Society publishes its housing price index every quarter, by state and by city. INEGI publishes employment and manufacturing data, including the IMMEX programme. Grupo Aeroportuario del Pacífico publishes monthly passenger traffic for the Los Cabos, La Paz and Tijuana airports. The Ministry of Tourism's DataTur system publishes hotel occupancy by destination.",
+          "Turning these sources into a short monthly market update for your area, explained in simple terms, is one of the best pieces of content an agent can publish: it attracts owners thinking of selling and buyers who want to understand before deciding.",
+        ],
+        bodyEs: [
+          "La Sociedad Hipotecaria Federal publica cada trimestre su índice de precios de la vivienda, por estado y por ciudad. El INEGI publica datos de empleo y manufactura, incluido el programa IMMEX. El Grupo Aeroportuario del Pacífico publica cada mes el tráfico de pasajeros de los aeropuertos de Los Cabos, La Paz y Tijuana. El sistema DataTur de la Secretaría de Turismo publica la ocupación hotelera por destino.",
+          "Convertir esas fuentes en una actualización mensual corta del mercado de tu zona, explicada en simple, es de los mejores contenidos que puede publicar un agente: atrae a dueños que piensan vender y a compradores que quieren entender antes de decidir.",
+        ],
+      },
+      {
+        id: "zonas-y-compradores",
+        heading: "Different areas, different buyers",
+        headingEs: "Zonas distintas, compradores distintos",
+        body: [
+          "Our reading, from experience and not from a study: in Tijuana, much of the demand is local families and people who work or study on both sides of the border. On the coast of Rosarito and Ensenada, buyers from the United States and Canada looking for a second home or retirement weigh heavily. In Valle de Guadalupe, many buy lots as an investment or for tourism projects. In Los Cabos, the market leans towards luxury and holiday rentals.",
+          "Each profile asks different questions and responds to different messages, so one generic campaign for “Baja” wastes money. Define which buyer each property is for and build the page, the ads and the follow-up for that person.",
+        ],
+        bodyEs: [
+          "Nuestra lectura, por experiencia y no por un estudio: en Tijuana, buena parte de la demanda son familias locales y gente que trabaja o estudia de los dos lados de la frontera. En la costa de Rosarito y Ensenada pesan mucho los compradores de Estados Unidos y Canadá que buscan segunda casa o retiro. En Valle de Guadalupe, muchos compran terrenos como inversión o para proyectos turísticos. En Los Cabos, el mercado se inclina al lujo y la renta vacacional.",
+          "Cada perfil hace preguntas distintas y responde a mensajes distintos, así que una campaña genérica para “Baja” desperdicia dinero. Define para qué comprador es cada propiedad y arma la página, los anuncios y el seguimiento para esa persona.",
         ],
       },
       {
@@ -12884,7 +12962,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Many developments launch with renders and a PDF price list, start the ads and wait. A pre-sale is won before sales open: with everything ready, a waiting list, a launch week with momentum and construction progress turned into content. A step-by-step plan.",
     excerptEs:
       "Muchos desarrollos lanzan con renders y una lista de precios en PDF, prenden anuncios y esperan. Una preventa se gana antes de abrir la venta: con todo listo, una lista de espera, una semana de lanzamiento con impulso y el avance de obra convertido en contenido. Un plan paso a paso.",
-    readingTime: 9,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -12956,6 +13034,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Pasada la primera ola, el avance de obra se vuelve tu mejor contenido. Un video mensual con dron que muestre cómo avanza el proyecto contesta el miedo principal de quien compra en preventa, “¿sí van a entregar?”, y mantiene vivo el proyecto en anuncios, redes y mensajes de seguimiento. Los vuelos con dron deben seguir las reglas que explicamos en [regulación de drones en México](/blog/regulacion-de-drones-en-mexico).",
           "Si los precios suben por etapa, anuncia cada aumento con anticipación a la lista y a los brokers: crea una razón real para decidir y premia a quien confió primero.",
+        ],
+      },
+      {
+        id: "esquemas-de-pago",
+        heading: "Payment schemes that make the decision easier",
+        headingEs: "Esquemas de pago que facilitan la decisión",
+        body: [
+          "Pre-sales usually combine a down payment, monthly payments during construction and a balance on delivery, paid in cash or with a mortgage, plus a discount for paying in full and prices that rise by stage. An example with round numbers: a $2,000,000 lot with a 20% down payment of $400,000, 18 monthly payments of $44,444 that cover another 40%, and the remaining 40%, $800,000, on delivery.",
+          "Show a payment table for each unit or lot and a simple calculator on the page: buyers decide with the monthly payment in mind, not only the total price. Several schemes, such as cash, short term and long term, let each buyer find the one that fits.",
+        ],
+        bodyEs: [
+          "Las preventas suelen combinar un enganche, mensualidades durante la obra y un saldo contra entrega, pagado de contado o con crédito, además de un descuento por pago de contado y precios que suben por etapa. Un ejemplo con números redondos: un lote de $2,000,000 con 20% de enganche, $400,000; 18 mensualidades de $44,444 que cubren otro 40%, y el 40% restante, $800,000, contra entrega.",
+          "Muestra una tabla de pagos por cada unidad o lote y una calculadora sencilla en la página: el comprador decide pensando en la mensualidad, no solo en el precio total. Varios esquemas, como contado, plazo corto y plazo largo, dejan que cada comprador encuentre el que le queda.",
+        ],
+      },
+      {
+        id: "documentos-que-dan-confianza",
+        heading: "Documents that build trust",
+        headingEs: "Documentos que dan confianza",
+        body: [
+          "The documents that reassure a pre-sale buyer most are the ones that prove the project can be built and delivered: the title to the land, land-use approval, the construction licence, utility feasibility for water and electricity, the condominium regime when it applies, and a clear promise-of-sale contract. In coastal projects aimed at foreigners, explain how the bank trust will work.",
+          "If you sell housing, the official standard NOM-247-SE-2021, in force since September 2022, sets requirements for commercial information and advertising and the minimum elements of contracts. Review with your lawyer how it applies to your pre-sale before launching the campaign.",
+        ],
+        bodyEs: [
+          "Los documentos que más tranquilizan a quien compra en preventa son los que demuestran que el proyecto se puede construir y entregar: el título del terreno, el uso de suelo, la licencia de construcción, las factibilidades de agua y luz, el régimen de condominio cuando aplica y un contrato de promesa de compraventa claro. En proyectos de costa para extranjeros, explica cómo va a funcionar el fideicomiso.",
+          "Si vendes vivienda, la norma oficial NOM-247-SE-2021, vigente desde septiembre de 2022, establece requisitos de información comercial y publicidad y los elementos mínimos de los contratos. Revisa con tu abogado cómo aplica a tu preventa antes de lanzar la campaña.",
+        ],
+      },
+      {
+        id: "errores-que-frenan-una-preventa",
+        heading: "Mistakes that slow a pre-sale down",
+        headingEs: "Errores que frenan una preventa",
+        body: [
+          "Launching ads before having a price list, documents and a way to reserve. Renders that promise finishes the project will not deliver. Contacts nobody calls back within the hour. Changing prices without notice, which punishes those who were about to decide. Ignoring external brokers. And sending ads to a PDF instead of a page with availability and a form.",
+          "Each of these mistakes costs reservations in the weeks that matter most. A short checklist reviewed before launch avoids almost all of them.",
+        ],
+        bodyEs: [
+          "Lanzar anuncios antes de tener lista de precios, documentos y forma de apartar. Renders que prometen acabados que el proyecto no va a entregar. Contactos a los que nadie llama en menos de una hora. Cambiar precios sin avisar, lo que castiga a quien estaba por decidir. Ignorar a los brokers externos. Y mandar los anuncios a un PDF en vez de a una página con disponibilidad y formulario.",
+          "Cada uno de estos errores cuesta apartados en las semanas que más importan. Una lista de revisión corta antes del lanzamiento evita casi todos.",
         ],
       },
       {
@@ -13048,7 +13165,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Most real estate marketing talks about buyers, but many agents' real problem is inventory. Sellers tend to choose an agent they already know. How to become that agent: working an area, a page for owners, a concrete marketing plan and staying close to past clients.",
     excerptEs:
       "Casi todo el marketing inmobiliario habla de compradores, pero el problema real de muchos agentes es el inventario. Los vendedores suelen elegir a un agente que ya conocen. Cómo convertirte en ese agente: trabajar una zona, una página para dueños, un plan de marketing concreto y mantener cerca a tus clientes pasados.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -13107,6 +13224,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Cuando te reúnas con el dueño, muestra el plan, no solo tu experiencia: fotos y video profesionales, tomas con dron si la propiedad lo justifica, su propia página, anuncios con presupuesto y audiencia, presencia en portales, qué tan rápido contestas los contactos y cada cuánto vas a reportarle resultados. **El dueño no firma una exclusiva por tu simpatía; la firma por el plan que le muestras.**",
           "Explícale por qué la exclusiva le conviene: un solo precio consistente en vez de cinco versiones, un marketing controlado y un agente que invierte en su propiedad porque el resultado es suyo. Hablamos de la parte de presentación en [marketing digital para broker inmobiliario](/blog/marketing-digital-para-broker-inmobiliario).",
+        ],
+      },
+      {
+        id: "guion-de-la-cita",
+        heading: "How to run the meeting with the owner",
+        headingEs: "Cómo llevar la cita con el dueño",
+        body: [
+          "Listen first: why they are selling, how soon and what price they have in mind. Then show comparable properties that have sold or are listed in the area, and explain where you would price theirs and why. Next, present the marketing plan with dates: when the photos are taken, when the page goes live, when the ads start and when you will report. Finish with the exclusive, the commission and a concrete next step.",
+          "When the owner says “I'd rather give it to several agents”, explain what happens: five prices, duplicate ads, buyers who wait for the price to drop and nobody investing in their property. Offer a reasonable exclusive period with measurable commitments; it is easier to accept than an indefinite one.",
+        ],
+        bodyEs: [
+          "Primero escucha: por qué vende, en cuánto tiempo y qué precio tiene en mente. Después muestra propiedades comparables vendidas o en oferta en la zona, y explica en cuánto la pondrías y por qué. Luego presenta el plan de marketing con fechas: cuándo se toman las fotos, cuándo sale la página, cuándo arrancan los anuncios y cuándo le reportas. Cierra con la exclusiva, la comisión y un siguiente paso concreto.",
+          "Cuando el dueño diga “prefiero dársela a varios agentes”, explícale qué pasa: cinco precios, anuncios duplicados, compradores que esperan a que baje el precio y nadie invirtiendo en su propiedad. Ofrece un plazo de exclusiva razonable con compromisos medibles; es más fácil de aceptar que uno indefinido.",
+        ],
+      },
+      {
+        id: "reporte-mensual-al-dueno",
+        heading: "The monthly report that keeps the exclusive",
+        headingEs: "El reporte mensual que sostiene la exclusiva",
+        body: [
+          "Once a month, send the owner a short report: visits to the property's page, contacts received, physical visits, what buyers said, how the property compares with others listed in the area and your recommendation, such as adjusting the price, improving something or keeping going.",
+          "Owners do not cancel exclusives because a property takes time to sell; they cancel because they do not know what their agent is doing. A clear report turns that silence into trust and makes renewal much easier.",
+        ],
+        bodyEs: [
+          "Una vez al mes, manda al dueño un reporte corto: visitas a la página de la propiedad, contactos recibidos, visitas físicas, qué dijeron los compradores, cómo se compara la propiedad con otras en oferta en la zona y tu recomendación, como ajustar el precio, mejorar algo o seguir igual.",
+          "Los dueños no cancelan exclusivas porque una propiedad tarde en venderse; las cancelan porque no saben qué está haciendo su agente. Un reporte claro convierte ese silencio en confianza y hace mucho más fácil la renovación.",
+        ],
+      },
+      {
+        id: "que-debe-decir-el-contrato",
+        heading: "What the exclusive agreement should say",
+        headingEs: "Qué debe decir el contrato de exclusiva",
+        body: [
+          "At a minimum: the duration of the exclusive, the commission and when it is paid, what happens if the owner sells directly to someone during that period, the marketing commitments you take on, how often you will report, and the reasons either party can end it early. Put the asking price and the conditions for changing it in writing.",
+          "It is not legal advice; have it reviewed by a lawyer or your association. A clear agreement protects both sides and avoids the most common conflict: the owner who sells to a buyer you brought, without you.",
+        ],
+        bodyEs: [
+          "Como mínimo: la duración de la exclusiva, la comisión y cuándo se paga, qué pasa si el dueño le vende directo a alguien en ese periodo, los compromisos de marketing que asumes, cada cuánto vas a reportar y las causas por las que cualquiera de los dos puede terminarla antes. Deja por escrito el precio de salida y las condiciones para cambiarlo.",
+          "No es asesoría legal; haz que lo revise un abogado o tu asociación. Un contrato claro protege a las dos partes y evita el conflicto más común: el dueño que le vende a un comprador que tú trajiste, sin ti.",
         ],
       },
       {
