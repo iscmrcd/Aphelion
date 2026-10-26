@@ -81,8 +81,8 @@ function PrivacidadPage() {
               <li>{t("Phone number", "Número de teléfono")}</li>
               <li>
                 {t(
-                  "Project information (service of interest, estimated budget, message)",
-                  "Información del proyecto (servicio de interés, presupuesto estimado, mensaje)",
+                  "Project information (service of interest, type of business, message)",
+                  "Información del proyecto (servicio de interés, giro del negocio, mensaje)",
                 )}
               </li>
             </ul>

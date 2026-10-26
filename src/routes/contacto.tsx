@@ -63,27 +63,44 @@ function ContactoPage() {
   const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
   const [waHref, setWaHref] = useState("");
-  const [service, setService] = useState<string>("");
-  const [budget, setBudget] = useState<string>("");
+  const [services, setServices] = useState<string[]>([]);
+  const [industry, setIndustry] = useState<string>("");
 
+  // Order matters: SERVICE_SLUGS points at these indexes.
   const SERVICES = [
     t("A website", "Página web"),
-    t("Ads and campaigns", "Publicidad y campañas"),
-    t("Assistant and automation", "Asistente y automatización"),
-    t("Content for social", "Contenido para redes"),
-    t("Photo and video", "Foto y video"),
+    t("Ads on Meta and Google", "Publicidad en Meta y Google"),
+    t("AI assistant and automation", "Asistente IA y automatización"),
+    t("Social media content", "Contenido para redes"),
+    t("Video and photo (incl. drone)", "Video y foto (incluye dron)"),
     t("Brand design", "Diseño de marca"),
     t("A custom system", "Sistema a medida"),
-    t("Not sure yet", "Aún no sé"),
+    t("Not sure, advise me", "Aún no sé, oriéntenme"),
   ];
 
-  const BUDGETS = [
-    t("Less than $20,000 MXN", "Menos de $20,000 MXN"),
-    t("$20,000 – $50,000 MXN", "$20,000 – $50,000 MXN"),
-    t("$50,000 – $150,000 MXN", "$50,000 – $150,000 MXN"),
-    t("More than $150,000 MXN", "Más de $150,000 MXN"),
-    t("I'd rather you advise me", "Prefiero que me orienten"),
+  /**
+   * The business type replaced the budget question. Visitors arriving from a
+   * low entry-price ad saw "Less than $20,000" as the smallest option and
+   * either left or felt small before the first call; budget is better talked
+   * through on the call. The type of business, matching the diagnostic
+   * verticals, tells us more about how to prepare that call.
+   */
+  const INDUSTRIES = [
+    t("Clinic or medical practice", "Clínica o consultorio"),
+    t("Dental practice", "Consultorio dental"),
+    t("Beauty and wellness", "Belleza y bienestar"),
+    t("Construction and architecture", "Construcción y arquitectura"),
+    t("Real estate", "Inmobiliaria"),
+    t("Restaurant or café", "Restaurante o café"),
+    t("Hotel or lodging", "Hotel u hospedaje"),
+    t("Tourism and tours", "Turismo y tours"),
+    t("Professional services", "Servicios profesionales"),
+    t("Shop or retail", "Tienda o comercio"),
+    t("Other", "Otro"),
   ];
+
+  const toggleService = (s: string) =>
+    setServices((cur) => (cur.includes(s) ? cur.filter((x) => x !== s) : [...cur, s]));
 
   /**
    * Preselect the chip the visitor already showed interest in. Kept in an
@@ -92,7 +109,7 @@ function ContactoPage() {
    */
   const preselected = servicio ? SERVICE_SLUGS[servicio] : undefined;
   useEffect(() => {
-    if (preselected !== undefined) setService(SERVICES[preselected]);
+    if (preselected !== undefined) setServices([SERVICES[preselected]]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [preselected, t]);
 
@@ -119,6 +136,7 @@ function ContactoPage() {
     setFailed(false);
 
     const data = new FormData(e.currentTarget);
+    const service = services.join(", ");
     const name = String(data.get("name") || "").trim();
     const lines = t(
       [
@@ -126,8 +144,8 @@ function ContactoPage() {
         `Company: ${data.get("company") || "—"}`,
         `Email: ${data.get("email")}`,
         `Phone: ${data.get("phone") || "—"}`,
+        `Business type: ${industry || "—"}`,
         `Service: ${service || "—"}`,
-        `Budget: ${budget || "—"}`,
         "",
         `${data.get("message")}`,
       ],
@@ -136,8 +154,8 @@ function ContactoPage() {
         `Empresa: ${data.get("company") || "—"}`,
         `Email: ${data.get("email")}`,
         `Teléfono: ${data.get("phone") || "—"}`,
+        `Giro: ${industry || "—"}`,
         `Servicio: ${service || "—"}`,
-        `Presupuesto: ${budget || "—"}`,
         "",
         `${data.get("message")}`,
       ],
@@ -153,7 +171,7 @@ function ContactoPage() {
           phone: String(data.get("phone") || ""),
           company: String(data.get("company") || ""),
           service: service || "",
-          budget: budget || "",
+          industry: industry || "",
           message: String(data.get("message") || ""),
           // Includes the query string so the notification email shows which
           // service page or diagnostic sent the visitor here.
@@ -269,11 +287,15 @@ function ContactoPage() {
 
                 <div>
                   <label className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
-                    {t("What do you want to improve?", "¿Qué quieres mejorar?")}
+                    {t("What kind of business is it?", "¿Qué giro es tu negocio?")}
                   </label>
                   <div className="flex flex-wrap gap-2">
-                    {SERVICES.map((s) => (
-                      <Chip key={s} active={service === s} onClick={() => setService(s)}>
+                    {INDUSTRIES.map((s) => (
+                      <Chip
+                        key={s}
+                        active={industry === s}
+                        onClick={() => setIndustry(industry === s ? "" : s)}
+                      >
                         {s}
                       </Chip>
                     ))}
@@ -282,12 +304,15 @@ function ContactoPage() {
 
                 <div>
                   <label className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
-                    {t("Estimated budget", "Presupuesto estimado")}
+                    {t("What do you need?", "¿Qué necesitas?")}{" "}
+                    <span className="normal-case tracking-normal text-neutral-400">
+                      {t("(pick any)", "(puedes elegir varias)")}
+                    </span>
                   </label>
                   <div className="flex flex-wrap gap-2">
-                    {BUDGETS.map((b) => (
-                      <Chip key={b} active={budget === b} onClick={() => setBudget(b)}>
-                        {b}
+                    {SERVICES.map((s) => (
+                      <Chip key={s} active={services.includes(s)} onClick={() => toggleService(s)}>
+                        {s}
                       </Chip>
                     ))}
                   </div>
@@ -298,18 +323,17 @@ function ContactoPage() {
                     htmlFor="message"
                     className="mb-2 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-500"
                   >
-                    {t("Tell us about the project *", "Cuéntanos del proyecto *")}
+                    {t("Tell us about the project (optional)", "Cuéntanos del proyecto (opcional)")}
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    required
-                    rows={5}
+                    rows={4}
                     maxLength={1000}
                     className="w-full rounded-2xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-950 outline-none transition placeholder:text-neutral-400 focus:border-neutral-950 focus:bg-white"
                     placeholder={t(
-                      "What's your business, what do you need to solve, timelines…",
-                      "Qué es tu negocio, qué necesitas resolver, tiempos…",
+                      "What you need to solve, timelines, reference links…",
+                      "Qué necesitas resolver, tiempos, ligas de referencia…",
                     )}
                   />
                 </div>
