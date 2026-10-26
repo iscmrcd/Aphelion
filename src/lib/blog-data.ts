@@ -11502,6 +11502,306 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "tiktok-ads-para-negocios",
+    cover: true,
+    title: "TikTok Ads: Does It Work for Your Business? Who Benefits and Who Doesn't",
+    titleEs: "TikTok Ads: ¿sirve para tu negocio? Quién le saca ventaja y quién no",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "TikTok reaches almost every adult in Mexico, but reach is not the same as your market. Which businesses get the most out of its ads, which should not spend there, what it costs to get in and why a shipyard might use TikTok to hire welders rather than to sell.",
+    excerptEs:
+      "TikTok llega a casi todos los adultos en México, pero alcance no es lo mismo que tu mercado. Qué negocios le sacan más provecho a sus anuncios, cuáles no deberían gastar ahí, cuánto cuesta entrar y por qué un astillero podría usar TikTok para contratar soldadores más que para vender.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "“Everyone is on TikTok” is almost true, and that is exactly the problem. The question is not whether your customers have the app, but whether they make purchase decisions there and whether your product can be understood in fifteen seconds. For a restaurant or a beauty salon, the answer is usually yes. For a company that repairs megayachts, the people who decide are a tiny group, and TikTok ads are not the way to find them. That does not mean TikTok is useless to them.",
+    ledeEs:
+      "“Todo el mundo está en TikTok” es casi cierto, y justo ese es el problema. La pregunta no es si tus clientes tienen la app, sino si toman decisiones de compra ahí y si tu producto se entiende en quince segundos. Para un restaurante o un salón de belleza la respuesta suele ser sí. Para una empresa que repara megayates, quienes deciden son un grupo mínimo y los anuncios de TikTok no son la forma de encontrarlos. Eso no significa que TikTok no les sirva.",
+    sections: [
+      {
+        id: "alcance-no-es-mercado",
+        heading: "Reach is not your market",
+        headingEs: "El alcance no es tu mercado",
+        body: [
+          "According to DataReportal, in late 2025 TikTok's advertising tools reported an audience of **99 million adults in Mexico**. DataReportal itself warns that the figure exceeds the adult population, so read it as a ceiling, not a count of people. For comparison, Facebook reported 93.5 million users and Instagram 53.6 million.",
+          "What matters is not how many people are on the platform, but how many of them could buy from you and how easily the ads can find them. TikTok targets mainly by interests and behaviour, which works very well for mass-market products and much worse for very specific professional profiles.",
+        ],
+        bodyEs: [
+          "Según DataReportal, a finales de 2025 las herramientas de publicidad de TikTok reportaban una audiencia de **99 millones de adultos en México**. El propio DataReportal advierte que la cifra supera a la población adulta, así que tómala como un techo, no como un conteo de personas. Para comparar, Facebook reportaba 93.5 millones de usuarios e Instagram 53.6 millones.",
+          "Lo que importa no es cuánta gente hay en la plataforma, sino cuántos podrían comprarte y qué tan fácil los encuentran los anuncios. TikTok segmenta sobre todo por intereses y comportamiento, lo que funciona muy bien para productos de consumo masivo y mucho peor para perfiles profesionales muy específicos.",
+        ],
+      },
+      {
+        id: "quien-si",
+        heading: "Who gets the most out of it",
+        headingEs: "Quién le saca más ventaja",
+        body: [
+          "Businesses whose product is understood by looking at it: restaurants and cafés, beauty and wellness, fashion and accessories, tourism and experiences, events, online stores with products that are easy to demonstrate and real estate with eye-catching properties. If a 15-second video can make someone want it, TikTok can sell it.",
+          "It also helps businesses whose customer decides fast and buys at a medium or low ticket, and those that already produce video naturally. A restaurant that films its dishes, a salon that shows the before and after, or a tour operator with spectacular places has content ready to advertise.",
+        ],
+        bodyEs: [
+          "Los negocios cuyo producto se entiende viéndolo: restaurantes y cafeterías, belleza y bienestar, moda y accesorios, turismo y experiencias, eventos, tiendas en línea con productos fáciles de demostrar e inmobiliarias con propiedades llamativas. Si un video de 15 segundos puede hacer que alguien lo quiera, TikTok lo puede vender.",
+          "También les sirve a los negocios cuyo cliente decide rápido y compra a ticket medio o bajo, y a los que ya producen video de forma natural. Un restaurante que graba sus platillos, un salón que muestra el antes y después o un operador de tours con lugares espectaculares tiene contenido listo para anunciar.",
+        ],
+      },
+      {
+        id: "quien-no",
+        heading: "Who should not spend on TikTok ads",
+        headingEs: "Quién no debería gastar en anuncios de TikTok",
+        body: [
+          "High-ticket B2B businesses with a tiny market. A shipyard that repairs megayachts sells to owners, captains and fleet managers: a few hundred people, many of them in other countries, who decide after months of quotes and inspections. Paying for impressions among millions of users to find them is inefficient, and TikTok's targeting is not built for that profile.",
+          "**For them, the money is better spent where the buyer already searches**: [[Google Ads|google-ads]] on very specific terms, a technical bilingual website, LinkedIn, industry events and direct relationships. We go deeper in [marketing for industrial companies in Tijuana](/blog/marketing-industrial-tijuana).",
+        ],
+        bodyEs: [
+          "Los negocios B2B de ticket alto con un mercado mínimo. Un astillero que repara megayates le vende a dueños, capitanes y administradores de flotas: unos cientos de personas, muchas en otros países, que deciden después de meses de cotizaciones e inspecciones. Pagar impresiones entre millones de usuarios para encontrarlos es ineficiente, y la segmentación de TikTok no está hecha para ese perfil.",
+          "**A ellos les rinde más el dinero donde el comprador ya busca**: [[Google Ads|google-ads]] en términos muy específicos, una página técnica y bilingüe, LinkedIn, eventos de la industria y relaciones directas. Lo explicamos a fondo en [marketing para empresas industriales en Tijuana](/blog/marketing-industrial-tijuana).",
+        ],
+      },
+      {
+        id: "tiktok-para-reclutar",
+        heading: "The other use: hiring and brand",
+        headingEs: "El otro uso: reclutar y dar presencia",
+        body: [
+          "The same shipyard that should not advertise its services on TikTok may need welders, mechanics and technicians, and a large part of that workforce is young and spends time on the app. Videos of the work, the size of the vessels and the day-to-day of the team can attract candidates that a job board does not reach.",
+          "Those videos also give the company a presence: when a client or a supplier looks it up, they find a real, active operation. In niche businesses, TikTok is often more useful as a window into the company than as a sales channel.",
+        ],
+        bodyEs: [
+          "El mismo astillero que no debería anunciar sus servicios en TikTok puede necesitar soldadores, mecánicos y técnicos, y buena parte de esa fuerza laboral es joven y pasa tiempo en la app. Videos del trabajo, del tamaño de las embarcaciones y del día a día del equipo pueden atraer candidatos a los que una bolsa de trabajo no llega.",
+          "Esos videos también le dan presencia a la empresa: cuando un cliente o un proveedor la busca, encuentra una operación real y activa. En negocios de nicho, TikTok muchas veces sirve más como ventana a la empresa que como canal de ventas.",
+        ],
+      },
+      {
+        id: "cuanto-cuesta-entrar",
+        heading: "What it costs to get in",
+        headingEs: "Cuánto cuesta entrar",
+        body: [
+          "TikTok sets minimum daily budgets: more than 50 USD per campaign and more than 20 USD per ad group. An example with round numbers: a campaign running every day at the minimum is about **1,500 USD a month**, before paying for the videos. For many small businesses that is more than their whole advertising budget, and it is a reason to start with organic content and test ads later.",
+          "The other cost is creative: TikTok rewards native vertical videos that feel like content, not like a television ad, and they wear out quickly. If you cannot produce several new videos a month, your ads will lose performance.",
+        ],
+        bodyEs: [
+          "TikTok pone presupuestos diarios mínimos: más de 50 USD por campaña y más de 20 USD por grupo de anuncios. Un ejemplo con números redondos: una campaña corriendo todos los días al mínimo son unos **1,500 USD al mes**, antes de pagar los videos. Para muchos negocios pequeños eso es más que todo su presupuesto de publicidad, y es una razón para empezar con contenido orgánico y probar anuncios después.",
+          "El otro costo es el creativo: TikTok premia videos verticales nativos que se sienten como contenido, no como comercial de televisión, y se desgastan rápido. Si no puedes producir varios videos nuevos al mes, tus anuncios van a perder rendimiento.",
+        ],
+      },
+      {
+        id: "como-probar",
+        heading: "How to test it without wasting money",
+        headingEs: "Cómo probarlo sin tirar dinero",
+        body: [
+          "Publish organically for a few weeks and see which videos get the most views and messages; those are your candidates to promote. Install the TikTok [[pixel|pixel]] on a [[landing page|landing-page]] made for the offer, set a fixed budget and date, and compare the cost per [[lead|lead]] with what you pay on [[Meta Ads|meta-ads]] for the same offer.",
+          "If TikTok does not beat Meta for your business, you have not lost much and you keep the videos for Reels. We compare the Meta options in [Facebook Ads or Instagram Ads](/blog/facebook-ads-o-instagram-ads), and our [free diagnostic](/recursos/diagnostico) tells you which channel to prioritise.",
+        ],
+        bodyEs: [
+          "Publica de forma orgánica unas semanas y fíjate qué videos tienen más vistas y mensajes; esos son tus candidatos para promover. Instala el [[pixel|pixel]] de TikTok en una [[landing page|landing-page]] hecha para la oferta, pon un presupuesto y una fecha fijos, y compara el costo por [[prospecto|lead]] con lo que pagas en [[Meta Ads|meta-ads]] por la misma oferta.",
+          "Si TikTok no le gana a Meta en tu negocio, no perdiste mucho y te quedas con los videos para Reels. Comparamos las opciones de Meta en [Facebook Ads o Instagram Ads](/blog/facebook-ads-o-instagram-ads), y nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice qué canal priorizar.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿TikTok Ads sirve para negocios pequeños?",
+        qEn: "Does TikTok Ads work for small businesses?",
+        a: "Para negocios de consumo con producto visual, como restaurantes, belleza, moda o turismo, puede funcionar muy bien. Considera el mínimo de 50 USD diarios por campaña: muchos negocios pequeños conviene que empiecen con contenido orgánico.",
+        aEn: "For consumer businesses with a visual product, such as restaurants, beauty, fashion or tourism, it can work very well. Consider the minimum of 50 USD a day per campaign: many small businesses are better off starting with organic content.",
+      },
+      {
+        q: "¿Cuál es el presupuesto mínimo en TikTok Ads?",
+        qEn: "What is the minimum budget on TikTok Ads?",
+        a: "Según TikTok, el presupuesto diario debe ser de más de 50 USD por campaña y más de 20 USD por grupo de anuncios. Una campaña al mínimo todos los días son unos 1,500 USD al mes.",
+        aEn: "According to TikTok, the daily budget must be more than 50 USD per campaign and more than 20 USD per ad group. A campaign at the minimum every day is about 1,500 USD a month.",
+      },
+      {
+        q: "¿TikTok sirve para empresas B2B?",
+        qEn: "Does TikTok work for B2B companies?",
+        a: "Para vender servicios B2B de ticket alto, casi nunca en anuncios: el mercado es muy chico y la segmentación no está hecha para ese perfil. Sí puede servir de forma orgánica para reclutar personal y dar presencia a la empresa.",
+        aEn: "For selling high-ticket B2B services, rarely through ads: the market is too small and targeting is not built for that profile. It can help organically to recruit staff and give the company a presence.",
+      },
+      {
+        q: "¿Qué es mejor, TikTok Ads o Meta Ads?",
+        qEn: "Which is better, TikTok Ads or Meta Ads?",
+        a: "Depende de tu negocio. Haz la misma oferta en ambos con presupuesto y fecha fijos y compara el costo por prospecto o por venta. Para la mayoría de los negocios locales, Meta sigue siendo el punto de partida.",
+        aEn: "It depends on your business. Run the same offer on both with a fixed budget and date and compare the cost per lead or per sale. For most local businesses, Meta is still the starting point.",
+      },
+      {
+        q: "¿Qué tipo de videos funcionan en TikTok Ads?",
+        qEn: "What kind of videos work on TikTok Ads?",
+        a: "Videos verticales que se sienten como contenido y no como comercial: mostrar el producto en uso, el antes y después, el detrás de cámaras. Se desgastan rápido, así que necesitas producir varios al mes.",
+        aEn: "Vertical videos that feel like content rather than a commercial: the product in use, the before and after, behind the scenes. They wear out quickly, so you need to produce several a month.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "TikTok Ads for business",
+        "TikTok Ads minimum budget",
+        "TikTok Ads Mexico",
+        "TikTok for B2B",
+        "TikTok vs Meta Ads",
+      ],
+      keywordsEs: [
+        "TikTok Ads para negocios",
+        "presupuesto mínimo TikTok Ads",
+        "TikTok Ads México",
+        "TikTok para empresas B2B",
+        "TikTok o Meta Ads",
+        "sirve TikTok para mi negocio",
+      ],
+    },
+  },
+  {
+    slug: "marketing-industrial-tijuana",
+    cover: true,
+    title: "Marketing for Industrial Companies in Tijuana: Maquiladoras, Shipyards and Manufacturing",
+    titleEs: "Marketing para empresas industriales en Tijuana: maquiladoras, astilleros y manufactura",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "In industry, nobody buys from an ad: they buy after checking that you can deliver. Why a technical bilingual website, Google on very specific terms, LinkedIn, plant video and patient follow-up work better for maquiladoras, shipyards and manufacturers than chasing trends on social media.",
+    excerptEs:
+      "En la industria nadie compra por un anuncio: compra después de revisar que puedes cumplir. Por qué una página técnica y bilingüe, Google en términos muy específicos, LinkedIn, video de la planta y un seguimiento paciente le funcionan mejor a maquiladoras, astilleros y manufactura que perseguir tendencias en redes.",
+    readingTime: 9,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Industrial companies in Baja California tend to win clients through relationships, referrals and trade shows, and many have a website that has not changed in years. That works until the person who brought the clients retires or a buyer in the United States starts looking for suppliers on Google and finds the competitor. Industrial marketing is not about going viral; it is about making sure that when an engineer or a purchasing manager looks for what you do, they find you and can verify that you can deliver.",
+    ledeEs:
+      "Las empresas industriales de Baja California suelen ganar clientes por relaciones, recomendaciones y ferias, y muchas tienen una página que no ha cambiado en años. Eso funciona hasta que la persona que traía los clientes se retira o un comprador en Estados Unidos empieza a buscar proveedores en Google y encuentra a la competencia. El marketing industrial no se trata de hacerse viral; se trata de que cuando un ingeniero o un gerente de compras busque lo que haces, te encuentre y pueda comprobar que puedes cumplir.",
+    sections: [
+      {
+        id: "mercado-grande-compradores-pocos",
+        heading: "A large market with few buyers",
+        headingEs: "Un mercado grande con pocos compradores",
+        body: [
+          "According to INEGI data cited in June 2026, Baja California had **915 manufacturing establishments under the IMMEX programme** in March 2026, employing 337,823 people. Each of them buys parts, services, maintenance, logistics and equipment, but the decision is made by a few people: engineers, purchasing managers, plant managers and often a corporate office in another country.",
+          "That changes everything. You do not need millions of impressions; you need the right two hundred people to find you, trust you and request a quote. The sales cycle is long, involves several people and almost always includes a supplier qualification process.",
+        ],
+        bodyEs: [
+          "Según datos del INEGI citados en junio de 2026, Baja California tenía **915 establecimientos manufactureros del programa IMMEX** en marzo de 2026, con 337,823 personas ocupadas. Cada uno compra piezas, servicios, mantenimiento, logística y equipo, pero la decisión la toman pocas personas: ingenieros, gerentes de compras, gerentes de planta y muchas veces un corporativo en otro país.",
+          "Eso lo cambia todo. No necesitas millones de impresiones; necesitas que las doscientas personas correctas te encuentren, te tengan confianza y te pidan cotización. El ciclo de venta es largo, involucra a varias personas y casi siempre incluye un proceso para dar de alta al proveedor.",
+        ],
+      },
+      {
+        id: "tu-pagina-es-tu-catalogo-tecnico",
+        heading: "Your website is your technical catalogue",
+        headingEs: "Tu página es tu catálogo técnico",
+        body: [
+          "**In industry nobody buys from an ad; they buy after checking that you can deliver.** Your website should answer what a buyer checks: capabilities and processes, equipment list, capacities and tolerances, materials, certifications such as ISO 9001, industries you serve, case studies with photos and a quote request form that accepts drawings or files.",
+          "It should be bilingual, because many decisions are made in the United States, and it should load fast and work on a phone, because engineers look things up on the plant floor. We explain the essentials in [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+        bodyEs: [
+          "**En la industria nadie compra por un anuncio; compra después de revisar que puedes cumplir.** Tu página debe contestar lo que revisa un comprador: capacidades y procesos, lista de equipo, capacidades y tolerancias, materiales, certificaciones como ISO 9001, industrias que atiendes, casos con fotos y un formulario para pedir cotización que acepte planos o archivos.",
+          "Debe ser bilingüe, porque muchas decisiones se toman en Estados Unidos, y debe cargar rápido y verse bien en el celular, porque los ingenieros buscan desde el piso de la planta. Explicamos lo básico en [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+      },
+      {
+        id: "google-por-lo-que-haces",
+        heading: "Google: be found for what you do, not your name",
+        headingEs: "Google: que te encuentren por lo que haces, no por tu nombre",
+        body: [
+          "Industrial buyers search by process and location: “CNC machining Tijuana”, “plastic injection Baja California”, “dry dock repair Ensenada”. Each capability deserves its own page built around that [[keyword|palabra-clave]], in Spanish and English. That is [[SEO|seo]] for industry, and we explain the method in our [SEO guide](/blog/guia-seo).",
+          "Those searches have little volume but a lot of value: one client can be worth years of business. That makes [[Google Ads|google-ads]] on very specific terms profitable even at a high cost per click, as long as the landing page answers the technical questions. See our [Google Ads guide](/blog/guia-google-ads).",
+        ],
+        bodyEs: [
+          "Los compradores industriales buscan por proceso y ubicación: “maquinado CNC Tijuana”, “inyección de plástico Baja California”, “reparación en dique seco Ensenada”. Cada capacidad merece su propia página construida alrededor de esa [[palabra clave|palabra-clave]], en español e inglés. Eso es [[SEO|seo]] para industria, y explicamos el método en nuestra [guía de SEO](/blog/guia-seo).",
+          "Esas búsquedas tienen poco volumen pero mucho valor: un cliente puede valer años de negocio. Eso hace rentable [[Google Ads|google-ads]] en términos muy específicos aunque el clic sea caro, siempre que la página de destino conteste las dudas técnicas. Revisa nuestra [guía de Google Ads](/blog/guia-google-ads).",
+        ],
+      },
+      {
+        id: "linkedin-y-relaciones",
+        heading: "LinkedIn and relationships",
+        headingEs: "LinkedIn y relaciones",
+        body: [
+          "DataReportal counted 29 million LinkedIn members in Mexico in late 2025; they are registered accounts, not active users, but that is where engineers, buyers and plant managers keep their professional profile. A complete company page, posts showing projects and capabilities, and directors who share what the plant does build credibility before the first call.",
+          "LinkedIn does not replace relationships; it extends them. Use it to stay present with the people you met at a trade show, to find the right person in a company you want to sell to, and to make sure that when someone receives your quote and looks you up, they find an active, serious company.",
+        ],
+        bodyEs: [
+          "DataReportal contó 29 millones de miembros de LinkedIn en México a finales de 2025; son cuentas registradas, no usuarios activos, pero ahí es donde ingenieros, compradores y gerentes de planta tienen su perfil profesional. Una página de empresa completa, publicaciones que muestren proyectos y capacidades, y directivos que compartan lo que hace la planta construyen credibilidad antes de la primera llamada.",
+          "LinkedIn no sustituye las relaciones; las extiende. Úsalo para seguir presente con la gente que conociste en una feria, para encontrar a la persona correcta en una empresa a la que quieres venderle, y para que cuando alguien reciba tu cotización y te busque, encuentre una empresa activa y seria.",
+        ],
+      },
+      {
+        id: "video-de-la-planta",
+        heading: "Video and drone: show the plant",
+        headingEs: "Video y dron: muestra la planta",
+        body: [
+          "A buyer in another country cannot easily visit your plant before the first order. A well-made video of the facilities, the processes and the team does part of that visit: it shows scale, order and capacity. Drone footage shows the size of a shipyard, a yard or an industrial building in a way photos cannot; see our [drone video service](/servicios/video-con-dron).",
+          "The same material serves for recruitment. In [TikTok Ads: does it work for your business?](/blog/tiktok-ads-para-negocios) we explain why a shipyard might use video on social media to attract welders and technicians rather than to sell.",
+        ],
+        bodyEs: [
+          "Un comprador en otro país no puede visitar tu planta fácilmente antes del primer pedido. Un buen video de las instalaciones, los procesos y el equipo hace parte de esa visita: muestra escala, orden y capacidad. Las tomas con dron muestran el tamaño de un astillero, un patio o una nave industrial como las fotos no pueden; mira nuestro [servicio de video con dron](/servicios/video-con-dron).",
+          "El mismo material sirve para reclutar. En [TikTok Ads: ¿sirve para tu negocio?](/blog/tiktok-ads-para-negocios) explicamos por qué un astillero podría usar video en redes para atraer soldadores y técnicos más que para vender.",
+        ],
+      },
+      {
+        id: "seguimiento-largo",
+        heading: "Patient follow-up",
+        headingEs: "Un seguimiento paciente",
+        body: [
+          "An industrial quote can take months to turn into an order: there are approvals, samples, audits and budgets. Without a system, opportunities get lost between emails. A [[CRM|crm]] keeps track of every quote, who is involved and what the next step is, and reminds you to follow up with a case study, a visit or an update.",
+          "Measure four numbers per quarter: quote requests received, qualified requests, quotes sent and orders won. If you are not sure where to start, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first, and [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas) covers the rest.",
+        ],
+        bodyEs: [
+          "Una cotización industrial puede tardar meses en volverse pedido: hay aprobaciones, muestras, auditorías y presupuestos. Sin un sistema, las oportunidades se pierden entre correos. Un [[CRM|crm]] lleva el registro de cada cotización, quién está involucrado y cuál es el siguiente paso, y te recuerda dar seguimiento con un caso, una visita o una actualización.",
+          "Mide cuatro números por trimestre: solicitudes de cotización recibidas, solicitudes calificadas, cotizaciones enviadas y pedidos ganados. Si no sabes por dónde empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero, y [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas) cubre lo demás.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué marketing funciona para una empresa industrial?",
+        qEn: "What marketing works for an industrial company?",
+        a: "Una página técnica y bilingüe con capacidades, equipo y certificaciones, posicionamiento en Google por proceso y ubicación, LinkedIn, video de la planta y un seguimiento ordenado con CRM. Las redes de consumo masivo casi nunca son el canal principal.",
+        aEn: "A technical bilingual website with capabilities, equipment and certifications, ranking on Google by process and location, LinkedIn, plant video and organised follow-up with a CRM. Mass-market social media is rarely the main channel.",
+      },
+      {
+        q: "¿Cuántas maquiladoras hay en Baja California?",
+        qEn: "How many maquiladoras are there in Baja California?",
+        a: "Según datos del INEGI citados en junio de 2026, en marzo de 2026 había 915 establecimientos manufactureros del programa IMMEX en Baja California, con 337,823 personas ocupadas.",
+        aEn: "According to INEGI data cited in June 2026, in March 2026 there were 915 manufacturing establishments under the IMMEX programme in Baja California, employing 337,823 people.",
+      },
+      {
+        q: "¿Mi página industrial debe estar en inglés?",
+        qEn: "Should my industrial website be in English?",
+        a: "Sí. Muchas decisiones de compra se toman en corporativos de Estados Unidos. Una página bilingüe con capacidades, certificaciones y casos te deja competir por esos compradores.",
+        aEn: "Yes. Many purchasing decisions are made at corporate offices in the United States. A bilingual website with capabilities, certifications and case studies lets you compete for those buyers.",
+      },
+      {
+        q: "¿Google Ads sirve para empresas industriales?",
+        qEn: "Does Google Ads work for industrial companies?",
+        a: "Sí, en términos muy específicos como “maquinado CNC Tijuana”. Tienen poco volumen pero mucho valor, porque un cliente puede valer años de negocio. La página de destino debe contestar las dudas técnicas.",
+        aEn: "Yes, on very specific terms such as “CNC machining Tijuana”. They have little volume but a lot of value, because one client can be worth years of business. The landing page must answer technical questions.",
+      },
+      {
+        q: "¿Para qué sirve el video de la planta?",
+        qEn: "What is plant video for?",
+        a: "Para que un comprador que no puede visitarte vea escala, orden y capacidad antes del primer pedido. El mismo material sirve en la página, en LinkedIn, en cotizaciones y para reclutar personal.",
+        aEn: "So a buyer who cannot visit sees scale, order and capacity before the first order. The same material works on the website, on LinkedIn, in quotes and for recruiting staff.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "industrial marketing Tijuana",
+        "marketing for maquiladoras",
+        "B2B manufacturing marketing Mexico",
+        "shipyard marketing",
+        "industrial website bilingual",
+      ],
+      keywordsEs: [
+        "marketing industrial Tijuana",
+        "marketing para maquiladoras",
+        "marketing B2B manufactura",
+        "marketing para astilleros",
+        "página web para empresa industrial",
+        "proveedores industriales Baja California",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

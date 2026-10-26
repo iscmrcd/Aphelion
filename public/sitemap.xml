@@ -983,4 +983,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/tiktok-ads-para-negocios</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/tiktok-ads-para-negocios" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/tiktok-ads-para-negocios?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/tiktok-ads-para-negocios" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/marketing-industrial-tijuana</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/marketing-industrial-tijuana" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/marketing-industrial-tijuana?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/marketing-industrial-tijuana" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
