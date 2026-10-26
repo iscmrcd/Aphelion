@@ -29,6 +29,8 @@ export type LeadPayload = {
   phone?: string;
   company?: string;
   service?: string;
+  /** Business type chosen in the contact form (replaced the budget question). */
+  industry?: string;
   budget?: string;
   message?: string;
   /** Chat transcript, when the lead came from the widget. */
@@ -98,7 +100,12 @@ async function storeLead(lead: LeadPayload, ipHash: string): Promise<boolean> {
         company: lead.company || null,
         service: lead.service || null,
         budget: lead.budget || null,
-        message: lead.message || null,
+        // No dedicated column yet: the business type travels at the top of the
+        // message so it is never lost in the table.
+        message:
+          [lead.industry ? `Giro: ${lead.industry}` : "", lead.message || ""]
+            .filter(Boolean)
+            .join("\n\n") || null,
         transcript: lead.transcript || null,
         path: lead.path || null,
         session_id: lead.sessionId || null,
@@ -118,8 +125,9 @@ function renderEmail(lead: LeadPayload): { subject: string; html: string; text: 
     ["Email", lead.email || "—"],
     ["Teléfono / WhatsApp", lead.phone || "—"],
     ["Empresa", lead.company || "—"],
+    ["Giro", lead.industry || "—"],
     ["Servicio", lead.service || "—"],
-    ["Presupuesto", lead.budget || "—"],
+    ...(lead.budget ? ([["Presupuesto", lead.budget]] as [string, string][]) : []),
     ["Página", lead.path || "—"],
   ];
   const subject = `Nuevo lead · ${lead.name}${lead.phone ? ` · ${lead.phone}` : ""}`;
@@ -198,7 +206,8 @@ export const submitLead = createServerFn({ method: "POST" })
       email: clean(d.email, 200),
       phone: clean(d.phone, 60),
       company: clean(d.company, 200),
-      service: clean(d.service, 120),
+      service: clean(d.service, 300),
+      industry: clean(d.industry, 120),
       budget: clean(d.budget, 120),
       message: clean(d.message),
       transcript: clean(d.transcript, MAX_TRANSCRIPT),
