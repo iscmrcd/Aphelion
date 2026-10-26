@@ -11812,7 +11812,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "TikTok reaches almost every adult in Mexico, but reach is not the same as your market. Which businesses get the most out of its ads, which should not spend there, what it costs to get in and why a shipyard might use TikTok to hire welders rather than to sell.",
     excerptEs:
       "TikTok llega a casi todos los adultos en México, pero alcance no es lo mismo que tu mercado. Qué negocios le sacan más provecho a sus anuncios, cuáles no deberían gastar ahí, cuánto cuesta entrar y por qué un astillero podría usar TikTok para contratar soldadores más que para vender.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -11884,6 +11884,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "TikTok pone presupuestos diarios mínimos: más de 50 USD por campaña y más de 20 USD por grupo de anuncios. Un ejemplo con números redondos: una campaña corriendo todos los días al mínimo son unos **1,500 USD al mes**, antes de pagar los videos. Para muchos negocios pequeños eso es más que todo su presupuesto de publicidad, y es una razón para empezar con contenido orgánico y probar anuncios después.",
           "El otro costo es el creativo: TikTok premia videos verticales nativos que se sienten como contenido, no como comercial de televisión, y se desgastan rápido. Si no puedes producir varios videos nuevos al mes, tus anuncios van a perder rendimiento.",
+        ],
+      },
+      {
+        id: "formatos-de-anuncio",
+        heading: "The ad formats you will use",
+        headingEs: "Los formatos de anuncio que vas a usar",
+        body: [
+          "In-feed ads appear in the For You feed like any other video, with a button to your page or WhatsApp; they are the starting point for most businesses. Spark Ads promote a video already published on your account, or on a creator's account with their permission, and keep its likes and comments, which usually makes them feel more natural. TopView, the first video shown when the app opens, is a premium format for large brands.",
+          "TikTok also offers forms to capture contact details without leaving the app, useful for quotes and appointments. Whatever the format, the rule is the same: the video has to work as content first and as an ad second.",
+        ],
+        bodyEs: [
+          "Los anuncios In-Feed aparecen en el feed “Para ti” como cualquier otro video, con un botón a tu página o a tu WhatsApp; son el punto de partida para la mayoría de los negocios. Los Spark Ads promueven un video ya publicado en tu cuenta, o en la de un creador con su permiso, y conservan sus likes y comentarios, lo que suele hacerlos sentir más naturales. TopView, el primer video al abrir la app, es un formato premium para marcas grandes.",
+          "TikTok también ofrece formularios para captar datos sin salir de la app, útiles para cotizaciones y citas. Sea cual sea el formato, la regla es la misma: el video tiene que funcionar primero como contenido y después como anuncio.",
+        ],
+      },
+      {
+        id: "guion-de-15-segundos",
+        heading: "A 15-second script",
+        headingEs: "Un guion de 15 segundos",
+        body: [
+          "Seconds 0 to 2: a visual or text hook that answers “why should I keep watching?”, such as the result, the price or a surprising fact. Seconds 2 to 10: the product or service in use, from the customer's point of view. Seconds 10 to 13: one clear benefit. Seconds 13 to 15: what to do, such as “order on WhatsApp” or “book today”.",
+          "Record vertically, with a phone, a real person speaking and subtitles; polished television-style videos tend to be skipped. For music in ads, use TikTok's commercial music library, because popular songs are not always licensed for business use.",
+        ],
+        bodyEs: [
+          "Segundos 0 a 2: un gancho visual o de texto que conteste “¿por qué sigo viendo?”, como el resultado, el precio o un dato sorprendente. Segundos 2 a 10: el producto o servicio en uso, desde el punto de vista del cliente. Segundos 10 a 13: un beneficio claro. Segundos 13 a 15: qué hacer, como “pide por WhatsApp” o “agenda hoy”.",
+          "Graba vertical, con celular, una persona real hablando y subtítulos; los videos pulidos tipo comercial de televisión se suelen saltar. Para la música en anuncios, usa la biblioteca de música comercial de TikTok, porque las canciones populares no siempre tienen licencia para uso de negocio.",
+        ],
+      },
+      {
+        id: "segmentacion-en-tiktok",
+        heading: "How targeting works",
+        headingEs: "Cómo funciona la segmentación",
+        body: [
+          "You can target by location, age, gender, language, interests and behaviours, such as the kind of videos people interact with, plus custom audiences built from your customer lists or from visitors tracked with the pixel, and lookalike audiences based on them. Location is the most important filter for a local business.",
+          "In consumer businesses, broad targeting with a good video often performs better than stacking many filters, because the platform learns who responds. In niche B2B, no filter replaces knowing exactly who buys, which is why other channels fit better there.",
+        ],
+        bodyEs: [
+          "Puedes segmentar por ubicación, edad, género, idioma, intereses y comportamientos, como el tipo de videos con los que interactúa la gente, además de audiencias personalizadas hechas con tus listas de clientes o con los visitantes que registra el pixel, y audiencias similares basadas en ellas. Para un negocio local, la ubicación es el filtro más importante.",
+          "En negocios de consumo, una segmentación amplia con un buen video suele rendir más que apilar muchos filtros, porque la plataforma aprende quién responde. En B2B de nicho, ningún filtro sustituye saber exactamente quién compra, y por eso ahí funcionan mejor otros canales.",
         ],
       },
       {
@@ -11962,7 +12001,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "In industry, nobody buys from an ad: they buy after checking that you can deliver. Why a technical bilingual website, Google on very specific terms, LinkedIn, plant video and patient follow-up work better for maquiladoras, shipyards and manufacturers than chasing trends on social media.",
     excerptEs:
       "En la industria nadie compra por un anuncio: compra después de revisar que puedes cumplir. Por qué una página técnica y bilingüe, Google en términos muy específicos, LinkedIn, video de la planta y un seguimiento paciente le funcionan mejor a maquiladoras, astilleros y manufactura que perseguir tendencias en redes.",
-    readingTime: 9,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -12034,6 +12073,45 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Un comprador en otro país no puede visitar tu planta fácilmente antes del primer pedido. Un buen video de las instalaciones, los procesos y el equipo hace parte de esa visita: muestra escala, orden y capacidad. Las tomas con dron muestran el tamaño de un astillero, un patio o una nave industrial como las fotos no pueden; mira nuestro [servicio de video con dron](/servicios/video-con-dron).",
           "El mismo material sirve para reclutar. En [TikTok Ads: ¿sirve para tu negocio?](/blog/tiktok-ads-para-negocios) explicamos por qué un astillero podría usar video en redes para atraer soldadores y técnicos más que para vender.",
+        ],
+      },
+      {
+        id: "estructura-de-pagina-por-capacidad",
+        heading: "How to structure each capability page",
+        headingEs: "Cómo estructurar cada página de capacidad",
+        body: [
+          "One page per process, built the same way: a title with the process and the location (“CNC machining in Tijuana”); what you do and for which industries; equipment and capacities, such as sizes, tolerances and volumes; materials you work with; certifications; photos or video of the process; one or two case studies; technical frequently asked questions; and a quote request form that accepts drawings in PDF or CAD formats.",
+          "Write it for the engineer who has to justify the choice to their boss: concrete data, no slogans. The same page in English, with the same structure, is what a buyer in the United States will forward internally.",
+        ],
+        bodyEs: [
+          "Una página por proceso, armada igual: un título con el proceso y la ubicación (“Maquinado CNC en Tijuana”); qué haces y para qué industrias; equipo y capacidades, como tamaños, tolerancias y volúmenes; materiales que trabajas; certificaciones; fotos o video del proceso; uno o dos casos; preguntas técnicas frecuentes, y un formulario de cotización que acepte planos en PDF o formatos CAD.",
+          "Escríbela para el ingeniero que tiene que justificar la elección ante su jefe: datos concretos, sin eslóganes. La misma página en inglés, con la misma estructura, es la que un comprador en Estados Unidos va a reenviar dentro de su empresa.",
+        ],
+      },
+      {
+        id: "alta-de-proveedor",
+        heading: "Have your supplier onboarding pack ready",
+        headingEs: "Ten listo tu paquete de alta de proveedor",
+        body: [
+          "Large plants ask new suppliers for a set of documents before the first order. Common ones are the tax status certificate, a positive SAT compliance opinion, proof of address, incorporation documents and powers of attorney, bank details, certifications and liability insurance. If you provide specialised services inside the plant, they will ask for your REPSE registration, and US companies may ask for tax forms for foreign suppliers.",
+          "Having that pack ready in one PDF, with a version you can send the same day, speeds up onboarding and shows order. Every week a supplier takes to get approved is a week the buyer may give the order to someone else.",
+        ],
+        bodyEs: [
+          "Las plantas grandes piden a los proveedores nuevos un paquete de documentos antes del primer pedido. Los más comunes son la constancia de situación fiscal, la opinión de cumplimiento del SAT en positivo, comprobante de domicilio, acta constitutiva y poderes, datos bancarios, certificaciones y seguro de responsabilidad civil. Si das servicios especializados dentro de la planta, te pedirán tu registro REPSE, y las empresas de Estados Unidos pueden pedir formatos fiscales para proveedores extranjeros.",
+          "Tener ese paquete listo en un solo PDF, en una versión que puedas mandar el mismo día, acelera el alta y demuestra orden. Cada semana que tarda un proveedor en darse de alta es una semana en la que el comprador puede darle el pedido a otro.",
+        ],
+      },
+      {
+        id: "ferias-y-eventos",
+        heading: "Trade shows and events that turn into quotes",
+        headingEs: "Ferias y eventos que se conviertan en cotizaciones",
+        body: [
+          "Before the event, schedule meetings with the companies you want to see and prepare bilingual material with your capabilities. During the event, capture each contact with a QR code that opens a short form or your digital card, and write a note in your CRM with what they need. Business cards in a drawer do not sell.",
+          "After the event, follow up within 48 hours with something specific: the capability that matches what they told you, a similar case study or a date to visit the plant. A generic “nice to meet you” email gets lost among all the others they receive that week.",
+        ],
+        bodyEs: [
+          "Antes del evento, agenda reuniones con las empresas que quieres ver y prepara material bilingüe con tus capacidades. Durante el evento, captura cada contacto con un QR que abra un formulario corto o tu tarjeta digital, y escribe en tu CRM una nota con lo que necesitan. Las tarjetas en un cajón no venden.",
+          "Después del evento, da seguimiento en menos de 48 horas con algo concreto: la capacidad que coincide con lo que te contaron, un caso parecido o una fecha para visitar la planta. Un correo genérico de “gusto en conocerte” se pierde entre todos los que reciben esa semana.",
         ],
       },
       {
@@ -12112,7 +12190,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "“Facebook or Google?” has no general answer. It depends on whether your customer is already searching for you or needs to discover you, on your ticket and on who makes the decision. A guide by type of business, from clinics and restaurants to real estate, industry and online stores.",
     excerptEs:
       "“¿Facebook o Google?” no tiene una respuesta general. Depende de si tu cliente ya te está buscando o te tiene que descubrir, de tu ticket y de quién toma la decisión. Una guía por giro, de clínicas y restaurantes a inmobiliarias, industria y tiendas en línea.",
-    readingTime: 10,
+    readingTime: 12,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -12213,6 +12291,32 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        id: "presupuesto-minimo-por-canal",
+        heading: "What each channel needs to get started",
+        headingEs: "Lo que necesita cada canal para arrancar",
+        body: [
+          "Google Ads has no minimum: you set the daily budget, although in competitive searches a small budget runs out early in the day. Meta allows low daily budgets, which makes it a good place to test offers. TikTok requires more than 50 USD a day per campaign. LinkedIn usually costs more per click, which is why it fits high-ticket B2B. ChatGPT ads are not yet open to most businesses in Mexico.",
+          "With a limited budget, one channel done well beats three done halfway. Concentrate on the one that fits your business, learn what works there for two or three months and only then add a second channel.",
+        ],
+        bodyEs: [
+          "Google Ads no tiene mínimo: tú pones el presupuesto diario, aunque en búsquedas competidas un presupuesto chico se acaba temprano. Meta permite presupuestos diarios bajos, lo que lo hace un buen lugar para probar ofertas. TikTok pide más de 50 USD diarios por campaña. LinkedIn suele ser más caro por clic, por eso le queda a B2B de ticket alto. Los anuncios de ChatGPT todavía no están abiertos para la mayoría de los negocios en México.",
+          "Con un presupuesto limitado, un canal bien hecho le gana a tres a medias. Concéntrate en el que le queda a tu negocio, aprende qué funciona ahí durante dos o tres meses y solo entonces suma un segundo canal.",
+        ],
+      },
+      {
+        id: "errores-al-elegir-canal",
+        heading: "Common mistakes when choosing a channel",
+        headingEs: "Errores comunes al elegir canal",
+        body: [
+          "Copying the competitor without knowing whether it works for them. Choosing by personal taste (“I don't use Facebook, so my customers don't either”). Changing channels every two weeks, before the campaign has had time to learn. Measuring likes and followers instead of leads and sales. And sending ads to the home page instead of a page made for that offer.",
+          "Most “this channel doesn't work for me” conclusions come from one of those mistakes, not from the channel. Before discarding one, check the offer, the page and the follow-up.",
+        ],
+        bodyEs: [
+          "Copiar a la competencia sin saber si a ella le funciona. Elegir por gusto personal (“yo no uso Facebook, así que mis clientes tampoco”). Cambiar de canal cada dos semanas, antes de que la campaña tenga tiempo de aprender. Medir likes y seguidores en vez de prospectos y ventas. Y mandar los anuncios a la página de inicio en vez de a una página hecha para esa oferta.",
+          "La mayoría de los “este canal no me funciona” vienen de alguno de esos errores, no del canal. Antes de descartar uno, revisa la oferta, la página y el seguimiento.",
+        ],
+      },
+      {
         id: "decide-con-tus-numeros",
         heading: "Decide with your own numbers",
         headingEs: "Decide con tus números",
@@ -12288,7 +12392,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Businesses pay for ads, get the contact and then answer the next day, or never. Why the first hour weighs so much, where leads get lost, and how alerts, automatic replies, a clear owner and a single place for every contact let you answer fast without being glued to your phone.",
     excerptEs:
       "Los negocios pagan anuncios, consiguen el contacto y luego contestan al día siguiente, o nunca. Por qué pesa tanto la primera hora, dónde se pierden los leads y cómo los avisos, las respuestas automáticas, un responsable claro y un solo lugar para cada contacto te dejan responder rápido sin vivir pegado al celular.",
-    readingTime: 8,
+    readingTime: 11,
     date: "2026-10-25",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
@@ -12350,6 +12454,32 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        id: "configura-whatsapp-business",
+        heading: "Set up WhatsApp Business in ten minutes",
+        headingEs: "Configura WhatsApp Business en diez minutos",
+        body: [
+          "WhatsApp Business includes three tools many businesses do not use: a greeting message for people who write for the first time, an away message for outside your hours, and quick replies, which you insert by typing a shortcut. Add labels such as “new”, “quoted” and “closed” to see at a glance who is waiting for an answer.",
+          "An example of an away message: “Thanks for writing to [business]. We are open Monday to Saturday from 9 to 7. We will reply first thing tomorrow; if it is urgent, tell us the date and what you need so we can prioritise it.” It sets expectations and collects the key information while you are away.",
+        ],
+        bodyEs: [
+          "WhatsApp Business trae tres herramientas que muchos negocios no usan: un mensaje de bienvenida para quien escribe por primera vez, un mensaje de ausencia para fuera de horario y respuestas rápidas, que insertas escribiendo un atajo. Agrega etiquetas como “nuevo”, “cotizado” y “cerrado” para ver de un vistazo quién está esperando respuesta.",
+          "Un ejemplo de mensaje de ausencia: “Gracias por escribir a [negocio]. Atendemos de lunes a sábado de 9 a 7. Te contestamos a primera hora mañana; si es urgente, cuéntanos la fecha y lo que necesitas para darle prioridad.” Pone expectativas y junta la información clave mientras no estás.",
+        ],
+      },
+      {
+        id: "filtro-en-tu-correo",
+        heading: "A filter so form notifications never get lost",
+        headingEs: "Un filtro para que los avisos del formulario no se pierdan",
+        body: [
+          "In Gmail, search for the subject of your form notifications, choose to create a filter and mark them as important, star them, never send them to spam and apply a label such as “Leads”. Then, in the email app on your phone, turn on notifications for that label or for high-priority messages only.",
+          "That way the notification arrives even when the rest of your inbox is silenced. It takes two minutes and is the minimum every business with a contact form should have.",
+        ],
+        bodyEs: [
+          "En Gmail, busca el asunto de los avisos de tu formulario, elige crear un filtro y márcalos como importantes, destácalos, que nunca se envíen a spam y aplícales una etiqueta como “Leads”. Luego, en la app de correo de tu celular, activa las notificaciones para esa etiqueta o solo para los mensajes de alta prioridad.",
+          "Así el aviso te llega aunque el resto de tu bandeja esté en silencio. Toma dos minutos y es lo mínimo que debería tener cualquier negocio con formulario de contacto.",
+        ],
+      },
+      {
         id: "un-responsable-y-una-regla",
         heading: "One owner and one rule",
         headingEs: "Un responsable y una regla",
@@ -12373,6 +12503,19 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "Formularios, WhatsApp, redes y llamadas deberían terminar en una sola lista con el estado de cada contacto: nuevo, contactado, cotizado, ganado o perdido. Eso es lo que hace un [[CRM|crm]], y te deja ver de un vistazo a quién no se le ha contestado. Explicamos cómo conectar tus formularios en [conectar formularios a un CRM](/blog/conectar-formularios-a-crm).",
           "La primera respuesta es solo el inicio. La mayoría de las ventas necesita varios contactos, y una secuencia de seguimiento asegura que nadie se olvide después de la primera conversación, como explicamos en [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas).",
+        ],
+      },
+      {
+        id: "plantilla-primera-respuesta",
+        heading: "A first reply that moves the sale forward",
+        headingEs: "Una primera respuesta que avance la venta",
+        body: [
+          "The first reply should not only say thank you; it should take a step. An example: “Hi [name], thanks for writing to [business]. I'm [your name]. To give you an exact answer, could you confirm [detail 1] and [detail 2]? If you prefer, we can talk today at [time] or at [time].”",
+          "Two specific time options get more answers than “let me know when you're available”. And if they do not reply, a short follow-up the next day and another three days later recover a good share of conversations that would otherwise go cold.",
+        ],
+        bodyEs: [
+          "La primera respuesta no debe ser solo un agradecimiento; debe dar un paso. Un ejemplo: “Hola [nombre], gracias por escribir a [negocio]. Soy [tu nombre]. Para darte una respuesta exacta, ¿me confirmas [dato 1] y [dato 2]? Si prefieres, podemos hablar hoy a las [hora] o a las [hora].”",
+          "Dos opciones concretas de horario consiguen más respuestas que “avísame cuándo puedes”. Y si no contesta, un seguimiento corto al día siguiente y otro tres días después recuperan buena parte de las conversaciones que si no se enfriarían.",
         ],
       },
       {
