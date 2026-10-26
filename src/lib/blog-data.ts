@@ -12141,6 +12141,295 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "vender-a-compradores-extranjeros-baja-california",
+    cover: true,
+    vertical: "inmobiliarias",
+    title: "How to Sell to Buyers from the United States and Canada in Baja California",
+    titleEs: "Cómo venderle a compradores de Estados Unidos y Canadá en Baja California",
+    category: "Real Estate Marketing",
+    categoryEs: "Marketing Inmobiliario",
+    excerpt:
+      "Foreign buyers research from far away, compare with what they know at home and do not understand the bank trust. How to explain the trust before they ask, build a real English website, advertise where they live and earn trust at a distance.",
+    excerptEs:
+      "El comprador extranjero investiga desde lejos, compara con lo que conoce en su país y no entiende el fideicomiso. Cómo explicarlo antes de que pregunte, tener una página en inglés de verdad, anunciarte donde vive y ganarte su confianza a distancia.",
+    readingTime: 9,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A large share of buyers on the coast of Baja California come from the United States and Canada, and many agents sell to them the same way they sell to local buyers: a listing in Spanish, a price in pesos and a WhatsApp message. The foreign buyer researches from hundreds of kilometres away, compares with what they know at home and is afraid of a legal process they do not understand. Whoever answers those doubts first, in their language and in a way they can verify from a distance, wins the sale.",
+    ledeEs:
+      "Buena parte de los compradores en la costa de Baja California vienen de Estados Unidos y Canadá, y muchos agentes les venden igual que a un comprador local: un listado en español, un precio en pesos y un WhatsApp. El comprador extranjero investiga desde cientos de kilómetros, compara con lo que conoce en su país y le da miedo un proceso legal que no entiende. Quien resuelve esas dudas primero, en su idioma y de una forma que pueda comprobar a distancia, se queda con la venta.",
+    sections: [
+      {
+        id: "compra-distinto",
+        heading: "The foreign buyer buys differently",
+        headingEs: "El comprador extranjero compra distinto",
+        body: [
+          "They cannot drop by every weekend, so they do most of the research online: tours, maps, the neighbourhood, costs and the process. They compare with the standards they know at home, such as square feet, maintenance fees, property taxes and closing costs, and they distrust anything that is not clear. The cycle is usually longer, with several video calls and one or two trips before deciding.",
+          "**A buyer who cannot visit every week buys what they can verify from a distance.** Your marketing has to do part of the work that a visit would do.",
+        ],
+        bodyEs: [
+          "No pueden venir cada fin de semana, así que hacen casi toda la investigación en línea: recorridos, mapas, la zona, los costos y el proceso. Comparan con los estándares que conocen en su país, como pies cuadrados, cuotas de mantenimiento, predial y gastos de cierre, y desconfían de todo lo que no está claro. El ciclo suele ser más largo, con varias videollamadas y uno o dos viajes antes de decidir.",
+          "**Un comprador que no puede visitar cada semana compra lo que puede comprobar a distancia.** Tu marketing tiene que hacer parte del trabajo que haría una visita.",
+        ],
+      },
+      {
+        id: "explica-el-fideicomiso",
+        heading: "Explain the bank trust before they ask",
+        headingEs: "Explica el fideicomiso antes de que pregunte",
+        body: [
+          "The Mexican Constitution establishes a restricted zone of **100 kilometres along the borders and 50 kilometres along the beaches**, where foreigners cannot hold direct ownership. They can acquire the use and enjoyment of a property through a [[bank trust|fideicomiso]], which requires a permit from the Ministry of Foreign Affairs (SRE), is requested by the bank and has a maximum term of 50 years, renewable. That covers Tijuana, Rosarito, Ensenada and most of the coast.",
+          "For a foreign buyer this is the biggest source of doubt. A page and a short video in English that explain it in simple terms, which bank and notary handle it and how long it takes, answer the question before it becomes an objection. It is not legal advice: recommend that they confirm it with a notary.",
+        ],
+        bodyEs: [
+          "La Constitución establece una zona restringida de **100 kilómetros a lo largo de las fronteras y 50 kilómetros en las playas**, donde los extranjeros no pueden ser dueños directos. Pueden adquirir el uso y disfrute de un inmueble a través de un [[fideicomiso|fideicomiso]] bancario, que requiere un permiso de la Secretaría de Relaciones Exteriores, lo tramita el banco y dura hasta 50 años, renovables. Eso cubre Tijuana, Rosarito, Ensenada y casi toda la costa.",
+          "Para un comprador extranjero esta es la mayor fuente de dudas. Una página y un video corto en inglés que lo expliquen en simple, qué banco y qué notario lo manejan y cuánto tarda, contestan la pregunta antes de que se vuelva objeción. No es asesoría legal: recomiéndale confirmarlo con un notario.",
+        ],
+      },
+      {
+        id: "pagina-en-ingles",
+        heading: "An English website, for real",
+        headingEs: "Una página en inglés de verdad",
+        body: [
+          "An automatic translation is noticeable and costs trust. Each property should have its page in English with the price in dollars as well as pesos, size in square feet and square metres, maintenance fees, property tax, distance to the border crossing and the airport, and what the area is like. A video tour and a map do more than ten photos.",
+          "Add a contact form that asks for their time zone and preferred way to talk, and connect it to your [[CRM|crm]]. We explain what every listing page needs in [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+        bodyEs: [
+          "Una traducción automática se nota y cuesta confianza. Cada propiedad debería tener su página en inglés con el precio en dólares además de pesos, superficie en pies y metros cuadrados, cuotas de mantenimiento, predial, distancia a la garita y al aeropuerto, y cómo es la zona. Un recorrido en video y un mapa hacen más que diez fotos.",
+          "Agrega un formulario que pregunte su zona horaria y cómo prefiere platicar, y conéctalo a tu [[CRM|crm]]. Explicamos lo que necesita cada página de propiedad en [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+      },
+      {
+        id: "anunciate-donde-vive",
+        heading: "Advertise where they live",
+        headingEs: "Anúnciate donde vive",
+        body: [
+          "[[Meta Ads|meta-ads]] and [[Google Ads|google-ads]] let you show ads in specific cities, such as San Diego, Los Angeles or Phoenix, in English and with prices in dollars. On Google, foreign buyers search with phrases like “homes for sale in Rosarito” or “oceanfront Ensenada”; each of those phrases deserves a page and, if the budget allows, an ad.",
+          "With the [[pixel|pixel]] on your English pages, you can show [[remarketing|remarketing]] to those who already viewed a property, which matters a lot in a long purchase. We explain the budget in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).",
+        ],
+        bodyEs: [
+          "[[Meta Ads|meta-ads]] y [[Google Ads|google-ads]] te dejan mostrar anuncios en ciudades concretas, como San Diego, Los Ángeles o Phoenix, en inglés y con precios en dólares. En Google, el comprador extranjero busca con frases como “homes for sale in Rosarito” u “oceanfront Ensenada”; cada una merece una página y, si el presupuesto alcanza, un anuncio.",
+          "Con el [[pixel|pixel]] en tus páginas en inglés puedes mostrar [[remarketing|remarketing]] a quien ya vio una propiedad, algo que pesa mucho en una compra larga. Explicamos el presupuesto en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).",
+        ],
+      },
+      {
+        id: "confianza-a-distancia",
+        heading: "Trust at a distance",
+        headingEs: "Confianza a distancia",
+        body: [
+          "Show your face: videos where you explain the property and the area, video calls before the trip, and testimonials from foreign clients you have actually served, with their permission. Mention your memberships, such as associations like AMPI, and the notaries and banks you work with. Each of these lowers the fear of buying in another country.",
+          "Answer in English and on time. Baja California shares its time zone with California, which makes it easy to reply during their working day; use it. We explain why speed matters in [the lead you don't answer within an hour goes cold](/blog/responder-rapido-a-tus-leads).",
+        ],
+        bodyEs: [
+          "Da la cara: videos donde expliques la propiedad y la zona, videollamadas antes del viaje y testimonios de clientes extranjeros que de verdad atendiste, con su permiso. Menciona tus afiliaciones, como asociaciones del tipo AMPI, y los notarios y bancos con los que trabajas. Cada una de esas cosas baja el miedo de comprar en otro país.",
+          "Contesta en inglés y a tiempo. Baja California comparte horario con California, lo que facilita responder dentro de su jornada; aprovéchalo. Explicamos por qué importa la rapidez en [el lead que no contestas en una hora se enfría](/blog/responder-rapido-a-tus-leads).",
+        ],
+      },
+      {
+        id: "seguimiento-largo",
+        heading: "Long follow-up, in their language",
+        headingEs: "Seguimiento largo, en su idioma",
+        body: [
+          "A foreign buyer can take months to decide. A monthly email in English with new properties, prices and news about the area keeps you present without pressure, and a CRM reminds you when to call each one. We explain how to classify and nurture leads in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios) and [email marketing for small businesses](/blog/email-marketing-para-pymes).",
+          "If you are just starting your digital presence, begin with [digital marketing for real estate agents](/blog/marketing-digital-para-broker-inmobiliario). And our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first.",
+        ],
+        bodyEs: [
+          "Un comprador extranjero puede tardar meses en decidir. Un correo mensual en inglés con propiedades nuevas, precios y noticias de la zona te mantiene presente sin presionar, y un CRM te recuerda cuándo llamarle a cada uno. Explicamos cómo clasificar y nutrir prospectos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios) y [email marketing para pymes](/blog/email-marketing-para-pymes).",
+          "Si apenas estás armando tu presencia digital, empieza por [marketing digital para broker inmobiliario](/blog/marketing-digital-para-broker-inmobiliario). Y nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Un extranjero puede comprar una casa en la playa en México?",
+        qEn: "Can a foreigner buy a beach house in Mexico?",
+        a: "No como dueño directo dentro de la zona restringida (100 km de las fronteras y 50 km de las playas), pero sí puede adquirir el uso y disfrute del inmueble con un fideicomiso bancario, con permiso de la SRE y por hasta 50 años, renovables. Confírmalo siempre con un notario.",
+        aEn: "Not as a direct owner within the restricted zone (100 km from borders and 50 km from beaches), but they can acquire the use and enjoyment of the property through a bank trust, with an SRE permit and for up to 50 years, renewable. Always confirm with a notary.",
+      },
+      {
+        q: "¿Qué es la zona restringida?",
+        qEn: "What is the restricted zone?",
+        a: "Una franja de 100 kilómetros a lo largo de las fronteras y 50 kilómetros en las playas, establecida en la Constitución, donde los extranjeros no pueden tener propiedad directa. Incluye Tijuana, Rosarito, Ensenada y casi toda la costa de Baja California.",
+        aEn: "A strip of 100 kilometres along the borders and 50 kilometres along the beaches, set out in the Constitution, where foreigners cannot hold direct ownership. It includes Tijuana, Rosarito, Ensenada and most of the Baja California coast.",
+      },
+      {
+        q: "¿Mi página inmobiliaria debe estar en inglés?",
+        qEn: "Should my real estate website be in English?",
+        a: "Si le vendes a extranjeros, sí, y bien traducida. Incluye precio en dólares, superficie en pies cuadrados, cuotas de mantenimiento, predial, distancias a la garita y al aeropuerto, y una explicación del fideicomiso.",
+        aEn: "If you sell to foreigners, yes, and properly translated. Include the price in dollars, size in square feet, maintenance fees, property tax, distances to the border crossing and the airport, and an explanation of the bank trust.",
+      },
+      {
+        q: "¿Cómo me anuncio a compradores de Estados Unidos?",
+        qEn: "How do I advertise to US buyers?",
+        a: "Con Meta Ads y Google Ads segmentados por ciudad, como San Diego, Los Ángeles o Phoenix, en inglés y con precios en dólares, y remarketing para quien ya vio una propiedad.",
+        aEn: "With Meta Ads and Google Ads segmented by city, such as San Diego, Los Angeles or Phoenix, in English and with prices in dollars, plus remarketing for those who already viewed a property.",
+      },
+      {
+        q: "¿Cómo genero confianza con un comprador extranjero?",
+        qEn: "How do I build trust with a foreign buyer?",
+        a: "Da la cara en videos y videollamadas, muestra testimonios reales de clientes extranjeros, menciona tus afiliaciones y los notarios y bancos con los que trabajas, y contesta en inglés y a tiempo.",
+        aEn: "Show your face in videos and video calls, share real testimonials from foreign clients, mention your memberships and the notaries and banks you work with, and reply in English and on time.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "sell real estate to Americans in Baja",
+        "buying property in Mexico as a foreigner",
+        "bank trust Mexico real estate",
+        "restricted zone Mexico",
+        "Baja California real estate marketing",
+      ],
+      keywordsEs: [
+        "vender a extranjeros bienes raíces Baja California",
+        "fideicomiso zona restringida",
+        "extranjeros comprar casa en la playa México",
+        "marketing inmobiliario en inglés",
+        "compradores de Estados Unidos en Rosarito",
+        "anuncios inmobiliarios para extranjeros",
+      ],
+    },
+  },
+  {
+    slug: "mercado-inmobiliario-baja-california-los-cabos",
+    cover: true,
+    vertical: "inmobiliarias",
+    title: "Is Real Estate in Baja California and Los Cabos Growing? What the Data Says and What It Means for Your Marketing",
+    titleEs: "¿Está creciendo el mercado inmobiliario en Baja California y Los Cabos? Lo que dicen los datos y qué significa para tu marketing",
+    category: "Real Estate Marketing",
+    categoryEs: "Marketing Inmobiliario",
+    excerpt:
+      "Both Bajas have some of the most expensive homes in Mexico and Los Cabos receives far more travellers than before the pandemic. But not everything grows the same way. What the data says, what it does not say, and what it means for how you sell properties.",
+    excerptEs:
+      "Las dos Bajas tienen de la vivienda más cara del país y Los Cabos recibe muchos más viajeros que antes de la pandemia. Pero no todo crece igual. Qué dicen los datos, qué no dicen y qué significa para la forma en que vendes propiedades.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Anyone who works in real estate in Baja hears the same thing: the market is booming. Part of that is true and part is perception. The useful thing is to separate what the data shows from what we assume, because each one leads to different decisions: who you sell to, at what price, in which language and with which marketing. Here is what the public data says and what we think it means for agents and developers.",
+    ledeEs:
+      "Quien trabaja en bienes raíces en Baja escucha lo mismo: el mercado está en auge. Una parte es cierta y otra es percepción. Lo útil es separar lo que muestran los datos de lo que suponemos, porque cada cosa lleva a decisiones distintas: a quién le vendes, a qué precio, en qué idioma y con qué marketing. Esto es lo que dicen los datos públicos y lo que creemos que significa para agentes y desarrolladores.",
+    sections: [
+      {
+        id: "lo-que-dicen-los-datos",
+        heading: "What the data says",
+        headingEs: "Lo que dicen los datos",
+        body: [
+          "According to the Federal Mortgage Society's housing price index, in the second quarter of 2026 home prices in Mexico rose **7.31% year on year**. In the same report, Baja California Sur had the second-highest average home price in the country, at about 2.6 million pesos, and Baja California the fourth, at about 2.3 million.",
+          "Los Cabos tells a story of demand: its international airport went from about 5.6 million passengers in 2019 to about 7.5 million in 2025, according to traffic figures from Grupo Aeroportuario del Pacífico, an increase of **about 34%**. Between 2024 and 2025 the figure barely moved, so the jump happened after the pandemic and has since levelled off.",
+        ],
+        bodyEs: [
+          "Según el índice de precios de la vivienda de la Sociedad Hipotecaria Federal, en el segundo trimestre de 2026 los precios de la vivienda en México subieron **7.31% anual**. En el mismo reporte, Baja California Sur tuvo el segundo precio promedio de vivienda más alto del país, alrededor de 2.6 millones de pesos, y Baja California el cuarto, alrededor de 2.3 millones.",
+          "Los Cabos cuenta una historia de demanda: su aeropuerto internacional pasó de unos 5.6 millones de pasajeros en 2019 a unos 7.5 millones en 2025, según cifras de tráfico del Grupo Aeroportuario del Pacífico, un aumento de **alrededor de 34%**. Entre 2024 y 2025 la cifra casi no se movió, así que el salto ocurrió después de la pandemia y desde entonces se estabilizó.",
+        ],
+      },
+      {
+        id: "no-todo-crece-igual",
+        heading: "Not everything grows the same way",
+        headingEs: "No todo crece igual",
+        body: [
+          "Higher prices are not the same as more sales, and the local economy has its own signals. In Baja California, establishments under the IMMEX manufacturing programme went from 934 to 915 between March 2025 and March 2026, and their workforce fell from about 347,500 to about 337,800 people, according to INEGI data. For buyers who depend on local salaries, that matters.",
+          "Our reading, which is an interpretation and not data: the market is splitting in two. On one side, coastal and tourist properties aimed at foreign and high-income buyers; on the other, local housing that depends on salaries and credit. They are different buyers and need different marketing.",
+        ],
+        bodyEs: [
+          "Precios más altos no es lo mismo que más ventas, y la economía local tiene sus propias señales. En Baja California, los establecimientos del programa IMMEX pasaron de 934 a 915 entre marzo de 2025 y marzo de 2026, y su personal bajó de unas 347,500 a unas 337,800 personas, según datos del INEGI. Para los compradores que dependen de sueldos locales, eso importa.",
+          "Nuestra lectura, que es una interpretación y no un dato: el mercado se está partiendo en dos. Por un lado, propiedades de costa y turísticas dirigidas a compradores extranjeros y de ingresos altos; por otro, vivienda local que depende de sueldos y crédito. Son compradores distintos y necesitan marketing distinto.",
+        ],
+      },
+      {
+        id: "comprador-mas-exigente",
+        heading: "A more expensive market means a more demanding buyer",
+        headingEs: "Un mercado más caro, un comprador más exigente",
+        body: [
+          "When a home costs millions, the buyer compares more, takes longer and expects more information: tours, plans, costs, the area and the legal process. **In an expensive market, the presentation of the property sells as much as the property itself.** Blurry photos and a listing with three lines lose against a competitor with video, a map and a clear page.",
+          "That is where video, drone footage and a page per property stop being a luxury. We explain what to invest in, and in what order, in [digital marketing for real estate agents](/blog/marketing-digital-para-broker-inmobiliario).",
+        ],
+        bodyEs: [
+          "Cuando una casa cuesta millones, el comprador compara más, tarda más y espera más información: recorridos, planos, costos, la zona y el proceso legal. **En un mercado caro, la presentación de la propiedad vende tanto como la propiedad.** Fotos borrosas y un listado de tres líneas pierden contra un competidor con video, mapa y una página clara.",
+          "Ahí el video, las tomas con dron y una página por propiedad dejan de ser un lujo. Explicamos en qué invertir, y en qué orden, en [marketing digital para broker inmobiliario](/blog/marketing-digital-para-broker-inmobiliario).",
+        ],
+      },
+      {
+        id: "el-comprador-extranjero",
+        heading: "The foreign buyer",
+        headingEs: "El comprador extranjero",
+        body: [
+          "Coastal and tourist demand depends heavily on buyers from the United States and Canada, who research online, in English, and need to understand the bank trust before buying. Selling to them requires an English website, prices in dollars, ads in their cities and trust at a distance.",
+          "We explain it step by step in [how to sell to buyers from the United States and Canada in Baja California](/blog/vender-a-compradores-extranjeros-baja-california).",
+        ],
+        bodyEs: [
+          "La demanda de costa y turística depende mucho de compradores de Estados Unidos y Canadá, que investigan en línea, en inglés, y necesitan entender el fideicomiso antes de comprar. Venderles requiere una página en inglés, precios en dólares, anuncios en sus ciudades y confianza a distancia.",
+          "Lo explicamos paso a paso en [cómo venderle a compradores de Estados Unidos y Canadá en Baja California](/blog/vender-a-compradores-extranjeros-baja-california).",
+        ],
+      },
+      {
+        id: "que-significa-para-tu-marketing",
+        heading: "What it means for your marketing",
+        headingEs: "Qué significa para tu marketing",
+        body: [
+          "More agents and developers are competing for the same buyers, so being found and answering first matter more than ever. Work on [[local SEO|seo-local]] by area, such as “houses for sale in Rosarito” or “lots in Valle de Guadalupe”, respond to every contact within the hour, and use video to stand out. For developments and lots, an interactive map shows availability in real time, as we explain in [interactive lot maps](/blog/mapa-interactivo-de-lotes).",
+          "And measure: requests, visits, offers and closings per channel. Our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first, and [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario) helps you set the budget.",
+        ],
+        bodyEs: [
+          "Más agentes y desarrolladores compiten por los mismos compradores, así que aparecer y contestar primero importa más que nunca. Trabaja el [[SEO local|seo-local]] por zona, como “casas en venta en Rosarito” o “terrenos en Valle de Guadalupe”, responde cada contacto en menos de una hora y usa video para distinguirte. Para desarrollos y lotes, un mapa interactivo muestra la disponibilidad en tiempo real, como explicamos en [mapa interactivo de lotes](/blog/mapa-interactivo-de-lotes).",
+          "Y mide: solicitudes, visitas, ofertas y cierres por canal. Nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero, y [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario) te ayuda a definir el presupuesto.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Están subiendo los precios de la vivienda en México?",
+        qEn: "Are home prices rising in Mexico?",
+        a: "Sí. Según el índice de la Sociedad Hipotecaria Federal, en el segundo trimestre de 2026 los precios subieron 7.31% anual a nivel nacional.",
+        aEn: "Yes. According to the Federal Mortgage Society index, in the second quarter of 2026 prices rose 7.31% year on year nationwide.",
+      },
+      {
+        q: "¿Qué tan cara es la vivienda en las Bajas?",
+        qEn: "How expensive is housing in the Bajas?",
+        a: "En el reporte del segundo trimestre de 2026, Baja California Sur tuvo el segundo precio promedio más alto del país, alrededor de 2.6 millones de pesos, y Baja California el cuarto, alrededor de 2.3 millones.",
+        aEn: "In the second-quarter 2026 report, Baja California Sur had the second-highest average price in the country, about 2.6 million pesos, and Baja California the fourth, about 2.3 million.",
+      },
+      {
+        q: "¿Los Cabos sigue creciendo?",
+        qEn: "Is Los Cabos still growing?",
+        a: "Su aeropuerto pasó de unos 5.6 millones de pasajeros en 2019 a unos 7.5 millones en 2025, alrededor de 34% más. Entre 2024 y 2025 la cifra casi no cambió, así que el crecimiento se estabilizó.",
+        aEn: "Its airport went from about 5.6 million passengers in 2019 to about 7.5 million in 2025, about 34% more. Between 2024 and 2025 the figure barely changed, so growth has levelled off.",
+      },
+      {
+        q: "¿Todo el mercado de Baja California está en auge?",
+        qEn: "Is the whole Baja California market booming?",
+        a: "No necesariamente. Las propiedades de costa y turísticas tienen otra dinámica que la vivienda local, que depende de sueldos y crédito; por ejemplo, el empleo en la manufactura IMMEX bajó entre marzo de 2025 y marzo de 2026.",
+        aEn: "Not necessarily. Coastal and tourist properties behave differently from local housing, which depends on salaries and credit; for example, IMMEX manufacturing employment fell between March 2025 and March 2026.",
+      },
+      {
+        q: "¿Qué debo cambiar en mi marketing inmobiliario?",
+        qEn: "What should I change in my real estate marketing?",
+        a: "Presentar mejor cada propiedad con video y una página propia, trabajar el SEO local por zona, contestar en menos de una hora y, si vendes en la costa, prepararte para compradores extranjeros con contenido en inglés.",
+        aEn: "Present each property better with video and its own page, work on local SEO by area, reply within the hour and, if you sell on the coast, prepare for foreign buyers with content in English.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Baja California real estate market",
+        "Los Cabos real estate growth",
+        "Mexico home prices 2026",
+        "Baja California Sur housing prices",
+        "real estate marketing Baja",
+      ],
+      keywordsEs: [
+        "mercado inmobiliario Baja California",
+        "crecimiento inmobiliario Los Cabos",
+        "precio de la vivienda 2026",
+        "vivienda Baja California Sur precio promedio",
+        "bienes raíces en Baja",
+        "marketing inmobiliario Baja California",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

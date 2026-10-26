@@ -379,4 +379,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Optimización para motores generativos: trabajar tu información, reseñas y contenido para que herramientas de IA como ChatGPT o Gemini mencionen tu negocio en sus respuestas.",
     defEn: "Generative engine optimisation: working on your information, reviews and content so AI tools such as ChatGPT or Gemini mention your business in their answers.",
   },
+  fideicomiso: {
+    term: "Fideicomiso en zona restringida",
+    termEn: "Restricted-zone bank trust",
+    def: "Un contrato con un banco que permite a un extranjero tener el uso y disfrute de una propiedad cerca de la costa o la frontera, donde no puede ser dueño directo. Requiere permiso de la SRE y dura hasta 50 años, renovables.",
+    defEn: "A contract with a bank that lets a foreigner have the use and enjoyment of a property near the coast or the border, where they cannot be the direct owner. It requires an SRE permit and lasts up to 50 years, renewable.",
+  },
 };

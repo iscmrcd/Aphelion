@@ -1019,4 +1019,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/vender-a-compradores-extranjeros-baja-california</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/vender-a-compradores-extranjeros-baja-california" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/vender-a-compradores-extranjeros-baja-california?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/vender-a-compradores-extranjeros-baja-california" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/mercado-inmobiliario-baja-california-los-cabos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/mercado-inmobiliario-baja-california-los-cabos" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/mercado-inmobiliario-baja-california-los-cabos?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/mercado-inmobiliario-baja-california-los-cabos" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
