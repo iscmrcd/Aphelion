@@ -13,6 +13,9 @@
  *   RESEND_API_KEY     — from the Resend dashboard
  *   RESEND_FROM        — e.g. "Aphelion <leads@aphelion.mx>", verified domain
  *   LEADS_TO_EMAIL     — where notifications land
+ *   LEADS_ALERT_PHONE  — optional, mobile that gets an SMS per lead
+ *                        (defaults to the WhatsApp number on the site)
+ *   TWILIO_*           — same Twilio account the SMS demo uses
  * Supabase reuses the same variables the chat demo already reads.
  */
 
@@ -193,6 +196,87 @@ async function sendEmail(lead: LeadPayload): Promise<boolean> {
   }
 }
 
+/**
+ * SMS to Isaac's phone for every new lead. An email alone was not enough: a
+ * real lead sat unseen in the inbox for twelve days. The recipient is fixed
+ * (never visitor input), and the lead table itself is the rate limiter so a
+ * flood of fake submissions cannot run up the Twilio bill.
+ */
+const ALERT_PHONE_DEFAULT = "+526461293352";
+const ALERTS_PER_IP_PER_DAY = 3;
+const ALERTS_PER_DAY = 40;
+
+async function countLeadsSince(cfg: SupabaseConfig, sinceIso: string, ipHash?: string) {
+  const q = new URLSearchParams({ select: "id", created_at: `gte.${sinceIso}` });
+  if (ipHash) q.set("ip_hash", `eq.${ipHash}`);
+  const res = await fetch(`${cfg.url}/rest/v1/leads?${q}`, {
+    headers: { ...supabaseHeaders(cfg), Prefer: "count=exact", Range: "0-0" },
+  });
+  const total = Number((res.headers.get("content-range") || "").split("/")[1]);
+  return Number.isFinite(total) ? total : 0;
+}
+
+async function sendLeadAlert(lead: LeadPayload, ipHash: string): Promise<boolean> {
+  const sid = process.env.TWILIO_ACCOUNT_SID;
+  const token = process.env.TWILIO_AUTH_TOKEN;
+  const from = process.env.TWILIO_FROM_NUMBER;
+  const to = process.env.LEADS_ALERT_PHONE || ALERT_PHONE_DEFAULT;
+  if (!sid || !token || !from) {
+    console.warn("[leads] Twilio not configured — no SMS alert.");
+    return false;
+  }
+  const cfg = supabaseConfig();
+  if (cfg) {
+    try {
+      const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+      const [all, fromIp] = await Promise.all([
+        countLeadsSince(cfg, since),
+        ipHash !== "unknown" ? countLeadsSince(cfg, since, ipHash) : Promise.resolve(0),
+      ]);
+      if (all > ALERTS_PER_DAY || fromIp > ALERTS_PER_IP_PER_DAY) {
+        console.warn("[leads] SMS alert skipped by daily limit.");
+        return false;
+      }
+    } catch {
+      // Counting is a safeguard, not a gate: if it fails, still alert.
+    }
+  }
+  // Plain ASCII keeps it in one 160-character SMS segment.
+  const ascii = (v: string) =>
+    v
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^\x20-\x7e]/g, "");
+  const body = ascii(
+    [
+      `Aphelion lead (${lead.source}): ${lead.name}`,
+      lead.phone || lead.email || "",
+      lead.industry || "",
+      lead.service || "",
+    ]
+      .filter(Boolean)
+      .join(" | "),
+  ).slice(0, 158);
+  try {
+    const res = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`, {
+      method: "POST",
+      headers: {
+        Authorization: `Basic ${btoa(`${sid}:${token}`)}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams({ To: to, From: from, Body: body }),
+    });
+    if (!res.ok) {
+      console.warn("[leads] Twilio rejected the alert:", res.status, await res.text());
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.warn("[leads] Twilio alert failed:", err);
+    return false;
+  }
+}
+
 export const submitLead = createServerFn({ method: "POST" })
   .validator((data: unknown): LeadPayload => {
     const d = (data ?? {}) as Record<string, unknown>;
@@ -230,9 +314,9 @@ export const submitLead = createServerFn({ method: "POST" })
     }
 
     const stored = await storeLead(data, ipHash);
-    const emailed = await sendEmail(data);
+    const [emailed, alerted] = await Promise.all([sendEmail(data), sendLeadAlert(data, ipHash)]);
 
     // Reported back so the UI can tell the visitor the truth rather than
     // always claiming success the way the old form did.
-    return { ok: stored || emailed, stored, emailed };
+    return { ok: stored || emailed, stored, emailed, alerted };
   });

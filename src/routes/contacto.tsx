@@ -277,12 +277,10 @@ function ContactoPage() {
                   <Field name="company" label={t("Company", "Empresa")} />
                 </div>
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <Field name="email" label={t("Email *", "Email *")} type="email" required />
-                  <Field
-                    name="phone"
-                    label={t("Phone / WhatsApp", "Teléfono / WhatsApp")}
-                    type="tel"
-                  />
+                  {/* WhatsApp first and required: it is where prospects answer
+                      and where we close. Email is optional. */}
+                  <Field name="phone" label={t("WhatsApp *", "WhatsApp *")} type="tel" required />
+                  <Field name="email" label={t("Email", "Email")} type="email" />
                 </div>
 
                 <div>
