@@ -1046,4 +1046,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/como-conseguir-propiedades-en-exclusiva</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/como-conseguir-propiedades-en-exclusiva" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/como-conseguir-propiedades-en-exclusiva?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/como-conseguir-propiedades-en-exclusiva" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -12594,6 +12594,157 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "como-conseguir-propiedades-en-exclusiva",
+    cover: true,
+    vertical: "inmobiliarias",
+    title: "How to Win More Exclusive Listings as a Real Estate Agent",
+    titleEs: "Cómo conseguir más propiedades en exclusiva como agente inmobiliario",
+    category: "Real Estate Marketing",
+    categoryEs: "Marketing Inmobiliario",
+    excerpt:
+      "Most real estate marketing talks about buyers, but many agents' real problem is inventory. Sellers tend to choose an agent they already know. How to become that agent: working an area, a page for owners, a concrete marketing plan and staying close to past clients.",
+    excerptEs:
+      "Casi todo el marketing inmobiliario habla de compradores, pero el problema real de muchos agentes es el inventario. Los vendedores suelen elegir a un agente que ya conocen. Cómo convertirte en ese agente: trabajar una zona, una página para dueños, un plan de marketing concreto y mantener cerca a tus clientes pasados.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Without properties to sell, there is nothing to advertise. Many agents invest in getting buyers and end up competing for the same open listings as five other agents, with duplicate ads on the portals and the owner lowering the price to whoever pushes most. An exclusive listing changes that: one consistent price, controlled marketing and a commission that is not shared with chance. Winning more exclusives is a marketing problem, and it is solved before the owner decides to sell.",
+    ledeEs:
+      "Sin propiedades que vender no hay nada que anunciar. Muchos agentes invierten en conseguir compradores y terminan peleando las mismas propiedades abiertas que otros cinco agentes, con anuncios duplicados en los portales y el dueño bajándole el precio al que más presione. Una exclusiva cambia eso: un solo precio consistente, un marketing controlado y una comisión que no se reparte con la suerte. Conseguir más exclusivas es un problema de marketing, y se resuelve antes de que el dueño decida vender.",
+    sections: [
+      {
+        id: "eligen-a-quien-conocen",
+        heading: "Sellers choose someone they already know",
+        headingEs: "Los vendedores eligen a quien ya conocen",
+        body: [
+          "In the United States, the National Association of Realtors' 2025 generational trends report found that **66% of sellers work with an agent they already know**: 28% because they had worked together before and 38% through a referral. It is US data, but the pattern is familiar in Mexico too: when someone decides to sell, they call the agent who comes to mind first.",
+          "That means the battle is not won when the owner is already calling agents; it is won months before, by being present in their mind. Your marketing to sellers is about memory, not about a single ad.",
+        ],
+        bodyEs: [
+          "En Estados Unidos, el reporte de tendencias generacionales 2025 de la National Association of Realtors encontró que **66% de los vendedores trabaja con un agente que ya conoce**: 28% porque ya habían trabajado juntos y 38% por recomendación. Son datos de Estados Unidos, pero el patrón se ve igual en México: cuando alguien decide vender, le llama al agente que primero le viene a la mente.",
+          "Eso significa que la batalla no se gana cuando el dueño ya está llamando agentes; se gana meses antes, estando presente en su cabeza. Tu marketing para vendedores es de memoria, no de un solo anuncio.",
+        ],
+      },
+      {
+        id: "trabaja-una-zona",
+        heading: "Work an area",
+        headingEs: "Trabaja una zona",
+        body: [
+          "Choose one or two neighbourhoods or developments and become the reference: publish what properties are selling for, what is new in the area, what is being built and what living there is like. Owners in that area start to see you as the one who knows their market, which is exactly what they need when they decide to sell.",
+          "Support it with [[local SEO|seo-local]] by area and a [[Google Business Profile|google-business-profile]] that shows the zones you serve. We explain how to start in our [local SEO guide](/blog/seo-local-guia), and how the market is moving in [the Baja California and Los Cabos real estate market](/blog/mercado-inmobiliario-baja-california-los-cabos).",
+        ],
+        bodyEs: [
+          "Elige una o dos colonias o desarrollos y vuélvete la referencia: publica en cuánto se están vendiendo las propiedades, qué hay de nuevo en la zona, qué se está construyendo y cómo es vivir ahí. Los dueños de esa zona empiezan a verte como quien conoce su mercado, que es justo lo que necesitan cuando deciden vender.",
+          "Apóyalo con [[SEO local|seo-local]] por zona y un [[Perfil de Google|google-business-profile]] que muestre las zonas que atiendes. Explicamos cómo empezar en nuestra [guía de SEO local](/blog/seo-local-guia), y cómo se está moviendo el mercado en [el mercado inmobiliario de Baja California y Los Cabos](/blog/mercado-inmobiliario-baja-california-los-cabos).",
+        ],
+      },
+      {
+        id: "pagina-para-duenos",
+        heading: "A page for owners: how much is your home worth?",
+        headingEs: "Una página para dueños: ¿cuánto vale tu casa?",
+        body: [
+          "Most real estate websites speak only to buyers. Create a [[landing page|landing-page]] for owners where they can request a free valuation of their property: address, type, size, condition and when they are thinking of selling. Every request is a seller [[lead|lead]], often months before they list with anyone.",
+          "Do not promise an automatic price you cannot back up; offer a valuation with comparable properties, delivered by you. Promote the page with ads aimed at homeowners in your area and send the requests straight to your [[CRM|crm]].",
+        ],
+        bodyEs: [
+          "Casi todas las páginas inmobiliarias le hablan solo a compradores. Crea una [[landing page|landing-page]] para dueños donde puedan pedir una valuación gratuita de su propiedad: dirección, tipo, superficie, estado y cuándo piensan vender. Cada solicitud es un [[prospecto|lead]] vendedor, muchas veces meses antes de que firme con alguien.",
+          "No prometas un precio automático que no puedas respaldar; ofrece una valuación con propiedades comparables, entregada por ti. Promueve la página con anuncios dirigidos a dueños de tu zona y manda las solicitudes directo a tu [[CRM|crm]].",
+        ],
+      },
+      {
+        id: "tu-propuesta-de-exclusiva",
+        heading: "Your exclusive proposal, in concrete terms",
+        headingEs: "Tu propuesta de exclusiva, en concreto",
+        body: [
+          "When you meet the owner, show the plan, not only your experience: professional photos and video, drone footage if the property justifies it, its own page, ads with a budget and audience, presence on portals, how quickly you answer contacts and how often you will report results. **The owner does not sign an exclusive because they like you; they sign it because of the plan you show them.**",
+          "Explain why exclusivity benefits them: one consistent price instead of five versions, controlled marketing, and an agent who invests in their property because the result is theirs. We explain the presentation side in [digital marketing for real estate agents](/blog/marketing-digital-para-broker-inmobiliario).",
+        ],
+        bodyEs: [
+          "Cuando te reúnas con el dueño, muestra el plan, no solo tu experiencia: fotos y video profesionales, tomas con dron si la propiedad lo justifica, su propia página, anuncios con presupuesto y audiencia, presencia en portales, qué tan rápido contestas los contactos y cada cuánto vas a reportarle resultados. **El dueño no firma una exclusiva por tu simpatía; la firma por el plan que le muestras.**",
+          "Explícale por qué la exclusiva le conviene: un solo precio consistente en vez de cinco versiones, un marketing controlado y un agente que invierte en su propiedad porque el resultado es suyo. Hablamos de la parte de presentación en [marketing digital para broker inmobiliario](/blog/marketing-digital-para-broker-inmobiliario).",
+        ],
+      },
+      {
+        id: "clientes-pasados",
+        heading: "Keep past clients close",
+        headingEs: "Mantén cerca a tus clientes pasados",
+        body: [
+          "Your past clients and your network are where most of your future listings will come from. Keep them in a CRM and stay in touch without selling: a message on the anniversary of their purchase, a quarterly update on what their home is worth, news from the area. When they or someone they know wants to sell, you are the first name that comes to mind.",
+          "Ask for referrals and reviews when the client is happiest, at the closing. We explain how to keep that relationship going in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios) and [email marketing for small businesses](/blog/email-marketing-para-pymes).",
+        ],
+        bodyEs: [
+          "Tus clientes pasados y tu red son de donde saldrá la mayoría de tus próximas exclusivas. Tenlos en un CRM y mantén el contacto sin vender: un mensaje en el aniversario de su compra, una actualización trimestral de cuánto vale su casa, noticias de la zona. Cuando ellos o alguien que conocen quieran vender, serás el primer nombre que les venga a la mente.",
+          "Pide recomendaciones y reseñas cuando el cliente está más contento, en el cierre. Explicamos cómo mantener esa relación en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios) y [email marketing para pymes](/blog/email-marketing-para-pymes).",
+        ],
+      },
+      {
+        id: "que-medir",
+        heading: "What to measure",
+        headingEs: "Qué medir",
+        body: [
+          "Each month: valuations requested, listing appointments, exclusives signed and where each one came from, whether a past client, a referral, the area, the owners' page or an ad. After a few months, that list tells you which source to invest in.",
+          "Our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first in your website, your Google profile and your follow-up.",
+        ],
+        bodyEs: [
+          "Cada mes: valuaciones solicitadas, citas con dueños, exclusivas firmadas y de dónde vino cada una, ya sea un cliente pasado, una recomendación, la zona, la página para dueños o un anuncio. En unos meses, esa lista te dice en qué fuente invertir.",
+          "Nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero en tu página, tu Perfil de Google y tu seguimiento.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cómo consigo propiedades en exclusiva?",
+        qEn: "How do I win exclusive listings?",
+        a: "Estando presente en la mente de los dueños antes de que decidan vender: trabaja una zona, crea una página para que pidan una valuación, mantén contacto con tus clientes pasados y presenta un plan de marketing concreto en cada cita.",
+        aEn: "By being on owners' minds before they decide to sell: work an area, create a page where they can request a valuation, stay in touch with past clients and present a concrete marketing plan at every appointment.",
+      },
+      {
+        q: "¿Cómo eligen los vendedores a su agente?",
+        qEn: "How do sellers choose their agent?",
+        a: "En Estados Unidos, según la NAR en 2025, 66% de los vendedores trabaja con un agente que ya conoce: 28% porque ya trabajaron juntos y 38% por recomendación. Por eso las relaciones y la presencia constante pesan tanto.",
+        aEn: "In the United States, according to NAR in 2025, 66% of sellers work with an agent they already know: 28% because they worked together before and 38% through a referral. That is why relationships and constant presence matter so much.",
+      },
+      {
+        q: "¿Qué le muestro al dueño para que firme la exclusiva?",
+        qEn: "What should I show an owner so they sign an exclusive?",
+        a: "Un plan concreto: fotos y video profesionales, dron si aplica, página propia, anuncios con presupuesto, presencia en portales, tiempos de respuesta y cada cuánto le reportarás resultados.",
+        aEn: "A concrete plan: professional photos and video, drone if relevant, its own page, ads with a budget, presence on portals, response times and how often you will report results.",
+      },
+      {
+        q: "¿Conviene una página de “cuánto vale tu casa”?",
+        qEn: "Is a “what is your home worth” page worth it?",
+        a: "Sí, porque capta dueños que piensan vender, muchas veces meses antes de que firmen con alguien. Ofrece una valuación con comparables hecha por ti, no un precio automático que no puedas respaldar.",
+        aEn: "Yes, because it captures owners thinking of selling, often months before they sign with anyone. Offer a valuation with comparables done by you, not an automatic price you cannot back up.",
+      },
+      {
+        q: "¿Por qué le conviene la exclusiva al dueño?",
+        qEn: "Why is an exclusive good for the owner?",
+        a: "Porque hay un solo precio consistente en vez de varias versiones, el marketing es controlado y el agente invierte en su propiedad porque el resultado es suyo.",
+        aEn: "Because there is one consistent price instead of several versions, the marketing is controlled and the agent invests in the property because the result is theirs.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "how to get exclusive listings",
+        "real estate listing leads",
+        "home valuation landing page",
+        "real estate farming area",
+        "seller leads real estate agent",
+      ],
+      keywordsEs: [
+        "cómo conseguir propiedades en exclusiva",
+        "captar propiedades inmobiliaria",
+        "cuánto vale mi casa página",
+        "conseguir vendedores agente inmobiliario",
+        "exclusivas inmobiliarias",
+        "trabajar una zona inmobiliaria",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
