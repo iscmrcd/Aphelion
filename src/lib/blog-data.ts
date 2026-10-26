@@ -10409,6 +10409,157 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "apps-de-delivery-comisiones-restaurante",
+    cover: true,
+    vertical: "restaurantes",
+    title: "Rappi, Uber Eats and DiDi Food: What They Really Cost Your Restaurant and How to Sell Direct",
+    titleEs: "Rappi, Uber Eats y DiDi Food: cuánto le cuestan de verdad a tu restaurante y cómo vender directo",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Delivery apps bring orders, but between commission, the VAT on that commission and tax withholdings, a large part of each sale never reaches you. How to calculate what each channel really costs and move your regular customers to direct orders without leaving the apps.",
+    excerptEs:
+      "Las apps de delivery traen pedidos, pero entre la comisión, el IVA de esa comisión y las retenciones, una buena parte de cada venta no llega a tu caja. Cómo calcular lo que de verdad te cuesta cada canal y pasar a tus clientes frecuentes a pedidos directos sin salirte de las apps.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "For many restaurants, delivery apps went from being an extra channel to being half the business. The problem is not using them; it is not knowing how much each order really leaves you and letting the same customer order through the app again and again when they could order from you directly. The app keeps the customer's data, sets the rules and charges a commission on every order, including the tenth order from someone who already loves your food.",
+    ledeEs:
+      "Para muchos restaurantes, las apps de delivery pasaron de ser un canal extra a ser la mitad del negocio. El problema no es usarlas; es no saber cuánto te deja de verdad cada pedido y dejar que el mismo cliente pida una y otra vez por la app cuando podría pedirte directo. La app se queda con los datos del cliente, pone las reglas y cobra comisión en cada pedido, incluido el décimo de alguien que ya ama tu comida.",
+    sections: [
+      {
+        id: "cuanto-cobran-las-apps",
+        heading: "How much the apps charge",
+        headingEs: "Cuánto cobran las apps",
+        body: [
+          "Uber Eats publishes its plans for restaurants in Mexico: the Premium plan charges a commission of **up to 30%**, Plus between 27% and 29%, and Lite between 25% and 28%, with 15% on Lite for orders the customer picks up. Rappi and DiDi Food do not publish a single table; the commission is agreed with each restaurant, so ask for yours in writing and check it against your statements.",
+          "On top of the commission there is the VAT on that commission, and the [[tax withholdings|retencion-de-impuestos]] the platform makes for the SAT. If you are an individual taxpayer with an RFC, the platform withholds half of the VAT and 2.5% of income tax on sales of goods; without an RFC, it withholds all of the VAT and 20% of income tax. Withholdings are not an extra cost, because they count towards your taxes, but they do reduce the cash you receive each week. Your accountant can tell you how they apply to your regime.",
+        ],
+        bodyEs: [
+          "Uber Eats publica sus planes para restaurantes en México: el plan Premium cobra una comisión de **hasta 30%**, Plus entre 27% y 29%, y Lite entre 25% y 28%, con 15% en Lite para pedidos que el cliente pasa a recoger. Rappi y DiDi Food no publican una tabla única; la comisión se acuerda con cada restaurante, así que pide la tuya por escrito y compárala con tus estados de cuenta.",
+          "Encima de la comisión va el IVA de esa comisión, y las [[retenciones de impuestos|retencion-de-impuestos]] que la plataforma hace para el SAT. Si eres persona física con RFC, la plataforma retiene la mitad del IVA y 2.5% de ISR por venta de bienes; sin RFC, retiene todo el IVA y 20% de ISR. Las retenciones no son un costo extra, porque cuentan para tus impuestos, pero sí reducen el dinero que te llega cada semana. Tu contador te puede decir cómo aplican a tu régimen.",
+        ],
+      },
+      {
+        id: "haz-la-cuenta-por-pedido",
+        heading: "Do the math per order",
+        headingEs: "Haz la cuenta por pedido",
+        body: [
+          "An example with round numbers: an order of $300 with a 30% commission costs you $90, plus $14.40 of VAT on that commission. You are left with $195.60 to cover food, packaging, staff and rent. The same order picked up on a 15% plan leaves you $247.80, and ordered directly through WhatsApp, around $300 minus your card fee or your own delivery cost.",
+          "Do this calculation with your real numbers and your average ticket, channel by channel. If after food and packaging an app order barely leaves you anything, the app is not a sales channel; it is an advertising cost, and it should be treated as one.",
+        ],
+        bodyEs: [
+          "Un ejemplo con números redondos: un pedido de $300 con 30% de comisión te cuesta $90, más $14.40 de IVA sobre esa comisión. Te quedan $195.60 para cubrir comida, empaque, personal y renta. El mismo pedido para recoger en un plan de 15% te deja $247.80, y pedido directo por WhatsApp, cerca de $300 menos la comisión de tu terminal o tu costo de entrega.",
+          "Haz esta cuenta con tus números reales y tu ticket promedio, canal por canal. Si después de comida y empaque un pedido de app casi no te deja nada, la app no es un canal de ventas; es un costo de publicidad, y hay que tratarla como tal.",
+        ],
+      },
+      {
+        id: "la-app-como-escaparate",
+        heading: "The app as a shop window, not the whole business",
+        headingEs: "La app como escaparate, no como todo el negocio",
+        body: [
+          "Apps are very good at one thing: putting you in front of people who do not know you yet. That first order is worth paying for. What is expensive is paying the same commission for every repeat order from customers who already chose you. **The app is good for getting discovered; it is expensive for getting customers back.**",
+          "So the goal is not to leave the apps, but to have a direct channel ready for regulars: a menu with prices and photos, a WhatsApp number to order and a clear option to pick up or receive at home. Check each app's contract terms before including promotional material in its orders, as some limit it.",
+        ],
+        bodyEs: [
+          "Las apps son muy buenas para una cosa: ponerte frente a gente que todavía no te conoce. Ese primer pedido vale la pena pagarlo. Lo caro es pagar la misma comisión en cada pedido repetido de clientes que ya te eligieron. **La app es buena para que te conozcan; es cara para que te vuelvan a comprar.**",
+          "Por eso la meta no es salirte de las apps, sino tener listo un canal directo para los frecuentes: un menú con precios y fotos, un WhatsApp para pedir y una opción clara para recoger o recibir en casa. Revisa los términos de tu contrato con cada app antes de incluir material promocional en sus pedidos, porque algunas lo limitan.",
+        ],
+      },
+      {
+        id: "tu-canal-directo",
+        heading: "Your direct channel, step by step",
+        headingEs: "Tu canal directo, paso a paso",
+        body: [
+          "Start with what you already have. Your [[Google Business Profile|google-business-profile]] can show an order button that points to your own menu or WhatsApp instead of an app; many customers search for the restaurant by name and order wherever the button takes them. Use a [[dynamic QR|qr-dinamico]] on the table, the receipt and the bag of in-house orders so the link can be changed without reprinting, as we explain in [QR menus for restaurants](/blog/menu-qr-para-restaurante).",
+          "For orders, a WhatsApp Business catalogue is enough at first. When the volume grows and several people need to answer, [WhatsApp Business API](/blog/whatsapp-business-api) lets them share one number and connect it to your system. Offer a reason to order direct that does not cost you a fortune: free pickup, a dessert on the third order or a slightly better price than in the app.",
+        ],
+        bodyEs: [
+          "Empieza con lo que ya tienes. Tu [[Perfil de Google|google-business-profile]] puede mostrar un botón para pedir que apunte a tu propio menú o a tu WhatsApp en vez de a una app; mucha gente busca el restaurante por su nombre y pide donde la lleve el botón. Usa un [[QR dinámico|qr-dinamico]] en la mesa, el ticket y la bolsa de los pedidos propios para poder cambiar la liga sin reimprimir, como explicamos en [menús QR para restaurantes](/blog/menu-qr-para-restaurante).",
+          "Para los pedidos, al principio basta con el catálogo de WhatsApp Business. Cuando el volumen crezca y varias personas tengan que contestar, [WhatsApp Business API](/blog/whatsapp-business-api) permite compartir un solo número y conectarlo a tu sistema. Dale al cliente una razón para pedir directo que no te cueste una fortuna: recoger sin costo, un postre en el tercer pedido o un precio un poco mejor que en la app.",
+        ],
+      },
+      {
+        id: "tus-clientes-tus-datos",
+        heading: "Your customers, your data",
+        headingEs: "Tus clientes, tus datos",
+        body: [
+          "In the app, the customer belongs to the app: you rarely get their phone number or know how often they order. In your direct channel, every order leaves you a name, a WhatsApp number and what they like. Keep it in a [[CRM|crm]] or at least in your [[point of sale|punto-de-venta]], with your [[privacy notice|aviso-de-privacidad]] in place.",
+          "With that list you can send the weekly special, announce a new dish or remind someone who has not ordered in a month, at almost no cost. That is the difference between paying for every order and owning your customer base. We explain the tool in [what a CRM is](/blog/que-es-un-crm).",
+        ],
+        bodyEs: [
+          "En la app, el cliente es de la app: casi nunca tienes su teléfono ni sabes cada cuánto pide. En tu canal directo, cada pedido te deja un nombre, un WhatsApp y lo que le gusta. Guárdalo en un [[CRM|crm]] o al menos en tu [[punto de venta|punto-de-venta]], con tu [[aviso de privacidad|aviso-de-privacidad]] en orden.",
+          "Con esa lista puedes mandar la promoción de la semana, avisar de un platillo nuevo o recordarle a quien no ha pedido en un mes, casi sin costo. Esa es la diferencia entre pagar por cada pedido y ser dueño de tu clientela. Explicamos la herramienta en [qué es un CRM](/blog/que-es-un-crm).",
+        ],
+      },
+      {
+        id: "como-medirlo",
+        heading: "How to measure it",
+        headingEs: "Cómo medirlo",
+        body: [
+          "Each month, track three numbers per channel: orders, average ticket and what each order really leaves you after commission and packaging. Add a fourth: how many direct orders come from customers who first found you in an app. If that number grows, the app is doing its job as a shop window.",
+          "Our [free diagnostic for restaurants](/recursos/diagnostico/restaurantes) tells you in a few minutes what to fix first in your Google profile, your menu and your ordering channel.",
+        ],
+        bodyEs: [
+          "Cada mes, lleva tres números por canal: pedidos, ticket promedio y lo que de verdad te deja cada pedido después de comisión y empaque. Agrega un cuarto: cuántos pedidos directos vienen de clientes que primero te encontraron en una app. Si ese número crece, la app está haciendo su trabajo de escaparate.",
+          "Nuestro [diagnóstico gratuito para restaurantes](/recursos/diagnostico/restaurantes) te dice en unos minutos qué corregir primero en tu Perfil de Google, tu menú y tu canal de pedidos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto cobra Uber Eats a los restaurantes en México?",
+        qEn: "How much does Uber Eats charge restaurants in Mexico?",
+        a: "Según sus planes publicados, Premium cobra hasta 30%, Plus entre 27% y 29%, y Lite entre 25% y 28%, con 15% en Lite para pedidos que el cliente recoge. A la comisión se le suma el IVA de la comisión.",
+        aEn: "According to its published plans, Premium charges up to 30%, Plus between 27% and 29%, and Lite between 25% and 28%, with 15% on Lite for orders the customer picks up. VAT is added on top of the commission.",
+      },
+      {
+        q: "¿Cuánto cobran Rappi y DiDi Food?",
+        qEn: "How much do Rappi and DiDi Food charge?",
+        a: "No publican una tabla única: la comisión se acuerda con cada restaurante y puede variar según el plan, la zona y la visibilidad que contrates. Pide tu comisión por escrito y revisa tus estados de cuenta cada semana.",
+        aEn: "They do not publish a single table: the commission is agreed with each restaurant and can vary by plan, area and the visibility you buy. Ask for your commission in writing and check your statements every week.",
+      },
+      {
+        q: "¿Las retenciones de las apps son un costo extra?",
+        qEn: "Are the apps' tax withholdings an extra cost?",
+        a: "No exactamente. Si eres persona física con RFC, la plataforma retiene la mitad del IVA y 2.5% de ISR por venta de bienes, y esas cantidades cuentan para tus impuestos. Pero sí reducen el dinero que recibes cada semana. Tu contador te dice cómo aplican a tu régimen.",
+        aEn: "Not exactly. If you are an individual taxpayer with an RFC, the platform withholds half of the VAT and 2.5% of income tax on sales of goods, and those amounts count towards your taxes. But they do reduce the cash you receive each week. Your accountant can tell you how they apply to your regime.",
+      },
+      {
+        q: "¿Conviene salirme de las apps de delivery?",
+        qEn: "Should I leave the delivery apps?",
+        a: "Casi nunca. Las apps sirven para que te conozca gente nueva. Lo que conviene es tener un canal directo, con menú, WhatsApp y opción de recoger, para que los clientes frecuentes te pidan sin pagar comisión en cada pedido.",
+        aEn: "Rarely. Apps help new people discover you. What makes sense is having a direct channel, with a menu, WhatsApp and a pickup option, so regular customers can order without you paying a commission on every order.",
+      },
+      {
+        q: "¿Cómo hago que mis clientes pidan directo?",
+        qEn: "How do I get customers to order directly?",
+        a: "Pon un botón de pedido en tu Perfil de Google que lleve a tu menú o WhatsApp, usa QR en mesas y tickets, y da un incentivo que no te cueste mucho, como recoger sin costo o un postre en el tercer pedido. Guarda los datos de cada cliente para volver a contactarlo.",
+        aEn: "Add an order button to your Google profile that leads to your menu or WhatsApp, use QR codes on tables and receipts, and offer an incentive that does not cost much, such as free pickup or a dessert on the third order. Keep each customer's details so you can contact them again.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Uber Eats commission Mexico",
+        "Rappi commission restaurants",
+        "DiDi Food commission",
+        "restaurant direct orders",
+        "delivery apps restaurant costs",
+      ],
+      keywordsEs: [
+        "comisión Uber Eats restaurantes",
+        "cuánto cobra Rappi a restaurantes",
+        "comisión DiDi Food",
+        "vender directo restaurante",
+        "apps de delivery comisiones México",
+        "pedidos por WhatsApp restaurante",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

@@ -331,4 +331,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "La Procuraduría Federal del Consumidor: la autoridad que vigila que los negocios respeten precios, ofertas y garantías, y que recibe las quejas de los clientes.",
     defEn: "Mexico's Federal Consumer Protection Agency: the authority that checks that businesses honour prices, offers and warranties, and that handles customer complaints.",
   },
+  "retencion-de-impuestos": {
+    term: "Retención de impuestos",
+    termEn: "Tax withholding",
+    def: "La parte de un pago que una plataforma o un cliente se queda para entregarla al SAT a tu nombre. No es un cobro extra: cuenta como adelanto de tus impuestos, pero reduce el dinero que te llega.",
+    defEn: "The part of a payment that a platform or a client keeps to hand over to the tax authority on your behalf. It is not an extra charge: it counts as an advance on your taxes, but it reduces the cash you receive.",
+  },
 };
