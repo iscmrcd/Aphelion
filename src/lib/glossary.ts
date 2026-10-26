@@ -373,4 +373,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Un modo de grabación que guarda más detalle en luces y sombras, útil en interiores con ventanas brillantes. Se ve deslavado hasta que le corriges el color al editar.",
     defEn: "A recording mode that keeps more detail in highlights and shadows, useful in interiors with bright windows. It looks washed out until you colour-correct it in editing.",
   },
+  geo: {
+    term: "GEO",
+    termEn: "GEO",
+    def: "Optimización para motores generativos: trabajar tu información, reseñas y contenido para que herramientas de IA como ChatGPT o Gemini mencionen tu negocio en sus respuestas.",
+    defEn: "Generative engine optimisation: working on your information, reviews and content so AI tools such as ChatGPT or Gemini mention your business in their answers.",
+  },
 };

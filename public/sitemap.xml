@@ -974,4 +974,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/anuncios-en-chatgpt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/anuncios-en-chatgpt" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/anuncios-en-chatgpt?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/anuncios-en-chatgpt" />
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

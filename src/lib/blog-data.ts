@@ -11352,6 +11352,156 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "anuncios-en-chatgpt",
+    cover: true,
+    title: "ChatGPT Ads in Mexico: Who Should Use Them and Who Should Not",
+    titleEs: "Anuncios en ChatGPT en México: quién debería usarlos y quién no",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "OpenAI started showing ads in ChatGPT in Mexico, but only to users on the free and Go plans. What that means for who you can reach, which businesses can benefit, which ones should wait, and why being recommended in the answer is still worth more than an ad below it.",
+    excerptEs:
+      "OpenAI empezó a mostrar anuncios en ChatGPT en México, pero solo a usuarios de los planes gratis y Go. Qué significa eso para a quién puedes llegar, qué negocios pueden aprovecharlos, cuáles deberían esperar y por qué que te recomiende la respuesta sigue valiendo más que un anuncio debajo.",
+    readingTime: 8,
+    date: "2026-10-25",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Many people now use ChatGPT the way they used Google: to ask which product to buy, where to eat or which supplier to hire. That is why the arrival of ads in ChatGPT in Mexico caught the attention of every business. Before putting money into it, it is worth understanding something that changes the whole calculation: not everyone sees them. Who sees them, and who does not, decides whether they are worth it for your business.",
+    ledeEs:
+      "Mucha gente ya usa ChatGPT como usaba Google: para preguntar qué producto comprar, dónde comer o qué proveedor contratar. Por eso la llegada de los anuncios a ChatGPT en México llamó la atención de todos los negocios. Antes de meterle dinero conviene entender algo que cambia toda la cuenta: no todos los ven. Quién los ve, y quién no, decide si valen la pena para tu negocio.",
+    sections: [
+      {
+        id: "como-funcionan",
+        heading: "How ChatGPT ads work",
+        headingEs: "Cómo funcionan los anuncios en ChatGPT",
+        body: [
+          "In August 2026, OpenAI announced a pilot of ads in ChatGPT in Mexico, one of its ten largest markets by weekly active users. Ads appear after the answer, labelled as sponsored and visually separated from it, and OpenAI states that they do not change what the model answers. They are chosen using the context of the conversation, which is what makes them interesting: someone asking for “the best beach hotel for a family weekend” is showing a very concrete intention.",
+          "On privacy, OpenAI says conversations, memories and personal data are not shared with advertisers, who only see aggregate metrics such as impressions and clicks. In the pilot, ads are bought through large agencies, and OpenAI says it is developing tools for advertisers to manage their own campaigns.",
+        ],
+        bodyEs: [
+          "En agosto de 2026, OpenAI anunció un piloto de anuncios en ChatGPT en México, uno de sus diez mercados más grandes por usuarios activos semanales. Los anuncios aparecen después de la respuesta, identificados como patrocinados y separados visualmente de ella, y OpenAI asegura que no cambian lo que responde el modelo. Se eligen usando el contexto de la conversación, y eso es lo que los hace interesantes: alguien que pregunta por “el mejor hotel de playa para un fin de semana en familia” está mostrando una intención muy concreta.",
+          "Sobre privacidad, OpenAI dice que las conversaciones, memorias y datos personales no se comparten con los anunciantes, que solo ven métricas generales como impresiones y clics. En el piloto, los anuncios se compran a través de agencias grandes, y OpenAI dice que está desarrollando herramientas para que los anunciantes manejen sus propias campañas.",
+        ],
+      },
+      {
+        id: "quien-ve-los-anuncios",
+        heading: "Who sees the ads, and who does not",
+        headingEs: "Quién ve los anuncios, y quién no",
+        body: [
+          "Ads are shown **only to adults on the free and Go plans**. Users of Plus, Pro, Business, Enterprise and Education remain ad-free. That means your ad will never reach the people who pay for ChatGPT, including the companies that give it to their teams.",
+          "Our reading, which is an assumption and not data: those who pay for ChatGPT tend to be professionals, business owners and company employees who use it for work. If your client is a purchasing manager, an engineer or a company director, there is a good chance they use a paid plan and never see your ad.",
+        ],
+        bodyEs: [
+          "Los anuncios se muestran **solo a adultos en los planes gratis y Go**. Los usuarios de Plus, Pro, Business, Enterprise y Education siguen sin anuncios. Eso significa que tu anuncio nunca le va a llegar a quien paga ChatGPT, incluidas las empresas que se lo dan a sus equipos.",
+          "Nuestra lectura, que es una suposición y no un dato: quien paga ChatGPT suele ser un profesional, dueño de negocio o empleado de empresa que lo usa para trabajar. Si tu cliente es un gerente de compras, un ingeniero o un director, hay buena probabilidad de que use un plan de pago y nunca vea tu anuncio.",
+        ],
+      },
+      {
+        id: "quien-puede-aprovecharlos",
+        heading: "Who can benefit",
+        headingEs: "Quién puede aprovecharlos",
+        body: [
+          "Businesses that sell to the general public and whose customers research before buying: online stores, travel and lodging, restaurants and entertainment, education and courses, consumer services and products people compare. In those cases, the free-plan audience is precisely the mass market, and the conversation shows intent at the moment of deciding.",
+          "The opportunity is real but early: a new platform has fewer targeting options, less measurement history and prices nobody knows yet. Being among the first can be cheap or expensive; the only way to know is a small, well-measured test.",
+        ],
+        bodyEs: [
+          "Los negocios que le venden al público en general y cuyos clientes investigan antes de comprar: tiendas en línea, viajes y hospedaje, restaurantes y entretenimiento, educación y cursos, servicios de consumo y productos que la gente compara. En esos casos, la audiencia de los planes gratis es justamente el mercado masivo, y la conversación muestra intención en el momento de decidir.",
+          "La oportunidad es real pero temprana: una plataforma nueva tiene menos opciones de segmentación, menos historial de medición y precios que nadie conoce todavía. Ser de los primeros puede salir barato o caro; la única forma de saberlo es una prueba chica y bien medida.",
+        ],
+      },
+      {
+        id: "quien-deberia-esperar",
+        heading: "Who should wait",
+        headingEs: "Quién debería esperar",
+        body: [
+          "B2B businesses with a high ticket and a small market, such as a shipyard, an industrial supplier or a specialised consultancy, should not rush: the people who decide probably do not see ads, and the volume of relevant conversations is small. Small local businesses with tight budgets should also wait until self-serve access is open; in the meantime, a well-built [[Google Business Profile|google-business-profile]] and [[Google Ads|google-ads]] on search terms are proven channels.",
+          "Regulated categories, such as health, have their own advertising rules on every platform; review OpenAI's policies when access opens. We explain the equivalent for Google in [Google Ads for doctors: restrictions](/blog/google-ads-para-medicos-restricciones).",
+        ],
+        bodyEs: [
+          "Los negocios B2B de ticket alto y mercado chico, como un astillero, un proveedor industrial o una consultoría especializada, no deberían apresurarse: quien decide probablemente no ve anuncios y el volumen de conversaciones relevantes es pequeño. Los negocios locales con presupuesto apretado también deberían esperar a que se abra el acceso directo para anunciantes; mientras tanto, un [[Perfil de Google|google-business-profile]] bien hecho y [[Google Ads|google-ads]] en búsquedas son canales probados.",
+          "Los giros regulados, como salud, tienen reglas propias de publicidad en cada plataforma; revisa las políticas de OpenAI cuando se abra el acceso. Explicamos el equivalente en Google en [Google Ads para médicos: restricciones](/blog/google-ads-para-medicos-restricciones).",
+        ],
+      },
+      {
+        id: "lo-organico-pesa-mas",
+        heading: "Being recommended is worth more than an ad",
+        headingEs: "Que te recomienden vale más que un anuncio",
+        body: [
+          "The ad appears below the answer; the answer is what the person reads first. **In ChatGPT, being recommended in the answer is worth more than an ad below it**, and it reaches every user, including those who pay. Working on that presence is called [[GEO|geo]]: clear and consistent information about your business, real reviews, content that answers your customers' questions and [[structured data|datos-estructurados]] on your website.",
+          "We explain how AI tools decide whom to recommend in [how ChatGPT recommends your business](/blog/como-recomienda-chatgpt-a-tu-negocio), and why reviews weigh so much in [how to get more Google reviews](/blog/resenas-google-restaurante).",
+        ],
+        bodyEs: [
+          "El anuncio aparece debajo de la respuesta; la respuesta es lo primero que la persona lee. **En ChatGPT, que te recomiende la respuesta vale más que un anuncio debajo de ella**, y le llega a todos los usuarios, incluidos los que pagan. Trabajar esa presencia se llama [[GEO|geo]]: información clara y consistente de tu negocio, reseñas reales, contenido que responde las preguntas de tus clientes y [[datos estructurados|datos-estructurados]] en tu página.",
+          "Explicamos cómo deciden las herramientas de IA a quién recomendar en [cómo recomienda ChatGPT a tu negocio](/blog/como-recomienda-chatgpt-a-tu-negocio), y por qué pesan tanto las reseñas en [cómo conseguir más reseñas en Google](/blog/resenas-google-restaurante).",
+        ],
+      },
+      {
+        id: "como-probarlos",
+        heading: "How to test them when you get access",
+        headingEs: "Cómo probarlos cuando tengas acceso",
+        body: [
+          "Start with one specific offer and a [[landing page|landing-page]] made for it, not your home page. Tag the link so you know which visits came from ChatGPT, set a small budget and a fixed date, and compare the cost per [[lead|lead]] or per sale with what you already pay on Google and Meta. If it does not beat them, it is not your channel yet.",
+          "If you are comparing channels, see [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads), or take our [free diagnostic](/recursos/diagnostico).",
+        ],
+        bodyEs: [
+          "Empieza con una oferta concreta y una [[landing page|landing-page]] hecha para ella, no tu página de inicio. Etiqueta la liga para saber qué visitas vinieron de ChatGPT, pon un presupuesto chico y una fecha fija, y compara el costo por [[prospecto|lead]] o por venta con lo que ya pagas en Google y Meta. Si no les gana, todavía no es tu canal.",
+          "Si estás comparando canales, revisa [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads) o haz nuestro [diagnóstico gratuito](/recursos/diagnostico).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Ya hay anuncios en ChatGPT en México?",
+        qEn: "Are there ads in ChatGPT in Mexico yet?",
+        a: "Sí. En agosto de 2026 OpenAI anunció un piloto de anuncios en México. Aparecen después de la respuesta, identificados como patrocinados, y OpenAI asegura que no cambian lo que responde el modelo.",
+        aEn: "Yes. In August 2026 OpenAI announced an ads pilot in Mexico. Ads appear after the answer, labelled as sponsored, and OpenAI states they do not change what the model answers.",
+      },
+      {
+        q: "¿Quién ve los anuncios en ChatGPT?",
+        qEn: "Who sees ads in ChatGPT?",
+        a: "Solo adultos en los planes gratis y Go. Los usuarios de Plus, Pro, Business, Enterprise y Education no ven anuncios.",
+        aEn: "Only adults on the free and Go plans. Plus, Pro, Business, Enterprise and Education users do not see ads.",
+      },
+      {
+        q: "¿Mi negocio puede anunciarse ya en ChatGPT?",
+        qEn: "Can my business advertise on ChatGPT now?",
+        a: "En el piloto, los anuncios se compran a través de agencias grandes, y OpenAI dice que está desarrollando herramientas para que los anunciantes manejen sus campañas. Para la mayoría de los negocios pequeños, lo práctico hoy es prepararse y probar cuando se abra el acceso.",
+        aEn: "In the pilot, ads are bought through large agencies, and OpenAI says it is developing tools for advertisers to manage their campaigns. For most small businesses, the practical step today is to prepare and test when access opens.",
+      },
+      {
+        q: "¿Los anuncios de ChatGPT sirven para negocios B2B?",
+        qEn: "Do ChatGPT ads work for B2B businesses?",
+        a: "Para B2B de ticket alto, probablemente no todavía: quienes deciden suelen usar planes de pago sin anuncios. Les conviene más trabajar su presencia orgánica para que ChatGPT los recomiende en la respuesta.",
+        aEn: "For high-ticket B2B, probably not yet: decision-makers often use paid plans without ads. They are better off working on their organic presence so ChatGPT recommends them in the answer.",
+      },
+      {
+        q: "¿Qué es mejor, anunciarme en ChatGPT o que me recomiende?",
+        qEn: "Which is better, advertising on ChatGPT or being recommended?",
+        a: "Que te recomiende. La respuesta es lo primero que se lee y le llega a todos los usuarios, incluidos los que pagan. Se trabaja con información consistente, reseñas reales, contenido útil y datos estructurados.",
+        aEn: "Being recommended. The answer is read first and reaches every user, including those who pay. It is built with consistent information, real reviews, useful content and structured data.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "ChatGPT ads Mexico",
+        "advertising on ChatGPT",
+        "who sees ChatGPT ads",
+        "ChatGPT ads for small business",
+        "GEO generative engine optimization",
+      ],
+      keywordsEs: [
+        "anuncios en ChatGPT México",
+        "publicidad en ChatGPT",
+        "quién ve los anuncios de ChatGPT",
+        "cómo anunciarse en ChatGPT",
+        "ChatGPT ads para negocios",
+        "que ChatGPT recomiende mi negocio",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
