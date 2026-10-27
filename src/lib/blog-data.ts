@@ -14097,6 +14097,506 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "que-estudiar-en-la-era-de-la-ia",
+    cover: true,
+    title: "What to Study in the Age of AI: Careers, Skills and What Employers Are Asking For",
+    titleEs: "¿Qué estudiar en la era de la IA? Carreras, habilidades y lo que piden las empresas",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "No career is AI-proof, but some skills are worth much more with it. What employers say they will need by 2030, the best-paid careers in Mexico according to IMCO, why trades are less exposed, and how to combine any degree with technology. For students, parents and anyone thinking of retraining.",
+    excerptEs:
+      "Ninguna carrera está a prueba de IA, pero algunas habilidades valen mucho más con ella. Lo que dicen las empresas que van a necesitar a 2030, las carreras mejor pagadas en México según el IMCO, por qué los oficios están menos expuestos y cómo combinar cualquier carrera con tecnología. Para estudiantes, papás y quien piensa en recapacitarse.",
+    readingTime: 10,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Every year, thousands of young people and their families ask the same question, and now it comes with a new fear: “what if I study something and AI does it for me before I graduate?”. The honest answer is that no career is completely safe, and that the question is better asked differently: which skills will be worth more with AI, and how do I combine what I like with them? Here is what employers say, what the salary data shows in Mexico and some practical advice for choosing or adjusting your path.",
+    ledeEs:
+      "Cada año, miles de jóvenes y sus familias se hacen la misma pregunta, y ahora viene con un miedo nuevo: “¿y si estudio algo y la IA lo hace por mí antes de que me titule?”. La respuesta honesta es que ninguna carrera está completamente segura, y que conviene hacerse la pregunta de otra forma: ¿qué habilidades van a valer más con la IA, y cómo combino lo que me gusta con ellas? Esto es lo que dicen las empresas, lo que muestran los datos de salarios en México y algunos consejos prácticos para elegir o ajustar tu camino.",
+    sections: [
+      {
+        id: "ninguna-carrera-a-prueba-de-ia",
+        heading: "No career is AI-proof, but skills are",
+        headingEs: "Ninguna carrera está a prueba de IA, pero las habilidades sí pesan",
+        body: [
+          "AI does not replace careers; it changes tasks within them. An accountant, a lawyer or a designer who uses AI well does in hours what used to take days, and one who does not use it competes against them. That is why studies on the future of work talk less about which careers will disappear and more about which skills will be in demand.",
+          "The World Economic Forum's Future of Jobs Report 2025 estimates that **39% of workers' core skills will change by 2030**. Whatever you study, you will have to keep learning after you graduate; choosing a career that teaches you to learn is as important as the career itself.",
+        ],
+        bodyEs: [
+          "La IA no reemplaza carreras; cambia las tareas dentro de ellas. Un contador, un abogado o un diseñador que usa bien la IA hace en horas lo que antes tomaba días, y quien no la usa compite contra él. Por eso los estudios sobre el futuro del trabajo hablan menos de qué carreras van a desaparecer y más de qué habilidades van a estar en demanda.",
+          "El Reporte sobre el Futuro del Empleo 2025 del Foro Económico Mundial estima que **39% de las habilidades centrales de los trabajadores va a cambiar a 2030**. Estudies lo que estudies, vas a tener que seguir aprendiendo después de titularte; elegir una carrera que te enseñe a aprender importa tanto como la carrera misma.",
+        ],
+      },
+      {
+        id: "lo-que-piden-las-empresas",
+        heading: "What employers say they will need",
+        headingEs: "Lo que dicen las empresas que van a necesitar",
+        body: [
+          "According to the same report, the fastest-growing skills to 2030 are, in order, AI and big data, networks and cybersecurity, and technological literacy. They are followed by creative thinking; resilience, flexibility and agility; curiosity and lifelong learning; leadership and social influence; talent management; analytical thinking; and environmental stewardship.",
+          "Notice the mix: half are technical and half are human. Analytical thinking remains the core skill employers value most: seven in ten companies consider it essential. AI can produce answers; companies need people who know which questions to ask and how to judge the answers.",
+        ],
+        bodyEs: [
+          "Según el mismo reporte, las habilidades que más rápido crecen a 2030 son, en orden, IA y big data, redes y ciberseguridad, y alfabetización tecnológica. Les siguen el pensamiento creativo; la resiliencia, flexibilidad y agilidad; la curiosidad y el aprendizaje continuo; el liderazgo e influencia social; la gestión de talento; el pensamiento analítico, y el cuidado del medio ambiente.",
+          "Fíjate en la mezcla: la mitad son técnicas y la mitad humanas. El pensamiento analítico sigue siendo la habilidad central que más valoran las empresas: siete de cada diez lo consideran esencial. La IA puede producir respuestas; las empresas necesitan personas que sepan qué preguntar y cómo juzgar esas respuestas.",
+        ],
+      },
+      {
+        id: "carreras-mejor-pagadas",
+        heading: "The best-paid careers in Mexico",
+        headingEs: "Las carreras mejor pagadas en México",
+        body: [
+          "IMCO's Compara Carreras 2025 put Information and Communication Technologies first among the best-paid careers in Mexico, with an average monthly salary of $25,761 pesos, followed closely by general medicine, public administration, political science and construction and civil engineering. The differences among the top five are small: all are around $25,000 a month.",
+          "That has a useful reading: within the best-paid careers, salary does not decide much; what decides is how good you become, the specialisation you choose and whether you combine your career with technology. IMCO's own tool lets you compare employment, salary and informality by career before deciding.",
+        ],
+        bodyEs: [
+          "El Compara Carreras 2025 del IMCO puso a las Tecnologías de la Información y la Comunicación en primer lugar entre las carreras mejor pagadas en México, con un salario promedio mensual de $25,761 pesos, seguidas muy de cerca por medicina general, administración pública, ciencias políticas y construcción e ingeniería civil. Las diferencias entre las cinco primeras son pequeñas: todas rondan los $25,000 al mes.",
+          "Eso tiene una lectura útil: entre las carreras mejor pagadas, el salario no decide mucho; decide qué tan bueno te vuelves, la especialidad que eliges y si combinas tu carrera con tecnología. La propia herramienta del IMCO permite comparar empleo, salario e informalidad por carrera antes de decidir.",
+        ],
+        chart: {
+          title: "Best-paid careers in Mexico (average monthly salary, pesos)",
+          titleEs: "Carreras mejor pagadas en México (salario promedio mensual, pesos)",
+          source: "IMCO, Compara Carreras 2025, via El Imparcial, November 2025.",
+          sourceEs: "IMCO, Compara Carreras 2025, vía El Imparcial, noviembre de 2025.",
+          bars: [
+            { label: "Information and communication technologies", labelEs: "Tecnologías de la información y la comunicación", value: 25761, display: "$25,761", displayEs: "$25,761" },
+            { label: "General medicine", labelEs: "Medicina general", value: 25732, display: "$25,732", displayEs: "$25,732" },
+            { label: "Public administration", labelEs: "Administración pública", value: 25678, display: "$25,678", displayEs: "$25,678" },
+            { label: "Political science", labelEs: "Ciencias políticas", value: 25288, display: "$25,288", displayEs: "$25,288" },
+            { label: "Construction and civil engineering", labelEs: "Construcción e ingeniería civil", value: 25259, display: "$25,259", displayEs: "$25,259" },
+          ],
+        },
+      },
+      {
+        id: "oficios-y-carreras-tecnicas",
+        heading: "Trades and technical careers: less exposed",
+        headingEs: "Oficios y carreras técnicas: menos expuestos",
+        body: [
+          "Exposure studies agree that AI affects screen-based office work the most and physical, in-person work the least. Electricians, mechanics, welders, technicians who install and maintain equipment, nurses and many construction and manufacturing roles depend on hands, judgement on site and physical presence, which current AI does not replace.",
+          "That is not an argument against university; it is an argument for not underestimating technical paths. A well-trained technician who also handles digital tools, such as diagnostic software or management systems, can earn well and is hard to replace. We look at which office jobs are most exposed in [will AI take your job?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
+        ],
+        bodyEs: [
+          "Los estudios de exposición coinciden en que la IA afecta más al trabajo de oficina frente a una pantalla y menos al trabajo físico y presencial. Electricistas, mecánicos, soldadores, técnicos que instalan y dan mantenimiento a equipos, enfermeras y muchos puestos de construcción y manufactura dependen de las manos, del criterio en el lugar y de estar presentes, algo que la IA actual no reemplaza.",
+          "No es un argumento contra la universidad; es un argumento para no menospreciar los caminos técnicos. Un técnico bien preparado que además maneja herramientas digitales, como software de diagnóstico o sistemas de gestión, puede ganar bien y es difícil de reemplazar. Vemos qué empleos de oficina están más expuestos en [¿la IA te va a quitar el trabajo?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
+        ],
+      },
+      {
+        id: "combina-tu-carrera-con-tecnologia",
+        heading: "Combine your career with technology",
+        headingEs: "Combina tu carrera con tecnología",
+        body: [
+          "The most valuable profiles of the coming years are hybrids: an accountant who analyses data, a lawyer who understands technology and data protection, a doctor who knows how to use AI tools responsibly, a designer who directs and does not only execute, an engineer who automates processes. The combination is rarer, and therefore better paid, than either part alone.",
+          "If you already chose or are studying a career that seems exposed, you do not need to start over: add a technical layer through elective courses, certifications or projects. **The question is not “which career survives AI?” but “what can I do with AI that others in my career cannot?”**",
+        ],
+        bodyEs: [
+          "Los perfiles más valiosos de los próximos años son híbridos: un contador que analiza datos, un abogado que entiende tecnología y protección de datos, un médico que sabe usar herramientas de IA con responsabilidad, un diseñador que dirige y no solo ejecuta, un ingeniero que automatiza procesos. La combinación es más escasa, y por eso mejor pagada, que cualquiera de las dos partes por separado.",
+          "Si ya elegiste o estás estudiando una carrera que parece expuesta, no necesitas empezar de cero: agrega una capa técnica con materias optativas, certificaciones o proyectos. **La pregunta no es “¿qué carrera sobrevive a la IA?”, sino “¿qué puedo hacer con IA que otros en mi carrera no pueden?”.**",
+        ],
+      },
+      {
+        id: "como-aprender-ia-sin-maestria",
+        heading: "How to learn AI without paying for a master's degree",
+        headingEs: "Cómo aprender IA sin pagar una maestría",
+        body: [
+          "Start by using it in what you already do: your homework, your work, your projects. Ask it to explain concepts, review your texts, analyse data or propose alternatives, and always check what it says. Many AI and technology companies offer free introductory courses, and universities publish open courses; what matters is applying them to a real problem.",
+          "Build a portfolio: three or four projects where AI helped you solve something concrete, with the before and after. In an interview, that is worth more than a certificate. If you are a parent, do these exercises with your children: using these tools well is learned by practising with judgement, not by forbidding them.",
+        ],
+        bodyEs: [
+          "Empieza por usarla en lo que ya haces: tus tareas, tu trabajo, tus proyectos. Pídele que te explique conceptos, revise tus textos, analice datos o proponga alternativas, y siempre verifica lo que dice. Muchas empresas de IA y tecnología ofrecen cursos introductorios gratuitos, y las universidades publican cursos abiertos; lo que importa es aplicarlos a un problema real.",
+          "Arma un portafolio: tres o cuatro proyectos donde la IA te ayudó a resolver algo concreto, con el antes y el después. En una entrevista eso vale más que un certificado. Si eres papá o mamá, hagan estos ejercicios con tus hijos: usar bien estas herramientas se aprende practicando con criterio, no prohibiéndolas.",
+        ],
+      },
+      {
+        id: "si-tienes-un-negocio",
+        heading: "If you run a business",
+        headingEs: "Si tienes un negocio",
+        body: [
+          "The same logic applies to your team: the people you already have, trained to work with AI, are usually worth more than starting from scratch with new hires. Identify the repetitive tasks in each role, train your team to delegate them to AI tools and redirect that time to customers, sales and quality.",
+          "We explain where to start in [what to automate in my business](/blog/que-automatizar-en-mi-negocio) and in our [guide to AI and automation](/blog/guia-automatizacion-ia). If you want a recommendation for your business, our [free diagnostic](/recursos/diagnostico) gives you one in a few minutes.",
+        ],
+        bodyEs: [
+          "La misma lógica aplica a tu equipo: la gente que ya tienes, capacitada para trabajar con IA, suele valer más que empezar de cero con contrataciones nuevas. Identifica las tareas repetitivas de cada puesto, capacita a tu equipo para delegarlas en herramientas de IA y redirige ese tiempo a clientes, ventas y calidad.",
+          "Explicamos por dónde empezar en [qué automatizar en mi negocio](/blog/que-automatizar-en-mi-negocio) y en nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia). Si quieres una recomendación para tu negocio, nuestro [diagnóstico gratuito](/recursos/diagnostico) te la da en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué carrera estudiar para que no me reemplace la IA?",
+        qEn: "What should I study so AI does not replace me?",
+        a: "Ninguna carrera está completamente a salvo, pero las habilidades sí pesan: IA y datos, ciberseguridad, alfabetización tecnológica, pensamiento creativo y analítico. Combinar cualquier carrera con tecnología te vuelve más difícil de reemplazar.",
+        aEn: "No career is completely safe, but skills matter: AI and data, cybersecurity, technological literacy, creative and analytical thinking. Combining any career with technology makes you harder to replace.",
+      },
+      {
+        q: "¿Cuáles son las carreras mejor pagadas en México?",
+        qEn: "What are the best-paid careers in Mexico?",
+        a: "Según el Compara Carreras 2025 del IMCO, encabezan Tecnologías de la Información y la Comunicación ($25,761 mensuales en promedio), medicina general, administración pública, ciencias políticas y construcción e ingeniería civil, todas alrededor de $25,000.",
+        aEn: "According to IMCO's Compara Carreras 2025, the top five are Information and Communication Technologies ($25,761 a month on average), general medicine, public administration, political science and construction and civil engineering, all around $25,000.",
+      },
+      {
+        q: "¿Qué habilidades van a pedir las empresas a 2030?",
+        qEn: "What skills will employers ask for by 2030?",
+        a: "Según el Foro Económico Mundial, las que más crecen son IA y big data, redes y ciberseguridad, y alfabetización tecnológica, seguidas de pensamiento creativo, resiliencia, curiosidad y aprendizaje continuo. El pensamiento analítico sigue siendo la más valorada.",
+        aEn: "According to the World Economic Forum, the fastest-growing are AI and big data, networks and cybersecurity, and technological literacy, followed by creative thinking, resilience, curiosity and lifelong learning. Analytical thinking remains the most valued.",
+      },
+      {
+        q: "¿Los oficios están menos expuestos a la IA?",
+        qEn: "Are trades less exposed to AI?",
+        a: "Sí. Los estudios coinciden en que la IA afecta más al trabajo de oficina frente a una pantalla y menos al trabajo físico y presencial, como electricistas, mecánicos, soldadores, técnicos y enfermería.",
+        aEn: "Yes. Studies agree that AI affects screen-based office work the most and physical, in-person work the least, such as electricians, mechanics, welders, technicians and nursing.",
+      },
+      {
+        q: "¿Cómo aprendo a usar IA sin pagar una maestría?",
+        qEn: "How do I learn AI without paying for a master's degree?",
+        a: "Úsala en lo que ya haces y verifica siempre sus respuestas, toma cursos introductorios gratuitos y arma un portafolio de tres o cuatro proyectos donde la IA te ayudó a resolver algo concreto.",
+        aEn: "Use it in what you already do and always check its answers, take free introductory courses and build a portfolio of three or four projects where AI helped you solve something concrete.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "what to study in the age of AI",
+        "careers safe from AI",
+        "best paid careers Mexico",
+        "skills for 2030",
+        "AI-proof jobs",
+      ],
+      keywordsEs: [
+        "qué estudiar en la era de la IA",
+        "carreras que no reemplazará la IA",
+        "carreras mejor pagadas en México 2025",
+        "habilidades más demandadas 2030",
+        "carreras con futuro",
+        "qué carrera estudiar con la inteligencia artificial",
+      ],
+    },
+  },
+  {
+    slug: "como-saber-si-una-imagen-es-ia",
+    cover: true,
+    title: "How to Tell if a Photo or Video Was Made with AI",
+    titleEs: "Cómo saber si una foto o un video fue hecho con IA",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "AI images and videos are getting harder to spot by eye. The visual clues that still help, why context matters more than pixels, the labels and watermarks some platforms use, why automatic detectors are not reliable, and what businesses should do when they use AI images.",
+    excerptEs:
+      "Las imágenes y videos hechos con IA son cada vez más difíciles de distinguir a simple vista. Las pistas visuales que todavía ayudan, por qué el contexto pesa más que los pixeles, las etiquetas y marcas de agua que usan algunas plataformas, por qué los detectores automáticos no son confiables y qué deben hacer los negocios que usan imágenes con IA.",
+    readingTime: 9,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A few years ago, an AI image gave itself away at a glance: six fingers, melted text, impossible faces. Today many are indistinguishable from a real photo, and videos are improving just as fast. That matters beyond curiosity: fake images are used in scams, fake news, fake product listings and invented testimonials. There is no infallible trick, but there is a method that combines what you see with where it comes from, and it works much better than trusting your eye alone.",
+    ledeEs:
+      "Hace unos años, una imagen hecha con IA se delataba de un vistazo: seis dedos, textos derretidos, caras imposibles. Hoy muchas son indistinguibles de una foto real, y los videos están mejorando igual de rápido. Eso importa más allá de la curiosidad: las imágenes falsas se usan en estafas, noticias falsas, anuncios de productos que no existen y testimonios inventados. No hay un truco infalible, pero sí un método que combina lo que ves con de dónde viene, y funciona mucho mejor que confiar solo en el ojo.",
+    sections: [
+      {
+        id: "pistas-en-fotos",
+        heading: "Visual clues in photos",
+        headingEs: "Pistas visuales en fotos",
+        body: [
+          "Look at the details AI still gets wrong more often: hands and fingers, teeth, ears and earrings that do not match, text on signs, labels or clothing that does not make sense, reflections in mirrors and glasses that do not correspond to the scene, and backgrounds where objects merge into each other. Skin that is too smooth and perfect lighting in a supposedly spontaneous photo are also clues.",
+          "Zoom in and look at the edges: where hair meets the background, where a hand holds an object. These clues are useful but are disappearing with each new version, so treat them as a warning sign, not as proof in either direction.",
+        ],
+        bodyEs: [
+          "Revisa los detalles que la IA todavía falla más seguido: manos y dedos, dientes, orejas y aretes que no coinciden, textos en letreros, etiquetas o ropa que no tienen sentido, reflejos en espejos y lentes que no corresponden a la escena, y fondos donde los objetos se funden entre sí. Una piel demasiado lisa y una iluminación perfecta en una foto supuestamente espontánea también son pistas.",
+          "Haz zoom y fíjate en los bordes: donde el cabello se junta con el fondo, donde una mano sostiene un objeto. Estas pistas sirven, pero van desapareciendo con cada versión nueva, así que tómalas como señal de alerta, no como prueba en ningún sentido.",
+        ],
+      },
+      {
+        id: "pistas-en-videos",
+        heading: "Clues in videos",
+        headingEs: "Pistas en videos",
+        body: [
+          "In [[deepfake|deepfake]] videos of real people, watch the mouth: whether the lips match the words exactly, especially with sounds like p, b and m. Look at blinking, at teeth and at the edge of the face when the person turns their head, where the image sometimes flickers or blurs. Lighting on the face that does not match the rest of the scene is another clue.",
+          "Listen too: a voice with no breathing, a strange rhythm or no background noise in a supposedly outdoor scene. And remember that many fake videos are short and low quality precisely to hide these defects.",
+        ],
+        bodyEs: [
+          "En videos [[deepfake|deepfake]] de personas reales, fíjate en la boca: si los labios coinciden exactamente con las palabras, sobre todo con sonidos como p, b y m. Observa el parpadeo, los dientes y el borde de la cara cuando la persona gira la cabeza, donde a veces la imagen parpadea o se difumina. Una iluminación en la cara que no coincide con el resto de la escena es otra pista.",
+          "Escucha también: una voz sin respiraciones, con ritmo extraño o sin ruido de fondo en una escena supuestamente al aire libre. Y recuerda que muchos videos falsos son cortos y de baja calidad justamente para esconder estos defectos.",
+        ],
+      },
+      {
+        id: "el-contexto-pesa-mas",
+        heading: "Context matters more than pixels",
+        headingEs: "El contexto pesa más que los pixeles",
+        body: [
+          "The most reliable question is not “does it look fake?” but “where does it come from?”. Who published it first, on which account, on what date, and whether serious media or the official accounts of the people involved report the same thing. An image of a major event that only appears on unknown accounts deserves suspicion.",
+          "**Before sharing or believing a surprising image, look for where it came from.** A reverse image search, with Google Lens for example, often shows the original or reveals that it was already debunked. It takes thirty seconds and avoids most mistakes.",
+        ],
+        bodyEs: [
+          "La pregunta más confiable no es “¿se ve falsa?”, sino “¿de dónde viene?”. Quién la publicó primero, en qué cuenta, en qué fecha y si medios serios o las cuentas oficiales de las personas involucradas reportan lo mismo. Una imagen de un evento importante que solo aparece en cuentas desconocidas merece sospecha.",
+          "**Antes de compartir o creer una imagen sorprendente, busca de dónde salió.** Una búsqueda inversa de imagen, con Google Lens por ejemplo, muchas veces muestra la original o revela que ya fue desmentida. Toma treinta segundos y evita la mayoría de los errores.",
+        ],
+      },
+      {
+        id: "etiquetas-y-marcas-de-agua",
+        heading: "Labels and watermarks",
+        headingEs: "Etiquetas y marcas de agua",
+        body: [
+          "Some platforms label content they detect or that its author declares as AI-generated, and some AI tools add information about how an image was created, either in its metadata, as in the content credentials standard, or as an invisible watermark, as Google does with its SynthID technology. When that information exists, it is a good signal.",
+          "Its absence proves nothing: metadata is lost when an image is screenshotted or edited, not all tools add it, and not all platforms read it. Labels help when they are there; they do not certify that something is real when they are not.",
+        ],
+        bodyEs: [
+          "Algunas plataformas etiquetan el contenido que detectan o que su autor declara como hecho con IA, y algunas herramientas de IA agregan información sobre cómo se creó una imagen, ya sea en sus metadatos, como el estándar de credenciales de contenido, o como una marca de agua invisible, como hace Google con su tecnología SynthID. Cuando esa información existe, es una buena señal.",
+          "Su ausencia no prueba nada: los metadatos se pierden cuando se hace captura de pantalla o se edita una imagen, no todas las herramientas los agregan y no todas las plataformas los leen. Las etiquetas ayudan cuando están; no certifican que algo sea real cuando no están.",
+        ],
+      },
+      {
+        id: "detectores-automaticos",
+        heading: "Why automatic detectors are not reliable",
+        headingEs: "Por qué los detectores automáticos no son confiables",
+        body: [
+          "There are websites that promise to tell you whether an image or a text was made with AI. They can serve as one more clue, but they fail in both directions: they mark real photos as AI and let AI images through as real, and their results change when an image is compressed or edited. Do not make important decisions, such as accusing someone, based only on a detector.",
+          "The same applies to texts: there is no tool that reliably identifies whether a text was written with AI. Teachers, recruiters and businesses that need to evaluate originality do better asking the person to explain or defend what they presented.",
+        ],
+        bodyEs: [
+          "Hay sitios que prometen decirte si una imagen o un texto se hizo con IA. Pueden servir como una pista más, pero fallan en las dos direcciones: marcan fotos reales como IA y dejan pasar imágenes de IA como reales, y sus resultados cambian cuando una imagen se comprime o se edita. No tomes decisiones importantes, como acusar a alguien, solo con base en un detector.",
+          "Lo mismo aplica a los textos: no existe una herramienta que identifique de forma confiable si un texto se escribió con IA. Maestros, reclutadores y negocios que necesitan evaluar originalidad hacen mejor en pedirle a la persona que explique o defienda lo que presentó.",
+        ],
+      },
+      {
+        id: "si-tu-negocio-usa-imagenes-con-ia",
+        heading: "If your business uses AI images",
+        headingEs: "Si tu negocio usa imágenes con IA",
+        body: [
+          "Using AI to create illustrations, backgrounds or concepts is legitimate and can save a lot of production. The line is deception: an AI image presented as a real photo of your product, your premises or your results, or AI faces presented as real customers in testimonials. Besides breaking customers' trust when they find out, it can be misleading advertising.",
+          "For products, premises and real results, use real photos and video; for creative concepts, AI is a great tool, and saying so does not take value away. If you want professional images of your business, see our [drone video service](/servicios/video-con-dron), and to protect your family and team from fakes, read [AI scams: voice cloning and fake videos](/blog/estafas-con-ia-clonacion-de-voz).",
+        ],
+        bodyEs: [
+          "Usar IA para crear ilustraciones, fondos o conceptos es legítimo y puede ahorrar mucha producción. La línea es el engaño: una imagen de IA presentada como foto real de tu producto, tu local o tus resultados, o caras de IA presentadas como clientes reales en testimonios. Además de romper la confianza del cliente cuando se da cuenta, puede ser publicidad engañosa.",
+          "Para productos, locales y resultados reales, usa fotos y video reales; para conceptos creativos, la IA es una gran herramienta, y decirlo no le quita valor. Si quieres imágenes profesionales de tu negocio, mira nuestro [servicio de video con dron](/servicios/video-con-dron), y para proteger a tu familia y tu equipo de las falsificaciones, lee [estafas con IA: clonación de voz y videos falsos](/blog/estafas-con-ia-clonacion-de-voz).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cómo sé si una foto es hecha con IA?",
+        qEn: "How can I tell if a photo was made with AI?",
+        a: "Revisa manos, dientes, textos, reflejos y bordes, pero sobre todo busca de dónde viene: quién la publicó primero y si fuentes serias la confirman. Una búsqueda inversa de imagen muchas veces muestra la original.",
+        aEn: "Check hands, teeth, text, reflections and edges, but above all look for where it comes from: who published it first and whether serious sources confirm it. A reverse image search often shows the original.",
+      },
+      {
+        q: "¿Cómo detecto un video deepfake?",
+        qEn: "How do I spot a deepfake video?",
+        a: "Fíjate si los labios coinciden con las palabras, en el parpadeo, en los bordes de la cara al girar la cabeza y en una iluminación que no coincide con la escena. Escucha si la voz tiene respiraciones y ruido de fondo natural.",
+        aEn: "Check whether the lips match the words, the blinking, the edges of the face when the head turns and lighting that does not match the scene. Listen for natural breathing and background noise in the voice.",
+      },
+      {
+        q: "¿Los detectores de IA son confiables?",
+        qEn: "Are AI detectors reliable?",
+        a: "No del todo. Fallan en las dos direcciones y sus resultados cambian si la imagen se comprime o se edita. Úsalos como una pista más, nunca como prueba única.",
+        aEn: "Not entirely. They fail in both directions and their results change if the image is compressed or edited. Use them as one more clue, never as sole proof.",
+      },
+      {
+        q: "¿Qué son las marcas de agua de IA?",
+        qEn: "What are AI watermarks?",
+        a: "Información que algunas herramientas agregan para indicar que una imagen se hizo con IA, en los metadatos o como marca invisible, como SynthID de Google. Si existe es buena señal, pero su ausencia no prueba que algo sea real.",
+        aEn: "Information some tools add to indicate an image was made with AI, in the metadata or as an invisible mark, such as Google's SynthID. If present it is a good signal, but its absence does not prove something is real.",
+      },
+      {
+        q: "¿Mi negocio puede usar imágenes hechas con IA?",
+        qEn: "Can my business use AI-generated images?",
+        a: "Sí, para ilustraciones, fondos y conceptos. No las presentes como fotos reales de tu producto, tu local o tus resultados, ni uses caras de IA como clientes reales en testimonios.",
+        aEn: "Yes, for illustrations, backgrounds and concepts. Do not present them as real photos of your product, premises or results, and do not use AI faces as real customers in testimonials.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "how to tell if an image is AI",
+        "spot deepfake video",
+        "AI image detection",
+        "AI watermark SynthID",
+        "fake images scams",
+      ],
+      keywordsEs: [
+        "cómo saber si una imagen es IA",
+        "cómo detectar un deepfake",
+        "foto hecha con inteligencia artificial",
+        "detector de imágenes IA",
+        "videos falsos con IA",
+        "marcas de agua IA",
+      ],
+    },
+  },
+  {
+    slug: "agentes-de-ia-para-negocios",
+    cover: true,
+    title: "AI Agents for Business: What They Are, What They Can Do and Where They Fail",
+    titleEs: "Agentes de IA para negocios: qué son, qué pueden hacer y dónde fallan",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "“AI agents” are the new promise of technology, and also the new label for products that are not. What an agent really is, how it differs from a chatbot, concrete examples for small businesses, what Gartner predicts (including the projects that will be cancelled) and how to start without wasting money.",
+    excerptEs:
+      "Los “agentes de IA” son la nueva promesa de la tecnología, y también la nueva etiqueta para productos que no lo son. Qué es de verdad un agente, en qué se diferencia de un chatbot, ejemplos concretos para pymes, qué predice Gartner (incluidos los proyectos que se van a cancelar) y cómo empezar sin tirar dinero.",
+    readingTime: 10,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "After chatbots came “agents”: AI that does not only answer, but acts. It reads a customer's message, checks your calendar, books the appointment, updates your CRM and sends the reminder, without anyone touching it. The promise is real, and so is the hype: many products sold as agents are the same chatbots with a new name. Here is what an AI agent is, what it can do today in a small business, what analysts expect and how to tell a useful project from an expensive experiment.",
+    ledeEs:
+      "Después de los chatbots llegaron los “agentes”: IA que no solo contesta, sino que actúa. Lee el mensaje de un cliente, revisa tu agenda, aparta la cita, actualiza tu CRM y manda el recordatorio, sin que nadie lo toque. La promesa es real, y la exageración también: muchos productos vendidos como agentes son los mismos chatbots con otro nombre. Esto es qué es un agente de IA, qué puede hacer hoy en un negocio pequeño, qué esperan los analistas y cómo distinguir un proyecto útil de un experimento caro.",
+    sections: [
+      {
+        id: "que-es-un-agente",
+        heading: "What an AI agent is, and what it is not",
+        headingEs: "Qué es un agente de IA, y qué no es",
+        body: [
+          "A [[chatbot|chatbot]] answers questions. A traditional automation follows fixed rules: “if a form arrives, send this email”. An [[AI agent|agente-de-ia]] combines both: it understands what someone wants in natural language, decides which steps to take and executes them using your tools, such as your calendar, your CRM, your catalogue or your email, within the limits you give it.",
+          "The key word is “acts”. If a product only answers frequent questions, it is a chatbot, however it is marketed. If it can check availability, book, quote, update records and escalate to a person when it does not know, it starts to be an agent.",
+        ],
+        bodyEs: [
+          "Un [[chatbot|chatbot]] contesta preguntas. Una automatización tradicional sigue reglas fijas: “si llega un formulario, manda este correo”. Un [[agente de IA|agente-de-ia]] combina las dos cosas: entiende lo que alguien quiere en lenguaje natural, decide qué pasos dar y los ejecuta usando tus herramientas, como tu agenda, tu CRM, tu catálogo o tu correo, dentro de los límites que tú le pones.",
+          "La palabra clave es “actúa”. Si un producto solo contesta preguntas frecuentes, es un chatbot, aunque se venda de otra forma. Si puede revisar disponibilidad, apartar, cotizar, actualizar registros y pasar el caso a una persona cuando no sabe, empieza a ser un agente.",
+        ],
+      },
+      {
+        id: "ejemplos-para-pymes",
+        heading: "Concrete examples for small businesses",
+        headingEs: "Ejemplos concretos para pymes",
+        body: [
+          "A clinic: an agent on WhatsApp that answers questions about treatments, checks the calendar, books the appointment, sends the reminder and reschedules if the patient asks. A restaurant: one that takes group bookings, sends the packages and requests the deposit. A real estate agency: one that answers about a property, asks the qualifying questions, schedules the visit and leaves everything in the CRM for the agent.",
+          "Internally, an agent can review the day's leads and summarise who to call first, prepare a quote draft from a request or update the sales report. In every case, the pattern is the same: frequent, repetitive conversations or tasks with clear rules and a measurable result.",
+        ],
+        bodyEs: [
+          "Una clínica: un agente en WhatsApp que contesta dudas sobre tratamientos, revisa la agenda, aparta la cita, manda el recordatorio y reagenda si el paciente lo pide. Un restaurante: uno que toma reservaciones de grupo, manda los paquetes y pide el anticipo. Una inmobiliaria: uno que contesta sobre una propiedad, hace las preguntas para calificar al prospecto, agenda la visita y deja todo en el CRM para el agente.",
+          "Hacia dentro, un agente puede revisar los prospectos del día y resumir a quién llamar primero, preparar un borrador de cotización a partir de una solicitud o actualizar el reporte de ventas. En todos los casos el patrón es el mismo: conversaciones o tareas frecuentes y repetitivas, con reglas claras y un resultado que se puede medir.",
+        ],
+      },
+      {
+        id: "lo-que-dice-gartner",
+        heading: "What Gartner expects: promise and pruning",
+        headingEs: "Lo que espera Gartner: promesa y recorte",
+        body: [
+          "The analyst firm Gartner predicted in June 2025 that by 2028, 33% of enterprise software applications will include agentic AI and 15% of day-to-day work decisions will be made autonomously. In the same announcement it warned that **over 40% of agentic AI projects will be cancelled by the end of 2027**, because of rising costs, unclear business value or inadequate risk controls.",
+          "Gartner also described “agent washing”: vendors relabelling existing assistants, automations and chatbots as agents without real agentic capabilities, and estimated that of thousands of vendors, only about 130 are real. Both things are true at the same time: agents are coming, and many projects will fail for starting without a clear purpose.",
+        ],
+        bodyEs: [
+          "La firma de análisis Gartner predijo en junio de 2025 que para 2028, 33% de las aplicaciones de software empresarial incluirán IA con agentes y 15% de las decisiones de trabajo del día a día se tomarán de forma autónoma. En el mismo anuncio advirtió que **más de 40% de los proyectos de IA con agentes se cancelarán antes de que termine 2027**, por costos crecientes, valor de negocio poco claro o controles de riesgo insuficientes.",
+          "Gartner también describió el “agent washing”: proveedores que le ponen la etiqueta de agente a asistentes, automatizaciones y chatbots que ya existían, sin capacidades reales de agente, y estimó que de miles de proveedores solo unos 130 son reales. Las dos cosas son ciertas al mismo tiempo: los agentes vienen, y muchos proyectos van a fracasar por empezar sin un propósito claro.",
+        ],
+        chart: {
+          title: "Gartner predictions on agentic AI",
+          titleEs: "Predicciones de Gartner sobre la IA con agentes",
+          source: "Gartner, June 2025, via SD Times.",
+          sourceEs: "Gartner, junio de 2025, vía SD Times.",
+          bars: [
+            { label: "Agentic AI projects cancelled by end of 2027", labelEs: "Proyectos con agentes cancelados antes de que termine 2027", value: 40, display: "Over 40%", displayEs: "Más de 40%" },
+            { label: "Enterprise software with agentic AI by 2028", labelEs: "Software empresarial con agentes en 2028", value: 33, display: "33%", displayEs: "33%" },
+            { label: "Day-to-day work decisions made autonomously by 2028", labelEs: "Decisiones de trabajo diarias tomadas de forma autónoma en 2028", value: 15, display: "15%", displayEs: "15%" },
+          ],
+        },
+      },
+      {
+        id: "donde-si-conviene",
+        heading: "Where it makes sense to start",
+        headingEs: "Dónde sí conviene empezar",
+        body: [
+          "Start where three things come together: high volume, clear rules and a cost of slowness. Answering and booking appointments, qualifying leads and scheduling visits, confirming orders and reservations, and following up quotes meet all three. They are also easy to measure: response time, appointments booked, no-shows, leads attended outside working hours.",
+          "A business that receives dozens of messages a day and answers them hours later is the ideal candidate, because the agent attacks a real problem: the lead that goes cold. We explain why the first hour matters in [the lead you don't answer within an hour goes cold](/blog/responder-rapido-a-tus-leads).",
+        ],
+        bodyEs: [
+          "Empieza donde se juntan tres cosas: mucho volumen, reglas claras y un costo por la lentitud. Contestar y agendar citas, calificar prospectos y agendar visitas, confirmar pedidos y reservaciones, y dar seguimiento a cotizaciones cumplen las tres. También son fáciles de medir: tiempo de respuesta, citas agendadas, inasistencias, prospectos atendidos fuera de horario.",
+          "Un negocio que recibe decenas de mensajes al día y los contesta horas después es el candidato ideal, porque el agente ataca un problema real: el prospecto que se enfría. Explicamos por qué importa la primera hora en [el lead que no contestas en una hora se enfría](/blog/responder-rapido-a-tus-leads).",
+        ],
+      },
+      {
+        id: "donde-no-conviene",
+        heading: "Where it does not, yet",
+        headingEs: "Dónde todavía no conviene",
+        body: [
+          "Decisions that require judgement and carry high risk, such as medical diagnoses, legal advice, credit approvals or discounts outside policy, should stay with people; the agent can prepare information, not decide. It also does not make sense when the process is not defined: if your team does not agree on how to quote or what to answer, an agent will automate the chaos.",
+          "And it does not replace your offer or your service. An agent that books appointments quickly does not fix a bad service or a price nobody understands; it only brings you to that problem sooner.",
+        ],
+        bodyEs: [
+          "Las decisiones que requieren criterio y tienen alto riesgo, como diagnósticos médicos, asesoría legal, aprobación de créditos o descuentos fuera de política, deben quedarse con personas; el agente puede preparar la información, no decidir. Tampoco conviene cuando el proceso no está definido: si tu equipo no se pone de acuerdo en cómo cotizar o qué contestar, un agente va a automatizar el desorden.",
+          "Y no sustituye tu oferta ni tu servicio. Un agente que agenda citas rápido no arregla un mal servicio ni un precio que nadie entiende; solo te lleva más rápido a ese problema.",
+        ],
+      },
+      {
+        id: "como-implementarlo",
+        heading: "How to implement one without wasting money",
+        headingEs: "Cómo implementarlo sin tirar dinero",
+        body: [
+          "One process at a time: choose the most repetitive and measurable one. Write down the rules as you would explain them to a new employee: what to answer, what it can do on its own, when it must pass the case to a person. Connect it only to the tools it needs, with the minimum permissions, and keep a person reviewing conversations during the first weeks.",
+          "Measure before and after: response time, appointments or sales, hours saved and customer complaints. Take care with your customers' data, as we explain in [is it safe to use ChatGPT with your business data?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio). **A good agent is judged by the business result it improves, not by how intelligent it seems in a demo.**",
+        ],
+        bodyEs: [
+          "Un proceso a la vez: elige el más repetitivo y medible. Escribe las reglas como se las explicarías a un empleado nuevo: qué contestar, qué puede hacer solo, cuándo debe pasarle el caso a una persona. Conéctalo solo a las herramientas que necesita, con los permisos mínimos, y deja a una persona revisando las conversaciones las primeras semanas.",
+          "Mide antes y después: tiempo de respuesta, citas o ventas, horas ahorradas y quejas de clientes. Cuida los datos de tus clientes, como explicamos en [¿es seguro usar ChatGPT con datos de tu negocio?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio). **Un buen agente se juzga por el resultado de negocio que mejora, no por qué tan inteligente parece en una demostración.**",
+        ],
+      },
+      {
+        id: "como-elegir-proveedor",
+        heading: "How to choose a provider",
+        headingEs: "Cómo elegir proveedor",
+        body: [
+          "Ask for a demonstration with your real case, not a generic one: your questions, your calendar, your catalogue. Ask what it does when it does not know the answer, how it hands over to a person, which tools it connects to, where the data is stored and who can see the conversations. If the answer to “what can it do on its own?” is only “answer questions”, it is a chatbot.",
+          "We build AI agents for WhatsApp and websites for businesses like yours; see [our AI agent service](/servicios/agente-ia) and [AI chatbots for businesses](/blog/chatbot-con-ia-para-negocios). If you are not sure which process to start with, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes.",
+        ],
+        bodyEs: [
+          "Pide una demostración con tu caso real, no una genérica: tus preguntas, tu agenda, tu catálogo. Pregunta qué hace cuando no sabe la respuesta, cómo pasa el caso a una persona, a qué herramientas se conecta, dónde se guardan los datos y quién puede ver las conversaciones. Si la respuesta a “¿qué puede hacer solo?” es únicamente “contestar preguntas”, es un chatbot.",
+          "Nosotros construimos agentes de IA para WhatsApp y páginas web para negocios como el tuyo; mira [nuestro servicio de agente IA](/servicios/agente-ia) y [chatbots con IA para negocios](/blog/chatbot-con-ia-para-negocios). Si no sabes con qué proceso empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te lo dice en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué es un agente de IA?",
+        qEn: "What is an AI agent?",
+        a: "Una IA que entiende lo que alguien quiere, decide qué pasos dar y los ejecuta con tus herramientas, como tu agenda, tu CRM o tu catálogo, dentro de los límites que le pones. A diferencia de un chatbot, no solo contesta: actúa.",
+        aEn: "An AI that understands what someone wants, decides which steps to take and executes them with your tools, such as your calendar, CRM or catalogue, within the limits you set. Unlike a chatbot, it does not only answer: it acts.",
+      },
+      {
+        q: "¿Cuál es la diferencia entre un chatbot y un agente de IA?",
+        qEn: "What is the difference between a chatbot and an AI agent?",
+        a: "Un chatbot contesta preguntas. Un agente puede revisar disponibilidad, apartar citas, cotizar, actualizar registros y pasar el caso a una persona cuando no sabe.",
+        aEn: "A chatbot answers questions. An agent can check availability, book appointments, quote, update records and hand the case to a person when it does not know.",
+      },
+      {
+        q: "¿Qué puede hacer un agente de IA en una pyme?",
+        qEn: "What can an AI agent do in a small business?",
+        a: "Contestar y agendar citas por WhatsApp, calificar prospectos y agendar visitas, confirmar pedidos y reservaciones, dar seguimiento a cotizaciones y resumir los prospectos del día para el equipo de ventas.",
+        aEn: "Answer and book appointments on WhatsApp, qualify leads and schedule visits, confirm orders and reservations, follow up quotes and summarise the day's leads for the sales team.",
+      },
+      {
+        q: "¿Los proyectos de agentes de IA funcionan?",
+        qEn: "Do AI agent projects work?",
+        a: "Muchos no: Gartner predice que más de 40% se cancelarán antes de que termine 2027 por costos, valor poco claro o falta de controles. Funcionan mejor cuando atacan un proceso repetitivo, con reglas claras y un resultado medible.",
+        aEn: "Many do not: Gartner predicts over 40% will be cancelled by the end of 2027 because of costs, unclear value or lack of controls. They work best when they target a repetitive process with clear rules and a measurable result.",
+      },
+      {
+        q: "¿Cómo elijo un proveedor de agentes de IA?",
+        qEn: "How do I choose an AI agent provider?",
+        a: "Pide una demostración con tu caso real, pregunta qué hace cuando no sabe, cómo pasa el caso a una persona, a qué herramientas se conecta y dónde se guardan los datos. Si solo contesta preguntas, es un chatbot.",
+        aEn: "Ask for a demonstration with your real case, ask what it does when it does not know, how it hands over to a person, which tools it connects to and where data is stored. If it only answers questions, it is a chatbot.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "AI agents for business",
+        "what is an AI agent",
+        "AI agent vs chatbot",
+        "agentic AI small business",
+        "WhatsApp AI agent",
+      ],
+      keywordsEs: [
+        "agentes de IA para negocios",
+        "qué es un agente de inteligencia artificial",
+        "diferencia entre chatbot y agente de IA",
+        "agente de IA para WhatsApp",
+        "IA agéntica pymes",
+        "automatizar citas con IA",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

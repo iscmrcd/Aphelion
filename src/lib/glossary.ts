@@ -415,4 +415,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Cuando una herramienta de inteligencia artificial afirma algo falso o inventado con total seguridad, como una cifra, una cita o una fuente que no existe.",
     defEn: "When an artificial intelligence tool states something false or made up with complete confidence, such as a figure, a quote or a source that does not exist.",
   },
+  "agente-de-ia": {
+    term: "Agente de IA",
+    termEn: "AI agent",
+    def: "Una inteligencia artificial que no solo contesta, sino que actúa: entiende lo que alguien pide y ejecuta pasos con tus herramientas, como apartar una cita en tu agenda o actualizar tu CRM, dentro de los límites que le pones.",
+    defEn: "An artificial intelligence that does not only answer but acts: it understands what someone asks and carries out steps with your tools, such as booking an appointment in your calendar or updating your CRM, within the limits you set.",
+  },
 };
