@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Plus } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
+import { BlogBarChart } from "@/components/blog/BlogBarChart";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD } from "@/lib/seo";
 import {
@@ -195,6 +196,7 @@ function BlogArticlePage() {
                     </p>
                   ))}
                 </div>
+                {s.chart && <BlogBarChart chart={s.chart} lang={lang} />}
               </section>
             ))}
           </div>
@@ -434,7 +436,10 @@ function InlineCTA({ post }: { post: BlogPost }) {
   // one: it is the step that turns a reader into a lead.
   const v = getVertical(postVertical(post) ?? "");
   const diagLabel = v
-    ? t(`Free diagnostic: ${v.labelEn.toLowerCase()}`, `Diagnóstico gratuito: ${v.label.toLowerCase()}`)
+    ? t(
+        `Free diagnostic: ${v.labelEn.toLowerCase()}`,
+        `Diagnóstico gratuito: ${v.label.toLowerCase()}`,
+      )
     : t("Free diagnostic", "Diagnóstico gratuito");
   return (
     <div className="on-dark mt-16 rounded-3xl bg-neutral-950 px-6 py-12 text-center text-white sm:px-12 sm:py-16">

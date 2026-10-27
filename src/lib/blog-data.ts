@@ -1,11 +1,25 @@
 import type { Lang } from "./i18n";
 
+/**
+ * Horizontal bar chart shown under a section's text. Values drive the bar
+ * lengths; the display strings are what the reader sees, written by hand so
+ * the server and the browser never format a number differently.
+ */
+export type BlogChart = {
+  title: string;
+  titleEs: string;
+  source: string;
+  sourceEs: string;
+  bars: { label: string; labelEs: string; value: number; display: string; displayEs: string }[];
+};
+
 export type BlogSection = {
   id: string;
   heading: string;
   headingEs: string;
   body: string[];
   bodyEs: string[];
+  chart?: BlogChart;
 };
 
 export type BlogFaqItem = {
@@ -13340,6 +13354,258 @@ export const BLOG_POSTS: BlogPost[] = [
         "conseguir vendedores agente inmobiliario",
         "exclusivas inmobiliarias",
         "trabajar una zona inmobiliaria",
+      ],
+    },
+  },
+  {
+    slug: "empleos-que-la-ia-puede-reemplazar-mexico",
+    cover: true,
+    title: "Will AI Take Your Job? The Most Exposed Jobs in Mexico Heading into 2027",
+    titleEs: "¿La IA te va a quitar el trabajo? Los empleos más expuestos en México rumbo a 2027",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "Nobody can tell you which jobs will have the most unemployment in 2027, but the data does show which occupations AI can already do part of. The most exposed jobs in Mexico, with charts, why exposure is not the same as losing your job, and what to do if you work in one of those fields.",
+    excerptEs:
+      "Nadie puede decirte qué empleos tendrán más desempleo en 2027, pero los datos sí muestran qué ocupaciones ya puede hacer en parte la IA. Los empleos más expuestos en México, con gráficas, por qué exposición no es lo mismo que perder tu trabajo y qué hacer si trabajas en uno de esos rubros.",
+    readingTime: 12,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "“Will AI take my job?” is one of the most searched questions of the moment, and most answers are either alarmist or empty. Anyone who gives you a ranking of the jobs with the most unemployment in 2027 is guessing: that data does not exist yet. What does exist are serious studies that measure which tasks AI can already do in each occupation, and they paint a more precise picture than “robots will replace us”: fewer office tasks done by hand, fewer entry-level positions and more value for those who know how to work with these tools. Here is what the data says for Mexico, with charts, and what to do if your job is on the list.",
+    ledeEs:
+      "“¿La IA me va a quitar el trabajo?” es de las preguntas más buscadas del momento, y casi todas las respuestas son alarmistas o vacías. Quien te da un ranking de los empleos con más desempleo en 2027 está adivinando: ese dato todavía no existe. Lo que sí existe son estudios serios que miden qué tareas ya puede hacer la IA en cada ocupación, y pintan algo más preciso que “los robots nos van a reemplazar”: menos tareas de oficina hechas a mano, menos puestos de entrada y más valor para quien sabe trabajar con estas herramientas. Esto es lo que dicen los datos para México, con gráficas, y qué hacer si tu empleo está en la lista.",
+    sections: [
+      {
+        id: "exposicion-no-es-desempleo",
+        heading: "What nobody can tell you, and what the data does say",
+        headingEs: "Lo que nadie puede decirte, y lo que sí dicen los datos",
+        body: [
+          "Studies on AI and work measure exposure: what share of an occupation's tasks a tool like ChatGPT could do or speed up. In May 2025, the International Labour Organization estimated that one in four jobs in the world is potentially exposed to [[generative AI|ia-generativa]], and 34% in high-income countries. But the same study concludes that transformation, not replacement, is the most likely outcome: most jobs will change some of their tasks, not disappear.",
+          "That is why it is worth separating two things: **exposure is not unemployment.** An exposed job can become more productive, change what it does or need fewer new hires. Which one happens depends on the company, the sector and, to a large extent, on what each person does with the tools.",
+        ],
+        bodyEs: [
+          "Los estudios sobre IA y trabajo miden exposición: qué parte de las tareas de una ocupación podría hacer o acelerar una herramienta como ChatGPT. En mayo de 2025, la Organización Internacional del Trabajo estimó que uno de cada cuatro empleos en el mundo está potencialmente expuesto a la [[IA generativa|ia-generativa]], y 34% en los países de ingresos altos. Pero el mismo estudio concluye que la transformación, no el reemplazo, es el resultado más probable: la mayoría de los empleos va a cambiar parte de sus tareas, no a desaparecer.",
+          "Por eso conviene separar dos cosas: **exposición no es desempleo.** Un empleo expuesto puede volverse más productivo, cambiar lo que hace o necesitar menos contrataciones nuevas. Cuál de las tres pasa depende de la empresa, del sector y, en buena medida, de lo que cada persona haga con las herramientas.",
+        ],
+      },
+      {
+        id: "los-empleos-mas-expuestos-en-mexico",
+        heading: "The most exposed jobs in Mexico",
+        headingEs: "Los empleos más expuestos en México",
+        body: [
+          "An analysis by México, ¿cómo vamos?, which crossed INEGI's employment survey for the first quarter of 2026 with the ILO's exposure index, found **2.93 million workers, 4.9% of employment in the country**, in the occupations most exposed to AI, those where it could do most of the tasks. Administrative support leads the list by far, followed by accountants and auditors, secretaries, reception, data entry, call centres and telephone sales.",
+          "What they have in common is clear: work in front of a screen, with information that follows rules, such as capturing, classifying, answering standard questions, drafting routine documents or reconciling figures. That is exactly what current AI does best.",
+        ],
+        bodyEs: [
+          "Un análisis de México, ¿cómo vamos?, que cruzó la encuesta de empleo del INEGI del primer trimestre de 2026 con el índice de exposición de la OIT, encontró **2.93 millones de trabajadores, 4.9% del empleo del país**, en las ocupaciones más expuestas a la IA, aquellas donde podría hacer la mayor parte de las tareas. El apoyo administrativo encabeza la lista por mucho, seguido de contadores y auditores, secretariado, recepción, captura de datos, centros de llamadas y ventas por teléfono.",
+          "Lo que tienen en común es claro: trabajo frente a una pantalla, con información que sigue reglas, como capturar, clasificar, contestar preguntas estándar, redactar documentos rutinarios o cuadrar cifras. Justo lo que mejor hace la IA actual.",
+        ],
+        chart: {
+          title: "Workers in the occupations most exposed to AI in Mexico",
+          titleEs: "Trabajadores en las ocupaciones más expuestas a la IA en México",
+          source:
+            "México, ¿cómo vamos?, with INEGI's ENOE (Q1 2026) and the ILO-NASK exposure index, via Expansión, August 2026.",
+          sourceEs:
+            "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026) y el índice de exposición OIT-NASK, vía Expansión, agosto de 2026.",
+          bars: [
+            { label: "Administrative support", labelEs: "Apoyo administrativo", value: 1210000, display: "1.21 million", displayEs: "1.21 millones" },
+            { label: "Accountants and auditors", labelEs: "Contadores y auditores", value: 470000, display: "470,000", displayEs: "470 mil" },
+            { label: "Secretaries", labelEs: "Secretariado", value: 398000, display: "398,000", displayEs: "398 mil" },
+            { label: "Reception and information", labelEs: "Recepción e información", value: 299000, display: "299,000", displayEs: "299 mil" },
+            { label: "Data entry", labelEs: "Captura de datos", value: 202000, display: "202,000", displayEs: "202 mil" },
+            { label: "Call centres", labelEs: "Centros de llamadas", value: 95000, display: "95,000", displayEs: "95 mil" },
+            { label: "Telephone sales", labelEs: "Ventas por teléfono", value: 49000, display: "49,000", displayEs: "49 mil" },
+          ],
+        },
+      },
+      {
+        id: "mas-mujeres-que-hombres",
+        heading: "More women than men",
+        headingEs: "Más mujeres que hombres",
+        body: [
+          "Of those 2.93 million workers, 1.87 million are women and 1.06 million are men. It is not a Mexican peculiarity: the ILO found the same pattern globally. In high-income countries, the jobs with the highest exposure represent 9.6% of female employment and 3.5% of male employment.",
+          "The reason is the composition of office work: administrative, secretarial and reception roles are held mostly by women. Any plan to retrain teams in companies should take this into account so that the change does not fall on the same people.",
+        ],
+        bodyEs: [
+          "De esos 2.93 millones de trabajadores, 1.87 millones son mujeres y 1.06 millones son hombres. No es una particularidad mexicana: la OIT encontró el mismo patrón a nivel mundial. En los países de ingresos altos, los empleos con mayor exposición representan 9.6% del empleo femenino y 3.5% del masculino.",
+          "La razón es la composición del trabajo de oficina: los puestos administrativos, de secretariado y de recepción los ocupan sobre todo mujeres. Cualquier plan para recapacitar equipos en las empresas debería tomarlo en cuenta para que el cambio no caiga siempre sobre las mismas personas.",
+        ],
+        chart: {
+          title: "Workers in the most exposed occupations in Mexico, by sex",
+          titleEs: "Trabajadores en las ocupaciones más expuestas en México, por sexo",
+          source: "México, ¿cómo vamos?, with INEGI's ENOE (Q1 2026), via Expansión, August 2026.",
+          sourceEs: "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026), vía Expansión, agosto de 2026.",
+          bars: [
+            { label: "Women", labelEs: "Mujeres", value: 1870000, display: "1.87 million", displayEs: "1.87 millones" },
+            { label: "Men", labelEs: "Hombres", value: 1060000, display: "1.06 million", displayEs: "1.06 millones" },
+          ],
+        },
+      },
+      {
+        id: "el-riesgo-esta-en-el-empleo-formal",
+        heading: "The risk is in formal employment, and in first jobs",
+        headingEs: "El riesgo está en el empleo formal, y en el primer empleo",
+        body: [
+          "The same analysis shows something counter-intuitive: the more exposed the occupation, the lower its informality. In the least exposed jobs, 66% of workers are informal; in the most exposed, only 16.5%. In other words, AI hits office work in formal companies first, not street trades. A note from Banamex's economic research area estimated that close to 30% of formal jobs in Mexico face a high risk of automation, especially in administrative services, retail, routine manufacturing, transport and financial services.",
+          "The main risk, according to the analysis, is not that today's jobs disappear overnight, but that companies hire fewer people for entry-level positions. That matters for young people: of the 8.44 million employed people aged 15 to 24, 68.7% are already informal, and the first formal job is often exactly an administrative or call-centre position.",
+        ],
+        bodyEs: [
+          "El mismo análisis muestra algo contraintuitivo: entre más expuesta la ocupación, menor su informalidad. En los empleos menos expuestos, 66% de los trabajadores es informal; en los más expuestos, solo 16.5%. Es decir, la IA le pega primero al trabajo de oficina en empresas formales, no a los oficios de la calle. Una nota del área de estudios económicos de Banamex estimó que cerca de 30% de los empleos formales en México enfrenta un alto riesgo de automatización, sobre todo en servicios administrativos, comercio, manufactura rutinaria, transporte y servicios financieros.",
+          "El riesgo principal, según el análisis, no es que los empleos de hoy desaparezcan de un día para otro, sino que las empresas contraten menos gente para puestos de entrada. Eso importa para los jóvenes: de los 8.44 millones de ocupados de 15 a 24 años, 68.7% ya es informal, y el primer empleo formal muchas veces es justo un puesto administrativo o de call center.",
+        ],
+        chart: {
+          title: "Informality by level of AI exposure in Mexico (share of informal workers)",
+          titleEs: "Informalidad según el nivel de exposición a la IA en México (porcentaje de trabajadores informales)",
+          source: "México, ¿cómo vamos?, with INEGI's ENOE (Q1 2026) and the ILO-NASK index, via Expansión, August 2026.",
+          sourceEs: "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026) y el índice OIT-NASK, vía Expansión, agosto de 2026.",
+          bars: [
+            { label: "Level 1 (least exposed)", labelEs: "Nivel 1 (menos expuesto)", value: 66, display: "66%", displayEs: "66%" },
+            { label: "Level 2", labelEs: "Nivel 2", value: 40.2, display: "40.2%", displayEs: "40.2%" },
+            { label: "Level 3", labelEs: "Nivel 3", value: 19.8, display: "19.8%", displayEs: "19.8%" },
+            { label: "Level 4 (most exposed)", labelEs: "Nivel 4 (más expuesto)", value: 16.5, display: "16.5%", displayEs: "16.5%" },
+          ],
+        },
+      },
+      {
+        id: "en-el-mundo",
+        heading: "Worldwide: more jobs are created than lost",
+        headingEs: "En el mundo: se crean más empleos de los que se pierden",
+        body: [
+          "The World Economic Forum's Future of Jobs Report 2025, based on surveys of employers around the world, estimates that between 2025 and 2030 some 170 million jobs will be created, equivalent to 14% of current employment, and 92 million will be displaced, 8%. The net balance is positive: 78 million more jobs. The problem is that the new ones are not the same as the ones lost, nor in the same places, nor for the same profiles.",
+          "Among the fastest-declining roles, the report lists cashiers and ticket clerks, administrative assistants and executive secretaries, printing workers and accountants and auditors, with graphic designers just outside the top ten. The fastest-growing include big data specialists, fintech engineers, AI and machine learning specialists, software developers and security specialists.",
+        ],
+        bodyEs: [
+          "El Reporte sobre el Futuro del Empleo 2025 del Foro Económico Mundial, basado en encuestas a empleadores de todo el mundo, estima que entre 2025 y 2030 se crearán unos 170 millones de empleos, equivalentes a 14% del empleo actual, y se desplazarán 92 millones, 8%. El saldo neto es positivo: 78 millones de empleos más. El problema es que los nuevos no son iguales a los que se pierden, ni en los mismos lugares, ni para los mismos perfiles.",
+          "Entre los puestos que más rápido disminuyen, el reporte menciona cajeros y taquilleros, asistentes administrativos y secretarias ejecutivas, trabajadores de imprenta y contadores y auditores, con los diseñadores gráficos justo afuera del top diez. Entre los que más crecen están los especialistas en big data, ingenieros fintech, especialistas en IA y aprendizaje automático, desarrolladores de software y especialistas en seguridad.",
+        ],
+        chart: {
+          title: "Jobs worldwide, 2025–2030 (millions)",
+          titleEs: "Empleos en el mundo, 2025–2030 (millones)",
+          source: "World Economic Forum, Future of Jobs Report 2025.",
+          sourceEs: "Foro Económico Mundial, Reporte sobre el Futuro del Empleo 2025.",
+          bars: [
+            { label: "Jobs created", labelEs: "Empleos creados", value: 170, display: "170 million (14%)", displayEs: "170 millones (14%)" },
+            { label: "Jobs displaced", labelEs: "Empleos desplazados", value: 92, display: "92 million (8%)", displayEs: "92 millones (8%)" },
+            { label: "Net growth", labelEs: "Crecimiento neto", value: 78, display: "78 million (7%)", displayEs: "78 millones (7%)" },
+          ],
+        },
+      },
+      {
+        id: "administracion-recepcion-secretariado",
+        heading: "If you work in administration, reception or as a secretary",
+        headingEs: "Si trabajas en administración, recepción o secretariado",
+        body: [
+          "The part of your job most at risk is the repetitive one: capturing, filing, answering the same questions, drafting standard emails and scheduling. The part with the most future is the one that requires judgement and people: coordinating, solving exceptions, dealing with difficult clients and keeping a team organised.",
+          "Move towards that second part, and become the person who sets up the tools: learn to use AI to draft, summarise and organise, and to automate the tasks you repeat every week. Whoever implements the automation in an office is rarely the one replaced by it. We explain which tasks are usually automated first in [what to automate in my business](/blog/que-automatizar-en-mi-negocio).",
+        ],
+        bodyEs: [
+          "La parte de tu trabajo más en riesgo es la repetitiva: capturar, archivar, contestar las mismas preguntas, redactar correos estándar y agendar. La parte con más futuro es la que requiere criterio y trato con personas: coordinar, resolver excepciones, atender clientes difíciles y mantener organizado a un equipo.",
+          "Muévete hacia esa segunda parte, y vuélvete quien configura las herramientas: aprende a usar la IA para redactar, resumir y organizar, y a automatizar las tareas que repites cada semana. Quien implementa la automatización en una oficina rara vez es a quien reemplaza. Explicamos qué tareas se automatizan primero en [qué automatizar en mi negocio](/blog/que-automatizar-en-mi-negocio).",
+        ],
+      },
+      {
+        id: "contadores-y-auditores",
+        heading: "If you are an accountant or auditor",
+        headingEs: "Si eres contador o auditor",
+        body: [
+          "Capturing invoices, reconciling accounts and preparing routine reports are increasingly done by software. What remains valuable is interpretation and advice: tax planning, explaining to a business owner what their numbers mean, preparing for an audit, specialising in a sector and taking responsibility for a decision.",
+          "The accountants who will do best are those who use automation to serve more clients with the same time and move from “doing the returns” to “helping the business make money”. Learning to work with data tools and AI assistants is no longer optional in the profession.",
+        ],
+        bodyEs: [
+          "Capturar facturas, conciliar cuentas y preparar reportes rutinarios lo hace cada vez más el software. Lo que conserva valor es la interpretación y la asesoría: planeación fiscal, explicarle a un dueño qué significan sus números, prepararse para una auditoría, especializarse en un sector y hacerse responsable de una decisión.",
+          "A los contadores que mejor les va a ir son los que usen la automatización para atender más clientes con el mismo tiempo y pasen de “hacer las declaraciones” a “ayudar a que el negocio gane dinero”. Aprender a trabajar con herramientas de datos y asistentes de IA ya no es opcional en la profesión.",
+        ],
+      },
+      {
+        id: "captura-call-center-ventas",
+        heading: "If you work in data entry, a call centre or telephone sales",
+        headingEs: "Si trabajas en captura de datos, call center o ventas por teléfono",
+        body: [
+          "These are the jobs where AI can do the most tasks today: data entry is automated with tools that read documents, and AI assistants already answer frequent questions and make simple calls. Here the change will be faster, so it is worth acting early rather than waiting.",
+          "The natural moves are towards what assistants cannot do well: supervising the quality of automated service, handling complex or sensitive cases, consultative sales where the customer needs trust, and managing the systems themselves, such as a [[CRM|crm]] or a [[chatbot|chatbot]]. Experience dealing with customers is valuable; what changes is the tool.",
+        ],
+        bodyEs: [
+          "Son los empleos donde la IA puede hacer más tareas hoy: la captura se automatiza con herramientas que leen documentos, y los asistentes de IA ya contestan preguntas frecuentes y hacen llamadas sencillas. Aquí el cambio va a ser más rápido, así que conviene moverse antes y no esperar.",
+          "Los movimientos naturales son hacia lo que los asistentes no hacen bien: supervisar la calidad de la atención automatizada, atender casos complejos o delicados, la venta consultiva donde el cliente necesita confianza, y manejar los propios sistemas, como un [[CRM|crm]] o un [[chatbot|chatbot]]. La experiencia tratando con clientes vale; lo que cambia es la herramienta.",
+        ],
+      },
+      {
+        id: "disenadores-graficos",
+        heading: "If you are a graphic designer",
+        headingEs: "Si eres diseñador gráfico",
+        body: [
+          "I write this from the creative side: image generators can produce in seconds what used to take hours of production. What they do not do is decide what a brand should say, which idea works for a specific client, or how to keep a visual system consistent across dozens of pieces. That is art direction, and it is worth more now, not less.",
+          "Move from executing pieces to directing them: brand strategy, visual systems, motion, video and 3D, and use AI as one more tool in your process, not as a competitor. A designer who delivers in a day what used to take a week, with judgement, is more competitive than ever.",
+        ],
+        bodyEs: [
+          "Esto lo escribo desde el lado creativo: los generadores de imágenes producen en segundos lo que antes tomaba horas de producción. Lo que no hacen es decidir qué debe decir una marca, qué idea funciona para un cliente concreto o cómo mantener un sistema visual consistente en decenas de piezas. Eso es dirección de arte, y ahora vale más, no menos.",
+          "Pasa de ejecutar piezas a dirigirlas: estrategia de marca, sistemas visuales, motion, video y 3D, y usa la IA como una herramienta más en tu proceso, no como competencia. Un diseñador que entrega en un día lo que antes tomaba una semana, y con criterio, es más competitivo que nunca.",
+        ],
+      },
+      {
+        id: "lo-que-sirve-en-cualquier-rubro",
+        heading: "What works in any field",
+        headingEs: "Lo que sirve en cualquier rubro",
+        body: [
+          "Use AI every day in your own work, starting with small tasks: drafting, summarising, reviewing, organising. Write down what you achieved with it, such as hours saved or work you could take on, because that is the evidence that makes you valuable in an interview or to your boss. **The person who loses out is rarely the one replaced by AI; it is the one replaced by someone who uses it.**",
+          "Invest in what AI complements: judgement, specialisation in a sector, dealing with people and work that happens in person. And if you run a business, the most profitable path is usually to retrain your team to work with these tools rather than to cut it; we explain how to start in our [guide to AI and automation](/blog/guia-automatizacion-ia) and in [AI in marketing](/blog/ia-en-marketing). If you want to know what to automate first, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes.",
+        ],
+        bodyEs: [
+          "Usa la IA todos los días en tu propio trabajo, empezando por tareas chicas: redactar, resumir, revisar, organizar. Anota lo que lograste con ella, como horas ahorradas o trabajo que pudiste tomar, porque esa es la evidencia que te hace valioso en una entrevista o frente a tu jefe. **Casi nunca pierde quien es reemplazado por la IA; pierde quien es reemplazado por alguien que sí la usa.**",
+          "Invierte en lo que la IA complementa: criterio, especialización en un sector, trato con personas y trabajo que se hace en persona. Y si diriges un negocio, el camino más rentable suele ser recapacitar a tu equipo para trabajar con estas herramientas en vez de recortarlo; explicamos cómo empezar en nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia) y en [IA en marketing](/blog/ia-en-marketing). Si quieres saber qué automatizar primero, nuestro [diagnóstico gratuito](/recursos/diagnostico) te lo dice en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué empleos va a reemplazar la IA en México?",
+        qEn: "Which jobs will AI replace in Mexico?",
+        a: "Los más expuestos son apoyo administrativo, contadores y auditores, secretariado, recepción, captura de datos, centros de llamadas y ventas por teléfono, según un análisis de México, ¿cómo vamos? con datos del INEGI. Exposición no significa que desaparezcan: la mayoría va a cambiar parte de sus tareas.",
+        aEn: "The most exposed are administrative support, accountants and auditors, secretaries, reception, data entry, call centres and telephone sales, according to an analysis by México, ¿cómo vamos? with INEGI data. Exposure does not mean they will disappear: most will change some of their tasks.",
+      },
+      {
+        q: "¿Cuántos empleos en México están expuestos a la IA?",
+        qEn: "How many jobs in Mexico are exposed to AI?",
+        a: "En las ocupaciones más expuestas hay 2.93 millones de trabajadores, 4.9% del empleo del país, según el análisis con datos del primer trimestre de 2026. Una nota de Banamex estimó que cerca de 30% de los empleos formales enfrenta un alto riesgo de automatización.",
+        aEn: "The most exposed occupations employ 2.93 million workers, 4.9% of employment, according to the analysis with first-quarter 2026 data. A Banamex note estimated that close to 30% of formal jobs face a high risk of automation.",
+      },
+      {
+        q: "¿Qué empleos tendrán más desempleo en 2027?",
+        qEn: "Which jobs will have the most unemployment in 2027?",
+        a: "Nadie tiene ese dato todavía; los rankings que lo prometen son estimaciones. Lo que existe son estudios de exposición, que muestran qué ocupaciones tienen más tareas que puede hacer la IA, y el riesgo principal que señalan es que se contrate menos gente en puestos de entrada.",
+        aEn: "Nobody has that data yet; rankings that promise it are estimates. What exists are exposure studies, which show which occupations have more tasks AI can do, and the main risk they point to is fewer hires for entry-level positions.",
+      },
+      {
+        q: "¿La IA va a crear empleos?",
+        qEn: "Will AI create jobs?",
+        a: "Según el Foro Económico Mundial, entre 2025 y 2030 se crearán unos 170 millones de empleos y se desplazarán 92 millones, con un saldo neto de 78 millones. Los nuevos empleos requieren otras habilidades, sobre todo en datos, tecnología y especialización.",
+        aEn: "According to the World Economic Forum, between 2025 and 2030 about 170 million jobs will be created and 92 million displaced, a net gain of 78 million. The new jobs require different skills, especially in data, technology and specialisation.",
+      },
+      {
+        q: "¿Qué hago si mi trabajo está entre los más expuestos?",
+        qEn: "What should I do if my job is among the most exposed?",
+        a: "Usa la IA en tu trabajo diario y documenta lo que logras con ella, muévete hacia las tareas que requieren criterio y trato con personas, y aprende a configurar las herramientas que automatizan tu área. Quien implementa la automatización rara vez es a quien reemplaza.",
+        aEn: "Use AI in your daily work and document what you achieve with it, move towards tasks that require judgement and dealing with people, and learn to set up the tools that automate your area. Whoever implements automation is rarely the one it replaces.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "jobs AI will replace Mexico",
+        "will AI take my job",
+        "jobs most exposed to AI",
+        "AI and employment 2027",
+        "careers safe from AI",
+      ],
+      keywordsEs: [
+        "empleos que la IA va a reemplazar",
+        "la IA me va a quitar el trabajo",
+        "trabajos en riesgo por inteligencia artificial México",
+        "empleos más expuestos a la IA",
+        "desempleo por IA 2027",
+        "qué estudiar para que no te reemplace la IA",
       ],
     },
   },

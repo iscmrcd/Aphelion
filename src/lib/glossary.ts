@@ -385,4 +385,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Un contrato con un banco que permite a un extranjero tener el uso y disfrute de una propiedad cerca de la costa o la frontera, donde no puede ser dueño directo. Requiere permiso de la SRE y dura hasta 50 años, renovables.",
     defEn: "A contract with a bank that lets a foreigner have the use and enjoyment of a property near the coast or the border, where they cannot be the direct owner. It requires an SRE permit and lasts up to 50 years, renewable.",
   },
+  "ia-generativa": {
+    term: "IA generativa",
+    termEn: "Generative AI",
+    def: "Inteligencia artificial que crea contenido nuevo, como texto, imágenes, audio o código, a partir de una instrucción escrita. ChatGPT, Gemini y Claude son ejemplos.",
+    defEn: "Artificial intelligence that creates new content, such as text, images, audio or code, from a written instruction. ChatGPT, Gemini and Claude are examples.",
+  },
 };
