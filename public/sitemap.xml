@@ -1064,4 +1064,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/estafas-con-ia-clonacion-de-voz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/estafas-con-ia-clonacion-de-voz" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/estafas-con-ia-clonacion-de-voz?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/estafas-con-ia-clonacion-de-voz" />
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/chatgpt-gemini-o-claude</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/chatgpt-gemini-o-claude" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/chatgpt-gemini-o-claude?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/chatgpt-gemini-o-claude" />
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio" />
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

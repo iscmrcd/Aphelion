@@ -13609,6 +13609,494 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "estafas-con-ia-clonacion-de-voz",
+    cover: true,
+    title: "AI Scams: Voice Cloning and Fake Videos on WhatsApp, and How to Spot Them",
+    titleEs: "Estafas con IA: clonación de voz y videos falsos por WhatsApp, y cómo detectarlas",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "A voice note from your son asking for money urgently, a call from your boss authorising a transfer, a video of a celebrity promoting an investment. With AI, all of these can be fake. How these scams work, what the data says and what to do so they don't work on you, your family or your business.",
+    excerptEs:
+      "Un audio de tu hijo pidiendo dinero urgente, una llamada de tu jefe autorizando una transferencia, un video de una celebridad promoviendo una inversión. Con IA, todo eso puede ser falso. Cómo funcionan estas estafas, qué dicen los datos y qué hacer para que no te funcionen a ti, a tu familia ni a tu negocio.",
+    readingTime: 10,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "For years, the classic phone scam had a weakness: the voice did not sound like your relative. That weakness is disappearing. Today a few seconds of someone's voice, taken from a video on social media or a voice note, are enough for an AI tool to imitate it and make it say anything. In Mexico, CONDUSEF and other authorities have warned about calls and messages that impersonate relatives with cloned voices. The good news is that the defence does not require technology: it requires a few habits that break the scam's main weapon, which is urgency.",
+    ledeEs:
+      "Durante años, la estafa telefónica clásica tenía un punto débil: la voz no sonaba como tu familiar. Ese punto débil está desapareciendo. Hoy bastan unos segundos de la voz de alguien, sacados de un video en redes o de un audio de WhatsApp, para que una herramienta de IA la imite y la haga decir cualquier cosa. En México, la CONDUSEF y otras autoridades han alertado sobre llamadas y mensajes que suplantan a familiares con voces clonadas. La buena noticia es que la defensa no requiere tecnología: requiere unos cuantos hábitos que rompen el arma principal de la estafa, que es la urgencia.",
+    sections: [
+      {
+        id: "como-funciona",
+        heading: "How voice cloning scams work",
+        headingEs: "Cómo funciona la estafa con voz clonada",
+        body: [
+          "The criminal gets a recording of the person they want to impersonate: a video on Instagram or TikTok, a voice note, a phone call. With an AI voice tool, they create a [[cloned voice|clonacion-de-voz]] that can read any text. Then they call or send a voice note to a relative with an emergency: an accident, an arrest, a kidnapping, a debt. The story always ends the same way: send money now and do not tell anyone.",
+          "There are variations. Some call to record you saying “yes” and then use it; others combine the cloned voice with a hacked or similar-looking WhatsApp account, so the message seems to come from your relative's number. The pattern does not change: emotion, urgency and a transfer.",
+        ],
+        bodyEs: [
+          "El delincuente consigue una grabación de la persona que quiere suplantar: un video en Instagram o TikTok, un audio de WhatsApp, una llamada. Con una herramienta de voz con IA crea una [[voz clonada|clonacion-de-voz]] que puede leer cualquier texto. Después llama o manda un audio a un familiar con una emergencia: un accidente, una detención, un secuestro, una deuda. La historia siempre termina igual: manda dinero ya y no le digas a nadie.",
+          "Hay variantes. Algunos llaman para grabarte diciendo “sí” y después usarlo; otros combinan la voz clonada con una cuenta de WhatsApp hackeada o parecida, para que el mensaje parezca venir del número de tu familiar. El patrón no cambia: emoción, urgencia y una transferencia.",
+        ],
+      },
+      {
+        id: "lo-que-dicen-los-datos",
+        heading: "What the data says",
+        headingEs: "Lo que dicen los datos",
+        body: [
+          "A survey by the security company McAfee of 7,000 people in nine countries found that one in four had experienced an AI voice cloning scam or knew someone who had. Of those who received a cloned voice message, 77% lost money, and 70% said they were not confident they could tell a cloned voice from the real one. In a lab test, McAfee obtained a voice with an 85% match from just **three seconds of audio**.",
+          "The same survey found that 53% of people share their voice online or in voice notes at least once a week. In other words, the raw material for the scam is everywhere, and it is not realistic to stop using voice notes or social media. The defence has to be somewhere else.",
+        ],
+        bodyEs: [
+          "Una encuesta de la empresa de seguridad McAfee a 7,000 personas en nueve países encontró que una de cada cuatro había vivido una estafa con voz clonada por IA o conocía a alguien que la vivió. De quienes recibieron un mensaje con voz clonada, 77% perdió dinero, y 70% dijo no estar seguro de poder distinguir una voz clonada de la real. En una prueba de laboratorio, McAfee obtuvo una voz con 85% de parecido con solo **tres segundos de audio**.",
+          "La misma encuesta encontró que 53% de las personas comparte su voz en internet o en notas de voz al menos una vez por semana. Es decir, la materia prima de la estafa está en todos lados, y no es realista dejar de mandar audios o de usar redes. La defensa tiene que estar en otro lado.",
+        ],
+        chart: {
+          title: "AI voice cloning scams: survey results",
+          titleEs: "Estafas con voz clonada por IA: resultados de la encuesta",
+          source: "McAfee, survey of 7,000 people in nine countries (fieldwork January–February 2023).",
+          sourceEs: "McAfee, encuesta a 7,000 personas en nueve países (levantamiento enero–febrero de 2023).",
+          bars: [
+            { label: "Victims who lost money", labelEs: "Víctimas que perdieron dinero", value: 77, display: "77%", displayEs: "77%" },
+            { label: "Not sure they can tell a cloned voice", labelEs: "No están seguros de distinguir una voz clonada", value: 70, display: "70%", displayEs: "70%" },
+            { label: "Share their voice online every week", labelEs: "Comparten su voz en internet cada semana", value: 53, display: "53%", displayEs: "53%" },
+            { label: "Experienced a scam or know someone who did", labelEs: "Vivieron una estafa o conocen a alguien", value: 25, display: "25%", displayEs: "25%" },
+          ],
+        },
+      },
+      {
+        id: "las-senales",
+        heading: "The warning signs",
+        headingEs: "Las señales de alerta",
+        body: [
+          "Urgency: you must act now, there is no time to check. Secrecy: “don't tell my mum”, “don't call the police”. Money by unusual means: transfers to an unknown account, gift cards, cash with a stranger. A new number or a familiar number behaving strangely. And a story that cuts off the conversation when you ask questions.",
+          "The voice may sound perfect; the context usually gives it away. **If the message asks for money urgently and secretly, treat it as a scam until you have confirmed it by another channel**, no matter how real the voice sounds.",
+        ],
+        bodyEs: [
+          "Urgencia: tienes que actuar ya, no hay tiempo de verificar. Secreto: “no le digas a mi mamá”, “no llames a la policía”. Dinero por medios raros: transferencias a una cuenta desconocida, tarjetas de regalo, efectivo con un desconocido. Un número nuevo o un número conocido que se comporta raro. Y una historia que corta la conversación cuando haces preguntas.",
+          "La voz puede sonar perfecta; el contexto casi siempre la delata. **Si el mensaje pide dinero con urgencia y en secreto, trátalo como estafa hasta que lo confirmes por otro medio**, por más real que suene la voz.",
+        ],
+      },
+      {
+        id: "que-hacer-en-el-momento",
+        heading: "What to do in the moment",
+        headingEs: "Qué hacer en el momento",
+        body: [
+          "CONDUSEF recommends confirming by another channel that the person is who they say they are, asking a specific question only that person could answer, and not acting under pressure or making immediate deposits. In practice: hang up and call your relative on the number you already have saved, or call someone who is with them.",
+          "Agree on a family code word that only you know and that never appears on social media, and use it whenever someone asks for money in an emergency. It sounds exaggerated until the day you need it, and it costs nothing.",
+        ],
+        bodyEs: [
+          "La CONDUSEF recomienda confirmar por otro medio que la persona es quien dice ser, hacer una pregunta específica que solo esa persona pueda responder y no actuar bajo presión ni hacer depósitos inmediatos. En la práctica: cuelga y llama a tu familiar al número que ya tienes guardado, o llama a alguien que esté con esa persona.",
+          "Acuerden una palabra clave familiar que solo ustedes conozcan y que nunca aparezca en redes, y úsenla siempre que alguien pida dinero en una emergencia. Suena exagerado hasta el día que la necesitas, y no cuesta nada.",
+        ],
+      },
+      {
+        id: "protege-tu-whatsapp",
+        heading: "Protect your WhatsApp and your voice",
+        headingEs: "Protege tu WhatsApp y tu voz",
+        body: [
+          "Turn on [[two-step verification|verificacion-en-dos-pasos]] in WhatsApp's settings, so nobody can register your number on another phone without a PIN. Never share the verification codes you receive by SMS, not even with someone who claims to be from WhatsApp or your bank. Limit who sees your profile photo, your status and your “last seen” to your contacts.",
+          "You do not need to stop posting videos, but think about what you publish: long recordings of your voice and the names of your relatives in public profiles make the scammer's work easier. Explain this to older relatives, who are frequent targets.",
+        ],
+        bodyEs: [
+          "Activa la [[verificación en dos pasos|verificacion-en-dos-pasos]] en la configuración de WhatsApp, para que nadie pueda registrar tu número en otro teléfono sin un PIN. Nunca compartas los códigos de verificación que te llegan por SMS, ni siquiera con alguien que dice ser de WhatsApp o de tu banco. Limita a tus contactos quién ve tu foto de perfil, tu estado y tu “última vez”.",
+          "No necesitas dejar de publicar videos, pero piensa qué publicas: grabaciones largas de tu voz y los nombres de tus familiares en perfiles públicos le facilitan el trabajo al estafador. Explícaselo a tus familiares mayores, que son blanco frecuente.",
+        ],
+      },
+      {
+        id: "videos-falsos",
+        heading: "Fake videos: celebrities, investments and “your boss”",
+        headingEs: "Videos falsos: celebridades, inversiones y “tu jefe”",
+        body: [
+          "The same technology creates videos in which a public figure recommends an investment, a cryptocurrency or a miracle product. These [[deepfakes|deepfake]] circulate as ads on social media. The rule is simple: no serious public figure promotes guaranteed returns in an ad, and no legitimate investment asks you to decide today.",
+          "Businesses face their own version: a call or video call in which “the director” asks the finance team to make an urgent, confidential transfer. Protect yourself with a rule that does not depend on recognising voices: every payment to a new account or outside the usual process requires confirmation by a second channel and a second person.",
+        ],
+        bodyEs: [
+          "La misma tecnología crea videos donde una figura pública recomienda una inversión, una criptomoneda o un producto milagro. Estos [[deepfakes|deepfake]] circulan como anuncios en redes sociales. La regla es sencilla: ninguna figura pública seria promueve rendimientos garantizados en un anuncio, y ninguna inversión legítima te pide decidir hoy.",
+          "Los negocios tienen su propia versión: una llamada o videollamada donde “el director” le pide al área de finanzas una transferencia urgente y confidencial. Protégete con una regla que no dependa de reconocer voces: todo pago a una cuenta nueva o fuera del proceso normal requiere confirmación por un segundo medio y una segunda persona.",
+        ],
+      },
+      {
+        id: "si-ya-caiste",
+        heading: "If you have already sent money",
+        headingEs: "Si ya mandaste dinero",
+        body: [
+          "Call your bank immediately and report the transfer as fraud: the sooner you do it, the more chance there is of stopping it. Save screenshots of the messages, numbers and account details, file a complaint with the authorities and report the number in WhatsApp so it gets blocked. If the scam came through a hacked account of a relative, help them recover it and warn their contacts.",
+          "Do not feel ashamed: these scams are designed to work on intelligent people under emotional pressure. Telling your family and friends what happened is one of the best ways to stop the next attempt. And if you want to understand which jobs and tasks AI is really changing, read [will AI take your job?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
+        ],
+        bodyEs: [
+          "Llama a tu banco de inmediato y reporta la transferencia como fraude: entre más rápido, más posibilidades hay de detenerla. Guarda capturas de los mensajes, números y datos de la cuenta, presenta una denuncia ante las autoridades y reporta el número en WhatsApp para que lo bloqueen. Si la estafa llegó desde la cuenta hackeada de un familiar, ayúdale a recuperarla y avisa a sus contactos.",
+          "No sientas vergüenza: estas estafas están diseñadas para funcionar con personas inteligentes bajo presión emocional. Contarle a tu familia y amigos lo que pasó es de las mejores formas de frenar el siguiente intento. Y si quieres entender qué empleos y tareas está cambiando de verdad la IA, lee [¿la IA te va a quitar el trabajo?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cómo clonan la voz con inteligencia artificial?",
+        qEn: "How do criminals clone a voice with AI?",
+        a: "Toman una grabación de la persona, de un video en redes, un audio o una llamada, y la cargan en una herramienta de voz con IA que la imita y la hace decir cualquier texto. En una prueba de McAfee, bastaron tres segundos de audio para obtener una voz con 85% de parecido.",
+        aEn: "They take a recording of the person, from a social media video, a voice note or a call, and load it into an AI voice tool that imitates it and makes it say any text. In a McAfee test, three seconds of audio were enough for an 85% match.",
+      },
+      {
+        q: "¿Cómo sé si una llamada es de una voz clonada?",
+        qEn: "How can I tell if a call uses a cloned voice?",
+        a: "Por la voz es difícil; por el contexto, no. Desconfía de cualquier mensaje que pida dinero con urgencia y en secreto. Cuelga, llama al número que ya tienes guardado o haz una pregunta que solo esa persona pueda contestar.",
+        aEn: "It is hard to tell from the voice; it is easier from the context. Distrust any message that asks for money urgently and secretly. Hang up, call the number you already have saved or ask a question only that person could answer.",
+      },
+      {
+        q: "¿Qué recomienda la CONDUSEF contra la clonación de voz?",
+        qEn: "What does CONDUSEF recommend against voice cloning?",
+        a: "Confirmar por otro medio que la persona es quien dice ser, hacer una pregunta específica que solo ella pueda responder y no actuar bajo presión ni hacer depósitos inmediatos.",
+        aEn: "Confirm by another channel that the person is who they say they are, ask a specific question only they could answer, and do not act under pressure or make immediate deposits.",
+      },
+      {
+        q: "¿Cómo protejo mi WhatsApp?",
+        qEn: "How do I protect my WhatsApp?",
+        a: "Activa la verificación en dos pasos, nunca compartas los códigos que te llegan por SMS y limita a tus contactos quién ve tu foto, tu estado y tu última conexión.",
+        aEn: "Turn on two-step verification, never share the codes you receive by SMS, and limit who sees your photo, status and last seen to your contacts.",
+      },
+      {
+        q: "¿Qué hago si ya mandé dinero a un estafador?",
+        qEn: "What should I do if I already sent money to a scammer?",
+        a: "Llama a tu banco de inmediato para reportar la transferencia como fraude, guarda capturas de todo, presenta una denuncia y reporta el número en WhatsApp. Entre más rápido actúes, más posibilidades hay de detener el dinero.",
+        aEn: "Call your bank immediately to report the transfer as fraud, save screenshots of everything, file a complaint and report the number in WhatsApp. The faster you act, the better the chance of stopping the money.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "AI voice cloning scam",
+        "deepfake scam WhatsApp",
+        "how to detect cloned voice",
+        "AI fraud Mexico",
+        "family code word scam",
+      ],
+      keywordsEs: [
+        "estafa clonación de voz IA",
+        "fraude con inteligencia artificial WhatsApp",
+        "cómo saber si una voz es clonada",
+        "deepfake estafa",
+        "CONDUSEF clonación de voz",
+        "palabra clave familiar estafa",
+      ],
+    },
+  },
+  {
+    slug: "chatgpt-gemini-o-claude",
+    cover: true,
+    title: "ChatGPT, Gemini or Claude: Which One to Use and for What",
+    titleEs: "ChatGPT, Gemini o Claude: cuál usar y para qué",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "They are the three best-known AI assistants and they change every few months, so “which is best?” has no permanent answer. What they have in common, what distinguishes each one, the assistants you already have in WhatsApp and Office, and a 30-minute test to choose with your own tasks.",
+    excerptEs:
+      "Son los tres asistentes de IA más conocidos y cambian cada pocos meses, así que “¿cuál es el mejor?” no tiene una respuesta permanente. Qué tienen en común, qué distingue a cada uno, los asistentes que ya tienes en WhatsApp y Office, y una prueba de 30 minutos para elegir con tus propias tareas.",
+    readingTime: 9,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "“Which AI is better, ChatGPT, Gemini or Claude?” is one of the questions we hear most, and the honest answer disappoints at first: it depends on what you are going to use it for and where you already work, and the ranking changes with every new version. What does not change is how to choose well. Here is what each one is, what they share, what makes each different and a simple test to decide with your own tasks instead of someone else's opinion.",
+    ledeEs:
+      "“¿Qué IA es mejor, ChatGPT, Gemini o Claude?” es de las preguntas que más escuchamos, y la respuesta honesta decepciona al principio: depende de para qué la vas a usar y de dónde ya trabajas, y el ranking cambia con cada versión nueva. Lo que no cambia es cómo elegir bien. Esto es qué es cada uno, qué comparten, qué los distingue y una prueba sencilla para decidir con tus propias tareas en vez de con la opinión de alguien más.",
+    sections: [
+      {
+        id: "que-tienen-en-comun",
+        heading: "What they have in common",
+        headingEs: "Qué tienen en común",
+        body: [
+          "All three are [[generative AI|ia-generativa]] assistants: you write what you need and they draft, summarise, translate, analyse documents and images, answer questions and help with code. All three have a free version and paid plans with more capacity and features, and all three are available on the web and as phone apps.",
+          "They also share a limitation: they can state false things with complete confidence, which is known as a [[hallucination|alucinacion]]. **Treat any AI as a fast, well-read assistant that needs supervision, not as a source of truth.** Check figures, quotes and anything legal, medical or financial before using it.",
+        ],
+        bodyEs: [
+          "Los tres son asistentes de [[IA generativa|ia-generativa]]: escribes lo que necesitas y redactan, resumen, traducen, analizan documentos e imágenes, contestan preguntas y ayudan con código. Los tres tienen una versión gratuita y planes de pago con más capacidad y funciones, y los tres están en la web y como app para el celular.",
+          "También comparten una limitación: pueden afirmar cosas falsas con total seguridad, lo que se conoce como [[alucinación|alucinacion]]. **Trata a cualquier IA como un asistente rápido y muy leído que necesita supervisión, no como una fuente de verdad.** Revisa cifras, citas y todo lo legal, médico o financiero antes de usarlo.",
+        ],
+      },
+      {
+        id: "chatgpt",
+        heading: "ChatGPT",
+        headingEs: "ChatGPT",
+        body: [
+          "Made by OpenAI, it is the best known and the one that popularised the category; OpenAI says Mexico is among its ten largest markets by weekly active users. It brings together many functions in one place: voice conversation, image generation, file and spreadsheet analysis, web search and customised assistants.",
+          "Since August 2026, free and Go plan users in Mexico see ads after some answers, as we explain in [ChatGPT ads in Mexico](/blog/anuncios-en-chatgpt). For those who want one tool for a bit of everything, it is the usual starting point.",
+        ],
+        bodyEs: [
+          "Hecho por OpenAI, es el más conocido y el que popularizó la categoría; OpenAI dice que México está entre sus diez mercados más grandes por usuarios activos semanales. Reúne muchas funciones en un solo lugar: conversación por voz, generación de imágenes, análisis de archivos y hojas de cálculo, búsqueda en la web y asistentes personalizados.",
+          "Desde agosto de 2026, los usuarios de los planes gratis y Go en México ven anuncios después de algunas respuestas, como explicamos en [anuncios en ChatGPT en México](/blog/anuncios-en-chatgpt). Para quien quiere una sola herramienta para un poco de todo, suele ser el punto de partida.",
+        ],
+      },
+      {
+        id: "gemini",
+        heading: "Gemini",
+        headingEs: "Gemini",
+        body: [
+          "Made by Google, its big advantage is integration: it works inside Google services such as Gmail, Docs and Drive for those who use Google Workspace, and it comes built into many Android phones. If your email, documents and calendar already live in Google, Gemini can work with them without copying and pasting.",
+          "For a business that runs on Google Workspace, that integration can matter more than any difference in the answers. Check which functions your plan includes, because they vary between the free version and the business plans.",
+        ],
+        bodyEs: [
+          "Hecho por Google, su gran ventaja es la integración: funciona dentro de servicios de Google como Gmail, Docs y Drive para quien usa Google Workspace, y viene integrado en muchos celulares Android. Si tu correo, tus documentos y tu calendario ya viven en Google, Gemini puede trabajar con ellos sin copiar y pegar.",
+          "Para un negocio que trabaja con Google Workspace, esa integración puede pesar más que cualquier diferencia en las respuestas. Revisa qué funciones incluye tu plan, porque cambian entre la versión gratuita y los planes para empresas.",
+        ],
+      },
+      {
+        id: "claude",
+        heading: "Claude",
+        headingEs: "Claude",
+        body: [
+          "Made by Anthropic, many people use it for writing, for working with long documents such as contracts, reports or manuals, and for programming. It can analyse files and images, and its plans are aimed both at individuals and at teams.",
+          "If most of your work is reading and producing text, reviewing documents or writing code, it is worth including in your test. As with the others, the best way to judge it is with your real tasks, not with general rankings.",
+        ],
+        bodyEs: [
+          "Hecho por Anthropic, mucha gente lo usa para redactar, para trabajar con documentos largos como contratos, reportes o manuales, y para programar. Puede analizar archivos e imágenes, y sus planes están pensados tanto para personas como para equipos.",
+          "Si la mayor parte de tu trabajo es leer y producir texto, revisar documentos o escribir código, vale la pena incluirlo en tu prueba. Igual que con los otros, la mejor forma de juzgarlo es con tus tareas reales, no con rankings generales.",
+        ],
+      },
+      {
+        id: "los-que-ya-tienes",
+        heading: "The assistants you already have",
+        headingEs: "Los asistentes que ya tienes",
+        body: [
+          "You may already be using AI without having chosen it: Meta AI appears inside WhatsApp, Instagram and Facebook, and Microsoft Copilot is built into Windows and Microsoft 365. For quick questions or a short text, the assistant inside the app you already use is often enough.",
+          "For more serious work, such as analysing a file, drafting a proposal or working with your business data, it is worth using a dedicated assistant with clear privacy settings, which we explain in [is it safe to use ChatGPT with your business data?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio).",
+        ],
+        bodyEs: [
+          "Quizá ya usas IA sin haberla elegido: Meta AI aparece dentro de WhatsApp, Instagram y Facebook, y Microsoft Copilot viene integrado en Windows y Microsoft 365. Para preguntas rápidas o un texto corto, el asistente dentro de la app que ya usas muchas veces basta.",
+          "Para trabajo más serio, como analizar un archivo, redactar una propuesta o trabajar con datos de tu negocio, conviene un asistente dedicado con ajustes de privacidad claros, que explicamos en [¿es seguro usar ChatGPT con datos de tu negocio?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio).",
+        ],
+      },
+      {
+        id: "prueba-de-30-minutos",
+        heading: "A 30-minute test to choose",
+        headingEs: "Una prueba de 30 minutos para elegir",
+        body: [
+          "Choose three real tasks from your week: for example, drafting a reply to a difficult customer, summarising a long PDF and analysing a spreadsheet with sales. Give exactly the same instruction to each assistant, with the same files, and compare the results: which one understood best, which one needed fewer corrections and which one invented less.",
+          "Then add three practical criteria: where your files already live (Google, Microsoft or elsewhere), what privacy controls each plan offers, and the price for the number of people who will use it. The winner is the one that saves you the most time on your tasks, not the one that wins on social media.",
+        ],
+        bodyEs: [
+          "Elige tres tareas reales de tu semana: por ejemplo, redactar la respuesta a un cliente difícil, resumir un PDF largo y analizar una hoja de cálculo con ventas. Dale exactamente la misma instrucción a cada asistente, con los mismos archivos, y compara los resultados: cuál entendió mejor, cuál necesitó menos correcciones y cuál inventó menos.",
+          "Después suma tres criterios prácticos: dónde viven ya tus archivos (Google, Microsoft u otro lado), qué controles de privacidad ofrece cada plan y el precio para el número de personas que lo van a usar. El ganador es el que más tiempo te ahorra en tus tareas, no el que gana en redes sociales.",
+        ],
+      },
+      {
+        id: "para-tu-negocio",
+        heading: "For your business, the tool matters less than the process",
+        headingEs: "Para tu negocio, importa menos la herramienta que el proceso",
+        body: [
+          "The difference between a business that gets value from AI and one that does not is rarely the assistant it chose; it is whether it defined which tasks to use it for, who reviews the results and which data cannot go in. A team that uses any of the three with a clear process gets further than one that has the “best” and uses it at random.",
+          "If you want to go from individual use to automating parts of your business, such as answering customers or following up leads, read our [guide to AI and automation](/blog/guia-automatizacion-ia) and [AI in marketing](/blog/ia-en-marketing).",
+        ],
+        bodyEs: [
+          "La diferencia entre un negocio que le saca provecho a la IA y uno que no casi nunca es el asistente que eligió; es si definió para qué tareas usarlo, quién revisa los resultados y qué datos no pueden entrar. Un equipo que usa cualquiera de los tres con un proceso claro llega más lejos que uno que tiene “el mejor” y lo usa al azar.",
+          "Si quieres pasar del uso individual a automatizar partes de tu negocio, como contestar clientes o dar seguimiento a prospectos, lee nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia) e [IA en marketing](/blog/ia-en-marketing).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué es mejor, ChatGPT, Gemini o Claude?",
+        qEn: "Which is better, ChatGPT, Gemini or Claude?",
+        a: "Depende de para qué lo uses y de dónde trabajas, y cambia con cada versión. La forma más confiable de elegir es probar los tres con tres tareas reales tuyas, con la misma instrucción, y quedarte con el que te ahorre más tiempo.",
+        aEn: "It depends on what you use it for and where you work, and it changes with every version. The most reliable way to choose is to test all three on three of your real tasks, with the same instruction, and keep the one that saves you the most time.",
+      },
+      {
+        q: "¿Hay versiones gratis de ChatGPT, Gemini y Claude?",
+        qEn: "Are there free versions of ChatGPT, Gemini and Claude?",
+        a: "Sí, los tres tienen versión gratuita con límites, y planes de pago con más capacidad y funciones. En México, los usuarios de los planes gratis y Go de ChatGPT ven anuncios desde agosto de 2026.",
+        aEn: "Yes, all three have a free version with limits and paid plans with more capacity and features. In Mexico, users of ChatGPT's free and Go plans see ads since August 2026.",
+      },
+      {
+        q: "¿Cuál conviene si uso Gmail y Google Drive?",
+        qEn: "Which one fits if I use Gmail and Google Drive?",
+        a: "Gemini tiene la ventaja de funcionar dentro de los servicios de Google para quien usa Google Workspace. Aun así, vale la pena probar los otros con tus tareas antes de decidir.",
+        aEn: "Gemini has the advantage of working inside Google services for Google Workspace users. Even so, it is worth testing the others on your tasks before deciding.",
+      },
+      {
+        q: "¿La IA puede equivocarse?",
+        qEn: "Can AI be wrong?",
+        a: "Sí. Puede afirmar cosas falsas con seguridad, lo que se llama alucinación. Revisa cifras, citas y todo lo legal, médico o financiero antes de usarlo.",
+        aEn: "Yes. It can state false things confidently, which is called a hallucination. Check figures, quotes and anything legal, medical or financial before using it.",
+      },
+      {
+        q: "¿Meta AI en WhatsApp es igual que ChatGPT?",
+        qEn: "Is Meta AI in WhatsApp the same as ChatGPT?",
+        a: "No; es el asistente de Meta, integrado en WhatsApp, Instagram y Facebook. Sirve para preguntas rápidas; para trabajo más serio con archivos o datos de tu negocio conviene un asistente dedicado con ajustes de privacidad claros.",
+        aEn: "No; it is Meta's assistant, built into WhatsApp, Instagram and Facebook. It is useful for quick questions; for more serious work with files or business data, a dedicated assistant with clear privacy settings is better.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "ChatGPT vs Gemini vs Claude",
+        "which AI is best",
+        "best AI assistant for business",
+        "Gemini or ChatGPT",
+        "Claude AI",
+      ],
+      keywordsEs: [
+        "ChatGPT, Gemini o Claude",
+        "cuál es la mejor inteligencia artificial",
+        "qué IA usar para mi negocio",
+        "Gemini o ChatGPT",
+        "Claude IA qué es",
+        "diferencias entre ChatGPT y Gemini",
+      ],
+    },
+  },
+  {
+    slug: "es-seguro-usar-chatgpt-con-datos-de-tu-negocio",
+    cover: true,
+    title: "Is It Safe to Use ChatGPT with Your Business and Customer Data?",
+    titleEs: "¿Es seguro usar ChatGPT con datos de tu negocio y de tus clientes?",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "Your team is probably already pasting customer lists, quotes and contracts into an AI assistant. What happens to that information, what should never go in, what Mexico's new personal data law changes and a one-page policy so your team uses AI without exposing your business.",
+    excerptEs:
+      "Probablemente tu equipo ya está pegando listas de clientes, cotizaciones y contratos en un asistente de IA. Qué pasa con esa información, qué nunca debería entrar, qué cambia la nueva ley de datos personales en México y una política de una página para que tu equipo use IA sin exponer tu negocio.",
+    readingTime: 9,
+    date: "2026-10-27",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "AI assistants are so useful that people use them before anyone in the company has decided whether they should: to summarise a contract, clean up a customer list, write a reply with an order's details or analyse a sales spreadsheet. The problem is not using them; it is not knowing what happens to that information and not having agreed what can go in. With a few settings and a one-page policy, you can get the benefit without putting your customers' data or your business at risk.",
+    ledeEs:
+      "Los asistentes de IA son tan útiles que la gente los usa antes de que alguien en la empresa haya decidido si se puede: para resumir un contrato, limpiar una lista de clientes, redactar una respuesta con los datos de un pedido o analizar una hoja de ventas. El problema no es usarlos; es no saber qué pasa con esa información y no haber acordado qué puede entrar. Con unos cuantos ajustes y una política de una página, puedes aprovecharlos sin poner en riesgo los datos de tus clientes ni tu negocio.",
+    sections: [
+      {
+        id: "que-pasa-con-lo-que-escribes",
+        heading: "What happens to what you type",
+        headingEs: "Qué pasa con lo que escribes",
+        body: [
+          "What you write and the files you upload are sent to the provider's servers and stored there, at least for a while. In the consumer versions of several assistants, conversations may be used to improve future models unless you turn that option off in the privacy or data controls settings; some also offer temporary chats that are not saved in your history.",
+          "Business plans usually come with stronger commitments, such as not using your data for training by default, more control over retention and administration for the whole team. The terms change and vary between providers, so read those of the plan you use. **If you would not send it in an email to a stranger, think twice before pasting it into a free AI tool.**",
+        ],
+        bodyEs: [
+          "Lo que escribes y los archivos que subes se envían a los servidores del proveedor y se guardan ahí, al menos por un tiempo. En las versiones para consumidores de varios asistentes, las conversaciones pueden usarse para mejorar modelos futuros a menos que desactives esa opción en los ajustes de privacidad o de controles de datos; algunos también ofrecen chats temporales que no se guardan en tu historial.",
+          "Los planes para empresas suelen venir con compromisos más fuertes, como no usar tus datos para entrenar por defecto, más control sobre cuánto tiempo se guardan y administración para todo el equipo. Los términos cambian y varían entre proveedores, así que lee los del plan que usas. **Si no lo mandarías por correo a un desconocido, piénsalo dos veces antes de pegarlo en una herramienta de IA gratuita.**",
+        ],
+      },
+      {
+        id: "lo-que-nunca-deberias-pegar",
+        heading: "What you should never paste",
+        headingEs: "Lo que nunca deberías pegar",
+        body: [
+          "Passwords, access codes and system keys. Card and bank account numbers. Your customers' personal data, such as full names with phone numbers and addresses, CURP, RFC or anything related to their health. Confidential contracts with real names and amounts, unpublished financial statements and information covered by a confidentiality agreement.",
+          "When the task needs that kind of information, there is almost always a way to do it without exposing it, which we explain below. And if your company has a customer database, that is where it should live, in a [[CRM|crm]] with access controls, not in loose copies inside chat conversations.",
+        ],
+        bodyEs: [
+          "Contraseñas, códigos de acceso y llaves de sistemas. Números de tarjeta y de cuentas bancarias. Datos personales de tus clientes, como nombres completos con teléfono y domicilio, CURP, RFC o cualquier cosa relacionada con su salud. Contratos confidenciales con nombres y montos reales, estados financieros no publicados e información protegida por un acuerdo de confidencialidad.",
+          "Cuando la tarea necesita ese tipo de información, casi siempre hay una forma de hacerla sin exponerla, que explicamos más abajo. Y si tu empresa tiene una base de clientes, ahí es donde debe vivir, en un [[CRM|crm]] con controles de acceso, no en copias sueltas dentro de conversaciones de chat.",
+        ],
+      },
+      {
+        id: "la-ley-en-mexico",
+        heading: "What Mexico's new personal data law says",
+        headingEs: "Qué dice la nueva ley de datos personales en México",
+        body: [
+          "On 20 March 2025, a new Federal Law on the Protection of Personal Data Held by Private Parties was published in the Official Gazette, in force from the following day, and the functions the INAI had in this area passed to the Ministry of Anti-Corruption and Good Government. Consent must be free, specific and informed, the [[privacy notice|aviso-de-privacidad]] must list the data and distinguish necessary from voluntary purposes, and any new purpose not covered by the notice requires new consent.",
+          "The law also recognises the right to object to automated processing that significantly affects a person and evaluates personal aspects without human intervention. In practice: if you are going to use customer data with AI tools for a purpose your privacy notice does not mention, review it with your lawyer before doing so. This is not legal advice, but it is a question worth asking.",
+        ],
+        bodyEs: [
+          "El 20 de marzo de 2025 se publicó en el Diario Oficial una nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares, vigente desde el día siguiente, y las funciones que tenía el INAI en esta materia pasaron a la Secretaría Anticorrupción y Buen Gobierno. El consentimiento debe ser libre, específico e informado, el [[aviso de privacidad|aviso-de-privacidad]] debe señalar los datos y distinguir las finalidades necesarias de las voluntarias, y cualquier finalidad nueva que no esté en el aviso requiere un nuevo consentimiento.",
+          "La ley también reconoce el derecho a oponerse a tratamientos automatizados que afecten de forma significativa a una persona y evalúen aspectos personales sin intervención humana. En la práctica: si vas a usar datos de clientes con herramientas de IA para una finalidad que tu aviso de privacidad no menciona, revísalo con tu abogado antes de hacerlo. No es asesoría legal, pero es una pregunta que vale la pena hacerse.",
+        ],
+      },
+      {
+        id: "como-usar-ia-sin-exponer-datos",
+        heading: "How to use AI with data without exposing it",
+        headingEs: "Cómo usar IA con datos sin exponerlos",
+        body: [
+          "Anonymise: replace names, phone numbers and account numbers with labels such as “Customer A” or “Account 1” before pasting, and put them back afterwards. Summarise instead of copying: describe the case in your own words instead of pasting the whole document. Use only the columns you need: to analyse sales by product, the customer's name is not necessary.",
+          "For recurring work with sensitive data, use a business plan with the privacy commitments your company needs, or a solution connected to your own systems with access controls. Turn on the option not to use your conversations for training in the tools that offer it, and delete what you no longer need.",
+        ],
+        bodyEs: [
+          "Anonimiza: cambia nombres, teléfonos y números de cuenta por etiquetas como “Cliente A” o “Cuenta 1” antes de pegar, y vuelve a ponerlos después. Resume en vez de copiar: describe el caso con tus palabras en vez de pegar el documento completo. Usa solo las columnas que necesitas: para analizar ventas por producto no hace falta el nombre del cliente.",
+          "Para trabajo recurrente con datos sensibles, usa un plan para empresas con los compromisos de privacidad que tu negocio necesita, o una solución conectada a tus propios sistemas con controles de acceso. Activa la opción de que tus conversaciones no se usen para entrenar en las herramientas que la ofrecen, y borra lo que ya no necesitas.",
+        ],
+      },
+      {
+        id: "politica-de-una-pagina",
+        heading: "A one-page AI policy for your team",
+        headingEs: "Una política de IA de una página para tu equipo",
+        body: [
+          "It does not need to be a legal document. It needs to answer five questions: which AI tools are approved and with which accounts; which data can never go in; how to anonymise when information needs to be used; who reviews what AI produces before it reaches a customer; and whom to ask before using a new tool.",
+          "Explain it in a short meeting with real examples from your business and review it every six months, because the tools change quickly. A clear policy avoids two opposite problems: the employee who exposes data without knowing, and the one who does not use AI out of fear and falls behind.",
+        ],
+        bodyEs: [
+          "No tiene que ser un documento legal. Tiene que contestar cinco preguntas: qué herramientas de IA están aprobadas y con qué cuentas; qué datos nunca pueden entrar; cómo anonimizar cuando hay que usar información; quién revisa lo que produce la IA antes de que llegue a un cliente, y a quién preguntar antes de usar una herramienta nueva.",
+          "Explícala en una junta corta con ejemplos reales de tu negocio y revísala cada seis meses, porque las herramientas cambian rápido. Una política clara evita dos problemas opuestos: el empleado que expone datos sin saberlo y el que no usa IA por miedo y se queda atrás.",
+        ],
+      },
+      {
+        id: "apps-gratis-y-extensiones",
+        heading: "Watch out for “free” apps and extensions",
+        headingEs: "Cuidado con las apps y extensiones “gratis”",
+        body: [
+          "Many apps and browser extensions promise “ChatGPT for free” or “AI for your WhatsApp” and are actually made by unknown companies that receive everything you type. Install only official apps from the providers or tools your company has approved, and review the permissions an extension asks for before accepting.",
+          "The same caution applies to links and files that arrive by message offering AI tools: they are a common route for scams, as we explain in [AI scams: voice cloning and fake videos](/blog/estafas-con-ia-clonacion-de-voz). If you are choosing which assistant to adopt, start with [ChatGPT, Gemini or Claude](/blog/chatgpt-gemini-o-claude), and if you want to automate processes with your data safely, see our [guide to AI and automation](/blog/guia-automatizacion-ia).",
+        ],
+        bodyEs: [
+          "Muchas apps y extensiones del navegador prometen “ChatGPT gratis” o “IA para tu WhatsApp” y en realidad son de empresas desconocidas que reciben todo lo que escribes. Instala solo las apps oficiales de los proveedores o las herramientas que tu empresa aprobó, y revisa los permisos que pide una extensión antes de aceptar.",
+          "La misma precaución aplica a ligas y archivos que llegan por mensaje ofreciendo herramientas de IA: son una vía común de estafas, como explicamos en [estafas con IA: clonación de voz y videos falsos](/blog/estafas-con-ia-clonacion-de-voz). Si estás eligiendo qué asistente adoptar, empieza por [ChatGPT, Gemini o Claude](/blog/chatgpt-gemini-o-claude), y si quieres automatizar procesos con tus datos de forma segura, revisa nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿ChatGPT guarda lo que escribo?",
+        qEn: "Does ChatGPT keep what I type?",
+        a: "Sí, lo que escribes y los archivos que subes se guardan en los servidores del proveedor al menos por un tiempo. En las versiones para consumidores puede usarse para mejorar modelos a menos que desactives esa opción en los ajustes de privacidad; revisa los términos de tu plan.",
+        aEn: "Yes, what you type and the files you upload are stored on the provider's servers at least for a while. In consumer versions it may be used to improve models unless you turn that option off in the privacy settings; check your plan's terms.",
+      },
+      {
+        q: "¿Qué datos nunca debo poner en una IA?",
+        qEn: "What data should I never put into an AI?",
+        a: "Contraseñas y llaves de sistemas, números de tarjeta y de cuentas, datos personales de clientes como CURP, RFC, domicilios o salud, contratos confidenciales con datos reales y estados financieros no publicados.",
+        aEn: "Passwords and system keys, card and account numbers, customers' personal data such as CURP, RFC, addresses or health information, confidential contracts with real details and unpublished financial statements.",
+      },
+      {
+        q: "¿Qué cambió con la nueva ley de datos personales en México?",
+        qEn: "What changed with Mexico's new personal data law?",
+        a: "Se publicó el 20 de marzo de 2025 y entró en vigor al día siguiente; las funciones del INAI en esta materia pasaron a la Secretaría Anticorrupción y Buen Gobierno. Pide consentimiento libre, específico e informado, y una finalidad nueva requiere un nuevo consentimiento.",
+        aEn: "It was published on 20 March 2025 and took effect the next day; the INAI's functions in this area passed to the Ministry of Anti-Corruption and Good Government. It requires free, specific and informed consent, and a new purpose requires new consent.",
+      },
+      {
+        q: "¿Cómo uso IA con datos de clientes sin riesgo?",
+        qEn: "How do I use AI with customer data without risk?",
+        a: "Anonimiza los datos antes de pegarlos, usa solo la información necesaria, prefiere planes para empresas con compromisos de privacidad y define en una política qué datos no pueden entrar y quién revisa los resultados.",
+        aEn: "Anonymise data before pasting it, use only the information you need, prefer business plans with privacy commitments and define in a policy which data cannot go in and who reviews the results.",
+      },
+      {
+        q: "¿Son seguras las apps que prometen ChatGPT gratis?",
+        qEn: "Are apps promising free ChatGPT safe?",
+        a: "Muchas no. Pueden ser de empresas desconocidas que reciben todo lo que escribes. Instala solo las apps oficiales de los proveedores o las herramientas que tu empresa aprobó.",
+        aEn: "Many are not. They may be made by unknown companies that receive everything you type. Install only official apps from the providers or tools your company has approved.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "is ChatGPT safe for business data",
+        "ChatGPT privacy",
+        "AI policy for employees",
+        "Mexico personal data law 2025",
+        "customer data and AI",
+      ],
+      keywordsEs: [
+        "es seguro usar ChatGPT en mi negocio",
+        "ChatGPT privacidad datos",
+        "política de uso de IA para empleados",
+        "nueva ley de datos personales 2025",
+        "datos de clientes en ChatGPT",
+        "qué no poner en ChatGPT",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

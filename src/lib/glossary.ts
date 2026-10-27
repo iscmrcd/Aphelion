@@ -391,4 +391,28 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Inteligencia artificial que crea contenido nuevo, como texto, imágenes, audio o código, a partir de una instrucción escrita. ChatGPT, Gemini y Claude son ejemplos.",
     defEn: "Artificial intelligence that creates new content, such as text, images, audio or code, from a written instruction. ChatGPT, Gemini and Claude are examples.",
   },
+  "clonacion-de-voz": {
+    term: "Clonación de voz",
+    termEn: "Voice cloning",
+    def: "Usar inteligencia artificial para imitar la voz de una persona a partir de una grabación corta y hacerla decir cualquier texto. Se usa en doblaje y accesibilidad, pero también en estafas.",
+    defEn: "Using artificial intelligence to imitate a person's voice from a short recording and make it say any text. It is used in dubbing and accessibility, but also in scams.",
+  },
+  deepfake: {
+    term: "Deepfake",
+    termEn: "Deepfake",
+    def: "Un video, foto o audio falso creado con inteligencia artificial que hace parecer que una persona real dijo o hizo algo que nunca pasó.",
+    defEn: "A fake video, photo or audio created with artificial intelligence that makes it look as if a real person said or did something that never happened.",
+  },
+  "verificacion-en-dos-pasos": {
+    term: "Verificación en dos pasos",
+    termEn: "Two-step verification",
+    def: "Una protección extra en tus cuentas: además de la contraseña o el código por SMS, pide un PIN o una confirmación que solo tú tienes. En WhatsApp se activa en Ajustes, Cuenta.",
+    defEn: "An extra layer of protection for your accounts: besides the password or SMS code, it asks for a PIN or a confirmation only you have. In WhatsApp it is turned on in Settings, Account.",
+  },
+  alucinacion: {
+    term: "Alucinación",
+    termEn: "Hallucination",
+    def: "Cuando una herramienta de inteligencia artificial afirma algo falso o inventado con total seguridad, como una cifra, una cita o una fuente que no existe.",
+    defEn: "When an artificial intelligence tool states something false or made up with complete confidence, such as a figure, a quote or a source that does not exist.",
+  },
 };
