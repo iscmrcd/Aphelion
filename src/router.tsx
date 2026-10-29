@@ -13,7 +13,7 @@ export const getRouter = () => {
     defaultErrorComponent: ({ error }) => (
       <div style={{ padding: 20 }}>
         <h1>Error</h1>
-        <pre>{error.message}</pre>
+        <pre>{error instanceof Error ? error.message : String(error)}</pre>
       </div>
     ),
   });
