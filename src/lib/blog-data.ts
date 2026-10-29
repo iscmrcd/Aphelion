@@ -14597,6 +14597,553 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "chatgpt-dots-que-son",
+    cover: true,
+    title: "ChatGPT Dots: What They Are, What They Cost and What They Are Really For",
+    titleEs: "ChatGPT Dots: qué son, cuánto cuestan y para qué sirven de verdad",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "OpenAI's dots are agents with their own computer in the cloud that keep working when you close ChatGPT. What they can do, which plans include them and what they cost, how you control what they do, what they cannot do yet and whether they make sense for a business in Mexico.",
+    excerptEs:
+      "Los dots de OpenAI son agentes con su propia computadora en la nube que siguen trabajando cuando cierras ChatGPT. Qué pueden hacer, qué planes los incluyen y cuánto cuestan, cómo controlas lo que hacen, qué todavía no pueden y si tienen sentido para un negocio en México.",
+    readingTime: 11,
+    date: "2026-10-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Until now, using ChatGPT meant asking and waiting for an answer. With dots, OpenAI wants the relationship to work the other way round: you give it a responsibility, such as reviewing your invoices every Friday or keeping an eye on new leads, and it works on its own, even with the window closed, and only comes back to you when something needs your decision. It sounds like a personal assistant, and in part it is. It also costs at least 100 dollars a month and has limits that the launch did not shout about. Here is what we know after a month on the market.",
+    ledeEs:
+      "Hasta ahora, usar ChatGPT era preguntar y esperar una respuesta. Con los dots, OpenAI quiere que la relación funcione al revés: le das una responsabilidad, como revisar tus facturas cada viernes o estar al pendiente de los prospectos nuevos, y trabaja por su cuenta, incluso con la ventana cerrada, y solo regresa contigo cuando algo necesita tu decisión. Suena a asistente personal, y en parte lo es. También cuesta mínimo 100 dólares al mes y tiene límites que el lanzamiento no gritó. Esto es lo que sabemos después de un mes en el mercado.",
+    sections: [
+      {
+        id: "que-es-un-dot",
+        heading: "What a dot is, without the jargon",
+        headingEs: "Qué es un dot, sin la jerga",
+        body: [
+          "OpenAI announced dots at its DevDay on 29 September 2026. A dot is an [[AI agent|agente-de-ia]] powered by GPT-6 Astra that runs on its own [[virtual machine|maquina-virtual]] in the cloud, with its own browser, and keeps working when the conversation ends. You start with one primary dot, which you can name and give a purpose, and over time OpenAI talks about teams of dots working together.",
+          "You talk to it from ChatGPT on desktop, web or mobile, from Slack or Microsoft Teams, or by voice call; text messaging is in a limited beta for some Pro users in the United States. The difference from a normal chat is not intelligence; it is continuity. A chat forgets what it was doing when you close it. **A dot keeps a responsibility and comes back to it on its own.**",
+        ],
+        bodyEs: [
+          "OpenAI presentó los dots en su DevDay del 29 de septiembre de 2026. Un dot es un [[agente de IA|agente-de-ia]] impulsado por GPT-6 Astra que corre en su propia [[máquina virtual|maquina-virtual]] en la nube, con su propio navegador, y sigue trabajando cuando termina la conversación. Empiezas con un dot principal, al que le puedes poner nombre y un propósito, y a futuro OpenAI habla de equipos de dots trabajando juntos.",
+          "Le hablas desde ChatGPT en escritorio, web o celular, desde Slack o Microsoft Teams, o por llamada de voz; los mensajes de texto están en una prueba limitada para algunos usuarios Pro en Estados Unidos. La diferencia con un chat normal no es la inteligencia; es la continuidad. Un chat olvida lo que estaba haciendo cuando lo cierras. **Un dot conserva una responsabilidad y regresa a ella por su cuenta.**",
+        ],
+      },
+      {
+        id: "que-puede-hacer",
+        heading: "What it can do, with examples that matter for a business",
+        headingEs: "Qué puede hacer, con ejemplos que sí importan en un negocio",
+        body: [
+          "A dot can connect to more than 4,000 apps through OpenAI's plugins, browse the web, schedule recurring work and research in the background. The examples that circulated after the launch say a lot: every Friday, compare delivered projects against issued invoices and draft the missing ones without sending anything; watch the leads label in your email, draft replies, ask before sending and flag anyone who has gone 48 hours without an answer; every Monday, compare stock against reorder levels and prepare purchase orders for approval.",
+          "Translated to a Mexican small business: a restaurant that wants its supplies checked before the weekend, a real estate agency that does not want any WhatsApp lead to go cold, an agency that forgets to bill hours. The common thread is that the information already lives in connected tools and the task repeats. Where the process lives on paper or in someone's head, the dot has nothing to work with.",
+        ],
+        bodyEs: [
+          "Un dot se puede conectar a más de 4,000 apps a través de los plugins de OpenAI, navegar en la web, programar trabajo recurrente e investigar en segundo plano. Los ejemplos que circularon después del lanzamiento dicen mucho: cada viernes, comparar los proyectos entregados contra las facturas emitidas y dejar en borrador las que falten, sin mandar nada; vigilar la etiqueta de prospectos en tu correo, redactar respuestas, preguntar antes de enviar y marcar a quien lleve 48 horas sin respuesta; cada lunes, comparar el inventario contra los mínimos y preparar órdenes de compra para aprobación.",
+          "Traducido a una pyme mexicana: un restaurante que quiere revisar insumos antes del fin de semana, una inmobiliaria que no quiere que ningún prospecto de WhatsApp se enfríe, una agencia a la que se le olvida facturar horas. El hilo común es que la información ya vive en herramientas conectadas y la tarea se repite. Donde el proceso vive en papel o en la cabeza de alguien, el dot no tiene con qué trabajar.",
+        ],
+      },
+      {
+        id: "cuanto-cuesta",
+        heading: "What it costs and who can use it",
+        headingEs: "Cuánto cuesta y quién lo puede usar",
+        body: [
+          "There is no separate subscription: the first dot comes included in the Pro plans, which start at 100 dollars a month, and in Business Premium, at 125 dollars per seat per month or 100 with annual billing. Plus, at 20 dollars, does not include them. In Enterprise, Edu and Healthcare they exist as a beta that an administrator must turn on. OpenAI gave extended usage limits during the first month and, at the time of writing, had not published how usage will work after that.",
+          "On availability, Pro excludes the European Economic Area, Switzerland and the United Kingdom, and Business Premium covers all regions where ChatGPT is offered, so in principle Mexico is included. Two practical details: a dot can only be created from the desktop app or a computer browser, not from a phone, and it is not available to people under 18.",
+        ],
+        bodyEs: [
+          "No hay una suscripción aparte: el primer dot viene incluido en los planes Pro, que arrancan en 100 dólares al mes, y en Business Premium, a 125 dólares por usuario al mes o 100 con pago anual. Plus, de 20 dólares, no los incluye. En Enterprise, Edu y Healthcare existen como prueba que debe activar un administrador. OpenAI dio límites de uso ampliados durante el primer mes y, al momento de escribir esto, no había publicado cómo va a funcionar el uso después.",
+          "En disponibilidad, Pro excluye al Espacio Económico Europeo, Suiza y Reino Unido, y Business Premium cubre todas las regiones donde se ofrece ChatGPT, así que en principio México está incluido. Dos detalles prácticos: un dot solo se puede crear desde la app de escritorio o el navegador de una computadora, no desde el celular, y no está disponible para menores de 18 años.",
+        ],
+        chart: {
+          title: "Monthly price of the ChatGPT plans that include dots (USD)",
+          titleEs: "Precio mensual de los planes de ChatGPT que incluyen dots (dólares)",
+          source: "OpenAI list prices compiled by AIToolsReview, 29 September 2026. Business Premium is per seat with monthly billing. Plus is shown for reference and does not include dots.",
+          sourceEs: "Precios de lista de OpenAI recopilados por AIToolsReview, 29 de septiembre de 2026. Business Premium es por usuario con pago mensual. Plus se muestra como referencia y no incluye dots.",
+          bars: [
+            { label: "Pro 500", labelEs: "Pro 500", value: 500, display: "$500", displayEs: "$500" },
+            { label: "Pro 200", labelEs: "Pro 200", value: 200, display: "$200", displayEs: "$200" },
+            { label: "Business Premium (per seat)", labelEs: "Business Premium (por usuario)", value: 125, display: "$125", displayEs: "$125" },
+            { label: "Pro 100", labelEs: "Pro 100", value: 100, display: "$100", displayEs: "$100" },
+            { label: "Plus (no dots)", labelEs: "Plus (sin dots)", value: 20, display: "$20", displayEs: "$20" },
+          ],
+        },
+      },
+      {
+        id: "como-controlas-lo-que-hace",
+        heading: "How you control what it does",
+        headingEs: "Cómo controlas lo que hace",
+        body: [
+          "Each action a dot can take gets one of four behaviours, which OpenAI calls Custom Rules: act without asking, act only if you requested it explicitly, ask before acting, or hand it over to you to do yourself. On top of that there are fixed limits: password changes and money transfers always come back to you, deleting data permanently or installing software may require approval every time, and purchases with a card saved on a store need your authorisation.",
+          "There is also an automatic review that checks actions such as sending an email against your instructions and can block them, an activity view to see what the dot is doing and pause it, and a read-only mode when it researches in the background, in which it cannot send messages, edit content or spend money. Access to your own computer is off by default. It is a well-thought-out design. It is not a guarantee: the same documentation admits that these safeguards reduce the risk of manipulation through malicious instructions without eliminating it, and that dots can make mistakes.",
+        ],
+        bodyEs: [
+          "Cada acción que puede hacer un dot recibe uno de cuatro comportamientos, que OpenAI llama reglas personalizadas: actuar sin preguntar, actuar solo si tú lo pediste de forma explícita, preguntar antes de actuar o pasártelo para que lo hagas tú. Encima hay límites fijos: los cambios de contraseña y las transferencias de dinero siempre regresan contigo, borrar datos de forma permanente o instalar software puede pedir aprobación cada vez, y las compras con una tarjeta guardada en una tienda necesitan tu autorización.",
+          "Además hay una revisión automática que compara acciones como enviar un correo contra tus instrucciones y puede bloquearlas, una vista de actividad para ver qué está haciendo el dot y pausarlo, y un modo de solo lectura cuando investiga en segundo plano, en el que no puede mandar mensajes, editar contenido ni gastar dinero. El acceso a tu propia computadora viene apagado. Es un diseño bien pensado. No es una garantía: la misma documentación reconoce que estas protecciones reducen el riesgo de manipulación con instrucciones maliciosas sin eliminarlo, y que los dots pueden equivocarse.",
+        ],
+      },
+      {
+        id: "lo-que-todavia-no-puede",
+        heading: "What it cannot do yet",
+        headingEs: "Lo que todavía no puede",
+        body: [
+          "At launch each user has a single dot; more dots and extra capacity were announced without a date or price. A dot cannot have its own email address and cannot call you, although you can call it. You cannot see or edit individual memories in its context: the only way to clean them is to reset or delete the dot, and disconnecting an app does not erase what it already learned from it. And it only operates the apps you connect.",
+          "There is also something the launch did not resolve: as of the first weeks there was no independent evaluation of how well dots perform in real work; what is known comes from OpenAI. That is not a reason to dismiss them, but it is a reason to test them on something low-risk before handing over your finances or your customers.",
+        ],
+        bodyEs: [
+          "Al lanzamiento cada usuario tiene un solo dot; más dots y capacidad extra se anunciaron sin fecha ni precio. Un dot no puede tener su propia dirección de correo ni puede llamarte, aunque tú sí puedes llamarle. No puedes ver ni editar recuerdos individuales en su contexto: la única forma de limpiarlos es reiniciar o borrar el dot, y desconectar una app no borra lo que ya aprendió de ella. Y solo opera las apps que conectas.",
+          "Hay algo más que el lanzamiento no resolvió: en las primeras semanas no existía una evaluación independiente de qué tan bien funcionan los dots en trabajo real; lo que se sabe viene de OpenAI. No es razón para descartarlos, pero sí para probarlos en algo de bajo riesgo antes de entregarles tus finanzas o tus clientes.",
+        ],
+      },
+      {
+        id: "vale-la-pena-en-mexico",
+        heading: "Is it worth it for a business in Mexico?",
+        headingEs: "¿Vale la pena para un negocio en México?",
+        body: [
+          "Do the maths with time, not with enthusiasm. If the owner or someone on the team spends several hours a week on administrative follow-up that already lives in connected tools, such as email, calendar, spreadsheets, Slack or a CRM, and a dot takes a good part of that off them, 100 dollars a month is easy to justify. If the business runs on personal WhatsApp, paper notes and memory, the first investment is putting order in those processes; the dot comes later.",
+          "Our reading at Aphelion: dots are a professional tool, not a toy, and their best use today is one narrow, repetitive responsibility with low risk. Start there, measure the hours it saves you in a month, and only then give it more. To understand where agents fit in a business, read [AI agents for business](/blog/agentes-de-ia-para-negocios), and before connecting customer data, [is it safe to use ChatGPT with your business data?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio).",
+        ],
+        bodyEs: [
+          "Haz la cuenta con tiempo, no con entusiasmo. Si el dueño o alguien del equipo dedica varias horas a la semana a seguimiento administrativo que ya vive en herramientas conectadas, como correo, calendario, hojas de cálculo, Slack o un CRM, y un dot le quita buena parte de eso, 100 dólares al mes se justifican fácil. Si el negocio funciona con WhatsApp personal, notas en papel y memoria, la primera inversión es ordenar esos procesos; el dot viene después.",
+          "Nuestra lectura en Aphelion: los dots son una herramienta profesional, no un juguete, y su mejor uso hoy es una responsabilidad estrecha, repetitiva y de bajo riesgo. Empieza por ahí, mide las horas que te ahorra en un mes y solo entonces dale más. Para entender dónde encajan los agentes en un negocio, lee [agentes de IA para negocios](/blog/agentes-de-ia-para-negocios), y antes de conectar datos de clientes, [¿es seguro usar ChatGPT con datos de tu negocio?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio).",
+        ],
+      },
+      {
+        id: "como-empezar",
+        heading: "How to start without risk",
+        headingEs: "Cómo empezar sin arriesgar",
+        body: [
+          "Check that your plan and region include dots; the rollout is gradual and can take days. Create the dot from the desktop app or a computer browser, give it a name and connect only low-risk apps first, reviewing what permissions each one asks for. Go through the Custom Rules and set “ask before acting” for anything that sends messages or touches money.",
+          "Then write it a short brief, as you would for a new employee: the goal, what it can touch, what a good result looks like, what it must never do and when to check in with you. Watch it for a week or two before adding sensitive systems. If you want to compare it with the alternatives, read our articles on [Claude Duet](/blog/claude-duet-que-es) and [Meta Muse](/blog/meta-muse-que-es).",
+        ],
+        bodyEs: [
+          "Revisa que tu plan y tu región incluyan dots; el despliegue es gradual y puede tardar días. Crea el dot desde la app de escritorio o el navegador de una computadora, ponle nombre y conecta primero solo apps de bajo riesgo, revisando qué permisos pide cada una. Recorre las reglas personalizadas y pon “preguntar antes de actuar” en todo lo que mande mensajes o toque dinero.",
+          "Después escríbele un encargo corto, como a un empleado nuevo: el objetivo, qué puede tocar, cómo se ve un buen resultado, qué no debe hacer nunca y cuándo reportarte. Obsérvalo una o dos semanas antes de sumar sistemas delicados. Si quieres compararlo con las alternativas, lee nuestros artículos sobre [Claude Duet](/blog/claude-duet-que-es) y [Meta Muse](/blog/meta-muse-que-es).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué son los ChatGPT Dots?",
+        qEn: "What are ChatGPT Dots?",
+        a: "Agentes de OpenAI, impulsados por GPT-6 Astra, que corren en su propia computadora en la nube y siguen trabajando cuando cierras ChatGPT. Les das una responsabilidad recurrente y regresan contigo cuando algo necesita tu decisión.",
+        aEn: "OpenAI agents, powered by GPT-6 Astra, that run on their own cloud computer and keep working when you close ChatGPT. You give them a recurring responsibility and they come back to you when something needs your decision.",
+      },
+      {
+        q: "¿Cuánto cuestan los ChatGPT Dots?",
+        qEn: "How much do ChatGPT Dots cost?",
+        a: "No tienen suscripción aparte: el primer dot viene incluido en los planes Pro, desde 100 dólares al mes, y en Business Premium, 125 dólares por usuario al mes o 100 con pago anual. El plan Plus no los incluye.",
+        aEn: "They have no separate subscription: the first dot is included in the Pro plans, from 100 dollars a month, and in Business Premium, 125 dollars per seat a month or 100 with annual billing. The Plus plan does not include them.",
+      },
+      {
+        q: "¿Los ChatGPT Dots están disponibles en México?",
+        qEn: "Are ChatGPT Dots available in Mexico?",
+        a: "En principio sí: Pro excluye al Espacio Económico Europeo, Suiza y Reino Unido, y Business Premium cubre todas las regiones donde se ofrece ChatGPT. El despliegue es gradual y el dot se crea desde una computadora.",
+        aEn: "In principle yes: Pro excludes the European Economic Area, Switzerland and the UK, and Business Premium covers all regions where ChatGPT is offered. The rollout is gradual and the dot is created from a computer.",
+      },
+      {
+        q: "¿Un dot puede gastar mi dinero sin permiso?",
+        qEn: "Can a dot spend my money without permission?",
+        a: "Las transferencias de dinero y los cambios de contraseña siempre regresan contigo, y las compras con tarjeta guardada necesitan tu autorización. Aun así, OpenAI reconoce que los dots pueden equivocarse; empieza con tareas de bajo riesgo.",
+        aEn: "Money transfers and password changes always come back to you, and purchases with a saved card need your authorisation. Even so, OpenAI acknowledges dots can make mistakes; start with low-risk tasks.",
+      },
+      {
+        q: "¿Qué no pueden hacer todavía los dots?",
+        qEn: "What can dots not do yet?",
+        a: "Al lanzamiento hay un solo dot por usuario, no tiene correo propio, no puede llamarte, no puedes editar sus recuerdos uno por uno y solo opera las apps que conectas. Además, no había evaluaciones independientes de su desempeño.",
+        aEn: "At launch there is one dot per user, it has no email address of its own, it cannot call you, you cannot edit its memories one by one and it only operates the apps you connect. There were also no independent evaluations of its performance.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "ChatGPT Dots",
+        "OpenAI dots explained",
+        "ChatGPT Dots price",
+        "ChatGPT agents always on",
+        "GPT-6 Astra",
+      ],
+      keywordsEs: [
+        "ChatGPT Dots qué son",
+        "ChatGPT Dots precio",
+        "dots de OpenAI",
+        "agentes de ChatGPT",
+        "ChatGPT Dots México",
+        "GPT-6 Astra",
+      ],
+    },
+  },
+  {
+    slug: "claude-duet-que-es",
+    cover: true,
+    title: "Claude Duet: Anthropic's Proactive Agent, What It Does and How It Compares",
+    titleEs: "Claude Duet: el agente proactivo de Anthropic, qué hace y cómo se compara",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "Anthropic's answer to ChatGPT Dots and Meta Muse is an agent that reviews your email and calendar, tells you what needs your attention and keeps working while you are away. What a day with Duet looks like, how it asks permission, who can use it, what it costs and what it still cannot do.",
+    excerptEs:
+      "La respuesta de Anthropic a ChatGPT Dots y Meta Muse es un agente que revisa tu correo y tu calendario, te dice qué necesita tu atención y sigue trabajando mientras no estás. Cómo es un día con Duet, cómo pide permiso, quién lo puede usar, cuánto cuesta y qué todavía no hace.",
+    readingTime: 11,
+    date: "2026-10-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In a little over six weeks, the three big names in AI launched the same idea with different personalities. Meta went first with Muse, an agent for everyone that runs errands. OpenAI followed with dots, agents that take on recurring responsibilities. On 21 October, Anthropic opened the research preview of Claude Duet, aimed less at booking tickets and more at the working day of professionals and small businesses. Here is what Duet does, what it costs, where it falls short and how it compares with the other two.",
+    ledeEs:
+      "En poco más de seis semanas, los tres nombres grandes de la IA lanzaron la misma idea con personalidades distintas. Meta fue primero con Muse, un agente para todo el mundo que hace mandados. OpenAI siguió con los dots, agentes que asumen responsabilidades recurrentes. El 21 de octubre, Anthropic abrió la vista previa de investigación de Claude Duet, pensada menos para comprar boletos y más para la jornada de profesionistas y pequeños negocios. Esto es lo que hace Duet, cuánto cuesta, dónde se queda corto y cómo se compara con los otros dos.",
+    sections: [
+      {
+        id: "que-es-duet",
+        heading: "What Duet is",
+        headingEs: "Qué es Duet",
+        body: [
+          "Anthropic described it in one sentence: an app where Claude works as a proactive agent that comes to you with what needs your attention, completes the tasks you ask for, keeps working when you step away and checks with you before acting on your behalf. It runs on its own computer in the cloud, a [[virtual machine|maquina-virtual]], so it does not depend on your phone or laptop being on, and it was designed around Claude Opus 5.5.",
+          "It is a separate app from the usual Claude, on iOS and Android and on the web at claude.ai, but it shares the same memories, skills and connectors, and it can search your past conversations. You talk to it like a person, by text or voice, in a main thread and in topic channels that share memory with each other.",
+        ],
+        bodyEs: [
+          "Anthropic lo describió en una frase: una app donde Claude trabaja como agente proactivo que llega contigo con lo que necesita tu atención, completa las tareas que le pides, sigue trabajando cuando te alejas y te consulta antes de actuar en tu nombre. Corre en su propia computadora en la nube, una [[máquina virtual|maquina-virtual]], así que no depende de que tu celular o tu laptop estén prendidos, y se diseñó alrededor de Claude Opus 5.5.",
+          "Es una app separada del Claude de siempre, en iOS y Android y en la web en claude.ai, pero comparte los mismos recuerdos, habilidades y conectores, y puede buscar en tus conversaciones anteriores. Le hablas como a una persona, por texto o voz, en un hilo principal y en canales por tema que comparten memoria entre sí.",
+        ],
+      },
+      {
+        id: "un-dia-con-duet",
+        heading: "What a day with Duet looks like",
+        headingEs: "Cómo es un día con Duet",
+        body: [
+          "Each morning it reviews your email and calendar, flags priorities and can start the first steps, such as drafting replies for you to review. During the day it checks your connected accounts every few hours, sends you updates when something is finished or needs a decision, and follows up on threads that have gone quiet. Ongoing work lives in a Tasks tab, and only you can mark a task as completed.",
+          "Larger jobs come back as editable files in a Make tab: research briefs, financial models, slide decks or dashboards. **The idea is not that you ask it more things; it is that it tells you what you were going to forget.** For someone whose day is buried in email, that changes the relationship with the tool.",
+        ],
+        bodyEs: [
+          "Cada mañana revisa tu correo y tu calendario, marca prioridades y puede arrancar los primeros pasos, como redactar respuestas para que las revises. Durante el día revisa tus cuentas conectadas cada pocas horas, te manda avisos cuando algo terminó o necesita una decisión, y da seguimiento a conversaciones que se quedaron calladas. El trabajo en curso vive en una pestaña de Tareas, y solo tú puedes marcar una tarea como terminada.",
+          "Los trabajos más grandes regresan como archivos editables en una pestaña llamada Make: investigaciones, modelos financieros, presentaciones o tableros. **La idea no es que le pidas más cosas; es que te diga lo que se te iba a olvidar.** Para alguien cuyo día se le va en el correo, eso cambia la relación con la herramienta.",
+        ],
+      },
+      {
+        id: "para-quien-esta-pensado",
+        heading: "Who it is built for",
+        headingEs: "Para quién está pensado",
+        body: [
+          "TechCrunch described it as aimed at professionals and small businesses, and Anthropic itself distinguished it from agents built for errands or booking tickets. It supports plugins, including one for small businesses, and can suggest others. With Stripe it can look for unpaid invoices and draft payment reminders, and with Link and Shop Pay it can make purchases with your approval. For sites without a connector, it uses a browser in the cloud.",
+          "According to TechCrunch, it has access to more than 6,000 connectors and plugins in the Claude Marketplace. In practice, its value depends on how much of your work already lives in connected tools: a firm that runs on email, calendar, documents and invoicing gets much more out of it than one that runs on personal WhatsApp.",
+        ],
+        bodyEs: [
+          "TechCrunch lo describió como pensado para profesionistas y pequeños negocios, y la propia Anthropic lo distinguió de los agentes hechos para mandados o para comprar boletos. Acepta plugins, entre ellos uno para pequeños negocios, y puede sugerir otros. Con Stripe puede buscar facturas sin pagar y redactar recordatorios de pago, y con Link y Shop Pay puede hacer compras con tu aprobación. Para sitios sin conector, usa un navegador en la nube.",
+          "Según TechCrunch, tiene acceso a más de 6,000 conectores y plugins en el Claude Marketplace. En la práctica, su valor depende de cuánto de tu trabajo ya vive en herramientas conectadas: un despacho que funciona con correo, calendario, documentos y facturación le saca mucho más provecho que uno que funciona con WhatsApp personal.",
+        ],
+      },
+      {
+        id: "permisos-y-seguridad",
+        heading: "Permissions and safety",
+        headingEs: "Permisos y seguridad",
+        body: [
+          "Anthropic says Duet is designed to ask before sending a message, making a payment, signing a document or deleting anything. Some actions are off the table even with approval: it does not trade securities or move money between accounts. A classifier checks each message to prevent sensitive information from leaking, and by default it declines requests for card numbers and government ID.",
+          "One detail worth knowing: disconnecting an app stops future access, but does not erase what Duet already learned from it. As with any agent, the sensible thing is to connect low-risk tools first and see how it behaves before giving it access to more delicate accounts.",
+        ],
+        bodyEs: [
+          "Anthropic dice que Duet está diseñado para preguntar antes de mandar un mensaje, hacer un pago, firmar un documento o borrar cualquier cosa. Algunas acciones están fuera de la mesa incluso con aprobación: no compra ni vende valores ni mueve dinero entre cuentas. Un clasificador revisa cada mensaje para evitar que se filtre información sensible y, por defecto, rechaza peticiones de números de tarjeta e identificaciones oficiales.",
+          "Un detalle que vale la pena saber: desconectar una app detiene el acceso a futuro, pero no borra lo que Duet ya aprendió de ella. Como con cualquier agente, lo sensato es conectar primero herramientas de bajo riesgo y ver cómo se comporta antes de darle acceso a cuentas más delicadas.",
+        ],
+      },
+      {
+        id: "disponibilidad-y-costo",
+        heading: "Availability and cost",
+        headingEs: "Disponibilidad y costo",
+        body: [
+          "For now it is a research preview for Pro and Max subscribers in the United States, with a waiting list and invitations in waves; Team and Enterprise plans are not included yet. It does not cost extra, but it uses the same limits as the rest of Claude, including background checks, and Anthropic warns that you may reach your limits sooner than with chat alone. You can adjust what it monitors and how often to control that consumption.",
+          "Pro costs 20 dollars a month, or 17 with annual billing, and Max costs 100 or 200 dollars depending on capacity. That makes Duet the cheapest entry among the professional agents, with an important caveat for us: it is not open in Mexico yet.",
+        ],
+        bodyEs: [
+          "Por ahora es una vista previa de investigación para suscriptores Pro y Max en Estados Unidos, con lista de espera e invitaciones por oleadas; los planes Team y Enterprise todavía no están incluidos. No cuesta extra, pero usa los mismos límites que el resto de Claude, incluidas las revisiones en segundo plano, y Anthropic advierte que puedes llegar a tus límites antes que usando solo el chat. Puedes ajustar qué vigila y cada cuánto para controlar ese consumo.",
+          "Pro cuesta 20 dólares al mes, o 17 con pago anual, y Max cuesta 100 o 200 dólares según la capacidad. Eso hace de Duet la entrada más barata entre los agentes profesionales, con una advertencia importante para nosotros: todavía no está abierto en México.",
+        ],
+        chart: {
+          title: "Lowest monthly price to use each personal agent (USD)",
+          titleEs: "Precio mensual más bajo para usar cada agente personal (dólares)",
+          source: "Meta (Muse free tier, United States); Anthropic via Tech Insider (Claude Pro, US preview with waiting list); OpenAI via AIToolsReview (ChatGPT Pro 100). Prices as of October 2026.",
+          sourceEs: "Meta (plan gratuito de Muse, Estados Unidos); Anthropic vía Tech Insider (Claude Pro, vista previa en Estados Unidos con lista de espera); OpenAI vía AIToolsReview (ChatGPT Pro 100). Precios a octubre de 2026.",
+          bars: [
+            { label: "ChatGPT Dots (Pro 100)", labelEs: "ChatGPT Dots (Pro 100)", value: 100, display: "$100", displayEs: "$100" },
+            { label: "Claude Duet (Claude Pro)", labelEs: "Claude Duet (Claude Pro)", value: 20, display: "$20", displayEs: "$20" },
+            { label: "Meta Muse (free tier)", labelEs: "Meta Muse (plan gratuito)", value: 0, display: "$0", displayEs: "$0" },
+          ],
+        },
+      },
+      {
+        id: "lo-que-todavia-no-hace",
+        heading: "What it still cannot do",
+        headingEs: "Lo que todavía no hace",
+        body: [
+          "In the preview there is no Microsoft 365 connector yet and some connectors, such as Slack, have limits. It cannot access your local files or all your Claude projects, make phone calls or send text messages, and you cannot watch or take control of its browser while it works. Because it checks your accounts every few hours, something urgent can arrive between checks.",
+          "And, as with dots, at launch there were no independent tests of its performance; even the most detailed technical reviews were based on documentation, not on weeks of use. It is reasonable to expect changes before a general release.",
+        ],
+        bodyEs: [
+          "En la vista previa todavía no hay conector de Microsoft 365 y algunos conectores, como Slack, tienen límites. No puede acceder a tus archivos locales ni a todos tus proyectos de Claude, hacer llamadas ni mandar mensajes de texto, y no puedes ver ni tomar el control de su navegador mientras trabaja. Como revisa tus cuentas cada pocas horas, algo urgente puede llegar entre una revisión y otra.",
+          "Y, igual que con los dots, al lanzamiento no había pruebas independientes de su desempeño; incluso las reseñas técnicas más detalladas se basaban en la documentación, no en semanas de uso. Es razonable esperar cambios antes de un lanzamiento general.",
+        ],
+      },
+      {
+        id: "duet-dots-y-muse",
+        heading: "Duet, Dots and Muse: how they differ",
+        headingEs: "Duet, Dots y Muse: en qué se diferencian",
+        body: [
+          "They share the base: an agent with its own computer in the cloud, connected to your apps, that asks before sensitive actions. They differ in who they are for. Muse is a mass-market personal agent, with a free tier, that runs errands such as buying, returning or negotiating a bill. Dots are professional agents that take on recurring responsibilities, with browser inspection and takeover, from 100 dollars a month. Duet is a work assistant that organises your day and anticipates what is pending, without a visible browser in the preview.",
+          "There is also a difference in how much they let you see: OpenAI and Meta show what the agent does in the browser, while Duet works in the background and reports back. Which one suits you depends on what you want to delegate. Read our articles on [ChatGPT Dots](/blog/chatgpt-dots-que-son) and [Meta Muse](/blog/meta-muse-que-es) for the details of each.",
+        ],
+        bodyEs: [
+          "Comparten la base: un agente con su propia computadora en la nube, conectado a tus apps, que pregunta antes de acciones delicadas. Se diferencian en para quién son. Muse es un agente personal para el gran público, con plan gratuito, que hace mandados como comprar, devolver o negociar un recibo. Los dots son agentes profesionales que asumen responsabilidades recurrentes, con inspección y control del navegador, desde 100 dólares al mes. Duet es un asistente de trabajo que organiza tu día y se adelanta a lo pendiente, sin navegador visible en la vista previa.",
+          "También cambia cuánto te dejan ver: OpenAI y Meta muestran lo que hace el agente en el navegador, mientras que Duet trabaja en segundo plano y te reporta. Cuál te conviene depende de qué quieras delegar. Lee nuestros artículos sobre [ChatGPT Dots](/blog/chatgpt-dots-que-son) y [Meta Muse](/blog/meta-muse-que-es) para el detalle de cada uno.",
+        ],
+        chart: {
+          title: "Apps and connectors each agent can use, according to each company",
+          titleEs: "Apps y conectores que puede usar cada agente, según cada empresa",
+          source: "Anthropic via TechCrunch (Claude Duet, Claude Marketplace) and OpenAI via Tom's Guide and DataCamp (dots). Meta did not publish a comparable figure for Muse.",
+          sourceEs: "Anthropic vía TechCrunch (Claude Duet, Claude Marketplace) y OpenAI vía Tom's Guide y DataCamp (dots). Meta no publicó una cifra comparable para Muse.",
+          bars: [
+            { label: "Claude Duet", labelEs: "Claude Duet", value: 6000, display: "6,000+", displayEs: "Más de 6,000" },
+            { label: "ChatGPT Dots", labelEs: "ChatGPT Dots", value: 4000, display: "4,000+", displayEs: "Más de 4,000" },
+          ],
+        },
+      },
+      {
+        id: "que-significa-para-tu-negocio",
+        heading: "What it means for your business in Mexico",
+        headingEs: "Qué significa para tu negocio en México",
+        body: [
+          "Duet is not open in Mexico yet, and that is an opportunity, not a disadvantage: the time between now and its arrival is the time to put your house in order. These agents only work as well as the tools they connect to. A business with email, calendar, documents, invoicing and customers organised in connected systems will get value from any of them on day one; one that runs on paper and personal chats will not.",
+          "If you want to start now with what is available, the questions are the same as for any agent: which repetitive process costs you the most time, what data can never go in and who reviews the results. We cover them in [AI agents for business](/blog/agentes-de-ia-para-negocios) and in [is it safe to use ChatGPT with your business data?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio). And if you want help building an agent for your WhatsApp or website today, see [our AI agent service](/servicios/agente-ia).",
+        ],
+        bodyEs: [
+          "Duet todavía no está abierto en México, y eso es una oportunidad, no una desventaja: el tiempo entre hoy y su llegada es el tiempo para poner orden en casa. Estos agentes solo funcionan tan bien como las herramientas a las que se conectan. Un negocio con correo, calendario, documentos, facturación y clientes organizados en sistemas conectados le va a sacar provecho a cualquiera de ellos desde el primer día; uno que funciona con papel y chats personales, no.",
+          "Si quieres empezar ya con lo que está disponible, las preguntas son las mismas que con cualquier agente: qué proceso repetitivo te cuesta más tiempo, qué datos nunca pueden entrar y quién revisa los resultados. Las cubrimos en [agentes de IA para negocios](/blog/agentes-de-ia-para-negocios) y en [¿es seguro usar ChatGPT con datos de tu negocio?](/blog/es-seguro-usar-chatgpt-con-datos-de-tu-negocio). Y si quieres ayuda para construir hoy un agente para tu WhatsApp o tu página, mira [nuestro servicio de agente IA](/servicios/agente-ia).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué es Claude Duet?",
+        qEn: "What is Claude Duet?",
+        a: "Una app de Anthropic donde Claude trabaja como agente proactivo: revisa tu correo y tu calendario, te dice qué necesita tu atención, completa tareas, sigue trabajando cuando te alejas y te consulta antes de actuar en tu nombre.",
+        aEn: "An Anthropic app where Claude works as a proactive agent: it reviews your email and calendar, tells you what needs your attention, completes tasks, keeps working when you step away and checks with you before acting on your behalf.",
+      },
+      {
+        q: "¿Claude Duet está disponible en México?",
+        qEn: "Is Claude Duet available in Mexico?",
+        a: "Todavía no. La vista previa de investigación abrió el 21 de octubre de 2026 solo para suscriptores Pro y Max en Estados Unidos, con lista de espera e invitaciones por oleadas.",
+        aEn: "Not yet. The research preview opened on 21 October 2026 only for Pro and Max subscribers in the United States, with a waiting list and invitations in waves.",
+      },
+      {
+        q: "¿Cuánto cuesta Claude Duet?",
+        qEn: "How much does Claude Duet cost?",
+        a: "No cuesta extra sobre los planes Pro (20 dólares al mes, 17 con pago anual) o Max (100 o 200 dólares), pero consume los mismos límites de uso, incluidas las revisiones en segundo plano.",
+        aEn: "It costs nothing extra on top of the Pro (20 dollars a month, 17 with annual billing) or Max (100 or 200 dollars) plans, but it uses the same usage limits, including background checks.",
+      },
+      {
+        q: "¿Claude Duet puede hacer pagos por mí?",
+        qEn: "Can Claude Duet make payments for me?",
+        a: "Puede hacer compras con Link o Shop Pay, pero pregunta antes de pagar, mandar mensajes, firmar o borrar. No compra ni vende valores ni mueve dinero entre cuentas, y por defecto rechaza números de tarjeta e identificaciones oficiales.",
+        aEn: "It can make purchases with Link or Shop Pay, but it asks before paying, sending messages, signing or deleting. It does not trade securities or move money between accounts, and by default it declines card numbers and government ID.",
+      },
+      {
+        q: "¿En qué se diferencia Claude Duet de ChatGPT Dots y Meta Muse?",
+        qEn: "How does Claude Duet differ from ChatGPT Dots and Meta Muse?",
+        a: "Muse es un agente para el gran público que hace mandados, con plan gratuito. Los dots asumen responsabilidades recurrentes de trabajo desde 100 dólares al mes. Duet es un asistente de trabajo que organiza tu día y se adelanta a lo pendiente, desde el plan Pro de Claude.",
+        aEn: "Muse is a mass-market agent that runs errands, with a free tier. Dots take on recurring work responsibilities from 100 dollars a month. Duet is a work assistant that organises your day and anticipates what is pending, from Claude's Pro plan.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Claude Duet",
+        "Anthropic Claude Duet explained",
+        "Claude Duet vs ChatGPT Dots vs Meta Muse",
+        "proactive AI agent",
+        "Claude Duet price availability",
+      ],
+      keywordsEs: [
+        "Claude Duet qué es",
+        "Claude Duet Anthropic",
+        "Claude Duet México",
+        "Claude Duet vs ChatGPT Dots",
+        "agente proactivo de IA",
+        "Claude Duet precio",
+      ],
+    },
+  },
+  {
+    slug: "meta-muse-que-es",
+    cover: true,
+    title: "Meta Muse: Meta's AI Agent, What It Does, What It Costs and Its Controversies",
+    titleEs: "Meta Muse: el agente de IA de Meta, qué hace, cuánto cuesta y sus polémicas",
+    category: "AI & Technology",
+    categoryEs: "IA y Tecnología",
+    excerpt:
+      "Muse is Meta's personal agent: it buys, returns, negotiates bills and books appointments for you, with a free tier and plans of 20 and 100 dollars. What it can do, what Meta promises on privacy, why Amazon blocked it, the calls that were made by humans, and what it means for businesses in Mexico when it arrives.",
+    excerptEs:
+      "Muse es el agente personal de Meta: compra, devuelve, negocia recibos y aparta citas por ti, con plan gratuito y planes de 20 y 100 dólares. Qué puede hacer, qué promete Meta en privacidad, por qué Amazon lo bloqueó, las llamadas que hacían humanos y qué significa para los negocios en México cuando llegue.",
+    readingTime: 11,
+    date: "2026-10-29",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Of the three agents launched between September and October, Muse is the one most likely to end up in the hands of ordinary people, because it comes from the company that already has WhatsApp, Instagram and Facebook on almost every phone. Meta presents it as a personal agent that does things instead of answering questions: it cancels the subscription you forgot, negotiates your internet bill, returns a product or plans a dinner and sends the invitations. It also arrived with two controversies in its first month. Here is what Muse is, what it costs, what is known about its privacy and why it matters for businesses even before it reaches Mexico.",
+    ledeEs:
+      "De los tres agentes que se lanzaron entre septiembre y octubre, Muse es el que más probablemente termine en manos de gente común, porque viene de la empresa que ya tiene WhatsApp, Instagram y Facebook en casi todos los celulares. Meta lo presenta como un agente personal que hace cosas en vez de contestar preguntas: cancela la suscripción que olvidaste, negocia tu recibo de internet, devuelve un producto o planea una cena y manda las invitaciones. También llegó con dos polémicas en su primer mes. Esto es qué es Muse, cuánto cuesta, qué se sabe de su privacidad y por qué importa para los negocios incluso antes de que llegue a México.",
+    sections: [
+      {
+        id: "que-es-muse",
+        heading: "What Muse is",
+        headingEs: "Qué es Muse",
+        body: [
+          "Meta launched Muse on 8 September 2026 in the United States, and some reports include Canada, as an app for iOS and Android and on the web at muse.ai, and it can also be used directly from WhatsApp. Each person's agent runs on its own [[virtual machine|maquina-virtual]] in the cloud, which Meta calls Muse Secure VM, with a browser you can watch while it works. It launched powered by Muse Spark, and in October Meta presented the Muse Wonder models, which will start powering it for paying subscribers.",
+          "You can customise its name, avatar and way of speaking. On 23 September Meta added more: a Realtime Avatar for video conversations, its own email address for the agent, control of Mac apps, use with smart glasses and Muse Charm, a keychain-sized device to talk to it without a phone.",
+        ],
+        bodyEs: [
+          "Meta lanzó Muse el 8 de septiembre de 2026 en Estados Unidos, y algunos reportes incluyen también Canadá, como app para iOS y Android y en la web en muse.ai, y también se puede usar directo desde WhatsApp. El agente de cada persona corre en su propia [[máquina virtual|maquina-virtual]] en la nube, que Meta llama Muse Secure VM, con un navegador que puedes ver mientras trabaja. Arrancó impulsado por Muse Spark, y en octubre Meta presentó los modelos Muse Wonder, que empezarán a impulsarlo para los suscriptores de pago.",
+          "Puedes personalizar su nombre, su avatar y su forma de hablar. El 23 de septiembre Meta sumó más: un avatar en tiempo real para conversaciones en video, una dirección de correo propia para el agente, control de apps en Mac, uso con lentes inteligentes y Muse Charm, un dispositivo del tamaño de un llavero para hablarle sin celular.",
+        ],
+      },
+      {
+        id: "que-puede-hacer",
+        heading: "What it can do",
+        headingEs: "Qué puede hacer",
+        body: [
+          "Meta's examples are domestic and concrete: sending emails, booking trips, filling in forms, checking out in online stores, negotiating on your behalf, selling a car for more, lowering a bill or turning a recipe reel you saved on Instagram into a shopping list. Users reported it cancelling forgotten subscriptions, negotiating a lower internet bill, handling returns, getting through automated customer service menus and resolving parking tickets.",
+          "To buy, it uses Link by Stripe, with Shop Pay announced as coming, and 1Password support to use logins you already have. Among the commerce partners Meta announced are Shopify, Best Buy, Gap, Sephora, Walmart, Wayfair, Expedia and Instacart. **Muse does not want to be the place where you ask; it wants to be the one who goes and does it for you.**",
+        ],
+        bodyEs: [
+          "Los ejemplos de Meta son domésticos y concretos: mandar correos, reservar viajes, llenar formularios, pagar en tiendas en línea, negociar en tu nombre, vender un coche más caro, bajar un recibo o convertir un reel de receta que guardaste en Instagram en una lista del súper. Usuarios reportaron que canceló suscripciones olvidadas, negoció un recibo de internet más bajo, gestionó devoluciones, atravesó menús automáticos de atención a clientes y resolvió multas de estacionamiento.",
+          "Para comprar usa Link de Stripe, con Shop Pay anunciado como próximo, y soporte de 1Password para usar los accesos que ya tienes. Entre los socios comerciales que anunció Meta están Shopify, Best Buy, Gap, Sephora, Walmart, Wayfair, Expedia e Instacart. **Muse no quiere ser el lugar donde preguntas; quiere ser quien va y lo hace por ti.**",
+        ],
+      },
+      {
+        id: "cuanto-cuesta",
+        heading: "What it costs and how Meta plans to make money",
+        headingEs: "Cuánto cuesta y cómo piensa ganar Meta",
+        body: [
+          "Muse has a free tier that, according to Meta, covers most needs, and subscriptions of 20 and 100 dollars a month for those who want to do more. Meta said there would be no advertising inside Muse and that it does not share conversations or the data in each person's virtual machine with its ad systems; Mark Zuckerberg explained that the business is in charging a small fee on the transactions the agent completes.",
+          "The start was strong: according to OCU, in its first twelve days Muse recorded more downloads on iOS and Android than ChatGPT at its launch in late 2022, and according to ABC News, Meta's shares rose almost 25% in the weeks following its release.",
+        ],
+        bodyEs: [
+          "Muse tiene un plan gratuito que, según Meta, cubre la mayoría de las necesidades, y suscripciones de 20 y 100 dólares al mes para quien quiera hacer más. Meta dijo que no habrá publicidad dentro de Muse y que no comparte las conversaciones ni los datos de la máquina virtual de cada persona con sus sistemas de anuncios; Mark Zuckerberg explicó que el negocio está en cobrar una comisión pequeña por las transacciones que el agente concreta.",
+          "El arranque fue fuerte: según la OCU, en sus primeros doce días Muse registró más descargas en iOS y Android que ChatGPT en su lanzamiento a finales de 2022, y según ABC News, las acciones de Meta subieron casi 25% en las semanas siguientes a su lanzamiento.",
+        ],
+        chart: {
+          title: "Meta Muse plans (monthly price, USD)",
+          titleEs: "Planes de Meta Muse (precio mensual, dólares)",
+          source: "Meta, via Wikipedia's Muse article, October 2026. The free tier covers most needs, according to Meta.",
+          sourceEs: "Meta, vía el artículo de Wikipedia sobre Muse, octubre de 2026. Según Meta, el plan gratuito cubre la mayoría de las necesidades.",
+          bars: [
+            { label: "Top subscription", labelEs: "Suscripción mayor", value: 100, display: "$100", displayEs: "$100" },
+            { label: "Basic subscription", labelEs: "Suscripción básica", value: 20, display: "$20", displayEs: "$20" },
+            { label: "Free tier", labelEs: "Plan gratuito", value: 0, display: "$0", displayEs: "$0" },
+          ],
+        },
+      },
+      {
+        id: "privacidad",
+        heading: "Privacy: what Meta promises",
+        headingEs: "Privacidad: lo que promete Meta",
+        body: [
+          "Meta says Muse cannot see your passwords or payment methods, which are kept in a secure store; that you choose which apps it connects to and with what level of access, for example reading email but not sending it; that it asks before sensitive actions such as sending an email or buying; that a second agent on the same machine, called Sentinel, must approve anything Muse sends to the internet; and that you can see a complete record of past and planned actions and tell it to forget specific things.",
+          "Two details are worth reading carefully. Your interactions are used to train Meta's models by default, and you have to switch that off yourself. And the version in which not even Meta can access your agent, encrypted with a key only you hold, was announced for later this year, not for launch.",
+        ],
+        bodyEs: [
+          "Meta dice que Muse no puede ver tus contraseñas ni tus métodos de pago, que se guardan en un almacén seguro; que tú eliges qué apps conecta y con qué nivel de acceso, por ejemplo leer el correo pero no enviarlo; que pregunta antes de acciones delicadas como mandar un correo o comprar; que un segundo agente en la misma máquina, llamado Sentinel, debe aprobar todo lo que Muse manda a internet, y que puedes ver un registro completo de acciones pasadas y planeadas y pedirle que olvide cosas específicas.",
+          "Dos detalles merecen lectura cuidadosa. Tus interacciones se usan para entrenar los modelos de Meta por defecto, y tienes que desactivarlo tú. Y la versión en la que ni Meta puede acceder a tu agente, cifrada con una llave que solo tú tienes, se anunció para más adelante este año, no para el lanzamiento.",
+        ],
+      },
+      {
+        id: "las-polemicas",
+        heading: "The controversies of its first month",
+        headingEs: "Las polémicas de su primer mes",
+        body: [
+          "On 21 September, Amazon blocked Muse from its store, saying that continued access by an unauthorised AI agent violated its conditions of use, that Muse did not identify itself and that it appeared to capture customers' credentials; Meta maintains that Muse has no visibility into passwords or payment methods. Forbes linked the decision to Amazon's sponsored-product advertising business, of around 68 billion dollars a year, which depends on a human seeing the ads. Shopify, by contrast, let Muse operate on its stores.",
+          "The next day, 404 Media reported, based on an internal Meta notice, that some of the calls Muse made to businesses during testing were completed by trained human agents in call centres. Meta called it standard internal testing and said it would only release the feature with the proper disclosures. Security experts also warned about the level of access an agent like this needs over a person's digital life, and one of them advised not to install it.",
+        ],
+        bodyEs: [
+          "El 21 de septiembre, Amazon bloqueó a Muse de su tienda: dijo que el acceso continuo de un agente de IA no autorizado violaba sus condiciones de uso, que Muse no se identificaba y que parecía capturar credenciales de los clientes; Meta sostiene que Muse no tiene visibilidad de contraseñas ni métodos de pago. Forbes relacionó la decisión con el negocio de publicidad de productos patrocinados de Amazon, de unos 68 mil millones de dólares al año, que depende de que un humano vea los anuncios. Shopify, en cambio, dejó operar a Muse en sus tiendas.",
+          "Al día siguiente, 404 Media reportó, con base en un aviso interno de Meta, que algunas de las llamadas que Muse hacía a negocios durante las pruebas las completaban agentes humanos capacitados en centros de llamadas. Meta lo calificó como pruebas internas normales y dijo que solo lanzaría la función con los avisos adecuados. Expertos en seguridad también advirtieron sobre el nivel de acceso que un agente así necesita a la vida digital de una persona, y uno de ellos recomendó no instalarlo.",
+        ],
+      },
+      {
+        id: "llega-a-mexico",
+        heading: "Is it coming to Mexico?",
+        headingEs: "¿Llega a México?",
+        body: [
+          "As of this writing, Muse is available in the United States, and according to some reports in Canada, and Meta has not announced a date for Mexico. Do not confuse it with Meta AI, the assistant that already answers questions inside WhatsApp, Instagram and Facebook in Mexico: Meta AI talks; Muse acts. Given that WhatsApp is the main channel between businesses and customers in Mexico, it is reasonable to expect that when Muse arrives, many of its tasks will pass through that app.",
+          "That is the part that matters for a business. **When your customers have an agent that compares, books and buys for them, your business has to be easy for an agent to understand.** Clear prices online, booking or ordering without phone calls, schedules and services that are consistent everywhere, and a WhatsApp that responds with useful information will weigh more than a pretty post.",
+        ],
+        bodyEs: [
+          "Al momento de escribir esto, Muse está disponible en Estados Unidos, y según algunos reportes en Canadá, y Meta no ha anunciado fecha para México. No lo confundas con Meta AI, el asistente que ya contesta preguntas dentro de WhatsApp, Instagram y Facebook en México: Meta AI platica; Muse actúa. Considerando que WhatsApp es el canal principal entre negocios y clientes en México, es razonable esperar que cuando Muse llegue, muchas de sus tareas pasen por esa app.",
+          "Esa es la parte que le importa a un negocio. **Cuando tus clientes tengan un agente que compare, reserve y compre por ellos, tu negocio tiene que ser fácil de entender para un agente.** Precios claros en línea, reservas o pedidos sin necesidad de llamar, horarios y servicios consistentes en todos lados, y un WhatsApp que conteste con información útil van a pesar más que una publicación bonita.",
+        ],
+      },
+      {
+        id: "nuestra-lectura",
+        heading: "Our reading",
+        headingEs: "Nuestra lectura",
+        body: [
+          "Muse is the most ambitious of the three agents in reach and the one with the most to prove in trust. It can reach billions of people through apps they already use, and its free tier lowers the barrier to zero; at the same time, it asks for very deep access to people's digital lives from a company whose history with personal data makes many people hesitate. The conflict with Amazon also shows something bigger: stores and platforms are going to fight over whether agents can enter, because whoever controls the agent controls the customer.",
+          "For a business, the conclusion is practical, not philosophical: prepare your information so that a person or an agent can find, understand and buy from you without friction. We explain how AI tools decide whom to recommend in [how ChatGPT recommends your business](/blog/como-recomienda-chatgpt-a-tu-negocio), and how the three agents compare in [Claude Duet](/blog/claude-duet-que-es) and [ChatGPT Dots](/blog/chatgpt-dots-que-son). If you want to know what to fix first, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes.",
+        ],
+        bodyEs: [
+          "Muse es el más ambicioso de los tres agentes en alcance y el que más tiene que demostrar en confianza. Puede llegar a miles de millones de personas a través de apps que ya usan, y su plan gratuito baja la barrera a cero; al mismo tiempo, pide un acceso muy profundo a la vida digital de las personas, de parte de una empresa cuyo historial con datos personales hace dudar a mucha gente. El conflicto con Amazon también muestra algo más grande: tiendas y plataformas van a pelear por si los agentes pueden entrar, porque quien controla al agente controla al cliente.",
+          "Para un negocio, la conclusión es práctica, no filosófica: prepara tu información para que una persona o un agente te pueda encontrar, entender y comprarte sin fricción. Explicamos cómo deciden las herramientas de IA a quién recomendar en [cómo recomienda ChatGPT a tu negocio](/blog/como-recomienda-chatgpt-a-tu-negocio), y cómo se comparan los tres agentes en [Claude Duet](/blog/claude-duet-que-es) y [ChatGPT Dots](/blog/chatgpt-dots-que-son). Si quieres saber qué corregir primero, nuestro [diagnóstico gratuito](/recursos/diagnostico) te lo dice en unos minutos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué es Meta Muse?",
+        qEn: "What is Meta Muse?",
+        a: "El agente personal de IA de Meta, lanzado el 8 de septiembre de 2026. Corre en su propia máquina virtual en la nube y hace tareas por ti, como comprar, devolver productos, negociar recibos, mandar correos o reservar viajes, pidiendo permiso antes de acciones delicadas.",
+        aEn: "Meta's personal AI agent, launched on 8 September 2026. It runs on its own virtual machine in the cloud and does tasks for you, such as buying, returning products, negotiating bills, sending emails or booking trips, asking permission before sensitive actions.",
+      },
+      {
+        q: "¿Cuánto cuesta Meta Muse?",
+        qEn: "How much does Meta Muse cost?",
+        a: "Tiene un plan gratuito que, según Meta, cubre la mayoría de las necesidades, y suscripciones de 20 y 100 dólares al mes. Meta dijo que no habrá publicidad y que ganará con una comisión pequeña por transacción.",
+        aEn: "It has a free tier that, according to Meta, covers most needs, and subscriptions of 20 and 100 dollars a month. Meta said there will be no advertising and that it will earn a small fee per transaction.",
+      },
+      {
+        q: "¿Meta Muse está disponible en México?",
+        qEn: "Is Meta Muse available in Mexico?",
+        a: "Todavía no. Se lanzó en Estados Unidos, algunos reportes incluyen Canadá, y Meta no ha anunciado fecha para México. Meta AI, que ya está en WhatsApp en México, es otro producto: contesta preguntas, pero no actúa por ti.",
+        aEn: "Not yet. It launched in the United States, some reports include Canada, and Meta has not announced a date for Mexico. Meta AI, which is already in WhatsApp in Mexico, is a different product: it answers questions but does not act for you.",
+      },
+      {
+        q: "¿Por qué Amazon bloqueó a Meta Muse?",
+        qEn: "Why did Amazon block Meta Muse?",
+        a: "Amazon dijo que el acceso de un agente de IA no autorizado violaba sus condiciones de uso, que Muse no se identificaba y que parecía capturar credenciales; Meta lo niega. Forbes lo relacionó con el negocio de anuncios patrocinados de Amazon, de unos 68 mil millones de dólares al año.",
+        aEn: "Amazon said access by an unauthorised AI agent violated its conditions of use, that Muse did not identify itself and that it appeared to capture credentials; Meta denies it. Forbes linked it to Amazon's sponsored ads business, worth about 68 billion dollars a year.",
+      },
+      {
+        q: "¿Es seguro usar Meta Muse?",
+        qEn: "Is Meta Muse safe to use?",
+        a: "Meta promete que no ve contraseñas ni métodos de pago, que pregunta antes de acciones delicadas y que un segundo agente revisa lo que sale a internet. Pero usa tus interacciones para entrenar por defecto y expertos en seguridad advirtieron sobre el nivel de acceso que pide. Conecta solo lo indispensable y revisa sus ajustes.",
+        aEn: "Meta promises it does not see passwords or payment methods, that it asks before sensitive actions and that a second agent reviews what goes out to the internet. But it uses your interactions for training by default and security experts warned about the level of access it requires. Connect only what is essential and review its settings.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Meta Muse",
+        "Meta Muse AI agent explained",
+        "Meta Muse price",
+        "Amazon blocks Meta Muse",
+        "Meta Muse Mexico",
+      ],
+      keywordsEs: [
+        "Meta Muse qué es",
+        "Muse de Meta agente de IA",
+        "Meta Muse precio",
+        "Amazon bloquea Meta Muse",
+        "Meta Muse México",
+        "Muse WhatsApp",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

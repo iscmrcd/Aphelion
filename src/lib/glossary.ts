@@ -421,4 +421,10 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Una inteligencia artificial que no solo contesta, sino que actúa: entiende lo que alguien pide y ejecuta pasos con tus herramientas, como apartar una cita en tu agenda o actualizar tu CRM, dentro de los límites que le pones.",
     defEn: "An artificial intelligence that does not only answer but acts: it understands what someone asks and carries out steps with your tools, such as booking an appointment in your calendar or updating your CRM, within the limits you set.",
   },
+  "maquina-virtual": {
+    term: "Máquina virtual",
+    termEn: "Virtual machine",
+    def: "Una computadora que existe en la nube en vez de en tu escritorio. Los agentes de IA usan una propia para navegar, abrir apps y seguir trabajando aunque tu celular o tu laptop estén apagados.",
+    defEn: "A computer that exists in the cloud instead of on your desk. AI agents use one of their own to browse, open apps and keep working even when your phone or laptop is off.",
+  },
 };
