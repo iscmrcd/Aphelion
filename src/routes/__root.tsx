@@ -104,8 +104,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "icon", href: "/favicon.ico", sizes: "32x32 48x48" },
+      { rel: "icon", type: "image/png", href: "/favicon-256.png", sizes: "256x256" },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-      { rel: "apple-touch-icon", href: "/favicon.svg" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     // Meta Pixel — production only, so dev/local and Lovable preview traffic
     // never lands in the Pixel's data.
