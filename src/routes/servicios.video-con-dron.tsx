@@ -14,6 +14,10 @@ export const Route = createFileRoute("/servicios/video-con-dron")({
     buildHead({
       path: "/servicios/video-con-dron",
       lang: loaderData?.lang ?? "en",
+      // Share preview uses the page's own drone banner instead of the generic logo card.
+      image: `${SITE_URL}/images/og/video-con-dron-og.jpg`,
+      imageWidth: 1200,
+      imageHeight: 630,
       en: {
         title: "Drone Video in Ensenada | Aphelion",
         description:
