@@ -4,6 +4,7 @@ import { ArrowRight, Plus } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
 import { BlogBarChart } from "@/components/blog/BlogBarChart";
+import { BlogDiagramView } from "@/components/blog/BlogDiagram";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD } from "@/lib/seo";
 import {
@@ -197,6 +198,7 @@ function BlogArticlePage() {
                   ))}
                 </div>
                 {s.chart && <BlogBarChart chart={s.chart} lang={lang} />}
+                {s.diagram && <BlogDiagramView diagram={s.diagram} lang={lang} />}
               </section>
             ))}
           </div>

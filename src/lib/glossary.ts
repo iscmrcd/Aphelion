@@ -427,4 +427,16 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     def: "Una computadora que existe en la nube en vez de en tu escritorio. Los agentes de IA usan una propia para navegar, abrir apps y seguir trabajando aunque tu celular o tu laptop estén apagados.",
     defEn: "A computer that exists in the cloud instead of on your desk. AI agents use one of their own to browse, open apps and keep working even when your phone or laptop is off.",
   },
+  ctr: {
+    term: "CTR",
+    termEn: "CTR",
+    def: "El porcentaje de personas que hacen clic después de ver tu resultado o tu anuncio. Si 100 personas lo ven y 4 hacen clic, el CTR es de 4%.",
+    defEn: "The percentage of people who click after seeing your result or your ad. If 100 people see it and 4 click, the CTR is 4%.",
+  },
+  lut: {
+    term: "LUT",
+    termEn: "LUT",
+    def: "Un archivo que cambia los colores de un video siguiendo una receta. Los técnicos convierten el video en LOG a color normal; los creativos le dan un estilo, como cálido o cinematográfico.",
+    defEn: "A file that changes a video's colours following a recipe. Technical LUTs convert LOG video into normal colour; creative ones give it a look, such as warm or cinematic.",
+  },
 };

@@ -13,6 +13,24 @@ export type BlogChart = {
   bars: { label: string; labelEs: string; value: number; display: string; displayEs: string }[];
 };
 
+/**
+ * Schematic shown under a section's text: a funnel, a numbered flow or a
+ * comparison table. Rendered as HTML (not an image) so it is bilingual,
+ * responsive, readable by search engines and sharp at any size.
+ */
+export type BlogDiagram = {
+  kind: "funnel" | "flow" | "table";
+  title: string;
+  titleEs: string;
+  note?: string;
+  noteEs?: string;
+  /** funnel and flow */
+  steps?: { label: string; labelEs: string; detail: string; detailEs: string }[];
+  /** table: the first column holds each row's label */
+  columns?: { label: string; labelEs: string }[];
+  rows?: { label: string; labelEs: string; cells: { text: string; textEs: string }[] }[];
+};
+
 export type BlogSection = {
   id: string;
   heading: string;
@@ -20,6 +38,7 @@ export type BlogSection = {
   body: string[];
   bodyEs: string[];
   chart?: BlogChart;
+  diagram?: BlogDiagram;
 };
 
 export type BlogFaqItem = {
@@ -15141,6 +15160,926 @@ export const BLOG_POSTS: BlogPost[] = [
         "Amazon bloquea Meta Muse",
         "Meta Muse México",
         "Muse WhatsApp",
+      ],
+    },
+  },
+  {
+    slug: "seo-avanzado-herramientas-y-auditoria",
+    cover: true,
+    title: "SEO Like a Pro: The Tools, a 60-Minute Audit and How to Tell if It Is Working",
+    titleEs: "SEO como profesional: las herramientas, una auditoría de 60 minutos y cómo saber si funciona",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "If you already did the basics and your website still does not appear, this is the next level: how to read Search Console like a professional, what Core Web Vitals mean, how to crawl your site like Google, how to research keywords without paying 130 dollars a month and a step-by-step audit you can do today.",
+    excerptEs:
+      "Si ya hiciste lo básico y tu página sigue sin aparecer, este es el siguiente nivel: cómo leer Search Console como profesional, qué significan las Core Web Vitals, cómo rastrear tu sitio como lo hace Google, cómo investigar palabras clave sin pagar 130 dólares al mes y una auditoría paso a paso que puedes hacer hoy.",
+    readingTime: 14,
+    date: "2026-11-04",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most people who do their own SEO get stuck in the same place: they installed a plugin, wrote a few articles, filled in the meta descriptions and nothing moved. The problem is rarely effort; it is that they are working blind. Professionals do not guess what Google thinks of a website, they look at it: which searches show it, on which pages it loses clicks, what slows it down and what Google cannot even find. Everything in this guide can be done with free tools or with free versions of paid ones. It is the same method we use at Aphelion before touching a single word on a client's site.",
+    ledeEs:
+      "Casi todos los que hacen su propio SEO se atoran en el mismo lugar: instalaron un plugin, escribieron unos artículos, llenaron las metadescripciones y nada se movió. El problema casi nunca es el esfuerzo; es que trabajan a ciegas. Los profesionales no adivinan qué piensa Google de un sitio, lo revisan: en qué búsquedas aparece, en qué páginas pierde clics, qué lo hace lento y qué ni siquiera encuentra Google. Todo lo de esta guía se puede hacer con herramientas gratuitas o con las versiones gratis de las de pago. Es el mismo método que usamos en Aphelion antes de tocar una sola palabra del sitio de un cliente.",
+    sections: [
+      {
+        id: "por-que-google",
+        heading: "Why everything starts with Google's own data",
+        headingEs: "Por qué todo empieza con los datos de Google",
+        body: [
+          "In Mexico, Google handled **86.55% of searches** in October 2026, according to StatCounter, followed by Bing with 10.66%. That is why the most valuable SEO tool is not a paid subscription but the free data Google gives you about your own site: Search Console. Paid tools estimate; Search Console reports what actually happened.",
+          "Bing is not irrelevant, especially because its index feeds other search tools, and it has its own free Bing Webmaster Tools. But if you only have time to master one thing, master Google's.",
+        ],
+        bodyEs: [
+          "En México, Google concentró **86.55% de las búsquedas** en octubre de 2026, según StatCounter, seguido de Bing con 10.66%. Por eso la herramienta de SEO más valiosa no es una suscripción de pago sino los datos gratuitos que Google te da de tu propio sitio: Search Console. Las herramientas de pago estiman; Search Console te dice lo que de verdad pasó.",
+          "Bing no es irrelevante, sobre todo porque su índice alimenta otras herramientas de búsqueda, y tiene su propio Bing Webmaster Tools gratuito. Pero si solo tienes tiempo de dominar una cosa, domina lo de Google.",
+        ],
+        chart: {
+          title: "Search engine market share in Mexico, October 2026",
+          titleEs: "Participación de buscadores en México, octubre de 2026",
+          source: "StatCounter Global Stats, all platforms.",
+          sourceEs: "StatCounter Global Stats, todas las plataformas.",
+          bars: [
+            { label: "Google", labelEs: "Google", value: 86.55, display: "86.55%", displayEs: "86.55%" },
+            { label: "Bing", labelEs: "Bing", value: 10.66, display: "10.66%", displayEs: "10.66%" },
+            { label: "Yahoo!", labelEs: "Yahoo!", value: 2.15, display: "2.15%", displayEs: "2.15%" },
+            { label: "Others", labelEs: "Otros", value: 0.6, display: "0.60%", displayEs: "0.60%" },
+          ],
+        },
+      },
+      {
+        id: "search-console-como-profesional",
+        heading: "Search Console like a professional",
+        headingEs: "Search Console como profesional",
+        body: [
+          "If you have not set it up, do it first: verify your domain in [[Search Console|search-console]] and wait a few days for data to accumulate. The Performance report shows four numbers per search and per page: clicks, impressions, [[CTR|ctr]] and average position. Beginners look at total clicks. Professionals look at the combinations, because each one points to a different fix.",
+          "Our weekly routine: set the date range to the last 28 days compared with the previous 28, sort queries by impressions, and look for three groups. Searches with many impressions and low CTR, where the title is not convincing. Searches in positions 8 to 20, which are one push away from the first page. And pages whose clicks fell while their position stayed the same, which usually means fewer people searched, not that you did something wrong. **The pages in positions 8 to 20 are where most of the quick wins are hiding.**",
+        ],
+        bodyEs: [
+          "Si no lo has configurado, hazlo primero: verifica tu dominio en [[Search Console|search-console]] y espera unos días a que se junten datos. El informe de Rendimiento muestra cuatro números por búsqueda y por página: clics, impresiones, [[CTR|ctr]] y posición media. El principiante ve el total de clics. El profesional ve las combinaciones, porque cada una apunta a un arreglo distinto.",
+          "Nuestra rutina semanal: pon el rango en los últimos 28 días comparado con los 28 anteriores, ordena las búsquedas por impresiones y busca tres grupos. Búsquedas con muchas impresiones y CTR bajo, donde el título no convence. Búsquedas en posiciones 8 a 20, que están a un empujón de la primera página. Y páginas cuyos clics bajaron mientras su posición se mantuvo, lo que casi siempre significa que menos gente buscó, no que hiciste algo mal. **Las páginas en posiciones 8 a 20 son donde se esconden la mayoría de las ganancias rápidas.**",
+        ],
+        diagram: {
+          kind: "table",
+          title: "How to read Search Console: what each combination means",
+          titleEs: "Cómo leer Search Console: qué significa cada combinación",
+          note: "Aphelion's working guide. Compare 28-day periods and look at trends, not single days.",
+          noteEs: "Guía de trabajo de Aphelion. Compara periodos de 28 días y fíjate en tendencias, no en días sueltos.",
+          columns: [
+            { label: "What you see", labelEs: "Lo que ves" },
+            { label: "What it usually means", labelEs: "Lo que suele significar" },
+            { label: "What to do", labelEs: "Qué hacer" },
+          ],
+          rows: [
+            {
+              label: "Many impressions, low CTR",
+              labelEs: "Muchas impresiones, CTR bajo",
+              cells: [
+                { text: "You appear, but your result does not convince", textEs: "Apareces, pero tu resultado no convence" },
+                { text: "Rewrite the title and description around what the person searched", textEs: "Reescribe título y descripción alrededor de lo que la persona buscó" },
+              ],
+            },
+            {
+              label: "Position 8 to 20",
+              labelEs: "Posición 8 a 20",
+              cells: [
+                { text: "Google sees you as relevant, but not the best", textEs: "Google te considera relevante, pero no el mejor" },
+                { text: "Strengthen the content, answer more questions and add internal links", textEs: "Refuerza el contenido, contesta más dudas y agrega enlaces internos" },
+              ],
+            },
+            {
+              label: "Clicks fall, position stable",
+              labelEs: "Clics bajan, posición estable",
+              cells: [
+                { text: "Fewer people searched: season or trend", textEs: "Menos gente buscó: temporada o tendencia" },
+                { text: "Check Google Trends before changing anything", textEs: "Revisa Google Trends antes de cambiar algo" },
+              ],
+            },
+            {
+              label: "Position falls on several pages",
+              labelEs: "La posición cae en varias páginas",
+              cells: [
+                { text: "A technical problem, a competitor or an algorithm update", textEs: "Un problema técnico, un competidor o una actualización del algoritmo" },
+                { text: "Check indexing, recent site changes and who now ranks above you", textEs: "Revisa indexación, cambios recientes en tu sitio y quién está ahora arriba" },
+              ],
+            },
+            {
+              label: "Important page with no impressions",
+              labelEs: "Página importante sin impresiones",
+              cells: [
+                { text: "Google has not indexed it or does not understand what it is for", textEs: "Google no la ha indexado o no entiende para qué es" },
+                { text: "Inspect the URL in Search Console and link to it from your main pages", textEs: "Inspecciona la URL en Search Console y enlázala desde tus páginas principales" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "indexacion",
+        heading: "First check that Google can see you",
+        headingEs: "Primero revisa que Google te pueda ver",
+        body: [
+          "The Pages report in Search Console tells you which pages are indexed and why the rest are not. The most common reasons are a noindex tag left by mistake, pages blocked in robots.txt, duplicates without a clear canonical and pages Google found but decided not to include. Inspect your most important URLs one by one and request indexing when you publish or change something relevant.",
+          "Send an XML sitemap with the pages you want indexed, and only those: a sitemap full of redirects or thin pages sends mixed signals. If a key page does not appear after weeks, the problem is almost never the keyword; it is that Google does not find it or does not consider it worth including.",
+        ],
+        bodyEs: [
+          "El informe de Páginas de Search Console te dice qué páginas están indexadas y por qué las demás no. Las razones más comunes son una etiqueta noindex que se quedó por error, páginas bloqueadas en robots.txt, duplicados sin una canónica clara y páginas que Google encontró pero decidió no incluir. Inspecciona una por una tus URLs más importantes y solicita la indexación cuando publiques o cambies algo relevante.",
+          "Manda un sitemap XML con las páginas que quieres indexadas, y solo esas: un sitemap lleno de redirecciones o páginas flacas manda señales confusas. Si una página clave no aparece después de semanas, el problema casi nunca es la palabra clave; es que Google no la encuentra o no la considera digna de incluir.",
+        ],
+      },
+      {
+        id: "core-web-vitals",
+        heading: "Speed and experience: Core Web Vitals without the jargon",
+        headingEs: "Velocidad y experiencia: las Core Web Vitals sin jerga",
+        body: [
+          "[[Core Web Vitals|core-web-vitals]] are three measures of how a page feels to a real person: how long the main content takes to appear, how quickly the page responds when you tap something and how much the layout jumps while it loads. Google evaluates them at the 75th percentile of visits, which means three out of four visits must meet the threshold for the page to pass.",
+          "Measure them in PageSpeed Insights and in the Core Web Vitals report in Search Console. Pay attention to the difference: the lab test simulates one visit, while the field data comes from real users over the last 28 days. **If field data and the lab test disagree, believe the field data**: that is what your customers lived through. The usual culprits on small business sites are heavy images, sliders, chat widgets and fonts loaded from several places. We go deeper in [website loading speed](/blog/velocidad-de-carga-pagina-web).",
+        ],
+        bodyEs: [
+          "Las [[Core Web Vitals|core-web-vitals]] son tres medidas de cómo se siente una página para una persona real: cuánto tarda en aparecer el contenido principal, qué tan rápido responde cuando tocas algo y cuánto brinca el diseño mientras carga. Google las evalúa en el percentil 75 de las visitas, es decir, tres de cada cuatro visitas tienen que cumplir el umbral para que la página apruebe.",
+          "Mídelas en PageSpeed Insights y en el informe de Core Web Vitals de Search Console. Fíjate en la diferencia: la prueba de laboratorio simula una visita, mientras que los datos de campo vienen de usuarios reales en los últimos 28 días. **Si los datos de campo y la prueba de laboratorio no coinciden, créele a los de campo**: es lo que vivieron tus clientes. Los culpables de siempre en sitios de pymes son imágenes pesadas, sliders, widgets de chat y tipografías cargadas desde varios lados. Lo vemos a fondo en [velocidad de carga de una página web](/blog/velocidad-de-carga-pagina-web).",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Core Web Vitals: the three thresholds Google uses",
+          titleEs: "Core Web Vitals: los tres umbrales que usa Google",
+          note: "Evaluated at the 75th percentile of real visits. Thresholds as published in October 2026.",
+          noteEs: "Se evalúan en el percentil 75 de las visitas reales. Umbrales publicados a octubre de 2026.",
+          columns: [
+            { label: "Metric", labelEs: "Métrica" },
+            { label: "What it measures", labelEs: "Qué mide" },
+            { label: "Good", labelEs: "Bueno" },
+            { label: "Poor", labelEs: "Malo" },
+          ],
+          rows: [
+            {
+              label: "LCP",
+              labelEs: "LCP",
+              cells: [
+                { text: "How long the main content takes to appear", textEs: "Cuánto tarda en aparecer el contenido principal" },
+                { text: "Under 2.5 s", textEs: "Menos de 2.5 s" },
+                { text: "Over 4 s", textEs: "Más de 4 s" },
+              ],
+            },
+            {
+              label: "INP",
+              labelEs: "INP",
+              cells: [
+                { text: "How quickly the page reacts when you tap or type", textEs: "Qué tan rápido reacciona la página cuando tocas o escribes" },
+                { text: "Under 200 ms", textEs: "Menos de 200 ms" },
+                { text: "Over 500 ms", textEs: "Más de 500 ms" },
+              ],
+            },
+            {
+              label: "CLS",
+              labelEs: "CLS",
+              cells: [
+                { text: "How much the layout jumps while loading", textEs: "Cuánto brinca el diseño mientras carga" },
+                { text: "Under 0.1", textEs: "Menos de 0.1" },
+                { text: "Over 0.25", textEs: "Más de 0.25" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "rastrea-como-google",
+        heading: "Crawl your site the way Google does",
+        headingEs: "Rastrea tu sitio como lo hace Google",
+        body: [
+          "A crawler visits every page of your site following its links, like Google's robot, and gives you a list of everything it finds. Screaming Frog SEO Spider is the professional standard; its free version crawls up to 500 URLs, enough for most small business sites, and the paid licence costs 245 euros a year.",
+          "What to look for in the results: pages that return 404 errors, chains of redirects, duplicate or missing titles, pages without an H1 heading or with several, missing meta descriptions, very heavy images, pages marked noindex by mistake and orphan pages that no other page links to. Fix them in that order of importance: what breaks the visit first, what confuses Google second, the cosmetic last.",
+        ],
+        bodyEs: [
+          "Un rastreador recorre todas las páginas de tu sitio siguiendo sus enlaces, como el robot de Google, y te da una lista de todo lo que encuentra. Screaming Frog SEO Spider es el estándar profesional; su versión gratuita rastrea hasta 500 URLs, suficiente para la mayoría de los sitios de pymes, y la licencia de pago cuesta 245 euros al año.",
+          "Qué buscar en los resultados: páginas que devuelven error 404, cadenas de redirecciones, títulos duplicados o vacíos, páginas sin encabezado H1 o con varios, metadescripciones faltantes, imágenes muy pesadas, páginas marcadas como noindex por error y páginas huérfanas a las que ninguna otra página enlaza. Corrígelas en ese orden de importancia: primero lo que rompe la visita, después lo que confunde a Google y al final lo cosmético.",
+        ],
+      },
+      {
+        id: "palabras-clave-sin-pagar",
+        heading: "Keyword research without paying 130 dollars a month",
+        headingEs: "Investigación de palabras clave sin pagar 130 dólares al mes",
+        body: [
+          "Paid suites such as Ahrefs and Semrush are excellent, and expensive: their cheapest plans were around 129 and 139 dollars a month in 2026, while Moz started at 49. For a business doing its own SEO, a lot can be done for free first: the queries that already bring you impressions in Search Console, Google's autocomplete, the “People also ask” box, the related searches at the bottom of the page, Google Trends to compare terms and seasons, and the Keyword Planner inside Google Ads, which shows volume ranges.",
+          "More important than volume is search intent. The same topic can be searched to learn, to compare, to buy or to find something nearby, and each intent needs a different page. A guide does not rank for “buy” searches and a product page does not rank for “how to” searches. Classify every keyword before writing a word about it.",
+        ],
+        bodyEs: [
+          "Las suites de pago como Ahrefs y Semrush son excelentes, y caras: sus planes más baratos rondaban los 129 y 139 dólares al mes en 2026, mientras Moz arrancaba en 49. Para un negocio que hace su propio SEO, mucho se puede hacer gratis primero: las búsquedas que ya te dan impresiones en Search Console, el autocompletado de Google, el recuadro de “Otras preguntas de los usuarios”, las búsquedas relacionadas al final de la página, Google Trends para comparar términos y temporadas, y el Planificador de palabras clave dentro de Google Ads, que muestra rangos de volumen.",
+          "Más importante que el volumen es la intención de búsqueda. El mismo tema se puede buscar para aprender, para comparar, para comprar o para encontrar algo cerca, y cada intención necesita una página distinta. Una guía no posiciona en búsquedas de “comprar” y una página de producto no posiciona en búsquedas de “cómo hacer”. Clasifica cada [[palabra clave|palabra-clave]] antes de escribir una sola palabra sobre ella.",
+        ],
+        chart: {
+          title: "Cheapest monthly plan of the big SEO suites (USD)",
+          titleEs: "Plan mensual más barato de las grandes suites de SEO (dólares)",
+          source: "Published list prices compiled by Konabayev, checked August–October 2026. Search Console is free.",
+          sourceEs: "Precios de lista publicados, recopilados por Konabayev, revisados entre agosto y octubre de 2026. Search Console es gratis.",
+          bars: [
+            { label: "Semrush (SEO, monthly billing)", labelEs: "Semrush (SEO, pago mensual)", value: 139, display: "$139", displayEs: "$139" },
+            { label: "Ahrefs (Lite)", labelEs: "Ahrefs (Lite)", value: 129, display: "$129", displayEs: "$129" },
+            { label: "Moz Pro (Starter)", labelEs: "Moz Pro (Starter)", value: 49, display: "$49", displayEs: "$49" },
+            { label: "Google Search Console", labelEs: "Google Search Console", value: 0, display: "Free", displayEs: "Gratis" },
+          ],
+        },
+        diagram: {
+          kind: "table",
+          title: "The four search intents and the page each one needs",
+          titleEs: "Las cuatro intenciones de búsqueda y la página que necesita cada una",
+          columns: [
+            { label: "Intent", labelEs: "Intención" },
+            { label: "Example search", labelEs: "Ejemplo de búsqueda" },
+            { label: "Page that ranks", labelEs: "Página que posiciona" },
+          ],
+          rows: [
+            {
+              label: "Informational",
+              labelEs: "Informativa",
+              cells: [
+                { text: "how long does SEO take", textEs: "cuánto tarda el SEO" },
+                { text: "Guide or article that answers in depth", textEs: "Guía o artículo que responde a fondo" },
+              ],
+            },
+            {
+              label: "Commercial",
+              labelEs: "Comercial",
+              cells: [
+                { text: "agency or freelancer for marketing", textEs: "agencia o freelancer de marketing" },
+                { text: "Comparison with pros, cons and prices", textEs: "Comparativa con pros, contras y precios" },
+              ],
+            },
+            {
+              label: "Transactional",
+              labelEs: "Transaccional",
+              cells: [
+                { text: "website design quote", textEs: "cotizar página web" },
+                { text: "Service page with price range and form", textEs: "Página de servicio con rango de precio y formulario" },
+              ],
+            },
+            {
+              label: "Local",
+              labelEs: "Local",
+              cells: [
+                { text: "dentist in Ensenada", textEs: "dentista en Ensenada" },
+                { text: "Google Business Profile and a page per location", textEs: "Perfil de Google y una página por ubicación" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "auditoria-de-60-minutos",
+        heading: "The 60-minute audit",
+        headingEs: "La auditoría de 60 minutos",
+        body: [
+          "Set aside an hour and go through these steps in order. Do not fix anything yet: write down what you find, then prioritise. Fixing on the go is how people spend a whole afternoon on image names while a key page is still out of Google.",
+          "At the end you should have a short list of ten items at most, ordered by impact. That list is your SEO plan for the month. If you want more depth on each point, our [SEO guide](/blog/guia-seo) and [the most common SEO mistakes](/blog/errores-de-seo) cover them one by one.",
+        ],
+        bodyEs: [
+          "Aparta una hora y recorre estos pasos en orden. No corrijas nada todavía: anota lo que encuentres y después prioriza. Corregir sobre la marcha es como la gente se pasa una tarde entera renombrando imágenes mientras una página clave sigue fuera de Google.",
+          "Al final deberías tener una lista corta de diez puntos como máximo, ordenada por impacto. Esa lista es tu plan de SEO del mes. Si quieres más profundidad en cada punto, nuestra [guía de SEO](/blog/guia-seo) y [los errores de SEO más comunes](/blog/errores-de-seo) los cubren uno por uno.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "The 60-minute SEO audit, step by step",
+          titleEs: "La auditoría de SEO de 60 minutos, paso a paso",
+          note: "Aphelion's audit order. Write down findings first, prioritise after.",
+          noteEs: "Orden de auditoría de Aphelion. Primero anota, después prioriza.",
+          steps: [
+            { label: "Indexing (10 min)", labelEs: "Indexación (10 min)", detail: "Search Console Pages report and inspection of your five key URLs.", detailEs: "Informe de Páginas de Search Console e inspección de tus cinco URLs clave." },
+            { label: "Crawl (15 min)", labelEs: "Rastreo (15 min)", detail: "Screaming Frog: 404s, redirects, titles, H1, noindex, heavy images.", detailEs: "Screaming Frog: 404, redirecciones, títulos, H1, noindex, imágenes pesadas." },
+            { label: "Speed (10 min)", labelEs: "Velocidad (10 min)", detail: "PageSpeed Insights on your home and your two most visited pages.", detailEs: "PageSpeed Insights en tu inicio y tus dos páginas más visitadas." },
+            { label: "Opportunities (10 min)", labelEs: "Oportunidades (10 min)", detail: "Searches with low CTR and pages in positions 8 to 20.", detailEs: "Búsquedas con CTR bajo y páginas en posiciones 8 a 20." },
+            { label: "Intent (10 min)", labelEs: "Intención (10 min)", detail: "Does each key page match what people really search for?", detailEs: "¿Cada página clave coincide con lo que la gente de verdad busca?" },
+            { label: "Local (5 min)", labelEs: "Local (5 min)", detail: "Google Business Profile: category, hours, photos, recent reviews.", detailEs: "Perfil de Google: categoría, horarios, fotos, reseñas recientes." },
+          ],
+        },
+      },
+      {
+        id: "como-saber-si-funciona",
+        heading: "How to tell if your SEO is working",
+        headingEs: "Cómo saber si tu SEO está funcionando",
+        body: [
+          "Separate brand searches, the people who already know your name, from non-brand searches, the people who find you because of what you do. Growth in non-brand clicks is the clearest sign that SEO is working, because brand searches grow with your advertising and word of mouth, not with your content. Filter them in Search Console by excluding queries that contain your name.",
+          "Then connect it to the business: in [[Google Analytics|google-analytics]], measure how many contact forms, calls or WhatsApp clicks come from organic search. Ignore vanity metrics such as third-party authority scores; Google does not use them. And give it time: most changes take weeks or months to be reflected, as we explain in [how long SEO takes](/blog/cuanto-tarda-el-seo).",
+        ],
+        bodyEs: [
+          "Separa las búsquedas de marca, la gente que ya conoce tu nombre, de las búsquedas sin marca, la gente que te encuentra por lo que haces. Que crezcan los clics sin marca es la señal más clara de que el SEO funciona, porque las búsquedas de marca crecen con tu publicidad y tu boca a boca, no con tu contenido. Fíltralas en Search Console excluyendo las búsquedas que contienen tu nombre.",
+          "Después conéctalo con el negocio: en [[Google Analytics|google-analytics]], mide cuántos formularios, llamadas o clics a WhatsApp vienen de la búsqueda orgánica. Ignora las métricas de vanidad, como las calificaciones de autoridad de herramientas externas; Google no las usa. Y dale tiempo: la mayoría de los cambios tardan semanas o meses en reflejarse, como explicamos en [cuánto tarda el SEO](/blog/cuanto-tarda-el-seo).",
+        ],
+      },
+      {
+        id: "errores-del-seo-por-tu-cuenta",
+        heading: "The mistakes of doing SEO on your own",
+        headingEs: "Los errores de hacer SEO por tu cuenta",
+        body: [
+          "Publishing dozens of AI-generated articles nobody reviewed: Google's spam policies target content mass-produced to manipulate rankings, whoever or whatever writes it. Buying links. Changing URLs during a redesign without redirects, which throws away years of work in a day. Writing for the keyword instead of the person. And measuring every day, which turns normal fluctuations into panic.",
+          "The opposite mistake is also common: spending months tweaking details on a site with a structural problem, such as a slow platform or a page structure that does not match how people search. **Technical SEO is the foundation; content is the house. Building rooms on a cracked foundation does not work.**",
+        ],
+        bodyEs: [
+          "Publicar decenas de artículos hechos con IA que nadie revisó: las políticas de spam de Google van contra el contenido producido en masa para manipular posiciones, lo escriba quien lo escriba. Comprar enlaces. Cambiar URLs en un rediseño sin redirecciones, lo que tira años de trabajo en un día. Escribir para la palabra clave en vez de para la persona. Y medir todos los días, lo que convierte las variaciones normales en pánico.",
+          "El error contrario también es común: pasar meses afinando detalles en un sitio con un problema de fondo, como una plataforma lenta o una estructura de páginas que no coincide con cómo busca la gente. **El SEO técnico son los cimientos; el contenido es la casa. Construir cuartos sobre cimientos agrietados no funciona.**",
+        ],
+      },
+      {
+        id: "cuando-hacerlo-con-nosotros",
+        heading: "When it makes sense to do it with us",
+        headingEs: "Cuándo conviene hacerlo con nosotros",
+        body: [
+          "If you went through this guide, fixed the obvious and your traffic is still flat, the bottleneck is usually one of three things: the site's technical base, a content strategy that does not match the intent of your market, or competitors investing more than you. Those three are where a professional team pays for itself.",
+          "At Aphelion we start with the same audit you just read, but with paid tools, your real data and the experience of seeing dozens of sites. Our [free diagnostic](/recursos/diagnostico) tells you in a few minutes where you stand, and if you want to know what a serious project costs, read [how much SEO costs in Mexico](/blog/cuanto-cuesta-el-seo-en-mexico) or see our [marketing service](/servicios/marketing).",
+        ],
+        bodyEs: [
+          "Si recorriste esta guía, corregiste lo evidente y tu tráfico sigue plano, el cuello de botella suele ser una de tres cosas: la base técnica del sitio, una estrategia de contenido que no coincide con la intención de tu mercado, o competidores invirtiendo más que tú. Esas tres son donde un equipo profesional se paga solo.",
+          "En Aphelion empezamos con la misma auditoría que acabas de leer, pero con herramientas de pago, tus datos reales y la experiencia de haber visto decenas de sitios. Nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos dónde estás parado, y si quieres saber cuánto cuesta un proyecto serio, lee [cuánto cuesta el SEO en México](/blog/cuanto-cuesta-el-seo-en-mexico) o mira nuestro [servicio de marketing](/servicios/marketing).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué herramientas de SEO necesito para empezar?",
+        qEn: "What SEO tools do I need to start?",
+        a: "Google Search Console, PageSpeed Insights, Google Analytics y la versión gratuita de Screaming Frog, que rastrea hasta 500 URLs. Con eso puedes auditar la mayoría de los sitios de pymes sin pagar nada.",
+        aEn: "Google Search Console, PageSpeed Insights, Google Analytics and the free version of Screaming Frog, which crawls up to 500 URLs. With those you can audit most small business sites without paying anything.",
+      },
+      {
+        q: "¿Cómo leo Search Console?",
+        qEn: "How do I read Search Console?",
+        a: "Compara los últimos 28 días contra los 28 anteriores y busca tres grupos: búsquedas con muchas impresiones y CTR bajo (mejora el título), páginas en posiciones 8 a 20 (refuerza el contenido) y páginas cuyos clics bajaron con la misma posición (probablemente menos gente buscó).",
+        aEn: "Compare the last 28 days with the previous 28 and look for three groups: searches with many impressions and low CTR (improve the title), pages in positions 8 to 20 (strengthen the content) and pages whose clicks fell with the same position (probably fewer people searched).",
+      },
+      {
+        q: "¿Cuáles son los valores buenos de Core Web Vitals?",
+        qEn: "What are good Core Web Vitals values?",
+        a: "LCP menor a 2.5 segundos, INP menor a 200 milisegundos y CLS menor a 0.1, medidos en el percentil 75 de las visitas reales.",
+        aEn: "LCP under 2.5 seconds, INP under 200 milliseconds and CLS under 0.1, measured at the 75th percentile of real visits.",
+      },
+      {
+        q: "¿Necesito pagar Ahrefs o Semrush?",
+        qEn: "Do I need to pay for Ahrefs or Semrush?",
+        a: "Para empezar, no. Sus planes más baratos rondaban los 129 y 139 dólares al mes en 2026. Primero aprovecha Search Console, el autocompletado de Google, Google Trends y el Planificador de palabras clave; paga una suite cuando ya sepas qué vas a hacer con ella.",
+        aEn: "Not to start. Their cheapest plans were around 129 and 139 dollars a month in 2026. First make the most of Search Console, Google autocomplete, Google Trends and the Keyword Planner; pay for a suite once you know what you will do with it.",
+      },
+      {
+        q: "¿Cómo sé si mi SEO está funcionando?",
+        qEn: "How do I know if my SEO is working?",
+        a: "Fíjate en los clics de búsquedas sin tu marca en Search Console y en cuántos contactos vienen de la búsqueda orgánica en Google Analytics. Si ambos crecen en periodos de 28 días, va bien.",
+        aEn: "Look at clicks from searches without your brand in Search Console and at how many contacts come from organic search in Google Analytics. If both grow over 28-day periods, it is working.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "advanced SEO tools",
+        "how to do an SEO audit",
+        "how to read Google Search Console",
+        "Core Web Vitals thresholds",
+        "free keyword research tools",
+      ],
+      keywordsEs: [
+        "SEO avanzado herramientas",
+        "cómo hacer una auditoría SEO",
+        "cómo leer Google Search Console",
+        "Core Web Vitals valores",
+        "herramientas de palabras clave gratis",
+        "Screaming Frog gratis",
+      ],
+    },
+  },
+  {
+    slug: "meta-ads-avanzado-pruebas-ab-reels-embudo",
+    cover: true,
+    title: "Meta Ads Like a Pro: A/B Tests, Reels That Sell and a Funnel That Works",
+    titleEs: "Meta Ads como profesional: pruebas A/B, Reels que venden y un embudo que sí funciona",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Your ads worked for a week and then died, or you never knew which one was winning. The next level of Meta Ads: why campaigns fall apart, how to build a full funnel, how to run an A/B test that actually proves something, what Meta's own research says about Reels creatives and how to read results without fooling yourself.",
+    excerptEs:
+      "Tus anuncios funcionaron una semana y luego se murieron, o nunca supiste cuál estaba ganando. El siguiente nivel de Meta Ads: por qué se caen las campañas, cómo armar un embudo completo, cómo hacer una prueba A/B que de verdad pruebe algo, qué dice la propia investigación de Meta sobre los creativos para Reels y cómo leer resultados sin engañarte.",
+    readingTime: 14,
+    date: "2026-11-04",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Boosting a post is easy; making Meta Ads profitable month after month is not. People who run their own ads usually go through the same cycle: a campaign starts well, results drop after a few days, they change the audience, the budget and the image at the same time, and they never know what worked. Professionals do less and measure more. They structure the account as a funnel, change one thing at a time, give the system time to learn and judge everything by the cost of a customer, not by likes. Here is how, with the data Meta itself has published about what works in Reels.",
+    ledeEs:
+      "Promocionar una publicación es fácil; que Meta Ads sea rentable mes tras mes, no. Quien maneja sus propios anuncios suele pasar por el mismo ciclo: una campaña arranca bien, los resultados bajan a los pocos días, cambia el público, el presupuesto y la imagen al mismo tiempo, y nunca sabe qué funcionó. Los profesionales hacen menos y miden más. Estructuran la cuenta como un embudo, cambian una cosa a la vez, le dan tiempo al sistema para aprender y juzgan todo por el costo de un cliente, no por los likes. Así se hace, con los datos que la propia Meta ha publicado sobre lo que funciona en Reels.",
+    sections: [
+      {
+        id: "por-que-se-caen",
+        heading: "Why your ads work for a week and then stop",
+        headingEs: "Por qué tus anuncios funcionan una semana y luego dejan de hacerlo",
+        body: [
+          "Every ad set goes through a learning phase while Meta figures out who responds. The commonly cited reference is about 50 optimisation events, such as purchases or leads, within a week to exit it, although the number can vary by account. Significant edits to budget, audience, bidding or ads send the ad set back to learning. That is why changing things every day keeps a campaign permanently unstable.",
+          "The other enemy is creative fatigue: the same people see the same ad again and again, frequency rises, click-through falls and the cost per result goes up. **Most campaigns do not die because the audience ran out; they die because the creative did.** The solution is not to touch everything, but to have new creatives ready before the current ones wear out.",
+        ],
+        bodyEs: [
+          "Cada conjunto de anuncios pasa por una fase de aprendizaje mientras Meta descubre quién responde. La referencia que más se cita es de unos 50 eventos de optimización, como compras o prospectos, en una semana para salir de ella, aunque el número puede variar por cuenta. Los cambios importantes de presupuesto, público, puja o anuncios regresan al conjunto a aprendizaje. Por eso cambiar cosas todos los días mantiene a la campaña inestable para siempre.",
+          "El otro enemigo es el desgaste del creativo: las mismas personas ven el mismo anuncio una y otra vez, la frecuencia sube, los clics bajan y el costo por resultado se dispara. **La mayoría de las campañas no se muere porque se acabó el público; se muere porque se acabó el creativo.** La solución no es mover todo, sino tener creativos nuevos listos antes de que los actuales se desgasten.",
+        ],
+      },
+      {
+        id: "el-embudo",
+        heading: "The full funnel: not everyone is ready to buy",
+        headingEs: "El embudo completo: no todos están listos para comprar",
+        body: [
+          "A single campaign asking strangers to buy today is the most expensive way to use Meta. A professional account works as an [[funnel|embudo]] with different messages for different stages: discovery for people who do not know you, consideration for those who already interacted, conversion for those who are ready, and retention for those who already bought.",
+          "Each stage uses different audiences and creatives. Discovery works with broad audiences and short Reels; consideration with [[remarketing|remarketing]] to video viewers and page visitors, using testimonials and demonstrations; conversion with a concrete offer and a direct path to WhatsApp, a form or checkout; and retention with your customer lists as a [[custom audience|publico-personalizado]]. A [[lookalike audience|publico-similar]] built from your best customers helps you find more people like them.",
+        ],
+        bodyEs: [
+          "Una sola campaña que le pide a desconocidos comprar hoy es la forma más cara de usar Meta. Una cuenta profesional funciona como un [[embudo|embudo]] con mensajes distintos para cada etapa: descubrimiento para quien no te conoce, consideración para quien ya interactuó, conversión para quien está listo y retención para quien ya compró.",
+          "Cada etapa usa públicos y creativos distintos. El descubrimiento funciona con públicos amplios y Reels cortos; la consideración con [[remarketing|remarketing]] a quien vio tus videos o visitó tu página, usando testimonios y demostraciones; la conversión con una oferta concreta y un camino directo a WhatsApp, a un formulario o al pago; y la retención con tus listas de clientes como [[público personalizado|publico-personalizado]]. Un [[público similar|publico-similar]] hecho a partir de tus mejores clientes te ayuda a encontrar más gente como ellos.",
+        ],
+        diagram: {
+          kind: "funnel",
+          title: "A Meta Ads funnel: audience, message and goal for each stage",
+          titleEs: "Un embudo de Meta Ads: público, mensaje y objetivo de cada etapa",
+          note: "Aphelion's working structure. A common starting point is to put most of the budget in discovery and adjust as the remarketing audiences grow; it is not a fixed rule.",
+          noteEs: "Estructura de trabajo de Aphelion. Un punto de partida común es poner la mayor parte del presupuesto en descubrimiento y ajustar conforme crecen los públicos de remarketing; no es una regla fija.",
+          steps: [
+            { label: "Discovery", labelEs: "Descubrimiento", detail: "Broad audience · short Reels · goal: views and reach", detailEs: "Público amplio · Reels cortos · objetivo: vistas y alcance" },
+            { label: "Consideration", labelEs: "Consideración", detail: "Video viewers and visitors · testimonials and demos · goal: visits and messages", detailEs: "Quien vio videos y visitó · testimonios y demostraciones · objetivo: visitas y mensajes" },
+            { label: "Conversion", labelEs: "Conversión", detail: "Warm audiences · concrete offer · goal: leads or sales", detailEs: "Públicos tibios · oferta concreta · objetivo: prospectos o ventas" },
+            { label: "Retention", labelEs: "Retención", detail: "Customers · new products, referrals · goal: repeat purchase", detailEs: "Clientes · productos nuevos, referidos · objetivo: recompra" },
+          ],
+        },
+      },
+      {
+        id: "pruebas-ab-con-metodo",
+        heading: "A/B tests that actually prove something",
+        headingEs: "Pruebas A/B que de verdad prueben algo",
+        body: [
+          "An A/B test compares two versions that differ in a single thing, with the same budget, at the same time, for the same audience. Meta has a built-in A/B test tool that splits the budget evenly and shows you which version is winning and with what confidence. The rule that most people break is the first one: change only one variable. If you change the image and the text at the same time, you will know which ad won, but not why.",
+          "Run each test for at least seven days, and longer if your customers usually take more than a week to decide, so that it covers weekdays and weekends and has enough results to mean something. Judge by cost per result, not by click-through: an ad with many cheap clicks that do not convert is losing, even if it looks like it is winning. Meta's tool reports a confidence level; in our practice we prefer to wait for a clear margin before moving all the budget.",
+        ],
+        bodyEs: [
+          "Una prueba A/B compara dos versiones que difieren en una sola cosa, con el mismo presupuesto, al mismo tiempo y para el mismo público. Meta tiene una herramienta de pruebas A/B que reparte el presupuesto en partes iguales y te muestra qué versión va ganando y con qué nivel de confianza. La regla que casi todos rompen es la primera: cambia una sola variable. Si cambias la imagen y el texto al mismo tiempo, sabrás qué anuncio ganó, pero no por qué.",
+          "Corre cada prueba al menos siete días, y más si tus clientes suelen tardar más de una semana en decidir, para que cubra días entre semana y fines de semana y junte suficientes resultados para significar algo. Juzga por costo por resultado, no por porcentaje de clics: un anuncio con muchos clics baratos que no convierten va perdiendo, aunque parezca que va ganando. La herramienta de Meta reporta un nivel de confianza; en nuestra práctica preferimos esperar un margen claro antes de mover todo el presupuesto.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "How to run an A/B test in Meta Ads",
+          titleEs: "Cómo hacer una prueba A/B en Meta Ads",
+          steps: [
+            { label: "Write a hypothesis", labelEs: "Escribe una hipótesis", detail: "“A hook with the price will lower the cost per lead.”", detailEs: "“Un gancho con el precio va a bajar el costo por prospecto.”" },
+            { label: "Change one variable", labelEs: "Cambia una sola variable", detail: "Same audience, same budget, same dates; only the hook changes.", detailEs: "Mismo público, mismo presupuesto, mismas fechas; solo cambia el gancho." },
+            { label: "Let it run 7+ days", labelEs: "Déjala correr 7+ días", detail: "Longer if your customers take more than a week to decide.", detailEs: "Más si tus clientes tardan más de una semana en decidir." },
+            { label: "Do not touch it", labelEs: "No la toques", detail: "Edits during the test invalidate the comparison.", detailEs: "Editar durante la prueba invalida la comparación." },
+            { label: "Read cost per result", labelEs: "Lee el costo por resultado", detail: "Not likes or clicks: leads, messages or sales.", detailEs: "No likes ni clics: prospectos, mensajes o ventas." },
+            { label: "Scale or discard", labelEs: "Escala o descarta", detail: "Move budget to the winner and design the next test.", detailEs: "Mueve presupuesto al ganador y diseña la siguiente prueba." },
+          ],
+        },
+      },
+      {
+        id: "que-probar-primero",
+        heading: "What to test first",
+        headingEs: "Qué probar primero",
+        body: [
+          "Not all variables are worth the same. In our experience, the offer and the first seconds of the creative move results far more than the colour of the button or a word in the copy. Start with the big levers and leave the fine adjustments for when you already have a winning ad.",
+          "A reasonable order: the offer, the hook, the format, the audience and, last, the text. Keep a simple log of every test, with the hypothesis, the dates, the result and what you learned. After a few months, that log is worth more than any course, because it tells you what works with your customers.",
+        ],
+        bodyEs: [
+          "No todas las variables valen lo mismo. En nuestra experiencia, la oferta y los primeros segundos del creativo mueven los resultados mucho más que el color del botón o una palabra en el texto. Empieza por las palancas grandes y deja los ajustes finos para cuando ya tengas un anuncio ganador.",
+          "Un orden razonable: la oferta, el gancho, el formato, el público y, al final, el texto. Lleva un registro sencillo de cada prueba, con la hipótesis, las fechas, el resultado y lo que aprendiste. En unos meses, ese registro vale más que cualquier curso, porque te dice qué funciona con tus clientes.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "What to test, in order of impact",
+          titleEs: "Qué probar, en orden de impacto",
+          note: "Order based on Aphelion's experience across accounts; your results may differ.",
+          noteEs: "Orden basado en la experiencia de Aphelion en distintas cuentas; tus resultados pueden variar.",
+          columns: [
+            { label: "Variable", labelEs: "Variable" },
+            { label: "Example of A vs B", labelEs: "Ejemplo de A contra B" },
+            { label: "Typical impact", labelEs: "Impacto típico" },
+          ],
+          rows: [
+            { label: "Offer", labelEs: "Oferta", cells: [{ text: "10% off vs free consultation", textEs: "10% de descuento contra consulta gratis" }, { text: "Very high", textEs: "Muy alto" }] },
+            { label: "Hook (first 3 s)", labelEs: "Gancho (primeros 3 s)", cells: [{ text: "Result first vs question first", textEs: "Resultado primero contra pregunta primero" }, { text: "High", textEs: "Alto" }] },
+            { label: "Format", labelEs: "Formato", cells: [{ text: "Reel vs carousel", textEs: "Reel contra carrusel" }, { text: "Medium to high", textEs: "Medio a alto" }] },
+            { label: "Audience", labelEs: "Público", cells: [{ text: "Broad vs lookalike of customers", textEs: "Amplio contra similar de clientes" }, { text: "Medium", textEs: "Medio" }] },
+            { label: "Copy", labelEs: "Texto", cells: [{ text: "Short vs long description", textEs: "Descripción corta contra larga" }, { text: "Low to medium", textEs: "Bajo a medio" }] },
+          ],
+        },
+      },
+      {
+        id: "lo-que-dice-meta-de-los-reels",
+        heading: "What Meta's own research says about Reels ads",
+        headingEs: "Lo que dice la propia investigación de Meta sobre anuncios en Reels",
+        body: [
+          "In December 2025, Meta shared creative findings for Reels based on research with Toluna, and several are directly useful. Showing the brand and the main message within the first five seconds made a creative 1.7 times more likely to rank in the top 20% for purchase intent. Combining speech and music made direct-response creatives 2.1 times more likely to reach that group. Showing the product more than once multiplied the odds by 2.7, including a call to action by 1.9, and highlighting unique selling points or features by **5.3**.",
+          "Meta also reported that Reels account for more than half of the time spent on Instagram. An older Facebook study with Nielsen found that up to 47% of a video campaign's value was delivered in the first three seconds, and up to 74% in the first ten. The lesson from both is the same: the opening is not a detail, it is most of the ad.",
+        ],
+        bodyEs: [
+          "En diciembre de 2025, Meta compartió hallazgos creativos para Reels basados en una investigación con Toluna, y varios son directamente útiles. Mostrar la marca y el mensaje principal dentro de los primeros cinco segundos hizo 1.7 veces más probable que un creativo quedara en el 20% superior en intención de compra. Combinar voz y música hizo 2.1 veces más probable que los creativos de respuesta directa llegaran a ese grupo. Mostrar el producto más de una vez multiplicó las probabilidades por 2.7, incluir una llamada a la acción por 1.9 y destacar los diferenciales o características del producto por **5.3**.",
+          "Meta también reportó que los Reels representan más de la mitad del tiempo que se pasa en Instagram. Un estudio más antiguo de Facebook con Nielsen encontró que hasta 47% del valor de una campaña de video se entregaba en los primeros tres segundos, y hasta 74% en los primeros diez. La lección de los dos es la misma: el arranque no es un detalle, es la mayor parte del anuncio.",
+        ],
+        chart: {
+          title: "How much more likely a Reels direct-response ad is to rank in the top 20% for purchase intent",
+          titleEs: "Cuántas veces más probable es que un anuncio de respuesta directa en Reels quede en el 20% superior en intención de compra",
+          source: "Meta, Reels creative strategies based on Toluna research, via Social Media Today, December 2025. The first bar applies to all creatives.",
+          sourceEs: "Meta, estrategias creativas para Reels basadas en investigación de Toluna, vía Social Media Today, diciembre de 2025. La primera barra aplica a todos los creativos.",
+          bars: [
+            { label: "Highlights unique selling points or features", labelEs: "Destaca diferenciales o características", value: 5.3, display: "5.3x", displayEs: "5.3x" },
+            { label: "Shows the product more than once", labelEs: "Muestra el producto más de una vez", value: 2.7, display: "2.7x", displayEs: "2.7x" },
+            { label: "Uses emojis as native elements", labelEs: "Usa emojis como elementos nativos", value: 2.5, display: "2.5x", displayEs: "2.5x" },
+            { label: "Combines speech and music", labelEs: "Combina voz y música", value: 2.1, display: "2.1x", displayEs: "2.1x" },
+            { label: "Includes a call to action", labelEs: "Incluye una llamada a la acción", value: 1.9, display: "1.9x", displayEs: "1.9x" },
+            { label: "Brand and message in the first 5 seconds", labelEs: "Marca y mensaje en los primeros 5 segundos", value: 1.7, display: "1.7x", displayEs: "1.7x" },
+          ],
+        },
+      },
+      {
+        id: "estructura-de-un-reel-que-vende",
+        heading: "The structure of a 15-second Reel that sells",
+        headingEs: "La estructura de un Reel de 15 segundos que vende",
+        body: [
+          "Record vertical at 1080 × 1920 pixels and keep text, logos and buttons inside the safe zone: according to Meta's guidance, leave free roughly the top 14%, the bottom 35% and 6% on each side, where the interface covers the video. Subtitle everything that is said, because many people watch with the sound off, and design the first frame as if it were the thumbnail.",
+          "A structure that works across many businesses: a hook in the first two seconds that shows the result or names the problem, a demonstration of the product or service in use, a proof such as a before and after or a short testimonial, and a clear call to action. We explain how to record and edit it in [editing videos for social media like a pro](/blog/editar-videos-para-redes-como-pro).",
+        ],
+        bodyEs: [
+          "Graba vertical a 1080 × 1920 pixeles y mantén textos, logos y botones dentro de la zona segura: según la guía de Meta, deja libre aproximadamente el 14% superior, el 35% inferior y 6% de cada lado, donde la interfaz tapa el video. Subtitula todo lo que se dice, porque mucha gente ve sin sonido, y diseña el primer cuadro como si fuera la portada.",
+          "Una estructura que funciona en muchos negocios: un gancho en los primeros dos segundos que muestre el resultado o nombre el problema, una demostración del producto o servicio en uso, una prueba como un antes y después o un testimonio corto, y una llamada a la acción clara. Explicamos cómo grabarlo y editarlo en [cómo editar tus videos para redes como profesional](/blog/editar-videos-para-redes-como-pro).",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "A 15-second Reel ad, second by second",
+          titleEs: "Un anuncio en Reel de 15 segundos, segundo a segundo",
+          note: "Aphelion's base structure; adjust timings to your product.",
+          noteEs: "Estructura base de Aphelion; ajusta los tiempos a tu producto.",
+          steps: [
+            { label: "0–2 s: hook", labelEs: "0–2 s: gancho", detail: "The result, the problem or a surprising fact, with text on screen.", detailEs: "El resultado, el problema o un dato sorprendente, con texto en pantalla." },
+            { label: "2–8 s: demonstration", labelEs: "2–8 s: demostración", detail: "The product or service in use, from the customer's point of view.", detailEs: "El producto o servicio en uso, desde el punto de vista del cliente." },
+            { label: "8–12 s: proof", labelEs: "8–12 s: prueba", detail: "Before and after, a testimonial or a concrete figure.", detailEs: "Antes y después, un testimonio o una cifra concreta." },
+            { label: "12–15 s: call to action", labelEs: "12–15 s: llamada a la acción", detail: "What to do now: message us, book, buy.", detailEs: "Qué hacer ahora: escríbenos, agenda, compra." },
+          ],
+        },
+      },
+      {
+        id: "medicion-que-el-pixel-no-ve",
+        heading: "Measurement: what the pixel alone does not see",
+        headingEs: "Medición: lo que el pixel solo no ve",
+        body: [
+          "The [[pixel|pixel]] in the browser loses part of the conversions because of blockers, privacy settings and people who switch devices. The [[Conversions API|api-conversiones]] sends the same events from your server, which recovers part of that signal and helps the algorithm optimise better. If you sell through WhatsApp, register the conversation as an event and, when possible, the closed sale.",
+          "Also check the attribution window you are reading results with, and do not compare reports with different windows. And remember that Meta reports what it can attribute: compare it every month with your own records of leads and sales, because what matters is the money in your account, not the number in the ad manager. We explain the basics in [what the Meta pixel is](/blog/que-es-el-pixel-de-meta).",
+        ],
+        bodyEs: [
+          "El [[pixel|pixel]] en el navegador pierde parte de las conversiones por bloqueadores, ajustes de privacidad y gente que cambia de dispositivo. La [[API de Conversiones|api-conversiones]] manda los mismos eventos desde tu servidor, lo que recupera parte de esa señal y ayuda al algoritmo a optimizar mejor. Si vendes por WhatsApp, registra la conversación como evento y, cuando se pueda, la venta cerrada.",
+          "Revisa también la ventana de atribución con la que estás leyendo los resultados, y no compares reportes con ventanas distintas. Y recuerda que Meta reporta lo que puede atribuir: compáralo cada mes con tu propio registro de prospectos y ventas, porque lo que importa es el dinero en tu cuenta, no el número en el administrador de anuncios. Explicamos lo básico en [qué es el pixel de Meta](/blog/que-es-el-pixel-de-meta).",
+        ],
+      },
+      {
+        id: "errores-de-quien-maneja-sus-anuncios",
+        heading: "The mistakes of running your own ads",
+        headingEs: "Los errores de quien maneja sus propios anuncios",
+        body: [
+          "Using only the “Boost” button, which optimises for interactions rather than customers. Splitting a small budget into many ad sets, so none of them gets enough results to learn. Editing every day. Narrowing the audience with a dozen interests when broad audiences with good creatives usually work better today. Sending traffic to the home page instead of a page or a WhatsApp chat made for that offer. And judging a campaign after two days.",
+          "Each of these mistakes has the same effect: you pay for the learning but never collect it. We cover more in [Facebook Ads mistakes](/blog/errores-de-facebook-ads) and the budget side in [how much to invest in Facebook Ads](/blog/cuanto-invertir-en-facebook-ads).",
+        ],
+        bodyEs: [
+          "Usar solo el botón de “Promocionar”, que optimiza para interacciones y no para clientes. Repartir un presupuesto chico en muchos conjuntos de anuncios, así ninguno junta suficientes resultados para aprender. Editar todos los días. Estrechar el público con una docena de intereses cuando hoy los públicos amplios con buenos creativos suelen funcionar mejor. Mandar el tráfico a la página de inicio en vez de a una página o un chat de WhatsApp hechos para esa oferta. Y juzgar una campaña a los dos días.",
+          "Todos estos errores tienen el mismo efecto: pagas el aprendizaje pero nunca lo cobras. Vemos más en [errores de Facebook Ads](/blog/errores-de-facebook-ads) y la parte del presupuesto en [cuánto invertir en Facebook Ads](/blog/cuanto-invertir-en-facebook-ads).",
+        ],
+      },
+      {
+        id: "cuando-hacerlo-con-nosotros",
+        heading: "When it makes sense to do it with us",
+        headingEs: "Cuándo conviene hacerlo con nosotros",
+        body: [
+          "If you already have a funnel, test with method and your cost per customer still does not add up, the bottleneck is usually creative production or the offer, not the button you pressed. Producing several good creatives every month, with hooks tested and the right format, is the part that is hardest to do alone while running a business.",
+          "That is where we come in: at Aphelion we design the funnel, produce the Reels, run the tests and report in terms of leads and sales. Our [free diagnostic](/recursos/diagnostico) shows you in minutes what to fix first, our [Meta Ads guide](/blog/guia-meta-ads) covers the fundamentals, and our [marketing service](/servicios/marketing) explains how we work.",
+        ],
+        bodyEs: [
+          "Si ya tienes embudo, pruebas con método y tu costo por cliente sigue sin cuadrar, el cuello de botella suele ser la producción de creativos o la oferta, no el botón que presionaste. Producir varios creativos buenos cada mes, con ganchos probados y el formato correcto, es la parte más difícil de hacer solo mientras llevas un negocio.",
+          "Ahí entramos nosotros: en Aphelion diseñamos el embudo, producimos los Reels, corremos las pruebas y reportamos en prospectos y ventas. Nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en minutos qué corregir primero, nuestra [guía de Meta Ads](/blog/guia-meta-ads) cubre los fundamentos y nuestro [servicio de marketing](/servicios/marketing) explica cómo trabajamos.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto tiempo debe durar una prueba A/B en Meta Ads?",
+        qEn: "How long should an A/B test in Meta Ads run?",
+        a: "Al menos siete días, y más si tus clientes tardan más de una semana en decidir. Así cubre días entre semana y fin de semana y junta suficientes resultados. No la edites mientras corre.",
+        aEn: "At least seven days, and longer if your customers take more than a week to decide. That way it covers weekdays and weekends and gathers enough results. Do not edit it while it runs.",
+      },
+      {
+        q: "¿Qué es la fase de aprendizaje en Meta Ads?",
+        qEn: "What is the learning phase in Meta Ads?",
+        a: "El periodo en que Meta descubre quién responde a tus anuncios. La referencia común es de unos 50 eventos de optimización en una semana para salir de ella, y los cambios importantes de presupuesto, público o anuncios la reinician.",
+        aEn: "The period in which Meta figures out who responds to your ads. The common reference is about 50 optimisation events in a week to exit it, and significant changes to budget, audience or ads restart it.",
+      },
+      {
+        q: "¿Qué debo probar primero en mis anuncios?",
+        qEn: "What should I test first in my ads?",
+        a: "La oferta y el gancho de los primeros segundos, que suelen mover más los resultados. Después el formato, el público y al final el texto. Cambia una sola variable por prueba.",
+        aEn: "The offer and the hook in the first seconds, which usually move results the most. Then the format, the audience and finally the copy. Change one variable per test.",
+      },
+      {
+        q: "¿Cuál es la zona segura de un anuncio en Reels?",
+        qEn: "What is the safe zone of a Reels ad?",
+        a: "Según la guía de Meta, deja libre de textos y logos aproximadamente el 14% superior, el 35% inferior y 6% de cada lado de un video vertical de 1080 × 1920 pixeles.",
+        aEn: "According to Meta's guidance, keep text and logos out of roughly the top 14%, the bottom 35% and 6% on each side of a 1080 × 1920 vertical video.",
+      },
+      {
+        q: "¿Qué hace que un Reel de anuncio funcione mejor?",
+        qEn: "What makes a Reels ad perform better?",
+        a: "Según la investigación de Meta con Toluna, mostrar marca y mensaje en los primeros cinco segundos, combinar voz y música, mostrar el producto más de una vez, incluir una llamada a la acción y destacar los diferenciales del producto.",
+        aEn: "According to Meta's research with Toluna, showing brand and message in the first five seconds, combining speech and music, showing the product more than once, including a call to action and highlighting the product's unique selling points.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "advanced Meta Ads",
+        "Meta Ads A/B test",
+        "Reels ads best practices",
+        "Facebook ads funnel",
+        "Meta Ads learning phase",
+      ],
+      keywordsEs: [
+        "Meta Ads avanzado",
+        "pruebas A/B en Meta Ads",
+        "anuncios en Reels que venden",
+        "embudo de Facebook Ads",
+        "fase de aprendizaje Meta Ads",
+        "zona segura Reels",
+      ],
+    },
+  },
+  {
+    slug: "editar-videos-para-redes-como-pro",
+    cover: true,
+    title: "Edit Your Social Media Videos Like a Pro: Recording, LOG, Frame Rates, Colour and Apps",
+    titleEs: "Edita tus videos para redes como profesional: grabación, LOG, cuadros por segundo, color y apps",
+    category: "Video & Drone",
+    categoryEs: "Video y Drone",
+    excerpt:
+      "Your phone is good enough; what separates an amateur video from a professional one is how it is recorded and edited. Which phones record in LOG, what frame rate to use and why, how to colour quickly with LUTs, colour with intention, the hook, what to avoid, and CapCut vs Premiere Pro vs DaVinci Resolve with their real difficulty.",
+    excerptEs:
+      "Tu celular alcanza; lo que separa un video amateur de uno profesional es cómo se graba y cómo se edita. Qué celulares graban en LOG, qué cuadros por segundo usar y por qué, cómo colorear rápido con LUTs, el color con intención, el gancho, qué evitar y CapCut contra Premiere Pro contra DaVinci Resolve con su dificultad real.",
+    readingTime: 14,
+    date: "2026-11-04",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "After years directing photography and video, I can tell you that the difference between a video that looks homemade and one that looks professional is rarely the camera. It is light, sound, rhythm and colour, and almost all of that is decided before and during editing. A recent phone records better than the cameras many productions used a decade ago. What is missing is technique. This guide collects what we apply at Aphelion every day, explained so you can use it this week with the phone and the apps you already have.",
+    ledeEs:
+      "Después de años dirigiendo foto y video, te puedo decir que la diferencia entre un video que se ve hecho en casa y uno que se ve profesional casi nunca es la cámara. Es la luz, el sonido, el ritmo y el color, y casi todo eso se decide antes y durante la edición. Un celular reciente graba mejor que las cámaras que usaban muchas producciones hace una década. Lo que falta es técnica. Esta guía junta lo que aplicamos en Aphelion todos los días, explicado para que lo uses esta semana con el celular y las apps que ya tienes.",
+    sections: [
+      {
+        id: "graba-pensando-en-la-edicion",
+        heading: "Record thinking about the edit",
+        headingEs: "Graba pensando en la edición",
+        body: [
+          "Most editing problems are created while recording. Shoot vertical at 1080 × 1920 for Reels, TikTok and Shorts, clean the lens before every take, face the light instead of having it behind you, and stabilise: a small tripod or a gimbal changes the result more than any filter. Record two extra seconds before and after each take, so you have room for cuts and transitions.",
+          "Record more supporting footage than you think you need: hands working, details of the product, the place, people reacting. In editing, that is what lets you cut every few seconds without the video feeling choppy. And take care of the sound: a clip-on wireless microphone removes echo and wind, and **people forgive an average image far more than bad audio.**",
+        ],
+        bodyEs: [
+          "La mayoría de los problemas de edición se crean al grabar. Graba vertical a 1080 × 1920 para Reels, TikTok y Shorts, limpia el lente antes de cada toma, ponte de frente a la luz en vez de tenerla atrás y estabiliza: un tripié pequeño o un estabilizador cambian el resultado más que cualquier filtro. Graba dos segundos extra antes y después de cada toma, para tener margen para cortes y transiciones.",
+          "Graba más tomas de apoyo de las que crees necesitar: manos trabajando, detalles del producto, el lugar, gente reaccionando. En la edición, eso es lo que te deja cortar cada pocos segundos sin que el video se sienta brincado. Y cuida el sonido: un micrófono inalámbrico de solapa quita el eco y el viento, y **la gente perdona mucho más una imagen normal que un audio malo.**",
+        ],
+      },
+      {
+        id: "cuadros-por-segundo",
+        heading: "Frame rates: 24, 30 or 60, and why it matters",
+        headingEs: "Cuadros por segundo: 24, 30 o 60, y por qué importa",
+        body: [
+          "The frame rate changes how movement feels. 24 frames per second gives the slightly soft motion of cinema; 30 is the standard for social media and looks natural; 60 makes movement very fluid and lets you slow it down to half speed in a 30 fps timeline without it looking choppy; 120 or more is for slow motion. Choose before recording and do not mix rates in the same video without intending to.",
+          "If your phone has a manual or pro mode, apply the 180-degree rule: set the shutter speed to roughly double the frame rate, 1/50 for 24 or 25 fps, 1/60 for 30 and 1/120 for 60. That produces natural motion blur. One local detail: in Mexico the electricity runs at 60 Hz, and under some indoor lights a shutter that is not 1/60 or 1/120 can produce flicker. If you see horizontal bands in the image, that is usually why.",
+        ],
+        bodyEs: [
+          "Los cuadros por segundo cambian cómo se siente el movimiento. 24 cuadros por segundo dan el movimiento ligeramente suave del cine; 30 es el estándar en redes y se ve natural; 60 hace el movimiento muy fluido y te deja ralentizarlo a la mitad en una línea de tiempo de 30 sin que se vea brincado; 120 o más es para cámara lenta. Elige antes de grabar y no mezcles cuadros por segundo en el mismo video sin intención.",
+          "Si tu celular tiene modo manual o pro, aplica la regla de los 180 grados: pon la velocidad de obturación en aproximadamente el doble de los cuadros por segundo, 1/50 para 24 o 25, 1/60 para 30 y 1/120 para 60. Eso produce un desenfoque de movimiento natural. Un detalle local: en México la electricidad funciona a 60 Hz, y bajo algunas luces de interior una obturación que no sea 1/60 o 1/120 puede producir parpadeo. Si ves bandas horizontales en la imagen, casi siempre es por eso.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Which frame rate to use",
+          titleEs: "Qué cuadros por segundo usar",
+          note: "Shutter speeds follow the 180-degree rule. In Mexico (60 Hz), prefer 1/60 or 1/120 under artificial light to avoid flicker.",
+          noteEs: "Las velocidades de obturación siguen la regla de los 180 grados. En México (60 Hz), prefiere 1/60 o 1/120 con luz artificial para evitar parpadeo.",
+          columns: [
+            { label: "Frames per second", labelEs: "Cuadros por segundo" },
+            { label: "How it feels", labelEs: "Cómo se siente" },
+            { label: "Use it for", labelEs: "Úsalo para" },
+            { label: "Shutter", labelEs: "Obturación" },
+          ],
+          rows: [
+            { label: "24", labelEs: "24", cells: [{ text: "Cinematic, slightly soft", textEs: "Cinematográfico, ligeramente suave" }, { text: "Brand films, real estate, gastronomy", textEs: "Videos de marca, bienes raíces, gastronomía" }, { text: "1/50", textEs: "1/50" }] },
+            { label: "30", labelEs: "30", cells: [{ text: "Natural, standard", textEs: "Natural, estándar" }, { text: "Talking to camera, tutorials, most Reels", textEs: "Hablar a cámara, tutoriales, la mayoría de los Reels" }, { text: "1/60", textEs: "1/60" }] },
+            { label: "60", labelEs: "60", cells: [{ text: "Very fluid", textEs: "Muy fluido" }, { text: "Movement, sports, 50% slow motion", textEs: "Movimiento, deportes, cámara lenta al 50%" }, { text: "1/120", textEs: "1/120" }] },
+            { label: "120+", labelEs: "120+", cells: [{ text: "Slow motion", textEs: "Cámara lenta" }, { text: "Pouring drinks, hair, water, details", textEs: "Bebidas sirviéndose, cabello, agua, detalles" }, { text: "1/240 or more", textEs: "1/240 o más" }] },
+          ],
+        },
+      },
+      {
+        id: "log-que-celulares",
+        heading: "LOG: what it is and which phones record it",
+        headingEs: "LOG: qué es y qué celulares lo graban",
+        body: [
+          "[[LOG|video-log]] records a flat, washed-out image that keeps much more detail in highlights and shadows, so you can recover a bright window and a dark interior in the same shot when colouring. On iPhone, Apple supports ProRes Log on the 15 Pro, 16 Pro and 17 Pro models, including the Max versions; the 13 Pro and 14 Pro record ProRes but not Log. On Samsung, Log launched with the Galaxy S25, S25+ and S25 Ultra and reached the Galaxy S24 series with One UI 7, and it is used from the Pro Video mode. Other brands have their own modes; check your model before buying anything.",
+          "LOG is not better by itself: it is raw material. It only makes sense if you are going to colour it, and the files are very heavy, especially in ProRes. **If you are not going to edit the colour, the normal mode with HDR gives you a better result with less work.** If you do record in LOG, expose correctly, set the white balance manually and do not mix LOG and normal clips in the same scene unless you match them.",
+        ],
+        bodyEs: [
+          "El [[LOG|video-log]] graba una imagen plana y deslavada que conserva mucho más detalle en luces y sombras, así que al colorear puedes recuperar una ventana brillante y un interior oscuro en la misma toma. En iPhone, Apple tiene ProRes Log en los modelos 15 Pro, 16 Pro y 17 Pro, incluidos los Max; los 13 Pro y 14 Pro graban ProRes pero no Log. En Samsung, el Log llegó con los Galaxy S25, S25+ y S25 Ultra y pasó a la serie Galaxy S24 con One UI 7, y se usa desde el modo Pro Video. Otras marcas tienen sus propios modos; revisa tu modelo antes de comprar nada.",
+          "El LOG no es mejor por sí solo: es materia prima. Solo tiene sentido si lo vas a colorear, y los archivos pesan mucho, sobre todo en ProRes. **Si no vas a editar el color, el modo normal con HDR te da mejor resultado con menos trabajo.** Si grabas en LOG, expón bien, ajusta el balance de blancos a mano y no mezcles tomas en LOG y normales en la misma escena si no las vas a igualar.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Phones that record LOG video natively",
+          titleEs: "Celulares que graban video LOG de fábrica",
+          note: "According to Apple's and Samsung's documentation and TechRadar, as of 2026. Check your exact model and software version.",
+          noteEs: "Según la documentación de Apple y Samsung y TechRadar, a 2026. Revisa tu modelo exacto y la versión de software.",
+          columns: [
+            { label: "Brand", labelEs: "Marca" },
+            { label: "Models", labelEs: "Modelos" },
+            { label: "Where to turn it on", labelEs: "Dónde se activa" },
+          ],
+          rows: [
+            { label: "Apple", labelEs: "Apple", cells: [{ text: "iPhone 15 Pro, 16 Pro and 17 Pro (and Pro Max)", textEs: "iPhone 15 Pro, 16 Pro y 17 Pro (y Pro Max)" }, { text: "Camera settings: formats, ProRes, then choose Log", textEs: "Ajustes de Cámara: formatos, ProRes, y elegir Log" }] },
+            { label: "Samsung", labelEs: "Samsung", cells: [{ text: "Galaxy S25 series; S24 series with One UI 7", textEs: "Serie Galaxy S25; serie S24 con One UI 7" }, { text: "Camera: More, Pro Video, Log", textEs: "Cámara: Más, Pro Video, Log" }] },
+          ],
+        },
+      },
+      {
+        id: "luts",
+        heading: "LUTs: fast colour without being a colourist",
+        headingEs: "LUTs: color rápido sin ser colorista",
+        body: [
+          "A [[LUT|lut]] is a file that converts the colours of a video according to a recipe. There are two kinds. Technical LUTs convert LOG footage into normal colour for your specific camera or phone profile; creative LUTs give a look, such as warm, cinematic or muted. The order matters: first correct exposure and white balance, then apply the technical conversion, and only after that a creative look.",
+          "The most common mistake is to apply a creative LUT at full strength and call it a day. Lower its intensity to 30 to 60 percent, check skin tones, which should look like skin, and apply the same treatment to the whole video so the shots match. One well-chosen look used consistently across your account builds a recognisable style faster than changing filters every post.",
+        ],
+        bodyEs: [
+          "Un [[LUT|lut]] es un archivo que convierte los colores de un video según una receta. Hay dos tipos. Los LUTs técnicos convierten el material en LOG a color normal para el perfil de tu cámara o celular; los creativos le dan un estilo, como cálido, cinematográfico o apagado. El orden importa: primero corrige exposición y balance de blancos, luego aplica la conversión técnica, y solo después un estilo creativo.",
+          "El error más común es aplicar un LUT creativo al 100% y darlo por terminado. Bájale la intensidad a entre 30 y 60%, revisa los tonos de piel, que deben verse como piel, y aplica el mismo tratamiento a todo el video para que las tomas coincidan. Un solo estilo bien elegido y usado de forma constante en tu cuenta construye una identidad reconocible más rápido que cambiar de filtro en cada publicación.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "The order to colour a video",
+          titleEs: "El orden para colorear un video",
+          steps: [
+            { label: "Exposure", labelEs: "Exposición", detail: "Neither burnt highlights nor crushed shadows.", detailEs: "Ni luces quemadas ni sombras empastadas." },
+            { label: "White balance", labelEs: "Balance de blancos", detail: "Whites look white; skin looks like skin.", detailEs: "Los blancos se ven blancos; la piel, como piel." },
+            { label: "Technical LUT (only LOG)", labelEs: "LUT técnico (solo LOG)", detail: "Converts your phone's LOG profile into normal colour.", detailEs: "Convierte el perfil LOG de tu celular a color normal." },
+            { label: "Creative look", labelEs: "Estilo creativo", detail: "A creative LUT at 30–60% intensity.", detailEs: "Un LUT creativo al 30–60% de intensidad." },
+            { label: "Match shots", labelEs: "Iguala tomas", detail: "Same treatment across the whole video.", detailEs: "El mismo tratamiento en todo el video." },
+            { label: "Check on a phone", labelEs: "Revisa en el celular", detail: "That is where your audience will watch it.", detailEs: "Ahí es donde lo va a ver tu público." },
+          ],
+        },
+      },
+      {
+        id: "color-con-intencion",
+        heading: "Colour with intention: warm when it is cold",
+        headingEs: "Color con intención: cálido cuando hace frío",
+        body: [
+          "Colour communicates before words do. In our work we use warm tones, ambers and soft golds, for winter and December content: a restaurant, a café, a hotel or a gift feel more welcoming when the image compensates for the cold outside. In summer we go the other way, with cleaner whites and cooler blues that feel fresh. Technology and health usually work better with neutral, clean colour; gastronomy with warm and saturated in moderation.",
+          "This is craft, not a rule backed by a study: test it with your audience. What does hold is consistency. Choose two or three colour treatments for your brand, one per season or content type, and stay with them. Over-saturation, skin that turns orange and greens that look radioactive are the signs of editing without intention.",
+        ],
+        bodyEs: [
+          "El color comunica antes que las palabras. En nuestro trabajo usamos tonos cálidos, ámbar y dorados suaves, para el contenido de invierno y diciembre: un restaurante, un café, un hotel o un regalo se sienten más acogedores cuando la imagen compensa el frío de afuera. En verano vamos al revés, con blancos más limpios y azules más fríos que se sienten frescos. Tecnología y salud suelen funcionar mejor con color neutro y limpio; gastronomía con cálido y saturado con moderación.",
+          "Esto es oficio, no una regla respaldada por un estudio: pruébalo con tu público. Lo que sí se sostiene es la constancia. Elige dos o tres tratamientos de color para tu marca, uno por temporada o tipo de contenido, y quédate con ellos. La sobresaturación, la piel que se vuelve naranja y los verdes que parecen radioactivos son las señales de editar sin intención.",
+        ],
+      },
+      {
+        id: "el-gancho",
+        heading: "The hook: the first seconds are most of the video",
+        headingEs: "El gancho: los primeros segundos son casi todo el video",
+        body: [
+          "A Facebook study with Nielsen found that up to 47% of a video campaign's value was delivered in the first three seconds, and up to 74% in the first ten. More recently, Meta's research for Reels found that showing the brand and main message in the first five seconds made a creative 1.7 times more likely to rank among the best for purchase intent. In practice: the first frame and the first sentence decide whether the rest is watched.",
+          "Hooks that work: show the result first and then how you got there; name the problem your viewer has; a contrast, such as before and after; a surprising figure; or movement in the first frame. Avoid starting with your logo, a greeting or “hi, welcome to my channel”. Put text on screen in the first second too, because many people start watching without sound.",
+        ],
+        bodyEs: [
+          "Un estudio de Facebook con Nielsen encontró que hasta 47% del valor de una campaña de video se entregaba en los primeros tres segundos, y hasta 74% en los primeros diez. Más recientemente, la investigación de Meta para Reels encontró que mostrar la marca y el mensaje principal en los primeros cinco segundos hacía 1.7 veces más probable que un creativo quedara entre los mejores en intención de compra. En la práctica: el primer cuadro y la primera frase deciden si se ve lo demás.",
+          "Ganchos que funcionan: muestra primero el resultado y después cómo llegaste a él; nombra el problema que tiene quien te ve; un contraste, como un antes y después; una cifra sorprendente, o movimiento en el primer cuadro. Evita empezar con tu logo, un saludo o “hola, bienvenidos a mi canal”. Pon texto en pantalla también desde el primer segundo, porque mucha gente empieza a ver sin sonido.",
+        ],
+        chart: {
+          title: "Share of a video campaign's value delivered by time watched",
+          titleEs: "Parte del valor de una campaña de video que se entrega según el tiempo visto",
+          source: "Facebook study with Nielsen, reported by Smart Insights (2017). Figures are “up to”.",
+          sourceEs: "Estudio de Facebook con Nielsen, reportado por Smart Insights (2017). Las cifras son “hasta”.",
+          bars: [
+            { label: "First 10 seconds", labelEs: "Primeros 10 segundos", value: 74, display: "Up to 74%", displayEs: "Hasta 74%" },
+            { label: "First 3 seconds", labelEs: "Primeros 3 segundos", value: 47, display: "Up to 47%", displayEs: "Hasta 47%" },
+          ],
+        },
+      },
+      {
+        id: "ritmo-subtitulos-sonido",
+        heading: "Rhythm, subtitles and sound",
+        headingEs: "Ritmo, subtítulos y sonido",
+        body: [
+          "On social media, a change every two or three seconds keeps attention: a cut, a zoom, a new angle or text appearing. It does not mean frantic editing; it means not leaving the same static shot for ten seconds. Cut on the action, when something moves, so the cut is barely noticed, and remove pauses and repetitions from people talking.",
+          "Subtitle every spoken word, in large text and inside the safe zone, away from the top and bottom of the screen where the interface sits. Combine voice and music: Meta's research found that creatives combining speech and music performed better for both brand and sales goals. Use music from the platform's licensed library or from royalty-free services, never a commercial song without a licence in an ad.",
+        ],
+        bodyEs: [
+          "En redes, un cambio cada dos o tres segundos mantiene la atención: un corte, un zoom, un ángulo nuevo o un texto que aparece. No significa editar frenético; significa no dejar la misma toma fija diez segundos. Corta en la acción, cuando algo se mueve, para que el corte casi no se note, y quita pausas y repeticiones de la gente hablando.",
+          "Subtitula cada palabra que se dice, con letra grande y dentro de la zona segura, lejos de la parte de arriba y de abajo de la pantalla donde está la interfaz. Combina voz y música: la investigación de Meta encontró que los creativos que combinan voz y música rindieron mejor tanto en objetivos de marca como de ventas. Usa música de la biblioteca con licencia de la plataforma o de servicios libres de regalías, nunca una canción comercial sin licencia en un anuncio.",
+        ],
+      },
+      {
+        id: "que-evitar",
+        heading: "What to avoid",
+        headingEs: "Qué evitar",
+        body: [
+          "Text too small or too close to the edges. Over-the-top transitions every few seconds. Creative LUTs at 100%. Digital zoom while recording. Backlit faces. Background noise under the voice. The watermark of one app when you upload to another: it looks careless and the platforms reward original content. Exporting at a low resolution or with heavy compression to save time.",
+          "Also avoid making the video longer than the idea. If you can say it in 20 seconds, do not stretch it to 60. And do not publish before watching it complete on your phone, with and without sound: that is how your audience will see it.",
+        ],
+        bodyEs: [
+          "Texto demasiado chico o pegado a las orillas. Transiciones exageradas cada pocos segundos. LUTs creativos al 100%. Zoom digital al grabar. Caras a contraluz. Ruido de fondo debajo de la voz. La marca de agua de una app cuando subes a otra: se ve descuidado y las plataformas premian el contenido original. Exportar en baja resolución o con mucha compresión para ahorrar tiempo.",
+          "Evita también hacer el video más largo que la idea. Si lo puedes decir en 20 segundos, no lo estires a 60. Y no publiques antes de verlo completo en tu celular, con y sin sonido: así es como lo va a ver tu público.",
+        ],
+      },
+      {
+        id: "que-app-usar",
+        heading: "Which app to use: CapCut, Premiere Pro or DaVinci Resolve",
+        headingEs: "Qué app usar: CapCut, Premiere Pro o DaVinci Resolve",
+        body: [
+          "CapCut is the easiest way in: it works on phone and computer, has a free plan, automatic subtitles, templates and effects, and a Pro plan of around 20 dollars a month according to 2026 pricing comparisons. Premiere Pro, from Adobe, is the industry standard for editing, integrates with the rest of Adobe's apps and costs 22.99 dollars a month on the annual plan. DaVinci Resolve, from Blackmagic Design, has the best colour tools of the three and a very complete free version, which exports up to 4K at 60 fps; the Studio version costs 295 dollars in a single payment and adds AI tools such as Magic Mask and advanced noise reduction.",
+          "Our recommendation: if you are starting and publish from your phone, CapCut. If you already edit on a computer and use other Adobe apps, Premiere. If you want to learn colour seriously or edit LOG footage, DaVinci, which has the steepest learning curve but is free. Whatever you choose, the AI features that matter most for social media are automatic subtitles, background noise removal and automatic reframing to vertical.",
+        ],
+        bodyEs: [
+          "CapCut es la entrada más fácil: funciona en celular y computadora, tiene plan gratuito, subtítulos automáticos, plantillas y efectos, y un plan Pro de alrededor de 20 dólares al mes según comparativas de precios de 2026. Premiere Pro, de Adobe, es el estándar de la industria para editar, se integra con el resto de las apps de Adobe y cuesta 22.99 dólares al mes en el plan anual. DaVinci Resolve, de Blackmagic Design, tiene las mejores herramientas de color de los tres y una versión gratuita muy completa, que exporta hasta 4K a 60 cuadros por segundo; la versión Studio cuesta 295 dólares en un solo pago y suma herramientas de IA como Magic Mask y reducción de ruido avanzada.",
+          "Nuestra recomendación: si estás empezando y publicas desde el celular, CapCut. Si ya editas en computadora y usas otras apps de Adobe, Premiere. Si quieres aprender color en serio o editar material en LOG, DaVinci, que tiene la curva de aprendizaje más empinada pero es gratis. Elijas la que elijas, las funciones de IA que más importan para redes son los subtítulos automáticos, quitar ruido de fondo y el reencuadre automático a vertical.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "CapCut vs Premiere Pro vs DaVinci Resolve",
+          titleEs: "CapCut contra Premiere Pro contra DaVinci Resolve",
+          note: "Prices in USD as of 2026: CapCut Pro per price comparisons (Costbench, October 2026), Premiere Pro annual plan billed monthly, DaVinci Resolve Studio one-time licence (Miracamp). Difficulty is Aphelion's assessment.",
+          noteEs: "Precios en dólares a 2026: CapCut Pro según comparativas (Costbench, octubre de 2026), Premiere Pro plan anual con pago mensual, DaVinci Resolve Studio licencia de un solo pago (Miracamp). La dificultad es valoración de Aphelion.",
+          columns: [
+            { label: "App", labelEs: "App" },
+            { label: "Difficulty", labelEs: "Dificultad" },
+            { label: "Price", labelEs: "Precio" },
+            { label: "Best for", labelEs: "Ideal para" },
+          ],
+          rows: [
+            { label: "CapCut", labelEs: "CapCut", cells: [{ text: "Easy", textEs: "Fácil" }, { text: "Free; Pro around $20/month", textEs: "Gratis; Pro alrededor de $20 al mes" }, { text: "Fast Reels from the phone, auto subtitles", textEs: "Reels rápidos desde el celular, subtítulos automáticos" }] },
+            { label: "Premiere Pro", labelEs: "Premiere Pro", cells: [{ text: "Medium", textEs: "Media" }, { text: "$22.99/month (annual plan)", textEs: "$22.99 al mes (plan anual)" }, { text: "Professional editing within the Adobe ecosystem", textEs: "Edición profesional dentro del ecosistema Adobe" }] },
+            { label: "DaVinci Resolve", labelEs: "DaVinci Resolve", cells: [{ text: "Advanced", textEs: "Avanzada" }, { text: "Free; Studio $295 one-time", textEs: "Gratis; Studio $295 pago único" }, { text: "Colour grading, LOG footage, long projects", textEs: "Corrección de color, material LOG, proyectos largos" }] },
+          ],
+        },
+      },
+      {
+        id: "cuando-hacerlo-con-nosotros",
+        heading: "When it makes sense to do it with us",
+        headingEs: "Cuándo conviene hacerlo con nosotros",
+        body: [
+          "With this guide you can produce good everyday content on your own, and you should: consistency matters more than perfection. Where a professional team makes a difference is in the pieces that carry the most weight, such as a brand video, a property tour, a product launch or aerial footage with a drone, and in producing enough creatives every month to keep ads alive.",
+          "At Aphelion we combine creative direction, filming, drone and editing for social media and ads. See our [drone video service](/servicios/video-con-dron), our [video marketing guide](/blog/guia-video-marketing) and [how much a corporate video costs](/blog/cuanto-cuesta-un-video-corporativo). If you want to turn those videos into customers, read [Meta Ads like a pro](/blog/meta-ads-avanzado-pruebas-ab-reels-embudo).",
+        ],
+        bodyEs: [
+          "Con esta guía puedes producir buen contenido del día a día por tu cuenta, y deberías: la constancia pesa más que la perfección. Donde un equipo profesional hace la diferencia es en las piezas que más pesan, como un video de marca, un recorrido de una propiedad, el lanzamiento de un producto o tomas aéreas con dron, y en producir suficientes creativos cada mes para mantener vivos los anuncios.",
+          "En Aphelion combinamos dirección creativa, grabación, dron y edición para redes y anuncios. Mira nuestro [servicio de video con dron](/servicios/video-con-dron), nuestra [guía de video marketing](/blog/guia-video-marketing) y [cuánto cuesta un video corporativo](/blog/cuanto-cuesta-un-video-corporativo). Si quieres convertir esos videos en clientes, lee [Meta Ads como profesional](/blog/meta-ads-avanzado-pruebas-ab-reels-embudo).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué celulares graban en LOG?",
+        qEn: "Which phones record in LOG?",
+        a: "En iPhone, los modelos 15 Pro, 16 Pro y 17 Pro, incluidos los Max, con ProRes Log. En Samsung, la serie Galaxy S25 y la serie S24 con One UI 7, desde el modo Pro Video. Otras marcas tienen sus propios modos; revisa tu modelo.",
+        aEn: "On iPhone, the 15 Pro, 16 Pro and 17 Pro models, including Max, with ProRes Log. On Samsung, the Galaxy S25 series and the S24 series with One UI 7, from Pro Video mode. Other brands have their own modes; check your model.",
+      },
+      {
+        q: "¿A cuántos cuadros por segundo grabo para redes?",
+        qEn: "What frame rate should I record for social media?",
+        a: "30 para la mayoría de los Reels y videos hablando a cámara, 24 si buscas un look cinematográfico y 60 si hay movimiento o quieres cámara lenta al 50%. Con luz artificial en México, usa obturación de 1/60 o 1/120 para evitar parpadeo.",
+        aEn: "30 for most Reels and talking-to-camera videos, 24 for a cinematic look and 60 for movement or 50% slow motion. Under artificial light in Mexico, use a 1/60 or 1/120 shutter to avoid flicker.",
+      },
+      {
+        q: "¿Qué es un LUT y cómo se usa?",
+        qEn: "What is a LUT and how is it used?",
+        a: "Un archivo que convierte los colores según una receta. Los técnicos pasan el LOG a color normal y los creativos dan un estilo. Primero corrige exposición y balance de blancos, luego el LUT técnico y al final el creativo, al 30–60% de intensidad.",
+        aEn: "A file that converts colours according to a recipe. Technical LUTs turn LOG into normal colour and creative ones add a look. First correct exposure and white balance, then the technical LUT and finally the creative one, at 30–60% intensity.",
+      },
+      {
+        q: "¿Qué app de edición me conviene?",
+        qEn: "Which editing app should I use?",
+        a: "CapCut si empiezas y publicas desde el celular (gratis, Pro alrededor de 20 dólares al mes); Premiere Pro si ya usas Adobe (22.99 dólares al mes en plan anual); DaVinci Resolve si quieres aprender color o editar LOG (gratis, Studio 295 dólares en un solo pago).",
+        aEn: "CapCut if you are starting and publish from your phone (free, Pro around 20 dollars a month); Premiere Pro if you already use Adobe (22.99 dollars a month on the annual plan); DaVinci Resolve if you want to learn colour or edit LOG (free, Studio 295 dollars one-time).",
+      },
+      {
+        q: "¿Cuánto debe durar el gancho de un video?",
+        qEn: "How long should a video's hook be?",
+        a: "Lo que tarde en convencer, idealmente los primeros dos o tres segundos. Un estudio de Facebook con Nielsen encontró que hasta 47% del valor de una campaña de video se entrega en los primeros tres segundos.",
+        aEn: "As long as it takes to convince, ideally the first two or three seconds. A Facebook study with Nielsen found that up to 47% of a video campaign's value is delivered in the first three seconds.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "edit videos for social media like a pro",
+        "which phones record LOG",
+        "best frame rate for Reels",
+        "how to use LUTs",
+        "CapCut vs Premiere vs DaVinci Resolve",
+      ],
+      keywordsEs: [
+        "cómo editar videos para redes sociales",
+        "qué celulares graban en LOG",
+        "cuántos cuadros por segundo para Reels",
+        "qué es un LUT",
+        "CapCut o Premiere o DaVinci Resolve",
+        "gancho para videos de redes",
       ],
     },
   },
