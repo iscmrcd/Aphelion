@@ -3,6 +3,13 @@ import type { Lang } from "./i18n";
 export const SITE_URL = "https://aphelion.mx";
 export const SITE_NAME = "Aphelion";
 
+/**
+ * Share preview for every page that does not set its own image: the Aphelion
+ * wordmark centred on black. Without it, Lovable fell back to a screenshot of
+ * the home page, which looked broken in WhatsApp and social previews.
+ */
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og/aphelion-og.jpg`;
+
 export type SeoCopy = {
   title: string;
   description: string;
@@ -45,6 +52,7 @@ export function buildHead({
 }: BuildHeadArgs) {
   const copy = lang === "es" ? es : en;
   const self = url(path, lang === "es" ? "es" : undefined);
+  const ogImage = image ?? DEFAULT_OG_IMAGE;
 
   const meta: Array<Record<string, string>> = [
     { title: copy.title },
@@ -57,21 +65,23 @@ export function buildHead({
     { property: "og:url", content: self },
     { property: "og:locale", content: lang === "es" ? "es_MX" : "en_US" },
     { property: "og:locale:alternate", content: lang === "es" ? "en_US" : "es_MX" },
-    { name: "twitter:card", content: image ? "summary_large_image" : "summary" },
+    { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: copy.ogTitle ?? copy.title },
     { name: "twitter:description", content: copy.ogDescription ?? copy.description },
   ];
 
-  if (image) {
-    // Same preview image for every language variant of the URL (?lang=es included).
-    meta.push({ property: "og:image", content: image });
-    meta.push({ property: "og:image:secure_url", content: image });
-    meta.push({ property: "og:image:width", content: String(imageWidth ?? 1200) });
-    meta.push({ property: "og:image:height", content: String(imageHeight ?? 630) });
-    meta.push({ property: "og:image:alt", content: copy.ogTitle ?? copy.title });
-    meta.push({ name: "twitter:image", content: image });
-    meta.push({ name: "twitter:image:alt", content: copy.ogTitle ?? copy.title });
-  }
+  // Same preview image for every language variant of the URL (?lang=es included).
+  meta.push({ property: "og:image", content: ogImage });
+  meta.push({ property: "og:image:secure_url", content: ogImage });
+  meta.push({
+    property: "og:image:type",
+    content: ogImage.endsWith(".png") ? "image/png" : "image/jpeg",
+  });
+  meta.push({ property: "og:image:width", content: String(image ? (imageWidth ?? 1200) : 1200) });
+  meta.push({ property: "og:image:height", content: String(image ? (imageHeight ?? 630) : 630) });
+  meta.push({ property: "og:image:alt", content: copy.ogTitle ?? copy.title });
+  meta.push({ name: "twitter:image", content: ogImage });
+  meta.push({ name: "twitter:image:alt", content: copy.ogTitle ?? copy.title });
 
   const links = [
     { rel: "canonical", href: self },
