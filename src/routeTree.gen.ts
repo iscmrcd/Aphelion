@@ -17,6 +17,7 @@ import { Route as DisenoWebTijuanaRouteImport } from './routes/diseno-web-tijuan
 import { Route as EcommerceRouteImport } from './routes/ecommerce'
 import { Route as GoogleAdsRouteImport } from './routes/google-ads'
 import { Route as GoogleAdsTijuanaRouteImport } from './routes/google-ads-tijuana'
+import { Route as GraciasRouteImport } from './routes/gracias'
 import { Route as MarketingMedicosRouteImport } from './routes/marketing-medicos'
 import { Route as MetaAdsRouteImport } from './routes/meta-ads'
 import { Route as MetaAdsTijuanaRouteImport } from './routes/meta-ads-tijuana'
@@ -75,6 +76,11 @@ const GoogleAdsRoute = GoogleAdsRouteImport.update({
 const GoogleAdsTijuanaRoute = GoogleAdsTijuanaRouteImport.update({
   id: '/google-ads-tijuana',
   path: '/google-ads-tijuana',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GraciasRoute = GraciasRouteImport.update({
+  id: '/gracias',
+  path: '/gracias',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MarketingMedicosRoute = MarketingMedicosRouteImport.update({
@@ -179,6 +185,7 @@ export interface FileRoutesByFullPath {
   '/ecommerce': typeof EcommerceRoute
   '/google-ads': typeof GoogleAdsRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
+  '/gracias': typeof GraciasRoute
   '/marketing-medicos': typeof MarketingMedicosRoute
   '/meta-ads': typeof MetaAdsRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
@@ -207,6 +214,7 @@ export interface FileRoutesByTo {
   '/ecommerce': typeof EcommerceRoute
   '/google-ads': typeof GoogleAdsRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
+  '/gracias': typeof GraciasRoute
   '/marketing-medicos': typeof MarketingMedicosRoute
   '/meta-ads': typeof MetaAdsRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
@@ -235,6 +243,7 @@ export interface FileRoutesById {
   '/ecommerce': typeof EcommerceRoute
   '/google-ads': typeof GoogleAdsRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
+  '/gracias': typeof GraciasRoute
   '/marketing-medicos': typeof MarketingMedicosRoute
   '/meta-ads': typeof MetaAdsRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
@@ -265,6 +274,7 @@ export interface FileRouteTypes {
     | '/ecommerce'
     | '/google-ads'
     | '/google-ads-tijuana'
+    | '/gracias'
     | '/marketing-medicos'
     | '/meta-ads'
     | '/meta-ads-tijuana'
@@ -293,6 +303,7 @@ export interface FileRouteTypes {
     | '/ecommerce'
     | '/google-ads'
     | '/google-ads-tijuana'
+    | '/gracias'
     | '/marketing-medicos'
     | '/meta-ads'
     | '/meta-ads-tijuana'
@@ -320,6 +331,7 @@ export interface FileRouteTypes {
     | '/ecommerce'
     | '/google-ads'
     | '/google-ads-tijuana'
+    | '/gracias'
     | '/marketing-medicos'
     | '/meta-ads'
     | '/meta-ads-tijuana'
@@ -349,6 +361,7 @@ export interface RootRouteChildren {
   EcommerceRoute: typeof EcommerceRoute
   GoogleAdsRoute: typeof GoogleAdsRoute
   GoogleAdsTijuanaRoute: typeof GoogleAdsTijuanaRoute
+  GraciasRoute: typeof GraciasRoute
   MarketingMedicosRoute: typeof MarketingMedicosRoute
   MetaAdsRoute: typeof MetaAdsRoute
   MetaAdsTijuanaRoute: typeof MetaAdsTijuanaRoute
@@ -419,6 +432,13 @@ declare module '@tanstack/react-router' {
       path: '/google-ads-tijuana'
       fullPath: '/google-ads-tijuana'
       preLoaderRoute: typeof GoogleAdsTijuanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gracias': {
+      id: '/gracias'
+      path: '/gracias'
+      fullPath: '/gracias'
+      preLoaderRoute: typeof GraciasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/marketing-medicos': {
@@ -581,6 +601,7 @@ const rootRouteChildren: RootRouteChildren = {
   EcommerceRoute: EcommerceRoute,
   GoogleAdsRoute: GoogleAdsRoute,
   GoogleAdsTijuanaRoute: GoogleAdsTijuanaRoute,
+  GraciasRoute: GraciasRoute,
   MarketingMedicosRoute: MarketingMedicosRoute,
   MetaAdsRoute: MetaAdsRoute,
   MetaAdsTijuanaRoute: MetaAdsTijuanaRoute,

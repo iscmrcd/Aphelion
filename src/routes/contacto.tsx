@@ -1,7 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Check } from "lucide-react";
-import { useT } from "@/lib/i18n";
+import { useLang, useT } from "@/lib/i18n";
 import { submitLead } from "@/lib/notify-server";
 import { buildHead, SITE_URL, validateLangSearch } from "@/lib/seo";
 import { trackContactFormResult } from "@/lib/pixel";
@@ -61,6 +61,8 @@ const SERVICE_SLUGS: Record<string, number> = {
 
 function ContactoPage() {
   const t = useT();
+  const { lang } = useLang();
+  const navigate = useNavigate();
   const { servicio, ref } = Route.useSearch();
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
@@ -188,8 +190,10 @@ function ContactoPage() {
       if (res?.ok === true) {
         trackContactFormResult(res, eventId);
         setSent(true);
-      }
-      else setFailed(true);
+        // Keep the confirmed inline state as a fallback if navigation fails.
+        // The destination never contains contact fields or fires another Lead.
+        await navigate({ to: "/gracias", search: { lang }, replace: true }).catch(() => {});
+      } else setFailed(true);
     } catch {
       setFailed(true);
     } finally {

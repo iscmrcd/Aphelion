@@ -44,7 +44,7 @@ function PrivacidadPage() {
           {t("Privacy Notice", "Aviso de Privacidad")}
         </h1>
         <p className="text-neutral-600 mb-12">
-          {t("Last updated: November 5, 2026", "Última actualización: 5 de noviembre de 2026")}
+          {t("Last updated: November 4, 2026", "Última actualización: 4 de noviembre de 2026")}
         </p>
 
         <div className="prose prose-neutral max-w-none space-y-10 text-[15px] leading-relaxed">

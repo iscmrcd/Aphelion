@@ -2,6 +2,7 @@
 - [x] Conectar Lead confirmado de contacto/chat y deduplicar diagnóstico.
 - [x] Delegar Contact de enlaces reales con parámetros controlados.
 - [x] Ejecutar pruebas aisladas, revisar comprobaciones y documentar limitaciones; no publicar.
-- [ ] Añadir /gracias bilingüe sin Lead por visita y excluida de buscadores/sitemap.
-- [ ] Redirigir solo contacto exitoso conservando idioma y probar las tres variantes con mocks.
-- [ ] Actualizar mapa de eventos y verificaciones; mantener publicación pendiente.
+- [x] Añadir /gracias bilingüe sin Lead por visita y excluida de buscadores/sitemap.
+- [x] Redirigir solo contacto exitoso conservando idioma; verificar español, inglés y ruta sin parámetro.
+- [x] Actualizar mapa de eventos; build, TypeScript, 13 pruebas aisladas y sitemap correctos.
+- [ ] Publicar y comprobar recepción de eventos en Meta.
