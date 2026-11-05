@@ -140,7 +140,7 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   // Known on the server, so the first paint is already in the right language.
   const { lang } = Route.useSearch();
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const router = useRouter();
 
   // First touch, before the first client-side navigation drops utm_* from the
   // URL. Initialization and route views use the same path deduplication guard.
@@ -151,8 +151,12 @@ function RootComponent() {
   }, []);
 
   useEffect(() => {
-    trackPageView();
-  }, [pathname]);
+    // A pending router location can precede the browser URL update. Wait for
+    // resolution so the SDK attaches the new page URL to the view.
+    return router.subscribe("onResolved", ({ pathChanged }) => {
+      if (pathChanged) trackPageView();
+    });
+  }, [router]);
 
   return (
     <QueryClientProvider client={queryClient}>

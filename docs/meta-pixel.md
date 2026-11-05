@@ -4,7 +4,7 @@ Existing dataset: CRM Aphelion `2813619889012734`. No new pixel, token, connecto
 
 | Event | Successful trigger | Controlled parameters | ID / deduplication |
 |---|---|---|---|
-| PageView | Initial permitted initialization and internal pathname transitions | None | SDK automatic history views disabled with `fbq.disablePushState`; shared path guard sends one view per path transition, ignoring language/query/hash changes and repeated effects |
+| PageView | Initial permitted initialization and resolved internal pathname transitions | None | Router `onResolved` waits for the browser URL update. SDK history views disabled with `fbq.disablePushState`; shared path guard ignores language/query/hash changes and repeated effects |
 | Lead | Contact `submitLead` returns `ok === true` | `content_name: contact_form`, `lead_source: contact-form` | `contact:<uuid>` per submitted attempt, ref lock before awaiting; event+ID deduplication |
 | Lead | Actual chat returns `captured === true` | `content_name: aphelion_chat`, `lead_source: chat` | `chat:<sessionId>`, once per session across component remounts in the same document |
 | Lead | Diagnostic `submitLead` returns `ok === true` | `content_name: diagnostico` | Existing attemptId, stable generated fallback only when absent; event+ID deduplication |
