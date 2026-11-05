@@ -15,18 +15,20 @@ export const Route = createFileRoute("/contacto")({
       path: "/contacto",
       lang: loaderData?.lang ?? "en",
       en: {
-        title: "Contact Aphelion — Start Your Project",
+        title: "Contact Aphelion: Get a Quote for Your Project",
         description:
-          "Tell us about your project. Websites, marketing, content, video, branding or custom SaaS — we reply within 24 hours.",
-        ogTitle: "Contact — Aphelion",
-        ogDescription: "Tell us about your project. We reply within 24 hours.",
+          "Tell us about your business and what you need: a website, social media, ads, drone video or AI. We reply within 24 hours. Tijuana and Ensenada.",
+        ogTitle: "Get a quote from Aphelion",
+        ogDescription:
+          "Website, social media, ads, drone video or AI. Tell us what you need and we reply within 24 hours.",
       },
       es: {
-        title: "Contacto — Inicia tu proyecto con Aphelion",
+        title: "Contacto: Cotiza tu Página Web o Campaña | Aphelion",
         description:
-          "Cuéntanos tu proyecto. Websites, marketing, contenido, video, branding o SaaS personalizado — te respondemos en menos de 24 horas.",
-        ogTitle: "Contacto — Aphelion",
-        ogDescription: "Cuéntanos tu proyecto. Te respondemos en menos de 24 horas.",
+          "Cuéntanos de tu negocio y qué necesitas: página web, redes sociales, anuncios, video con dron o IA. Te respondemos en menos de 24 horas. Tijuana y Ensenada.",
+        ogTitle: "Cotiza tu proyecto con Aphelion",
+        ogDescription:
+          "Página web, redes sociales, anuncios, video con dron o IA. Cuéntanos qué necesitas y te respondemos en menos de 24 horas.",
       },
       jsonLd: {
         "@type": "ContactPage",
@@ -279,7 +281,12 @@ function ContactoPage() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   {/* WhatsApp first and required: it is where prospects answer
                       and where we close. Email is optional. */}
-                  <Field name="phone" label={t("WhatsApp / Phone *", "WhatsApp / Teléfono *")} type="tel" required />
+                  <Field
+                    name="phone"
+                    label={t("WhatsApp / Phone *", "WhatsApp / Teléfono *")}
+                    type="tel"
+                    required
+                  />
                   <Field name="email" label={t("Email", "Email")} type="email" />
                 </div>
 

@@ -10,6 +10,7 @@ import { buildHead } from "@/lib/seo";
 import { FAQ_MARKETING } from "@/lib/marketing-data";
 import { FAQ_MARKETING_EN } from "@/lib/marketing-data.en";
 import banner from "@/assets/banners/gradient-3.png.asset.json";
+import { fromWeb, fromMarketing } from "@/lib/precios-data";
 
 export const Route = createFileRoute("/servicios/marketing")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -19,20 +20,18 @@ export const Route = createFileRoute("/servicios/marketing")({
       path: "/servicios/marketing",
       lang: loaderData?.lang ?? "en",
       en: {
-        title: "Marketing & Content — Four Volumes | Aphelion",
-        description:
-          "Four marketing and content tiers: Presence, Growth, Brand Partner and Premium Production. One brand per category and market.",
-        ogTitle: "Marketing & Content — Aphelion",
+        title: "Social Media Management & Ad Campaigns | Aphelion",
+        description: `Four plans for social media management, content and Meta and Google ad campaigns, from ${fromMarketing} a month. One brand per category in each area.`,
+        ogTitle: `Social media management and ads from ${fromMarketing} a month`,
         ogDescription:
-          "Real content, managed campaigns and cinematic production. One brand per category and competitive zone.",
+          "Real content, managed campaigns and video production. Four plans, and only one brand per category in each area.",
       },
       es: {
-        title: "Marketing y Contenido — Cuatro volúmenes | Aphelion",
-        description:
-          "Cuatro niveles de marketing y contenido: presencia, crecimiento, brand partner y producción premium. Exclusividad por rubro.",
-        ogTitle: "Marketing & Contenido — Aphelion",
+        title: "Manejo de Redes Sociales y Campañas | Aphelion",
+        description: `Cuatro planes de manejo de redes sociales, contenido y campañas en Meta y Google, desde ${fromMarketing} al mes. Una sola marca por giro en cada zona.`,
+        ogTitle: `Manejo de redes sociales y campañas desde ${fromMarketing} al mes`,
         ogDescription:
-          "Contenido real, campañas administradas y producción cinematográfica. Una sola marca por categoría y zona.",
+          "Contenido real, campañas administradas y producción de video. Cuatro planes y una sola marca por giro en cada zona.",
       },
       jsonLd: [
         {

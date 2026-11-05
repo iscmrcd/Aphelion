@@ -22,7 +22,7 @@ export const Route = createFileRoute("/servicios/video-con-dron")({
         title: "Drone Video in Ensenada | Aphelion",
         description:
           "Aerial drone content production for businesses, events, and projects in Ensenada and Valle de Guadalupe. Get a quote in minutes.",
-        ogTitle: "Aerial Video & Drone Photography — Aphelion",
+        ogTitle: "Drone video and photography in Ensenada and Valle de Guadalupe",
         ogDescription:
           "Aerial production integrated into the same team that runs your brand. Not a freelance pilot — content built to sell.",
       },
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/servicios/video-con-dron")({
         title: "Video con Dron en Ensenada | Aphelion",
         description:
           "Producción de contenido aéreo con dron para negocios, eventos y proyectos en Ensenada y Valle de Guadalupe. Cotiza en minutos.",
-        ogTitle: "Video y Fotografía Aérea con Dron — Aphelion",
+        ogTitle: "Video y foto con dron en Ensenada y Valle de Guadalupe",
         ogDescription:
           "Producción aérea integrada al mismo equipo que maneja tu marca. No es un piloto suelto: es contenido pensado para vender.",
       },

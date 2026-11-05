@@ -8,6 +8,7 @@ import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholder
 import { AgentIAPromo } from "@/components/servicios/AgentIAPromo";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { buildHead, ORGANIZATION_JSONLD, SITE_URL } from "@/lib/seo";
+import { fromWeb, fromMarketing } from "@/lib/precios-data";
 
 export const Route = createFileRoute("/")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -17,20 +18,18 @@ export const Route = createFileRoute("/")({
       path: "/",
       lang: loaderData?.lang ?? "en",
       en: {
-        title: "Aphelion — Digital Infrastructure for High-Ticket Brands",
+        title: "Digital Marketing Agency in Baja California | Aphelion",
         description:
-          "Websites, marketing, content, video and custom SaaS for brands that refuse to settle. One agency for your entire digital infrastructure.",
-        ogTitle: "Aphelion — Digital Infrastructure Agency",
-        ogDescription:
-          "Digital infrastructure for brands that refuse to settle. Six website tiers plus marketing and content.",
+          "Websites, SEO, Google Ads, Meta Ads, social media, drone video and AI agents for businesses in Tijuana, Ensenada and across Baja California.",
+        ogTitle: "Aphelion — Digital Marketing Agency in Tijuana & Ensenada",
+        ogDescription: `Websites from ${fromWeb}, Google and Meta ads, social media, drone video and AI agents. One bilingual team for your whole online presence.`,
       },
       es: {
-        title: "Aphelion — Websites, Marketing y SaaS para marcas high-ticket",
+        title: "Agencia de Marketing Digital en Baja California | Aphelion",
         description:
-          "Websites, marketing, contenido, video y SaaS para marcas que no se conforman. Una sola agencia para toda tu infraestructura digital.",
-        ogTitle: "Aphelion — Agencia digital",
-        ogDescription:
-          "Infraestructura digital para marcas que no se conforman. Seis niveles de web más marketing y contenido.",
+          "Páginas web, SEO, Google Ads, Meta Ads, redes sociales, video con dron y agentes de IA para negocios en Tijuana, Ensenada y todo Baja California.",
+        ogTitle: "Aphelion — Agencia de marketing digital en Tijuana y Ensenada",
+        ogDescription: `Páginas web desde ${fromWeb}, anuncios en Google y Meta, redes sociales, video con dron y agentes de IA. Un solo equipo bilingüe para todo tu negocio en línea.`,
       },
       jsonLd: [
         ORGANIZATION_JSONLD,

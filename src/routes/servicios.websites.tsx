@@ -9,6 +9,7 @@ import { useT, useLang } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
 import { FAQ_WEB } from "@/lib/websites-data";
 import { FAQ_WEB_EN } from "@/lib/websites-data.en";
+import { fromWeb, fromMarketing } from "@/lib/precios-data";
 
 export const Route = createFileRoute("/servicios/websites")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -18,20 +19,20 @@ export const Route = createFileRoute("/servicios/websites")({
       path: "/servicios/websites",
       lang: loaderData?.lang ?? "en",
       en: {
-        title: "Websites — Six Tiers, One Standard | Aphelion",
+        title: `Business Websites from ${fromWeb} | Aphelion`,
         description:
-          "Six website tiers, from a professional presence site to multi-tenant SaaS platforms. Setup, maintenance and a side-by-side comparison.",
-        ogTitle: "Websites — Aphelion",
+          "Six website packages, from a professional presence site to automated websites and SaaS platforms. Setup price, monthly plan and a side-by-side comparison.",
+        ogTitle: `Business websites from ${fromWeb}`,
         ogDescription:
-          "Software that sells for you: Presence, Professional, Lead-Gen, Automated, Commercial System and SaaS.",
+          "Six packages, from a professional site to automated websites and SaaS. See what each one includes and what it costs.",
       },
       es: {
-        title: "Websites — Seis niveles, un estándar | Aphelion",
+        title: `Páginas Web para Negocios desde ${fromWeb} | Aphelion`,
         description:
-          "Seis niveles de páginas web: de presencia profesional a plataformas SaaS multiusuario. Setup, mantenimiento y comparativa lado a lado.",
-        ogTitle: "Websites — Aphelion",
+          "Seis paquetes de página web, del sitio de presencia a la web automatizada y plataformas SaaS. Precio de setup, mensualidad y comparativa lado a lado.",
+        ogTitle: `Páginas web para negocios desde ${fromWeb}`,
         ogDescription:
-          "Software que vende por ti. Web Presencial, Profesional, Captación, Automatizada, Sistema Comercial y SaaS.",
+          "Seis paquetes, del sitio profesional a la web automatizada y SaaS. Mira qué incluye cada uno y cuánto cuesta.",
       },
       jsonLd: [
         {

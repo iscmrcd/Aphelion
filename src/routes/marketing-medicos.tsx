@@ -27,12 +27,12 @@ export const Route = createFileRoute("/marketing-medicos")({
       en: {
         title: "Marketing for Doctors and Clinics | Aphelion",
         description:
-          "Doctoralia can help patients find you, but it should not be the only thing you have. Websites, booking and automation your practice owns. Tijuana and Baja California.",
+          "Doctoralia helps patients find you, but it should not be all you have. A website, booking and automation your practice owns. Tijuana and Baja California.",
       },
       es: {
         title: "Marketing para Médicos y Clínicas | Aphelion",
         description:
-          "Doctoralia puede ayudarte a que te encuentren, pero no debería ser lo único que tienes. Páginas web, agenda y automatización que son tuyas. Tijuana y Baja California.",
+          "Doctoralia ayuda a que te encuentren, pero no debería ser lo único que tienes. Página web, agenda y automatización que son tuyas. Tijuana y Baja California.",
       },
       jsonLd: [
         ORGANIZATION_JSONLD,
@@ -152,10 +152,7 @@ function Ladder() {
           className="text-2xl font-medium tracking-[-0.02em] sm:text-3xl"
           style={{ color: C.deep }}
         >
-          {t(
-            "Pick what your practice actually needs",
-            "Elige lo que necesita tu consultorio",
-          )}
+          {t("Pick what your practice actually needs", "Elige lo que necesita tu consultorio")}
         </h2>
         <p className="mt-3 text-base leading-relaxed text-neutral-700 dark:text-neutral-300">
           {t(

@@ -33,17 +33,17 @@ export const Route = createFileRoute("/servicios/agente-ia")({
         title: "AI Agent for Your Website | Aphelion",
         description:
           "An AI chat agent embedded on your site that answers, qualifies leads and books appointments. Try three live agents on this page before you decide.",
-        ogTitle: "AI Agent — Aphelion",
+        ogTitle: "An AI agent for your website — try it live",
         ogDescription:
-          "Automated flows or a real conversational AI agent on your website. Try it live on the page, no signup.",
+          "It answers, qualifies leads and books appointments on your site. Try three live agents on the page, no signup.",
       },
       es: {
         title: "Agente de IA para tu Sitio Web | Aphelion",
         description:
           "Un agente de chat con IA integrado en tu sitio que responde, califica leads y agenda citas. Prueba tres agentes en vivo en esta página antes de decidir.",
-        ogTitle: "Agente IA — Aphelion",
+        ogTitle: "Agente de IA para tu sitio web: pruébalo en vivo",
         ogDescription:
-          "Flujos automatizados o un agente de IA conversacional real en tu sitio web. Pruébalo en vivo en la página, sin registro.",
+          "Responde, califica prospectos y agenda citas en tu sitio. Prueba tres agentes en vivo en la página, sin registro.",
       },
       image: `${SITE_URL}${ogImage.url}`,
       imageWidth: 1200,

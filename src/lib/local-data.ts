@@ -66,9 +66,9 @@ export const TIJUANA_HUB: LocalPage = {
   seoTitle: "Digital Marketing Agency in Tijuana | Aphelion",
   seoTitleEs: "Agencia de Marketing Digital en Tijuana | Aphelion",
   seoDescription:
-    "Digital marketing agency serving Tijuana: web design, SEO, Google Ads, Meta Ads and automation. Bilingual work built for a border market. Book a diagnostic call.",
+    "Digital marketing agency in Tijuana: web design, SEO, Google Ads, Meta Ads and automation. Bilingual work built for a border market. Book a diagnostic.",
   seoDescriptionEs:
-    "Agencia de marketing digital en Tijuana: diseño web, SEO, Google Ads, Meta Ads y automatización. Trabajo bilingüe pensado para un mercado fronterizo. Agenda una llamada de diagnóstico.",
+    "Agencia de marketing digital en Tijuana: diseño web, SEO, Google Ads, Meta Ads y automatización. Trabajo bilingüe para la frontera. Agenda tu diagnóstico.",
   serviceType: "Digital marketing agency services",
   sections: [
     {
@@ -171,7 +171,7 @@ export const SEO_TIJUANA: LocalPage = {
   seoDescription:
     "SEO for Tijuana businesses: Google Business Profile, bilingual keyword work, local landing pages and technical fixes. Book a diagnostic call.",
   seoDescriptionEs:
-    "SEO para negocios de Tijuana: Perfil de Empresa de Google, keywords en dos idiomas, páginas locales y correcciones técnicas. Agenda una llamada de diagnóstico.",
+    "SEO para negocios de Tijuana: Perfil de Empresa de Google, keywords en dos idiomas, páginas locales y correcciones técnicas. Agenda tu diagnóstico.",
   serviceType: "Search engine optimization",
   sections: [
     {
@@ -292,9 +292,9 @@ export const DISENO_WEB_TIJUANA: LocalPage = {
   seoTitle: "Web Design in Tijuana: Sites That Convert | Aphelion",
   seoTitleEs: "Diseño Web en Tijuana: Sitios que Convierten | Aphelion",
   seoDescription:
-    "Web design and development for Tijuana businesses: fast, bilingual, mobile-first sites with real booking paths and measurement. Book a diagnostic call.",
+    "Web design for Tijuana businesses: fast, bilingual, mobile-first sites with real contact paths and measurement. Book a diagnostic call.",
   seoDescriptionEs:
-    "Diseño y desarrollo web para negocios de Tijuana: sitios rápidos, bilingües y mobile-first, con rutas de contacto reales y medición. Agenda una llamada de diagnóstico.",
+    "Diseño web para negocios de Tijuana: sitios rápidos, bilingües y pensados para celular, con rutas de contacto reales y medición. Agenda tu diagnóstico.",
   serviceType: "Web design and development",
   sections: [
     {
@@ -413,9 +413,9 @@ export const GOOGLE_ADS_TIJUANA: LocalPage = {
   seoTitle: "Google Ads in Tijuana: Campaign Management | Aphelion",
   seoTitleEs: "Google Ads en Tijuana: Gestión de Campañas | Aphelion",
   seoDescription:
-    "Google Ads management for Tijuana businesses: border geo-targeting, bilingual keywords, call tracking and honest reporting. Book a diagnostic call.",
+    "Google Ads for Tijuana businesses: border geo-targeting, bilingual keywords, call tracking and clear reporting. Book a diagnostic call.",
   seoDescriptionEs:
-    "Gestión de Google Ads para negocios de Tijuana: segmentación geográfica fronteriza, keywords en dos idiomas, rastreo de llamadas y reportes honestos. Agenda una llamada de diagnóstico.",
+    "Google Ads para negocios de Tijuana: segmentación fronteriza, keywords en dos idiomas, rastreo de llamadas y reportes claros. Agenda tu diagnóstico.",
   serviceType: "Google Ads campaign management",
   sections: [
     {
@@ -538,9 +538,9 @@ export const META_ADS_TIJUANA: LocalPage = {
   seoTitle: "Meta Ads in Tijuana: Facebook & Instagram | Aphelion",
   seoTitleEs: "Meta Ads en Tijuana: Facebook e Instagram | Aphelion",
   seoDescription:
-    "Facebook and Instagram advertising for Tijuana businesses: local audiences, bilingual creative, pixel setup and honest measurement. Book a diagnostic call.",
+    "Facebook and Instagram ads for Tijuana businesses: local audiences, bilingual creative, pixel setup and clear measurement. Book a diagnostic call.",
   seoDescriptionEs:
-    "Publicidad en Facebook e Instagram para negocios de Tijuana: públicos locales, creativos bilingües, configuración de pixel y medición honesta. Agenda una llamada de diagnóstico.",
+    "Anuncios en Facebook e Instagram para negocios de Tijuana: públicos locales, creativos bilingües, pixel configurado y medición clara. Agenda tu diagnóstico.",
   serviceType: "Meta Ads campaign management",
   sections: [
     {

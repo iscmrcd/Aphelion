@@ -74,12 +74,12 @@ export const SEO_SERVICE: ServicePage = {
     "Search work that compounds instead of stopping the day you stop paying. Slower than ads, cheaper over time, and impossible to guarantee a date for, which is why we tell you upfront what we can and cannot commit to.",
   introEs:
     "Trabajo de búsqueda que se acumula en lugar de detenerse el día que dejas de pagar. Más lento que los anuncios, más barato con el tiempo, e imposible de garantizar con fecha, y por eso te decimos de entrada qué sí y qué no podemos comprometer.",
-  seoTitle: "SEO Services | Aphelion",
-  seoTitleEs: "Servicios de SEO | Aphelion",
+  seoTitle: "SEO Services in Baja California | Aphelion",
+  seoTitleEs: "Servicios de SEO y Posicionamiento Web | Aphelion",
   seoDescription:
-    "SEO as an engagement: technical fixes, content, local search and measurement. What you get, how we start and how it is priced. Serving Tijuana and Baja California.",
+    "SEO for Google: technical fixes, content, local search and measurement. What you get, how we start and how it is priced. Tijuana and Baja California.",
   seoDescriptionEs:
-    "SEO como encargo: correcciones técnicas, contenido, búsqueda local y medición. Qué recibes, cómo arrancamos y cómo se cotiza. Atendemos Tijuana y Baja California.",
+    "Posicionamiento en Google con correcciones técnicas, contenido, SEO local y medición. Qué recibes, cómo arrancamos y cómo se cotiza. Tijuana y Baja California.",
   serviceType: "Search engine optimization",
   deliverables: [
     "A technical audit at the start, with the fixes prioritised by impact rather than by how many there are",
@@ -194,12 +194,12 @@ export const GOOGLE_ADS_SERVICE: ServicePage = {
     "The fastest way to find out whether people are looking for what you sell. Campaigns produce calls within days; what takes weeks is getting the cost per customer to a number that works.",
   introEs:
     "La forma más rápida de averiguar si alguien está buscando lo que vendes. Las campañas producen llamadas en días; lo que tarda semanas es llevar el costo por cliente a un número que funcione.",
-  seoTitle: "Google Ads Management | Aphelion",
-  seoTitleEs: "Gestión de Google Ads | Aphelion",
+  seoTitle: "Google Ads Agency: Campaign Management | Aphelion",
+  seoTitleEs: "Agencia de Google Ads: Gestión de Campañas | Aphelion",
   seoDescription:
-    "Google Ads managed with call tracking and honest reporting. What we do, how we start, and management quoted separately from ad spend. Tijuana and Baja California.",
+    "Google Ads with call tracking and clear reporting. What we do, how we start, and management priced apart from ad spend. Tijuana and Baja California.",
   seoDescriptionEs:
-    "Google Ads gestionado con rastreo de llamadas y reportes honestos. Qué hacemos, cómo arrancamos, y gestión cotizada aparte de la inversión. Tijuana y Baja California.",
+    "Google Ads con rastreo de llamadas y reportes claros. Qué hacemos, cómo arrancamos y la gestión cotizada aparte de tu inversión. Tijuana y Baja California.",
   serviceType: "Google Ads campaign management",
   deliverables: [
     "Account build or audit: campaign structure, keywords, match types and the negative list most accounts never get",
@@ -316,12 +316,12 @@ export const META_ADS_SERVICE: ServicePage = {
     "For the things people do not search for but respond to when shown. Creative carries most of the performance here, which is why this is a production engagement as much as a media one.",
   introEs:
     "Para lo que la gente no busca pero a lo que responde cuando se lo muestras. Aquí el creativo carga con la mayor parte del rendimiento, y por eso esto es tanto un encargo de producción como de medios.",
-  seoTitle: "Meta Ads Management | Aphelion",
-  seoTitleEs: "Gestión de Meta Ads | Aphelion",
+  seoTitle: "Facebook & Instagram Ads (Meta Ads) | Aphelion",
+  seoTitleEs: "Publicidad en Facebook e Instagram (Meta Ads) | Aphelion",
   seoDescription:
-    "Facebook and Instagram advertising with creative production, pixel setup and reporting that accounts for Meta's generous attribution. Tijuana and Baja California.",
+    "Facebook and Instagram ads with creative production, a proper pixel setup and reporting that does not take Meta at its word. Tijuana and Baja California.",
   seoDescriptionEs:
-    "Publicidad en Facebook e Instagram con producción de creativos, configuración de pixel y reportes que consideran la atribución generosa de Meta. Tijuana y Baja California.",
+    "Anuncios en Facebook e Instagram con producción de creativos, pixel bien configurado y reportes que no le creen todo a Meta. Tijuana y Baja California.",
   serviceType: "Meta Ads campaign management",
   deliverables: [
     "Pixel and conversions API setup, with events on the actions that matter rather than page views only",
@@ -443,12 +443,12 @@ export const ECOMMERCE_SERVICE: ServicePage = {
     "An online store is the hardest thing on this list to get right, because it fails quietly. Traffic arrives, carts fill, and the revenue does not appear, usually for reasons that have nothing to do with the design.",
   introEs:
     "Una tienda en línea es lo más difícil de esta lista, porque falla en silencio. Llega tráfico, se llenan carritos, y el ingreso no aparece, normalmente por razones que no tienen nada que ver con el diseño.",
-  seoTitle: "Ecommerce Development | Aphelion",
+  seoTitle: "Ecommerce Development: Online Stores | Aphelion",
   seoTitleEs: "Desarrollo de Tiendas en Línea | Aphelion",
   seoDescription:
-    "Online stores built around the platform decision, payments and shipping in Mexico, and the checkout details that decide conversion. Tijuana and Baja California.",
+    "Online stores built on the right platform, with payments and shipping in Mexico and a checkout that does not leak sales. Tijuana and Baja California.",
   seoDescriptionEs:
-    "Tiendas en línea construidas alrededor de la decisión de plataforma, pagos y envíos en México, y los detalles de checkout que deciden la conversión. Tijuana y Baja California.",
+    "Tiendas en línea con la plataforma correcta, pagos y envíos en México y un checkout que no pierde ventas. Atendemos Tijuana y Baja California.",
   serviceType: "Ecommerce website development",
   // PENDIENTE: Isaac define qué incluye cada paquete de ecommerce
   deliverables: [],
@@ -562,9 +562,9 @@ export const BRANDING_SERVICE: ServicePage = {
   seoTitle: "Branding and Brand Identity | Aphelion",
   seoTitleEs: "Branding e Identidad de Marca | Aphelion",
   seoDescription:
-    "Brand positioning and identity: who you are for, what you say, and a system the rest of your marketing can actually run on. Tijuana and Baja California.",
+    "Brand positioning and identity: who you are for, what you say, and a visual system the rest of your marketing can run on. Tijuana and Baja California.",
   seoDescriptionEs:
-    "Posicionamiento e identidad de marca: para quién eres, qué dices, y un sistema sobre el que sí pueda correr el resto de tu marketing. Tijuana y Baja California.",
+    "Posicionamiento e identidad de marca: para quién eres, qué dices y un sistema visual que el resto de tu marketing sí pueda usar. Tijuana y Baja California.",
   serviceType: "Brand identity and positioning",
   // PENDIENTE: Isaac define qué incluye cada paquete de branding
   deliverables: [],

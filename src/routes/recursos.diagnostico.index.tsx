@@ -31,7 +31,7 @@ export const Route = createFileRoute("/recursos/diagnostico/")({
       es: {
         title: "Diagnóstico digital gratuito para tu negocio | Aphelion",
         description:
-          "Elige tu giro y responde unas preguntas rápidas sobre tu presencia en internet, atención y seguimiento. Resultado al momento y con prioridades. Sin pedir correo.",
+          "Elige tu giro y responde unas preguntas rápidas sobre tu presencia en internet, atención y seguimiento. Resultado al momento y sin pedir correo.",
       },
       jsonLd: [
         ORGANIZATION_JSONLD,
