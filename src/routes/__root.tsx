@@ -20,6 +20,7 @@ import { LangProvider } from "@/lib/i18n";
 import { ThemeProvider } from "@/lib/theme";
 import { validateLangSearch } from "@/lib/seo";
 import { captureAttribution } from "@/lib/attribution";
+import { initializeMetaPixel, installContactTracking } from "@/lib/pixel";
 
 function NotFoundComponent() {
   return (
@@ -81,8 +82,6 @@ function ErrorComponent({ error, reset }: { error: unknown; reset: () => void })
   );
 }
 
-const META_PIXEL_ID = "2813619889012734";
-
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   validateSearch: validateLangSearch,
   // Every internal <Link> keeps ?lang. Without this a Spanish visitor clicking
@@ -109,26 +108,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
-    // Meta Pixel — production only, so dev/local and Lovable preview traffic
-    // never lands in the Pixel's data.
-    scripts: import.meta.env.PROD
-      ? [
-          {
-            children: `
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '${META_PIXEL_ID}');
-fbq('track', 'PageView');
-            `.trim(),
-          },
-        ]
-      : [],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -150,15 +129,6 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <noscript>
-          <img
-            height={1}
-            width={1}
-            style={{ display: "none" }}
-            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
-            alt=""
-          />
-        </noscript>
         {children}
         <Scripts />
       </body>
@@ -175,6 +145,8 @@ function RootComponent() {
   // URL. No PageView here: the Pixel already fires one on history changes.
   useEffect(() => {
     captureAttribution();
+    void initializeMetaPixel();
+    return installContactTracking();
   }, []);
 
   return (

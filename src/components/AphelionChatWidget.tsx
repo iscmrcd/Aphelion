@@ -3,6 +3,7 @@ import { MessageSquare, Send, X } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { chatWithAphelion, type ChatTurn } from "@/lib/aphelion-agent-server";
 import { AphelionOrb } from "./AphelionOrb";
+import { trackChatResult } from "@/lib/pixel";
 
 /**
  * Aphelion's own assistant, replacing the button that used to jump straight to
@@ -99,6 +100,7 @@ export function AphelionChatWidget() {
           path: typeof window !== "undefined" ? window.location.pathname : "",
         },
       });
+      trackChatResult(res, sessionId);
       setMsgs((m) => [...m, { role: "assistant", content: res.reply }]);
       if (res.limitReached) setLimitReached(true);
     } catch {

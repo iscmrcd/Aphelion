@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Check } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { submitLead } from "@/lib/notify-server";
 import { buildHead, SITE_URL, validateLangSearch } from "@/lib/seo";
+import { trackContactFormResult } from "@/lib/pixel";
 
 export const Route = createFileRoute("/contacto")({
   validateSearch: validateLangSearch,
@@ -67,6 +68,7 @@ function ContactoPage() {
   const [waHref, setWaHref] = useState("");
   const [services, setServices] = useState<string[]>([]);
   const [industry, setIndustry] = useState<string>("");
+  const submittingRef = useRef(false);
 
   // Order matters: SERVICE_SLUGS points at these indexes.
   const SERVICES = [
@@ -133,7 +135,9 @@ function ContactoPage() {
    */
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (sending) return;
+    if (submittingRef.current || !e.currentTarget.reportValidity()) return;
+    submittingRef.current = true;
+    const eventId = `contact:${crypto.randomUUID()}`;
     setSending(true);
     setFailed(false);
 
@@ -181,11 +185,15 @@ function ContactoPage() {
             typeof window !== "undefined" ? window.location.pathname + window.location.search : "",
         },
       });
-      if (res?.ok) setSent(true);
+      if (res?.ok === true) {
+        trackContactFormResult(res, eventId);
+        setSent(true);
+      }
       else setFailed(true);
     } catch {
       setFailed(true);
     } finally {
+      submittingRef.current = false;
       setSending(false);
     }
   }

@@ -602,13 +602,17 @@ function PlanForm({
   const t = useT();
   const [form, setForm] = useState({ name: "", company: "", city: "", phone: "", email: "" });
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const submittingRef = useRef(false);
+  const fallbackEventId = useRef<string | null>(null);
 
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm((f) => ({ ...f, [k]: e.target.value }));
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!form.name.trim() || (!form.phone.trim() && !form.email.trim())) return;
+    if (submittingRef.current || state === "sent" || !form.name.trim() || (!form.phone.trim() && !form.email.trim())) return;
+    submittingRef.current = true;
+    if (!fallbackEventId.current) fallbackEventId.current = `diagnostic:${crypto.randomUUID()}`;
     setState("sending");
     try {
       const res = await submitLead({
@@ -631,19 +635,21 @@ function PlanForm({
           sessionId: attemptId ?? undefined,
         },
       });
-      if (res?.ok) {
+      if (res?.ok === true) {
         setState("sent");
         // Only after the lead is really stored or emailed, never on click.
         trackStandard(
           "Lead",
-          { content_category: vertical.slug, content_name: "diagnostico" },
-          attemptId ?? undefined,
+          { content_name: "diagnostico" },
+          attemptId ?? fallbackEventId.current,
         );
       } else {
         setState("error");
       }
     } catch {
       setState("error");
+    } finally {
+      submittingRef.current = false;
     }
   }
 

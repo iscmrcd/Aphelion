@@ -44,7 +44,7 @@ function PrivacidadPage() {
           {t("Privacy Notice", "Aviso de Privacidad")}
         </h1>
         <p className="text-neutral-600 mb-12">
-          {t("Last updated: July 22, 2026", "Última actualización: 22 de julio de 2026")}
+          {t("Last updated: November 5, 2026", "Última actualización: 5 de noviembre de 2026")}
         </p>
 
         <div className="prose prose-neutral max-w-none space-y-10 text-[15px] leading-relaxed">
@@ -149,8 +149,8 @@ function PrivacidadPage() {
             </h2>
             <p className="text-neutral-700">
               {t(
-                "We do not sell or trade your personal data. We may share it with technology providers that enable our operations (for example, hosting, email, messaging, and web analytics services), who act as data processors under a contractual duty of confidentiality. No additional consent from you is required under article 37 of the LFPDPPP.",
-                "No vendemos ni comercializamos tus datos personales. Podemos compartirlos con proveedores tecnológicos que nos permiten operar (por ejemplo, servicios de hosting, correo, mensajería y análisis web), quienes actúan como encargados del tratamiento bajo obligación contractual de confidencialidad. En ningún caso se requiere tu consentimiento adicional conforme al artículo 37 de la LFPDPPP.",
+                "We do not sell your personal data. We use technology providers for hosting, email and messaging. Where advertising measurement is permitted, Meta receives the browsing and event data described below for measurement and ad optimization, under its own terms and privacy policy.",
+                "No vendemos tus datos personales. Utilizamos proveedores tecnológicos para alojamiento, correo y mensajería. Cuando se permite la medición publicitaria, Meta recibe los datos de navegación y eventos descritos abajo para medición y optimización de anuncios, conforme a sus propios términos y aviso de privacidad.",
               )}
             </p>
           </section>
@@ -184,8 +184,14 @@ function PrivacidadPage() {
             </h2>
             <p className="text-neutral-700">
               {t(
-                "Our site may use cookies and similar technologies to remember preferences and measure traffic (for example, through analytics tools). You can disable cookies through your browser settings; some site features may be affected.",
-                "Nuestro sitio puede utilizar cookies y tecnologías similares para recordar preferencias y medir el tráfico (por ejemplo, mediante herramientas de analítica). Puedes desactivar las cookies desde la configuración de tu navegador; algunas funciones del sitio podrían verse afectadas.",
+                "On aphelion.mx and www.aphelion.mx, Meta Pixel may report page visits, successful business inquiries and clicks on WhatsApp, email and phone links. Meta can receive the page URL, browser/device information, IP address, advertising cookies and a generated event identifier. We do not include contact-form fields, chat content or diagnostic answers in these event parameters. A WhatsApp click does not confirm that a message was sent.",
+                "En aphelion.mx y www.aphelion.mx, Meta Pixel puede registrar visitas, solicitudes comerciales recibidas y clics en enlaces de WhatsApp, correo y teléfono. Meta puede recibir la URL de la página, información del navegador/dispositivo, dirección IP, cookies publicitarias y un identificador generado del evento. No incluimos campos del formulario, contenido del chat ni respuestas del diagnóstico en los parámetros de estos eventos. Un clic en WhatsApp no confirma que se haya enviado un mensaje.",
+              )}
+            </p>
+            <p className="text-neutral-700 mt-3">
+              {t(
+                "No advertising tracking is loaded in regions requiring prior consent, or when the region cannot be verified. This site currently has no advertising consent banner. Elsewhere, browser privacy signals and stored advertising refusals block this Pixel. You can opt out using your browser's Global Privacy Control or Do Not Track setting, block advertising cookies, or contact hola@aphelion.mx to withdraw permission for advertising data sharing. Consent-region measurement can be enabled later with recorded visitor choices and a withdrawal option.",
+                "No se carga seguimiento publicitario en regiones que requieren consentimiento previo ni cuando no podemos verificar la región. Actualmente este sitio no tiene un banner de consentimiento publicitario. En otras regiones, las señales de privacidad del navegador y los rechazos publicitarios guardados bloquean este Pixel. Puedes oponerte mediante Global Privacy Control o No rastrear de tu navegador, bloquear cookies publicitarias o contactar a hola@aphelion.mx para retirar el permiso de compartir datos con fines publicitarios. La medición en regiones de consentimiento puede habilitarse posteriormente con un registro de las decisiones del visitante y una opción para retirarlas.",
               )}
             </p>
           </section>
