@@ -7,6 +7,7 @@ type Fbq = ((...args: unknown[]) => void) & {
   push?: Fbq;
   loaded?: boolean;
   version?: string;
+  disablePushState?: boolean;
 };
 type PixelState = { allowed: boolean; initialized: boolean; sent: Set<string>; revoked: boolean; lastPagePath?: string };
 declare global {
@@ -55,6 +56,9 @@ export async function initializeMetaPixel(): Promise<void> {
     f.push = f;
     f.loaded = true;
     f.version = "2.0";
+    // Router views are explicit. Disable SDK history views, including query-only
+    // language changes (same setting used by Meta's official GTM template).
+    f.disablePushState = true;
     window.fbq = f;
     window._fbq = f;
     state.initialized = true;

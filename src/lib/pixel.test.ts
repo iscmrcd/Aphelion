@@ -133,6 +133,7 @@ test("initializer queues one init with lovable agent and one PageView across rep
   setGlobal("fetch", async () => ({ ok: true, text: async () => "h=aphelion.mx\nloc=MX" }));
   await Promise.all([initializeMetaPixel(), initializeMetaPixel()]);
   const pixel = currentPixel();
+  assert.equal(pixel?.disablePushState, true);
   assert.deepEqual(pixel?.queue, [["init", "2813619889012734", {}, { agent: "lovable" }], ["track", "PageView"]]);
   assert.equal(inserted.length, 1);
   const dispatched: unknown[][] = [];
