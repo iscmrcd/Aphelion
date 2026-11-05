@@ -20,7 +20,7 @@ import { LangProvider } from "@/lib/i18n";
 import { ThemeProvider } from "@/lib/theme";
 import { validateLangSearch } from "@/lib/seo";
 import { captureAttribution } from "@/lib/attribution";
-import { initializeMetaPixel, installContactTracking } from "@/lib/pixel";
+import { initializeMetaPixel, installContactTracking, trackPageView } from "@/lib/pixel";
 
 function NotFoundComponent() {
   return (
@@ -140,14 +140,19 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   // Known on the server, so the first paint is already in the right language.
   const { lang } = Route.useSearch();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   // First touch, before the first client-side navigation drops utm_* from the
-  // URL. No PageView here: the Pixel already fires one on history changes.
+  // URL. Initialization and route views use the same path deduplication guard.
   useEffect(() => {
     captureAttribution();
     void initializeMetaPixel();
     return installContactTracking();
   }, []);
+
+  useEffect(() => {
+    trackPageView();
+  }, [pathname]);
 
   return (
     <QueryClientProvider client={queryClient}>

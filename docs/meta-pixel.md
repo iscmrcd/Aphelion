@@ -4,7 +4,7 @@ Existing dataset: CRM Aphelion `2813619889012734`. No new pixel, token, connecto
 
 | Event | Successful trigger | Controlled parameters | ID / deduplication |
 |---|---|---|---|
-| PageView | Single initial permitted initialization | None | One root initialization; Meta retains its existing automatic history behavior, no router PageViews added |
+| PageView | Initial permitted initialization and internal pathname transitions | None | Shared path guard: one view per path transition, no extra views for language/query/hash changes or repeated effects |
 | Lead | Contact `submitLead` returns `ok === true` | `content_name: contact_form`, `lead_source: contact-form` | `contact:<uuid>` per submitted attempt, ref lock before awaiting; event+ID deduplication |
 | Lead | Actual chat returns `captured === true` | `content_name: aphelion_chat`, `lead_source: chat` | `chat:<sessionId>`, once per session across component remounts in the same document |
 | Lead | Diagnostic `submitLead` returns `ok === true` | `content_name: diagnostico` | Existing attemptId, stable generated fallback only when absent; event+ID deduplication |
@@ -26,7 +26,7 @@ WhatsApp **Contact measures a click, not a confirmed conversation or sent messag
 
 Run isolated tests with `node scripts/test-meta-pixel.mjs`. The runner uses the existing TypeScript dependency; no extra paid service or test framework is required. Tests mock browser globals, trace and fbq; they never load Meta or invoke backend submissions. Initial contact/chat UI checks used mocked server responses, without sending real forms, emails, SMS or chat messages.
 
-Validation on November 4, 2026 (America/Tijuana): **13/13 isolated tests passed**. Initial Chromium UI checks with mocked server modules confirmed invalid contact submits invoke nothing, failed response shows recovery, successful response shows confirmation, and double-click issues one submission. Chat opening invoked nothing; mocked `captured: false/true` replies rendered normally. Localhost never initialized fbq. The final GitHub changes passed a local production build, TypeScript check and sitemap validation.
+Validation on November 4, 2026 (America/Tijuana): **14/14 isolated tests passed**. Initial Chromium UI checks with mocked server modules confirmed invalid contact submits invoke nothing, failed response shows recovery, successful response shows confirmation, and double-click issues one submission. Chat opening invoked nothing; mocked `captured: false/true` replies rendered normally. Localhost never initialized fbq. The GitHub changes passed a local production build, TypeScript check and sitemap validation. Path transitions, repeated root effects and language-only changes are covered by an additional isolated test.
 
 ## Contact confirmation page
 
@@ -34,4 +34,10 @@ After a successful contact submission, the existing controlled Lead is sent and 
 
 `/gracias`, `/gracias?lang=es` and `/gracias?lang=en` render a bilingual confirmation, optional WhatsApp link and home link. They contain no Lead tracking code: direct visits and reloads are not leads. `noindex, follow` is set, and the sitemap generator excludes this route. Local browser review confirmed both languages, the no-query route and noindex metadata. The WhatsApp CTA uses the same delegated Contact event. Diagnostic and chat flows are not redirected. No URL-based Lead conversion rule should be added in Meta.
 
-Build and typecheck are handled by the preview's automatic checks; do not interpret passing checks as provider receipt, attribution or optimization eligibility. Nothing has been published. Verify the published domains, permitted-region transmissions and Events Manager receipt after explicit publication approval. Empty/old event history is not repaired by creating a duplicate install. An outcome before region lookup finishes is intentionally blocked, not queued for later replay. A throwing SDK call is marked attempted to avoid an uncertain duplicate.
+## Production verification
+
+Published from GitHub through Lovable on November 4, 2026, with the user's authorization. Both language variants of `/gracias` work on aphelion.mx. One explicitly authorized test submission returned success and redirected to `/gracias?lang=es`. The browser's observed resource inventory showed one `Lead` request to pixel `2813619889012734` with `content_name=contact_form`, `lead_source=contact-form` and a generated `contact:<uuid>` event ID. One WhatsApp CTA click produced one `Contact` request with `content_name=contact_click` and `channel=whatsapp`. No second form submission was made.
+
+The same inventory showed that the SDK did not automatically send PageView on internal navigation, so route views now use the shared path guard instead of assuming SDK history behavior. Browser resource observation confirms event dispatch; it does not prove Meta processed or attributed the requests. Events Manager's visible event list had not yet displayed the new Lead/Contact during verification and reports possible processing delay. Server/browser CAPI deduplication remains unverified.
+
+Do not interpret passing checks as attribution or optimization eligibility. Empty/old event history is not repaired by creating a duplicate install. An outcome before region lookup finishes is intentionally blocked, not queued for later replay. A throwing SDK call is marked attempted to avoid an uncertain duplicate.

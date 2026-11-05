@@ -8,7 +8,7 @@ type Fbq = ((...args: unknown[]) => void) & {
   loaded?: boolean;
   version?: string;
 };
-type PixelState = { allowed: boolean; initialized: boolean; sent: Set<string>; revoked: boolean };
+type PixelState = { allowed: boolean; initialized: boolean; sent: Set<string>; revoked: boolean; lastPagePath?: string };
 declare global {
   interface Window {
     fbq?: Fbq;
@@ -34,7 +34,7 @@ function permittedPixel(): Fbq | null {
   } catch { return null; }
 }
 
-/** One initialization and initial PageView; Meta owns history navigation views. */
+/** One SDK initialization; all PageViews share the path guard below. */
 export async function initializeMetaPixel(): Promise<void> {
   try {
     if (typeof window === "undefined" || !isMetaHost(window.location.hostname) || window.aphelionMeta) return;
@@ -59,12 +59,25 @@ export async function initializeMetaPixel(): Promise<void> {
     window._fbq = f;
     state.initialized = true;
     f("init", META_PIXEL_ID, {}, { agent: "lovable" });
-    f("track", "PageView");
+    trackPageView();
     const script = document.createElement("script");
     script.async = true;
     script.src = "https://connect.facebook.net/en_US/fbevents.js";
     document.head.appendChild(script);
   } catch { /* Measurement must never break the page. */ }
+}
+
+/** One view per path transition, ignoring language/query/hash-only changes. */
+export function trackPageView(): void {
+  try {
+    const f = permittedPixel();
+    const state = window.aphelionMeta;
+    if (!f || !state) return;
+    const path = window.location.pathname;
+    if (state.lastPagePath === path) return;
+    state.lastPagePath = path;
+    f("track", "PageView");
+  } catch { /* Measurement must never affect navigation. */ }
 }
 
 /** The ID deduplicates a successful outcome, not a button press. */

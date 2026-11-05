@@ -10,4 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep the home banner's scroll-responsive wave field in a canvas component, with its light/dark palette in global CSS; this maintains a consistent visual while honoring reduced motion.
-- Centralize browser Meta initialization, permission and deduplication in src/lib/pixel.ts; a single root effect installs it so route navigation never adds a second PageView strategy.
+- Centralize Meta initialization, permission and deduplication in src/lib/pixel.ts. Initial and router PageViews share trackPageView's pathname guard; language/query-only changes do not create extra views.

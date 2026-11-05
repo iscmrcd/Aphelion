@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { afterEach, beforeEach, test } from "node:test";
 import { isMetaHost, regionAllowsMeta } from "./meta-permission";
-import { contactChannel, initializeMetaPixel, installContactTracking, trackChatResult, trackContactFormResult, trackCustom, trackStandard } from "./pixel";
+import { contactChannel, initializeMetaPixel, installContactTracking, trackChatResult, trackContactFormResult, trackCustom, trackPageView, trackStandard } from "./pixel";
 
 let calls: unknown[][];
 let inserted: unknown[];
@@ -14,7 +14,7 @@ function setGlobal(name: string, value: unknown) {
 }
 function ready(hostname = "aphelion.mx") {
   setGlobal("window", {
-    location: { hostname }, fbq: (...args: unknown[]) => calls.push(args),
+    location: { hostname, pathname: "/contacto", search: "" }, fbq: (...args: unknown[]) => calls.push(args),
     aphelionMeta: { allowed: true, initialized: true, sent: new Set(), revoked: false },
     addEventListener: (name: string, fn: (event: unknown) => void) => listeners.set(name, fn),
     removeEventListener: (name: string) => listeners.delete(name),
@@ -79,6 +79,19 @@ test("diagnostic keeps its attempt ID and deduplicates the same outcome", () => 
   trackStandard("Lead", { content_name: "diagnostico" }, "attempt-123");
   trackStandard("Lead", { content_name: "diagnostico" }, "attempt-123");
   assert.equal(calls.length, 1); assert.deepEqual(calls[0]?.[3], { eventID: "attempt-123" });
+});
+test("path transitions count once; language changes and repeated root effects do not inflate views", () => {
+  trackPageView(); trackPageView();
+  window.location.search = "?lang=es";
+  trackPageView();
+  assert.equal(calls.length, 1);
+  window.location.pathname = "/gracias";
+  trackPageView(); trackPageView();
+  assert.equal(calls.length, 2);
+  window.location.pathname = "/contacto";
+  trackPageView();
+  assert.equal(calls.length, 3);
+  assert.ok(calls.every((call) => call[0] === "track" && call[1] === "PageView"));
 });
 test("contact links classify exact domains and protocols, never internal or lookalike URLs", () => {
   assert.equal(contactChannel("https://wa.me/123?text=private"), "whatsapp");

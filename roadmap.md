@@ -4,5 +4,7 @@
 - [x] Ejecutar pruebas aisladas, revisar comprobaciones y documentar limitaciones; no publicar.
 - [x] Añadir /gracias bilingüe sin Lead por visita y excluida de buscadores/sitemap.
 - [x] Redirigir solo contacto exitoso conservando idioma; verificar español, inglés y ruta sin parámetro.
-- [x] Actualizar mapa de eventos; build, TypeScript, 13 pruebas aisladas y sitemap correctos.
-- [ ] Publicar y comprobar recepción de eventos en Meta.
+- [x] Actualizar mapa de eventos; build, TypeScript, 14 pruebas aisladas y sitemap correctos.
+- [x] Publicar y probar un envío real autorizado; confirmar solicitudes Lead y Contact al píxel correcto desde los recursos del navegador.
+- [x] Corregir PageView en navegación interna sin duplicar por idioma.
+- [ ] Confirmar procesamiento de Lead/Contact en el panel de Meta cuando actualice su lista de eventos.
