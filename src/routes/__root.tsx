@@ -153,7 +153,8 @@ function RootComponent() {
   useEffect(() => {
     // A pending router location can precede the browser URL update. Wait for
     // resolution so the SDK attaches the new page URL to the view.
-    return router.subscribe("onResolved", ({ pathChanged }) => {
+    return router.subscribe("onResolved", ({ pathChanged, toLocation }) => {
+      console.debug("[Aphelion Pixel] navigation", pathChanged, toLocation.pathname);
       if (pathChanged) trackPageView();
     });
   }, [router]);

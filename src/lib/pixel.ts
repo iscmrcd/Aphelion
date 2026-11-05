@@ -78,6 +78,7 @@ export function trackPageView(): void {
     const state = window.aphelionMeta;
     if (!f || !state) return;
     const path = window.location.pathname;
+    console.debug("[Aphelion Pixel] view", path, state.lastPagePath);
     if (state.lastPagePath === path) return;
     state.lastPagePath = path;
     f("track", "PageView");
