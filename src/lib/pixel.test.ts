@@ -20,6 +20,7 @@ function ready(hostname = "aphelion.mx") {
     removeEventListener: (name: string) => listeners.delete(name),
   });
 }
+function currentPixel() { return window.fbq; }
 beforeEach(() => {
   calls = []; inserted = []; listeners = new Map(); storage = new Map();
   setGlobal("navigator", { doNotTrack: "0", globalPrivacyControl: false });
@@ -118,10 +119,11 @@ test("initializer queues one init with lovable agent and one PageView across rep
   window.fbq = undefined; window.aphelionMeta = undefined;
   setGlobal("fetch", async () => ({ ok: true, text: async () => "h=aphelion.mx\nloc=MX" }));
   await Promise.all([initializeMetaPixel(), initializeMetaPixel()]);
-  assert.deepEqual(window.fbq?.queue, [["init", "2813619889012734", {}, { agent: "lovable" }], ["track", "PageView"]]);
+  const pixel = currentPixel();
+  assert.deepEqual(pixel?.queue, [["init", "2813619889012734", {}, { agent: "lovable" }], ["track", "PageView"]]);
   assert.equal(inserted.length, 1);
   const dispatched: unknown[][] = [];
-  if (window.fbq) window.fbq.callMethod = (...args) => { dispatched.push(args); };
+  if (pixel) pixel.callMethod = (...args: unknown[]) => { dispatched.push(args); };
   trackContactFormResult({ ok: true }, "after-ready"); assert.equal(dispatched.length, 1);
 });
 test("initializer never loads on previews or unresolved regions", async () => {
