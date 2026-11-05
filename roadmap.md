@@ -1,0 +1,4 @@
+- [ ] Limitar Pixel a dominios públicos y permiso regional, sin duplicar PageView.
+- [ ] Conectar Lead confirmado de contacto/chat y deduplicar diagnóstico.
+- [ ] Delegar Contact de enlaces reales con parámetros controlados.
+- [ ] Ejecutar pruebas aisladas, revisar comprobaciones y documentar limitaciones; no publicar.
