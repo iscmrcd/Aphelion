@@ -111,7 +111,7 @@ test("explicit refusal and GPC revoke and block subsequent sends, including stor
   installContactTracking(); storage.set("cookie_consent", JSON.stringify({ advertising: false }));
   listeners.get("storage")?.({}); trackStandard("Lead", {}, "refused");
   assert.deepEqual(calls, [["consent", "revoke"]]);
-  ready(); calls = []; navigator.globalPrivacyControl = true;
+  ready(); calls = []; setGlobal("navigator", { globalPrivacyControl: true });
   trackStandard("Contact"); assert.deepEqual(calls, [["consent", "revoke"]]);
 });
 test("initializer queues one init with lovable agent and one PageView across repeated calls", async () => {
