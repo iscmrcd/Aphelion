@@ -2,3 +2,6 @@
 - [x] Conectar Lead confirmado de contacto/chat y deduplicar diagnóstico.
 - [x] Delegar Contact de enlaces reales con parámetros controlados.
 - [x] Ejecutar pruebas aisladas, revisar comprobaciones y documentar limitaciones; no publicar.
+- [ ] Añadir /gracias bilingüe sin Lead por visita y excluida de buscadores/sitemap.
+- [ ] Redirigir solo contacto exitoso conservando idioma y probar las tres variantes con mocks.
+- [ ] Actualizar mapa de eventos y verificaciones; mantener publicación pendiente.
