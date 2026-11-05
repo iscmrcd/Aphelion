@@ -32,7 +32,8 @@ type BuildHeadArgs = {
 
 const url = (path: string, lang?: Lang) => {
   const base = `${SITE_URL}${path === "/" ? "" : path}` || SITE_URL;
-  return lang === "es" ? `${base || SITE_URL}?lang=es` : base || SITE_URL;
+  // Spanish is the main language: it owns the bare URL and English adds ?lang=en.
+  return lang === "en" ? `${base || SITE_URL}?lang=en` : base || SITE_URL;
 };
 
 /**
@@ -51,7 +52,7 @@ export function buildHead({
   jsonLd,
 }: BuildHeadArgs) {
   const copy = lang === "es" ? es : en;
-  const self = url(path, lang === "es" ? "es" : undefined);
+  const self = url(path, lang);
   const ogImage = image ?? DEFAULT_OG_IMAGE;
 
   const meta: Array<Record<string, string>> = [
@@ -70,7 +71,7 @@ export function buildHead({
     { name: "twitter:description", content: copy.ogDescription ?? copy.description },
   ];
 
-  // Same preview image for every language variant of the URL (?lang=es included).
+  // Same preview image for every language variant of the URL (?lang=en included).
   meta.push({ property: "og:image", content: ogImage });
   meta.push({ property: "og:image:secure_url", content: ogImage });
   meta.push({
@@ -85,10 +86,10 @@ export function buildHead({
 
   const links = [
     { rel: "canonical", href: self },
-    { rel: "alternate", hrefLang: "en", href: url(path) },
     { rel: "alternate", hrefLang: "es-MX", href: url(path, "es") },
     { rel: "alternate", hrefLang: "es", href: url(path, "es") },
-    { rel: "alternate", hrefLang: "x-default", href: url(path) },
+    { rel: "alternate", hrefLang: "en", href: url(path, "en") },
+    { rel: "alternate", hrefLang: "x-default", href: url(path, "es") },
   ];
 
   const graphs = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
@@ -165,7 +166,7 @@ export const ORGANIZATION_JSONLD = {
 };
 
 /**
- * Search-param validator shared by every route so ?lang=es is typed.
+ * Search-param validator shared by every route so ?lang=en|es is typed.
  * `servicio` and `ref` ride along so a service page or the diagnostic can hand
  * the contact form the context the visitor arrived with.
  */

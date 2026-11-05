@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Digital Marketing Agency in Baja California | Aphelion",
         description:

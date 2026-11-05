@@ -1,11 +1,12 @@
 import type { Lang } from "@/lib/i18n";
 
 /**
- * Internal links carry ?lang explicitly. Without it, a visitor who arrived on
- * ?lang=es with a phone set to English is switched to English on the next page.
+ * Internal links carry ?lang explicitly. Spanish is the default, so only
+ * English needs the parameter; without it an English visitor would land on
+ * the Spanish version of the next page.
  */
 export const langSearch = (lang: Lang) => ({
-  lang: lang === "es" ? ("es" as const) : undefined,
+  lang: lang === "en" ? ("en" as const) : undefined,
 });
 
 /** Set by the selector so a diagnostic started from it is counted as such. */

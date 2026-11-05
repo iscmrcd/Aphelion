@@ -13,7 +13,7 @@ export const Route = createFileRoute("/servicios/video-con-dron")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/servicios/video-con-dron",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       // Share preview uses the page's own drone banner instead of the generic logo card.
       image: `${SITE_URL}/images/og/video-con-dron-og.jpg`,
       imageWidth: 1200,

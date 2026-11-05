@@ -9,7 +9,7 @@ export const Route = createFileRoute("/branding")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
   loader: ({ deps }) => deps,
   head: ({ loaderData }) => {
-    const lang = loaderData?.lang ?? "en";
+    const lang = loaderData?.lang ?? "es";
     return buildHead({
       path: "/branding",
       lang,

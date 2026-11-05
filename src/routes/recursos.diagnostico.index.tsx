@@ -18,7 +18,7 @@ export const Route = createFileRoute("/recursos/diagnostico/")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
   loader: ({ deps }) => deps,
   head: ({ loaderData }) => {
-    const lang = loaderData?.lang ?? "en";
+    const lang = loaderData?.lang ?? "es";
     const path = "/recursos/diagnostico";
     return buildHead({
       path,

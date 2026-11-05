@@ -11,7 +11,13 @@ import {
 
 export type Lang = "en" | "es";
 
-export const DEFAULT_LANG: Lang = "en";
+/**
+ * Spanish is the site's main language: a URL without ?lang renders in Spanish
+ * and English lives at ?lang=en. Most clients are in Baja California, and link
+ * previews (WhatsApp, Facebook) and Google read the bare URL, so the bare URL
+ * has to be the Spanish page.
+ */
+export const DEFAULT_LANG: Lang = "es";
 const STORAGE_KEY = "aphelion.lang";
 
 /** Reads ?lang=es|en from the current URL (client only). */
@@ -31,21 +37,16 @@ function langFromStorage(): Lang | null {
   }
 }
 
-function langFromBrowser(): Lang | null {
-  if (typeof navigator === "undefined") return null;
-  const list = navigator.languages?.length ? navigator.languages : [navigator.language];
-  for (const raw of list) {
-    if (!raw) continue;
-    const code = raw.toLowerCase();
-    if (code.startsWith("es")) return "es";
-    if (code.startsWith("en")) return "en";
-  }
-  return null;
-}
-
-/** URL param > saved choice > browser language > English. */
+/**
+ * URL param > saved choice > Spanish.
+ *
+ * The browser language is deliberately not used. Google renders pages with an
+ * English browser, so switching on navigator.language would show it the
+ * English page at the Spanish URL. Visitors who want English use the toggle,
+ * and that choice is remembered.
+ */
 export function detectLang(): Lang {
-  return langFromUrl() ?? langFromStorage() ?? langFromBrowser() ?? DEFAULT_LANG;
+  return langFromUrl() ?? langFromStorage() ?? DEFAULT_LANG;
 }
 
 type Ctx = { lang: Lang; setLang: (l: Lang) => void; ready: boolean };
@@ -99,7 +100,7 @@ export function LangProvider({
         resetScroll,
       });
     },
-    [navigate]
+    [navigate],
   );
 
   useEffect(() => {
@@ -131,7 +132,7 @@ export function LangProvider({
       }
       syncUrl(l);
     },
-    [syncUrl]
+    [syncUrl],
   );
 
   const value = useMemo(() => ({ lang, setLang, ready }), [lang, setLang, ready]);

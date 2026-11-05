@@ -16,7 +16,7 @@ export const Route = createFileRoute("/servicios/websites")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/servicios/websites",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Website Packages for Businesses | Aphelion",
         description:

@@ -34,7 +34,7 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData, params }) => {
     const post = getPostBySlug(params.slug);
     if (!post) return {};
-    const lang = loaderData?.lang ?? "en";
+    const lang = loaderData?.lang ?? "es";
     const url = `${SITE_URL}/blog/${post.slug}`;
     const og = postOgImage(post);
     const ogUrl = og ? `${SITE_URL}${og}` : undefined;

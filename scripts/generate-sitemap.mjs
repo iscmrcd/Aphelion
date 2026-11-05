@@ -67,8 +67,8 @@ function entry(path, { priority, lastmod, changefreq }) {
   const base = `${SITE_URL}${path === "/" ? "/" : path}`;
   return `  <url>
     <loc>${base}</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="${base}" />
-    <xhtml:link rel="alternate" hreflang="es-MX" href="${base}?lang=es" />
+    <xhtml:link rel="alternate" hreflang="es-MX" href="${base}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${base}?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${base}" />
     <lastmod>${lastmod}</lastmod>${changefreq ? `\n    <changefreq>${changefreq}</changefreq>` : ""}
     <priority>${priority}</priority>

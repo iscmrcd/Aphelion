@@ -49,7 +49,7 @@ export const Route = createFileRoute("/blog/")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/blog",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Blog — SEO, Ads & Marketing Guides | Aphelion",
         description:

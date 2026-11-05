@@ -28,7 +28,7 @@ export const Route = createFileRoute("/servicios/agente-ia")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/servicios/agente-ia",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "AI Agent for Your Website | Aphelion",
         description:

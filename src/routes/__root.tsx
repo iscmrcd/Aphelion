@@ -124,7 +124,7 @@ function RootShell({ children }: { children: ReactNode }) {
   const urlLang = useRouterState({ select: (s) => s.location.search?.lang });
 
   return (
-    <html lang={urlLang === "es" ? "es-MX" : "en"}>
+    <html lang={urlLang === "en" ? "en" : "es-MX"}>
       <head>
         <HeadContent />
       </head>

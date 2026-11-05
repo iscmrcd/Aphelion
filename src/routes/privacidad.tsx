@@ -8,7 +8,7 @@ export const Route = createFileRoute("/privacidad")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/privacidad",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Privacy Notice — Aphelion",
         description:

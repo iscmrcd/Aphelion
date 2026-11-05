@@ -17,7 +17,7 @@ export const Route = createFileRoute("/recursos/diagnostico/$industria")({
   head: ({ loaderData, params }) => {
     const v = getVertical(params.industria);
     if (!v) return {};
-    const lang = loaderData?.lang ?? "en";
+    const lang = loaderData?.lang ?? "es";
     const path = `/recursos/diagnostico/${v.slug}`;
     return buildHead({
       path,

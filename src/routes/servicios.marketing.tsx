@@ -17,7 +17,7 @@ export const Route = createFileRoute("/servicios/marketing")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/servicios/marketing",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Social Media Management & Ad Campaigns | Aphelion",
         description:

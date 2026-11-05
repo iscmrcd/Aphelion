@@ -14,7 +14,7 @@ export const Route = createFileRoute("/contacto")({
   head: ({ loaderData }) =>
     buildHead({
       path: "/contacto",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Contact Aphelion: Get a Quote for Your Project",
         description:

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/gracias")({
   head: ({ loaderData }) => {
     const head = buildHead({
       path: "/gracias",
-      lang: loaderData?.lang ?? "en",
+      lang: loaderData?.lang ?? "es",
       en: {
         title: "Thank you for contacting us | Aphelion",
         description: "We have your message. The Aphelion team will reply within 24 hours.",
