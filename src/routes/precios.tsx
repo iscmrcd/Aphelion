@@ -4,14 +4,7 @@ import { ArrowRight, Plus, Check } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
 import { buildHead, SITE_URL, ORGANIZATION_JSONLD, AREAS_SERVED } from "@/lib/seo";
-import {
-  PRICE_BLOCKS,
-  PRECIOS_FAQ,
-  LOWEST_WEB_SETUP,
-  fromWeb,
-  fromMarketing,
-  type PriceBlock,
-} from "@/lib/precios-data";
+import { PRICE_BLOCKS, PRECIOS_FAQ, LOWEST_WEB_SETUP, type PriceBlock } from "@/lib/precios-data";
 
 export const Route = createFileRoute("/precios")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -26,14 +19,16 @@ export const Route = createFileRoute("/precios")({
         description:
           "Real figures in Mexican pesos for websites, social media, ad campaigns and drone video. Tijuana, Ensenada and Baja California. Final quote after a short review.",
         ogTitle: "Real prices in MXN: websites, marketing and drone",
-        ogDescription: `Websites from ${fromWeb} and marketing from ${fromMarketing} a month. Real figures, no “contact us for pricing”.`,
+        ogDescription:
+          "Website, marketing and drone video packages with real figures in pesos. No “contact us for pricing”.",
       },
       es: {
         title: "Precios de Páginas Web, Marketing y Dron | Aphelion",
         description:
           "Precios reales en pesos de páginas web, redes sociales, campañas y video con dron. Tijuana, Ensenada y Baja California. Cotización final tras una revisión.",
         ogTitle: "Precios reales en MXN: páginas web, marketing y dron",
-        ogDescription: `Páginas web desde ${fromWeb} y marketing desde ${fromMarketing} al mes. Cifras reales, sin “cotiza para saber el precio”.`,
+        ogDescription:
+          "Paquetes de páginas web, marketing y video con dron con cifras reales en pesos. Sin “cotiza para saber el precio”.",
       },
       jsonLd: [
         ORGANIZATION_JSONLD,

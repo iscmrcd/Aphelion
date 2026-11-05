@@ -9,7 +9,6 @@ import { useT, useLang } from "@/lib/i18n";
 import { buildHead } from "@/lib/seo";
 import { FAQ_WEB } from "@/lib/websites-data";
 import { FAQ_WEB_EN } from "@/lib/websites-data.en";
-import { fromWeb, fromMarketing } from "@/lib/precios-data";
 
 export const Route = createFileRoute("/servicios/websites")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -19,20 +18,20 @@ export const Route = createFileRoute("/servicios/websites")({
       path: "/servicios/websites",
       lang: loaderData?.lang ?? "en",
       en: {
-        title: `Business Websites from ${fromWeb} | Aphelion`,
+        title: "Website Packages for Businesses | Aphelion",
         description:
-          "Six website packages, from a professional presence site to automated websites and SaaS platforms. Setup price, monthly plan and a side-by-side comparison.",
-        ogTitle: `Business websites from ${fromWeb}`,
+          "Six website packages, from a professional presence site to automated websites and SaaS platforms. What each includes, upkeep and a side-by-side comparison.",
+        ogTitle: "Website packages for businesses",
         ogDescription:
-          "Six packages, from a professional site to automated websites and SaaS. See what each one includes and what it costs.",
+          "Six packages, from a professional site to automated websites and SaaS. Compare what each includes and pick the one your business needs.",
       },
       es: {
-        title: `Páginas Web para Negocios desde ${fromWeb} | Aphelion`,
+        title: "Paquetes de Páginas Web para Negocios | Aphelion",
         description:
-          "Seis paquetes de página web, del sitio de presencia a la web automatizada y plataformas SaaS. Precio de setup, mensualidad y comparativa lado a lado.",
-        ogTitle: `Páginas web para negocios desde ${fromWeb}`,
+          "Seis paquetes de página web, del sitio de presencia a la web automatizada y plataformas SaaS. Qué incluye cada uno, mantenimiento y comparativa lado a lado.",
+        ogTitle: "Paquetes de páginas web para negocios",
         ogDescription:
-          "Seis paquetes, del sitio profesional a la web automatizada y SaaS. Mira qué incluye cada uno y cuánto cuesta.",
+          "Seis paquetes, del sitio profesional a la web automatizada y SaaS. Compara qué incluye cada uno y elige el que necesita tu negocio.",
       },
       jsonLd: [
         {

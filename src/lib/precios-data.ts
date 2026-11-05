@@ -118,19 +118,6 @@ export const LOWEST_WEB_SETUP = Math.min(
   ...WEB_LEVELS.filter((l) => l.setup !== null).map((l) => l.setup as number),
 );
 
-/** Lowest monthly marketing package. */
-export const LOWEST_MARKETING_MONTHLY = Math.min(...MARKETING_PACKAGES.map((p) => p.monthly));
-
-/** "$9,900 MXN" without Intl, so server and client always print the same string. */
-const mxnLabel = (n: number) => `$${String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} MXN`;
-
-/**
- * "From" figures for page titles, descriptions and share previews. Derived from
- * the package data so the metadata never drifts from the prices on the page.
- */
-export const fromWeb = mxnLabel(LOWEST_WEB_SETUP);
-export const fromMarketing = mxnLabel(LOWEST_MARKETING_MONTHLY);
-
 export const PRECIOS_FAQ = [
   {
     q: "Why is there no single price?",
