@@ -52,34 +52,38 @@ function AutomationPage() {
         <ServiceHeroContent
           eyebrow={t("Automation & systems", "Automatización y sistemas")}
           title={t(
-            "Less manual work.\nA better connected business.",
-            "Menos trabajo manual.\nUn negocio mejor conectado.",
+            "Enquiries answered.\nAppointments and follow-up in order.",
+            "Consultas atendidas.\nCitas y seguimiento en orden.",
           )}
           description={t(
-            "Connect enquiries, appointments and follow-up, or bring your operation into a custom platform. We start with the process you need to improve.",
-            "Conecta consultas, citas y seguimiento, o centraliza tu operación en una plataforma propia. Empezamos por el proceso que necesitas mejorar.",
+            "Organise what you currently handle across WhatsApp, phone calls and spreadsheets. We connect customer enquiries, scheduling and records around your operation.",
+            "Organiza lo que hoy resuelves entre WhatsApp, llamadas y hojas de cálculo. Conectamos atención, agenda y datos según tu operación.",
           )}
         />
       </ScrollDrivenBanner>
       <ServiceBenefits
+        eyebrow={t("What we help solve", "Lo que ayudamos a resolver")}
         title={t("Built around\nthe way you work.", "Diseñado alrededor\nde cómo trabajas.")}
         items={[
           {
-            title: t("Customer enquiries", "Atención a clientes"),
+            title: t("After-hours enquiries", "Consultas fuera de horario"),
             description: t(
               "An assistant that answers frequent questions, collects information and routes the conversation to your team.",
               "Un asistente que responde preguntas frecuentes, recopila información y pasa la conversación a tu equipo.",
             ),
           },
           {
-            title: t("Appointments and follow-up", "Agenda y seguimiento"),
+            title: t("Booking spread across messages", "Citas y seguimiento entre mensajes"),
             description: t(
               "Connect booking, reminders and prospect records so every enquiry has a next step.",
               "Conecta citas, recordatorios y registro de prospectos para que cada consulta tenga un siguiente paso.",
             ),
           },
           {
-            title: t("Your daily operation", "Tu operación diaria"),
+            title: t(
+              "Scattered records and manual processes",
+              "Datos repartidos y procesos manuales",
+            ),
             description: t(
               "Client portals, team permissions, documents and reporting in a system designed for your business.",
               "Portales de clientes, permisos de equipo, documentos y reportes en un sistema diseñado para tu negocio.",

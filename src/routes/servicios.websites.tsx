@@ -70,30 +70,37 @@ function WebsitesPage() {
         />
       </ScrollDrivenBanner>
       <ServiceBenefits
+        eyebrow={t("What we help solve", "Lo que ayudamos a resolver")}
         title={t(
           "Your next customer\nneeds to understand you.",
           "Tu próximo cliente\nnecesita entenderte.",
         )}
         items={[
           {
-            title: t("For an established business", "Para un negocio establecido"),
+            title: t(
+              "Your website no longer reflects your business",
+              "Tu sitio ya no representa tu negocio",
+            ),
             description: t(
-              "Communicate your services, your work and what customers can expect before they contact you.",
-              "Comunica tus servicios, tu trabajo y lo que puede esperar un cliente antes de contactarte.",
+              "We organise your services, images and copy so your website reflects what you do today.",
+              "Reordenamos tus servicios, imágenes y textos para que tu sitio refleje lo que haces hoy.",
             ),
           },
           {
-            title: t("For a new launch", "Para un nuevo proyecto"),
+            title: t("People visit but rarely enquire", "Recibes visitas, pero pocas consultas"),
             description: t(
-              "Start with a professional site that works well on mobile and makes enquiries straightforward.",
-              "Empieza con un sitio profesional que funcione en celular y facilite las consultas.",
+              "Clear buttons, WhatsApp and contact forms make it easier for interested visitors to reach you.",
+              "Facilitamos el contacto con botones claros, WhatsApp y formularios para quienes se interesan en tu negocio.",
             ),
           },
           {
-            title: t("For your campaigns", "Para tus campañas"),
+            title: t(
+              "You invest in ads without measuring enquiries",
+              "Inviertes en anuncios sin medir",
+            ),
             description: t(
-              "Connect ads to a focused landing page, qualification forms and conversion tracking.",
-              "Conecta tus anuncios con una página enfocada, formularios de calificación y medición.",
+              "The Lead-Gen package connects campaign landing pages, forms and conversion tracking to help review where enquiries come from.",
+              "La opción de Captación conecta páginas para campañas, formularios y medición para revisar de dónde llegan las consultas.",
             ),
           },
         ]}

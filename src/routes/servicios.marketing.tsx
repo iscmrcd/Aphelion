@@ -70,36 +70,43 @@ function MarketingPage() {
             "Una marca presente. Con algo que decir.",
           )}
           description={t(
-            "Original content, a consistent direction and campaigns with follow-up. We look after your digital presence while you run your business.",
-            "Contenido propio, una dirección coherente y campañas con seguimiento. Cuidamos tu presencia digital mientras tú operas tu negocio.",
+            "Content for your social channels, with Meta and Google campaign options. We define what we produce, where it runs and how results are reviewed.",
+            "Contenido para tus redes y opciones de campañas en Meta y Google. Definimos qué se produce, dónde se publica y cómo se revisan los resultados.",
           )}
         />
       </ParallaxBanner>
       <ServiceBenefits
+        eyebrow={t("What we help solve", "Lo que ayudamos a resolver")}
         title={t(
           "Content and campaigns.\nWith the same direction.",
           "Contenido y campañas.\nCon la misma dirección.",
         )}
         items={[
           {
-            title: t("Your business, on camera", "Tu negocio, frente a la cámara"),
+            title: t("You lack time to create content", "Te falta tiempo para crear contenido"),
             description: t(
-              "Planned photo and video sessions to show your spaces, products, people and experience.",
-              "Sesiones de foto y video planeadas para mostrar tus espacios, productos, personas y experiencia.",
+              "We plan the calendar, produce photo and video and schedule posts according to your plan.",
+              "Planeamos el calendario, producimos foto y video y programamos las publicaciones según tu plan.",
             ),
           },
           {
-            title: t("A consistent presence", "Una presencia constante"),
+            title: t(
+              "Your brand looks different on every channel",
+              "Tu marca se ve distinta en cada canal",
+            ),
             description: t(
-              "An editorial calendar, copy, design and publishing that keep your channels active and aligned.",
-              "Calendario editorial, textos, diseño y publicación para mantener tus canales activos y alineados.",
+              "We align images, copy and design so your social channels and campaigns share a consistent direction.",
+              "Alineamos imágenes, textos y diseño para que tus redes y campañas tengan una dirección coherente.",
             ),
           },
           {
-            title: t("Campaigns with follow-up", "Campañas con seguimiento"),
+            title: t(
+              "You don't know what happens after the ad",
+              "No sabes qué pasa después del anuncio",
+            ),
             description: t(
-              "On plans with advertising, we manage audiences, creative and results. You pay ad spend directly to the platforms.",
-              "En planes con publicidad, administramos públicos, creatividades y resultados. Tú pagas la inversión directo a las plataformas.",
+              "On campaign plans, we review tracking and results to guide the next actions. Ad spend is paid separately.",
+              "En planes con campañas, revisamos la medición y los resultados para orientar las siguientes acciones. La inversión publicitaria se paga aparte.",
             ),
           },
         ]}

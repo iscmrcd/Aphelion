@@ -4,36 +4,64 @@ import { GradientBorderFrame } from "@/components/servicios/GradientBorderFrame"
 import { AiGradientDefs } from "@/components/servicios/AiGradientDefs";
 import { AI_GRADIENT_TEXT, aiIconGradientStyle } from "@/lib/agente-ia-data";
 import { useT } from "@/lib/i18n";
+import { Reveal } from "./Motion";
 
 /**
- * Homepage promo for the Agente IA product.
- *
- * Copy echoes that page's hero on purpose, so someone arriving from here
- * doesn't feel handed off to a different product. The CTA points straight at
- * the live demo rather than the top of the page — the demo is the argument.
+ * Explain the studio's combined offer in the existing demo section, with
+ * working projects and a live AI demo as evidence.
  */
 export function AgentIAPromo() {
   const t = useT();
 
   return (
-    <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
+    <section
+      id="por-que-aphelion"
+      className="scroll-mt-24 border-t border-neutral-200 px-5 py-20 sm:py-28"
+    >
       <AiGradientDefs />
-      <div className="mx-auto max-w-3xl text-center">
+      <Reveal className="mx-auto max-w-4xl text-center">
         <p className="mb-4 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.16em]">
           <Sparkles className="h-3.5 w-3.5" style={aiIconGradientStyle} aria-hidden />
-          <span className={AI_GRADIENT_TEXT}>{t("AI Agent", "Agente IA")}</span>
+          <span className={AI_GRADIENT_TEXT}>{t("Why Aphelion", "Por qué Aphelion")}</span>
         </p>
 
         <h2 className="text-3xl font-medium leading-[1.1] tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-          {t("An AI agent you can try right now.", "Un agente de IA que puedes probar ahora.")}
+          {t(
+            "Design, production and technology. One creative direction.",
+            "Diseño, producción y tecnología. Con una misma dirección.",
+          )}
         </h2>
 
-        <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-neutral-500">
-          {t(
-            "Explore live demos for real estate, healthcare and professional services. Ask questions and see how the conversation works before deciding what to automate.",
-            "Explora demos en vivo de inmobiliaria, salud y servicios profesionales. Haz preguntas y conoce la conversación antes de decidir qué automatizar.",
-          )}
-        </p>
+        <div className="mt-8 grid gap-6 text-left sm:grid-cols-3">
+          {[
+            {
+              title: t("Original production", "Producción propia"),
+              description: t(
+                "Photo, video and drone footage planned around your business and your brand.",
+                "Fotografía, video y dron planeados alrededor de tu negocio y tu marca.",
+              ),
+            },
+            {
+              title: t("Systems already in operation", "Sistemas en operación"),
+              description: t(
+                "Real projects such as HAIMA's connected inventory, appointments and customer assistance.",
+                "Proyectos reales como el inventario, la agenda y la atención conectados de HAIMA.",
+              ),
+            },
+            {
+              title: t("AI you can try", "IA que puedes probar"),
+              description: t(
+                "Live demos for real estate, healthcare and professional services, available before you enquire.",
+                "Demos en vivo de inmobiliaria, salud y servicios profesionales, antes de contratar.",
+              ),
+            },
+          ].map((point) => (
+            <div key={point.title} className="border-t border-neutral-200 pt-4">
+              <h3 className="text-sm font-medium text-neutral-950">{point.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-neutral-500">{point.description}</p>
+            </div>
+          ))}
+        </div>
 
         <div className="mt-9 flex flex-wrap justify-center gap-3">
           {/* Same outline treatment as that page's hero CTA. */}
@@ -43,7 +71,9 @@ export function AgentIAPromo() {
               hash="demo"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium transition hover:bg-neutral-100"
             >
-              <span className={AI_GRADIENT_TEXT}>{t("Try it yourself", "Pruébalo tú mismo")}</span>
+              <span className={AI_GRADIENT_TEXT}>
+                {t("Try the live demo", "Probar demo en vivo")}
+              </span>
             </Link>
           </GradientBorderFrame>
 
@@ -54,7 +84,7 @@ export function AgentIAPromo() {
             {t("See how it works", "Ver cómo funciona")}
           </Link>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

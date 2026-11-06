@@ -60,16 +60,7 @@ export function PortfolioSection({
 
 function ProjectCard({ project }: { project: (typeof PORTFOLIO_PROJECTS)[number] }) {
   const t = useT();
-  const brief =
-    project.id === "haima-banco-de-sangre"
-      ? t(
-          "A website, appointment booking and AI assistance connected to one blood bank's operation.",
-          "Sitio web, agenda y atención con IA conectados a la operación de un banco de sangre.",
-        )
-      : t(
-          "A new digital presentation for a shipyard's yacht refit and repair services.",
-          "Una nueva presentación digital para los servicios de reparación y refit de un astillero.",
-        );
+  const brief = t(project.summaryEn, project.summary);
   return (
     <Dialog>
       <article>
@@ -87,6 +78,9 @@ function ProjectCard({ project }: { project: (typeof PORTFOLIO_PROJECTS)[number]
               height={660}
               className="h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-[1.035]"
             />
+            <span className="on-dark absolute top-5 left-5 max-w-[calc(100%-2.5rem)] rounded-full bg-neutral-950/75 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.1em] text-white backdrop-blur-sm">
+              {t(project.typeEn, project.type)}
+            </span>
             <span className="on-dark absolute right-5 bottom-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-neutral-950/80 text-white backdrop-blur-sm transition group-hover:bg-neutral-950">
               <Plus aria-hidden="true" className="h-5 w-5" />
             </span>
@@ -95,7 +89,7 @@ function ProjectCard({ project }: { project: (typeof PORTFOLIO_PROJECTS)[number]
         <div className="mt-5 flex items-start justify-between gap-5">
           <div>
             <p className="text-[11px] uppercase tracking-[0.12em] text-neutral-500">
-              {project.location} · {t(project.typeEn, project.type)}
+              {project.location}
             </p>
             <h3 className="mt-2 text-xl font-medium tracking-tight sm:text-2xl">{project.name}</h3>
           </div>

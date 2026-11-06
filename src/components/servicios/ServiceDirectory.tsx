@@ -16,8 +16,8 @@ export function ServiceDirectory({ showHeading = true }: { showHeading?: boolean
       to: "/servicios/websites" as const,
       title: t("Websites", "Sitios web"),
       description: t(
-        "A clear, considered website that helps people understand your business and take the next step.",
-        "Un sitio claro y bien diseñado para que tus clientes entiendan lo que haces y den el siguiente paso.",
+        "Present what you do clearly and make it easy for website visitors to get in touch.",
+        "Presenta lo que haces con claridad y facilita que quien visita tu sitio te contacte.",
       ),
       tags: t(
         "Business websites · Landing pages · Online stores",
@@ -32,8 +32,8 @@ export function ServiceDirectory({ showHeading = true }: { showHeading?: boolean
       to: "/servicios/marketing" as const,
       title: t("Marketing & content", "Marketing y contenido"),
       description: t(
-        "Your brand, consistently present. Original content and campaigns managed with a clear direction.",
-        "Tu marca, presente y coherente. Contenido propio y campañas administradas con una dirección clara.",
+        "Original content to keep your social channels active, with managed campaign options.",
+        "Contenido propio para mantener tus redes activas, con opciones de campañas administradas.",
       ),
       tags: t(
         "Social media · Campaigns · Photo & video",
@@ -48,8 +48,8 @@ export function ServiceDirectory({ showHeading = true }: { showHeading?: boolean
       to: "/servicios/automatizacion" as const,
       title: t("Automation & systems", "Automatización y sistemas"),
       description: t(
-        "Connect enquiries, appointments and follow-up. Tools built around how your business actually works.",
-        "Conecta consultas, citas y seguimiento. Herramientas diseñadas alrededor de cómo opera tu negocio.",
+        "Organise the enquiries, appointments and records currently spread across messages and spreadsheets.",
+        "Organiza consultas, citas y datos que hoy resuelves entre mensajes y hojas de cálculo.",
       ),
       tags: t(
         "AI agents · Scheduling · Custom software",

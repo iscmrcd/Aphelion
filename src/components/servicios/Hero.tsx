@@ -23,8 +23,8 @@ export function Hero() {
         <div className="mt-8 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <p className="max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
             {t(
-              "We design your website, create your content and connect your customer experience. One team, from the first idea to everyday operation.",
-              "Diseñamos tu sitio, creamos tu contenido y conectamos la atención a tus clientes. Un solo equipo, desde la primera idea hasta la operación.",
+              "For businesses in Baja California. We design your website, produce content, manage campaigns and automate booking and follow-up.",
+              "Para negocios de Baja California. Diseñamos tu sitio, producimos contenido, administramos campañas y automatizamos citas y seguimiento.",
             )}
           </p>
           <div className="flex shrink-0 flex-wrap gap-3">

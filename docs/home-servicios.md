@@ -4,7 +4,7 @@ La propuesta conserva el fondo de ondas del inicio, los gradientes al pasar el c
 
 ## Recorrido
 
-- Inicio: propuesta de valor, proyectos reales, tres áreas de servicio, acceso a las demos de IA, proceso, inversión de entrada y contacto.
+- Inicio: propuesta de valor para negocios de Baja California, proyectos con el cambio realizado para cada cliente, tres áreas de servicio, razones para elegir Aphelion con acceso a las demos de IA, proceso, inversión de entrada y contacto.
 - `/servicios`: directorio de las tres áreas principales y servicios especializados.
 - `/servicios/websites`: tres paquetes web; alcance y comparador cerrados por defecto.
 - `/servicios/marketing`: tres planes mensuales; la inversión publicitaria y el plazo se muestran junto al precio.
@@ -12,6 +12,8 @@ La propuesta conserva el fondo de ondas del inicio, los gradientes al pasar el c
 - `/servicios/produccion`: producciones individuales y el plan de producción premium existente.
 - `/trabajo`: HAIMA y Velport, con imágenes, reto, solución y sitio público.
 - `/precios`: importes derivados de los mismos datos de los servicios; se omiten las columnas que no aplican.
+
+Los textos de servicios parten de situaciones concretas del cliente. El cierre explica respuesta, revisión del proyecto y propuesta por escrito. La revisión de textos conserva la estructura visual y las animaciones de esta rama.
 
 ## Condiciones confirmadas
 

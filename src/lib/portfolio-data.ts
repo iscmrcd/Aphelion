@@ -25,6 +25,9 @@ export type PortfolioProject = {
   solution?: string;
   diagnosisEn?: string;
   solutionEn?: string;
+  /** What changed for the client, without estimated performance figures. */
+  summary: string;
+  summaryEn: string;
 };
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
@@ -35,6 +38,10 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     typeEn: "Web system + AI",
     client: "HAIMA Banco de Sangre",
     location: "Tijuana",
+    summary:
+      "De consultas y citas por teléfono a una agenda en línea, inventario en vivo y atención con IA bilingüe.",
+    summaryEn:
+      "From phone enquiries and donor bookings to online appointments, live inventory and bilingual AI assistance.",
     diagnosis:
       "25 años operando en Tijuana sin infraestructura digital. Alta dependencia de llamadas, conmutador y consultas manuales para verificar disponibilidad y agendar donadores.",
     solution:
@@ -54,6 +61,10 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     typeEn: "Yacht refit & repair website",
     client: "Velport Shipyard",
     location: "Ensenada",
+    summary:
+      "De una presencia que no reflejaba su experiencia a un sitio que presenta con claridad sus servicios de refit y reparación.",
+    summaryEn:
+      "From a website that undersold the shipyard's expertise to a clearer presentation of its refit and repair services.",
     diagnosis:
       "30 años operando en Ensenada con una presencia digital que no transmitía precisión, confianza ni control. La experiencia previa no acompañaba la expectativa de propietarios de yachts que buscan refit y reparación de alto nivel.",
     solution:
