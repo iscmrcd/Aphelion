@@ -61,6 +61,10 @@ function AutomationPage() {
           )}
         />
       </ScrollDrivenBanner>
+      <PortfolioSection
+        projectIds={["haima-banco-de-sangre"]}
+        title={t("Automation already in operation.", "Automatización en operación.")}
+      />
       <ServiceBenefits
         eyebrow={t("What we help solve", "Lo que ayudamos a resolver")}
         title={t("Built around\nthe way you work.", "Diseñado alrededor\nde cómo trabajas.")}
@@ -116,7 +120,6 @@ function AutomationPage() {
         </Reveal>
       </section>
       <WebsitesSection systems />
-      <PortfolioSection projectIds={["haima-banco-de-sangre"]} />
       <ServiceTimeline
         steps={[
           {
@@ -129,8 +132,8 @@ function AutomationPage() {
           {
             title: t("Build and test", "Construir y probar"),
             description: t(
-              "We agree on integrations, access and test scenarios before launch. Automated sites and larger systems typically take 5–10 weeks, depending on scope.",
-              "Acordamos integraciones, accesos y escenarios de prueba antes de lanzar. Las webs automatizadas y sistemas suelen requerir 5–10 semanas, según alcance.",
+              "We agree on integrations, access and test scenarios. An Automated Website is estimated at 5–10 weeks from the agreed start, with content approved and scope confirmed. Commercial systems and SaaS have their own schedule.",
+              "Acordamos integraciones, accesos y pruebas. Una Web Automatizada se estima en 5–10 semanas desde el inicio acordado, con contenido aprobado y alcance confirmado. Los sistemas comerciales y SaaS tienen su propio calendario.",
             ),
           },
           {
@@ -144,6 +147,20 @@ function AutomationPage() {
       />
       <FAQ
         items={[
+          {
+            q: t("Is maintenance required?", "¿El mantenimiento es obligatorio?"),
+            a: t(
+              "No. Development, optional maintenance and usage charges are identified separately. You can operate the system in your own accounts and pay the providers directly; support without a maintenance plan is quoted separately.",
+              "No. El desarrollo, el mantenimiento opcional y los cargos por uso se detallan por separado. Puedes operar el sistema en tus propias cuentas y pagar directo a los proveedores; el soporte sin mantenimiento contratado se cotiza aparte.",
+            ),
+          },
+          {
+            q: t("How do you hand over the project?", "¿Cómo entregan el proyecto?"),
+            a: t(
+              "You control the code repository, domain and service accounts. For a Lovable project, we agree on transfer to your workspace or deployment elsewhere. We review the database, integrations and access as part of the handover; your subscriptions and usage charges are identified in the proposal.",
+              "Recibes el repositorio de código, el dominio y el control de tus cuentas. Si se desarrolla en Lovable, acordamos la transferencia a tu espacio de trabajo o el despliegue en otro alojamiento. Revisamos base de datos, integraciones y accesos como parte de la entrega; tus suscripciones y consumos se identifican en la propuesta.",
+            ),
+          },
           {
             q: t(
               "Can this connect to my current tools?",

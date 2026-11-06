@@ -14,9 +14,15 @@ import { Reveal } from "./Motion";
 export function PortfolioSection({
   projectIds,
   showHeading = true,
+  title,
+  eyebrow,
+  description,
 }: {
   projectIds?: string[];
   showHeading?: boolean;
+  title?: string;
+  eyebrow?: string;
+  description?: string;
 }) {
   const t = useT();
   const projects = PORTFOLIO_PROJECTS.filter(
@@ -32,10 +38,15 @@ export function PortfolioSection({
         {showHeading && (
           <Reveal className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
             <div>
-              <p className="studio-eyebrow">{t("Selected work", "Trabajo seleccionado")}</p>
+              <p className="studio-eyebrow">{eyebrow ?? t("Real work", "Trabajo real")}</p>
               <h2 className="studio-heading mt-4">
-                {t("Ideas made real.", "Ideas que ya funcionan.")}
+                {title ?? t("Selected projects.", "Proyectos seleccionados.")}
               </h2>
+              {description && (
+                <p className="mt-5 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                  {description}
+                </p>
+              )}
             </div>
             <Link
               to="/trabajo"

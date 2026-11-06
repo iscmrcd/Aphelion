@@ -337,6 +337,6 @@ export const FAQ_MARKETING_EN = [
   },
   {
     q: "How does billing work?",
-    a: "Plans are quoted and billed monthly in MXN + VAT. Ad spend is paid separately, directly to the platforms. For US clients, we can prepare a proposal in USD; currency and payment terms are agreed in writing before work begins.",
+    a: "Choose weekly or monthly billing in MXN + VAT. We confirm the rate for that option, payment dates and minimum term in writing; a monthly fee does not necessarily equal four weekly payments. Ad spend is paid separately, directly to the platforms. USD proposals are available for US clients with agreed terms.",
   },
 ];

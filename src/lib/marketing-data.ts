@@ -355,6 +355,6 @@ export const FAQ_MARKETING = [
   },
   {
     q: "¿Cómo son los pagos?",
-    a: "Los planes se cotizan y facturan por mes en MXN + IVA. La inversión publicitaria se paga por separado, directo a las plataformas. Para clientes de EE. UU. podemos preparar una propuesta en USD; la moneda y las condiciones se acuerdan por escrito antes de iniciar.",
+    a: "Puedes elegir facturación semanal o mensual en MXN + IVA. Confirmamos por escrito la tarifa de esa modalidad, las fechas de pago y el plazo mínimo; una mensualidad no equivale necesariamente a cuatro pagos semanales. La inversión publicitaria se paga por separado, directo a las plataformas. Para clientes de EE. UU. podemos cotizar en USD con condiciones acordadas.",
   },
 ];

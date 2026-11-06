@@ -1,4 +1,5 @@
 import type { WebLevel, CompareCell } from "./websites-data";
+import { WEBSITE_DELIVERY } from "./website-delivery";
 
 export const WEB_LEVELS_EN: WebLevel[] = [
   {
@@ -222,27 +223,35 @@ export const COMPARE_GROUPS_EN: {
 export const FAQ_WEB_EN = [
   {
     q: "How long does delivery take?",
-    a: "It depends on the tier. Presence Site: 7–10 days. Professional: 2–3 weeks. Lead-Gen: 3–4 weeks. Automated and above: 5–10 weeks depending on scope.",
+    a: `${WEBSITE_DELIVERY.en.all} ${WEBSITE_DELIVERY.en.conditions}`,
   },
   {
     q: "Is hosting included?",
-    a: "Yes. The monthly fee covers hosting, domain (if applicable), monitoring, backups and ongoing support. You don't need to contract anything separately.",
+    a: "Development and hosting are charged separately. Our optional maintenance includes the hosting and support specified in your proposal. You can also use your own accounts and providers. Domain, licences and third-party usage are identified separately.",
   },
   {
     q: "Who owns the code?",
-    a: "The project code, domain and content are yours. You receive access to your hosting, analytics and contracted service accounts. Maintenance is a separate service and you can migrate your website. Third-party licenses and services are identified in the proposal.",
+    a: "The project code, domain and content are yours. You receive the code repository and control of your hosting, analytics and contracted service accounts. You can manage them yourself or select our optional maintenance. Third-party licences are identified in your proposal.",
+  },
+  {
+    q: "How is a Lovable project handed over?",
+    a: "We define handover from the start: you control the code repository and, if you stay on Lovable, we transfer the project to your workspace. If you choose another host, we agree on deployment and migration. We review the domain, database, integrations and access; subscriptions and usage charges are yours and are identified in writing.",
+  },
+  {
+    q: "Is maintenance required?",
+    a: "No. It is an optional service, separate from development. If selected, it starts at launch. If you prefer to operate the site yourself, you receive the code and control of your accounts; you still pay for hosting, the domain and any services the site needs. Support and subsequent changes are quoted separately without a maintenance plan.",
   },
   {
     q: "How many changes can I request?",
-    a: "Each tier includes rounds of revisions during development. After delivery, minor adjustments are covered by monthly support; major redesigns are quoted separately.",
+    a: "We agree on development revision rounds in your proposal. After delivery, minor adjustments follow your selected maintenance scope; without maintenance they are quoted separately. Major redesigns have their own scope.",
   },
   {
     q: "What does monthly support cover?",
-    a: "Operations, maintenance, hosting, monitoring, security, minor updates and uptime oversight. It's not just keeping the site alive — it's keeping it stable.",
+    a: "Optional maintenance covers the hosting, monitoring, backups and minor adjustments defined in your proposal. Integrations, usage charges and new features are identified separately. Support channels and response times are also agreed.",
   },
   {
     q: "How do payments work?",
-    a: "50% to get started, 50% upon delivery. The monthly fee starts once the site is in production.",
+    a: "Development is paid 50% to start and 50% on delivery. If selected, monthly maintenance starts at launch. Hosting and third-party services are itemised separately when you manage them yourself.",
   },
   {
     q: "What if I want to upgrade later?",

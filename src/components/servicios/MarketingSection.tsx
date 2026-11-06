@@ -117,6 +117,12 @@ export function MarketingSection() {
                     </span>
                   </p>
                   <p className="mt-2 text-xs text-neutral-500">
+                    {t(
+                      `Weekly option: ${money(pkg.weekly)} MXN/week`,
+                      `Opción semanal: ${money(pkg.weekly)} MXN/semana`,
+                    )}
+                  </p>
+                  <p className="mt-2 text-xs text-neutral-500">
                     {t("+ VAT", "+ IVA")} ·{" "}
                     {t(
                       `Minimum term: ${pkg.contractMonths} months`,
@@ -174,8 +180,8 @@ export function MarketingSection() {
         </div>
         <p className="mt-6 text-xs leading-relaxed text-neutral-500">
           {t(
-            "Prices in MXN + VAT, billed monthly. Ad spend goes directly to the platforms. For US clients, request a proposal in USD with agreed payment terms.",
-            "Precios en MXN + IVA, con facturación mensual. La inversión publicitaria se paga directo a las plataformas. Para clientes de EE. UU., cotizamos en USD con condiciones de pago acordadas.",
+            "Prices in MXN + VAT. Choose weekly or monthly billing; we confirm the selected rate, calendar and minimum term in writing. Ad spend goes directly to the platforms. USD proposals available for US clients.",
+            "Precios en MXN + IVA. Puedes elegir facturación semanal o mensual; confirmamos por escrito la tarifa elegida, el calendario y el plazo mínimo. La inversión publicitaria se paga directo a las plataformas. Cotización en USD para clientes de EE. UU.",
           )}
         </p>
         <div id="produccion-premium" className="scroll-mt-24">

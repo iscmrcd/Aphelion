@@ -106,6 +106,9 @@ function Block({ block }: { block: PriceBlock }) {
   const { lang } = useLang();
   const showSetup = block.rows.some((row) => row.setup !== null);
   const showMonthly = block.rows.some((row) => row.monthly !== null);
+  const monthlyLabel = ["sitios-web", "sistemas"].includes(block.id)
+    ? t("Optional maintenance /month", "Mantenimiento opcional /mes")
+    : t("Monthly", "Mensual");
   const fmt = (n: number | null) =>
     n === null
       ? t("Quote", "A cotizar")
@@ -170,7 +173,7 @@ function Block({ block }: { block: PriceBlock }) {
                   {showMonthly && (
                     <div>
                       <dt className="text-[10px] uppercase tracking-wide text-neutral-500">
-                        {t("Monthly", "Mensual")}
+                        {monthlyLabel}
                       </dt>
                       <dd className="mt-1 text-lg font-medium text-neutral-950">
                         {fmt(row.monthly)}
@@ -194,9 +197,7 @@ function Block({ block }: { block: PriceBlock }) {
                   {showSetup && (
                     <th className="px-4 py-3 font-medium">{t("One-time", "Pago único")}</th>
                   )}
-                  {showMonthly && (
-                    <th className="px-4 py-3 font-medium">{t("Monthly", "Mensual")}</th>
-                  )}
+                  {showMonthly && <th className="px-4 py-3 font-medium">{monthlyLabel}</th>}
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-200">

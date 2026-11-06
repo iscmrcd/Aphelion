@@ -10,6 +10,7 @@ import {
 import { FAQ } from "@/components/servicios/FAQ";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { Reveal } from "@/components/servicios/Motion";
+import { PortfolioSection } from "@/components/servicios/PortfolioSection";
 import { useMarketingData } from "@/lib/content";
 import { useT } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
@@ -75,6 +76,15 @@ function MarketingPage() {
           )}
         />
       </ParallaxBanner>
+      <PortfolioSection
+        projectIds={["velport-shipyard"]}
+        eyebrow={t("Website content & presentation", "Contenido y presentación web")}
+        title={t("Content applied to a real project.", "Contenido aplicado a un proyecto real.")}
+        description={t(
+          "For Velport, we organised its services, website copy and contact journey. A look at how we structure information and present specialist services through content and visual direction.",
+          "En Velport organizamos los servicios, los textos del sitio y el recorrido de contacto. Una muestra de cómo ordenamos la información y presentamos servicios especializados con contenido y dirección visual.",
+        )}
+      />
       <ServiceBenefits
         eyebrow={t("What we help solve", "Lo que ayudamos a resolver")}
         title={t(

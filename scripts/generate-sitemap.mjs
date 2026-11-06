@@ -15,15 +15,19 @@ import { dirname, join } from "node:path";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE_URL = "https://aphelion.mx";
 
-/** Pull slug + date straight out of the blog data module without importing TS. */
+/** Pull publication and optional update dates without importing TS. */
 function readPosts() {
   const src = readFileSync(join(root, "src/lib/blog-data.ts"), "utf8");
-  const slugs = [...src.matchAll(/^ {4}slug: "([^"]+)"/gm)].map((m) => m[1]);
+  const slugs = [...src.matchAll(/^ {4}slug: "([^"]+)"/gm)];
   const dates = [...src.matchAll(/^ {4}date: "([^"]+)"/gm)].map((m) => m[1]);
   if (slugs.length !== dates.length) {
     throw new Error(`slug/date mismatch: ${slugs.length} slugs vs ${dates.length} dates`);
   }
-  return slugs.map((slug, i) => ({ slug, date: dates[i] }));
+  return slugs.map((match, i) => {
+    const block = src.slice(match.index, slugs[i + 1]?.index ?? src.length);
+    const modified = block.match(/^ {4}updated: "([^"]+)"/m)?.[1] ?? dates[i];
+    return { slug: match[1], date: dates[i], modified };
+  });
 }
 
 /** Diagnostic verticals, so the dynamic route emits one URL per industry. */
@@ -155,7 +159,7 @@ const urls = [
     }),
   ),
   ...posts.map((p) =>
-    entry(`/blog/${p.slug}`, { priority: "0.7", lastmod: p.date, changefreq: "monthly" }),
+    entry(`/blog/${p.slug}`, { priority: "0.7", lastmod: p.modified, changefreq: "monthly" }),
   ),
 ];
 

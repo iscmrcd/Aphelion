@@ -11,6 +11,7 @@ export function InvestmentPreview() {
   const money = (value: number) => `$${value.toLocaleString(lang === "es" ? "es-MX" : "en-US")}`;
   const web = WEB_LEVELS[0];
   const marketing = MARKETING_PACKAGES[0];
+  const system = WEB_LEVELS.find((level) => level.id === 4)!;
   return (
     <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
       <Reveal className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-24">
@@ -45,7 +46,8 @@ export function InvestmentPreview() {
                 <span className="text-xs font-normal text-neutral-500">MXN</span>
               </p>
               <p className="mt-1 text-xs text-neutral-500">
-                + {money(web.men!)} MXN{t("/month maintenance", "/mes de mantenimiento")}
+                {t("Optional maintenance: ", "Mantenimiento opcional: ")}
+                {money(web.men!)} MXN{t("/month", "/mes")}
               </p>
             </div>
           </div>
@@ -66,15 +68,28 @@ export function InvestmentPreview() {
                   `Plazo mínimo: ${marketing.contractMonths} meses`,
                 )}
               </p>
+              <p className="mt-1 text-xs text-neutral-500">
+                {t("Weekly billing available", "Pago semanal disponible")}
+              </p>
             </div>
           </div>
           <div className="flex flex-wrap justify-between gap-3 py-6">
             <span className="text-sm font-medium">
-              {t("Automation & systems", "Automatización y sistemas")}
+              {t("Automated websites & systems", "Webs automatizadas y sistemas")}
             </span>
-            <p className="text-sm text-neutral-500">
-              {t("Quoted by scope", "Cotización según alcance")}
-            </p>
+            <div className="text-right">
+              <p className="text-lg font-medium">
+                {t("From", "Desde")} {money(system.setup!)}{" "}
+                <span className="text-xs font-normal text-neutral-500">MXN</span>
+              </p>
+              <p className="mt-1 text-xs text-neutral-500">
+                {t("Optional maintenance: ", "Mantenimiento opcional: ")}
+                {money(system.men!)} MXN{t("/month", "/mes")}
+              </p>
+              <p className="mt-1 text-xs text-neutral-500">
+                {t("AI agents quoted by scope", "Agentes IA: cotización según alcance")}
+              </p>
+            </div>
           </div>
           <p className="py-4 text-xs leading-relaxed text-neutral-500">
             {t(

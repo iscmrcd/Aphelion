@@ -1,3 +1,4 @@
+import { WEBSITE_DELIVERY } from "./website-delivery";
 import type { Lang } from "./i18n";
 
 /**
@@ -58,6 +59,7 @@ export type BlogPost = {
   excerptEs: string;
   readingTime: number;
   date: string;
+  updated?: string;
   author: string;
   authorRole: string;
   authorRoleEs: string;
@@ -226,6 +228,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "¿Cuánto cuesta una página web en México? Precios reales 2026 desglosados por nivel, sin sorpresas escondidas.",
     readingTime: 9,
     date: "2026-07-23",
+    updated: "2026-11-05",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
@@ -337,8 +340,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cuánto tiempo toma construir una página web profesional?",
         qEn: "How long does it take to build a professional website?",
-        a: "Un sitio de nivel Presencial o Profesional toma entre 3 y 6 semanas desde que se aprueba el contenido. Un sitio de Captación o Automatizado, con formularios, integraciones y lógica de conversión, toma de 6 a 10 semanas. Sistemas comerciales o SaaS a medida pueden tomar varios meses. El cuello de botella casi siempre es el contenido y las decisiones del cliente, no el desarrollo en sí.",
-        aEn: "A Presence or Professional-tier site takes 3 to 6 weeks once content is approved. A Lead-Gen or Automated site, with forms, integrations and conversion logic, takes 6 to 10 weeks. Custom commercial systems or SaaS can take several months. The bottleneck is almost always content and client decisions, not the development itself.",
+        a: `El plazo depende del alcance, el tamaño y la disponibilidad del equipo, el contenido y las revisiones. ${WEBSITE_DELIVERY.es.all} ${WEBSITE_DELIVERY.es.conditions}`,
+        aEn: `Timing depends on scope, team size and availability, content and reviews. ${WEBSITE_DELIVERY.en.all} ${WEBSITE_DELIVERY.en.conditions}`,
       },
       {
         q: "¿Puedo empezar con un sitio básico y actualizarlo después?",
@@ -3296,6 +3299,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Una landing page tiene un solo trabajo: convertir el tráfico de una campaña en una acción concreta. Una página web tiene otro trabajo: existir de forma permanente y representar tu negocio completo. Confundir ambas es la razón por la que algunas campañas de anuncios se ven caras sin convertir.",
     readingTime: 6,
     date: "2026-08-25",
+    updated: "2026-11-05",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
@@ -3374,10 +3378,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The real cost and time difference",
         headingEs: "La diferencia real de costo y tiempo",
         body: [
-          "A standalone landing page typically falls in the same **$25,000–$60,000 MXN range as a Professional-tier website**, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. A Professional site with multiple pages takes 3 to 6 weeks to build, while a single landing page usually lands on the faster end of that same window. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
+          "A standalone landing page typically falls in the same **$25,000–$60,000 MXN range as a Professional-tier website**, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. Timing depends on scope, team size and availability, content and approvals. At Aphelion, a Presence Site is estimated at 7–10 days and Professional at 2–3 weeks from the agreed start, with content approved and scope confirmed. A landing page with campaign integrations needs its own schedule. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
         ],
         bodyEs: [
-          "Una landing page independiente suele caer en el mismo rango de **$25,000 a $60,000 MXN que un sitio de nivel Profesional**, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. Un sitio Profesional con varias páginas toma de 3 a 6 semanas construirlo, mientras que una sola landing page suele quedar en el extremo más rápido de esa misma ventana. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
+          "Una landing page independiente suele caer en el mismo rango de **$25,000 a $60,000 MXN que un sitio de nivel Profesional**, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. El tiempo depende del alcance, el tamaño y la disponibilidad del equipo, el contenido y las aprobaciones. En Aphelion, una Web Presencial se estima en 7–10 días y Profesional en 2–3 semanas desde el inicio acordado, con contenido aprobado y alcance confirmado. Una landing con integraciones de campaña requiere su propio calendario. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
         ],
       },
     ],
@@ -4608,6 +4612,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Todo lo que una página web realmente necesita para funcionar como un activo de negocio: qué nivel te conviene, tiempos reales, qué determina el costo, y los errores que te cuestan leads sin que se note.",
     readingTime: 9,
     date: "2026-09-16",
+    updated: "2026-11-05",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
@@ -4675,10 +4680,12 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Realistic cost and timeline expectations",
         headingEs: "Expectativas realistas de costo y tiempo",
         body: [
-          "A Presence or Professional-tier site runs **$6,000 to $60,000 MXN** and takes 3 to 6 weeks once content is approved. Lead-Gen or Automated tiers run $80,000 to $150,000 MXN and take 6 to 10 weeks. Custom commercial systems or SaaS start above $150,000 MXN and can take several months. The bottleneck is almost always content and client decisions, not the development itself.",
+          "As broad market budget references, simple and corporate sites can range from $6,000 to $60,000 MXN, while larger lead capture and integrated projects can reach $80,000 to $150,000 MXN or more. Scope, content and integrations explain much of that variation. [Aphelion’s current package prices](/precios) are listed separately.",
+          "Delivery also depends on the team’s size, availability and coordination, and on approved content. At Aphelion, a Presence Site is estimated at 7–10 days from the agreed start, Professional at 2–3 weeks, Lead-Gen at 3–4 weeks and an Automated Website at 5–10 weeks. Commercial systems and SaaS have their own schedule. The final date is confirmed in the proposal.",
         ],
         bodyEs: [
-          "Un sitio de nivel Presencial o Profesional cuesta entre **$6,000 y $60,000 MXN** y toma de 3 a 6 semanas desde que se aprueba el contenido. Los niveles de Captación o Automatizada van de $80,000 a $150,000 MXN y toman de 6 a 10 semanas. Los sistemas comerciales o SaaS a medida arrancan sobre los $150,000 MXN y pueden tomar varios meses. El cuello de botella casi siempre es el contenido y las decisiones del cliente, no el desarrollo en sí.",
+          "Como referencias amplias de presupuesto del mercado, los sitios sencillos y corporativos pueden ir de $6,000 a $60,000 MXN, mientras que proyectos mayores de captación e integraciones pueden alcanzar $80,000 a $150,000 MXN o más. El alcance, el contenido y las integraciones explican buena parte de la diferencia. Los [precios actuales de los paquetes de Aphelion](/precios) se presentan por separado.",
+          "La entrega también depende del tamaño, la disponibilidad y la coordinación del equipo, y de contar con contenido aprobado. En Aphelion, una Web Presencial se estima en 7–10 días desde el inicio acordado; Profesional, en 2–3 semanas; Captación, en 3–4; y Web Automatizada, en 5–10. Los sistemas comerciales y SaaS tienen su propio calendario. La fecha final se confirma en la propuesta.",
         ],
       },
       {
@@ -4725,8 +4732,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         q: "¿Cuánto tiempo toma construir un sitio web?",
         qEn: "How long does it take to build a website?",
-        a: "Un sitio Presencial o Profesional toma de 3 a 6 semanas desde que se aprueba el contenido. Uno con captación e integraciones toma de 6 a 10 semanas. El contenido y las decisiones del cliente son el factor que más alarga el proceso, no el desarrollo.",
-        aEn: "A Presence or Professional site takes 3 to 6 weeks once content is approved. One with lead capture and integrations takes 6 to 10 weeks. Content and client decisions are the factor that most extends the process, not development itself.",
+        a: `El plazo depende del alcance, el tamaño y la disponibilidad del equipo, el contenido y las revisiones. ${WEBSITE_DELIVERY.es.all} ${WEBSITE_DELIVERY.es.conditions}`,
+        aEn: `Timing depends on scope, team size and availability, content and reviews. ${WEBSITE_DELIVERY.en.all} ${WEBSITE_DELIVERY.en.conditions}`,
       },
       {
         q: "¿El diseño o el copy importa más para convertir visitantes?",
@@ -4760,88 +4767,110 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Web Design",
     categoryEs: "Diseño Web",
     excerpt:
-      "Real timelines by tier: a Presence or Professional site takes 3 to 6 weeks, Lead-Gen or Automated tiers take 6 to 10. The real bottleneck is almost never development.",
+      "Delivery depends on scope, team size and availability, content and approvals. At Aphelion, a defined Presence Site can be ready in 7–10 days.",
     excerptEs:
-      "Tiempos reales por nivel: un sitio Presencial o Profesional toma de 3 a 6 semanas, los niveles de Captación o Automatizada de 6 a 10. El cuello de botella real casi nunca es el desarrollo.",
+      "El plazo depende del alcance, el tamaño y disponibilidad del equipo, el contenido y las revisiones. En Aphelion, una Web Presencial definida puede estar lista en 7–10 días.",
     readingTime: 4,
     date: "2026-09-18",
+    updated: "2026-11-05",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "A Presence or Professional-tier website takes **3 to 6 weeks once content is approved**. A Lead-Gen or Automated site, with forms, integrations and conversion logic, takes 6 to 10 weeks. Custom commercial systems or SaaS can take several months. Development speed is rarely what determines these timelines.",
+    lede: "There is no single delivery time for a professional website. Scope, team size, availability and approved content all affect the calendar. **At Aphelion, a Presence Site is estimated at 7–10 days from the agreed start**, with content approved and scope confirmed. A website with several pages or integrations needs its own timeline.",
     ledeEs:
-      "Un sitio de nivel Presencial o Profesional toma entre 3 y 6 semanas desde que se aprueba el contenido. Un sitio de Captación o Automatizado, con formularios, integraciones y lógica de conversión, toma de 6 a 10 semanas. Sistemas comerciales o SaaS a medida pueden tomar varios meses. La velocidad de desarrollo casi nunca es lo que determina estos tiempos.",
+      "Una página web profesional no tiene un plazo único. Influyen el alcance, el tamaño y la disponibilidad del equipo, y qué tan listo está el contenido. **En Aphelion, una Web Presencial se estima en 7–10 días desde el inicio acordado**, con contenido aprobado y alcance confirmado. Un sitio con varias páginas o integraciones necesita su propio calendario.",
     sections: [
       {
-        id: "tiempos-por-nivel",
-        heading: "Timeline by tier",
-        headingEs: "Tiempos por nivel",
+        id: "equipo-y-alcance",
+        heading: "How the team affects delivery",
+        headingEs: "Cómo influye el equipo en la entrega",
         body: [
-          "Presence and Professional tiers: 3 to 6 weeks. Lead-Gen and Automated tiers: **6 to 10 weeks**, since they add forms, integrations and [[conversion|conversion]] logic that need testing. Commercial systems and custom SaaS: several months, because they involve custom development and often a database architecture built from scratch.",
+          "The number of people is only part of the picture. A larger team can work on design, copy and development in parallel, but it also needs coordination. A small team with reserved capacity, a defined process and a single decision-maker can move a focused project quickly. A full workload or several rounds of approval can extend either schedule.",
+          "Before comparing a ten-day quote with a six-week quote, check whether they include the same pages, copy, photography, integrations, reviews and launch checks. Ask when work starts and which inputs must be ready.",
         ],
         bodyEs: [
-          "Niveles Presencial y Profesional: de **3 a 6 semanas**. Niveles de Captación y Automatizada: de 6 a 10 semanas, porque suman formularios, integraciones y lógica de [[conversión|conversion]] que necesitan probarse. Sistemas comerciales y SaaS a medida: varios meses, porque implican desarrollo a la medida y muchas veces una arquitectura de base de datos construida desde cero.",
+          "El número de personas es solo una parte. Un equipo grande puede trabajar diseño, textos y desarrollo en paralelo, pero también necesita coordinación. Un equipo pequeño con capacidad reservada, un proceso definido y una persona que aprueba puede avanzar rápido en un proyecto acotado. Una agenda llena o varias rondas de aprobación pueden alargar cualquiera de los dos casos.",
+          "Antes de comparar una propuesta de diez días con una de seis semanas, revisa si incluyen las mismas páginas, textos, fotografía, integraciones, revisiones y pruebas. Pregunta cuándo empieza el trabajo y qué materiales deben estar listos.",
+        ],
+      },
+      {
+        id: "tiempos-por-nivel",
+        heading: "Delivery estimates at Aphelion",
+        headingEs: "Tiempos de referencia en Aphelion",
+        body: [
+          "**Presence Site: 7–10 days. Professional: 2–3 weeks. Lead-Gen: 3–4 weeks. Automated Website: 5–10 weeks.** Commercial systems and SaaS require a project-specific schedule, depending on processes, data and integrations.",
+          "These are estimates from the agreed start date, with scope confirmed and content approved. The proposal sets the delivery date, review rounds and responsibilities. New pages, missing material or changes to integrations can require a revised schedule. [See the current website packages](/servicios/websites).",
+        ],
+        bodyEs: [
+          "**Web Presencial: 7–10 días. Profesional: 2–3 semanas. Captación: 3–4 semanas. Web Automatizada: 5–10 semanas.** Los sistemas comerciales y SaaS requieren un calendario a medida según sus procesos, datos e integraciones.",
+          "Son estimaciones desde el inicio acordado, con alcance confirmado y contenido aprobado. La propuesta establece la fecha de entrega, las rondas de revisión y las responsabilidades. Agregar páginas, completar material pendiente o cambiar integraciones puede requerir un ajuste del calendario. [Consulta los paquetes web actuales](/servicios/websites).",
         ],
       },
       {
         id: "el-verdadero-cuello-de-botella",
-        heading: "The real bottleneck: content, not code",
-        headingEs: "El verdadero cuello de botella: el contenido, no el código",
+        heading: "Content and approvals also take time",
+        headingEs: "El contenido y las aprobaciones también toman tiempo",
         body: [
-          "The clock starts once content is approved, not once the contract is signed, because most delays happen before that point: waiting on photos, copy revisions, or a final decision on messaging. A team that already has its content ready can move through a build noticeably faster than one that's writing copy as the project goes. On projects we've run, the gap between a client who has photos and copy ready on day one and one who's still gathering them two weeks in is often the single biggest swing factor in total delivery time, bigger than the tier or complexity of the site itself.",
+          "Designing a site with approved copy, a logo and selected photos is a different task from also producing those materials. If the project needs a shoot, new copy or service definitions, those steps belong in the schedule. A seven-to-ten-day estimate for a defined Presence Site should not be read as a promise for a full brand and production project.",
         ],
         bodyEs: [
-          "El reloj arranca cuando se aprueba el contenido, no cuando se firma el contrato, porque la mayoría de los retrasos pasan antes de ese punto: esperar fotos, revisiones de copy, o una decisión final sobre el mensaje. Un equipo que ya tiene su contenido listo avanza notablemente más rápido que uno que está escribiendo el copy sobre la marcha. En proyectos que hemos manejado, la diferencia entre un cliente que tiene fotos y copy listos desde el día uno y uno que todavía los está reuniendo dos semanas después suele ser el factor que más mueve el tiempo total de entrega, más que el nivel o la complejidad del sitio en sí.",
+          "Diseñar un sitio con textos aprobados, logo y fotos seleccionadas es distinto de producir también esos materiales. Si el proyecto necesita una sesión, textos nuevos o definir los servicios, esas tareas deben entrar en el calendario. El estimado de 7–10 días de una Web Presencial definida corresponde a ese alcance; un proyecto de marca y producción completa requiere su propia planeación.",
         ],
       },
       {
         id: "que-acelera-el-proceso",
-        heading: "What actually speeds things up",
-        headingEs: "Qué acelera realmente el proceso",
+        heading: "What helps a project move forward",
+        headingEs: "Qué ayuda a que el proyecto avance",
         body: [
-          "Having brand assets ready (logo, photos, existing copy), giving fast feedback on drafts instead of batching revisions, and having one clear decision-maker instead of a committee reviewing every screen are the three factors that most reliably shorten a timeline, more than anything on the development side.",
+          "Have your logo, approved service descriptions, contact details and selected images ready. Choose one person to approve the work and agree on review dates. Confirm integrations early and give the team access to the accounts it needs. Each pending decision should have an owner and a date.",
         ],
         bodyEs: [
-          "Tener los activos de marca listos (logo, fotos, copy existente), dar retroalimentación rápida sobre los borradores en vez de acumular revisiones, y tener una sola persona que decide en vez de un comité revisando cada pantalla, son los tres factores que más confiablemente acortan un tiempo de entrega, más que cualquier cosa del lado del desarrollo.",
+          "Prepara el logo, las descripciones aprobadas de servicios, los datos de contacto y las imágenes seleccionadas. Designa a una persona para aprobar y acuerda fechas de revisión. Confirma las integraciones desde el inicio y facilita los accesos necesarios. Cada decisión pendiente debe tener responsable y fecha.",
         ],
       },
       {
         id: "cuando-desconfiar-de-un-tiempo-prometido",
-        heading: "When to be skeptical of a promised timeline",
-        headingEs: "Cuándo desconfiar de un tiempo prometido",
+        heading: "What a useful delivery commitment includes",
+        headingEs: "Qué debe incluir un compromiso de entrega",
         body: [
-          "A quote promising a fully custom Lead-Gen site in a few days is either using a heavily templated base with minimal customization, or setting an expectation it won't meet. Realistic timelines account for real design, real copy, and real testing, not just filling in a pre-built shell.",
+          "A useful proposal names the start date, deliverables, client inputs, review rounds and launch checks. It also explains what happens if scope changes. Ask for those details whether the estimate is ten days or two months: speed is useful when the agreed work can be delivered and checked.",
         ],
         bodyEs: [
-          "Una cotización que promete un sitio de Captación totalmente a medida en unos días o está usando una base muy basada en plantilla con personalización mínima, o está creando una expectativa que no va a cumplir. Los tiempos realistas contemplan diseño real, copy real y pruebas reales, no solo llenar una plantilla ya hecha.",
+          "Una propuesta útil indica fecha de inicio, entregables, materiales del cliente, rondas de revisión y pruebas antes de publicar. También explica qué pasa si cambia el alcance. Pide ese detalle tanto para diez días como para dos meses: la rapidez sirve cuando el trabajo acordado puede entregarse y revisarse.",
         ],
       },
     ],
     gradient: "from-zinc-700 to-neutral-950",
     faq: [
       {
-        q: "¿Puedo tener mi página web lista en una semana?",
-        qEn: "Can I have my website ready in one week?",
-        a: "Para un sitio muy básico de nivel Presencial con contenido ya listo, es posible en casos específicos. Para cualquier sitio con estrategia, copy real y estructura de conversión, una semana no es un tiempo realista.",
-        aEn: "For a very basic Presence-tier site with content already ready, it's possible in specific cases. For any site with strategy, real copy, and conversion structure, one week isn't a realistic timeframe.",
+        q: "¿Aphelion puede entregar una página web en 7–10 días?",
+        qEn: "Can Aphelion deliver a website in 7–10 days?",
+        a: "Sí, es el estimado de una Web Presencial con alcance confirmado, contenido aprobado y fecha de inicio acordada. Los sitios Profesional, de Captación y Automatizados tienen otros tiempos. La disponibilidad, revisiones e integraciones se consideran en la propuesta.",
+        aEn: "Yes, that is the estimate for a Presence Site with scope confirmed, content approved and an agreed start date. Professional, Lead-Gen and Automated websites have different estimates. Availability, reviews and integrations are considered in the proposal.",
       },
       {
-        q: "¿Qué es lo que más retrasa un proyecto de página web?",
-        qEn: "What most commonly delays a website project?",
-        a: "Casi siempre el contenido: fotos que faltan, copy que no se aprueba, o decisiones de mensaje que se posponen. El desarrollo en sí rara vez es el factor que más alarga el proceso.",
-        aEn: "It's almost always content: missing photos, copy that doesn't get approved, or messaging decisions that get postponed. Development itself is rarely the factor that most extends the process.",
+        q: "¿Un equipo más grande siempre entrega más rápido?",
+        qEn: "Does a bigger team always deliver faster?",
+        a: "El tamaño influye, pero también la disponibilidad, la coordinación y la especialización. Un equipo puede trabajar tareas en paralelo; las aprobaciones, la carga de trabajo y el contenido pendiente siguen afectando el calendario.",
+        aEn: "Size matters, along with availability, coordination and specialist skills. A team can work in parallel, while approvals, workload and missing content still affect the schedule.",
       },
       {
-        q: "¿El tiempo incluye SEO y copywriting o son procesos aparte?",
-        qEn: "Does the timeline include SEO and copywriting, or are those separate processes?",
-        a: "La estructura SEO y el copywriting van integrados dentro del tiempo de construcción, no como fases separadas después. Es parte de por qué el proceso toma semanas y no días.",
-        aEn: "SEO structure and copywriting are integrated within the build timeline, not as separate phases afterward. That's part of why the process takes weeks, not days.",
+        q: "¿Desde cuándo se cuentan los días de entrega?",
+        qEn: "When does the delivery estimate start?",
+        a: "Desde la fecha de inicio acordada, con alcance confirmado y contenido aprobado. La propuesta indica qué debe entregar cada parte, las revisiones y la fecha prevista de publicación.",
+        aEn: "From the agreed start date, with scope confirmed and content approved. Your proposal identifies each party’s inputs, review rounds and the expected launch date.",
       },
       {
-        q: "¿Cómo puedo acortar el tiempo de entrega de mi lado?",
-        qEn: "How can I shorten the delivery timeline on my end?",
-        a: "Ten listos tus activos de marca desde el inicio, responde revisiones rápido en vez de acumularlas, y designa a una sola persona con autoridad para aprobar decisiones, en vez de un comité.",
-        aEn: "Have your brand assets ready from the start, respond to revisions quickly instead of batching them, and designate one person with authority to approve decisions, instead of a committee.",
+        q: "¿El tiempo incluye textos, fotografía e integraciones?",
+        qEn: "Does the estimate include copy, photography and integrations?",
+        a: "Incluye lo que se haya contratado y detallado en la propuesta. Si faltan textos o fotografías, se programa su producción. Las integraciones requieren acceso y pruebas, y pueden modificar el plazo.",
+        aEn: "It includes the work contracted and detailed in the proposal. Missing copy or photography needs its own production schedule. Integrations require access and testing and can affect the timeline.",
+      },
+      {
+        q: "¿Qué pasa si agrego páginas o funciones durante el proyecto?",
+        qEn: "What happens if I add pages or features during the project?",
+        a: "Revisamos el cambio antes de hacerlo y confirmamos su costo y efecto en la fecha de entrega. El calendario del alcance original no cubre automáticamente funciones nuevas.",
+        aEn: "We review the change before proceeding and confirm its cost and effect on delivery. The original schedule does not automatically cover new functionality.",
       },
     ],
     schema: {

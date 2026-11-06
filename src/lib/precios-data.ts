@@ -49,9 +49,9 @@ export const WEB_BLOCK: PriceBlock = {
   title: "Websites",
   titleEs: "Sitios web",
   blurb:
-    "Three website packages. Development is a one-time payment; monthly maintenance covers hosting and support.",
+    "Development is a one-time payment. Optional maintenance covers the hosting and support agreed in your proposal. You can also manage your own hosting and service accounts.",
   blurbEs:
-    "Tres opciones de sitio web. El desarrollo es un pago único; el mantenimiento mensual cubre alojamiento y soporte.",
+    "El desarrollo es un pago único. El mantenimiento opcional cubre el alojamiento y soporte acordados en la propuesta. También puedes administrar tus propias cuentas y servicios.",
   href: "/servicios/websites",
   rows: WEB_LEVELS.filter((l) => l.id <= 3).map((l) => ({
     name: l.name,
@@ -68,9 +68,9 @@ export const MARKETING_BLOCK: PriceBlock = {
   title: "Marketing and content",
   titleEs: "Marketing y contenido",
   blurb:
-    "Ongoing packages with a minimum term, billed monthly. Ad spend goes directly from you to the platforms and is not included in these figures.",
+    "Monthly reference prices, with a weekly billing option and a minimum term. We confirm the selected rate and calendar in writing. Ad spend goes directly to the platforms and is separate.",
   blurbEs:
-    "Paquetes continuos con plazo mínimo, facturados por mes. La inversión publicitaria la pagas directo a las plataformas y no está incluida en estas cifras.",
+    "Precios de referencia mensuales, con opción de pago semanal y plazo mínimo. Confirmamos por escrito la tarifa elegida y el calendario. La pauta se paga directo a las plataformas y va por separado.",
   href: "/servicios/marketing",
   rows: MARKETING_PACKAGES.filter((p) => p.id <= 3).map((p) => ({
     name: p.name,
@@ -79,8 +79,8 @@ export const MARKETING_BLOCK: PriceBlock = {
     taglineEs: p.tagline,
     setup: null,
     monthly: mxn(p.monthly),
-    note: `Minimum term ${p.contractMonths} months`,
-    noteEs: `Plazo mínimo ${p.contractMonths} meses`,
+    note: `Weekly option: $${p.weekly.toLocaleString("en-US")} MXN/week · Minimum term ${p.contractMonths} months`,
+    noteEs: `Opción semanal: $${p.weekly.toLocaleString("es-MX")} MXN/semana · Plazo mínimo ${p.contractMonths} meses`,
   })),
 };
 
@@ -123,9 +123,9 @@ export const SYSTEMS_BLOCK: PriceBlock = {
   title: "Automation and systems",
   titleEs: "Automatización y sistemas",
   blurb:
-    "Scheduling, follow-up and custom platforms. Scope, third-party usage and support are confirmed in writing.",
+    "Automated websites and custom platforms. Initial development, optional maintenance and third-party usage are identified separately. AI agents have their own quote.",
   blurbEs:
-    "Agenda, seguimiento y plataformas a medida. El alcance, los consumos de terceros y el soporte se confirman por escrito.",
+    "Webs automatizadas y plataformas a medida. El desarrollo inicial, el mantenimiento opcional y los consumos de terceros se detallan por separado. Los agentes IA tienen su propia cotización.",
   href: "/servicios/automatizacion",
   rows: WEB_LEVELS.filter((level) => level.id > 3).map((level) => ({
     name: level.name,
@@ -153,8 +153,8 @@ export const PRODUCTION_BLOCK: PriceBlock = {
     taglineEs: pkg.tagline,
     setup: null,
     monthly: pkg.monthly,
-    note: `Minimum term ${pkg.contractMonths} months`,
-    noteEs: `Plazo mínimo ${pkg.contractMonths} meses`,
+    note: `Weekly option: $${pkg.weekly.toLocaleString("en-US")} MXN/week · Minimum term ${pkg.contractMonths} months`,
+    noteEs: `Opción semanal: $${pkg.weekly.toLocaleString("es-MX")} MXN/semana · Plazo mínimo ${pkg.contractMonths} meses`,
   })),
 };
 
@@ -173,6 +173,12 @@ export const LOWEST_WEB_SETUP = Math.min(
 );
 
 export const PRECIOS_FAQ = [
+  {
+    q: "Is website maintenance required?",
+    qEs: "¿Es obligatorio el mantenimiento del sitio?",
+    a: "No. It is optional and separate from development. You can manage your own hosting and service accounts, which still have their own charges. If selected, our maintenance starts at launch and covers the scope agreed in your proposal.",
+    aEs: "No. Es opcional y se cobra aparte del desarrollo. Puedes administrar tu alojamiento y servicios, que siguen teniendo sus propios cargos. Si lo contratas, nuestro mantenimiento inicia al publicar y cubre el alcance acordado en tu propuesta.",
+  },
   {
     q: "Why is there no single price?",
     qEs: "¿Por qué no hay un solo precio?",

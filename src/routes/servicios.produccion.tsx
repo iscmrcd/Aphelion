@@ -156,6 +156,12 @@ function ProductionPage() {
               </p>
               <p className="mt-2 text-xs text-neutral-500">
                 {t(
+                  `Weekly billing option: $${premium.weekly.toLocaleString("en-US")} MXN/week + VAT.`,
+                  `Opción de pago semanal: $${premium.weekly.toLocaleString("es-MX")} MXN/semana + IVA.`,
+                )}
+              </p>
+              <p className="mt-2 text-xs text-neutral-500">
+                {t(
                   `Minimum term: ${premium.contractMonths} months. Ad spend separate.`,
                   `Plazo mínimo: ${premium.contractMonths} meses. Pauta por separado.`,
                 )}

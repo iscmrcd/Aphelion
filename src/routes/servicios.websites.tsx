@@ -13,6 +13,7 @@ import { useT } from "@/lib/i18n";
 import { buildHead, SITE_URL } from "@/lib/seo";
 import { FAQ_WEB } from "@/lib/websites-data";
 import { FAQ_WEB_EN } from "@/lib/websites-data.en";
+import { WEBSITE_DELIVERY } from "@/lib/website-delivery";
 
 export const Route = createFileRoute("/servicios/websites")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -60,8 +61,8 @@ function WebsitesPage() {
         <ServiceHeroContent
           eyebrow={t("Websites", "Sitios web")}
           title={t(
-            "A website that makes your business easy to choose.",
-            "Un sitio que ayuda a elegir tu negocio.",
+            "Your business, clearly presented. Easy to contact.",
+            "Tu negocio, bien presentado. El contacto, fácil.",
           )}
           description={t(
             "Show what you do with clarity, give your work the space it deserves and make it easy for customers to get in touch.",
@@ -69,6 +70,7 @@ function WebsitesPage() {
           )}
         />
       </ScrollDrivenBanner>
+      <PortfolioSection />
       <ServiceBenefits
         eyebrow={t("What we help solve", "Lo que ayudamos a resolver")}
         title={t(
@@ -106,7 +108,6 @@ function WebsitesPage() {
         ]}
       />
       <WebsitesSection />
-      <PortfolioSection />
       <ServiceTimeline
         steps={[
           {
@@ -119,8 +120,8 @@ function WebsitesPage() {
           {
             title: t("Design and development", "Diseño y desarrollo"),
             description: t(
-              "Presence: 7–10 days. Professional: 2–3 weeks. Lead generation: 3–4 weeks. We confirm the schedule after reviewing your content.",
-              "Presencial: 7–10 días. Profesional: 2–3 semanas. Captación: 3–4 semanas. Confirmamos el calendario al revisar tu contenido.",
+              `${WEBSITE_DELIVERY.en.websites} ${WEBSITE_DELIVERY.en.conditions}`,
+              `${WEBSITE_DELIVERY.es.websites} ${WEBSITE_DELIVERY.es.conditions}`,
             ),
           },
           {

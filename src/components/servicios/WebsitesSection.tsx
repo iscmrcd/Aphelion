@@ -38,8 +38,8 @@ export function WebsitesSection({ systems = false }: { systems?: boolean }) {
         </div>
         <p className="mt-6 text-xs leading-relaxed text-neutral-500">
           {t(
-            "Prices in MXN + VAT. Initial development is a one-time payment. Maintenance begins at launch. Third-party services and additional integrations are quoted separately.",
-            "Precios en MXN + IVA. El desarrollo inicial es un pago único. El mantenimiento inicia al publicar. Los servicios de terceros y las integraciones adicionales se cotizan por separado.",
+            "Prices in MXN + VAT. Development is a one-time payment. Maintenance is optional and, if selected, starts at launch. You can manage your own hosting and services; those charges still apply. Additional integrations are quoted separately.",
+            "Precios en MXN + IVA. El desarrollo es un pago único. El mantenimiento es opcional y, si lo contratas, inicia al publicar. Puedes administrar tu alojamiento y servicios en tus propias cuentas; esos cargos siguen aplicando. Las integraciones adicionales se cotizan por separado.",
           )}
         </p>
         <PlanComparison ids={plans.map((level) => level.id)} />
@@ -145,8 +145,11 @@ function WebPlan({ level }: { level: WebLevel }) {
         </p>
         <p className="mt-2 text-xs text-neutral-500">
           {level.men === null
-            ? t("Maintenance quoted by scope", "Mantenimiento según alcance")
-            : `+ ${money(level.men)} MXN${t("/month maintenance", "/mes de mantenimiento")}`}
+            ? t("Optional maintenance, quoted by scope", "Mantenimiento opcional, según alcance")
+            : t(
+                `Optional maintenance: ${money(level.men)} MXN/month`,
+                `Mantenimiento opcional: ${money(level.men)} MXN/mes`,
+              )}
         </p>
         <p className="mt-1 text-xs text-neutral-500">{t("+ VAT", "+ IVA")}</p>
       </div>

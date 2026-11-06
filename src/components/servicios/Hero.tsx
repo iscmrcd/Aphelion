@@ -12,13 +12,10 @@ export function Hero() {
       <div className="relative mx-auto max-w-6xl">
         <p className="studio-eyebrow mb-8 flex items-center gap-3">
           <span className="h-1.5 w-1.5 rounded-full bg-neutral-500" aria-hidden="true" />
-          {t("Web design · Marketing · Automation", "Diseño web · Marketing · Automatización")}
+          {t("Aphelion · Baja California", "Aphelion · Baja California")}
         </p>
         <h1 className="max-w-5xl text-[clamp(2.8rem,7.5vw,6.5rem)] font-medium leading-[1.02] tracking-[-0.055em] text-neutral-950">
-          {t(
-            "A digital presence worthy of your business.",
-            "Una presencia digital a la altura de tu negocio.",
-          )}
+          {t("Web design, content and automation.", "Diseño web, contenido y automatización.")}
         </h1>
         <div className="mt-8 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <p className="max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
