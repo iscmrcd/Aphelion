@@ -1,3 +1,5 @@
+import { WEBSITE_DELIVERY } from "./website-delivery";
+
 export type WebLevel = {
   id: number;
   slug: string;
@@ -29,8 +31,20 @@ export const WEB_LEVELS: WebLevel[] = [
       "SEO básico",
       "1 ronda de cambios",
     ],
-    notInc: ["CRM o agenda incluidos", "Panel administrativo", "Login o portal", "Integraciones API"],
-    canAdd: ["Cotizador express", "Cotizador simple", "Formulario avanzado", "Landing para campaña", "Pagos en línea", "Embed Calendly / PMS"],
+    notInc: [
+      "CRM o agenda incluidos",
+      "Panel administrativo",
+      "Login o portal",
+      "Integraciones API",
+    ],
+    canAdd: [
+      "Cotizador express",
+      "Cotizador simple",
+      "Formulario avanzado",
+      "Landing para campaña",
+      "Pagos en línea",
+      "Embed Calendly / PMS",
+    ],
   },
   {
     id: 2,
@@ -50,7 +64,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "2 rondas de cambios",
     ],
     notInc: ["CRM o agenda incluidos", "Panel administrativo", "Login o portal"],
-    canAdd: ["CRM básico", "Agenda básica", "Cotizador dinámico", "Chatbot con IA", "Dashboard básico"],
+    canAdd: [
+      "CRM básico",
+      "Agenda básica",
+      "Cotizador dinámico",
+      "Chatbot con IA",
+      "Dashboard básico",
+    ],
   },
   {
     id: 3,
@@ -71,7 +91,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "Formulario de calificación",
     ],
     notInc: ["Agenda o CRM incluidos", "Panel administrativo completo", "Login o portal"],
-    canAdd: ["CRM básico", "Panel administrativo", "Agenda básica", "Recordatorios SMS", "Dashboard básico"],
+    canAdd: [
+      "CRM básico",
+      "Panel administrativo",
+      "Agenda básica",
+      "Recordatorios SMS",
+      "Dashboard básico",
+    ],
   },
   {
     id: 4,
@@ -92,7 +118,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "Dashboard básico",
     ],
     notInc: ["Login o portal de cliente", "Panel admin completo", "Reportes avanzados"],
-    canAdd: ["Login de clientes", "Agenda avanzada", "Dashboard avanzado", "Pagos de anticipo", "Firma digital"],
+    canAdd: [
+      "Login de clientes",
+      "Agenda avanzada",
+      "Dashboard avanzado",
+      "Pagos de anticipo",
+      "Firma digital",
+    ],
   },
   {
     id: 5,
@@ -113,7 +145,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "Capacitación + soporte",
     ],
     notInc: [],
-    canAdd: ["Dashboard avanzado", "Firma digital", "Portal de empleados", "Reportes avanzados", "Multi-sucursal"],
+    canAdd: [
+      "Dashboard avanzado",
+      "Firma digital",
+      "Portal de empleados",
+      "Reportes avanzados",
+      "Multi-sucursal",
+    ],
   },
   {
     id: 6,
@@ -168,7 +206,10 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
       { label: "Cotizador simple", vals: ["addon", "addon", "addon", "yes", "yes", "yes"] },
       { label: "CRM básico", vals: ["no", "addon", "addon", "yes", "yes", "yes"] },
       { label: "Agenda básica", vals: ["no", "addon", "addon", "yes", "yes", "yes"] },
-      { label: "Automatización de correos", vals: ["addon", "addon", "addon", "yes", "yes", "yes"] },
+      {
+        label: "Automatización de correos",
+        vals: ["addon", "addon", "addon", "yes", "yes", "yes"],
+      },
     ],
   },
   {
@@ -186,8 +227,14 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
     group: "Pagos e integraciones",
     rows: [
       { label: "Pagos en línea", vals: ["addon", "addon", "addon", "addon", "yes", "yes"] },
-      { label: "Embeds simples (Calendly, PMS, mapa)", vals: ["addon", "addon", "addon", "addon", "addon", "addon"] },
-      { label: "Integraciones externas", vals: ["custom", "custom", "custom", "custom", "custom", "custom"] },
+      {
+        label: "Embeds simples (Calendly, PMS, mapa)",
+        vals: ["addon", "addon", "addon", "addon", "addon", "addon"],
+      },
+      {
+        label: "Integraciones externas",
+        vals: ["custom", "custom", "custom", "custom", "custom", "custom"],
+      },
     ],
   },
 ];
@@ -195,27 +242,35 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
 export const FAQ_WEB = [
   {
     q: "¿Cuánto tarda la entrega?",
-    a: "Depende del nivel. Web Presencial: 7–10 días. Profesional: 2–3 semanas. Captación: 3–4 semanas. Automatizada y superiores: 5–10 semanas según alcance.",
+    a: `${WEBSITE_DELIVERY.es.all} ${WEBSITE_DELIVERY.es.conditions}`,
   },
   {
     q: "¿El hosting está incluido?",
-    a: "Sí. La mensualidad cubre hosting, dominio (si aplica), monitoreo, backups y soporte continuo. No tienes que contratar nada por fuera.",
+    a: "El desarrollo y el alojamiento se cobran por separado. Si contratas nuestro mantenimiento opcional, incluye el alojamiento y el soporte indicados en tu propuesta. También puedes usar cuentas y proveedores propios. Dominio, licencias y consumos de terceros se identifican por separado.",
   },
   {
     q: "¿De quién es el código?",
-    a: "El contenido y la marca son 100% tuyos. La infraestructura técnica la operamos nosotros para garantizar estabilidad y soporte. Si quieres migrar, se entrega export de datos.",
+    a: "El código del proyecto, el dominio y el contenido son tuyos. Recibes el repositorio del código y el control de tus cuentas de alojamiento, analítica y servicios contratados. Puedes administrarlos por tu cuenta o contratar nuestro mantenimiento opcional. Las licencias de terceros se identifican en la propuesta.",
+  },
+  {
+    q: "¿Cómo se entrega un proyecto hecho en Lovable?",
+    a: "Definimos la entrega desde el inicio: el repositorio de código queda bajo tu control y, si continúas en Lovable, transferimos el proyecto a tu espacio de trabajo. Si eliges otro alojamiento, acordamos el despliegue y la migración. Revisamos dominio, base de datos, integraciones y accesos; las suscripciones y consumos quedan a tu cargo, identificados por escrito.",
+  },
+  {
+    q: "¿El mantenimiento es obligatorio?",
+    a: "No. Es un servicio opcional, separado del desarrollo. Si lo contratas, comienza al publicar. Si prefieres operarlo por tu cuenta, recibes el código y el control de tus cuentas; sigues cubriendo el alojamiento, el dominio y los servicios que necesite el sitio. El soporte y los cambios posteriores se cotizan aparte cuando no tienes mantenimiento contratado.",
   },
   {
     q: "¿Cuántos cambios puedo pedir?",
-    a: "Cada nivel incluye rondas de cambios durante el desarrollo. Después de entregar, los ajustes menores entran dentro del soporte mensual; los rediseños grandes se cotizan aparte.",
+    a: "Acordamos las rondas de cambios del desarrollo en la propuesta. Después de entregar, los ajustes menores se atienden según el mantenimiento que hayas contratado; sin ese servicio, se cotizan aparte. Los rediseños grandes tienen su propio alcance.",
   },
   {
     q: "¿Qué cubre el soporte mensual?",
-    a: "Operación, mantenimiento, hosting, monitoreo, seguridad, actualizaciones menores y supervisión del funcionamiento. No es solo dejar la página viva — es mantenerla estable.",
+    a: "El mantenimiento opcional cubre el alojamiento, monitoreo, respaldos y ajustes menores definidos en la propuesta. Las integraciones, consumos y nuevas funciones se identifican por separado. También se acuerdan los canales de atención y tiempos de respuesta.",
   },
   {
     q: "¿Cómo son los pagos?",
-    a: "50% para arrancar, 50% contra entrega. La mensualidad inicia cuando el sitio está en producción.",
+    a: "El desarrollo se paga 50% al iniciar y 50% contra entrega. Si contratas mantenimiento, su mensualidad comienza al publicar. El alojamiento y los servicios de terceros se detallan por separado cuando los administras por tu cuenta.",
   },
   {
     q: "¿Y si quiero subir de nivel después?",

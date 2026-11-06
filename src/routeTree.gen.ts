@@ -26,11 +26,14 @@ import { Route as PrivacidadRouteImport } from './routes/privacidad'
 import { Route as SeoRouteImport } from './routes/seo'
 import { Route as SeoTijuanaRouteImport } from './routes/seo-tijuana'
 import { Route as ServiciosRouteImport } from './routes/servicios'
+import { Route as TrabajoRouteImport } from './routes/trabajo'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
 import { Route as ServiciosAgenteIaRouteImport } from './routes/servicios.agente-ia'
+import { Route as ServiciosAutomatizacionRouteImport } from './routes/servicios.automatizacion'
 import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
+import { Route as ServiciosProduccionRouteImport } from './routes/servicios.produccion'
 import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
 import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
 import { Route as ServiciosWhatsappIaRouteImport } from './routes/servicios.whatsapp-ia'
@@ -123,6 +126,11 @@ const ServiciosRoute = ServiciosRouteImport.update({
   path: '/servicios',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrabajoRoute = TrabajoRouteImport.update({
+  id: '/trabajo',
+  path: '/trabajo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -143,9 +151,19 @@ const ServiciosAgenteIaRoute = ServiciosAgenteIaRouteImport.update({
   path: '/agente-ia',
   getParentRoute: () => ServiciosRoute,
 } as any)
+const ServiciosAutomatizacionRoute = ServiciosAutomatizacionRouteImport.update({
+  id: '/automatizacion',
+  path: '/automatizacion',
+  getParentRoute: () => ServiciosRoute,
+} as any)
 const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
   id: '/marketing',
   path: '/marketing',
+  getParentRoute: () => ServiciosRoute,
+} as any)
+const ServiciosProduccionRoute = ServiciosProduccionRouteImport.update({
+  id: '/produccion',
+  path: '/produccion',
   getParentRoute: () => ServiciosRoute,
 } as any)
 const ServiciosVideoConDronRoute = ServiciosVideoConDronRouteImport.update({
@@ -194,9 +212,12 @@ export interface FileRoutesByFullPath {
   '/seo': typeof SeoRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/servicios': typeof ServiciosRouteWithChildren
+  '/trabajo': typeof TrabajoRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
+  '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
   '/servicios/marketing': typeof ServiciosMarketingRoute
+  '/servicios/produccion': typeof ServiciosProduccionRoute
   '/servicios/video-con-dron': typeof ServiciosVideoConDronRoute
   '/servicios/websites': typeof ServiciosWebsitesRoute
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
@@ -222,9 +243,12 @@ export interface FileRoutesByTo {
   '/privacidad': typeof PrivacidadRoute
   '/seo': typeof SeoRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
+  '/trabajo': typeof TrabajoRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
+  '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
   '/servicios/marketing': typeof ServiciosMarketingRoute
+  '/servicios/produccion': typeof ServiciosProduccionRoute
   '/servicios/video-con-dron': typeof ServiciosVideoConDronRoute
   '/servicios/websites': typeof ServiciosWebsitesRoute
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
@@ -252,9 +276,12 @@ export interface FileRoutesById {
   '/seo': typeof SeoRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/servicios': typeof ServiciosRouteWithChildren
+  '/trabajo': typeof TrabajoRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
+  '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
   '/servicios/marketing': typeof ServiciosMarketingRoute
+  '/servicios/produccion': typeof ServiciosProduccionRoute
   '/servicios/video-con-dron': typeof ServiciosVideoConDronRoute
   '/servicios/websites': typeof ServiciosWebsitesRoute
   '/servicios/whatsapp-ia': typeof ServiciosWhatsappIaRoute
@@ -283,9 +310,12 @@ export interface FileRouteTypes {
     | '/seo'
     | '/seo-tijuana'
     | '/servicios'
+    | '/trabajo'
     | '/blog/$slug'
     | '/servicios/agente-ia'
+    | '/servicios/automatizacion'
     | '/servicios/marketing'
+    | '/servicios/produccion'
     | '/servicios/video-con-dron'
     | '/servicios/websites'
     | '/servicios/whatsapp-ia'
@@ -311,9 +341,12 @@ export interface FileRouteTypes {
     | '/privacidad'
     | '/seo'
     | '/seo-tijuana'
+    | '/trabajo'
     | '/blog/$slug'
     | '/servicios/agente-ia'
+    | '/servicios/automatizacion'
     | '/servicios/marketing'
+    | '/servicios/produccion'
     | '/servicios/video-con-dron'
     | '/servicios/websites'
     | '/servicios/whatsapp-ia'
@@ -340,9 +373,12 @@ export interface FileRouteTypes {
     | '/seo'
     | '/seo-tijuana'
     | '/servicios'
+    | '/trabajo'
     | '/blog/$slug'
     | '/servicios/agente-ia'
+    | '/servicios/automatizacion'
     | '/servicios/marketing'
+    | '/servicios/produccion'
     | '/servicios/video-con-dron'
     | '/servicios/websites'
     | '/servicios/whatsapp-ia'
@@ -370,6 +406,7 @@ export interface RootRouteChildren {
   SeoRoute: typeof SeoRoute
   SeoTijuanaRoute: typeof SeoTijuanaRoute
   ServiciosRoute: typeof ServiciosRouteWithChildren
+  TrabajoRoute: typeof TrabajoRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   RecursosDiagnosticoIndustriaRoute: typeof RecursosDiagnosticoIndustriaRoute
@@ -497,6 +534,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/trabajo': {
+      id: '/trabajo'
+      path: '/trabajo'
+      fullPath: '/trabajo'
+      preLoaderRoute: typeof TrabajoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/': {
       id: '/blog/'
       path: '/blog'
@@ -525,11 +569,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosAgenteIaRouteImport
       parentRoute: typeof ServiciosRoute
     }
+    '/servicios/automatizacion': {
+      id: '/servicios/automatizacion'
+      path: '/automatizacion'
+      fullPath: '/servicios/automatizacion'
+      preLoaderRoute: typeof ServiciosAutomatizacionRouteImport
+      parentRoute: typeof ServiciosRoute
+    }
     '/servicios/marketing': {
       id: '/servicios/marketing'
       path: '/marketing'
       fullPath: '/servicios/marketing'
       preLoaderRoute: typeof ServiciosMarketingRouteImport
+      parentRoute: typeof ServiciosRoute
+    }
+    '/servicios/produccion': {
+      id: '/servicios/produccion'
+      path: '/produccion'
+      fullPath: '/servicios/produccion'
+      preLoaderRoute: typeof ServiciosProduccionRouteImport
       parentRoute: typeof ServiciosRoute
     }
     '/servicios/video-con-dron': {
@@ -572,7 +630,9 @@ declare module '@tanstack/react-router' {
 
 interface ServiciosRouteChildren {
   ServiciosAgenteIaRoute: typeof ServiciosAgenteIaRoute
+  ServiciosAutomatizacionRoute: typeof ServiciosAutomatizacionRoute
   ServiciosMarketingRoute: typeof ServiciosMarketingRoute
+  ServiciosProduccionRoute: typeof ServiciosProduccionRoute
   ServiciosVideoConDronRoute: typeof ServiciosVideoConDronRoute
   ServiciosWebsitesRoute: typeof ServiciosWebsitesRoute
   ServiciosWhatsappIaRoute: typeof ServiciosWhatsappIaRoute
@@ -581,7 +641,9 @@ interface ServiciosRouteChildren {
 
 const ServiciosRouteChildren: ServiciosRouteChildren = {
   ServiciosAgenteIaRoute: ServiciosAgenteIaRoute,
+  ServiciosAutomatizacionRoute: ServiciosAutomatizacionRoute,
   ServiciosMarketingRoute: ServiciosMarketingRoute,
+  ServiciosProduccionRoute: ServiciosProduccionRoute,
   ServiciosVideoConDronRoute: ServiciosVideoConDronRoute,
   ServiciosWebsitesRoute: ServiciosWebsitesRoute,
   ServiciosWhatsappIaRoute: ServiciosWhatsappIaRoute,
@@ -610,6 +672,7 @@ const rootRouteChildren: RootRouteChildren = {
   SeoRoute: SeoRoute,
   SeoTijuanaRoute: SeoTijuanaRoute,
   ServiciosRoute: ServiciosRouteWithChildren,
+  TrabajoRoute: TrabajoRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   RecursosDiagnosticoIndustriaRoute: RecursosDiagnosticoIndustriaRoute,

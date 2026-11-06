@@ -57,6 +57,8 @@ const SERVICE_SLUGS: Record<string, number> = {
   "video-con-dron": 4,
   branding: 5,
   saas: 6,
+  automatizacion: 6,
+  produccion: 3,
 };
 
 function ContactoPage() {

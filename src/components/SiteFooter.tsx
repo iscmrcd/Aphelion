@@ -9,7 +9,7 @@ export function SiteFooter() {
 
   return (
     <footer className="on-dark border-t border-white/10 bg-neutral-950 px-5 py-14 text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-5">
         <div>
           <Link to="/" aria-label="Aphelion" className="inline-flex">
             <AphelionLogo className="h-6 w-auto brightness-0 invert" />
@@ -66,18 +66,28 @@ export function SiteFooter() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li>
-              <Link to="/" className="transition hover:text-white">
+              <Link to="/servicios" className="transition hover:text-white">
                 {t("All services", "Todos los servicios")}
               </Link>
             </li>
             <li>
               <Link to="/servicios/websites" className="transition hover:text-white">
-                Websites
+                {t("Websites", "Sitios web")}
               </Link>
             </li>
             <li>
               <Link to="/servicios/marketing" className="transition hover:text-white">
                 {t("Marketing & Content", "Marketing y Contenido")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/servicios/automatizacion" className="transition hover:text-white">
+                {t("Automation & systems", "Automatización y sistemas")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/servicios/produccion" className="transition hover:text-white">
+                {t("Photo & video", "Foto y video")}
               </Link>
             </li>
             <li>
@@ -149,6 +159,21 @@ export function SiteFooter() {
             {t("Company", "Compañía")}
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
+            <li>
+              <Link to="/trabajo" className="transition hover:text-white">
+                {t("Our work", "Nuestro trabajo")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className="transition hover:text-white">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/marketing-medicos" className="transition hover:text-white">
+                {t("Medical marketing", "Marketing médico")}
+              </Link>
+            </li>
             <li>
               <Link to="/precios" className="transition hover:text-white">
                 {t("Pricing", "Precios")}

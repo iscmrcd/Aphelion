@@ -64,7 +64,7 @@ export const Route = createFileRoute("/blog/$slug")({
           headline: lang === "es" ? post.titleEs : post.title,
           description: lang === "es" ? post.excerptEs : post.excerpt,
           datePublished: post.date,
-          dateModified: post.date,
+          dateModified: post.updated ?? post.date,
           mainEntityOfPage: { "@type": "WebPage", "@id": url },
           url,
           ...(ogUrl ? { image: ogUrl } : {}),
@@ -347,8 +347,8 @@ function ArticleByline({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
       <div>
         <p className="text-sm font-medium text-neutral-950">Isaac · {postAuthorRole(post, lang)}</p>
         <p className="text-xs text-neutral-500">
-          {t("Updated", "Actualizado")} {formatPostDate(post.date, lang)} · {post.readingTime}{" "}
-          {t("min read", "min de lectura")}
+          {t("Updated", "Actualizado")} {formatPostDate(post.updated ?? post.date, lang)} ·{" "}
+          {post.readingTime} {t("min read", "min de lectura")}
         </p>
       </div>
     </div>

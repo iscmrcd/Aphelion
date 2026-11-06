@@ -1,10 +1,9 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/servicios/Hero";
-import { TrustedLogos } from "@/components/servicios/TrustedLogos";
-import { CategoryBento } from "@/components/servicios/CategoryBento";
-import { WebsitesOverview } from "@/components/servicios/WebsitesOverview";
-import { MarketingOverview } from "@/components/servicios/MarketingOverview";
-import { CategoryPlaceholders } from "@/components/servicios/CategoryPlaceholders";
+import { ServiceDirectory } from "@/components/servicios/ServiceDirectory";
+import { PortfolioSection } from "@/components/servicios/PortfolioSection";
+import { StudioProcess } from "@/components/servicios/StudioProcess";
+import { InvestmentPreview } from "@/components/servicios/InvestmentPreview";
 import { AgentIAPromo } from "@/components/servicios/AgentIAPromo";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { buildHead, ORGANIZATION_JSONLD, SITE_URL } from "@/lib/seo";
@@ -43,15 +42,9 @@ export const Route = createFileRoute("/")({
         {
           "@type": "ItemList",
           name: "Aphelion services",
-          itemListElement: [
-            "Websites",
-            "Marketing & Content",
-            "AI Agent",
-            "Content Production",
-            "Video & Drone",
-            "Custom SaaS",
-            "Branding",
-          ].map((name, i) => ({ "@type": "ListItem", position: i + 1, name })),
+          itemListElement: ["Websites", "Marketing & Content", "Automation & Systems"].map(
+            (name, i) => ({ "@type": "ListItem", position: i + 1, name }),
+          ),
         },
       ],
     }),
@@ -59,18 +52,14 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const navigate = useNavigate();
-  const goWebsites = () => navigate({ to: "/servicios/websites" });
-
   return (
     <main className="min-h-screen bg-neutral-50 text-neutral-950 antialiased selection:bg-neutral-950 selection:text-white">
-      <Hero onCta={goWebsites} />
-      <TrustedLogos />
-      <CategoryBento onWebsites={goWebsites} />
+      <Hero />
+      <PortfolioSection />
+      <ServiceDirectory />
       <AgentIAPromo />
-      <WebsitesOverview />
-      <MarketingOverview />
-      <CategoryPlaceholders />
+      <StudioProcess />
+      <InvestmentPreview />
       <CTAFooter />
     </main>
   );

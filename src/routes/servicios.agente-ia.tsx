@@ -60,10 +60,10 @@ export const Route = createFileRoute("/servicios/agente-ia")({
           "@type": "FAQPage",
           mainEntity: AGENTE_IA_FAQ.map((f) => ({
             "@type": "Question",
-            name: loaderData?.lang === "es" ? f.q : f.qEn,
+            name: loaderData?.lang === "en" ? f.qEn : f.q,
             acceptedAnswer: {
               "@type": "Answer",
-              text: loaderData?.lang === "es" ? f.a : f.aEn,
+              text: loaderData?.lang === "en" ? f.aEn : f.a,
             },
           })),
         },
@@ -87,14 +87,14 @@ function AgenteIAPage() {
           </p>
           <h1 className="text-[clamp(2.25rem,5.5vw,4rem)] font-medium leading-[1.05] tracking-[-0.035em] text-white">
             {t(
-              "The chat on your website, answering like your best salesperson.",
-              "El chat de tu página web, respondiendo como tu mejor vendedor.",
+              "Answer enquiries. Connect the next step.",
+              "Responde consultas. Conecta el siguiente paso.",
             )}
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
             {t(
-              "Automated flows for the predictable questions, or a real AI agent that understands, qualifies and books — living on your own site. This isn't a mockup: scroll down and talk to three live agents yourself.",
-              "Flujos automatizados para las preguntas predecibles, o un agente de IA real que entiende, califica y agenda, viviendo en tu propio sitio. Esto no es un mockup: baja y platica tú mismo con tres agentes en vivo.",
+              "An assistant on your website to answer questions, gather information and help customers take the next step. Explore three live industry demos before planning your implementation.",
+              "Un asistente en tu sitio para responder preguntas, recopilar información y ayudar a tus clientes a dar el siguiente paso. Explora tres demos por industria antes de planear tu implementación.",
             )}
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">

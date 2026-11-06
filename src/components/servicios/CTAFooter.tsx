@@ -11,22 +11,36 @@ export function CTAFooter() {
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-4xl font-medium tracking-[-0.03em] sm:text-5xl">
           {t(
-            "We work with clients who value the details.",
-            "Trabajamos con clientes que valoran el detalle.",
+            "Tell us where you are. Let's plan what comes next.",
+            "Cuéntanos dónde estás. Veamos qué sigue.",
           )}
         </h2>
         <p className="mx-auto mt-5 max-w-lg text-base text-white/60">
           {t(
-            "If your brand wants to grow with the right structure, tell us what you have in mind. We reply within 24 hours.",
-            "Si tu marca quiere crecer con la estructura correcta, cuéntanos qué tienes en mente. Te respondemos en menos de 24 horas.",
+            "Start with what you want to improve. We review your project together and define the scope, deliverables and investment before work begins.",
+            "Empieza por lo que quieres mejorar. Revisamos juntos tu proyecto y definimos el alcance, los entregables y la inversión antes de comenzar.",
           )}
         </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
+        <ol className="mx-auto mt-7 flex max-w-2xl flex-wrap justify-center gap-x-6 gap-y-3 text-xs text-white/70">
+          {[
+            t("Reply within 24 hours", "Respuesta en menos de 24 horas"),
+            t("Project review", "Revisión de tu proyecto"),
+            t("Written proposal", "Propuesta por escrito"),
+          ].map((step, index) => (
+            <li key={step} className="inline-flex items-center gap-2">
+              <span className="text-white/40" aria-hidden="true">
+                0{index + 1}
+              </span>
+              {step}
+            </li>
+          ))}
+        </ol>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link
             to="/contacto"
             className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
           >
-            {t("Book a call", "Agendar llamada")}
+            {t("Let's talk about your project", "Hablemos de tu proyecto")}
           </Link>
           <a
             href="https://wa.me/526461293352?text=Hola%20Aphelion%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."

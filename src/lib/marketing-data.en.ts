@@ -73,7 +73,7 @@ export const MARKETING_PACKAGES_EN: MarketingPackage[] = [
     contractMonths: 6,
     badge: "Popular",
     forWho:
-      "Businesses that have moved past just \"being present\" and want to actively use social media to attract new customers. They're ready to invest in advertising and need someone to do it right — with real content, not generic stock footage.",
+      'Businesses that have moved past just "being present" and want to actively use social media to attract new customers. They\'re ready to invest in advertising and need someone to do it right — with real content, not generic stock footage.',
     ideal: [
       "Growing restaurants",
       "Boutique hotels",
@@ -317,7 +317,7 @@ export const MARKETING_REPLACES_EN = [
 export const FAQ_MARKETING_EN = [
   {
     q: "Why category exclusivity?",
-    a: "We work with only one company per category and competitive area. We don't want to compete against our own clients or dilute the strategy. If your competitor signs first, that spot is theirs until their contract ends.",
+    a: "We work with one company per category and competitive area. Availability, category and area are reviewed before signing and confirmed in writing in the proposal.",
   },
   {
     q: "Is ad spend included in the price?",
@@ -337,6 +337,6 @@ export const FAQ_MARKETING_EN = [
   },
   {
     q: "How does billing work?",
-    a: "Weekly or monthly billing + VAT. Brand Partner and Premium Production can be billed in USD for clients in the U.S. market.",
+    a: "Choose weekly or monthly billing in MXN + VAT. We confirm the rate for that option, payment dates and minimum term in writing; a monthly fee does not necessarily equal four weekly payments. Ad spend is paid separately, directly to the platforms. USD proposals are available for US clients with agreed terms.",
   },
 ];

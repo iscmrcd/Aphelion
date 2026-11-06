@@ -1,54 +1,34 @@
-import { useState } from "react";
 import { Plus } from "lucide-react";
 import { useWebsitesData } from "@/lib/content";
 import { useT } from "@/lib/i18n";
+import { Reveal } from "./Motion";
 
 export function FAQ({ items }: { items?: { q: string; a: string }[] }) {
   const { FAQ_WEB } = useWebsitesData();
-  const faqs = items ?? FAQ_WEB;
-  const [open, setOpen] = useState<number | null>(0);
   const t = useT();
+  const faqs = items ?? FAQ_WEB;
   return (
-    <section className="border-t border-neutral-200 px-5 py-20 sm:py-28">
+    <section className="border-t border-neutral-200 px-5 py-20 sm:py-24">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-12 text-center">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
+        <Reveal className="mb-10">
+          <p className="studio-eyebrow">
             {t("Frequently asked questions", "Preguntas frecuentes")}
           </p>
-          <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            {t("What people ask us.", "Lo que la gente nos pregunta.")}
-          </h2>
-        </div>
-
+          <h2 className="studio-heading mt-4">{t("Before we begin.", "Antes de empezar.")}</h2>
+        </Reveal>
         <div className="divide-y divide-neutral-200 border-y border-neutral-200">
-          {faqs.map((f, i) => {
-            const isOpen = open === i;
-            return (
-              <div key={i}>
-                <button
-                  onClick={() => setOpen(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 py-5 text-left"
-                >
-                  <span className="text-base font-medium text-neutral-950">{f.q}</span>
-                  <Plus
-                    className={`h-4 w-4 flex-shrink-0 text-neutral-500 transition-transform duration-200 ${
-                      isOpen ? "rotate-45" : ""
-                    }`}
-                    strokeWidth={2}
-                  />
-                </button>
-                <div
-                  className={`grid transition-all duration-300 ${
-                    isOpen ? "grid-rows-[1fr] pb-5" : "grid-rows-[0fr]"
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <p className="pr-8 text-sm leading-relaxed text-neutral-500">{f.a}</p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+          {faqs.map((item) => (
+            <details key={item.q} className="plan-details">
+              <summary className="flex cursor-pointer items-start justify-between gap-5 py-5 text-base font-medium">
+                <span>{item.q}</span>
+                <Plus
+                  aria-hidden="true"
+                  className="details-icon mt-1 h-4 w-4 shrink-0 text-neutral-500 transition-transform"
+                />
+              </summary>
+              <p className="pb-6 pr-8 text-sm leading-relaxed text-neutral-500">{item.a}</p>
+            </details>
+          ))}
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import type { WebLevel, CompareCell } from "./websites-data";
+import { WEBSITE_DELIVERY } from "./website-delivery";
 
 export const WEB_LEVELS_EN: WebLevel[] = [
   {
@@ -19,7 +20,14 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "1 round of revisions",
     ],
     notInc: ["CRM or scheduling included", "Admin panel", "Login or portal", "API integrations"],
-    canAdd: ["Express quote tool", "Simple quote tool", "Advanced form", "Campaign landing page", "Online payments", "Calendly / PMS embed"],
+    canAdd: [
+      "Express quote tool",
+      "Simple quote tool",
+      "Advanced form",
+      "Campaign landing page",
+      "Online payments",
+      "Calendly / PMS embed",
+    ],
   },
   {
     id: 2,
@@ -28,7 +36,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     tagline: "Solid image and clear commercial structure.",
     setup: 18500,
     men: 490,
-    ideal: ["Restaurants", "Repair shops", "Law/consulting firms", "Boutique hotels", "Local brands"],
+    ideal: [
+      "Restaurants",
+      "Repair shops",
+      "Law/consulting firms",
+      "Boutique hotels",
+      "Local brands",
+    ],
     includes: [
       "Everything in Presence",
       "Up to 5 pages",
@@ -39,7 +53,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "2 rounds of revisions",
     ],
     notInc: ["CRM or scheduling included", "Admin panel", "Login or portal"],
-    canAdd: ["Basic CRM", "Basic scheduling", "Dynamic quote tool", "AI chatbot", "Basic dashboard"],
+    canAdd: [
+      "Basic CRM",
+      "Basic scheduling",
+      "Dynamic quote tool",
+      "AI chatbot",
+      "Basic dashboard",
+    ],
   },
   {
     id: 3,
@@ -81,7 +101,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "Basic dashboard",
     ],
     notInc: ["Client login or portal", "Full admin panel", "Advanced reporting"],
-    canAdd: ["Client login", "Advanced scheduling", "Advanced dashboard", "Deposit payments", "Digital signature"],
+    canAdd: [
+      "Client login",
+      "Advanced scheduling",
+      "Advanced dashboard",
+      "Deposit payments",
+      "Digital signature",
+    ],
   },
   {
     id: 5,
@@ -102,7 +128,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "Training + support",
     ],
     notInc: [],
-    canAdd: ["Advanced dashboard", "Digital signature", "Employee portal", "Advanced reporting", "Multi-branch"],
+    canAdd: [
+      "Advanced dashboard",
+      "Digital signature",
+      "Employee portal",
+      "Advanced reporting",
+      "Multi-branch",
+    ],
   },
   {
     id: 6,
@@ -128,7 +160,10 @@ export const WEB_LEVELS_EN: WebLevel[] = [
 
 export const COMPARE_HEADERS_EN = WEB_LEVELS_EN.map((l) => l.name);
 
-export const COMPARE_GROUPS_EN: { group: string; rows: { label: string; vals: CompareCell[] }[] }[] = [
+export const COMPARE_GROUPS_EN: {
+  group: string;
+  rows: { label: string; vals: CompareCell[] }[];
+}[] = [
   {
     group: "Design and content",
     rows: [
@@ -173,8 +208,14 @@ export const COMPARE_GROUPS_EN: { group: string; rows: { label: string; vals: Co
     group: "Payments and integrations",
     rows: [
       { label: "Online payments", vals: ["addon", "addon", "addon", "addon", "yes", "yes"] },
-      { label: "Simple embeds (Calendly, PMS, map)", vals: ["addon", "addon", "addon", "addon", "addon", "addon"] },
-      { label: "External integrations", vals: ["custom", "custom", "custom", "custom", "custom", "custom"] },
+      {
+        label: "Simple embeds (Calendly, PMS, map)",
+        vals: ["addon", "addon", "addon", "addon", "addon", "addon"],
+      },
+      {
+        label: "External integrations",
+        vals: ["custom", "custom", "custom", "custom", "custom", "custom"],
+      },
     ],
   },
 ];
@@ -182,27 +223,35 @@ export const COMPARE_GROUPS_EN: { group: string; rows: { label: string; vals: Co
 export const FAQ_WEB_EN = [
   {
     q: "How long does delivery take?",
-    a: "It depends on the tier. Presence Site: 7–10 days. Professional: 2–3 weeks. Lead-Gen: 3–4 weeks. Automated and above: 5–10 weeks depending on scope.",
+    a: `${WEBSITE_DELIVERY.en.all} ${WEBSITE_DELIVERY.en.conditions}`,
   },
   {
     q: "Is hosting included?",
-    a: "Yes. The monthly fee covers hosting, domain (if applicable), monitoring, backups and ongoing support. You don't need to contract anything separately.",
+    a: "Development and hosting are charged separately. Our optional maintenance includes the hosting and support specified in your proposal. You can also use your own accounts and providers. Domain, licences and third-party usage are identified separately.",
   },
   {
     q: "Who owns the code?",
-    a: "The content and brand are 100% yours. We operate the technical infrastructure to guarantee stability and support. If you want to migrate, a data export is provided.",
+    a: "The project code, domain and content are yours. You receive the code repository and control of your hosting, analytics and contracted service accounts. You can manage them yourself or select our optional maintenance. Third-party licences are identified in your proposal.",
+  },
+  {
+    q: "How is a Lovable project handed over?",
+    a: "We define handover from the start: you control the code repository and, if you stay on Lovable, we transfer the project to your workspace. If you choose another host, we agree on deployment and migration. We review the domain, database, integrations and access; subscriptions and usage charges are yours and are identified in writing.",
+  },
+  {
+    q: "Is maintenance required?",
+    a: "No. It is an optional service, separate from development. If selected, it starts at launch. If you prefer to operate the site yourself, you receive the code and control of your accounts; you still pay for hosting, the domain and any services the site needs. Support and subsequent changes are quoted separately without a maintenance plan.",
   },
   {
     q: "How many changes can I request?",
-    a: "Each tier includes rounds of revisions during development. After delivery, minor adjustments are covered by monthly support; major redesigns are quoted separately.",
+    a: "We agree on development revision rounds in your proposal. After delivery, minor adjustments follow your selected maintenance scope; without maintenance they are quoted separately. Major redesigns have their own scope.",
   },
   {
     q: "What does monthly support cover?",
-    a: "Operations, maintenance, hosting, monitoring, security, minor updates and uptime oversight. It's not just keeping the site alive — it's keeping it stable.",
+    a: "Optional maintenance covers the hosting, monitoring, backups and minor adjustments defined in your proposal. Integrations, usage charges and new features are identified separately. Support channels and response times are also agreed.",
   },
   {
     q: "How do payments work?",
-    a: "50% to get started, 50% upon delivery. The monthly fee starts once the site is in production.",
+    a: "Development is paid 50% to start and 50% on delivery. If selected, monthly maintenance starts at launch. Hosting and third-party services are itemised separately when you manage them yourself.",
   },
   {
     q: "What if I want to upgrade later?",
