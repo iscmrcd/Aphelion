@@ -2,23 +2,23 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 type AssetJson = { url: string };
 
-const desktopMods = import.meta.glob<AssetJson>(
-  "@/assets/banners/scroll-desktop/*.asset.json",
-  { eager: true, import: "default" },
-);
-const mobileMods = import.meta.glob<AssetJson>(
-  "@/assets/banners/scroll-mobile/*.asset.json",
-  { eager: true, import: "default" },
-);
+const desktopMods = import.meta.glob<AssetJson>("@/assets/banners/scroll-desktop/*.asset.json", {
+  eager: true,
+  import: "default",
+});
+const mobileMods = import.meta.glob<AssetJson>("@/assets/banners/scroll-mobile/*.asset.json", {
+  eager: true,
+  import: "default",
+});
 
 const waDesktopMods = import.meta.glob<AssetJson>(
   "@/assets/banners/wa-scroll-desktop/*.asset.json",
   { eager: true, import: "default" },
 );
-const waMobileMods = import.meta.glob<AssetJson>(
-  "@/assets/banners/wa-scroll-mobile/*.asset.json",
-  { eager: true, import: "default" },
-);
+const waMobileMods = import.meta.glob<AssetJson>("@/assets/banners/wa-scroll-mobile/*.asset.json", {
+  eager: true,
+  import: "default",
+});
 
 const toUrls = (mods: Record<string, AssetJson>) =>
   Object.keys(mods)
@@ -44,9 +44,7 @@ export function ScrollDrivenBanner({
   const pickUrls = (): string[] => {
     const set = SETS[variant];
     if (typeof window === "undefined") return set.desktop;
-    return window.matchMedia("(max-width: 767px)").matches
-      ? set.mobile
-      : set.desktop;
+    return window.matchMedia("(max-width: 767px)").matches ? set.mobile : set.desktop;
   };
   const sectionRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -57,9 +55,11 @@ export function ScrollDrivenBanner({
 
   useEffect(() => {
     let cancelled = false;
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const activeUrls = () => (motion.matches ? pickUrls().slice(0, 1) : pickUrls());
 
     const load = () => {
-      const urls = pickUrls();
+      const urls = activeUrls();
       const imgs: HTMLImageElement[] = urls.map((u) => {
         const img = new Image();
         img.src = u;
@@ -136,6 +136,7 @@ export function ScrollDrivenBanner({
     };
 
     const onScroll = () => {
+      if (motion.matches) return;
       if (rafRef.current != null) return;
       rafRef.current = requestAnimationFrame(() => {
         rafRef.current = null;
@@ -152,14 +153,10 @@ export function ScrollDrivenBanner({
       });
     };
 
-
     const onResize = () => {
       // Re-pick image set if breakpoint crossed.
-      const urls = pickUrls();
-      if (
-        urls.length !== imagesRef.current.length ||
-        urls[0] !== imagesRef.current[0]?.src
-      ) {
+      const urls = activeUrls();
+      if (urls.length !== imagesRef.current.length || urls[0] !== imagesRef.current[0]?.src) {
         load();
       }
       drawFrame(Math.max(0, lastFrameRef.current));
@@ -170,11 +167,17 @@ export function ScrollDrivenBanner({
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize);
+    const onMotion = () => {
+      load();
+      onScroll();
+    };
+    motion.addEventListener("change", onMotion);
 
     return () => {
       cancelled = true;
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
+      motion.removeEventListener("change", onMotion);
       if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -187,16 +190,16 @@ export function ScrollDrivenBanner({
       aria-label={ariaLabel}
     >
       <canvas
+        aria-hidden="true"
         ref={canvasRef}
         className="absolute inset-0 h-full w-full"
         style={{ opacity: ready ? 1 : 0, transition: "opacity 400ms ease" }}
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/30 via-neutral-950/10 to-neutral-950"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-neutral-950/40 via-neutral-950/25 to-neutral-950"
       />
       <div className="relative w-full">{children}</div>
     </section>
   );
 }
-

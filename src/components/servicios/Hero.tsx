@@ -1,41 +1,63 @@
 import { Link } from "@tanstack/react-router";
-import { AphelionLogo } from "@/components/Brand";
 import { Button } from "@/components/ui/button";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { useT } from "@/lib/i18n";
 import { HeroWaves } from "./HeroWaves";
 
-export function Hero({ onCta }: { onCta: () => void }) {
+export function Hero() {
   const t = useT();
   return (
-    <section className="home-hero relative isolate overflow-hidden px-5 pt-24 pb-20 sm:pt-32 sm:pb-28">
+    <section className="home-hero relative isolate overflow-hidden px-5 pt-20 pb-10 sm:pt-28 sm:pb-12">
       <HeroWaves />
-      <div className="relative mx-auto max-w-5xl text-center">
-        <div className="mb-10 inline-flex items-center justify-center">
-          <AphelionLogo className="h-8 w-auto sm:h-9" />
-        </div>
-        <h1 className="mx-auto max-w-3xl text-[clamp(2.25rem,6vw,4.25rem)] font-medium leading-[1.05] tracking-[-0.035em] text-neutral-950">
+      <div className="relative mx-auto max-w-6xl">
+        <p className="studio-eyebrow mb-8 flex items-center gap-3">
+          <span className="h-1.5 w-1.5 rounded-full bg-neutral-500" aria-hidden="true" />
+          {t("Web design · Marketing · Automation", "Diseño web · Marketing · Automatización")}
+        </p>
+        <h1 className="max-w-5xl text-[clamp(2.8rem,7.5vw,6.5rem)] font-medium leading-[1.02] tracking-[-0.055em] text-neutral-950">
           {t(
-            "Your website, your campaigns and your system. In one place.",
-            "Tu página web, tus campañas y tu sistema. En un solo lugar.",
+            "A digital presence worthy of your business.",
+            "Una presencia digital a la altura de tu negocio.",
           )}
         </h1>
-        <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-neutral-500 sm:text-lg">
-          {t(
-            "We build the site, connect booking, payments and follow-up, and run the ads. Our prices are published: you can check them before you talk to us.",
-            "Construimos el sitio, conectamos agenda, pagos y seguimiento, y operamos los anuncios. Los precios están publicados: puedes verlos antes de hablar con nosotros.",
-          )}
-        </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Button asChild className="h-auto rounded-full bg-primary px-6 py-3 text-primary-foreground hover:bg-primary/90">
-            <Link to="/contacto">{t("Tell us what you need", "Cuéntanos qué necesitas")}</Link>
-          </Button>
-          <Button
-            variant="outline"
-            onClick={onCta}
-            className="h-auto rounded-full border-border bg-background/75 px-6 py-3 text-foreground hover:bg-background"
+        <div className="mt-8 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+          <p className="max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg">
+            {t(
+              "We design your website, create your content and connect your customer experience. One team, from the first idea to everyday operation.",
+              "Diseñamos tu sitio, creamos tu contenido y conectamos la atención a tus clientes. Un solo equipo, desde la primera idea hasta la operación.",
+            )}
+          </p>
+          <div className="flex shrink-0 flex-wrap gap-3">
+            <Button
+              asChild
+              className="h-auto rounded-full bg-primary px-6 py-3 text-primary-foreground hover:bg-primary/90"
+            >
+              <Link to="/contacto">
+                {t("Let's talk about your project", "Hablemos de tu proyecto")}
+                <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
+              </Link>
+            </Button>
+            <Button
+              variant="outline"
+              asChild
+              className="h-auto rounded-full border-border bg-background/75 px-6 py-3 text-foreground hover:bg-background"
+            >
+              <a href="#servicios">
+                {t("Explore services", "Explorar servicios")}
+                <ArrowDown aria-hidden="true" className="h-4 w-4" />
+              </a>
+            </Button>
+          </div>
+        </div>
+        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-neutral-500/20 pt-6 text-[11px] tracking-wide text-neutral-500 sm:mt-24">
+          <p>Ensenada · Tijuana · Baja California</p>
+          <a
+            href="#proyectos"
+            className="inline-flex items-center gap-2 transition hover:text-neutral-950"
           >
-            {t("See prices and packages →", "Ver precios y paquetes →")}
-          </Button>
+            {t("Discover our work", "Conoce nuestro trabajo")}
+            <ArrowDown aria-hidden="true" className="h-3.5 w-3.5" />
+          </a>
         </div>
       </div>
     </section>

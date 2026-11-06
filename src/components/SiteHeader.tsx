@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { AphelionLogo } from "@/components/Brand";
@@ -57,6 +57,18 @@ export function SiteHeader() {
   const t = useT();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setOpen(false);
+      menuButtonRef.current?.focus();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -66,13 +78,11 @@ export function SiteHeader() {
   }, []);
 
   const nav = [
-    { to: "/servicios/websites", label: "Websites" },
-    { to: "/servicios/marketing", label: t("Marketing", "Marketing") },
-    { to: "/servicios/agente-ia", label: t("AI Agent", "Agente IA") },
+    { to: "/servicios", label: t("Services", "Servicios") },
+    { to: "/trabajo", label: t("Work", "Trabajo") },
     { to: "/precios", label: t("Pricing", "Precios") },
-    { to: "/recursos/diagnostico", label: t("Diagnostic", "Diagnóstico") },
+    { to: "/recursos/diagnostico", label: t("Free diagnostic", "Diagnóstico gratis") },
     { to: "/blog", label: "Blog" },
-    { to: "/contacto", label: t("Contact", "Contacto") },
   ] as const;
 
   return (
@@ -88,10 +98,10 @@ export function SiteHeader() {
           <AphelionLogo className="h-6 w-auto" />
         </Link>
 
-        {/* lg, not md: seven items need ~560px and md (768px) only leaves ~310px
-            between the logo and the right-hand controls. gap-5 until xl so the
-            Spanish labels still fit at exactly 1024px. */}
-        <nav className="hidden items-center gap-5 lg:flex xl:gap-6" aria-label="Main">
+        <nav
+          className="hidden items-center gap-5 lg:flex xl:gap-6"
+          aria-label={t("Main navigation", "Navegación principal")}
+        >
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -112,13 +122,15 @@ export function SiteHeader() {
             to="/contacto"
             className="hidden rounded-full bg-neutral-950 px-4 py-2 text-xs font-medium text-white transition hover:bg-neutral-800 sm:inline-flex"
           >
-            {t("Start a project", "Iniciar proyecto")}
+            {t("Let's talk", "Hablemos")}
           </Link>
           <button
+            ref={menuButtonRef}
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? t("Close menu", "Cerrar menú") : t("Open menu", "Abrir menú")}
             aria-expanded={open}
+            aria-controls="mobile-navigation"
             className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300 text-neutral-950 lg:hidden"
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
@@ -128,7 +140,11 @@ export function SiteHeader() {
 
       {open && (
         <div className="border-t border-neutral-200 bg-white lg:hidden">
-          <nav className="mx-auto flex max-w-6xl flex-col px-5 py-2" aria-label="Mobile">
+          <nav
+            id="mobile-navigation"
+            className="mx-auto flex max-w-6xl flex-col px-5 py-2"
+            aria-label={t("Mobile navigation", "Navegación móvil")}
+          >
             {nav.map((item) => (
               <Link
                 key={item.to}
@@ -139,6 +155,13 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              to="/contacto"
+              onClick={() => setOpen(false)}
+              className="my-3 rounded-full bg-neutral-950 px-5 py-3 text-center text-sm font-medium text-white"
+            >
+              {t("Let's talk about your project", "Hablemos de tu proyecto")}
+            </Link>
           </nav>
         </div>
       )}

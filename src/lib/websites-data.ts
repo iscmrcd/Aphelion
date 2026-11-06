@@ -29,8 +29,20 @@ export const WEB_LEVELS: WebLevel[] = [
       "SEO básico",
       "1 ronda de cambios",
     ],
-    notInc: ["CRM o agenda incluidos", "Panel administrativo", "Login o portal", "Integraciones API"],
-    canAdd: ["Cotizador express", "Cotizador simple", "Formulario avanzado", "Landing para campaña", "Pagos en línea", "Embed Calendly / PMS"],
+    notInc: [
+      "CRM o agenda incluidos",
+      "Panel administrativo",
+      "Login o portal",
+      "Integraciones API",
+    ],
+    canAdd: [
+      "Cotizador express",
+      "Cotizador simple",
+      "Formulario avanzado",
+      "Landing para campaña",
+      "Pagos en línea",
+      "Embed Calendly / PMS",
+    ],
   },
   {
     id: 2,
@@ -50,7 +62,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "2 rondas de cambios",
     ],
     notInc: ["CRM o agenda incluidos", "Panel administrativo", "Login o portal"],
-    canAdd: ["CRM básico", "Agenda básica", "Cotizador dinámico", "Chatbot con IA", "Dashboard básico"],
+    canAdd: [
+      "CRM básico",
+      "Agenda básica",
+      "Cotizador dinámico",
+      "Chatbot con IA",
+      "Dashboard básico",
+    ],
   },
   {
     id: 3,
@@ -71,7 +89,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "Formulario de calificación",
     ],
     notInc: ["Agenda o CRM incluidos", "Panel administrativo completo", "Login o portal"],
-    canAdd: ["CRM básico", "Panel administrativo", "Agenda básica", "Recordatorios SMS", "Dashboard básico"],
+    canAdd: [
+      "CRM básico",
+      "Panel administrativo",
+      "Agenda básica",
+      "Recordatorios SMS",
+      "Dashboard básico",
+    ],
   },
   {
     id: 4,
@@ -92,7 +116,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "Dashboard básico",
     ],
     notInc: ["Login o portal de cliente", "Panel admin completo", "Reportes avanzados"],
-    canAdd: ["Login de clientes", "Agenda avanzada", "Dashboard avanzado", "Pagos de anticipo", "Firma digital"],
+    canAdd: [
+      "Login de clientes",
+      "Agenda avanzada",
+      "Dashboard avanzado",
+      "Pagos de anticipo",
+      "Firma digital",
+    ],
   },
   {
     id: 5,
@@ -113,7 +143,13 @@ export const WEB_LEVELS: WebLevel[] = [
       "Capacitación + soporte",
     ],
     notInc: [],
-    canAdd: ["Dashboard avanzado", "Firma digital", "Portal de empleados", "Reportes avanzados", "Multi-sucursal"],
+    canAdd: [
+      "Dashboard avanzado",
+      "Firma digital",
+      "Portal de empleados",
+      "Reportes avanzados",
+      "Multi-sucursal",
+    ],
   },
   {
     id: 6,
@@ -168,7 +204,10 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
       { label: "Cotizador simple", vals: ["addon", "addon", "addon", "yes", "yes", "yes"] },
       { label: "CRM básico", vals: ["no", "addon", "addon", "yes", "yes", "yes"] },
       { label: "Agenda básica", vals: ["no", "addon", "addon", "yes", "yes", "yes"] },
-      { label: "Automatización de correos", vals: ["addon", "addon", "addon", "yes", "yes", "yes"] },
+      {
+        label: "Automatización de correos",
+        vals: ["addon", "addon", "addon", "yes", "yes", "yes"],
+      },
     ],
   },
   {
@@ -186,8 +225,14 @@ export const COMPARE_GROUPS: { group: string; rows: { label: string; vals: Compa
     group: "Pagos e integraciones",
     rows: [
       { label: "Pagos en línea", vals: ["addon", "addon", "addon", "addon", "yes", "yes"] },
-      { label: "Embeds simples (Calendly, PMS, mapa)", vals: ["addon", "addon", "addon", "addon", "addon", "addon"] },
-      { label: "Integraciones externas", vals: ["custom", "custom", "custom", "custom", "custom", "custom"] },
+      {
+        label: "Embeds simples (Calendly, PMS, mapa)",
+        vals: ["addon", "addon", "addon", "addon", "addon", "addon"],
+      },
+      {
+        label: "Integraciones externas",
+        vals: ["custom", "custom", "custom", "custom", "custom", "custom"],
+      },
     ],
   },
 ];
@@ -203,7 +248,7 @@ export const FAQ_WEB = [
   },
   {
     q: "¿De quién es el código?",
-    a: "El contenido y la marca son 100% tuyos. La infraestructura técnica la operamos nosotros para garantizar estabilidad y soporte. Si quieres migrar, se entrega export de datos.",
+    a: "El código del proyecto, el dominio y el contenido son tuyos. Recibes acceso a tus cuentas de alojamiento, analítica y servicios contratados. El mantenimiento es un servicio aparte y puedes migrar tu sitio. Las licencias o servicios de terceros se identifican en la propuesta.",
   },
   {
     q: "¿Cuántos cambios puedo pedir?",

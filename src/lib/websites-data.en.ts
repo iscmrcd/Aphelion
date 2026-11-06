@@ -19,7 +19,14 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "1 round of revisions",
     ],
     notInc: ["CRM or scheduling included", "Admin panel", "Login or portal", "API integrations"],
-    canAdd: ["Express quote tool", "Simple quote tool", "Advanced form", "Campaign landing page", "Online payments", "Calendly / PMS embed"],
+    canAdd: [
+      "Express quote tool",
+      "Simple quote tool",
+      "Advanced form",
+      "Campaign landing page",
+      "Online payments",
+      "Calendly / PMS embed",
+    ],
   },
   {
     id: 2,
@@ -28,7 +35,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
     tagline: "Solid image and clear commercial structure.",
     setup: 18500,
     men: 490,
-    ideal: ["Restaurants", "Repair shops", "Law/consulting firms", "Boutique hotels", "Local brands"],
+    ideal: [
+      "Restaurants",
+      "Repair shops",
+      "Law/consulting firms",
+      "Boutique hotels",
+      "Local brands",
+    ],
     includes: [
       "Everything in Presence",
       "Up to 5 pages",
@@ -39,7 +52,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "2 rounds of revisions",
     ],
     notInc: ["CRM or scheduling included", "Admin panel", "Login or portal"],
-    canAdd: ["Basic CRM", "Basic scheduling", "Dynamic quote tool", "AI chatbot", "Basic dashboard"],
+    canAdd: [
+      "Basic CRM",
+      "Basic scheduling",
+      "Dynamic quote tool",
+      "AI chatbot",
+      "Basic dashboard",
+    ],
   },
   {
     id: 3,
@@ -81,7 +100,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "Basic dashboard",
     ],
     notInc: ["Client login or portal", "Full admin panel", "Advanced reporting"],
-    canAdd: ["Client login", "Advanced scheduling", "Advanced dashboard", "Deposit payments", "Digital signature"],
+    canAdd: [
+      "Client login",
+      "Advanced scheduling",
+      "Advanced dashboard",
+      "Deposit payments",
+      "Digital signature",
+    ],
   },
   {
     id: 5,
@@ -102,7 +127,13 @@ export const WEB_LEVELS_EN: WebLevel[] = [
       "Training + support",
     ],
     notInc: [],
-    canAdd: ["Advanced dashboard", "Digital signature", "Employee portal", "Advanced reporting", "Multi-branch"],
+    canAdd: [
+      "Advanced dashboard",
+      "Digital signature",
+      "Employee portal",
+      "Advanced reporting",
+      "Multi-branch",
+    ],
   },
   {
     id: 6,
@@ -128,7 +159,10 @@ export const WEB_LEVELS_EN: WebLevel[] = [
 
 export const COMPARE_HEADERS_EN = WEB_LEVELS_EN.map((l) => l.name);
 
-export const COMPARE_GROUPS_EN: { group: string; rows: { label: string; vals: CompareCell[] }[] }[] = [
+export const COMPARE_GROUPS_EN: {
+  group: string;
+  rows: { label: string; vals: CompareCell[] }[];
+}[] = [
   {
     group: "Design and content",
     rows: [
@@ -173,8 +207,14 @@ export const COMPARE_GROUPS_EN: { group: string; rows: { label: string; vals: Co
     group: "Payments and integrations",
     rows: [
       { label: "Online payments", vals: ["addon", "addon", "addon", "addon", "yes", "yes"] },
-      { label: "Simple embeds (Calendly, PMS, map)", vals: ["addon", "addon", "addon", "addon", "addon", "addon"] },
-      { label: "External integrations", vals: ["custom", "custom", "custom", "custom", "custom", "custom"] },
+      {
+        label: "Simple embeds (Calendly, PMS, map)",
+        vals: ["addon", "addon", "addon", "addon", "addon", "addon"],
+      },
+      {
+        label: "External integrations",
+        vals: ["custom", "custom", "custom", "custom", "custom", "custom"],
+      },
     ],
   },
 ];
@@ -190,7 +230,7 @@ export const FAQ_WEB_EN = [
   },
   {
     q: "Who owns the code?",
-    a: "The content and brand are 100% yours. We operate the technical infrastructure to guarantee stability and support. If you want to migrate, a data export is provided.",
+    a: "The project code, domain and content are yours. You receive access to your hosting, analytics and contracted service accounts. Maintenance is a separate service and you can migrate your website. Third-party licenses and services are identified in the proposal.",
   },
   {
     q: "How many changes can I request?",

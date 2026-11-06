@@ -23,6 +23,8 @@ export type PortfolioProject = {
   location?: string;
   diagnosis?: string;
   solution?: string;
+  diagnosisEn?: string;
+  solutionEn?: string;
 };
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
@@ -38,6 +40,10 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     solution:
       "Panel de inventario en vivo con sincronización pública, agenda de citas 24/7, asistente con IA en español e inglés, filtro de 8 preguntas previas y recordatorios por email, SMS y WhatsApp.",
     cover: haimaDesk.url,
+    diagnosisEn:
+      "A blood bank in Tijuana relying on phone calls and manual enquiries to check availability and schedule donors.",
+    solutionEn:
+      "A live inventory panel with a public view, online appointment booking, a bilingual AI assistant, pre-screening questions and email, SMS and WhatsApp reminders.",
     photos: [haimaIpad.url, haimaIphone.url],
     url: "https://haima.health/",
   },
@@ -53,6 +59,10 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     solution:
       "Replanteamiento digital desde cero: arquitectura orientada a conversión, UX/UI minimalista, mobile-first, SEO técnico y contenido estratégico, presentación de servicios especializados y lead journey preparado para campañas de Google y Meta.",
     cover: velportHero.url,
+    diagnosisEn:
+      "An established shipyard in Ensenada needed a digital presence that reflected the precision and care expected by yacht owners.",
+    solutionEn:
+      "A new website structure and mobile-first design, technical SEO, strategic content and a clear enquiry journey for specialist refit and repair services.",
     photos: [velportWork.url, velportProcess.url, velportMobile.url],
     url: "https://www.velportastilleros.com/",
   },

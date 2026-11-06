@@ -25,16 +25,13 @@ export function AgentIAPromo() {
         </p>
 
         <h2 className="text-3xl font-medium leading-[1.1] tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-          {t(
-            "The chat on your website, answering like your best salesperson.",
-            "El chat de tu página web, respondiendo como tu mejor vendedor.",
-          )}
+          {t("An AI agent you can try right now.", "Un agente de IA que puedes probar ahora.")}
         </h2>
 
         <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-neutral-500">
           {t(
-            "Automated flows for the questions that repeat, or an AI agent that understands, qualifies and books — embedded on your own site. You can talk to three live agents right now: no signup, no demo call.",
-            "Flujos automatizados para las preguntas que se repiten, o un agente de IA que entiende, califica y agenda, integrado en tu propio sitio. Puedes platicar con tres agentes en vivo ahora mismo: sin registro ni llamada de demo.",
+            "Explore live demos for real estate, healthcare and professional services. Ask questions and see how the conversation works before deciding what to automate.",
+            "Explora demos en vivo de inmobiliaria, salud y servicios profesionales. Haz preguntas y conoce la conversación antes de decidir qué automatizar.",
           )}
         </p>
 

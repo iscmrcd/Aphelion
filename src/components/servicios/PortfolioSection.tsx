@@ -1,217 +1,175 @@
-import { useEffect, useState } from "react";
-import { ArrowUpRight, X, MapPin, Building2, Stethoscope, Wrench } from "lucide-react";
-import { useT, useLang } from "@/lib/i18n";
-import { PORTFOLIO_PROJECTS, type PortfolioProject } from "@/lib/portfolio-data";
+import { Link } from "@tanstack/react-router";
+import { ArrowUpRight, Plus } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useT } from "@/lib/i18n";
+import { PORTFOLIO_PROJECTS } from "@/lib/portfolio-data";
+import { Reveal } from "./Motion";
 
-/**
- * Portfolio strip for /servicios/websites. Infinite marquee of 3:4 cards;
- * clicking a card opens a lightbox with the rest of that project's photos.
- * With few projects the list is repeated so the loop never shows a gap.
- */
-export function PortfolioSection() {
+export function PortfolioSection({
+  projectIds,
+  showHeading = true,
+}: {
+  projectIds?: string[];
+  showHeading?: boolean;
+}) {
   const t = useT();
-  const [selected, setSelected] = useState<PortfolioProject | null>(null);
-
-  // Repeat the projects enough times that one marquee half always fills the
-  // viewport; the CSS animation translates exactly -50% for a seamless loop.
-  const COPIES = 4;
-  const loop = Array.from({ length: COPIES }, () => PORTFOLIO_PROJECTS).flat();
-
-  useEffect(() => {
-    if (!selected) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelected(null);
-    document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-    };
-  }, [selected]);
-
+  const projects = PORTFOLIO_PROJECTS.filter(
+    (project) => !projectIds || projectIds.includes(project.id),
+  );
   return (
-    <section className="overflow-hidden border-t border-neutral-200 py-20 sm:py-28">
-      <div className="mx-auto mb-12 max-w-4xl px-5 text-center">
-        <p className="mb-3 text-xs font-medium tracking-[0.16em] text-neutral-500 uppercase">
-          {t("Portfolio", "Portafolio")}
-        </p>
-        <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-          {t("Finished websites.", "Páginas web terminadas.")}
-        </h2>
-        <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-neutral-500 sm:text-base">
-          {t(
-            "Real projects, live and working. Tap any card to see more.",
-            "Proyectos reales, en línea y funcionando. Toca una tarjeta para ver más.",
-          )}
-        </p>
-      </div>
-
-      <div
-        className="group relative"
-        style={{
-          maskImage:
-            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
-          WebkitMaskImage:
-            "linear-gradient(to right, transparent, black 8%, black 92%, transparent)",
-        }}
-      >
-        <div className="animate-marquee flex w-max gap-4 px-2 group-hover:[animation-play-state:paused] sm:gap-6">
-          {[0, 1].map((half) => (
-            <div key={half} className="flex gap-4 sm:gap-6" aria-hidden={half === 1}>
-              {loop.map((p, i) => (
-                <button
-                  key={`${p.id}-${i}`}
-                  type="button"
-                  onClick={() => setSelected(p)}
-                  className="group/card relative w-44 shrink-0 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 text-left transition hover:border-neutral-950 sm:w-60"
-                  tabIndex={half === 1 ? -1 : 0}
-                >
-                  <div className="aspect-[3/4] w-full">
-                    {p.cover ? (
-                      <img
-                        src={p.cover}
-                        alt={p.name}
-                        loading="lazy"
-                        className="h-full w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
-                      />
-                    ) : (
-                      <PlaceholderCover name={p.name} />
-                    )}
-                  </div>
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-10">
-                    <p className="text-sm font-medium text-white">{p.name}</p>
-                    <p className="text-xs text-white/70">{t(p.type, p.typeEn)}</p>
-                  </div>
-                  <ArrowUpRight className="absolute top-3 right-3 h-4 w-4 text-white opacity-0 transition group-hover/card:opacity-100" />
-                </button>
-              ))}
+    <section
+      id="proyectos"
+      aria-label={t("Selected projects", "Proyectos seleccionados")}
+      className="scroll-mt-24 border-t border-neutral-200 bg-white px-5 py-20 sm:py-28"
+    >
+      <div className="mx-auto max-w-6xl">
+        {showHeading && (
+          <Reveal className="mb-12 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+            <div>
+              <p className="studio-eyebrow">{t("Selected work", "Trabajo seleccionado")}</p>
+              <h2 className="studio-heading mt-4">
+                {t("Ideas made real.", "Ideas que ya funcionan.")}
+              </h2>
             </div>
+            <Link
+              to="/trabajo"
+              className="inline-flex w-fit items-center gap-2 border-b border-neutral-300 pb-1 text-sm font-medium"
+            >
+              {t("Explore our work", "Conoce nuestro trabajo")}
+              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+          </Reveal>
+        )}
+        <div className={`grid gap-8 ${projects.length > 1 ? "lg:grid-cols-2" : "max-w-3xl"}`}>
+          {projects.map((project, index) => (
+            <Reveal key={project.id} delay={index * 90}>
+              <ProjectCard project={project} />
+            </Reveal>
           ))}
         </div>
       </div>
-
-      {selected && (
-        <div
-          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm sm:p-8"
-          onClick={() => setSelected(null)}
-          role="dialog"
-          aria-modal="true"
-          aria-label={selected.name}
-        >
-          <div
-            className="relative max-h-full w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-5 sm:p-8"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={() => setSelected(null)}
-              aria-label={t("Close", "Cerrar")}
-              className="absolute top-4 right-4 rounded-full border border-neutral-200 p-2 text-neutral-500 transition hover:border-neutral-950 hover:text-neutral-950"
-            >
-              <X className="h-4 w-4" />
-            </button>
-
-            <p className="text-xs font-medium tracking-[0.16em] text-neutral-500 uppercase">
-              {t(selected.type, selected.typeEn)}
-            </p>
-            <h3 className="mt-2 text-2xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-3xl">
-              {selected.name}
-            </h3>
-
-            <dl className="mt-6 grid gap-4 sm:grid-cols-2">
-              {selected.client && (
-                <div className="rounded-xl border border-neutral-200 p-4">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <Building2 className="h-3.5 w-3.5" />
-                    {t("Client", "Cliente")}
-                  </dt>
-                  <dd className="mt-1 text-sm font-medium text-neutral-950">{selected.client}</dd>
-                </div>
-              )}
-              {selected.location && (
-                <div className="rounded-xl border border-neutral-200 p-4">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <MapPin className="h-3.5 w-3.5" />
-                    {t("Location", "Ubicación")}
-                  </dt>
-                  <dd className="mt-1 text-sm font-medium text-neutral-950">{selected.location}</dd>
-                </div>
-              )}
-              {selected.diagnosis && (
-                <div className="rounded-xl border border-neutral-200 p-4 sm:col-span-2">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <Stethoscope className="h-3.5 w-3.5" />
-                    {t("Diagnosis", "Diagnóstico")}
-                  </dt>
-                  <dd className="mt-1 text-sm leading-relaxed text-neutral-700">{selected.diagnosis}</dd>
-                </div>
-              )}
-              {selected.solution && (
-                <div className="rounded-xl border border-neutral-200 p-4 sm:col-span-2">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <Wrench className="h-3.5 w-3.5" />
-                    {t("Solution", "Solución")}
-                  </dt>
-                  <dd className="mt-1 text-sm leading-relaxed text-neutral-700">{selected.solution}</dd>
-                </div>
-              )}
-            </dl>
-
-            {selected.url && (
-              <a
-                href={selected.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
-              >
-                {t("Visit live site", "Visitar sitio en vivo")}
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </a>
-            )}
-
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-              {(selected.cover ? [selected.cover, ...selected.photos] : selected.photos).map(
-                (src, i) => (
-                  <div
-                    key={i}
-                    className="aspect-[3/4] overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100"
-                  >
-                    <img
-                      src={src}
-                      alt={`${selected.name} — ${i + 1}`}
-                      loading="lazy"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                ),
-              )}
-              {!selected.cover && selected.photos.length === 0 && (
-                <div className="col-span-full rounded-xl border border-dashed border-neutral-300 p-8 text-center text-sm text-neutral-500">
-                  {t(
-                    "Project photos coming soon.",
-                    "Fotos del proyecto próximamente.",
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
 
-function PlaceholderCover({ name }: { name: string }) {
+function ProjectCard({ project }: { project: (typeof PORTFOLIO_PROJECTS)[number] }) {
+  const t = useT();
+  const brief =
+    project.id === "haima-banco-de-sangre"
+      ? t(
+          "A website, appointment booking and AI assistance connected to one blood bank's operation.",
+          "Sitio web, agenda y atención con IA conectados a la operación de un banco de sangre.",
+        )
+      : t(
+          "A new digital presentation for a shipyard's yacht refit and repair services.",
+          "Una nueva presentación digital para los servicios de reparación y refit de un astillero.",
+        );
   return (
-    <div className="flex h-full w-full flex-col bg-neutral-900">
-      {/* browser chrome */}
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-3 py-2">
-        <span className="h-2 w-2 rounded-full bg-white/20" />
-        <span className="h-2 w-2 rounded-full bg-white/20" />
-        <span className="h-2 w-2 rounded-full bg-white/20" />
-      </div>
-      <div className="flex flex-1 items-center justify-center p-4">
-        <p className="text-center text-sm font-medium tracking-wide text-white/60">{name}</p>
-      </div>
-    </div>
+    <Dialog>
+      <article>
+        <DialogTrigger asChild>
+          <button
+            type="button"
+            className="group relative block aspect-[16/11] w-full overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 text-left"
+            aria-label={t(`Explore ${project.name}`, `Conocer ${project.name}`)}
+          >
+            <img
+              src={project.cover}
+              alt={t(`${project.name} website`, `Sitio web de ${project.name}`)}
+              loading="lazy"
+              width={960}
+              height={660}
+              className="h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-[1.035]"
+            />
+            <span className="on-dark absolute right-5 bottom-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-neutral-950/80 text-white backdrop-blur-sm transition group-hover:bg-neutral-950">
+              <Plus aria-hidden="true" className="h-5 w-5" />
+            </span>
+          </button>
+        </DialogTrigger>
+        <div className="mt-5 flex items-start justify-between gap-5">
+          <div>
+            <p className="text-[11px] uppercase tracking-[0.12em] text-neutral-500">
+              {project.location} · {t(project.typeEn, project.type)}
+            </p>
+            <h3 className="mt-2 text-xl font-medium tracking-tight sm:text-2xl">{project.name}</h3>
+          </div>
+          {project.url && (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 rounded-full border border-neutral-200 p-2.5 transition hover:border-neutral-950"
+              aria-label={t(`Visit ${project.name}`, `Visitar ${project.name}`)}
+            >
+              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+          )}
+        </div>
+        <p className="mt-3 max-w-lg text-sm leading-relaxed text-neutral-500">{brief}</p>
+      </article>
+      <DialogContent
+        closeLabel={t("Close", "Cerrar")}
+        className="z-[80] max-h-[88dvh] w-[calc(100%-2rem)] max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 text-neutral-950 sm:p-9"
+      >
+        <div className="pr-7">
+          <p className="studio-eyebrow">
+            {project.location} · {t(project.typeEn, project.type)}
+          </p>
+          <DialogTitle className="mt-3 text-2xl font-medium tracking-tight sm:text-3xl">
+            {project.name}
+          </DialogTitle>
+          <DialogDescription className="mt-4 text-sm leading-relaxed text-neutral-600">
+            {brief}
+          </DialogDescription>
+        </div>
+        <div className="grid gap-6 border-y border-neutral-200 py-6 sm:grid-cols-2">
+          <div>
+            <h4 className="studio-eyebrow">{t("The challenge", "El reto")}</h4>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+              {t(project.diagnosisEn ?? project.diagnosis, project.diagnosis)}
+            </p>
+          </div>
+          <div>
+            <h4 className="studio-eyebrow">{t("The solution", "La solución")}</h4>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-600">
+              {t(project.solutionEn ?? project.solution, project.solution)}
+            </p>
+          </div>
+        </div>
+        {project.url && (
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-neutral-950 px-5 py-3 text-sm font-medium text-white"
+          >
+            {t("Visit the website", "Visitar el sitio")}
+            <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
+          </a>
+        )}
+        <div className="mt-3 grid gap-4 sm:grid-cols-2">
+          {[project.cover, ...project.photos]
+            .filter((src): src is string => Boolean(src))
+            .map((src, index) => (
+              <img
+                key={src}
+                src={src}
+                alt={t(
+                  `${project.name}, project view ${index + 1}`,
+                  `${project.name}, vista del proyecto ${index + 1}`,
+                )}
+                loading="lazy"
+                className="h-auto w-full rounded-xl border border-neutral-200"
+              />
+            ))}
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 }

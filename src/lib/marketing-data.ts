@@ -91,7 +91,7 @@ export const MARKETING_PACKAGES: MarketingPackage[] = [
     contractMonths: 6,
     badge: "Popular",
     forWho:
-      "Negocios que ya pasaron la etapa de solo \"estar presentes\" y quieren usar sus redes para atraer clientes nuevos activamente. Están listos para invertir en publicidad y necesitan que alguien lo haga bien — con contenido real, no genérico ni de banco de imágenes.",
+      'Negocios que ya pasaron la etapa de solo "estar presentes" y quieren usar sus redes para atraer clientes nuevos activamente. Están listos para invertir en publicidad y necesitan que alguien lo haga bien — con contenido real, no genérico ni de banco de imágenes.',
     ideal: [
       "Restaurantes en crecimiento",
       "Hoteles boutique",
@@ -335,7 +335,7 @@ export const MARKETING_REPLACES = [
 export const FAQ_MARKETING = [
   {
     q: "¿Por qué exclusividad por rubro?",
-    a: "Trabajamos con una sola empresa por categoría y zona competitiva. No queremos competir contra nuestros propios clientes ni diluir la estrategia. Si tu competencia llega primero, la posición es suya hasta que termine el contrato.",
+    a: "Trabajamos con una sola empresa por categoría y zona competitiva. La disponibilidad, el giro y la zona se revisan antes de contratar y se confirman por escrito en la propuesta.",
   },
   {
     q: "¿La pauta publicitaria está incluida en el precio?",
@@ -355,6 +355,6 @@ export const FAQ_MARKETING = [
   },
   {
     q: "¿Cómo son los pagos?",
-    a: "Facturación semanal o mensual + IVA. Brand Partner y Producción Premium pueden facturarse en USD para clientes del mercado americano.",
+    a: "Los planes se cotizan y facturan por mes en MXN + IVA. La inversión publicitaria se paga por separado, directo a las plataformas. Para clientes de EE. UU. podemos preparar una propuesta en USD; la moneda y las condiciones se acuerdan por escrito antes de iniciar.",
   },
 ];

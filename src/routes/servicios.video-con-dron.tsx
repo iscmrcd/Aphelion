@@ -52,7 +52,7 @@ export const Route = createFileRoute("/servicios/video-con-dron")({
         },
         {
           "@type": "FAQPage",
-          mainEntity: (loaderData?.lang === "es" ? FAQ_DRONE : FAQ_DRONE_EN).map((f) => ({
+          mainEntity: (loaderData?.lang === "en" ? FAQ_DRONE_EN : FAQ_DRONE).map((f) => ({
             "@type": "Question",
             name: f.q,
             acceptedAnswer: { "@type": "Answer", text: f.a },
@@ -77,8 +77,8 @@ function DronePage() {
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
             {t(
-              "Aerial production, integrated into the same team that runs your brand. Not a freelance pilot — content built to sell, with Aphelion's own art direction.",
-              "Producción aérea con dron, integrada al mismo equipo que maneja tu marca. No es un piloto suelto: es contenido pensado para vender, con la misma dirección de arte de Aphelion.",
+              "Show your spaces, properties and events from another perspective. Aerial photography and edited video with a defined scope, formats and delivery date.",
+              "Muestra tus espacios, propiedades y eventos desde otra perspectiva. Fotografía aérea y video editado con alcance, formatos y fecha de entrega definidos.",
             )}
           </p>
           <div className="mt-9 flex flex-wrap justify-center gap-3">

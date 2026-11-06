@@ -12,9 +12,13 @@
 import { WEB_LEVELS } from "./websites-data";
 import { MARKETING_PACKAGES } from "./marketing-data";
 import { DRONE_PACKAGES } from "./dron-data";
+import { WEB_LEVELS_EN } from "./websites-data.en";
+import { MARKETING_PACKAGES_EN } from "./marketing-data.en";
+import { DRONE_PACKAGES_EN } from "./dron-data.en";
 
 export type PriceRow = {
   name: string;
+  nameEn?: string;
   tagline: string;
   taglineEs: string;
   /** One-off amount in MXN, or null when quoted on request. */
@@ -45,13 +49,14 @@ export const WEB_BLOCK: PriceBlock = {
   title: "Websites",
   titleEs: "Sitios web",
   blurb:
-    "Six levels, from a single professional page to a commercial system. Setup is one-off; the monthly covers hosting, maintenance and support.",
+    "Three website packages. Development is a one-time payment; monthly maintenance covers hosting and support.",
   blurbEs:
-    "Seis niveles, desde una página profesional hasta un sistema comercial. El setup es único; la mensualidad cubre hosting, mantenimiento y soporte.",
+    "Tres opciones de sitio web. El desarrollo es un pago único; el mantenimiento mensual cubre alojamiento y soporte.",
   href: "/servicios/websites",
-  rows: WEB_LEVELS.map((l) => ({
+  rows: WEB_LEVELS.filter((l) => l.id <= 3).map((l) => ({
     name: l.name,
-    tagline: l.tagline,
+    nameEn: WEB_LEVELS_EN.find((item) => item.id === l.id)?.name,
+    tagline: WEB_LEVELS_EN.find((item) => item.id === l.id)?.tagline ?? l.tagline,
     taglineEs: l.tagline,
     setup: l.setup === null ? null : mxn(l.setup),
     monthly: l.men === null ? null : mxn(l.men),
@@ -67,9 +72,10 @@ export const MARKETING_BLOCK: PriceBlock = {
   blurbEs:
     "Paquetes continuos con plazo mínimo, facturados por mes. La inversión publicitaria la pagas directo a las plataformas y no está incluida en estas cifras.",
   href: "/servicios/marketing",
-  rows: MARKETING_PACKAGES.map((p) => ({
+  rows: MARKETING_PACKAGES.filter((p) => p.id <= 3).map((p) => ({
     name: p.name,
-    tagline: p.tagline,
+    nameEn: MARKETING_PACKAGES_EN.find((item) => item.id === p.id)?.name,
+    tagline: MARKETING_PACKAGES_EN.find((item) => item.id === p.id)?.tagline ?? p.tagline,
     taglineEs: p.tagline,
     setup: null,
     monthly: mxn(p.monthly),
@@ -87,13 +93,14 @@ export const DRONE_BLOCK: PriceBlock = {
   blurbEs:
     "Se cobra por producción, no por mes. El traslado fuera de Ensenada tiene un cargo por zona que aparece en la página del servicio.",
   href: "/servicios/video-con-dron",
-  rows: DRONE_PACKAGES.map((p) => ({
+  rows: DRONE_PACKAGES.map((p, index) => ({
     name: p.name,
-    tagline: p.tagline,
+    nameEn: DRONE_PACKAGES_EN[index]?.name,
+    tagline: DRONE_PACKAGES_EN[index]?.tagline ?? p.tagline,
     taglineEs: p.tagline,
     setup: mxn(p.price),
     monthly: null,
-    note: p.duration,
+    note: DRONE_PACKAGES_EN[index]?.duration ?? p.duration,
     noteEs: p.duration,
   })),
 };
@@ -103,15 +110,62 @@ export const AGENTE_BLOCK: PriceBlock = {
   title: "AI Agent",
   titleEs: "Agente IA",
   blurb:
-    "No published figure yet. Price depends on message volume, which integrations you need and how far the agent is customised, so it is scoped after a call.",
+    "Implementation, support and usage depend on message volume, integrations and customisation. We define these separately in your proposal.",
   blurbEs:
-    "Todavía sin cifra publicada. El precio depende del volumen de mensajes, de qué integraciones necesitas y de qué tanto se personaliza el agente, así que se define después de una llamada.",
+    "La implementación, el soporte y el uso dependen del volumen de mensajes, las integraciones y la personalización. Los definimos por separado en tu propuesta.",
   href: "/servicios/agente-ia",
   rows: [],
   quotedOnly: true,
 };
 
-export const PRICE_BLOCKS: PriceBlock[] = [WEB_BLOCK, MARKETING_BLOCK, DRONE_BLOCK, AGENTE_BLOCK];
+export const SYSTEMS_BLOCK: PriceBlock = {
+  id: "sistemas",
+  title: "Automation and systems",
+  titleEs: "Automatización y sistemas",
+  blurb:
+    "Scheduling, follow-up and custom platforms. Scope, third-party usage and support are confirmed in writing.",
+  blurbEs:
+    "Agenda, seguimiento y plataformas a medida. El alcance, los consumos de terceros y el soporte se confirman por escrito.",
+  href: "/servicios/automatizacion",
+  rows: WEB_LEVELS.filter((level) => level.id > 3).map((level) => ({
+    name: level.name,
+    nameEn: WEB_LEVELS_EN.find((item) => item.id === level.id)?.name,
+    tagline: WEB_LEVELS_EN.find((item) => item.id === level.id)?.tagline ?? level.tagline,
+    taglineEs: level.tagline,
+    setup: level.setup,
+    monthly: level.men,
+  })),
+};
+
+export const PRODUCTION_BLOCK: PriceBlock = {
+  id: "produccion",
+  title: "Premium production",
+  titleEs: "Producción premium",
+  blurb:
+    "Ongoing production for the cross-border market. Individual photo and video projects are quoted separately by scope. Ad spend is separate.",
+  blurbEs:
+    "Producción continua para el mercado binacional. Los proyectos individuales de foto y video se cotizan por alcance. La inversión publicitaria se paga aparte.",
+  href: "/servicios/produccion",
+  rows: MARKETING_PACKAGES.filter((pkg) => pkg.id === 4).map((pkg) => ({
+    name: pkg.name,
+    nameEn: MARKETING_PACKAGES_EN.find((item) => item.id === pkg.id)?.name,
+    tagline: MARKETING_PACKAGES_EN.find((item) => item.id === pkg.id)?.tagline ?? pkg.tagline,
+    taglineEs: pkg.tagline,
+    setup: null,
+    monthly: pkg.monthly,
+    note: `Minimum term ${pkg.contractMonths} months`,
+    noteEs: `Plazo mínimo ${pkg.contractMonths} meses`,
+  })),
+};
+
+export const PRICE_BLOCKS: PriceBlock[] = [
+  WEB_BLOCK,
+  MARKETING_BLOCK,
+  SYSTEMS_BLOCK,
+  DRONE_BLOCK,
+  PRODUCTION_BLOCK,
+  AGENTE_BLOCK,
+];
 
 /** Lowest published setup figure, used for the "from" line in the hero. */
 export const LOWEST_WEB_SETUP = Math.min(

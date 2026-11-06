@@ -19,6 +19,10 @@ export function HeroWaves() {
     let lastDraw = 0;
     let visible = true;
     let dark = false;
+    let pointerX = 0;
+    let pointerY = 0;
+    let targetPointerX = 0;
+    let targetPointerY = 0;
 
     const colors = () => {
       const styles = getComputedStyle(hero);
@@ -36,7 +40,7 @@ export function HeroWaves() {
       if (!width || !height) return;
       const palette = colors();
       const drift = motion.matches ? 0 : seconds * 0.3;
-      const phase = scroll * 3.6 + drift;
+      const phase = scroll * 3.6 + drift + pointerX * 0.35;
 
       const background = ctx.createLinearGradient(0, 0, width, height);
       background.addColorStop(0, palette.edge);
@@ -50,11 +54,12 @@ export function HeroWaves() {
       // canvas context.filter, which otherwise exposes hard-edged bands.
       ctx.save();
       for (let layer = 0; layer < 4; layer++) {
-        const yAt = (x: number) => height * (
-          [-0.18, 0.18, 0.76, 1.08][layer] +
-          Math.sin(x / width * 5.4 + phase + layer * 1.7) * [0.3, 0.22, 0.27, 0.18][layer] +
-          Math.sin(x / width * 9.2 - phase * 0.6 + layer) * 0.06
-        );
+        const yAt = (x: number) =>
+          height *
+          ([-0.18, 0.18, 0.76, 1.08][layer] +
+            Math.sin((x / width) * 5.4 + phase + layer * 1.7) * [0.3, 0.22, 0.27, 0.18][layer] +
+            Math.sin((x / width) * 9.2 - phase * 0.6 + layer) * 0.06 +
+            pointerY * 0.04);
         ctx.strokeStyle = layer % 2 ? palette.waveAlt : palette.wave;
         ctx.lineCap = "round";
         ctx.beginPath();
@@ -80,7 +85,10 @@ export function HeroWaves() {
         for (let x = gap / 2; x < width; x += gap) {
           const nx = x / width;
           const ny = y / height;
-          const field = Math.sin(nx * 8 + ny * 7 + phase) * 0.5 + Math.sin(nx * 13 - ny * 4 - phase * 1.1) * 0.3 + Math.sin(ny * 9 + phase * 1.4) * 0.2;
+          const field =
+            Math.sin(nx * 8 + ny * 7 + phase) * 0.5 +
+            Math.sin(nx * 13 - ny * 4 - phase * 1.1) * 0.3 +
+            Math.sin(ny * 9 + phase * 1.4) * 0.2;
           const center = Math.exp(-((nx - 0.5) ** 2 / 0.105 + (ny - 0.46) ** 2 / 0.15));
           const strength = (dark ? 0.18 : 0.17) + Math.max(0, field) * 0.32;
           ctx.globalAlpha = strength * (1 - center * 0.88);
@@ -109,19 +117,46 @@ export function HeroWaves() {
       if (!visible || now - lastDraw < 32) return;
       lastDraw = now;
       scroll += (target - scroll) * 0.09;
+      pointerX += (targetPointerX - pointerX) * 0.06;
+      pointerY += (targetPointerY - pointerY) * 0.06;
       render(now / 1000);
+    };
+    const onPointerMove = (event: PointerEvent) => {
+      if (event.pointerType !== "mouse" || motion.matches) return;
+      const rect = hero.getBoundingClientRect();
+      targetPointerX = (event.clientX - rect.left) / Math.max(rect.width, 1) - 0.5;
+      targetPointerY = (event.clientY - rect.top) / Math.max(rect.height, 1) - 0.5;
+    };
+    const onPointerLeave = () => {
+      targetPointerX = 0;
+      targetPointerY = 0;
     };
     const observer = new ResizeObserver(measure);
     observer.observe(hero);
-    const visibilityObserver = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; });
+    const visibilityObserver = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+    });
     visibilityObserver.observe(hero);
-    const themeObserver = new MutationObserver(() => { if (dark !== document.documentElement.classList.contains("dark")) render(performance.now() / 1000); });
-    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    const themeObserver = new MutationObserver(() => {
+      if (dark !== document.documentElement.classList.contains("dark"))
+        render(performance.now() / 1000);
+    });
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
     measure();
     onScroll();
     if (!motion.matches) frame = requestAnimationFrame(tick);
-    const onMotion = () => { cancelAnimationFrame(frame); scroll = target; render(0); if (!motion.matches) frame = requestAnimationFrame(tick); };
+    const onMotion = () => {
+      cancelAnimationFrame(frame);
+      scroll = target;
+      render(0);
+      if (!motion.matches) frame = requestAnimationFrame(tick);
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
+    hero.addEventListener("pointermove", onPointerMove, { passive: true });
+    hero.addEventListener("pointerleave", onPointerLeave);
     motion.addEventListener("change", onMotion);
     return () => {
       cancelAnimationFrame(frame);
@@ -129,9 +164,17 @@ export function HeroWaves() {
       visibilityObserver.disconnect();
       themeObserver.disconnect();
       window.removeEventListener("scroll", onScroll);
+      hero.removeEventListener("pointermove", onPointerMove);
+      hero.removeEventListener("pointerleave", onPointerLeave);
       motion.removeEventListener("change", onMotion);
     };
   }, []);
 
-  return <canvas ref={canvasRef} aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 h-full w-full" />;
+  return (
+    <canvas
+      ref={canvasRef}
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 -z-10 h-full w-full"
+    />
+  );
 }

@@ -3,8 +3,8 @@ import { useState } from "react";
 import { ArrowRight, Plus, Check } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { useT, useLang } from "@/lib/i18n";
-import { buildHead, SITE_URL, ORGANIZATION_JSONLD, AREAS_SERVED } from "@/lib/seo";
-import { PRICE_BLOCKS, PRECIOS_FAQ, LOWEST_WEB_SETUP, type PriceBlock } from "@/lib/precios-data";
+import { buildHead, SITE_URL, ORGANIZATION_JSONLD } from "@/lib/seo";
+import { PRICE_BLOCKS, PRECIOS_FAQ, type PriceBlock } from "@/lib/precios-data";
 
 export const Route = createFileRoute("/precios")({
   loaderDeps: ({ search }) => ({ lang: search.lang }),
@@ -60,8 +60,6 @@ export const Route = createFileRoute("/precios")({
 
 function Precios() {
   const t = useT();
-  const fmt = (n: number | null) =>
-    n === null ? t("Quote", "A cotizar") : `$${n.toLocaleString("es-MX")}`;
 
   return (
     <main>
@@ -75,14 +73,14 @@ function Precios() {
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
             {t(
-              `Real figures in Mexican pesos, from ${fmt(LOWEST_WEB_SETUP)} for a website. Every project still goes through a short evaluation, because the accurate number depends on what you already have and where the bottleneck actually is.`,
-              `Cifras reales en pesos, desde ${fmt(LOWEST_WEB_SETUP)} para un sitio web. Todo proyecto pasa igual por una evaluación corta, porque el número exacto depende de qué ya tienes y de dónde está realmente el cuello de botella.`,
+              "Starting prices in MXN to help you plan. We confirm scope, deliverables and the total in writing before work begins.",
+              "Referencias en MXN para planear tu proyecto. Confirmamos el alcance, los entregables y el total por escrito antes de comenzar.",
             )}
           </p>
           <p className="mt-4 text-sm text-white/50">
             {t(
-              "Prices in MXN, before tax. Same rates across Tijuana, Rosarito, Tecate, Mexicali and Ensenada.",
-              "Precios en MXN, antes de impuestos. Las mismas tarifas en Tijuana, Rosarito, Tecate, Mexicali y Ensenada.",
+              "Prices in MXN + VAT. Monthly marketing plans. Drone travel fees vary by area. USD proposals available for US clients.",
+              "Precios en MXN + IVA. Marketing con planes mensuales. Los traslados de dron varían por zona. Cotización en USD para clientes de EE. UU.",
             )}
           </p>
         </div>
@@ -106,6 +104,8 @@ function Precios() {
 function Block({ block }: { block: PriceBlock }) {
   const t = useT();
   const { lang } = useLang();
+  const showSetup = block.rows.some((row) => row.setup !== null);
+  const showMonthly = block.rows.some((row) => row.monthly !== null);
   const fmt = (n: number | null) =>
     n === null
       ? t("Quote", "A cotizar")
@@ -144,40 +144,93 @@ function Block({ block }: { block: PriceBlock }) {
           </Link>
         </div>
       ) : (
-        <div className="mt-8 overflow-hidden rounded-2xl border border-neutral-200">
-          <table className="w-full text-left text-sm">
-            <thead className="bg-neutral-50 text-xs uppercase tracking-[0.08em] text-neutral-500">
-              <tr>
-                <th className="px-5 py-3 font-medium">{t("Package", "Paquete")}</th>
-                <th className="px-5 py-3 font-medium">{t("One-off", "Único")}</th>
-                <th className="px-5 py-3 font-medium">{t("Monthly", "Mensual")}</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-neutral-200">
-              {block.rows.map((r) => (
-                <tr key={r.name}>
-                  <td className="px-5 py-4">
-                    <p className="font-medium text-neutral-950">{r.name}</p>
-                    <p className="mt-1 text-xs text-neutral-500">
-                      {lang === "es" ? r.taglineEs : r.tagline}
-                    </p>
-                    {r.note && (
-                      <p className="mt-1 text-xs text-neutral-400">
-                        {lang === "es" ? r.noteEs : r.note}
-                      </p>
-                    )}
-                  </td>
-                  <td className="px-5 py-4 align-top whitespace-nowrap text-neutral-800">
-                    {fmt(r.setup)}
-                  </td>
-                  <td className="px-5 py-4 align-top whitespace-nowrap text-neutral-800">
-                    {fmt(r.monthly)}
-                  </td>
+        <>
+          <div className="mt-8 space-y-3 sm:hidden">
+            {block.rows.map((row) => (
+              <div key={row.name} className="rounded-2xl border border-neutral-200 bg-white p-5">
+                <h3 className="text-base font-medium text-neutral-950">
+                  {lang === "en" ? (row.nameEn ?? row.name) : row.name}
+                </h3>
+                <p className="mt-2 text-xs leading-relaxed text-neutral-500">
+                  {lang === "es" ? row.taglineEs : row.tagline}
+                </p>
+                <dl
+                  className={`mt-5 grid gap-4 ${showSetup && showMonthly ? "grid-cols-2" : "grid-cols-1"}`}
+                >
+                  {showSetup && (
+                    <div>
+                      <dt className="text-[10px] uppercase tracking-wide text-neutral-500">
+                        {t("One-time", "Pago único")}
+                      </dt>
+                      <dd className="mt-1 text-lg font-medium text-neutral-950">
+                        {fmt(row.setup)}
+                      </dd>
+                    </div>
+                  )}
+                  {showMonthly && (
+                    <div>
+                      <dt className="text-[10px] uppercase tracking-wide text-neutral-500">
+                        {t("Monthly", "Mensual")}
+                      </dt>
+                      <dd className="mt-1 text-lg font-medium text-neutral-950">
+                        {fmt(row.monthly)}
+                      </dd>
+                    </div>
+                  )}
+                </dl>
+                {row.note && (
+                  <p className="mt-3 text-xs text-neutral-500">
+                    {lang === "es" ? row.noteEs : row.note}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 hidden overflow-x-auto rounded-2xl border border-neutral-200 sm:block">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-neutral-50 text-xs uppercase tracking-[0.08em] text-neutral-500">
+                <tr>
+                  <th className="px-5 py-3 font-medium">{t("Package", "Paquete")}</th>
+                  {showSetup && (
+                    <th className="px-4 py-3 font-medium">{t("One-time", "Pago único")}</th>
+                  )}
+                  {showMonthly && (
+                    <th className="px-4 py-3 font-medium">{t("Monthly", "Mensual")}</th>
+                  )}
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody className="divide-y divide-neutral-200">
+                {block.rows.map((r) => (
+                  <tr key={r.name}>
+                    <td className="px-5 py-4">
+                      <p className="font-medium text-neutral-950">
+                        {lang === "en" ? (r.nameEn ?? r.name) : r.name}
+                      </p>
+                      <p className="mt-1 text-xs text-neutral-500">
+                        {lang === "es" ? r.taglineEs : r.tagline}
+                      </p>
+                      {r.note && (
+                        <p className="mt-1 text-xs text-neutral-400">
+                          {lang === "es" ? r.noteEs : r.note}
+                        </p>
+                      )}
+                    </td>
+                    {showSetup && (
+                      <td className="px-4 py-4 align-top whitespace-nowrap text-neutral-800">
+                        {fmt(r.setup)}
+                      </td>
+                    )}
+                    {showMonthly && (
+                      <td className="px-4 py-4 align-top whitespace-nowrap text-neutral-800">
+                        {fmt(r.monthly)}
+                      </td>
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
     </section>
   );
@@ -223,7 +276,7 @@ function HowWeQuote() {
           to="/contacto"
           className="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
         >
-          {t("Book the evaluation", "Agendar la evaluación")}
+          {t("Let's talk about your project", "Hablemos de tu proyecto")}
           <ArrowRight className="h-3.5 w-3.5" />
         </Link>
       </div>
