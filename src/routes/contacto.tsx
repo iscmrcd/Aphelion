@@ -51,6 +51,7 @@ const SERVICE_SLUGS: Record<string, number> = {
   marketing: 1,
   "agente-ia": 2,
   "whatsapp-ia": 2,
+  automatizacion: 2,
   contenido: 3,
   video: 4,
   dron: 4,

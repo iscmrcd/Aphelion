@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
-import { ArrowUpRight, X, MapPin, Building2, Stethoscope, Wrench } from "lucide-react";
+import { useState } from "react";
+import { ArrowUpRight } from "lucide-react";
 import { useT, useLang } from "@/lib/i18n";
 import { PORTFOLIO_PROJECTS, type PortfolioProject } from "@/lib/portfolio-data";
+import { ProjectLightbox } from "./ProjectLightbox";
 
 /**
  * Portfolio strip for /servicios/websites. Infinite marquee of 3:4 cards;
@@ -17,16 +18,6 @@ export function PortfolioSection() {
   const COPIES = 4;
   const loop = Array.from({ length: COPIES }, () => PORTFOLIO_PROJECTS).flat();
 
-  useEffect(() => {
-    if (!selected) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelected(null);
-    document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-    };
-  }, [selected]);
 
   return (
     <section className="overflow-hidden border-t border-neutral-200 py-20 sm:py-28">
@@ -79,7 +70,7 @@ export function PortfolioSection() {
                   </div>
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-10">
                     <p className="text-sm font-medium text-white">{p.name}</p>
-                    <p className="text-xs text-white/70">{t(p.type, p.typeEn)}</p>
+                    <p className="text-xs text-white/70">{t(p.typeEn, p.type)}</p>
                   </div>
                   <ArrowUpRight className="absolute top-3 right-3 h-4 w-4 text-white opacity-0 transition group-hover/card:opacity-100" />
                 </button>
@@ -89,113 +80,7 @@ export function PortfolioSection() {
         </div>
       </div>
 
-      {selected && (
-        <div
-          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/70 p-4 backdrop-blur-sm sm:p-8"
-          onClick={() => setSelected(null)}
-          role="dialog"
-          aria-modal="true"
-          aria-label={selected.name}
-        >
-          <div
-            className="relative max-h-full w-full max-w-3xl overflow-y-auto rounded-2xl bg-white p-5 sm:p-8"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={() => setSelected(null)}
-              aria-label={t("Close", "Cerrar")}
-              className="absolute top-4 right-4 rounded-full border border-neutral-200 p-2 text-neutral-500 transition hover:border-neutral-950 hover:text-neutral-950"
-            >
-              <X className="h-4 w-4" />
-            </button>
-
-            <p className="text-xs font-medium tracking-[0.16em] text-neutral-500 uppercase">
-              {t(selected.type, selected.typeEn)}
-            </p>
-            <h3 className="mt-2 text-2xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-3xl">
-              {selected.name}
-            </h3>
-
-            <dl className="mt-6 grid gap-4 sm:grid-cols-2">
-              {selected.client && (
-                <div className="rounded-xl border border-neutral-200 p-4">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <Building2 className="h-3.5 w-3.5" />
-                    {t("Client", "Cliente")}
-                  </dt>
-                  <dd className="mt-1 text-sm font-medium text-neutral-950">{selected.client}</dd>
-                </div>
-              )}
-              {selected.location && (
-                <div className="rounded-xl border border-neutral-200 p-4">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <MapPin className="h-3.5 w-3.5" />
-                    {t("Location", "Ubicación")}
-                  </dt>
-                  <dd className="mt-1 text-sm font-medium text-neutral-950">{selected.location}</dd>
-                </div>
-              )}
-              {selected.diagnosis && (
-                <div className="rounded-xl border border-neutral-200 p-4 sm:col-span-2">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <Stethoscope className="h-3.5 w-3.5" />
-                    {t("Diagnosis", "Diagnóstico")}
-                  </dt>
-                  <dd className="mt-1 text-sm leading-relaxed text-neutral-700">{selected.diagnosis}</dd>
-                </div>
-              )}
-              {selected.solution && (
-                <div className="rounded-xl border border-neutral-200 p-4 sm:col-span-2">
-                  <dt className="flex items-center gap-1.5 text-xs font-medium tracking-[0.08em] text-neutral-500 uppercase">
-                    <Wrench className="h-3.5 w-3.5" />
-                    {t("Solution", "Solución")}
-                  </dt>
-                  <dd className="mt-1 text-sm leading-relaxed text-neutral-700">{selected.solution}</dd>
-                </div>
-              )}
-            </dl>
-
-            {selected.url && (
-              <a
-                href={selected.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-neutral-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
-              >
-                {t("Visit live site", "Visitar sitio en vivo")}
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </a>
-            )}
-
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-              {(selected.cover ? [selected.cover, ...selected.photos] : selected.photos).map(
-                (src, i) => (
-                  <div
-                    key={i}
-                    className="aspect-[3/4] overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100"
-                  >
-                    <img
-                      src={src}
-                      alt={`${selected.name} — ${i + 1}`}
-                      loading="lazy"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                ),
-              )}
-              {!selected.cover && selected.photos.length === 0 && (
-                <div className="col-span-full rounded-xl border border-dashed border-neutral-300 p-8 text-center text-sm text-neutral-500">
-                  {t(
-                    "Project photos coming soon.",
-                    "Fotos del proyecto próximamente.",
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      <ProjectLightbox project={selected} onClose={() => setSelected(null)} />
     </section>
   );
 }

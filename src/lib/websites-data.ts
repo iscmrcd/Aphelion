@@ -202,8 +202,8 @@ export const FAQ_WEB = [
     a: "Sí. La mensualidad cubre hosting, dominio (si aplica), monitoreo, backups y soporte continuo. No tienes que contratar nada por fuera.",
   },
   {
-    q: "¿De quién es el código?",
-    a: "El contenido y la marca son 100% tuyos. La infraestructura técnica la operamos nosotros para garantizar estabilidad y soporte. Si quieres migrar, se entrega export de datos.",
+    q: "¿De quién es el sitio y qué recibo si me voy?",
+    a: "Son tuyos tu marca, tus textos, tus imágenes y los datos de tus clientes. Nosotros operamos la infraestructura técnica (hosting, código base y mantenimiento) para que el sitio se mantenga estable. Si decides migrar, te entregamos tu contenido y tus datos exportados para que los lleves a donde quieras.",
   },
   {
     q: "¿Cuántos cambios puedo pedir?",

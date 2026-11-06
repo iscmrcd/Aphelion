@@ -1,48 +1,67 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Check, ChevronDown, Minus } from "lucide-react";
 import type { MarketingPackage } from "@/lib/marketing-data";
 import { useMarketingData } from "@/lib/content";
 import { useT, useLang } from "@/lib/i18n";
 
-const BADGE_TONE: Record<number, "popular" | "limited" | undefined> = {
-  3: "popular",
-  4: "limited",
+type SectionProps = {
+  /** Package ids to show; all four when omitted. */
+  packageIds?: number[];
+  /** Package highlighted as recommended and open by default. */
+  featuredId?: number;
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  footer?: ReactNode;
 };
 
-export function MarketingSection() {
-  const [openId, setOpenId] = useState<number>(3); // Brand Partner default
+export function MarketingSection({
+  packageIds,
+  featuredId = 3,
+  eyebrow,
+  title,
+  subtitle,
+  footer,
+}: SectionProps = {}) {
+  const [openId, setOpenId] = useState<number>(featuredId);
   const { MARKETING_PACKAGES } = useMarketingData();
   const t = useT();
+  const packages = packageIds
+    ? MARKETING_PACKAGES.filter((p) => packageIds.includes(p.id))
+    : MARKETING_PACKAGES;
 
   return (
     <section
       id="marketing"
-      className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28"
+      className="scroll-mt-20 border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28"
     >
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            {t("Select your volume", "Selecciona tu volumen")}
+            {eyebrow ?? t("Select your volume", "Selecciona tu volumen")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            {t("Four packages. You choose the speed.", "Cuatro paquetes. Tú eliges la velocidad.")}
+            {title ?? t("Four packages. You choose the speed.", "Cuatro paquetes. Tú eliges la velocidad.")}
           </h2>
           <p className="mt-3 text-sm text-neutral-500">
-            {t("Tap any card to see what's included.", "Toca cualquier tarjeta para ver lo que incluye.")}
+            {subtitle ?? t("Tap any card to see what's included.", "Toca cualquier tarjeta para ver lo que incluye.")}
           </p>
         </div>
 
         <div className="space-y-3">
-          {MARKETING_PACKAGES.map((p) => (
+          {packages.map((p) => (
             <PackageCard
               key={p.id}
               pkg={p}
               open={openId === p.id}
               onToggle={() => setOpenId(openId === p.id ? -1 : p.id)}
-              tone={BADGE_TONE[p.id]}
+              tone={p.id === featuredId ? "popular" : p.id === 4 ? "limited" : undefined}
+              recommended={p.id === featuredId}
             />
           ))}
         </div>
+
+        {footer}
       </div>
     </section>
   );
@@ -53,11 +72,13 @@ function PackageCard({
   open,
   onToggle,
   tone,
+  recommended,
 }: {
   pkg: MarketingPackage;
   open: boolean;
   onToggle: () => void;
   tone?: "popular" | "limited";
+  recommended?: boolean;
 }) {
   const isPopular = tone === "popular";
   const isLimited = tone === "limited";
@@ -87,7 +108,7 @@ function PackageCard({
             >
               {pkg.vol}
             </span>
-            {pkg.badge && (
+            {(recommended || (pkg.badge && pkg.badge !== "Popular")) && (
               <span
                 className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${
                   isPopular
@@ -97,7 +118,7 @@ function PackageCard({
                       : "border border-neutral-300 bg-neutral-50 text-neutral-700"
                 }`}
               >
-                {pkg.badge}
+                {recommended ? t("Recommended", "Recomendado") : pkg.badge}
               </span>
             )}
           </div>
@@ -124,14 +145,14 @@ function PackageCard({
                 dark ? "text-white" : "text-neutral-950"
               }`}
             >
-              {fmt(pkg.weekly)}
+              {fmt(pkg.monthly)}
             </div>
             <div
               className={`text-[10px] uppercase tracking-[0.12em] ${
                 dark ? "text-white/60" : "text-neutral-500"
               }`}
             >
-              {t("MXN / week", "MXN / semana")}
+              {t("MXN / month + VAT", "MXN al mes + IVA")}
             </div>
           </div>
           <ChevronDown
@@ -157,22 +178,31 @@ function PackageCard({
                   dark ? "text-white" : "text-neutral-950"
                 }`}
               >
-                {fmt(pkg.weekly)}
+                {fmt(pkg.monthly)}
               </span>
               <span className={`text-xs ${dark ? "text-white/60" : "text-neutral-500"}`}>
-                {t("MXN / week + VAT", "MXN / semana + IVA")}
+                {t("MXN / month + VAT", "MXN al mes + IVA")}
               </span>
             </div>
-            <p
-              className={`mt-2 text-xs leading-relaxed ${
+            <ul
+              className={`mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs leading-relaxed ${
                 dark ? "text-white/60" : "text-neutral-500"
               }`}
             >
-              {t(
-                `~${fmt(pkg.monthly)} MXN / month · Minimum contract: ${pkg.contractMonths} months`,
-                `~${fmt(pkg.monthly)} MXN / mes · Contrato mínimo: ${pkg.contractMonths} meses`
-              )}
-            </p>
+              <li>
+                {t(
+                  `Minimum term: ${pkg.contractMonths} months`,
+                  `Plazo mínimo: ${pkg.contractMonths} meses`,
+                )}
+              </li>
+              <li>
+                {t(
+                  `Or billed weekly: ${fmt(pkg.weekly)} + VAT`,
+                  `O facturado por semana: ${fmt(pkg.weekly)} + IVA`,
+                )}
+              </li>
+              <li>{t("Ad spend paid to the platforms", "La pauta se paga directo a las plataformas")}</li>
+            </ul>
           </div>
 
           {/* Two-col content */}
@@ -424,7 +454,7 @@ function PackageCard({
                         dark ? "text-white" : "text-white"
                       }`}
                     >
-                      ~{fmt(pkg.monthly)} MXN{t("/mo", "/mes")}
+                      {fmt(pkg.monthly)} MXN{t("/mo", "/mes")}
                     </td>
                   </tr>
                 </tbody>
@@ -441,17 +471,19 @@ function PackageCard({
                   : "bg-neutral-950 text-white hover:bg-neutral-800"
               }`}
             >
-              {t("Book this tier", "Reservar este nivel")}
+              {t("Tell us about your project", "Cuéntanos tu proyecto")}
             </a>
             <a
-              href="/contacto?servicio=marketing"
+              href="https://wa.me/526461293352?text=Hola%20Aphelion%2C%20me%20interesa%20un%20plan%20de%20marketing."
+              target="_blank"
+              rel="noopener noreferrer"
               className={`inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-medium transition ${
                 dark
                   ? "border-white/30 text-white hover:border-white"
                   : "border-neutral-200 text-neutral-950 hover:border-neutral-950"
               }`}
             >
-              {t("Talk to strategy", "Hablar con estrategia")}
+              {t("WhatsApp us", "Escríbenos por WhatsApp")}
             </a>
           </div>
         </div>

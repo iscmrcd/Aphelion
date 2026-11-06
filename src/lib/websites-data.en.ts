@@ -189,8 +189,8 @@ export const FAQ_WEB_EN = [
     a: "Yes. The monthly fee covers hosting, domain (if applicable), monitoring, backups and ongoing support. You don't need to contract anything separately.",
   },
   {
-    q: "Who owns the code?",
-    a: "The content and brand are 100% yours. We operate the technical infrastructure to guarantee stability and support. If you want to migrate, a data export is provided.",
+    q: "Who owns the site, and what do I get if I leave?",
+    a: "Your brand, your copy, your images and your clients' data are yours. We operate the technical infrastructure (hosting, codebase and maintenance) so the site stays stable. If you decide to move, we hand over your content and your data exported so you can take them anywhere.",
   },
   {
     q: "How many changes can I request?",

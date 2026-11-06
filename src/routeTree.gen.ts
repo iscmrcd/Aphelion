@@ -30,6 +30,7 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
 import { Route as ServiciosAgenteIaRouteImport } from './routes/servicios.agente-ia'
+import { Route as ServiciosAutomatizacionRouteImport } from './routes/servicios.automatizacion'
 import { Route as ServiciosMarketingRouteImport } from './routes/servicios.marketing'
 import { Route as ServiciosVideoConDronRouteImport } from './routes/servicios.video-con-dron'
 import { Route as ServiciosWebsitesRouteImport } from './routes/servicios.websites'
@@ -143,6 +144,11 @@ const ServiciosAgenteIaRoute = ServiciosAgenteIaRouteImport.update({
   path: '/agente-ia',
   getParentRoute: () => ServiciosRoute,
 } as any)
+const ServiciosAutomatizacionRoute = ServiciosAutomatizacionRouteImport.update({
+  id: '/automatizacion',
+  path: '/automatizacion',
+  getParentRoute: () => ServiciosRoute,
+} as any)
 const ServiciosMarketingRoute = ServiciosMarketingRouteImport.update({
   id: '/marketing',
   path: '/marketing',
@@ -196,6 +202,7 @@ export interface FileRoutesByFullPath {
   '/servicios': typeof ServiciosRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
+  '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
   '/servicios/marketing': typeof ServiciosMarketingRoute
   '/servicios/video-con-dron': typeof ServiciosVideoConDronRoute
   '/servicios/websites': typeof ServiciosWebsitesRoute
@@ -224,6 +231,7 @@ export interface FileRoutesByTo {
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
+  '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
   '/servicios/marketing': typeof ServiciosMarketingRoute
   '/servicios/video-con-dron': typeof ServiciosVideoConDronRoute
   '/servicios/websites': typeof ServiciosWebsitesRoute
@@ -254,6 +262,7 @@ export interface FileRoutesById {
   '/servicios': typeof ServiciosRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
+  '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
   '/servicios/marketing': typeof ServiciosMarketingRoute
   '/servicios/video-con-dron': typeof ServiciosVideoConDronRoute
   '/servicios/websites': typeof ServiciosWebsitesRoute
@@ -285,6 +294,7 @@ export interface FileRouteTypes {
     | '/servicios'
     | '/blog/$slug'
     | '/servicios/agente-ia'
+    | '/servicios/automatizacion'
     | '/servicios/marketing'
     | '/servicios/video-con-dron'
     | '/servicios/websites'
@@ -313,6 +323,7 @@ export interface FileRouteTypes {
     | '/seo-tijuana'
     | '/blog/$slug'
     | '/servicios/agente-ia'
+    | '/servicios/automatizacion'
     | '/servicios/marketing'
     | '/servicios/video-con-dron'
     | '/servicios/websites'
@@ -342,6 +353,7 @@ export interface FileRouteTypes {
     | '/servicios'
     | '/blog/$slug'
     | '/servicios/agente-ia'
+    | '/servicios/automatizacion'
     | '/servicios/marketing'
     | '/servicios/video-con-dron'
     | '/servicios/websites'
@@ -525,6 +537,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiciosAgenteIaRouteImport
       parentRoute: typeof ServiciosRoute
     }
+    '/servicios/automatizacion': {
+      id: '/servicios/automatizacion'
+      path: '/automatizacion'
+      fullPath: '/servicios/automatizacion'
+      preLoaderRoute: typeof ServiciosAutomatizacionRouteImport
+      parentRoute: typeof ServiciosRoute
+    }
     '/servicios/marketing': {
       id: '/servicios/marketing'
       path: '/marketing'
@@ -572,6 +591,7 @@ declare module '@tanstack/react-router' {
 
 interface ServiciosRouteChildren {
   ServiciosAgenteIaRoute: typeof ServiciosAgenteIaRoute
+  ServiciosAutomatizacionRoute: typeof ServiciosAutomatizacionRoute
   ServiciosMarketingRoute: typeof ServiciosMarketingRoute
   ServiciosVideoConDronRoute: typeof ServiciosVideoConDronRoute
   ServiciosWebsitesRoute: typeof ServiciosWebsitesRoute
@@ -581,6 +601,7 @@ interface ServiciosRouteChildren {
 
 const ServiciosRouteChildren: ServiciosRouteChildren = {
   ServiciosAgenteIaRoute: ServiciosAgenteIaRoute,
+  ServiciosAutomatizacionRoute: ServiciosAutomatizacionRoute,
   ServiciosMarketingRoute: ServiciosMarketingRoute,
   ServiciosVideoConDronRoute: ServiciosVideoConDronRoute,
   ServiciosWebsitesRoute: ServiciosWebsitesRoute,

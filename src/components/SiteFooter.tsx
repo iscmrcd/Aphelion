@@ -66,18 +66,28 @@ export function SiteFooter() {
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
             <li>
-              <Link to="/" className="transition hover:text-white">
+              <Link to="/" hash="servicios" className="transition hover:text-white">
                 {t("All services", "Todos los servicios")}
               </Link>
             </li>
             <li>
               <Link to="/servicios/websites" className="transition hover:text-white">
-                Websites
+                {t("Websites", "Sitios web")}
               </Link>
             </li>
             <li>
               <Link to="/servicios/marketing" className="transition hover:text-white">
                 {t("Marketing & Content", "Marketing y Contenido")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/servicios/automatizacion" className="transition hover:text-white">
+                {t("Automation & Systems", "Automatización y Sistemas")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/servicios/agente-ia" className="transition hover:text-white">
+                {t("AI Agent", "Agente IA")}
               </Link>
             </li>
             <li>

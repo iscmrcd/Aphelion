@@ -1,49 +1,88 @@
-import { forwardRef, useState } from "react";
+import { forwardRef, useState, type ReactNode } from "react";
 import { Check, ChevronDown, Minus, Plus, Settings } from "lucide-react";
 import type { CompareCell, WebLevel } from "@/lib/websites-data";
 import { useWebsitesData } from "@/lib/content";
 import { useT, useLang } from "@/lib/i18n";
 
-const BADGES: Record<number, { label: [string, string]; tone: "popular" | "custom" } | undefined> = {
-  2: { label: ["Most popular", "Más elegido"], tone: "popular" },
-  6: { label: ["Custom", "A medida"], tone: "custom" },
+type Badge = { label: [string, string]; tone: "popular" | "custom" };
+
+type SectionProps = {
+  /** Tier ids to show; all six when omitted. */
+  levelIds?: number[];
+  /** Tier highlighted as the recommended one, open by default. */
+  featuredId?: number;
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  /** Hide the side-by-side table behind a button. */
+  collapseCompare?: boolean;
+  /** Shown under the cards, e.g. a pointer to the tiers that live elsewhere. */
+  footer?: ReactNode;
+  /** ?servicio= slug the cards' contact button sends. */
+  contactService?: string;
 };
 
-export const WebsitesSection = forwardRef<HTMLDivElement>((_props, ref) => {
-  const [openId, setOpenId] = useState<number>(2);
+export const WebsitesSection = forwardRef<HTMLDivElement, SectionProps>((props, ref) => {
+  const { levelIds, featuredId = 2, eyebrow, title, subtitle, collapseCompare, footer, contactService = "websites" } = props;
+  const [openId, setOpenId] = useState<number>(featuredId);
+  const [compareOpen, setCompareOpen] = useState(!collapseCompare);
   const { WEB_LEVELS } = useWebsitesData();
   const t = useT();
+  const levels = levelIds ? WEB_LEVELS.filter((l) => levelIds.includes(l.id)) : WEB_LEVELS;
+  const cols = levels.map((l) => WEB_LEVELS.indexOf(l));
+
+  const badgeFor = (id: number): Badge | undefined => {
+    if (id === featuredId) return { label: ["Recommended", "Recomendado"], tone: "popular" };
+    if (id === 6) return { label: ["Custom", "A medida"], tone: "custom" };
+    return undefined;
+  };
 
   return (
-    <section ref={ref} id="websites" className="border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
+    <section ref={ref} id="websites" className="scroll-mt-20 border-t border-neutral-200 bg-neutral-50 px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 text-center">
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-            {t("Select your tier", "Selecciona tu nivel")}
+            {eyebrow ?? t("Select your tier", "Selecciona tu nivel")}
           </p>
           <h2 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
-            {t("Six tiers. You choose where to start.", "Seis escalones. Tú eliges dónde empezar.")}
+            {title ?? t("Six tiers. You choose where to start.", "Seis escalones. Tú eliges dónde empezar.")}
           </h2>
           <p className="mt-3 text-sm text-neutral-500">
-            {t("Tap any card to see what's included.", "Toca cualquier tarjeta para ver lo que incluye.")}
+            {subtitle ?? t("Tap any card to see what's included.", "Toca cualquier tarjeta para ver lo que incluye.")}
           </p>
         </div>
 
         <div className="space-y-3">
-          {WEB_LEVELS.map((l) => (
+          {levels.map((l) => (
             <LevelCard
               key={l.id}
               level={l}
               open={openId === l.id}
               onToggle={() => setOpenId(openId === l.id ? -1 : l.id)}
-              badge={BADGES[l.id]}
+              badge={badgeFor(l.id)}
+              contactService={contactService}
             />
           ))}
         </div>
+
+        {footer}
       </div>
 
-      <div className="mx-auto mt-20 max-w-6xl">
-        <ComparePlans />
+      <div className="mx-auto mt-16 max-w-6xl sm:mt-20">
+        {compareOpen ? (
+          <ComparePlans cols={cols} />
+        ) : (
+          <div id="comparar" className="scroll-mt-24 text-center">
+            <button
+              type="button"
+              onClick={() => setCompareOpen(true)}
+              className="inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-5 py-2.5 text-sm font-medium text-neutral-950 transition hover:border-neutral-950"
+            >
+              {t("See the full comparison", "Ver la comparativa completa")}
+              <ChevronDown className="h-4 w-4" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
@@ -55,11 +94,13 @@ function LevelCard({
   open,
   onToggle,
   badge,
+  contactService,
 }: {
   level: WebLevel;
   open: boolean;
   onToggle: () => void;
-  badge?: { label: [string, string]; tone: "popular" | "custom" };
+  badge?: Badge;
+  contactService: string;
 }) {
   const [billing, setBilling] = useState<"setup" | "mensual">("setup");
   const isPopular = badge?.tone === "popular";
@@ -105,7 +146,7 @@ function LevelCard({
             )}
           </div>
           <h3
-            className={`mt-1 truncate text-xl font-medium tracking-[-0.02em] sm:text-2xl ${
+            className={`mt-1 text-xl font-medium leading-tight tracking-[-0.02em] sm:truncate sm:text-2xl ${
               isPopular ? "text-white" : "text-neutral-950"
             }`}
           >
@@ -144,8 +185,14 @@ function LevelCard({
                     isPopular ? "text-white/60" : "text-neutral-500"
                   }`}
                 >
-                  {t("MXN setup", "MXN setup")}
+                  <span className="sm:hidden">MXN</span>
+                  <span className="hidden sm:inline">{t("MXN one-time", "MXN pago inicial")}</span>
                 </div>
+                {level.men !== null && (
+                  <div className={`mt-0.5 text-[11px] tabular-nums ${isPopular ? "text-white/70" : "text-neutral-500"}`}>
+                    + {fmt(level.men)} {t("/ month", "al mes")}
+                  </div>
+                )}
               </>
             )}
           </div>
@@ -185,7 +232,7 @@ function LevelCard({
                         : "text-neutral-500"
                   }`}
                 >
-                  {t("One-time setup", "Setup único")}
+                  {t("One-time setup", "Pago inicial")}
                 </button>
                 <button
                   onClick={() => setBilling("mensual")}
@@ -345,14 +392,14 @@ function LevelCard({
 
           <div className="mt-7 flex flex-wrap gap-2.5">
             <a
-              href="/contacto?servicio=websites"
+              href={`/contacto?servicio=${contactService}`}
               className={`inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium transition ${
                 isPopular
                   ? "bg-white text-neutral-950 hover:bg-white/90"
                   : "bg-neutral-950 text-white hover:bg-neutral-800"
               }`}
             >
-              {t("Choose this tier", "Elegir este nivel")}
+              {t("Tell us about your project", "Cuéntanos tu proyecto")}
             </a>
             <a
               href="#comparar"
@@ -362,7 +409,7 @@ function LevelCard({
                   : "border-neutral-200 text-neutral-950 hover:border-neutral-950"
               }`}
             >
-              {t("Compare all", "Comparar todos")}
+              {t("Compare tiers", "Comparar niveles")}
             </a>
           </div>
         </div>
@@ -420,11 +467,13 @@ function PlanSelector({
   set,
   label,
   accent,
+  cols,
 }: {
   val: number;
   set: (n: number) => void;
   label: string;
   accent: "neutral" | "dark";
+  cols: number[];
 }) {
   const { WEB_LEVELS, COMPARE_HEADERS } = useWebsitesData();
   const { lang } = useLang();
@@ -452,9 +501,9 @@ function PlanSelector({
           onChange={(e) => set(Number(e.target.value))}
           className="w-full cursor-pointer appearance-none bg-transparent px-3.5 pb-2 pt-3 pr-8 text-[13px] font-semibold focus:outline-none"
         >
-          {COMPARE_HEADERS.map((h, i) => (
-            <option key={h} value={i} className="text-neutral-950">
-              {h}
+          {cols.map((i) => (
+            <option key={COMPARE_HEADERS[i]} value={i} className="text-neutral-950">
+              {COMPARE_HEADERS[i]}
             </option>
           ))}
         </select>
@@ -479,9 +528,9 @@ function PlanSelector({
   );
 }
 
-function MobileCompare() {
-  const [a, setA] = useState(0);
-  const [b, setB] = useState(1);
+function MobileCompare({ cols }: { cols: number[] }) {
+  const [a, setA] = useState(cols[0] ?? 0);
+  const [b, setB] = useState(cols[1] ?? 1);
   const { WEB_LEVELS, COMPARE_GROUPS } = useWebsitesData();
   const t = useT();
   const { lang } = useLang();
@@ -496,8 +545,8 @@ function MobileCompare() {
       {/* Plan selector with prices + vs badge */}
       <div className="relative">
         <div className="grid grid-cols-2 gap-3">
-          <PlanSelector val={a} set={setA} label={t("Plan A", "Plan A")} accent="neutral" />
-          <PlanSelector val={b} set={setB} label={t("Plan B", "Plan B")} accent="dark" />
+          <PlanSelector val={a} set={setA} label={t("Option A", "Opción A")} accent="neutral" cols={cols} />
+          <PlanSelector val={b} set={setB} label={t("Option B", "Opción B")} accent="dark" cols={cols} />
         </div>
         <div className="pointer-events-none absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2">
           <span className="flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-neutral-100 text-[10px] font-bold uppercase tracking-wider text-neutral-700 shadow-sm">
@@ -508,7 +557,7 @@ function MobileCompare() {
 
       {/* Comparison list */}
       <div className="mt-5 overflow-hidden rounded-2xl border border-neutral-200 bg-white">
-        {COMPARE_GROUPS.map((g) => (
+        {visibleGroups(COMPARE_GROUPS, cols).map((g) => (
           <div key={g.group}>
             <div className="bg-neutral-50 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-neutral-500">
               {g.group}
@@ -582,14 +631,22 @@ function MobileCompare() {
   );
 }
 
-function ComparePlans() {
+/** Groups and rows for the shown tiers, without rows that none of them offer. */
+function visibleGroups(groups: { group: string; rows: { label: string; vals: CompareCell[] }[] }[], cols: number[]) {
+  return groups
+    .map((g) => ({ ...g, rows: g.rows.filter((r) => cols.some((c) => r.vals[c] !== "no")) }))
+    .filter((g) => g.rows.length > 0);
+}
+
+function ComparePlans({ cols }: { cols: number[] }) {
   const { COMPARE_HEADERS, COMPARE_GROUPS } = useWebsitesData();
   const t = useT();
+  const groups = visibleGroups(COMPARE_GROUPS, cols);
   return (
     <div id="comparar">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-500">
-          {t("Compare plans", "Compare plans")}
+          {t("Compare plans", "Compara los planes")}
         </p>
         <h3 className="text-3xl font-medium tracking-[-0.02em] text-neutral-950 sm:text-4xl">
           {t("Everything, side by side.", "Todo, lado a lado.")}
@@ -597,15 +654,15 @@ function ComparePlans() {
       </div>
 
       {/* Mobile: A vs B */}
-      <MobileCompare />
+      <MobileCompare cols={cols} />
 
       {/* Desktop: full table */}
       <div className="hidden overflow-x-auto rounded-2xl border border-neutral-200 bg-white md:block">
-        <table className="w-full min-w-[840px] border-collapse text-sm">
+        <table className={`w-full border-collapse text-sm ${cols.length > 4 ? "min-w-[840px]" : ""}`}>
           <thead className="sticky top-0 bg-white">
             <tr className="border-b border-neutral-200">
               <th className="sticky left-0 z-10 bg-white p-4 text-left font-medium text-neutral-500"></th>
-              {COMPARE_HEADERS.map((h) => (
+              {cols.map((i) => COMPARE_HEADERS[i]).map((h) => (
                 <th
                   key={h}
                   className="px-3 py-4 text-center text-xs font-medium text-neutral-950"
@@ -616,10 +673,10 @@ function ComparePlans() {
             </tr>
           </thead>
           <tbody>
-            {COMPARE_GROUPS.flatMap((g) => [
+            {groups.flatMap((g) => [
               <tr key={`g-${g.group}`} className="bg-neutral-50">
                 <td
-                  colSpan={COMPARE_HEADERS.length + 1}
+                  colSpan={cols.length + 1}
                   className="px-4 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-neutral-500"
                 >
                   {g.group}
@@ -633,9 +690,9 @@ function ComparePlans() {
                   <td className="sticky left-0 z-[1] bg-white px-4 py-3 text-left text-neutral-800">
                     {r.label}
                   </td>
-                  {r.vals.map((v, i) => (
+                  {cols.map((i) => (
                     <td key={i} className="px-3 py-3 text-center">
-                      <CellIcon v={v} />
+                      <CellIcon v={r.vals[i]} />
                     </td>
                   ))}
                 </tr>
