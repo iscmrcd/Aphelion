@@ -21,6 +21,7 @@
 
 import { createServerFn } from "@tanstack/react-start";
 import { getRequestIP } from "@tanstack/react-start/server";
+import { syncLeadToHubSpot } from "./hubspot-sync.server";
 
 export type LeadSource = "contact-form" | "chat-widget" | "diagnostic";
 
@@ -46,6 +47,8 @@ export type LeadPayload = {
    * diagnosticos (attempt_id) without copying answers into the lead.
    */
   sessionId?: string;
+  /** Stable across retries of the same contact/diagnostic submission. */
+  captureId?: string;
 };
 
 const MAX_FIELD = 2000;
@@ -85,16 +88,19 @@ export async function hashIp(ip: string): Promise<string> {
 }
 
 /** Persist first. An email provider outage must not lose a lead. */
-async function storeLead(lead: LeadPayload, ipHash: string): Promise<boolean> {
+async function storeLead(
+  lead: LeadPayload,
+  ipHash: string,
+): Promise<{ stored: boolean; duplicate: boolean; id?: string }> {
   const cfg = supabaseConfig();
   if (!cfg) {
     console.warn("[leads] Supabase not configured — lead not persisted.");
-    return false;
+    return { stored: false, duplicate: false };
   }
   try {
-    const res = await fetch(`${cfg.url}/rest/v1/leads`, {
+    const res = await fetch(`${cfg.url}/rest/v1/leads?select=id`, {
       method: "POST",
-      headers: { ...supabaseHeaders(cfg), Prefer: "return=minimal" },
+      headers: { ...supabaseHeaders(cfg), Prefer: "return=representation" },
       body: JSON.stringify({
         source: lead.source,
         name: lead.name,
@@ -112,12 +118,29 @@ async function storeLead(lead: LeadPayload, ipHash: string): Promise<boolean> {
         transcript: lead.transcript || null,
         path: lead.path || null,
         session_id: lead.sessionId || null,
+        capture_id: lead.captureId ? `${lead.source}:${lead.captureId}` : null,
         ip_hash: ipHash,
       }),
     });
-    return res.ok;
+    if (res.ok) {
+      const rows = (await res.json()) as Array<{ id: string | number }>;
+      return { stored: true, duplicate: false, id: rows[0]?.id ? String(rows[0].id) : undefined };
+    }
+    if (res.status === 409 && (lead.captureId || lead.sessionId)) {
+      const filter = lead.captureId
+        ? `capture_id=eq.${encodeURIComponent(`${lead.source}:${lead.captureId}`)}`
+        : `session_id=eq.${encodeURIComponent(lead.sessionId!)}`;
+      const existing = await fetch(`${cfg.url}/rest/v1/leads?${filter}&select=id&limit=1`, {
+        headers: supabaseHeaders(cfg),
+      });
+      if (existing.ok) {
+        const rows = (await existing.json()) as Array<{ id: string | number }>;
+        if (rows[0]?.id) return { stored: true, duplicate: true, id: String(rows[0].id) };
+      }
+    }
+    return { stored: false, duplicate: false };
   } catch {
-    return false;
+    return { stored: false, duplicate: false };
   }
 }
 
@@ -302,6 +325,8 @@ export const submitLead = createServerFn({ method: "POST" })
         source === "diagnostic" && typeof d.sessionId === "string" && UUID_RE.test(d.sessionId)
           ? d.sessionId
           : undefined,
+      captureId:
+        typeof d.captureId === "string" && UUID_RE.test(d.captureId) ? d.captureId : undefined,
     };
   })
   .handler(async ({ data }) => {
@@ -313,10 +338,15 @@ export const submitLead = createServerFn({ method: "POST" })
       // Best effort. A missing IP must never block a lead.
     }
 
-    const stored = await storeLead(data, ipHash);
-    const [emailed, alerted] = await Promise.all([sendEmail(data), sendLeadAlert(data, ipHash)]);
+    const result = await storeLead(data, ipHash);
+    const cfg = supabaseConfig();
+    const [emailed, alerted] = await Promise.all([
+      result.duplicate ? false : sendEmail(data),
+      result.duplicate ? false : sendLeadAlert(data, ipHash),
+      result.id && cfg ? syncLeadToHubSpot(cfg, result.id) : undefined,
+    ]);
 
     // Reported back so the UI can tell the visitor the truth rather than
     // always claiming success the way the old form did.
-    return { ok: stored || emailed, stored, emailed, alerted };
+    return { ok: result.stored || emailed, stored: result.stored, emailed, alerted };
   });

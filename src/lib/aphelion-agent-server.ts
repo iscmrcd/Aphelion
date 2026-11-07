@@ -14,6 +14,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getRequestIP } from "@tanstack/react-start/server";
 import { APHELION_AGENT_PROMPT, EXTRACTION_PROMPT } from "./aphelion-agent-prompts";
+import { syncLeadToHubSpot } from "./hubspot-sync.server";
 
 const MODEL = "claude-haiku-4-5-20251001";
 
@@ -222,12 +223,18 @@ async function extractLead(
 
 async function storeLeadRow(cfg: SupabaseConfig, row: Record<string, unknown>): Promise<boolean> {
   try {
-    const res = await fetch(`${cfg.url}/rest/v1/leads`, {
+    const res = await fetch(`${cfg.url}/rest/v1/leads?select=id`, {
       method: "POST",
-      headers: { ...sbHeaders(cfg), Prefer: "return=minimal" },
-      body: JSON.stringify(row),
+      headers: { ...sbHeaders(cfg), Prefer: "return=representation" },
+      body: JSON.stringify({
+        ...row,
+        capture_id: row.session_id ? `chat-widget:${row.session_id}` : null,
+      }),
     });
-    return res.ok;
+    if (!res.ok) return false;
+    const rows = (await res.json()) as Array<{ id: string | number }>;
+    if (rows[0]?.id) await syncLeadToHubSpot(cfg, rows[0].id);
+    return true;
   } catch {
     return false;
   }

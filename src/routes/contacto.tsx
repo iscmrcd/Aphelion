@@ -73,6 +73,7 @@ function ContactoPage() {
   const [services, setServices] = useState<string[]>([]);
   const [industry, setIndustry] = useState<string>("");
   const submittingRef = useRef(false);
+  const captureIdRef = useRef<string | null>(null);
 
   // Order matters: SERVICE_SLUGS points at these indexes.
   const SERVICES = [
@@ -141,7 +142,8 @@ function ContactoPage() {
     e.preventDefault();
     if (submittingRef.current || !e.currentTarget.reportValidity()) return;
     submittingRef.current = true;
-    const eventId = `contact:${crypto.randomUUID()}`;
+    if (!captureIdRef.current) captureIdRef.current = crypto.randomUUID();
+    const eventId = `contact:${captureIdRef.current}`;
     setSending(true);
     setFailed(false);
 
@@ -176,6 +178,7 @@ function ContactoPage() {
       const res = await submitLead({
         data: {
           source: "contact-form",
+          captureId: captureIdRef.current,
           name,
           email: String(data.get("email") || ""),
           phone: String(data.get("phone") || ""),
