@@ -610,14 +610,21 @@ function PlanForm({
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (submittingRef.current || state === "sent" || !form.name.trim() || (!form.phone.trim() && !form.email.trim())) return;
+    if (
+      submittingRef.current ||
+      state === "sent" ||
+      !form.name.trim() ||
+      (!form.phone.trim() && !form.email.trim())
+    )
+      return;
     submittingRef.current = true;
-    if (!fallbackEventId.current) fallbackEventId.current = `diagnostic:${crypto.randomUUID()}`;
+    if (!fallbackEventId.current) fallbackEventId.current = crypto.randomUUID();
     setState("sending");
     try {
       const res = await submitLead({
         data: {
           source: "diagnostic",
+          captureId: attemptId ?? fallbackEventId.current,
           name: form.name,
           email: form.email,
           phone: form.phone,

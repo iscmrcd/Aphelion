@@ -44,7 +44,7 @@ function PrivacidadPage() {
           {t("Privacy Notice", "Aviso de Privacidad")}
         </h1>
         <p className="text-neutral-600 mb-12">
-          {t("Last updated: November 4, 2026", "Última actualización: 4 de noviembre de 2026")}
+          {t("Last updated: November 6, 2026", "Última actualización: 6 de noviembre de 2026")}
         </p>
 
         <div className="prose prose-neutral max-w-none space-y-10 text-[15px] leading-relaxed">
@@ -151,6 +151,12 @@ function PrivacidadPage() {
               {t(
                 "We do not sell your personal data. We use technology providers for hosting, email and messaging. Where advertising measurement is permitted, Meta receives the browsing and event data described below for measurement and ad optimization, under its own terms and privacy policy.",
                 "No vendemos tus datos personales. Utilizamos proveedores tecnológicos para alojamiento, correo y mensajería. Cuando se permite la medición publicitaria, Meta recibe los datos de navegación y eventos descritos abajo para medición y optimización de anuncios, conforme a sus propios términos y aviso de privacidad.",
+              )}
+            </p>
+            <p className="text-neutral-700 mt-3">
+              {t(
+                "We use HubSpot as our CRM to organise enquiries and sales follow-up. We may store the contact and company details you provide, the service requested and your message there. A service enquiry does not automatically subscribe you to marketing email.",
+                "Utilizamos HubSpot como CRM para organizar solicitudes y dar seguimiento comercial. Podemos registrar ahí los datos de contacto y empresa que proporcionas, el servicio solicitado y tu mensaje. Pedir información sobre un servicio no te suscribe automáticamente a correos de marketing.",
               )}
             </p>
           </section>
