@@ -22,6 +22,15 @@ No se instala el script de seguimiento de HubSpot ni otro píxel de Meta. No se 
 
 El flag de sincronización está apagado por defecto. Las solicitudes nuevas se registran en `hubspot_lead_sync`; `pending` y `error` se reintentan de forma acotada después de otra entrega exitosa. `retryPendingHubSpotLeads` permite reintento administrativo. No hay un proceso programado añadido: si no llegan solicitudes nuevas, los pendientes requieren ejecución administrativa. `review` requiere comprobar el resultado en HubSpot antes de autorizar otro intento. Tres intentos es el límite automático.
 
+## Verificación de producción · 6 de noviembre de 2026
+
+- La cuenta de HubSpot Aphelion usa `hola@aphelion.mx`. La clave se creó con autorización del propietario y quedó guardada en los secretos de Lovable con el propietario y la sincronización habilitada.
+- Se importaron dos contactos y cuatro notas anteriores con fechas originales. Los registros internos quedaron clasificados como internos y el registro ficticio fue excluido. El registro privado conserva los IDs importados.
+- La prueba autorizada del formulario conservó una sola solicitud local. Tras recuperar la entrega, HubSpot confirmó una nota en el contacto interno existente, sin modificar su clasificación ni sus datos.
+- La primera entrega encontró una incompatibilidad con el servidor: Cloudflare Workers rechaza `redirect: "error"` al construir la petición. Se usa `manual` y se rechazan respuestas 3xx para impedir el reenvío de credenciales. [Contrato de Request en Workers](https://developers.cloudflare.com/workers/runtime-apis/request/).
+- La recuperación conservó el identificador de captura. Los reintentos de capturas persistidas continúan la entrega al CRM y omiten nuevos avisos de correo/SMS.
+- Pasaron 17 pruebas del CRM, incluidas compatibilidad con Workers, rechazo de redirecciones y recuperación sin notificaciones duplicadas, además de las 14 pruebas del píxel. TypeScript, ESLint y la compilación de producción fueron correctos.
+
 ## Auditoría Meta · 6 de noviembre de 2026
 
 Se revisó en el Administrador de eventos el dataset CRM Aphelion `2813619889012734`, dentro del portfolio Identidad Studio. Se observaron `PageView`, `Contact` y `Lead` activos. `Lead` y `Contact` mostraban calidad de coincidencia 7.8/10 y el diagnóstico indicaba que no había errores activos.
@@ -30,7 +39,7 @@ El informe de deduplicación de Lead indicaba «Seguimos analizando tus datos».
 
 En el sitio público se observó una instalación de `fbevents.js`, la configuración del píxel correcto y un `PageView` con identificador generado por el SDK. Las pruebas aisladas verifican que sólo un resultado de captación exitoso genera Lead, que la página de gracias no genera otro y que los clics de contacto permanecen separados de los leads.
 
-Pendiente de la activación: comprobar una captación controlada de extremo a extremo y, cuando Meta termine de procesar, revisar su informe de deduplicación.
+La captación controlada quedó comprobada en el sitio y en HubSpot. La recepción de la nueva muestra y el informe de deduplicación en Meta siguen pendientes de confirmación; el diagnóstico no muestra errores activos.
 
 ## Validación
 
