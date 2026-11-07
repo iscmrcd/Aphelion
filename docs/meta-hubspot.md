@@ -39,7 +39,7 @@ El informe de deduplicación de Lead indicaba «Seguimos analizando tus datos».
 
 En el sitio público se observó una instalación de `fbevents.js`, la configuración del píxel correcto y un `PageView` con identificador generado por el SDK. Las pruebas aisladas verifican que sólo un resultado de captación exitoso genera Lead, que la página de gracias no genera otro y que los clics de contacto permanecen separados de los leads.
 
-La captación controlada quedó comprobada en el sitio y en HubSpot. La recepción de la nueva muestra y el informe de deduplicación en Meta siguen pendientes de confirmación; el diagnóstico no muestra errores activos.
+La captación controlada quedó comprobada en el sitio y en HubSpot. Meta también confirmó el Lead del 6 de noviembre, con una recepción por navegador y otra por su API alojada en el horario de la prueba. Esto no permite concluir que haya dos conversiones únicas: el informe de deduplicación sigue indicando «Seguimos analizando tus datos». El diagnóstico no muestra errores activos.
 
 ## Validación
 
