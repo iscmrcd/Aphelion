@@ -729,10 +729,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where real estate traffic actually comes from",
         headingEs: "De dónde viene realmente el tráfico inmobiliario",
         body: [
-          '[[Meta Ads|meta-ads]] works best for visual, lifestyle-driven selling and for pre-sales where nothing is built yet — renders and drone footage generate desire before a search exists. [[Google Ads|google-ads]] captures buyers who already search by area or property type. Portals like Inmuebles24 and Vivanuncios generate volume with weaker intent, and work best as a top-of-[[funnel|embudo]] source feeding your own [[retargeting|remarketing]] rather than the final destination. See how we break down when to invest in each channel and how much in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          "[[Meta Ads|meta-ads]] works best for visual, lifestyle-driven selling and for pre-sales where nothing is built yet — renders and drone footage generate desire before a search exists. [[Google Ads|google-ads]] captures buyers who already search by area or property type. Portals like Inmuebles24 and Vivanuncios generate volume with weaker intent, and work best as a top-of-[[funnel|embudo]] source feeding your own [[retargeting|remarketing]] rather than the final destination. See how we break down when to invest in each channel and how much in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).",
         ],
         bodyEs: [
-          '[[Meta Ads|meta-ads]] funciona mejor para venta visual y de estilo de vida, y para preventas donde todavía no hay nada construido: ahí, renders y tomas de dron generan deseo incluso antes de que exista la búsqueda. [[Google Ads|google-ads]] captura compradores que ya buscan por zona o tipo de propiedad. Portales como Inmuebles24 y Vivanuncios generan volumen con menor intención, y funcionan mejor como fuente de la parte alta del [[embudo|embudo]] que alimenta tu propio [[retargeting|remarketing]], no como destino final. Revisa cómo desglosamos cuánto invertir en cada canal en nuestra guía de [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          "[[Meta Ads|meta-ads]] funciona mejor para venta visual y de estilo de vida, y para preventas donde todavía no hay nada construido: ahí, renders y tomas de dron generan deseo incluso antes de que exista la búsqueda. [[Google Ads|google-ads]] captura compradores que ya buscan por zona o tipo de propiedad. Portales como Inmuebles24 y Vivanuncios generan volumen con menor intención, y funcionan mejor como fuente de la parte alta del [[embudo|embudo]] que alimenta tu propio [[retargeting|remarketing]], no como destino final. Revisa cómo desglosamos cuánto invertir en cada canal en nuestra guía de [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).",
         ],
       },
       {
@@ -740,10 +740,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Landing pages and interactive lot maps",
         headingEs: "Landing pages y mapas interactivos de lotes",
         body: [
-          'A property page that shows everything for free — every photo, the full price list, every available lot — gives visitors no reason to leave their contact information. For land and pre-sale developments specifically, an interactive lot map that lets buyers explore availability and pricing in real time converts dramatically better than a static PDF brochure, because it turns browsing into an action. We cover exactly how these maps work in [interactive lot maps](/blog/mapa-interactivo-de-lotes).',
+          "A property page that shows everything for free — every photo, the full price list, every available lot — gives visitors no reason to leave their contact information. For land and pre-sale developments specifically, an interactive lot map that lets buyers explore availability and pricing in real time converts dramatically better than a static PDF brochure, because it turns browsing into an action. We cover exactly how these maps work in [interactive lot maps](/blog/mapa-interactivo-de-lotes).",
         ],
         bodyEs: [
-          'Una página de propiedad que muestra todo gratis (cada foto, la lista de precios completa, cada lote disponible) no le da al visitante ninguna razón para dejar su contacto. Para desarrollos de terrenos y preventas específicamente, un mapa interactivo de lotes que permite a los compradores explorar disponibilidad y precios en tiempo real convierte dramáticamente mejor que un PDF estático, porque convierte el navegar en una acción. Cubrimos exactamente cómo funcionan estos mapas en [mapas interactivos de lotes](/blog/mapa-interactivo-de-lotes).',
+          "Una página de propiedad que muestra todo gratis (cada foto, la lista de precios completa, cada lote disponible) no le da al visitante ninguna razón para dejar su contacto. Para desarrollos de terrenos y preventas específicamente, un mapa interactivo de lotes que permite a los compradores explorar disponibilidad y precios en tiempo real convierte dramáticamente mejor que un PDF estático, porque convierte el navegar en una acción. Cubrimos exactamente cómo funcionan estos mapas en [mapas interactivos de lotes](/blog/mapa-interactivo-de-lotes).",
         ],
       },
       {
@@ -751,10 +751,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Follow-up and lead classification: hot, warm, cold, ghost",
         headingEs: "Seguimiento y clasificación de leads: hot, warm, cold, ghost",
         body: [
-          'Not every lead deserves the same follow-up. We classify every real estate lead into one of four buckets: hot (ready to schedule a visit this week), warm (interested but comparing options), cold (early research, months from deciding), and ghost (stopped responding entirely). Each bucket gets a different cadence and script — treating a cold lead like a hot one burns goodwill, and treating a hot lead like a cold one loses the sale to whoever calls back first. The full scripts and timing are in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
+          "Not every lead deserves the same follow-up. We classify every real estate lead into one of four buckets: hot (ready to schedule a visit this week), warm (interested but comparing options), cold (early research, months from deciding), and ghost (stopped responding entirely). Each bucket gets a different cadence and script — treating a cold lead like a hot one burns goodwill, and treating a hot lead like a cold one loses the sale to whoever calls back first. The full scripts and timing are in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).",
         ],
         bodyEs: [
-          'No todos los leads merecen el mismo seguimiento. Clasificamos cada lead inmobiliario en una de cuatro categorías: hot (listo para agendar una visita esta semana), warm (interesado pero comparando opciones), cold (investigación temprana, a meses de decidir), y ghost (dejó de responder por completo). Cada categoría recibe una cadencia y un guion distintos. Tratar a un lead cold como uno hot desgasta la relación, y tratar a un lead hot como uno cold pierde la venta frente a quien llame primero. Los guiones y tiempos completos están en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
+          "No todos los leads merecen el mismo seguimiento. Clasificamos cada lead inmobiliario en una de cuatro categorías: hot (listo para agendar una visita esta semana), warm (interesado pero comparando opciones), cold (investigación temprana, a meses de decidir), y ghost (dejó de responder por completo). Cada categoría recibe una cadencia y un guion distintos. Tratar a un lead cold como uno hot desgasta la relación, y tratar a un lead hot como uno cold pierde la venta frente a quien llame primero. Los guiones y tiempos completos están en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).",
         ],
       },
       {
@@ -784,10 +784,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a real estate marketing system actually costs",
         headingEs: "Cuánto cuesta realmente un sistema de marketing inmobiliario",
         body: [
-          'Budget varies enormously by ticket size and inventory volume, but as a market range for 2026, a mid-size development running paid traffic, a proper [[landing page|landing-page]] and CRM should plan for **$15,000 to $25,000 MXN monthly in media spend**, plus the one-time cost of the landing infrastructure. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point. We break the full range down channel by channel in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          "Budget varies enormously by ticket size and inventory volume, but as a market range for 2026, a mid-size development running paid traffic, a proper [[landing page|landing-page]] and CRM should plan for **$15,000 to $25,000 MXN monthly in media spend**, plus the one-time cost of the landing infrastructure. Premium developments and large pre-sales typically run higher because cost per qualified lead rises with price point. We break the full range down channel by channel in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).",
         ],
         bodyEs: [
-          'El presupuesto varía enormemente según el ticket y el volumen de inventario, pero como rango de mercado para 2026, un desarrollo mediano que corre tráfico pagado, una landing adecuada y CRM debe planear entre **$15,000 y $25,000 MXN mensuales en medios**, más el costo único de la infraestructura de landing. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket. Desglosamos el rango completo canal por canal en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          "El presupuesto varía enormemente según el ticket y el volumen de inventario, pero como rango de mercado para 2026, un desarrollo mediano que corre tráfico pagado, una landing adecuada y CRM debe planear entre **$15,000 y $25,000 MXN mensuales en medios**, más el costo único de la infraestructura de landing. Los desarrollos premium y las preventas grandes suelen costar más porque el costo por lead calificado sube con el ticket. Desglosamos el rango completo canal por canal en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).",
         ],
       },
       {
@@ -906,7 +906,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "When you're selling individual lots or units rather than a single property, a static price list forces the buyer to ask you for information you could just show them. An interactive lot map that displays real-time availability and pricing lets serious buyers self-qualify and reserve without a back-and-forth over WhatsApp. We go deeper on how these maps work and when they're worth building in [interactive lot maps](/blog/mapa-interactivo-de-lotes).",
         ],
         bodyEs: [
-          'Cuando vendes lotes o unidades individuales en vez de una sola propiedad, una lista de precios estática obliga al comprador a pedirte información que podrías simplemente mostrarle. Un mapa interactivo de lotes que muestra disponibilidad y precios en tiempo real permite que los compradores serios se autocalifiquen y aparten sin ida y vuelta por WhatsApp. Profundizamos en cómo funcionan estos mapas y cuándo vale la pena construirlos en [mapas interactivos de lotes](/blog/mapa-interactivo-de-lotes).',
+          "Cuando vendes lotes o unidades individuales en vez de una sola propiedad, una lista de precios estática obliga al comprador a pedirte información que podrías simplemente mostrarle. Un mapa interactivo de lotes que muestra disponibilidad y precios en tiempo real permite que los compradores serios se autocalifiquen y aparten sin ida y vuelta por WhatsApp. Profundizamos en cómo funcionan estos mapas y cuándo vale la pena construirlos en [mapas interactivos de lotes](/blog/mapa-interactivo-de-lotes).",
         ],
       },
       {
@@ -914,10 +914,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The five-minute response window",
         headingEs: "La ventana de respuesta de cinco minutos",
         body: [
-          'Real estate leads decay fast, because buyers are often browsing several developments in the same session. A lead contacted within five minutes converts dramatically better than one contacted an hour later. That means an automated WhatsApp or SMS response the moment a form is submitted, followed by a human call within the same window — not a callback queued for later in the day. The full scripts and cadence by lead type are in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
+          "Real estate leads decay fast, because buyers are often browsing several developments in the same session. A lead contacted within five minutes converts dramatically better than one contacted an hour later. That means an automated WhatsApp or SMS response the moment a form is submitted, followed by a human call within the same window — not a callback queued for later in the day. The full scripts and cadence by lead type are in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).",
         ],
         bodyEs: [
-          'Los leads inmobiliarios se enfrían rápido, porque los compradores suelen estar viendo varios desarrollos en la misma sesión. Un lead contactado en cinco minutos convierte dramáticamente mejor que uno contactado una hora después. Eso significa una respuesta automática por WhatsApp o SMS en el momento en que se envía el formulario, seguida de una llamada humana dentro de esa misma ventana, no de una devolución de llamada agendada para más tarde. Los guiones y la cadencia completa por tipo de lead están en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
+          "Los leads inmobiliarios se enfrían rápido, porque los compradores suelen estar viendo varios desarrollos en la misma sesión. Un lead contactado en cinco minutos convierte dramáticamente mejor que uno contactado una hora después. Eso significa una respuesta automática por WhatsApp o SMS en el momento en que se envía el formulario, seguida de una llamada humana dentro de esa misma ventana, no de una devolución de llamada agendada para más tarde. Los guiones y la cadencia completa por tipo de lead están en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).",
         ],
       },
       {
@@ -925,10 +925,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a realistic lead-generation budget looks like",
         headingEs: "Cómo luce un presupuesto realista de generación de leads",
         body: [
-          'As a market range for 2026, expect to invest **$15,000 to $25,000 MXN** monthly across paid channels for a mid-size development, not counting the [[landing page|landing-page]] and [[CRM|crm]] setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          "As a market range for 2026, expect to invest **$15,000 to $25,000 MXN** monthly across paid channels for a mid-size development, not counting the [[landing page|landing-page]] and [[CRM|crm]] setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).",
         ],
         bodyEs: [
-          'Como rango de mercado para 2026, considera invertir entre **$15,000 y $25,000 MXN** mensuales en canales pagados para un desarrollo mediano, sin contar la [[landing page|landing-page]] ni la configuración del [[CRM|crm]]. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).',
+          "Como rango de mercado para 2026, considera invertir entre **$15,000 y $25,000 MXN** mensuales en canales pagados para un desarrollo mediano, sin contar la [[landing page|landing-page]] ni la configuración del [[CRM|crm]]. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).",
         ],
       },
     ],
@@ -1047,10 +1047,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How it fits into the rest of the lead system",
         headingEs: "Cómo encaja en el resto del sistema de leads",
         body: [
-          'The map itself is a capture tool, not a replacement for follow-up — when a buyer reserves a lot through the map, that action should trigger the same five-minute response and [[CRM|crm]] entry as any other lead. The map increases the quality of interest you capture; the follow-up system is still what turns that interest into a signed contract. See the complete framework in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).',
+          "The map itself is a capture tool, not a replacement for follow-up — when a buyer reserves a lot through the map, that action should trigger the same five-minute response and [[CRM|crm]] entry as any other lead. The map increases the quality of interest you capture; the follow-up system is still what turns that interest into a signed contract. See the complete framework in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).",
         ],
         bodyEs: [
-          'El mapa en sí es una herramienta de captación, no un reemplazo del seguimiento. Cuando un comprador aparta un lote a través del mapa, esa acción debe disparar la misma respuesta de cinco minutos y el mismo registro en [[CRM|crm]] que cualquier otro [[lead|lead]]. El mapa aumenta la calidad del interés que capturas; el sistema de seguimiento sigue siendo lo que convierte ese interés en un contrato firmado. Revisa el marco completo en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).',
+          "El mapa en sí es una herramienta de captación, no un reemplazo del seguimiento. Cuando un comprador aparta un lote a través del mapa, esa acción debe disparar la misma respuesta de cinco minutos y el mismo registro en [[CRM|crm]] que cualquier otro [[lead|lead]]. El mapa aumenta la calidad del interés que capturas; el sistema de seguimiento sigue siendo lo que convierte ese interés en un contrato firmado. Revisa el marco completo en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).",
         ],
       },
     ],
@@ -1163,10 +1163,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where this whole system needs to live",
         headingEs: "Dónde tiene que vivir todo este sistema",
         body: [
-          'None of this works from a WhatsApp inbox and memory — every lead, its classification, and its next follow-up date needs to live in a [[CRM|crm]] that the whole sales team can see. Without it, classification decays within days as new leads arrive and old ones get forgotten. The complete lead-generation system this follow-up process fits into is in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).',
+          "None of this works from a WhatsApp inbox and memory — every lead, its classification, and its next follow-up date needs to live in a [[CRM|crm]] that the whole sales team can see. Without it, classification decays within days as new leads arrive and old ones get forgotten. The complete lead-generation system this follow-up process fits into is in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).",
         ],
         bodyEs: [
-          'Nada de esto funciona desde un chat de WhatsApp y la memoria del equipo. Cada lead, su clasificación y su próxima fecha de seguimiento necesitan vivir en un [[CRM|crm]] que todo el equipo de ventas pueda ver. Sin eso, la clasificación se degrada en días conforme llegan leads nuevos y se olvidan los anteriores. El sistema completo de generación de leads en el que encaja este proceso de seguimiento está en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).',
+          "Nada de esto funciona desde un chat de WhatsApp y la memoria del equipo. Cada lead, su clasificación y su próxima fecha de seguimiento necesitan vivir en un [[CRM|crm]] que todo el equipo de ventas pueda ver. Sin eso, la clasificación se degrada en días conforme llegan leads nuevos y se olvidan los anteriores. El sistema completo de generación de leads en el que encaja este proceso de seguimiento está en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).",
         ],
       },
     ],
@@ -1246,10 +1246,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Business Profile: the single highest-leverage asset",
         headingEs: "Perfil de Google Business: el activo de mayor impacto",
         body: [
-          'A complete, verified, and actively maintained Google Business Profile is the foundation of local SEO — it\'s what shows up in the map pack, which gets more clicks than the organic results below it for local searches. That means accurate categories, complete business hours, real photos updated regularly, and posts published consistently. Businesses that set it up once and never touch it again are leaving most of its value on the table. We cover the full seven-step process, with specific timelines, in [how to optimize your Google Business Profile](/blog/optimizar-google-business-profile).',
+          "A complete, verified, and actively maintained Google Business Profile is the foundation of local SEO — it's what shows up in the map pack, which gets more clicks than the organic results below it for local searches. That means accurate categories, complete business hours, real photos updated regularly, and posts published consistently. Businesses that set it up once and never touch it again are leaving most of its value on the table. We cover the full seven-step process, with specific timelines, in [how to optimize your Google Business Profile](/blog/optimizar-google-business-profile).",
         ],
         bodyEs: [
-          'Un perfil de Google Business completo, verificado y activamente mantenido es la base del SEO local: es lo que aparece en el paquete de mapas, que recibe más clics que los resultados orgánicos debajo para búsquedas locales. Eso significa categorías correctas, horarios completos, fotos reales actualizadas con regularidad y publicaciones constantes. Los negocios que lo configuran una vez y nunca lo vuelven a tocar están dejando la mayor parte de su valor sobre la mesa. Cubrimos el proceso completo de siete pasos, con tiempos específicos, en [cómo optimizar tu perfil de Google Business](/blog/optimizar-google-business-profile).',
+          "Un perfil de Google Business completo, verificado y activamente mantenido es la base del SEO local: es lo que aparece en el paquete de mapas, que recibe más clics que los resultados orgánicos debajo para búsquedas locales. Eso significa categorías correctas, horarios completos, fotos reales actualizadas con regularidad y publicaciones constantes. Los negocios que lo configuran una vez y nunca lo vuelven a tocar están dejando la mayor parte de su valor sobre la mesa. Cubrimos el proceso completo de siete pasos, con tiempos específicos, en [cómo optimizar tu perfil de Google Business](/blog/optimizar-google-business-profile).",
         ],
       },
       {
@@ -1290,10 +1290,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The most common local SEO mistakes",
         headingEs: "Los errores más comunes de SEO local",
         body: [
-          'Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with [[keywords|palabra-clave]] it doesn\'t actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see [12 SEO mistakes small businesses make](/blog/errores-de-seo).',
+          "Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with [[keywords|palabra-clave]] it doesn't actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see [12 SEO mistakes small businesses make](/blog/errores-de-seo).",
         ],
         bodyEs: [
-          'Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con [[palabras clave|palabra-clave]] que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa [12 errores de SEO que cometen las pymes](/blog/errores-de-seo).',
+          "Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con [[palabras clave|palabra-clave]] que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa [12 errores de SEO que cometen las pymes](/blog/errores-de-seo).",
         ],
       },
     ],
@@ -1404,10 +1404,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When Meta Ads is the right first platform",
         headingEs: "Cuándo Meta Ads es la plataforma correcta para empezar",
         body: [
-          'Meta Ads makes the most sense for visual, aspirational products and for categories where demand needs to be created rather than captured — new products, real estate pre-sales, restaurants, fashion. For categories where people already actively search by name or category, [[Google Ads|google-ads]] often deserves the first dollar instead. We compare both directly in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
+          "Meta Ads makes the most sense for visual, aspirational products and for categories where demand needs to be created rather than captured — new products, real estate pre-sales, restaurants, fashion. For categories where people already actively search by name or category, [[Google Ads|google-ads]] often deserves the first dollar instead. We compare both directly in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
         ],
         bodyEs: [
-          'Meta Ads tiene más sentido para productos visuales y aspiracionales, y para categorías donde la demanda hay que crearla en vez de capturarla: productos nuevos, preventas inmobiliarias, restaurantes, moda. Para categorías donde la gente ya busca activamente por nombre o categoría, [[Google Ads|google-ads]] suele merecer el primer peso en su lugar. Comparamos ambos directamente en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
+          "Meta Ads tiene más sentido para productos visuales y aspiracionales, y para categorías donde la demanda hay que crearla en vez de capturarla: productos nuevos, preventas inmobiliarias, restaurantes, moda. Para categorías donde la gente ya busca activamente por nombre o categoría, [[Google Ads|google-ads]] suele merecer el primer peso en su lugar. Comparamos ambos directamente en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
         ],
       },
     ],
@@ -1482,10 +1482,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "1. No Google Business Profile optimization",
         headingEs: "1. Sin perfil de Google Business optimizado",
         body: [
-          'For any business with a physical location, an unclaimed or incomplete Google Business Profile is the single biggest missed opportunity — it\'s often the first thing a local customer sees, before your website. We cover exactly how to fix this in [local SEO: the complete guide](/blog/seo-local-guia). Start by checking whether the listing is verified, has a current phone number and hours, and has at least a few recent photos, those three alone separate most claimed profiles from most unclaimed ones.',
+          "For any business with a physical location, an unclaimed or incomplete Google Business Profile is the single biggest missed opportunity — it's often the first thing a local customer sees, before your website. We cover exactly how to fix this in [local SEO: the complete guide](/blog/seo-local-guia). Start by checking whether the listing is verified, has a current phone number and hours, and has at least a few recent photos, those three alone separate most claimed profiles from most unclaimed ones.",
         ],
         bodyEs: [
-          'Para cualquier negocio con ubicación física, un perfil de Google Business sin reclamar o incompleto es la oportunidad perdida más grande. Muchas veces es lo primero que ve un cliente local, antes que tu sitio web. Cubrimos exactamente cómo corregir esto en [SEO local: guía completa](/blog/seo-local-guia). Empieza revisando si el perfil está verificado, tiene un teléfono y horario actualizados, y al menos algunas fotos recientes: esos tres puntos por sí solos separan a la mayoría de los perfiles reclamados de los que no lo están.',
+          "Para cualquier negocio con ubicación física, un perfil de Google Business sin reclamar o incompleto es la oportunidad perdida más grande. Muchas veces es lo primero que ve un cliente local, antes que tu sitio web. Cubrimos exactamente cómo corregir esto en [SEO local: guía completa](/blog/seo-local-guia). Empieza revisando si el perfil está verificado, tiene un teléfono y horario actualizados, y al menos algunas fotos recientes: esos tres puntos por sí solos separan a la mayoría de los perfiles reclamados de los que no lo están.",
         ],
       },
       {
@@ -1834,10 +1834,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When to adjust the budget",
         headingEs: "Cuándo ajustar el presupuesto",
         body: [
-          'Revisit the split every **4 to 6 weeks** based on which channel is producing hot and warm [[leads|lead]], not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the [[cost per click|cpc]] looks attractive. The full classification system is in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).',
+          "Revisit the split every **4 to 6 weeks** based on which channel is producing hot and warm [[leads|lead]], not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the [[cost per click|cpc]] looks attractive. The full classification system is in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).",
         ],
         bodyEs: [
-          'Revisa el reparto cada **4 a 6 semanas** según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el [[costo por clic|cpc]] se vea atractivo. El sistema de clasificación completo está en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).',
+          "Revisa el reparto cada **4 a 6 semanas** según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el [[costo por clic|cpc]] se vea atractivo. El sistema de clasificación completo está en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).",
         ],
       },
     ],
@@ -1952,10 +1952,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Local SEO: for businesses that serve a specific area",
         headingEs: "SEO local: para negocios que atienden una zona específica",
         body: [
-          'For any business with a physical location or a defined service area, local SEO — an optimized [[Google Business Profile|google-business-profile]], consistent business information, and real reviews — usually returns more per peso than national SEO. We cover it in full depth in [local SEO: the complete guide](/blog/seo-local-guia).',
+          "For any business with a physical location or a defined service area, local SEO — an optimized [[Google Business Profile|google-business-profile]], consistent business information, and real reviews — usually returns more per peso than national SEO. We cover it in full depth in [local SEO: the complete guide](/blog/seo-local-guia).",
         ],
         bodyEs: [
-          'Para cualquier negocio con ubicación física o un área de servicio definida, el SEO local (un [[perfil de Google Business|google-business-profile]] optimizado, información de negocio consistente y reseñas reales) suele rendir más por peso que el SEO nacional. Lo cubrimos a fondo en [SEO local: guía completa](/blog/seo-local-guia).',
+          "Para cualquier negocio con ubicación física o un área de servicio definida, el SEO local (un [[perfil de Google Business|google-business-profile]] optimizado, información de negocio consistente y reseñas reales) suele rendir más por peso que el SEO nacional. Lo cubrimos a fondo en [SEO local: guía completa](/blog/seo-local-guia).",
         ],
       },
       {
@@ -1974,10 +1974,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How long it takes and what it costs",
         headingEs: "Cuánto tarda y cuánto cuesta",
         body: [
-          'SEO takes **4 to 6 months for initial movement** and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in [how long does SEO take](/blog/cuanto-tarda-el-seo) and [how much does SEO cost in Mexico](/blog/cuanto-cuesta-el-seo-en-mexico).',
+          "SEO takes **4 to 6 months for initial movement** and 9 to 12 months to compound into meaningful traffic, and costs $8,000 to $35,000 MXN monthly in Mexico depending on competition and scope. We break both down in detail in [how long does SEO take](/blog/cuanto-tarda-el-seo) and [how much does SEO cost in Mexico](/blog/cuanto-cuesta-el-seo-en-mexico).",
         ],
         bodyEs: [
-          'El SEO toma de **4 a 6 meses para mostrar movimiento inicial** y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en [cuánto tarda el SEO](/blog/cuanto-tarda-el-seo) y [cuánto cuesta el SEO en México](/blog/cuanto-cuesta-el-seo-en-mexico).',
+          "El SEO toma de **4 a 6 meses para mostrar movimiento inicial** y de 9 a 12 meses para acumularse en tráfico significativo, y cuesta entre $8,000 y $35,000 MXN mensuales en México según la competencia y el alcance. Desglosamos ambos a detalle en [cuánto tarda el SEO](/blog/cuanto-tarda-el-seo) y [cuánto cuesta el SEO en México](/blog/cuanto-cuesta-el-seo-en-mexico).",
         ],
       },
       {
@@ -1985,10 +1985,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How SEO compares to paid channels",
         headingEs: "Cómo se compara el SEO con canales pagados",
         body: [
-          'SEO and [[Google Ads|google-ads]] solve different problems on different timelines — ads deliver traffic the day you turn them on and stop the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. Most businesses eventually need both, but rarely at the same intensity from day one. We go deeper on how to sequence the two in [SEO vs Google Ads](/blog/seo-vs-google-ads).',
+          "SEO and [[Google Ads|google-ads]] solve different problems on different timelines — ads deliver traffic the day you turn them on and stop the day you stop paying; SEO takes months to build but keeps generating traffic without an ongoing per-click cost. Most businesses eventually need both, but rarely at the same intensity from day one. We go deeper on how to sequence the two in [SEO vs Google Ads](/blog/seo-vs-google-ads).",
         ],
         bodyEs: [
-          'El SEO y [[Google Ads|google-ads]] resuelven problemas distintos en cronogramas distintos. Los anuncios entregan tráfico el día que los enciendes y se detienen el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La mayoría de los negocios eventualmente necesita ambos, pero rara vez con la misma intensidad desde el día uno. Profundizamos en cómo secuenciar los dos en [SEO vs Google Ads](/blog/seo-vs-google-ads).',
+          "El SEO y [[Google Ads|google-ads]] resuelven problemas distintos en cronogramas distintos. Los anuncios entregan tráfico el día que los enciendes y se detienen el día que dejas de pagar; el SEO toma meses en construirse pero sigue generando tráfico sin un costo continuo por clic. La mayoría de los negocios eventualmente necesita ambos, pero rara vez con la misma intensidad desde el día uno. Profundizamos en cómo secuenciar los dos en [SEO vs Google Ads](/blog/seo-vs-google-ads).",
         ],
       },
       {
@@ -1996,10 +1996,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Common mistakes and where to go next",
         headingEs: "Errores comunes y siguientes pasos",
         body: [
-          'The most common SEO mistakes we see — no Google Business Profile optimization, thin or duplicate content, ignoring mobile speed — are covered in full in [12 SEO mistakes small businesses make](/blog/errores-de-seo). This guide is the starting point; each linked cluster goes deeper into one specific piece of the system, and we keep adding new ones as the SEO landscape shifts.',
+          "The most common SEO mistakes we see — no Google Business Profile optimization, thin or duplicate content, ignoring mobile speed — are covered in full in [12 SEO mistakes small businesses make](/blog/errores-de-seo). This guide is the starting point; each linked cluster goes deeper into one specific piece of the system, and we keep adding new ones as the SEO landscape shifts.",
         ],
         bodyEs: [
-          'Los errores de SEO más comunes que vemos (sin perfil de Google Business optimizado, contenido pobre o duplicado, ignorar la velocidad móvil) están cubiertos a fondo en [12 errores de SEO que cometen las pymes](/blog/errores-de-seo). Esta guía es el punto de partida; cada cluster enlazado profundiza en una pieza específica del sistema, y seguimos sumando nuevos conforme cambia el panorama del SEO.',
+          "Los errores de SEO más comunes que vemos (sin perfil de Google Business optimizado, contenido pobre o duplicado, ignorar la velocidad móvil) están cubiertos a fondo en [12 errores de SEO que cometen las pymes](/blog/errores-de-seo). Esta guía es el punto de partida; cada cluster enlazado profundiza en una pieza específica del sistema, y seguimos sumando nuevos conforme cambia el panorama del SEO.",
         ],
       },
       {
@@ -2109,10 +2109,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What it actually costs",
         headingEs: "Cuánto cuesta realmente",
         body: [
-          '[[Cost per click|cpc]] in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over **$100 MXN** in competitive ones like legal or medical services. We publish real CPC ranges by industry in [how much does Google Ads cost in Mexico](/blog/cuanto-cuesta-google-ads-en-mexico).',
+          "[[Cost per click|cpc]] in Mexico varies enormously by industry — from a few pesos in low-competition categories to well over **$100 MXN** in competitive ones like legal or medical services. We publish real CPC ranges by industry in [how much does Google Ads cost in Mexico](/blog/cuanto-cuesta-google-ads-en-mexico).",
         ],
         bodyEs: [
-          'El [[costo por clic|cpc]] en México varía enormemente por industria: desde unos cuantos pesos en categorías de baja competencia hasta más de **$100 MXN** en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en [cuánto cuesta Google Ads en México](/blog/cuanto-cuesta-google-ads-en-mexico).',
+          "El [[costo por clic|cpc]] en México varía enormemente por industria: desde unos cuantos pesos en categorías de baja competencia hasta más de **$100 MXN** en categorías competidas como servicios legales o médicos. Publicamos rangos reales de CPC por industria en [cuánto cuesta Google Ads en México](/blog/cuanto-cuesta-google-ads-en-mexico).",
         ],
       },
       {
@@ -2120,10 +2120,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Measuring what actually matters",
         headingEs: "Medir lo que realmente importa",
         body: [
-          'Google Ads is only as good as the data feeding its algorithm — without accurate [[conversion|conversion]] tracking through [[GA4|google-analytics]] and Google Tag Manager, both you and Google are optimizing blind. This is the single most common gap we find when auditing accounts. The full setup process is in [how to actually measure conversions](/blog/como-medir-conversiones-google-ads).',
+          "Google Ads is only as good as the data feeding its algorithm — without accurate [[conversion|conversion]] tracking through [[GA4|google-analytics]] and Google Tag Manager, both you and Google are optimizing blind. This is the single most common gap we find when auditing accounts. The full setup process is in [how to actually measure conversions](/blog/como-medir-conversiones-google-ads).",
         ],
         bodyEs: [
-          'Google Ads es tan bueno como los datos que alimentan su algoritmo. Sin seguimiento de [[conversiones|conversion]] preciso a través de [[GA4|google-analytics]] y Google Tag Manager, tanto tú como Google están optimizando a ciegas. Este es el hueco más común que encontramos al auditar cuentas. El proceso completo de configuración está en [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).',
+          "Google Ads es tan bueno como los datos que alimentan su algoritmo. Sin seguimiento de [[conversiones|conversion]] preciso a través de [[GA4|google-analytics]] y Google Tag Manager, tanto tú como Google están optimizando a ciegas. Este es el hueco más común que encontramos al auditar cuentas. El proceso completo de configuración está en [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).",
         ],
       },
       {
@@ -2131,10 +2131,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The mistakes that burn the most budget",
         headingEs: "Los errores que más queman presupuesto",
         body: [
-          'Broad match keywords with no negatives, broken conversion tracking, and [[landing pages|landing-page]] that do not match search intent account for most of the wasted spend we find in account audits. The full list of ten is in [10 Google Ads mistakes that burn your budget](/blog/errores-de-google-ads).',
+          "Broad match keywords with no negatives, broken conversion tracking, and [[landing pages|landing-page]] that do not match search intent account for most of the wasted spend we find in account audits. The full list of ten is in [10 Google Ads mistakes that burn your budget](/blog/errores-de-google-ads).",
         ],
         bodyEs: [
-          'La concordancia amplia sin negativas, el seguimiento de conversiones roto y las [[landing pages|landing-page]] que no coinciden con la intención de búsqueda explican la mayor parte del gasto desperdiciado que encontramos en auditorías de cuenta. La lista completa de diez está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).',
+          "La concordancia amplia sin negativas, el seguimiento de conversiones roto y las [[landing pages|landing-page]] que no coinciden con la intención de búsqueda explican la mayor parte del gasto desperdiciado que encontramos en auditorías de cuenta. La lista completa de diez está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).",
         ],
       },
       {
@@ -2142,10 +2142,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Ads vs. organic SEO",
         headingEs: "Google Ads vs. SEO orgánico",
         body: [
-          'Google Ads delivers traffic immediately but stops the moment you stop paying; SEO takes months to build but keeps working without an ongoing per-click cost. Most businesses eventually run both — Ads for immediate demand, SEO to lower acquisition cost over time. We compare the two directly in [SEO vs Google Ads](/blog/seo-vs-google-ads).',
+          "Google Ads delivers traffic immediately but stops the moment you stop paying; SEO takes months to build but keeps working without an ongoing per-click cost. Most businesses eventually run both — Ads for immediate demand, SEO to lower acquisition cost over time. We compare the two directly in [SEO vs Google Ads](/blog/seo-vs-google-ads).",
         ],
         bodyEs: [
-          'Google Ads entrega tráfico de inmediato pero se detiene en cuanto dejas de pagar; el SEO toma meses en construirse pero sigue funcionando sin un costo continuo por clic. La mayoría de los negocios eventualmente corre ambos: Ads para demanda inmediata, SEO para bajar el costo de adquisición con el tiempo. Comparamos los dos directamente en [SEO vs Google Ads](/blog/seo-vs-google-ads).',
+          "Google Ads entrega tráfico de inmediato pero se detiene en cuanto dejas de pagar; el SEO toma meses en construirse pero sigue funcionando sin un costo continuo por clic. La mayoría de los negocios eventualmente corre ambos: Ads para demanda inmediata, SEO para bajar el costo de adquisición con el tiempo. Comparamos los dos directamente en [SEO vs Google Ads](/blog/seo-vs-google-ads).",
         ],
       },
       {
@@ -2153,10 +2153,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Google Ads vs. Meta Ads",
         headingEs: "Google Ads vs. Meta Ads",
         body: [
-          'Google Ads captures people already searching for what you sell; [[Meta Ads|meta-ads]] creates demand through visual, interruption-based selling. Which deserves the first dollar depends on whether your category has real search volume. We break down exactly how to decide in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
+          "Google Ads captures people already searching for what you sell; [[Meta Ads|meta-ads]] creates demand through visual, interruption-based selling. Which deserves the first dollar depends on whether your category has real search volume. We break down exactly how to decide in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
         ],
         bodyEs: [
-          'Google Ads captura gente que ya está buscando lo que vendes; [[Meta Ads|meta-ads]] genera demanda a través de venta visual e interruptiva. Cuál merece el primer peso depende de si tu categoría tiene volumen de búsqueda real. Desglosamos exactamente cómo decidir en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
+          "Google Ads captura gente que ya está buscando lo que vendes; [[Meta Ads|meta-ads]] genera demanda a través de venta visual e interruptiva. Cuál merece el primer peso depende de si tu categoría tiene volumen de búsqueda real. Desglosamos exactamente cómo decidir en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
         ],
       },
       {
@@ -2338,7 +2338,7 @@ export const BLOG_POSTS: BlogPost[] = [
           'For the full picture on campaign types, measurement and common mistakes, start with "Google Ads: the complete guide." For the tracking setup that makes any of these numbers trustworthy, see [how to actually measure conversions](/blog/como-medir-conversiones-google-ads).',
         ],
         bodyEs: [
-          'Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con [Google Ads: guía completa](/blog/guia-google-ads). Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).',
+          "Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con [Google Ads: guía completa](/blog/guia-google-ads). Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).",
         ],
       },
     ],
@@ -2448,10 +2448,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What to do while you wait",
         headingEs: "Qué hacer mientras tanto",
         body: [
-          'If you need traffic before SEO compounds, running [[Google Ads|google-ads]] or [[Meta Ads|meta-ads]] in parallel fills the gap without waiting. We cover how to think about that sequencing in [SEO vs Google Ads](/blog/seo-vs-google-ads).',
+          "If you need traffic before SEO compounds, running [[Google Ads|google-ads]] or [[Meta Ads|meta-ads]] in parallel fills the gap without waiting. We cover how to think about that sequencing in [SEO vs Google Ads](/blog/seo-vs-google-ads).",
         ],
         bodyEs: [
-          'Si necesitas tráfico antes de que el SEO se acumule, correr [[Google Ads|google-ads]] o [[Meta Ads|meta-ads]] en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en [SEO vs Google Ads](/blog/seo-vs-google-ads).',
+          "Si necesitas tráfico antes de que el SEO se acumule, correr [[Google Ads|google-ads]] o [[Meta Ads|meta-ads]] en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en [SEO vs Google Ads](/blog/seo-vs-google-ads).",
         ],
       },
     ],
@@ -2556,10 +2556,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why it's rarely either/or",
         headingEs: "Por qué rara vez es uno u otro",
         body: [
-          'Most established businesses eventually run both — Ads to fill the gap while SEO compounds, and SEO to lower blended acquisition cost over time. The sequencing question matters more than the choice itself. For platform-to-platform paid comparisons, see [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
+          "Most established businesses eventually run both — Ads to fill the gap while SEO compounds, and SEO to lower blended acquisition cost over time. The sequencing question matters more than the choice itself. For platform-to-platform paid comparisons, see [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
         ],
         bodyEs: [
-          'La mayoría de los negocios establecidos eventualmente corre ambos: Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo de adquisición combinado con el tiempo. La pregunta de secuencia importa más que la elección en sí. Para comparaciones entre plataformas pagadas, revisa [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).',
+          "La mayoría de los negocios establecidos eventualmente corre ambos: Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo de adquisición combinado con el tiempo. La pregunta de secuencia importa más que la elección en sí. Para comparaciones entre plataformas pagadas, revisa [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
         ],
       },
     ],
@@ -2660,10 +2660,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The U.S. patient opportunity at the border",
         headingEs: "La oportunidad de pacientes de EE.UU. en la frontera",
         body: [
-          'For clinics in Tijuana and other border cities, patients from California and Arizona represent one of the highest-value opportunities in Mexican healthcare marketing — driven by dental and medical costs that can run a fraction of U.S. prices for comparable care. This audience requires bilingual content, U.S.-facing advertising, and a completely different trust-building process. We cover the full system in [medical tourism in Tijuana: how to attract U.S. patients](/blog/como-atraer-pacientes-de-estados-unidos).',
+          "For clinics in Tijuana and other border cities, patients from California and Arizona represent one of the highest-value opportunities in Mexican healthcare marketing — driven by dental and medical costs that can run a fraction of U.S. prices for comparable care. This audience requires bilingual content, U.S.-facing advertising, and a completely different trust-building process. We cover the full system in [medical tourism in Tijuana: how to attract U.S. patients](/blog/como-atraer-pacientes-de-estados-unidos).",
         ],
         bodyEs: [
-          'Para clínicas en Tijuana y otras ciudades fronterizas, los pacientes de California y Arizona representan una de las oportunidades de mayor valor en el marketing de salud mexicano, impulsada por costos dentales y médicos que pueden ser una fracción del precio en EE.UU. para atención comparable. Esta audiencia requiere contenido bilingüe, publicidad orientada a EE.UU., y un proceso de confianza completamente distinto. Cubrimos el sistema completo en [turismo médico en Tijuana: cómo captar pacientes de EE.UU](/blog/como-atraer-pacientes-de-estados-unidos).',
+          "Para clínicas en Tijuana y otras ciudades fronterizas, los pacientes de California y Arizona representan una de las oportunidades de mayor valor en el marketing de salud mexicano, impulsada por costos dentales y médicos que pueden ser una fracción del precio en EE.UU. para atención comparable. Esta audiencia requiere contenido bilingüe, publicidad orientada a EE.UU., y un proceso de confianza completamente distinto. Cubrimos el sistema completo en [turismo médico en Tijuana: cómo captar pacientes de EE.UU](/blog/como-atraer-pacientes-de-estados-unidos).",
         ],
       },
       {
@@ -2715,7 +2715,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Common mistakes in medical marketing",
         headingEs: "Errores comunes en marketing médico",
         body: [
-          'The most frequent ones we see: generic stock-photo websites with no real credentials shown, ignoring reviews entirely, and advertising claims that violate platform or regulatory rules without the practice realizing it. The full list is in [medical marketing mistakes](/blog/errores-marketing-dental).',
+          "The most frequent ones we see: generic stock-photo websites with no real credentials shown, ignoring reviews entirely, and advertising claims that violate platform or regulatory rules without the practice realizing it. The full list is in [medical marketing mistakes](/blog/errores-marketing-dental).",
         ],
         bodyEs: [
           "Los más frecuentes que vemos: sitios web con fotos genéricas de banco de imágenes sin credenciales reales mostradas, ignorar las reseñas por completo, y declaraciones publicitarias que violan reglas de plataforma o regulatorias sin que el consultorio se dé cuenta. La lista completa está en [errores de marketing dental](/blog/errores-marketing-dental).",
@@ -2845,10 +2845,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What happens after the first contact",
         headingEs: "Qué pasa después del primer contacto",
         body: [
-          'A fast, clear response — ideally bilingual and available by WhatsApp or a direct phone line, not just an email form — often decides whether a nervous first-time patient books at all. The broader follow-up principles are the same ones covered in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios), adapted to a patient instead of a buyer: speed and reassurance win.',
+          "A fast, clear response — ideally bilingual and available by WhatsApp or a direct phone line, not just an email form — often decides whether a nervous first-time patient books at all. The broader follow-up principles are the same ones covered in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios), adapted to a patient instead of a buyer: speed and reassurance win.",
         ],
         bodyEs: [
-          'Una respuesta rápida y clara, idealmente bilingüe y disponible por WhatsApp o una línea telefónica directa (no solo un formulario de correo), muchas veces decide si un paciente nervioso de primera vez agenda o no. Los principios generales de seguimiento son los mismos que cubrimos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios), adaptados a un paciente en vez de un comprador: velocidad y tranquilidad ganan.',
+          "Una respuesta rápida y clara, idealmente bilingüe y disponible por WhatsApp o una línea telefónica directa (no solo un formulario de correo), muchas veces decide si un paciente nervioso de primera vez agenda o no. Los principios generales de seguimiento son los mismos que cubrimos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios), adaptados a un paciente en vez de un comprador: velocidad y tranquilidad ganan.",
         ],
       },
     ],
@@ -3115,7 +3115,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Use GTM's Preview mode and GA4's DebugView to watch events fire in real time before trusting any report, and periodically complete a test conversion yourself to confirm it shows up correctly in both GA4 and Google Ads. The full list of related account mistakes, including tracking, is in [10 Google Ads mistakes that burn your budget](/blog/errores-de-google-ads).",
         ],
         bodyEs: [
-          'Usa el modo Vista Previa de GTM y el DebugView de GA4 para ver los eventos dispararse en tiempo real antes de confiar en cualquier reporte, y periódicamente completa tú mismo una conversión de prueba para confirmar que aparece correctamente tanto en GA4 como en Google Ads. La lista completa de errores de cuenta relacionados, incluyendo seguimiento, está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).',
+          "Usa el modo Vista Previa de GTM y el DebugView de GA4 para ver los eventos dispararse en tiempo real antes de confiar en cualquier reporte, y periódicamente completa tú mismo una conversión de prueba para confirmar que aparece correctamente tanto en GA4 como en Google Ads. La lista completa de errores de cuenta relacionados, incluyendo seguimiento, está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).",
         ],
       },
     ],
@@ -3242,10 +3242,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Signs the problem isn't budget, it's allocation",
         headingEs: "Señales de que el problema no es presupuesto, es asignación",
         body: [
-          'A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken [[landing page|landing-page]] or a slow response process just wastes more money faster. Before increasing budget, it\'s worth auditing where the current spend is actually going. See [agency, freelancer or in-house team](/blog/agencia-o-freelancer-marketing) for who should be managing that allocation.',
+          "A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken [[landing page|landing-page]] or a slow response process just wastes more money faster. Before increasing budget, it's worth auditing where the current spend is actually going. See [agency, freelancer or in-house team](/blog/agencia-o-freelancer-marketing) for who should be managing that allocation.",
         ],
         bodyEs: [
-          'Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto. Más tráfico a una [[landing page|landing-page]] rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa [¿agencia, freelancer o equipo interno?](/blog/agencia-o-freelancer-marketing) para saber quién debería gestionar esa asignación.',
+          "Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto. Más tráfico a una [[landing page|landing-page]] rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa [¿agencia, freelancer o equipo interno?](/blog/agencia-o-freelancer-marketing) para saber quién debería gestionar esa asignación.",
         ],
       },
     ],
@@ -5864,10 +5864,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The CRM is the spine of everything else",
         headingEs: "El CRM es la columna de todo lo demás",
         body: [
-          'A CRM is a shared record of every person who ever showed interest, what they asked for, and what happens next. Without it, automations have nowhere to write and reports have nothing to count. It does not need to be expensive or complex to start, and for many small businesses the first version is a lot simpler than what vendors sell. We cover how to choose one in [what is a CRM](/blog/que-es-un-crm).',
+          "A CRM is a shared record of every person who ever showed interest, what they asked for, and what happens next. Without it, automations have nowhere to write and reports have nothing to count. It does not need to be expensive or complex to start, and for many small businesses the first version is a lot simpler than what vendors sell. We cover how to choose one in [what is a CRM](/blog/que-es-un-crm).",
         ],
         bodyEs: [
-          'Un CRM es un registro compartido de cada persona que alguna vez mostró interés, qué pidió y qué sigue con ella. Sin él, las automatizaciones no tienen dónde escribir y los reportes no tienen qué contar. No necesita ser caro ni complejo para arrancar, y para muchas pymes la primera versión es bastante más simple de lo que venden los proveedores. Cubrimos cómo elegir uno en [qué es un CRM](/blog/que-es-un-crm).',
+          "Un CRM es un registro compartido de cada persona que alguna vez mostró interés, qué pidió y qué sigue con ella. Sin él, las automatizaciones no tienen dónde escribir y los reportes no tienen qué contar. No necesita ser caro ni complejo para arrancar, y para muchas pymes la primera versión es bastante más simple de lo que venden los proveedores. Cubrimos cómo elegir uno en [qué es un CRM](/blog/que-es-un-crm).",
         ],
       },
       {
@@ -5875,10 +5875,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Connecting capture to storage",
         headingEs: "Conectar la captura con el almacenamiento",
         body: [
-          'A contact form that only sends an email is a leak waiting to happen: emails get buried, forwarded, or deleted. Wiring forms directly into the CRM means the lead exists as a record with an owner and a next step, not as a message someone has to notice. The setup is usually an afternoon of work and it is the single highest-return automation for most businesses. The step-by-step is in [connecting forms to your CRM](/blog/conectar-formularios-a-crm).',
+          "A contact form that only sends an email is a leak waiting to happen: emails get buried, forwarded, or deleted. Wiring forms directly into the CRM means the lead exists as a record with an owner and a next step, not as a message someone has to notice. The setup is usually an afternoon of work and it is the single highest-return automation for most businesses. The step-by-step is in [connecting forms to your CRM](/blog/conectar-formularios-a-crm).",
         ],
         bodyEs: [
-          'Un formulario de contacto que solo manda un correo es una fuga esperando a pasar: los correos se entierran, se reenvían o se borran. Conectar los formularios directo al CRM hace que el lead exista como registro con dueño y siguiente paso, no como un mensaje que alguien tiene que notar. La configuración suele ser una tarde de trabajo y es la automatización de mayor retorno para la mayoría de los negocios. El paso a paso está en [cómo conectar tus formularios al CRM](/blog/conectar-formularios-a-crm).',
+          "Un formulario de contacto que solo manda un correo es una fuga esperando a pasar: los correos se entierran, se reenvían o se borran. Conectar los formularios directo al CRM hace que el lead exista como registro con dueño y siguiente paso, no como un mensaje que alguien tiene que notar. La configuración suele ser una tarde de trabajo y es la automatización de mayor retorno para la mayoría de los negocios. El paso a paso está en [cómo conectar tus formularios al CRM](/blog/conectar-formularios-a-crm).",
         ],
       },
       {
@@ -5886,10 +5886,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Follow-up is where most of the money is",
         headingEs: "El seguimiento es donde está la mayor parte del dinero",
         body: [
-          'Most leads do not buy on the first contact, and most businesses stop after the first contact. An automated sequence that checks in a few times over the following weeks recovers sales that were already paid for through advertising. The point is not to spam: it is to make sure the second and third touch happen at all, because in practice they usually do not. We break the flow down in [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas).',
+          "Most leads do not buy on the first contact, and most businesses stop after the first contact. An automated sequence that checks in a few times over the following weeks recovers sales that were already paid for through advertising. The point is not to spam: it is to make sure the second and third touch happen at all, because in practice they usually do not. We break the flow down in [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas).",
         ],
         bodyEs: [
-          'La mayoría de los leads no compra en el primer contacto, y la mayoría de los negocios se detiene en el primer contacto. Una secuencia automatizada que da seguimiento algunas veces en las semanas siguientes recupera ventas que ya pagaste con publicidad. El punto no es hacer spam: es que el segundo y tercer contacto sucedan, porque en la práctica normalmente no suceden. Desglosamos el flujo en [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas).',
+          "La mayoría de los leads no compra en el primer contacto, y la mayoría de los negocios se detiene en el primer contacto. Una secuencia automatizada que da seguimiento algunas veces en las semanas siguientes recupera ventas que ya pagaste con publicidad. El punto no es hacer spam: es que el segundo y tercer contacto sucedan, porque en la práctica normalmente no suceden. Desglosamos el flujo en [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas).",
         ],
       },
       {
@@ -5908,10 +5908,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "A scripted bot and an AI agent are different products",
         headingEs: "Un bot con guion y un agente de IA son productos distintos",
         body: [
-          'A menu-style bot answers what is in its tree and fails on anything else, which is fine for hours, address and a price list. An AI agent understands phrasing outside the script. Both are legitimate, and picking the wrong one is expensive in opposite directions: a bot where you needed intelligence frustrates customers, and an agent where a menu would do is overbuilt. We compare them in [AI chatbots for business](/blog/chatbot-con-ia-para-negocios).',
+          "A menu-style bot answers what is in its tree and fails on anything else, which is fine for hours, address and a price list. An AI agent understands phrasing outside the script. Both are legitimate, and picking the wrong one is expensive in opposite directions: a bot where you needed intelligence frustrates customers, and an agent where a menu would do is overbuilt. We compare them in [AI chatbots for business](/blog/chatbot-con-ia-para-negocios).",
         ],
         bodyEs: [
-          'Un bot tipo menú responde lo que está en su árbol y falla en todo lo demás, lo cual está bien para horarios, dirección y una lista de precios. Un agente de IA entiende formulaciones fuera del guion. Ambos son legítimos, y elegir mal sale caro en direcciones opuestas: un bot donde necesitabas inteligencia frustra clientes, y un agente donde bastaba un menú está sobrado. Los comparamos en [chatbots con IA para negocios](/blog/chatbot-con-ia-para-negocios).',
+          "Un bot tipo menú responde lo que está en su árbol y falla en todo lo demás, lo cual está bien para horarios, dirección y una lista de precios. Un agente de IA entiende formulaciones fuera del guion. Ambos son legítimos, y elegir mal sale caro en direcciones opuestas: un bot donde necesitabas inteligencia frustra clientes, y un agente donde bastaba un menú está sobrado. Los comparamos en [chatbots con IA para negocios](/blog/chatbot-con-ia-para-negocios).",
         ],
       },
       {
@@ -5930,10 +5930,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What not to automate",
         headingEs: "Qué no automatizar",
         body: [
-          'Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs **three times** a year rarely repays the hours it takes to wire up. The judgment calls are in [what to automate first in your business](/blog/que-automatizar-en-mi-negocio).',
+          "Anything that happens rarely, anything where a mistake is expensive to undo, and anything where the human contact is the product. Automating a process you have not defined just makes the confusion faster. And a process that runs **three times** a year rarely repays the hours it takes to wire up. The judgment calls are in [what to automate first in your business](/blog/que-automatizar-en-mi-negocio).",
         ],
         bodyEs: [
-          'Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre **tres veces** al año rara vez paga las horas que toma conectarlo. Los criterios están en [qué automatizar primero en tu negocio](/blog/que-automatizar-en-mi-negocio).',
+          "Todo lo que pasa rara vez, todo donde un error sale caro de deshacer, y todo donde el contacto humano es el producto. Automatizar un proceso que no has definido solo hace que la confusión sea más rápida. Y un proceso que corre **tres veces** al año rara vez paga las horas que toma conectarlo. Los criterios están en [qué automatizar primero en tu negocio](/blog/que-automatizar-en-mi-negocio).",
         ],
       },
       {
@@ -7013,10 +7013,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a landing page is, and what it isn't",
         headingEs: "Qué es una landing page y qué no",
         body: [
-          'It is a single page built for a single campaign and a single [[conversion|conversion]] goal, usually with the site navigation removed on purpose. It is not a second homepage and not a general services page. If you are unsure which of the two you need, we compare them directly in [landing page vs. website](/blog/landing-page-vs-pagina-web).',
+          "It is a single page built for a single campaign and a single [[conversion|conversion]] goal, usually with the site navigation removed on purpose. It is not a second homepage and not a general services page. If you are unsure which of the two you need, we compare them directly in [landing page vs. website](/blog/landing-page-vs-pagina-web).",
         ],
         bodyEs: [
-          'Es una sola página construida para una sola campaña y un solo objetivo de [[conversión|conversion]], normalmente con la navegación del sitio quitada a propósito. No es una segunda página de inicio ni una página general de servicios. Si tienes duda de cuál de las dos necesitas, las comparamos directo en [landing page vs página web](/blog/landing-page-vs-pagina-web).',
+          "Es una sola página construida para una sola campaña y un solo objetivo de [[conversión|conversion]], normalmente con la navegación del sitio quitada a propósito. No es una segunda página de inicio ni una página general de servicios. Si tienes duda de cuál de las dos necesitas, las comparamos directo en [landing page vs página web](/blog/landing-page-vs-pagina-web).",
         ],
       },
       {
@@ -9656,7 +9656,8 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "reservas-directas-hotel",
     cover: true,
     vertical: "hospedaje",
-    title: "Direct Bookings: How to Depend Less on Booking and Airbnb Without Disappearing From Them",
+    title:
+      "Direct Bookings: How to Depend Less on Booking and Airbnb Without Disappearing From Them",
     titleEs: "Reservas directas: cómo depender menos de Booking y Airbnb sin desaparecer de ellos",
     category: "Marketing Strategy",
     categoryEs: "Estrategia de Marketing",
@@ -9820,8 +9821,10 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "reservas-directas-tours",
     cover: true,
     vertical: "turismo",
-    title: "Viator, GetYourGuide or Direct Bookings? How to Sell Your Tours Without Giving Away the Commission",
-    titleEs: "¿Viator, GetYourGuide o reservas directas? Cómo vender tus tours sin regalar la comisión",
+    title:
+      "Viator, GetYourGuide or Direct Bookings? How to Sell Your Tours Without Giving Away the Commission",
+    titleEs:
+      "¿Viator, GetYourGuide o reservas directas? Cómo vender tus tours sin regalar la comisión",
     category: "Marketing Strategy",
     categoryEs: "Estrategia de Marketing",
     excerpt:
@@ -10514,8 +10517,10 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "apps-de-delivery-comisiones-restaurante",
     cover: true,
     vertical: "restaurantes",
-    title: "Rappi, Uber Eats and DiDi Food: What They Really Cost Your Restaurant and How to Sell Direct",
-    titleEs: "Rappi, Uber Eats y DiDi Food: cuánto le cuestan de verdad a tu restaurante y cómo vender directo",
+    title:
+      "Rappi, Uber Eats and DiDi Food: What They Really Cost Your Restaurant and How to Sell Direct",
+    titleEs:
+      "Rappi, Uber Eats y DiDi Food: cuánto le cuestan de verdad a tu restaurante y cómo vender directo",
     category: "Marketing Strategy",
     categoryEs: "Estrategia de Marketing",
     excerpt:
@@ -10704,7 +10709,8 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "posadas-y-cenas-de-fin-de-ano-restaurante",
     cover: true,
     vertical: "restaurantes",
-    title: "Christmas Parties and Year-End Dinners: How to Fill Your Restaurant with Groups in December",
+    title:
+      "Christmas Parties and Year-End Dinners: How to Fill Your Restaurant with Groups in December",
     titleEs: "Posadas y cenas de fin de año: cómo llenar tu restaurante con grupos en diciembre",
     category: "Marketing Strategy",
     categoryEs: "Estrategia de Marketing",
@@ -11109,7 +11115,8 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "cuanto-cuesta-una-tienda-en-linea-en-mexico",
     cover: true,
     title: "How Much Does an Online Store Cost in Mexico? Platform, Fees and Hidden Costs",
-    titleEs: "¿Cuánto cuesta una tienda en línea en México? Plataforma, comisiones y costos ocultos",
+    titleEs:
+      "¿Cuánto cuesta una tienda en línea en México? Plataforma, comisiones y costos ocultos",
     category: "Web Design",
     categoryEs: "Diseño Web",
     excerpt:
@@ -11488,8 +11495,10 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "marketing-digital-para-broker-inmobiliario",
     cover: true,
     vertical: "inmobiliarias",
-    title: "How to Start Your Digital Marketing as a Real Estate Agent, in Stages and Without Wasting Money",
-    titleEs: "Cómo empezar tu marketing digital como broker inmobiliario, por etapas y sin tirar dinero",
+    title:
+      "How to Start Your Digital Marketing as a Real Estate Agent, in Stages and Without Wasting Money",
+    titleEs:
+      "Cómo empezar tu marketing digital como broker inmobiliario, por etapas y sin tirar dinero",
     category: "Real Estate Marketing",
     categoryEs: "Marketing Inmobiliario",
     excerpt:
@@ -12055,8 +12064,10 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "marketing-industrial-tijuana",
     cover: true,
-    title: "Marketing for Industrial Companies in Tijuana: Maquiladoras, Shipyards and Manufacturing",
-    titleEs: "Marketing para empresas industriales en Tijuana: maquiladoras, astilleros y manufactura",
+    title:
+      "Marketing for Industrial Companies in Tijuana: Maquiladoras, Shipyards and Manufacturing",
+    titleEs:
+      "Marketing para empresas industriales en Tijuana: maquiladoras, astilleros y manufactura",
     category: "Marketing Strategy",
     categoryEs: "Estrategia de Marketing",
     excerpt:
@@ -12446,8 +12457,10 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "responder-rapido-a-tus-leads",
     cover: true,
-    title: "The Lead You Don't Answer Within an Hour Goes Cold: How to Reply Fast Without Living on Your Phone",
-    titleEs: "El lead que no contestas en una hora se enfría: cómo responder rápido sin vivir pegado al celular",
+    title:
+      "The Lead You Don't Answer Within an Hour Goes Cold: How to Reply Fast Without Living on Your Phone",
+    titleEs:
+      "El lead que no contestas en una hora se enfría: cómo responder rápido sin vivir pegado al celular",
     category: "Automation",
     categoryEs: "Automatización",
     excerpt:
@@ -12839,8 +12852,10 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "mercado-inmobiliario-baja-california-los-cabos",
     cover: true,
     vertical: "inmobiliarias",
-    title: "Is Real Estate in Baja California and Los Cabos Growing? What the Data Says and What It Means for Your Marketing",
-    titleEs: "¿Está creciendo el mercado inmobiliario en Baja California y Los Cabos? Lo que dicen los datos y qué significa para tu marketing",
+    title:
+      "Is Real Estate in Baja California and Los Cabos Growing? What the Data Says and What It Means for Your Marketing",
+    titleEs:
+      "¿Está creciendo el mercado inmobiliario en Baja California y Los Cabos? Lo que dicen los datos y qué significa para tu marketing",
     category: "Real Estate Marketing",
     categoryEs: "Marketing Inmobiliario",
     excerpt:
@@ -13458,13 +13473,55 @@ export const BLOG_POSTS: BlogPost[] = [
           sourceEs:
             "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026) y el índice de exposición OIT-NASK, vía Expansión, agosto de 2026.",
           bars: [
-            { label: "Administrative support", labelEs: "Apoyo administrativo", value: 1210000, display: "1.21 million", displayEs: "1.21 millones" },
-            { label: "Accountants and auditors", labelEs: "Contadores y auditores", value: 470000, display: "470,000", displayEs: "470 mil" },
-            { label: "Secretaries", labelEs: "Secretariado", value: 398000, display: "398,000", displayEs: "398 mil" },
-            { label: "Reception and information", labelEs: "Recepción e información", value: 299000, display: "299,000", displayEs: "299 mil" },
-            { label: "Data entry", labelEs: "Captura de datos", value: 202000, display: "202,000", displayEs: "202 mil" },
-            { label: "Call centres", labelEs: "Centros de llamadas", value: 95000, display: "95,000", displayEs: "95 mil" },
-            { label: "Telephone sales", labelEs: "Ventas por teléfono", value: 49000, display: "49,000", displayEs: "49 mil" },
+            {
+              label: "Administrative support",
+              labelEs: "Apoyo administrativo",
+              value: 1210000,
+              display: "1.21 million",
+              displayEs: "1.21 millones",
+            },
+            {
+              label: "Accountants and auditors",
+              labelEs: "Contadores y auditores",
+              value: 470000,
+              display: "470,000",
+              displayEs: "470 mil",
+            },
+            {
+              label: "Secretaries",
+              labelEs: "Secretariado",
+              value: 398000,
+              display: "398,000",
+              displayEs: "398 mil",
+            },
+            {
+              label: "Reception and information",
+              labelEs: "Recepción e información",
+              value: 299000,
+              display: "299,000",
+              displayEs: "299 mil",
+            },
+            {
+              label: "Data entry",
+              labelEs: "Captura de datos",
+              value: 202000,
+              display: "202,000",
+              displayEs: "202 mil",
+            },
+            {
+              label: "Call centres",
+              labelEs: "Centros de llamadas",
+              value: 95000,
+              display: "95,000",
+              displayEs: "95 mil",
+            },
+            {
+              label: "Telephone sales",
+              labelEs: "Ventas por teléfono",
+              value: 49000,
+              display: "49,000",
+              displayEs: "49 mil",
+            },
           ],
         },
       },
@@ -13484,10 +13541,23 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "Workers in the most exposed occupations in Mexico, by sex",
           titleEs: "Trabajadores en las ocupaciones más expuestas en México, por sexo",
           source: "México, ¿cómo vamos?, with INEGI's ENOE (Q1 2026), via Expansión, August 2026.",
-          sourceEs: "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026), vía Expansión, agosto de 2026.",
+          sourceEs:
+            "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026), vía Expansión, agosto de 2026.",
           bars: [
-            { label: "Women", labelEs: "Mujeres", value: 1870000, display: "1.87 million", displayEs: "1.87 millones" },
-            { label: "Men", labelEs: "Hombres", value: 1060000, display: "1.06 million", displayEs: "1.06 millones" },
+            {
+              label: "Women",
+              labelEs: "Mujeres",
+              value: 1870000,
+              display: "1.87 million",
+              displayEs: "1.87 millones",
+            },
+            {
+              label: "Men",
+              labelEs: "Hombres",
+              value: 1060000,
+              display: "1.06 million",
+              displayEs: "1.06 millones",
+            },
           ],
         },
       },
@@ -13505,14 +13575,41 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         chart: {
           title: "Informality by level of AI exposure in Mexico (share of informal workers)",
-          titleEs: "Informalidad según el nivel de exposición a la IA en México (porcentaje de trabajadores informales)",
-          source: "México, ¿cómo vamos?, with INEGI's ENOE (Q1 2026) and the ILO-NASK index, via Expansión, August 2026.",
-          sourceEs: "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026) y el índice OIT-NASK, vía Expansión, agosto de 2026.",
+          titleEs:
+            "Informalidad según el nivel de exposición a la IA en México (porcentaje de trabajadores informales)",
+          source:
+            "México, ¿cómo vamos?, with INEGI's ENOE (Q1 2026) and the ILO-NASK index, via Expansión, August 2026.",
+          sourceEs:
+            "México, ¿cómo vamos?, con la ENOE del INEGI (1T 2026) y el índice OIT-NASK, vía Expansión, agosto de 2026.",
           bars: [
-            { label: "Level 1 (least exposed)", labelEs: "Nivel 1 (menos expuesto)", value: 66, display: "66%", displayEs: "66%" },
-            { label: "Level 2", labelEs: "Nivel 2", value: 40.2, display: "40.2%", displayEs: "40.2%" },
-            { label: "Level 3", labelEs: "Nivel 3", value: 19.8, display: "19.8%", displayEs: "19.8%" },
-            { label: "Level 4 (most exposed)", labelEs: "Nivel 4 (más expuesto)", value: 16.5, display: "16.5%", displayEs: "16.5%" },
+            {
+              label: "Level 1 (least exposed)",
+              labelEs: "Nivel 1 (menos expuesto)",
+              value: 66,
+              display: "66%",
+              displayEs: "66%",
+            },
+            {
+              label: "Level 2",
+              labelEs: "Nivel 2",
+              value: 40.2,
+              display: "40.2%",
+              displayEs: "40.2%",
+            },
+            {
+              label: "Level 3",
+              labelEs: "Nivel 3",
+              value: 19.8,
+              display: "19.8%",
+              displayEs: "19.8%",
+            },
+            {
+              label: "Level 4 (most exposed)",
+              labelEs: "Nivel 4 (más expuesto)",
+              value: 16.5,
+              display: "16.5%",
+              displayEs: "16.5%",
+            },
           ],
         },
       },
@@ -13534,9 +13631,27 @@ export const BLOG_POSTS: BlogPost[] = [
           source: "World Economic Forum, Future of Jobs Report 2025.",
           sourceEs: "Foro Económico Mundial, Reporte sobre el Futuro del Empleo 2025.",
           bars: [
-            { label: "Jobs created", labelEs: "Empleos creados", value: 170, display: "170 million (14%)", displayEs: "170 millones (14%)" },
-            { label: "Jobs displaced", labelEs: "Empleos desplazados", value: 92, display: "92 million (8%)", displayEs: "92 millones (8%)" },
-            { label: "Net growth", labelEs: "Crecimiento neto", value: 78, display: "78 million (7%)", displayEs: "78 millones (7%)" },
+            {
+              label: "Jobs created",
+              labelEs: "Empleos creados",
+              value: 170,
+              display: "170 million (14%)",
+              displayEs: "170 millones (14%)",
+            },
+            {
+              label: "Jobs displaced",
+              labelEs: "Empleos desplazados",
+              value: 92,
+              display: "92 million (8%)",
+              displayEs: "92 millones (8%)",
+            },
+            {
+              label: "Net growth",
+              labelEs: "Crecimiento neto",
+              value: 78,
+              display: "78 million (7%)",
+              displayEs: "78 millones (7%)",
+            },
           ],
         },
       },
@@ -13705,13 +13820,39 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "AI voice cloning scams: survey results",
           titleEs: "Estafas con voz clonada por IA: resultados de la encuesta",
-          source: "McAfee, survey of 7,000 people in nine countries (fieldwork January–February 2023).",
-          sourceEs: "McAfee, encuesta a 7,000 personas en nueve países (levantamiento enero–febrero de 2023).",
+          source:
+            "McAfee, survey of 7,000 people in nine countries (fieldwork January–February 2023).",
+          sourceEs:
+            "McAfee, encuesta a 7,000 personas en nueve países (levantamiento enero–febrero de 2023).",
           bars: [
-            { label: "Victims who lost money", labelEs: "Víctimas que perdieron dinero", value: 77, display: "77%", displayEs: "77%" },
-            { label: "Not sure they can tell a cloned voice", labelEs: "No están seguros de distinguir una voz clonada", value: 70, display: "70%", displayEs: "70%" },
-            { label: "Share their voice online every week", labelEs: "Comparten su voz en internet cada semana", value: 53, display: "53%", displayEs: "53%" },
-            { label: "Experienced a scam or know someone who did", labelEs: "Vivieron una estafa o conocen a alguien", value: 25, display: "25%", displayEs: "25%" },
+            {
+              label: "Victims who lost money",
+              labelEs: "Víctimas que perdieron dinero",
+              value: 77,
+              display: "77%",
+              displayEs: "77%",
+            },
+            {
+              label: "Not sure they can tell a cloned voice",
+              labelEs: "No están seguros de distinguir una voz clonada",
+              value: 70,
+              display: "70%",
+              displayEs: "70%",
+            },
+            {
+              label: "Share their voice online every week",
+              labelEs: "Comparten su voz en internet cada semana",
+              value: 53,
+              display: "53%",
+              displayEs: "53%",
+            },
+            {
+              label: "Experienced a scam or know someone who did",
+              labelEs: "Vivieron una estafa o conocen a alguien",
+              value: 25,
+              display: "25%",
+              displayEs: "25%",
+            },
           ],
         },
       },
@@ -14209,11 +14350,41 @@ export const BLOG_POSTS: BlogPost[] = [
           source: "IMCO, Compara Carreras 2025, via El Imparcial, November 2025.",
           sourceEs: "IMCO, Compara Carreras 2025, vía El Imparcial, noviembre de 2025.",
           bars: [
-            { label: "Information and communication technologies", labelEs: "Tecnologías de la información y la comunicación", value: 25761, display: "$25,761", displayEs: "$25,761" },
-            { label: "General medicine", labelEs: "Medicina general", value: 25732, display: "$25,732", displayEs: "$25,732" },
-            { label: "Public administration", labelEs: "Administración pública", value: 25678, display: "$25,678", displayEs: "$25,678" },
-            { label: "Political science", labelEs: "Ciencias políticas", value: 25288, display: "$25,288", displayEs: "$25,288" },
-            { label: "Construction and civil engineering", labelEs: "Construcción e ingeniería civil", value: 25259, display: "$25,259", displayEs: "$25,259" },
+            {
+              label: "Information and communication technologies",
+              labelEs: "Tecnologías de la información y la comunicación",
+              value: 25761,
+              display: "$25,761",
+              displayEs: "$25,761",
+            },
+            {
+              label: "General medicine",
+              labelEs: "Medicina general",
+              value: 25732,
+              display: "$25,732",
+              displayEs: "$25,732",
+            },
+            {
+              label: "Public administration",
+              labelEs: "Administración pública",
+              value: 25678,
+              display: "$25,678",
+              displayEs: "$25,678",
+            },
+            {
+              label: "Political science",
+              labelEs: "Ciencias políticas",
+              value: 25288,
+              display: "$25,288",
+              displayEs: "$25,288",
+            },
+            {
+              label: "Construction and civil engineering",
+              labelEs: "Construcción e ingeniería civil",
+              value: 25259,
+              display: "$25,259",
+              displayEs: "$25,259",
+            },
           ],
         },
       },
@@ -14535,9 +14706,27 @@ export const BLOG_POSTS: BlogPost[] = [
           source: "Gartner, June 2025, via SD Times.",
           sourceEs: "Gartner, junio de 2025, vía SD Times.",
           bars: [
-            { label: "Agentic AI projects cancelled by end of 2027", labelEs: "Proyectos con agentes cancelados antes de que termine 2027", value: 40, display: "Over 40%", displayEs: "Más de 40%" },
-            { label: "Enterprise software with agentic AI by 2028", labelEs: "Software empresarial con agentes en 2028", value: 33, display: "33%", displayEs: "33%" },
-            { label: "Day-to-day work decisions made autonomously by 2028", labelEs: "Decisiones de trabajo diarias tomadas de forma autónoma en 2028", value: 15, display: "15%", displayEs: "15%" },
+            {
+              label: "Agentic AI projects cancelled by end of 2027",
+              labelEs: "Proyectos con agentes cancelados antes de que termine 2027",
+              value: 40,
+              display: "Over 40%",
+              displayEs: "Más de 40%",
+            },
+            {
+              label: "Enterprise software with agentic AI by 2028",
+              labelEs: "Software empresarial con agentes en 2028",
+              value: 33,
+              display: "33%",
+              displayEs: "33%",
+            },
+            {
+              label: "Day-to-day work decisions made autonomously by 2028",
+              labelEs: "Decisiones de trabajo diarias tomadas de forma autónoma en 2028",
+              value: 15,
+              display: "15%",
+              displayEs: "15%",
+            },
           ],
         },
       },
@@ -14706,14 +14895,46 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "Monthly price of the ChatGPT plans that include dots (USD)",
           titleEs: "Precio mensual de los planes de ChatGPT que incluyen dots (dólares)",
-          source: "OpenAI list prices compiled by AIToolsReview, 29 September 2026. Business Premium is per seat with monthly billing. Plus is shown for reference and does not include dots.",
-          sourceEs: "Precios de lista de OpenAI recopilados por AIToolsReview, 29 de septiembre de 2026. Business Premium es por usuario con pago mensual. Plus se muestra como referencia y no incluye dots.",
+          source:
+            "OpenAI list prices compiled by AIToolsReview, 29 September 2026. Business Premium is per seat with monthly billing. Plus is shown for reference and does not include dots.",
+          sourceEs:
+            "Precios de lista de OpenAI recopilados por AIToolsReview, 29 de septiembre de 2026. Business Premium es por usuario con pago mensual. Plus se muestra como referencia y no incluye dots.",
           bars: [
-            { label: "Pro 500", labelEs: "Pro 500", value: 500, display: "$500", displayEs: "$500" },
-            { label: "Pro 200", labelEs: "Pro 200", value: 200, display: "$200", displayEs: "$200" },
-            { label: "Business Premium (per seat)", labelEs: "Business Premium (por usuario)", value: 125, display: "$125", displayEs: "$125" },
-            { label: "Pro 100", labelEs: "Pro 100", value: 100, display: "$100", displayEs: "$100" },
-            { label: "Plus (no dots)", labelEs: "Plus (sin dots)", value: 20, display: "$20", displayEs: "$20" },
+            {
+              label: "Pro 500",
+              labelEs: "Pro 500",
+              value: 500,
+              display: "$500",
+              displayEs: "$500",
+            },
+            {
+              label: "Pro 200",
+              labelEs: "Pro 200",
+              value: 200,
+              display: "$200",
+              displayEs: "$200",
+            },
+            {
+              label: "Business Premium (per seat)",
+              labelEs: "Business Premium (por usuario)",
+              value: 125,
+              display: "$125",
+              displayEs: "$125",
+            },
+            {
+              label: "Pro 100",
+              labelEs: "Pro 100",
+              value: 100,
+              display: "$100",
+              displayEs: "$100",
+            },
+            {
+              label: "Plus (no dots)",
+              labelEs: "Plus (sin dots)",
+              value: 20,
+              display: "$20",
+              displayEs: "$20",
+            },
           ],
         },
       },
@@ -14908,12 +15129,32 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "Lowest monthly price to use each personal agent (USD)",
           titleEs: "Precio mensual más bajo para usar cada agente personal (dólares)",
-          source: "Meta (Muse free tier, United States); Anthropic via Tech Insider (Claude Pro, US preview with waiting list); OpenAI via AIToolsReview (ChatGPT Pro 100). Prices as of October 2026.",
-          sourceEs: "Meta (plan gratuito de Muse, Estados Unidos); Anthropic vía Tech Insider (Claude Pro, vista previa en Estados Unidos con lista de espera); OpenAI vía AIToolsReview (ChatGPT Pro 100). Precios a octubre de 2026.",
+          source:
+            "Meta (Muse free tier, United States); Anthropic via Tech Insider (Claude Pro, US preview with waiting list); OpenAI via AIToolsReview (ChatGPT Pro 100). Prices as of October 2026.",
+          sourceEs:
+            "Meta (plan gratuito de Muse, Estados Unidos); Anthropic vía Tech Insider (Claude Pro, vista previa en Estados Unidos con lista de espera); OpenAI vía AIToolsReview (ChatGPT Pro 100). Precios a octubre de 2026.",
           bars: [
-            { label: "ChatGPT Dots (Pro 100)", labelEs: "ChatGPT Dots (Pro 100)", value: 100, display: "$100", displayEs: "$100" },
-            { label: "Claude Duet (Claude Pro)", labelEs: "Claude Duet (Claude Pro)", value: 20, display: "$20", displayEs: "$20" },
-            { label: "Meta Muse (free tier)", labelEs: "Meta Muse (plan gratuito)", value: 0, display: "$0", displayEs: "$0" },
+            {
+              label: "ChatGPT Dots (Pro 100)",
+              labelEs: "ChatGPT Dots (Pro 100)",
+              value: 100,
+              display: "$100",
+              displayEs: "$100",
+            },
+            {
+              label: "Claude Duet (Claude Pro)",
+              labelEs: "Claude Duet (Claude Pro)",
+              value: 20,
+              display: "$20",
+              displayEs: "$20",
+            },
+            {
+              label: "Meta Muse (free tier)",
+              labelEs: "Meta Muse (plan gratuito)",
+              value: 0,
+              display: "$0",
+              displayEs: "$0",
+            },
           ],
         },
       },
@@ -14945,11 +15186,25 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "Apps and connectors each agent can use, according to each company",
           titleEs: "Apps y conectores que puede usar cada agente, según cada empresa",
-          source: "Anthropic via TechCrunch (Claude Duet, Claude Marketplace) and OpenAI via Tom's Guide and DataCamp (dots). Meta did not publish a comparable figure for Muse.",
-          sourceEs: "Anthropic vía TechCrunch (Claude Duet, Claude Marketplace) y OpenAI vía Tom's Guide y DataCamp (dots). Meta no publicó una cifra comparable para Muse.",
+          source:
+            "Anthropic via TechCrunch (Claude Duet, Claude Marketplace) and OpenAI via Tom's Guide and DataCamp (dots). Meta did not publish a comparable figure for Muse.",
+          sourceEs:
+            "Anthropic vía TechCrunch (Claude Duet, Claude Marketplace) y OpenAI vía Tom's Guide y DataCamp (dots). Meta no publicó una cifra comparable para Muse.",
           bars: [
-            { label: "Claude Duet", labelEs: "Claude Duet", value: 6000, display: "6,000+", displayEs: "Más de 6,000" },
-            { label: "ChatGPT Dots", labelEs: "ChatGPT Dots", value: 4000, display: "4,000+", displayEs: "Más de 4,000" },
+            {
+              label: "Claude Duet",
+              labelEs: "Claude Duet",
+              value: 6000,
+              display: "6,000+",
+              displayEs: "Más de 6,000",
+            },
+            {
+              label: "ChatGPT Dots",
+              labelEs: "ChatGPT Dots",
+              value: 4000,
+              display: "4,000+",
+              displayEs: "Más de 4,000",
+            },
           ],
         },
       },
@@ -15079,12 +15334,32 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "Meta Muse plans (monthly price, USD)",
           titleEs: "Planes de Meta Muse (precio mensual, dólares)",
-          source: "Meta, via Wikipedia's Muse article, October 2026. The free tier covers most needs, according to Meta.",
-          sourceEs: "Meta, vía el artículo de Wikipedia sobre Muse, octubre de 2026. Según Meta, el plan gratuito cubre la mayoría de las necesidades.",
+          source:
+            "Meta, via Wikipedia's Muse article, October 2026. The free tier covers most needs, according to Meta.",
+          sourceEs:
+            "Meta, vía el artículo de Wikipedia sobre Muse, octubre de 2026. Según Meta, el plan gratuito cubre la mayoría de las necesidades.",
           bars: [
-            { label: "Top subscription", labelEs: "Suscripción mayor", value: 100, display: "$100", displayEs: "$100" },
-            { label: "Basic subscription", labelEs: "Suscripción básica", value: 20, display: "$20", displayEs: "$20" },
-            { label: "Free tier", labelEs: "Plan gratuito", value: 0, display: "$0", displayEs: "$0" },
+            {
+              label: "Top subscription",
+              labelEs: "Suscripción mayor",
+              value: 100,
+              display: "$100",
+              displayEs: "$100",
+            },
+            {
+              label: "Basic subscription",
+              labelEs: "Suscripción básica",
+              value: 20,
+              display: "$20",
+              displayEs: "$20",
+            },
+            {
+              label: "Free tier",
+              labelEs: "Plan gratuito",
+              value: 0,
+              display: "$0",
+              displayEs: "$0",
+            },
           ],
         },
       },
@@ -15196,7 +15471,8 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "seo-avanzado-herramientas-y-auditoria",
     cover: true,
     title: "SEO Like a Pro: The Tools, a 60-Minute Audit and How to Tell if It Is Working",
-    titleEs: "SEO como profesional: las herramientas, una auditoría de 60 minutos y cómo saber si funciona",
+    titleEs:
+      "SEO como profesional: las herramientas, una auditoría de 60 minutos y cómo saber si funciona",
     category: "SEO",
     categoryEs: "SEO",
     excerpt:
@@ -15230,9 +15506,27 @@ export const BLOG_POSTS: BlogPost[] = [
           source: "StatCounter Global Stats, all platforms.",
           sourceEs: "StatCounter Global Stats, todas las plataformas.",
           bars: [
-            { label: "Google", labelEs: "Google", value: 86.55, display: "86.55%", displayEs: "86.55%" },
-            { label: "Bing", labelEs: "Bing", value: 10.66, display: "10.66%", displayEs: "10.66%" },
-            { label: "Yahoo!", labelEs: "Yahoo!", value: 2.15, display: "2.15%", displayEs: "2.15%" },
+            {
+              label: "Google",
+              labelEs: "Google",
+              value: 86.55,
+              display: "86.55%",
+              displayEs: "86.55%",
+            },
+            {
+              label: "Bing",
+              labelEs: "Bing",
+              value: 10.66,
+              display: "10.66%",
+              displayEs: "10.66%",
+            },
+            {
+              label: "Yahoo!",
+              labelEs: "Yahoo!",
+              value: 2.15,
+              display: "2.15%",
+              displayEs: "2.15%",
+            },
             { label: "Others", labelEs: "Otros", value: 0.6, display: "0.60%", displayEs: "0.60%" },
           ],
         },
@@ -15254,7 +15548,8 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "How to read Search Console: what each combination means",
           titleEs: "Cómo leer Search Console: qué significa cada combinación",
           note: "Aphelion's working guide. Compare 28-day periods and look at trends, not single days.",
-          noteEs: "Guía de trabajo de Aphelion. Compara periodos de 28 días y fíjate en tendencias, no en días sueltos.",
+          noteEs:
+            "Guía de trabajo de Aphelion. Compara periodos de 28 días y fíjate en tendencias, no en días sueltos.",
           columns: [
             { label: "What you see", labelEs: "Lo que ves" },
             { label: "What it usually means", labelEs: "Lo que suele significar" },
@@ -15265,40 +15560,72 @@ export const BLOG_POSTS: BlogPost[] = [
               label: "Many impressions, low CTR",
               labelEs: "Muchas impresiones, CTR bajo",
               cells: [
-                { text: "You appear, but your result does not convince", textEs: "Apareces, pero tu resultado no convence" },
-                { text: "Rewrite the title and description around what the person searched", textEs: "Reescribe título y descripción alrededor de lo que la persona buscó" },
+                {
+                  text: "You appear, but your result does not convince",
+                  textEs: "Apareces, pero tu resultado no convence",
+                },
+                {
+                  text: "Rewrite the title and description around what the person searched",
+                  textEs: "Reescribe título y descripción alrededor de lo que la persona buscó",
+                },
               ],
             },
             {
               label: "Position 8 to 20",
               labelEs: "Posición 8 a 20",
               cells: [
-                { text: "Google sees you as relevant, but not the best", textEs: "Google te considera relevante, pero no el mejor" },
-                { text: "Strengthen the content, answer more questions and add internal links", textEs: "Refuerza el contenido, contesta más dudas y agrega enlaces internos" },
+                {
+                  text: "Google sees you as relevant, but not the best",
+                  textEs: "Google te considera relevante, pero no el mejor",
+                },
+                {
+                  text: "Strengthen the content, answer more questions and add internal links",
+                  textEs: "Refuerza el contenido, contesta más dudas y agrega enlaces internos",
+                },
               ],
             },
             {
               label: "Clicks fall, position stable",
               labelEs: "Clics bajan, posición estable",
               cells: [
-                { text: "Fewer people searched: season or trend", textEs: "Menos gente buscó: temporada o tendencia" },
-                { text: "Check Google Trends before changing anything", textEs: "Revisa Google Trends antes de cambiar algo" },
+                {
+                  text: "Fewer people searched: season or trend",
+                  textEs: "Menos gente buscó: temporada o tendencia",
+                },
+                {
+                  text: "Check Google Trends before changing anything",
+                  textEs: "Revisa Google Trends antes de cambiar algo",
+                },
               ],
             },
             {
               label: "Position falls on several pages",
               labelEs: "La posición cae en varias páginas",
               cells: [
-                { text: "A technical problem, a competitor or an algorithm update", textEs: "Un problema técnico, un competidor o una actualización del algoritmo" },
-                { text: "Check indexing, recent site changes and who now ranks above you", textEs: "Revisa indexación, cambios recientes en tu sitio y quién está ahora arriba" },
+                {
+                  text: "A technical problem, a competitor or an algorithm update",
+                  textEs: "Un problema técnico, un competidor o una actualización del algoritmo",
+                },
+                {
+                  text: "Check indexing, recent site changes and who now ranks above you",
+                  textEs:
+                    "Revisa indexación, cambios recientes en tu sitio y quién está ahora arriba",
+                },
               ],
             },
             {
               label: "Important page with no impressions",
               labelEs: "Página importante sin impresiones",
               cells: [
-                { text: "Google has not indexed it or does not understand what it is for", textEs: "Google no la ha indexado o no entiende para qué es" },
-                { text: "Inspect the URL in Search Console and link to it from your main pages", textEs: "Inspecciona la URL en Search Console y enlázala desde tus páginas principales" },
+                {
+                  text: "Google has not indexed it or does not understand what it is for",
+                  textEs: "Google no la ha indexado o no entiende para qué es",
+                },
+                {
+                  text: "Inspect the URL in Search Console and link to it from your main pages",
+                  textEs:
+                    "Inspecciona la URL en Search Console y enlázala desde tus páginas principales",
+                },
               ],
             },
           ],
@@ -15334,7 +15661,8 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "Core Web Vitals: the three thresholds Google uses",
           titleEs: "Core Web Vitals: los tres umbrales que usa Google",
           note: "Evaluated at the 75th percentile of real visits. Thresholds as published in October 2026.",
-          noteEs: "Se evalúan en el percentil 75 de las visitas reales. Umbrales publicados a octubre de 2026.",
+          noteEs:
+            "Se evalúan en el percentil 75 de las visitas reales. Umbrales publicados a octubre de 2026.",
           columns: [
             { label: "Metric", labelEs: "Métrica" },
             { label: "What it measures", labelEs: "Qué mide" },
@@ -15346,7 +15674,10 @@ export const BLOG_POSTS: BlogPost[] = [
               label: "LCP",
               labelEs: "LCP",
               cells: [
-                { text: "How long the main content takes to appear", textEs: "Cuánto tarda en aparecer el contenido principal" },
+                {
+                  text: "How long the main content takes to appear",
+                  textEs: "Cuánto tarda en aparecer el contenido principal",
+                },
                 { text: "Under 2.5 s", textEs: "Menos de 2.5 s" },
                 { text: "Over 4 s", textEs: "Más de 4 s" },
               ],
@@ -15355,7 +15686,10 @@ export const BLOG_POSTS: BlogPost[] = [
               label: "INP",
               labelEs: "INP",
               cells: [
-                { text: "How quickly the page reacts when you tap or type", textEs: "Qué tan rápido reacciona la página cuando tocas o escribes" },
+                {
+                  text: "How quickly the page reacts when you tap or type",
+                  textEs: "Qué tan rápido reacciona la página cuando tocas o escribes",
+                },
                 { text: "Under 200 ms", textEs: "Menos de 200 ms" },
                 { text: "Over 500 ms", textEs: "Más de 500 ms" },
               ],
@@ -15364,7 +15698,10 @@ export const BLOG_POSTS: BlogPost[] = [
               label: "CLS",
               labelEs: "CLS",
               cells: [
-                { text: "How much the layout jumps while loading", textEs: "Cuánto brinca el diseño mientras carga" },
+                {
+                  text: "How much the layout jumps while loading",
+                  textEs: "Cuánto brinca el diseño mientras carga",
+                },
                 { text: "Under 0.1", textEs: "Menos de 0.1" },
                 { text: "Over 0.25", textEs: "Más de 0.25" },
               ],
@@ -15400,13 +15737,39 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "Cheapest monthly plan of the big SEO suites (USD)",
           titleEs: "Plan mensual más barato de las grandes suites de SEO (dólares)",
-          source: "Published list prices compiled by Konabayev, checked August–October 2026. Search Console is free.",
-          sourceEs: "Precios de lista publicados, recopilados por Konabayev, revisados entre agosto y octubre de 2026. Search Console es gratis.",
+          source:
+            "Published list prices compiled by Konabayev, checked August–October 2026. Search Console is free.",
+          sourceEs:
+            "Precios de lista publicados, recopilados por Konabayev, revisados entre agosto y octubre de 2026. Search Console es gratis.",
           bars: [
-            { label: "Semrush (SEO, monthly billing)", labelEs: "Semrush (SEO, pago mensual)", value: 139, display: "$139", displayEs: "$139" },
-            { label: "Ahrefs (Lite)", labelEs: "Ahrefs (Lite)", value: 129, display: "$129", displayEs: "$129" },
-            { label: "Moz Pro (Starter)", labelEs: "Moz Pro (Starter)", value: 49, display: "$49", displayEs: "$49" },
-            { label: "Google Search Console", labelEs: "Google Search Console", value: 0, display: "Free", displayEs: "Gratis" },
+            {
+              label: "Semrush (SEO, monthly billing)",
+              labelEs: "Semrush (SEO, pago mensual)",
+              value: 139,
+              display: "$139",
+              displayEs: "$139",
+            },
+            {
+              label: "Ahrefs (Lite)",
+              labelEs: "Ahrefs (Lite)",
+              value: 129,
+              display: "$129",
+              displayEs: "$129",
+            },
+            {
+              label: "Moz Pro (Starter)",
+              labelEs: "Moz Pro (Starter)",
+              value: 49,
+              display: "$49",
+              displayEs: "$49",
+            },
+            {
+              label: "Google Search Console",
+              labelEs: "Google Search Console",
+              value: 0,
+              display: "Free",
+              displayEs: "Gratis",
+            },
           ],
         },
         diagram: {
@@ -15424,15 +15787,24 @@ export const BLOG_POSTS: BlogPost[] = [
               labelEs: "Informativa",
               cells: [
                 { text: "how long does SEO take", textEs: "cuánto tarda el SEO" },
-                { text: "Guide or article that answers in depth", textEs: "Guía o artículo que responde a fondo" },
+                {
+                  text: "Guide or article that answers in depth",
+                  textEs: "Guía o artículo que responde a fondo",
+                },
               ],
             },
             {
               label: "Commercial",
               labelEs: "Comercial",
               cells: [
-                { text: "agency or freelancer for marketing", textEs: "agencia o freelancer de marketing" },
-                { text: "Comparison with pros, cons and prices", textEs: "Comparativa con pros, contras y precios" },
+                {
+                  text: "agency or freelancer for marketing",
+                  textEs: "agencia o freelancer de marketing",
+                },
+                {
+                  text: "Comparison with pros, cons and prices",
+                  textEs: "Comparativa con pros, contras y precios",
+                },
               ],
             },
             {
@@ -15440,7 +15812,10 @@ export const BLOG_POSTS: BlogPost[] = [
               labelEs: "Transaccional",
               cells: [
                 { text: "website design quote", textEs: "cotizar página web" },
-                { text: "Service page with price range and form", textEs: "Página de servicio con rango de precio y formulario" },
+                {
+                  text: "Service page with price range and form",
+                  textEs: "Página de servicio con rango de precio y formulario",
+                },
               ],
             },
             {
@@ -15448,7 +15823,10 @@ export const BLOG_POSTS: BlogPost[] = [
               labelEs: "Local",
               cells: [
                 { text: "dentist in Ensenada", textEs: "dentista en Ensenada" },
-                { text: "Google Business Profile and a page per location", textEs: "Perfil de Google y una página por ubicación" },
+                {
+                  text: "Google Business Profile and a page per location",
+                  textEs: "Perfil de Google y una página por ubicación",
+                },
               ],
             },
           ],
@@ -15473,12 +15851,44 @@ export const BLOG_POSTS: BlogPost[] = [
           note: "Aphelion's audit order. Write down findings first, prioritise after.",
           noteEs: "Orden de auditoría de Aphelion. Primero anota, después prioriza.",
           steps: [
-            { label: "Indexing (10 min)", labelEs: "Indexación (10 min)", detail: "Search Console Pages report and inspection of your five key URLs.", detailEs: "Informe de Páginas de Search Console e inspección de tus cinco URLs clave." },
-            { label: "Crawl (15 min)", labelEs: "Rastreo (15 min)", detail: "Screaming Frog: 404s, redirects, titles, H1, noindex, heavy images.", detailEs: "Screaming Frog: 404, redirecciones, títulos, H1, noindex, imágenes pesadas." },
-            { label: "Speed (10 min)", labelEs: "Velocidad (10 min)", detail: "PageSpeed Insights on your home and your two most visited pages.", detailEs: "PageSpeed Insights en tu inicio y tus dos páginas más visitadas." },
-            { label: "Opportunities (10 min)", labelEs: "Oportunidades (10 min)", detail: "Searches with low CTR and pages in positions 8 to 20.", detailEs: "Búsquedas con CTR bajo y páginas en posiciones 8 a 20." },
-            { label: "Intent (10 min)", labelEs: "Intención (10 min)", detail: "Does each key page match what people really search for?", detailEs: "¿Cada página clave coincide con lo que la gente de verdad busca?" },
-            { label: "Local (5 min)", labelEs: "Local (5 min)", detail: "Google Business Profile: category, hours, photos, recent reviews.", detailEs: "Perfil de Google: categoría, horarios, fotos, reseñas recientes." },
+            {
+              label: "Indexing (10 min)",
+              labelEs: "Indexación (10 min)",
+              detail: "Search Console Pages report and inspection of your five key URLs.",
+              detailEs:
+                "Informe de Páginas de Search Console e inspección de tus cinco URLs clave.",
+            },
+            {
+              label: "Crawl (15 min)",
+              labelEs: "Rastreo (15 min)",
+              detail: "Screaming Frog: 404s, redirects, titles, H1, noindex, heavy images.",
+              detailEs:
+                "Screaming Frog: 404, redirecciones, títulos, H1, noindex, imágenes pesadas.",
+            },
+            {
+              label: "Speed (10 min)",
+              labelEs: "Velocidad (10 min)",
+              detail: "PageSpeed Insights on your home and your two most visited pages.",
+              detailEs: "PageSpeed Insights en tu inicio y tus dos páginas más visitadas.",
+            },
+            {
+              label: "Opportunities (10 min)",
+              labelEs: "Oportunidades (10 min)",
+              detail: "Searches with low CTR and pages in positions 8 to 20.",
+              detailEs: "Búsquedas con CTR bajo y páginas en posiciones 8 a 20.",
+            },
+            {
+              label: "Intent (10 min)",
+              labelEs: "Intención (10 min)",
+              detail: "Does each key page match what people really search for?",
+              detailEs: "¿Cada página clave coincide con lo que la gente de verdad busca?",
+            },
+            {
+              label: "Local (5 min)",
+              labelEs: "Local (5 min)",
+              detail: "Google Business Profile: category, hours, photos, recent reviews.",
+              detailEs: "Perfil de Google: categoría, horarios, fotos, reseñas recientes.",
+            },
           ],
         },
       },
@@ -15623,12 +16033,35 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "A Meta Ads funnel: audience, message and goal for each stage",
           titleEs: "Un embudo de Meta Ads: público, mensaje y objetivo de cada etapa",
           note: "Aphelion's working structure. A common starting point is to put most of the budget in discovery and adjust as the remarketing audiences grow; it is not a fixed rule.",
-          noteEs: "Estructura de trabajo de Aphelion. Un punto de partida común es poner la mayor parte del presupuesto en descubrimiento y ajustar conforme crecen los públicos de remarketing; no es una regla fija.",
+          noteEs:
+            "Estructura de trabajo de Aphelion. Un punto de partida común es poner la mayor parte del presupuesto en descubrimiento y ajustar conforme crecen los públicos de remarketing; no es una regla fija.",
           steps: [
-            { label: "Discovery", labelEs: "Descubrimiento", detail: "Broad audience · short Reels · goal: views and reach", detailEs: "Público amplio · Reels cortos · objetivo: vistas y alcance" },
-            { label: "Consideration", labelEs: "Consideración", detail: "Video viewers and visitors · testimonials and demos · goal: visits and messages", detailEs: "Quien vio videos y visitó · testimonios y demostraciones · objetivo: visitas y mensajes" },
-            { label: "Conversion", labelEs: "Conversión", detail: "Warm audiences · concrete offer · goal: leads or sales", detailEs: "Públicos tibios · oferta concreta · objetivo: prospectos o ventas" },
-            { label: "Retention", labelEs: "Retención", detail: "Customers · new products, referrals · goal: repeat purchase", detailEs: "Clientes · productos nuevos, referidos · objetivo: recompra" },
+            {
+              label: "Discovery",
+              labelEs: "Descubrimiento",
+              detail: "Broad audience · short Reels · goal: views and reach",
+              detailEs: "Público amplio · Reels cortos · objetivo: vistas y alcance",
+            },
+            {
+              label: "Consideration",
+              labelEs: "Consideración",
+              detail:
+                "Video viewers and visitors · testimonials and demos · goal: visits and messages",
+              detailEs:
+                "Quien vio videos y visitó · testimonios y demostraciones · objetivo: visitas y mensajes",
+            },
+            {
+              label: "Conversion",
+              labelEs: "Conversión",
+              detail: "Warm audiences · concrete offer · goal: leads or sales",
+              detailEs: "Públicos tibios · oferta concreta · objetivo: prospectos o ventas",
+            },
+            {
+              label: "Retention",
+              labelEs: "Retención",
+              detail: "Customers · new products, referrals · goal: repeat purchase",
+              detailEs: "Clientes · productos nuevos, referidos · objetivo: recompra",
+            },
           ],
         },
       },
@@ -15649,12 +16082,42 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "How to run an A/B test in Meta Ads",
           titleEs: "Cómo hacer una prueba A/B en Meta Ads",
           steps: [
-            { label: "Write a hypothesis", labelEs: "Escribe una hipótesis", detail: "“A hook with the price will lower the cost per lead.”", detailEs: "“Un gancho con el precio va a bajar el costo por prospecto.”" },
-            { label: "Change one variable", labelEs: "Cambia una sola variable", detail: "Same audience, same budget, same dates; only the hook changes.", detailEs: "Mismo público, mismo presupuesto, mismas fechas; solo cambia el gancho." },
-            { label: "Let it run 7+ days", labelEs: "Déjala correr 7+ días", detail: "Longer if your customers take more than a week to decide.", detailEs: "Más si tus clientes tardan más de una semana en decidir." },
-            { label: "Do not touch it", labelEs: "No la toques", detail: "Edits during the test invalidate the comparison.", detailEs: "Editar durante la prueba invalida la comparación." },
-            { label: "Read cost per result", labelEs: "Lee el costo por resultado", detail: "Not likes or clicks: leads, messages or sales.", detailEs: "No likes ni clics: prospectos, mensajes o ventas." },
-            { label: "Scale or discard", labelEs: "Escala o descarta", detail: "Move budget to the winner and design the next test.", detailEs: "Mueve presupuesto al ganador y diseña la siguiente prueba." },
+            {
+              label: "Write a hypothesis",
+              labelEs: "Escribe una hipótesis",
+              detail: "“A hook with the price will lower the cost per lead.”",
+              detailEs: "“Un gancho con el precio va a bajar el costo por prospecto.”",
+            },
+            {
+              label: "Change one variable",
+              labelEs: "Cambia una sola variable",
+              detail: "Same audience, same budget, same dates; only the hook changes.",
+              detailEs: "Mismo público, mismo presupuesto, mismas fechas; solo cambia el gancho.",
+            },
+            {
+              label: "Let it run 7+ days",
+              labelEs: "Déjala correr 7+ días",
+              detail: "Longer if your customers take more than a week to decide.",
+              detailEs: "Más si tus clientes tardan más de una semana en decidir.",
+            },
+            {
+              label: "Do not touch it",
+              labelEs: "No la toques",
+              detail: "Edits during the test invalidate the comparison.",
+              detailEs: "Editar durante la prueba invalida la comparación.",
+            },
+            {
+              label: "Read cost per result",
+              labelEs: "Lee el costo por resultado",
+              detail: "Not likes or clicks: leads, messages or sales.",
+              detailEs: "No likes ni clics: prospectos, mensajes o ventas.",
+            },
+            {
+              label: "Scale or discard",
+              labelEs: "Escala o descarta",
+              detail: "Move budget to the winner and design the next test.",
+              detailEs: "Mueve presupuesto al ganador y diseña la siguiente prueba.",
+            },
           ],
         },
       },
@@ -15675,18 +16138,63 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "What to test, in order of impact",
           titleEs: "Qué probar, en orden de impacto",
           note: "Order based on Aphelion's experience across accounts; your results may differ.",
-          noteEs: "Orden basado en la experiencia de Aphelion en distintas cuentas; tus resultados pueden variar.",
+          noteEs:
+            "Orden basado en la experiencia de Aphelion en distintas cuentas; tus resultados pueden variar.",
           columns: [
             { label: "Variable", labelEs: "Variable" },
             { label: "Example of A vs B", labelEs: "Ejemplo de A contra B" },
             { label: "Typical impact", labelEs: "Impacto típico" },
           ],
           rows: [
-            { label: "Offer", labelEs: "Oferta", cells: [{ text: "10% off vs free consultation", textEs: "10% de descuento contra consulta gratis" }, { text: "Very high", textEs: "Muy alto" }] },
-            { label: "Hook (first 3 s)", labelEs: "Gancho (primeros 3 s)", cells: [{ text: "Result first vs question first", textEs: "Resultado primero contra pregunta primero" }, { text: "High", textEs: "Alto" }] },
-            { label: "Format", labelEs: "Formato", cells: [{ text: "Reel vs carousel", textEs: "Reel contra carrusel" }, { text: "Medium to high", textEs: "Medio a alto" }] },
-            { label: "Audience", labelEs: "Público", cells: [{ text: "Broad vs lookalike of customers", textEs: "Amplio contra similar de clientes" }, { text: "Medium", textEs: "Medio" }] },
-            { label: "Copy", labelEs: "Texto", cells: [{ text: "Short vs long description", textEs: "Descripción corta contra larga" }, { text: "Low to medium", textEs: "Bajo a medio" }] },
+            {
+              label: "Offer",
+              labelEs: "Oferta",
+              cells: [
+                {
+                  text: "10% off vs free consultation",
+                  textEs: "10% de descuento contra consulta gratis",
+                },
+                { text: "Very high", textEs: "Muy alto" },
+              ],
+            },
+            {
+              label: "Hook (first 3 s)",
+              labelEs: "Gancho (primeros 3 s)",
+              cells: [
+                {
+                  text: "Result first vs question first",
+                  textEs: "Resultado primero contra pregunta primero",
+                },
+                { text: "High", textEs: "Alto" },
+              ],
+            },
+            {
+              label: "Format",
+              labelEs: "Formato",
+              cells: [
+                { text: "Reel vs carousel", textEs: "Reel contra carrusel" },
+                { text: "Medium to high", textEs: "Medio a alto" },
+              ],
+            },
+            {
+              label: "Audience",
+              labelEs: "Público",
+              cells: [
+                {
+                  text: "Broad vs lookalike of customers",
+                  textEs: "Amplio contra similar de clientes",
+                },
+                { text: "Medium", textEs: "Medio" },
+              ],
+            },
+            {
+              label: "Copy",
+              labelEs: "Texto",
+              cells: [
+                { text: "Short vs long description", textEs: "Descripción corta contra larga" },
+                { text: "Low to medium", textEs: "Bajo a medio" },
+              ],
+            },
           ],
         },
       },
@@ -15703,17 +16211,57 @@ export const BLOG_POSTS: BlogPost[] = [
           "Meta también reportó que los Reels representan más de la mitad del tiempo que se pasa en Instagram. Un estudio más antiguo de Facebook con Nielsen encontró que hasta 47% del valor de una campaña de video se entregaba en los primeros tres segundos, y hasta 74% en los primeros diez. La lección de los dos es la misma: el arranque no es un detalle, es la mayor parte del anuncio.",
         ],
         chart: {
-          title: "How much more likely a Reels direct-response ad is to rank in the top 20% for purchase intent",
-          titleEs: "Cuántas veces más probable es que un anuncio de respuesta directa en Reels quede en el 20% superior en intención de compra",
-          source: "Meta, Reels creative strategies based on Toluna research, via Social Media Today, December 2025. The first bar applies to all creatives.",
-          sourceEs: "Meta, estrategias creativas para Reels basadas en investigación de Toluna, vía Social Media Today, diciembre de 2025. La primera barra aplica a todos los creativos.",
+          title:
+            "How much more likely a Reels direct-response ad is to rank in the top 20% for purchase intent",
+          titleEs:
+            "Cuántas veces más probable es que un anuncio de respuesta directa en Reels quede en el 20% superior en intención de compra",
+          source:
+            "Meta, Reels creative strategies based on Toluna research, via Social Media Today, December 2025. The first bar applies to all creatives.",
+          sourceEs:
+            "Meta, estrategias creativas para Reels basadas en investigación de Toluna, vía Social Media Today, diciembre de 2025. La primera barra aplica a todos los creativos.",
           bars: [
-            { label: "Highlights unique selling points or features", labelEs: "Destaca diferenciales o características", value: 5.3, display: "5.3x", displayEs: "5.3x" },
-            { label: "Shows the product more than once", labelEs: "Muestra el producto más de una vez", value: 2.7, display: "2.7x", displayEs: "2.7x" },
-            { label: "Uses emojis as native elements", labelEs: "Usa emojis como elementos nativos", value: 2.5, display: "2.5x", displayEs: "2.5x" },
-            { label: "Combines speech and music", labelEs: "Combina voz y música", value: 2.1, display: "2.1x", displayEs: "2.1x" },
-            { label: "Includes a call to action", labelEs: "Incluye una llamada a la acción", value: 1.9, display: "1.9x", displayEs: "1.9x" },
-            { label: "Brand and message in the first 5 seconds", labelEs: "Marca y mensaje en los primeros 5 segundos", value: 1.7, display: "1.7x", displayEs: "1.7x" },
+            {
+              label: "Highlights unique selling points or features",
+              labelEs: "Destaca diferenciales o características",
+              value: 5.3,
+              display: "5.3x",
+              displayEs: "5.3x",
+            },
+            {
+              label: "Shows the product more than once",
+              labelEs: "Muestra el producto más de una vez",
+              value: 2.7,
+              display: "2.7x",
+              displayEs: "2.7x",
+            },
+            {
+              label: "Uses emojis as native elements",
+              labelEs: "Usa emojis como elementos nativos",
+              value: 2.5,
+              display: "2.5x",
+              displayEs: "2.5x",
+            },
+            {
+              label: "Combines speech and music",
+              labelEs: "Combina voz y música",
+              value: 2.1,
+              display: "2.1x",
+              displayEs: "2.1x",
+            },
+            {
+              label: "Includes a call to action",
+              labelEs: "Incluye una llamada a la acción",
+              value: 1.9,
+              display: "1.9x",
+              displayEs: "1.9x",
+            },
+            {
+              label: "Brand and message in the first 5 seconds",
+              labelEs: "Marca y mensaje en los primeros 5 segundos",
+              value: 1.7,
+              display: "1.7x",
+              displayEs: "1.7x",
+            },
           ],
         },
       },
@@ -15736,10 +16284,30 @@ export const BLOG_POSTS: BlogPost[] = [
           note: "Aphelion's base structure; adjust timings to your product.",
           noteEs: "Estructura base de Aphelion; ajusta los tiempos a tu producto.",
           steps: [
-            { label: "0–2 s: hook", labelEs: "0–2 s: gancho", detail: "The result, the problem or a surprising fact, with text on screen.", detailEs: "El resultado, el problema o un dato sorprendente, con texto en pantalla." },
-            { label: "2–8 s: demonstration", labelEs: "2–8 s: demostración", detail: "The product or service in use, from the customer's point of view.", detailEs: "El producto o servicio en uso, desde el punto de vista del cliente." },
-            { label: "8–12 s: proof", labelEs: "8–12 s: prueba", detail: "Before and after, a testimonial or a concrete figure.", detailEs: "Antes y después, un testimonio o una cifra concreta." },
-            { label: "12–15 s: call to action", labelEs: "12–15 s: llamada a la acción", detail: "What to do now: message us, book, buy.", detailEs: "Qué hacer ahora: escríbenos, agenda, compra." },
+            {
+              label: "0–2 s: hook",
+              labelEs: "0–2 s: gancho",
+              detail: "The result, the problem or a surprising fact, with text on screen.",
+              detailEs: "El resultado, el problema o un dato sorprendente, con texto en pantalla.",
+            },
+            {
+              label: "2–8 s: demonstration",
+              labelEs: "2–8 s: demostración",
+              detail: "The product or service in use, from the customer's point of view.",
+              detailEs: "El producto o servicio en uso, desde el punto de vista del cliente.",
+            },
+            {
+              label: "8–12 s: proof",
+              labelEs: "8–12 s: prueba",
+              detail: "Before and after, a testimonial or a concrete figure.",
+              detailEs: "Antes y después, un testimonio o una cifra concreta.",
+            },
+            {
+              label: "12–15 s: call to action",
+              labelEs: "12–15 s: llamada a la acción",
+              detail: "What to do now: message us, book, buy.",
+              detailEs: "Qué hacer ahora: escríbenos, agenda, compra.",
+            },
           ],
         },
       },
@@ -15838,7 +16406,8 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "editar-videos-para-redes-como-pro",
     cover: true,
     title: "Edit Your Social Media Videos Like a Pro: Recording, LOG, Frame Rates, Colour and Apps",
-    titleEs: "Edita tus videos para redes como profesional: grabación, LOG, cuadros por segundo, color y apps",
+    titleEs:
+      "Edita tus videos para redes como profesional: grabación, LOG, cuadros por segundo, color y apps",
     category: "Video & Drone",
     categoryEs: "Video y Drone",
     excerpt:
@@ -15884,7 +16453,8 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "Which frame rate to use",
           titleEs: "Qué cuadros por segundo usar",
           note: "Shutter speeds follow the 180-degree rule. In Mexico (60 Hz), prefer 1/60 or 1/120 under artificial light to avoid flicker.",
-          noteEs: "Las velocidades de obturación siguen la regla de los 180 grados. En México (60 Hz), prefiere 1/60 o 1/120 con luz artificial para evitar parpadeo.",
+          noteEs:
+            "Las velocidades de obturación siguen la regla de los 180 grados. En México (60 Hz), prefiere 1/60 o 1/120 con luz artificial para evitar parpadeo.",
           columns: [
             { label: "Frames per second", labelEs: "Cuadros por segundo" },
             { label: "How it feels", labelEs: "Cómo se siente" },
@@ -15892,10 +16462,54 @@ export const BLOG_POSTS: BlogPost[] = [
             { label: "Shutter", labelEs: "Obturación" },
           ],
           rows: [
-            { label: "24", labelEs: "24", cells: [{ text: "Cinematic, slightly soft", textEs: "Cinematográfico, ligeramente suave" }, { text: "Brand films, real estate, gastronomy", textEs: "Videos de marca, bienes raíces, gastronomía" }, { text: "1/50", textEs: "1/50" }] },
-            { label: "30", labelEs: "30", cells: [{ text: "Natural, standard", textEs: "Natural, estándar" }, { text: "Talking to camera, tutorials, most Reels", textEs: "Hablar a cámara, tutoriales, la mayoría de los Reels" }, { text: "1/60", textEs: "1/60" }] },
-            { label: "60", labelEs: "60", cells: [{ text: "Very fluid", textEs: "Muy fluido" }, { text: "Movement, sports, 50% slow motion", textEs: "Movimiento, deportes, cámara lenta al 50%" }, { text: "1/120", textEs: "1/120" }] },
-            { label: "120+", labelEs: "120+", cells: [{ text: "Slow motion", textEs: "Cámara lenta" }, { text: "Pouring drinks, hair, water, details", textEs: "Bebidas sirviéndose, cabello, agua, detalles" }, { text: "1/240 or more", textEs: "1/240 o más" }] },
+            {
+              label: "24",
+              labelEs: "24",
+              cells: [
+                { text: "Cinematic, slightly soft", textEs: "Cinematográfico, ligeramente suave" },
+                {
+                  text: "Brand films, real estate, gastronomy",
+                  textEs: "Videos de marca, bienes raíces, gastronomía",
+                },
+                { text: "1/50", textEs: "1/50" },
+              ],
+            },
+            {
+              label: "30",
+              labelEs: "30",
+              cells: [
+                { text: "Natural, standard", textEs: "Natural, estándar" },
+                {
+                  text: "Talking to camera, tutorials, most Reels",
+                  textEs: "Hablar a cámara, tutoriales, la mayoría de los Reels",
+                },
+                { text: "1/60", textEs: "1/60" },
+              ],
+            },
+            {
+              label: "60",
+              labelEs: "60",
+              cells: [
+                { text: "Very fluid", textEs: "Muy fluido" },
+                {
+                  text: "Movement, sports, 50% slow motion",
+                  textEs: "Movimiento, deportes, cámara lenta al 50%",
+                },
+                { text: "1/120", textEs: "1/120" },
+              ],
+            },
+            {
+              label: "120+",
+              labelEs: "120+",
+              cells: [
+                { text: "Slow motion", textEs: "Cámara lenta" },
+                {
+                  text: "Pouring drinks, hair, water, details",
+                  textEs: "Bebidas sirviéndose, cabello, agua, detalles",
+                },
+                { text: "1/240 or more", textEs: "1/240 o más" },
+              ],
+            },
           ],
         },
       },
@@ -15916,15 +16530,39 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "Phones that record LOG video natively",
           titleEs: "Celulares que graban video LOG de fábrica",
           note: "According to Apple's and Samsung's documentation and TechRadar, as of 2026. Check your exact model and software version.",
-          noteEs: "Según la documentación de Apple y Samsung y TechRadar, a 2026. Revisa tu modelo exacto y la versión de software.",
+          noteEs:
+            "Según la documentación de Apple y Samsung y TechRadar, a 2026. Revisa tu modelo exacto y la versión de software.",
           columns: [
             { label: "Brand", labelEs: "Marca" },
             { label: "Models", labelEs: "Modelos" },
             { label: "Where to turn it on", labelEs: "Dónde se activa" },
           ],
           rows: [
-            { label: "Apple", labelEs: "Apple", cells: [{ text: "iPhone 15 Pro, 16 Pro and 17 Pro (and Pro Max)", textEs: "iPhone 15 Pro, 16 Pro y 17 Pro (y Pro Max)" }, { text: "Camera settings: formats, ProRes, then choose Log", textEs: "Ajustes de Cámara: formatos, ProRes, y elegir Log" }] },
-            { label: "Samsung", labelEs: "Samsung", cells: [{ text: "Galaxy S25 series; S24 series with One UI 7", textEs: "Serie Galaxy S25; serie S24 con One UI 7" }, { text: "Camera: More, Pro Video, Log", textEs: "Cámara: Más, Pro Video, Log" }] },
+            {
+              label: "Apple",
+              labelEs: "Apple",
+              cells: [
+                {
+                  text: "iPhone 15 Pro, 16 Pro and 17 Pro (and Pro Max)",
+                  textEs: "iPhone 15 Pro, 16 Pro y 17 Pro (y Pro Max)",
+                },
+                {
+                  text: "Camera settings: formats, ProRes, then choose Log",
+                  textEs: "Ajustes de Cámara: formatos, ProRes, y elegir Log",
+                },
+              ],
+            },
+            {
+              label: "Samsung",
+              labelEs: "Samsung",
+              cells: [
+                {
+                  text: "Galaxy S25 series; S24 series with One UI 7",
+                  textEs: "Serie Galaxy S25; serie S24 con One UI 7",
+                },
+                { text: "Camera: More, Pro Video, Log", textEs: "Cámara: Más, Pro Video, Log" },
+              ],
+            },
           ],
         },
       },
@@ -15945,12 +16583,42 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "The order to colour a video",
           titleEs: "El orden para colorear un video",
           steps: [
-            { label: "Exposure", labelEs: "Exposición", detail: "Neither burnt highlights nor crushed shadows.", detailEs: "Ni luces quemadas ni sombras empastadas." },
-            { label: "White balance", labelEs: "Balance de blancos", detail: "Whites look white; skin looks like skin.", detailEs: "Los blancos se ven blancos; la piel, como piel." },
-            { label: "Technical LUT (only LOG)", labelEs: "LUT técnico (solo LOG)", detail: "Converts your phone's LOG profile into normal colour.", detailEs: "Convierte el perfil LOG de tu celular a color normal." },
-            { label: "Creative look", labelEs: "Estilo creativo", detail: "A creative LUT at 30–60% intensity.", detailEs: "Un LUT creativo al 30–60% de intensidad." },
-            { label: "Match shots", labelEs: "Iguala tomas", detail: "Same treatment across the whole video.", detailEs: "El mismo tratamiento en todo el video." },
-            { label: "Check on a phone", labelEs: "Revisa en el celular", detail: "That is where your audience will watch it.", detailEs: "Ahí es donde lo va a ver tu público." },
+            {
+              label: "Exposure",
+              labelEs: "Exposición",
+              detail: "Neither burnt highlights nor crushed shadows.",
+              detailEs: "Ni luces quemadas ni sombras empastadas.",
+            },
+            {
+              label: "White balance",
+              labelEs: "Balance de blancos",
+              detail: "Whites look white; skin looks like skin.",
+              detailEs: "Los blancos se ven blancos; la piel, como piel.",
+            },
+            {
+              label: "Technical LUT (only LOG)",
+              labelEs: "LUT técnico (solo LOG)",
+              detail: "Converts your phone's LOG profile into normal colour.",
+              detailEs: "Convierte el perfil LOG de tu celular a color normal.",
+            },
+            {
+              label: "Creative look",
+              labelEs: "Estilo creativo",
+              detail: "A creative LUT at 30–60% intensity.",
+              detailEs: "Un LUT creativo al 30–60% de intensidad.",
+            },
+            {
+              label: "Match shots",
+              labelEs: "Iguala tomas",
+              detail: "Same treatment across the whole video.",
+              detailEs: "El mismo tratamiento en todo el video.",
+            },
+            {
+              label: "Check on a phone",
+              labelEs: "Revisa en el celular",
+              detail: "That is where your audience will watch it.",
+              detailEs: "Ahí es donde lo va a ver tu público.",
+            },
           ],
         },
       },
@@ -15982,11 +16650,25 @@ export const BLOG_POSTS: BlogPost[] = [
         chart: {
           title: "Share of a video campaign's value delivered by time watched",
           titleEs: "Parte del valor de una campaña de video que se entrega según el tiempo visto",
-          source: "Facebook study with Nielsen, reported by Smart Insights (2017). Figures are “up to”.",
-          sourceEs: "Estudio de Facebook con Nielsen, reportado por Smart Insights (2017). Las cifras son “hasta”.",
+          source:
+            "Facebook study with Nielsen, reported by Smart Insights (2017). Figures are “up to”.",
+          sourceEs:
+            "Estudio de Facebook con Nielsen, reportado por Smart Insights (2017). Las cifras son “hasta”.",
           bars: [
-            { label: "First 10 seconds", labelEs: "Primeros 10 segundos", value: 74, display: "Up to 74%", displayEs: "Hasta 74%" },
-            { label: "First 3 seconds", labelEs: "Primeros 3 segundos", value: 47, display: "Up to 47%", displayEs: "Hasta 47%" },
+            {
+              label: "First 10 seconds",
+              labelEs: "Primeros 10 segundos",
+              value: 74,
+              display: "Up to 74%",
+              displayEs: "Hasta 74%",
+            },
+            {
+              label: "First 3 seconds",
+              labelEs: "Primeros 3 segundos",
+              value: 47,
+              display: "Up to 47%",
+              displayEs: "Hasta 47%",
+            },
           ],
         },
       },
@@ -16033,7 +16715,8 @@ export const BLOG_POSTS: BlogPost[] = [
           title: "CapCut vs Premiere Pro vs DaVinci Resolve",
           titleEs: "CapCut contra Premiere Pro contra DaVinci Resolve",
           note: "Prices in USD as of 2026: CapCut Pro per price comparisons (Costbench, October 2026), Premiere Pro annual plan billed monthly, DaVinci Resolve Studio one-time licence (Miracamp). Difficulty is Aphelion's assessment.",
-          noteEs: "Precios en dólares a 2026: CapCut Pro según comparativas (Costbench, octubre de 2026), Premiere Pro plan anual con pago mensual, DaVinci Resolve Studio licencia de un solo pago (Miracamp). La dificultad es valoración de Aphelion.",
+          noteEs:
+            "Precios en dólares a 2026: CapCut Pro según comparativas (Costbench, octubre de 2026), Premiere Pro plan anual con pago mensual, DaVinci Resolve Studio licencia de un solo pago (Miracamp). La dificultad es valoración de Aphelion.",
           columns: [
             { label: "App", labelEs: "App" },
             { label: "Difficulty", labelEs: "Dificultad" },
@@ -16041,9 +16724,45 @@ export const BLOG_POSTS: BlogPost[] = [
             { label: "Best for", labelEs: "Ideal para" },
           ],
           rows: [
-            { label: "CapCut", labelEs: "CapCut", cells: [{ text: "Easy", textEs: "Fácil" }, { text: "Free; Pro around $20/month", textEs: "Gratis; Pro alrededor de $20 al mes" }, { text: "Fast Reels from the phone, auto subtitles", textEs: "Reels rápidos desde el celular, subtítulos automáticos" }] },
-            { label: "Premiere Pro", labelEs: "Premiere Pro", cells: [{ text: "Medium", textEs: "Media" }, { text: "$22.99/month (annual plan)", textEs: "$22.99 al mes (plan anual)" }, { text: "Professional editing within the Adobe ecosystem", textEs: "Edición profesional dentro del ecosistema Adobe" }] },
-            { label: "DaVinci Resolve", labelEs: "DaVinci Resolve", cells: [{ text: "Advanced", textEs: "Avanzada" }, { text: "Free; Studio $295 one-time", textEs: "Gratis; Studio $295 pago único" }, { text: "Colour grading, LOG footage, long projects", textEs: "Corrección de color, material LOG, proyectos largos" }] },
+            {
+              label: "CapCut",
+              labelEs: "CapCut",
+              cells: [
+                { text: "Easy", textEs: "Fácil" },
+                {
+                  text: "Free; Pro around $20/month",
+                  textEs: "Gratis; Pro alrededor de $20 al mes",
+                },
+                {
+                  text: "Fast Reels from the phone, auto subtitles",
+                  textEs: "Reels rápidos desde el celular, subtítulos automáticos",
+                },
+              ],
+            },
+            {
+              label: "Premiere Pro",
+              labelEs: "Premiere Pro",
+              cells: [
+                { text: "Medium", textEs: "Media" },
+                { text: "$22.99/month (annual plan)", textEs: "$22.99 al mes (plan anual)" },
+                {
+                  text: "Professional editing within the Adobe ecosystem",
+                  textEs: "Edición profesional dentro del ecosistema Adobe",
+                },
+              ],
+            },
+            {
+              label: "DaVinci Resolve",
+              labelEs: "DaVinci Resolve",
+              cells: [
+                { text: "Advanced", textEs: "Avanzada" },
+                { text: "Free; Studio $295 one-time", textEs: "Gratis; Studio $295 pago único" },
+                {
+                  text: "Colour grading, LOG footage, long projects",
+                  textEs: "Corrección de color, material LOG, proyectos largos",
+                },
+              ],
+            },
           ],
         },
       },
@@ -16112,6 +16831,1205 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "que-es-google-tag-manager",
+    cover: true,
+    title:
+      "What Is Google Tag Manager: What It Is For, the Tags That Matter and the Thank-You Page",
+    titleEs:
+      "Qué es Google Tag Manager: para qué sirve, las etiquetas que importan y la página de gracias",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Google Tag Manager is the control panel for everything your website measures. What it is in plain words, how tags, triggers and variables work, the eight tags that matter for a business that sells services, and how to set up a thank-you page that measures correctly instead of inflating your numbers.",
+    excerptEs:
+      "Google Tag Manager es el tablero de control de todo lo que mide tu página web. Qué es en palabras simples, cómo funcionan etiquetas, activadores y variables, las ocho etiquetas que importan en un negocio de servicios y cómo armar una página de gracias que mida bien en vez de inflar tus números.",
+    readingTime: 11,
+    date: "2026-11-06",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "When we audit a business's ads, the first question is not about the ads. It is: how do you know a lead came from there? Most of the time the honest answer is that nobody knows. The website has three different codes pasted by three different people, one of them counts every visit to the thank-you page as a sale, and nobody has checked in a year. [[Google Tag Manager|google-tag-manager]] exists to put order into that. This guide explains what it is, which tags really matter and how to set up the thank-you page, which is the piece that decides whether your numbers are true.",
+    ledeEs:
+      "Cuando auditamos los anuncios de un negocio, la primera pregunta no es sobre los anuncios. Es: ¿cómo sabes que un prospecto vino de ahí? La mayoría de las veces la respuesta honesta es que nadie sabe. La página tiene tres códigos distintos pegados por tres personas distintas, uno de ellos cuenta cada visita a la página de gracias como una venta y nadie lo ha revisado en un año. [[Google Tag Manager|google-tag-manager]] existe para poner orden en eso. Esta guía explica qué es, qué etiquetas importan de verdad y cómo armar la página de gracias, que es la pieza que decide si tus números son reales.",
+    sections: [
+      {
+        id: "que-es",
+        heading: "What Google Tag Manager is, without jargon",
+        headingEs: "Qué es Google Tag Manager, sin tecnicismos",
+        body: [
+          "Google Tag Manager, GTM for short, is a free Google tool. You install one code on your website, once, and from then on you manage every measurement code from a panel: Google Analytics, Google Ads, the [[Meta Pixel|pixel]], TikTok, LinkedIn, heat maps. Think of it as the breaker box of your house: one box, and inside it a switch for each circuit. You do not open the walls every time you want to turn something on.",
+          "It works with three pieces. The **[[tag|etiqueta]]** is what gets sent and to whom, for example “tell Google Ads that a lead came in”. The **[[trigger|activador]]** is when it gets sent, for example “when the contact form is confirmed”. The **variable** is the data that travels with it, such as the form name or the page. Every change is saved as a version you can review before publishing and roll back if something breaks.",
+          "What GTM does not do is show you reports. It is the messenger, not the destination. The numbers are read in Google Analytics, in Google Ads and in Meta's Events Manager. If you want to see how GA4 and GTM split the work for Google Ads, we explain it in [how to measure conversions with GA4 and GTM](/blog/como-medir-conversiones-google-ads).",
+        ],
+        bodyEs: [
+          "Google Tag Manager, o GTM, es una herramienta gratuita de Google. Instalas un código en tu página web, una sola vez, y desde ahí manejas todos los códigos de medición desde un panel: Google Analytics, Google Ads, el [[pixel de Meta|pixel]], TikTok, LinkedIn, mapas de calor. Piénsalo como el centro de carga de tu casa: una caja y adentro un interruptor por cada circuito. No rompes la pared cada vez que quieres prender algo.",
+          "Funciona con tres piezas. La **[[etiqueta|etiqueta]]** es qué se manda y a quién, por ejemplo “avísale a Google Ads que entró un prospecto”. El **[[activador|activador]]** es cuándo se manda, por ejemplo “cuando el formulario de contacto se confirme”. La **variable** es el dato que viaja con ella, como el nombre del formulario o la página. Cada cambio se guarda como una versión que puedes revisar antes de publicar y regresar si algo se rompe.",
+          "Lo que GTM no hace es mostrarte reportes. Es el mensajero, no el destino. Los números se leen en Google Analytics, en Google Ads y en el Administrador de eventos de Meta. Si quieres ver cómo se reparten el trabajo GA4 y GTM para Google Ads, lo explicamos en [cómo medir conversiones con GA4 y GTM](/blog/como-medir-conversiones-google-ads).",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "How a measurement change goes live in GTM",
+          titleEs: "Cómo sale a producción un cambio de medición en GTM",
+          steps: [
+            {
+              label: "Install the container",
+              labelEs: "Instala el contenedor",
+              detail: "One code on every page of the site, once.",
+              detailEs: "Un código en todas las páginas del sitio, una sola vez.",
+            },
+            {
+              label: "Create the tag",
+              labelEs: "Crea la etiqueta",
+              detail: "What is sent and to which platform.",
+              detailEs: "Qué se manda y a qué plataforma.",
+            },
+            {
+              label: "Set the trigger",
+              labelEs: "Define el activador",
+              detail: "The exact moment it fires.",
+              detailEs: "El momento exacto en que se dispara.",
+            },
+            {
+              label: "Test in Preview",
+              labelEs: "Prueba en Vista previa",
+              detail: "Watch it fire on your own visit before anyone else sees it.",
+              detailEs: "Mira que se dispare en tu propia visita antes de que nadie más la vea.",
+            },
+            {
+              label: "Publish a version",
+              labelEs: "Publica una versión",
+              detail: "Named and dated, so you can roll it back.",
+              detailEs: "Con nombre y fecha, para poder regresarla.",
+            },
+          ],
+        },
+      },
+      {
+        id: "para-que-sirve",
+        heading: "What it is for in a real business",
+        headingEs: "Para qué sirve en un negocio real",
+        body: [
+          "**You stop depending on a developer for every change.** Adding the event for a new WhatsApp button or a new campaign becomes a 15-minute job in a panel, not a ticket that waits a week.",
+          "**Everything lives in one place.** When the codes are scattered across the theme, a plugin and a widget, nobody knows what is measuring what, and the same lead ends up counted twice. In GTM you see the full list and who changed what.",
+          "**All platforms count the same thing.** One trigger, “lead confirmed”, can fire the Google Ads conversion, the GA4 event and the Meta event at the same time. If each platform has its own definition of a lead, your reports will never agree.",
+          "**You can test before breaking anything.** Preview mode shows which tags fire on each click, on your own visit, before publishing. And if something fails after publishing, you go back to the previous version in two clicks.",
+        ],
+        bodyEs: [
+          "**Dejas de depender de un programador para cada cambio.** Agregar el evento de un botón nuevo de WhatsApp o de una campaña nueva se vuelve un trabajo de 15 minutos en un panel, no una solicitud que espera una semana.",
+          "**Todo vive en un solo lugar.** Cuando los códigos están regados entre la plantilla, un plugin y un widget, nadie sabe qué mide qué, y el mismo prospecto termina contado dos veces. En GTM ves la lista completa y quién cambió qué.",
+          "**Todas las plataformas cuentan lo mismo.** Un solo activador, “prospecto confirmado”, puede disparar la conversión de Google Ads, el evento de GA4 y el evento de Meta al mismo tiempo. Si cada plataforma tiene su propia definición de prospecto, tus reportes nunca van a coincidir.",
+          "**Puedes probar antes de romper algo.** El modo Vista previa te enseña qué etiquetas se disparan en cada clic, en tu propia visita, antes de publicar. Y si algo falla después de publicar, regresas a la versión anterior en dos clics.",
+        ],
+      },
+      {
+        id: "etiquetas-importantes",
+        heading: "The tags that matter, in order",
+        headingEs: "Las etiquetas que importan, en orden",
+        body: [
+          "A business that sells services does not need forty tags. It needs eight, well done. The order matters: there is no point installing heat maps if you still do not know how many leads came in last month.",
+          "Two naming changes that confuse people: the base Google Analytics tag is now called the **Google tag**, and since March 2024 GA4 calls the important actions **[[key events|evento-clave]]**. A key event that you share with Google Ads becomes a conversion there. And in Mexico, **many people do not fill in forms: they write on WhatsApp or call**. If you do not measure those clicks, your campaign looks worse than it is.",
+        ],
+        bodyEs: [
+          "Un negocio que vende servicios no necesita cuarenta etiquetas. Necesita ocho, bien hechas. El orden importa: no tiene sentido instalar mapas de calor si todavía no sabes cuántos prospectos entraron el mes pasado.",
+          "Dos cambios de nombre que confunden: la etiqueta base de Google Analytics ahora se llama **etiqueta de Google**, y desde marzo de 2024 GA4 llama **[[eventos clave|evento-clave]]** a las acciones importantes. Un evento clave que compartes con Google Ads se vuelve una conversión ahí. Y en México, **mucha gente no llena formularios: escribe por WhatsApp o llama**. Si no mides esos clics, tu campaña se ve peor de lo que es.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "The eight tags of a service business",
+          titleEs: "Las ocho etiquetas de un negocio de servicios",
+          note: "Priority assumes you advertise on Google and Meta. If you only advertise on one, skip the other's tags.",
+          noteEs:
+            "La prioridad supone que anuncias en Google y en Meta. Si solo anuncias en una, sáltate las etiquetas de la otra.",
+          columns: [
+            { label: "Tag", labelEs: "Etiqueta" },
+            { label: "What it is for", labelEs: "Para qué sirve" },
+            { label: "When it fires", labelEs: "Cuándo se dispara" },
+            { label: "Priority", labelEs: "Prioridad" },
+          ],
+          rows: [
+            {
+              label: "Google tag (GA4)",
+              labelEs: "Etiqueta de Google (GA4)",
+              cells: [
+                {
+                  text: "Visits, traffic sources, base of everything",
+                  textEs: "Visitas, origen del tráfico, base de todo",
+                },
+                { text: "Every page", textEs: "Todas las páginas" },
+                { text: "Essential", textEs: "Indispensable" },
+              ],
+            },
+            {
+              label: "GA4 event generate_lead",
+              labelEs: "Evento de GA4 generate_lead",
+              cells: [
+                {
+                  text: "Counts leads, marked as a key event",
+                  textEs: "Cuenta prospectos, marcado como evento clave",
+                },
+                { text: "Confirmed form submission", textEs: "Envío confirmado del formulario" },
+                { text: "Essential", textEs: "Indispensable" },
+              ],
+            },
+            {
+              label: "Google Ads conversion + conversion linker",
+              labelEs: "Conversión de Google Ads + vinculador de conversiones",
+              cells: [
+                {
+                  text: "Tells Google which click brought the lead so it can optimise",
+                  textEs: "Le dice a Google qué clic trajo al prospecto para que optimice",
+                },
+                {
+                  text: "Conversion: same as the lead. Linker: every page",
+                  textEs: "Conversión: igual que el prospecto. Vinculador: todas las páginas",
+                },
+                {
+                  text: "Essential if you run Google Ads",
+                  textEs: "Indispensable si anuncias en Google",
+                },
+              ],
+            },
+            {
+              label: "Meta Pixel: base + Lead",
+              labelEs: "Pixel de Meta: base + Lead",
+              cells: [
+                {
+                  text: "The same for Facebook and Instagram",
+                  textEs: "Lo mismo para Facebook e Instagram",
+                },
+                {
+                  text: "Base: every page. Lead: confirmed submission",
+                  textEs: "Base: todas las páginas. Lead: envío confirmado",
+                },
+                {
+                  text: "Essential if you run Meta Ads",
+                  textEs: "Indispensable si anuncias en Meta",
+                },
+              ],
+            },
+            {
+              label: "WhatsApp and phone clicks",
+              labelEs: "Clics a WhatsApp y teléfono",
+              cells: [
+                {
+                  text: "Measures the leads that never touch a form",
+                  textEs: "Mide los prospectos que nunca tocan un formulario",
+                },
+                { text: "Clicks on wa.me and tel: links", textEs: "Clic en enlaces wa.me y tel:" },
+                { text: "Very important", textEs: "Muy importante" },
+              ],
+            },
+            {
+              label: "Google Ads remarketing",
+              labelEs: "Remarketing de Google Ads",
+              cells: [
+                {
+                  text: "Show ads again to people who already visited",
+                  textEs: "Volver a mostrar anuncios a quien ya visitó",
+                },
+                { text: "Every page", textEs: "Todas las páginas" },
+                { text: "Important", textEs: "Importante" },
+              ],
+            },
+            {
+              label: "Heat maps (Microsoft Clarity)",
+              labelEs: "Mapas de calor (Microsoft Clarity)",
+              cells: [
+                {
+                  text: "See where people get stuck; free",
+                  textEs: "Ver dónde se atora la gente; gratis",
+                },
+                { text: "Every page", textEs: "Todas las páginas" },
+                { text: "Useful", textEs: "Útil" },
+              ],
+            },
+            {
+              label: "TikTok, LinkedIn, Pinterest",
+              labelEs: "TikTok, LinkedIn, Pinterest",
+              cells: [
+                { text: "Only if you advertise there", textEs: "Solo si anuncias ahí" },
+                { text: "Same logic: base + lead", textEs: "Misma lógica: base + prospecto" },
+                { text: "Optional", textEs: "Opcional" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "pagina-de-gracias",
+        heading: "The thank-you page: why it matters so much",
+        headingEs: "La página de gracias: por qué importa tanto",
+        body: [
+          "A [[thank-you page|pagina-de-gracias]] is the page a person lands on after sending your form. It looks like a detail and it does two jobs at once: it tells the person their message arrived, and it gives your measurement a clear moment to count a lead.",
+          "For the person, it removes the doubt. Without it, many people send the form twice or write “did you get my message?”. A good thank-you page says **when and through which channel you will reply**, for example “we will write to you on WhatsApp within 24 hours”, and offers one next step: book a call, see examples of your work or write directly. Nothing else: no menu full of distractions and no blog to wander off to.",
+          "For measurement, it is a clean signal: in theory only people who really sent the form get there. It also lets you exclude those who already became leads from your [[remarketing|remarketing]] audiences, so you stop paying to chase someone who already contacted you.",
+        ],
+        bodyEs: [
+          "Una [[página de gracias|pagina-de-gracias]] es la página a la que llega una persona después de enviar tu formulario. Parece un detalle y hace dos trabajos a la vez: le confirma a la persona que su mensaje llegó, y le da a tu medición un momento claro para contar un prospecto.",
+          "Para la persona, quita la duda. Sin ella, mucha gente manda el formulario dos veces o escribe “¿sí les llegó mi mensaje?”. Una buena página de gracias dice **cuándo y por dónde le vas a responder**, por ejemplo “te escribimos por WhatsApp en menos de 24 horas”, y ofrece un solo siguiente paso: agendar una llamada, ver ejemplos de tu trabajo o escribir directo. Nada más: ni un menú lleno de distracciones ni un blog para irse por las ramas.",
+          "Para la medición, es una señal limpia: en teoría solo llega quien de verdad envió el formulario. También te deja excluir de tus públicos de [[remarketing|remarketing]] a quienes ya son prospectos, para dejar de pagar por perseguir a alguien que ya te contactó.",
+        ],
+      },
+      {
+        id: "errores-pagina-de-gracias",
+        heading: "The thank-you page mistakes that inflate your numbers",
+        headingEs: "Los errores con la página de gracias que inflan tus números",
+        body: [
+          "The most common setup is “count a conversion every time someone views /thank-you”. It works, until it does not: **the person refreshes the page and you count two leads**. Someone saves it in favourites. Google indexes it and people arrive from search. A link to it ends up in the menu. Every one of those visits looks like a lead in your report and the campaign seems to perform better than it does.",
+          "The basic fixes: mark the page as noindex so Google does not show it, do not link to it from anywhere, use a different one per form if you need to tell them apart, and in Google Ads set leads to count **one** conversion per click, not every one.",
+          "The more solid version, and the one we use on aphelion.mx, goes one step further: **the conversion fires when the server confirms the form was received**, with a unique ID per submission so no platform counts it twice. Only then does the person go to the thank-you page, which is noindex and is never used as a conversion by URL. It takes a little more work, but the number you see is the number of people who really wrote to you.",
+        ],
+        bodyEs: [
+          "La configuración más común es “cuenta una conversión cada vez que alguien vea /gracias”. Funciona, hasta que no: **la persona recarga la página y cuentas dos prospectos**. Alguien la guarda en favoritos. Google la indexa y llega gente desde la búsqueda. Un enlace a ella termina en el menú. Cada una de esas visitas parece un prospecto en tu reporte y la campaña parece rendir mejor de lo que rinde.",
+          "Las correcciones básicas: marca la página como noindex para que Google no la muestre, no la enlaces desde ningún lado, usa una distinta por formulario si necesitas diferenciarlos y en Google Ads configura los prospectos para contar **una** conversión por clic, no todas.",
+          "La versión más sólida, y la que usamos en aphelion.mx, da un paso más: **la conversión se dispara cuando el servidor confirma que recibió el formulario**, con un identificador único por envío para que ninguna plataforma la cuente dos veces. Solo entonces la persona pasa a la página de gracias, que es noindex y nunca se usa como conversión por URL. Lleva un poco más de trabajo, pero el número que ves es el número de personas que de verdad te escribieron.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Three ways to count a lead",
+          titleEs: "Tres formas de contar un prospecto",
+          columns: [
+            { label: "Method", labelEs: "Método" },
+            { label: "How it works", labelEs: "Cómo funciona" },
+            { label: "Advantage", labelEs: "Ventaja" },
+            { label: "Risk", labelEs: "Riesgo" },
+          ],
+          rows: [
+            {
+              label: "Thank-you page URL",
+              labelEs: "URL de la página de gracias",
+              cells: [
+                {
+                  text: "Counts every view of /thank-you",
+                  textEs: "Cuenta cada vista de /gracias",
+                },
+                {
+                  text: "Simple; works with any form",
+                  textEs: "Simple; funciona con cualquier formulario",
+                },
+                {
+                  text: "Refreshes, bookmarks and indexing inflate it",
+                  textEs: "Recargas, favoritos e indexación lo inflan",
+                },
+              ],
+            },
+            {
+              label: "Event on confirmed submission",
+              labelEs: "Evento al confirmar el envío",
+              cells: [
+                {
+                  text: "The site pushes an event to the data layer when the form succeeds",
+                  textEs:
+                    "El sitio manda un evento a la capa de datos cuando el formulario se envía bien",
+                },
+                { text: "Only counts real submissions", textEs: "Solo cuenta envíos reales" },
+                { text: "Needs a developer once", textEs: "Necesita un programador una vez" },
+              ],
+            },
+            {
+              label: "From the server or the CRM",
+              labelEs: "Desde el servidor o el CRM",
+              cells: [
+                {
+                  text: "Conversions API, enhanced conversions or offline import",
+                  textEs: "API de Conversiones, conversiones mejoradas o importación offline",
+                },
+                {
+                  text: "Survives blockers; can report qualified leads and sales",
+                  textEs:
+                    "Sobrevive a bloqueadores; puede reportar prospectos calificados y ventas",
+                },
+                { text: "More setup and upkeep", textEs: "Más configuración y mantenimiento" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "como-probar",
+        heading: "How to check everything works before spending on ads",
+        headingEs: "Cómo comprobar que todo funciona antes de gastar en anuncios",
+        body: [
+          "Open GTM's Preview mode, send a real test through your form and check that each tag fired exactly once. Then confirm it on the other side: the event in GA4's DebugView, the conversion in Google Ads diagnostics and the Lead in Meta's test events. A tag that fires in GTM but never arrives at the platform is still broken.",
+          "Then the check that almost nobody does: **once a week, compare the leads each platform reports with the leads that really arrived** in your inbox or your [[CRM|crm]]. If Google Ads says 30 and you received 12, something is counting twice. If you want the leads to land in one place automatically, we explain how in [connecting your forms to a CRM](/blog/conectar-formularios-a-crm).",
+          "One last point on privacy: your [[privacy notice|aviso-de-privacidad]] should say that the site uses cookies and measurement tags, and personal data such as email or phone should never travel in plain text or in a URL. When a platform asks for them to improve the match, they are sent encrypted.",
+        ],
+        bodyEs: [
+          "Abre el modo Vista previa de GTM, manda una prueba real desde tu formulario y revisa que cada etiqueta se disparó exactamente una vez. Después confírmalo del otro lado: el evento en el DebugView de GA4, la conversión en el diagnóstico de Google Ads y el Lead en los eventos de prueba de Meta. Una etiqueta que se dispara en GTM pero nunca llega a la plataforma sigue rota.",
+          "Luego la revisión que casi nadie hace: **una vez a la semana, compara los prospectos que reporta cada plataforma con los que de verdad llegaron** a tu correo o a tu [[CRM|crm]]. Si Google Ads dice 30 y tú recibiste 12, algo está contando doble. Si quieres que los prospectos caigan en un solo lugar en automático, te explicamos cómo en [conectar tus formularios a un CRM](/blog/conectar-formularios-a-crm).",
+          "Un último punto sobre privacidad: tu [[aviso de privacidad|aviso-de-privacidad]] debe decir que el sitio usa cookies y etiquetas de medición, y los datos personales como correo o teléfono nunca deben viajar en texto plano ni en una URL. Cuando una plataforma los pide para mejorar la coincidencia, se mandan cifrados.",
+        ],
+      },
+      {
+        id: "siguiente-paso",
+        heading: "If you do not know what your site measures today",
+        headingEs: "Si no sabes qué mide tu sitio hoy",
+        body: [
+          "Start with the basics: the Google tag, the lead event and the WhatsApp clicks. With those three you already know where your leads come from, and every peso you put into ads starts to have a return you can see. Next comes Meta, which uses different names for the same things; we cover the equivalences in [Meta events and Google tags](/blog/eventos-de-meta-y-etiquetas-de-google).",
+          "If you would rather have someone review it, at Aphelion we set up and audit measurement as part of our [Google Ads](/google-ads) and [Meta Ads](/meta-ads) work. You can start with the free [digital diagnostic](/recursos/diagnostico) or [tell us what you have](/contacto) and we will tell you what is missing.",
+        ],
+        bodyEs: [
+          "Empieza por lo básico: la etiqueta de Google, el evento de prospecto y los clics a WhatsApp. Con esas tres ya sabes de dónde vienen tus prospectos, y cada peso que metes en anuncios empieza a tener un retorno que puedes ver. Después sigue Meta, que usa nombres distintos para las mismas cosas; las equivalencias las vemos en [eventos de Meta y etiquetas de Google](/blog/eventos-de-meta-y-etiquetas-de-google).",
+          "Si prefieres que alguien lo revise, en Aphelion configuramos y auditamos la medición como parte de nuestro trabajo en [Google Ads](/google-ads) y [Meta Ads](/meta-ads). Puedes empezar con el [diagnóstico digital](/recursos/diagnostico) gratuito o [contarnos qué tienes](/contacto) y te decimos qué falta.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Google Tag Manager es gratis?",
+        qEn: "Is Google Tag Manager free?",
+        a: "Sí. La versión normal es gratuita. Solo el etiquetado del lado del servidor tiene un costo, porque necesita un servidor propio, y la mayoría de los negocios pequeños no lo necesita para empezar.",
+        aEn: "Yes. The standard version is free. Only server-side tagging has a cost, because it needs its own server, and most small businesses do not need it to start.",
+      },
+      {
+        q: "¿Cuál es la diferencia entre Google Tag Manager y Google Analytics?",
+        qEn: "What is the difference between Google Tag Manager and Google Analytics?",
+        a: "Google Analytics guarda y muestra los datos. Google Tag Manager es la herramienta que manda esos datos, a Analytics y a otras plataformas como Google Ads o Meta. GTM no tiene reportes.",
+        aEn: "Google Analytics stores and shows the data. Google Tag Manager is the tool that sends that data, to Analytics and to other platforms such as Google Ads or Meta. GTM has no reports.",
+      },
+      {
+        q: "¿Necesito una página de gracias?",
+        qEn: "Do I need a thank-you page?",
+        a: "Es muy recomendable: confirma a la persona que su mensaje llegó y le dice qué sigue. Para medir, lo más confiable es contar el prospecto cuando el servidor confirma el envío y usar la página de gracias para la experiencia, no como único contador.",
+        aEn: "It is highly recommended: it confirms to the person that their message arrived and tells them what happens next. For measurement, the most reliable approach is to count the lead when the server confirms the submission and use the thank-you page for the experience, not as the only counter.",
+      },
+      {
+        q: "¿Por qué Google Ads me marca más conversiones de las que recibí?",
+        qEn: "Why does Google Ads show more conversions than I received?",
+        a: "Casi siempre es una página de gracias que se cuenta en cada recarga o visita directa, una conversión configurada para contar todas en vez de una por clic, o el mismo evento instalado dos veces. Revisa en la Vista previa de GTM cuántas veces se dispara.",
+        aEn: "It is almost always a thank-you page counted on every refresh or direct visit, a conversion set to count every one instead of one per click, or the same event installed twice. Check in GTM's Preview mode how many times it fires.",
+      },
+      {
+        q: "¿Puedo medir los clics a WhatsApp?",
+        qEn: "Can I measure WhatsApp clicks?",
+        a: "Sí. En GTM se crea un activador para los clics en enlaces de WhatsApp y de teléfono, y se manda como evento a GA4, a Google Ads y a Meta. Mide la intención de contacto, no la conversación, así que conviene comparar con los chats que de verdad llegaron.",
+        aEn: "Yes. In GTM you create a trigger for clicks on WhatsApp and phone links and send it as an event to GA4, Google Ads and Meta. It measures the intent to contact, not the conversation, so compare it with the chats that really arrived.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "what is Google Tag Manager",
+        "Google Tag Manager tags",
+        "thank you page conversion tracking",
+        "most important GTM tags",
+        "track WhatsApp clicks GTM",
+      ],
+      keywordsEs: [
+        "qué es Google Tag Manager",
+        "para qué sirve Google Tag Manager",
+        "etiquetas de Google Tag Manager",
+        "página de gracias conversiones",
+        "medir clics de WhatsApp con GTM",
+        "eventos clave GA4",
+      ],
+    },
+  },
+  {
+    slug: "eventos-de-meta-y-etiquetas-de-google",
+    cover: true,
+    title: "Meta Events and Google Tags: How to Measure the Same Thing on Both Platforms",
+    titleEs: "Eventos de Meta y etiquetas de Google: cómo medir lo mismo en las dos plataformas",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Meta and Google measure the same actions with different names. The 17 standard events of the Meta Pixel and which ones a service business uses, the equivalence table between Meta, GA4 and Google Ads, why you need the Pixel and the Conversions API together, what changed in 2025 and why your numbers will never match exactly.",
+    excerptEs:
+      "Meta y Google miden las mismas acciones con nombres distintos. Los 17 eventos estándar del Pixel de Meta y cuáles usa un negocio de servicios, la tabla de equivalencias entre Meta, GA4 y Google Ads, por qué necesitas el Pixel y la API de Conversiones juntos, qué cambió y por qué tus números nunca van a coincidir exactos.",
+    readingTime: 11,
+    date: "2026-11-06",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most businesses that advertise on Facebook, Instagram and Google measure each platform on its own, set up at different times by different people. The result is that a lead is called one thing in Meta, another in Google Analytics and a third in Google Ads, and the reports never agree. Both platforms want the same thing: to know who saw your ad and who then did something valuable. This guide puts them side by side so you can measure the same action in both and know which number to trust.",
+    ledeEs:
+      "La mayoría de los negocios que anuncian en Facebook, Instagram y Google miden cada plataforma por su lado, configurada en momentos distintos por personas distintas. El resultado es que un prospecto se llama de una forma en Meta, de otra en Google Analytics y de una tercera en Google Ads, y los reportes nunca coinciden. Las dos plataformas quieren lo mismo: saber quién vio tu anuncio y quién después hizo algo valioso. Esta guía las pone lado a lado para que midas la misma acción en las dos y sepas a qué número creerle.",
+    sections: [
+      {
+        id: "mismo-objetivo",
+        heading: "Same goal, different vocabulary",
+        headingEs: "Mismo objetivo, distinto vocabulario",
+        body: [
+          "On Meta, the [[Meta Pixel|pixel]] is installed on your site and sends **events**: “someone viewed this page”, “someone left their details”. On Google there are two layers: the Google tag sends events to Google Analytics, and Google Ads takes the ones you mark as important and treats them as **[[conversions|conversion]]**. The idea is identical. What changes is the name of each thing and where it is configured.",
+          "That is why the first step is not technical, it is a decision: **define which actions matter in your business and give each one a single name**. A form sent, a WhatsApp click, a booked appointment, a purchase. Once you have that list, connecting it to both platforms is mechanical.",
+        ],
+        bodyEs: [
+          "En Meta, el [[pixel de Meta|pixel]] se instala en tu sitio y manda **eventos**: “alguien vio esta página”, “alguien dejó sus datos”. En Google hay dos capas: la etiqueta de Google manda eventos a Google Analytics, y Google Ads toma los que marcas como importantes y los trata como **[[conversiones|conversion]]**. La idea es idéntica. Lo que cambia es el nombre de cada cosa y dónde se configura.",
+          "Por eso el primer paso no es técnico, es una decisión: **define qué acciones importan en tu negocio y dale un solo nombre a cada una**. Un formulario enviado, un clic a WhatsApp, una cita agendada, una compra. Con esa lista lista, conectarla a las dos plataformas es mecánico.",
+        ],
+      },
+      {
+        id: "eventos-estandar",
+        heading: "Meta's 17 standard events, and the ones a service business uses",
+        headingEs: "Los 17 eventos estándar de Meta, y los que usa un negocio de servicios",
+        body: [
+          "Meta has 17 **[[standard events|evento-estandar]]**, with fixed names that its algorithm understands without explanation: AddPaymentInfo, AddToCart, AddToWishlist, CompleteRegistration, Contact, CustomizeProduct, Donate, FindLocation, InitiateCheckout, Lead, Purchase, Schedule, Search, StartTrial, SubmitApplication, Subscribe and ViewContent. On top of those, the PageView that the pixel sends on every page.",
+          "A business that sells services uses four or five: **ViewContent** for the pages of each service, **Contact** for WhatsApp and phone clicks, **Lead** for the form, **Schedule** if people book appointments and **SubmitApplication** if they apply for something, such as credit or a programme. An online store adds AddToCart, InitiateCheckout, AddPaymentInfo and Purchase.",
+          "Use the standard name whenever one exists. You can create custom events and custom conversions, for example “visited the thank-you page of the quote form”, but the algorithm learns faster with the names it already knows, and it is easier to read reports when everyone uses the same vocabulary.",
+        ],
+        bodyEs: [
+          "Meta tiene 17 **[[eventos estándar|evento-estandar]]**, con nombres fijos que su algoritmo entiende sin explicación: AddPaymentInfo, AddToCart, AddToWishlist, CompleteRegistration, Contact, CustomizeProduct, Donate, FindLocation, InitiateCheckout, Lead, Purchase, Schedule, Search, StartTrial, SubmitApplication, Subscribe y ViewContent. Además está el PageView que el pixel manda en cada página.",
+          "Un negocio que vende servicios usa cuatro o cinco: **ViewContent** para las páginas de cada servicio, **Contact** para los clics a WhatsApp y teléfono, **Lead** para el formulario, **Schedule** si la gente agenda citas y **SubmitApplication** si solicita algo, como un crédito o un programa. Una tienda en línea suma AddToCart, InitiateCheckout, AddPaymentInfo y Purchase.",
+          "Usa el nombre estándar siempre que exista. Puedes crear eventos personalizados y conversiones personalizadas, por ejemplo “visitó la página de gracias del formulario de cotización”, pero el algoritmo aprende más rápido con los nombres que ya conoce, y los reportes se leen más fácil cuando todos usan el mismo vocabulario.",
+        ],
+      },
+      {
+        id: "equivalencias",
+        heading: "The equivalence table between Meta, GA4 and Google Ads",
+        headingEs: "La tabla de equivalencias entre Meta, GA4 y Google Ads",
+        body: [
+          "This is the table we use when we set up an account. The left column is the action in your business; the others are the name it gets on each platform. Where GA4 has no recommended event, you create one with a clear name and keep it the same forever.",
+        ],
+        bodyEs: [
+          "Esta es la tabla que usamos cuando configuramos una cuenta. La columna de la izquierda es la acción en tu negocio; las demás son el nombre que recibe en cada plataforma. Donde GA4 no tiene un evento recomendado, creas uno con un nombre claro y no lo vuelves a cambiar.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "One action, three names",
+          titleEs: "Una acción, tres nombres",
+          note: "Google Ads names are its conversion categories. “Own event” means GA4 has no recommended name and you define one.",
+          noteEs:
+            "En Google Ads van los nombres de sus categorías de conversión en inglés; en la interfaz en español aparecen traducidos. “Evento propio” significa que GA4 no tiene un nombre recomendado y tú defines uno.",
+          columns: [
+            { label: "Action in your business", labelEs: "Acción en tu negocio" },
+            { label: "Meta", labelEs: "Meta" },
+            { label: "GA4", labelEs: "GA4" },
+            { label: "Google Ads", labelEs: "Google Ads" },
+          ],
+          rows: [
+            {
+              label: "Sends the contact form",
+              labelEs: "Envía el formulario de contacto",
+              cells: [
+                { text: "Lead", textEs: "Lead" },
+                { text: "generate_lead", textEs: "generate_lead" },
+                { text: "Submit lead form", textEs: "Submit lead form" },
+              ],
+            },
+            {
+              label: "Clicks WhatsApp or phone",
+              labelEs: "Hace clic en WhatsApp o teléfono",
+              cells: [
+                { text: "Contact", textEs: "Contact" },
+                {
+                  text: "Own event, e.g. click_whatsapp",
+                  textEs: "Evento propio, p. ej. click_whatsapp",
+                },
+                { text: "Contact", textEs: "Contact" },
+              ],
+            },
+            {
+              label: "Books an appointment",
+              labelEs: "Agenda una cita",
+              cells: [
+                { text: "Schedule", textEs: "Schedule" },
+                {
+                  text: "Own event, e.g. book_appointment",
+                  textEs: "Evento propio, p. ej. book_appointment",
+                },
+                { text: "Book appointment", textEs: "Book appointment" },
+              ],
+            },
+            {
+              label: "Requests a quote",
+              labelEs: "Pide una cotización",
+              cells: [
+                { text: "Lead", textEs: "Lead" },
+                { text: "generate_lead", textEs: "generate_lead" },
+                { text: "Request quote", textEs: "Request quote" },
+              ],
+            },
+            {
+              label: "Creates an account",
+              labelEs: "Crea una cuenta",
+              cells: [
+                { text: "CompleteRegistration", textEs: "CompleteRegistration" },
+                { text: "sign_up", textEs: "sign_up" },
+                { text: "Sign up", textEs: "Sign up" },
+              ],
+            },
+            {
+              label: "Views a service or product",
+              labelEs: "Ve un servicio o producto",
+              cells: [
+                { text: "ViewContent", textEs: "ViewContent" },
+                { text: "view_item", textEs: "view_item" },
+                { text: "Page view", textEs: "Page view" },
+              ],
+            },
+            {
+              label: "Adds to cart",
+              labelEs: "Agrega al carrito",
+              cells: [
+                { text: "AddToCart", textEs: "AddToCart" },
+                { text: "add_to_cart", textEs: "add_to_cart" },
+                { text: "Add to cart", textEs: "Add to cart" },
+              ],
+            },
+            {
+              label: "Starts checkout",
+              labelEs: "Inicia el pago",
+              cells: [
+                { text: "InitiateCheckout", textEs: "InitiateCheckout" },
+                { text: "begin_checkout", textEs: "begin_checkout" },
+                { text: "Begin checkout", textEs: "Begin checkout" },
+              ],
+            },
+            {
+              label: "Buys",
+              labelEs: "Compra",
+              cells: [
+                { text: "Purchase", textEs: "Purchase" },
+                { text: "purchase", textEs: "purchase" },
+                { text: "Purchase", textEs: "Purchase" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "pixel-y-capi",
+        heading: "Pixel and Conversions API: why you need both",
+        headingEs: "Pixel y API de Conversiones: por qué necesitas los dos",
+        body: [
+          "The pixel runs in the visitor's browser, and browsers lose data: ad blockers, privacy settings, people who close the page before the code loads. The [[Conversions API|api-conversiones]] sends the same event from your server, where none of that interferes. We explain it in detail in [Pixel and CAPI](/blog/que-es-el-pixel-de-meta).",
+          "If both send the same lead, Meta has to know it is the same one. That is **[[deduplication|deduplicacion]]**: both messages travel with the same event name and the same event ID, and Meta keeps only one. Without that ID, every lead counts twice and the algorithm optimises on false data.",
+          "Google has its own versions of the same idea: **[[enhanced conversions|conversiones-mejoradas]]**, which complete the conversion with first-party data, the importing of offline conversions from your CRM, and server-side tagging in GTM. Different names, same logic: do not depend only on the browser.",
+        ],
+        bodyEs: [
+          "El pixel corre en el navegador de quien visita, y los navegadores pierden datos: bloqueadores de anuncios, ajustes de privacidad, gente que cierra la página antes de que cargue el código. La [[API de Conversiones|api-conversiones]] manda el mismo evento desde tu servidor, donde nada de eso interfiere. Lo explicamos a detalle en [Pixel y CAPI](/blog/que-es-el-pixel-de-meta).",
+          "Si los dos mandan el mismo prospecto, Meta tiene que saber que es el mismo. Eso es la **[[deduplicación|deduplicacion]]**: los dos mensajes viajan con el mismo nombre de evento y el mismo identificador, y Meta se queda solo con uno. Sin ese identificador, cada prospecto cuenta doble y el algoritmo optimiza con datos falsos.",
+          "Google tiene sus propias versiones de la misma idea: las **[[conversiones mejoradas|conversiones-mejoradas]]**, que completan la conversión con datos propios, la importación de conversiones offline desde tu CRM y el etiquetado del lado del servidor en GTM. Nombres distintos, misma lógica: no depender solo del navegador.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "How one lead reaches Meta without counting twice",
+          titleEs: "Cómo llega un prospecto a Meta sin contarse doble",
+          steps: [
+            {
+              label: "The form is confirmed",
+              labelEs: "Se confirma el formulario",
+              detail: "Your server receives it and creates a unique ID for that submission.",
+              detailEs: "Tu servidor lo recibe y crea un identificador único para ese envío.",
+            },
+            {
+              label: "The pixel sends Lead",
+              labelEs: "El pixel manda Lead",
+              detail: "From the browser, with that ID.",
+              detailEs: "Desde el navegador, con ese identificador.",
+            },
+            {
+              label: "The Conversions API sends Lead",
+              labelEs: "La API de Conversiones manda Lead",
+              detail: "From the server, with the same ID and encrypted contact data.",
+              detailEs:
+                "Desde el servidor, con el mismo identificador y datos de contacto cifrados.",
+            },
+            {
+              label: "Meta deduplicates",
+              labelEs: "Meta deduplica",
+              detail: "Same name and same ID: it counts one lead, not two.",
+              detailEs: "Mismo nombre y mismo identificador: cuenta un prospecto, no dos.",
+            },
+          ],
+        },
+      },
+      {
+        id: "coincidencia",
+        heading: "Advanced matching and enhanced conversions: the same trick",
+        headingEs: "Coincidencia avanzada y conversiones mejoradas: el mismo truco",
+        body: [
+          "Both platforms improve a lot when, together with the event, you send the email or phone the person gave you, **encrypted** before it leaves your site. Meta calls it advanced matching and gives you a score from 0 to 10, the Event Match Quality, in Events Manager. Google calls it enhanced conversions. In both cases the platform compares that encrypted data with its users to know who converted, and it never shows you anyone's identity.",
+          "In practice, an event with a good match teaches the algorithm much more than an anonymous one. If your Event Match Quality is low, the most common cause is that you only send the event, without contact data, or that the server version is not installed.",
+        ],
+        bodyEs: [
+          "Las dos plataformas mejoran mucho cuando, junto con el evento, mandas el correo o el teléfono que te dio la persona, **cifrado** antes de salir de tu sitio. Meta le llama coincidencia avanzada y te da una calificación de 0 a 10, la calidad de coincidencia de eventos, en el Administrador de eventos. Google le llama conversiones mejoradas. En los dos casos la plataforma compara ese dato cifrado con sus usuarios para saber quién convirtió, y nunca te muestra la identidad de nadie.",
+          "En la práctica, un evento con buena coincidencia le enseña al algoritmo mucho más que uno anónimo. Si tu calificación de coincidencia es baja, la causa más común es que solo mandas el evento, sin datos de contacto, o que no está instalada la versión de servidor.",
+        ],
+      },
+      {
+        id: "que-cambio",
+        heading: "What changed: Meta no longer asks you to rank eight events",
+        headingEs: "Lo que cambió: Meta ya no te pide priorizar ocho eventos",
+        body: [
+          "If you set up Meta a few years ago, you will remember the Aggregated Event Measurement limit: you had to verify your domain and rank a maximum of eight events by importance. **Meta removed that prioritisation**: there is no longer an eight-event list to configure, the tab disappeared from Events Manager and verifying the domain is no longer required for event configuration, although Meta still recommends it to control who can edit links to your site.",
+          "What did not change is the rule that matters: optimise each campaign for the event closest to the sale that gets enough volume. If you receive five leads a month, optimising for Purchase or Schedule leaves the algorithm with nothing to learn from; better to start with Lead and move down the funnel when there is volume. We go deeper into that in [Meta Ads advanced](/blog/meta-ads-avanzado-pruebas-ab-reels-embudo).",
+        ],
+        bodyEs: [
+          "Si configuraste Meta hace unos años, vas a recordar el límite de la Medición de Eventos Agregados: tenías que verificar tu dominio y priorizar un máximo de ocho eventos por importancia. **Meta quitó esa priorización**: ya no hay una lista de ocho eventos que configurar, la pestaña desapareció del Administrador de eventos y verificar el dominio ya no es obligatorio para configurar eventos, aunque Meta lo sigue recomendando para controlar quién puede editar los enlaces a tu sitio.",
+          "Lo que no cambió es la regla que importa: optimiza cada campaña para el evento más cercano a la venta que tenga suficiente volumen. Si recibes cinco prospectos al mes, optimizar por Purchase o Schedule deja al algoritmo sin nada de qué aprender; mejor empieza con Lead y baja por el embudo cuando haya volumen. Lo vemos más a fondo en [Meta Ads avanzado](/blog/meta-ads-avanzado-pruebas-ab-reels-embudo).",
+        ],
+      },
+      {
+        id: "concepto-por-concepto",
+        heading: "Concept by concept",
+        headingEs: "Concepto por concepto",
+        body: ["If you already know one platform, this table translates it to the other."],
+        bodyEs: ["Si ya conoces una plataforma, esta tabla te la traduce a la otra."],
+        diagram: {
+          kind: "table",
+          title: "Meta vs Google, concept by concept",
+          titleEs: "Meta contra Google, concepto por concepto",
+          columns: [
+            { label: "Concept", labelEs: "Concepto" },
+            { label: "Meta", labelEs: "Meta" },
+            { label: "Google", labelEs: "Google" },
+          ],
+          rows: [
+            {
+              label: "Base code on the site",
+              labelEs: "Código base en el sitio",
+              cells: [
+                { text: "Meta Pixel", textEs: "Pixel de Meta" },
+                {
+                  text: "Google tag (directly or through GTM)",
+                  textEs: "Etiqueta de Google (directa o con GTM)",
+                },
+              ],
+            },
+            {
+              label: "Important action",
+              labelEs: "Acción importante",
+              cells: [
+                {
+                  text: "Standard event or custom conversion",
+                  textEs: "Evento estándar o conversión personalizada",
+                },
+                {
+                  text: "Key event in GA4, conversion in Google Ads",
+                  textEs: "Evento clave en GA4, conversión en Google Ads",
+                },
+              ],
+            },
+            {
+              label: "Sending from the server",
+              labelEs: "Envío desde el servidor",
+              cells: [
+                { text: "Conversions API", textEs: "API de Conversiones" },
+                {
+                  text: "Server-side GTM and offline conversion import",
+                  textEs: "GTM del lado del servidor e importación de conversiones offline",
+                },
+              ],
+            },
+            {
+              label: "Encrypted contact data",
+              labelEs: "Datos de contacto cifrados",
+              cells: [
+                { text: "Advanced matching", textEs: "Coincidencia avanzada" },
+                { text: "Enhanced conversions", textEs: "Conversiones mejoradas" },
+              ],
+            },
+            {
+              label: "Avoid counting twice",
+              labelEs: "Evitar contar doble",
+              cells: [
+                {
+                  text: "Same event name and event ID",
+                  textEs: "Mismo nombre de evento e identificador",
+                },
+                {
+                  text: "Count one conversion per click; transaction ID for purchases",
+                  textEs: "Contar una conversión por clic; ID de transacción en compras",
+                },
+              ],
+            },
+            {
+              label: "Testing",
+              labelEs: "Pruebas",
+              cells: [
+                {
+                  text: "Test events and Meta Pixel Helper",
+                  textEs: "Eventos de prueba y Meta Pixel Helper",
+                },
+                {
+                  text: "GTM Preview, Tag Assistant and GA4 DebugView",
+                  textEs: "Vista previa de GTM, Tag Assistant y DebugView de GA4",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "instalar-sin-duplicar",
+        heading: "How to install both without duplicating anything",
+        headingEs: "Cómo instalar las dos sin duplicar nada",
+        body: [
+          "The cleanest way is to manage both from [Google Tag Manager](/blog/que-es-google-tag-manager): **one trigger per business action**, and that trigger fires the Meta event, the GA4 event and the Google Ads conversion at the same time. If tomorrow you change the form, you change one trigger and all three platforms remain aligned.",
+          "Avoid the most common mistake: installing the pixel twice, once by hand in the template and again through a plugin or the website builder's integration. Before adding anything, check what is already there. And if you also advertise on TikTok or Pinterest, the logic is the same: they have their own tag and their own conversions API with similar events.",
+        ],
+        bodyEs: [
+          "La forma más limpia es manejar las dos desde [Google Tag Manager](/blog/que-es-google-tag-manager): **un activador por cada acción del negocio**, y ese activador dispara al mismo tiempo el evento de Meta, el evento de GA4 y la conversión de Google Ads. Si mañana cambias el formulario, cambias un activador y las tres plataformas siguen alineadas.",
+          "Evita el error más común: instalar el pixel dos veces, una a mano en la plantilla y otra con un plugin o la integración del constructor de tu página. Antes de agregar nada, revisa qué ya está. Y si también anuncias en TikTok o Pinterest, la lógica es la misma: tienen su propia etiqueta y su propia API de conversiones con eventos parecidos.",
+        ],
+      },
+      {
+        id: "numeros-no-coinciden",
+        heading: "Why your numbers will never match, and why that is fine",
+        headingEs: "Por qué tus números nunca van a coincidir, y por qué está bien",
+        body: [
+          "Even with everything well installed, Meta and Google will report different numbers for the same month. Each one counts with its own rules: Meta, by default, gives itself credit for conversions up to 7 days after a click and 1 day after a view; Google Ads uses its own attribution model and a click window that is usually 30 days. **If someone saw your Reel and then searched for you on Google, both platforms will claim that lead.** Add the two reports and you will have more leads than you really received.",
+          "That is why the source of truth is not any platform: it is your [[CRM|crm]] or your own list of leads. Use the platforms to compare campaigns with each other, and your CRM to know how many leads and sales there really were. If the gap between the two grows, something broke in the measurement.",
+          "If you want us to review your setup, at Aphelion we install and audit measurement as part of our [Meta Ads](/meta-ads) and [Google Ads](/google-ads) work. [Tell us what you have](/contacto) and we will tell you what is missing.",
+        ],
+        bodyEs: [
+          "Aun con todo bien instalado, Meta y Google van a reportar números distintos para el mismo mes. Cada una cuenta con sus propias reglas: Meta, por defecto, se atribuye conversiones hasta 7 días después de un clic y 1 día después de una vista; Google Ads usa su propio modelo de atribución y una ventana de clic que normalmente es de 30 días. **Si alguien vio tu Reel y después te buscó en Google, las dos plataformas van a reclamar ese prospecto.** Suma los dos reportes y vas a tener más prospectos de los que de verdad recibiste.",
+          "Por eso la fuente de verdad no es ninguna plataforma: es tu [[CRM|crm]] o tu propia lista de prospectos. Usa las plataformas para comparar campañas entre sí, y tu CRM para saber cuántos prospectos y ventas hubo de verdad. Si la diferencia entre las dos crece, algo se rompió en la medición.",
+          "Si quieres que revisemos tu configuración, en Aphelion instalamos y auditamos la medición como parte de nuestro trabajo en [Meta Ads](/meta-ads) y [Google Ads](/google-ads). [Cuéntanos qué tienes](/contacto) y te decimos qué falta.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuántos eventos estándar tiene el Pixel de Meta?",
+        qEn: "How many standard events does the Meta Pixel have?",
+        a: "17: AddPaymentInfo, AddToCart, AddToWishlist, CompleteRegistration, Contact, CustomizeProduct, Donate, FindLocation, InitiateCheckout, Lead, Purchase, Schedule, Search, StartTrial, SubmitApplication, Subscribe y ViewContent. Aparte está el PageView que se manda en cada página.",
+        aEn: "17: AddPaymentInfo, AddToCart, AddToWishlist, CompleteRegistration, Contact, CustomizeProduct, Donate, FindLocation, InitiateCheckout, Lead, Purchase, Schedule, Search, StartTrial, SubmitApplication, Subscribe and ViewContent. On top of those is the PageView sent on every page.",
+      },
+      {
+        q: "¿Qué evento de Meta uso para un formulario de contacto?",
+        qEn: "Which Meta event do I use for a contact form?",
+        a: "Lead. En GA4 su equivalente es generate_lead y en Google Ads la categoría Submit lead form. Para los clics a WhatsApp o teléfono usa Contact.",
+        aEn: "Lead. In GA4 the equivalent is generate_lead and in Google Ads the Submit lead form category. For WhatsApp or phone clicks use Contact.",
+      },
+      {
+        q: "¿Necesito la API de Conversiones si ya tengo el Pixel?",
+        qEn: "Do I need the Conversions API if I already have the Pixel?",
+        a: "Es muy recomendable. El pixel pierde eventos por bloqueadores y ajustes de privacidad; la API los manda desde tu servidor. Si usas los dos, manda el mismo identificador de evento para que Meta no los cuente doble.",
+        aEn: "It is highly recommended. The pixel loses events to blockers and privacy settings; the API sends them from your server. If you use both, send the same event ID so Meta does not count them twice.",
+      },
+      {
+        q: "¿Sigue existiendo el límite de ocho eventos en Meta?",
+        qEn: "Does Meta's eight-event limit still exist?",
+        a: "No. Meta quitó la priorización de ocho eventos de la Medición de Eventos Agregados y ya no exige verificar el dominio para configurar eventos, aunque lo sigue recomendando.",
+        aEn: "No. Meta removed the eight-event prioritisation from Aggregated Event Measurement and no longer requires domain verification to configure events, although it still recommends it.",
+      },
+      {
+        q: "¿Por qué Meta y Google reportan más prospectos de los que tengo?",
+        qEn: "Why do Meta and Google report more leads than I have?",
+        a: "Porque cada plataforma se atribuye las conversiones con sus propias reglas y ventanas de tiempo, y las dos pueden reclamar al mismo prospecto. La cifra real está en tu CRM o tu lista de prospectos.",
+        aEn: "Because each platform credits itself with conversions using its own rules and time windows, and both can claim the same lead. The real figure is in your CRM or your list of leads.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Meta Pixel standard events",
+        "Meta events vs Google Ads conversions",
+        "Conversions API deduplication",
+        "enhanced conversions vs advanced matching",
+        "Meta aggregated event measurement changes",
+      ],
+      keywordsEs: [
+        "eventos estándar del pixel de Meta",
+        "eventos de Meta y conversiones de Google Ads",
+        "API de Conversiones deduplicación",
+        "conversiones mejoradas Google Ads",
+        "qué evento de Meta usar para un formulario",
+        "por qué Meta y Google reportan distinto",
+      ],
+    },
+  },
+  {
+    slug: "pinterest-para-negocios",
+    cover: true,
+    title: "Pinterest for Business in 2026: Which Industries Sell There and What It Earned in 2025",
+    titleEs: "Pinterest para negocios en 2026: qué giros venden ahí y cuánto facturó en 2025",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "Pinterest closed 2025 with 4.22 billion dollars in revenue and 619 million monthly users, and its fastest growth is outside the United States. Why it works as a visual search engine and not as a social network, how many people it reaches in Mexico, which industries it suits and which it does not, the new ad tools and how to start without wasting money.",
+    excerptEs:
+      "Pinterest cerró 2025 con 4,222 millones de dólares de ingresos y 619 millones de usuarios al mes, y su crecimiento más rápido está fuera de Estados Unidos. Por qué funciona como buscador visual y no como red social, a cuánta gente llega en México, para qué giros sirve y para cuáles no, las herramientas nuevas de anuncios y cómo empezar sin tirar dinero.",
+    readingTime: 11,
+    date: "2026-11-06",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most businesses in Mexico think of Pinterest as the place where people save recipes and wedding ideas. That is exactly why it is interesting. People do not go to Pinterest to see what their friends are doing; they go to plan something they are going to do: decorate a room, organise an event, choose a look, a trip or a remodel. That is purchase intent, months before the purchase. And while Facebook, Instagram and TikTok are full of advertisers, on Pinterest Mexico there are still more users than brands. Here are the 2025 figures, which industries it suits and how to start.",
+    ledeEs:
+      "La mayoría de los negocios en México piensa en Pinterest como el lugar donde la gente guarda recetas e ideas de boda. Justo por eso es interesante. La gente no entra a Pinterest a ver qué hacen sus amigos; entra a planear algo que va a hacer: decorar un cuarto, organizar un evento, elegir un look, un viaje o una remodelación. Eso es intención de compra, meses antes de la compra. Y mientras Facebook, Instagram y TikTok están llenos de anunciantes, en Pinterest México todavía hay más usuarios que marcas. Aquí están las cifras de 2025, para qué giros sirve y cómo empezar.",
+    sections: [
+      {
+        id: "cifras-2025",
+        heading: "What Pinterest earned in 2025",
+        headingEs: "Cuánto facturó Pinterest en 2025",
+        body: [
+          "In its annual results, Pinterest reported **4,222 million dollars in revenue for 2025, 16% more than in 2024**, and 1,319 million in the fourth quarter alone. It ended the year with **619 million monthly active users, 12% more**. Almost all of that money is advertising: it is what brands paid to appear there.",
+          "The detail that matters for a business in Mexico is where it grows. The United States and Canada still bring three out of every four dollars, but their revenue grew 10%. Europe grew 31% and the rest of the world, which includes Latin America, **grew 62%**. Users follow the same pattern: 16% more outside the United States, Canada and Europe.",
+          "Another figure helps explain the opportunity. Pinterest earned an average of 30.84 dollars per user in the United States and Canada in 2025, and only 0.83 dollars per user in the rest of the world. **Assumption:** that gap suggests far less competition among advertisers for each user here, which usually means cheaper reach. It is an inference, not a published price, and it should be validated with a small test of your own.",
+        ],
+        bodyEs: [
+          "En sus resultados anuales, Pinterest reportó **4,222 millones de dólares de ingresos en 2025, 16% más que en 2024**, y 1,319 millones solo en el cuarto trimestre. Cerró el año con **619 millones de usuarios activos al mes, 12% más**. Casi todo ese dinero es publicidad: es lo que pagaron las marcas por aparecer ahí.",
+          "El dato que le importa a un negocio en México es dónde crece. Estados Unidos y Canadá todavía aportan tres de cada cuatro dólares, pero sus ingresos crecieron 10%. Europa creció 31% y el resto del mundo, que incluye a Latinoamérica, **creció 62%**. Los usuarios siguen el mismo patrón: 16% más fuera de Estados Unidos, Canadá y Europa.",
+          "Otra cifra ayuda a entender la oportunidad. Pinterest ganó en promedio 30.84 dólares por usuario en Estados Unidos y Canadá en 2025, y solo 0.83 dólares por usuario en el resto del mundo. **Suposición:** esa diferencia sugiere mucha menos competencia entre anunciantes por cada usuario aquí, lo que normalmente significa alcance más barato. Es una inferencia, no un precio publicado, y conviene validarla con una prueba chica propia.",
+        ],
+        chart: {
+          title: "Pinterest revenue by region, 2025 (millions of dollars)",
+          titleEs: "Ingresos de Pinterest por región, 2025 (millones de dólares)",
+          source: "Pinterest, fourth quarter and full year 2025 results (February 2026).",
+          sourceEs:
+            "Pinterest, resultados del cuarto trimestre y año completo 2025 (febrero de 2026).",
+          bars: [
+            {
+              label: "United States and Canada",
+              labelEs: "Estados Unidos y Canadá",
+              value: 3173,
+              display: "$3,173 M · +10%",
+              displayEs: "$3,173 M · +10%",
+            },
+            {
+              label: "Europe",
+              labelEs: "Europa",
+              value: 775,
+              display: "$775 M · +31%",
+              displayEs: "$775 M · +31%",
+            },
+            {
+              label: "Rest of the world (includes Latin America)",
+              labelEs: "Resto del mundo (incluye Latinoamérica)",
+              value: 274,
+              display: "$274 M · +62%",
+              displayEs: "$274 M · +62%",
+            },
+          ],
+        },
+      },
+      {
+        id: "buscador-no-red-social",
+        heading: "A visual search engine, not a social network",
+        headingEs: "Un buscador visual, no una red social",
+        body: [
+          "On Pinterest people search. The company says it handles around **80 billion searches a month**, and that most of them do not include a brand name: people search “small living room ideas” or “rustic wedding table”, not a store. That is an open door for a business nobody knows yet.",
+          "It also works differently over time. A post on Instagram lives a day or two; a [[pin|pin]] keeps appearing in searches for months, because it behaves more like a page in Google than like a story. And the audience is younger than many people assume: according to Pinterest, **more than half of its users are Gen Z**, the largest and fastest-growing group on the platform.",
+        ],
+        bodyEs: [
+          "En Pinterest la gente busca. La empresa dice que maneja alrededor de **80 mil millones de búsquedas al mes**, y que la mayoría no incluye el nombre de una marca: la gente busca “ideas para sala pequeña” o “mesa de boda rústica”, no una tienda. Esa es una puerta abierta para un negocio que todavía nadie conoce.",
+          "También funciona distinto en el tiempo. Una publicación en Instagram vive un día o dos; un [[pin|pin]] sigue apareciendo en búsquedas durante meses, porque se comporta más como una página en Google que como una historia. Y el público es más joven de lo que mucha gente cree: según Pinterest, **más de la mitad de sus usuarios son de la generación Z**, el grupo más grande y el que más crece en la plataforma.",
+        ],
+      },
+      {
+        id: "pinterest-en-mexico",
+        heading: "How many people Pinterest reaches in Mexico",
+        headingEs: "A cuánta gente llega Pinterest en México",
+        body: [
+          "According to DataReportal, Pinterest ads could reach **28.5 million people in Mexico** at the end of 2025, 9.6% more than a year earlier, and **two out of three are women**. It is much less than Facebook, TikTok or YouTube, and that is not a defect: it is a smaller but much less saturated audience, with a different mindset.",
+          "Pinterest itself recognises the gap. In March 2026 its new head for Latin America told Expansión that the region has about 100 million users, more than 55 million of them in Spanish-speaking countries, and that **“we have more users than brands on the platform today”**. He named Mexico as the market where that gap can close fastest, with retailers such as Liverpool and Home Depot already advertising. Pinterest ads have been open to any business in Mexico since 2021.",
+        ],
+        bodyEs: [
+          "Según DataReportal, los anuncios de Pinterest podían llegar a **28.5 millones de personas en México** a finales de 2025, 9.6% más que un año antes, y **dos de cada tres son mujeres**. Es mucho menos que Facebook, TikTok o YouTube, y eso no es un defecto: es un público más chico pero mucho menos saturado, y con otra mentalidad.",
+          "Pinterest mismo reconoce la brecha. En marzo de 2026 su nuevo director para Latinoamérica le dijo a Expansión que la región tiene unos 100 millones de usuarios, más de 55 millones en países de habla hispana, y que **“tenemos más usuarios que marcas hoy en la plataforma”**. Nombró a México como el mercado donde esa brecha puede cerrarse más rápido, con minoristas como Liverpool y Home Depot ya anunciándose. Los anuncios de Pinterest están abiertos a cualquier empresa en México desde 2021.",
+        ],
+        chart: {
+          title: "Ad reach in Mexico by platform, late 2025 (millions of people)",
+          titleEs:
+            "Alcance publicitario en México por plataforma, finales de 2025 (millones de personas)",
+          source:
+            "DataReportal, Digital 2026: Mexico. Ad reach is not the same as unique users; TikTok counts people aged 18 and over.",
+          sourceEs:
+            "DataReportal, Digital 2026: México. El alcance publicitario no equivale a usuarios únicos; TikTok cuenta a mayores de 18 años.",
+          bars: [
+            {
+              label: "TikTok (18+)",
+              labelEs: "TikTok (18+)",
+              value: 99,
+              display: "99.0 M",
+              displayEs: "99.0 M",
+            },
+            {
+              label: "Facebook",
+              labelEs: "Facebook",
+              value: 93.5,
+              display: "93.5 M",
+              displayEs: "93.5 M",
+            },
+            {
+              label: "YouTube",
+              labelEs: "YouTube",
+              value: 85,
+              display: "85.0 M",
+              displayEs: "85.0 M",
+            },
+            {
+              label: "Instagram",
+              labelEs: "Instagram",
+              value: 53.6,
+              display: "53.6 M",
+              displayEs: "53.6 M",
+            },
+            {
+              label: "Pinterest",
+              labelEs: "Pinterest",
+              value: 28.5,
+              display: "28.5 M · 66.6% women",
+              displayEs: "28.5 M · 66.6% mujeres",
+            },
+          ],
+        },
+      },
+      {
+        id: "para-que-giros",
+        heading: "Which industries it suits, and which it does not",
+        headingEs: "Para qué giros sirve, y para cuáles no",
+        body: [
+          "Pinterest works when the purchase is **visual, planned and takes weeks or months to decide**. Pinterest itself names fashion, beauty, home decor and furniture as its established categories in the region, and travel as the emerging one. In our experience, weddings and events and anything related to designing or remodelling a home belong in the same group.",
+          "It does not work for urgent needs. Nobody looks for a plumber, a lawyer or an emergency dentist on Pinterest. Nor for industrial sales between companies, where decisions go through quotes and meetings. If your client buys out of need and today, your money is better spent on [Google Ads](/google-ads); if you are not sure, we compare the options in [where to advertise by type of business](/blog/donde-anunciarte-segun-tu-giro).",
+        ],
+        bodyEs: [
+          "Pinterest funciona cuando la compra es **visual, planeada y tarda semanas o meses en decidirse**. Pinterest mismo nombra a la moda, la belleza, la decoración y los muebles como sus categorías establecidas en la región, y a los viajes como la emergente. En nuestra experiencia, las bodas y eventos y todo lo relacionado con diseñar o remodelar una casa entran en el mismo grupo.",
+          "No funciona para necesidades urgentes. Nadie busca un plomero, un abogado o un dentista de emergencia en Pinterest. Tampoco para venta industrial entre empresas, donde las decisiones pasan por cotizaciones y juntas. Si tu cliente compra por necesidad y hoy, tu dinero rinde más en [Google Ads](/google-ads); si no estás seguro, comparamos las opciones en [dónde anunciarte según tu giro](/blog/donde-anunciarte-segun-tu-giro).",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Pinterest by industry",
+          titleEs: "Pinterest por giro",
+          columns: [
+            { label: "Industry", labelEs: "Giro" },
+            { label: "Why it works", labelEs: "Por qué funciona" },
+            { label: "What to publish", labelEs: "Qué publicar" },
+          ],
+          rows: [
+            {
+              label: "Decor, furniture and remodelling",
+              labelEs: "Decoración, muebles y remodelación",
+              cells: [
+                {
+                  text: "People build boards months before buying",
+                  textEs: "La gente arma tableros meses antes de comprar",
+                },
+                {
+                  text: "Finished spaces, before and after, palettes, measurements",
+                  textEs: "Espacios terminados, antes y después, paletas, medidas",
+                },
+              ],
+            },
+            {
+              label: "Weddings and events",
+              labelEs: "Bodas y eventos",
+              cells: [
+                { text: "Long and very visual planning", textEs: "Planeación larga y muy visual" },
+                {
+                  text: "Set-ups, tables, menus, flowers, venues",
+                  textEs: "Montajes, mesas, menús, flores, lugares",
+                },
+              ],
+            },
+            {
+              label: "Fashion and beauty",
+              labelEs: "Moda y belleza",
+              cells: [
+                {
+                  text: "Established categories on Pinterest",
+                  textEs: "Categorías establecidas en Pinterest",
+                },
+                {
+                  text: "Looks, outfits, short tutorials",
+                  textEs: "Looks, combinaciones, tutoriales cortos",
+                },
+              ],
+            },
+            {
+              label: "Travel and tourism",
+              labelEs: "Viajes y turismo",
+              cells: [
+                {
+                  text: "The category Pinterest says is emerging",
+                  textEs: "La categoría que Pinterest dice que está emergiendo",
+                },
+                {
+                  text: "Itineraries, places to stay, experiences, routes",
+                  textEs: "Itinerarios, hospedajes, experiencias, rutas",
+                },
+              ],
+            },
+            {
+              label: "Food, restaurants and catering",
+              labelEs: "Comida, restaurantes y banquetes",
+              cells: [
+                {
+                  text: "People plan meals and celebrations",
+                  textEs: "La gente planea comidas y celebraciones",
+                },
+                {
+                  text: "Dishes, table set-ups, seasonal menus",
+                  textEs: "Platillos, montajes de mesa, menús de temporada",
+                },
+              ],
+            },
+            {
+              label: "Design-led real estate and architecture",
+              labelEs: "Inmobiliario de diseño y arquitectura",
+              cells: [
+                {
+                  text: "Buyers look for styles before projects",
+                  textEs: "Los compradores buscan estilos antes que proyectos",
+                },
+                {
+                  text: "Interiors, amenities, materials, renders",
+                  textEs: "Interiores, amenidades, materiales, renders",
+                },
+              ],
+            },
+            {
+              label: "Urgent services and industrial B2B",
+              labelEs: "Servicios urgentes y venta industrial",
+              cells: [
+                {
+                  text: "Does not work: the purchase is not planned visually",
+                  textEs: "No funciona: la compra no se planea de forma visual",
+                },
+                {
+                  text: "Better on Google Ads or LinkedIn",
+                  textEs: "Mejor en Google Ads o LinkedIn",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "herramientas-nuevas",
+        heading: "The new ways to sell on Pinterest",
+        headingEs: "Las formas nuevas de vender en Pinterest",
+        body: [
+          "**Performance+.** These are automated campaigns in which Pinterest chooses audiences, bids and placements, similar to Advantage+ on Meta or Performance Max on Google. Pinterest reported that retailers using them saw on average 24% more conversion lift than those using only traditional campaigns. It is the company's own figure.",
+          "**Shopping ads and catalogues.** If you sell products online, you upload your catalogue and each product becomes a pin with its price that takes people to your store. According to Pinterest, shopping ads already represent 30% of its international revenue. They are also testing ads at the top of search results and an assistant that answers by voice and shows products.",
+          "**Pinterest Trends and Pinterest Predicts.** Trends shows what people are searching for and when it peaks, so you can publish before the season and not during it. Predicts is the annual trends report: the 2026 edition, published in December 2025, has 21 trends in fashion, food, home, beauty, travel and celebrations. Pinterest claims that 80% of its predictions come true; take it as a direction, not a certainty.",
+          "**SEO inside Pinterest.** Because it is a search engine, the titles, descriptions and board names should use the words people search for. It is the same logic as [SEO for Google](/blog/guia-seo), with images.",
+        ],
+        bodyEs: [
+          "**Performance+.** Son campañas automatizadas en las que Pinterest elige públicos, pujas y ubicaciones, parecidas a Advantage+ en Meta o Performance Max en Google. Pinterest reportó que los minoristas que las usan vieron en promedio 24% más incremento de conversiones que los que solo usan campañas tradicionales. Es una cifra de la propia empresa.",
+          "**Anuncios de compras y catálogos.** Si vendes productos en línea, subes tu catálogo y cada producto se vuelve un pin con su precio que lleva a tu tienda. Según Pinterest, los anuncios de compras ya representan 30% de sus ingresos internacionales. También están probando anuncios arriba de los resultados de búsqueda y un asistente que responde por voz y muestra productos.",
+          "**Pinterest Trends y Pinterest Predicts.** Trends te enseña qué está buscando la gente y cuándo llega al máximo, para que publiques antes de la temporada y no durante. Predicts es el reporte anual de tendencias: la edición 2026, publicada en diciembre de 2025, trae 21 tendencias de moda, comida, casa, belleza, viajes y celebraciones. Pinterest dice que 80% de sus predicciones se cumplen; tómalo como dirección, no como certeza.",
+          "**SEO dentro de Pinterest.** Como es un buscador, los títulos, descripciones y nombres de tableros deben usar las palabras que la gente busca. Es la misma lógica del [SEO para Google](/blog/guia-seo), con imágenes.",
+        ],
+      },
+      {
+        id: "como-empezar",
+        heading: "How to start without wasting money",
+        headingEs: "Cómo empezar sin tirar dinero",
+        body: [
+          "Treat Pinterest as a channel that builds up, not as a switch. The first months are for publishing well and measuring; ads come when you know which pins attract the right people.",
+          "Measure from the first day. Pinterest has its own tag and its own conversions API, and they are installed the same way as Meta's and Google's, ideally from [Google Tag Manager](/blog/que-es-google-tag-manager). If you already have your actions defined for Meta and Google, as we explain in [Meta events and Google tags](/blog/eventos-de-meta-y-etiquetas-de-google), you reuse the same triggers. And remember that the purchase on Pinterest takes longer: judge results over months, not a week.",
+        ],
+        bodyEs: [
+          "Trata Pinterest como un canal que se acumula, no como un interruptor. Los primeros meses son para publicar bien y medir; los anuncios vienen cuando ya sabes qué pines atraen a la gente correcta.",
+          "Mide desde el primer día. Pinterest tiene su propia etiqueta y su propia API de conversiones, y se instalan igual que las de Meta y Google, de preferencia desde [Google Tag Manager](/blog/que-es-google-tag-manager). Si ya tienes tus acciones definidas para Meta y Google, como explicamos en [eventos de Meta y etiquetas de Google](/blog/eventos-de-meta-y-etiquetas-de-google), reutilizas los mismos activadores. Y recuerda que en Pinterest la compra tarda más: juzga los resultados en meses, no en una semana.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "The first 90 days on Pinterest",
+          titleEs: "Los primeros 90 días en Pinterest",
+          steps: [
+            {
+              label: "Business account",
+              labelEs: "Cuenta de empresa",
+              detail: "Free. Claim your website so your pins carry your brand.",
+              detailEs: "Gratis. Reclama tu sitio web para que tus pines lleven tu marca.",
+            },
+            {
+              label: "Tag and conversions",
+              labelEs: "Etiqueta y conversiones",
+              detail:
+                "Install the Pinterest tag from GTM, with the same actions as Meta and Google.",
+              detailEs:
+                "Instala la etiqueta de Pinterest desde GTM, con las mismas acciones que Meta y Google.",
+            },
+            {
+              label: "Boards by search",
+              labelEs: "Tableros por búsqueda",
+              detail: "Name them with what people search for, using Pinterest Trends.",
+              detailEs: "Nómbralos con lo que la gente busca, usando Pinterest Trends.",
+            },
+            {
+              label: "Vertical pins",
+              labelEs: "Pines verticales",
+              detail: "2:3 format, clear text, each one linked to a specific page.",
+              detailEs: "Formato 2:3, texto claro, cada uno ligado a una página específica.",
+            },
+            {
+              label: "Consistency",
+              labelEs: "Constancia",
+              detail: "Several pins a week for months; what works shows up in searches.",
+              detailEs:
+                "Varios pines a la semana durante meses; lo que funciona aparece en búsquedas.",
+            },
+            {
+              label: "Small test of ads",
+              labelEs: "Prueba chica de anuncios",
+              detail: "Promote the pins that already work, and measure in your CRM.",
+              detailEs: "Promueve los pines que ya funcionan y mide en tu CRM.",
+            },
+          ],
+        },
+      },
+      {
+        id: "veredicto",
+        heading: "Is it worth it for your business?",
+        headingEs: "¿Vale la pena para tu negocio?",
+        body: [
+          "If you sell something people plan with images, yes, and now: the audience exists, it is growing and **most of your competitors are not there yet**. If your client buys urgently or the sale is industrial, no; put that effort into Google and into answering your leads faster.",
+          "The cheap way to find out is a 90-day test with organic pins and a small ad budget, measured in leads or real sales, not in saves. If you want help designing it, at Aphelion we plan and produce content and campaigns as part of our [marketing service](/servicios/marketing). [Tell us about your business](/contacto) and we will tell you honestly whether Pinterest makes sense for it.",
+        ],
+        bodyEs: [
+          "Si vendes algo que la gente planea con imágenes, sí, y ahora: el público existe, está creciendo y **la mayoría de tus competidores todavía no está ahí**. Si tu cliente compra con urgencia o la venta es industrial, no; pon ese esfuerzo en Google y en responder más rápido a tus prospectos.",
+          "La forma barata de saberlo es una prueba de 90 días con pines orgánicos y un presupuesto chico de anuncios, medida en prospectos o ventas reales, no en guardados. Si quieres ayuda para diseñarla, en Aphelion planeamos y producimos contenido y campañas como parte de nuestro [servicio de marketing](/servicios/marketing). [Cuéntanos de tu negocio](/contacto) y te decimos con honestidad si Pinterest le conviene.",
+        ],
+      },
+    ],
+    gradient: "from-rose-900 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuánto facturó Pinterest en 2025?",
+        qEn: "How much revenue did Pinterest make in 2025?",
+        a: "4,222 millones de dólares, 16% más que en 2024, con 619 millones de usuarios activos al mes al cierre del año. Sus ingresos fuera de Estados Unidos, Canadá y Europa crecieron 62%.",
+        aEn: "4,222 million dollars, 16% more than in 2024, with 619 million monthly active users at the end of the year. Its revenue outside the United States, Canada and Europe grew 62%.",
+      },
+      {
+        q: "¿Cuántos usuarios tiene Pinterest en México?",
+        qEn: "How many users does Pinterest have in Mexico?",
+        a: "Según DataReportal, sus anuncios podían llegar a 28.5 millones de personas en México a finales de 2025, y dos de cada tres son mujeres. Es alcance publicitario, no usuarios únicos exactos.",
+        aEn: "According to DataReportal, its ads could reach 28.5 million people in Mexico at the end of 2025, and two out of three are women. That is ad reach, not exact unique users.",
+      },
+      {
+        q: "¿Para qué negocios funciona Pinterest?",
+        qEn: "Which businesses does Pinterest work for?",
+        a: "Para compras visuales y planeadas: decoración y muebles, remodelación, bodas y eventos, moda, belleza, viajes, comida e inmobiliario de diseño. No funciona para servicios urgentes ni venta industrial.",
+        aEn: "For visual, planned purchases: decor and furniture, remodelling, weddings and events, fashion, beauty, travel, food and design-led real estate. It does not work for urgent services or industrial sales.",
+      },
+      {
+        q: "¿Se pueden hacer anuncios en Pinterest desde México?",
+        qEn: "Can you advertise on Pinterest from Mexico?",
+        a: "Sí. Pinterest abrió su plataforma de anuncios a cualquier empresa en México en 2021. Se crea una cuenta de empresa gratuita y desde ahí se administran las campañas.",
+        aEn: "Yes. Pinterest opened its ad platform to any business in Mexico in 2021. You create a free business account and manage campaigns from there.",
+      },
+      {
+        q: "¿Cuánto tarda Pinterest en dar resultados?",
+        qEn: "How long does Pinterest take to deliver results?",
+        a: "Más que Meta o Google, porque la gente planea antes de comprar y los pines se acumulan en búsquedas. Una prueba seria dura alrededor de 90 días y se mide en prospectos o ventas, no en guardados.",
+        aEn: "Longer than Meta or Google, because people plan before buying and pins accumulate in searches. A serious test lasts around 90 days and is measured in leads or sales, not saves.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Pinterest for business 2026",
+        "Pinterest revenue 2025",
+        "Pinterest users Mexico",
+        "which businesses should use Pinterest",
+        "Pinterest Performance+",
+      ],
+      keywordsEs: [
+        "Pinterest para negocios",
+        "cuánto facturó Pinterest en 2025",
+        "usuarios de Pinterest en México",
+        "para qué negocios sirve Pinterest",
+        "anuncios en Pinterest México",
+        "Pinterest Performance+",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
@@ -16161,7 +18079,8 @@ export function getRelatedPosts(slug: string, count = 2): BlogPost[] {
 /** Diagnostic vertical for a post's closing call to action, if it has one. */
 export function postVertical(post: BlogPost): string | undefined {
   if (post.vertical) return post.vertical;
-  if (post.category === "Medical Marketing") return /dental/.test(post.slug) ? "dental" : "clinicas";
+  if (post.category === "Medical Marketing")
+    return /dental/.test(post.slug) ? "dental" : "clinicas";
   if (post.category === "Real Estate Marketing") return "inmobiliarias";
   return undefined;
 }

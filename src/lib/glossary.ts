@@ -23,420 +23,552 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Pixel de Meta",
     termEn: "Meta Pixel",
     def: "Un código gratuito de Meta que se instala una vez en tu página web. Le avisa a Meta quién la visitó para que después puedas mostrarle anuncios en Facebook e Instagram a esas personas y a otras parecidas. Tú no ves nombres ni datos personales.",
-    defEn: "A free code from Meta that is installed once on your website. It tells Meta who visited so you can later show ads on Facebook and Instagram to those people and to others like them. You never see names or personal data.",
+    defEn:
+      "A free code from Meta that is installed once on your website. It tells Meta who visited so you can later show ads on Facebook and Instagram to those people and to others like them. You never see names or personal data.",
     href: "/blog/que-es-el-pixel-de-meta",
   },
   dominio: {
     term: "Dominio",
     termEn: "Domain",
     def: "La dirección de tu negocio en internet, como turestaurante.com. Es tuya mientras la renueves, y lo que construyes ahí (visitas, reputación en Google) se queda contigo.",
-    defEn: "Your business’s address on the internet, like yourrestaurant.com. It is yours as long as you renew it, and what you build there (visits, reputation on Google) stays with you.",
+    defEn:
+      "Your business’s address on the internet, like yourrestaurant.com. It is yours as long as you renew it, and what you build there (visits, reputation on Google) stays with you.",
     href: "/blog/como-elegir-un-dominio",
   },
   remarketing: {
     term: "Remarketing",
     termEn: "Remarketing",
     def: "Volver a mostrarle anuncios a gente que ya te conoce, por ejemplo a quien visitó tu página o vio tu menú. Funciona porque le hablas a alguien que ya tuvo contacto contigo.",
-    defEn: "Showing ads again to people who already know you, for example those who visited your website or viewed your menu. It works because you are talking to someone who has already been in touch with you.",
+    defEn:
+      "Showing ads again to people who already know you, for example those who visited your website or viewed your menu. It works because you are talking to someone who has already been in touch with you.",
     href: "/blog/que-es-remarketing",
   },
   "publico-personalizado": {
     term: "Público personalizado",
     termEn: "Custom audience",
     def: "Una lista dentro de Meta con las personas que ya tuvieron contacto con tu negocio: visitaron tu página, te escribieron o te compraron. Sirve para anunciarte solo a ellas o para excluirlas de un anuncio.",
-    defEn: "A list inside Meta of the people who have already been in touch with your business: they visited your website, messaged you or bought from you. You can advertise only to them or exclude them from an ad.",
+    defEn:
+      "A list inside Meta of the people who have already been in touch with your business: they visited your website, messaged you or bought from you. You can advertise only to them or exclude them from an ad.",
     href: "/blog/guia-meta-ads",
   },
   "publico-similar": {
     term: "Público similar (lookalike)",
     termEn: "Lookalike audience",
     def: "Meta toma una lista de tus clientes o visitantes y busca personas que se parecen a ellos pero que todavía no te conocen. Es la forma de encontrar más clientes como los que ya tienes.",
-    defEn: "Meta takes a list of your customers or visitors and finds people who resemble them but do not know you yet. It is how you find more customers like the ones you already have.",
+    defEn:
+      "Meta takes a list of your customers or visitors and finds people who resemble them but do not know you yet. It is how you find more customers like the ones you already have.",
     href: "/blog/guia-meta-ads",
   },
   "google-analytics": {
     term: "Google Analytics",
     termEn: "Google Analytics",
     def: "La herramienta gratuita de Google para ver cuánta gente entra a tu página, de dónde llega y qué hace ahí.",
-    defEn: "Google’s free tool to see how many people visit your website, where they come from and what they do there.",
+    defEn:
+      "Google’s free tool to see how many people visit your website, where they come from and what they do there.",
   },
   "qr-estatico": {
     term: "QR estático",
     termEn: "Static QR code",
     def: "Un código QR que lleva la dirección guardada en el propio dibujo. No depende de ningún servicio y nunca vence; si apunta a tu página, cambias el contenido sin reimprimir.",
-    defEn: "A QR code that stores the address in the pattern itself. It depends on no service and never expires; if it points to your website, you change the content without reprinting.",
+    defEn:
+      "A QR code that stores the address in the pattern itself. It depends on no service and never expires; if it points to your website, you change the content without reprinting.",
   },
   "qr-dinamico": {
     term: "QR dinámico",
     termEn: "Dynamic QR code",
     def: "Un código QR que primero pasa por el servidor de la empresa que lo generó y de ahí redirige. Te deja cambiar el destino, pero si el servicio cierra o dejas de pagar, puede dejar de funcionar.",
-    defEn: "A QR code that first goes through the server of the company that generated it, which then redirects. You can change the destination, but if the service shuts down or you stop paying, it can stop working.",
+    defEn:
+      "A QR code that first goes through the server of the company that generated it, which then redirects. You can change the destination, but if the service shuts down or you stop paying, it can stop working.",
   },
   "punto-de-venta": {
     term: "Punto de venta (POS)",
     termEn: "Point of sale (POS)",
     def: "El sistema con el que cobras. Registra ventas, precios e inventario, y los buenos se pueden conectar con tu página o tu contabilidad.",
-    defEn: "The system you charge with. It records sales, prices and inventory, and good ones can connect to your website or your accounting.",
+    defEn:
+      "The system you charge with. It records sales, prices and inventory, and good ones can connect to your website or your accounting.",
     href: "/blog/mejor-punto-de-venta-mexico",
   },
   "seo-local": {
     term: "SEO local",
     termEn: "Local SEO",
     def: "Lo que hace que tu negocio aparezca en Google y Google Maps cuando alguien busca algo cerca, como “restaurante de mariscos en Ensenada”.",
-    defEn: "What makes your business show up on Google and Google Maps when someone searches for something nearby, like “seafood restaurant in Ensenada”.",
+    defEn:
+      "What makes your business show up on Google and Google Maps when someone searches for something nearby, like “seafood restaurant in Ensenada”.",
     href: "/blog/seo-local-guia",
   },
   "aviso-de-privacidad": {
     term: "Aviso de privacidad",
     termEn: "Privacy notice",
     def: "El documento que la ley te pide mostrar antes de pedir datos personales. Explica qué datos recabas, para qué los usas y cómo la persona puede ejercer sus derechos sobre ellos.",
-    defEn: "The document the law requires you to show before asking for personal data. It explains what data you collect, what you use it for and how the person can exercise their rights over it.",
+    defEn:
+      "The document the law requires you to show before asking for personal data. It explains what data you collect, what you use it for and how the person can exercise their rights over it.",
   },
   "pagina-de-acceso": {
     term: "Página de acceso al WiFi",
     termEn: "Wi-Fi login page",
     def: "La pantalla que aparece al conectarte al WiFi de un hotel o un aeropuerto, antes de dejarte navegar. Ahí puedes pedir un correo a cambio de la conexión.",
-    defEn: "The screen that appears when you connect to the Wi-Fi at a hotel or an airport, before letting you browse. That is where you can ask for an email in exchange for the connection.",
+    defEn:
+      "The screen that appears when you connect to the Wi-Fi at a hotel or an airport, before letting you browse. That is where you can ask for an email in exchange for the connection.",
   },
   "email-marketing": {
     term: "Email marketing",
     termEn: "Email marketing",
     def: "Mandar correos a tu lista de clientes con promociones, novedades o recordatorios. La lista es tuya y no depende de ningún algoritmo.",
-    defEn: "Sending emails to your customer list with offers, news or reminders. The list is yours and does not depend on any algorithm.",
+    defEn:
+      "Sending emails to your customer list with offers, news or reminders. The list is yours and does not depend on any algorithm.",
     href: "/blog/email-marketing-para-pymes",
   },
   "pagina-de-enlaces": {
     term: "Página de enlaces",
     termEn: "Link-in-bio page",
     def: "Una página con una lista de botones, como Linktree, que muchos negocios ponen en su perfil de Instagram. Vive en el dominio de esa empresa, no en el tuyo.",
-    defEn: "A page with a list of buttons, like Linktree, that many businesses put in their Instagram profile. It lives on that company’s domain, not yours.",
+    defEn:
+      "A page with a list of buttons, like Linktree, that many businesses put in their Instagram profile. It lives on that company’s domain, not yours.",
   },
   crm: {
     term: "CRM",
     termEn: "CRM",
     def: "Un sistema donde guardas a tus clientes y prospectos con su historial de mensajes, citas y compras, para darles seguimiento sin depender de la memoria ni de una libreta.",
-    defEn: "A system where you keep your customers and prospects with their history of messages, appointments and purchases, so you can follow up without relying on memory or a notebook.",
+    defEn:
+      "A system where you keep your customers and prospects with their history of messages, appointments and purchases, so you can follow up without relying on memory or a notebook.",
     href: "/blog/que-es-un-crm",
   },
   "landing-page": {
     term: "Landing page",
     termEn: "Landing page",
     def: "Una página hecha para una sola acción, como pedir una cotización o reservar. Se usa sobre todo como destino de los anuncios.",
-    defEn: "A page built for a single action, like requesting a quote or booking. It is used mainly as the destination for ads.",
+    defEn:
+      "A page built for a single action, like requesting a quote or booking. It is used mainly as the destination for ads.",
     href: "/blog/guia-landing-pages",
   },
   hosting: {
     term: "Hosting",
     termEn: "Hosting",
     def: "El servicio que guarda los archivos de tu página web y la mantiene disponible en internet las 24 horas.",
-    defEn: "The service that stores your website’s files and keeps it available on the internet around the clock.",
+    defEn:
+      "The service that stores your website’s files and keeps it available on the internet around the clock.",
     href: "/blog/que-es-hosting",
   },
   "google-business-profile": {
     term: "Perfil de Google (Google Business Profile)",
     termEn: "Google Business Profile",
     def: "Tu ficha gratuita en Google y Google Maps con dirección, horario, fotos y reseñas. Es lo primero que ve mucha gente al buscar tu negocio.",
-    defEn: "Your free listing on Google and Google Maps with your address, hours, photos and reviews. It is the first thing many people see when they search for your business.",
+    defEn:
+      "Your free listing on Google and Google Maps with your address, hours, photos and reviews. It is the first thing many people see when they search for your business.",
     href: "/blog/optimizar-google-business-profile",
   },
   ota: {
     term: "OTA (agencia de viajes en línea)",
     termEn: "OTA (online travel agency)",
     def: "Plataformas como Booking, Expedia, Airbnb, Viator o GetYourGuide. Te traen clientes a cambio de una comisión por cada reserva.",
-    defEn: "Platforms like Booking, Expedia, Airbnb, Viator or GetYourGuide. They bring you customers in exchange for a commission on every booking.",
+    defEn:
+      "Platforms like Booking, Expedia, Airbnb, Viator or GetYourGuide. They bring you customers in exchange for a commission on every booking.",
   },
   "motor-de-reservas": {
     term: "Motor de reservas",
     termEn: "Booking engine",
     def: "El sistema dentro de tu propia página donde el cliente ve disponibilidad, elige fecha y paga, sin pasar por una plataforma que cobre comisión.",
-    defEn: "The system on your own website where customers check availability, pick a date and pay, without going through a platform that charges commission.",
+    defEn:
+      "The system on your own website where customers check availability, pick a date and pay, without going through a platform that charges commission.",
   },
   "channel-manager": {
     term: "Channel manager",
     termEn: "Channel manager",
     def: "Un programa que sincroniza tu disponibilidad y tus precios entre Booking, Airbnb y tu propia página, para no vender dos veces el mismo cuarto o el mismo lugar.",
-    defEn: "Software that keeps your availability and prices in sync across Booking, Airbnb and your own website, so you never sell the same room or seat twice.",
+    defEn:
+      "Software that keeps your availability and prices in sync across Booking, Airbnb and your own website, so you never sell the same room or seat twice.",
   },
   lead: {
     term: "Lead (prospecto)",
     termEn: "Lead",
     def: "Una persona que mostró interés en lo que vendes y te dejó sus datos o te escribió, pero todavía no te compra.",
-    defEn: "Someone who showed interest in what you sell and left their details or messaged you, but has not bought yet.",
+    defEn:
+      "Someone who showed interest in what you sell and left their details or messaged you, but has not bought yet.",
   },
   "sistema-de-citas": {
     term: "Sistema de citas en línea",
     termEn: "Online booking system",
     def: "Una agenda en internet donde el cliente elige servicio, día y hora sin mandarte mensaje. Guarda su teléfono y puede enviarle recordatorios automáticos.",
-    defEn: "An online calendar where customers pick a service, day and time without messaging you. It stores their phone number and can send automatic reminders.",
+    defEn:
+      "An online calendar where customers pick a service, day and time without messaging you. It stores their phone number and can send automatic reminders.",
   },
   seo: {
     term: "SEO (posicionamiento en buscadores)",
     termEn: "SEO (search engine optimisation)",
     def: "Todo lo que haces para que tu página aparezca en los primeros resultados de Google sin pagar por cada clic: contenido, estructura, velocidad y reputación.",
-    defEn: "Everything you do so your website shows up in Google’s top results without paying per click: content, structure, speed and reputation.",
+    defEn:
+      "Everything you do so your website shows up in Google’s top results without paying per click: content, structure, speed and reputation.",
     href: "/blog/guia-seo",
   },
   "google-ads": {
     term: "Google Ads",
     termEn: "Google Ads",
     def: "La plataforma de anuncios de Google. Te permite aparecer arriba en los resultados de búsqueda, en YouTube o en Maps, y normalmente pagas cada vez que alguien da clic.",
-    defEn: "Google’s advertising platform. It lets you appear at the top of search results, on YouTube or on Maps, and you usually pay each time someone clicks.",
+    defEn:
+      "Google’s advertising platform. It lets you appear at the top of search results, on YouTube or on Maps, and you usually pay each time someone clicks.",
     href: "/blog/guia-google-ads",
   },
   "meta-ads": {
     term: "Meta Ads",
     termEn: "Meta Ads",
     def: "La plataforma de anuncios de Meta para aparecer en Facebook, Instagram y Messenger, o llevar a la gente directo a tu WhatsApp.",
-    defEn: "Meta’s advertising platform to appear on Facebook, Instagram and Messenger, or send people straight to your WhatsApp.",
+    defEn:
+      "Meta’s advertising platform to appear on Facebook, Instagram and Messenger, or send people straight to your WhatsApp.",
     href: "/blog/guia-meta-ads",
   },
   conversion: {
     term: "Conversión",
     termEn: "Conversion",
     def: "La acción que quieres que haga una persona después de ver tu anuncio o tu página: escribirte, llamar, agendar o comprar. Es lo que de verdad hay que medir.",
-    defEn: "The action you want someone to take after seeing your ad or website: message you, call, book or buy. It is what you really need to measure.",
+    defEn:
+      "The action you want someone to take after seeing your ad or website: message you, call, book or buy. It is what you really need to measure.",
     href: "/blog/como-medir-conversiones-google-ads",
   },
   "tasa-de-conversion": {
     term: "Tasa de conversión",
     termEn: "Conversion rate",
     def: "De cada 100 personas que visitan tu página o ven tu anuncio, cuántas hacen lo que buscabas: escribirte, agendar o comprar.",
-    defEn: "Out of every 100 people who visit your website or see your ad, how many do what you wanted: message you, book or buy.",
+    defEn:
+      "Out of every 100 people who visit your website or see your ad, how many do what you wanted: message you, book or buy.",
     href: "/blog/como-medir-conversiones-google-ads",
   },
   "palabra-clave": {
     term: "Palabra clave (keyword)",
     termEn: "Keyword",
     def: "Las palabras que la gente escribe en Google, como “dentista en Tijuana”. Con ellas decides en qué búsquedas quieres que aparezca tu página o tu anuncio.",
-    defEn: "The words people type into Google, like “dentist in Tijuana”. They decide which searches your website or ad should appear for.",
+    defEn:
+      "The words people type into Google, like “dentist in Tijuana”. They decide which searches your website or ad should appear for.",
     href: "/blog/guia-seo",
   },
   cpc: {
     term: "CPC (costo por clic)",
     termEn: "CPC (cost per click)",
     def: "Lo que pagas cada vez que alguien da clic en tu anuncio. No es un precio fijo: depende de cuánta competencia hay por esa búsqueda o ese público.",
-    defEn: "What you pay each time someone clicks your ad. It is not a fixed price: it depends on how much competition there is for that search or audience.",
+    defEn:
+      "What you pay each time someone clicks your ad. It is not a fixed price: it depends on how much competition there is for that search or audience.",
     href: "/blog/cuanto-cuesta-google-ads-en-mexico",
   },
   cpa: {
     term: "CPA (costo por adquisición)",
     termEn: "CPA (cost per acquisition)",
     def: "Lo que te cuesta en publicidad conseguir un cliente o un prospecto. Se calcula dividiendo lo que gastaste entre los resultados que obtuviste.",
-    defEn: "What it costs you in advertising to get a customer or a lead. It is what you spent divided by the results you got.",
+    defEn:
+      "What it costs you in advertising to get a customer or a lead. It is what you spent divided by the results you got.",
     href: "/blog/cuanto-invertir-en-marketing-digital",
   },
   "nivel-de-calidad": {
     term: "Nivel de calidad (Quality Score)",
     termEn: "Quality Score",
     def: "Una calificación del 1 al 10 que Google Ads le da a tus palabras clave según qué tan relevantes son tu anuncio y tu página para esa búsqueda. Sirve para saber dónde mejorar.",
-    defEn: "A 1 to 10 rating Google Ads gives your keywords based on how relevant your ad and landing page are to that search. It helps you see where to improve.",
+    defEn:
+      "A 1 to 10 rating Google Ads gives your keywords based on how relevant your ad and landing page are to that search. It helps you see where to improve.",
     href: "/blog/errores-de-google-ads",
   },
   ssl: {
     term: "Certificado SSL",
     termEn: "SSL certificate",
     def: "Lo que hace que tu página cargue con https y el candado en el navegador. Protege los datos entre el visitante y tu sitio; sin él, el navegador avisa que la página no es segura.",
-    defEn: "What makes your website load with https and the padlock in the browser. It protects data between the visitor and your site; without it, the browser warns that the page is not secure.",
+    defEn:
+      "What makes your website load with https and the padlock in the browser. It protects data between the visitor and your site; without it, the browser warns that the page is not secure.",
     href: "/blog/checklist-para-lanzar-pagina-web",
   },
   "core-web-vitals": {
     term: "Core Web Vitals",
     termEn: "Core Web Vitals",
     def: "Tres medidas de Google sobre la experiencia de usar tu página: qué tan rápido carga lo principal, qué tan rápido responde al tocarla y qué tanto se mueve mientras carga.",
-    defEn: "Three Google measurements of what using your website feels like: how fast the main content loads, how quickly it responds when tapped and how much it shifts while loading.",
+    defEn:
+      "Three Google measurements of what using your website feels like: how fast the main content loads, how quickly it responds when tapped and how much it shifts while loading.",
     href: "/blog/velocidad-de-carga-pagina-web",
   },
   "datos-estructurados": {
     term: "Datos estructurados (schema)",
     termEn: "Structured data (schema)",
     def: "Código que describe tu página en un formato que Google entiende: horario, precios, preguntas frecuentes o reseñas. Puede ayudar a que aparezcas con más información en los resultados.",
-    defEn: "Code that describes your page in a format Google understands: hours, prices, FAQs or reviews. It can help you appear with more information in the results.",
+    defEn:
+      "Code that describes your page in a format Google understands: hours, prices, FAQs or reviews. It can help you appear with more information in the results.",
   },
   "search-console": {
     term: "Google Search Console",
     termEn: "Google Search Console",
     def: "La herramienta gratuita de Google que te dice en qué búsquedas aparece tu página, cuántos clics recibe y si hay errores que impiden que Google la lea.",
-    defEn: "Google’s free tool that shows which searches your website appears for, how many clicks it gets and whether errors stop Google from reading it.",
+    defEn:
+      "Google’s free tool that shows which searches your website appears for, how many clicks it gets and whether errors stop Google from reading it.",
     href: "/blog/guia-seo",
   },
   eeat: {
     term: "E-E-A-T",
     termEn: "E-E-A-T",
     def: "Las siglas en inglés de experiencia, conocimiento, autoridad y confiabilidad. Es como Google describe lo que busca en el contenido, sobre todo en temas de salud y dinero.",
-    defEn: "Experience, expertise, authoritativeness and trustworthiness. It is how Google describes what it looks for in content, especially on health and money topics.",
+    defEn:
+      "Experience, expertise, authoritativeness and trustworthiness. It is how Google describes what it looks for in content, especially on health and money topics.",
     href: "/blog/eeat-contenido-medico",
   },
   cofepris: {
     term: "COFEPRIS",
     termEn: "COFEPRIS",
     def: "La Comisión Federal para la Protección contra Riesgos Sanitarios. Entre otras cosas, regula la publicidad de productos y servicios de salud en México; algunos anuncios requieren su permiso.",
-    defEn: "Mexico’s Federal Commission for Protection against Sanitary Risks. Among other things, it regulates the advertising of health products and services; some ads require its approval.",
+    defEn:
+      "Mexico’s Federal Commission for Protection against Sanitary Risks. Among other things, it regulates the advertising of health products and services; some ads require its approval.",
     href: "/blog/google-ads-para-medicos-restricciones",
   },
   afac: {
     term: "AFAC",
     termEn: "AFAC",
     def: "La Agencia Federal de Aviación Civil, la autoridad que regula la aviación en México, incluido el uso de drones.",
-    defEn: "Mexico’s Federal Civil Aviation Agency, the authority that regulates aviation in Mexico, including the use of drones.",
+    defEn:
+      "Mexico’s Federal Civil Aviation Agency, the authority that regulates aviation in Mexico, including the use of drones.",
     href: "/blog/regulacion-de-drones-en-mexico",
   },
   "whatsapp-api": {
     term: "WhatsApp Business API",
     termEn: "WhatsApp Business API",
     def: "La versión de WhatsApp para empresas que se conecta con otros sistemas: permite varios agentes en un mismo número, respuestas automáticas y guardar las conversaciones en tu CRM.",
-    defEn: "The business version of WhatsApp that connects to other systems: several agents on one number, automatic replies and conversations saved in your CRM.",
+    defEn:
+      "The business version of WhatsApp that connects to other systems: several agents on one number, automatic replies and conversations saved in your CRM.",
     href: "/blog/whatsapp-business-api",
   },
   "api-conversiones": {
     term: "API de Conversiones de Meta",
     termEn: "Meta Conversions API",
     def: "Una forma de mandarle a Meta los resultados (compras, citas, prospectos) desde tu servidor o tu CRM, no solo desde el navegador. Complementa al pixel cuando el navegador bloquea el rastreo.",
-    defEn: "A way to send Meta your results (purchases, bookings, leads) from your server or CRM, not only from the browser. It complements the pixel when the browser blocks tracking.",
+    defEn:
+      "A way to send Meta your results (purchases, bookings, leads) from your server or CRM, not only from the browser. It complements the pixel when the browser blocks tracking.",
     href: "/blog/que-es-el-pixel-de-meta",
   },
   chatbot: {
     term: "Chatbot",
     termEn: "Chatbot",
     def: "Un programa que contesta mensajes solo, en tu página o en WhatsApp. Los que usan inteligencia artificial entienden preguntas escritas con palabras propias, no solo opciones de menú.",
-    defEn: "A program that answers messages on its own, on your website or on WhatsApp. Those that use AI understand questions written in people’s own words, not just menu options.",
+    defEn:
+      "A program that answers messages on its own, on your website or on WhatsApp. Those that use AI understand questions written in people’s own words, not just menu options.",
     href: "/blog/chatbot-con-ia-para-negocios",
   },
   embudo: {
     term: "Embudo de ventas",
     termEn: "Sales funnel",
     def: "El camino que recorre un cliente desde que te conoce hasta que te compra. Se le dice embudo porque en cada paso se queda menos gente.",
-    defEn: "The path a customer takes from first hearing about you to buying. It is called a funnel because fewer people remain at each step.",
+    defEn:
+      "The path a customer takes from first hearing about you to buying. It is called a funnel because fewer people remain at each step.",
   },
   api: {
     term: "API",
     termEn: "API",
     def: "Una conexión entre dos sistemas para que se pasen información solos, por ejemplo tu página web y tu CRM, sin que nadie tenga que copiar y pegar.",
-    defEn: "A connection between two systems so they pass information on their own, for example your website and your CRM, without anyone copying and pasting.",
+    defEn:
+      "A connection between two systems so they pass information on their own, for example your website and your CRM, without anyone copying and pasting.",
   },
   margen: {
     term: "Margen",
     termEn: "Margin",
     def: "Lo que te queda de cada venta después de pagar lo que te costó el producto o servicio. Si vendes en $100 algo que te costó $70, tu margen es de $30.",
-    defEn: "What you keep from each sale after paying what the product or service cost you. If you sell for $100 something that cost you $70, your margin is $30.",
+    defEn:
+      "What you keep from each sale after paying what the product or service cost you. If you sell for $100 something that cost you $70, your margin is $30.",
   },
   "meses-sin-intereses": {
     term: "Meses sin intereses",
     termEn: "Interest-free installments",
     def: "El cliente paga en plazos sin intereses, pero el banco o la terminal le cobra una comisión al negocio por cada plazo. Esa comisión sale de tu ganancia.",
-    defEn: "The customer pays in installments with no interest, but the bank or card terminal charges the business a fee for each term. That fee comes out of your profit.",
+    defEn:
+      "The customer pays in installments with no interest, but the bank or card terminal charges the business a fee for each term. That fee comes out of your profit.",
   },
   profeco: {
     term: "Profeco",
     termEn: "Profeco",
     def: "La Procuraduría Federal del Consumidor: la autoridad que vigila que los negocios respeten precios, ofertas y garantías, y que recibe las quejas de los clientes.",
-    defEn: "Mexico's Federal Consumer Protection Agency: the authority that checks that businesses honour prices, offers and warranties, and that handles customer complaints.",
+    defEn:
+      "Mexico's Federal Consumer Protection Agency: the authority that checks that businesses honour prices, offers and warranties, and that handles customer complaints.",
   },
   "retencion-de-impuestos": {
     term: "Retención de impuestos",
     termEn: "Tax withholding",
     def: "La parte de un pago que una plataforma o un cliente se queda para entregarla al SAT a tu nombre. No es un cobro extra: cuenta como adelanto de tus impuestos, pero reduce el dinero que te llega.",
-    defEn: "The part of a payment that a platform or a client keeps to hand over to the tax authority on your behalf. It is not an extra charge: it counts as an advance on your taxes, but it reduces the cash you receive.",
+    defEn:
+      "The part of a payment that a platform or a client keeps to hand over to the tax authority on your behalf. It is not an extra charge: it counts as an advance on your taxes, but it reduces the cash you receive.",
   },
   "manual-de-marca": {
     term: "Manual de marca",
     termEn: "Brand manual",
     def: "Un documento con las reglas de tu marca: cómo usar el logo, colores, tipografías y tono, para que cualquier diseñador, imprenta o empleado la aplique igual.",
-    defEn: "A document with your brand's rules: how to use the logo, colours, typefaces and tone, so any designer, print shop or employee applies it the same way.",
+    defEn:
+      "A document with your brand's rules: how to use the logo, colours, typefaces and tone, so any designer, print shop or employee applies it the same way.",
   },
   "archivo-vectorial": {
     term: "Archivo vectorial",
     termEn: "Vector file",
     def: "Un archivo de diseño (como AI, SVG o PDF editable) que se puede agrandar a cualquier tamaño, de una tarjeta a un espectacular, sin que se pixele.",
-    defEn: "A design file (such as AI, SVG or an editable PDF) that can be enlarged to any size, from a business card to a billboard, without pixelating.",
+    defEn:
+      "A design file (such as AI, SVG or an editable PDF) that can be enlarged to any size, from a business card to a billboard, without pixelating.",
   },
   impi: {
     term: "IMPI",
     termEn: "IMPI",
     def: "El Instituto Mexicano de la Propiedad Industrial: la autoridad donde se registran las marcas en México. Sin ese registro, otra persona podría quedarse con tu nombre.",
-    defEn: "The Mexican Institute of Industrial Property: the authority where trademarks are registered in Mexico. Without that registration, someone else could claim your name.",
+    defEn:
+      "The Mexican Institute of Industrial Property: the authority where trademarks are registered in Mexico. Without that registration, someone else could claim your name.",
   },
   "pasarela-de-pago": {
     term: "Pasarela de pago",
     termEn: "Payment gateway",
     def: "El servicio que cobra la tarjeta del cliente en tu tienda en línea, como Stripe, Mercado Pago o Pago Nube, y te deposita el dinero a cambio de una comisión por venta.",
-    defEn: "The service that charges the customer's card in your online store, such as Stripe, Mercado Pago or Pago Nube, and deposits the money to you in exchange for a fee per sale.",
+    defEn:
+      "The service that charges the customer's card in your online store, such as Stripe, Mercado Pago or Pago Nube, and deposits the money to you in exchange for a fee per sale.",
   },
   "carrito-abandonado": {
     term: "Carrito abandonado",
     termEn: "Abandoned cart",
     def: "Cuando alguien agrega productos al carrito de tu tienda y se va sin pagar. Un correo o WhatsApp automático que le recuerda lo que dejó ayuda a recuperar parte de esas ventas.",
-    defEn: "When someone adds products to your store's cart and leaves without paying. An automatic email or WhatsApp reminding them of what they left helps recover some of those sales.",
+    defEn:
+      "When someone adds products to your store's cart and leaves without paying. An automatic email or WhatsApp reminding them of what they left helps recover some of those sales.",
   },
   "video-log": {
     term: "Video en LOG",
     termEn: "LOG video",
     def: "Un modo de grabación que guarda más detalle en luces y sombras, útil en interiores con ventanas brillantes. Se ve deslavado hasta que le corriges el color al editar.",
-    defEn: "A recording mode that keeps more detail in highlights and shadows, useful in interiors with bright windows. It looks washed out until you colour-correct it in editing.",
+    defEn:
+      "A recording mode that keeps more detail in highlights and shadows, useful in interiors with bright windows. It looks washed out until you colour-correct it in editing.",
   },
   geo: {
     term: "GEO",
     termEn: "GEO",
     def: "Optimización para motores generativos: trabajar tu información, reseñas y contenido para que herramientas de IA como ChatGPT o Gemini mencionen tu negocio en sus respuestas.",
-    defEn: "Generative engine optimisation: working on your information, reviews and content so AI tools such as ChatGPT or Gemini mention your business in their answers.",
+    defEn:
+      "Generative engine optimisation: working on your information, reviews and content so AI tools such as ChatGPT or Gemini mention your business in their answers.",
   },
   fideicomiso: {
     term: "Fideicomiso en zona restringida",
     termEn: "Restricted-zone bank trust",
     def: "Un contrato con un banco que permite a un extranjero tener el uso y disfrute de una propiedad cerca de la costa o la frontera, donde no puede ser dueño directo. Requiere permiso de la SRE y dura hasta 50 años, renovables.",
-    defEn: "A contract with a bank that lets a foreigner have the use and enjoyment of a property near the coast or the border, where they cannot be the direct owner. It requires an SRE permit and lasts up to 50 years, renewable.",
+    defEn:
+      "A contract with a bank that lets a foreigner have the use and enjoyment of a property near the coast or the border, where they cannot be the direct owner. It requires an SRE permit and lasts up to 50 years, renewable.",
   },
   "ia-generativa": {
     term: "IA generativa",
     termEn: "Generative AI",
     def: "Inteligencia artificial que crea contenido nuevo, como texto, imágenes, audio o código, a partir de una instrucción escrita. ChatGPT, Gemini y Claude son ejemplos.",
-    defEn: "Artificial intelligence that creates new content, such as text, images, audio or code, from a written instruction. ChatGPT, Gemini and Claude are examples.",
+    defEn:
+      "Artificial intelligence that creates new content, such as text, images, audio or code, from a written instruction. ChatGPT, Gemini and Claude are examples.",
   },
   "clonacion-de-voz": {
     term: "Clonación de voz",
     termEn: "Voice cloning",
     def: "Usar inteligencia artificial para imitar la voz de una persona a partir de una grabación corta y hacerla decir cualquier texto. Se usa en doblaje y accesibilidad, pero también en estafas.",
-    defEn: "Using artificial intelligence to imitate a person's voice from a short recording and make it say any text. It is used in dubbing and accessibility, but also in scams.",
+    defEn:
+      "Using artificial intelligence to imitate a person's voice from a short recording and make it say any text. It is used in dubbing and accessibility, but also in scams.",
   },
   deepfake: {
     term: "Deepfake",
     termEn: "Deepfake",
     def: "Un video, foto o audio falso creado con inteligencia artificial que hace parecer que una persona real dijo o hizo algo que nunca pasó.",
-    defEn: "A fake video, photo or audio created with artificial intelligence that makes it look as if a real person said or did something that never happened.",
+    defEn:
+      "A fake video, photo or audio created with artificial intelligence that makes it look as if a real person said or did something that never happened.",
   },
   "verificacion-en-dos-pasos": {
     term: "Verificación en dos pasos",
     termEn: "Two-step verification",
     def: "Una protección extra en tus cuentas: además de la contraseña o el código por SMS, pide un PIN o una confirmación que solo tú tienes. En WhatsApp se activa en Ajustes, Cuenta.",
-    defEn: "An extra layer of protection for your accounts: besides the password or SMS code, it asks for a PIN or a confirmation only you have. In WhatsApp it is turned on in Settings, Account.",
+    defEn:
+      "An extra layer of protection for your accounts: besides the password or SMS code, it asks for a PIN or a confirmation only you have. In WhatsApp it is turned on in Settings, Account.",
   },
   alucinacion: {
     term: "Alucinación",
     termEn: "Hallucination",
     def: "Cuando una herramienta de inteligencia artificial afirma algo falso o inventado con total seguridad, como una cifra, una cita o una fuente que no existe.",
-    defEn: "When an artificial intelligence tool states something false or made up with complete confidence, such as a figure, a quote or a source that does not exist.",
+    defEn:
+      "When an artificial intelligence tool states something false or made up with complete confidence, such as a figure, a quote or a source that does not exist.",
   },
   "agente-de-ia": {
     term: "Agente de IA",
     termEn: "AI agent",
     def: "Una inteligencia artificial que no solo contesta, sino que actúa: entiende lo que alguien pide y ejecuta pasos con tus herramientas, como apartar una cita en tu agenda o actualizar tu CRM, dentro de los límites que le pones.",
-    defEn: "An artificial intelligence that does not only answer but acts: it understands what someone asks and carries out steps with your tools, such as booking an appointment in your calendar or updating your CRM, within the limits you set.",
+    defEn:
+      "An artificial intelligence that does not only answer but acts: it understands what someone asks and carries out steps with your tools, such as booking an appointment in your calendar or updating your CRM, within the limits you set.",
   },
   "maquina-virtual": {
     term: "Máquina virtual",
     termEn: "Virtual machine",
     def: "Una computadora que existe en la nube en vez de en tu escritorio. Los agentes de IA usan una propia para navegar, abrir apps y seguir trabajando aunque tu celular o tu laptop estén apagados.",
-    defEn: "A computer that exists in the cloud instead of on your desk. AI agents use one of their own to browse, open apps and keep working even when your phone or laptop is off.",
+    defEn:
+      "A computer that exists in the cloud instead of on your desk. AI agents use one of their own to browse, open apps and keep working even when your phone or laptop is off.",
   },
   ctr: {
     term: "CTR",
     termEn: "CTR",
     def: "El porcentaje de personas que hacen clic después de ver tu resultado o tu anuncio. Si 100 personas lo ven y 4 hacen clic, el CTR es de 4%.",
-    defEn: "The percentage of people who click after seeing your result or your ad. If 100 people see it and 4 click, the CTR is 4%.",
+    defEn:
+      "The percentage of people who click after seeing your result or your ad. If 100 people see it and 4 click, the CTR is 4%.",
   },
   lut: {
     term: "LUT",
     termEn: "LUT",
     def: "Un archivo que cambia los colores de un video siguiendo una receta. Los técnicos convierten el video en LOG a color normal; los creativos le dan un estilo, como cálido o cinematográfico.",
-    defEn: "A file that changes a video's colours following a recipe. Technical LUTs convert LOG video into normal colour; creative ones give it a look, such as warm or cinematic.",
+    defEn:
+      "A file that changes a video's colours following a recipe. Technical LUTs convert LOG video into normal colour; creative ones give it a look, such as warm or cinematic.",
+  },
+  "google-tag-manager": {
+    term: "Google Tag Manager",
+    termEn: "Google Tag Manager",
+    def: "Una herramienta gratuita de Google para manejar desde un solo panel todos los códigos de medición de tu sitio (Google, Meta, TikTok y más) sin tocar el código cada vez.",
+    defEn:
+      "A free Google tool for managing every measurement code on your site (Google, Meta, TikTok and more) from one panel, without touching the code each time.",
+    href: "/blog/que-es-google-tag-manager",
+  },
+  etiqueta: {
+    term: "Etiqueta (tag)",
+    termEn: "Tag",
+    def: "Un fragmento de código que le avisa a una plataforma, como Google Ads o Meta, que algo pasó en tu sitio: una visita, un formulario enviado, una compra.",
+    defEn:
+      "A snippet of code that tells a platform, such as Google Ads or Meta, that something happened on your site: a visit, a form sent, a purchase.",
+    href: "/blog/que-es-google-tag-manager",
+  },
+  activador: {
+    term: "Activador (trigger)",
+    termEn: "Trigger",
+    def: "La regla que decide cuándo se dispara una etiqueta en Google Tag Manager, por ejemplo “cuando se confirme el formulario” o “cuando hagan clic en WhatsApp”.",
+    defEn:
+      "The rule that decides when a tag fires in Google Tag Manager, for example “when the form is confirmed” or “when someone clicks WhatsApp”.",
+  },
+  "evento-clave": {
+    term: "Evento clave",
+    termEn: "Key event",
+    def: "El nombre que Google Analytics 4 le da desde 2024 a las acciones importantes de tu sitio, como un prospecto o una compra. Antes se llamaban conversiones.",
+    defEn:
+      "The name Google Analytics 4 has given since 2024 to the important actions on your site, such as a lead or a purchase. They used to be called conversions.",
+  },
+  "pagina-de-gracias": {
+    term: "Página de gracias",
+    termEn: "Thank-you page",
+    def: "La página a la que llega alguien después de enviar tu formulario. Le confirma que su mensaje llegó, le dice qué sigue y ayuda a medir prospectos.",
+    defEn:
+      "The page someone lands on after sending your form. It confirms their message arrived, tells them what comes next and helps measure leads.",
+    href: "/blog/que-es-google-tag-manager",
+  },
+  "evento-estandar": {
+    term: "Evento estándar",
+    termEn: "Standard event",
+    def: "Una de las 17 acciones con nombre fijo que el pixel de Meta entiende sin explicación, como Lead, Contact, Schedule o Purchase.",
+    defEn:
+      "One of the 17 actions with a fixed name that the Meta Pixel understands without explanation, such as Lead, Contact, Schedule or Purchase.",
+    href: "/blog/eventos-de-meta-y-etiquetas-de-google",
+  },
+  deduplicacion: {
+    term: "Deduplicación",
+    termEn: "Deduplication",
+    def: "Cuando el navegador y tu servidor mandan el mismo evento, la plataforma usa un identificador común para quedarse con uno solo y no contarlo doble.",
+    defEn:
+      "When the browser and your server send the same event, the platform uses a shared ID to keep only one and avoid counting it twice.",
+  },
+  "conversiones-mejoradas": {
+    term: "Conversiones mejoradas",
+    termEn: "Enhanced conversions",
+    def: "Una función de Google Ads que completa cada conversión con el correo o teléfono que dejó la persona, cifrado, para medir con más precisión.",
+    defEn:
+      "A Google Ads feature that completes each conversion with the email or phone the person left, encrypted, to measure more accurately.",
+  },
+  pin: {
+    term: "Pin",
+    termEn: "Pin",
+    def: "Una publicación en Pinterest: una imagen o video que la gente guarda en sus tableros y que puede llevar a tu página. Sigue apareciendo en búsquedas durante meses.",
+    defEn:
+      "A post on Pinterest: an image or video that people save to their boards and that can link to your website. It keeps appearing in searches for months.",
   },
 };
