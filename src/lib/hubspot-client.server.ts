@@ -77,13 +77,16 @@ export function createHubSpotClient({ token, ownerId, fetcher = fetch }: ClientO
     try {
       response = await fetcher(`https://api.hubapi.com${path}`, {
         ...init,
-        redirect: "error",
+        // Workers supports manual/follow. Never forward the bearer to a redirect.
+        redirect: "manual",
         headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
         signal: AbortSignal.timeout(4000),
       });
     } catch {
       throw new HubSpotFailure("network_error", write);
     }
+    if (response.status >= 300 && response.status < 400)
+      throw new HubSpotFailure("unexpected_redirect", write);
     if (response.status === 404 && allowMissing) return null;
     if (!response.ok)
       throw new HubSpotFailure(`http_${response.status}`, write && response.status >= 500);

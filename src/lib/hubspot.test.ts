@@ -133,6 +133,32 @@ test("existing CRM name, company, owner and lifecycle are never reset", async ()
   assert.equal(calls.filter((r) => r.method === "PATCH").length, 0);
   assert.equal(calls.filter((r) => r.url.endsWith("/contacts") && r.method === "POST").length, 0);
 });
+test("CRM delivery works with the Workers redirect modes", async () => {
+  const handler = mock((r) => (r.method === "GET" ? json(existing) : json({ id: "note-1" })));
+  const workersFetch: typeof fetch = async (input, init) => {
+    if (init?.redirect === "error") throw new TypeError("Unsupported redirect mode: error");
+    assert.equal(init?.redirect, "manual");
+    return handler(input, init);
+  };
+  const result = await createHubSpotClient({ token: "unit-test", fetcher: workersFetch }).deliver(
+    lead,
+    async () => {},
+  );
+  assert.deepEqual(result, { contactId: "contact-1", noteId: "note-1" });
+});
+test("API redirects stop without forwarding credentials or retrying a write", async () => {
+  const fetcher = mock((r) =>
+    r.method === "GET"
+      ? json(existing)
+      : new Response(null, { status: 307, headers: { Location: "https://other.example.test" } }),
+  );
+  await assert.rejects(
+    createHubSpotClient({ token: "unit-test", fetcher }).deliver(lead, async () => {}),
+    (e) => e instanceof HubSpotFailure && e.code === "unexpected_redirect" && e.uncertain,
+  );
+  assert.equal(calls.length, 2);
+  assert.ok(calls.every((r) => r.url.startsWith("https://api.hubapi.com/")));
+});
 test("only missing CRM fields are filled", async () => {
   const fetcher = mock((r) =>
     r.method === "GET"
@@ -321,4 +347,44 @@ test("contact form reuses a persisted capture ID after an ambiguous response", a
   assert.equal(result.emailed, false);
   assert.equal(result.alerted, false);
   assert.equal(calls.length, 2);
+});
+test("retrying a persisted form resumes CRM delivery without repeating email or SMS", async () => {
+  process.env.SUPABASE_URL = "https://database.test";
+  process.env.SUPABASE_SERVICE_ROLE_KEY = "unit-test";
+  process.env.HUBSPOT_SERVICE_KEY = "unit-test";
+  process.env.HUBSPOT_SYNC_ENABLED = "true";
+  process.env.RESEND_API_KEY = "unit-test";
+  const captureId = "52873998-51f6-46e1-93cb-bc97908fd9bb";
+  globalThis.fetch = mock((r) => {
+    if (r.url.endsWith("leads?select=id")) return json({ code: "23505" }, 409);
+    if (r.url.includes("leads?capture_id=")) return json([{ id: lead.id }]);
+    if (r.url.includes("rpc/claim_hubspot_lead"))
+      return json({ lead, contactId: null, noteId: null, attempts: 2 });
+    if (
+      r.url.includes("hubspot_identity_map?") ||
+      (r.url.includes("hubspot_lead_sync?") && r.method === "GET")
+    )
+      return json([]);
+    if (r.url.startsWith("https://api.hubapi.com/"))
+      return r.method === "GET" ? json(existing) : json({ id: "recovered-note" }, 201);
+    if (
+      r.url.includes("hubspot_lead_sync?") ||
+      r.url.includes("hubspot_delivery_lock?") ||
+      r.url.includes("rpc/remember_hubspot_identity")
+    )
+      return new Response(null, { status: 204 });
+    throw Error("Unexpected notification or network request");
+  });
+  const result = await submitLead({
+    data: { source: "contact-form", name: "Persona", email: "person@example.test", captureId },
+  });
+  assert.deepEqual(result, { ok: true, stored: true, emailed: false, alerted: false });
+  assert.equal(calls.filter((r) => r.url.endsWith("/notes")).length, 1);
+  assert.equal(calls.filter((r) => r.url.endsWith("/contacts")).length, 0);
+  assert.ok(
+    calls.every(
+      (r) =>
+        r.url.startsWith("https://database.test/") || r.url.startsWith("https://api.hubapi.com/"),
+    ),
+  );
 });
