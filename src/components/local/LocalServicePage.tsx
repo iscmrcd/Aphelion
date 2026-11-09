@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { ArrowRight, Plus, MapPin } from "lucide-react";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { BlogTeaserSection } from "@/components/blog/BlogTeaserSection";
@@ -69,7 +69,7 @@ export function LocalServicePage({
               <div className="mt-4 space-y-4">
                 {(lang === "es" ? s.bodyEs : s.body).map((p, i) => (
                   <p key={i} className="text-base leading-relaxed text-neutral-700">
-                    {p}
+                    <InlineLinks text={p} />
                   </p>
                 ))}
               </div>
@@ -174,4 +174,28 @@ export function LocalServicePage({
       <CTAFooter />
     </main>
   );
+}
+
+/** [label](/path) inside a city-page paragraph becomes an internal link. */
+const LINK_TOKEN = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
+
+function InlineLinks({ text }: { text: string }) {
+  const parts: ReactNode[] = [];
+  let last = 0;
+  for (const m of text.matchAll(LINK_TOKEN)) {
+    const at = m.index ?? 0;
+    if (at > last) parts.push(text.slice(last, at));
+    parts.push(
+      <Link
+        key={at}
+        to={m[2]}
+        className="text-neutral-950 underline decoration-neutral-300 underline-offset-2 transition-colors hover:decoration-neutral-950"
+      >
+        {m[1]}
+      </Link>,
+    );
+    last = at + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
 }

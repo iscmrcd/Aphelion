@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AgenciaMarketingDigitalEnsenadaRouteImport } from './routes/agencia-marketing-digital-ensenada'
 import { Route as AgenciaMarketingDigitalTijuanaRouteImport } from './routes/agencia-marketing-digital-tijuana'
 import { Route as BrandingRouteImport } from './routes/branding'
 import { Route as ContactoRouteImport } from './routes/contacto'
@@ -45,6 +46,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AgenciaMarketingDigitalEnsenadaRoute =
+  AgenciaMarketingDigitalEnsenadaRouteImport.update({
+    id: '/agencia-marketing-digital-ensenada',
+    path: '/agencia-marketing-digital-ensenada',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AgenciaMarketingDigitalTijuanaRoute =
   AgenciaMarketingDigitalTijuanaRouteImport.update({
     id: '/agencia-marketing-digital-tijuana',
@@ -196,6 +203,7 @@ const RecursosDiagnosticoIndustriaRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
   '/contacto': typeof ContactoRoute
@@ -228,6 +236,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
   '/contacto': typeof ContactoRoute
@@ -260,6 +269,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
   '/contacto': typeof ContactoRoute
@@ -294,6 +304,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/agencia-marketing-digital-ensenada'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
     | '/contacto'
@@ -326,6 +337,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/agencia-marketing-digital-ensenada'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
     | '/contacto'
@@ -357,6 +369,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/agencia-marketing-digital-ensenada'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
     | '/contacto'
@@ -390,6 +403,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AgenciaMarketingDigitalEnsenadaRoute: typeof AgenciaMarketingDigitalEnsenadaRoute
   AgenciaMarketingDigitalTijuanaRoute: typeof AgenciaMarketingDigitalTijuanaRoute
   BrandingRoute: typeof BrandingRoute
   ContactoRoute: typeof ContactoRoute
@@ -420,6 +434,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agencia-marketing-digital-ensenada': {
+      id: '/agencia-marketing-digital-ensenada'
+      path: '/agencia-marketing-digital-ensenada'
+      fullPath: '/agencia-marketing-digital-ensenada'
+      preLoaderRoute: typeof AgenciaMarketingDigitalEnsenadaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agencia-marketing-digital-tijuana': {
@@ -656,6 +677,7 @@ const ServiciosRouteWithChildren = ServiciosRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AgenciaMarketingDigitalEnsenadaRoute: AgenciaMarketingDigitalEnsenadaRoute,
   AgenciaMarketingDigitalTijuanaRoute: AgenciaMarketingDigitalTijuanaRoute,
   BrandingRoute: BrandingRoute,
   ContactoRoute: ContactoRoute,

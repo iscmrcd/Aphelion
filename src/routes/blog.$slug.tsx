@@ -431,6 +431,50 @@ function ArticleFAQ({ post, lang }: { post: BlogPost; lang: "en" | "es" }) {
   );
 }
 
+/**
+ * Local service pages linked under each post's call to action. The link
+ * matches the post's topic, so the anchor text says what the page ranks for
+ * ("diseño web en Tijuana", not a generic "agency"), and every post also
+ * links to one of the two city hubs.
+ */
+function localLinksFor(category: string): { to: string; en: string; es: string }[] {
+  const tijuana = {
+    to: "/agencia-marketing-digital-tijuana",
+    en: "Digital marketing agency in Tijuana",
+    es: "Agencia de marketing digital en Tijuana",
+  };
+  const ensenada = {
+    to: "/agencia-marketing-digital-ensenada",
+    en: "Digital marketing agency in Ensenada",
+    es: "Agencia de marketing digital en Ensenada",
+  };
+  switch (category) {
+    case "Web Design":
+      return [
+        { to: "/diseno-web-tijuana", en: "Web design in Tijuana", es: "Diseño web en Tijuana" },
+        tijuana,
+      ];
+    case "SEO":
+      return [{ to: "/seo-tijuana", en: "SEO in Tijuana", es: "SEO en Tijuana" }, tijuana];
+    case "Paid Ads":
+      return [
+        { to: "/google-ads-tijuana", en: "Google Ads in Tijuana", es: "Google Ads en Tijuana" },
+        { to: "/meta-ads-tijuana", en: "Meta Ads in Tijuana", es: "Meta Ads en Tijuana" },
+      ];
+    case "Video & Drone":
+      return [
+        {
+          to: "/servicios/video-con-dron",
+          en: "Drone video in Ensenada",
+          es: "Video con dron en Ensenada",
+        },
+        ensenada,
+      ];
+    default:
+      return [tijuana, ensenada];
+  }
+}
+
 function InlineCTA({ post }: { post: BlogPost }) {
   const t = useT();
   const { lang } = useLang();
@@ -483,12 +527,17 @@ function InlineCTA({ post }: { post: BlogPost }) {
           {t("Book a call", "Agendar llamada")}
         </Link>
       </div>
-      <Link
-        to="/agencia-marketing-digital-tijuana"
-        className="mt-6 inline-block text-xs text-white/50 underline underline-offset-2 transition hover:text-white"
-      >
-        {lang === "es" ? "Agencia de marketing en Tijuana" : "Marketing agency in Tijuana"}
-      </Link>
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-white/50">
+        {localLinksFor(post.category).map((l) => (
+          <Link
+            key={l.to}
+            to={l.to}
+            className="underline underline-offset-2 transition hover:text-white"
+          >
+            {lang === "es" ? l.es : l.en}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

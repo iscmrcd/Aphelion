@@ -1290,10 +1290,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The most common local SEO mistakes",
         headingEs: "Los errores más comunes de SEO local",
         body: [
-          "Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with [[keywords|palabra-clave]] it doesn't actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see [12 SEO mistakes small businesses make](/blog/errores-de-seo).",
+          "Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with [[keywords|palabra-clave]] it doesn't actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see [12 SEO mistakes small businesses make](/blog/errores-de-seo). We apply all of this to a border city in [local SEO in Tijuana](/seo-tijuana).",
         ],
         bodyEs: [
-          "Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con [[palabras clave|palabra-clave]] que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa [12 errores de SEO que cometen las pymes](/blog/errores-de-seo).",
+          "Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con [[palabras clave|palabra-clave]] que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa [12 errores de SEO que cometen las pymes](/blog/errores-de-seo). Todo esto lo aplicamos a la frontera en [SEO local en Tijuana](/seo-tijuana).",
         ],
       },
     ],
@@ -1404,10 +1404,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When Meta Ads is the right first platform",
         headingEs: "Cuándo Meta Ads es la plataforma correcta para empezar",
         body: [
-          "Meta Ads makes the most sense for visual, aspirational products and for categories where demand needs to be created rather than captured — new products, real estate pre-sales, restaurants, fashion. For categories where people already actively search by name or category, [[Google Ads|google-ads]] often deserves the first dollar instead. We compare both directly in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
+          "Meta Ads makes the most sense for visual, aspirational products and for categories where demand needs to be created rather than captured — new products, real estate pre-sales, restaurants, fashion. For categories where people already actively search by name or category, [[Google Ads|google-ads]] often deserves the first dollar instead. We compare both directly in [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads). For audiences and creative in a border market, see [Meta Ads in Tijuana](/meta-ads-tijuana).",
         ],
         bodyEs: [
-          "Meta Ads tiene más sentido para productos visuales y aspiracionales, y para categorías donde la demanda hay que crearla en vez de capturarla: productos nuevos, preventas inmobiliarias, restaurantes, moda. Para categorías donde la gente ya busca activamente por nombre o categoría, [[Google Ads|google-ads]] suele merecer el primer peso en su lugar. Comparamos ambos directamente en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
+          "Meta Ads tiene más sentido para productos visuales y aspiracionales, y para categorías donde la demanda hay que crearla en vez de capturarla: productos nuevos, preventas inmobiliarias, restaurantes, moda. Para categorías donde la gente ya busca activamente por nombre o categoría, [[Google Ads|google-ads]] suele merecer el primer peso en su lugar. Comparamos ambos directamente en [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads). Para públicos y creativos en un mercado fronterizo, revisa [Meta Ads en Tijuana](/meta-ads-tijuana).",
         ],
       },
     ],
@@ -1722,10 +1722,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The questions to ask before deciding",
         headingEs: "Las preguntas que hay que hacerse antes de decidir",
         body: [
-          "How many channels need to work together right now? Is the need ongoing or a one-time project? What happens if the person or team is unavailable for two weeks? And honestly — is there enough internal capacity to manage a freelancer or agency relationship well, or does that management itself need to be outsourced too? The answers usually point clearly to one option.",
+          "How many channels need to work together right now? Is the need ongoing or a one-time project? What happens if the person or team is unavailable for two weeks? And honestly — is there enough internal capacity to manage a freelancer or agency relationship well, or does that management itself need to be outsourced too? The answers usually point clearly to one option. If you are comparing agencies in the region, this is how we work as a [digital marketing agency in Tijuana](/agencia-marketing-digital-tijuana) and in [Ensenada](/agencia-marketing-digital-ensenada).",
         ],
         bodyEs: [
-          "¿Cuántos canales necesitan trabajar juntos ahora mismo? ¿La necesidad es continua o un proyecto único? ¿Qué pasa si la persona o el equipo no está disponible por dos semanas? Y, con honestidad, ¿hay suficiente capacidad interna para gestionar bien una relación con un freelancer o una agencia, o esa gestión también necesita externalizarse? Las respuestas suelen apuntar claramente a una opción.",
+          "¿Cuántos canales necesitan trabajar juntos ahora mismo? ¿La necesidad es continua o un proyecto único? ¿Qué pasa si la persona o el equipo no está disponible por dos semanas? Y, con honestidad, ¿hay suficiente capacidad interna para gestionar bien una relación con un freelancer o una agencia, o esa gestión también necesita externalizarse? Las respuestas suelen apuntar claramente a una opción. Si estás comparando agencias en la región, así trabajamos como [agencia de marketing digital en Tijuana](/agencia-marketing-digital-tijuana) y en [Ensenada](/agencia-marketing-digital-ensenada).",
         ],
       },
     ],
@@ -2335,10 +2335,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Where to go deeper",
         headingEs: "Dónde profundizar",
         body: [
-          'For the full picture on campaign types, measurement and common mistakes, start with "Google Ads: the complete guide." For the tracking setup that makes any of these numbers trustworthy, see [how to actually measure conversions](/blog/como-medir-conversiones-google-ads).',
+          'For the full picture on campaign types, measurement and common mistakes, start with "Google Ads: the complete guide." For the tracking setup that makes any of these numbers trustworthy, see [how to actually measure conversions](/blog/como-medir-conversiones-google-ads). And if you advertise in a border city, check the setup in [Google Ads in Tijuana](/google-ads-tijuana).',
         ],
         bodyEs: [
-          "Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con [Google Ads: guía completa](/blog/guia-google-ads). Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads).",
+          "Para el panorama completo de tipos de campaña, medición y errores comunes, empieza con [Google Ads: guía completa](/blog/guia-google-ads). Para la configuración de seguimiento que hace que cualquiera de estos números sea confiable, revisa [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads). Y si te anuncias en la frontera, revisa la configuración en [Google Ads en Tijuana](/google-ads-tijuana).",
         ],
       },
     ],
@@ -2448,10 +2448,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What to do while you wait",
         headingEs: "Qué hacer mientras tanto",
         body: [
-          "If you need traffic before SEO compounds, running [[Google Ads|google-ads]] or [[Meta Ads|meta-ads]] in parallel fills the gap without waiting. We cover how to think about that sequencing in [SEO vs Google Ads](/blog/seo-vs-google-ads).",
+          "If you need traffic before SEO compounds, running [[Google Ads|google-ads]] or [[Meta Ads|meta-ads]] in parallel fills the gap without waiting. We cover how to think about that sequencing in [SEO vs Google Ads](/blog/seo-vs-google-ads). We explain the timelines for a local business in [SEO in Tijuana](/seo-tijuana).",
         ],
         bodyEs: [
-          "Si necesitas tráfico antes de que el SEO se acumule, correr [[Google Ads|google-ads]] o [[Meta Ads|meta-ads]] en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en [SEO vs Google Ads](/blog/seo-vs-google-ads).",
+          "Si necesitas tráfico antes de que el SEO se acumule, correr [[Google Ads|google-ads]] o [[Meta Ads|meta-ads]] en paralelo llena ese vacío sin esperar. Cubrimos cómo pensar esa secuencia en [SEO vs Google Ads](/blog/seo-vs-google-ads). Los tiempos para un negocio local los explicamos en [SEO en Tijuana](/seo-tijuana).",
         ],
       },
     ],
@@ -3242,10 +3242,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Signs the problem isn't budget, it's allocation",
         headingEs: "Señales de que el problema no es presupuesto, es asignación",
         body: [
-          "A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken [[landing page|landing-page]] or a slow response process just wastes more money faster. Before increasing budget, it's worth auditing where the current spend is actually going. See [agency, freelancer or in-house team](/blog/agencia-o-freelancer-marketing) for who should be managing that allocation.",
+          "A business spending at or above the recommended range but still not growing usually has a conversion or follow-up problem, not a spend problem — more traffic to a broken [[landing page|landing-page]] or a slow response process just wastes more money faster. Before increasing budget, it's worth auditing where the current spend is actually going. See [agency, freelancer or in-house team](/blog/agencia-o-freelancer-marketing) for who should be managing that allocation. If you want someone to review it with you, see how we work as a [digital marketing agency in Tijuana](/agencia-marketing-digital-tijuana).",
         ],
         bodyEs: [
-          "Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto. Más tráfico a una [[landing page|landing-page]] rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa [¿agencia, freelancer o equipo interno?](/blog/agencia-o-freelancer-marketing) para saber quién debería gestionar esa asignación.",
+          "Un negocio que gasta en el rango recomendado o por encima pero sigue sin crecer generalmente tiene un problema de conversión o seguimiento, no de gasto. Más tráfico a una [[landing page|landing-page]] rota o un proceso de respuesta lento solo desperdicia más dinero más rápido. Antes de subir el presupuesto, vale la pena auditar a dónde realmente se está yendo el gasto actual. Revisa [¿agencia, freelancer o equipo interno?](/blog/agencia-o-freelancer-marketing) para saber quién debería gestionar esa asignación. Si quieres que alguien lo revise contigo, mira cómo trabajamos como [agencia de marketing digital en Tijuana](/agencia-marketing-digital-tijuana).",
         ],
       },
     ],
@@ -3378,10 +3378,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The real cost and time difference",
         headingEs: "La diferencia real de costo y tiempo",
         body: [
-          "A standalone landing page typically falls in the same **$25,000–$60,000 MXN range as a Professional-tier website**, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. Timing depends on scope, team size and availability, content and approvals. At Aphelion, a Presence Site is estimated at 7–10 days and Professional at 2–3 weeks from the agreed start, with content approved and scope confirmed. A landing page with campaign integrations needs its own schedule. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it.",
+          "A standalone landing page typically falls in the same **$25,000–$60,000 MXN range as a Professional-tier website**, because the work is concentrated strategy, copywriting, and conversion design instead of being spread across many pages. What changes is time. Timing depends on scope, team size and availability, content and approvals. At Aphelion, a Presence Site is estimated at 7–10 days and Professional at 2–3 weeks from the agreed start, with content approved and scope confirmed. A landing page with campaign integrations needs its own schedule. If you need landing pages built into ongoing campaign infrastructure with [[CRM|crm]] integration, that moves into the Lead-Gen tier, $80,000–$150,000 MXN. [[Domain|dominio]] and [[hosting|hosting]] still apply either way, typically $1,500–$6,000 MXN per year, so a landing page doesn't remove that ongoing cost, it just removes the extra pages around it. We build both; the details are in [websites in Tijuana](/diseno-web-tijuana).",
         ],
         bodyEs: [
-          "Una landing page independiente suele caer en el mismo rango de **$25,000 a $60,000 MXN que un sitio de nivel Profesional**, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. El tiempo depende del alcance, el tamaño y la disponibilidad del equipo, el contenido y las aprobaciones. En Aphelion, una Web Presencial se estima en 7–10 días y Profesional en 2–3 semanas desde el inicio acordado, con contenido aprobado y alcance confirmado. Una landing con integraciones de campaña requiere su propio calendario. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella.",
+          "Una landing page independiente suele caer en el mismo rango de **$25,000 a $60,000 MXN que un sitio de nivel Profesional**, porque el trabajo se concentra en estrategia, copywriting y diseño de conversión, en vez de repartirse entre varias páginas. Lo que cambia es el tiempo. El tiempo depende del alcance, el tamaño y la disponibilidad del equipo, el contenido y las aprobaciones. En Aphelion, una Web Presencial se estima en 7–10 días y Profesional en 2–3 semanas desde el inicio acordado, con contenido aprobado y alcance confirmado. Una landing con integraciones de campaña requiere su propio calendario. Si necesitas landing pages integradas a infraestructura de campaña continua con [[CRM|crm]], eso ya entra al nivel de Captación, $80,000 a $150,000 MXN. [[Dominio|dominio]] y [[hosting|hosting]] aplican de cualquier forma, entre $1,500 y $6,000 MXN al año, así que una landing page no elimina ese costo continuo, solo elimina las páginas extra alrededor de ella. Hacemos las dos; los detalles están en [páginas web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],
@@ -3918,10 +3918,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "6. Never checking the placement breakdown",
         headingEs: "6. Nunca revisar el desglose por ubicación",
         body: [
-          "Automatic placements can spend heavily on a placement that isn't actually converting for a given offer. Checking the breakdown by placement every couple of weeks catches this before it burns through real budget.",
+          "Automatic placements can spend heavily on a placement that isn't actually converting for a given offer. Checking the breakdown by placement every couple of weeks catches this before it burns through real budget. We review these points in every account we take on in [Meta Ads in Tijuana](/meta-ads-tijuana).",
         ],
         bodyEs: [
-          "Las ubicaciones automáticas pueden gastar fuerte en una ubicación que en realidad no está convirtiendo para una oferta dada. Revisar el desglose por ubicación cada par de semanas atrapa esto antes de que queme presupuesto real.",
+          "Las ubicaciones automáticas pueden gastar fuerte en una ubicación que en realidad no está convirtiendo para una oferta dada. Revisar el desglose por ubicación cada par de semanas atrapa esto antes de que queme presupuesto real. Estos puntos los revisamos en cada cuenta que tomamos en [Meta Ads en Tijuana](/meta-ads-tijuana).",
         ],
       },
     ],
@@ -4366,10 +4366,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to adjust once real data comes in",
         headingEs: "Cómo ajustar una vez que llegan datos reales",
         body: [
-          "Once a campaign has enough [[conversion|conversion]] volume to read reliably, the budget conversation shifts from guessing to scaling: increasing spend on what's already converting at an acceptable cost, and cutting what isn't, rather than adjusting the total number blindly.",
+          "Once a campaign has enough [[conversion|conversion]] volume to read reliably, the budget conversation shifts from guessing to scaling: increasing spend on what's already converting at an acceptable cost, and cutting what isn't, rather than adjusting the total number blindly. This is how we set budgets for local accounts in [Google Ads in Tijuana](/google-ads-tijuana).",
         ],
         bodyEs: [
-          "Una vez que una campaña tiene suficiente volumen de [[conversión|conversion]] para leerse con confianza, la conversación de presupuesto cambia de adivinar a escalar: subir el gasto en lo que ya convierte a un costo aceptable, y cortar lo que no, en vez de ajustar el número total a ciegas.",
+          "Una vez que una campaña tiene suficiente volumen de [[conversión|conversion]] para leerse con confianza, la conversación de presupuesto cambia de adivinar a escalar: subir el gasto en lo que ya convierte a un costo aceptable, y cortar lo que no, en vez de ajustar el número total a ciegas. Así fijamos presupuestos para cuentas locales en [Google Ads en Tijuana](/google-ads-tijuana).",
         ],
       },
     ],
@@ -4463,10 +4463,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When bringing in outside help actually pays off",
         headingEs: "Cuándo realmente conviene traer ayuda externa",
         body: [
-          "An agency earns its cost when the account is complex enough, or the budget large enough, that expert management measurably improves results beyond what self-management would achieve, and when your own time is worth more spent elsewhere in the business.",
+          "An agency earns its cost when the account is complex enough, or the budget large enough, that expert management measurably improves results beyond what self-management would achieve, and when your own time is worth more spent elsewhere in the business. If you decide to hand it over, this is how we run accounts in [Google Ads in Tijuana](/google-ads-tijuana).",
         ],
         bodyEs: [
-          "Una agencia justifica su costo cuando la cuenta es lo bastante compleja, o el presupuesto lo bastante grande, como para que el manejo experto mejore de forma medible los resultados más allá de lo que lograría el manejo propio, y cuando tu propio tiempo vale más invertido en otra parte del negocio.",
+          "Una agencia justifica su costo cuando la cuenta es lo bastante compleja, o el presupuesto lo bastante grande, como para que el manejo experto mejore de forma medible los resultados más allá de lo que lograría el manejo propio, y cuando tu propio tiempo vale más invertido en otra parte del negocio. Si decides delegarlo, así manejamos cuentas en [Google Ads en Tijuana](/google-ads-tijuana).",
         ],
       },
     ],
@@ -4833,10 +4833,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What a useful delivery commitment includes",
         headingEs: "Qué debe incluir un compromiso de entrega",
         body: [
-          "A useful proposal names the start date, deliverables, client inputs, review rounds and launch checks. It also explains what happens if scope changes. Ask for those details whether the estimate is ten days or two months: speed is useful when the agreed work can be delivered and checked.",
+          "A useful proposal names the start date, deliverables, client inputs, review rounds and launch checks. It also explains what happens if scope changes. Ask for those details whether the estimate is ten days or two months: speed is useful when the agreed work can be delivered and checked. This is how we handle timelines in [web design in Tijuana](/diseno-web-tijuana).",
         ],
         bodyEs: [
-          "Una propuesta útil indica fecha de inicio, entregables, materiales del cliente, rondas de revisión y pruebas antes de publicar. También explica qué pasa si cambia el alcance. Pide ese detalle tanto para diez días como para dos meses: la rapidez sirve cuando el trabajo acordado puede entregarse y revisarse.",
+          "Una propuesta útil indica fecha de inicio, entregables, materiales del cliente, rondas de revisión y pruebas antes de publicar. También explica qué pasa si cambia el alcance. Pide ese detalle tanto para diez días como para dos meses: la rapidez sirve cuando el trabajo acordado puede entregarse y revisarse. Así manejamos los tiempos en [diseño de páginas web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],
@@ -4947,10 +4947,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to actually decide between the three",
         headingEs: "Cómo decidir realmente entre los tres",
         body: [
-          "If the site needs to launch fast with a tight budget and modest ambitions, an AI-assisted or template approach fits. If the business already knows it needs specific integrations and plans to scale the site over years, custom development is worth the extra time and cost. WordPress sits in between: useful when the plugin ecosystem covers most of what's needed and the ongoing maintenance tradeoff is acceptable.",
+          "If the site needs to launch fast with a tight budget and modest ambitions, an AI-assisted or template approach fits. If the business already knows it needs specific integrations and plans to scale the site over years, custom development is worth the extra time and cost. WordPress sits in between: useful when the plugin ecosystem covers most of what's needed and the ongoing maintenance tradeoff is acceptable. If you are not sure which one fits, we explain how we decide it with each client in [web design in Tijuana](/diseno-web-tijuana).",
         ],
         bodyEs: [
-          "Si el sitio necesita lanzarse rápido con presupuesto ajustado y ambiciones modestas, un enfoque asistido por IA o basado en plantilla encaja. Si el negocio ya sabe que necesita integraciones específicas y planea escalar el sitio durante años, el desarrollo a medida vale el tiempo y costo extra. WordPress queda en medio: útil cuando el ecosistema de plugins cubre la mayor parte de lo necesario y el costo de mantenimiento continuo es aceptable.",
+          "Si el sitio necesita lanzarse rápido con presupuesto ajustado y ambiciones modestas, un enfoque asistido por IA o basado en plantilla encaja. Si el negocio ya sabe que necesita integraciones específicas y planea escalar el sitio durante años, el desarrollo a medida vale el tiempo y costo extra. WordPress queda en medio: útil cuando el ecosistema de plugins cubre la mayor parte de lo necesario y el costo de mantenimiento continuo es aceptable. Si no sabes cuál te conviene, explicamos cómo lo decidimos con cada cliente en [diseño web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],
@@ -5271,10 +5271,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What doesn't always need to be there",
         headingEs: "Lo que no siempre hace falta",
         body: [
-          "A blog, a full team-bios page, or a chat widget aren't universally necessary, they earn their place depending on the business. A blog only helps if it's maintained consistently; an abandoned one with three posts from two years ago hurts more than it helps.",
+          "A blog, a full team-bios page, or a chat widget aren't universally necessary, they earn their place depending on the business. A blog only helps if it's maintained consistently; an abandoned one with three posts from two years ago hurts more than it helps. If your business is in Baja California, we explain how we build them in [web design in Tijuana](/diseno-web-tijuana).",
         ],
         bodyEs: [
-          "Un blog, una página completa de biografías del equipo, o un widget de chat no son universalmente necesarios, se ganan su lugar dependiendo del negocio. Un blog solo ayuda si se mantiene con constancia; uno abandonado con tres publicaciones de hace dos años perjudica más de lo que ayuda.",
+          "Un blog, una página completa de biografías del equipo, o un widget de chat no son universalmente necesarios, se ganan su lugar dependiendo del negocio. Un blog solo ayuda si se mantiene con constancia; uno abandonado con tres publicaciones de hace dos años perjudica más de lo que ayuda. Si tu negocio está en Baja California, te contamos cómo las construimos en [diseño web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],
@@ -5767,10 +5767,10 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "How to decide between a refresh and a full redesign",
         headingEs: "Cómo decidir entre un refresh y un rediseño completo",
         body: [
-          "A refresh fits when PageSpeed and mobile-friendliness scores are healthy and the problems are cosmetic or content-related. A full redesign fits when the technical foundation itself is failing those same checks, or when the business has changed enough that the entire structure no longer matches what it needs to communicate. Running the PageSpeed and Mobile-Friendly tests first, before deciding, turns this into a five-minute data check instead of a guess.",
+          "A refresh fits when PageSpeed and mobile-friendliness scores are healthy and the problems are cosmetic or content-related. A full redesign fits when the technical foundation itself is failing those same checks, or when the business has changed enough that the entire structure no longer matches what it needs to communicate. Running the PageSpeed and Mobile-Friendly tests first, before deciding, turns this into a five-minute data check instead of a guess. If your site has stopped bringing in customers, see how we approach [web design in Tijuana](/diseno-web-tijuana).",
         ],
         bodyEs: [
-          "Un refresh encaja cuando los puntajes de PageSpeed y compatibilidad móvil están sanos y los problemas son cosméticos o de contenido. Un rediseño completo encaja cuando la base técnica misma está fallando esas mismas pruebas, o cuando el negocio cambió lo suficiente como para que toda la estructura ya no coincida con lo que necesita comunicar. Correr las pruebas de PageSpeed y Compatibilidad Móvil primero, antes de decidir, convierte esto en una revisión de datos de cinco minutos en vez de una suposición.",
+          "Un refresh encaja cuando los puntajes de PageSpeed y compatibilidad móvil están sanos y los problemas son cosméticos o de contenido. Un rediseño completo encaja cuando la base técnica misma está fallando esas mismas pruebas, o cuando el negocio cambió lo suficiente como para que toda la estructura ya no coincida con lo que necesita comunicar. Correr las pruebas de PageSpeed y Compatibilidad Móvil primero, antes de decidir, convierte esto en una revisión de datos de cinco minutos en vez de una suposición. Si tu sitio ya no te trae clientes, mira cómo trabajamos el [diseño de páginas web en Tijuana](/diseno-web-tijuana).",
         ],
       },
     ],
@@ -9758,11 +9758,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo medir si está funcionando",
         body: [
           "Track one number every month: the share of nights booked directly versus through platforms. Also record how many direct guests had stayed before. If that share rises season after season, you are keeping your customers; if not, the platforms are keeping them.",
-          "If you want to know what to fix first on your website, Google profile or channels, our [free diagnostic for hotels and lodging](/recursos/diagnostico/hospedaje) gives you the list in order in a few minutes.",
+          "If you want to know what to fix first on your website, Google profile or channels, our [free diagnostic for hotels and lodging](/recursos/diagnostico/hospedaje) gives you the list in order in a few minutes. If your hotel is in Ensenada or the Valle de Guadalupe, see how we work as a [digital marketing agency in Ensenada](/agencia-marketing-digital-ensenada).",
         ],
         bodyEs: [
           "Lleva un número cada mes: qué parte de las noches se reservó directo y qué parte por plataformas. Anota también cuántos huéspedes directos ya se habían quedado antes. Si esa proporción sube temporada tras temporada, te estás quedando con tus clientes; si no, se los están quedando las plataformas.",
-          "Si quieres saber qué corregir primero en tu página, tu perfil de Google o tus canales, nuestro [diagnóstico gratuito para hospedaje](/recursos/diagnostico/hospedaje) te da la lista en orden en unos minutos.",
+          "Si quieres saber qué corregir primero en tu página, tu perfil de Google o tus canales, nuestro [diagnóstico gratuito para hospedaje](/recursos/diagnostico/hospedaje) te da la lista en orden en unos minutos. Si tu hotel está en Ensenada o el Valle de Guadalupe, mira cómo trabajamos como [agencia de marketing digital en Ensenada](/agencia-marketing-digital-ensenada).",
         ],
       },
     ],
@@ -9922,11 +9922,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo medirlo",
         body: [
           "Every month, count how many seats you sold through each channel: platforms, your website and WhatsApp. Also note how many WhatsApp conversations ended in a booking. If the website share grows and the platforms’ share falls without losing total sales, you are keeping the commission.",
-          "Our [free diagnostic for tourism](/recursos/diagnostico/turismo) tells you in a few minutes what to fix first in your website, your Google profile and your booking process.",
+          "Our [free diagnostic for tourism](/recursos/diagnostico/turismo) tells you in a few minutes what to fix first in your website, your Google profile and your booking process. If you operate in Ensenada or the Valle de Guadalupe, see how we work as a [digital marketing agency in Ensenada](/agencia-marketing-digital-ensenada).",
         ],
         bodyEs: [
           "Cada mes cuenta cuántos lugares vendiste por cada canal: plataformas, tu página y WhatsApp. Anota también cuántas conversaciones de WhatsApp terminaron en reserva. Si la parte de tu página crece y la de las plataformas baja sin perder ventas totales, te estás quedando con la comisión.",
-          "Nuestro [diagnóstico gratuito para turismo](/recursos/diagnostico/turismo) te dice en unos minutos qué corregir primero en tu página, tu perfil de Google y tu proceso de reservas.",
+          "Nuestro [diagnóstico gratuito para turismo](/recursos/diagnostico/turismo) te dice en unos minutos qué corregir primero en tu página, tu perfil de Google y tu proceso de reservas. Si operas en Ensenada o el Valle de Guadalupe, mira cómo trabajamos como [agencia de marketing digital en Ensenada](/agencia-marketing-digital-ensenada).",
         ],
       },
     ],
@@ -12395,11 +12395,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Decide con tus números",
         body: [
           "Start with one channel, one offer and a fixed budget and date. Measure what each [[lead|lead]] and each sale costs you, which is your [[CPA|cpa]], and compare it with what a customer is worth to you. **A channel is good for your business when a customer costs you less than they leave you, not when everyone else is using it.**",
-          "To decide how much to invest, see [how much to invest in digital marketing](/blog/cuanto-invertir-en-marketing-digital). And if you want a recommendation for your business, our [free diagnostic](/recursos/diagnostico) gives you one in a few minutes.",
+          "To decide how much to invest, see [how much to invest in digital marketing](/blog/cuanto-invertir-en-marketing-digital). And if you want a recommendation for your business, our [free diagnostic](/recursos/diagnostico) gives you one in a few minutes. If your business is in Baja California, see how we work in [Tijuana](/agencia-marketing-digital-tijuana) and [Ensenada](/agencia-marketing-digital-ensenada).",
         ],
         bodyEs: [
           "Empieza con un canal, una oferta y un presupuesto y fecha fijos. Mide cuánto te cuesta cada [[prospecto|lead]] y cada venta, que es tu [[CPA|cpa]], y compáralo con lo que vale un cliente para ti. **Un canal es bueno para tu negocio cuando un cliente te cuesta menos de lo que te deja, no cuando todos lo están usando.**",
-          "Para decidir cuánto invertir, revisa [cuánto invertir en marketing digital](/blog/cuanto-invertir-en-marketing-digital). Y si quieres una recomendación para tu negocio, nuestro [diagnóstico gratuito](/recursos/diagnostico) te la da en unos minutos.",
+          "Para decidir cuánto invertir, revisa [cuánto invertir en marketing digital](/blog/cuanto-invertir-en-marketing-digital). Y si quieres una recomendación para tu negocio, nuestro [diagnóstico gratuito](/recursos/diagnostico) te la da en unos minutos. Si tu negocio está en Baja California, mira cómo trabajamos en [Tijuana](/agencia-marketing-digital-tijuana) y en [Ensenada](/agencia-marketing-digital-ensenada).",
         ],
       },
     ],
@@ -12968,11 +12968,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué significa para tu marketing",
         body: [
           "More agents and developers are competing for the same buyers, so being found and answering first matter more than ever. Work on [[local SEO|seo-local]] by area, such as “houses for sale in Rosarito” or “lots in Valle de Guadalupe”, respond to every contact within the hour, and use video to stand out. For developments and lots, an interactive map shows availability in real time, as we explain in [interactive lot maps](/blog/mapa-interactivo-de-lotes).",
-          "And measure: requests, visits, offers and closings per channel. Our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first, and [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario) helps you set the budget.",
+          "And measure: requests, visits, offers and closings per channel. Our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first, and [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario) helps you set the budget. If you sell in Ensenada or the Valle de Guadalupe, see how we work as a [digital marketing agency in Ensenada](/agencia-marketing-digital-ensenada).",
         ],
         bodyEs: [
           "Más agentes y desarrolladores compiten por los mismos compradores, así que aparecer y contestar primero importa más que nunca. Trabaja el [[SEO local|seo-local]] por zona, como “casas en venta en Rosarito” o “terrenos en Valle de Guadalupe”, responde cada contacto en menos de una hora y usa video para distinguirte. Para desarrollos y lotes, un mapa interactivo muestra la disponibilidad en tiempo real, como explicamos en [mapa interactivo de lotes](/blog/mapa-interactivo-de-lotes).",
-          "Y mide: solicitudes, visitas, ofertas y cierres por canal. Nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero, y [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario) te ayuda a definir el presupuesto.",
+          "Y mide: solicitudes, visitas, ofertas y cierres por canal. Nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero, y [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario) te ayuda a definir el presupuesto. Si vendes en Ensenada o el Valle de Guadalupe, mira cómo trabajamos como [agencia de marketing digital en Ensenada](/agencia-marketing-digital-ensenada).",
         ],
       },
     ],
@@ -18027,6 +18027,925 @@ export const BLOG_POSTS: BlogPost[] = [
         "para qué negocios sirve Pinterest",
         "anuncios en Pinterest México",
         "Pinterest Performance+",
+      ],
+    },
+  },
+  {
+    slug: "whatsapp-cobra-mensajes-de-servicio",
+    cover: true,
+    title:
+      "WhatsApp Now Charges for Replying to Your Customers: What Changed in October 2026 and What It Costs in Mexico",
+    titleEs:
+      "WhatsApp ya cobra por responderle a tus clientes: qué cambió en octubre de 2026 y cuánto cuesta en México",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "Since 1 October 2026, replies sent through the WhatsApp Business API are no longer free after the first 1,000 a month. Who it affects and who it does not, how much it costs in Mexico with real examples, the window that is still free when the chat starts from an ad, what an AI agent adds, and how to keep the bill under control.",
+    excerptEs:
+      "Desde el 1 de octubre de 2026, las respuestas que mandas por la API de WhatsApp Business dejaron de ser gratis después de las primeras 1,000 al mes. A quién le afecta y a quién no, cuánto cuesta en México con ejemplos reales, la ventana que sigue siendo gratis cuando el chat viene de un anuncio, cuánto suma un agente de IA y cómo mantener la factura bajo control.",
+    readingTime: 9,
+    date: "2026-11-08",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "For years, the rule with WhatsApp for business was simple: if the customer wrote first, your replies were free for 24 hours. That rule ended on 1 October 2026. Since then, Meta charges for every reply sent through the WhatsApp Business platform after the first 1,000 of the month. For a business that answers a few dozen chats a day it is almost nothing; for one with a chatbot, a CRM or an AI agent answering hundreds of conversations, it is a new line in the budget. Here is what changed, who it affects and what it costs in Mexico.",
+    ledeEs:
+      "Durante años, la regla de WhatsApp para negocios era simple: si el cliente escribía primero, tus respuestas eran gratis durante 24 horas. Esa regla se acabó el 1 de octubre de 2026. Desde entonces, Meta cobra cada respuesta que mandas por la plataforma de WhatsApp Business después de las primeras 1,000 del mes. Para un negocio que contesta unas decenas de chats al día casi no cambia nada; para uno con chatbot, CRM o un agente de IA contestando cientos de conversaciones, es una línea nueva en el presupuesto. Aquí está qué cambió, a quién le afecta y cuánto cuesta en México.",
+    sections: [
+      {
+        id: "a-quien-afecta",
+        heading: "First: does this affect you?",
+        headingEs: "Primero: ¿esto te afecta?",
+        body: [
+          "**If you use the free WhatsApp Business app on your phone, no.** The change applies to the WhatsApp Business platform, the [[API|whatsapp-api]] that connects WhatsApp to chatbots, CRMs, multi-agent inboxes and AI agents. If you answer from the green app on a phone, nothing changed for you.",
+          "**If you use a provider to answer from a shared inbox, a chatbot or an automation, yes.** That includes platforms that let several people answer the same number, tools that send automatic replies, and AI agents that answer at night. They all send messages through the API, and from October those messages count. We explain the difference between the app and the API in [WhatsApp Business API](/blog/whatsapp-business-api).",
+        ],
+        bodyEs: [
+          "**Si usas la app gratuita de WhatsApp Business en tu celular, no.** El cambio aplica a la plataforma de WhatsApp Business, la [[API|whatsapp-api]] que conecta WhatsApp con chatbots, CRMs, bandejas compartidas y agentes de IA. Si contestas desde la app verde en un teléfono, para ti no cambió nada.",
+          "**Si usas un proveedor para contestar desde una bandeja compartida, un chatbot o una automatización, sí.** Eso incluye las plataformas donde varias personas contestan el mismo número, las herramientas que mandan respuestas automáticas y los agentes de IA que responden de noche. Todas mandan mensajes por la API, y desde octubre esos mensajes cuentan. La diferencia entre la app y la API la explicamos en [WhatsApp Business API](/blog/whatsapp-business-api).",
+        ],
+      },
+      {
+        id: "que-cambio",
+        heading: "What changed on 1 October 2026",
+        headingEs: "Qué cambió el 1 de octubre de 2026",
+        body: [
+          "Until September, a reply inside the 24-hour customer service window was free, as many as you wanted. Since 1 October, those replies, called **service messages**, are charged per delivered message once you go over **1,000 free per phone number per month**. The free allowance resets every month and does not carry over.",
+          "The second change: utility templates, such as order confirmations or appointment reminders, are now also charged when you send them inside that 24-hour window. Marketing and authentication templates were already charged and still are.",
+          "What did not change: messages your customers send you are free, and the 24-hour window still decides what you can send. Inside it you can reply freely, now with a cost; outside it you can only start a conversation with an approved template.",
+        ],
+        bodyEs: [
+          "Hasta septiembre, una respuesta dentro de la ventana de atención de 24 horas era gratis, todas las que quisieras. Desde el 1 de octubre, esas respuestas, que se llaman **mensajes de servicio**, se cobran por mensaje entregado cuando pasas de **1,000 gratis por número al mes**. Las gratis se reinician cada mes y no se acumulan.",
+          "El segundo cambio: las plantillas de utilidad, como confirmaciones de pedido o recordatorios de cita, ahora también se cobran cuando las mandas dentro de esa ventana de 24 horas. Las plantillas de marketing y de autenticación ya se cobraban y se siguen cobrando.",
+          "Lo que no cambió: los mensajes que te mandan tus clientes son gratis, y la ventana de 24 horas sigue decidiendo qué puedes mandar. Dentro de ella puedes contestar libremente, ahora con costo; fuera de ella solo puedes iniciar con una plantilla aprobada.",
+        ],
+      },
+      {
+        id: "cuanto-cuesta",
+        heading: "How much it costs in Mexico",
+        headingEs: "Cuánto cuesta en México",
+        body: [
+          "According to the rate cards that providers such as Teramont and YCloud cite from Meta, a service message in Mexico costs **US$0.0085**, the same rate Meta already used for utility templates there. Marketing templates went up on the same date, **from US$0.0305 to US$0.0397 per message**, about 30% more. Those are Meta's list prices: your provider may add its own fee and taxes, so check the official table and your invoice.",
+          "In practice, the bill depends on volume. A business that sends 3,000 replies a month pays for 2,000 of them: about **17 dollars**. One with a chatbot that sends 30,000 pays for 29,000: about **246 dollars a month**. Not a fortune, but it is a cost that did not exist in September, and it grows with every unnecessary message.",
+        ],
+        bodyEs: [
+          "Según las tablas de tarifas de Meta que citan proveedores como Teramont y YCloud, un mensaje de servicio en México cuesta **US$0.0085**, la misma tarifa que Meta ya usaba ahí para las plantillas de utilidad. Las plantillas de marketing subieron en la misma fecha, **de US$0.0305 a US$0.0397 por mensaje**, cerca de 30% más. Son precios de lista de Meta: tu proveedor puede sumar su propia comisión e impuestos, así que revisa la tabla oficial y tu factura.",
+          "En la práctica, la factura depende del volumen. Un negocio que manda 3,000 respuestas al mes paga 2,000 de ellas: unos **17 dólares**. Uno con chatbot que manda 30,000 paga 29,000: unos **246 dólares al mes**. No es una fortuna, pero es un costo que en septiembre no existía, y crece con cada mensaje innecesario.",
+        ],
+        chart: {
+          title: "Monthly cost of service messages in Mexico, by volume (US dollars)",
+          titleEs: "Costo mensual de mensajes de servicio en México según volumen (dólares)",
+          source:
+            "Our calculation with US$0.0085 per message after 1,000 free per number, Meta list rate cited by Teramont. Excludes provider fees and taxes.",
+          sourceEs:
+            "Cálculo propio con US$0.0085 por mensaje después de 1,000 gratis por número, tarifa de lista de Meta citada por Teramont. No incluye comisiones del proveedor ni impuestos.",
+          bars: [
+            {
+              label: "1,000 replies a month",
+              labelEs: "1,000 respuestas al mes",
+              value: 0,
+              display: "$0",
+              displayEs: "$0",
+            },
+            {
+              label: "3,000 replies a month",
+              labelEs: "3,000 respuestas al mes",
+              value: 17,
+              display: "$17",
+              displayEs: "$17",
+            },
+            {
+              label: "10,000 replies a month",
+              labelEs: "10,000 respuestas al mes",
+              value: 76.5,
+              display: "$76.50",
+              displayEs: "$76.50",
+            },
+            {
+              label: "30,000 replies a month",
+              labelEs: "30,000 respuestas al mes",
+              value: 246.5,
+              display: "$246.50",
+              displayEs: "$246.50",
+            },
+          ],
+        },
+      },
+      {
+        id: "ventana-gratis",
+        heading: "What is still free: chats that start from an ad",
+        headingEs: "Lo que sigue siendo gratis: los chats que empiezan en un anuncio",
+        body: [
+          "There is an important exception. When a customer writes to you from a **click-to-WhatsApp ad** on Facebook or Instagram, Meta opens a free window: all messages in that conversation, service and templates included, cost nothing during that period. According to providers such as YCloud and respond.io, that window for ads now lasts **up to 7 days**, up from 72 hours; for the WhatsApp button on a Facebook Page it stays at 72 hours.",
+          "There are conditions: the customer has to write from the WhatsApp app on a phone and you have to **reply within 24 hours** of their first message, because the free window starts with your reply. Normal WhatsApp links on your website or QR codes do not qualify. In other words, the change rewards those who answer fast, which we have been saying for a while in [respond to your leads fast](/blog/responder-rapido-a-tus-leads).",
+        ],
+        bodyEs: [
+          "Hay una excepción importante. Cuando un cliente te escribe desde un **anuncio de clic a WhatsApp** en Facebook o Instagram, Meta abre una ventana gratuita: todos los mensajes de esa conversación, de servicio y plantillas incluidos, no cuestan durante ese periodo. Según proveedores como YCloud y respond.io, esa ventana para anuncios ahora dura **hasta 7 días**, antes eran 72 horas; para el botón de WhatsApp en una página de Facebook se queda en 72 horas.",
+          "Hay condiciones: el cliente tiene que escribir desde la app de WhatsApp en el celular y tú tienes que **responder dentro de las 24 horas** de su primer mensaje, porque la ventana gratis empieza con tu respuesta. Los enlaces normales de WhatsApp en tu página o los códigos QR no cuentan. Dicho de otro modo, el cambio premia a quien contesta rápido, que es lo que venimos diciendo en [responde rápido a tus leads](/blog/responder-rapido-a-tus-leads).",
+        ],
+      },
+      {
+        id: "agentes-de-ia",
+        heading: "If an AI agent answers for you",
+        headingEs: "Si un agente de IA contesta por ti",
+        body: [
+          "An AI agent connected to the API sends service messages like a person would, so every reply counts toward the 1,000 and is then charged. If the agent comes from a third party, you pay twice: the provider's fee for the AI and Meta's fee for delivering the message. Meta also launched its own business agent, billed by tokens; YCloud estimates around 4 to 5 US cents per message at its published rate.",
+          "That does not make AI agents a bad idea. One that answers at 11 pm and closes an appointment is still much cheaper than losing the customer. What changes is the design: **an agent that writes five short messages where one would do now costs five times as much.** We explain how to design one well in [AI chatbots for business](/blog/chatbot-con-ia-para-negocios).",
+        ],
+        bodyEs: [
+          "Un agente de IA conectado a la API manda mensajes de servicio igual que una persona, así que cada respuesta cuenta para las 1,000 y después se cobra. Si el agente es de un tercero, pagas dos veces: la cuota del proveedor por la IA y la de Meta por entregar el mensaje. Meta también lanzó su propio agente para negocios, que se cobra por tokens; YCloud estima alrededor de 4 a 5 centavos de dólar por mensaje con su tarifa publicada.",
+          "Eso no vuelve mala idea a los agentes de IA. Uno que contesta a las 11 de la noche y cierra una cita sigue saliendo mucho más barato que perder al cliente. Lo que cambia es el diseño: **un agente que escribe cinco mensajes cortos donde bastaba uno ahora cuesta cinco veces más.** Cómo diseñar uno bien lo explicamos en [chatbots con IA para negocios](/blog/chatbot-con-ia-para-negocios).",
+        ],
+      },
+      {
+        id: "como-pagar-menos",
+        heading: "How to keep the bill under control",
+        headingEs: "Cómo mantener la factura bajo control",
+        body: [
+          "None of these steps requires changing provider. They are configuration and habits, and together they usually cut the number of messages without anyone noticing a worse service.",
+        ],
+        bodyEs: [
+          "Ninguno de estos pasos requiere cambiar de proveedor. Son configuración y hábitos, y juntos suelen bajar el número de mensajes sin que nadie note un peor servicio.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "Six ways to send fewer billable messages",
+          titleEs: "Seis formas de mandar menos mensajes cobrables",
+          steps: [
+            {
+              label: "One message, not five",
+              labelEs: "Un mensaje, no cinco",
+              detail: "Combine the greeting, the answer and the next step in a single reply.",
+              detailEs: "Junta saludo, respuesta y siguiente paso en una sola respuesta.",
+            },
+            {
+              label: "Bring traffic from ads",
+              labelEs: "Trae tráfico de anuncios",
+              detail: "Click-to-WhatsApp chats are free for days if you reply within 24 hours.",
+              detailEs:
+                "Los chats de anuncios de clic a WhatsApp son gratis por días si contestas en menos de 24 horas.",
+            },
+            {
+              label: "Reply fast",
+              labelEs: "Contesta rápido",
+              detail: "Missing the 24-hour reply loses the free window and the customer.",
+              detailEs: "Pasarte de las 24 horas te quita la ventana gratis y el cliente.",
+            },
+            {
+              label: "Fewer automatic notices",
+              labelEs: "Menos avisos automáticos",
+              detail:
+                "Each confirmation and reminder inside the window is now charged; keep the ones that matter.",
+              detailEs:
+                "Cada confirmación y recordatorio dentro de la ventana ahora se cobra; deja los que importan.",
+            },
+            {
+              label: "Check your provider's markup",
+              labelEs: "Revisa la comisión del proveedor",
+              detail: "Compare what you pay per message with Meta's published rate.",
+              detailEs: "Compara lo que pagas por mensaje con la tarifa publicada de Meta.",
+            },
+            {
+              label: "Measure cost per customer",
+              labelEs: "Mide costo por cliente",
+              detail:
+                "What matters is not the bill but what each customer won through WhatsApp cost you.",
+              detailEs:
+                "Lo que importa no es la factura sino cuánto te costó cada cliente ganado por WhatsApp.",
+            },
+          ],
+        },
+      },
+      {
+        id: "veredicto",
+        heading: "Does WhatsApp still pay off?",
+        headingEs: "¿WhatsApp sigue conviniendo?",
+        body: [
+          "Yes, by a lot. In Mexico WhatsApp is still where customers prefer to talk, and a few Mexican cents per reply are not what decides whether you make a sale. What it does is reward businesses that answer well and fast and penalise conversations full of unnecessary messages.",
+          "If you use the API and you do not know how many messages you send a month or how many of them end in a sale, start there. At Aphelion we set up WhatsApp automation and AI agents designed to answer with as few messages as possible; you can [tell us how you use WhatsApp today](/contacto) and we will estimate what the change costs you.",
+        ],
+        bodyEs: [
+          "Sí, y por mucho. En México WhatsApp sigue siendo donde los clientes prefieren hablar, y unos centavos de peso por respuesta no son lo que decide si vendes o no. Lo que sí hace el cambio es premiar a los negocios que contestan bien y rápido, y castigar las conversaciones llenas de mensajes innecesarios.",
+          "Si usas la API y no sabes cuántos mensajes mandas al mes ni cuántos terminan en venta, empieza por ahí. En Aphelion configuramos automatización de WhatsApp y agentes de IA diseñados para contestar con los menos mensajes posibles; puedes [contarnos cómo usas WhatsApp hoy](/contacto) y te estimamos cuánto te cuesta el cambio.",
+        ],
+      },
+    ],
+    gradient: "from-emerald-900 to-neutral-950",
+    faq: [
+      {
+        q: "¿WhatsApp Business ahora cobra por mensaje?",
+        qEn: "Does WhatsApp Business now charge per message?",
+        a: "La app gratuita de WhatsApp Business no. La plataforma de WhatsApp Business, la API que usan chatbots, CRMs y agentes de IA, cobra desde el 1 de octubre de 2026 las respuestas dentro de la ventana de 24 horas después de 1,000 gratis por número al mes.",
+        aEn: "The free WhatsApp Business app does not. The WhatsApp Business platform, the API used by chatbots, CRMs and AI agents, has charged since 1 October 2026 for replies inside the 24-hour window after 1,000 free per number per month.",
+      },
+      {
+        q: "¿Cuánto cuesta un mensaje de servicio de WhatsApp en México?",
+        qEn: "How much does a WhatsApp service message cost in Mexico?",
+        a: "Alrededor de US$0.0085 por mensaje entregado después de los primeros 1,000 del mes, según la tarifa de lista de Meta citada por proveedores. Tu proveedor puede sumar comisión e impuestos.",
+        aEn: "Around US$0.0085 per delivered message after the first 1,000 of the month, according to Meta's list rate as cited by providers. Your provider may add fees and taxes.",
+      },
+      {
+        q: "¿Los chats que vienen de anuncios siguen siendo gratis?",
+        qEn: "Are chats that come from ads still free?",
+        a: "Sí. Si el cliente escribe desde un anuncio de clic a WhatsApp y respondes en menos de 24 horas, la conversación es gratis hasta por 7 días según los proveedores. Desde el botón de una página de Facebook la ventana es de 72 horas.",
+        aEn: "Yes. If the customer writes from a click-to-WhatsApp ad and you reply within 24 hours, the conversation is free for up to 7 days according to providers. From a Facebook Page button the window is 72 hours.",
+      },
+      {
+        q: "¿Las 1,000 respuestas gratis son por empresa o por número?",
+        qEn: "Are the 1,000 free replies per company or per number?",
+        a: "Por número de teléfono y por mes. No se acumulan de un mes a otro.",
+        aEn: "Per phone number and per month. They do not carry over from one month to the next.",
+      },
+      {
+        q: "¿Me conviene seguir usando un chatbot en WhatsApp?",
+        qEn: "Should I keep using a WhatsApp chatbot?",
+        a: "Sí, si te ayuda a contestar rápido y a cerrar más. Lo que conviene es revisar que no mande mensajes de más: un chatbot que divide cada respuesta en varios mensajes ahora cuesta varias veces más.",
+        aEn: "Yes, if it helps you answer fast and close more. What is worth checking is that it does not send extra messages: a chatbot that splits every answer into several messages now costs several times more.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "WhatsApp service message pricing 2026",
+        "WhatsApp API price Mexico",
+        "WhatsApp Business charges replies",
+        "click to WhatsApp free entry point 7 days",
+        "WhatsApp chatbot cost",
+      ],
+      keywordsEs: [
+        "WhatsApp cobra mensajes de servicio",
+        "precio WhatsApp Business API México",
+        "cuánto cuesta un mensaje de WhatsApp Business",
+        "WhatsApp Business cambios octubre 2026",
+        "ventana gratuita anuncios clic a WhatsApp",
+        "costo chatbot WhatsApp",
+      ],
+    },
+  },
+  {
+    slug: "google-ai-max-para-busqueda",
+    cover: true,
+    title:
+      "Google AI Max: What Changed in Your Search Campaigns in 2026 and How Not to Waste Money",
+    titleEs: "AI Max de Google Ads: qué cambió en tus campañas en 2026 y cómo no perder dinero",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Since 1 September 2026, Google switched on AI Max in thousands of Search campaigns that used broad match or automatically created assets, and Dynamic Search Ads follow in February 2027. What AI Max does, what Google promises and what independent analyses found, the risks for a local business and the checklist to review your account today.",
+    excerptEs:
+      "Desde el 1 de septiembre de 2026, Google activó AI Max en miles de campañas de búsqueda que usaban concordancia amplia o recursos creados automáticamente, y los anuncios dinámicos de búsqueda siguen en febrero de 2027. Qué hace AI Max, qué promete Google y qué encontraron análisis independientes, los riesgos para un negocio local y la lista para revisar tu cuenta hoy.",
+    readingTime: 10,
+    date: "2026-11-08",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Many advertisers in Mexico have not noticed yet, but since 1 September 2026 some of their Google Ads campaigns behave differently. Google switched on AI Max, its automation layer for Search, in campaigns that used the broad match setting or automatically created assets. That means your ads can now appear for searches you never chose, with text Google wrote from your website, sending people to pages you did not pick. That can bring new customers or burn budget. This guide explains what changed and what to check.",
+    ledeEs:
+      "Muchos anunciantes en México todavía no lo notan, pero desde el 1 de septiembre de 2026 algunas de sus campañas de Google Ads se comportan distinto. Google activó AI Max, su capa de automatización para búsqueda, en las campañas que usaban la concordancia amplia a nivel campaña o los recursos creados automáticamente. Eso significa que tus anuncios ahora pueden salir en búsquedas que nunca elegiste, con textos que Google escribió a partir de tu página y mandando a la gente a páginas que tú no escogiste. Eso puede traer clientes nuevos o quemar presupuesto. Esta guía explica qué cambió y qué revisar.",
+    sections: [
+      {
+        id: "que-es",
+        heading: "What AI Max is",
+        headingEs: "Qué es AI Max",
+        body: [
+          "AI Max for Search is a set of three automations that sit on top of a normal Search campaign. Google launched it in beta in May 2025 and took it out of beta in April 2026.",
+          "**Search term matching** lets Google show your ads for searches beyond your [[keywords|palabra-clave]], using your website and your ads to guess what you sell. **Text customisation** writes headlines and descriptions from the content of your page. And **final URL expansion** sends each person to the page of your site that Google thinks fits their search best, not necessarily the one you set.",
+          "The idea is the same one behind Performance Max: you give Google a goal, a budget and good conversion data, and it decides the rest. It works best when the account has plenty of reliable conversions to learn from, and worst when it does not.",
+        ],
+        bodyEs: [
+          "AI Max para búsqueda es un conjunto de tres automatizaciones que se montan sobre una campaña de búsqueda normal. Google la lanzó en beta en mayo de 2025 y la sacó de beta en abril de 2026.",
+          "La **coincidencia de términos de búsqueda** deja que Google muestre tus anuncios en búsquedas más allá de tus [[palabras clave|palabra-clave]], usando tu página y tus anuncios para adivinar qué vendes. La **personalización de texto** escribe títulos y descripciones a partir del contenido de tu página. Y la **expansión de URL final** manda a cada persona a la página de tu sitio que Google cree que mejor responde a su búsqueda, no necesariamente la que tú pusiste.",
+          "La idea es la misma de Performance Max: le das a Google un objetivo, un presupuesto y buenos datos de conversión, y él decide el resto. Funciona mejor cuando la cuenta tiene muchas conversiones confiables de las que aprender, y peor cuando no.",
+        ],
+      },
+      {
+        id: "que-cambio",
+        heading: "What changed in September, and what comes in February",
+        headingEs: "Qué cambió en septiembre, y qué viene en febrero",
+        body: [
+          "Google announced in April 2026 that it would move three older features into AI Max. In June it pushed back the part about Dynamic Search Ads, but the other two went ahead on 1 September. This table shows what happened to each type of campaign.",
+        ],
+        bodyEs: [
+          "Google anunció en abril de 2026 que iba a pasar tres funciones viejas a AI Max. En junio aplazó la parte de los anuncios dinámicos de búsqueda, pero las otras dos siguieron adelante el 1 de septiembre. Esta tabla muestra qué le pasó a cada tipo de campaña.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "What Google switched on, and when",
+          titleEs: "Qué activó Google, y cuándo",
+          note: "Source: Google Ads announcement of 15 April 2026, updated 11 June 2026. Check your account: Google notifies before each automatic upgrade.",
+          noteEs:
+            "Fuente: anuncio de Google Ads del 15 de abril de 2026, actualizado el 11 de junio de 2026. Revisa tu cuenta: Google avisa antes de cada actualización automática.",
+          columns: [
+            { label: "If your campaign used", labelEs: "Si tu campaña usaba" },
+            { label: "What gets switched on", labelEs: "Qué se activa" },
+            { label: "When", labelEs: "Cuándo" },
+          ],
+          rows: [
+            {
+              label: "Automatically created assets",
+              labelEs: "Recursos creados automáticamente",
+              cells: [
+                {
+                  text: "Search term matching and text customisation",
+                  textEs: "Coincidencia de términos y personalización de texto",
+                },
+                { text: "Since 1 September 2026", textEs: "Desde el 1 de septiembre de 2026" },
+              ],
+            },
+            {
+              label: "Broad match setting at campaign level",
+              labelEs: "Concordancia amplia a nivel campaña",
+              cells: [
+                { text: "Search term matching", textEs: "Coincidencia de términos de búsqueda" },
+                { text: "Since 1 September 2026", textEs: "Desde el 1 de septiembre de 2026" },
+              ],
+            },
+            {
+              label: "Dynamic Search Ads",
+              labelEs: "Anuncios dinámicos de búsqueda",
+              cells: [
+                {
+                  text: "Become normal ad groups with all three AI Max features",
+                  textEs: "Pasan a grupos de anuncios normales con las tres funciones de AI Max",
+                },
+                { text: "From February 2027", textEs: "A partir de febrero de 2027" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "promesa-vs-realidad",
+        heading: "What Google promises and what others found",
+        headingEs: "Lo que promete Google y lo que encontraron otros",
+        body: [
+          "Google says that campaigns using all three AI Max features get, on average, **7% more conversions or conversion value at a similar cost per acquisition**, compared with using search term matching alone. The figure comes from its own 2026 data for advertisers outside retail. At launch in 2025 it spoke of 14%. Note what the comparison is: full AI Max against partial AI Max, not against a well-run campaign with exact and phrase keywords.",
+          "Independent analyses are less optimistic. PPC Land compiled several: one from the agency Monks found that the vast majority of AI Max impressions it reviewed produced no conversions, and an analysis of more than 250 retail campaigns found a return on ad spend about 35% lower than with traditional match types. They are not the final word either: they depend on the accounts studied. The honest conclusion is that **AI Max can work or burn money depending on your account, and the only way to know is to test it with your own data**.",
+        ],
+        bodyEs: [
+          "Google dice que las campañas que usan las tres funciones de AI Max obtienen, en promedio, **7% más conversiones o valor de conversión con un costo por adquisición parecido**, comparado con usar solo la coincidencia de términos. La cifra sale de sus propios datos de 2026 para anunciantes fuera del comercio minorista. En el lanzamiento de 2025 hablaba de 14%. Fíjate qué compara: AI Max completo contra AI Max a medias, no contra una campaña bien llevada con palabras clave exactas y de frase.",
+          "Los análisis independientes son menos optimistas. PPC Land recopiló varios: uno de la agencia Monks encontró que la gran mayoría de las impresiones de AI Max que revisó no produjeron ninguna conversión, y un análisis de más de 250 campañas de retail encontró un retorno de inversión publicitaria cerca de 35% más bajo que con las concordancias tradicionales. Tampoco son la última palabra: dependen de las cuentas estudiadas. La conclusión honesta es que **AI Max puede funcionar o quemar dinero según tu cuenta, y la única forma de saberlo es probarlo con tus propios datos**.",
+        ],
+      },
+      {
+        id: "riesgos-negocio-local",
+        heading: "The risks for a local business",
+        headingEs: "Los riesgos para un negocio local",
+        body: [
+          "**Searches that do not buy.** Search term matching tends to widen toward informational searches. A clinic that wanted “dentist in Tijuana” can end up paying for “how to whiten teeth at home”.",
+          "**Texts you would not have written.** Text customisation takes phrases from your website. If your site mentions an old promotion, a price or a promise you no longer offer, it can end up in an ad. For medical, legal or financial businesses, that is also a compliance risk.",
+          "**Pages that do not sell.** Final URL expansion can send paid clicks to a blog post, your careers page or your privacy notice instead of the page with the form.",
+          "**Little data, poor decisions.** In a small account with ten leads a month, the algorithm has almost nothing to learn from. Google itself warns that AI Max is not effective when a campaign is limited by budget. And if your conversion tracking counts things that are not real leads, AI Max optimises toward the wrong thing; we explain how to measure properly in [Google Tag Manager](/blog/que-es-google-tag-manager).",
+        ],
+        bodyEs: [
+          "**Búsquedas que no compran.** La coincidencia de términos tiende a abrirse hacia búsquedas informativas. Una clínica que quería “dentista en Tijuana” puede terminar pagando por “cómo blanquear los dientes en casa”.",
+          "**Textos que tú no habrías escrito.** La personalización de texto toma frases de tu página. Si tu sitio menciona una promoción vieja, un precio o una promesa que ya no ofreces, puede terminar en un anuncio. Para negocios médicos, legales o financieros, además es un riesgo de cumplimiento.",
+          "**Páginas que no venden.** La expansión de URL final puede mandar clics pagados a un artículo del blog, a tu página de empleo o a tu aviso de privacidad en vez de a la página con el formulario.",
+          "**Pocos datos, malas decisiones.** En una cuenta chica con diez prospectos al mes, el algoritmo casi no tiene de qué aprender. Google mismo advierte que AI Max no es efectivo cuando una campaña está limitada por presupuesto. Y si tu medición cuenta cosas que no son prospectos reales, AI Max optimiza hacia lo equivocado; cómo medir bien lo explicamos en [Google Tag Manager](/blog/que-es-google-tag-manager).",
+        ],
+      },
+      {
+        id: "que-revisar",
+        heading: "What to check in your account today",
+        headingEs: "Qué revisar hoy en tu cuenta",
+        body: [
+          "If you manage your own account, set aside an hour this week for this checklist. If an agency manages it, ask them to show you each point.",
+        ],
+        bodyEs: [
+          "Si llevas tu propia cuenta, aparta una hora esta semana para esta lista. Si la lleva una agencia, pídele que te enseñe cada punto.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "AI Max checklist",
+          titleEs: "Lista de revisión de AI Max",
+          columns: [
+            { label: "Check", labelEs: "Revisa" },
+            { label: "Where", labelEs: "Dónde" },
+            { label: "What to do", labelEs: "Qué hacer" },
+          ],
+          rows: [
+            {
+              label: "Is AI Max on?",
+              labelEs: "¿Está activo AI Max?",
+              cells: [
+                { text: "Campaign settings", textEs: "Configuración de la campaña" },
+                {
+                  text: "Find out which campaigns were upgraded and with which features",
+                  textEs: "Ubica qué campañas se actualizaron y con qué funciones",
+                },
+              ],
+            },
+            {
+              label: "Search terms",
+              labelEs: "Términos de búsqueda",
+              cells: [
+                {
+                  text: "Search terms report, filtered by the AI Max match type",
+                  textEs: "Informe de términos de búsqueda, filtrado por la concordancia de AI Max",
+                },
+                {
+                  text: "Add negative keywords for anything that would never buy",
+                  textEs: "Agrega palabras clave negativas a todo lo que nunca compraría",
+                },
+              ],
+            },
+            {
+              label: "Generated texts",
+              labelEs: "Textos generados",
+              cells: [
+                { text: "Ads and assets", textEs: "Anuncios y recursos" },
+                {
+                  text: "Remove claims, prices or promotions you do not offer; pin what must always appear",
+                  textEs:
+                    "Quita promesas, precios o promociones que no ofreces; fija lo que siempre debe aparecer",
+                },
+              ],
+            },
+            {
+              label: "Landing pages",
+              labelEs: "Páginas de destino",
+              cells: [
+                { text: "Landing pages report", textEs: "Informe de páginas de destino" },
+                {
+                  text: "Exclude blog, careers, privacy and any page without a way to contact you",
+                  textEs:
+                    "Excluye blog, empleo, privacidad y cualquier página sin forma de contactarte",
+                },
+              ],
+            },
+            {
+              label: "Your brand",
+              labelEs: "Tu marca",
+              cells: [
+                { text: "AI Max brand controls", textEs: "Controles de marca de AI Max" },
+                {
+                  text: "Decide whether you want to appear, or not, on searches for your own name and competitors",
+                  textEs:
+                    "Decide si quieres aparecer, o no, en búsquedas de tu nombre y de competidores",
+                },
+              ],
+            },
+            {
+              label: "Location",
+              labelEs: "Ubicación",
+              cells: [
+                { text: "Location settings", textEs: "Configuración de ubicaciones" },
+                {
+                  text: "Target people in your area, not people interested in it",
+                  textEs: "Apunta a personas en tu zona, no a interesadas en ella",
+                },
+              ],
+            },
+            {
+              label: "Real results",
+              labelEs: "Resultados reales",
+              cells: [
+                { text: "Your CRM or lead list", textEs: "Tu CRM o lista de prospectos" },
+                {
+                  text: "Compare cost per real lead before and after September",
+                  textEs: "Compara costo por prospecto real antes y después de septiembre",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "como-probar",
+        heading: "How to test it without betting the whole budget",
+        headingEs: "Cómo probarlo sin apostar todo el presupuesto",
+        body: [
+          "Google offers one-click experiments: half the traffic with AI Max and half without, in the same campaign. Run it for four to six weeks and judge it by **cost per real lead or sale in your CRM**, not by the conversions Google reports, which can include things that are not customers.",
+          "If AI Max wins, keep it and keep watching the search terms every week. If it loses, go back to exact and phrase keywords with a good list of negatives; the setup is in our [Google Ads guide](/blog/guia-google-ads). And if your business is in a border city, check also how the location is configured, which we explain in [Google Ads in Tijuana](/google-ads-tijuana).",
+        ],
+        bodyEs: [
+          "Google ofrece experimentos de un clic: la mitad del tráfico con AI Max y la mitad sin él, en la misma campaña. Déjalo de cuatro a seis semanas y júzgalo por **costo por prospecto o venta real en tu CRM**, no por las conversiones que reporta Google, que pueden incluir cosas que no son clientes.",
+          "Si AI Max gana, déjalo y sigue revisando los términos de búsqueda cada semana. Si pierde, regresa a palabras clave exactas y de frase con una buena lista de negativas; la configuración está en nuestra [guía de Google Ads](/blog/guia-google-ads). Y si tu negocio está en una ciudad fronteriza, revisa también cómo está configurada la ubicación, que explicamos en [Google Ads en Tijuana](/google-ads-tijuana).",
+        ],
+      },
+      {
+        id: "veredicto",
+        heading: "Our verdict",
+        headingEs: "Nuestro veredicto",
+        body: [
+          "AI Max is not good or bad by default. In accounts with a healthy budget, reliable conversion data and a site where every page leads to contact, it can find demand you would not have found with keywords. In small local accounts with little data, it tends to widen the net toward people who will never buy, and you pay for each of them.",
+          "What does not work is ignoring it. If you have not opened your account since September, it is already making decisions for you. At Aphelion we review and run [Google Ads](/google-ads) with that control in mind; [tell us about your account](/contacto) and we will tell you if the change is costing you.",
+        ],
+        bodyEs: [
+          "AI Max no es bueno ni malo por defecto. En cuentas con presupuesto sano, datos de conversión confiables y un sitio donde cada página lleva a contacto, puede encontrar demanda que no habrías encontrado con palabras clave. En cuentas locales chicas y con pocos datos, tiende a abrir la red hacia gente que nunca va a comprar, y pagas por cada una.",
+          "Lo que no funciona es ignorarlo. Si no has abierto tu cuenta desde septiembre, ya está tomando decisiones por ti. En Aphelion revisamos y operamos [Google Ads](/google-ads) con ese control en mente; [cuéntanos de tu cuenta](/contacto) y te decimos si el cambio te está costando.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué es AI Max en Google Ads?",
+        qEn: "What is AI Max in Google Ads?",
+        a: "Un conjunto de tres automatizaciones para campañas de búsqueda: coincidencia de términos de búsqueda más allá de tus palabras clave, personalización de textos a partir de tu página y expansión de la URL final hacia la página que Google considere mejor.",
+        aEn: "A set of three automations for Search campaigns: search term matching beyond your keywords, text customisation from your website, and final URL expansion toward the page Google considers best.",
+      },
+      {
+        q: "¿Google activó AI Max en mi cuenta sin avisar?",
+        qEn: "Did Google switch on AI Max in my account without warning?",
+        a: "Si tus campañas usaban recursos creados automáticamente o concordancia amplia a nivel campaña, desde el 1 de septiembre de 2026 Google las actualizó a AI Max. Google avisa en la cuenta antes de cada actualización, pero mucha gente no lo vio.",
+        aEn: "If your campaigns used automatically created assets or the broad match setting at campaign level, Google upgraded them to AI Max from 1 September 2026. Google notifies in the account before each upgrade, but many people missed it.",
+      },
+      {
+        q: "¿Qué pasa con los anuncios dinámicos de búsqueda?",
+        qEn: "What happens to Dynamic Search Ads?",
+        a: "Google aplazó su migración: a partir de febrero de 2027 los grupos de anuncios dinámicos pasan a grupos normales con las tres funciones de AI Max activadas.",
+        aEn: "Google postponed their migration: from February 2027, dynamic ad groups become normal ad groups with all three AI Max features switched on.",
+      },
+      {
+        q: "¿Puedo apagar AI Max?",
+        qEn: "Can I turn AI Max off?",
+        a: "Sí. Puedes desactivar sus funciones en la configuración de la campaña o volver a palabras clave exactas y de frase. Antes de apagarlo, conviene compararlo con un experimento y medir costo por prospecto real.",
+        aEn: "Yes. You can turn off its features in the campaign settings or return to exact and phrase keywords. Before turning it off, it is worth comparing it with an experiment and measuring cost per real lead.",
+      },
+      {
+        q: "¿AI Max sirve para negocios pequeños?",
+        qEn: "Does AI Max work for small businesses?",
+        a: "Depende de los datos. Con pocas conversiones al mes o presupuesto limitado, el algoritmo tiene poco de qué aprender y suele abrirse a búsquedas que no compran. Pruébalo con un experimento antes de dejarlo en toda la cuenta.",
+        aEn: "It depends on the data. With few conversions a month or a limited budget, the algorithm has little to learn from and tends to widen into searches that do not buy. Test it with an experiment before leaving it on the whole account.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Google AI Max for Search",
+        "AI Max automatic upgrade September 2026",
+        "Dynamic Search Ads AI Max February 2027",
+        "AI Max checklist",
+        "is AI Max worth it",
+      ],
+      keywordsEs: [
+        "AI Max Google Ads",
+        "qué es AI Max",
+        "Google Ads cambios 2026",
+        "anuncios dinámicos de búsqueda AI Max",
+        "cómo desactivar AI Max",
+        "Google Ads 2027",
+      ],
+    },
+  },
+  {
+    slug: "plan-de-marketing-2027",
+    cover: true,
+    title: "Marketing Plan for 2027: How to Build It and Split the Budget, With Mexico's Key Dates",
+    titleEs:
+      "Plan de marketing 2027: cómo armarlo y repartir el presupuesto, con el calendario de fechas en México",
+    category: "Marketing Strategy",
+    categoryEs: "Estrategia de Marketing",
+    excerpt:
+      "How to build a 2027 marketing plan that starts from the number of customers you need, not from a budget figure. What changed in 2026 and affects the plan, a simple way to split the money between what works, what scales and what you test, Mexico's 2027 commercial calendar with when to prepare each date, and the five numbers to review every month.",
+    excerptEs:
+      "Cómo armar un plan de marketing 2027 que empiece por el número de clientes que necesitas, no por una cifra de presupuesto. Qué cambió en 2026 y afecta el plan, una forma simple de repartir el dinero entre lo que funciona, lo que escala y lo que pruebas, el calendario comercial 2027 en México con cuándo preparar cada fecha y los cinco números que hay que revisar cada mes.",
+    readingTime: 11,
+    date: "2026-11-08",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Most small and medium businesses in Mexico do not have a marketing plan: they have last year's spending, a few dates marked on the calendar and the hope that this year it works better. November and December are the moment to change that, because that is when budgets for next year get decided. This guide is the method we use with our clients: start from how many customers you need, work out what it takes to get them, split the money with a simple rule and mark on the calendar when to prepare each season.",
+    ledeEs:
+      "La mayoría de las pymes en México no tiene un plan de marketing: tiene el gasto del año pasado, unas fechas marcadas en el calendario y la esperanza de que este año funcione mejor. Noviembre y diciembre son el momento de cambiar eso, porque es cuando se decide el presupuesto del año siguiente. Esta guía es el método que usamos con nuestros clientes: empezar por cuántos clientes necesitas, calcular qué hace falta para conseguirlos, repartir el dinero con una regla simple y marcar en el calendario cuándo preparar cada temporada.",
+    sections: [
+      {
+        id: "contexto",
+        heading: "The context: where the money is going",
+        headingEs: "El contexto: hacia dónde va el dinero",
+        body: [
+          "Advertisers spent **140,306 million pesos in Mexico in 2024, 4% more than the year before**, according to the Valor Total Media study by AVE, CIM and IAB México, reported by Expansión. **58% of it went to digital media.** The shift is no longer news: your customers and your competitors are already there.",
+          "What did change in 2026 is how digital works. Four changes deserve a place in your 2027 plan: Google's AI answers, which take clicks from normal results; [AI Max](/blog/google-ai-max-para-busqueda), which automated Search campaigns in Google Ads; [WhatsApp's new charges](/blog/whatsapp-cobra-mensajes-de-servicio) for replies sent through its API; and the push from Meta and Google toward campaigns where the platform decides almost everything. All four reward the same thing: good conversion data and a fast response.",
+        ],
+        bodyEs: [
+          "Los anunciantes invirtieron **140,306 millones de pesos en México en 2024, 4% más que el año anterior**, según el estudio Valor Total Media de AVE, CIM e IAB México, publicado por Expansión. **El 58% se fue a medios digitales.** El cambio ya no es noticia: tus clientes y tus competidores ya están ahí.",
+          "Lo que sí cambió en 2026 es cómo funciona lo digital. Cuatro cambios merecen un lugar en tu plan 2027: las respuestas con IA de Google, que le quitan clics a los resultados normales; [AI Max](/blog/google-ai-max-para-busqueda), que automatizó las campañas de búsqueda en Google Ads; [los nuevos cobros de WhatsApp](/blog/whatsapp-cobra-mensajes-de-servicio) por las respuestas que mandas por su API; y el empuje de Meta y Google hacia campañas donde la plataforma decide casi todo. Los cuatro premian lo mismo: buenos datos de conversión y una respuesta rápida.",
+        ],
+        chart: {
+          title: "Advertising investment in Mexico, 2024, by type of media",
+          titleEs: "Inversión publicitaria en México en 2024, por tipo de medio",
+          source:
+            "Valor Total Media (AVE, CIM and IAB México), reported by Expansión in November 2025. Total: 140,306 million pesos.",
+          sourceEs:
+            "Valor Total Media (AVE, CIM e IAB México), publicado por Expansión en noviembre de 2025. Total: 140,306 millones de pesos.",
+          bars: [
+            {
+              label: "Digital media",
+              labelEs: "Medios digitales",
+              value: 58,
+              display: "58%",
+              displayEs: "58%",
+            },
+            {
+              label: "Every other medium",
+              labelEs: "Todos los demás medios",
+              value: 42,
+              display: "42%",
+              displayEs: "42%",
+            },
+          ],
+        },
+      },
+      {
+        id: "paso-1-clientes",
+        heading: "Step 1: start from customers, not from the budget",
+        headingEs: "Paso 1: empieza por los clientes, no por el presupuesto",
+        body: [
+          "The usual question is “how much should I spend?”. The useful one is “how many new customers do I need each month, and what does it take to get them?”. Work backwards: from the sales goal to the leads you need, and from the leads to the visits or conversations.",
+          "The example below uses **assumptions you should replace with your own numbers**: one new customer for every four leads, and four leads for every hundred qualified visits. If you do not know your own [[conversion rate|tasa-de-conversion]] or your close rate, that is the first thing to measure in 2027, before spending more.",
+        ],
+        bodyEs: [
+          "La pregunta de siempre es “¿cuánto debo gastar?”. La útil es “¿cuántos clientes nuevos necesito al mes y qué hace falta para conseguirlos?”. Trabaja hacia atrás: de la meta de ventas a los prospectos que necesitas, y de los prospectos a las visitas o conversaciones.",
+          "El ejemplo de abajo usa **suposiciones que debes cambiar por tus propios números**: un cliente nuevo por cada cuatro prospectos, y cuatro prospectos por cada cien visitas calificadas. Si no conoces tu propia [[tasa de conversión|tasa-de-conversion]] ni tu tasa de cierre, eso es lo primero que hay que medir en 2027, antes de gastar más.",
+        ],
+        diagram: {
+          kind: "funnel",
+          title: "Working backwards from 10 new customers a month",
+          titleEs: "Hacia atrás desde 10 clientes nuevos al mes",
+          note: "Example with assumed rates: 25% of leads close and 4% of qualified visits become leads. Use your own.",
+          noteEs:
+            "Ejemplo con tasas supuestas: cierra el 25% de los prospectos y el 4% de las visitas calificadas se vuelve prospecto. Usa las tuyas.",
+          steps: [
+            {
+              label: "1,000 qualified visits",
+              labelEs: "1,000 visitas calificadas",
+              detail: "From search, ads, social media and referrals.",
+              detailEs: "De búsqueda, anuncios, redes y recomendaciones.",
+            },
+            {
+              label: "40 leads",
+              labelEs: "40 prospectos",
+              detail: "Forms, WhatsApp messages and calls.",
+              detailEs: "Formularios, mensajes de WhatsApp y llamadas.",
+            },
+            {
+              label: "10 new customers",
+              labelEs: "10 clientes nuevos",
+              detail: "The number the plan has to deliver.",
+              detailEs: "El número que el plan tiene que entregar.",
+            },
+          ],
+        },
+      },
+      {
+        id: "paso-2-presupuesto",
+        heading: "Step 2: split the budget with a simple rule",
+        headingEs: "Paso 2: reparte el presupuesto con una regla simple",
+        body: [
+          "How much to invest as a percentage of revenue, and the ranges by business size, we cover in [how much to invest in digital marketing](/blog/cuanto-invertir-en-marketing-digital). Here the question is how to split it once you have the figure.",
+          "The rule we use, as a starting point and not as a law: **about 70% to what already works**, the channels and campaigns that produced customers in 2026; **about 20% to scale** what showed promise but is still small; and **about 10% to test** something new, such as Pinterest, TikTok or an AI agent. Without that 10% you never find the next channel; with more than that, you put the base at risk.",
+          "And separate fixed from variable. The website, tools, content production and management are fixed costs you plan for the year. The ad spend is variable: it goes up for the seasons that sell and goes down in the slow months. Reserve the season budget in advance so it does not compete with the rest of the year.",
+        ],
+        bodyEs: [
+          "Cuánto invertir como porcentaje de tus ingresos, y los rangos según el tamaño del negocio, lo vemos en [cuánto invertir en marketing digital](/blog/cuanto-invertir-en-marketing-digital). Aquí la pregunta es cómo repartirlo una vez que tienes la cifra.",
+          "La regla que usamos, como punto de partida y no como ley: **cerca de 70% a lo que ya funciona**, los canales y campañas que trajeron clientes en 2026; **cerca de 20% a escalar** lo que mostró potencial pero todavía es chico; y **cerca de 10% a probar** algo nuevo, como Pinterest, TikTok o un agente de IA. Sin ese 10% nunca encuentras el siguiente canal; con más que eso, arriesgas la base.",
+          "Y separa lo fijo de lo variable. La página web, las herramientas, la producción de contenido y la gestión son costos fijos que planeas para el año. La inversión en anuncios es variable: sube en las temporadas que venden y baja en los meses flojos. Reserva el presupuesto de temporada por adelantado para que no compita con el resto del año.",
+        ],
+      },
+      {
+        id: "paso-3-calendario",
+        heading: "Step 3: Mexico's 2027 commercial calendar",
+        headingEs: "Paso 3: el calendario comercial 2027 en México",
+        body: [
+          "The most common mistake is preparing a season when it has already started. The ads need weeks to learn, the content needs time to be produced and the website needs to be ready before the traffic arrives. As a rule, **start preparing four to six weeks before each date**. Hot Sale and Buen Fin do not have 2027 dates yet; they are announced months in advance.",
+        ],
+        bodyEs: [
+          "El error más común es preparar una temporada cuando ya empezó. Los anuncios necesitan semanas para aprender, el contenido necesita tiempo para producirse y la página tiene que estar lista antes de que llegue el tráfico. Como regla, **empieza a preparar cuatro a seis semanas antes de cada fecha**. Hot Sale y Buen Fin todavía no tienen fechas de 2027; se anuncian con meses de anticipación.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Key commercial dates in Mexico, 2027",
+          titleEs: "Fechas comerciales clave en México, 2027",
+          columns: [
+            { label: "Date", labelEs: "Fecha" },
+            { label: "Occasion", labelEs: "Ocasión" },
+            { label: "Who it matters to most", labelEs: "A quién le importa más" },
+            { label: "Start preparing", labelEs: "Empieza a preparar" },
+          ],
+          rows: [
+            {
+              label: "January",
+              labelEs: "Enero",
+              cells: [
+                {
+                  text: "Día de Reyes (6) and the January slump",
+                  textEs: "Día de Reyes (6) y la cuesta de enero",
+                },
+                {
+                  text: "Toys, bakeries, and anyone who sells payment plans or promotions",
+                  textEs: "Jugueterías, panaderías y quien vende con promociones o pagos",
+                },
+                { text: "Early December", textEs: "Principios de diciembre" },
+              ],
+            },
+            {
+              label: "14 February (Sunday)",
+              labelEs: "14 de febrero (domingo)",
+              cells: [
+                { text: "Valentine's Day", textEs: "San Valentín" },
+                {
+                  text: "Restaurants, florists, jewellery, hotels",
+                  textEs: "Restaurantes, florerías, joyería, hoteles",
+                },
+                { text: "Early January", textEs: "Principios de enero" },
+              ],
+            },
+            {
+              label: "21 to 28 March",
+              labelEs: "21 al 28 de marzo",
+              cells: [
+                {
+                  text: "Holy Week (Easter Sunday is 28 March)",
+                  textEs: "Semana Santa (el Domingo de Pascua es el 28)",
+                },
+                {
+                  text: "Tourism, hotels, tours, restaurants on the coast",
+                  textEs: "Turismo, hoteles, tours, restaurantes de playa",
+                },
+                { text: "Mid-February", textEs: "Mediados de febrero" },
+              ],
+            },
+            {
+              label: "10 May (Monday)",
+              labelEs: "10 de mayo (lunes)",
+              cells: [
+                { text: "Mother's Day", textEs: "Día de las Madres" },
+                {
+                  text: "Restaurants, retail, beauty, florists",
+                  textEs: "Restaurantes, comercio, belleza, florerías",
+                },
+                { text: "Early April", textEs: "Principios de abril" },
+              ],
+            },
+            {
+              label: "Late May or June (to be announced)",
+              labelEs: "Finales de mayo o junio (por anunciar)",
+              cells: [
+                { text: "Hot Sale", textEs: "Hot Sale" },
+                {
+                  text: "Online stores and ecommerce",
+                  textEs: "Tiendas en línea y comercio electrónico",
+                },
+                { text: "April", textEs: "Abril" },
+              ],
+            },
+            {
+              label: "20 June (Sunday)",
+              labelEs: "20 de junio (domingo)",
+              cells: [
+                { text: "Father's Day", textEs: "Día del Padre" },
+                {
+                  text: "Restaurants, retail, experiences",
+                  textEs: "Restaurantes, comercio, experiencias",
+                },
+                { text: "Mid-May", textEs: "Mediados de mayo" },
+              ],
+            },
+            {
+              label: "August",
+              labelEs: "Agosto",
+              cells: [
+                {
+                  text: "Back to school, and the harvest festivals in the Valle de Guadalupe",
+                  textEs: "Regreso a clases, y las fiestas de la vendimia en el Valle de Guadalupe",
+                },
+                {
+                  text: "Stationery, uniforms, schools; wineries, hotels and restaurants in Ensenada",
+                  textEs:
+                    "Papelerías, uniformes, escuelas; vinícolas, hoteles y restaurantes de Ensenada",
+                },
+                { text: "Early July", textEs: "Principios de julio" },
+              ],
+            },
+            {
+              label: "15 and 16 September",
+              labelEs: "15 y 16 de septiembre",
+              cells: [
+                { text: "Independence celebrations", textEs: "Fiestas patrias" },
+                {
+                  text: "Restaurants, bars, events, catering",
+                  textEs: "Restaurantes, bares, eventos, banquetes",
+                },
+                { text: "Mid-August", textEs: "Mediados de agosto" },
+              ],
+            },
+            {
+              label: "November (to be announced)",
+              labelEs: "Noviembre (por anunciar)",
+              cells: [
+                { text: "Buen Fin", textEs: "Buen Fin" },
+                {
+                  text: "Practically all retail and services",
+                  textEs: "Prácticamente todo el comercio y los servicios",
+                },
+                { text: "Early October", textEs: "Principios de octubre" },
+              ],
+            },
+            {
+              label: "December",
+              labelEs: "Diciembre",
+              cells: [
+                {
+                  text: "Posadas, Christmas and year-end",
+                  textEs: "Posadas, Navidad y fin de año",
+                },
+                {
+                  text: "Restaurants, catering, events, retail",
+                  textEs: "Restaurantes, banquetes, eventos, comercio",
+                },
+                { text: "Late October", textEs: "Finales de octubre" },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "paso-4-medir",
+        heading: "Step 4: five numbers to review every month",
+        headingEs: "Paso 4: cinco números para revisar cada mes",
+        body: [
+          "A plan without measurement is a wish list. Every month, review these five numbers, in this order: **leads** received by channel; **cost per lead**; **close rate**, how many of those leads bought; **cost per customer**, or [[CPA|cpa]]; and **revenue** from new customers. Likes, reach and followers can be useful signals, but they do not go in this list.",
+          "Every quarter, use those numbers to move money: take it from what costs more per customer and put it into what costs less. If you cannot calculate them because you do not know where each lead came from, the first project of 2027 is measurement; we explain how in [Google Tag Manager](/blog/que-es-google-tag-manager) and [connecting your forms to a CRM](/blog/conectar-formularios-a-crm).",
+        ],
+        bodyEs: [
+          "Un plan sin medición es una lista de deseos. Cada mes revisa estos cinco números, en este orden: **prospectos** recibidos por canal; **costo por prospecto**; **tasa de cierre**, cuántos de esos prospectos compraron; **costo por cliente**, o [[CPA|cpa]]; e **ingresos** de clientes nuevos. Los likes, el alcance y los seguidores pueden ser señales útiles, pero no van en esta lista.",
+          "Cada trimestre, usa esos números para mover dinero: quítalo de lo que cuesta más por cliente y ponlo en lo que cuesta menos. Si no puedes calcularlos porque no sabes de dónde vino cada prospecto, el primer proyecto de 2027 es la medición; te explicamos cómo en [Google Tag Manager](/blog/que-es-google-tag-manager) y en [conectar tus formularios a un CRM](/blog/conectar-formularios-a-crm).",
+        ],
+      },
+      {
+        id: "errores",
+        heading: "Three mistakes that ruin a plan",
+        headingEs: "Tres errores que arruinan un plan",
+        body: [
+          "**Copying last year.** If you do not know what worked in 2026, repeating it only repeats the doubt. Before planning, look at where your 2026 customers came from, even if it is by asking each one.",
+          "**Everything in one channel.** A business that depends on a single platform depends on its rules, and in 2026 those rules changed several times. Keep at least two channels producing customers.",
+          "**Forgetting the response.** The plan can bring the leads and still fail if nobody answers in time. Who answers, in how long and through which channel is part of the marketing plan, not of operations; we explain why in [respond to your leads fast](/blog/responder-rapido-a-tus-leads).",
+        ],
+        bodyEs: [
+          "**Copiar el año pasado.** Si no sabes qué funcionó en 2026, repetirlo solo repite la duda. Antes de planear, revisa de dónde vinieron tus clientes de 2026, aunque sea preguntándole a cada uno.",
+          "**Todo en un canal.** Un negocio que depende de una sola plataforma depende de sus reglas, y en 2026 esas reglas cambiaron varias veces. Mantén al menos dos canales produciendo clientes.",
+          "**Olvidar la respuesta.** El plan puede traer los prospectos y aun así fallar si nadie contesta a tiempo. Quién contesta, en cuánto tiempo y por qué canal es parte del plan de marketing, no de la operación; te explicamos por qué en [responde rápido a tus leads](/blog/responder-rapido-a-tus-leads).",
+        ],
+      },
+      {
+        id: "siguiente-paso",
+        heading: "If you want to build it with someone",
+        headingEs: "Si quieres armarlo con alguien",
+        body: [
+          "Start with the free [digital diagnostic](/recursos/diagnostico): in a few minutes it tells you what to fix first in your business, which is usually the best first line of the plan. And if you prefer to build the full plan with us, at Aphelion we do it as a [digital marketing agency in Tijuana](/agencia-marketing-digital-tijuana) and [Ensenada](/agencia-marketing-digital-ensenada); [tell us your goal for 2027](/contacto) and we will tell you what it takes.",
+        ],
+        bodyEs: [
+          "Empieza con el [diagnóstico digital](/recursos/diagnostico) gratuito: en unos minutos te dice qué corregir primero en tu negocio, que suele ser la mejor primera línea del plan. Y si prefieres armar el plan completo con nosotros, en Aphelion lo hacemos como [agencia de marketing digital en Tijuana](/agencia-marketing-digital-tijuana) y en [Ensenada](/agencia-marketing-digital-ensenada); [cuéntanos tu meta para 2027](/contacto) y te decimos qué hace falta.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cómo hago un plan de marketing para 2027?",
+        qEn: "How do I build a marketing plan for 2027?",
+        a: "Empieza por cuántos clientes nuevos necesitas al mes, calcula hacia atrás cuántos prospectos y visitas hacen falta, reparte el presupuesto entre lo que funciona, lo que escala y lo que pruebas, marca las temporadas con cuatro a seis semanas de preparación y revisa cinco números cada mes.",
+        aEn: "Start from how many new customers you need a month, work backwards to the leads and visits it takes, split the budget between what works, what scales and what you test, mark the seasons with four to six weeks of preparation and review five numbers every month.",
+      },
+      {
+        q: "¿Cómo repartir el presupuesto de marketing?",
+        qEn: "How should I split the marketing budget?",
+        a: "Una regla práctica: cerca de 70% a lo que ya trae clientes, 20% a escalar lo que mostró potencial y 10% a probar algo nuevo. Es un punto de partida; ajústalo cada trimestre según el costo por cliente de cada canal.",
+        aEn: "A practical rule: about 70% to what already brings customers, 20% to scaling what showed promise and 10% to testing something new. It is a starting point; adjust it every quarter by each channel's cost per customer.",
+      },
+      {
+        q: "¿Cuáles son las fechas comerciales más importantes de 2027 en México?",
+        qEn: "What are the most important commercial dates in Mexico in 2027?",
+        a: "Día de Reyes y la cuesta de enero, San Valentín (14 de febrero), Semana Santa (21 al 28 de marzo), Día de las Madres (10 de mayo), Hot Sale, Día del Padre (20 de junio), regreso a clases, fiestas patrias, Buen Fin y la temporada de fin de año.",
+        aEn: "Día de Reyes and the January slump, Valentine's Day (14 February), Holy Week (21 to 28 March), Mother's Day (10 May), Hot Sale, Father's Day (20 June), back to school, Independence celebrations, Buen Fin and the year-end season.",
+      },
+      {
+        q: "¿Cuánto se invierte en publicidad en México?",
+        qEn: "How much is invested in advertising in Mexico?",
+        a: "140,306 millones de pesos en 2024, 4% más que el año anterior, y 58% en medios digitales, según el estudio Valor Total Media de AVE, CIM e IAB México.",
+        aEn: "140,306 million pesos in 2024, 4% more than the year before, with 58% in digital media, according to the Valor Total Media study by AVE, CIM and IAB México.",
+      },
+      {
+        q: "¿Qué números debo revisar cada mes?",
+        qEn: "Which numbers should I review every month?",
+        a: "Prospectos por canal, costo por prospecto, tasa de cierre, costo por cliente e ingresos de clientes nuevos. Los likes y el alcance no sustituyen a ninguno de esos cinco.",
+        aEn: "Leads by channel, cost per lead, close rate, cost per customer and revenue from new customers. Likes and reach do not replace any of those five.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "marketing plan 2027",
+        "how to split a marketing budget",
+        "Mexico commercial calendar 2027",
+        "marketing plan for small business Mexico",
+        "marketing KPIs to review monthly",
+      ],
+      keywordsEs: [
+        "plan de marketing 2027",
+        "cómo hacer un plan de marketing",
+        "presupuesto de marketing 2027",
+        "calendario comercial 2027 México",
+        "fechas comerciales 2027",
+        "cómo repartir el presupuesto de marketing",
       ],
     },
   },
