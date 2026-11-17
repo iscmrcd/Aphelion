@@ -126,16 +126,17 @@ export const DEMO_AGENTS: Record<AgentType, DemoAgent> = {
  * between scripted and AI is what communicates the difference between tiers,
  * so spreading the ramp further would erase the signal it exists to carry.
  */
-export const AI_GRADIENT = "bg-gradient-to-r from-[#5CC8E8] via-[#8E9BE8] to-[#D9A2DE]";
+// Gradient removed (Nov 2026): the AI accent is now solid black, like the rest of the site.
+// Token names kept so every consumer switches in one place.
+export const AI_GRADIENT = "bg-neutral-950";
 
 /** Same ramp for text via background-clip. */
-export const AI_GRADIENT_TEXT =
-  "bg-gradient-to-r from-[#5CC8E8] via-[#8E9BE8] to-[#D9A2DE] bg-clip-text text-transparent";
+export const AI_GRADIENT_TEXT = "text-neutral-950";
 
 /** Raw stops, for SVG <linearGradient> so icons use the exact same three colours. */
-export const AI_FROM = "#5CC8E8";
-export const AI_VIA = "#8E9BE8";
-export const AI_TO = "#D9A2DE";
+export const AI_FROM = "#0a0a0a";
+export const AI_VIA = "#0a0a0a";
+export const AI_TO = "#0a0a0a";
 
 /** id of the SVG gradient rendered once per page by <AiGradientDefs />. */
 export const AI_ICON_GRADIENT_ID = "ai-icon-gradient";
@@ -154,7 +155,7 @@ export const aiIconGradientStyle = { stroke: `url(#${AI_ICON_GRADIENT_ID})` } as
 export const AI_GRADIENT_ON = "text-white";
 
 /** Subtle lift for white text sitting on the lightest end of the ramp. */
-export const AI_ON_GRADIENT_SHADOW = { textShadow: "0 1px 2px rgba(0,0,0,0.25)" } as const;
+export const AI_ON_GRADIENT_SHADOW = {} as const;
 
 /** Solid accent for the AI card's checkmarks — the ramp's middle stop. */
 export const AI_ACCENT = AI_VIA;
