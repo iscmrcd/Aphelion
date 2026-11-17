@@ -81,7 +81,6 @@ export function SiteHeader() {
     { to: "/servicios", label: t("Services", "Servicios") },
     { to: "/trabajo", label: t("Work", "Trabajo") },
     { to: "/precios", label: t("Pricing", "Precios") },
-    { to: "/recursos/diagnostico", label: t("Free diagnostic", "Diagnóstico gratis") },
     { to: "/blog", label: "Blog" },
   ] as const;
 

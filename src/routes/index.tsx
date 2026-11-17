@@ -4,7 +4,6 @@ import { ServiceDirectory } from "@/components/servicios/ServiceDirectory";
 import { PortfolioSection } from "@/components/servicios/PortfolioSection";
 import { StudioProcess } from "@/components/servicios/StudioProcess";
 import { InvestmentPreview } from "@/components/servicios/InvestmentPreview";
-import { AgentIAPromo } from "@/components/servicios/AgentIAPromo";
 import { CTAFooter } from "@/components/servicios/CTAFooter";
 import { buildHead, ORGANIZATION_JSONLD, SITE_URL } from "@/lib/seo";
 
@@ -57,7 +56,6 @@ function Index() {
       <Hero />
       <PortfolioSection />
       <ServiceDirectory />
-      <AgentIAPromo />
       <StudioProcess />
       <InvestmentPreview />
       <CTAFooter />
