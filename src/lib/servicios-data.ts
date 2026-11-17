@@ -657,10 +657,133 @@ export const BRANDING_SERVICE: ServicePage = {
   ],
 };
 
+export const CHATGPT_ADS_SERVICE: ServicePage = {
+  path: "/chatgpt-ads",
+  name: "ChatGPT Ads",
+  nameEs: "ChatGPT Ads",
+  h1: "ChatGPT Ads",
+  h1Es: "ChatGPT Ads",
+  kicker: "Ads in ChatGPT",
+  kickerEs: "Anuncios en ChatGPT",
+  intro:
+    "Your ad below ChatGPT's answer, at the moment someone asks it about what you sell. The channel opened in Mexico in 2026: less competition than Google, and also less history of what works. We run it as a measured test, not a leap of faith.",
+  introEs:
+    "Tu anuncio debajo de la respuesta de ChatGPT, justo cuando alguien le pregunta por lo que vendes. El canal abrió en México en 2026: hay menos competencia que en Google y también menos historial de qué funciona. Lo manejamos como una prueba medida, no como un acto de fe.",
+  seoTitle: "ChatGPT Ads Agency in Mexico | Aphelion",
+  seoTitleEs: "Agencia de ChatGPT Ads en México | Aphelion",
+  seoDescription:
+    "ChatGPT Ads set up and managed in Mexico: advertiser account, conversion tracking, ads written for the question and reporting on cost per customer. Baja California.",
+  seoDescriptionEs:
+    "Anuncios en ChatGPT en México: cuenta de anunciante, medición de conversiones, anuncios escritos para la pregunta y reporte de costo por cliente. Baja California.",
+  serviceType: "ChatGPT Ads campaign management",
+  deliverables: [
+    "Advertiser account opened and verified in your company's name, so it is yours from day one",
+    "OpenAI pixel and Conversions API installed before spending, so every enquiry can be traced to the campaign that produced it",
+    "Ads written for the question people ask ChatGPT, not for a keyword list copied from Google",
+    "A landing page that continues the conversation the person was already having",
+    "A controlled first test with a small budget, compared against your other channels over the same period",
+    "Monthly reporting on cost per enquiry and cost per customer, not impressions",
+  ],
+  deliverablesEs: [
+    "Alta y verificación de la cuenta de anunciante a nombre de tu empresa, para que sea tuya desde el primer día",
+    "Pixel y API de conversiones de OpenAI instalados antes de gastar, para saber qué campaña produjo cada consulta",
+    "Anuncios escritos para la pregunta que la gente le hace a ChatGPT, no para una lista de palabras clave copiada de Google",
+    "Una landing page que continúa la conversación que la persona ya traía",
+    "Una primera prueba controlada con presupuesto chico, comparada contra tus otros canales en el mismo periodo",
+    "Reporte mensual de costo por consulta y costo por cliente, no de impresiones",
+  ],
+  pricing:
+    "Management is quoted separately from ad spend, and the spend goes directly from you to OpenAI. We do not charge a percentage of spend, because that model rewards an agency for spending more of your money. It can run on its own or inside the ongoing marketing packages.",
+  pricingEs:
+    "La gestión se cotiza aparte de la inversión, y la inversión la pagas directo a OpenAI. No cobramos porcentaje de la inversión, porque ese modelo premia a la agencia por gastar más de tu dinero. Puede ir solo o dentro de los paquetes continuos de marketing.",
+  sections: [
+    {
+      id: "diferencia-google",
+      heading: "How it differs from Google Ads",
+      headingEs: "En qué se distingue de Google Ads",
+      body: [
+        "On Google people type a few words. On ChatGPT they describe their situation in full sentences: budget, location, what already failed. The ad appears below that answer, so it reaches someone who has already explained exactly what they need.",
+        "Ads are labelled and kept separate from the answer. Paying does not change what ChatGPT says, so the ad has to hold up next to an answer that may already mention other options.",
+        "Not everyone sees them. Ads are shown to adult users on the free and Go plans; people on paid plans such as Plus do not see them. That is a large audience, but it is not all of ChatGPT.",
+      ],
+      bodyEs: [
+        "En Google la gente escribe unas cuantas palabras. En ChatGPT describe su situación completa: presupuesto, ubicación, lo que ya intentó y no funcionó. El anuncio aparece debajo de esa respuesta, así que llega a alguien que ya explicó exactamente lo que necesita.",
+        "Los anuncios van etiquetados y separados de la respuesta. Pagar no cambia lo que ChatGPT contesta, así que el anuncio tiene que sostenerse junto a una respuesta que quizá ya menciona otras opciones.",
+        "No todos los ven. Se muestran a usuarios adultos de los planes gratuito y Go; quien paga un plan como Plus no los ve. Es una audiencia grande, pero no es todo ChatGPT.",
+      ],
+    },
+    {
+      id: "como-arrancamos",
+      heading: "How we start",
+      headingEs: "Cómo arrancamos",
+      body: [
+        "Measurement first. The pixel and the Conversions API go in before any spend, along with a way to tell which campaign produced which customer. A new channel without measurement only produces opinions.",
+        "Then a small, bounded test that runs alongside what already works for you, not instead of it. The question it answers is simple: does a customer from ChatGPT cost less, the same or more than one from Google or Meta?",
+        "The channel is new in Mexico and there are no reliable local benchmarks yet. Anyone quoting you a cost per click before running your account is guessing. We would rather show you real numbers at week six.",
+      ],
+      bodyEs: [
+        "La medición primero. El pixel y la API de conversiones se instalan antes de gastar, junto con una forma de saber qué campaña produjo qué cliente. Un canal nuevo sin medición solo produce opiniones.",
+        "Después una prueba chica y acotada que corre junto a lo que ya te funciona, no en su lugar. La pregunta que responde es simple: ¿un cliente que llega por ChatGPT cuesta menos, igual o más que uno de Google o de Meta?",
+        "El canal es nuevo en México y todavía no hay referencias locales confiables. Quien te cotice un costo por clic antes de correr tu cuenta está adivinando. Preferimos enseñarte números reales en la semana seis.",
+      ],
+    },
+    {
+      id: "cuando-no-chatgpt",
+      heading: "When ChatGPT Ads is the wrong answer",
+      headingEs: "Cuándo ChatGPT Ads es la respuesta equivocada",
+      body: [
+        "When nothing is working yet. If you have no channel bringing in customers, start with the proven one for your category. A new channel is a test you add, not a foundation.",
+        "When you are in a regulated category. Health, finance and legal advertising carries extra restrictions on ChatGPT, and in some countries it is not available at all. We check your category before proposing anything.",
+        "When the purchase is urgent and local. Someone who needs a plumber in the next hour searches Google Maps, not a chat.",
+        "When the sale is visual and impulsive. For products that sell on a photo or a video, Meta still does that job better.",
+      ],
+      bodyEs: [
+        "Cuando todavía nada funciona. Si no tienes ningún canal trayendo clientes, empieza por el probado para tu categoría. Un canal nuevo es una prueba que se suma, no una base.",
+        "Cuando tu categoría está regulada. La publicidad de salud, finanzas y legal tiene restricciones adicionales en ChatGPT, y en algunos países no está disponible. Revisamos tu categoría antes de proponerte nada.",
+        "Cuando la compra es urgente y local. Quien necesita un plomero en la próxima hora busca en Google Maps, no en un chat.",
+        "Cuando la venta es visual e impulsiva. Para productos que se venden con una foto o un video, Meta sigue haciendo mejor ese trabajo.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Is ChatGPT Ads available in Mexico?",
+      qEs: "¿ChatGPT Ads ya está disponible en México?",
+      a: "Yes. OpenAI launched ads in Mexico in 2026, and Mexican businesses can open their own advertiser account. Some categories, such as health, finance and legal, carry additional restrictions.",
+      aEs: "Sí. OpenAI lanzó los anuncios en México en 2026, y las empresas mexicanas pueden abrir su propia cuenta de anunciante. Algunas categorías, como salud, finanzas y legal, tienen restricciones adicionales.",
+    },
+    {
+      q: "Does my ad change what ChatGPT answers?",
+      qEs: "¿Mi anuncio cambia lo que ChatGPT contesta?",
+      a: "No. Ads are labelled and shown separately from the answer, and paying does not influence the answer itself. That is why the ad and the landing page have to earn the click on their own.",
+      aEs: "No. Los anuncios van etiquetados y separados de la respuesta, y pagar no influye en la respuesta. Por eso el anuncio y la landing page tienen que ganarse el clic por sí solos.",
+    },
+    {
+      q: "How much budget does it need?",
+      qEs: "¿Cuánto presupuesto necesita?",
+      a: "OpenAI sets a minimum daily budget per campaign, and above that there is no universal number. We work it out on the call from what a customer is worth to you and how many you can serve, and we start small until the data says it is worth more.",
+      aEs: "OpenAI fija un presupuesto mínimo diario por campaña, y arriba de eso no hay un número universal. Lo calculamos en la llamada con cuánto vale un cliente para ti y cuántos puedes atender, y arrancamos chico hasta que los datos digan que vale la pena subir.",
+    },
+    {
+      q: "Who owns the ad account?",
+      qEs: "¿De quién es la cuenta de anuncios?",
+      a: "You do. It is opened and verified in your company's name, so if you leave you keep the account and its history.",
+      aEs: "Tuya. Se abre y se verifica a nombre de tu empresa, así que si te vas conservas la cuenta y su historial.",
+    },
+    {
+      q: "Should I run it instead of Google Ads?",
+      qEs: "¿Lo hago en lugar de Google Ads?",
+      a: "Usually not. It works best as an addition to a channel that already brings in customers, so you can compare the cost per customer side by side and move budget to whichever wins.",
+      aEs: "Normalmente no. Funciona mejor como algo que se suma a un canal que ya te trae clientes, para comparar el costo por cliente lado a lado y mover el presupuesto al que gane.",
+    },
+  ],
+};
+
 export const SERVICE_PAGES: ServicePage[] = [
   SEO_SERVICE,
   GOOGLE_ADS_SERVICE,
   META_ADS_SERVICE,
+  CHATGPT_ADS_SERVICE,
   ECOMMERCE_SERVICE,
   BRANDING_SERVICE,
 ];

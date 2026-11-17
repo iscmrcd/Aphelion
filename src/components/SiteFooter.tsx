@@ -111,6 +111,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link to="/chatgpt-ads" className="transition hover:text-white">
+                ChatGPT Ads
+              </Link>
+            </li>
+            <li>
               <Link to="/ecommerce" className="transition hover:text-white">
                 {t("Ecommerce", "Tiendas en línea")}
               </Link>

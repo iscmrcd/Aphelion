@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AgenciaMarketingDigitalEnsenadaRouteImport } from './routes/agencia-marketing-digital-ensenada'
 import { Route as AgenciaMarketingDigitalTijuanaRouteImport } from './routes/agencia-marketing-digital-tijuana'
 import { Route as BrandingRouteImport } from './routes/branding'
+import { Route as ChatgptAdsRouteImport } from './routes/chatgpt-ads'
 import { Route as ContactoRouteImport } from './routes/contacto'
 import { Route as DisenoWebTijuanaRouteImport } from './routes/diseno-web-tijuana'
 import { Route as EcommerceRouteImport } from './routes/ecommerce'
@@ -61,6 +62,11 @@ const AgenciaMarketingDigitalTijuanaRoute =
 const BrandingRoute = BrandingRouteImport.update({
   id: '/branding',
   path: '/branding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChatgptAdsRoute = ChatgptAdsRouteImport.update({
+  id: '/chatgpt-ads',
+  path: '/chatgpt-ads',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactoRoute = ContactoRouteImport.update({
@@ -206,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
+  '/chatgpt-ads': typeof ChatgptAdsRoute
   '/contacto': typeof ContactoRoute
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/ecommerce': typeof EcommerceRoute
@@ -239,6 +246,7 @@ export interface FileRoutesByTo {
   '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
+  '/chatgpt-ads': typeof ChatgptAdsRoute
   '/contacto': typeof ContactoRoute
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/ecommerce': typeof EcommerceRoute
@@ -272,6 +280,7 @@ export interface FileRoutesById {
   '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
+  '/chatgpt-ads': typeof ChatgptAdsRoute
   '/contacto': typeof ContactoRoute
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/ecommerce': typeof EcommerceRoute
@@ -307,6 +316,7 @@ export interface FileRouteTypes {
     | '/agencia-marketing-digital-ensenada'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
+    | '/chatgpt-ads'
     | '/contacto'
     | '/diseno-web-tijuana'
     | '/ecommerce'
@@ -340,6 +350,7 @@ export interface FileRouteTypes {
     | '/agencia-marketing-digital-ensenada'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
+    | '/chatgpt-ads'
     | '/contacto'
     | '/diseno-web-tijuana'
     | '/ecommerce'
@@ -372,6 +383,7 @@ export interface FileRouteTypes {
     | '/agencia-marketing-digital-ensenada'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
+    | '/chatgpt-ads'
     | '/contacto'
     | '/diseno-web-tijuana'
     | '/ecommerce'
@@ -406,6 +418,7 @@ export interface RootRouteChildren {
   AgenciaMarketingDigitalEnsenadaRoute: typeof AgenciaMarketingDigitalEnsenadaRoute
   AgenciaMarketingDigitalTijuanaRoute: typeof AgenciaMarketingDigitalTijuanaRoute
   BrandingRoute: typeof BrandingRoute
+  ChatgptAdsRoute: typeof ChatgptAdsRoute
   ContactoRoute: typeof ContactoRoute
   DisenoWebTijuanaRoute: typeof DisenoWebTijuanaRoute
   EcommerceRoute: typeof EcommerceRoute
@@ -455,6 +468,13 @@ declare module '@tanstack/react-router' {
       path: '/branding'
       fullPath: '/branding'
       preLoaderRoute: typeof BrandingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/chatgpt-ads': {
+      id: '/chatgpt-ads'
+      path: '/chatgpt-ads'
+      fullPath: '/chatgpt-ads'
+      preLoaderRoute: typeof ChatgptAdsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contacto': {
@@ -680,6 +700,7 @@ const rootRouteChildren: RootRouteChildren = {
   AgenciaMarketingDigitalEnsenadaRoute: AgenciaMarketingDigitalEnsenadaRoute,
   AgenciaMarketingDigitalTijuanaRoute: AgenciaMarketingDigitalTijuanaRoute,
   BrandingRoute: BrandingRoute,
+  ChatgptAdsRoute: ChatgptAdsRoute,
   ContactoRoute: ContactoRoute,
   DisenoWebTijuanaRoute: DisenoWebTijuanaRoute,
   EcommerceRoute: EcommerceRoute,
