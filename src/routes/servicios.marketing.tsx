@@ -123,6 +123,57 @@ function MarketingPage() {
       />
       <MarketingSection />
       <section className="border-t border-neutral-200 px-5 py-16">
+        <Reveal className="mx-auto max-w-6xl">
+          <p className="studio-eyebrow">{t("Campaigns by platform", "Campañas por plataforma")}</p>
+          <h2 className="mt-3 text-2xl font-medium tracking-tight">
+            {t("How we run each channel.", "Cómo manejamos cada canal.")}
+          </h2>
+          <div className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-200 sm:grid-cols-3">
+            {[
+              {
+                to: "/google-ads" as const,
+                name: "Google Ads",
+                desc: t(
+                  "For people already searching for what you sell.",
+                  "Para quien ya está buscando lo que vendes.",
+                ),
+              },
+              {
+                to: "/meta-ads" as const,
+                name: "Meta Ads",
+                desc: t(
+                  "Facebook and Instagram, to create interest before the search.",
+                  "Facebook e Instagram, para generar interés antes de la búsqueda.",
+                ),
+              },
+              {
+                to: "/chatgpt-ads" as const,
+                name: "ChatGPT Ads",
+                desc: t(
+                  "Ads below ChatGPT's answers, run as a measured test.",
+                  "Anuncios debajo de las respuestas de ChatGPT, como prueba medida.",
+                ),
+              },
+            ].map((c) => (
+              <Link
+                key={c.to}
+                to={c.to}
+                className="group flex flex-col justify-between gap-6 bg-white p-6 transition hover:bg-neutral-50"
+              >
+                <div>
+                  <p className="text-base font-medium">{c.name}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-neutral-500">{c.desc}</p>
+                </div>
+                <ArrowUpRight
+                  aria-hidden="true"
+                  className="h-4 w-4 text-neutral-400 transition group-hover:text-neutral-950"
+                />
+              </Link>
+            ))}
+          </div>
+        </Reveal>
+      </section>
+      <section className="border-t border-neutral-200 px-5 py-16">
         <Reveal className="mx-auto flex max-w-6xl flex-col justify-between gap-6 sm:flex-row sm:items-center">
           <div className="max-w-2xl">
             <p className="studio-eyebrow">

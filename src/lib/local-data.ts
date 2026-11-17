@@ -1,5 +1,5 @@
 /**
- * Content for the city pages (Tijuana and Ensenada).
+ * Content for the city pages (Tijuana, Ensenada and Rosarito).
  *
  * Every page carries its own copy. City pages that share templated prose with
  * the city name swapped are doorway pages, which Google treats as spam, so the
@@ -697,12 +697,12 @@ export const ENSENADA_HUB: LocalPage = {
       body: [
         "For a hotel, a winery, a restaurant or a tour, the most expensive mistake is depending entirely on booking platforms and their commissions. We cover the numbers in [direct bookings for hotels](/blog/reservas-directas-hotel) and [direct bookings for tours](/blog/reservas-directas-tours); the short version is that your own website has to make booking direct as easy as booking through a platform.",
         "Here, unlike a border business in Tijuana, advertising across the border is often the point. A winery or a hotel in Ensenada may want its ads in San Diego and Los Angeles on purpose, timed to the weekends and seasons when people plan their trips. The opposite mistake also exists: spending on visitors when your business lives off locals.",
-        "And the place sells itself on camera. The coast, the vineyards and the port photograph well from the air, and we produce that footage ourselves: [drone video in Ensenada](/servicios/video-con-dron), integrated with the same team that runs your site and your ads.",
+        "And the place sells itself on camera. The coast, the vineyards and the port photograph well from the air, and we produce that footage ourselves: [drone video in Ensenada](/video-con-dron-ensenada), integrated with the same team that runs your site and your ads.",
       ],
       bodyEs: [
         "Para un hotel, una vinícola, un restaurante o un tour, el error más caro es depender por completo de las plataformas de reservas y sus comisiones. Los números los vemos en [reservas directas para hoteles](/blog/reservas-directas-hotel) y [reservas directas para tours](/blog/reservas-directas-tours); la versión corta es que tu propia página tiene que hacer que reservar directo sea tan fácil como hacerlo en una plataforma.",
         "Aquí, a diferencia de un negocio fronterizo en Tijuana, anunciarse del otro lado muchas veces es justo el objetivo. Una vinícola o un hotel en Ensenada puede querer sus anuncios en San Diego y Los Ángeles a propósito, en los fines de semana y temporadas en que la gente planea su viaje. El error contrario también existe: gastar en visitantes cuando tu negocio vive de los locales.",
-        "Y el lugar se vende solo frente a la cámara. La costa, los viñedos y el puerto se ven muy bien desde el aire, y esa toma la producimos nosotros: [video con dron en Ensenada](/servicios/video-con-dron), integrado al mismo equipo que lleva tu página y tus anuncios.",
+        "Y el lugar se vende solo frente a la cámara. La costa, los viñedos y el puerto se ven muy bien desde el aire, y esa toma la producimos nosotros: [video con dron en Ensenada](/video-con-dron-ensenada), integrado al mismo equipo que lleva tu página y tus anuncios.",
       ],
     },
     {
@@ -710,14 +710,14 @@ export const ENSENADA_HUB: LocalPage = {
       heading: "What we do in Ensenada",
       headingEs: "Qué hacemos en Ensenada",
       body: [
-        "Bilingual websites that load fast on a phone and make it easy to call, write on WhatsApp or book. We explain how we build them in [web design](/diseno-web-tijuana).",
+        "Bilingual websites that load fast on a phone and make it easy to call, write on WhatsApp or book. We explain how we build them in [web design in Ensenada](/diseno-web-ensenada).",
         "Google Business Profile and reviews, which in a city this size are often the first and only thing a customer checks.",
         "Google Ads and Meta Ads with the geography set on purpose: local when you sell to Ensenada, California when you sell to visitors.",
         "Video and photography, aerial and on the ground, for tourism, real estate and products.",
         "WhatsApp automation so reservations and quotes get an answer at night and on weekends, when visitors plan.",
       ],
       bodyEs: [
-        "Páginas web bilingües que cargan rápido en el celular y facilitan llamar, escribir por WhatsApp o reservar. Te contamos cómo las hacemos en [diseño web](/diseno-web-tijuana).",
+        "Páginas web bilingües que cargan rápido en el celular y facilitan llamar, escribir por WhatsApp o reservar. Te contamos cómo las hacemos en [diseño web en Ensenada](/diseno-web-ensenada).",
         "Perfil de Empresa de Google y reseñas, que en una ciudad de este tamaño muchas veces son lo primero y lo único que revisa un cliente.",
         "Google Ads y Meta Ads con la geografía puesta a propósito: local cuando le vendes a Ensenada, California cuando le vendes a visitantes.",
         "Video y fotografía, aérea y en tierra, para turismo, bienes raíces y productos.",
@@ -766,7 +766,612 @@ export const ENSENADA_HUB: LocalPage = {
       aEs: "Si le vendes a visitantes, normalmente sí, pero solo en las ciudades y fechas en que planean su viaje, y con una página en inglés que facilite reservar. Si tus clientes son locales, no: ese presupuesto rinde más en Ensenada.",
     },
   ],
-  related: ["/agencia-marketing-digital-tijuana", "/diseno-web-tijuana", "/google-ads-tijuana"],
+  related: ["/diseno-web-ensenada", "/google-ads-ensenada", "/video-con-dron-ensenada"],
+};
+
+/* ------------------------------------------------------------------ */
+/* Ensenada service pages                                              */
+/* ------------------------------------------------------------------ */
+
+export const DISENO_WEB_ENSENADA: LocalPage = {
+  path: "/diseno-web-ensenada",
+  service: "Web design",
+  serviceEs: "Diseño web",
+  h1: "Web Design in Ensenada",
+  h1Es: "Diseño web en Ensenada",
+  kicker: "Ensenada and Valle de Guadalupe",
+  kickerEs: "Ensenada y Valle de Guadalupe",
+  intro:
+    "Websites for businesses in Ensenada that have to work for two very different visitors: the neighbour who already knows you and wants your number, and the traveller in San Diego who has never been here and is deciding where to spend a weekend.",
+  introEs:
+    "Páginas web para negocios en Ensenada que tienen que funcionar para dos visitantes muy distintos: el vecino que ya te conoce y solo quiere tu número, y el viajero en San Diego que nunca ha venido y está decidiendo dónde pasar un fin de semana.",
+  seoTitle: "Web Design in Ensenada: Bilingual Websites | Aphelion",
+  seoTitleEs: "Diseño Web en Ensenada: Páginas Bilingües | Aphelion",
+  seoDescription:
+    "Web design in Ensenada and Valle de Guadalupe: fast bilingual websites with direct booking, WhatsApp and Google Maps for tourism, wineries and local business.",
+  seoDescriptionEs:
+    "Diseño web en Ensenada y Valle de Guadalupe: páginas rápidas y bilingües con reservas directas, WhatsApp y Google Maps para turismo, vinícolas y negocios locales.",
+  serviceType: "Web design",
+  sections: [
+    {
+      id: "dos-visitantes",
+      heading: "A website that has to convince someone who has never been here",
+      headingEs: "Una página que tiene que convencer a alguien que nunca ha venido",
+      body: [
+        "For a local business, the website is mostly a confirmation: the customer already heard of you and wants the phone, the hours and how to get there. That page has to load fast on a phone and put WhatsApp and the map one tap away. Nothing more.",
+        "For a hotel, a winery, a restaurant or a tour, the website does a much harder job. It has to sell the place to someone who is comparing you, from another country and often in English, against every other option on the route. Photos, prices or at least a price range, how to get there and how to book decide that comparison.",
+        "Most sites in Ensenada are built for only one of those two visitors, usually the first. That is why so many tourism businesses end up depending on booking platforms: their own site does not close the sale.",
+      ],
+      bodyEs: [
+        "Para un negocio local, la página es sobre todo una confirmación: el cliente ya oyó de ti y quiere el teléfono, el horario y cómo llegar. Esa página tiene que cargar rápido en el celular y dejar WhatsApp y el mapa a un toque. Nada más.",
+        "Para un hotel, una vinícola, un restaurante o un tour, la página hace un trabajo mucho más difícil. Tiene que venderle el lugar a alguien que te está comparando, desde otro país y muchas veces en inglés, contra todas las demás opciones de la ruta. Fotos, precios o al menos un rango, cómo llegar y cómo reservar deciden esa comparación.",
+        "La mayoría de los sitios en Ensenada están hechos para uno solo de esos dos visitantes, normalmente el primero. Por eso tantos negocios de turismo terminan dependiendo de las plataformas de reservas: su propia página no cierra la venta.",
+      ],
+    },
+    {
+      id: "reservas-directas",
+      heading: "Direct bookings instead of commissions",
+      headingEs: "Reservas directas en lugar de comisiones",
+      body: [
+        "Every booking that comes through a platform pays a commission. Every booking that comes through your own site does not. The difference over a season is usually enough to pay for the website several times, and we walk through the numbers in [direct bookings for hotels](/blog/reservas-directas-hotel) and [for tours](/blog/reservas-directas-tours).",
+        "Making that happen is less about design and more about friction: availability visible without writing first, a price before the last step, payment or a deposit that works for a visitor with a US card, and a WhatsApp button for whoever still prefers to ask.",
+        "Platforms do not disappear. They stay as a channel for people who would never have found you. The goal is that someone who already chose you does not have to go through them to pay you.",
+      ],
+      bodyEs: [
+        "Cada reserva que llega por una plataforma paga comisión. Cada reserva que llega por tu propia página no. La diferencia en una temporada normalmente alcanza para pagar la página varias veces, y hacemos las cuentas en [reservas directas para hoteles](/blog/reservas-directas-hotel) y [para tours](/blog/reservas-directas-tours).",
+        "Lograrlo tiene menos que ver con el diseño y más con la fricción: disponibilidad visible sin tener que escribir primero, un precio antes del último paso, un pago o anticipo que funcione para un visitante con tarjeta de Estados Unidos, y un botón de WhatsApp para quien todavía prefiere preguntar.",
+        "Las plataformas no desaparecen. Se quedan como canal para la gente que nunca te habría encontrado. El objetivo es que quien ya te eligió no tenga que pasar por ellas para pagarte.",
+      ],
+    },
+    {
+      id: "que-incluye",
+      heading: "What the site includes",
+      headingEs: "Qué incluye la página",
+      body: [
+        "Spanish and English versions written separately, not machine-translated, with the names visitors actually search: Valle de Guadalupe, La Bufadora, Todos Santos Bay, the wine route.",
+        "Photography and video produced by the same team, including aerial footage. In a place that sells on how it looks, stock photos are the fastest way to look like everyone else.",
+        "Speed on a phone over a weak signal, because a good share of your visitors will open the site on the road, between wineries, or on a cruise ship's data plan.",
+        "Google Business Profile connected to the site, call and WhatsApp tracking, and everything registered in your name: domain, hosting, analytics and content. The full scope and packages are in [websites](/servicios/websites).",
+      ],
+      bodyEs: [
+        "Versiones en español e inglés escritas por separado, no traducidas a máquina, con los nombres que de verdad buscan los visitantes: Valle de Guadalupe, La Bufadora, Bahía de Todos Santos, la ruta del vino.",
+        "Fotografía y video hechos por el mismo equipo, incluida la toma aérea. En un lugar que se vende por cómo se ve, las fotos de banco son la forma más rápida de parecerse a todos los demás.",
+        "Velocidad en el celular con mala señal, porque buena parte de tus visitantes va a abrir la página en carretera, entre vinícolas o con los datos de un crucero.",
+        "Perfil de Empresa de Google conectado a la página, medición de llamadas y WhatsApp, y todo registrado a tu nombre: dominio, hosting, analítica y contenido. El alcance completo y los paquetes están en [páginas web](/servicios/websites).",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Do I need the site in English?",
+      qEs: "¿Necesito la página en inglés?",
+      a: "If any meaningful part of your customers are visitors, yes. If you sell to people who live in Ensenada, a well-made Spanish site is enough and the budget is better spent elsewhere.",
+      aEs: "Si una parte importante de tus clientes son visitantes, sí. Si le vendes a gente que vive en Ensenada, una buena página en español es suficiente y el presupuesto rinde más en otra cosa.",
+    },
+    {
+      q: "Can you connect my booking system?",
+      qEs: "¿Pueden conectar mi sistema de reservas?",
+      a: "Usually, yes. Most booking and channel-management tools can be embedded or linked so availability shows on your own site. We check which one you use before quoting, because that decides the work involved.",
+      aEs: "Normalmente sí. La mayoría de las herramientas de reservas y de gestión de canales se pueden integrar o enlazar para que la disponibilidad aparezca en tu propia página. Revisamos cuál usas antes de cotizar, porque eso define el trabajo.",
+    },
+    {
+      q: "Do you take the photos?",
+      qEs: "¿Ustedes toman las fotos?",
+      a: "Yes. Photography, video and drone footage are produced in-house and on location in Ensenada and the Valle, so the site and the content are planned together.",
+      aEs: "Sí. La fotografía, el video y la toma con dron los producimos nosotros, en el lugar, en Ensenada y el Valle, así que la página y el contenido se planean juntos.",
+    },
+    {
+      q: "Who owns the website?",
+      qEs: "¿De quién es la página?",
+      a: "You do: domain, hosting, content and analytics are registered in your name from the start.",
+      aEs: "Tuya: el dominio, el hosting, el contenido y la analítica quedan a tu nombre desde el inicio.",
+    },
+  ],
+  related: ["/agencia-marketing-digital-ensenada", "/seo-ensenada", "/video-con-dron-ensenada"],
+  parentPath: "/servicios/websites",
+  parentLabel: "Web design",
+  parentLabelEs: "Diseño web",
+};
+
+export const SEO_ENSENADA: LocalPage = {
+  path: "/seo-ensenada",
+  service: "SEO",
+  serviceEs: "SEO",
+  h1: "SEO in Ensenada",
+  h1Es: "SEO en Ensenada",
+  kicker: "Local and tourism search",
+  kickerEs: "Búsqueda local y turística",
+  intro:
+    "Ranking in Ensenada is two separate problems. Locals find businesses on Google Maps; visitors find them weeks before the trip, from another city, with searches that often do not even contain the word Ensenada.",
+  introEs:
+    "Posicionarse en Ensenada son dos problemas distintos. Los locales encuentran negocios en Google Maps; los visitantes los encuentran semanas antes del viaje, desde otra ciudad, con búsquedas que muchas veces ni siquiera llevan la palabra Ensenada.",
+  seoTitle: "SEO in Ensenada: Google Maps and Tourism Search | Aphelion",
+  seoTitleEs: "SEO en Ensenada: Google Maps y Búsqueda Turística | Aphelion",
+  seoDescription:
+    "SEO in Ensenada and Valle de Guadalupe: Google Business Profile, reviews and bilingual content that ranks for the searches visitors make before they travel.",
+  seoDescriptionEs:
+    "SEO en Ensenada y Valle de Guadalupe: Perfil de Empresa de Google, reseñas y contenido bilingüe que aparece en las búsquedas que hacen los visitantes antes de viajar.",
+  serviceType: "Search engine optimization",
+  sections: [
+    {
+      id: "maps-primero",
+      heading: "For local customers, Google Maps comes first",
+      headingEs: "Para el cliente local, Google Maps va primero",
+      body: [
+        "In a city the size of Ensenada, someone looking for a dentist, a mechanic or a supplier rarely scrolls past the map. The three businesses that show up there take most of the calls, and what puts them there is mostly the Google Business Profile: correct category, complete services, real photos, consistent hours and recent reviews.",
+        "That is unglamorous work and it is where we start, because it moves results in weeks rather than months. A website with good content helps the profile rank, but a strong website with a neglected profile still loses on the map.",
+        "Reviews deserve a system, not a hope. We set up how and when you ask for them, so they keep arriving steadily instead of in one burst after a campaign and then nothing.",
+      ],
+      bodyEs: [
+        "En una ciudad del tamaño de Ensenada, quien busca un dentista, un mecánico o un proveedor casi nunca baja más allá del mapa. Los tres negocios que aparecen ahí se llevan la mayoría de las llamadas, y lo que los pone ahí es sobre todo el Perfil de Empresa de Google: categoría correcta, servicios completos, fotos reales, horario consistente y reseñas recientes.",
+        "Es un trabajo poco vistoso y es donde empezamos, porque mueve resultados en semanas y no en meses. Una página con buen contenido ayuda a que el perfil se posicione, pero una página fuerte con un perfil descuidado igual pierde en el mapa.",
+        "Las reseñas merecen un sistema, no una esperanza. Dejamos definido cómo y cuándo pedirlas, para que lleguen de forma constante y no todas de golpe después de una campaña y luego nada.",
+      ],
+    },
+    {
+      id: "busqueda-turistica",
+      heading: "For visitors, the search happens far away and in advance",
+      headingEs: "Para el visitante, la búsqueda pasa lejos y con anticipación",
+      body: [
+        "Visitors search from San Diego, Los Angeles, Tijuana or Mexico City, days or weeks before they come. Their searches name places and plans, not businesses: “wineries in Valle de Guadalupe”, “where to eat in Ensenada”, “boutique hotel near La Bufadora”, “whale watching Ensenada”.",
+        "Ranking for those takes pages that answer them, in the language they were typed in. That usually means content in English as well as Spanish, written for the question rather than translated from the homepage.",
+        "It also takes time. Local map results can move in weeks; content that ranks for competitive tourism searches takes months. We say that upfront so the plan is judged on the right timeline.",
+      ],
+      bodyEs: [
+        "Los visitantes buscan desde San Diego, Los Ángeles, Tijuana o la Ciudad de México, días o semanas antes de venir. Sus búsquedas nombran lugares y planes, no negocios: “vinícolas en Valle de Guadalupe”, “dónde comer en Ensenada”, “hotel boutique cerca de La Bufadora”, “avistamiento de ballenas Ensenada”.",
+        "Aparecer en esas búsquedas requiere páginas que las respondan, en el idioma en que se escribieron. Normalmente eso significa contenido en inglés además de español, escrito para la pregunta y no traducido de la portada.",
+        "También requiere tiempo. Los resultados en el mapa se pueden mover en semanas; el contenido que se posiciona en búsquedas turísticas competidas toma meses. Lo decimos desde el principio para que el plan se juzgue en el plazo correcto.",
+      ],
+    },
+    {
+      id: "como-trabajamos-seo",
+      heading: "How the work is organised",
+      headingEs: "Cómo se organiza el trabajo",
+      body: [
+        "First month: audit of the Google Business Profile, the website and how you appear today for the searches that matter, plus fixing whatever is broken. Most of the early gains come from here.",
+        "Then a monthly cycle: content for the searches your customers make, the review system running, technical fixes, and a report on calls, WhatsApp messages and bookings that came from search, not just positions.",
+        "The engagement and how we price it are explained in [SEO](/seo). If your customers are in Tijuana as well, see [SEO in Tijuana](/seo-tijuana), because that market behaves differently.",
+      ],
+      bodyEs: [
+        "Primer mes: auditoría del Perfil de Empresa de Google, de la página y de cómo apareces hoy en las búsquedas que importan, y corregir lo que esté roto. La mayor parte de las mejoras tempranas sale de aquí.",
+        "Después un ciclo mensual: contenido para las búsquedas que hacen tus clientes, el sistema de reseñas funcionando, correcciones técnicas y un reporte de llamadas, mensajes de WhatsApp y reservas que llegaron por búsqueda, no solo de posiciones.",
+        "El servicio y cómo lo cotizamos están explicados en [SEO](/seo). Si tus clientes también están en Tijuana, revisa [SEO en Tijuana](/seo-tijuana), porque ese mercado se comporta distinto.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "How long until I see results?",
+      qEs: "¿En cuánto tiempo veo resultados?",
+      a: "Google Maps changes can show in a few weeks. Ranking for competitive tourism searches takes several months of steady content. Anyone promising the first page in a month for a competitive search is guessing.",
+      aEs: "Los cambios en Google Maps se pueden ver en unas semanas. Posicionarse en búsquedas turísticas competidas toma varios meses de contenido constante. Quien te prometa primera página en un mes para una búsqueda competida está adivinando.",
+    },
+    {
+      q: "Do I need content in English?",
+      qEs: "¿Necesito contenido en inglés?",
+      a: "Only if you sell to visitors who search in English. A local service business usually does not, and that budget is better spent on the profile and reviews.",
+      aEs: "Solo si le vendes a visitantes que buscan en inglés. Un negocio de servicios locales normalmente no, y ese presupuesto rinde más en el perfil y las reseñas.",
+    },
+    {
+      q: "Can you manage my Google Business Profile?",
+      qEs: "¿Pueden manejar mi Perfil de Empresa de Google?",
+      a: "Yes, and it is usually the first thing we fix. We work inside your profile with access you grant, so it stays yours.",
+      aEs: "Sí, y normalmente es lo primero que arreglamos. Trabajamos dentro de tu perfil con el acceso que tú nos das, así que sigue siendo tuyo.",
+    },
+    {
+      q: "Do you guarantee positions?",
+      qEs: "¿Garantizan posiciones?",
+      a: "No. Nobody controls Google's results. We commit to the work and report on what reaches your business: calls, messages and bookings.",
+      aEs: "No. Nadie controla los resultados de Google. Nos comprometemos con el trabajo y reportamos lo que llega a tu negocio: llamadas, mensajes y reservas.",
+    },
+  ],
+  related: ["/agencia-marketing-digital-ensenada", "/diseno-web-ensenada", "/google-ads-ensenada"],
+  parentPath: "/seo",
+  parentLabel: "SEO",
+  parentLabelEs: "SEO",
+};
+
+export const GOOGLE_ADS_ENSENADA: LocalPage = {
+  path: "/google-ads-ensenada",
+  service: "Google Ads",
+  serviceEs: "Google Ads",
+  h1: "Google Ads in Ensenada",
+  h1Es: "Google Ads en Ensenada",
+  kicker: "Paid search in Ensenada",
+  kickerEs: "Búsqueda pagada en Ensenada",
+  intro:
+    "In Ensenada the most important Google Ads setting is not the bid. It is where your ads show: in Ensenada when you sell to locals, in California and Tijuana when you sell to visitors, and timed to the season either way.",
+  introEs:
+    "En Ensenada la configuración más importante de Google Ads no es la puja. Es dónde salen tus anuncios: en Ensenada cuando le vendes a locales, en California y Tijuana cuando le vendes a visitantes, y en los dos casos al ritmo de la temporada.",
+  seoTitle: "Google Ads in Ensenada: Local and Tourism Campaigns | Aphelion",
+  seoTitleEs: "Google Ads en Ensenada: Campañas Locales y Turísticas | Aphelion",
+  seoDescription:
+    "Google Ads in Ensenada and Valle de Guadalupe: campaigns with deliberate geography, seasonal budgets and call tracking for local service and tourism businesses.",
+  seoDescriptionEs:
+    "Google Ads en Ensenada y Valle de Guadalupe: campañas con la geografía bien puesta, presupuesto por temporada y rastreo de llamadas para servicios locales y turismo.",
+  serviceType: "Google Ads campaign management",
+  sections: [
+    {
+      id: "geografia",
+      heading: "Geography decides who you are paying for",
+      headingEs: "La geografía decide por quién estás pagando",
+      body: [
+        "A local business in Ensenada, a clinic, a workshop or a supplier, should target Ensenada and its surroundings explicitly and nothing else. Left on defaults, Google also shows ads to people who are merely interested in Ensenada, which in a tourist city means paying for clicks from people who live hundreds of kilometres away and will never call.",
+        "A hotel, a winery or a tour wants exactly the opposite: ads in San Diego, Los Angeles, Tijuana or Mexicali, in English where it matters, reaching people while they plan. Showing those ads only in Ensenada reaches visitors when they are already here and have already decided.",
+        "Getting this wrong does not look like an error in the account. Clicks still arrive and the cost per click may even look good. The problem only shows up as calls that never come.",
+      ],
+      bodyEs: [
+        "Un negocio local en Ensenada, una clínica, un taller o un proveedor, debe apuntar explícitamente a Ensenada y sus alrededores y a nada más. Con la configuración por defecto, Google también muestra los anuncios a gente que solo está interesada en Ensenada, que en una ciudad turística significa pagar clics de personas que viven a cientos de kilómetros y nunca van a llamar.",
+        "Un hotel, una vinícola o un tour quiere justo lo contrario: anuncios en San Diego, Los Ángeles, Tijuana o Mexicali, en inglés donde importa, llegando a la gente mientras planea. Mostrar esos anuncios solo en Ensenada alcanza al visitante cuando ya está aquí y ya decidió.",
+        "Equivocarse en esto no se ve como un error en la cuenta. Los clics siguen llegando y el costo por clic hasta puede verse bien. El problema solo aparece como llamadas que nunca llegan.",
+      ],
+    },
+    {
+      id: "temporada",
+      heading: "Budget follows the season",
+      headingEs: "El presupuesto sigue a la temporada",
+      body: [
+        "Tourism in Ensenada has peaks, summer, long weekends, the harvest festivals in August, and quiet months in between. A flat monthly budget overspends in the slow months and runs out in the busy ones.",
+        "We plan the year in advance: more budget in the weeks before each peak, when people search and book, and less once they are already travelling. For local services the curve is flatter, but it still exists.",
+        "The calculation of how much to invest, and why there is no universal minimum, is in [Google Ads](/google-ads).",
+      ],
+      bodyEs: [
+        "El turismo en Ensenada tiene picos, el verano, los fines de semana largos, las fiestas de la vendimia en agosto, y meses tranquilos en medio. Un presupuesto mensual parejo gasta de más en los meses lentos y se acaba en los fuertes.",
+        "Planeamos el año por adelantado: más presupuesto en las semanas antes de cada pico, cuando la gente busca y reserva, y menos cuando ya está viajando. En servicios locales la curva es más plana, pero también existe.",
+        "Cómo calculamos cuánto invertir, y por qué no hay un mínimo universal, está en [Google Ads](/google-ads).",
+      ],
+    },
+    {
+      id: "medicion-ensenada",
+      heading: "Measure the call, not the click",
+      headingEs: "Medir la llamada, no el clic",
+      body: [
+        "In Ensenada a large share of customers call or write on WhatsApp instead of filling in a form. If the account only measures forms, it is blind to most of what it produces and will optimise toward the wrong thing.",
+        "So call tracking and WhatsApp tracking go in before spending. Reports are on cost per enquiry and cost per customer, not cost per click.",
+        "And someone has to answer. Ads that generate calls on Saturday afternoon to a phone nobody picks up are paying for your competitors' business.",
+      ],
+      bodyEs: [
+        "En Ensenada una gran parte de los clientes llama o escribe por WhatsApp en lugar de llenar un formulario. Si la cuenta solo mide formularios, no ve la mayor parte de lo que produce y va a optimizar hacia lo equivocado.",
+        "Por eso el rastreo de llamadas y de WhatsApp se instala antes de gastar. Los reportes son de costo por consulta y costo por cliente, no de costo por clic.",
+        "Y alguien tiene que contestar. Anuncios que generan llamadas un sábado en la tarde a un teléfono que nadie levanta están pagando el negocio de tu competencia.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Should I advertise in the United States?",
+      qEs: "¿Me conviene anunciarme en Estados Unidos?",
+      a: "If you sell to visitors, usually yes, but only in the cities and dates when they plan, and with an English landing page. If your customers live in Ensenada, no.",
+      aEs: "Si le vendes a visitantes, normalmente sí, pero solo en las ciudades y fechas en que planean, y con una landing page en inglés. Si tus clientes viven en Ensenada, no.",
+    },
+    {
+      q: "Do you charge a percentage of ad spend?",
+      qEs: "¿Cobran porcentaje de la inversión?",
+      a: "No. Management is quoted separately and you pay Google directly.",
+      aEs: "No. La gestión se cotiza aparte y la inversión la pagas directo a Google.",
+    },
+    {
+      q: "How soon will it bring calls?",
+      qEs: "¿Qué tan pronto llegan llamadas?",
+      a: "Usually within days. Getting the cost per customer to a stable number takes several weeks of data.",
+      aEs: "Normalmente en días. Que el costo por cliente se estabilice toma varias semanas de datos.",
+    },
+    {
+      q: "Can you run it alongside Meta Ads?",
+      qEs: "¿Lo pueden manejar junto con Meta Ads?",
+      a: "Yes. Google captures people already searching; Meta reaches people before they search. For tourism the two together usually work better than either alone. See Meta Ads in Ensenada.",
+      aEs: "Sí. Google capta a quien ya está buscando; Meta llega a la gente antes de que busque. En turismo los dos juntos normalmente funcionan mejor que cualquiera por separado. Revisa Meta Ads en Ensenada.",
+    },
+  ],
+  related: ["/agencia-marketing-digital-ensenada", "/meta-ads-ensenada", "/seo-ensenada"],
+  parentPath: "/google-ads",
+  parentLabel: "Google Ads",
+  parentLabelEs: "Google Ads",
+};
+
+export const META_ADS_ENSENADA: LocalPage = {
+  path: "/meta-ads-ensenada",
+  service: "Meta Ads",
+  serviceEs: "Meta Ads",
+  h1: "Meta Ads in Ensenada",
+  h1Es: "Meta Ads en Ensenada",
+  kicker: "Facebook and Instagram in Ensenada",
+  kickerEs: "Facebook e Instagram en Ensenada",
+  intro:
+    "Ensenada sells on how it looks: the coast, the vineyards, the food. Meta is where that works best, because it puts the image in front of people before they were looking for anything.",
+  introEs:
+    "Ensenada se vende por cómo se ve: la costa, los viñedos, la comida. Meta es donde eso funciona mejor, porque pone la imagen frente a la gente antes de que estuviera buscando algo.",
+  seoTitle: "Meta Ads in Ensenada: Facebook and Instagram Campaigns | Aphelion",
+  seoTitleEs: "Meta Ads en Ensenada: Campañas en Facebook e Instagram | Aphelion",
+  seoDescription:
+    "Facebook and Instagram ads in Ensenada and Valle de Guadalupe: video and drone creative, audiences in California and Baja, and WhatsApp follow-up that books.",
+  seoDescriptionEs:
+    "Anuncios en Facebook e Instagram en Ensenada y Valle de Guadalupe: creativos en video y dron, audiencias en California y Baja, y seguimiento por WhatsApp que reserva.",
+  serviceType: "Meta Ads campaign management",
+  sections: [
+    {
+      id: "creativo",
+      heading: "The creative does most of the work",
+      headingEs: "El creativo hace la mayor parte del trabajo",
+      body: [
+        "On Meta, targeting has become largely automatic. What decides whether a campaign works is the video or the image: whether it stops someone mid-scroll and makes them want to be there.",
+        "That is an advantage for Ensenada, because the material is outside the door. It is also why we produce the creative ourselves, including [drone footage](/video-con-dron-ensenada), instead of asking you for photos from your phone. A winery at golden hour from the air and the same winery photographed from the parking lot are two different campaigns.",
+        "We also plan for fatigue. The same video shown for months to the same audience stops working, so production includes enough variations to rotate through a season.",
+      ],
+      bodyEs: [
+        "En Meta la segmentación ya es en buena parte automática. Lo que decide si una campaña funciona es el video o la imagen: si detiene a alguien mientras hace scroll y le dan ganas de estar ahí.",
+        "Eso es una ventaja para Ensenada, porque el material está afuera de la puerta. También es la razón por la que producimos los creativos nosotros, incluida la [toma con dron](/video-con-dron-ensenada), en lugar de pedirte fotos de tu celular. Una vinícola al atardecer desde el aire y la misma vinícola fotografiada desde el estacionamiento son dos campañas distintas.",
+        "También planeamos el desgaste. El mismo video mostrado durante meses a la misma audiencia deja de funcionar, así que la producción incluye suficientes variaciones para rotar durante una temporada.",
+      ],
+    },
+    {
+      id: "audiencias",
+      heading: "Who sees it: locals or visitors",
+      headingEs: "Quién lo ve: locales o visitantes",
+      body: [
+        "For a business that lives off locals, the audience is Ensenada and a reasonable radius, in Spanish. The common mistake is letting Meta expand that audience on its own until half the budget is spent in places you do not serve.",
+        "For tourism, the audience is in Southern California, Tijuana and Mexicali, with English creative for English speakers. That is not a translation of the Spanish ad; it is a different ad, because the reasons someone from San Diego comes to Ensenada are not the reasons someone from Tijuana does.",
+        "The full approach to targeting and budget is in [Meta Ads](/meta-ads).",
+      ],
+      bodyEs: [
+        "Para un negocio que vive de los locales, la audiencia es Ensenada y un radio razonable, en español. El error común es dejar que Meta amplíe esa audiencia por su cuenta hasta gastar la mitad del presupuesto en lugares que no atiendes.",
+        "Para turismo, la audiencia está en el sur de California, Tijuana y Mexicali, con creativos en inglés para quien habla inglés. No es una traducción del anuncio en español; es otro anuncio, porque las razones por las que alguien de San Diego viene a Ensenada no son las mismas que las de alguien de Tijuana.",
+        "El enfoque completo de segmentación y presupuesto está en [Meta Ads](/meta-ads).",
+      ],
+    },
+    {
+      id: "whatsapp-seguimiento",
+      heading: "The sale happens on WhatsApp",
+      headingEs: "La venta pasa en WhatsApp",
+      body: [
+        "Most Meta campaigns in Ensenada end in a WhatsApp conversation, not a purchase. That conversation is where the money is won or lost: a reply in five minutes books, a reply the next day usually does not.",
+        "So before scaling a campaign we check who answers, how fast and with what information. Where it helps, we set up automatic first replies so nights and weekends, when visitors plan, do not go unanswered.",
+        "And we measure what comes out of those conversations: bookings and quotes, not messages.",
+      ],
+      bodyEs: [
+        "La mayoría de las campañas de Meta en Ensenada terminan en una conversación de WhatsApp, no en una compra. Esa conversación es donde se gana o se pierde el dinero: una respuesta en cinco minutos reserva, una respuesta al día siguiente normalmente no.",
+        "Por eso antes de escalar una campaña revisamos quién contesta, qué tan rápido y con qué información. Donde ayuda, dejamos respuestas automáticas iniciales para que las noches y los fines de semana, cuando planean los visitantes, no se queden sin respuesta.",
+        "Y medimos lo que sale de esas conversaciones: reservas y cotizaciones, no mensajes.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Is Meta or Google better for my business?",
+      qEs: "¿Me conviene más Meta o Google?",
+      a: "Google captures people already searching for what you sell. Meta creates interest in people who were not looking yet. Tourism and visual products usually start with Meta; urgent local services usually start with Google.",
+      aEs: "Google capta a quien ya busca lo que vendes. Meta genera interés en gente que todavía no buscaba. El turismo y los productos visuales normalmente arrancan con Meta; los servicios locales urgentes normalmente con Google.",
+    },
+    {
+      q: "Do you produce the videos?",
+      qEs: "¿Ustedes hacen los videos?",
+      a: "Yes, on location in Ensenada and the Valle, including drone footage. Production is quoted separately from campaign management.",
+      aEs: "Sí, en el lugar, en Ensenada y el Valle, incluida la toma con dron. La producción se cotiza aparte de la gestión de campañas.",
+    },
+    {
+      q: "Who owns the ad account and the page?",
+      qEs: "¿De quién son la cuenta de anuncios y la página?",
+      a: "You do. We work inside your Business Manager with access you grant.",
+      aEs: "Tuyas. Trabajamos dentro de tu Business Manager con el acceso que tú nos das.",
+    },
+    {
+      q: "How much should I invest?",
+      qEs: "¿Cuánto debo invertir?",
+      a: "It depends on what a customer is worth to you and how many you can serve. We calculate it on the call and start small until the data justifies more.",
+      aEs: "Depende de cuánto vale un cliente para ti y de cuántos puedes atender. Lo calculamos en la llamada y arrancamos chico hasta que los datos justifiquen más.",
+    },
+  ],
+  related: ["/agencia-marketing-digital-ensenada", "/google-ads-ensenada", "/video-con-dron-ensenada"],
+  parentPath: "/meta-ads",
+  parentLabel: "Meta Ads",
+  parentLabelEs: "Meta Ads",
+};
+
+export const DRON_ENSENADA: LocalPage = {
+  path: "/video-con-dron-ensenada",
+  service: "Drone video",
+  serviceEs: "Video con dron",
+  h1: "Drone Video in Ensenada",
+  h1Es: "Video con dron en Ensenada",
+  kicker: "Ensenada, Valle de Guadalupe and the coast",
+  kickerEs: "Ensenada, Valle de Guadalupe y la costa",
+  intro:
+    "Aerial video and photography for wineries, hotels, real estate, construction and events in Ensenada and the Valle de Guadalupe, shot by the same team that will later use it on your website and in your ads.",
+  introEs:
+    "Video y fotografía aérea para vinícolas, hoteles, bienes raíces, obra y eventos en Ensenada y el Valle de Guadalupe, grabados por el mismo equipo que después lo usa en tu página y en tus anuncios.",
+  seoTitle: "Drone Video in Ensenada and Valle de Guadalupe | Aphelion",
+  seoTitleEs: "Video con Dron en Ensenada y Valle de Guadalupe | Aphelion",
+  seoDescription:
+    "Drone video and aerial photography in Ensenada and Valle de Guadalupe for wineries, hotels, real estate, construction and events. Planned for web and ads.",
+  seoDescriptionEs:
+    "Video con dron y fotografía aérea en Ensenada y Valle de Guadalupe para vinícolas, hoteles, bienes raíces, obra y eventos. Pensado para tu página y tus anuncios.",
+  serviceType: "Aerial drone videography",
+  sections: [
+    {
+      id: "para-que-sirve",
+      heading: "What it is used for here",
+      headingEs: "Para qué se usa aquí",
+      body: [
+        "Wineries and hotels: showing the place in its setting, the vineyard rows, the valley, the view from the terrace, which is exactly what a ground-level photo cannot do and what a visitor wants to see before booking.",
+        "Real estate and developments: the lot, the ocean view, the distance to the beach or to the road, and how a development is progressing. For buyers who are in another country, aerial footage replaces a good part of the first visit.",
+        "Construction and processes: periodic flights over the same points to document progress for investors, partners or the record.",
+        "Events: weddings in the Valle, openings and activations, from angles that a photographer on the ground does not reach.",
+      ],
+      bodyEs: [
+        "Vinícolas y hoteles: mostrar el lugar en su entorno, las hileras del viñedo, el valle, la vista desde la terraza, justo lo que una foto a nivel de piso no logra y lo que un visitante quiere ver antes de reservar.",
+        "Bienes raíces y desarrollos: el terreno, la vista al mar, la distancia a la playa o a la carretera, y cómo avanza un desarrollo. Para compradores que están en otro país, la toma aérea sustituye buena parte de la primera visita.",
+        "Obra y procesos: vuelos periódicos sobre los mismos puntos para documentar el avance para inversionistas, socios o el registro.",
+        "Eventos: bodas en el Valle, inauguraciones y activaciones, desde ángulos a los que un fotógrafo en tierra no llega.",
+      ],
+    },
+    {
+      id: "luz-y-clima",
+      heading: "Light, wind and fog",
+      headingEs: "Luz, viento y neblina",
+      body: [
+        "On the coast, morning fog is common and can cover the bay for hours; in the Valle, wind picks up in the afternoon. Both decide when we fly more than the calendar does.",
+        "We plan the session around the light the footage needs, usually early morning or the last hour before sunset, and confirm the forecast the day before. If the weather does not allow a usable flight, we reschedule once at no cost.",
+        "That is also why shooting with a local team matters: rescheduling a flight across town is simple; rescheduling a crew that drove down from somewhere else is not.",
+      ],
+      bodyEs: [
+        "En la costa, la neblina de la mañana es común y puede cubrir la bahía durante horas; en el Valle, el viento sube en la tarde. Las dos cosas deciden cuándo volamos más que el calendario.",
+        "Planeamos la sesión alrededor de la luz que necesita el material, normalmente temprano en la mañana o la última hora antes del atardecer, y confirmamos el pronóstico un día antes. Si el clima no permite un vuelo útil, reprogramamos una vez sin costo.",
+        "Por eso también importa grabar con un equipo local: reprogramar un vuelo al otro lado de la ciudad es sencillo; reprogramar a un equipo que vino manejando desde otra ciudad, no.",
+      ],
+    },
+    {
+      id: "permisos-y-entrega",
+      heading: "Permissions and delivery",
+      headingEs: "Permisos y entrega",
+      body: [
+        "Most areas around Ensenada can be flown normally. Some cannot without a permit, such as the zone around the airport, and private property needs the owner's authorisation. We check the exact location before quoting and tell you if a permit applies.",
+        "The material is delivered edited for where it will be used: horizontal for the website, vertical cuts for Instagram and ads, and raw stills for listings. It includes a licence of use for your business.",
+        "Packages, extras and what each includes are in [drone video](/servicios/video-con-dron).",
+      ],
+      bodyEs: [
+        "La mayoría de las zonas alrededor de Ensenada se pueden volar normalmente. Algunas no sin permiso, como la zona cercana al aeropuerto, y una propiedad privada necesita la autorización del dueño. Revisamos la ubicación exacta antes de cotizar y te avisamos si aplica un permiso.",
+        "El material se entrega editado para donde se va a usar: horizontal para la página, cortes verticales para Instagram y anuncios, y fotos fijas para publicaciones de venta. Incluye licencia de uso para tu negocio.",
+        "Los paquetes, extras y qué incluye cada uno están en [video con dron](/servicios/video-con-dron).",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Do you fly in the Valle de Guadalupe?",
+      qEs: "¿Vuelan en el Valle de Guadalupe?",
+      a: "Yes. Wineries, hotels and events in the Valle are a large part of the aerial work we do, always with the property's authorisation.",
+      aEs: "Sí. Las vinícolas, hoteles y eventos del Valle son buena parte del trabajo aéreo que hacemos, siempre con autorización de la propiedad.",
+    },
+    {
+      q: "What happens if there is fog or wind?",
+      qEs: "¿Qué pasa si hay neblina o viento?",
+      a: "We confirm the forecast the day before and reschedule once at no cost if the weather does not allow a usable flight.",
+      aEs: "Confirmamos el pronóstico un día antes y reprogramamos una vez sin costo si el clima no permite un vuelo útil.",
+    },
+    {
+      q: "Can I use the footage in ads?",
+      qEs: "¿Puedo usar el material en anuncios?",
+      a: "Yes, the licence covers your business's website, social media and advertising. Reselling or transferring it to third parties requires authorisation.",
+      aEs: "Sí, la licencia cubre la página, redes sociales y publicidad de tu negocio. Revenderlo o cederlo a terceros requiere autorización.",
+    },
+    {
+      q: "Do you also do ground photography?",
+      qEs: "¿También hacen fotografía en tierra?",
+      a: "Yes, and it is usually worth doing both in the same visit, so the website and the campaigns have aerial and ground material that match.",
+      aEs: "Sí, y normalmente conviene hacer las dos en la misma visita, para que la página y las campañas tengan material aéreo y en tierra que combinen.",
+    },
+  ],
+  related: ["/agencia-marketing-digital-ensenada", "/diseno-web-ensenada", "/meta-ads-ensenada"],
+  parentPath: "/servicios/video-con-dron",
+  parentLabel: "Drone video",
+  parentLabelEs: "Video con dron",
+};
+
+/* ------------------------------------------------------------------ */
+/* Rosarito                                                            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * One page only. Rosarito is small enough that a page per service would be
+ * the same page with the city swapped, which is the doorway pattern this file
+ * exists to avoid. Add service pages here only once there is real Rosarito
+ * work to talk about.
+ */
+export const ROSARITO_HUB: LocalPage = {
+  path: "/agencia-marketing-digital-rosarito",
+  service: "Digital marketing",
+  serviceEs: "Marketing digital",
+  h1: "Digital Marketing Agency in Rosarito",
+  h1Es: "Agencia de marketing digital en Rosarito",
+  kicker: "Playas de Rosarito and Puerto Nuevo",
+  kickerEs: "Playas de Rosarito y Puerto Nuevo",
+  intro:
+    "Websites, campaigns and video for businesses in Rosarito, where a large share of customers live or spend their weekends on the other side of the border and decide in English before they cross.",
+  introEs:
+    "Páginas web, campañas y video para negocios en Rosarito, donde una buena parte de los clientes vive o pasa sus fines de semana del otro lado de la frontera y decide en inglés antes de cruzar.",
+  seoTitle: "Digital Marketing Agency in Rosarito | Aphelion",
+  seoTitleEs: "Agencia de Marketing Digital en Rosarito | Aphelion",
+  seoDescription:
+    "Digital marketing in Rosarito: bilingual websites, Google and Meta ads aimed at Southern California, Google Maps and drone video for real estate, restaurants and hotels.",
+  seoDescriptionEs:
+    "Marketing digital en Rosarito: páginas bilingües, Google y Meta Ads dirigidos al sur de California, Google Maps y video con dron para bienes raíces, restaurantes y hoteles.",
+  serviceType: "Digital marketing agency services",
+  sections: [
+    {
+      id: "mercado-rosarito",
+      heading: "Rosarito sells across the border",
+      headingEs: "Rosarito le vende al otro lado de la frontera",
+      body: [
+        "Rosarito's economy leans on people who are not from Rosarito: weekend visitors from San Diego and Los Angeles, Americans and Canadians who own or rent homes here, and buyers looking at beachfront property from another country.",
+        "That changes the basics. The website needs a real English version, not an afterthought. Ads often belong in Southern California rather than in Rosarito itself. And Google Maps matters twice: for the visitor deciding where to eat in Puerto Nuevo tonight, and for the resident looking for a service they trust.",
+        "At the same time there is a local market, and Tijuana is next door. Part of the work is deciding which of those audiences you actually sell to, because trying to reach all of them with one budget usually reaches none of them well.",
+      ],
+      bodyEs: [
+        "La economía de Rosarito se apoya en gente que no es de Rosarito: visitantes de fin de semana de San Diego y Los Ángeles, estadounidenses y canadienses que tienen o rentan casa aquí, y compradores que ven propiedades frente al mar desde otro país.",
+        "Eso cambia lo básico. La página necesita una versión en inglés de verdad, no un agregado. Los anuncios muchas veces van en el sur de California y no en Rosarito mismo. Y Google Maps importa doble: para el visitante que decide dónde cenar en Puerto Nuevo esta noche, y para el residente que busca un servicio de confianza.",
+        "Al mismo tiempo hay un mercado local, y Tijuana está al lado. Parte del trabajo es decidir a cuál de esas audiencias le vendes de verdad, porque intentar llegar a todas con un solo presupuesto normalmente no llega bien a ninguna.",
+      ],
+    },
+    {
+      id: "inmobiliario",
+      heading: "Real estate: selling to a buyer who is not here",
+      headingEs: "Bienes raíces: venderle a un comprador que no está aquí",
+      body: [
+        "For developments and agents, the buyer often sees the property first on a screen in the United States or Canada. Aerial video of the lot and the coastline, clear information about ownership for foreigners, and a fast reply in English do more than another listing portal.",
+        "We produce that material ourselves, including [drone video](/servicios/video-con-dron), and connect it to a website and campaigns aimed where the buyers are. How we approach paid campaigns for property is in [Meta Ads](/meta-ads) and [Google Ads](/google-ads).",
+      ],
+      bodyEs: [
+        "Para desarrollos y agentes, el comprador muchas veces ve la propiedad primero en una pantalla en Estados Unidos o Canadá. Un video aéreo del terreno y la costa, información clara sobre cómo compra un extranjero y una respuesta rápida en inglés hacen más que otro portal de anuncios.",
+        "Ese material lo producimos nosotros, incluido el [video con dron](/servicios/video-con-dron), y lo conectamos a una página y a campañas dirigidas a donde están los compradores. Cómo trabajamos las campañas para inmuebles está en [Meta Ads](/meta-ads) y [Google Ads](/google-ads).",
+      ],
+    },
+    {
+      id: "que-hacemos-rosarito",
+      heading: "What we do in Rosarito",
+      headingEs: "Qué hacemos en Rosarito",
+      body: [
+        "Bilingual websites built to convert a visitor from another country: see [websites](/servicios/websites).",
+        "Google Business Profile and reviews, for restaurants, hotels and services that live off people passing through.",
+        "Google Ads and Meta Ads aimed at Southern California, Tijuana or Rosarito, depending on who actually buys.",
+        "Video and aerial photography of the coast, properties and venues.",
+        "WhatsApp automation so enquiries from the United States get an answer in English at night and on weekends.",
+      ],
+      bodyEs: [
+        "Páginas bilingües hechas para convertir a un visitante de otro país: revisa [páginas web](/servicios/websites).",
+        "Perfil de Empresa de Google y reseñas, para restaurantes, hoteles y servicios que viven de la gente de paso.",
+        "Google Ads y Meta Ads dirigidos al sur de California, a Tijuana o a Rosarito, según quién compra de verdad.",
+        "Video y fotografía aérea de la costa, propiedades y lugares.",
+        "Automatización de WhatsApp para que las consultas desde Estados Unidos tengan respuesta en inglés de noche y en fin de semana.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Do you work in Rosarito?",
+      qEs: "¿Trabajan en Rosarito?",
+      a: "Yes. We are a Baja California team working across the state, and we meet and shoot on location in Rosarito by arrangement.",
+      aEs: "Sí. Somos un equipo de Baja California que trabaja en todo el estado, y nos reunimos y grabamos en Rosarito previo acuerdo.",
+    },
+    {
+      q: "Should my ads run in the United States?",
+      qEs: "¿Mis anuncios deben salir en Estados Unidos?",
+      a: "If your customers are visitors or foreign buyers, usually yes, in the cities and on the days when they plan. If you sell to people who live in Rosarito or Tijuana, no.",
+      aEs: "Si tus clientes son visitantes o compradores extranjeros, normalmente sí, en las ciudades y los días en que planean. Si le vendes a gente que vive en Rosarito o Tijuana, no.",
+    },
+    {
+      q: "Do you work with real estate developments?",
+      qEs: "¿Trabajan con desarrollos inmobiliarios?",
+      a: "Yes: website, aerial video, campaigns aimed at buyers in the United States and Canada, and follow-up of enquiries.",
+      aEs: "Sí: página, video aéreo, campañas dirigidas a compradores en Estados Unidos y Canadá, y seguimiento de las consultas.",
+    },
+    {
+      q: "How much does it cost?",
+      qEs: "¿Cuánto cuesta?",
+      a: "We quote after a short diagnostic. Build work has a fixed scope, and campaigns have a management fee separate from ad spend. Packages are on pricing.",
+      aEs: "Cotizamos después de un diagnóstico corto. El trabajo de construcción tiene alcance fijo, y las campañas una cuota de gestión separada de la inversión. Los paquetes están en precios.",
+    },
+  ],
+  related: ["/agencia-marketing-digital-tijuana", "/agencia-marketing-digital-ensenada", "/diseno-web-tijuana"],
 };
 
 export const LOCAL_PAGES: LocalPage[] = [
@@ -776,6 +1381,12 @@ export const LOCAL_PAGES: LocalPage[] = [
   DISENO_WEB_TIJUANA,
   GOOGLE_ADS_TIJUANA,
   META_ADS_TIJUANA,
+  DISENO_WEB_ENSENADA,
+  SEO_ENSENADA,
+  GOOGLE_ADS_ENSENADA,
+  META_ADS_ENSENADA,
+  DRON_ENSENADA,
+  ROSARITO_HUB,
 ];
 
 export const getLocalPage = (path: string) => LOCAL_PAGES.find((p) => p.path === path);

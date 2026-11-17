@@ -139,14 +139,6 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link
-                to="/agencia-marketing-digital-ensenada"
-                className="transition hover:text-white"
-              >
-                {t("Marketing agency in Ensenada", "Agencia de marketing en Ensenada")}
-              </Link>
-            </li>
-            <li>
               <Link to="/seo-tijuana" className="transition hover:text-white">
                 {t("SEO in Tijuana", "SEO en Tijuana")}
               </Link>
@@ -164,6 +156,44 @@ export function SiteFooter() {
             <li>
               <Link to="/meta-ads-tijuana" className="transition hover:text-white">
                 {t("Meta Ads in Tijuana", "Meta Ads en Tijuana")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/agencia-marketing-digital-ensenada"
+                className="transition hover:text-white"
+              >
+                {t("Marketing agency in Ensenada", "Agencia de marketing en Ensenada")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/diseno-web-ensenada" className="transition hover:text-white">
+                {t("Web design in Ensenada", "Diseño web en Ensenada")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/seo-ensenada" className="transition hover:text-white">
+                {t("SEO in Ensenada", "SEO en Ensenada")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/google-ads-ensenada" className="transition hover:text-white">
+                {t("Google Ads in Ensenada", "Google Ads en Ensenada")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/meta-ads-ensenada" className="transition hover:text-white">
+                {t("Meta Ads in Ensenada", "Meta Ads en Ensenada")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/video-con-dron-ensenada" className="transition hover:text-white">
+                {t("Drone video in Ensenada", "Video con dron en Ensenada")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/agencia-marketing-digital-rosarito" className="transition hover:text-white">
+                {t("Marketing agency in Rosarito", "Agencia de marketing en Rosarito")}
               </Link>
             </li>
           </ul>

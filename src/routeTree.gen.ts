@@ -11,24 +11,30 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AgenciaMarketingDigitalEnsenadaRouteImport } from './routes/agencia-marketing-digital-ensenada'
+import { Route as AgenciaMarketingDigitalRosaritoRouteImport } from './routes/agencia-marketing-digital-rosarito'
 import { Route as AgenciaMarketingDigitalTijuanaRouteImport } from './routes/agencia-marketing-digital-tijuana'
 import { Route as BrandingRouteImport } from './routes/branding'
 import { Route as ChatgptAdsRouteImport } from './routes/chatgpt-ads'
 import { Route as ContactoRouteImport } from './routes/contacto'
+import { Route as DisenoWebEnsenadaRouteImport } from './routes/diseno-web-ensenada'
 import { Route as DisenoWebTijuanaRouteImport } from './routes/diseno-web-tijuana'
 import { Route as EcommerceRouteImport } from './routes/ecommerce'
 import { Route as GoogleAdsRouteImport } from './routes/google-ads'
+import { Route as GoogleAdsEnsenadaRouteImport } from './routes/google-ads-ensenada'
 import { Route as GoogleAdsTijuanaRouteImport } from './routes/google-ads-tijuana'
 import { Route as GraciasRouteImport } from './routes/gracias'
 import { Route as MarketingMedicosRouteImport } from './routes/marketing-medicos'
 import { Route as MetaAdsRouteImport } from './routes/meta-ads'
+import { Route as MetaAdsEnsenadaRouteImport } from './routes/meta-ads-ensenada'
 import { Route as MetaAdsTijuanaRouteImport } from './routes/meta-ads-tijuana'
 import { Route as PreciosRouteImport } from './routes/precios'
 import { Route as PrivacidadRouteImport } from './routes/privacidad'
 import { Route as SeoRouteImport } from './routes/seo'
+import { Route as SeoEnsenadaRouteImport } from './routes/seo-ensenada'
 import { Route as SeoTijuanaRouteImport } from './routes/seo-tijuana'
 import { Route as ServiciosRouteImport } from './routes/servicios'
 import { Route as TrabajoRouteImport } from './routes/trabajo'
+import { Route as VideoConDronEnsenadaRouteImport } from './routes/video-con-dron-ensenada'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as ServiciosIndexRouteImport } from './routes/servicios.index'
@@ -53,6 +59,12 @@ const AgenciaMarketingDigitalEnsenadaRoute =
     path: '/agencia-marketing-digital-ensenada',
     getParentRoute: () => rootRouteImport,
   } as any)
+const AgenciaMarketingDigitalRosaritoRoute =
+  AgenciaMarketingDigitalRosaritoRouteImport.update({
+    id: '/agencia-marketing-digital-rosarito',
+    path: '/agencia-marketing-digital-rosarito',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AgenciaMarketingDigitalTijuanaRoute =
   AgenciaMarketingDigitalTijuanaRouteImport.update({
     id: '/agencia-marketing-digital-tijuana',
@@ -74,6 +86,11 @@ const ContactoRoute = ContactoRouteImport.update({
   path: '/contacto',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DisenoWebEnsenadaRoute = DisenoWebEnsenadaRouteImport.update({
+  id: '/diseno-web-ensenada',
+  path: '/diseno-web-ensenada',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DisenoWebTijuanaRoute = DisenoWebTijuanaRouteImport.update({
   id: '/diseno-web-tijuana',
   path: '/diseno-web-tijuana',
@@ -87,6 +104,11 @@ const EcommerceRoute = EcommerceRouteImport.update({
 const GoogleAdsRoute = GoogleAdsRouteImport.update({
   id: '/google-ads',
   path: '/google-ads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoogleAdsEnsenadaRoute = GoogleAdsEnsenadaRouteImport.update({
+  id: '/google-ads-ensenada',
+  path: '/google-ads-ensenada',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GoogleAdsTijuanaRoute = GoogleAdsTijuanaRouteImport.update({
@@ -109,6 +131,11 @@ const MetaAdsRoute = MetaAdsRouteImport.update({
   path: '/meta-ads',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MetaAdsEnsenadaRoute = MetaAdsEnsenadaRouteImport.update({
+  id: '/meta-ads-ensenada',
+  path: '/meta-ads-ensenada',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MetaAdsTijuanaRoute = MetaAdsTijuanaRouteImport.update({
   id: '/meta-ads-tijuana',
   path: '/meta-ads-tijuana',
@@ -129,6 +156,11 @@ const SeoRoute = SeoRouteImport.update({
   path: '/seo',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SeoEnsenadaRoute = SeoEnsenadaRouteImport.update({
+  id: '/seo-ensenada',
+  path: '/seo-ensenada',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SeoTijuanaRoute = SeoTijuanaRouteImport.update({
   id: '/seo-tijuana',
   path: '/seo-tijuana',
@@ -142,6 +174,11 @@ const ServiciosRoute = ServiciosRouteImport.update({
 const TrabajoRoute = TrabajoRouteImport.update({
   id: '/trabajo',
   path: '/trabajo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VideoConDronEnsenadaRoute = VideoConDronEnsenadaRouteImport.update({
+  id: '/video-con-dron-ensenada',
+  path: '/video-con-dron-ensenada',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
@@ -210,24 +247,30 @@ const RecursosDiagnosticoIndustriaRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
+  '/agencia-marketing-digital-rosarito': typeof AgenciaMarketingDigitalRosaritoRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
   '/chatgpt-ads': typeof ChatgptAdsRoute
   '/contacto': typeof ContactoRoute
+  '/diseno-web-ensenada': typeof DisenoWebEnsenadaRoute
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/ecommerce': typeof EcommerceRoute
   '/google-ads': typeof GoogleAdsRoute
+  '/google-ads-ensenada': typeof GoogleAdsEnsenadaRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
   '/gracias': typeof GraciasRoute
   '/marketing-medicos': typeof MarketingMedicosRoute
   '/meta-ads': typeof MetaAdsRoute
+  '/meta-ads-ensenada': typeof MetaAdsEnsenadaRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
   '/precios': typeof PreciosRoute
   '/privacidad': typeof PrivacidadRoute
   '/seo': typeof SeoRoute
+  '/seo-ensenada': typeof SeoEnsenadaRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/servicios': typeof ServiciosRouteWithChildren
   '/trabajo': typeof TrabajoRoute
+  '/video-con-dron-ensenada': typeof VideoConDronEnsenadaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
   '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
@@ -244,23 +287,29 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
+  '/agencia-marketing-digital-rosarito': typeof AgenciaMarketingDigitalRosaritoRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
   '/chatgpt-ads': typeof ChatgptAdsRoute
   '/contacto': typeof ContactoRoute
+  '/diseno-web-ensenada': typeof DisenoWebEnsenadaRoute
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/ecommerce': typeof EcommerceRoute
   '/google-ads': typeof GoogleAdsRoute
+  '/google-ads-ensenada': typeof GoogleAdsEnsenadaRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
   '/gracias': typeof GraciasRoute
   '/marketing-medicos': typeof MarketingMedicosRoute
   '/meta-ads': typeof MetaAdsRoute
+  '/meta-ads-ensenada': typeof MetaAdsEnsenadaRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
   '/precios': typeof PreciosRoute
   '/privacidad': typeof PrivacidadRoute
   '/seo': typeof SeoRoute
+  '/seo-ensenada': typeof SeoEnsenadaRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/trabajo': typeof TrabajoRoute
+  '/video-con-dron-ensenada': typeof VideoConDronEnsenadaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
   '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
@@ -278,24 +327,30 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/agencia-marketing-digital-ensenada': typeof AgenciaMarketingDigitalEnsenadaRoute
+  '/agencia-marketing-digital-rosarito': typeof AgenciaMarketingDigitalRosaritoRoute
   '/agencia-marketing-digital-tijuana': typeof AgenciaMarketingDigitalTijuanaRoute
   '/branding': typeof BrandingRoute
   '/chatgpt-ads': typeof ChatgptAdsRoute
   '/contacto': typeof ContactoRoute
+  '/diseno-web-ensenada': typeof DisenoWebEnsenadaRoute
   '/diseno-web-tijuana': typeof DisenoWebTijuanaRoute
   '/ecommerce': typeof EcommerceRoute
   '/google-ads': typeof GoogleAdsRoute
+  '/google-ads-ensenada': typeof GoogleAdsEnsenadaRoute
   '/google-ads-tijuana': typeof GoogleAdsTijuanaRoute
   '/gracias': typeof GraciasRoute
   '/marketing-medicos': typeof MarketingMedicosRoute
   '/meta-ads': typeof MetaAdsRoute
+  '/meta-ads-ensenada': typeof MetaAdsEnsenadaRoute
   '/meta-ads-tijuana': typeof MetaAdsTijuanaRoute
   '/precios': typeof PreciosRoute
   '/privacidad': typeof PrivacidadRoute
   '/seo': typeof SeoRoute
+  '/seo-ensenada': typeof SeoEnsenadaRoute
   '/seo-tijuana': typeof SeoTijuanaRoute
   '/servicios': typeof ServiciosRouteWithChildren
   '/trabajo': typeof TrabajoRoute
+  '/video-con-dron-ensenada': typeof VideoConDronEnsenadaRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/servicios/agente-ia': typeof ServiciosAgenteIaRoute
   '/servicios/automatizacion': typeof ServiciosAutomatizacionRoute
@@ -314,24 +369,30 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/agencia-marketing-digital-ensenada'
+    | '/agencia-marketing-digital-rosarito'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
     | '/chatgpt-ads'
     | '/contacto'
+    | '/diseno-web-ensenada'
     | '/diseno-web-tijuana'
     | '/ecommerce'
     | '/google-ads'
+    | '/google-ads-ensenada'
     | '/google-ads-tijuana'
     | '/gracias'
     | '/marketing-medicos'
     | '/meta-ads'
+    | '/meta-ads-ensenada'
     | '/meta-ads-tijuana'
     | '/precios'
     | '/privacidad'
     | '/seo'
+    | '/seo-ensenada'
     | '/seo-tijuana'
     | '/servicios'
     | '/trabajo'
+    | '/video-con-dron-ensenada'
     | '/blog/$slug'
     | '/servicios/agente-ia'
     | '/servicios/automatizacion'
@@ -348,23 +409,29 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/agencia-marketing-digital-ensenada'
+    | '/agencia-marketing-digital-rosarito'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
     | '/chatgpt-ads'
     | '/contacto'
+    | '/diseno-web-ensenada'
     | '/diseno-web-tijuana'
     | '/ecommerce'
     | '/google-ads'
+    | '/google-ads-ensenada'
     | '/google-ads-tijuana'
     | '/gracias'
     | '/marketing-medicos'
     | '/meta-ads'
+    | '/meta-ads-ensenada'
     | '/meta-ads-tijuana'
     | '/precios'
     | '/privacidad'
     | '/seo'
+    | '/seo-ensenada'
     | '/seo-tijuana'
     | '/trabajo'
+    | '/video-con-dron-ensenada'
     | '/blog/$slug'
     | '/servicios/agente-ia'
     | '/servicios/automatizacion'
@@ -381,24 +448,30 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/agencia-marketing-digital-ensenada'
+    | '/agencia-marketing-digital-rosarito'
     | '/agencia-marketing-digital-tijuana'
     | '/branding'
     | '/chatgpt-ads'
     | '/contacto'
+    | '/diseno-web-ensenada'
     | '/diseno-web-tijuana'
     | '/ecommerce'
     | '/google-ads'
+    | '/google-ads-ensenada'
     | '/google-ads-tijuana'
     | '/gracias'
     | '/marketing-medicos'
     | '/meta-ads'
+    | '/meta-ads-ensenada'
     | '/meta-ads-tijuana'
     | '/precios'
     | '/privacidad'
     | '/seo'
+    | '/seo-ensenada'
     | '/seo-tijuana'
     | '/servicios'
     | '/trabajo'
+    | '/video-con-dron-ensenada'
     | '/blog/$slug'
     | '/servicios/agente-ia'
     | '/servicios/automatizacion'
@@ -416,24 +489,30 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AgenciaMarketingDigitalEnsenadaRoute: typeof AgenciaMarketingDigitalEnsenadaRoute
+  AgenciaMarketingDigitalRosaritoRoute: typeof AgenciaMarketingDigitalRosaritoRoute
   AgenciaMarketingDigitalTijuanaRoute: typeof AgenciaMarketingDigitalTijuanaRoute
   BrandingRoute: typeof BrandingRoute
   ChatgptAdsRoute: typeof ChatgptAdsRoute
   ContactoRoute: typeof ContactoRoute
+  DisenoWebEnsenadaRoute: typeof DisenoWebEnsenadaRoute
   DisenoWebTijuanaRoute: typeof DisenoWebTijuanaRoute
   EcommerceRoute: typeof EcommerceRoute
   GoogleAdsRoute: typeof GoogleAdsRoute
+  GoogleAdsEnsenadaRoute: typeof GoogleAdsEnsenadaRoute
   GoogleAdsTijuanaRoute: typeof GoogleAdsTijuanaRoute
   GraciasRoute: typeof GraciasRoute
   MarketingMedicosRoute: typeof MarketingMedicosRoute
   MetaAdsRoute: typeof MetaAdsRoute
+  MetaAdsEnsenadaRoute: typeof MetaAdsEnsenadaRoute
   MetaAdsTijuanaRoute: typeof MetaAdsTijuanaRoute
   PreciosRoute: typeof PreciosRoute
   PrivacidadRoute: typeof PrivacidadRoute
   SeoRoute: typeof SeoRoute
+  SeoEnsenadaRoute: typeof SeoEnsenadaRoute
   SeoTijuanaRoute: typeof SeoTijuanaRoute
   ServiciosRoute: typeof ServiciosRouteWithChildren
   TrabajoRoute: typeof TrabajoRoute
+  VideoConDronEnsenadaRoute: typeof VideoConDronEnsenadaRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   RecursosDiagnosticoIndustriaRoute: typeof RecursosDiagnosticoIndustriaRoute
@@ -454,6 +533,13 @@ declare module '@tanstack/react-router' {
       path: '/agencia-marketing-digital-ensenada'
       fullPath: '/agencia-marketing-digital-ensenada'
       preLoaderRoute: typeof AgenciaMarketingDigitalEnsenadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agencia-marketing-digital-rosarito': {
+      id: '/agencia-marketing-digital-rosarito'
+      path: '/agencia-marketing-digital-rosarito'
+      fullPath: '/agencia-marketing-digital-rosarito'
+      preLoaderRoute: typeof AgenciaMarketingDigitalRosaritoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agencia-marketing-digital-tijuana': {
@@ -484,6 +570,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/diseno-web-ensenada': {
+      id: '/diseno-web-ensenada'
+      path: '/diseno-web-ensenada'
+      fullPath: '/diseno-web-ensenada'
+      preLoaderRoute: typeof DisenoWebEnsenadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/diseno-web-tijuana': {
       id: '/diseno-web-tijuana'
       path: '/diseno-web-tijuana'
@@ -503,6 +596,13 @@ declare module '@tanstack/react-router' {
       path: '/google-ads'
       fullPath: '/google-ads'
       preLoaderRoute: typeof GoogleAdsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/google-ads-ensenada': {
+      id: '/google-ads-ensenada'
+      path: '/google-ads-ensenada'
+      fullPath: '/google-ads-ensenada'
+      preLoaderRoute: typeof GoogleAdsEnsenadaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/google-ads-tijuana': {
@@ -533,6 +633,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MetaAdsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/meta-ads-ensenada': {
+      id: '/meta-ads-ensenada'
+      path: '/meta-ads-ensenada'
+      fullPath: '/meta-ads-ensenada'
+      preLoaderRoute: typeof MetaAdsEnsenadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/meta-ads-tijuana': {
       id: '/meta-ads-tijuana'
       path: '/meta-ads-tijuana'
@@ -561,6 +668,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SeoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/seo-ensenada': {
+      id: '/seo-ensenada'
+      path: '/seo-ensenada'
+      fullPath: '/seo-ensenada'
+      preLoaderRoute: typeof SeoEnsenadaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/seo-tijuana': {
       id: '/seo-tijuana'
       path: '/seo-tijuana'
@@ -580,6 +694,13 @@ declare module '@tanstack/react-router' {
       path: '/trabajo'
       fullPath: '/trabajo'
       preLoaderRoute: typeof TrabajoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/video-con-dron-ensenada': {
+      id: '/video-con-dron-ensenada'
+      path: '/video-con-dron-ensenada'
+      fullPath: '/video-con-dron-ensenada'
+      preLoaderRoute: typeof VideoConDronEnsenadaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -698,24 +819,30 @@ const ServiciosRouteWithChildren = ServiciosRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AgenciaMarketingDigitalEnsenadaRoute: AgenciaMarketingDigitalEnsenadaRoute,
+  AgenciaMarketingDigitalRosaritoRoute: AgenciaMarketingDigitalRosaritoRoute,
   AgenciaMarketingDigitalTijuanaRoute: AgenciaMarketingDigitalTijuanaRoute,
   BrandingRoute: BrandingRoute,
   ChatgptAdsRoute: ChatgptAdsRoute,
   ContactoRoute: ContactoRoute,
+  DisenoWebEnsenadaRoute: DisenoWebEnsenadaRoute,
   DisenoWebTijuanaRoute: DisenoWebTijuanaRoute,
   EcommerceRoute: EcommerceRoute,
   GoogleAdsRoute: GoogleAdsRoute,
+  GoogleAdsEnsenadaRoute: GoogleAdsEnsenadaRoute,
   GoogleAdsTijuanaRoute: GoogleAdsTijuanaRoute,
   GraciasRoute: GraciasRoute,
   MarketingMedicosRoute: MarketingMedicosRoute,
   MetaAdsRoute: MetaAdsRoute,
+  MetaAdsEnsenadaRoute: MetaAdsEnsenadaRoute,
   MetaAdsTijuanaRoute: MetaAdsTijuanaRoute,
   PreciosRoute: PreciosRoute,
   PrivacidadRoute: PrivacidadRoute,
   SeoRoute: SeoRoute,
+  SeoEnsenadaRoute: SeoEnsenadaRoute,
   SeoTijuanaRoute: SeoTijuanaRoute,
   ServiciosRoute: ServiciosRouteWithChildren,
   TrabajoRoute: TrabajoRoute,
+  VideoConDronEnsenadaRoute: VideoConDronEnsenadaRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   RecursosDiagnosticoIndustriaRoute: RecursosDiagnosticoIndustriaRoute,

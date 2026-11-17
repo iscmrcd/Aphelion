@@ -1,0 +1,56 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { LocalServicePage } from "@/components/local/LocalServicePage";
+import { buildHead, SITE_URL, ORGANIZATION_JSONLD, AREAS_SERVED } from "@/lib/seo";
+import { DRON_ENSENADA } from "@/lib/local-data";
+
+const page = DRON_ENSENADA;
+
+export const Route = createFileRoute("/video-con-dron-ensenada")({
+  loaderDeps: ({ search }) => ({ lang: search.lang }),
+  loader: ({ deps }) => deps,
+  head: ({ loaderData }) => {
+    const lang = loaderData?.lang ?? "es";
+    return buildHead({
+      path: "/video-con-dron-ensenada",
+      lang,
+      en: { title: page.seoTitle, description: page.seoDescription },
+      es: { title: page.seoTitleEs, description: page.seoDescriptionEs },
+      jsonLd: [
+        ORGANIZATION_JSONLD,
+        {
+          "@type": "Service",
+          name: lang === "es" ? page.h1Es : page.h1,
+          serviceType: page.serviceType,
+          provider: { "@id": `${SITE_URL}/#business` },
+          areaServed: AREAS_SERVED.map((name) => ({ "@type": "City", name })),
+          url: `${SITE_URL}/video-con-dron-ensenada`,
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: page.faq.map((f) => ({
+            "@type": "Question",
+            name: lang === "es" ? f.qEs : f.q,
+            acceptedAnswer: { "@type": "Answer", text: lang === "es" ? f.aEs : f.a },
+          })),
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Aphelion", item: SITE_URL },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: lang === "es" ? page.h1Es : page.h1,
+              item: `${SITE_URL}/video-con-dron-ensenada`,
+            },
+          ],
+        },
+      ],
+    });
+  },
+  component: Page,
+});
+
+function Page() {
+  return <LocalServicePage page={page} blogCategories={["Marketing Strategy", "Estrategia de Marketing"]} />;
+}
