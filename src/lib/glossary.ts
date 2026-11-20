@@ -571,4 +571,33 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     defEn:
       "A post on Pinterest: an image or video that people save to their boards and that can link to your website. It keeps appearing in searches for months.",
   },
+  cfdi: {
+    term: "CFDI",
+    termEn: "CFDI",
+    def: "La factura electrónica en México: el Comprobante Fiscal Digital por Internet que se timbra ante el SAT. La versión vigente es la 4.0.",
+    defEn:
+      "The electronic invoice in Mexico: the digital tax receipt stamped with the SAT. The current version is 4.0.",
+  },
+  "factura-global": {
+    term: "Factura global",
+    termEn: "Global invoice",
+    def: "Una sola factura que agrupa las ventas al público en general que no pidieron factura, por día, semana, quincena o mes, según tu régimen.",
+    defEn:
+      "A single invoice that groups the sales to the general public who did not ask for an invoice, per day, week, fortnight or month, depending on your tax regime.",
+  },
+  "monitor-de-cocina": {
+    term: "Monitor de cocina (KDS)",
+    termEn: "Kitchen display (KDS)",
+    def: "Una pantalla en la cocina o la barra que muestra los pedidos en el orden en que entraron, en lugar de comandas en papel.",
+    defEn:
+      "A screen in the kitchen or at the bar that shows orders in the order they came in, instead of paper tickets.",
+  },
+  modificadores: {
+    term: "Modificadores",
+    termEn: "Modifiers",
+    def: "Las opciones que cambian un producto sin crear uno nuevo, como tamaño, tipo de leche o un ingrediente extra.",
+    defEn:
+      "The options that change a product without creating a new one, such as size, type of milk or an extra ingredient.",
+    href: "/blog/punto-de-venta-para-cafeterias",
+  },
 };

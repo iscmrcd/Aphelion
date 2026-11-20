@@ -9174,13 +9174,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "1. Loyverse, to start for free. It runs on a phone or tablet. The point of sale, sales reports, basic inventory, a loyalty program, kitchen display and multi-store management are free. You pay if you want more: employee management and advanced inventory cost USD **$25 per month per store each**, and unlimited sales history USD $5 per month. It is a good fit for cafés and small shops. It is built for businesses all over the world, so confirm how you will handle Mexican invoicing.",
           "2. eleventa, for stores. It is a Mexican system installed on a computer, very common in grocery stores, stationery shops and hardware stores. It is paid once: MonoCaja costs **$1,499 MXN for one register** and MultiCaja $3,499 MXN to share products, inventory and sales across several computers on the same network. Both include 12 months of updates and support, which you can renew if you want.",
           "3. Soft Restaurant, for restaurants. It is the standard in many Mexican restaurants, with tables, orders and kitchen. Version 12 costs **$799 MXN per month plus VAT in its LITE plan**, for up to 2 devices, and $1,099 MXN per month plus VAT in PRO, for up to 10, with a discount if you pay the year upfront.",
-          "Prices are the ones each company published in September 2026. Check them again before buying, because they change.",
+          "Prices are the ones each company published in September 2026. Check them again before buying, because they change. And if you want the comparison for your type of business, we have guides for [restaurants](/blog/punto-de-venta-para-restaurantes), [grocery stores](/blog/punto-de-venta-para-tienda-de-abarrotes) and [coffee shops](/blog/punto-de-venta-para-cafeterias).",
         ],
         bodyEs: [
           "1. Loyverse, para empezar gratis. Funciona en celular o tablet. Son gratis el punto de venta, los reportes de ventas, el inventario básico, un programa de lealtad, la pantalla de cocina y el manejo de varias sucursales. Pagas si quieres más: la gestión de empleados y el inventario avanzado cuestan 25 dólares al mes por tienda cada uno, y el historial ilimitado de ventas 5 dólares al mes. Le queda bien a cafeterías y tiendas pequeñas. Está hecho para negocios de todo el mundo, así que confirma cómo vas a resolver la facturación mexicana.",
           "2. eleventa, para tiendas. Es un sistema mexicano que se instala en una computadora, muy común en abarrotes, papelerías y ferreterías. Se paga una sola vez: MonoCaja cuesta **$1,499 MXN para una caja** y MultiCaja $3,499 MXN para compartir productos, inventario y ventas entre varias computadoras de la misma red. Las dos incluyen 12 meses de actualizaciones y soporte, que puedes renovar si quieres.",
           "3. Soft Restaurant, para restaurantes. Es el estándar en muchos restaurantes de México, con mesas, comandas y cocina. La versión 12 cuesta **$799 MXN al mes más IVA en su plan LITE**, para hasta 2 equipos, y $1,099 MXN al mes más IVA en PRO, para hasta 10, con descuento si pagas el año por adelantado.",
-          "Los precios son los que cada empresa publicaba en septiembre de 2026. Revísalos de nuevo antes de comprar, porque cambian.",
+          "Los precios son los que cada empresa publicaba en septiembre de 2026. Revísalos de nuevo antes de comprar, porque cambian. Y si quieres la comparación para tu giro, tenemos guías para [restaurantes](/blog/punto-de-venta-para-restaurantes), [tiendas de abarrotes](/blog/punto-de-venta-para-tienda-de-abarrotes) y [cafeterías](/blog/punto-de-venta-para-cafeterias).",
         ],
       },
       {
@@ -18946,6 +18946,816 @@ export const BLOG_POSTS: BlogPost[] = [
         "calendario comercial 2027 México",
         "fechas comerciales 2027",
         "cómo repartir el presupuesto de marketing",
+      ],
+    },
+  },
+  {
+    slug: "punto-de-venta-para-restaurantes",
+    cover: true,
+    title:
+      "Point of Sale for Restaurants in Mexico 2027: Which One to Choose for Your Type of Restaurant",
+    titleEs:
+      "Punto de venta para restaurantes en México 2027: cuál elegir según tu tipo de restaurante",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "What a restaurant point of sale has to do in Mexico that a store's does not: tables, kitchen tickets, recipes, tips, delivery apps and invoices. The real prices of Soft Restaurant, Fudo, Alegra POS, Loyverse and Clip, which one fits a taquería, a dining room or a dark kitchen, and the questions to ask before signing.",
+    excerptEs:
+      "Lo que tiene que hacer un punto de venta de restaurante en México que el de una tienda no: mesas, comandas, recetas, propinas, apps de delivery y facturas. Los precios reales de Soft Restaurant, Fudo, Alegra POS, Loyverse y Clip, cuál le queda a una taquería, a un restaurante de servicio a la mesa o a una cocina solo de delivery, y las preguntas que hay que hacer antes de firmar.",
+    readingTime: 11,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A restaurant is not a store that happens to sell food. A store sells a product that is already on the shelf; a restaurant sells something that does not exist until the kitchen makes it, with ingredients that are used up by the gram, a table that stays open for an hour and a tip that has to be split at the end of the shift. That is why a generic point of sale falls short in a restaurant faster than in any other business. This guide is the restaurant chapter of our [guide to the best point of sale in Mexico](/blog/mejor-punto-de-venta-mexico): what to require, what each option costs and which one fits each type of restaurant.",
+    ledeEs:
+      "Un restaurante no es una tienda que vende comida. Una tienda vende un producto que ya está en el anaquel; un restaurante vende algo que no existe hasta que la cocina lo prepara, con ingredientes que se gastan por gramo, una mesa que se queda abierta una hora y una propina que hay que repartir al final del turno. Por eso un punto de venta genérico se queda corto en un restaurante más rápido que en cualquier otro negocio. Esta guía es el capítulo de restaurantes de nuestra [guía del mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico): qué exigir, cuánto cuesta cada opción y cuál le queda a cada tipo de restaurante.",
+    sections: [
+      {
+        id: "que-debe-hacer",
+        heading: "What a restaurant point of sale has to do",
+        headingEs: "Qué tiene que hacer un punto de venta de restaurante",
+        body: [
+          "**Tables and open tickets.** A table is opened, receives orders over an hour, gets split between people and is paid with three different cards. If the system only knows how to charge one ticket at a time, the waiter ends up doing the math on paper.",
+          "**Orders that reach the kitchen.** The order has to arrive at the kitchen printed or on a screen, a [[kitchen display|monitor-de-cocina]], without anyone shouting it or copying it again. Every copy by hand is a wrong dish waiting to happen.",
+          "**Inventory by recipe.** A taco uses grams of meat, tortillas and salsa. A good system discounts each ingredient when it sells the dish, so you know what you are about to run out of and what each dish really costs you.",
+          "**Tips, invoices and delivery.** Tips are recorded and split by shift. Customers ask for a [[CFDI|cfdi]] and the rest go into a [[global invoice|factura-global]]. And orders from Rappi, Uber Eats or DiDi Food should not be typed into the register by hand.",
+        ],
+        bodyEs: [
+          "**Mesas y cuentas abiertas.** Una mesa se abre, recibe pedidos durante una hora, se divide entre varias personas y se paga con tres tarjetas distintas. Si el sistema solo sabe cobrar un ticket a la vez, el mesero termina haciendo las cuentas en papel.",
+          "**Comandas que lleguen a cocina.** El pedido tiene que llegar a la cocina impreso o en una pantalla, un [[monitor de cocina|monitor-de-cocina]], sin que nadie lo grite ni lo vuelva a copiar. Cada copia a mano es un platillo equivocado esperando a pasar.",
+          "**Inventario por receta.** Un taco usa gramos de carne, tortillas y salsa. Un buen sistema descuenta cada insumo cuando vende el platillo, para que sepas qué se te va a acabar y cuánto te cuesta de verdad cada platillo.",
+          "**Propinas, facturas y delivery.** Las propinas se registran y se reparten por turno. Los clientes piden [[CFDI|cfdi]] y el resto va a una [[factura global|factura-global]]. Y los pedidos de Rappi, Uber Eats o DiDi Food no deberían capturarse a mano en la caja.",
+        ],
+      },
+      {
+        id: "opciones-y-precios",
+        heading: "The options and what they cost",
+        headingEs: "Las opciones y cuánto cuestan",
+        body: [
+          "These are the prices each company published when we checked them. They all exclude IVA, and they change, so confirm before buying. Note that the entry price is rarely the final price: in several systems the features a restaurant needs, such as tables, kitchen display or invoicing, are add-ons.",
+          "**Soft Restaurant** is the classic in Mexico, made for full dining rooms. Its version 12 cost **$799 MXN a month in the LITE plan**, for up to 2 devices, and $1,099 in PRO, for up to 10, in September 2026. **Fudo** starts at **$360 MXN a month**, but tables cost $100 more, the kitchen display $200, delivery apps $200 and electronic invoicing $200, so a complete restaurant setup ends up closer to $1,000 or more. **Alegra POS Restobar**, which already includes tables, kitchen orders, shifts and tips, costs **$599 MXN a month or $449 paying the year**, according to Alegra in October 2026. **Loyverse** is free, including its kitchen display, and charges in dollars only for staff management and advanced inventory. And **Clip** charges no monthly fee: it takes **3.6% plus IVA** of each card payment and includes a free catalogue.",
+        ],
+        bodyEs: [
+          "Estos son los precios que publicaba cada empresa cuando los revisamos. Todos son sin IVA, y cambian, así que confírmalos antes de comprar. Fíjate en algo: el precio de entrada casi nunca es el precio final. En varios sistemas, lo que un restaurante necesita, como mesas, monitor de cocina o facturación, se paga aparte.",
+          "**Soft Restaurant** es el clásico en México, hecho para restaurantes completos. Su versión 12 costaba **$799 MXN al mes en el plan LITE**, para hasta 2 equipos, y $1,099 en PRO, para hasta 10, en septiembre de 2026. **Fudo** arranca en **$360 MXN al mes**, pero las mesas cuestan $100 más, el monitor de cocina $200, las apps de delivery $200 y la facturación electrónica $200, así que un restaurante completo termina más cerca de $1,000 o más. **Alegra POS Restobar**, que ya incluye mesas, comandas, turnos y propinas, cuesta **$599 MXN al mes o $449 pagando el año**, según Alegra en octubre de 2026. **Loyverse** es gratis, incluido su monitor de cocina, y cobra en dólares solo la gestión de empleados y el inventario avanzado. Y **Clip** no cobra mensualidad: se queda con **3.6% más IVA** de cada pago con tarjeta e incluye un catálogo gratis.",
+        ],
+        chart: {
+          title: "Entry price per month for restaurants (MXN, before IVA)",
+          titleEs: "Precio de entrada al mes para restaurantes (MXN, sin IVA)",
+          source:
+            "Prices published by each company: Soft Restaurant (September 2026), Alegra (October 2026), Fudo and Loyverse (November 2026). Fudo's figure is its base plan; tables, kitchen display, delivery and invoicing are extra. Clip has no monthly fee and charges 3.6% plus IVA per card payment.",
+          sourceEs:
+            "Precios publicados por cada empresa: Soft Restaurant (septiembre de 2026), Alegra (octubre de 2026), Fudo y Loyverse (noviembre de 2026). La cifra de Fudo es su plan base; mesas, monitor de cocina, delivery y facturación van aparte. Clip no tiene mensualidad y cobra 3.6% más IVA por pago con tarjeta.",
+          bars: [
+            {
+              label: "Soft Restaurant LITE",
+              labelEs: "Soft Restaurant LITE",
+              value: 799,
+              display: "$799",
+              displayEs: "$799",
+            },
+            {
+              label: "Alegra POS Restobar",
+              labelEs: "Alegra POS Restobar",
+              value: 599,
+              display: "$599 · $449 paying the year",
+              displayEs: "$599 · $449 pagando el año",
+            },
+            {
+              label: "Fudo Inicial (base plan)",
+              labelEs: "Fudo Inicial (plan base)",
+              value: 360,
+              display: "$360 + add-ons",
+              displayEs: "$360 + módulos",
+            },
+            {
+              label: "Loyverse",
+              labelEs: "Loyverse",
+              value: 0,
+              display: "Free",
+              displayEs: "Gratis",
+            },
+          ],
+        },
+      },
+      {
+        id: "cual-segun-tu-restaurante",
+        heading: "Which one fits your type of restaurant",
+        headingEs: "Cuál le queda a tu tipo de restaurante",
+        body: [
+          "There is no single best one. What changes the answer is how you serve: at a counter, at tables or for delivery. This is our reading, based on what each system includes; test the one you are leaning toward with your own menu before deciding.",
+        ],
+        bodyEs: [
+          "No hay uno mejor para todos. Lo que cambia la respuesta es cómo atiendes: en mostrador, en mesas o a domicilio. Esta es nuestra lectura con base en lo que incluye cada sistema; prueba el que te convenza con tu propio menú antes de decidir.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Point of sale by type of restaurant",
+          titleEs: "Punto de venta según tu tipo de restaurante",
+          columns: [
+            { label: "Type of restaurant", labelEs: "Tipo de restaurante" },
+            { label: "What it needs most", labelEs: "Lo que más necesita" },
+            { label: "Where to start looking", labelEs: "Por dónde empezar a ver" },
+          ],
+          rows: [
+            {
+              label: "Taquería, food truck or counter",
+              labelEs: "Taquería, food truck o mostrador",
+              cells: [
+                {
+                  text: "Speed at the register and orders to the kitchen",
+                  textEs: "Rapidez en caja y comandas a cocina",
+                },
+                {
+                  text: "Loyverse or Clip to start; Fudo if you want recipes",
+                  textEs: "Loyverse o Clip para empezar; Fudo si quieres recetas",
+                },
+              ],
+            },
+            {
+              label: "Restaurant with table service",
+              labelEs: "Restaurante con servicio a la mesa",
+              cells: [
+                {
+                  text: "Tables, split bills, tips by shift, invoices",
+                  textEs: "Mesas, cuentas divididas, propinas por turno, facturas",
+                },
+                {
+                  text: "Soft Restaurant, Alegra POS Restobar or Fudo with its add-ons",
+                  textEs: "Soft Restaurant, Alegra POS Restobar o Fudo con sus módulos",
+                },
+              ],
+            },
+            {
+              label: "Dark kitchen or mostly delivery",
+              labelEs: "Cocina solo de delivery o mayormente a domicilio",
+              cells: [
+                {
+                  text: "Receiving app orders without typing them again",
+                  textEs: "Recibir pedidos de las apps sin volver a capturarlos",
+                },
+                {
+                  text: "Ask each one which apps it connects to, in writing",
+                  textEs: "Pregúntale a cada uno con qué apps se conecta, por escrito",
+                },
+              ],
+            },
+            {
+              label: "Several branches",
+              labelEs: "Varias sucursales",
+              cells: [
+                {
+                  text: "Central inventory and one report for all",
+                  textEs: "Inventario central y un solo reporte de todas",
+                },
+                {
+                  text: "Higher plans of the same systems, or one made to measure",
+                  textEs: "Planes altos de los mismos sistemas, o uno a la medida",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "delivery",
+        heading: "Delivery apps: the integration that costs the most to ignore",
+        headingEs: "Apps de delivery: la integración que más cuesta ignorar",
+        body: [
+          "The apps charge restaurants commissions of up to 30% per order, which we break down in [delivery app commissions](/blog/apps-de-delivery-comisiones-restaurante). On top of that, if their orders arrive on a separate tablet and someone types them into the register, you pay twice: in commission and in the time of whoever copies them, with the mistakes that come with it.",
+          "Before choosing, ask in writing which apps the system connects to directly, whether the menu and prices sync or have to be changed in each place, and how much the connection costs. And think about the second step: your own ordering channel, such as a [QR menu](/blog/menu-qr-para-restaurante) or WhatsApp, so the customer who already knows you orders without the commission.",
+        ],
+        bodyEs: [
+          "Las apps le cobran a los restaurantes comisiones de hasta 30% por pedido, que desglosamos en [comisiones de las apps de delivery](/blog/apps-de-delivery-comisiones-restaurante). Encima, si sus pedidos llegan a una tableta aparte y alguien los captura en la caja, pagas dos veces: en comisión y en el tiempo de quien los copia, con los errores que vienen con eso.",
+          "Antes de elegir, pregunta por escrito con qué apps se conecta directo el sistema, si el menú y los precios se sincronizan o hay que cambiarlos en cada lugar, y cuánto cuesta la conexión. Y piensa en el segundo paso: tu propio canal de pedidos, como un [menú QR](/blog/menu-qr-para-restaurante) o WhatsApp, para que el cliente que ya te conoce pida sin la comisión.",
+        ],
+      },
+      {
+        id: "preguntas-antes-de-firmar",
+        heading: "Seven questions to ask before signing",
+        headingEs: "Siete preguntas antes de firmar",
+        body: [
+          "Ask them to every provider and get the answers in writing. If one cannot answer clearly, that is already an answer.",
+        ],
+        bodyEs: [
+          "Házselas a cada proveedor y pide las respuestas por escrito. Si uno no puede contestar claro, eso ya es una respuesta.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "Before signing with a provider",
+          titleEs: "Antes de firmar con un proveedor",
+          steps: [
+            {
+              label: "Total price",
+              labelEs: "Precio total",
+              detail:
+                "With tables, kitchen display, invoicing and delivery included, not the entry price.",
+              detailEs:
+                "Con mesas, monitor de cocina, facturación y delivery incluidos, no el de entrada.",
+            },
+            {
+              label: "Devices",
+              labelEs: "Equipos",
+              detail: "How many registers, tablets and phones the plan covers.",
+              detailEs: "Cuántas cajas, tabletas y celulares cubre el plan.",
+            },
+            {
+              label: "Without internet",
+              labelEs: "Sin internet",
+              detail: "Whether you can keep selling when the connection drops on a Saturday night.",
+              detailEs:
+                "Si puedes seguir vendiendo cuando se cae la conexión un sábado en la noche.",
+            },
+            {
+              label: "Invoices",
+              labelEs: "Facturas",
+              detail: "Whether it issues CFDI and the global invoice, and how many a month.",
+              detailEs: "Si emite CFDI y la factura global, y cuántas al mes.",
+            },
+            {
+              label: "Delivery apps",
+              labelEs: "Apps de delivery",
+              detail: "Which ones connect directly and what the connection costs.",
+              detailEs: "Cuáles se conectan directo y cuánto cuesta la conexión.",
+            },
+            {
+              label: "Your data",
+              labelEs: "Tus datos",
+              detail: "Whether you can export your sales, menu and customers if you leave.",
+              detailEs: "Si puedes exportar tus ventas, menú y clientes si te vas.",
+            },
+            {
+              label: "Support",
+              labelEs: "Soporte",
+              detail: "Hours and channel; a Friday night failure is not solved by email on Monday.",
+              detailEs:
+                "Horario y canal; una falla un viernes en la noche no se resuelve por correo el lunes.",
+            },
+          ],
+        },
+      },
+      {
+        id: "a-la-medida",
+        heading: "When a restaurant needs one made to measure",
+        headingEs: "Cuándo un restaurante necesita uno a la medida",
+        body: [
+          "A ready-made system covers most restaurants. It falls short when the operation is the business: a catering company that quotes events and then runs them, a mobile bar that charges per event and per drink, a chain with a central kitchen that supplies the branches. There, adapting the business to the software costs more than building the software for the business.",
+          "That is the kind of system we build at Aphelion, and we explain when it pays off in [the guide to the best point of sale](/blog/mejor-punto-de-venta-mexico). If you are not sure which side your restaurant is on, [tell us how you operate](/contacto) and we will tell you honestly whether a ready-made system is enough.",
+        ],
+        bodyEs: [
+          "Un sistema hecho cubre a la mayoría de los restaurantes. Se queda corto cuando la operación es el negocio: una empresa de banquetes que cotiza eventos y luego los ejecuta, una barra móvil que cobra por evento y por bebida, una cadena con cocina central que surte a las sucursales. Ahí, adaptar el negocio al software cuesta más que hacer el software para el negocio.",
+          "Ese es el tipo de sistema que hacemos en Aphelion, y explicamos cuándo conviene en [la guía del mejor punto de venta](/blog/mejor-punto-de-venta-mexico). Si no sabes de qué lado está tu restaurante, [cuéntanos cómo operas](/contacto) y te decimos con honestidad si te alcanza con uno hecho.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuál es el mejor punto de venta para restaurantes en México?",
+        qEn: "What is the best point of sale for restaurants in Mexico?",
+        a: "Depende de cómo atiendes. Para mostrador o taquería, Loyverse o Clip para empezar; para servicio a la mesa, Soft Restaurant, Alegra POS Restobar o Fudo con sus módulos. Compara el precio total con mesas, cocina, facturación y delivery incluidos.",
+        aEn: "It depends on how you serve. For a counter or taquería, Loyverse or Clip to start; for table service, Soft Restaurant, Alegra POS Restobar or Fudo with its add-ons. Compare the total price with tables, kitchen, invoicing and delivery included.",
+      },
+      {
+        q: "¿Cuánto cuesta un sistema para restaurante?",
+        qEn: "How much does a restaurant system cost?",
+        a: "Con precios de 2026 y sin IVA: Loyverse es gratis, Fudo arranca en $360 al mes más módulos, Alegra POS Restobar cuesta $599 al mes y Soft Restaurant $799 al mes en su plan LITE. Clip no cobra mensualidad pero se queda con 3.6% más IVA de cada pago con tarjeta.",
+        aEn: "With 2026 prices before IVA: Loyverse is free, Fudo starts at $360 a month plus add-ons, Alegra POS Restobar costs $599 a month and Soft Restaurant $799 a month in its LITE plan. Clip has no monthly fee but takes 3.6% plus IVA of each card payment.",
+      },
+      {
+        q: "¿Qué debe tener un punto de venta para restaurante?",
+        qEn: "What should a restaurant point of sale have?",
+        a: "Mesas y cuentas divididas, comandas a cocina, inventario por receta, registro de propinas, facturación CFDI con factura global y, si vendes a domicilio, conexión con las apps de delivery.",
+        aEn: "Tables and split bills, kitchen tickets, inventory by recipe, tip tracking, CFDI invoicing with a global invoice and, if you deliver, a connection to the delivery apps.",
+      },
+      {
+        q: "¿Puedo usar Loyverse en un restaurante en México?",
+        qEn: "Can I use Loyverse in a restaurant in Mexico?",
+        a: "Sí, sobre todo en mostrador o cafetería: el punto de venta y el monitor de cocina son gratis. Antes de decidir, confirma cómo vas a resolver la facturación mexicana, porque es un sistema hecho para negocios de todo el mundo.",
+        aEn: "Yes, especially at a counter or café: the point of sale and the kitchen display are free. Before deciding, confirm how you will handle Mexican invoicing, because it is built for businesses worldwide.",
+      },
+      {
+        q: "¿Cuándo conviene un punto de venta a la medida para un restaurante?",
+        qEn: "When does a custom point of sale make sense for a restaurant?",
+        a: "Cuando la operación es el negocio y no cabe en un sistema genérico: banquetes que se cotizan y ejecutan, barras móviles por evento o cadenas con cocina central. Para la mayoría de los restaurantes, uno hecho alcanza.",
+        aEn: "When the operation is the business and does not fit a generic system: catering that is quoted and then run, mobile bars per event or chains with a central kitchen. For most restaurants, a ready-made one is enough.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "restaurant POS Mexico",
+        "best point of sale for restaurants Mexico 2027",
+        "Soft Restaurant price",
+        "Fudo price Mexico",
+        "restaurant POS delivery apps integration",
+      ],
+      keywordsEs: [
+        "punto de venta para restaurantes",
+        "mejor punto de venta para restaurante México",
+        "sistema para restaurante precio",
+        "Soft Restaurant precio",
+        "Fudo precio México",
+        "software para restaurantes 2027",
+      ],
+    },
+  },
+  {
+    slug: "punto-de-venta-para-tienda-de-abarrotes",
+    cover: true,
+    title:
+      "Point of Sale for a Grocery or Small Store in Mexico 2027: Options, Prices and Which One to Choose",
+    titleEs:
+      "Punto de venta para tienda de abarrotes o tienda chica en México 2027: opciones, precios y cuál elegir",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "What a small store in Mexico really needs from a point of sale: fast barcode checkout, stock alerts, credit for regular customers, phone top-ups, cash counts and the global invoice. What eleventa, Pulpos, Alegra POS, Loyverse and Clip cost in the first year, desktop versus cloud, and which one fits your store.",
+    excerptEs:
+      "Lo que de verdad necesita una tienda chica en México de un punto de venta: cobrar rápido con código de barras, alertas de inventario, fiado, recargas, cortes de caja y la factura global. Cuánto cuestan eleventa, Pulpos, Alegra POS, Loyverse y Clip en el primer año, escritorio contra nube, y cuál le queda a tu tienda.",
+    readingTime: 10,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A grocery store lives on small margins and many small sales. A product that is stolen, a price that was not updated or a customer who owes and nobody wrote it down eat the profit of an entire day. That is why the point of sale in a small store is not a luxury: it is the only way to know how much you really sell, what you are about to run out of and whether the cash at night matches. This guide is the small store chapter of our [guide to the best point of sale in Mexico](/blog/mejor-punto-de-venta-mexico), with what each option costs in its first year.",
+    ledeEs:
+      "Una tienda de abarrotes vive de márgenes chicos y muchas ventas pequeñas. Un producto que se roban, un precio que no se actualizó o un cliente que debe y nadie lo anotó se comen la ganancia de un día completo. Por eso el punto de venta en una tienda chica no es un lujo: es la única forma de saber cuánto vendes de verdad, qué se te va a acabar y si la caja cuadra en la noche. Esta guía es el capítulo de tiendas chicas de nuestra [guía del mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico), con lo que cuesta cada opción en su primer año.",
+    sections: [
+      {
+        id: "que-necesita",
+        heading: "What a small store needs from its point of sale",
+        headingEs: "Qué necesita una tienda chica de su punto de venta",
+        body: [
+          "**Fast checkout.** Scan the barcode, add up and charge, with the line out the door at 2 pm. If finding a product takes three screens, the system loses against the notebook.",
+          "**Inventory with alerts.** Knowing what you are about to run out of before the supplier comes by, and what has not sold in a month and is tying up money on the shelf.",
+          "**Credit for regular customers.** In Mexico the neighbourhood store lends. A good system records who owes what and since when, instead of the notebook behind the counter.",
+          "**Phone top-ups and bill payments.** They bring in customers and a commission. Some systems include them and others need a separate terminal.",
+          "**Cash counts and the owner's control.** A count per shift that says how much should be in the drawer, and the possibility of seeing sales from your phone when you are not there. That is where small daily theft shows up.",
+          "**Invoices.** Customers who ask for a [[CFDI|cfdi]], and the rest of the day's sales in the [[global invoice|factura-global]]. Check how many invoices a month each plan includes.",
+        ],
+        bodyEs: [
+          "**Cobro rápido.** Escanear el código de barras, sumar y cobrar, con la fila hasta la puerta a las 2 de la tarde. Si encontrar un producto toma tres pantallas, el sistema pierde contra la libreta.",
+          "**Inventario con alertas.** Saber qué se te va a acabar antes de que pase el proveedor, y qué no se ha vendido en un mes y está amarrando dinero en el anaquel.",
+          "**Fiado.** En México la tienda de la colonia presta. Un buen sistema registra quién debe cuánto y desde cuándo, en lugar de la libreta detrás del mostrador.",
+          "**Recargas y pago de servicios.** Traen clientes y una comisión. Algunos sistemas las incluyen y otros necesitan una terminal aparte.",
+          "**Cortes de caja y control del dueño.** Un corte por turno que diga cuánto debería haber en la caja, y la posibilidad de ver las ventas desde tu celular cuando no estás. Ahí es donde aparece el robo hormiga.",
+          "**Facturas.** Los clientes que piden [[CFDI|cfdi]], y el resto de las ventas del día en la [[factura global|factura-global]]. Revisa cuántas facturas al mes incluye cada plan.",
+        ],
+      },
+      {
+        id: "opciones-y-precios",
+        heading: "The options and what they cost in the first year",
+        headingEs: "Las opciones y cuánto cuestan el primer año",
+        body: [
+          "**eleventa** is a Mexican system installed on a computer, very common in grocery stores, stationery shops and hardware stores. It is paid once: **MonoCaja cost $1,499 MXN** for one register and MultiCaja $3,499 to share inventory between several computers, with 12 months of updates and support, in September 2026.",
+          "**Pulpos** is a Mexican cloud system. Paying the year, its **Inicial plan costs $89 MXN a month** and already includes point of sale, inventory, phone top-ups and bill payments, and 3 invoices a month; **Esencial costs $169** and adds cash counts, sales on credit, multiple price lists and 20 invoices a month. **Alegra POS Lite** costs **$199 MXN a month or $149 paying the year**, with unlimited invoices, according to Alegra in October 2026. **Loyverse** is free and charges in dollars only for staff management and advanced inventory. And **Clip** has no monthly fee: it takes **3.6% plus IVA** of each card payment and includes a free catalogue with low-stock alerts.",
+        ],
+        bodyEs: [
+          "**eleventa** es un sistema mexicano que se instala en una computadora, muy común en abarrotes, papelerías y ferreterías. Se paga una sola vez: **MonoCaja costaba $1,499 MXN** para una caja y MultiCaja $3,499 para compartir inventario entre varias computadoras, con 12 meses de actualizaciones y soporte, en septiembre de 2026.",
+          "**Pulpos** es un sistema mexicano en la nube. Pagando el año, su **plan Inicial cuesta $89 MXN al mes** y ya incluye punto de venta, inventario, recargas y pago de servicios, y 3 facturas al mes; **Esencial cuesta $169** y suma cortes de caja, ventas a crédito, varias listas de precios y 20 facturas al mes. **Alegra POS Lite** cuesta **$199 MXN al mes o $149 pagando el año**, con facturas ilimitadas, según Alegra en octubre de 2026. **Loyverse** es gratis y cobra en dólares solo la gestión de empleados y el inventario avanzado. Y **Clip** no tiene mensualidad: se queda con **3.6% más IVA** de cada pago con tarjeta e incluye un catálogo gratis con alertas de inventario bajo.",
+        ],
+        chart: {
+          title: "Cost of the first year for one register (MXN, before IVA)",
+          titleEs: "Costo del primer año para una caja (MXN, sin IVA)",
+          source:
+            "Our calculation with prices published by each company: eleventa (September 2026, one-time payment with 12 months of updates), Alegra (October 2026, annual payment), Pulpos and Loyverse (November 2026, annual payment). Clip is not included because it charges a percentage of each card sale.",
+          sourceEs:
+            "Cálculo propio con precios publicados por cada empresa: eleventa (septiembre de 2026, pago único con 12 meses de actualizaciones), Alegra (octubre de 2026, pago anual), Pulpos y Loyverse (noviembre de 2026, pago anual). Clip no se incluye porque cobra un porcentaje de cada venta con tarjeta.",
+          bars: [
+            {
+              label: "Pulpos Esencial",
+              labelEs: "Pulpos Esencial",
+              value: 2028,
+              display: "$2,028",
+              displayEs: "$2,028",
+            },
+            {
+              label: "Alegra POS Lite",
+              labelEs: "Alegra POS Lite",
+              value: 1788,
+              display: "$1,788",
+              displayEs: "$1,788",
+            },
+            {
+              label: "eleventa MonoCaja",
+              labelEs: "eleventa MonoCaja",
+              value: 1499,
+              display: "$1,499 one payment",
+              displayEs: "$1,499 pago único",
+            },
+            {
+              label: "Pulpos Inicial",
+              labelEs: "Pulpos Inicial",
+              value: 1068,
+              display: "$1,068",
+              displayEs: "$1,068",
+            },
+            {
+              label: "Loyverse",
+              labelEs: "Loyverse",
+              value: 0,
+              display: "Free",
+              displayEs: "Gratis",
+            },
+          ],
+        },
+      },
+      {
+        id: "escritorio-o-nube",
+        heading: "Desktop or cloud",
+        headingEs: "Escritorio o nube",
+        body: [
+          "This is the first decision, before the brand. A desktop system lives on the store's computer: you pay once and it keeps working if the internet goes down, but the information stays on that computer, and if it breaks or gets stolen, you need a backup. A cloud system lives on the internet: you pay every month, but you see sales from your phone wherever you are and nothing is lost if the computer dies.",
+        ],
+        bodyEs: [
+          "Esta es la primera decisión, antes que la marca. Un sistema de escritorio vive en la computadora de la tienda: pagas una vez y sigue funcionando si se cae el internet, pero la información se queda en esa computadora, y si se descompone o se la roban, necesitas un respaldo. Un sistema en la nube vive en internet: pagas cada mes, pero ves las ventas desde tu celular donde estés y no se pierde nada si se muere la computadora.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Desktop versus cloud for a small store",
+          titleEs: "Escritorio contra nube para una tienda chica",
+          columns: [
+            { label: "", labelEs: "" },
+            { label: "Desktop (e.g. eleventa)", labelEs: "Escritorio (p. ej. eleventa)" },
+            {
+              label: "Cloud (e.g. Pulpos, Alegra, Loyverse)",
+              labelEs: "Nube (p. ej. Pulpos, Alegra, Loyverse)",
+            },
+          ],
+          rows: [
+            {
+              label: "Payment",
+              labelEs: "Pago",
+              cells: [
+                {
+                  text: "Once, with optional renewal of support",
+                  textEs: "Una vez, con renovación opcional del soporte",
+                },
+                { text: "Every month or every year", textEs: "Cada mes o cada año" },
+              ],
+            },
+            {
+              label: "Without internet",
+              labelEs: "Sin internet",
+              cells: [
+                { text: "Keeps working", textEs: "Sigue funcionando" },
+                {
+                  text: "Ask each provider what it can do offline",
+                  textEs: "Pregúntale a cada proveedor qué puede hacer sin conexión",
+                },
+              ],
+            },
+            {
+              label: "See sales from your phone",
+              labelEs: "Ver ventas desde tu celular",
+              cells: [
+                { text: "Limited or not at all", textEs: "Limitado o nada" },
+                { text: "Yes, wherever you are", textEs: "Sí, donde estés" },
+              ],
+            },
+            {
+              label: "If the computer breaks",
+              labelEs: "Si se descompone la computadora",
+              cells: [
+                { text: "You depend on your backup", textEs: "Dependes de tu respaldo" },
+                { text: "The information is safe online", textEs: "La información sigue en línea" },
+              ],
+            },
+            {
+              label: "Best for",
+              labelEs: "Mejor para",
+              cells: [
+                {
+                  text: "An owner who is always at the store",
+                  textEs: "Un dueño que siempre está en la tienda",
+                },
+                {
+                  text: "An owner who is not always there, or several branches",
+                  textEs: "Un dueño que no siempre está, o varias sucursales",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "cual-elegir",
+        heading: "Which one to choose",
+        headingEs: "Cuál elegir",
+        body: [
+          "**If you are always at the store and want to pay once:** a desktop system like eleventa. It is the cheapest over several years and it does not depend on the internet.",
+          "**If you are not always there:** go to the cloud. Seeing sales and cash counts from your phone is worth more than the monthly fee, because that is where you notice what is missing.",
+          "**If you sell phone top-ups and bill payments:** Pulpos includes them from its cheapest plan; with other systems, ask whether they include them or whether you need a separate terminal.",
+          "**If customers ask for invoices:** check the monthly limit. Pulpos Inicial includes 3, Esencial 20; Alegra POS Lite has no limit. A store that invoices a lot can outgrow the cheap plan in its first week.",
+          "**If you are just starting:** Loyverse costs nothing to try, and Clip lets you charge cards without a monthly fee. Confirm how you will handle Mexican invoicing before relying on either one.",
+        ],
+        bodyEs: [
+          "**Si siempre estás en la tienda y quieres pagar una vez:** un sistema de escritorio como eleventa. Es el más barato a varios años y no depende del internet.",
+          "**Si no siempre estás:** vete a la nube. Ver las ventas y los cortes desde tu celular vale más que la mensualidad, porque ahí es donde notas lo que falta.",
+          "**Si vendes recargas y pago de servicios:** Pulpos las incluye desde su plan más barato; con otros sistemas, pregunta si las incluyen o si necesitas una terminal aparte.",
+          "**Si tus clientes piden factura:** revisa el límite mensual. Pulpos Inicial incluye 3 y Esencial 20; Alegra POS Lite no tiene límite. Una tienda que factura mucho puede rebasar el plan barato en su primera semana.",
+          "**Si apenas empiezas:** Loyverse no cuesta nada para probar, y Clip te deja cobrar con tarjeta sin mensualidad. Confirma cómo vas a resolver la facturación mexicana antes de depender de cualquiera de los dos.",
+        ],
+      },
+      {
+        id: "mas-alla-de-la-caja",
+        heading: "Beyond the register",
+        headingEs: "Más allá de la caja",
+        body: [
+          "The point of sale organises what happens inside the store. To bring more people in, the most effective tool for a neighbourhood store is still free: a complete Google Business Profile, with hours, photos and reviews, so people find you on the map when they search for a store nearby. We explain how in [optimising your Google Business Profile](/blog/optimizar-google-business-profile).",
+          "And if your store grows into several branches, wholesale sales or deliveries with their own rules, that is when a system made to measure starts to make sense; we explain when in [the guide to the best point of sale](/blog/mejor-punto-de-venta-mexico). At Aphelion we build them, and if you are not sure whether you need one, [tell us how your store works](/contacto).",
+        ],
+        bodyEs: [
+          "El punto de venta ordena lo que pasa dentro de la tienda. Para que entre más gente, la herramienta más efectiva para una tienda de colonia sigue siendo gratis: un Perfil de Empresa de Google completo, con horario, fotos y reseñas, para que te encuentren en el mapa cuando buscan una tienda cerca. Te explicamos cómo en [optimizar tu Perfil de Empresa de Google](/blog/optimizar-google-business-profile).",
+          "Y si tu tienda crece a varias sucursales, ventas de mayoreo o entregas con sus propias reglas, ahí empieza a tener sentido un sistema a la medida; explicamos cuándo en [la guía del mejor punto de venta](/blog/mejor-punto-de-venta-mexico). En Aphelion los hacemos, y si no sabes si necesitas uno, [cuéntanos cómo funciona tu tienda](/contacto).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuál es el mejor punto de venta para una tienda de abarrotes?",
+        qEn: "What is the best point of sale for a grocery store?",
+        a: "Si siempre estás en la tienda y quieres pagar una vez, uno de escritorio como eleventa. Si no siempre estás o quieres ver las ventas desde el celular, uno en la nube como Pulpos, Alegra POS o Loyverse. Elige según recargas, fiado y cuántas facturas emites.",
+        aEn: "If you are always at the store and want to pay once, a desktop one like eleventa. If you are not always there or want to see sales from your phone, a cloud one like Pulpos, Alegra POS or Loyverse. Choose based on top-ups, credit sales and how many invoices you issue.",
+      },
+      {
+        q: "¿Cuánto cuesta un punto de venta para tienda chica?",
+        qEn: "How much does a point of sale for a small store cost?",
+        a: "Con precios de 2026 y sin IVA: Loyverse es gratis, Pulpos Inicial cuesta $1,068 al año, eleventa MonoCaja $1,499 en un solo pago, Alegra POS Lite $1,788 al año y Pulpos Esencial $2,028 al año.",
+        aEn: "With 2026 prices before IVA: Loyverse is free, Pulpos Inicial costs $1,068 a year, eleventa MonoCaja $1,499 in a single payment, Alegra POS Lite $1,788 a year and Pulpos Esencial $2,028 a year.",
+      },
+      {
+        q: "¿Hay punto de venta gratis para abarrotes?",
+        qEn: "Is there a free point of sale for grocery stores?",
+        a: "Sí. Loyverse es gratis para el punto de venta, inventario básico y reportes, y Clip no cobra mensualidad aunque se queda con un porcentaje de cada pago con tarjeta. Revisa cómo vas a facturar antes de elegir uno gratis.",
+        aEn: "Yes. Loyverse is free for the point of sale, basic inventory and reports, and Clip has no monthly fee although it takes a percentage of each card payment. Check how you will invoice before choosing a free one.",
+      },
+      {
+        q: "¿Qué punto de venta incluye recargas y pago de servicios?",
+        qEn: "Which point of sale includes phone top-ups and bill payments?",
+        a: "Pulpos las incluye desde su plan Inicial. En otros sistemas pregunta si vienen incluidas o si necesitas una terminal aparte.",
+        aEn: "Pulpos includes them from its Inicial plan. With other systems, ask whether they are included or whether you need a separate terminal.",
+      },
+      {
+        q: "¿Es mejor un punto de venta de escritorio o en la nube?",
+        qEn: "Is a desktop or cloud point of sale better?",
+        a: "Escritorio si estás siempre en la tienda y quieres pagar una vez; nube si quieres ver ventas y cortes desde tu celular o tienes más de una sucursal.",
+        aEn: "Desktop if you are always at the store and want to pay once; cloud if you want to see sales and cash counts from your phone or have more than one branch.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "grocery store POS Mexico",
+        "point of sale for small store Mexico",
+        "eleventa price",
+        "Pulpos price",
+        "free POS for grocery store",
+      ],
+      keywordsEs: [
+        "punto de venta para abarrotes",
+        "punto de venta para tienda chica",
+        "mejor punto de venta para tienda de abarrotes",
+        "punto de venta gratis abarrotes",
+        "Pulpos precio",
+        "eleventa precio",
+      ],
+    },
+  },
+  {
+    slug: "punto-de-venta-para-cafeterias",
+    cover: true,
+    title:
+      "Point of Sale for Coffee Shops in Mexico 2027: What It Needs, What It Costs and Which One to Choose",
+    titleEs:
+      "Punto de venta para cafeterías en México 2027: qué necesita, cuánto cuesta y cuál elegir",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "A coffee shop sells the same ten drinks a thousand different ways: size, milk, extra shot, syrup. What its point of sale needs to handle the morning rush, cost each cup by recipe and bring customers back, what Loyverse, Fudo, Alegra POS and Clip cost, and which one fits a cart, a café with tables or a small chain.",
+    excerptEs:
+      "Una cafetería vende las mismas diez bebidas de mil formas distintas: tamaño, leche, shot extra, jarabe. Lo que necesita su punto de venta para aguantar la hora pico, costear cada taza por receta y hacer que el cliente regrese, cuánto cuestan Loyverse, Fudo, Alegra POS y Clip, y cuál le queda a un carrito, a una cafetería con mesas o a una cadena chica.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In a coffee shop the money is made between 7 and 10 in the morning. If the register is slow, the line walks to the café next door; if the barista gets the order wrong, you lose the drink and maybe the customer. And the margin of each cup depends on grams of coffee and millilitres of milk that nobody counts. A good point of sale solves all three: it charges fast, sends the exact order to the bar and tells you what each drink costs you. This guide is the coffee shop chapter of our [guide to the best point of sale in Mexico](/blog/mejor-punto-de-venta-mexico).",
+    ledeEs:
+      "En una cafetería el dinero se hace entre las 7 y las 10 de la mañana. Si la caja es lenta, la fila se va al café de al lado; si el barista se equivoca de pedido, pierdes la bebida y quizá al cliente. Y el margen de cada taza depende de gramos de café y mililitros de leche que nadie cuenta. Un buen punto de venta resuelve las tres cosas: cobra rápido, manda el pedido exacto a la barra y te dice cuánto te cuesta cada bebida. Esta guía es el capítulo de cafeterías de nuestra [guía del mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico).",
+    sections: [
+      {
+        id: "que-necesita",
+        heading: "What a coffee shop needs from its point of sale",
+        headingEs: "Qué necesita una cafetería de su punto de venta",
+        body: [
+          "**[[Modifiers|modificadores]] that do not slow down the line.** Size, type of milk, extra shot, syrup, hot or iced. The register has to capture them in two taps and the bar has to receive them exactly, without anyone shouting “oat milk!” across the counter.",
+          "**Orders to the bar.** A printed ticket or a [[kitchen display|monitor-de-cocina]] at the bar, in the order they came in. In the rush, that is what keeps the line moving.",
+          "**Cost per cup.** Each drink is a recipe: grams of coffee, millilitres of milk, the cup and the lid. With inventory by recipe you know what a latte costs you and what you are about to run out of before the Saturday rush.",
+          "**Tips and loyalty.** Tips recorded by shift, and a way to reward the customer who comes every day, which in a coffee shop is most of the business.",
+        ],
+        bodyEs: [
+          "**[[Modificadores|modificadores]] que no frenen la fila.** Tamaño, tipo de leche, shot extra, jarabe, caliente o frío. La caja tiene que capturarlos en dos toques y la barra tiene que recibirlos exactos, sin que nadie grite “¡leche de avena!” de un lado al otro del mostrador.",
+          "**Pedidos a la barra.** Un ticket impreso o un [[monitor de cocina|monitor-de-cocina]] en la barra, en el orden en que entraron. En la hora pico, eso es lo que mantiene la fila avanzando.",
+          "**Costo por taza.** Cada bebida es una receta: gramos de café, mililitros de leche, el vaso y la tapa. Con inventario por receta sabes cuánto te cuesta un latte y qué se te va a acabar antes del pico del sábado.",
+          "**Propinas y lealtad.** Propinas registradas por turno, y una forma de premiar al cliente que viene todos los días, que en una cafetería es la mayor parte del negocio.",
+        ],
+      },
+      {
+        id: "opciones-y-precios",
+        heading: "The options and what they cost",
+        headingEs: "Las opciones y cuánto cuestan",
+        body: [
+          "**Loyverse** is the most common starting point for small coffee shops: the point of sale, the kitchen display and a loyalty programme are free, and it handles modifiers. It charges in dollars only for staff management and advanced inventory, **25 dollars a month per store** each; if you want to cost each drink by recipe, check what its advanced inventory covers before paying.",
+          "**Fudo** costs **$690 MXN a month in its Avanzado plan**, which is the one that includes inventory and recipes; tables and the kitchen display are paid add-ons. **Alegra POS Restobar** costs **$599 MXN a month or $449 paying the year** and includes tables, kitchen orders, shifts and tips; ask whether it handles recipes. And **Clip** charges no monthly fee: it takes **3.6% plus IVA** of each card payment and lets the customer add a tip of 12%, 15%, 18% or another amount. All prices exclude IVA and change; confirm them before buying.",
+        ],
+        bodyEs: [
+          "**Loyverse** es el punto de partida más común en cafeterías chicas: el punto de venta, el monitor de cocina y un programa de lealtad son gratis, y maneja modificadores. Cobra en dólares solo la gestión de empleados y el inventario avanzado, **25 dólares al mes por tienda** cada uno; si quieres costear cada bebida por receta, revisa qué cubre su inventario avanzado antes de pagar.",
+          "**Fudo** cuesta **$690 MXN al mes en su plan Avanzado**, que es el que incluye inventario y recetas; las mesas y el monitor de cocina se pagan aparte. **Alegra POS Restobar** cuesta **$599 MXN al mes o $449 pagando el año** e incluye mesas, comandas, turnos y propinas; pregunta si maneja recetas. Y **Clip** no cobra mensualidad: se queda con **3.6% más IVA** de cada pago con tarjeta y deja que el cliente agregue propina de 12%, 15%, 18% u otro monto. Todos los precios son sin IVA y cambian; confírmalos antes de comprar.",
+        ],
+        chart: {
+          title: "Monthly price for a coffee shop with tables (MXN, before IVA)",
+          titleEs: "Precio al mes para una cafetería con mesas (MXN, sin IVA)",
+          source:
+            "Prices published by each company: Fudo and Loyverse (November 2026), Alegra (October 2026). Loyverse charges 25 US dollars a month for advanced inventory; Alegra's figure is the monthly payment, $449 paying the year. Assumption: the Loyverse bar uses 18 pesos per dollar for its height. Clip has no monthly fee and charges 3.6% plus IVA per card payment.",
+          sourceEs:
+            "Precios publicados por cada empresa: Fudo y Loyverse (noviembre de 2026), Alegra (octubre de 2026). Loyverse cobra 25 dólares al mes por el inventario avanzado; la cifra de Alegra es el pago mensual, $449 pagando el año. Suposición: la altura de la barra de Loyverse usa 18 pesos por dólar. Clip no tiene mensualidad y cobra 3.6% más IVA por pago con tarjeta.",
+          bars: [
+            {
+              label: "Fudo Avanzado",
+              labelEs: "Fudo Avanzado",
+              value: 690,
+              display: "$690",
+              displayEs: "$690",
+            },
+            {
+              label: "Alegra POS Restobar",
+              labelEs: "Alegra POS Restobar",
+              value: 599,
+              display: "$599",
+              displayEs: "$599",
+            },
+            {
+              label: "Loyverse + advanced inventory",
+              labelEs: "Loyverse + inventario avanzado",
+              value: 450,
+              display: "US$25",
+              displayEs: "US$25",
+            },
+            {
+              label: "Loyverse, free version",
+              labelEs: "Loyverse, versión gratis",
+              value: 0,
+              display: "Free",
+              displayEs: "Gratis",
+            },
+          ],
+        },
+      },
+      {
+        id: "cual-elegir",
+        heading: "Which one fits your coffee shop",
+        headingEs: "Cuál le queda a tu cafetería",
+        body: [
+          "The size of the operation changes the answer more than the brand. This is our reading of what each system includes; test the one you are leaning toward with your real menu, modifiers included, before deciding.",
+        ],
+        bodyEs: [
+          "El tamaño de la operación cambia la respuesta más que la marca. Esta es nuestra lectura de lo que incluye cada sistema; prueba el que te convenza con tu menú real, modificadores incluidos, antes de decidir.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Point of sale by type of coffee shop",
+          titleEs: "Punto de venta según tu tipo de cafetería",
+          columns: [
+            { label: "Type", labelEs: "Tipo" },
+            { label: "What matters most", labelEs: "Lo que más importa" },
+            { label: "Where to start looking", labelEs: "Por dónde empezar a ver" },
+          ],
+          rows: [
+            {
+              label: "Cart, kiosk or stand",
+              labelEs: "Carrito, kiosko o barra en un local",
+              cells: [
+                {
+                  text: "Charging fast with a phone or tablet",
+                  textEs: "Cobrar rápido con celular o tableta",
+                },
+                { text: "Clip or Loyverse", textEs: "Clip o Loyverse" },
+              ],
+            },
+            {
+              label: "Coffee shop with tables",
+              labelEs: "Cafetería con mesas",
+              cells: [
+                {
+                  text: "Open tables, orders to the bar, cost per drink",
+                  textEs: "Mesas abiertas, pedidos a la barra, costo por bebida",
+                },
+                {
+                  text: "Loyverse with advanced inventory, Fudo Avanzado or Alegra POS Restobar",
+                  textEs: "Loyverse con inventario avanzado, Fudo Avanzado o Alegra POS Restobar",
+                },
+              ],
+            },
+            {
+              label: "Coffee shop that also sells food",
+              labelEs: "Cafetería que también vende comida",
+              cells: [
+                {
+                  text: "Kitchen and bar receiving different orders",
+                  textEs: "Cocina y barra recibiendo pedidos distintos",
+                },
+                {
+                  text: "Look at the restaurant systems",
+                  textEs: "Revisa los sistemas de restaurante",
+                },
+              ],
+            },
+            {
+              label: "Two or more branches",
+              labelEs: "Dos o más sucursales",
+              cells: [
+                {
+                  text: "The same menu and recipes in all, one report",
+                  textEs: "El mismo menú y recetas en todas, un solo reporte",
+                },
+                {
+                  text: "Higher plans, or one made to measure",
+                  textEs: "Planes altos, o uno a la medida",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        id: "lealtad-y-pedidos",
+        heading: "Loyalty and pre-orders: where coffee shops win",
+        headingEs: "Lealtad y pedidos anticipados: donde ganan las cafeterías",
+        body: [
+          "A coffee shop's best customer comes four or five times a week. A digital stamp card, built into the point of sale, rewards that habit without paper cards that get lost, and gives you the customer's data to tell them about the new seasonal drink.",
+          "The second lever is letting people order before they arrive: a [QR menu](/blog/menu-qr-para-restaurante) or WhatsApp for the office that orders ten coffees at 9 am. And the third is free: reviews on Google, which are what someone new nearby reads before choosing; we explain how to get them in [Google reviews for restaurants](/blog/resenas-google-restaurante).",
+        ],
+        bodyEs: [
+          "El mejor cliente de una cafetería viene cuatro o cinco veces a la semana. Una tarjeta de sellos digital, integrada al punto de venta, premia ese hábito sin tarjetas de papel que se pierden, y te da los datos del cliente para avisarle de la bebida nueva de temporada.",
+          "La segunda palanca es que la gente pida antes de llegar: un [menú QR](/blog/menu-qr-para-restaurante) o WhatsApp para la oficina que pide diez cafés a las 9 de la mañana. Y la tercera es gratis: las reseñas en Google, que es lo que lee alguien nuevo de la zona antes de elegir; te explicamos cómo conseguirlas en [reseñas de Google para restaurantes](/blog/resenas-google-restaurante).",
+        ],
+      },
+      {
+        id: "siguiente-paso",
+        heading: "If your coffee shop does not fit a standard system",
+        headingEs: "Si tu cafetería no cabe en un sistema estándar",
+        body: [
+          "Coffee shops that roast and sell beans wholesale, sell subscriptions or supply other businesses usually end up with half the operation outside the point of sale. That is when one made to measure starts to pay off; we explain when in [the guide to the best point of sale](/blog/mejor-punto-de-venta-mexico). At Aphelion we build them, and if you are not sure whether you need one, [tell us how your coffee shop works](/contacto).",
+        ],
+        bodyEs: [
+          "Las cafeterías que tuestan y venden grano al mayoreo, venden suscripciones o surten a otros negocios suelen terminar con media operación fuera del punto de venta. Ahí empieza a convenir uno a la medida; explicamos cuándo en [la guía del mejor punto de venta](/blog/mejor-punto-de-venta-mexico). En Aphelion los hacemos, y si no sabes si necesitas uno, [cuéntanos cómo funciona tu cafetería](/contacto).",
+        ],
+      },
+    ],
+    gradient: "from-stone-800 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuál es el mejor punto de venta para una cafetería?",
+        qEn: "What is the best point of sale for a coffee shop?",
+        a: "Para empezar, Loyverse: el punto de venta, el monitor de cocina y la lealtad son gratis y maneja modificadores. Si necesitas costear cada bebida por receta, Fudo Avanzado incluye recetas; con Loyverse o Alegra POS, pregunta qué cubren sus planes de pago.",
+        aEn: "To start, Loyverse: the point of sale, kitchen display and loyalty are free and it handles modifiers. If you need to cost each drink by recipe, Fudo Avanzado includes recipes; with Loyverse or Alegra POS, ask what their paid plans cover.",
+      },
+      {
+        q: "¿Cuánto cuesta un punto de venta para cafetería?",
+        qEn: "How much does a coffee shop point of sale cost?",
+        a: "Con precios de 2026 y sin IVA: Loyverse es gratis y cobra 25 dólares al mes por inventario avanzado, Alegra POS Restobar cuesta $599 al mes y Fudo Avanzado $690 al mes. Clip no tiene mensualidad y cobra 3.6% más IVA por pago con tarjeta.",
+        aEn: "With 2026 prices before IVA: Loyverse is free and charges 25 dollars a month for advanced inventory, Alegra POS Restobar costs $599 a month and Fudo Avanzado $690 a month. Clip has no monthly fee and charges 3.6% plus IVA per card payment.",
+      },
+      {
+        q: "¿Qué son los modificadores en un punto de venta?",
+        qEn: "What are modifiers in a point of sale?",
+        a: "Las opciones que cambian un producto sin crear uno nuevo: tamaño, tipo de leche, shot extra o jarabe. Un buen sistema los captura rápido en la caja y los manda exactos a la barra.",
+        aEn: "The options that change a product without creating a new one: size, type of milk, extra shot or syrup. A good system captures them fast at the register and sends them exactly to the bar.",
+      },
+      {
+        q: "¿Cómo saco el costo de cada taza de café?",
+        qEn: "How do I work out the cost of each cup of coffee?",
+        a: "Con inventario por receta: das de alta cuántos gramos de café, mililitros de leche, vaso y tapa lleva cada bebida, y el sistema descuenta los insumos con cada venta y te dice cuánto te cuesta cada una.",
+        aEn: "With inventory by recipe: you set how many grams of coffee, millilitres of milk, cup and lid each drink uses, and the system discounts the supplies with each sale and tells you what each one costs.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "coffee shop POS Mexico",
+        "point of sale for cafe Mexico 2027",
+        "Loyverse coffee shop",
+        "cost per cup recipe inventory",
+        "coffee shop loyalty program POS",
+      ],
+      keywordsEs: [
+        "punto de venta para cafetería",
+        "mejor punto de venta para cafetería",
+        "sistema para cafetería precio",
+        "costo por taza de café",
+        "programa de lealtad cafetería",
+        "Loyverse cafetería",
       ],
     },
   },
