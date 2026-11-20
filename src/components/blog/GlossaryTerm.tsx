@@ -27,15 +27,17 @@ export function GlossaryTerm({ label, k, lang }: { label: string; k: string; lan
     const b = bubble.current;
     if (!w || !b) return;
     const r = w.getBoundingClientRect();
-    const bw = b.offsetWidth;
     const vw = document.documentElement.clientWidth;
+    // While closed the bubble is collapsed to zero size, so use its open size:
+    // w-72 (288px) capped at the viewport minus 24px, about 180px tall.
+    const bw = Math.min(288, vw - 24);
     const margin = 12;
     const left = r.left + r.width / 2 - bw / 2;
     let dx = 0;
     if (left < margin) dx = margin - left;
     else if (left + bw > vw - margin) dx = vw - margin - (left + bw);
     setShift(dx);
-    setBelow(r.top - b.offsetHeight < 90);
+    setBelow(r.top - Math.max(b.offsetHeight, 180) < 90);
   }, []);
 
   useEffect(() => {
@@ -76,12 +78,14 @@ export function GlossaryTerm({ label, k, lang }: { label: string; k: string; lan
         id={id}
         role="tooltip"
         style={{ transform: `translateX(calc(-50% + ${shift}px))` }}
-        className={`absolute left-1/2 z-30 block w-72 max-w-[calc(100vw-24px)] transition-opacity duration-150 ${
+        // Closed, the bubble is collapsed to 0×0 (still in the HTML) so a term
+        // near the right edge cannot widen the page on phones.
+        className={`absolute left-1/2 z-30 block max-w-[calc(100vw-24px)] transition-opacity duration-150 ${
           below ? "top-full pt-2" : "bottom-full pb-2"
         } ${
           open
-            ? "visible opacity-100"
-            : "invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+            ? "visible w-72 opacity-100"
+            : "invisible h-0 w-0 overflow-hidden opacity-0 group-hover:visible group-hover:h-auto group-hover:w-72 group-hover:overflow-visible group-hover:opacity-100 group-focus-within:visible group-focus-within:h-auto group-focus-within:w-72 group-focus-within:overflow-visible group-focus-within:opacity-100"
         }`}
       >
         <span className="block rounded-xl bg-neutral-950 p-4 text-left text-sm leading-relaxed text-white shadow-xl">

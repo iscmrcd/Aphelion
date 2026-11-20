@@ -600,4 +600,60 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
       "The options that change a product without creating a new one, such as size, type of milk or an extra ingredient.",
     href: "/blog/punto-de-venta-para-cafeterias",
   },
+  ortomosaico: {
+    term: "Ortomosaico",
+    termEn: "Orthomosaic",
+    def: "Un mapa aéreo armado con cientos de fotos de dron, corregido para que las distancias sean reales y se pueda medir sobre él.",
+    defEn:
+      "An aerial map stitched from hundreds of drone photos and corrected so that distances are true and it can be measured.",
+    href: "/blog/costo-documentar-obra-con-dron",
+  },
+  "mensaje-de-utilidad": {
+    term: "Mensaje de utilidad",
+    termEn: "Utility message",
+    def: "En la API de WhatsApp, el mensaje que responde a algo que hizo el cliente, como una confirmación de pedido o un recordatorio de cita. Meta lo cobra por envío.",
+    defEn:
+      "In the WhatsApp API, a message tied to something the customer did, such as an order confirmation or an appointment reminder. Meta charges it per send.",
+    href: "/blog/whatsapp-cobra-mensajes-de-servicio",
+  },
+  "puntuacion-de-optimizacion": {
+    term: "Puntuación de optimización",
+    termEn: "Optimisation score",
+    def: "La calificación de 0 a 100% que Google Ads le da a tu cuenta según qué tanto sigues sus recomendaciones. Es una estimación de Google, no una medida de resultados.",
+    defEn:
+      "The 0 to 100% rating Google Ads gives your account based on how closely you follow its recommendations. It is Google's estimate, not a measure of results.",
+    href: "/blog/auditoria-google-ads-tijuana",
+  },
+  "palabra-clave-negativa": {
+    term: "Palabra clave negativa",
+    termEn: "Negative keyword",
+    def: "Una palabra que le dice a Google Ads en qué búsquedas no debe mostrar tu anuncio, como “gratis” o “empleo”.",
+    defEn:
+      "A word that tells Google Ads which searches your ad must not show for, such as “free” or “jobs”.",
+    href: "/blog/auditoria-google-ads-tijuana",
+  },
+  "termino-de-busqueda": {
+    term: "Término de búsqueda",
+    termEn: "Search term",
+    def: "Lo que una persona escribió de verdad en Google cuando apareció tu anuncio. Puede ser muy distinto de la palabra clave que elegiste.",
+    defEn:
+      "What a person actually typed into Google when your ad appeared. It can be very different from the keyword you chose.",
+    href: "/blog/auditoria-google-ads-tijuana",
+  },
+  "conversacion-iniciada": {
+    term: "Conversación iniciada",
+    termEn: "Messaging conversation started",
+    def: "La métrica de Meta para cada persona que te escribe desde un anuncio por primera vez, o después de 7 días o más sin actividad. No dice si esa persona compró o agendó.",
+    defEn:
+      "Meta's metric for each person who writes to you from an ad for the first time, or after 7 days or more without activity. It does not say whether that person bought or booked.",
+    href: "/blog/costo-por-cita-meta-ads-whatsapp",
+  },
+  inasistencia: {
+    term: "Inasistencia",
+    termEn: "No-show",
+    def: "Una cita agendada a la que el paciente o cliente no llega ni cancela con tiempo. Deja un horario vacío que ya no se puede llenar.",
+    defEn:
+      "A booked appointment the patient or customer neither attends nor cancels in time. It leaves an empty slot that can no longer be filled.",
+    href: "/blog/agenda-en-linea-para-clinicas",
+  },
 };

@@ -19759,6 +19759,1246 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "costo-documentar-obra-con-dron",
+    cover: true,
+    title: "How Much Does It Cost to Document Construction Progress with a Drone in Baja California?",
+    titleEs: "¿Cuánto cuesta documentar el avance de una obra con dron en Baja California?",
+    category: "Video & Drone",
+    categoryEs: "Video y Drone",
+    excerpt:
+      "One drone visit or periodic tracking: what each costs in Ensenada, Tijuana, Rosarito and Mexicali, what you receive after every visit, how often to fly at each stage of the build, when you need a flight permit and why a video is not a survey.",
+    excerptEs:
+      "Una visita con dron o un seguimiento periódico: cuánto cuesta cada uno en Ensenada, Tijuana, Rosarito y Mexicali, qué recibes en cada visita, cada cuánto volar según la etapa de la obra, cuándo hace falta permiso y por qué un video no es un levantamiento.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A drone over a construction site can be two very different things: a nice shot for social media, or a record that proves, date by date, how the project moved forward. The price depends on which one you need, how many times someone has to fly and how far the site is. Here are the real numbers of our packages in Baja California, what you receive after each visit and how often it makes sense to fly at each stage of the build.",
+    ledeEs:
+      "Un dron sobre una obra puede ser dos cosas muy distintas: una toma bonita para redes, o un registro que demuestra, fecha por fecha, cómo avanzó el proyecto. El precio depende de cuál necesitas, cuántas veces hay que volar y qué tan lejos está la obra. Aquí están los números reales de nuestros paquetes en Baja California, qué recibes en cada visita y cada cuánto conviene volar según la etapa de la obra.",
+    sections: [
+      {
+        id: "visita-o-seguimiento",
+        heading: "One visit or tracking: what you are buying",
+        headingEs: "Una visita o un seguimiento: qué estás comprando",
+        body: [
+          "**A single visit** captures one moment: groundbreaking, handover, a shot for the presale. At Aphelion that is the **Captura package: $2,990 MXN**, up to one hour on site, one edited video of 30 to 45 seconds with a vertical version and 10 aerial photographs, delivered in 5 business days.",
+          "**Tracking** is something else: going back to the same place several times, from the same angles, so the progress shows. That is the **Seguimiento package: $8,890 MXN for 4 visits** on the schedule we agree, up to 2 hours per visit, one edited clip per visit delivered within 72 hours, a final 90-second summary video and all the footage organised in the cloud. Each additional visit costs $2,490 MXN.",
+          "The difference is not only the price. Four separate visits are four unrelated shoots; tracking is planned from day one so that visit 4 can be compared with visit 1.",
+        ],
+        bodyEs: [
+          "**Una visita suelta** registra un momento: el arranque, la entrega, una toma para la preventa. En Aphelion es el **paquete Captura: $2,990 MXN**, hasta una hora en sitio, un video editado de 30 a 45 segundos con versión vertical y 10 fotografías aéreas, entregado en 5 días hábiles.",
+          "**Un seguimiento** es otra cosa: volver al mismo lugar varias veces, desde los mismos ángulos, para que el avance se note. Es el **paquete Seguimiento: $8,890 MXN por 4 visitas** con la cadencia que acordemos, hasta 2 horas por visita, un clip editado de cada visita entregado en 72 horas, un video resumen final de 90 segundos y todo el material organizado en la nube. Cada visita adicional cuesta $2,490 MXN.",
+          "La diferencia no es solo de precio. Cuatro visitas sueltas son cuatro sesiones sin relación entre sí; un seguimiento se planea desde el primer día para que la visita 4 se pueda comparar con la visita 1.",
+        ],
+        chart: {
+          title: "Four visits to a site in Ensenada: separately or as a package",
+          titleEs: "Cuatro visitas a una obra en Ensenada: sueltas o en paquete",
+          source: "Aphelion list prices in November 2026, in Mexican pesos, for sites in Ensenada and Valle de Guadalupe, where travel is included.",
+          sourceEs: "Precios de lista de Aphelion en noviembre de 2026, en pesos, para obras en Ensenada y Valle de Guadalupe, donde el traslado está incluido.",
+          bars: [
+            { label: "4 separate Captura visits", labelEs: "4 visitas sueltas (Captura)", value: 11960, display: "$11,960", displayEs: "$11,960" },
+            { label: "Seguimiento package, 4 visits", labelEs: "Paquete Seguimiento, 4 visitas", value: 8890, display: "$8,890", displayEs: "$8,890" },
+            { label: "Seguimiento plus 2 extra visits (6)", labelEs: "Seguimiento más 2 visitas extra (6)", value: 13870, display: "$13,870", displayEs: "$13,870" },
+          ],
+        },
+      },
+      {
+        id: "que-mueve-el-precio",
+        heading: "What moves the price: distance, time on site and extras",
+        headingEs: "Lo que mueve el precio: distancia, tiempo en sitio y extras",
+        body: [
+          "**Travel.** From Ensenada and Valle de Guadalupe there is no travel charge. Rosarito or Tecate add $1,200 MXN; Tijuana, $1,499; San Quintín, $1,900; and Mexicali, $2,700. Outside Baja California we quote with travel expenses. In a tracking project every visit is a trip, so count on your zone's charge for each one; we confirm it in the quote.",
+          "**Time on site.** If the site is large or we have to wait for machinery to move, extra time is charged in 30-minute blocks at $499. Waiting time counts as contracted time, so it pays to have someone on site who opens the gate and knows what needs to be filmed.",
+          "**The extras most often requested for construction:** the original files (RAW) for $999 MXN, useful if your builder or architecture firm edits its own material; rush delivery, in under 72 hours, at 25% on top of the package; and handling the flight permit when the site is in a restricted zone, for $999 MXN.",
+        ],
+        bodyEs: [
+          "**El traslado.** Desde Ensenada y Valle de Guadalupe no se cobra. A Rosarito o Tecate se suman $1,200 MXN; a Tijuana, $1,499; a San Quintín, $1,900; y a Mexicali, $2,700. Fuera de Baja California se cotiza con viáticos. En un seguimiento cada visita es un viaje, así que cuenta con el cargo de tu zona en cada una; te lo confirmamos en la cotización.",
+          "**El tiempo en sitio.** Si la obra es grande o hay que esperar a que se mueva la maquinaria, el tiempo extra se cobra en bloques de 30 minutos a $499. El tiempo de espera cuenta como tiempo contratado, así que conviene tener en obra a alguien que abra el acceso y sepa qué hay que grabar.",
+          "**Los extras que más se piden en obra:** los archivos originales (RAW) por $999 MXN, útiles si tu constructora o tu despacho de arquitectura edita su propio material; la entrega urgente, en menos de 72 horas, con 25% sobre el paquete; y la gestión del permiso de vuelo cuando la obra está en zona restringida, por $999 MXN.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Example: 4-visit tracking depending on where the site is",
+          titleEs: "Ejemplo: seguimiento de 4 visitas según dónde está la obra",
+          note: "Assuming the travel charge applies to each visit. Extras and permits not included.",
+          noteEs: "Suponiendo que el traslado se cobra en cada visita. No incluye extras ni permisos.",
+          columns: [
+            { label: "Zone", labelEs: "Zona" },
+            { label: "Travel per visit", labelEs: "Traslado por visita" },
+            { label: "Approximate total, 4 visits", labelEs: "Total aproximado, 4 visitas" },
+          ],
+          rows: [
+            { label: "Ensenada and Valle de Guadalupe", labelEs: "Ensenada y Valle de Guadalupe", cells: [
+              { text: "Included", textEs: "Incluido" },
+              { text: "$8,890", textEs: "$8,890" } ] },
+            { label: "Rosarito or Tecate", labelEs: "Rosarito o Tecate", cells: [
+              { text: "$1,200", textEs: "$1,200" },
+              { text: "$13,690", textEs: "$13,690" } ] },
+            { label: "Tijuana", labelEs: "Tijuana", cells: [
+              { text: "$1,499", textEs: "$1,499" },
+              { text: "$14,886", textEs: "$14,886" } ] },
+            { label: "Mexicali", labelEs: "Mexicali", cells: [
+              { text: "$2,700", textEs: "$2,700" },
+              { text: "$19,690", textEs: "$19,690" } ] },
+          ],
+        },
+      },
+      {
+        id: "que-recibes",
+        heading: "What you receive after each visit and at the end",
+        headingEs: "Qué recibes en cada visita y al final",
+        body: [
+          "After each visit: an edited clip, ready to send to the client, the investor or the site's WhatsApp group, within 72 hours. At the end: a 90-second summary video that tells the build from start to finish, with 2 rounds of changes. And all the footage from every visit, sorted by date in a cloud folder, so nobody has to dig through a phone to find what was filmed in March.",
+          "The material comes with a usage licence for whoever hires it: you can use it on your social media, your website, your investor presentation and in Meta or Google ads. Reselling it or transferring it to third parties requires authorisation.",
+          "**What it does not include, and it is worth saying clearly:** tracking is visual documentation, not surveying. If you need to measure cut and fill volumes, compare against plans to the centimetre or certify progress for payments, what you need is a photogrammetry survey: an [[orthomosaic|ortomosaico]] and an elevation model processed from hundreds of photos, with ground control points. With RTK or PPK drones the horizontal accuracy reaches 1 to 3 cm, according to Birdi's guide to drone progress reports. It is a different service, with different equipment and a different price; many projects use both.",
+        ],
+        bodyEs: [
+          "En cada visita: un clip editado, listo para mandar al cliente, al inversionista o al grupo de WhatsApp de la obra, en 72 horas. Al final: un video resumen de 90 segundos que cuenta la obra de principio a fin, con 2 rondas de ajustes. Y todo el material de cada visita, ordenado por fecha en una carpeta en la nube, para que nadie tenga que buscar en un celular qué se grabó en marzo.",
+          "El material incluye licencia de uso para quien lo contrata: puedes usarlo en tus redes, en tu página, en tu presentación a inversionistas y en anuncios de Meta o Google. Revenderlo o cedérselo a terceros requiere autorización.",
+          "**Lo que no incluye, y conviene decirlo claro:** el seguimiento es documentación visual, no topografía. Si necesitas medir volúmenes de corte y relleno, comparar contra planos al centímetro o certificar avance para estimaciones, lo que buscas es un levantamiento con fotogrametría: un [[ortomosaico|ortomosaico]] y un modelo de elevación procesados a partir de cientos de fotos, con puntos de control en tierra. Con drones RTK o PPK la precisión horizontal llega a 1–3 cm, según la guía de reportes de avance de Birdi. Es otro servicio, con otro equipo y otro precio; muchas obras usan los dos.",
+        ],
+      },
+      {
+        id: "frecuencia",
+        heading: "How often to fly at each stage of the build",
+        headingEs: "Cada cuánto volar según la etapa de la obra",
+        body: [
+          "Not every stage changes at the same speed. During earthworks the ground changes every week; during finishing, what changes is inside and a drone adds less. A practical guide for visual documentation:",
+        ],
+        bodyEs: [
+          "No todas las etapas cambian igual de rápido. En terracerías el terreno cambia cada semana; en acabados, lo que cambia está adentro y el dron aporta menos. Una guía práctica para documentación visual:",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Suggested flight frequency by stage",
+          titleEs: "Frecuencia sugerida de vuelo por etapa",
+          note: "For a 6 to 8 month house, the 4 visits of the package cover groundbreaking, structure, façade and handover. A one-year development with a monthly visit needs 12. Photogrammetry surveys, which measure quantities, are usually flown more often.",
+          noteEs: "Para una casa de 6 a 8 meses, las 4 visitas del paquete alcanzan para arranque, estructura, fachada y entrega. Un desarrollo de un año con visita mensual necesita 12. Los levantamientos con fotogrametría, que miden cantidades, se vuelan más seguido.",
+          columns: [
+            { label: "Stage", labelEs: "Etapa" },
+            { label: "What to record", labelEs: "Qué conviene registrar" },
+            { label: "Frequency", labelEs: "Frecuencia" },
+          ],
+          rows: [
+            { label: "Before starting", labelEs: "Antes de empezar", cells: [
+              { text: "The cleared land and its boundaries: the picture everything else is compared to", textEs: "El terreno limpio y sus colindancias: la foto contra la que se compara todo" },
+              { text: "One visit", textEs: "Una visita" } ] },
+            { label: "Earthworks and foundations", labelEs: "Terracerías y cimentación", cells: [
+              { text: "Cuts, fills, layout and foundation progress", textEs: "Cortes, rellenos, trazo y avance de cimentación" },
+              { text: "Every 2 to 4 weeks", textEs: "Cada 2 a 4 semanas" } ] },
+            { label: "Structure", labelEs: "Estructura", cells: [
+              { text: "Slabs, levels, walls and roof", textEs: "Losas, niveles, muros y cubierta" },
+              { text: "Monthly, or at each milestone (each slab poured)", textEs: "Cada mes, o en cada hito (cada losa colada)" } ] },
+            { label: "Façades and exteriors", labelEs: "Fachadas y exteriores", cells: [
+              { text: "Envelope, windows, site works, amenities", textEs: "Envolvente, ventanería, urbanización, amenidades" },
+              { text: "Every 1 or 2 months", textEs: "Cada 1 o 2 meses" } ] },
+            { label: "Handover", labelEs: "Entrega", cells: [
+              { text: "The finished project and its surroundings, also for sales", textEs: "La obra terminada y su entorno, también para venta" },
+              { text: "One visit, in good light", textEs: "Una visita, con buena luz" } ] },
+          ],
+        },
+      },
+      {
+        id: "quien-lo-usa",
+        heading: "What builders, developers and owners use it for",
+        headingEs: "Para qué lo usan constructoras, desarrolladores y dueños",
+        body: [
+          "**Builders:** to report progress to the client without the client having to visit, and to back up progress payments and handovers with dates. A client who sees progress every month asks fewer questions and pays with less friction. And the final video is the best material to win the next project, the problem we explain in [why your construction company quotes a lot and closes little](/blog/constructora-cotiza-mucho-cierra-poco).",
+          "**Real estate developers:** construction progress is what most reassures someone who bought in presale. A monthly clip on social media and in the email to buyers is worth more than any render. We cover it in [how to launch a real estate presale](/blog/como-lanzar-una-preventa-inmobiliaria).",
+          "**Owners who live far away:** many buyers in Rosarito, Ensenada and the Valle live in the United States or in another city. Watching their house grow from above, every month, is the clearest way to know the money is turning into a building. More about that buyer in [how to sell to buyers from the United States and Canada](/blog/vender-a-compradores-extranjeros-baja-california).",
+          "**Vineyards and farms:** the same principle applies to a season: budbreak, veraison, harvest.",
+        ],
+        bodyEs: [
+          "**Constructoras:** para reportar el avance al cliente sin que tenga que ir a la obra, y para respaldar estimaciones y entregas con fechas. Un cliente que ve el avance cada mes pregunta menos y paga con menos fricción. Y el video final es el mejor material para conseguir la siguiente obra, el problema que explicamos en [por qué tu constructora cotiza mucho y cierra poco](/blog/constructora-cotiza-mucho-cierra-poco).",
+          "**Desarrolladores inmobiliarios:** el avance de obra es lo que más tranquiliza a quien compró en preventa. Un clip mensual en redes y en el correo a compradores vale más que cualquier render. Lo vemos en [cómo lanzar una preventa inmobiliaria](/blog/como-lanzar-una-preventa-inmobiliaria).",
+          "**Dueños que viven lejos:** muchos compradores de Rosarito, Ensenada y el Valle viven en Estados Unidos o en otra ciudad. Ver su casa crecer desde arriba, cada mes, es la forma más clara de saber que el dinero se está volviendo obra. Más sobre ese comprador en [cómo venderle a compradores de Estados Unidos y Canadá](/blog/vender-a-compradores-extranjeros-baja-california).",
+          "**Viñedos y proyectos agrícolas:** el mismo principio aplica a una temporada: brotación, envero, vendimia.",
+        ],
+      },
+      {
+        id: "permisos",
+        heading: "Permits: when a site needs authorisation to fly",
+        headingEs: "Permisos: cuándo una obra necesita autorización para volar",
+        body: [
+          "In Mexico drones are governed by the standard NOM-107-SCT3-2019, enforced by the Federal Civil Aviation Agency ([[AFAC|afac]]). For this kind of work, what matters most: fly no higher than 122 metres, always within the pilot's line of sight and in daylight, and keep a distance from people who are not part of the operation. Near airports the rules get stricter: the standard prohibits operating within 3.7 km of an aerodrome and requires special authorisation within 9.2 km, with a lower maximum height.",
+          "In practice that matters above all in Tijuana, because of the international airport, and near any aerodrome. Before the first visit we check the exact location; if the site falls in a restricted zone, we tell you in the quote and handle the permit. The details of the standard are in [drones in Mexico: regulation and permits](/blog/regulacion-de-drones-en-mexico).",
+        ],
+        bodyEs: [
+          "En México los drones se rigen por la norma NOM-107-SCT3-2019, que aplica la Agencia Federal de Aviación Civil ([[AFAC|afac]]). Para trabajos como este, lo que más importa: volar a no más de 122 metros de altura, siempre a la vista del piloto y de día, y guardar distancia de las personas que no participan en la operación. Cerca de los aeropuertos las reglas se endurecen: la norma prohíbe operar a menos de 3.7 km de un aeródromo y pide autorización especial dentro de 9.2 km, con una altura máxima menor.",
+          "En la práctica, eso importa sobre todo en Tijuana, por el aeropuerto internacional, y cerca de cualquier aeródromo. Antes de la primera visita verificamos la ubicación exacta; si la obra cae en zona restringida, te lo decimos desde la cotización y gestionamos el permiso. El detalle de la norma está en [drones en México: regulación y permisos](/blog/regulacion-de-drones-en-mexico).",
+        ],
+      },
+      {
+        id: "consejos",
+        heading: "How to get more out of a tracking project",
+        headingEs: "Cómo sacarle más provecho a un seguimiento",
+        body: [
+          "**Repeat the same viewpoints.** On the first visit we set 3 or 4 shots that are repeated every time, from the same position and height. That is what makes the progress visible in the final video.",
+          "**Schedule at the same time of day.** The same light makes the shots comparable from one visit to the next.",
+          "**Tie each visit to a milestone.** Better than a fixed date: “when the second-floor slab is poured”. That way every clip tells something.",
+          "**Have someone on site.** Someone who opens the gate, clears the take-off area and warns the crew. Waiting time counts as contracted time.",
+          "**Have a plan B for the weather.** With strong wind or rain nobody flies; we reschedule once at no cost.",
+          "**Decide from the start where the material will be used.** If it goes to social media we deliver vertical versions; if it goes to ads, the advanced edit with cuts for paid media, from $3,500 MXN, may be worth it.",
+          "**Book the date early.** It is reserved with a 50% deposit.",
+          "If you have a project in Ensenada, Tijuana or anywhere in Baja California, [get a quote for tracking your build](/servicios/video-con-dron): tell us where it is, how long it will take and what you want the material for, and we will tell you which package and which schedule fit.",
+        ],
+        bodyEs: [
+          "**Repite los mismos puntos de vista.** En la primera visita fijamos 3 o 4 tomas que se repiten cada vez, desde la misma posición y altura. Es lo que hace que el avance se note en el video final.",
+          "**Programa a la misma hora del día.** La misma luz hace que las tomas se puedan comparar de una visita a otra.",
+          "**Amarra cada visita a un hito.** Mejor que una fecha fija: “cuando se cuele la losa del segundo nivel”. Así cada clip cuenta algo.",
+          "**Ten a alguien en obra.** Que abra el acceso, despeje la zona de despegue y avise a la cuadrilla. El tiempo de espera cuenta como tiempo contratado.",
+          "**Ten un plan B para el clima.** Con viento fuerte o lluvia no se vuela; reprogramamos una vez sin costo.",
+          "**Decide desde el inicio dónde se va a usar el material.** Si va a redes, entregamos versiones verticales; si va a anuncios, puede convenir la edición avanzada con cortes para pauta, desde $3,500 MXN.",
+          "**Aparta la fecha con tiempo.** Se reserva con 50% de anticipo.",
+          "Si tienes una obra en Ensenada, Tijuana o cualquier punto de Baja California, [cotiza el seguimiento de tu obra](/servicios/video-con-dron): nos dices dónde está, cuánto va a durar y para qué quieres el material, y te decimos qué paquete y qué cadencia te convienen.",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Cuánto cuesta documentar una obra con dron en Baja California?",
+        qEn: "How much does it cost to document a construction site with a drone in Baja California?",
+        a: "Con precios de Aphelion de noviembre de 2026: una visita suelta (Captura) cuesta $2,990 MXN y el seguimiento de 4 visitas $8,890 MXN; cada visita adicional, $2,490. Desde Ensenada y Valle de Guadalupe el traslado está incluido; a Tijuana se suman $1,499 y a Mexicali $2,700.",
+        aEn: "With Aphelion prices from November 2026: a single visit (Captura) costs $2,990 MXN and 4-visit tracking $8,890 MXN; each additional visit, $2,490. From Ensenada and Valle de Guadalupe travel is included; Tijuana adds $1,499 and Mexicali $2,700.",
+      },
+      {
+        q: "¿Cada cuánto conviene volar un dron sobre una obra?",
+        qEn: "How often should a drone fly over a construction site?",
+        a: "Para documentación visual, una vez al mes o en cada hito importante, como cada losa colada. En terracerías puede convenir cada 2 a 4 semanas, porque el terreno cambia rápido; en acabados, el dron aporta menos.",
+        aEn: "For visual documentation, once a month or at each major milestone, such as each slab poured. During earthworks every 2 to 4 weeks may be worth it, because the ground changes quickly; during finishing, the drone adds less.",
+      },
+      {
+        q: "¿El video con dron sirve para medir volúmenes o certificar avance?",
+        qEn: "Can drone video be used to measure volumes or certify progress?",
+        a: "No. Para medir hace falta un levantamiento con fotogrametría: un ortomosaico y un modelo de elevación procesados con puntos de control en tierra. El video documenta; la fotogrametría mide. Son servicios distintos y muchas obras usan los dos.",
+        aEn: "No. Measuring requires a photogrammetry survey: an orthomosaic and an elevation model processed with ground control points. Video documents; photogrammetry measures. They are different services and many projects use both.",
+      },
+      {
+        q: "¿Necesito permiso para volar un dron sobre mi obra?",
+        qEn: "Do I need a permit to fly a drone over my construction site?",
+        a: "En la mayoría de las zonas, no. Cerca de aeropuertos sí: la NOM-107-SCT3-2019 prohíbe operar a menos de 3.7 km de un aeródromo y pide autorización dentro de 9.2 km. Verificamos la ubicación antes de cotizar y, si hace falta, gestionamos el permiso por $999 MXN.",
+        aEn: "In most areas, no. Near airports, yes: NOM-107-SCT3-2019 prohibits operating within 3.7 km of an aerodrome and requires authorisation within 9.2 km. We check the location before quoting and, if needed, handle the permit for $999 MXN.",
+      },
+      {
+        q: "¿Qué pasa si hay viento o llueve el día de la visita?",
+        qEn: "What happens if it is windy or raining on the day of the visit?",
+        a: "No se vuela. Reprogramamos una vez sin costo; después de eso aplica un cargo.",
+        aEn: "Nobody flies. We reschedule once at no cost; after that a charge applies.",
+      },
+      {
+        q: "¿Puedo usar el material en mi preventa y en anuncios?",
+        qEn: "Can I use the footage in my presale and in ads?",
+        a: "Sí. El material incluye licencia de uso para quien lo contrata, también en anuncios de Meta y Google. Revenderlo o cedérselo a terceros requiere autorización.",
+        aEn: "Yes. The material includes a usage licence for whoever hires it, including in Meta and Google ads. Reselling it or transferring it to third parties requires authorisation.",
+      },
+      {
+        q: "¿Me entregan los archivos originales?",
+        qEn: "Do I get the original files?",
+        a: "Se pueden agregar como extra por $999 MXN; no vienen incluidos en los paquetes.",
+        aEn: "They can be added as an extra for $999 MXN; they are not included in the packages.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "drone construction progress Baja California",
+        "drone site documentation cost Mexico",
+        "construction drone Tijuana",
+        "construction drone Ensenada",
+        "drone progress video price",
+      ],
+      keywordsEs: [
+        "dron para obra",
+        "seguimiento de obra con dron",
+        "video de avance de obra",
+        "precio dron obra Baja California",
+        "dron construcción Tijuana",
+        "dron obra Ensenada",
+      ],
+    },
+  },
+  {
+    slug: "pedidos-por-whatsapp-punto-de-venta-restaurante",
+    cover: true,
+    title: "How to Connect WhatsApp Orders to Your Restaurant's Point of Sale",
+    titleEs: "Cómo conectar los pedidos por WhatsApp con el punto de venta de tu restaurante",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "The path an order takes from a WhatsApp message to the kitchen and the inventory, the three ways to receive orders, from the free app to a full integration, when an online menu is enough and when it pays to connect WhatsApp to your register, and what it costs.",
+    excerptEs:
+      "El camino que recorre un pedido desde un mensaje de WhatsApp hasta la cocina y el inventario, las tres formas de recibir pedidos, de la app gratis a una integración completa, cuándo basta un menú en línea y cuándo conviene conectar WhatsApp a tu caja, y cuánto cuesta.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In many Mexican restaurants the order channel that grows fastest is not an app: it is WhatsApp. 90.6% of smartphone users in Mexico use messaging apps, according to INEGI's ENDUTIH 2025. Receiving the order is not the problem; what happens next is. Someone reads it, copies it into the register, tells the kitchen and, with luck, discounts the inventory. Every manual step costs a minute and is a chance to get it wrong. This guide shows the path an order takes, when a form is enough and when it is worth connecting WhatsApp to your [[point of sale|punto-de-venta]].",
+    ledeEs:
+      "En muchos restaurantes de México el canal de pedidos que más crece no es una app: es WhatsApp. El 90.6% de quienes usan celular inteligente en México usa apps de mensajería, según la ENDUTIH 2025 del INEGI. Recibir el pedido no es el problema; lo que pasa después, sí. Alguien lo lee, lo copia a la caja, se lo dicta a la cocina y, con suerte, descuenta el inventario. Cada paso a mano cuesta un minuto y es una oportunidad de equivocarse. Esta guía muestra el camino que recorre un pedido, cuándo basta con un formulario y cuándo vale la pena conectar WhatsApp a tu [[punto de venta|punto-de-venta]].",
+    sections: [
+      {
+        id: "el-camino",
+        heading: "The path of an order, from WhatsApp to the kitchen",
+        headingEs: "El camino de un pedido, de WhatsApp a la cocina",
+        body: [
+          "In a small restaurant, one person does all of this with the phone in one hand and the register in the other. It works until the rush. The question is not whether to automate, but which of these steps stop being done by hand.",
+        ],
+        bodyEs: [
+          "En un restaurante chico, todo esto lo hace una persona con el celular en una mano y la caja en la otra. Funciona hasta que llega la hora pico. La pregunta no es si automatizar, sino cuáles de estos pasos dejan de hacerse a mano.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "The eight steps of a WhatsApp order",
+          titleEs: "Los ocho pasos de un pedido por WhatsApp",
+          steps: [
+            { label: "Message", labelEs: "Mensaje", detail: "The customer writes “can you send me the menu?” or picks from the catalogue.", detailEs: "El cliente escribe “¿me mandas el menú?” o elige del catálogo." },
+            { label: "Order", labelEs: "Pedido", detail: "Products, options and quantities. In free text, this is where most mistakes are born.", detailEs: "Productos, opciones y cantidades. En texto libre, aquí nacen la mayoría de los errores." },
+            { label: "Confirmation", labelEs: "Confirmación", detail: "Total, address or pick-up time, payment method and an order number.", detailEs: "Total, dirección u hora de recogida, forma de pago y un número de pedido." },
+            { label: "Register", labelEs: "Caja", detail: "The order becomes a ticket, tagged with its channel so it can be measured.", detailEs: "El pedido se vuelve ticket, marcado con su canal para poder medirlo." },
+            { label: "Kitchen", labelEs: "Cocina", detail: "A printed ticket or the kitchen display, in the order it came in.", detailEs: "Comanda impresa o en el monitor de cocina, en el orden en que entró." },
+            { label: "Inventory", labelEs: "Inventario", detail: "The ingredients are discounted by recipe.", detailEs: "Se descuentan los insumos por receta." },
+            { label: "Delivery and payment", labelEs: "Entrega y cobro", detail: "Own delivery, pick-up or card terminal; the ticket is closed.", detailEs: "Repartidor propio, recogida o terminal; se cierra el ticket." },
+            { label: "Afterwards", labelEs: "Después", detail: "“Your order is on its way”, a review request and the next purchase.", detailEs: "“Tu pedido va en camino”, la reseña y la siguiente compra." },
+          ],
+        },
+      },
+      {
+        id: "tres-niveles",
+        heading: "Three ways to receive WhatsApp orders, from simplest to integrated",
+        headingEs: "Tres formas de recibir pedidos por WhatsApp, de la más simple a la integrada",
+        body: [
+          "**Level 1: WhatsApp Business with a catalogue.** The app is free and lets you upload your menu as a catalogue; since 2020 customers can fill a cart and send the whole order in a single message. No more “one asada… oh, and another without onion” across five messages. But someone still has to enter that order into the register.",
+          "**Level 2: an online menu or a form.** The customer opens a link, chooses products with their options, and the system sends you the full order, with total and address, by WhatsApp or to a dashboard. OlaClick, for example, offers its core system with no commission per order; a form on your own website does the same. If the tool is not connected to your register, the order is still typed in by hand, but it arrives clean.",
+          "**Level 3: integration with your point of sale.** The order goes straight into the register as a ticket, prints or appears on the [[kitchen display|monitor-de-cocina]] and discounts inventory, without anyone typing it again. That takes two things: the [[WhatsApp API|whatsapp-api]], or an online menu that connects to your register, and a point of sale that accepts orders from outside. Loyverse, for example, has a public API that can create tickets; with other systems, ask.",
+        ],
+        bodyEs: [
+          "**Nivel 1: WhatsApp Business con catálogo.** La app es gratis y te deja subir tu menú como catálogo; desde 2020 el cliente puede armar un carrito y mandarte todo el pedido en un solo mensaje. Se acabó el “una de asada… ah, y otra sin cebolla” en cinco mensajes. Pero alguien tiene que capturar ese pedido en la caja.",
+          "**Nivel 2: un menú en línea o un formulario.** El cliente abre un enlace, elige productos con sus opciones y el sistema te manda el pedido completo, con total y dirección, por WhatsApp o a un panel. OlaClick, por ejemplo, ofrece su sistema base sin comisión por pedido; un formulario en tu propia página hace lo mismo. Si la herramienta no está conectada a tu caja, el pedido se sigue capturando a mano, pero ya llega limpio.",
+          "**Nivel 3: integración con tu punto de venta.** El pedido entra directo a la caja como ticket, se imprime o aparece en el [[monitor de cocina|monitor-de-cocina]] y descuenta inventario, sin que nadie lo vuelva a teclear. Para eso hacen falta dos cosas: la [[API de WhatsApp|whatsapp-api]], o un menú en línea que se conecte con tu caja, y un punto de venta que acepte pedidos desde fuera. Loyverse, por ejemplo, tiene una API pública que permite crear tickets; con otros sistemas, pregunta.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "What each level solves and what is still manual",
+          titleEs: "Qué resuelve cada nivel y qué sigue siendo a mano",
+          columns: [
+            { label: "Level", labelEs: "Nivel" },
+            { label: "What it solves", labelEs: "Qué resuelve" },
+            { label: "Still manual", labelEs: "Qué sigue a mano" },
+            { label: "Cost", labelEs: "Costo" },
+          ],
+          rows: [
+            { label: "WhatsApp Business and catalogue", labelEs: "WhatsApp Business y catálogo", cells: [
+              { text: "Visible menu and the order in one message", textEs: "Menú visible y el pedido en un mensaje" },
+              { text: "Confirming, typing it into the register, telling the kitchen", textEs: "Confirmar, capturar en caja, avisar a cocina" },
+              { text: "The app is free", textEs: "La app es gratis" } ] },
+            { label: "Online menu or form", labelEs: "Menú en línea o formulario", cells: [
+              { text: "Complete order with options, total and address", textEs: "Pedido completo con opciones, total y dirección" },
+              { text: "Typing it into the register, if not connected", textEs: "Capturar en caja, si no se conecta" },
+              { text: "From free; depends on the tool", textEs: "Desde gratis; depende de la herramienta" } ] },
+            { label: "Point of sale integration", labelEs: "Integración con el punto de venta", cells: [
+              { text: "The order reaches register, kitchen and inventory on its own", textEs: "El pedido llega solo a caja, cocina e inventario" },
+              { text: "Handling exceptions and questions", textEs: "Atender excepciones y dudas" },
+              { text: "Initial development, WhatsApp API per message and sometimes a connector fee", textEs: "Desarrollo inicial, API de WhatsApp por mensaje y a veces mensualidad del conector" } ] },
+          ],
+        },
+      },
+      {
+        id: "cuando-basta",
+        heading: "When a form is enough and when to integrate",
+        headingEs: "Cuándo basta un formulario y cuándo conviene integrar",
+        body: [
+          "Integrating has a cost: initial development, the API's per-message charges and someone to maintain it. It makes no sense if you get five orders a day. Before deciding, measure for one week: how many orders arrive by WhatsApp, how long it takes to enter each one and how many go wrong.",
+          "**Level 1 or 2 is enough if:** one person handles WhatsApp without orders piling up at the rush, mistakes are rare and your register does not need to know, minute by minute, what was sold through WhatsApp.",
+          "**It is worth integrating if:** at the rush there are orders waiting for someone to type them in; every week some order goes out wrong because it was copied wrong; you have more than one branch or a kitchen that supplies several; you want real-time inventory; or you already use a [[chatbot|chatbot]] that takes orders and the last step, passing them to the register, is still manual.",
+          "A quick calculation to decide, with **assumptions you should replace with your own numbers**: if entering each order takes 3 minutes and you get 40 a day, that is 2 hours a day of someone copying from one screen to another, about 60 hours a month. Compare that, plus the cost of the mistakes, with what the integration costs.",
+        ],
+        bodyEs: [
+          "Integrar tiene costo: un desarrollo inicial, el cobro por mensaje de la API y alguien que lo mantenga. No tiene sentido si recibes cinco pedidos al día. Antes de decidir, mide una semana: cuántos pedidos llegan por WhatsApp, cuánto tarda alguien en capturar cada uno y cuántos salen mal.",
+          "**Te alcanza con el nivel 1 o 2 si:** una persona atiende WhatsApp sin que se le junten los pedidos en la hora pico, los errores son raros y tu caja no necesita saber al minuto qué se vendió por WhatsApp.",
+          "**Conviene integrar si:** en la hora pico hay pedidos esperando a que alguien los capture; cada semana sale algún pedido mal porque se copió mal; tienes más de una sucursal o una cocina que surte a varias; quieres inventario en tiempo real; o ya usas un [[chatbot|chatbot]] que toma pedidos y el último paso, pasarlos a la caja, sigue siendo a mano.",
+          "Una cuenta rápida para decidir, con **suposiciones que debes cambiar por tus números**: si capturar cada pedido toma 3 minutos y recibes 40 al día, son 2 horas diarias de alguien copiando de una pantalla a otra, unas 60 horas al mes. Compara eso, más el costo de los errores, contra lo que cuesta la integración.",
+        ],
+      },
+      {
+        id: "integracion",
+        heading: "What the integration needs in order to work",
+        headingEs: "Lo que tiene que tener la integración para funcionar",
+        body: [
+          "**A menu that speaks the same language as your register.** Every product and every [[modifier|modificadores]] in the online menu must match one in your point of sale. If the menu says “no onion” and the register has no such option, the order arrives incomplete.",
+          "**Confirmation before cooking.** The system confirms the total, the address or pick-up time and the payment method, and gives the customer an order number. Nothing goes to the kitchen without confirmation.",
+          "**Clear payment.** Cash on delivery, transfer or a payment link. If you charge by link, the order should go to the kitchen once payment is confirmed, not before.",
+          "**A person for the exceptions.** Whoever asks whether the cake has nuts or wants something off the menu needs to be able to talk to someone. The integration removes the typing, not the service.",
+          "**The channel tagged in the register.** Every ticket should say “WhatsApp”, so you know how much that channel sells, its average ticket and who comes back.",
+          "**Follow-up messages at a controlled cost.** With the API, Meta charges per message depending on its type. With the October 2026 rate card, a [[utility message|mensaje-de-utilidad]] such as “your order is on its way” costs US$0.0085 in Mexico, and service replies are also charged after the first 1,000 of the month. We explain it in [WhatsApp now charges for replying to your customers](/blog/whatsapp-cobra-mensajes-de-servicio).",
+        ],
+        bodyEs: [
+          "**Un menú que hable el mismo idioma que tu caja.** Cada producto y cada [[modificador|modificadores]] del menú en línea debe corresponder a uno de tu punto de venta. Si en el menú dice “sin cebolla” y en la caja esa opción no existe, el pedido llega incompleto.",
+          "**Confirmación antes de cocinar.** El sistema confirma el total, la dirección u hora de recogida y la forma de pago, y le da al cliente un número de pedido. Nada entra a cocina sin confirmar.",
+          "**Un cobro claro.** Efectivo contra entrega, transferencia o un enlace de pago. Si cobras por enlace, el pedido debe pasar a cocina cuando el pago se confirma, no antes.",
+          "**Una persona para las excepciones.** Quien pregunta si el pastel lleva nuez o pide algo fuera del menú tiene que poder hablar con alguien. La integración quita la captura, no la atención.",
+          "**El canal marcado en la caja.** Que cada ticket diga “WhatsApp”, para saber cuánto vende ese canal, su ticket promedio y quién vuelve a comprar.",
+          "**Mensajes de seguimiento con costo controlado.** Con la API, Meta cobra por mensaje según su tipo. Con la tarifa de octubre de 2026, un [[mensaje de utilidad|mensaje-de-utilidad]] como “tu pedido va en camino” cuesta US$0.0085 en México, y las respuestas de servicio también se cobran después de las primeras 1,000 del mes. Lo explicamos en [WhatsApp ya cobra por responderle a tus clientes](/blog/whatsapp-cobra-mensajes-de-servicio).",
+        ],
+      },
+      {
+        id: "whatsapp-o-apps",
+        heading: "WhatsApp versus the delivery apps",
+        headingEs: "WhatsApp contra las apps de delivery",
+        body: [
+          "Delivery apps charge restaurants commissions of up to 30% per order, as we break down in [what Rappi, Uber Eats and DiDi Food really cost your restaurant](/blog/apps-de-delivery-comisiones-restaurante). A WhatsApp order pays no commission, and the customer is yours: you have their number to tell them about Thursday's promotion, if they agreed to it in your [[privacy notice|aviso-de-privacidad]].",
+          "The point is not to leave the apps: they bring you customers who do not know you yet. The point is that the customer who already knows you orders directly. For that, ordering by WhatsApp has to be as easy as in the app: a menu with photos and up-to-date prices, a clear total and a fast reply.",
+        ],
+        bodyEs: [
+          "Las apps de delivery cobran comisiones de hasta 30% por pedido, como detallamos en [lo que de verdad le cuestan Rappi, Uber Eats y DiDi Food a tu restaurante](/blog/apps-de-delivery-comisiones-restaurante). Un pedido por WhatsApp no paga comisión, y el cliente es tuyo: tienes su número para avisarle de la promoción del jueves, si lo aceptó en tu [[aviso de privacidad|aviso-de-privacidad]].",
+          "No se trata de salirte de las apps: te traen clientes que todavía no te conocen. Se trata de que el cliente que ya te conoce pida directo. Para eso, pedir por WhatsApp tiene que ser igual de fácil que en la app: menú con fotos y precios al día, un total claro y una respuesta rápida.",
+        ],
+      },
+      {
+        id: "errores",
+        heading: "Common mistakes when selling through WhatsApp",
+        headingEs: "Errores comunes al vender por WhatsApp",
+        body: [
+          "**Sending the menu as a photo or PDF.** The customer cannot choose from it and ends up typing everything; old prices keep circulating in conversations from months ago.",
+          "**Not confirming the total.** Without a total confirmed in writing, the argument arrives with the delivery rider.",
+          "**Using someone's personal phone.** If that person leaves, your customers leave with them. Use a business number with WhatsApp Business.",
+          "**Not replying after hours.** An automatic message with your opening hours and the menu link keeps the customer from ordering somewhere else.",
+          "**Not measuring.** If WhatsApp orders are not tagged in the register, you do not know whether the channel is growing.",
+          "**Automating everything at once.** Start with the step that costs you the most time or the most mistakes.",
+          "If you want to know which level your restaurant is at and which step to automate first, [let us review how you receive your orders](/servicios/automatizacion). If you are still choosing a system, start with [the point of sale for restaurants](/blog/punto-de-venta-para-restaurantes) that connects best.",
+        ],
+        bodyEs: [
+          "**Mandar el menú en foto o PDF.** El cliente no puede elegir de ahí y termina escribiendo todo; los precios viejos se quedan circulando en conversaciones de hace meses.",
+          "**No confirmar el total.** Sin un total confirmado por escrito, la discusión llega con el repartidor.",
+          "**Usar el celular personal de alguien.** Si esa persona se va, se lleva a tus clientes. Usa un número del negocio con WhatsApp Business.",
+          "**No contestar fuera de horario.** Un mensaje automático con tu horario y el enlace al menú evita que el cliente pida en otro lado.",
+          "**No medir.** Si los pedidos de WhatsApp no se marcan en la caja, no sabes si el canal está creciendo.",
+          "**Automatizar todo de golpe.** Empieza por el paso que más tiempo o más errores te cuesta.",
+          "Si quieres saber en qué nivel está tu restaurante y qué paso conviene automatizar primero, [revisemos cómo recibes tus pedidos](/servicios/automatizacion). Si todavía estás eligiendo sistema, empieza por [el punto de venta para restaurantes](/blog/punto-de-venta-para-restaurantes) que mejor se conecte.",
+        ],
+      },
+    ],
+    gradient: "from-emerald-900 to-neutral-950",
+    faq: [
+      {
+        q: "¿Se puede conectar WhatsApp con el punto de venta de un restaurante?",
+        qEn: "Can WhatsApp be connected to a restaurant's point of sale?",
+        a: "Sí. Hace falta la API de WhatsApp, o un menú en línea que se conecte con tu caja, y un punto de venta que acepte pedidos desde fuera, normalmente por su API. Así el pedido entra como ticket, llega a cocina y descuenta inventario sin volver a capturarlo.",
+        aEn: "Yes. It takes the WhatsApp API, or an online menu that connects to your register, and a point of sale that accepts orders from outside, usually through its API. The order then becomes a ticket, reaches the kitchen and discounts inventory without being typed again.",
+      },
+      {
+        q: "¿Necesito la API de WhatsApp para recibir pedidos?",
+        qEn: "Do I need the WhatsApp API to receive orders?",
+        a: "Para empezar, no. La app de WhatsApp Business es gratis y su catálogo con carrito permite recibir el pedido en un solo mensaje. La API hace falta cuando quieres automatizar respuestas o mandar los pedidos directo a tu caja.",
+        aEn: "Not to start. The WhatsApp Business app is free and its catalogue with a cart lets you receive the order in a single message. The API is needed when you want to automate replies or send orders straight to your register.",
+      },
+      {
+        q: "¿Cuánto cuesta recibir pedidos por WhatsApp?",
+        qEn: "How much does it cost to receive orders by WhatsApp?",
+        a: "La app es gratis y hay menús en línea sin comisión por pedido. Con la API, Meta cobra por mensaje: con la tarifa de octubre de 2026, un mensaje de utilidad cuesta US$0.0085 en México. La integración con tu caja es un desarrollo que depende del sistema que uses.",
+        aEn: "The app is free and there are online menus with no commission per order. With the API, Meta charges per message: with the October 2026 rate card, a utility message costs US$0.0085 in Mexico. Integration with your register is a development that depends on the system you use.",
+      },
+      {
+        q: "¿Puedo usar el catálogo de WhatsApp Business como menú?",
+        qEn: "Can I use the WhatsApp Business catalogue as a menu?",
+        a: "Sí, y el cliente puede mandar el pedido completo con el carrito. No está pensado para opciones como el término de la carne o ingredientes extra; si tu menú tiene muchas, conviene un menú en línea.",
+        aEn: "Yes, and the customer can send the whole order with the cart. It is not designed for options such as how the meat is cooked or extra ingredients; if your menu has many, an online menu works better.",
+      },
+      {
+        q: "¿Es mejor vender por WhatsApp que por Rappi o Uber Eats?",
+        qEn: "Is it better to sell through WhatsApp than through Rappi or Uber Eats?",
+        a: "Son complementarios. Las apps te traen clientes nuevos a cambio de comisiones de hasta 30%; WhatsApp no cobra comisión y el cliente es tuyo. Lo ideal es que quien ya te conoce pida directo.",
+        aEn: "They complement each other. The apps bring new customers in exchange for commissions of up to 30%; WhatsApp charges no commission and the customer is yours. Ideally, those who already know you order directly.",
+      },
+      {
+        q: "¿Un chatbot puede tomar los pedidos por mí?",
+        qEn: "Can a chatbot take orders for me?",
+        a: "Sí, para pedidos del menú. Funciona mejor si al final el pedido pasa solo a la caja y si hay una persona para dudas y excepciones. Lo vemos en nuestra guía de chatbots con IA.",
+        aEn: "Yes, for menu orders. It works best if the order then goes to the register on its own and if there is a person for questions and exceptions. We cover it in our guide to AI chatbots.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "WhatsApp orders restaurant point of sale",
+        "connect WhatsApp to POS Mexico",
+        "restaurant WhatsApp ordering system",
+        "WhatsApp Business catalogue restaurant",
+        "WhatsApp API orders kitchen",
+      ],
+      keywordsEs: [
+        "pedidos por WhatsApp restaurante",
+        "conectar WhatsApp con punto de venta",
+        "sistema de pedidos por WhatsApp",
+        "menú en línea pedidos WhatsApp",
+        "catálogo WhatsApp Business restaurante",
+        "integrar WhatsApp con caja",
+      ],
+    },
+  },
+  {
+    slug: "auditoria-google-ads-tijuana",
+    cover: true,
+    title: "What Does a Google Ads Audit Include for Businesses in Tijuana?",
+    titleEs: "¿Qué incluye una auditoría de Google Ads para negocios de Tijuana?",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "The seven areas a Google Ads audit reviews, the border problem almost no template checks, what you should receive at the end, an example finding with the numbers, the order in which fixes are made and a mini audit you can do today.",
+    excerptEs:
+      "Las siete áreas que revisa una auditoría de Google Ads, el problema de la frontera que casi ninguna plantilla revisa, qué debes recibir al final, un ejemplo de hallazgo con números, el orden en que se corrige y una mini auditoría que puedes hacer hoy.",
+    readingTime: 10,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A Google Ads audit is not a PDF with 80 boxes in green and red. It is the answer to three questions: where the money is going, which part of it brings customers and what has to change first. In Tijuana it has an extra layer that almost no template checks: the border. Your ads may be showing in San Diego, in English or Spanish, and paying for clicks from people who will never cross. This post complements our [complete Google Ads guide](/blog/guia-google-ads) and the [10 mistakes that burn your budget](/blog/errores-de-google-ads): here is what an audit reviews, what you receive, an example finding and how fixes are prioritised.",
+    ledeEs:
+      "Una auditoría de Google Ads no es un PDF con 80 casillas en verde y rojo. Es la respuesta a tres preguntas: en qué se está yendo el dinero, qué parte de eso trae clientes y qué hay que cambiar primero. En Tijuana tiene una capa extra que casi ninguna plantilla revisa: la frontera. Tus anuncios pueden estar saliendo en San Diego, en inglés o en español, y pagando clics de gente que nunca va a cruzar. Esta entrada complementa nuestra [guía completa de Google Ads](/blog/guia-google-ads) y los [10 errores que queman tu presupuesto](/blog/errores-de-google-ads): aquí está qué revisa una auditoría, qué recibes, un ejemplo de hallazgo y cómo se priorizan las correcciones.",
+    sections: [
+      {
+        id: "que-revisa",
+        heading: "The seven areas an audit reviews",
+        headingEs: "Las siete áreas que revisa una auditoría",
+        body: [
+          "This is what a complete review looks like, from what weighs most to what weighs least:",
+        ],
+        bodyEs: [
+          "Así se ve una revisión completa, de lo que más pesa a lo que menos:",
+        ],
+        diagram: {
+          kind: "table",
+          title: "What an audit checks and the sign that something is wrong",
+          titleEs: "Qué revisa una auditoría y la señal de que algo está mal",
+          columns: [
+            { label: "Area", labelEs: "Área" },
+            { label: "What is reviewed", labelEs: "Qué se revisa" },
+            { label: "Sign of a problem", labelEs: "Señal de problema" },
+          ],
+          rows: [
+            { label: "Measurement", labelEs: "Medición", cells: [
+              { text: "What counts as a conversion: calls, WhatsApp, forms, thank-you page; duplicates; whether Google Ads and GA4 agree", textEs: "Qué cuenta como conversión: llamadas, WhatsApp, formularios, página de gracias; duplicados; si Google Ads y GA4 coinciden" },
+              { text: "More conversions in Google Ads than customers in your register or CRM", textEs: "Más conversiones en Google Ads que clientes en tu caja o tu CRM" } ] },
+            { label: "Search terms", labelEs: "Términos de búsqueda", cells: [
+              { text: "The real searches you paid for, not just your keywords", textEs: "Las búsquedas reales por las que pagaste, no solo tus palabras clave" },
+              { text: "Clicks from “jobs”, “free”, “course” or your competitor's name", textEs: "Clics de “empleo”, “gratis”, “curso” o del nombre de tu competencia" } ] },
+            { label: "Location and language", labelEs: "Ubicación e idioma", cells: [
+              { text: "Where the people who clicked actually were and what language they searched in", textEs: "Dónde estaban de verdad quienes hicieron clic y en qué idioma buscaron" },
+              { text: "Clicks from San Diego for a service only offered in Tijuana, or the reverse", textEs: "Clics desde San Diego para un servicio que solo se da en Tijuana, o al revés" } ] },
+            { label: "Structure and bidding", labelEs: "Estructura y puja", cells: [
+              { text: "Campaigns, ad groups, bid strategy and automation settings", textEs: "Campañas, grupos de anuncios, estrategia de puja y automatizaciones" },
+              { text: "Automated bidding optimising for conversions that are not sales", textEs: "Puja automática optimizando con conversiones que no son ventas" } ] },
+            { label: "Ads and landing page", labelEs: "Anuncios y página", cells: [
+              { text: "Whether the ad promises what the page delivers; speed; a visible call or WhatsApp button on mobile", textEs: "Si el anuncio promete lo que la página entrega; velocidad; botón de llamada o WhatsApp visible en celular" },
+              { text: "Good click-through rate and few conversions", textEs: "Buen porcentaje de clics y pocas conversiones" } ] },
+            { label: "Budget", labelEs: "Presupuesto", cells: [
+              { text: "Campaigns limited by budget, schedules and devices", textEs: "Campañas limitadas por presupuesto, horarios y dispositivos" },
+              { text: "The campaign that sells most runs out of budget by midday", textEs: "La campaña que más vende se queda sin presupuesto a mediodía" } ] },
+            { label: "Automatic recommendations", labelEs: "Recomendaciones automáticas", cells: [
+              { text: "Which changes Google applied by itself", textEs: "Qué cambios aplicó Google por su cuenta" },
+              { text: "Keywords or budgets nobody on your team added", textEs: "Palabras clave o presupuestos que nadie de tu equipo agregó" } ] },
+          ],
+        },
+      },
+      {
+        id: "puntuacion",
+        heading: "The optimisation score is not an audit",
+        headingEs: "La puntuación de optimización no es una auditoría",
+        body: [
+          "The [[optimisation score|puntuacion-de-optimizacion]] Google shows on your account is, in the words of its own help centre, “an estimate of how well your Google Ads account is set to perform”. It goes up when you apply or dismiss its recommendations, whether or not those recommendations are good for your business. An account at 95% can be losing money, and one at 60% can be profitable.",
+          "An audit starts from the opposite place: from your customers. How many came from ads last month, how much each one cost and how much each one is worth. That number is checked against what the account says, and the gap between the two is where the findings are.",
+        ],
+        bodyEs: [
+          "La [[puntuación de optimización|puntuacion-de-optimizacion]] que Google muestra en tu cuenta es, según su propio centro de ayuda, una estimación de qué tan bien está configurada tu cuenta para rendir. Sube cuando aplicas o descartas sus recomendaciones, sean o no buenas para tu negocio. Una cuenta con 95% puede estar perdiendo dinero, y una con 60% puede ser rentable.",
+          "Una auditoría parte del lado contrario: de tus clientes. Cuántos llegaron por anuncios el mes pasado, cuánto costó cada uno y cuánto vale cada uno. Ese número se compara contra lo que dice la cuenta, y en la diferencia entre los dos están los hallazgos.",
+        ],
+      },
+      {
+        id: "frontera",
+        heading: "What changes in Tijuana: the border",
+        headingEs: "Lo que cambia en Tijuana: la frontera",
+        body: [
+          "Google Ads shows your ads to people who are, or regularly are, in the area you chose, and also to people who **show interest** in that area. Its help centre says this option, presence or interest, is the default and, in Search campaigns, is now the required setting for targeted locations. In Tijuana that means someone in Chula Vista searching for “dentist in Tijuana” can see your ad even if you are not targeting the United States.",
+          "For a medical tourism clinic, that is exactly what you want, as we explain in [how to attract patients from the United States](/blog/como-atraer-pacientes-de-estados-unidos). For a plumber, a school or a neighbourhood restaurant, it is wasted money. The audit reviews the location report, where the people who clicked really were, and decides what to exclude. Google applies exclusions by presence: it leaves out people who are in the excluded area.",
+          "Two more checks that matter in Tijuana. **Language:** if the campaign only accepts Spanish, it misses the patient whose phone is set to English; if it accepts every language, you may be paying for English searches your page does not serve. **Currency:** if the account bills in dollars and you think in pesos, the budget you think you have is not the one you are spending.",
+        ],
+        bodyEs: [
+          "Google Ads muestra tus anuncios a personas que están, o suelen estar, en la zona que elegiste, y también a quienes **muestran interés** en esa zona. Su centro de ayuda dice que esta opción, presencia o interés, es la predeterminada y, en campañas de búsqueda, ya es la configuración obligatoria para las ubicaciones objetivo. En Tijuana eso significa que alguien en Chula Vista que busca “dentista en Tijuana” puede ver tu anuncio aunque no estés segmentando Estados Unidos.",
+          "Para una clínica de turismo médico, eso es justo lo que quieres, como explicamos en [cómo captar pacientes de Estados Unidos](/blog/como-atraer-pacientes-de-estados-unidos). Para un plomero, una escuela o un restaurante de colonia, es dinero tirado. La auditoría revisa el informe de ubicaciones, dónde estaban de verdad las personas que hicieron clic, y decide qué excluir. Google aplica las exclusiones por presencia: deja fuera a quien está en la zona excluida.",
+          "Dos revisiones más que en Tijuana importan. **El idioma:** si la campaña solo acepta español, pierde al paciente que tiene el teléfono en inglés; si acepta todos los idiomas, puedes estar pagando búsquedas en inglés que tu página no atiende. **La moneda:** si la cuenta factura en dólares y tú piensas en pesos, el presupuesto que crees tener no es el que estás gastando.",
+        ],
+      },
+      {
+        id: "que-recibes",
+        heading: "What you receive at the end of an audit",
+        headingEs: "Qué recibes al final de una auditoría",
+        body: [
+          "An audit worth paying for gives you four things, in this order:",
+          "**A one-page summary.** How much you spent in the period, how much of it went to searches or areas that do not bring you customers, whether your measurement can be trusted and the three most important decisions.",
+          "**The list of findings with evidence.** Each one with the data that proves it: the search term, the duplicated conversion, the screenshot of the location report. A finding without evidence is an opinion.",
+          "**The order of fixes.** What gets fixed this week, what this month and what can wait, with the expected impact and the effort of each change.",
+          "**What to measure afterwards.** Which number should move and when to check it, so you know whether the fixes worked.",
+          "If an audit ends with “everything has to be rebuilt”, be suspicious. There are almost always two or three fixes that weigh more than all the rest.",
+        ],
+        bodyEs: [
+          "Una auditoría que vale lo que cuesta te entrega cuatro cosas, en este orden:",
+          "**Un resumen de una página.** Cuánto gastaste en el periodo, cuánto de eso se fue a búsquedas o zonas que no te traen clientes, si tu medición es confiable y las tres decisiones más importantes.",
+          "**La lista de hallazgos con evidencia.** Cada uno con el dato que lo prueba: el término de búsqueda, la conversión duplicada, la captura del informe de ubicaciones. Un hallazgo sin evidencia es una opinión.",
+          "**El orden de corrección.** Qué se arregla esta semana, qué este mes y qué puede esperar, con el impacto esperado y el esfuerzo de cada cambio.",
+          "**Lo que hay que medir después.** Qué número debe moverse y cuándo revisarlo, para saber si las correcciones funcionaron.",
+          "Si una auditoría termina con “hay que rehacer todo”, desconfía. Casi siempre hay dos o tres arreglos que pesan más que todo lo demás.",
+        ],
+      },
+      {
+        id: "ejemplo",
+        heading: "An example finding",
+        headingEs: "Un ejemplo de hallazgo",
+        body: [
+          "This case is **illustrative**: it combines problems that are common in service accounts in Tijuana, but the figures are an example. A dental clinic spends $15,000 MXN a month. Google Ads reports 60 conversions at $250 each; the front desk says about 20 new patients came from ads. The review finds three things:",
+          "**1. Conversions are counted twice.** The form records a conversion when it is submitted and another when the [[thank-you page|pagina-de-gracias]] loads. The 60 are really about 30, and automated bidding is learning from inflated data.",
+          "**2. 18% of the spend goes to searches that are not patients:** “dental assistant job”, “dentistry school”, “free dentist”. The fix is a list of [[negative keywords|palabra-clave-negativa]] and a weekly look at the [[search terms|termino-de-busqueda]].",
+          "**3. A fifth of the spend comes from clicks in San Diego that land on pages only in Spanish.** There are two paths: exclude the United States, or create a separate campaign in English with a page in English.",
+          "Order matters: measurement is fixed first, because everything else depends on it, from bidding to the report. Then the junk searches are cut. The decision about San Diego comes last, because it is a strategy question, not cleanup.",
+        ],
+        bodyEs: [
+          "Este caso es **ilustrativo**: combina problemas comunes en cuentas de servicios en Tijuana, pero las cifras son de ejemplo. Una clínica dental gasta $15,000 MXN al mes. Google Ads reporta 60 conversiones a $250 cada una; la recepción dice que llegaron unos 20 pacientes nuevos por anuncios. La revisión encuentra tres cosas:",
+          "**1. Las conversiones están contadas dos veces.** El formulario registra una conversión al enviarse y otra al cargar la [[página de gracias|pagina-de-gracias]]. Las 60 son en realidad unas 30, y la puja automática está aprendiendo de datos inflados.",
+          "**2. El 18% del gasto se va a búsquedas que no son pacientes:** “trabajo de asistente dental”, “escuela de odontología”, “dentista gratis”. La corrección es una lista de [[palabras clave negativas|palabra-clave-negativa]] y revisar cada semana los [[términos de búsqueda|termino-de-busqueda]].",
+          "**3. Una quinta parte del gasto viene de clics en San Diego que llegan a páginas solo en español.** Hay dos caminos: excluir Estados Unidos o hacer una campaña aparte, en inglés, con página en inglés.",
+          "El orden importa: primero se corrige la medición, porque todo lo demás depende de ella, desde la puja hasta el reporte. Después se cortan las búsquedas basura. La decisión sobre San Diego va al final, porque es una pregunta de estrategia, no de limpieza.",
+        ],
+        chart: {
+          title: "Where the $15,000 a month in the example was going",
+          titleEs: "A dónde se iban los $15,000 al mes del ejemplo",
+          source: "Illustrative example built by Aphelion; it does not come from a real client account.",
+          sourceEs: "Ejemplo ilustrativo elaborado por Aphelion; no corresponde a la cuenta de un cliente real.",
+          bars: [
+            { label: "Patient searches in Tijuana", labelEs: "Búsquedas de pacientes en Tijuana", value: 9300, display: "$9,300 (62%)", displayEs: "$9,300 (62%)" },
+            { label: "San Diego clicks to Spanish-only pages", labelEs: "Clics de San Diego a páginas solo en español", value: 3000, display: "$3,000 (20%)", displayEs: "$3,000 (20%)" },
+            { label: "Searches that are not patients", labelEs: "Búsquedas que no son pacientes", value: 2700, display: "$2,700 (18%)", displayEs: "$2,700 (18%)" },
+          ],
+        },
+      },
+      {
+        id: "prioridad",
+        heading: "How fixes are prioritised",
+        headingEs: "Cómo se priorizan las correcciones",
+        body: [
+          "Each finding is rated on two things: how much money or how many customers it moves, and how much it costs to fix. What moves a lot and costs little goes first.",
+        ],
+        bodyEs: [
+          "Cada hallazgo se califica por dos cosas: cuánto dinero o cuántos clientes mueve, y cuánto cuesta arreglarlo. Lo que mueve mucho y cuesta poco va primero.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "The order in which an account is fixed",
+          titleEs: "El orden en que se corrige una cuenta",
+          steps: [
+            { label: "Measurement", labelEs: "Medición", detail: "Real conversions, no duplicates, matching your customers. Without this, everything else is decided blind.", detailEs: "Conversiones reales, sin duplicados, que coincidan con tus clientes. Sin esto, todo lo demás se decide a ciegas." },
+            { label: "Waste", labelEs: "Desperdicio", detail: "Negative keywords, location exclusions, schedules and devices that do not convert. Money recovered in days.", detailEs: "Palabras negativas, exclusiones de ubicación, horarios y dispositivos que no convierten. Dinero que se recupera en días." },
+            { label: "Page and ads", labelEs: "Página y anuncios", detail: "The ad promises what the page delivers and contacting you is easy on a phone.", detailEs: "Que el anuncio prometa lo que la página entrega y que contactarte sea fácil desde el celular." },
+            { label: "Structure and bidding", labelEs: "Estructura y puja", detail: "Group by service and choose the bid strategy according to how many real conversions you have.", detailEs: "Agrupar por servicio y elegir la puja según cuántas conversiones reales tienes." },
+            { label: "Growth", labelEs: "Crecimiento", detail: "With the above in order, raise the budget on what already works or open new campaigns, such as one in English.", detailEs: "Con lo anterior en orden, subir presupuesto en lo que ya funciona o abrir campañas nuevas, como una en inglés." },
+          ],
+        },
+      },
+      {
+        id: "despues",
+        heading: "The most expensive mistake: starting at the end",
+        headingEs: "El error más caro: empezar por el final",
+        body: [
+          "Raising the budget or switching to automated bidding with broken measurement multiplies the problem: Google gets better at finding what you told it to find, and you told it the wrong thing. How to leave measurement right is in [how to measure conversions properly](/blog/como-medir-conversiones-google-ads) and [what Google Tag Manager is](/blog/que-es-google-tag-manager). If your account already uses AI Max, also review [what changed with AI Max](/blog/google-ai-max-para-busqueda), because it expands the searches your ads appear for.",
+        ],
+        bodyEs: [
+          "Subir el presupuesto o cambiar a una puja automática con la medición rota multiplica el problema: Google se vuelve mejor en encontrar lo que le dijiste que buscara, y le dijiste lo equivocado. Cómo dejar bien la medición está en [cómo medir conversiones de verdad](/blog/como-medir-conversiones-google-ads) y en [qué es Google Tag Manager](/blog/que-es-google-tag-manager). Si tu cuenta ya usa AI Max, revisa además [qué cambió con AI Max](/blog/google-ai-max-para-busqueda), porque amplía las búsquedas en las que salen tus anuncios.",
+        ],
+      },
+      {
+        id: "acceso",
+        heading: "How to give access to your account safely",
+        headingEs: "Cómo dar acceso a tu cuenta sin riesgo",
+        body: [
+          "Never share your password. Google Ads lets you invite someone by email from **Admin > Access and security**, with different levels: read only, which is enough for an audit; standard, to make changes; and admin, which can also manage access. For a review, give **read only**; if you later decide someone should manage the account, you raise the level.",
+          "And remove access when the relationship ends. An account with five former employees and two previous agencies holding admin access is a finding in itself.",
+        ],
+        bodyEs: [
+          "Nunca compartas tu contraseña. Google Ads permite invitar a alguien por correo desde **Administrador > Acceso y seguridad**, con distintos niveles: solo lectura, que alcanza para una auditoría; estándar, para hacer cambios; y administrador, que además puede manejar accesos. Para una revisión, da **solo lectura**; si después decides que alguien maneje la cuenta, subes el nivel.",
+          "Y quita el acceso cuando termine la relación. Una cuenta con cinco exempleados y dos agencias anteriores con acceso de administrador es, en sí misma, un hallazgo.",
+        ],
+      },
+      {
+        id: "mini-auditoria",
+        heading: "A mini audit you can do today",
+        headingEs: "Una mini auditoría que puedes hacer hoy",
+        body: [
+          "**Compare conversions with customers.** Take last month: how many conversions does Google Ads report and how many new customers came from ads? If the gap is large, measurement is wrong.",
+          "**Open the search terms report** and sort it by cost. Mark everything that would never bring you a customer.",
+          "**Check where your users were** in the location report. How much did you spend outside your area?",
+          "**Look for changes you did not make** in the change history, especially the ones Google applied.",
+          "**Open your page on a phone** as if you were a customer, on mobile data: does it load fast? Is the WhatsApp button visible without scrolling?",
+          "If you want someone with experience to review it in depth, [request a review of your account](/google-ads-tijuana). We will tell you what we found and what to fix first. And if you are still deciding how much to invest, start with [how much Google Ads costs in Mexico](/blog/cuanto-cuesta-google-ads-en-mexico).",
+        ],
+        bodyEs: [
+          "**Compara conversiones contra clientes.** Toma el mes pasado: ¿cuántas conversiones reporta Google Ads y cuántos clientes nuevos llegaron por anuncios? Si la diferencia es grande, la medición está mal.",
+          "**Abre el informe de términos de búsqueda** y ordénalo por costo. Marca todo lo que nunca te traería un cliente.",
+          "**Revisa dónde estaban tus usuarios** en el informe de ubicaciones. ¿Cuánto gastaste fuera de tu zona?",
+          "**Busca cambios que no hiciste** en el historial de cambios, sobre todo los que aplicó Google.",
+          "**Abre tu página desde el celular** como si fueras cliente, con datos móviles: ¿carga rápido? ¿El botón de WhatsApp se ve sin bajar?",
+          "Si quieres que alguien con experiencia lo revise a fondo, [solicita una revisión de tu cuenta](/google-ads-tijuana). Te decimos qué encontramos y qué arreglar primero. Y si todavía estás decidiendo cuánto invertir, empieza por [cuánto cuesta Google Ads en México](/blog/cuanto-cuesta-google-ads-en-mexico).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué incluye una auditoría de Google Ads?",
+        qEn: "What does a Google Ads audit include?",
+        a: "La revisión de la medición de conversiones, los términos de búsqueda, la ubicación y el idioma, la estructura y la puja, los anuncios y la página, el presupuesto y los cambios automáticos de Google. Al final debes recibir un resumen, los hallazgos con evidencia, el orden de corrección y qué medir después.",
+        aEn: "A review of conversion measurement, search terms, location and language, structure and bidding, ads and landing page, budget and Google's automatic changes. At the end you should receive a summary, the findings with evidence, the order of fixes and what to measure afterwards.",
+      },
+      {
+        q: "¿Cada cuánto se debe auditar una cuenta de Google Ads?",
+        qEn: "How often should a Google Ads account be audited?",
+        a: "Una revisión completa cada 3 a 6 meses, y siempre que el costo por cliente suba sin explicación, cambies de agencia o lances un servicio nuevo. Los términos de búsqueda conviene revisarlos cada semana.",
+        aEn: "A full review every 3 to 6 months, and whenever the cost per customer rises with no explanation, you change agency or launch a new service. Search terms are worth checking every week.",
+      },
+      {
+        q: "¿Tengo que dar mi contraseña para una auditoría?",
+        qEn: "Do I have to give my password for an audit?",
+        a: "No. Desde Administrador > Acceso y seguridad invitas a la persona por correo con acceso de solo lectura, que alcanza para revisar todo sin poder hacer cambios.",
+        aEn: "No. From Admin > Access and security you invite the person by email with read-only access, which is enough to review everything without being able to make changes.",
+      },
+      {
+        q: "¿La puntuación de optimización de Google es una auditoría?",
+        qEn: "Is Google's optimisation score an audit?",
+        a: "No. Es una estimación de Google sobre qué tan bien está configurada tu cuenta, y sube al aplicar o descartar sus recomendaciones. No mide si tus anuncios traen clientes rentables.",
+        aEn: "No. It is Google's estimate of how well your account is set up, and it rises when you apply or dismiss its recommendations. It does not measure whether your ads bring profitable customers.",
+      },
+      {
+        q: "¿Por qué mis anuncios salen en San Diego si segmento Tijuana?",
+        qEn: "Why do my ads show in San Diego if I target Tijuana?",
+        a: "Porque Google muestra los anuncios a quien está en tu zona y también a quien muestra interés en ella; en búsqueda es la configuración obligatoria. Si no te sirve ese público, excluye Estados Unidos; si te sirve, hazle una campaña en inglés.",
+        aEn: "Because Google shows ads to people in your area and also to people who show interest in it; in Search it is the required setting. If that audience is no use to you, exclude the United States; if it is, give it a campaign in English.",
+      },
+      {
+        q: "¿Qué diferencia hay entre una palabra clave y un término de búsqueda?",
+        qEn: "What is the difference between a keyword and a search term?",
+        a: "La palabra clave es lo que tú eliges en la cuenta; el término de búsqueda es lo que la persona escribió de verdad en Google cuando salió tu anuncio. Pagas por los términos, por eso hay que revisarlos.",
+        aEn: "The keyword is what you choose in the account; the search term is what the person actually typed into Google when your ad showed. You pay for the terms, which is why they need reviewing.",
+      },
+      {
+        q: "¿Puedo auditar mi cuenta yo mismo?",
+        qEn: "Can I audit my account myself?",
+        a: "Una primera revisión, sí: compara conversiones contra clientes reales, revisa los términos de búsqueda y el informe de ubicaciones, busca cambios que no hiciste y prueba tu página desde el celular.",
+        aEn: "A first review, yes: compare conversions with real customers, check the search terms and the location report, look for changes you did not make and test your page on a phone.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Google Ads audit Tijuana",
+        "Google Ads account review Mexico",
+        "Google Ads audit checklist",
+        "Google Ads location presence or interest",
+        "Google Ads agency Tijuana",
+      ],
+      keywordsEs: [
+        "auditoría de Google Ads",
+        "auditoría Google Ads Tijuana",
+        "revisión de cuenta de Google Ads",
+        "agencia Google Ads Tijuana",
+        "Google Adwords Tijuana",
+        "términos de búsqueda Google Ads",
+      ],
+    },
+  },
+  {
+    slug: "costo-por-cita-meta-ads-whatsapp",
+    cover: true,
+    title: "Meta Ads to WhatsApp in Tijuana: How to Calculate What a Real Appointment Costs You",
+    titleEs: "Meta Ads a WhatsApp en Tijuana: cómo calcular cuánto te cuesta una cita real",
+    category: "Paid Ads",
+    categoryEs: "Publicidad",
+    excerpt:
+      "Ads Manager tells you what each WhatsApp conversation cost; it does not tell you what an appointment that actually shows up costs. A worked example from budget to attended appointment, which lever lowers that cost the most, how to measure each step and what changes when your market is on both sides of the border.",
+    excerptEs:
+      "El Administrador de anuncios te dice cuánto costó cada conversación de WhatsApp; no te dice cuánto cuesta una cita que sí llega. Un ejemplo completo de la inversión a la cita asistida, qué palanca baja más ese costo, cómo medir cada escalón y qué cambia cuando tu mercado está de los dos lados de la frontera.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "Ads Manager tells you each WhatsApp conversation cost you $50. It does not tell you how many of those conversations became an appointment, or how many of those appointments showed up. Between “hi, info please” and the customer sitting in your clinic, salon or office there are four steps, and people drop out at every one. Here is how to calculate the number that does matter, what a real appointment costs you, with an end-to-end example and the lever that moves that cost the most.",
+    ledeEs:
+      "El Administrador de anuncios te dice que cada conversación de WhatsApp te costó $50. No te dice cuántas de esas conversaciones se volvieron cita, ni cuántas de esas citas llegaron. Entre el “hola, info” y el cliente sentado en tu consultorio, tu salón o tu oficina hay cuatro escalones, y en cada uno se pierde gente. Aquí está cómo calcular el número que sí importa, cuánto te cuesta una cita real, con un ejemplo de punta a punta y la palanca que más mueve ese costo.",
+    sections: [
+      {
+        id: "lo-que-mide-meta",
+        heading: "What Meta measures and what it does not",
+        headingEs: "Lo que mide Meta y lo que no",
+        body: [
+          "In a messaging campaign, Meta reports **[[messaging conversations started|conversacion-iniciada]]**: people who wrote to you for the first time from the ad, or who wrote again after 7 days or more without activity. It counts the person who asks “price?” and disappears exactly the same as the one who books in the first message.",
+          "Everything that happens next happens in your WhatsApp, not in Meta. Meta does not know whether you replied, whether the person booked or whether they showed up. That is why the cost per conversation in your report is the first step, not the result.",
+        ],
+        bodyEs: [
+          "En una campaña de mensajes, Meta reporta **[[conversaciones iniciadas|conversacion-iniciada]]**: personas que te escribieron por primera vez desde el anuncio, o que volvieron a escribir después de 7 días o más sin actividad. Cuenta igual a quien pregunta “¿precio?” y desaparece que a quien agenda en el primer mensaje.",
+          "Todo lo que pasa después ocurre en tu WhatsApp, no en Meta. Meta no sabe si contestaste, si la persona agendó o si llegó. Por eso el costo por conversación de tu reporte es el primer escalón, no el resultado.",
+        ],
+      },
+      {
+        id: "el-calculo",
+        heading: "The calculation, end to end",
+        headingEs: "El cálculo, de punta a punta",
+        body: [
+          "The example uses **assumptions**, not market averages; replace them with yours. A business in Tijuana invests $10,000 MXN a month in Meta ads that open WhatsApp:",
+        ],
+        bodyEs: [
+          "El ejemplo usa **suposiciones**, no promedios del mercado; cámbialas por las tuyas. Un negocio en Tijuana invierte $10,000 MXN al mes en anuncios de Meta que abren WhatsApp:",
+        ],
+        diagram: {
+          kind: "funnel",
+          title: "From $10,000 in ads to 30 real appointments",
+          titleEs: "De $10,000 en anuncios a 30 citas reales",
+          note: "Assumptions in the example: $50 per conversation, 60% of conversations qualified, one in three qualified people books and 75% of appointments show up.",
+          noteEs: "Suposiciones del ejemplo: $50 por conversación, 60% de conversaciones calificadas, una de cada tres calificadas agenda y llega el 75% de las citas.",
+          steps: [
+            { label: "200 conversations started", labelEs: "200 conversaciones iniciadas", detail: "$50 each: the number you see in Ads Manager.", detailEs: "$50 cada una: el número que ves en el Administrador de anuncios." },
+            { label: "120 qualified conversations", labelEs: "120 conversaciones calificadas", detail: "They want what you offer, in your area, with a budget that fits. $83 each.", detailEs: "Buscan lo que ofreces, en tu zona y con un presupuesto que cabe. $83 cada una." },
+            { label: "40 appointments booked", labelEs: "40 citas agendadas", detail: "One in three qualified people. $250 each.", detailEs: "Una de cada tres calificadas. $250 cada una." },
+            { label: "30 appointments attended", labelEs: "30 citas que llegan", detail: "Three out of four. $333 per real appointment.", detailEs: "Tres de cada cuatro. $333 por cita real." },
+          ],
+        },
+      },
+      {
+        id: "la-formula",
+        heading: "The formula and what to compare it with",
+        headingEs: "La fórmula y contra qué compararla",
+        body: [
+          "The formula is simple: **ad spend ÷ appointments that showed up**. In the example, $10,000 ÷ 30 = $333, almost seven times the cost per conversation in the report.",
+          "And it does not end there. If you close, say, half of those appointments, each new customer costs you $667: that is the [[CPA|cpa]] you compare with what a customer is worth. If a new customer leaves you $3,000 in margin, $667 per customer is good business; if they leave you $500, it is not, however cheap the conversations look.",
+        ],
+        bodyEs: [
+          "La fórmula es simple: **inversión ÷ citas que llegaron**. En el ejemplo, $10,000 ÷ 30 = $333, casi siete veces el costo por conversación del reporte.",
+          "Y no termina ahí. Si cierras, por decir, la mitad de esas citas, cada cliente nuevo te cuesta $667: ese es el [[CPA|cpa]] que se compara contra lo que vale un cliente. Si un cliente nuevo te deja $3,000 de margen, $667 por cliente es buen negocio; si te deja $500, no lo es, por baratas que se vean las conversaciones.",
+        ],
+      },
+      {
+        id: "palancas",
+        heading: "Which lever moves the cost per appointment the most",
+        headingEs: "Qué palanca mueve más el costo por cita",
+        body: [
+          "With the same example, let us compare four improvements. The temptation is to lower the cost per conversation; the numbers say something else.",
+          "Making conversations 20% cheaper, the job of the ads, improves the cost per appointment from $333 to $267. Booking more of the people who already wrote, the job of whoever answers, brings it down to $247 without spending a single extra peso on ads. Both together add up, but in this example the first hour of work pays off more in the reply than in the ad.",
+          "What raises the booking rate the most is speed: whoever asks at 9 at night and gets an answer the next day has already booked with someone else. We cover it in [the lead you do not answer within an hour goes cold](/blog/responder-rapido-a-tus-leads). And what raises attendance is reminders: a Cochrane review of clinical trials found that text message reminders raised attendance at medical appointments from 67.8% to 78.6% compared with sending nothing. More ideas in [how to reduce appointments that do not show up](/blog/citas-que-no-llegan-salon).",
+        ],
+        bodyEs: [
+          "Con el mismo ejemplo, comparemos cuatro mejoras. La tentación es bajar el costo por conversación; los números dicen otra cosa.",
+          "Bajar 20% el costo por conversación, el trabajo de los anuncios, mejora el costo por cita de $333 a $267. Agendar a más de los que ya escribieron, el trabajo de quien contesta, lo baja a $247 sin gastar un peso más en anuncios. Las dos juntas suman, pero en este ejemplo la primera hora de trabajo rinde más en la respuesta que en el anuncio.",
+          "Lo que más sube la tasa de agenda es la velocidad: quien pregunta a las 9 de la noche y recibe respuesta al día siguiente ya agendó con otro. Lo vemos en [el lead que no contestas en una hora se enfría](/blog/responder-rapido-a-tus-leads). Y lo que sube la asistencia son los recordatorios: una revisión Cochrane de ensayos clínicos encontró que los recordatorios por mensaje de texto subieron la asistencia a citas médicas de 67.8% a 78.6% frente a no mandar nada. Más ideas en [cómo reducir las citas que no llegan](/blog/citas-que-no-llegan-salon).",
+        ],
+        chart: {
+          title: "Cost per real appointment with $10,000 in ads, depending on the improvement",
+          titleEs: "Costo por cita real con $10,000 de inversión, según la mejora",
+          source: "Aphelion calculation with the assumptions of the example. Each scenario changes a single number, except the last one, which combines two.",
+          sourceEs: "Cálculo de Aphelion con las suposiciones del ejemplo. Cada escenario cambia un solo número, salvo el último, que combina dos.",
+          bars: [
+            { label: "Starting point", labelEs: "Punto de partida", value: 333, display: "$333", displayEs: "$333" },
+            { label: "Reminders: 85% show up instead of 75%", labelEs: "Recordatorios: llega 85% en vez de 75%", value: 294, display: "$294", displayEs: "$294" },
+            { label: "Conversations 20% cheaper ($40)", labelEs: "Conversaciones 20% más baratas ($40)", value: 267, display: "$267", displayEs: "$267" },
+            { label: "Fast follow-up: 45% of qualified book instead of 33%", labelEs: "Seguimiento rápido: agenda 45% de calificados en vez de 33%", value: 247, display: "$247", displayEs: "$247" },
+            { label: "Fast follow-up plus reminders", labelEs: "Seguimiento rápido más recordatorios", value: 218, display: "$218", displayEs: "$218" },
+          ],
+        },
+      },
+      {
+        id: "medir",
+        heading: "How to measure each step without losing your mind",
+        headingEs: "Cómo medir cada escalón sin volverte loco",
+        body: [
+          "**With the WhatsApp Business app:** use labels. One for “qualified”, another for “booked” and another for “showed up”. Every Monday you count how many chats carry each label and write them down next to the week's ad spend. It is manual, but in 15 minutes you have your cost per appointment.",
+          "**With the WhatsApp API and a CRM:** every conversation enters the [[CRM|crm]] with the ad that brought it, and stage changes are recorded on their own. You can also send those events back to Meta with the Conversions API for business messaging: Meta accepts events such as lead submitted, qualified lead or purchase, tied to the ad click. That way the algorithm learns to look for people who book, not people who just write.",
+          "Without that data coming back, Meta optimises for the only thing it sees: conversations. And the cheapest conversations are not always the best ones. How the pixel and the API work together is in [Pixel and Conversions API](/blog/que-es-el-pixel-de-meta).",
+        ],
+        bodyEs: [
+          "**Con la app de WhatsApp Business:** usa etiquetas. Una para “calificado”, otra para “agendó” y otra para “llegó”. Cada lunes cuentas cuántos chats tienen cada etiqueta y los anotas junto a la inversión de la semana. Es manual, pero en 15 minutos tienes tu costo por cita.",
+          "**Con la API de WhatsApp y un CRM:** cada conversación entra al [[CRM|crm]] con el anuncio que la trajo, y los cambios de etapa quedan registrados solos. Además, puedes mandarle esos eventos de regreso a Meta con la API de Conversiones para mensajería empresarial: Meta acepta eventos como cliente potencial enviado, cliente potencial calificado o compra, amarrados al clic del anuncio. Así el algoritmo aprende a buscar gente que agenda, no gente que solo escribe.",
+          "Sin ese regreso de datos, Meta optimiza para lo único que ve: conversaciones. Y las conversaciones más baratas no siempre son las mejores. Cómo trabajan juntos el pixel y la API está en [Pixel y API de Conversiones](/blog/que-es-el-pixel-de-meta).",
+        ],
+      },
+      {
+        id: "tijuana",
+        heading: "What changes in Tijuana",
+        headingEs: "Lo que cambia en Tijuana",
+        body: [
+          "**Two languages in the same chat.** If your ads reach San Diego, some conversations will start in English. Whoever answers has to be able to carry on in English, or that qualified conversation never becomes an appointment. If you are after patients or customers from the United States, a separate campaign with the ad and the replies in English works better; we explain it in [how to attract patients from the United States](/blog/como-atraer-pacientes-de-estados-unidos).",
+          "**The appointment that crosses the border.** For someone coming from San Diego, showing up means the line back. That audience's attendance rate may differ from the local one; measure it separately.",
+          "**The cost of WhatsApp.** Conversations that start from a click-to-WhatsApp ad open a free 72-hour window, according to Meta's pricing page. If you use the API, outside that window messages have a cost; appointment reminders are utility messages, at US$0.0085 each in Mexico with the October 2026 rate card. It is little, but add it to your calculation. The details are in [WhatsApp now charges for replying to your customers](/blog/whatsapp-cobra-mensajes-de-servicio).",
+        ],
+        bodyEs: [
+          "**Dos idiomas en el mismo chat.** Si tus anuncios llegan a San Diego, parte de las conversaciones va a empezar en inglés. Quien conteste tiene que poder seguir en inglés, o esa conversación calificada nunca llega a cita. Si buscas pacientes o clientes de Estados Unidos, funciona mejor una campaña aparte, con el anuncio y las respuestas en inglés; lo explicamos en [cómo captar pacientes de Estados Unidos](/blog/como-atraer-pacientes-de-estados-unidos).",
+          "**La cita que cruza la frontera.** Para quien viene de San Diego, llegar implica la fila de regreso. La tasa de asistencia de ese público puede ser distinta a la local; mídela por separado.",
+          "**El costo de WhatsApp.** Las conversaciones que empiezan desde un anuncio de clic a WhatsApp abren una ventana gratuita de 72 horas, según la página de precios de Meta. Si usas la API, fuera de esa ventana los mensajes tienen costo; los recordatorios de cita son mensajes de utilidad, a US$0.0085 cada uno en México con la tarifa de octubre de 2026. Es poco, pero súmalo a tu cálculo. El detalle está en [WhatsApp ya cobra por responderle a tus clientes](/blog/whatsapp-cobra-mensajes-de-servicio).",
+        ],
+      },
+      {
+        id: "referencias",
+        heading: "What is a good cost per conversation?",
+        headingEs: "¿Cuánto es un buen costo por conversación?",
+        body: [
+          "There is no reliable public average for Tijuana. Calculators published by Mexican agencies quote ranges of $15 to $90 MXN per conversation, but they are estimates without measured data behind them, and the range shifts a lot by industry: aesthetic medicine, insurance or real estate usually sit at the top.",
+          "The benchmark that works is your own: four weeks of data with the calculation above. And the question to decide is not whether $50 is expensive, but whether $333 per real appointment, with your close rate, leaves a profit.",
+          "If you already have campaigns running and do not know what an appointment costs you, [review your campaign's cost per appointment](/meta-ads-tijuana) with us: we build the calculation with your numbers and tell you at which step people are dropping out. If you are starting from zero, our [Meta Ads guide](/blog/guia-meta-ads) and the [10 Meta Ads mistakes](/blog/errores-de-facebook-ads) are the place to begin.",
+        ],
+        bodyEs: [
+          "No hay un promedio público confiable para Tijuana. Las calculadoras que publican agencias mexicanas manejan rangos de $15 a $90 MXN por conversación, pero son estimaciones sin datos medidos detrás, y el rango cambia mucho según el giro: medicina estética, seguros o bienes raíces suelen estar en la parte alta.",
+          "La referencia que sirve es la tuya: cuatro semanas de datos con el cálculo de arriba. Y la pregunta para decidir no es si $50 es caro, sino si $333 por cita real, con tu tasa de cierre, deja ganancia.",
+          "Si ya tienes campañas corriendo y no sabes cuánto te cuesta una cita, [revisa el costo por cita de tu campaña](/meta-ads-tijuana) con nosotros: armamos el cálculo con tus números y te decimos en qué escalón se está yendo la gente. Si empiezas de cero, nuestra [guía de Meta Ads](/blog/guia-meta-ads) y los [10 errores de Meta Ads](/blog/errores-de-facebook-ads) son el punto de partida.",
+        ],
+      },
+    ],
+    gradient: "from-rose-900 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuánto cuesta una conversación de WhatsApp en Meta Ads en Tijuana?",
+        qEn: "How much does a WhatsApp conversation cost on Meta Ads in Tijuana?",
+        a: "No hay un promedio público confiable. Las calculadoras de agencias mexicanas manejan de $15 a $90 MXN por conversación según el giro, sin datos medidos detrás. La referencia útil es la tuya: cuatro semanas de datos de tu propia campaña.",
+        aEn: "There is no reliable public average. Calculators from Mexican agencies quote $15 to $90 MXN per conversation depending on the industry, without measured data behind them. The useful benchmark is your own: four weeks of data from your own campaign.",
+      },
+      {
+        q: "¿Cómo calculo el costo por cita de mis anuncios?",
+        qEn: "How do I calculate the cost per appointment of my ads?",
+        a: "Divide la inversión del periodo entre las citas que sí llegaron. Si invertiste $10,000 y llegaron 30 citas, cada cita real te costó $333. Para eso necesitas contar, fuera de Meta, cuántas conversaciones agendaron y cuántas llegaron.",
+        aEn: "Divide the period's ad spend by the appointments that actually showed up. If you invested $10,000 and 30 appointments showed up, each real appointment cost you $333. For that you need to count, outside Meta, how many conversations booked and how many showed up.",
+      },
+      {
+        q: "¿Por qué Meta reporta más conversaciones de las que yo cuento?",
+        qEn: "Why does Meta report more conversations than I count?",
+        a: "Porque cuenta como conversación iniciada a cualquiera que te escribe desde el anuncio por primera vez o después de 7 días sin actividad, aunque solo diga “hola” y se vaya. Tú cuentas las que valen la pena.",
+        aEn: "Because it counts as a conversation started anyone who writes from the ad for the first time or after 7 days without activity, even if they only say “hi” and leave. You count the ones that are worth something.",
+      },
+      {
+        q: "¿WhatsApp me cobra por las conversaciones que llegan de anuncios?",
+        qEn: "Does WhatsApp charge me for conversations that come from ads?",
+        a: "Con la app de WhatsApp Business no hay cobro por mensaje. Con la API, las conversaciones que empiezan desde un anuncio de clic a WhatsApp abren una ventana gratuita de 72 horas, según la página de precios de Meta; fuera de ella, los mensajes se cobran según su tipo.",
+        aEn: "With the WhatsApp Business app there is no per-message charge. With the API, conversations that start from a click-to-WhatsApp ad open a free 72-hour window, according to Meta's pricing page; outside it, messages are charged by type.",
+      },
+      {
+        q: "¿Conviene más un formulario de Meta o mandar a WhatsApp?",
+        qEn: "Is a Meta lead form better than sending people to WhatsApp?",
+        a: "Depende del negocio. Mide los dos con el mismo cálculo, costo por cita real o por cliente, no costo por contacto: un contacto barato que nunca agenda sale caro.",
+        aEn: "It depends on the business. Measure both with the same calculation, cost per real appointment or per customer, not cost per contact: a cheap contact who never books ends up expensive.",
+      },
+      {
+        q: "¿Cuánto tiempo debo esperar para evaluar una campaña de WhatsApp?",
+        qEn: "How long should I wait before judging a WhatsApp campaign?",
+        a: "Al menos cuatro semanas, con el embudo completo anotado cada semana: conversaciones, calificadas, citas agendadas y citas que llegaron. Con menos datos, una semana buena o mala te engaña.",
+        aEn: "At least four weeks, with the full funnel written down every week: conversations, qualified, appointments booked and appointments attended. With less data, a good or bad week will fool you.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Meta Ads WhatsApp cost per appointment",
+        "click to WhatsApp ads Tijuana",
+        "cost per conversation WhatsApp Mexico",
+        "Meta Ads Tijuana",
+        "WhatsApp ads appointment funnel",
+      ],
+      keywordsEs: [
+        "costo por cita Meta Ads",
+        "anuncios de Facebook a WhatsApp",
+        "costo por conversación WhatsApp",
+        "Meta Ads Tijuana",
+        "anuncios clic a WhatsApp",
+        "cuánto cuesta un cliente en Facebook Ads",
+      ],
+    },
+  },
+  {
+    slug: "agenda-en-linea-para-clinicas",
+    cover: true,
+    title: "What Goes Into a Quote for an Online Booking System for a Clinic?",
+    titleEs: "¿Qué se cotiza al implementar una agenda en línea para una clínica?",
+    category: "Automation",
+    categoryEs: "Automatización",
+    excerpt:
+      "The calendar is the cheapest part. What moves the quote is the rules: doctors and rooms, pre-screening questions, channels, reminders, two languages, payments, integrations and patient data. What a ready-made platform costs, when a custom system pays off and the case of HAIMA, a blood bank in Tijuana.",
+    excerptEs:
+      "El calendario es la parte más barata. Lo que mueve la cotización son las reglas: doctores y consultorios, preguntas previas, canales, recordatorios, dos idiomas, pagos, integraciones y datos de pacientes. Cuánto cuesta una plataforma hecha, cuándo conviene una a la medida y el caso de HAIMA, un banco de sangre en Tijuana.",
+    readingTime: 10,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "When a clinic asks for a quote for an online booking system, it usually pictures a calendar where the patient picks a time. That is the cheapest part. What makes the quote go up or down is the rules: how many doctors and rooms, which questions must be asked first, where bookings come from, how they are reminded, in which language and what the system connects to. Here is everything that goes into the quote, what a ready-made option costs and when a custom one pays off, with the case of HAIMA, the Tijuana blood bank whose system we built.",
+    ledeEs:
+      "Cuando una clínica pide cotizar una agenda en línea, casi siempre se imagina un calendario donde el paciente elige hora. Esa es la parte más barata. Lo que hace subir o bajar la cotización son las reglas: cuántos doctores y consultorios, qué preguntas hay que hacer antes, por dónde llegan las citas, cómo se recuerdan, en qué idioma y con qué se conecta. Aquí está todo lo que entra en una cotización, cuánto cuesta la opción hecha y cuándo conviene una a la medida, con el caso de HAIMA, el banco de sangre de Tijuana al que le hicimos su sistema.",
+    sections: [
+      {
+        id: "lo-que-cuesta-no-tenerla",
+        heading: "What not having one costs: appointments that never show up",
+        headingEs: "Lo que cuesta no tenerla: las citas que no llegan",
+        body: [
+          "A systematic review of studies on medical appointments around the world, published in Health Policy in 2018, found an average [[no-show|inasistencia]] rate of around 23%: almost one in four appointments.",
+          "The good news is that it can be reduced. The Cochrane review on text message reminders found that attendance rose from 67.8% without reminders to 78.6% with them, with moderate certainty, and that phone calls achieved a similar effect. In two of the studies, the cost per patient who attended was 55% to 65% lower with messages than with calls.",
+          "Do the maths with your numbers. With **example assumptions**: a clinic with 120 appointments a month, a $800 consultation and a 20% no-show rate loses 24 appointments, $19,200 a month in empty slots. If reminders bring no-shows down to 15%, it recovers 6 appointments, $4,800 a month. That is what the booking system has to pay for.",
+        ],
+        bodyEs: [
+          "Una revisión sistemática de estudios sobre citas médicas en todo el mundo, publicada en Health Policy en 2018, encontró una tasa promedio de [[inasistencia|inasistencia]] cercana al 23%: casi una de cada cuatro citas.",
+          "La buena noticia es que se puede bajar. La revisión Cochrane sobre recordatorios por mensaje de texto encontró que la asistencia subió de 67.8% sin recordatorios a 78.6% con ellos, con certeza moderada, y que las llamadas lograron un efecto parecido. En dos de los estudios, el costo por paciente que asistió fue entre 55% y 65% menor con mensajes que con llamadas.",
+          "Haz la cuenta con tus números. Con **suposiciones de ejemplo**: una clínica con 120 citas al mes, una consulta de $800 y 20% de inasistencia pierde 24 citas, $19,200 al mes en horarios vacíos. Si los recordatorios bajan la inasistencia a 15%, recupera 6 citas, $4,800 al mes. Eso es lo que la agenda tiene que pagar.",
+        ],
+        chart: {
+          title: "Attendance at medical appointments, with and without reminders",
+          titleEs: "Asistencia a citas médicas, con y sin recordatorios",
+          source: "Cochrane review by Gurol-Urganci and colleagues (2013): 8 randomised trials with 6,615 participants.",
+          sourceEs: "Revisión Cochrane de Gurol-Urganci y colaboradores (2013): 8 ensayos aleatorizados con 6,615 participantes.",
+          bars: [
+            { label: "No reminder", labelEs: "Sin recordatorio", value: 67.8, display: "67.8%", displayEs: "67.8%" },
+            { label: "Text message reminder", labelEs: "Recordatorio por mensaje de texto", value: 78.6, display: "78.6%", displayEs: "78.6%" },
+            { label: "Phone call reminder", labelEs: "Recordatorio por llamada", value: 80.3, display: "80.3%", displayEs: "80.3%" },
+          ],
+        },
+      },
+      {
+        id: "que-se-cotiza",
+        heading: "What goes into the quote",
+        headingEs: "Lo que entra en la cotización",
+        body: [
+          "These are the pieces. Not every clinic needs all of them; each one you add raises the price and, if chosen well, also what the [[booking system|sistema-de-citas]] recovers.",
+        ],
+        bodyEs: [
+          "Estas son las piezas. No todas las clínicas necesitan todas; cada una que agregas sube el precio y, si está bien elegida, también lo que la [[agenda|sistema-de-citas]] recupera.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "The pieces of an online booking system and what you will be asked",
+          titleEs: "Las piezas de una agenda en línea y lo que te van a preguntar",
+          columns: [
+            { label: "Piece", labelEs: "Pieza" },
+            { label: "What it includes", labelEs: "Qué incluye" },
+            { label: "The question you will be asked", labelEs: "La pregunta que te van a hacer" },
+          ],
+          rows: [
+            { label: "Core calendar", labelEs: "Agenda base", cells: [
+              { text: "Services, durations, opening hours, blocked days, time between appointments", textEs: "Servicios, duraciones, horarios, días bloqueados, tiempo entre citas" },
+              { text: "How many different services, and how long does each take?", textEs: "¿Cuántos servicios distintos y cuánto dura cada uno?" } ] },
+            { label: "Resources", labelEs: "Recursos", cells: [
+              { text: "Doctors, rooms and equipment booked together", textEs: "Doctores, consultorios y equipos que se reservan juntos" },
+              { text: "Does one appointment take a doctor, a room and a machine at the same time?", textEs: "¿Una cita ocupa a la vez un doctor, un consultorio y un equipo?" } ] },
+            { label: "Channels", labelEs: "Canales", cells: [
+              { text: "Your website, Google, WhatsApp, Instagram, front desk", textEs: "Tu página, Google, WhatsApp, Instagram, recepción" },
+              { text: "Where do patients ask for appointments today?", textEs: "¿Por dónde te piden cita hoy?" } ] },
+            { label: "Pre-screening", labelEs: "Preguntas previas", cells: [
+              { text: "A filter before confirming: whether the patient qualifies for the service", textEs: "Un filtro antes de confirmar: si el paciente califica para el servicio" },
+              { text: "What does your front desk ask on the phone today?", textEs: "¿Qué pregunta hoy tu recepción por teléfono?" } ] },
+            { label: "Reminders", labelEs: "Recordatorios", cells: [
+              { text: "Email, SMS and WhatsApp; confirm, change or cancel in one tap", textEs: "Email, SMS y WhatsApp; confirmar, cambiar o cancelar con un toque" },
+              { text: "How many appointments a month, and through which channel?", textEs: "¿Cuántas citas al mes y por qué canal?" } ] },
+            { label: "Language", labelEs: "Idioma", cells: [
+              { text: "Booking page, messages and assistant in Spanish and English", textEs: "Agenda, mensajes y asistente en español e inglés" },
+              { text: "What share of your patients speaks English?", textEs: "¿Qué parte de tus pacientes habla inglés?" } ] },
+            { label: "Payments", labelEs: "Pagos", cells: [
+              { text: "Deposit to hold the slot, online payment, cancellation policy", textEs: "Anticipo para apartar, pago en línea, política de cancelación" },
+              { text: "Do you charge a deposit today?", textEs: "¿Cobras anticipo hoy?" } ] },
+            { label: "Integrations", labelEs: "Integraciones", cells: [
+              { text: "Calendar, CRM, medical record, inventory, invoicing", textEs: "Calendario, CRM, expediente, inventario, facturación" },
+              { text: "Which systems do you use, and who owns the data?", textEs: "¿Qué sistemas usas y quién es dueño de los datos?" } ] },
+            { label: "Privacy", labelEs: "Privacidad", cells: [
+              { text: "Privacy notice, consent, role-based access", textEs: "Aviso de privacidad, consentimiento, accesos por rol" },
+              { text: "Who on your team should see which data?", textEs: "¿Quién de tu equipo debe ver qué datos?" } ] },
+          ],
+        },
+      },
+      {
+        id: "costos-olvidados",
+        heading: "The two costs that get forgotten",
+        headingEs: "Los dos costos que se olvidan",
+        body: [
+          "**Per-message costs.** SMS and WhatsApp reminders are charged per send. In Mexico, a WhatsApp [[utility message|mensaje-de-utilidad]], the type used for reminders, costs US$0.0085 with the October 2026 rate card. With 120 appointments and two reminders each, that is little money, but it has to be in the quote, not appear on the first bill.",
+          "**Maintenance.** Hosting, changes to schedules and services, new doctors, support when something fails on a Monday morning. Ask whether it is included or charged separately, and how much a change costs once the system is live.",
+        ],
+        bodyEs: [
+          "**Los costos por mensaje.** Los recordatorios por SMS y WhatsApp se cobran por envío. En México, un [[mensaje de utilidad|mensaje-de-utilidad]] de WhatsApp, el tipo que se usa para recordatorios, cuesta US$0.0085 con la tarifa de octubre de 2026. Con 120 citas y dos recordatorios cada una es poco dinero, pero tiene que estar en la cotización, no aparecer en la primera factura.",
+          "**El mantenimiento.** Hospedaje, cambios de horarios y servicios, doctores nuevos, soporte cuando algo falla un lunes en la mañana. Pregunta si está incluido o se cobra aparte, y cuánto cuesta un cambio una vez que el sistema ya funciona.",
+        ],
+      },
+      {
+        id: "recordatorios",
+        heading: "Reminders: which channel and when",
+        headingEs: "Recordatorios: qué canal y cuándo",
+        body: [
+          "**Email:** almost free, good for the confirmation with instructions (what to bring, how to get there, fasting). Not everyone opens it in time.",
+          "**SMS:** reaches any phone, even without mobile data; it costs per message.",
+          "**WhatsApp:** where the patient already is. With the API you send approved templates with buttons to confirm or change; each send has a cost. If your clinic also uses it to talk to patients, read [how to use WhatsApp in a clinic without mishandling data](/blog/whatsapp-para-clinicas).",
+          "A sequence that works as a starting point: confirmation when the patient books, a reminder 48 hours before with a button to confirm or change, and another on the morning of the appointment. An appointment cancelled 48 hours ahead can be filled again; one that simply does not show up cannot.",
+        ],
+        bodyEs: [
+          "**Email:** casi gratis, bueno para la confirmación con instrucciones (qué llevar, cómo llegar, ayuno). No todos lo abren a tiempo.",
+          "**SMS:** llega a cualquier celular, aunque no tenga datos; tiene costo por mensaje.",
+          "**WhatsApp:** donde ya está el paciente. Con la API se mandan plantillas aprobadas con botones para confirmar o cambiar; cada envío tiene costo. Si tu clínica también lo usa para atender, revisa [cómo usar WhatsApp en una clínica sin manejar mal los datos](/blog/whatsapp-para-clinicas).",
+          "Una secuencia que funciona como punto de partida: confirmación al agendar, recordatorio 48 horas antes con botón para confirmar o cambiar, y otro la mañana de la cita. La cita que se cancela con 48 horas se puede volver a llenar; la que simplemente no llega, no.",
+        ],
+      },
+      {
+        id: "hecha-o-a-la-medida",
+        heading: "Ready-made or custom",
+        headingEs: "Agenda hecha o a la medida",
+        body: [
+          "**Ready-made platforms** solve the basics quickly. Doctoralia, the best known in Mexico, charges a specialist **$1,740 MXN a month on its Starter plan, $2,340 on Plus**, which adds WhatsApp or SMS reminders and online payments, **and $2,970 on VIP**, plus IVA, according to its pricing page as reviewed in November 2026 by The Clinical Marketing. In exchange it gives you something your own system does not: a place in its directory. The trade-off is that your profile lives on a platform where your competitors also appear.",
+          "**A custom system** pays off when the rules are yours: several doctors and rooms that combine, equipment that must be booked, pre-screening questions that decide whether the patient can book at all, patients in two languages, or the need to connect with your inventory or your records. Also when you want patients to book on your own website, under your brand, with data that belongs to you.",
+          "A simple test: write down the rules your front desk applies on the phone today. If they fit within a platform's options, start there. If your front desk has to think before giving an appointment, that logic is what gets quoted.",
+        ],
+        bodyEs: [
+          "**Las plataformas hechas** resuelven lo básico rápido. Doctoralia, la más conocida en México, le cobra a un especialista **$1,740 MXN al mes en su plan Starter, $2,340 en Plus**, que agrega recordatorios por WhatsApp o SMS y pagos en línea, **y $2,970 en VIP**, más IVA, según su página de precios revisada en noviembre de 2026 por The Clinical Marketing. A cambio te da algo que una agenda propia no: un lugar en su directorio. El costo es que tu perfil vive en una plataforma donde también aparece tu competencia.",
+          "**Una agenda a la medida** conviene cuando las reglas son tuyas: varios doctores y consultorios que se combinan, equipos que hay que reservar, preguntas previas que deciden si el paciente puede agendar o no, pacientes en dos idiomas, o la necesidad de conectarte con tu inventario o tu expediente. También cuando quieres que el paciente agende en tu propia página, con tu marca, y que los datos sean tuyos.",
+          "Una prueba sencilla: escribe las reglas que hoy aplica tu recepción por teléfono. Si caben en las opciones de una plataforma, empieza por ahí. Si tu recepción tiene que pensar antes de dar una cita, esa lógica es la que se cotiza.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Ready-made platform or custom system",
+          titleEs: "Plataforma hecha o agenda a la medida",
+          columns: [
+            { label: "Criterion", labelEs: "Criterio" },
+            { label: "Ready-made platform", labelEs: "Plataforma hecha" },
+            { label: "Custom", labelEs: "A la medida" },
+          ],
+          rows: [
+            { label: "Getting started", labelEs: "Arranque", cells: [
+              { text: "Days", textEs: "Días" },
+              { text: "Weeks", textEs: "Semanas" } ] },
+            { label: "How you pay", labelEs: "Cómo pagas", cells: [
+              { text: "Monthly fee, usually per specialist", textEs: "Mensualidad, normalmente por especialista" },
+              { text: "Initial development plus maintenance", textEs: "Desarrollo inicial más mantenimiento" } ] },
+            { label: "Rules", labelEs: "Reglas", cells: [
+              { text: "The platform's", textEs: "Las de la plataforma" },
+              { text: "Yours", textEs: "Las tuyas" } ] },
+            { label: "Brand and data", labelEs: "Marca y datos", cells: [
+              { text: "On the platform", textEs: "En la plataforma" },
+              { text: "On your website, and yours", textEs: "En tu página, y tuyos" } ] },
+            { label: "Visibility", labelEs: "Visibilidad", cells: [
+              { text: "Its directory brings patients", textEs: "Su directorio trae pacientes" },
+              { text: "Comes from your SEO and your ads", textEs: "Viene de tu SEO y tus anuncios" } ] },
+          ],
+        },
+      },
+      {
+        id: "haima",
+        heading: "The HAIMA case",
+        headingEs: "El caso de HAIMA",
+        body: [
+          "HAIMA is a blood bank that has operated in Tijuana for 25 years. Until its project with us, everything went through the phone: anyone who wanted to donate, or needed to know whether there was blood of their type, had to call, wait on the switchboard and have someone check by hand.",
+          "What we built: a **24/7 booking system** for donors; a **filter of 8 pre-screening questions**, because not everyone can donate and it is better to know before the person makes the trip; **reminders by email, SMS and WhatsApp**; an **AI assistant in Spanish and English**, because in Tijuana some of the people asking do so in English; and a **live inventory panel** synced with the public website, so availability can be checked without calling.",
+          "The lesson for any clinic: the booking calendar was not the project, it was the centrepiece of a bigger one. The value was in what was connected around it: the filter, the inventory and the language.",
+        ],
+        bodyEs: [
+          "HAIMA es un banco de sangre que lleva 25 años operando en Tijuana. Hasta su proyecto con nosotros, todo pasaba por teléfono: quien quería donar, o necesitaba saber si había sangre de su tipo, tenía que llamar, esperar en el conmutador y que alguien revisara a mano.",
+          "Lo que hicimos: una **agenda de citas 24/7** para donadores; un **filtro de 8 preguntas previas**, porque no cualquiera puede donar y es mejor saberlo antes de que la persona haga el viaje; **recordatorios por email, SMS y WhatsApp**; un **asistente con IA en español e inglés**, porque en Tijuana parte de quienes preguntan lo hacen en inglés; y un **panel de inventario en vivo** sincronizado con la página pública, para que la disponibilidad se consulte sin llamar.",
+          "La lección para cualquier clínica: la agenda no fue el proyecto, fue la pieza central de uno más grande. El valor estuvo en lo que se conectó alrededor: el filtro, el inventario y el idioma.",
+        ],
+      },
+      {
+        id: "privacidad",
+        heading: "Health data: what cannot be left for later",
+        headingEs: "Datos de salud: lo que no se puede dejar para después",
+        body: [
+          "Since 21 March 2025 the new Federal Law on the Protection of Personal Data Held by Private Parties has been in force, and the authority is no longer INAI but the Secretariat of Anti-Corruption and Good Governance. The law treats present or future health status as sensitive data. A booking system that asks about symptoms or the reason for the visit is handling sensitive data.",
+          "In practice: a [[privacy notice|aviso-de-privacidad]] that says which data you ask for, which are sensitive and what they are for; the patient's consent before answering the pre-screening questions; role-based access, so the front desk sees the calendar and not the history; and care with what is sent over WhatsApp. If the system also stores clinical notes, the medical record standards apply (NOM-004-SSA3-2012 and NOM-024-SSA3-2012). This does not replace a lawyer's review; it is the minimum your provider should ask you about.",
+        ],
+        bodyEs: [
+          "Desde el 21 de marzo de 2025 rige la nueva Ley Federal de Protección de Datos Personales en Posesión de los Particulares, y la autoridad ya no es el INAI sino la Secretaría Anticorrupción y Buen Gobierno. La ley considera datos sensibles el estado de salud presente o futuro. Una agenda que pregunta síntomas o motivo de consulta está tratando datos sensibles.",
+          "En la práctica: un [[aviso de privacidad|aviso-de-privacidad]] que diga qué datos pides, cuáles son sensibles y para qué; el consentimiento del paciente antes de contestar las preguntas previas; accesos por rol, para que la recepción vea la agenda y no el historial; y cuidado con lo que se manda por WhatsApp. Si además la agenda guarda notas clínicas, aplican las normas del expediente clínico (NOM-004-SSA3-2012 y NOM-024-SSA3-2012). Esto no sustituye la revisión de un abogado; es lo mínimo que tu proveedor debería preguntarte.",
+        ],
+      },
+      {
+        id: "antes-de-firmar",
+        heading: "What to ask before you sign",
+        headingEs: "Lo que debes preguntar antes de firmar",
+        body: [
+          "**Are reminder messages included, or charged per send?**",
+          "**Is there a monthly fee, and what does it cover:** hosting, support, changes?",
+          "**Can I export my patients and appointments** if I switch providers?",
+          "**Who owns the data and where is it stored?**",
+          "**How much does it cost to add a doctor, a room or a service later?**",
+          "**Does it work well on a phone?** 97.3% of internet users in Mexico go online with a smartphone, according to INEGI.",
+          "**What happens if it goes down?** Is there support during clinic hours?",
+          "If you are about to request quotes, [get a quote for your clinic's booking system](/servicios/automatizacion) from us: we review your rules and tell you honestly whether a platform is enough or you need a custom system. And if what you are missing is patients, not a calendar, start with [what a clinic's website should have](/blog/sitio-web-para-clinicas).",
+        ],
+        bodyEs: [
+          "**¿Los recordatorios están incluidos o se cobran por envío?**",
+          "**¿Hay mensualidad y qué incluye:** hospedaje, soporte, cambios?",
+          "**¿Puedo exportar mis pacientes y mis citas** si me cambio de proveedor?",
+          "**¿Quién es dueño de los datos y dónde se guardan?**",
+          "**¿Cuánto cuesta agregar después un doctor, un consultorio o un servicio?**",
+          "**¿Funciona bien desde el celular?** El 97.3% de quienes usan internet en México se conecta con un celular inteligente, según el INEGI.",
+          "**¿Qué pasa si se cae?** ¿Hay soporte en horario de clínica?",
+          "Si estás por pedir cotizaciones, [cotiza la agenda de tu clínica](/servicios/automatizacion) con nosotros: revisamos tus reglas y te decimos con honestidad si te alcanza con una plataforma o necesitas una a la medida. Y si lo que te falta son pacientes, no agenda, empieza por [qué debe tener el sitio web de una clínica](/blog/sitio-web-para-clinicas).",
+        ],
+      },
+    ],
+    gradient: "from-stone-800 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuánto cuesta una agenda en línea para una clínica?",
+        qEn: "How much does an online booking system for a clinic cost?",
+        a: "Una plataforma hecha como Doctoralia cuesta para un especialista de $1,740 a $2,970 MXN al mes más IVA, según el plan, con precios revisados en noviembre de 2026. Una agenda a la medida se cotiza por piezas: recursos, preguntas previas, recordatorios, idioma, pagos, integraciones y privacidad.",
+        aEn: "A ready-made platform such as Doctoralia costs a specialist $1,740 to $2,970 MXN a month plus IVA, depending on the plan, with prices reviewed in November 2026. A custom system is quoted by pieces: resources, pre-screening, reminders, language, payments, integrations and privacy.",
+      },
+      {
+        q: "¿Los recordatorios de verdad reducen las inasistencias?",
+        qEn: "Do reminders really reduce no-shows?",
+        a: "Sí. La revisión Cochrane sobre recordatorios por mensaje de texto encontró que la asistencia subió de 67.8% sin recordatorio a 78.6% con él, con certeza moderada, con un efecto parecido al de una llamada y a menor costo.",
+        aEn: "Yes. The Cochrane review on text message reminders found that attendance rose from 67.8% without a reminder to 78.6% with one, with moderate certainty, an effect similar to a phone call at a lower cost.",
+      },
+      {
+        q: "¿Cuánto cuesta mandar recordatorios por WhatsApp?",
+        qEn: "How much does it cost to send WhatsApp reminders?",
+        a: "Con la API, un recordatorio es un mensaje de utilidad: US$0.0085 por envío en México con la tarifa de octubre de 2026. Con la app de WhatsApp Business no hay costo por mensaje, pero alguien tiene que mandarlos a mano.",
+        aEn: "With the API, a reminder is a utility message: US$0.0085 per send in Mexico with the October 2026 rate card. With the WhatsApp Business app there is no per-message cost, but someone has to send them by hand.",
+      },
+      {
+        q: "¿La agenda puede funcionar en inglés y en español?",
+        qEn: "Can the booking system work in English and Spanish?",
+        a: "Sí: la página de citas, los recordatorios y un asistente con IA pueden atender en los dos idiomas. En Tijuana es casi obligatorio si recibes pacientes de Estados Unidos; así funciona el sistema de HAIMA.",
+        aEn: "Yes: the booking page, the reminders and an AI assistant can work in both languages. In Tijuana it is almost a must if you receive patients from the United States; that is how HAIMA's system works.",
+      },
+      {
+        q: "¿Necesito aviso de privacidad para agendar citas en línea?",
+        qEn: "Do I need a privacy notice to take online bookings?",
+        a: "Sí. Si la agenda pide datos de salud, como síntomas o motivo de consulta, son datos sensibles para la ley de datos personales vigente desde marzo de 2025. Tu aviso debe decir qué datos pides, cuáles son sensibles y para qué los usas.",
+        aEn: "Yes. If the system asks for health data, such as symptoms or the reason for the visit, they are sensitive data under the personal data law in force since March 2025. Your notice must say which data you ask for, which are sensitive and what you use them for.",
+      },
+      {
+        q: "¿Qué son las preguntas previas en una agenda?",
+        qEn: "What are pre-screening questions in a booking system?",
+        a: "Un filtro antes de confirmar la cita: preguntas que deciden si el paciente puede tomar ese servicio o necesita otro primero. Evitan citas que no se iban a poder atender, como en el filtro de 8 preguntas de HAIMA para donadores.",
+        aEn: "A filter before the appointment is confirmed: questions that decide whether the patient can take that service or needs another one first. They prevent appointments that could not have been attended, like HAIMA's 8-question filter for donors.",
+      },
+      {
+        q: "¿Conviene cobrar anticipo al agendar?",
+        qEn: "Is it worth charging a deposit when booking?",
+        a: "En servicios largos o caros, un anticipo reduce el riesgo de un horario vacío. En consultas cortas puede frenar a pacientes nuevos. Pruébalo primero en los servicios donde una inasistencia te cuesta más.",
+        aEn: "For long or expensive services, a deposit reduces the risk of an empty slot. For short consultations it can put off new patients. Try it first on the services where a no-show costs you the most.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "online booking system for clinics Mexico",
+        "clinic appointment software quote",
+        "medical appointment reminders WhatsApp",
+        "Doctoralia price Mexico",
+        "bilingual booking system Tijuana clinic",
+      ],
+      keywordsEs: [
+        "agenda en línea para clínicas",
+        "sistema de citas para consultorio",
+        "software de citas médicas precio",
+        "recordatorios de citas por WhatsApp",
+        "Doctoralia precio México",
+        "agenda para clínica Tijuana",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };
