@@ -4751,11 +4751,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "A site in Tijuana often has to convince two audiences at once: local buyers, and buyers across the border comparing you against options in the United States.",
           "That raises the weight of the signals that read as legitimacy, and it makes the bilingual decision structural rather than cosmetic. A translate widget is not a bilingual site, because search engines cannot index what a script generates on the fly.",
           "The specifics are in [diseño web en Tijuana](/diseno-web-tijuana).",
+          "Before launching, go through [the website launch checklist](/blog/checklist-para-lanzar-pagina-web) and the [most common web design mistakes](/blog/errores-de-diseno-web). And if you are still unsure whether you need one, read [website or social media](/blog/pagina-web-o-redes-sociales).",
         ],
         bodyEs: [
           "Un sitio en Tijuana muchas veces tiene que convencer a dos públicos a la vez: compradores locales, y compradores del otro lado de la frontera que te están comparando contra opciones en Estados Unidos.",
           "Eso sube el peso de las señales que se leen como seriedad, y vuelve la decisión bilingüe estructural y no cosmética. Un widget de traducción no es un sitio bilingüe, porque los buscadores no pueden indexar lo que un script genera al vuelo.",
           "Los detalles están en [diseño web en Tijuana](/diseno-web-tijuana).",
+          "Antes de lanzar, repasa [la checklist para lanzar tu página web](/blog/checklist-para-lanzar-pagina-web) y los [errores de diseño web más comunes](/blog/errores-de-diseno-web). Y si todavía dudas si la necesitas, lee [página web o redes sociales](/blog/pagina-web-o-redes-sociales).",
         ],
       },
     ],
@@ -13019,10 +13021,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "A foreign buyer can take months to decide. A monthly email in English with new properties, prices and news about the area keeps you present without pressure, and a CRM reminds you when to call each one. We explain how to classify and nurture leads in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios) and [email marketing for small businesses](/blog/email-marketing-para-pymes).",
           "If you are just starting your digital presence, begin with [digital marketing for real estate agents](/blog/marketing-digital-para-broker-inmobiliario). And our [free diagnostic for real estate](/recursos/diagnostico/inmobiliarias) tells you in a few minutes what to fix first.",
+          "If you sell in Rosarito, see [digital marketing in Rosarito](/agencia-marketing-digital-rosarito); in Ensenada, [digital marketing in Ensenada](/agencia-marketing-digital-ensenada).",
         ],
         bodyEs: [
           "Un comprador extranjero puede tardar meses en decidir. Un correo mensual en inglés con propiedades nuevas, precios y noticias de la zona te mantiene presente sin presionar, y un CRM te recuerda cuándo llamarle a cada uno. Explicamos cómo clasificar y nutrir prospectos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios) y [email marketing para pymes](/blog/email-marketing-para-pymes).",
           "Si apenas estás armando tu presencia digital, empieza por [marketing digital para broker inmobiliario](/blog/marketing-digital-para-broker-inmobiliario). Y nuestro [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice en unos minutos qué corregir primero.",
+          "Si vendes en Rosarito, revisa [marketing digital en Rosarito](/agencia-marketing-digital-rosarito); en Ensenada, [marketing digital en Ensenada](/agencia-marketing-digital-ensenada).",
         ],
       },
     ],
