@@ -14151,11 +14151,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "Call your bank immediately and report the transfer as fraud: the sooner you do it, the more chance there is of stopping it. Save screenshots of the messages, numbers and account details, file a complaint with the authorities and report the number in WhatsApp so it gets blocked. If the scam came through a hacked account of a relative, help them recover it and warn their contacts.",
           "Do not feel ashamed: these scams are designed to work on intelligent people under emotional pressure. Telling your family and friends what happened is one of the best ways to stop the next attempt. And if you want to understand which jobs and tasks AI is really changing, read [will AI take your job?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
           "Something similar happens with images; we explain it in [how to tell if an image is AI](/blog/como-saber-si-una-imagen-es-ia).",
+          "If you run a business, publish your official WhatsApp number on your website and state that you never request payments from another number; it is one of the things we make clear when we [build your website](/servicios/websites).",
         ],
         bodyEs: [
           "Llama a tu banco de inmediato y reporta la transferencia como fraude: entre más rápido, más posibilidades hay de detenerla. Guarda capturas de los mensajes, números y datos de la cuenta, presenta una denuncia ante las autoridades y reporta el número en WhatsApp para que lo bloqueen. Si la estafa llegó desde la cuenta hackeada de un familiar, ayúdale a recuperarla y avisa a sus contactos.",
           "No sientas vergüenza: estas estafas están diseñadas para funcionar con personas inteligentes bajo presión emocional. Contarle a tu familia y amigos lo que pasó es de las mejores formas de frenar el siguiente intento. Y si quieres entender qué empleos y tareas está cambiando de verdad la IA, lee [¿la IA te va a quitar el trabajo?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
           "Con las imágenes pasa algo parecido; lo explicamos en [cómo saber si una imagen es IA](/blog/como-saber-si-una-imagen-es-ia).",
+          "Si tienes un negocio, publica en tu página tu número oficial de WhatsApp y avisa que nunca pides pagos desde otro número; es una de las cosas que dejamos claras al [hacer tu página web](/servicios/websites).",
         ],
       },
     ],
@@ -15225,10 +15227,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Check that your plan and region include dots; the rollout is gradual and can take days. Create the dot from the desktop app or a computer browser, give it a name and connect only low-risk apps first, reviewing what permissions each one asks for. Go through the Custom Rules and set “ask before acting” for anything that sends messages or touches money.",
           "Then write it a short brief, as you would for a new employee: the goal, what it can touch, what a good result looks like, what it must never do and when to check in with you. Watch it for a week or two before adding sensitive systems. If you want to compare it with the alternatives, read our articles on [Claude Duet](/blog/claude-duet-que-es) and [Meta Muse](/blog/meta-muse-que-es).",
+          "If what you want is to delegate repetitive business tasks without paying 100 dollars a month per user, see [automation for businesses](/servicios/automatizacion) or [an AI agent to serve your customers](/servicios/agente-ia).",
         ],
         bodyEs: [
           "Revisa que tu plan y tu región incluyan dots; el despliegue es gradual y puede tardar días. Crea el dot desde la app de escritorio o el navegador de una computadora, ponle nombre y conecta primero solo apps de bajo riesgo, revisando qué permisos pide cada una. Recorre las reglas personalizadas y pon “preguntar antes de actuar” en todo lo que mande mensajes o toque dinero.",
           "Después escríbele un encargo corto, como a un empleado nuevo: el objetivo, qué puede tocar, cómo se ve un buen resultado, qué no debe hacer nunca y cuándo reportarte. Obsérvalo una o dos semanas antes de sumar sistemas delicados. Si quieres compararlo con las alternativas, lee nuestros artículos sobre [Claude Duet](/blog/claude-duet-que-es) y [Meta Muse](/blog/meta-muse-que-es).",
+          "Si lo que quieres es delegar tareas repetitivas del negocio sin pagar 100 dólares al mes por usuario, revisa [automatización para negocios](/servicios/automatizacion) o [un agente de IA para atender a tus clientes](/servicios/agente-ia).",
         ],
       },
     ],
