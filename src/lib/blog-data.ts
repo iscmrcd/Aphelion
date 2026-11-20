@@ -449,9 +449,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "El orden que la mayoría de los negocios hace mal",
         body: [
           "The common mistake is splitting a tight budget 50/50 between both platforms from day one. Better sequencing: prove the offer works on the platform with clearer intent signals first, get the [[landing page|landing-page]] and follow-up converting, then add the second platform to scale reach once you know your numbers. Running both platforms badly is worse than running one platform well.",
+          "If you have decided, see [Google Ads in Tijuana](/google-ads-tijuana) or [Meta Ads in Tijuana](/meta-ads-tijuana); in Ensenada, [Google Ads in Ensenada](/google-ads-ensenada) or [Meta Ads in Ensenada](/meta-ads-ensenada).",
         ],
         bodyEs: [
           "**El error común es dividir un presupuesto ajustado 50/50 entre ambas plataformas desde el primer día.** Un mejor orden: comprobar que la oferta funciona primero en la plataforma con señales de intención más claras, lograr que la [[landing page|landing-page]] y el seguimiento conviertan, y luego sumar la segunda plataforma para escalar alcance una vez que conoces tus números. Correr ambas plataformas mal es peor que correr una sola bien.",
+          "Si ya decidiste, revisa [Google Ads en Tijuana](/google-ads-tijuana) o [Meta Ads en Tijuana](/meta-ads-tijuana); si estás en Ensenada, [Google Ads en Ensenada](/google-ads-ensenada) o [Meta Ads en Ensenada](/meta-ads-ensenada).",
         ],
       },
     ],
@@ -628,9 +630,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: '10. Tratar Google Ads como "configurar y olvidar"',
         body: [
           "This is the root cause behind the other nine. Google Ads is not a one-time setup — it's a channel that needs weekly attention to stay efficient as competition, seasonality and your own business change. Accounts that get reviewed monthly instead of weekly consistently underperform accounts managed with real cadence.",
+          "To review your account methodically, read [what a Google Ads audit includes](/blog/auditoria-google-ads-tijuana) or [request a review of your account](/google-ads-tijuana).",
         ],
         bodyEs: [
           "Esta es la causa raíz detrás de los otros nueve errores. Google Ads no es una configuración de una sola vez, sino un canal que necesita atención semanal para mantenerse eficiente mientras cambian la competencia, la estacionalidad y tu propio negocio. Las cuentas que se revisan mensualmente en vez de semanalmente rinden consistentemente menos que las cuentas administradas con cadencia real.",
+          "Para revisar tu cuenta con método, lee [qué incluye una auditoría de Google Ads](/blog/auditoria-google-ads-tijuana) o [solicita una revisión de tu cuenta](/google-ads-tijuana).",
         ],
       },
     ],
@@ -796,9 +800,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Los errores más comunes del marketing inmobiliario en México",
         body: [
           "The three we see most often: showing the entire listing before capturing contact info, so there's no reason to leave a name and number; running ads without a CRM, so leads live and die in a WhatsApp inbox with no follow-up structure; and treating every lead the same regardless of how ready they are to buy. Each of these is fixable in weeks, not months — the system doesn't need to be perfect, it just needs every stage covered.",
+          "To know where to start, take the [free diagnostic for real estate businesses](/recursos/diagnostico/inmobiliarias). And for one concrete piece, read [how to get exclusive listings](/blog/como-conseguir-propiedades-en-exclusiva).",
         ],
         bodyEs: [
           "Los tres que vemos más seguido: mostrar todo el listado antes de capturar el contacto, así que no hay razón para dejar nombre y teléfono; correr anuncios sin CRM, así que los leads viven y mueren en un chat de WhatsApp sin estructura de seguimiento; y tratar a todos los leads igual sin importar qué tan listos estén para comprar. Cada uno de estos se puede corregir en semanas, no en meses. El sistema no necesita ser perfecto: solo necesita tener cubierta cada etapa.",
+          "Para saber por dónde empezar, haz el [diagnóstico gratuito para inmobiliarias](/recursos/diagnostico/inmobiliarias). Y para una pieza concreta, lee [cómo conseguir propiedades en exclusiva](/blog/como-conseguir-propiedades-en-exclusiva).",
         ],
       },
     ],
@@ -926,9 +932,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo luce un presupuesto realista de generación de leads",
         body: [
           "As a market range for 2026, expect to invest **$15,000 to $25,000 MXN** monthly across paid channels for a mid-size development, not counting the [[landing page|landing-page]] and [[CRM|crm]] setup. Premium categories and large pre-sales typically need more because cost per qualified lead rises with price point. A full breakdown of how to split that budget across channels is in [how much to invest in real estate marketing](/blog/cuanto-invertir-en-marketing-inmobiliario).",
+          "The full picture is in [the real estate marketing guide](/blog/guia-marketing-inmobiliario); to measure your starting point, use the [real estate diagnostic](/recursos/diagnostico/inmobiliarias).",
         ],
         bodyEs: [
           "Como rango de mercado para 2026, considera invertir entre **$15,000 y $25,000 MXN** mensuales en canales pagados para un desarrollo mediano, sin contar la [[landing page|landing-page]] ni la configuración del [[CRM|crm]]. Las categorías premium y las preventas grandes suelen necesitar más porque el costo por lead calificado sube con el ticket. Un desglose completo de cómo repartir ese presupuesto por canal está en [cuánto invertir en marketing inmobiliario](/blog/cuanto-invertir-en-marketing-inmobiliario).",
+          "El panorama completo está en [la guía de marketing inmobiliario](/blog/guia-marketing-inmobiliario); para medir tu punto de partida, usa el [diagnóstico para inmobiliarias](/recursos/diagnostico/inmobiliarias).",
         ],
       },
     ],
@@ -1048,9 +1056,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo encaja en el resto del sistema de leads",
         body: [
           "The map itself is a capture tool, not a replacement for follow-up — when a buyer reserves a lot through the map, that action should trigger the same five-minute response and [[CRM|crm]] entry as any other lead. The map increases the quality of interest you capture; the follow-up system is still what turns that interest into a signed contract. See the complete framework in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).",
+          "If you want one for your development, [get a quote for your website](/servicios/websites); the full context is in [the real estate marketing guide](/blog/guia-marketing-inmobiliario).",
         ],
         bodyEs: [
           "El mapa en sí es una herramienta de captación, no un reemplazo del seguimiento. Cuando un comprador aparta un lote a través del mapa, esa acción debe disparar la misma respuesta de cinco minutos y el mismo registro en [[CRM|crm]] que cualquier otro [[lead|lead]]. El mapa aumenta la calidad del interés que capturas; el sistema de seguimiento sigue siendo lo que convierte ese interés en un contrato firmado. Revisa el marco completo en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).",
+          "Si quieres uno para tu desarrollo, [cotiza tu página](/servicios/websites); el contexto completo está en [la guía de marketing inmobiliario](/blog/guia-marketing-inmobiliario).",
         ],
       },
     ],
@@ -1164,9 +1174,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Dónde tiene que vivir todo este sistema",
         body: [
           "None of this works from a WhatsApp inbox and memory — every lead, its classification, and its next follow-up date needs to live in a [[CRM|crm]] that the whole sales team can see. Without it, classification decays within days as new leads arrive and old ones get forgotten. The complete lead-generation system this follow-up process fits into is in [how to generate real estate leads](/blog/como-generar-leads-inmobiliarios).",
+          "If you want to automate that follow-up, see [automation for businesses](/servicios/automatizacion); the rest of the process is in [the real estate marketing guide](/blog/guia-marketing-inmobiliario).",
         ],
         bodyEs: [
           "Nada de esto funciona desde un chat de WhatsApp y la memoria del equipo. Cada lead, su clasificación y su próxima fecha de seguimiento necesitan vivir en un [[CRM|crm]] que todo el equipo de ventas pueda ver. Sin eso, la clasificación se degrada en días conforme llegan leads nuevos y se olvidan los anteriores. El sistema completo de generación de leads en el que encaja este proceso de seguimiento está en [cómo generar leads inmobiliarios](/blog/como-generar-leads-inmobiliarios).",
+          "Si quieres automatizar ese seguimiento, revisa [automatización para negocios](/servicios/automatizacion); el resto del proceso está en [la guía de marketing inmobiliario](/blog/guia-marketing-inmobiliario).",
         ],
       },
     ],
@@ -1291,9 +1303,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Los errores más comunes de SEO local",
         body: [
           "Using a P.O. box or a virtual address instead of a real, verifiable location; stuffing the business name with [[keywords|palabra-clave]] it doesn't actually contain; ignoring negative reviews instead of responding professionally; and treating the Google Business Profile as a one-time setup instead of an ongoing channel. For a deeper look at mistakes that apply beyond just local SEO, see [12 SEO mistakes small businesses make](/blog/errores-de-seo). We apply all of this to a border city in [local SEO in Tijuana](/seo-tijuana).",
+          "If you show up but the phone does not ring, read [why almost nobody calls even though you show up on Google Maps](/blog/google-maps-no-llaman).",
         ],
         bodyEs: [
           "Usar un apartado postal o una dirección virtual en vez de una ubicación real y verificable; rellenar el nombre del negocio con [[palabras clave|palabra-clave]] que no contiene realmente; ignorar reseñas negativas en vez de responder profesionalmente; y tratar el perfil de Google Business como una configuración única en vez de un canal continuo. Para un vistazo más profundo a errores que aplican más allá del SEO local, revisa [12 errores de SEO que cometen las pymes](/blog/errores-de-seo). Todo esto lo aplicamos a la frontera en [SEO local en Tijuana](/seo-tijuana).",
+          "Si apareces pero el teléfono no suena, lee [por qué casi nadie llama aunque apareces en Google Maps](/blog/google-maps-no-llaman).",
         ],
       },
     ],
@@ -1604,9 +1618,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "12. Esperar resultados sin paciencia",
         body: [
           "SEO compounds over months, not weeks — businesses that abandon it after six or eight weeks because they haven't seen dramatic movement are quitting right before the curve typically starts to bend. Consistency beats intensity in SEO more than in almost any other marketing channel. As a reference point, technical and structural fixes typically show measurable movement in **4 to 6 months**, with results that compound meaningfully at 9 to 12 months.",
+          "If you want your site reviewed, [request a diagnosis](/seo-tijuana); in Ensenada, see [SEO in Ensenada](/seo-ensenada). To go deeper, read [advanced SEO tools and audits](/blog/seo-avanzado-herramientas-y-auditoria).",
         ],
         bodyEs: [
           "El SEO se acumula en meses, no en semanas. Los negocios que lo abandonan después de seis u ocho semanas porque no han visto un movimiento dramático suelen renunciar justo antes de que la curva empiece a doblarse. La consistencia le gana a la intensidad en SEO más que en casi cualquier otro canal de marketing. Como referencia, las correcciones técnicas y de estructura suelen mostrar movimiento medible en **4 a 6 meses**, con resultados que se acumulan de forma importante entre los 9 y 12 meses.",
+          "Si quieres una revisión de tu sitio, [solicita un diagnóstico](/seo-tijuana); en Ensenada, revisa [SEO en Ensenada](/seo-ensenada). Para ir más a fondo, lee [herramientas y auditoría de SEO avanzado](/blog/seo-avanzado-herramientas-y-auditoria).",
         ],
       },
     ],
@@ -1835,9 +1851,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cuándo ajustar el presupuesto",
         body: [
           "Revisit the split every **4 to 6 weeks** based on which channel is producing hot and warm [[leads|lead]], not just raw volume — a channel generating lots of cold or ghost leads is quietly wasting budget even if the [[cost per click|cpc]] looks attractive. The full classification system is in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios).",
+          "The detail by channel is in [the real estate marketing guide](/blog/guia-marketing-inmobiliario), and the [real estate diagnostic](/recursos/diagnostico/inmobiliarias) tells you what to tackle first.",
         ],
         bodyEs: [
           "Revisa el reparto cada **4 a 6 semanas** según qué canal está produciendo leads hot y warm, no solo volumen bruto. Un canal que genera muchos leads cold o ghost está desperdiciando presupuesto sin que se note en el reporte, aunque el [[costo por clic|cpc]] se vea atractivo. El sistema de clasificación completo está en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios).",
+          "El detalle por canal está en [la guía de marketing inmobiliario](/blog/guia-marketing-inmobiliario), y el [diagnóstico para inmobiliarias](/recursos/diagnostico/inmobiliarias) te dice qué atender primero.",
         ],
       },
     ],
@@ -2189,11 +2207,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "If you are advertising from Tijuana, one setting matters more than everything else on this page.",
           "A radius drawn around a Tijuana location covers a large part of San Diego County, and Google's location options have historically defaulted to including people interested in your targeted area rather than only people physically in it. The result is competing against dollar budgets for clicks that will never cross the border.",
           "**The fix and the rest of the border configuration are in [Google Ads en Tijuana](/google-ads-tijuana).**",
+          "If you are deciding how much to invest, read [how to set your Google Ads budget](/blog/presupuesto-para-google-ads); if you are torn between hiring and doing it yourself, [Google Ads agency or do it yourself](/blog/agencia-google-ads-o-hacerlo-yo). And before scaling, read [what an audit includes](/blog/auditoria-google-ads-tijuana).",
         ],
         bodyEs: [
           "Si anuncias desde Tijuana, una configuración importa más que todo lo demás de esta página.",
           "Un radio trazado alrededor de una ubicación de Tijuana cubre buena parte del condado de San Diego, y las opciones de ubicación de Google históricamente incluyen por defecto a personas interesadas en tu zona objetivo y no solo a quienes están físicamente en ella. El resultado es competir contra presupuestos en dólares por clics que nunca van a cruzar la frontera.",
           "El arreglo y el resto de la configuración fronteriza están en [Google Ads en Tijuana](/google-ads-tijuana).",
+          "Si estás definiendo cuánto invertir, lee [cómo calcular tu presupuesto de Google Ads](/blog/presupuesto-para-google-ads); si dudas entre contratar o hacerlo tú, [agencia de Google Ads o hacerlo tú mismo](/blog/agencia-google-ads-o-hacerlo-yo). Y antes de escalar, revisa [qué incluye una auditoría](/blog/auditoria-google-ads-tijuana).",
         ],
       },
     ],
@@ -2557,9 +2577,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Por qué rara vez es uno u otro",
         body: [
           "Most established businesses eventually run both — Ads to fill the gap while SEO compounds, and SEO to lower blended acquisition cost over time. The sequencing question matters more than the choice itself. For platform-to-platform paid comparisons, see [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
+          "To start with either, see [SEO in Tijuana](/seo-tijuana) or [Google Ads in Tijuana](/google-ads-tijuana).",
         ],
         bodyEs: [
           "La mayoría de los negocios establecidos eventualmente corre ambos: Ads para llenar el vacío mientras el SEO se acumula, y SEO para bajar el costo de adquisición combinado con el tiempo. La pregunta de secuencia importa más que la elección en sí. Para comparaciones entre plataformas pagadas, revisa [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads).",
+          "Para empezar con cualquiera de los dos, revisa [SEO en Tijuana](/seo-tijuana) o [Google Ads en Tijuana](/google-ads-tijuana).",
         ],
       },
     ],
@@ -2716,9 +2738,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Errores comunes en marketing médico",
         body: [
           "The most frequent ones we see: generic stock-photo websites with no real credentials shown, ignoring reviews entirely, and advertising claims that violate platform or regulatory rules without the practice realizing it. The full list is in [medical marketing mistakes](/blog/errores-marketing-dental).",
+          "If you would rather do it with us, see [marketing for doctors and clinics](/marketing-medicos). To reduce no-shows, read [what goes into a quote for a clinic booking system](/blog/agenda-en-linea-para-clinicas).",
         ],
         bodyEs: [
           "Los más frecuentes que vemos: sitios web con fotos genéricas de banco de imágenes sin credenciales reales mostradas, ignorar las reseñas por completo, y declaraciones publicitarias que violan reglas de plataforma o regulatorias sin que el consultorio se dé cuenta. La lista completa está en [errores de marketing dental](/blog/errores-marketing-dental).",
+          "Si prefieres que lo hagamos contigo, conoce [marketing para médicos y clínicas](/marketing-medicos). Para reducir las citas que no llegan, revisa [qué se cotiza en una agenda en línea para clínicas](/blog/agenda-en-linea-para-clinicas).",
         ],
       },
     ],
@@ -2846,9 +2870,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué pasa después del primer contacto",
         body: [
           "A fast, clear response — ideally bilingual and available by WhatsApp or a direct phone line, not just an email form — often decides whether a nervous first-time patient books at all. The broader follow-up principles are the same ones covered in [real estate lead follow-up](/blog/seguimiento-de-leads-inmobiliarios), adapted to a patient instead of a buyer: speed and reassurance win.",
+          "If your patients arrive through WhatsApp, calculate [what a real appointment costs you with Meta Ads](/blog/costo-por-cita-meta-ads-whatsapp). And if you want to build that bilingual plan with us, see [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "Una respuesta rápida y clara, idealmente bilingüe y disponible por WhatsApp o una línea telefónica directa (no solo un formulario de correo), muchas veces decide si un paciente nervioso de primera vez agenda o no. Los principios generales de seguimiento son los mismos que cubrimos en [seguimiento de leads inmobiliarios](/blog/seguimiento-de-leads-inmobiliarios), adaptados a un paciente en vez de un comprador: velocidad y tranquilidad ganan.",
+          "Si tus pacientes llegan por WhatsApp, calcula [cuánto te cuesta una cita real con Meta Ads](/blog/costo-por-cita-meta-ads-whatsapp). Y si quieres armar ese plan bilingüe con nosotros, revisa [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -2986,9 +3012,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Paso 7: Tratarlo como un canal continuo, no una configuración de una sola vez",
         body: [
           "A profile updated once at setup and never touched again gradually loses the activity signals that keep it competitive against businesses that post, photograph, and respond weekly. Setting a recurring 15-minute monthly check (new reviews answered, a few new photos, hours confirmed for any upcoming holiday) keeps the profile performing instead of quietly falling behind.",
+          "If your profile gets views but few calls, read [why almost nobody calls even though you show up on Google Maps](/blog/google-maps-no-llaman). And if you want help, see [SEO in Tijuana](/seo-tijuana) or [in Ensenada](/seo-ensenada).",
         ],
         bodyEs: [
           "Un perfil que se actualiza una vez en la configuración inicial y nunca más se vuelve a tocar va perdiendo poco a poco las señales de actividad que lo mantienen competitivo frente a negocios que publican, fotografían y responden cada semana. Poner una revisión mensual recurrente de 15 minutos (reseñas nuevas respondidas, algunas fotos nuevas, horario confirmado para cualquier día festivo próximo) mantiene al perfil rindiendo en vez de irse quedando atrás sin que nadie lo note.",
+          "Si tu perfil ya tiene vistas pero pocas llamadas, lee [por qué casi nadie llama aunque apareces en Google Maps](/blog/google-maps-no-llaman). Y si quieres ayuda, revisa [SEO en Tijuana](/seo-tijuana) o [en Ensenada](/seo-ensenada).",
         ],
       },
     ],
@@ -3113,9 +3141,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo verificar que realmente funciona",
         body: [
           "Use GTM's Preview mode and GA4's DebugView to watch events fire in real time before trusting any report, and periodically complete a test conversion yourself to confirm it shows up correctly in both GA4 and Google Ads. The full list of related account mistakes, including tracking, is in [10 Google Ads mistakes that burn your budget](/blog/errores-de-google-ads).",
+          "Measurement is the first thing [a Google Ads audit](/blog/auditoria-google-ads-tijuana) checks. If you want us to set it up properly, see [Google Ads in Tijuana](/google-ads-tijuana) or [in Ensenada](/google-ads-ensenada).",
         ],
         bodyEs: [
           "Usa el modo Vista Previa de GTM y el DebugView de GA4 para ver los eventos dispararse en tiempo real antes de confiar en cualquier reporte, y periódicamente completa tú mismo una conversión de prueba para confirmar que aparece correctamente tanto en GA4 como en Google Ads. La lista completa de errores de cuenta relacionados, incluyendo seguimiento, está en [10 errores de Google Ads que queman tu presupuesto](/blog/errores-de-google-ads).",
+          "La medición es lo primero que revisa [una auditoría de Google Ads](/blog/auditoria-google-ads-tijuana). Si quieres que la dejemos bien, revisa [Google Ads en Tijuana](/google-ads-tijuana) o [en Ensenada](/google-ads-ensenada).",
         ],
       },
     ],
@@ -3549,11 +3579,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "Meta's location targeting defaults to people recently in a location, not only residents. In most cities that distinction is minor. In Tijuana it decides who sees your ad.",
           "Left on the default, a local campaign reaches visitors from across the border. That is a feature if you want them and an expense if you do not, and either way it should be a decision rather than an accident.",
           "We cover the audience and creative side of this in [Meta Ads en Tijuana](/meta-ads-tijuana).",
+          "To measure what really matters, calculate [what a real appointment costs you with WhatsApp ads](/blog/costo-por-cita-meta-ads-whatsapp).",
         ],
         bodyEs: [
           "La segmentación por ubicación de Meta viene por defecto en personas que estuvieron recientemente en un lugar, no solo residentes. En casi cualquier ciudad esa distinción es menor. En Tijuana decide quién ve tu anuncio.",
           "Dejada en el valor por defecto, una campaña local alcanza a visitantes del otro lado de la frontera. Eso es una función si los quieres y un gasto si no, y en cualquier caso debería ser una decisión y no un accidente.",
           "Cubrimos el lado de públicos y creativos en [Meta Ads en Tijuana](/meta-ads-tijuana).",
+          "Para medir lo que de verdad importa, calcula [cuánto te cuesta una cita real con anuncios a WhatsApp](/blog/costo-por-cita-meta-ads-whatsapp).",
         ],
       },
     ],
@@ -3683,9 +3715,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo decidir en la práctica",
         body: [
           "If budget is tight, start with automatic placements and let Meta's delivery data show which platform is actually converting before manually restricting anything. Once you have two to three weeks of data, split budget toward whichever placement is producing cheaper results for your specific offer.",
+          "To know whether your campaign works, calculate [what a real appointment costs you](/blog/costo-por-cita-meta-ads-whatsapp). If you want help, see [Meta Ads in Tijuana](/meta-ads-tijuana) or [in Ensenada](/meta-ads-ensenada).",
         ],
         bodyEs: [
           "Si el presupuesto es ajustado, empieza con ubicaciones automáticas y deja que los datos de entrega de Meta muestren cuál plataforma realmente está convirtiendo antes de restringir algo manualmente. Con dos o tres semanas de datos, reparte el presupuesto hacia la ubicación que esté produciendo resultados más baratos para tu oferta específica.",
+          "Para saber si tu campaña funciona, calcula [cuánto te cuesta una cita real](/blog/costo-por-cita-meta-ads-whatsapp). Si quieres ayuda, revisa [Meta Ads en Tijuana](/meta-ads-tijuana) o [en Ensenada](/meta-ads-ensenada).",
         ],
       },
     ],
@@ -3795,9 +3829,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo se instala en la práctica",
         body: [
           "The Pixel is a code snippet added to your site's header. CAPI requires a server-side connection, either through a direct integration, a tag manager server container, or an e-commerce platform's built-in Meta integration. It's a one-time technical setup, not something that needs ongoing manual work once it's correctly configured.",
+          "If you want us to set it up with you, see [Meta Ads in Tijuana](/meta-ads-tijuana) or [in Ensenada](/meta-ads-ensenada).",
         ],
         bodyEs: [
           "El Pixel es un fragmento de código que se agrega al encabezado del sitio. El CAPI requiere una conexión del lado del servidor, ya sea con una integración directa, un contenedor de servidor de un gestor de etiquetas, o la integración nativa de Meta en una plataforma de e-commerce. Es una configuración técnica de una sola vez, no algo que necesite trabajo manual continuo una vez bien configurado.",
+          "Si quieres que lo configuremos contigo, revisa [Meta Ads en Tijuana](/meta-ads-tijuana) o [en Ensenada](/meta-ads-ensenada).",
         ],
       },
     ],
@@ -4049,9 +4085,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo elegir el paquete correcto para tu proyecto",
         body: [
           "A single property, restaurant, or hotel that needs strong content fast fits a one-location package. A wedding, opening, or activation with a defined start and end time fits an event-coverage package built around continuous hours on site. A project that changes over time, like construction, a vineyard through a season, or a development being built out, fits a multi-visit package with a cadence agreed in advance rather than a one-off shoot.",
+          "For ground productions, see [photo and video production](/servicios/produccion); for aerial shots, [drone video](/servicios/video-con-dron). Two concrete uses: [documenting construction progress](/blog/costo-documentar-obra-con-dron) and [video for hotels and wineries in Valle de Guadalupe](/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe).",
         ],
         bodyEs: [
           "Una sola propiedad, restaurante u hotel que necesita contenido sólido rápido encaja con un paquete de una locación. Una boda, inauguración o activación con una hora de inicio y fin definida encaja con un paquete de cobertura de evento construido alrededor de horas continuas en sitio. Un proyecto que cambia con el tiempo, como una obra, un viñedo a lo largo de una temporada, o un desarrollo en construcción, encaja con un paquete de varias visitas con una cadencia acordada de antemano en vez de una sesión única.",
+          "Para producciones en tierra, revisa [producción de foto y video](/servicios/produccion); para tomas aéreas, [video con dron](/servicios/video-con-dron). Dos usos concretos: [documentar el avance de una obra](/blog/costo-documentar-obra-con-dron) y [video para hoteles y vinícolas del Valle de Guadalupe](/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe).",
         ],
       },
     ],
@@ -4173,9 +4211,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cuándo el nivel alto realmente vale la pena",
         body: [
           "A single-location package fits a restaurant, hotel, or property that needs solid content fast. A multi-location, scripted production is worth the extra cost when the video needs to carry a specific narrative for investors, a major campaign launch, or a brand story that a single location can't tell, and where the cost of looking amateurish outweighs the price difference between tiers.",
+          "If you want a quote for yours, see [photo and video production](/servicios/produccion).",
         ],
         bodyEs: [
           "Un paquete de una sola locación le queda bien a un restaurante, hotel o propiedad que necesita contenido sólido y rápido. Una producción guionizada y multi-locación vale el costo extra cuando el video necesita cargar una narrativa específica para inversionistas, el lanzamiento de una campaña importante, o una historia de marca que una sola locación no puede contar, y donde el costo de verse amateur pesa más que la diferencia de precio entre niveles.",
+          "Si quieres cotizar el tuyo, revisa [producción de foto y video](/servicios/produccion).",
         ],
       },
     ],
@@ -4270,9 +4310,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué está realmente en juego si se salta este paso",
         body: [
           "Flying in restricted airspace without the proper coordination carries real regulatory risk for whoever is operating the drone, not just an inconvenience. It's one of the reasons it's worth confirming a production team actually checks this as a standard step, rather than assuming any location is fair game. Beyond the regulatory risk, unauthorized flights near controlled airspace can also result in the equipment being grounded or confiscated during the investigation, a cost far higher than the **$999 MXN** permit management fee that would have avoided the problem entirely.",
+          "If your project is in Ensenada or the Valle, see [drone video in Ensenada](/video-con-dron-ensenada); if it is a construction site, read [how much it costs to document a build with a drone](/blog/costo-documentar-obra-con-dron).",
         ],
         bodyEs: [
           "Volar en espacio aéreo restringido sin la coordinación adecuada implica un riesgo regulatorio real para quien está operando el dron, no solo una molestia. Es una de las razones por las que vale la pena confirmar que un equipo de producción realmente revisa esto como paso estándar, en vez de asumir que cualquier ubicación es válida sin más. Más allá del riesgo regulatorio, los vuelos no autorizados cerca de espacio aéreo controlado también pueden resultar en que el equipo se quede en tierra o sea confiscado durante la investigación, un costo mucho mayor que los **$999 MXN** de la gestión de permiso que habría evitado el problema por completo.",
+          "Si tu proyecto está en Ensenada o el Valle, revisa [video con dron en Ensenada](/video-con-dron-ensenada); si es una obra, lee [cuánto cuesta documentar una obra con dron](/blog/costo-documentar-obra-con-dron).",
         ],
       },
     ],
@@ -4561,9 +4603,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cuándo el remarketing no es la herramienta correcta",
         body: [
           "A brand-new business with little to no website traffic doesn't have an audience large enough yet to remarket to effectively, most platforms need at least a few hundred people in a list before an ad set can leave the learning phase reliably. In that case, the priority is building initial traffic and awareness first, with remarketing added once there's a real pool of past visitors to draw from, usually after the first month or two of active campaigns.",
+          "We set it up in [Meta Ads](/meta-ads-tijuana) and [Google Ads](/google-ads-tijuana) campaigns.",
         ],
         bodyEs: [
           "Un negocio completamente nuevo con poco o nada de tráfico en su sitio todavía no tiene una audiencia lo bastante grande como para hacer remarketing de forma efectiva, la mayoría de las plataformas necesita al menos unos cientos de personas en una lista para que un conjunto de anuncios salga de forma confiable de la fase de aprendizaje. En ese caso, la prioridad es construir tráfico y conocimiento inicial primero, y agregar remarketing una vez que exista un grupo real de visitantes pasados del cual partir, normalmente después del primer mes o dos de campañas activas.",
+          "Lo configuramos en campañas de [Meta Ads](/meta-ads-tijuana) y [Google Ads](/google-ads-tijuana).",
         ],
       },
     ],
@@ -5056,9 +5100,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Lanzar sin ninguna forma de medir resultados",
         body: [
           "A site that launches without [[Google Analytics|google-analytics]] (GA4) or basic [[conversion|conversion]] tracking makes every future decision a guess instead of a data-backed call, there's no way to know which page, which headline, or which CTA is actually working. Setting up GA4 and a simple event for each conversion point (form submitted, WhatsApp clicked, phone number tapped) before launch, not weeks after, is what turns a site into something that can actually be improved over time instead of something judged purely on how it feels.",
+          "The full process is in [the web design guide](/blog/guia-diseno-web). If you want us to review your site, see [web design in Tijuana](/diseno-web-tijuana) or [in Ensenada](/diseno-web-ensenada).",
         ],
         bodyEs: [
           "Un sitio que se lanza sin [[Google Analytics|google-analytics]] (GA4) ni seguimiento básico de [[conversión|conversion]] convierte cada decisión futura en una suposición en vez de una decisión con datos: no hay forma de saber qué página, qué titular o qué llamado a la acción realmente está funcionando. Configurar GA4 y un evento simple por cada punto de conversión (formulario enviado, clic en WhatsApp, toque en el número de teléfono) antes del lanzamiento, no semanas después, es lo que convierte a un sitio en algo que realmente se puede mejorar con el tiempo, en vez de algo que se juzga solo por cómo se siente.",
+          "El proceso completo está en [la guía de diseño web](/blog/guia-diseno-web). Si quieres que revisemos tu página, mira [diseño web en Tijuana](/diseno-web-tijuana) o [en Ensenada](/diseno-web-ensenada).",
         ],
       },
     ],
@@ -5164,9 +5210,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Un camino de conversión claro",
         body: [
           "Before launch, walk through the site as a first-time visitor would and confirm there's exactly one obvious next step at every point, not several competing ones. If it's not immediately clear what to do next, a real visitor won't figure it out either.",
+          "If you have not started yet, read [how long it takes to build a website](/blog/cuanto-tarda-hacer-una-pagina-web) and [the web design guide](/blog/guia-diseno-web); and if you want us to build it, [get a quote](/servicios/websites).",
         ],
         bodyEs: [
           "Antes de lanzar, recorre el sitio como lo haría un visitante por primera vez y confirma que hay exactamente un siguiente paso obvio en cada punto, no varios compitiendo entre sí. Si no queda claro qué hacer a continuación, un visitante real tampoco lo va a averiguar.",
+          "Si todavía no la empiezas, lee [cuánto tarda hacer una página web](/blog/cuanto-tarda-hacer-una-pagina-web) y [la guía de diseño web](/blog/guia-diseno-web); y si quieres que la hagamos, [cotiza tu página](/servicios/websites).",
         ],
       },
     ],
@@ -5272,9 +5320,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Lo que no siempre hace falta",
         body: [
           "A blog, a full team-bios page, or a chat widget aren't universally necessary, they earn their place depending on the business. A blog only helps if it's maintained consistently; an abandoned one with three posts from two years ago hurts more than it helps. If your business is in Baja California, we explain how we build them in [web design in Tijuana](/diseno-web-tijuana).",
+          "If you sell to US companies, also read [what an industrial supplier's bilingual website needs](/blog/web-bilingue-proveedor-industrial).",
         ],
         bodyEs: [
           "Un blog, una página completa de biografías del equipo, o un widget de chat no son universalmente necesarios, se ganan su lugar dependiendo del negocio. Un blog solo ayuda si se mantiene con constancia; uno abandonado con tres publicaciones de hace dos años perjudica más de lo que ayuda. Si tu negocio está en Baja California, te contamos cómo las construimos en [diseño web en Tijuana](/diseno-web-tijuana).",
+          "Si vendes a empresas de Estados Unidos, lee también [qué debe incluir la web bilingüe de un proveedor industrial](/blog/web-bilingue-proveedor-industrial).",
         ],
       },
     ],
@@ -5369,9 +5419,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "La combinación que realmente funciona",
         body: [
           "The strongest setup uses social media to build awareness and relationship, and a website as the destination that converts that attention into an actual lead or sale. Every social post that doesn't eventually point somewhere the business owns is attention that gets spent without being captured.",
+          "If you decide to have a website, [the web design guide](/blog/guia-diseno-web) tells you where to start, and here you can [get a quote for your website](/servicios/websites).",
         ],
         bodyEs: [
           "El montaje más fuerte usa redes sociales para construir conocimiento y relación, y una página web como el destino que convierte esa atención en un [[lead|lead]] o venta real. Cada publicación social que no termina apuntando a algo que el negocio posee es atención que se gasta sin capturarse.",
+          "Si decides tener página, [la guía de diseño web](/blog/guia-diseno-web) te dice por dónde empezar, y aquí puedes [cotizar tu página web](/servicios/websites).",
         ],
       },
     ],
@@ -5466,9 +5518,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué lo arregla realmente",
         body: [
           "Compressing and properly sizing images almost always produces the biggest single improvement, often cutting load time by half or more on its own. After that, removing unnecessary scripts, using modern image formats like WebP (roughly 25-**35%** smaller than JPEG at equivalent quality), and choosing hosting that matches the site's traffic level close most of the remaining gap.",
+          "If your site is years old and slow, read [when to redesign your website](/blog/cuando-redisenar-pagina-web); for a quote on a new one, see [web design](/servicios/websites).",
         ],
         bodyEs: [
           "Comprimir y dimensionar correctamente las imágenes casi siempre produce la mejora individual más grande, muchas veces recortando el tiempo de carga a la mitad o más por su cuenta. Después de eso, quitar scripts innecesarios, usar formatos de imagen modernos como WebP (aproximadamente 25 a **35%** más ligero que JPEG a calidad equivalente), y elegir un hosting acorde al nivel de tráfico del sitio cierran la mayor parte de lo que falta.",
+          "Si tu página ya tiene años y es lenta, lee [cuándo conviene rediseñar tu página web](/blog/cuando-redisenar-pagina-web); para cotizar una nueva, revisa [diseño web](/servicios/websites).",
         ],
       },
     ],
@@ -5563,9 +5617,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Errores comunes con el hosting",
         body: [
           "Choosing the cheapest shared plan for a site that runs paid ad campaigns is a common mistake, the site can go down or slow to a crawl right when traffic (and ad spend) is highest. Never checking whether backups are actually running is another, a hosting failure without a backup can mean losing the entire site.",
+          "Along with hosting you will choose a domain; we explain it in [how to choose a domain](/blog/como-elegir-un-dominio). And if you want us to handle everything, see [web design](/servicios/websites).",
         ],
         bodyEs: [
           "Elegir el plan compartido más barato para un sitio que corre campañas de anuncios pagados es un error común: el sitio puede caerse o volverse lentísimo justo cuando el tráfico (y el gasto en anuncios) está más alto. Nunca revisar si los respaldos realmente se están haciendo es otro, una falla de hosting sin respaldo puede significar perder el sitio completo.",
+          "Junto con el hosting vas a elegir dominio; lo explicamos en [cómo elegir un dominio](/blog/como-elegir-un-dominio). Y si quieres que nos encarguemos de todo, revisa [diseño web](/servicios/websites).",
         ],
       },
     ],
@@ -5660,9 +5716,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué pasa si el dominio ideal ya está tomado",
         body: [
           "Adding a relevant, short word (the city, the core service, e.g. tunegocio-ensenada.com instead of tunegocio2024.com) usually works better than adding a random number or an unrelated word just to make it available. Buying an already-registered but unused domain from its owner is also an option, prices vary widely (anywhere from a few hundred to several thousand pesos) but it's worth pricing out before settling for a weaker alternative.",
+          "The other technical step is hosting: [what hosting is](/blog/que-es-hosting). If you want to sort it out with us, [get a quote for your website](/servicios/websites).",
         ],
         bodyEs: [
           "Agregar una palabra relevante y corta (la ciudad, el servicio principal, por ejemplo tunegocio-ensenada.com en vez de tunegocio2024.com) suele funcionar mejor que agregar un número al azar o una palabra sin relación solo para que quede disponible. Comprarle a su dueño un dominio ya registrado pero sin uso también es una opción, los precios varían mucho (desde unos cuantos cientos hasta varios miles de pesos) pero vale la pena cotizarlo antes de conformarse con una alternativa más débil.",
+          "El otro paso técnico es el hosting: [qué es el hosting](/blog/que-es-hosting). Si quieres resolverlo con nosotros, [cotiza tu página](/servicios/websites).",
         ],
       },
     ],
@@ -5953,9 +6011,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Un orden sensato para construir",
         body: [
           "Connect the forms to a CRM. Add an automatic acknowledgement so nobody waits in silence. Add a follow-up sequence for leads that go quiet. Only then consider an AI agent, and only for the conversations that genuinely vary. Each step is useful on its own, so if the budget stops after step two you still have something that works.",
+          "Two concrete examples: [WhatsApp orders connected to the register](/blog/pedidos-por-whatsapp-punto-de-venta-restaurante) and [a clinic's online booking system](/blog/agenda-en-linea-para-clinicas). When you want to start, see [automation for businesses](/servicios/automatizacion).",
         ],
         bodyEs: [
           "Conecta los formularios a un CRM. Agrega un acuse automático para que nadie espere en silencio. Agrega una secuencia de seguimiento para los leads que se enfrían. Hasta entonces considera un agente de IA, y solo para las conversaciones que de verdad varían. Cada paso sirve por sí solo, así que si el presupuesto se detiene después del paso dos igual te queda algo que funciona.",
+          "Dos ejemplos concretos: [pedidos por WhatsApp conectados a la caja](/blog/pedidos-por-whatsapp-punto-de-venta-restaurante) y [la agenda en línea de una clínica](/blog/agenda-en-linea-para-clinicas). Cuando quieras empezar, revisa [automatización para negocios](/servicios/automatizacion).",
         ],
       },
     ],
@@ -6084,9 +6144,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Qué medir una vez que corre",
         body: [
           "How many leads entered, how many got a first response and how fast, how many got a second contact, and how many closed. Those four turn the CRM from a filing cabinet into something that tells you where the [[funnel|embudo]] leaks. Without them you have a tidier version of the same guesswork.",
+          "If you want us to connect your CRM with your forms and WhatsApp, see [automation for businesses](/servicios/automatizacion).",
         ],
         bodyEs: [
           "Cuántos leads entraron, cuántos recibieron primera respuesta y qué tan rápido, cuántos recibieron un segundo contacto, y cuántos cerraron. Esos cuatro convierten al CRM de archivero en algo que te dice dónde gotea el [[embudo|embudo]]. Sin ellos tienes una versión más ordenada de la misma adivinanza.",
+          "Si quieres que conectemos tu CRM con tus formularios y tu WhatsApp, revisa [automatización para negocios](/servicios/automatizacion).",
         ],
       },
     ],
@@ -6214,9 +6276,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "No es el único canal que vale la pena automatizar",
         body: [
           "Messaging gets most of the attention in Mexico, but the same underlying need can be served by a chat on your own site, by email, or by a phone line, and those carry no per-conversation fee. The right question is where your customers already write to you, not which channel is fashionable.",
+          "If you want an AI assistant that answers for you, see [our AI agent](/servicios/agente-ia); and if you sell food, read [how to connect WhatsApp orders to your point of sale](/blog/pedidos-por-whatsapp-punto-de-venta-restaurante).",
         ],
         bodyEs: [
           "La mensajería se lleva casi toda la atención en México, pero la misma necesidad de fondo se puede resolver con un chat en tu propio sitio, con correo o con una línea telefónica, y esos no tienen costo por conversación. La pregunta correcta es dónde te escriben ya tus clientes, no qué canal está de moda.",
+          "Si quieres un asistente con IA que conteste por ti, conoce [nuestro agente de IA](/servicios/agente-ia); y si vendes comida, mira [cómo conectar los pedidos por WhatsApp con tu punto de venta](/blog/pedidos-por-whatsapp-punto-de-venta-restaurante).",
         ],
       },
     ],
@@ -6339,9 +6403,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Empieza lo bastante chico para terminar",
         body: [
           "A single automation that works end to end beats an ambitious system that stays half-configured. Pick the one task that annoys the team most this month, wire it properly, and let it run for a few weeks before adding the next. Momentum from something that visibly works is what carries the rest of the project.",
+          "Once the first process is clear, [get a quote for the automation](/servicios/automatizacion) from us.",
         ],
         bodyEs: [
           "Una sola automatización que funcione de punta a punta le gana a un sistema ambicioso que se queda a medio configurar. Elige la tarea que más moleste al equipo este mes, conéctala bien, y déjala correr unas semanas antes de agregar la siguiente. El impulso de algo que visiblemente funciona es lo que carga el resto del proyecto.",
+          "Cuando tengas claro el primer proceso, [cotiza la automatización](/servicios/automatizacion) con nosotros.",
         ],
       },
     ],
@@ -6462,9 +6528,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Pruébalo como cliente molesto",
         body: [
           "Before launch, ask it the awkward questions: the price you would rather not quote, the thing you do not offer, the complaint. How it behaves in those three cases matters more than how it handles the happy path, because those are the moments that generate reviews. You can try three agents built this way on our AI Agent service page.",
+          "We implement it as an [AI agent](/servicios/agente-ia) for your website and customer channels.",
         ],
         bodyEs: [
           "Antes de lanzar, hazle las preguntas incómodas: el precio que preferirías no cotizar, lo que no ofreces, la queja. Cómo se comporta en esos tres casos importa más que cómo maneja el camino feliz, porque esos son los momentos que generan reseñas. Puedes probar tres agentes construidos así en nuestra página de servicio de Agente IA.",
+          "Lo implementamos como [agente de IA](/servicios/agente-ia) para tu página y tus canales de atención.",
         ],
       },
     ],
@@ -6585,9 +6653,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cómo evaluar a una agencia que dice usar IA",
         body: [
           "Ask what a human still checks before anything is published, and ask to see something they built with it rather than a description. Using AI is not a differentiator anymore; having a process that catches its mistakes is. That question separates the two quickly.",
+          "If you want to try the new formats, such as [ChatGPT ads](/chatgpt-ads), or put [an AI agent](/servicios/agente-ia) to work with your customers, we can help you start small.",
         ],
         bodyEs: [
           "Pregunta qué revisa una persona antes de que algo se publique, y pide ver algo que hayan construido con eso en vez de una descripción. Usar IA ya no es un diferenciador; tener un proceso que atrape sus errores sí lo es. Esa pregunta separa a los dos rápido.",
+          "Si quieres probar los formatos nuevos, como [los anuncios en ChatGPT](/chatgpt-ads), o poner [un agente de IA](/servicios/agente-ia) a atender a tus clientes, te ayudamos a empezar en pequeño.",
         ],
       },
     ],
@@ -6704,9 +6774,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Conéctalo al CRM o se despega",
         body: [
           "An email tool holding a separate list from your [[CRM|crm]] produces two versions of the truth: someone becomes a customer and keeps receiving the prospect sequence. Syncing them is unglamorous and it prevents the most embarrassing mistakes in this channel.",
+          "If you want us to connect your emails with your CRM and sales, see [automation for businesses](/servicios/automatizacion).",
         ],
         bodyEs: [
           "Una herramienta de correo con una lista aparte de tu [[CRM|crm]] produce dos versiones de la verdad: alguien se vuelve cliente y sigue recibiendo la secuencia de prospecto. Sincronizarlos no es glamoroso y evita los errores más vergonzosos de este canal.",
+          "Si quieres que conectemos tus correos con tu CRM y tus ventas, revisa [automatización para negocios](/servicios/automatizacion).",
         ],
       },
     ],
@@ -6827,9 +6899,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Dale un pulso",
         body: [
           "Set a habit of checking the weekly count of captured [[leads|lead]]. If it drops to zero and your traffic did not, the connection broke. Without that check the normal outcome is discovering it weeks later, when someone asks about a lead that never showed up.",
+          "If you would rather we set it up with you, see [automation for businesses](/servicios/automatizacion).",
         ],
         bodyEs: [
           "Toma la costumbre de revisar el conteo semanal de leads capturados. Si cae a cero y tu tráfico no, la conexión se rompió. Sin esa revisión, lo normal es descubrirlo semanas después, cuando alguien pregunta por un lead que nunca apareció.",
+          "Si prefieres que lo dejemos funcionando contigo, revisa [automatización para negocios](/servicios/automatizacion).",
         ],
       },
     ],
@@ -6946,9 +7020,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Segmenta por qué tan listos están",
         body: [
           "Someone who asked for a quote and someone who downloaded a guide do not deserve the same cadence. The first needs speed, the second needs education over time. Sending both the same sequence makes it wrong for both, and it is the most common reason these flows underperform.",
+          "If you would rather build it with us, see [automation for businesses](/servicios/automatizacion).",
         ],
         bodyEs: [
           "Alguien que pidió una cotización y alguien que descargó una guía no merecen la misma cadencia. El primero necesita velocidad, el segundo necesita educación en el tiempo. Mandarles la misma secuencia la hace equivocada para los dos, y es la razón más común de que estos flujos rindan poco.",
+          "Si prefieres que lo armemos contigo, revisa [automatización para negocios](/servicios/automatizacion).",
         ],
       },
     ],
@@ -7135,9 +7211,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Cuándo construir varias",
         body: [
           "One page per offer, not one per business. If you run campaigns for two different services, two pages will beat one compromise page, because each can match its own ad. The cost of a second page is small next to the wasted ad spend of a page that half-fits.",
+          "If you need one for a campaign, [get a quote for your landing page](/servicios/websites); and if you are torn between a landing page and a full site, read [landing page vs website](/blog/landing-page-vs-pagina-web).",
         ],
         bodyEs: [
           "Una página por oferta, no una por negocio. Si corres campañas para dos servicios distintos, dos páginas le van a ganar a una página de compromiso, porque cada una puede coincidir con su propio anuncio. El costo de una segunda página es chico junto al gasto desperdiciado de una página que encaja a medias.",
+          "Si la necesitas para una campaña, [cotiza tu landing page](/servicios/websites); y si dudas entre landing y página completa, lee [landing page vs página web](/blog/landing-page-vs-pagina-web).",
         ],
       },
     ],
@@ -7317,12 +7395,14 @@ export const BLOG_POSTS: BlogPost[] = [
           "The first is requests sent divided by patients seen. If that ratio is well under one, the problem is the process, not the patients, and no amount of rewriting the message will fix it.",
           "The second is reviews received divided by requests sent. This one measures whether your timing and channel are right. A low number here with a healthy first number means you are asking at the wrong moment or through the wrong channel.",
           "The star average is an outcome, not a lever. Watching it daily produces anxiety and no decisions. Watching the two ratios produces changes you can actually make.",
+          "Reviews are one piece of [the medical marketing guide](/blog/guia-marketing-medico); if you want help with your profile and campaigns, see [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "Dos números te dicen si el sistema está corriendo, y ninguno es el promedio de estrellas.",
           "El primero es solicitudes enviadas entre pacientes atendidos. Si esa razón está muy por debajo de uno, el problema es el proceso, no los pacientes, y ninguna cantidad de reescribir el mensaje lo va a arreglar.",
           "El segundo es reseñas recibidas entre solicitudes enviadas. Este mide si tu momento y tu canal son los correctos. Un número bajo aquí con un primer número sano significa que estás pidiendo en el momento equivocado o por el canal equivocado.",
           "El promedio de estrellas es un resultado, no una palanca. Verlo a diario produce ansiedad y ninguna decisión. Ver las dos razones produce cambios que sí puedes hacer.",
+          "Las reseñas son una pieza de [la guía de marketing médico](/blog/guia-marketing-medico); si quieres ayuda con tu perfil y tus campañas, revisa [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -7502,6 +7582,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Put the credential and the institution on the landing page, above the fold. It satisfies article 19, and it is also a conversion element, because the patient is choosing who operates on them.",
           "Track calls, not clicks. Most medical conversions are phone calls, and a campaign optimised on clicks in this category optimises for the wrong thing. We cover the measurement setup in [errores de marketing dental](/blog/errores-marketing-dental).",
           "Keep the claims defensible. Article 18 aside, a promise of results in a medical ad is the fastest route to a complaint from a patient for whom it did not work.",
+          "Before investing more, read [what a Google Ads audit includes](/blog/auditoria-google-ads-tijuana); and if you would rather delegate it, see [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "Una vez que quitas de la mesa las tácticas prohibidas, lo que queda es más estrecho y funciona mejor de lo que la mayoría de las clínicas espera.",
@@ -7510,6 +7591,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Pon la credencial y la institución en la landing page, arriba del pliegue. Cumple el artículo 19 y además es un elemento de conversión, porque el paciente está eligiendo quién lo va a operar.",
           "Mide llamadas, no clics. La mayoría de las conversiones médicas son llamadas telefónicas, y una campaña optimizada a clics en esta categoría optimiza lo que no es. Cubrimos la medición en [errores de marketing dental](/blog/errores-marketing-dental).",
           "Mantén las afirmaciones defendibles. Aparte del artículo 18, prometer resultados en un anuncio médico es la vía más rápida a una queja de un paciente para quien no funcionó.",
+          "Antes de invertir más, revisa [qué incluye una auditoría de Google Ads](/blog/auditoria-google-ads-tijuana); y si prefieres delegarlo, conoce [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -7693,6 +7775,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Third, audit the pages that make claims. Anything promising a result, a recovery time or a success rate needs a source or a rewrite, and this is where regulatory and quality risk overlap.",
           "Fourth, fix the privacy notice and the contact consistency.",
           "Only then write new content. New articles on a site with no authorship infrastructure inherit the same weakness the old ones had.",
+          "More context in [the medical marketing guide](/blog/guia-marketing-medico) and [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "Reescribir todo es el plan que nunca ocurre. Ordena el trabajo en lugar de eso.",
@@ -7701,6 +7784,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Tercero, audita las páginas que hacen afirmaciones. Todo lo que prometa un resultado, un tiempo de recuperación o una tasa de éxito necesita fuente o reescritura, y aquí es donde se superponen el riesgo normativo y el de calidad.",
           "Cuarto, corrige el aviso de privacidad y la consistencia de los datos de contacto.",
           "Solo entonces escribe contenido nuevo. Los artículos nuevos en un sitio sin infraestructura de autoría heredan la misma debilidad que tenían los viejos.",
+          "Más contexto en [la guía de marketing médico](/blog/guia-marketing-medico) y en [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -7878,6 +7962,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "[[Local SEO|seo-local]] basics: name, address and phone identical across the site and the [[Google Business Profile|google-business-profile]], embedded map, and a page per location if there is more than one.",
           "Accessibility is not optional for a clinic in the way it might be elsewhere. A meaningful share of medical traffic has a visual, motor or cognitive impairment. Readable contrast, real text instead of text baked into images, and forms that work with a keyboard.",
           "[[Structured data|datos-estructurados]] for the organisation, the physicians and the frequently asked questions helps search engines understand who you are, though it describes the signals rather than creating them.",
+          "For patients to book on their own and show up, read [what goes into a quote for a clinic booking system](/blog/agenda-en-linea-para-clinicas). The full picture is in [the medical marketing guide](/blog/guia-marketing-medico) and [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "Nada de lo anterior sobrevive a un sitio que carga mal, porque el paciente se va antes de leer cualquier cosa.",
@@ -7886,6 +7971,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Fundamentos de [[SEO local|seo-local]]: nombre, dirección y teléfono idénticos entre el sitio y el [[Perfil de Empresa de Google|google-business-profile]], mapa embebido y una página por ubicación si hay más de una.",
           "La accesibilidad no es opcional para una clínica del modo en que podría serlo en otro lado. Una parte relevante del tráfico médico tiene alguna discapacidad visual, motriz o cognitiva. Contraste legible, texto real en lugar de texto incrustado en imágenes y formularios que funcionen con teclado.",
           "Los [[datos estructurados|datos-estructurados]] de la organización, los médicos y las preguntas frecuentes ayudan a que los buscadores entiendan quién eres, aunque describen las señales en lugar de crearlas.",
+          "Para que tus pacientes agenden solos y lleguen a su cita, lee [qué se cotiza en una agenda en línea para clínicas](/blog/agenda-en-linea-para-clinicas). El panorama completo está en [la guía de marketing médico](/blog/guia-marketing-medico) y en [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -8058,6 +8144,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Answering clinically over chat because it is convenient. A written treatment recommendation without an examination is a liability, and it is one the clinician usually gives away for free.",
           "No privacy notice. If patients contact you through this channel, the notice should say so and be reachable from the profile and the site.",
           "No response time. An unanswered WhatsApp is worse than no WhatsApp, because the patient saw the two grey ticks and drew a conclusion about the practice.",
+          "If you also want patients to book on their own and receive reminders, read [what goes into a quote for a clinic booking system](/blog/agenda-en-linea-para-clinicas).",
         ],
         bodyEs: [
           "Difundir promociones a una lista de pacientes. Una lista de tus pacientes es una lista de personas con padecimientos, y un mensaje masivo a ella es a la vez un problema de protección de datos y la vía más rápida a que te bloqueen por spam. Escríbele a pacientes que pidieron saber de ti, sobre lo que preguntaron.",
@@ -8065,6 +8152,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Responder clínicamente por chat porque es cómodo. Una recomendación de tratamiento por escrito sin exploración es una responsabilidad, y es una que el clínico normalmente regala.",
           "No tener aviso de privacidad. Si los pacientes te contactan por este canal, el aviso debe decirlo y ser alcanzable desde el perfil y desde el sitio.",
           "No tener tiempo de respuesta. Un WhatsApp sin contestar es peor que no tener WhatsApp, porque el paciente vio las dos palomitas grises y sacó una conclusión sobre el consultorio.",
+          "Si además quieres que tus pacientes agenden solos y reciban recordatorios, revisa [qué se cotiza en una agenda en línea para clínicas](/blog/agenda-en-linea-para-clinicas).",
         ],
       },
     ],
@@ -8241,6 +8329,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "The workable framing is to advertise the practice and the service rather than the reader's condition, which is also the framing least likely to make a stranger feel identified.",
           "The Mexican rules do not stop applying because the medium is paid social. Article 19 still applies to the credential. Article 18 still applies to efficacy claims. And article 78 places a duty on media outlets to ensure the advertising they carry has the corresponding permiso or filed aviso, with the advertiser required to give the outlet a copy, which is a duty platforms do not enforce and clinics therefore forget exists.",
           "This is a summary of the regulation, not legal advice. Confirm your specific situation with [[COFEPRIS|cofepris]] or a specialised lawyer before running a campaign.",
+          "Social media is one channel among several; the full plan is in [the medical marketing guide](/blog/guia-marketing-medico) and [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "La publicidad pagada en redes agrega un cuarto reglamento, y se lleva mal con la salud.",
@@ -8248,6 +8337,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "El encuadre que funciona es anunciar el consultorio y el servicio en lugar del padecimiento del lector, que además es el encuadre con menos probabilidad de hacer que un desconocido se sienta identificado.",
           "Las reglas mexicanas no dejan de aplicar porque el medio sea publicidad pagada en redes. El artículo 19 sigue aplicando a la credencial. El artículo 18 sigue aplicando a las afirmaciones de eficacia. Y el artículo 78 impone a los medios de difusión el deber de asegurarse de que la publicidad que transmiten cuente con el permiso correspondiente o con aviso presentado, con el anunciante obligado a entregarle copia al medio, un deber que las plataformas no verifican y que las clínicas por lo tanto olvidan que existe.",
           "Esto es un resumen de la norma, no asesoría legal. Confirma tu situación específica con [[COFEPRIS|cofepris]] o con un abogado especializado antes de correr una campaña.",
+          "Las redes son un canal entre varios; el plan completo está en [la guía de marketing médico](/blog/guia-marketing-medico) y en [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -8428,6 +8518,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "You are paying a retainer for activity rather than outcomes, with a monthly report full of reach and engagement and nothing about patients.",
           "You are spending on acquisition while the no-show rate sits untouched. Recovering an existing booking is cheaper than buying a new one, every time.",
           "You increased the budget because results were poor. If the cost per enquiry is above what your patient value supports, more volume at the same cost makes the loss bigger, not smaller.",
+          "The detail by channel is in [the medical marketing guide](/blog/guia-marketing-medico); if you want a plan with numbers for your clinic, see [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "No puedes decir de dónde vinieron los pacientes nuevos del mes pasado. Es la condición más común y vuelve incontestable cualquier otra pregunta.",
@@ -8435,6 +8526,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "Pagas una iguala por actividad y no por resultados, con un reporte mensual lleno de alcance e interacciones y nada sobre pacientes.",
           "Gastas en captación mientras la tasa de inasistencia sigue intacta. Recuperar una cita existente es más barato que comprar una nueva, siempre.",
           "Subiste el presupuesto porque los resultados eran malos. Si el costo por consulta está por encima de lo que tu valor de paciente soporta, más volumen al mismo costo hace la pérdida más grande, no más chica.",
+          "El detalle por canal está en [la guía de marketing médico](/blog/guia-marketing-medico); si quieres un plan con números para tu clínica, revisa [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -8670,6 +8762,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "In each of those cases more marketing pours volume into a system that is losing it somewhere else, and the loss scales with the spend.",
           "Before increasing a budget, check the sequence: enquiries, appointments booked, appointments attended, plans accepted, patients returning. The place where the number drops sharply is the bottleneck, and it is only sometimes the first one.",
           "This is the same reasoning behind working out a budget from capacity rather than from a percentage of revenue, which we set out in [cuánto invertir en marketing médico](/blog/cuanto-invertir-en-marketing-medico).",
+          "To see where you are weakest, take the [free diagnostic for dental clinics](/recursos/diagnostico/dental), and if you want help, see [marketing for doctors and clinics](/marketing-medicos).",
         ],
         bodyEs: [
           "El último es el más caro porque el gasto sigue durante meses antes de que alguien cuestione la premisa.",
@@ -8677,6 +8770,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "En cada uno de esos casos más marketing echa volumen a un sistema que lo está perdiendo en otro lado, y la pérdida escala con el gasto.",
           "Antes de subir un presupuesto, revisa la secuencia: consultas entrantes, citas agendadas, citas atendidas, planes aceptados, pacientes que regresan. El punto donde el número cae de golpe es el cuello de botella, y solo a veces es el primero.",
           "Es el mismo razonamiento detrás de calcular el presupuesto desde la capacidad y no desde un porcentaje de los ingresos, que planteamos en [cuánto invertir en marketing médico](/blog/cuanto-invertir-en-marketing-medico).",
+          "Para ver en qué estás más flojo, haz el [diagnóstico gratuito para clínicas dentales](/recursos/diagnostico/dental), y si quieres ayuda, conoce [marketing para médicos y clínicas](/marketing-medicos).",
         ],
       },
     ],
@@ -9069,12 +9163,14 @@ export const BLOG_POSTS: BlogPost[] = [
           "Then the question nobody asks: when a new customer arrives, ask how they found you, and add “ChatGPT or another AI” as an option. Many people read the recommendation and then search your name on Google or send a WhatsApp, and that visit never shows up as coming from ChatGPT.",
           "Finally, a monthly test. Write ten questions a real customer would ask, run them in a temporary chat, and note whether you appear, in what position and next to whom. Ten questions a month tell you more than a hundred on one afternoon.",
           "Knowing where your customers come from is one of the questions in our [free diagnostic](/recursos/diagnostico), because without that data every decision is a guess. And since a good part of what ChatGPT reads comes from search engines, start with [how Google evaluates your business](/blog/como-evalua-google-a-tu-negocio).",
+          "And if you also want to appear as an ad next to the answers, start with [ChatGPT ads](/chatgpt-ads).",
         ],
         bodyEs: [
           "Primero el dato duro. OpenAI dice que ChatGPT agrega automáticamente utm_source=chatgpt.com a los enlaces que manda a los sitios. En [[Google Analytics|google-analytics]] puedes ver esas visitas como una fuente propia y a qué páginas llegan. Si no tienes ninguna, ChatGPT no te está mandando gente a tu sitio, diga lo que diga una captura.",
           "Luego la pregunta que nadie hace: cuando llegue un cliente nuevo, pregúntale cómo te encontró y agrega “ChatGPT u otra IA” como opción. Mucha gente lee la recomendación y luego busca tu nombre en Google o te manda un WhatsApp, y esa visita nunca aparece como si viniera de ChatGPT.",
           "Por último, una prueba mensual. Escribe diez preguntas que haría un cliente real, hazlas en un chat temporal y anota si apareces, en qué lugar y junto a quién. Diez preguntas al mes te dicen más que cien en una tarde.",
           "Saber de dónde llegan tus clientes es una de las preguntas de nuestro [diagnóstico gratuito](/recursos/diagnostico), porque sin ese dato cada decisión es una apuesta. Y como buena parte de lo que lee ChatGPT viene de los buscadores, empieza por [cómo evalúa Google a tu negocio](/blog/como-evalua-google-a-tu-negocio).",
+          "Y si además quieres aparecer como anuncio junto a las respuestas, empieza por [anuncios en ChatGPT](/chatgpt-ads).",
         ],
       },
     ],
@@ -9759,10 +9855,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Track one number every month: the share of nights booked directly versus through platforms. Also record how many direct guests had stayed before. If that share rises season after season, you are keeping your customers; if not, the platforms are keeping them.",
           "If you want to know what to fix first on your website, Google profile or channels, our [free diagnostic for hotels and lodging](/recursos/diagnostico/hospedaje) gives you the list in order in a few minutes. If your hotel is in Ensenada or the Valle de Guadalupe, see how we work as a [digital marketing agency in Ensenada](/agencia-marketing-digital-ensenada).",
+          "For the footage that leads to bookings, read [what to film with a drone at hotels and wineries in Valle de Guadalupe](/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe).",
         ],
         bodyEs: [
           "Lleva un número cada mes: qué parte de las noches se reservó directo y qué parte por plataformas. Anota también cuántos huéspedes directos ya se habían quedado antes. Si esa proporción sube temporada tras temporada, te estás quedando con tus clientes; si no, se los están quedando las plataformas.",
           "Si quieres saber qué corregir primero en tu página, tu perfil de Google o tus canales, nuestro [diagnóstico gratuito para hospedaje](/recursos/diagnostico/hospedaje) te da la lista en orden en unos minutos. Si tu hotel está en Ensenada o el Valle de Guadalupe, mira cómo trabajamos como [agencia de marketing digital en Ensenada](/agencia-marketing-digital-ensenada).",
+          "Para el material que lleva a reservar, lee [qué grabar con dron en hoteles y vinícolas del Valle de Guadalupe](/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe).",
         ],
       },
     ],
@@ -10074,10 +10172,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Your number is the no-show rate: appointments that did not show up divided by appointments booked, every week. Write it down before changing anything, turn on reminders, and compare after a month. If it falls, you already know how much money it is worth.",
           "Our [free diagnostic for beauty and wellness businesses](/recursos/diagnostico/belleza-bienestar) tells you in a few minutes what to fix first: calendar, Google profile, reviews or social media.",
+          "If you want to move reminders into a system, read [what goes into a quote for an online booking system](/blog/agenda-en-linea-para-clinicas); it applies to salons and clinics alike.",
         ],
         bodyEs: [
           "Tu número es la tasa de inasistencia: citas que no llegaron entre citas agendadas, cada semana. Anótalo antes de cambiar nada, activa los recordatorios y compara después de un mes. Si baja, ya sabes cuánto dinero vale.",
           "Nuestro [diagnóstico gratuito para belleza y bienestar](/recursos/diagnostico/belleza-bienestar) te dice en unos minutos qué corregir primero: agenda, perfil de Google, reseñas o redes sociales.",
+          "Si quieres llevar los recordatorios a un sistema, lee [qué se cotiza en una agenda en línea](/blog/agenda-en-linea-para-clinicas); aplica igual para salones y consultorios.",
         ],
       },
     ],
@@ -10238,10 +10338,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Track four numbers each month: requests received, site visits, quotes sent and projects closed. The ratio between quotes sent and projects closed is your close rate, and the list of reasons you lost tells you where to act first. If most requests never become a visit, the problem is qualification; if many quotes go cold, it is follow-up.",
           "Our [free diagnostic for construction companies](/recursos/diagnostico/construccion) tells you in a few minutes what to fix first in your website, your Google profile and your sales process.",
+          "To show real progress to your clients, read [how much it costs to document a build with a drone](/blog/costo-documentar-obra-con-dron).",
         ],
         bodyEs: [
           "Lleva cuatro números cada mes: solicitudes recibidas, visitas realizadas, cotizaciones enviadas y obras cerradas. La relación entre cotizaciones enviadas y obras cerradas es tu tasa de cierre, y la lista de motivos por los que perdiste te dice dónde actuar primero. Si la mayoría de las solicitudes nunca llega a visita, el problema es el filtro; si muchas cotizaciones se enfrían, es el seguimiento.",
           "Nuestro [diagnóstico gratuito para construcción](/recursos/diagnostico/construccion) te dice en unos minutos qué corregir primero en tu página, tu perfil de Google y tu proceso de ventas.",
+          "Para mostrar avance real a tus clientes, revisa [cuánto cuesta documentar una obra con dron](/blog/costo-documentar-obra-con-dron).",
         ],
       },
     ],
@@ -10454,11 +10556,13 @@ export const BLOG_POSTS: BlogPost[] = [
           "Week of October 26: calculate your margin, decide between offer and promotion, register at elbuenfin.org and save screenshots of your current prices. Week of November 2: publish your landing page with the pixel, open your “notify me” list and post the preview on your Google profile and social media.",
           "Week of November 9: start ads aimed at your list and the people who visited your page, prepare quick replies and decide who answers. From the 13th to the 17th: reply fast and capture every customer's details. From the 18th: follow-up, reviews and your December offer.",
           "If you are not sure where to start, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first in your website, your ads and your follow-up.",
+          "If you run a restaurant, the next big season is covered in [how to sell year-end parties and dinners](/blog/posadas-y-cenas-de-fin-de-ano-restaurante). And to organise next year, use [the 2027 marketing plan](/blog/plan-de-marketing-2027).",
         ],
         bodyEs: [
           "Semana del 26 de octubre: calcula tu margen, decide entre oferta y promoción, inscríbete en elbuenfin.org y guarda capturas de tus precios actuales. Semana del 2 de noviembre: publica tu landing page con el pixel, abre tu lista de “avísame” y sube el adelanto a tu Perfil de Google y a tus redes.",
           "Semana del 9 de noviembre: arranca anuncios dirigidos a tu lista y a quien visitó tu página, prepara respuestas rápidas y define quién contesta. Del 13 al 17: responde rápido y guarda los datos de cada cliente. Del 18 en adelante: seguimiento, reseñas y tu oferta de diciembre.",
           "Si no sabes por dónde empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero en tu página, tus anuncios y tu seguimiento.",
+          "Si tienes restaurante, la siguiente temporada fuerte está en [cómo vender posadas y cenas de fin de año](/blog/posadas-y-cenas-de-fin-de-ano-restaurante). Y para ordenar el año que viene, usa [el plan de marketing 2027](/blog/plan-de-marketing-2027).",
         ],
       },
     ],
@@ -11152,10 +11256,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "A brand that lives only in a PDF does not sell. Apply it the same way on your website, your Google profile, your social media and your premises, so the customer recognises you wherever they find you. If your website is next, see [how much a website costs in Mexico](/blog/cuanto-cuesta-una-pagina-web-en-mexico) and [what a website should include](/blog/que-debe-incluir-una-pagina-web).",
           "If you are not sure whether your problem is the brand or something else, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first.",
+          "If you want a quote for yours, see [our branding service](/branding).",
         ],
         bodyEs: [
           "Una marca que vive solo en un PDF no vende. Aplícala igual en tu página, tu Perfil de Google, tus redes y tu local, para que el cliente te reconozca donde te encuentre. Si lo que sigue es tu página web, revisa [cuánto cuesta una página web en México](/blog/cuanto-cuesta-una-pagina-web-en-mexico) y [qué debe incluir una página web](/blog/que-debe-incluir-una-pagina-web).",
           "Si no sabes si tu problema es la marca o algo más, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero.",
+          "Si quieres cotizar el tuyo, revisa [nuestro servicio de branding](/branding).",
         ],
       },
     ],
@@ -11342,10 +11448,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "If you are starting, have up to a few hundred products and want to sell soon, a ready-made platform is enough. If you already have a WordPress site and someone who maintains it, WooCommerce makes sense. If you sell wholesale and retail with different prices, need to connect inventory, invoicing and your point of sale, or the templates hold you back, it is time for a custom store; see [the best point of sale in Mexico](/blog/mejor-punto-de-venta-mexico) for the inventory side.",
           "Whichever you choose, measure three things from the first month: [[conversion rate|tasa-de-conversion]], average ticket and what each sale costs you in advertising. If you are not sure where to start, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first.",
+          "If you want a quote for yours, see [online stores](/ecommerce).",
         ],
         bodyEs: [
           "Si estás empezando, tienes hasta unos cientos de productos y quieres vender pronto, una plataforma lista es suficiente. Si ya tienes un sitio en WordPress y alguien que lo mantiene, WooCommerce tiene sentido. Si vendes mayoreo y menudeo con precios distintos, necesitas conectar inventario, facturación y tu punto de venta, o las plantillas te quedan cortas, es momento de una tienda a medida; revisa [el mejor punto de venta en México](/blog/mejor-punto-de-venta-mexico) para la parte de inventario.",
           "Elijas la que elijas, mide tres cosas desde el primer mes: [[tasa de conversión|tasa-de-conversion]], ticket promedio y cuánto te cuesta cada venta en publicidad. Si no sabes por dónde empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero.",
+          "Si quieres cotizar la tuya, revisa [tiendas en línea](/ecommerce).",
         ],
       },
     ],
@@ -11808,6 +11916,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "OpenAI empezó a mostrar anuncios en ChatGPT en México, pero solo a usuarios de los planes gratis y Go. Qué significa eso para a quién puedes llegar, qué negocios pueden aprovecharlos, cuáles deberían esperar y por qué que te recomiende la respuesta sigue valiendo más que un anuncio debajo.",
     readingTime: 10,
     date: "2026-10-25",
+    updated: "2026-11-20",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
@@ -11826,6 +11935,21 @@ export const BLOG_POSTS: BlogPost[] = [
         bodyEs: [
           "En agosto de 2026, OpenAI anunció un piloto de anuncios en ChatGPT en México, uno de sus diez mercados más grandes por usuarios activos semanales. Los anuncios aparecen después de la respuesta, identificados como patrocinados y separados visualmente de ella, y OpenAI asegura que no cambian lo que responde el modelo. Se eligen usando el contexto de la conversación, y eso es lo que los hace interesantes: alguien que pregunta por “el mejor hotel de playa para un fin de semana en familia” está mostrando una intención muy concreta.",
           "Sobre privacidad, OpenAI dice que las conversaciones, memorias y datos personales no se comparten con los anunciantes, que solo ven métricas generales como impresiones y clics. En el piloto, los anuncios se compran a través de agencias grandes, y OpenAI dice que está desarrollando herramientas para que los anunciantes manejen sus propias campañas.",
+        ],
+      },
+      {
+        id: "novedades-noviembre-2026",
+        heading: "What changed in October and November 2026",
+        headingEs: "Qué cambió en octubre y noviembre de 2026",
+        body: [
+          "**Visual ads.** On 5 October 2026 OpenAI announced ads that appear while ChatGPT generates images, showing a product, an outfit or a place, labelled as advertising and kept separate from the user's image. Testing started in the United States with a first group of advertisers; there is no date for Mexico. Businesses can register their interest at ads.openai.com.",
+          "**44 new markets.** In November OpenAI extended ChatGPT ads to 44 more markets, 14 of them in Latin America, from Argentina and Colombia to Chile and Peru, sold through Aleph as its exclusive reseller, with local billing and support. Mexico is not on that list; it was already part of the pilot announced in August.",
+          "What it means for you: the format is growing fast in the region, but access in Mexico is still limited. If your customers use ChatGPT to compare options, register now and prepare the landing page, so you can test as soon as you get access.",
+        ],
+        bodyEs: [
+          "**Anuncios visuales.** El 5 de octubre de 2026 OpenAI anunció anuncios que aparecen mientras ChatGPT genera imágenes, mostrando un producto, un outfit o un lugar, marcados como publicidad y separados de la imagen del usuario. Las pruebas empezaron en Estados Unidos con un primer grupo de anunciantes; no hay fecha para México. Los negocios pueden registrar su interés en ads.openai.com.",
+          "**44 mercados nuevos.** En noviembre OpenAI amplió los anuncios en ChatGPT a 44 mercados más, 14 de ellos en América Latina, de Argentina y Colombia a Chile y Perú, vendidos a través de Aleph como su revendedor exclusivo, con facturación y soporte locales. México no está en esa lista; ya formaba parte del piloto anunciado en agosto.",
+          "Qué significa para ti: el formato está creciendo rápido en la región, pero el acceso en México sigue limitado. Si tus clientes usan ChatGPT para comparar opciones, regístrate desde ya y prepara la landing page, para probar en cuanto tengas acceso.",
         ],
       },
       {
@@ -11913,10 +12037,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Start with one specific offer and a [[landing page|landing-page]] made for it, not your home page. Tag the link so you know which visits came from ChatGPT, set a small budget and a fixed date, and compare the cost per [[lead|lead]] or per sale with what you already pay on Google and Meta. If it does not beat them, it is not your channel yet.",
           "If you are comparing channels, see [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads), or take our [free diagnostic](/recursos/diagnostico).",
+          "If you want to know whether your business can advertise on ChatGPT and how much to invest in a first test, see [our ChatGPT ads service](/chatgpt-ads).",
         ],
         bodyEs: [
           "Empieza con una oferta concreta y una [[landing page|landing-page]] hecha para ella, no tu página de inicio. Etiqueta la liga para saber qué visitas vinieron de ChatGPT, pon un presupuesto chico y una fecha fija, y compara el costo por [[prospecto|lead]] o por venta con lo que ya pagas en Google y Meta. Si no les gana, todavía no es tu canal.",
           "Si estás comparando canales, revisa [Google Ads vs Meta Ads](/blog/google-ads-vs-meta-ads) o haz nuestro [diagnóstico gratuito](/recursos/diagnostico).",
+          "Si quieres saber si tu negocio puede anunciarse en ChatGPT y cuánto conviene invertir para una primera prueba, revisa [nuestro servicio de anuncios en ChatGPT](/chatgpt-ads).",
         ],
       },
     ],
@@ -12293,10 +12419,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "An industrial quote can take months to turn into an order: there are approvals, samples, audits and budgets. Without a system, opportunities get lost between emails. A [[CRM|crm]] keeps track of every quote, who is involved and what the next step is, and reminds you to follow up with a case study, a visit or an update.",
           "Measure four numbers per quarter: quote requests received, qualified requests, quotes sent and orders won. If you are not sure where to start, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes what to fix first, and [automating sales follow-up](/blog/automatizar-seguimiento-de-ventas) covers the rest.",
+          "If your buyers are in the United States, read [what an industrial supplier's bilingual website needs](/blog/web-bilingue-proveedor-industrial).",
         ],
         bodyEs: [
           "Una cotización industrial puede tardar meses en volverse pedido: hay aprobaciones, muestras, auditorías y presupuestos. Sin un sistema, las oportunidades se pierden entre correos. Un [[CRM|crm]] lleva el registro de cada cotización, quién está involucrado y cuál es el siguiente paso, y te recuerda dar seguimiento con un caso, una visita o una actualización.",
           "Mide cuatro números por trimestre: solicitudes de cotización recibidas, solicitudes calificadas, cotizaciones enviadas y pedidos ganados. Si no sabes por dónde empezar, nuestro [diagnóstico gratuito](/recursos/diagnostico) te dice en unos minutos qué corregir primero, y [automatizar el seguimiento de ventas](/blog/automatizar-seguimiento-de-ventas) cubre lo demás.",
+          "Si tus compradores están en Estados Unidos, lee [qué debe incluir la web bilingüe de un proveedor industrial](/blog/web-bilingue-proveedor-industrial).",
         ],
       },
     ],
@@ -12495,10 +12623,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Start with one channel, one offer and a fixed budget and date. Measure what each [[lead|lead]] and each sale costs you, which is your [[CPA|cpa]], and compare it with what a customer is worth to you. **A channel is good for your business when a customer costs you less than they leave you, not when everyone else is using it.**",
           "To decide how much to invest, see [how much to invest in digital marketing](/blog/cuanto-invertir-en-marketing-digital). And if you want a recommendation for your business, our [free diagnostic](/recursos/diagnostico) gives you one in a few minutes. If your business is in Baja California, see how we work in [Tijuana](/agencia-marketing-digital-tijuana) and [Ensenada](/agencia-marketing-digital-ensenada).",
+          "If you sell something very visual, such as decor, weddings or fashion, also read [Pinterest for business](/blog/pinterest-para-negocios).",
         ],
         bodyEs: [
           "Empieza con un canal, una oferta y un presupuesto y fecha fijos. Mide cuánto te cuesta cada [[prospecto|lead]] y cada venta, que es tu [[CPA|cpa]], y compáralo con lo que vale un cliente para ti. **Un canal es bueno para tu negocio cuando un cliente te cuesta menos de lo que te deja, no cuando todos lo están usando.**",
           "Para decidir cuánto invertir, revisa [cuánto invertir en marketing digital](/blog/cuanto-invertir-en-marketing-digital). Y si quieres una recomendación para tu negocio, nuestro [diagnóstico gratuito](/recursos/diagnostico) te la da en unos minutos. Si tu negocio está en Baja California, mira cómo trabajamos en [Tijuana](/agencia-marketing-digital-tijuana) y en [Ensenada](/agencia-marketing-digital-ensenada).",
+          "Si vendes algo muy visual, como decoración, bodas o moda, revisa también [Pinterest para negocios](/blog/pinterest-para-negocios).",
         ],
       },
     ],
@@ -13813,10 +13943,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Use AI every day in your own work, starting with small tasks: drafting, summarising, reviewing, organising. Write down what you achieved with it, such as hours saved or work you could take on, because that is the evidence that makes you valuable in an interview or to your boss. **The person who loses out is rarely the one replaced by AI; it is the one replaced by someone who uses it.**",
           "Invest in what AI complements: judgement, specialisation in a sector, dealing with people and work that happens in person. And if you run a business, the most profitable path is usually to retrain your team to work with these tools rather than to cut it; we explain how to start in our [guide to AI and automation](/blog/guia-automatizacion-ia) and in [AI in marketing](/blog/ia-en-marketing). If you want to know what to automate first, our [free diagnostic](/recursos/diagnostico) tells you in a few minutes.",
+          "If you are deciding what to study or train in, continue with [what to study in the age of AI](/blog/que-estudiar-en-la-era-de-la-ia).",
         ],
         bodyEs: [
           "Usa la IA todos los días en tu propio trabajo, empezando por tareas chicas: redactar, resumir, revisar, organizar. Anota lo que lograste con ella, como horas ahorradas o trabajo que pudiste tomar, porque esa es la evidencia que te hace valioso en una entrevista o frente a tu jefe. **Casi nunca pierde quien es reemplazado por la IA; pierde quien es reemplazado por alguien que sí la usa.**",
           "Invierte en lo que la IA complementa: criterio, especialización en un sector, trato con personas y trabajo que se hace en persona. Y si diriges un negocio, el camino más rentable suele ser recapacitar a tu equipo para trabajar con estas herramientas en vez de recortarlo; explicamos cómo empezar en nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia) y en [IA en marketing](/blog/ia-en-marketing). Si quieres saber qué automatizar primero, nuestro [diagnóstico gratuito](/recursos/diagnostico) te lo dice en unos minutos.",
+          "Si estás decidiendo qué estudiar o en qué capacitarte, sigue con [qué estudiar en la era de la IA](/blog/que-estudiar-en-la-era-de-la-ia).",
         ],
       },
     ],
@@ -14014,10 +14146,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Call your bank immediately and report the transfer as fraud: the sooner you do it, the more chance there is of stopping it. Save screenshots of the messages, numbers and account details, file a complaint with the authorities and report the number in WhatsApp so it gets blocked. If the scam came through a hacked account of a relative, help them recover it and warn their contacts.",
           "Do not feel ashamed: these scams are designed to work on intelligent people under emotional pressure. Telling your family and friends what happened is one of the best ways to stop the next attempt. And if you want to understand which jobs and tasks AI is really changing, read [will AI take your job?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
+          "Something similar happens with images; we explain it in [how to tell if an image is AI](/blog/como-saber-si-una-imagen-es-ia).",
         ],
         bodyEs: [
           "Llama a tu banco de inmediato y reporta la transferencia como fraude: entre más rápido, más posibilidades hay de detenerla. Guarda capturas de los mensajes, números y datos de la cuenta, presenta una denuncia ante las autoridades y reporta el número en WhatsApp para que lo bloqueen. Si la estafa llegó desde la cuenta hackeada de un familiar, ayúdale a recuperarla y avisa a sus contactos.",
           "No sientas vergüenza: estas estafas están diseñadas para funcionar con personas inteligentes bajo presión emocional. Contarle a tu familia y amigos lo que pasó es de las mejores formas de frenar el siguiente intento. Y si quieres entender qué empleos y tareas está cambiando de verdad la IA, lee [¿la IA te va a quitar el trabajo?](/blog/empleos-que-la-ia-puede-reemplazar-mexico).",
+          "Con las imágenes pasa algo parecido; lo explicamos en [cómo saber si una imagen es IA](/blog/como-saber-si-una-imagen-es-ia).",
         ],
       },
     ],
@@ -14177,10 +14311,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "The difference between a business that gets value from AI and one that does not is rarely the assistant it chose; it is whether it defined which tasks to use it for, who reviews the results and which data cannot go in. A team that uses any of the three with a clear process gets further than one that has the “best” and uses it at random.",
           "If you want to go from individual use to automating parts of your business, such as answering customers or following up leads, read our [guide to AI and automation](/blog/guia-automatizacion-ia) and [AI in marketing](/blog/ia-en-marketing).",
+          "If you want to bring AI into customer service, see [AI agents for your business](/servicios/agente-ia); and if you are interested in advertising inside ChatGPT, read [ChatGPT ads in Mexico](/blog/anuncios-en-chatgpt).",
         ],
         bodyEs: [
           "La diferencia entre un negocio que le saca provecho a la IA y uno que no casi nunca es el asistente que eligió; es si definió para qué tareas usarlo, quién revisa los resultados y qué datos no pueden entrar. Un equipo que usa cualquiera de los tres con un proceso claro llega más lejos que uno que tiene “el mejor” y lo usa al azar.",
           "Si quieres pasar del uso individual a automatizar partes de tu negocio, como contestar clientes o dar seguimiento a prospectos, lee nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia) e [IA en marketing](/blog/ia-en-marketing).",
+          "Si quieres llevar la IA a la atención de tus clientes, revisa [agentes de IA para tu negocio](/servicios/agente-ia); y si te interesa anunciarte dentro de ChatGPT, lee [anuncios en ChatGPT en México](/blog/anuncios-en-chatgpt).",
         ],
       },
     ],
@@ -14327,10 +14463,12 @@ export const BLOG_POSTS: BlogPost[] = [
         body: [
           "Many apps and browser extensions promise “ChatGPT for free” or “AI for your WhatsApp” and are actually made by unknown companies that receive everything you type. Install only official apps from the providers or tools your company has approved, and review the permissions an extension asks for before accepting.",
           "The same caution applies to links and files that arrive by message offering AI tools: they are a common route for scams, as we explain in [AI scams: voice cloning and fake videos](/blog/estafas-con-ia-clonacion-de-voz). If you are choosing which assistant to adopt, start with [ChatGPT, Gemini or Claude](/blog/chatgpt-gemini-o-claude), and if you want to automate processes with your data safely, see our [guide to AI and automation](/blog/guia-automatizacion-ia).",
+          "If you want to use AI with your customers without exposing more data than needed, see how we build [an AI agent for your business](/servicios/agente-ia).",
         ],
         bodyEs: [
           "Muchas apps y extensiones del navegador prometen “ChatGPT gratis” o “IA para tu WhatsApp” y en realidad son de empresas desconocidas que reciben todo lo que escribes. Instala solo las apps oficiales de los proveedores o las herramientas que tu empresa aprobó, y revisa los permisos que pide una extensión antes de aceptar.",
           "La misma precaución aplica a ligas y archivos que llegan por mensaje ofreciendo herramientas de IA: son una vía común de estafas, como explicamos en [estafas con IA: clonación de voz y videos falsos](/blog/estafas-con-ia-clonacion-de-voz). Si estás eligiendo qué asistente adoptar, empieza por [ChatGPT, Gemini o Claude](/blog/chatgpt-gemini-o-claude), y si quieres automatizar procesos con tus datos de forma segura, revisa nuestra [guía de automatización con IA](/blog/guia-automatizacion-ia).",
+          "Si quieres usar IA con tus clientes sin exponer datos de más, revisa cómo armamos [un agente de IA para tu negocio](/servicios/agente-ia).",
         ],
       },
     ],
@@ -18991,9 +19129,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Si quieres armarlo con alguien",
         body: [
           "Start with the free [digital diagnostic](/recursos/diagnostico): in a few minutes it tells you what to fix first in your business, which is usually the best first line of the plan. And if you prefer to build the full plan with us, at Aphelion we do it as a [digital marketing agency in Tijuana](/agencia-marketing-digital-tijuana) and [Ensenada](/agencia-marketing-digital-ensenada); [tell us your goal for 2027](/contacto) and we will tell you what it takes.",
+          "If your business works but feels behind, read [why a successful business also needs to modernise](/blog/negocio-exitoso-necesita-modernizarse).",
         ],
         bodyEs: [
           "Empieza con el [diagnóstico digital](/recursos/diagnostico) gratuito: en unos minutos te dice qué corregir primero en tu negocio, que suele ser la mejor primera línea del plan. Y si prefieres armar el plan completo con nosotros, en Aphelion lo hacemos como [agencia de marketing digital en Tijuana](/agencia-marketing-digital-tijuana) y en [Ensenada](/agencia-marketing-digital-ensenada); [cuéntanos tu meta para 2027](/contacto) y te decimos qué hace falta.",
+          "Si tu negocio funciona pero se siente atrás, lee [por qué un negocio exitoso también necesita modernizarse](/blog/negocio-exitoso-necesita-modernizarse).",
         ],
       },
     ],
