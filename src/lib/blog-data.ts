@@ -10518,28 +10518,105 @@ export const BLOG_POSTS: BlogPost[] = [
     cover: true,
     vertical: "restaurantes",
     title:
-      "Rappi, Uber Eats and DiDi Food: What They Really Cost Your Restaurant and How to Sell Direct",
+      "DiDi Food vs Uber Eats vs Rappi: Which Is Cheapest and What Each Charges Restaurants",
     titleEs:
-      "Rappi, Uber Eats y DiDi Food: cuánto le cuestan de verdad a tu restaurante y cómo vender directo",
+      "DiDi Food vs Uber Eats vs Rappi: cuál es más barata y cuánto cobra cada una",
     category: "Marketing Strategy",
     categoryEs: "Estrategia de Marketing",
     excerpt:
-      "Delivery apps bring orders, but between commission, the VAT on that commission and tax withholdings, a large part of each sale never reaches you. How to calculate what each channel really costs and move your regular customers to direct orders without leaving the apps.",
+      "DiDi Food, Uber Eats and Rappi compared with numbers: which app came out cheapest for the customer in a real test, what each charges restaurants in commission and how to sell without paying one.",
     excerptEs:
-      "Las apps de delivery traen pedidos, pero entre la comisión, el IVA de esa comisión y las retenciones, una buena parte de cada venta no llega a tu caja. Cómo calcular lo que de verdad te cuesta cada canal y pasar a tus clientes frecuentes a pedidos directos sin salirte de las apps.",
+      "DiDi Food, Uber Eats y Rappi comparadas con números: qué app salió más barata para el cliente en una prueba real, cuánto cobra cada una al restaurante y cómo vender sin pagar comisión.",
     readingTime: 11,
     date: "2026-10-25",
+    updated: "2026-11-20",
     author: "Isaac",
     authorRole: "Creative Director, Aphelion",
     authorRoleEs: "Director Creativo, Aphelion",
-    lede: "For many restaurants, delivery apps went from being an extra channel to being half the business. The problem is not using them; it is not knowing how much each order really leaves you and letting the same customer order through the app again and again when they could order from you directly. The app keeps the customer's data, sets the rules and charges a commission on every order, including the tenth order from someone who already loves your food.",
+    lede: "Which is cheaper, DiDi Food, Uber Eats or Rappi? The short answer is below, with the numbers from a real test and what each app charges restaurants. The long answer matters more if you own a restaurant. For many restaurants, delivery apps went from being an extra channel to being half the business. The problem is not using them; it is not knowing how much each order really leaves you and letting the same customer order through the app again and again when they could order from you directly. The app keeps the customer's data, sets the rules and charges a commission on every order, including the tenth order from someone who already loves your food.",
     ledeEs:
-      "Para muchos restaurantes, las apps de delivery pasaron de ser un canal extra a ser la mitad del negocio. El problema no es usarlas; es no saber cuánto te deja de verdad cada pedido y dejar que el mismo cliente pida una y otra vez por la app cuando podría pedirte directo. La app se queda con los datos del cliente, pone las reglas y cobra comisión en cada pedido, incluido el décimo de alguien que ya ama tu comida.",
+      "¿Qué es más barato, DiDi Food, Uber Eats o Rappi? Abajo está la respuesta corta, con los números de una prueba real y lo que cada app le cobra al restaurante. La respuesta larga importa más si tienes un restaurante. Para muchos restaurantes, las apps de delivery pasaron de ser un canal extra a ser la mitad del negocio. El problema no es usarlas; es no saber cuánto te deja de verdad cada pedido y dejar que el mismo cliente pida una y otra vez por la app cuando podría pedirte directo. La app se queda con los datos del cliente, pone las reglas y cobra comisión en cada pedido, incluido el décimo de alguien que ya ama tu comida.",
     sections: [
       {
+        id: "cual-es-mas-barata",
+        heading: "DiDi Food vs Uber Eats vs Rappi: which is cheapest for the customer",
+        headingEs: "DiDi Food vs Uber Eats vs Rappi: cuál es más barata para el cliente",
+        body: [
+          "In September 2025 the Monterrey newspaper El Horizonte ordered the same thing in all three apps: four Burger King combos that cost $109 each in the restaurant, $436 in total. Without counting the tip, **DiDi Food came out cheapest at $769, Uber Eats at $793.56 and Rappi was the most expensive at $975.80**. Rappi also added a $65 tip automatically; with tips included, Uber Eats was the cheapest.",
+          "What makes the difference is not the delivery fee ($18 to $30.90) or the service fee ($28.90 to $35), but the menu price: the same food cost 64% more in DiDi Food, 68% more in Uber Eats and 110% more in Rappi than in the store. Restaurants raise app prices to cover the commission, as we explain below.",
+          "It is a single test, with one chain, in one city, and prices change by restaurant, area, time of day and promotions. The useful conclusion is another one: **the cheapest way to order is almost always directly from the restaurant**, by phone, WhatsApp or picking it up.",
+        ],
+        bodyEs: [
+          "En septiembre de 2025 el periódico El Horizonte, de Monterrey, pidió lo mismo en las tres apps: cuatro combos de Burger King que en el restaurante cuestan $109 cada uno, $436 en total. Sin contar la propina, **DiDi Food salió más barata con $769, Uber Eats con $793.56 y Rappi fue la más cara con $975.80**. Rappi además agregó $65 de propina en automático; con propinas incluidas, la más barata fue Uber Eats.",
+          "Lo que hace la diferencia no es el envío ($18 a $30.90) ni la tarifa de servicio ($28.90 a $35), sino el precio del menú: la misma comida costó 64% más en DiDi Food, 68% más en Uber Eats y 110% más en Rappi que en la tienda. Los restaurantes suben sus precios en las apps para cubrir la comisión, como explicamos abajo.",
+          "Es una sola prueba, con una cadena, en una ciudad, y los precios cambian por restaurante, zona, hora y promociones. La conclusión útil es otra: **lo más barato casi siempre es pedirle directo al restaurante**, por teléfono, WhatsApp o pasando a recoger.",
+        ],
+        chart: {
+          title: "What four $109 combos cost in each app, before tip",
+          titleEs: "Lo que costaron cuatro combos de $109 en cada app, sin propina",
+          source: "El Horizonte, September 2025: four Burger King combos ordered in Monterrey; includes food, delivery and service fee, before discounts and tip.",
+          sourceEs: "El Horizonte, septiembre de 2025: cuatro combos de Burger King pedidos en Monterrey; incluye comida, envío y tarifa de servicio, antes de descuentos y propina.",
+          bars: [
+            { label: "In the store", labelEs: "En la tienda", value: 436, display: "$436", displayEs: "$436" },
+            { label: "DiDi Food", labelEs: "DiDi Food", value: 769, display: "$769", displayEs: "$769" },
+            { label: "Uber Eats", labelEs: "Uber Eats", value: 794, display: "$793.56", displayEs: "$793.56" },
+            { label: "Rappi", labelEs: "Rappi", value: 976, display: "$975.80", displayEs: "$975.80" },
+          ],
+        },
+      },
+      {
+        id: "comparacion-para-restaurantes",
+        heading: "What each app charges restaurants",
+        headingEs: "Cuánto le cobra cada app al restaurante",
+        body: [
+          "This is the comparison that matters if you sell. Only Uber Eats publishes its plans; Rappi and DiDi Food negotiate each commission, so their ranges come from point-of-sale vendors that work with all three, not from the apps.",
+        ],
+        bodyEs: [
+          "Esta es la comparación que importa si vendes. Solo Uber Eats publica sus planes; Rappi y DiDi Food negocian cada comisión, así que sus rangos vienen de proveedores de punto de venta que trabajan con las tres, no de las apps.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "Commissions for restaurants in Mexico, before VAT",
+          titleEs: "Comisiones para restaurantes en México, antes de IVA",
+          note: "Uber Eats: its published plans. Rappi and DiDi Food: ranges reported by PoloTab and Parrot Software in 2026. Your rate depends on your contract; 16% VAT is charged on top of the commission.",
+          noteEs: "Uber Eats: sus planes publicados. Rappi y DiDi Food: rangos reportados por PoloTab y Parrot Software en 2026. Tu tarifa depende de tu contrato; encima de la comisión va 16% de IVA.",
+          columns: [
+            { label: "App", labelEs: "App" },
+            { label: "Commission", labelEs: "Comisión" },
+            { label: "What changes it", labelEs: "Qué la cambia" },
+          ],
+          rows: [
+            { label: "Uber Eats", labelEs: "Uber Eats", cells: [
+              { text: "Up to 30% (Premium), 27–29% (Plus), 25–28% (Lite)", textEs: "Hasta 30% (Premium), 27–29% (Plus), 25–28% (Lite)" },
+              { text: "15% on Lite for orders the customer picks up", textEs: "15% en Lite para pedidos que el cliente recoge" } ] },
+            { label: "Rappi", labelEs: "Rappi", cells: [
+              { text: "18% to 30%, around 25% is common", textEs: "18% a 30%, lo común ronda 25%" },
+              { text: "Negotiated at sign-up: city, type of business, visibility", textEs: "Se negocia al darte de alta: ciudad, tipo de negocio, visibilidad" } ] },
+            { label: "DiDi Food", labelEs: "DiDi Food", cells: [
+              { text: "15% to 30%", textEs: "15% a 30%" },
+              { text: "About 18% with your own delivery and about 30% with DiDi's drivers", textEs: "Cerca de 18% con repartidor propio y cerca de 30% con repartidores de DiDi" } ] },
+          ],
+        },
+      },
+      {
+        id: "cual-conviene",
+        heading: "Which one suits your restaurant",
+        headingEs: "Cuál le conviene a tu restaurante",
+        body: [
+          "The lowest commission is not the whole answer. What matters first is **where your customers order**: an app with a lower commission and few users in your area brings fewer orders. Ask your regulars which app they use and check what your competitors near you use.",
+          "Then, **how you deliver**. If you have your own driver, the models with your own delivery or pickup lower the commission considerably. And read the contract before signing: exclusivity clauses, price parity rules, how often they pay and what they charge for promotions and in-app visibility.",
+          "Many restaurants end up on all three. That is fine, as long as the apps are where new customers find you and your direct channel is where they come back.",
+        ],
+        bodyEs: [
+          "La comisión más baja no es toda la respuesta. Lo primero es **dónde piden tus clientes**: una app con menos comisión y pocos usuarios en tu zona te trae menos pedidos. Pregúntale a tus clientes frecuentes qué app usan y revisa en cuál está tu competencia cercana.",
+          "Después, **cómo entregas**. Si tienes repartidor propio, los modelos con entrega propia o para recoger bajan bastante la comisión. Y lee el contrato antes de firmar: cláusulas de exclusividad, reglas de igualdad de precios, cada cuánto pagan y cuánto cobran por promociones y visibilidad dentro de la app.",
+          "Muchos restaurantes terminan en las tres. Está bien, siempre que las apps sean donde te encuentran los clientes nuevos y tu canal directo sea donde regresan.",
+        ],
+      },
+      {
         id: "cuanto-cobran-las-apps",
-        heading: "How much the apps charge",
-        headingEs: "Cuánto cobran las apps",
+        heading: "The commission, the VAT and the withholdings",
+        headingEs: "La comisión, el IVA y las retenciones",
         body: [
           "Uber Eats publishes its plans for restaurants in Mexico: the Premium plan charges a commission of **up to 30%**, Plus between 27% and 29%, and Lite between 25% and 28%, with 15% on Lite for orders the customer picks up. Rappi and DiDi Food do not publish a single table; the commission is agreed with each restaurant, so ask for yours in writing and check it against your statements.",
           "On top of the commission there is the VAT on that commission, and the [[tax withholdings|retencion-de-impuestos]] the platform makes for the SAT. If you are an individual taxpayer with an RFC, the platform withholds half of the VAT and 2.5% of income tax on sales of goods; without an RFC, it withholds all of the VAT and 20% of income tax. Withholdings are not an extra cost, because they count towards your taxes, but they do reduce the cash you receive each week. Your accountant can tell you how they apply to your regime.",
@@ -10581,11 +10658,11 @@ export const BLOG_POSTS: BlogPost[] = [
         headingEs: "Tu canal directo, paso a paso",
         body: [
           "Start with what you already have. Your [[Google Business Profile|google-business-profile]] can show an order button that points to your own menu or WhatsApp instead of an app; many customers search for the restaurant by name and order wherever the button takes them. Use a [[dynamic QR|qr-dinamico]] on the table, the receipt and the bag of in-house orders so the link can be changed without reprinting, as we explain in [QR menus for restaurants](/blog/menu-qr-para-restaurante).",
-          "For orders, a WhatsApp Business catalogue is enough at first. When the volume grows and several people need to answer, [WhatsApp Business API](/blog/whatsapp-business-api) lets them share one number and connect it to your system. Offer a reason to order direct that does not cost you a fortune: free pickup, a dessert on the third order or a slightly better price than in the app.",
+          "For orders, a WhatsApp Business catalogue is enough at first. When the volume grows and several people need to answer, [WhatsApp Business API](/blog/whatsapp-business-api) lets them share one number and connect it to your system; how to send those orders straight to the register and kitchen is in [how to connect WhatsApp orders to your point of sale](/blog/pedidos-por-whatsapp-punto-de-venta-restaurante). Offer a reason to order direct that does not cost you a fortune: free pickup, a dessert on the third order or a slightly better price than in the app.",
         ],
         bodyEs: [
           "Empieza con lo que ya tienes. Tu [[Perfil de Google|google-business-profile]] puede mostrar un botón para pedir que apunte a tu propio menú o a tu WhatsApp en vez de a una app; mucha gente busca el restaurante por su nombre y pide donde la lleve el botón. Usa un [[QR dinámico|qr-dinamico]] en la mesa, el ticket y la bolsa de los pedidos propios para poder cambiar la liga sin reimprimir, como explicamos en [menús QR para restaurantes](/blog/menu-qr-para-restaurante).",
-          "Para los pedidos, al principio basta con el catálogo de WhatsApp Business. Cuando el volumen crezca y varias personas tengan que contestar, [WhatsApp Business API](/blog/whatsapp-business-api) permite compartir un solo número y conectarlo a tu sistema. Dale al cliente una razón para pedir directo que no te cueste una fortuna: recoger sin costo, un postre en el tercer pedido o un precio un poco mejor que en la app.",
+          "Para los pedidos, al principio basta con el catálogo de WhatsApp Business. Cuando el volumen crezca y varias personas tengan que contestar, [WhatsApp Business API](/blog/whatsapp-business-api) permite compartir un solo número y conectarlo a tu sistema; cómo llevar esos pedidos directo a la caja y la cocina está en [cómo conectar los pedidos por WhatsApp con tu punto de venta](/blog/pedidos-por-whatsapp-punto-de-venta-restaurante). Dale al cliente una razón para pedir directo que no te cueste una fortuna: recoger sin costo, un postre en el tercer pedido o un precio un poco mejor que en la app.",
         ],
       },
       {
@@ -10657,6 +10734,24 @@ export const BLOG_POSTS: BlogPost[] = [
     gradient: "from-neutral-800 to-zinc-950",
     faq: [
       {
+        q: "¿Qué es más barato, DiDi Food, Uber Eats o Rappi?",
+        qEn: "Which is cheaper: DiDi Food, Uber Eats or Rappi?",
+        a: "En una prueba de El Horizonte de septiembre de 2025, el mismo pedido salió en $769 en DiDi Food, $793.56 en Uber Eats y $975.80 en Rappi, sin propina. Con propinas incluidas, la más barata fue Uber Eats. Cambia por restaurante, zona y promociones; lo más barato casi siempre es pedir directo al restaurante.",
+        aEn: "In an El Horizonte test from September 2025, the same order cost $769 on DiDi Food, $793.56 on Uber Eats and $975.80 on Rappi, before tip. With tips included, Uber Eats was cheapest. It varies by restaurant, area and promotions; ordering directly from the restaurant is almost always cheapest.",
+      },
+      {
+        q: "¿Por qué la comida es más cara en las apps que en el restaurante?",
+        qEn: "Why is food more expensive in the apps than in the restaurant?",
+        a: "Porque muchos restaurantes suben sus precios en la app para cubrir la comisión, que va de 15% a 30% más IVA. En la prueba de El Horizonte, el menú costó entre 64% y 110% más que en la tienda, antes de envío y tarifa de servicio.",
+        aEn: "Because many restaurants raise their app prices to cover the commission, which ranges from 15% to 30% plus VAT. In El Horizonte's test, the menu cost 64% to 110% more than in the store, before delivery and service fees.",
+      },
+      {
+        q: "¿Cuál app de delivery le conviene más a un restaurante?",
+        qEn: "Which delivery app is best for a restaurant?",
+        a: "La que usan tus clientes en tu zona, primero. Después compara comisiones: DiDi Food ronda 18% con repartidor propio, Uber Eats cobra 15% en pedidos para recoger del plan Lite y Rappi negocia alrededor de 25%. Revisa exclusividad e igualdad de precios en el contrato.",
+        aEn: "First, the one your customers in your area use. Then compare commissions: DiDi Food is around 18% with your own driver, Uber Eats charges 15% on Lite pickup orders and Rappi negotiates around 25%. Check exclusivity and price parity in the contract.",
+      },
+      {
         q: "¿Cuánto cobra Uber Eats a los restaurantes en México?",
         qEn: "How much does Uber Eats charge restaurants in Mexico?",
         a: "Según sus planes publicados, Premium cobra hasta 30%, Plus entre 27% y 29%, y Lite entre 25% y 28%, con 15% en Lite para pedidos que el cliente recoge. A la comisión se le suma el IVA de la comisión.",
@@ -10689,6 +10784,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     schema: {
       keywords: [
+        "DiDi Food vs Uber Eats vs Rappi",
         "Uber Eats commission Mexico",
         "Rappi commission restaurants",
         "DiDi Food commission",
@@ -10696,6 +10792,9 @@ export const BLOG_POSTS: BlogPost[] = [
         "delivery apps restaurant costs",
       ],
       keywordsEs: [
+        "DiDi Food vs Uber Eats",
+        "qué es más barato Rappi o Uber Eats",
+        "DiDi Food o Rappi",
         "comisión Uber Eats restaurantes",
         "cuánto cobra Rappi a restaurantes",
         "comisión DiDi Food",
