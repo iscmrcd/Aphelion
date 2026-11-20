@@ -1406,4 +1406,31 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aphelion.mx/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/video-con-dron-hoteles-vinicolas-valle-de-guadalupe" />
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/web-bilingue-proveedor-industrial</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/web-bilingue-proveedor-industrial" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/web-bilingue-proveedor-industrial?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/web-bilingue-proveedor-industrial" />
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aphelion.mx/blog/google-maps-no-llaman</loc>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://aphelion.mx/blog/google-maps-no-llaman" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aphelion.mx/blog/google-maps-no-llaman?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aphelion.mx/blog/google-maps-no-llaman" />
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -20999,6 +20999,716 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "video-con-dron-hoteles-vinicolas-valle-de-guadalupe",
+    cover: true,
+    title: "Drone Video for Hotels and Wineries in Valle de Guadalupe: What to Film to Get Bookings",
+    titleEs: "Video con dron para hoteles y vinícolas del Valle de Guadalupe: qué grabar para conseguir reservas",
+    category: "Video & Drone",
+    categoryEs: "Video y Drone",
+    excerpt:
+      "The shot list by destination, from your booking page to Google, Booking, Meta ads and social media; what to film at a hotel and at a winery; when to film in the Valle's calendar; what it costs; and how to turn the footage into direct bookings.",
+    excerptEs:
+      "La lista de tomas según dónde se va a usar, de tu página de reservas a Google, Booking, anuncios de Meta y redes; qué grabar en un hotel y en una vinícola; cuándo grabar según el calendario del Valle; cuánto cuesta; y cómo convertir el material en reservas directas.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "In Valle de Guadalupe almost everyone has the same photo: vineyards at sunset. The guest deciding between your hotel and five others does not need another pretty picture; they need to understand where your property is, what they will see from the room and what they will do there. A drone is made for exactly that, if you know what to film and where you will use it. Here is the shot list by destination (your booking page, Google, Booking, ads and social media), the best time of year to film and what it costs.",
+    ledeEs:
+      "En el Valle de Guadalupe casi todos tienen la misma foto: viñedos al atardecer. El huésped que está decidiendo entre tu hotel y otros cinco no necesita otra foto bonita; necesita entender dónde está tu propiedad, qué va a ver desde el cuarto y qué va a hacer ahí. Un dron sirve justo para eso, si sabes qué grabar y dónde lo vas a usar. Aquí está la lista de tomas según el destino (tu página de reservas, Google, Booking, anuncios y redes), la mejor época para grabar y lo que cuesta.",
+    sections: [
+      {
+        id: "por-que-ahora",
+        heading: "Why footage matters more in a Valle with fewer visitors",
+        headingEs: "Por qué el material importa más en un Valle con menos visitantes",
+        body: [
+          "2025 was a hard year. The wine route transport federation reported a 30% to 40% drop in visitors to the Valle, according to El Imparcial, blaming the US economy, the exchange rate and the perception of insecurity. With 3,000 rooms across hotels, cabins and Airbnb rentals, according to the Emprendedores del Valle de Guadalupe association, competition for each guest is tougher.",
+          "And the guest is close by: 60% to 70% of the Valle's visitors arrive from Tijuana, including people crossing from the United States or flying into its airport, according to the same association. It is an audience that searches and compares on a phone.",
+          "When someone compares five properties with similar photos, the one that is easiest to understand wins: where it is, how you get there, what you see from the terrace. That is what a drone shows better than any other camera.",
+        ],
+        bodyEs: [
+          "2025 fue un año difícil. La federación de transporte de la Ruta del Vino reportó una caída de 30% a 40% en los visitantes al Valle, según El Imparcial, por la economía de Estados Unidos, el tipo de cambio y la percepción de inseguridad. Con 3,000 habitaciones entre hoteles, cabañas y Airbnb, según la asociación Emprendedores del Valle de Guadalupe, la competencia por cada huésped es más dura.",
+          "Y el huésped está cerca: entre 60% y 70% de quienes visitan el Valle llega desde Tijuana, incluidos quienes cruzan de Estados Unidos o vuelan a su aeropuerto, según la misma asociación. Es un público que busca y compara en el celular.",
+          "Cuando alguien compara cinco propiedades con fotos parecidas, gana la que se entiende mejor: dónde está, cómo se llega, qué se ve desde la terraza. Eso es lo que el dron muestra mejor que cualquier otra cámara.",
+        ],
+      },
+      {
+        id: "lista-de-tomas",
+        heading: "The shot list, by where the footage will be used",
+        headingEs: "La lista de tomas, según dónde se va a usar",
+        body: [
+          "Each place where your footage appears has a different format and a different job. Film with all of them in mind from the start and one session gives you material for the whole year.",
+        ],
+        bodyEs: [
+          "Cada lugar donde aparece tu material tiene un formato y un trabajo distinto. Graba pensando en todos desde el principio y en una sola sesión sales con material para el año.",
+        ],
+        diagram: {
+          kind: "table",
+          title: "What to film for each destination",
+          titleEs: "Qué grabar para cada destino",
+          note: "Specs from the Google Business Profile and Booking.com help pages. The ad lengths are our recommendation.",
+          noteEs: "Especificaciones de las páginas de ayuda de Google Business Profile y Booking.com. Las duraciones de anuncios son recomendación nuestra.",
+          columns: [
+            { label: "Where it is used", labelEs: "Dónde se usa" },
+            { label: "Shots", labelEs: "Tomas" },
+            { label: "Format", labelEs: "Formato" },
+          ],
+          rows: [
+            { label: "Your website and booking engine", labelEs: "Tu página y motor de reservas", cells: [
+              { text: "The property in its landscape, the approach road, the pool or terrace reveal, sunset from the room or common area", textEs: "La propiedad en su paisaje, el camino de llegada, el revelado de la alberca o la terraza, el atardecer desde el cuarto o el área común" },
+              { text: "Horizontal 16:9: a short background video and large aerial photos", textEs: "Horizontal 16:9: un video corto de fondo y fotos aéreas grandes" } ] },
+            { label: "Google Business Profile", labelEs: "Perfil de Google", cells: [
+              { text: "The façade and entrance as arriving guests will see them, the property in the Valle, the amenities", textEs: "La fachada y la entrada como las verá quien llega, la propiedad dentro del Valle, las amenidades" },
+              { text: "JPG or PNG photos; videos up to 30 seconds and 75 MB, 720p or higher", textEs: "Fotos JPG o PNG; videos de hasta 30 segundos y 75 MB, en 720p o más" } ] },
+            { label: "Booking, Airbnb and Expedia", labelEs: "Booking, Airbnb y Expedia", cells: [
+              { text: "One or two aerials that place the property; the rest, rooms and bathrooms at ground level", textEs: "Una o dos aéreas que ubiquen la propiedad; el resto, cuartos y baños a nivel de piso" },
+              { text: "Horizontal; Booking asks for at least 2048 × 1080 px", textEs: "Horizontal; Booking pide al menos 2048 × 1080 px" } ] },
+            { label: "Meta ads (Reels)", labelEs: "Anuncios de Meta (Reels)", cells: [
+              { text: "A hook in the first seconds: the reveal from above, a guest in the pool, a glass with the vineyard behind", textEs: "Un gancho en los primeros segundos: el revelado desde arriba, un huésped en la alberca, la copa con el viñedo atrás" },
+              { text: "Vertical 9:16, 15 to 30 seconds", textEs: "Vertical 9:16, de 15 a 30 segundos" } ] },
+            { label: "Social media", labelEs: "Redes sociales", cells: [
+              { text: "Seasons, harvest, events and behind the scenes", textEs: "Temporadas, vendimia, eventos y detrás de cámaras" },
+              { text: "Vertical 9:16", textEs: "Vertical 9:16" } ] },
+            { label: "Weddings and events", labelEs: "Bodas y eventos", cells: [
+              { text: "The whole venue set up, guests arriving, the ceremony from above", textEs: "El venue completo con su montaje, la llegada de invitados, la ceremonia desde arriba" },
+              { text: "Horizontal for the proposal, vertical for social media", textEs: "Horizontal para la propuesta, vertical para redes" } ] },
+          ],
+        },
+      },
+      {
+        id: "lo-que-piden-las-plataformas",
+        heading: "What the platforms ask for, and where the drone fits",
+        headingEs: "Lo que piden las plataformas y dónde entra el dron",
+        body: [
+          "Booking recommends at least 10 photos of the property and at least four per room type, from different angles, plus the bathroom. Google asks hotels for a full-room photo of every room and recommends photographing the exterior and its seasonal changes. Neither asks for aerial photos.",
+          "That says something: the drone does not replace the room photos, it complements them. The aerial sells the place; the room sells the night. Film both on the same day so all the material has the same light and the same season.",
+        ],
+        bodyEs: [
+          "Booking recomienda al menos 10 fotos de la propiedad y al menos cuatro por tipo de cuarto, desde distintos ángulos, más el baño. Google le pide a los hoteles una foto completa de cada cuarto y recomienda fotografiar el exterior y sus cambios de temporada. Ninguno de los dos pide fotos aéreas.",
+          "Eso dice algo: el dron no sustituye las fotos de los cuartos, las complementa. La aérea vende el lugar; el cuarto vende la noche. Graba las dos cosas el mismo día para que todo el material tenga la misma luz y la misma temporada.",
+        ],
+      },
+      {
+        id: "hoteles",
+        heading: "What to film at a hotel or guesthouse",
+        headingEs: "Qué grabar en un hotel o una casa de huéspedes",
+        body: [
+          "**Where you are.** A high shot showing the property, the vineyards around it and, if visible, the hills or the highway. A guest who does not know the Valle wants to know whether you are isolated or close to the wineries they want to visit.",
+          "**The arrival.** The access road, the entrance, the parking. It reduces the uncertainty of whoever arrives driving at night.",
+          "**The reveal.** The shot that starts on the terrace or at the pool and rises to show the valley. It is the one that ends up in ads.",
+          "**The light.** Sunset from the common area or the room with the best view. Film a daytime shot too: not everyone arrives for the sunset.",
+          "**The experience.** People using the place: breakfast on the terrace, someone in the pool, a fire pit at night. An empty property looks cold; with guests it looks alive. If people appear, they should be staff or guests who agreed to it.",
+          "**At ground level.** Rooms, bathrooms, amenities. That is not drone work, but it is worth filming the same day. And all of this has to lead to booking direct, which we explain in [direct bookings: how to depend less on Booking and Airbnb](/blog/reservas-directas-hotel).",
+        ],
+        bodyEs: [
+          "**Dónde estás.** Una toma alta que muestre la propiedad, los viñedos alrededor y, si se ven, los cerros o la carretera. El huésped que no conoce el Valle quiere saber si estás aislado o cerca de las vinícolas que quiere visitar.",
+          "**La llegada.** El camino de acceso, la entrada, el estacionamiento. Le quita incertidumbre a quien llega manejando de noche.",
+          "**El revelado.** La toma que empieza en la terraza o la alberca y sube hasta mostrar el valle. Es la que termina en los anuncios.",
+          "**La luz.** El atardecer desde el área común o el cuarto con mejor vista. Graba también una toma de día: no todos llegan para el atardecer.",
+          "**La experiencia.** Gente usando el lugar: desayuno en la terraza, alguien en la alberca, una fogata en la noche. Una propiedad vacía se ve fría; con huéspedes se ve viva. Si aparecen personas, que sean del equipo o huéspedes que lo autorizaron.",
+          "**A nivel de piso.** Cuartos, baños, amenidades. No es trabajo de dron, pero conviene grabarlo el mismo día. Y todo esto tiene que llevar a reservar directo, como explicamos en [reservas directas: cómo depender menos de Booking y Airbnb](/blog/reservas-directas-hotel).",
+        ],
+      },
+      {
+        id: "vinicolas",
+        heading: "What to film at a winery",
+        headingEs: "Qué grabar en una vinícola",
+        body: [
+          "**The vineyard in lines.** Rows seen from above are the image recognised in any format; film them with someone walking between them too, to give scale.",
+          "**The tasting room and its surroundings.** Make it clear where the visitor sits and what they see.",
+          "**The process.** Harvest, destemming, barrels. The drone takes the harvest from above; the rest is handheld.",
+          "**The events.** Concerts, pairing dinners, weddings. Every event you film is material to sell the next one.",
+          "**The season.** The same vineyard changes completely through the year: it buds in spring, is green and full in summer, is harvested between late summer and early autumn, takes on colour in autumn and is pruned in winter. Filming in two seasons gives you material for the whole year.",
+        ],
+        bodyEs: [
+          "**El viñedo en líneas.** Las hileras vistas desde arriba son la imagen que se reconoce en cualquier formato; grábalas también con alguien caminando entre ellas para dar escala.",
+          "**La sala de degustación y su entorno.** Que se entienda dónde se sienta el visitante y qué ve.",
+          "**El proceso.** Vendimia, despalillado, barricas. El dron toma la cosecha desde arriba; el resto va con cámara en mano.",
+          "**Los eventos.** Conciertos, cenas maridaje, bodas. Cada evento que grabas es material para vender el siguiente.",
+          "**La temporada.** El mismo viñedo cambia por completo en el año: brota en primavera, está verde y lleno en verano, se cosecha entre el final del verano y el inicio del otoño, toma color en otoño y queda podado en invierno. Grabar en dos temporadas te da material para todo el año.",
+        ],
+      },
+      {
+        id: "calendario",
+        heading: "When to film: the Valle's calendar",
+        headingEs: "Cuándo grabar: el calendario del Valle",
+        body: [
+          "The 2026 Fiestas de la Vendimia ran from 5 to 30 August, with 80 participating wineries and 90,000 expected visitors, according to the Provino committee. The key point: this year's harvest footage is what sells next year's, and the footage that sells this year's has to be ready months before.",
+          "For the light, schedule the session around sunset or first thing in the morning; at midday the light is harsh and flattens the landscape.",
+        ],
+        bodyEs: [
+          "Las Fiestas de la Vendimia de 2026 fueron del 5 al 30 de agosto, con 80 vinícolas participantes y 90,000 visitantes esperados, según el comité Provino. Lo importante: el material de la vendimia de este año es el que vende la del próximo, y el que vende la de este año tiene que estar listo meses antes.",
+          "Para la luz, programa la sesión alrededor del atardecer o a primera hora; al mediodía la luz es dura y aplana el paisaje.",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "A year of footage in three or four sessions",
+          titleEs: "Un año de material en tres o cuatro sesiones",
+          steps: [
+            { label: "Spring", labelEs: "Primavera", detail: "Budding vines and new green. Footage for Easter and the start of summer.", detailEs: "Viñedo brotando y verde nuevo. Material para Semana Santa y el arranque del verano." },
+            { label: "Early summer", labelEs: "Inicio del verano", detail: "Full green vineyard. The footage for the harvest season ads, published before August.", detailEs: "Viñedo verde y lleno. El material para los anuncios de la temporada de vendimia, publicados antes de agosto." },
+            { label: "Harvest (August)", labelEs: "Vendimia (agosto)", detail: "Harvest and events. Material for next year and for selling weddings.", detailEs: "Cosecha y eventos. Material para el año siguiente y para vender bodas." },
+            { label: "Autumn", labelEs: "Otoño", detail: "Coloured vines and early sunsets. Material for the year-end holidays and winter.", detailEs: "Viñedo con color y atardeceres tempranos. Material para las fiestas de fin de año y el invierno." },
+          ],
+        },
+      },
+      {
+        id: "costo",
+        heading: "What it costs and what it includes",
+        headingEs: "Cuánto cuesta y qué incluye",
+        body: [
+          "At Aphelion, a **Captura** session costs **$2,990 MXN**: up to one hour on site, one edited video of 30 to 45 seconds with a vertical version and 10 aerial photographs, delivered in 5 business days. For an event, such as a wedding or a harvest dinner, the **Cobertura** package costs **$4,990 MXN**: up to 4 continuous hours, a 60 to 90 second video with a vertical version and 20 aerial photos. In Ensenada and Valle de Guadalupe travel is included.",
+          "If the footage is going into ads, the advanced edit, from $3,500 MXN, adds motion graphics, cuts for paid media and sound design. The material includes a usage licence for your own ads, and the original files can be added for $999 MXN.",
+        ],
+        bodyEs: [
+          "En Aphelion, una sesión **Captura** cuesta **$2,990 MXN**: hasta una hora en sitio, un video editado de 30 a 45 segundos con versión vertical y 10 fotografías aéreas, entregado en 5 días hábiles. Para un evento, como una boda o una cena de vendimia, el paquete **Cobertura** cuesta **$4,990 MXN**: hasta 4 horas continuas, un video de 60 a 90 segundos con versión vertical y 20 fotos aéreas. En Ensenada y el Valle de Guadalupe el traslado está incluido.",
+          "Si el material va a anuncios, la edición avanzada, desde $3,500 MXN, agrega motion graphics, cortes para pauta y diseño de sonido. El material incluye licencia de uso para tus propios anuncios, y los archivos originales se pueden agregar por $999 MXN.",
+        ],
+      },
+      {
+        id: "reservas",
+        heading: "How to turn the shots into bookings",
+        headingEs: "Cómo convertir las tomas en reservas",
+        body: [
+          "**The hook goes first.** Meta found that Reels ads showing the brand and the main message within the first 5 seconds are 1.7 times more likely to rank in the top 20% for purchase intent. Open with your strongest shot, not with the logo.",
+          "**Sound and text together.** Music plus a voice or on-screen text that says what it is and where: “Boutique hotel 10 minutes from the Wine Route”. Meta also reports that combining speech and music doubles the likelihood of a top-ranking creative for brand interest.",
+          "**A clear call to action.** “Book direct and get a bottle on us”, with the link to your booking engine, not to your Instagram.",
+          "**Measure bookings, not views.** If the ad goes to your website, you need the [[pixel|pixel]] and booking measurement; if it goes to WhatsApp, calculate the cost per booking as we explain in [what a real appointment costs with Meta Ads](/blog/costo-por-cita-meta-ads-whatsapp).",
+          "**Speak two languages.** If some of your guests cross from California, make an English version of the text. And if you fly over guests at an event, the standard requires keeping a distance from people not involved in the flight, so it is planned in advance; more in [drones in Mexico: regulation and permits](/blog/regulacion-de-drones-en-mexico).",
+          "If you have a hotel, guesthouse or winery in the Valle, [get a quote for filming your property](/servicios/video-con-dron): tell us where you will use the footage and we will build the shot list with you.",
+        ],
+        bodyEs: [
+          "**El gancho va primero.** Meta encontró que los anuncios en Reels que muestran la marca y el mensaje principal en los primeros 5 segundos tienen 1.7 veces más probabilidad de quedar en el 20% con mayor intención de compra. Abre con tu toma más fuerte, no con el logo.",
+          "**Sonido y texto juntos.** Música más una voz o un texto en pantalla que diga qué es y dónde está: “Hotel boutique a 10 minutos de la Ruta del Vino”. Meta reporta además que combinar voz y música duplica la probabilidad de que un anuncio quede entre los mejores en interés por la marca.",
+          "**Un llamado claro.** “Reserva directo y te regalamos la botella”, con el enlace a tu motor de reservas, no a tu Instagram.",
+          "**Mide reservas, no vistas.** Si el anuncio manda a tu página, necesitas el [[pixel|pixel]] y la medición de la reserva; si manda a WhatsApp, calcula el costo por reserva como explicamos en [cuánto te cuesta una cita real con Meta Ads](/blog/costo-por-cita-meta-ads-whatsapp).",
+          "**Habla en dos idiomas.** Si parte de tus huéspedes cruza desde California, haz una versión del texto en inglés. Y si vuelas sobre huéspedes en un evento, la norma pide guardar distancia de las personas que no participan en el vuelo, así que se planea desde antes; más en [drones en México: regulación y permisos](/blog/regulacion-de-drones-en-mexico).",
+          "Si tienes un hotel, una casa de huéspedes o una vinícola en el Valle, [cotiza la grabación de tu propiedad](/servicios/video-con-dron): dinos dónde vas a usar el material y armamos la lista de tomas contigo.",
+        ],
+      },
+    ],
+    gradient: "from-stone-800 to-neutral-950",
+    faq: [
+      {
+        q: "¿Cuánto cuesta un video con dron para un hotel en el Valle de Guadalupe?",
+        qEn: "How much does a drone video for a hotel in Valle de Guadalupe cost?",
+        a: "En Aphelion, una sesión Captura cuesta $2,990 MXN, con un video de 30 a 45 segundos, versión vertical y 10 fotos aéreas. Para eventos, el paquete Cobertura cuesta $4,990 MXN. En Ensenada y el Valle el traslado está incluido; la edición avanzada para anuncios va desde $3,500 MXN.",
+        aEn: "At Aphelion, a Captura session costs $2,990 MXN, with a 30 to 45 second video, a vertical version and 10 aerial photos. For events, the Cobertura package costs $4,990 MXN. In Ensenada and the Valle travel is included; the advanced edit for ads starts at $3,500 MXN.",
+      },
+      {
+        q: "¿Qué fotos aéreas sirven para Booking o Airbnb?",
+        qEn: "Which aerial photos work for Booking or Airbnb?",
+        a: "Una o dos que ubiquen la propiedad en su entorno. El resto deben ser cuartos y baños a nivel de piso: Booking recomienda al menos 10 fotos de la propiedad y cuatro por tipo de cuarto, en horizontal y de al menos 2048 × 1080 px.",
+        aEn: "One or two that place the property in its surroundings. The rest should be rooms and bathrooms at ground level: Booking recommends at least 10 photos of the property and four per room type, horizontal and at least 2048 × 1080 px.",
+      },
+      {
+        q: "¿Puedo subir el video del dron a mi perfil de Google?",
+        qEn: "Can I upload the drone video to my Google Business Profile?",
+        a: "Sí. Google acepta videos de hasta 30 segundos y 75 MB, en 720p o más. Conviene un corte corto que muestre la propiedad, la llegada y las amenidades.",
+        aEn: "Yes. Google accepts videos up to 30 seconds and 75 MB, at 720p or higher. A short cut showing the property, the arrival and the amenities works best.",
+      },
+      {
+        q: "¿Cuál es la mejor época para grabar una vinícola?",
+        qEn: "What is the best time of year to film a winery?",
+        a: "Depende del uso. Para anunciar la vendimia, al inicio del verano, con el viñedo verde, porque el material tiene que estar listo antes de agosto. La vendimia se graba para el año siguiente. Con dos temporadas tienes material para todo el año.",
+        aEn: "It depends on the use. To advertise the harvest season, early summer, with the vineyard green, because the footage has to be ready before August. The harvest itself is filmed for the following year. Two seasons give you material for the whole year.",
+      },
+      {
+        q: "¿Se puede volar un dron durante una boda o un evento?",
+        qEn: "Can a drone fly during a wedding or event?",
+        a: "Sí, con planeación: la norma pide guardar distancia de las personas que no participan en el vuelo, así que las tomas sobre invitados se definen antes. Para eventos está el paquete Cobertura, de hasta 4 horas.",
+        aEn: "Yes, with planning: the standard requires keeping a distance from people not involved in the flight, so shots over guests are defined in advance. For events there is the Cobertura package, up to 4 hours.",
+      },
+      {
+        q: "¿Puedo usar el video en mis anuncios?",
+        qEn: "Can I use the video in my ads?",
+        a: "Sí. El material incluye licencia de uso para quien lo contrata, también en anuncios de Meta y Google. Revenderlo o cedérselo a terceros requiere autorización.",
+        aEn: "Yes. The material includes a usage licence for whoever hires it, including in Meta and Google ads. Reselling it or transferring it to third parties requires authorisation.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "drone video hotel Valle de Guadalupe",
+        "winery video Baja California",
+        "aerial photography boutique hotel",
+        "drone Valle de Guadalupe",
+        "hotel marketing Valle de Guadalupe",
+      ],
+      keywordsEs: [
+        "video con dron para hotel",
+        "video para vinícola Valle de Guadalupe",
+        "fotografía aérea hotel boutique",
+        "dron Valle de Guadalupe",
+        "video para Airbnb",
+        "marketing para hoteles Valle de Guadalupe",
+      ],
+    },
+  },
+  {
+    slug: "web-bilingue-proveedor-industrial",
+    cover: true,
+    title: "What the Bilingual Website of an Industrial Supplier Needs to Receive Quote Requests from the US",
+    titleEs: "Qué debe incluir la web bilingüe de un proveedor industrial para recibir cotizaciones de EE. UU.",
+    category: "Web Design",
+    categoryEs: "Diseño Web",
+    excerpt:
+      "The pages a US technical buyer looks for before sending you a drawing, how to write real English instead of a translation, the fields of a quote request form that works, the trust signals that matter to someone who does not know you, and the example of Velport.",
+    excerptEs:
+      "Las páginas que busca un comprador técnico de Estados Unidos antes de mandarte un plano, cómo escribir en inglés de verdad y no traducido, los campos de un formulario de cotización que funciona, las señales de confianza que pesan para alguien que no te conoce y el ejemplo de Velport.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "A buyer in San Diego, Texas or Michigan looking for someone to machine a part, build a harness or repair a boat will not call you to ask what you do. They will look at your website, in English, and decide in minutes whether it is worth sending you a drawing. Gartner found that B2B buyers spend only 17% of their buying process meeting with potential suppliers; the rest they research on their own. This guide covers what your website needs to pass that filter and turn the visit into a quote request, with the example of Velport, the Ensenada shipyard whose site we rebuilt.",
+    ledeEs:
+      "Un comprador en San Diego, Texas o Michigan que busca quién le maquine una pieza, le arme un arnés o le repare un barco no te va a llamar para preguntar qué haces. Va a revisar tu página, en inglés, y decidir en minutos si vale la pena mandarte un plano. Gartner encontró que los compradores B2B dedican solo 17% de su proceso de compra a reunirse con posibles proveedores; el resto lo investigan por su cuenta. Esta guía es lo que necesita tu página para pasar ese filtro y convertir la visita en una solicitud de cotización, con el ejemplo de Velport, el astillero de Ensenada al que le rehicimos el sitio.",
+    sections: [
+      {
+        id: "por-que-ahora",
+        heading: "Why now: the buyer is already looking for you",
+        headingEs: "Por qué ahora: el comprador ya te está buscando",
+        body: [
+          "In 2025 Mexico was the top exporter to the United States, with record sales of 534.9 billion dollars, according to US Census Bureau data reported by La Crónica. Baja California is at the centre of it: a binational study published by the San Diego Regional EDC counts 1,200 nearshoring companies and 60 industrial parks in the state, with data from the state's Ministry of Economy, and 98% of the state's exports are manufactured goods.",
+          "And the technical buyer researches online. According to the 2025 State of Marketing to Engineers survey by TREW Marketing and GlobalSpec, 60% of the buying process happens online before engineers talk to sales, and 73% of technical buyers rely on supplier websites and technical publications for trusted information.",
+          "If your website is only in Spanish, or in machine-translated English, that buyer never reaches the quote stage.",
+        ],
+        bodyEs: [
+          "En 2025 México fue el principal exportador a Estados Unidos, con ventas récord de 534,874 millones de dólares, según datos de la Oficina del Censo de ese país publicados por La Crónica. Baja California está en el centro de eso: un estudio binacional publicado por la San Diego Regional EDC cuenta 1,200 empresas de nearshoring y 60 parques industriales en el estado, con datos de la Secretaría de Economía estatal, y 98% de las exportaciones del estado son manufactura.",
+          "Y el comprador técnico investiga en línea. Según la encuesta State of Marketing to Engineers 2025 de TREW Marketing y GlobalSpec, 60% del proceso de compra ocurre en línea antes de que los ingenieros hablen con ventas, y 73% de los compradores técnicos confía en las páginas de proveedores y en publicaciones técnicas para informarse.",
+          "Si tu página está solo en español, o en un inglés de traductor automático, ese comprador nunca llega a la etapa de cotizar.",
+        ],
+      },
+      {
+        id: "estructura",
+        heading: "The structure: which pages it needs",
+        headingEs: "La estructura: qué páginas necesita",
+        body: [
+          "This is the minimum structure, and what the buyer is checking on each page:",
+        ],
+        bodyEs: [
+          "Esta es la estructura mínima, y lo que el comprador está revisando en cada página:",
+        ],
+        diagram: {
+          kind: "table",
+          title: "The pages of an industrial supplier's bilingual site",
+          titleEs: "Las páginas de la web bilingüe de un proveedor industrial",
+          columns: [
+            { label: "Page", labelEs: "Página" },
+            { label: "What it should include", labelEs: "Qué debe incluir" },
+            { label: "What the buyer is checking", labelEs: "Qué revisa el comprador" },
+          ],
+          rows: [
+            { label: "Home", labelEs: "Inicio", cells: [
+              { text: "What you do in one sentence, for which industries and where you are in relation to the border", textEs: "Qué haces en una frase, para qué industrias y dónde estás respecto a la frontera" },
+              { text: "Whether you are relevant, in 10 seconds", textEs: "Si eres relevante, en 10 segundos" } ] },
+            { label: "Capabilities (one per process)", labelEs: "Capacidades (una por proceso)", cells: [
+              { text: "Processes, equipment, materials, tolerances, sizes and volumes", textEs: "Procesos, equipo, materiales, tolerancias, tamaños y volúmenes" },
+              { text: "Whether you can make their part or deliver their service", textEs: "Si puedes hacer su pieza o dar su servicio" } ] },
+            { label: "Quality and certifications", labelEs: "Calidad y certificaciones", cells: [
+              { text: "ISO 9001, IATF 16949, AS9100, ISO 13485 or whichever you hold, with scope and validity", textEs: "ISO 9001, IATF 16949, AS9100, ISO 13485 o las que tengas, con su alcance y vigencia" },
+              { text: "Whether you would pass their supplier onboarding", textEs: "Si pasarías su alta de proveedores" } ] },
+            { label: "Industries or projects", labelEs: "Industrias o proyectos", cells: [
+              { text: "Cases with the problem, what you did and the result, even if anonymous", textEs: "Casos con el problema, lo que hiciste y el resultado, aunque sean anónimos" },
+              { text: "That you have done it for someone like them", textEs: "Que ya lo hiciste para alguien como él" } ] },
+            { label: "Logistics and coverage", labelEs: "Logística y cobertura", cells: [
+              { text: "Distance to the border, crossing, lead times, the Incoterms you work with", textEs: "Distancia a la frontera, cruce, tiempos de entrega, los Incoterms que manejas" },
+              { text: "Whether you beat their current supplier", textEs: "Si le conviene más que su proveedor actual" } ] },
+            { label: "Request a quote", labelEs: "Solicitar cotización", cells: [
+              { text: "A form with file upload and a stated response time", textEs: "Formulario con carga de archivos y un tiempo de respuesta escrito" },
+              { text: "Sending the drawing without talking to anyone yet", textEs: "Mandar su plano sin hablar con nadie todavía" } ] },
+            { label: "About", labelEs: "Nosotros", cells: [
+              { text: "Years in operation, team, facilities, real photos", textEs: "Años operando, equipo, instalaciones, fotos reales" },
+              { text: "That you are a real, stable company", textEs: "Que eres una empresa real y estable" } ] },
+          ],
+        },
+      },
+      {
+        id: "capacidades",
+        heading: "The capabilities page carries the weight",
+        headingEs: "La página de capacidades es la que carga el peso",
+        body: [
+          "One page per process, not a list on the home page. Each one with concrete data: the machines, the work envelope, the materials, the tolerances you hold, the volumes from prototype to production. A buyer who finds “high-quality CNC machining” learns nothing; one who finds “5-axis milling, 40 × 20 × 20 in envelope, ±0.0005 in” knows whether to send the drawing.",
+          "How to structure each capability page in detail, and the supplier onboarding package that should go with it, are in [marketing for industrial companies in Tijuana](/blog/marketing-industrial-tijuana).",
+        ],
+        bodyEs: [
+          "Una página por proceso, no una lista en el inicio. Cada una con datos concretos: las máquinas, el área de trabajo, los materiales, las tolerancias que sostienes, los volúmenes de prototipo a producción. Un comprador que lee “maquinado CNC de alta calidad” no aprende nada; uno que lee “fresado en 5 ejes, área de 40 × 20 × 20 pulgadas, ±0.0005 in” sabe si mandar el plano.",
+          "Cómo estructurar cada página de capacidad a detalle, y el paquete de alta de proveedor que debe acompañarla, está en [marketing para empresas industriales en Tijuana](/blog/marketing-industrial-tijuana).",
+        ],
+      },
+      {
+        id: "ingles-de-verdad",
+        heading: "Real English, not a translation",
+        headingEs: "Inglés de verdad, no traducción",
+        body: [
+          "**The buyer's technical vocabulary.** Use the terms they type into Google and that appear on their drawings: “CNC machining”, “injection molding”, “wire harness assembly”, not a literal rendering of your Spanish.",
+          "**Their units.** Inches and pounds next to millimetres and kilos. A buyer who has to convert your tolerances is already thinking about another supplier.",
+          "**A contact who answers in English.** The website can be perfect; if the reply email arrives in English nobody can follow, trust is gone.",
+          "**Done right for Google.** Google recommends a separate URL for each language, marking each version with [[hreflang|hreflang]], using a single language per page, in both content and navigation, and not redirecting automatically by the language it guesses; better a visible switch so users choose. That is how your English version shows up in English searches.",
+          "The basics every professional website needs, in either language, are in [what a professional website should include](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+        bodyEs: [
+          "**El vocabulario técnico del comprador.** Usa los términos que él escribe en Google y que aparecen en sus planos: “CNC machining”, “injection molding”, “wire harness assembly”, no una traducción literal de tu español.",
+          "**Sus unidades.** Pulgadas y libras junto a milímetros y kilos. Un comprador que tiene que convertir tus tolerancias ya está pensando en otro proveedor.",
+          "**Un contacto que responda en inglés.** La página puede estar perfecta; si el correo de respuesta llega en un inglés que no se entiende, se pierde la confianza.",
+          "**Bien hecho para Google.** Google recomienda una URL distinta para cada idioma, marcar cada versión con [[hreflang|hreflang]], usar un solo idioma por página, en el contenido y en la navegación, y no redirigir automáticamente según el idioma que adivina; mejor un selector visible para que el usuario elija. Así tu versión en inglés aparece en las búsquedas en inglés.",
+          "Lo básico que necesita cualquier página profesional, en cualquier idioma, está en [qué debe incluir una página web profesional](/blog/que-debe-incluir-una-pagina-web).",
+        ],
+      },
+      {
+        id: "formulario",
+        heading: "The quote form: where the request is won or lost",
+        headingEs: "El formulario de cotización: donde se gana o se pierde la solicitud",
+        body: [
+          "It is the most important page and the most neglected. A generic contact form (name, email, message) forces the buyer to write everything and you to ask for everything again. A form built for a [[request for quote|solicitud-de-cotizacion]] asks for what you need in order to answer:",
+        ],
+        bodyEs: [
+          "Es la página más importante y la más descuidada. Un formulario de contacto genérico (nombre, correo, mensaje) obliga al comprador a escribir todo y a ti a volver a pedirle todo. Uno pensado para una [[solicitud de cotización|solicitud-de-cotizacion]] le pide lo que necesitas para responder:",
+        ],
+        diagram: {
+          kind: "flow",
+          title: "The fields of a quote request form",
+          titleEs: "Los campos de un formulario de cotización",
+          steps: [
+            { label: "Contact", labelEs: "Contacto", detail: "Name, company, work email, country and phone.", detailEs: "Nombre, empresa, correo corporativo, país y teléfono." },
+            { label: "What they need", labelEs: "Qué necesita", detail: "The process or service, from a list, and a short description.", detailEs: "El proceso o servicio, de una lista, y una descripción corta." },
+            { label: "Files", labelEs: "Archivos", detail: "Drawing upload in PDF, STEP or DWG, several at once.", detailEs: "Carga de planos en PDF, STEP o DWG, varios a la vez." },
+            { label: "Quantities", labelEs: "Cantidades", detail: "Volume per order and per year, and whether it is a prototype or production.", detailEs: "Volumen por pedido y por año, y si es prototipo o producción." },
+            { label: "Material and specs", labelEs: "Material y especificaciones", detail: "Material, finish, critical tolerances, required certifications.", detailEs: "Material, acabado, tolerancias críticas, certificaciones requeridas." },
+            { label: "Dates", labelEs: "Fechas", detail: "When they need the quote and when they need the parts.", detailEs: "Cuándo necesita la cotización y cuándo las piezas." },
+            { label: "Confidentiality", labelEs: "Confidencialidad", detail: "A checkbox to request an NDA before sending drawings.", detailEs: "Una casilla para pedir un NDA antes de mandar planos." },
+          ],
+        },
+      },
+      {
+        id: "despues-del-formulario",
+        heading: "What happens after they press send",
+        headingEs: "Lo que pasa después de que le dan enviar",
+        body: [
+          "**A written response time**, such as “we reply within 48 business hours”, and keeping it. A request that waits a week may already have been won by another supplier.",
+          "**Every request in one place.** An inbox someone actually checks, plus your [[CRM|crm]], with an instant alert. If the request lands in a general mailbox that three people share, nobody owns it.",
+          "**Measure each submission** as a [[conversion|conversion]] in Google Ads and GA4. If you later run campaigns in the United States, that is what tells Google what to look for. We cover it in [what Google Tag Manager is](/blog/que-es-google-tag-manager).",
+        ],
+        bodyEs: [
+          "**Un tiempo de respuesta escrito**, como “respondemos en 48 horas hábiles”, y cumplirlo. Una solicitud que espera una semana pudo haberla ganado ya otro proveedor.",
+          "**Cada solicitud en un solo lugar.** Un correo que alguien sí revisa, más tu [[CRM|crm]], con aviso inmediato. Si la solicitud cae en un buzón general que comparten tres personas, nadie es dueño de ella.",
+          "**Mide cada envío** como [[conversión|conversion]] en Google Ads y GA4. Si después haces campañas en Estados Unidos, eso es lo que le dice a Google qué buscar. Lo vemos en [qué es Google Tag Manager](/blog/que-es-google-tag-manager).",
+        ],
+      },
+      {
+        id: "confianza",
+        heading: "Trust signals for someone who does not know you",
+        headingEs: "Señales de confianza para alguien que no te conoce",
+        body: [
+          "**Real photos and video of the plant.** No stock images: buyers recognise them. A video walkthrough, and aerial shots showing the size of the facilities, do more than any text.",
+          "**Downloadable certificates**, with the registration number where it applies.",
+          "**Clients or industries served**, with permission, or anonymous cases with concrete numbers.",
+          "**Physical address and map.** Show where the plant is and how far it is from the border.",
+          "**Privacy notice and terms in English**, especially if you receive confidential drawings. In Spanish, your [[privacy notice|aviso-de-privacidad]] is also a legal requirement.",
+          "**Speed and mobile.** The first review may happen on a phone between meetings. We explain why it matters in [page speed](/blog/velocidad-de-carga-pagina-web).",
+        ],
+        bodyEs: [
+          "**Fotos y video reales de la planta.** Nada de bancos de imágenes: el comprador las reconoce. Un recorrido en video, y tomas aéreas que muestren el tamaño de las instalaciones, hacen más que cualquier texto.",
+          "**Certificados descargables**, con el número de registro donde aplique.",
+          "**Clientes o industrias atendidas**, con permiso, o casos anónimos con números concretos.",
+          "**Dirección física y mapa.** Que se vea dónde está la planta y a cuánto está de la frontera.",
+          "**Aviso de privacidad y términos en inglés**, sobre todo si recibes planos confidenciales. En español, tu [[aviso de privacidad|aviso-de-privacidad]] además es obligatorio.",
+          "**Velocidad y celular.** La primera revisión puede pasar en un teléfono, entre una junta y otra. Explicamos por qué importa en [velocidad de carga](/blog/velocidad-de-carga-pagina-web).",
+        ],
+      },
+      {
+        id: "velport",
+        heading: "The Velport example",
+        headingEs: "El ejemplo de Velport",
+        body: [
+          "Velport is a shipyard that has operated in Ensenada for 30 years, doing refit and repair for yachts: a technical service sold to owners and captains, in English and in Spanish. Its previous website did not convey the precision, trust and control that kind of customer expects.",
+          "We rebuilt it from scratch: bilingual, with one page for each of its six services, each explaining what it includes and how the work is done; a clean design that works on a phone first; technical SEO; and a path designed so that whoever arrives from a Google or Meta campaign requests a quote, with every request measured as a conversion.",
+          "What applies to any industrial supplier: one page per service, not a list; each service explained in the buyer's language; and a short path from the search to the request.",
+        ],
+        bodyEs: [
+          "Velport es un astillero con 30 años operando en Ensenada que hace refit y reparación de yates: un servicio técnico que se le vende a propietarios y capitanes, en inglés y en español. Su página anterior no transmitía la precisión, la confianza y el control que ese cliente espera.",
+          "La rehicimos desde cero: bilingüe, con una página para cada uno de sus seis servicios, cada una explicando qué incluye y cómo se trabaja; un diseño limpio que funciona primero en celular; SEO técnico; y un recorrido pensado para que quien llega desde una campaña de Google o Meta pida su cotización, con cada solicitud medida como conversión.",
+          "Lo que aplica a cualquier proveedor industrial: una página por servicio, no una lista; cada servicio explicado en el idioma del comprador; y un camino corto de la búsqueda a la solicitud.",
+        ],
+      },
+      {
+        id: "errores",
+        heading: "Common mistakes",
+        headingEs: "Errores comunes",
+        body: [
+          "**Machine-translating and never reviewing it.** An engineer notices odd English in the first line.",
+          "**A 40-page PDF as the catalogue.** It is hard to read on a phone, and every capability buried in a PDF is a page that cannot rank on its own.",
+          "**“Contact us for more information” as the only call to action.** The buyer wants a quote, not a chat.",
+          "**Asking for a call before receiving the drawing.** Let them send the file first.",
+          "**Not saying where you are.** Something like “Tijuana, 15 minutes from the Otay Mesa crossing” sells; an address with no context does not.",
+          "**An incomplete English version.** If the menu is in English but the capabilities page is still in Spanish, the buyer leaves.",
+          "If your company already receives requests from the United States or wants to start, [get a quote for your bilingual website](/servicios/websites). And for a general idea of prices, start with [how much a website costs in Mexico](/blog/cuanto-cuesta-una-pagina-web-en-mexico).",
+        ],
+        bodyEs: [
+          "**Traducir con un traductor automático y nunca revisarlo.** Un ingeniero nota el inglés raro en la primera línea.",
+          "**Un PDF de 40 páginas como catálogo.** Cuesta leerlo en celular, y cada capacidad enterrada en un PDF es una página que no puede posicionar por su cuenta.",
+          "**“Contáctanos para más información” como único llamado.** El comprador quiere cotizar, no platicar.",
+          "**Pedir una llamada antes de recibir el plano.** Deja que mande el archivo primero.",
+          "**No decir dónde estás.** Algo como “Tijuana, a 15 minutos de la garita de Otay” vende; una dirección sin contexto, no.",
+          "**Una versión en inglés incompleta.** Si el menú está en inglés pero la página de capacidades sigue en español, el comprador se va.",
+          "Si tu empresa ya recibe solicitudes de Estados Unidos o quiere empezar, [cotiza tu web bilingüe](/servicios/websites). Y para darte una idea general de precios, empieza por [cuánto cuesta una página web en México](/blog/cuanto-cuesta-una-pagina-web-en-mexico).",
+        ],
+      },
+    ],
+    gradient: "from-neutral-800 to-zinc-950",
+    faq: [
+      {
+        q: "¿Qué debe tener la página de un proveedor industrial para clientes de Estados Unidos?",
+        qEn: "What should an industrial supplier's website have for US customers?",
+        a: "Una versión completa en inglés con: inicio claro, una página por capacidad con datos técnicos, calidad y certificaciones, industrias o casos, logística y distancia a la frontera, y un formulario de cotización con carga de planos y un tiempo de respuesta escrito.",
+        aEn: "A complete English version with: a clear home page, one page per capability with technical data, quality and certifications, industries or cases, logistics and distance to the border, and a quote form with drawing upload and a stated response time.",
+      },
+      {
+        q: "¿Basta con traducir mi página al inglés?",
+        qEn: "Is translating my website into English enough?",
+        a: "No. Hay que escribirla con el vocabulario técnico que usa el comprador, con sus unidades, y técnicamente bien hecha: una URL por idioma, hreflang y un solo idioma por página. Y alguien tiene que poder responder en inglés.",
+        aEn: "No. It has to be written with the buyer's technical vocabulary and units, and built correctly: one URL per language, hreflang and a single language per page. And someone has to be able to reply in English.",
+      },
+      {
+        q: "¿Qué campos debe tener un formulario de solicitud de cotización?",
+        qEn: "Which fields should a request for quote form have?",
+        a: "Contacto y empresa, el proceso o servicio, carga de planos (PDF, STEP o DWG), cantidades por pedido y por año, material y tolerancias, fechas, y una casilla para pedir un NDA antes de mandar archivos.",
+        aEn: "Contact and company, the process or service, drawing upload (PDF, STEP or DWG), quantities per order and per year, material and tolerances, dates, and a checkbox to request an NDA before sending files.",
+      },
+      {
+        q: "¿Cómo hago que Google muestre mi versión en inglés en Estados Unidos?",
+        qEn: "How do I get Google to show my English version in the United States?",
+        a: "Con una URL distinta por idioma, etiquetas hreflang que conecten las versiones, un solo idioma por página y sin redirecciones automáticas por idioma. Después, contenido en inglés escrito para lo que ese comprador busca.",
+        aEn: "With a separate URL per language, hreflang tags connecting the versions, one language per page and no automatic language redirects. Then, English content written for what that buyer searches for.",
+      },
+      {
+        q: "¿Conviene publicar precios en la página?",
+        qEn: "Should I publish prices on the website?",
+        a: "En manufactura a la medida casi nunca hay un precio de lista. Lo que sí conviene publicar es cómo cotizas, qué necesitas para hacerlo y en cuánto tiempo respondes.",
+        aEn: "In custom manufacturing there is rarely a list price. What is worth publishing is how you quote, what you need to do it and how quickly you respond.",
+      },
+      {
+        q: "¿Debo poner mis certificaciones en la página?",
+        qEn: "Should I put my certifications on the website?",
+        a: "Sí, con su alcance y vigencia, y de preferencia descargables. Muchas veces son lo primero que revisa el área de compras para darte de alta como proveedor.",
+        aEn: "Yes, with their scope and validity, and ideally downloadable. They are often the first thing a purchasing department checks before onboarding you as a supplier.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "bilingual website industrial supplier Mexico",
+        "manufacturer website Tijuana",
+        "request for quote form manufacturing",
+        "nearshoring supplier website",
+        "B2B website English Spanish Baja California",
+      ],
+      keywordsEs: [
+        "página web bilingüe para empresa industrial",
+        "sitio web para maquiladora",
+        "formulario de solicitud de cotización",
+        "página web para proveedor industrial Tijuana",
+        "página en inglés para exportar",
+        "diseño web industrial Baja California",
+      ],
+    },
+  },
+  {
+    slug: "google-maps-no-llaman",
+    cover: true,
+    title: "Your Business Shows Up on Google Maps. Why Does Almost Nobody Call?",
+    titleEs: "Tu negocio aparece en Google Maps, ¿por qué casi nadie llama?",
+    category: "SEO",
+    categoryEs: "SEO",
+    excerpt:
+      "Showing up is not the problem; what happens between someone seeing your listing and deciding to call is. What Google really measures, what the customer sees on their phone, the leak almost nobody measures and how to count the calls your profile brings in, with an example.",
+    excerptEs:
+      "Aparecer no es el problema; lo que pasa entre que alguien ve tu ficha y decide marcar, sí. Qué mide de verdad Google, qué ve el cliente en su celular, la fuga que casi nadie mide y cómo contar las llamadas que te trae tu perfil, con un ejemplo.",
+    readingTime: 9,
+    date: "2026-11-19",
+    author: "Isaac",
+    authorRole: "Creative Director, Aphelion",
+    authorRoleEs: "Director Creativo, Aphelion",
+    lede: "You open your Google profile and see 2,000 views a month. Then you check the phone and ten people called. Showing up is not the problem; the problem is what happens between someone seeing your listing and deciding to dial. Here is how to review that stretch: what Google really measures, what the customer sees on their phone, why they go to someone else and how to know how many calls your [[Business Profile|google-business-profile]] brings you, with an example.",
+    ledeEs:
+      "Abres tu perfil de Google y ves 2,000 vistas al mes. Después revisas el teléfono y llamaron diez personas. Aparecer no es el problema; el problema está en lo que pasa entre que alguien ve tu ficha y decide marcar. Aquí está cómo revisar ese tramo: qué mide de verdad Google, qué ve el cliente en su celular, por qué se va con otro y cómo saber cuántas llamadas te trae tu [[perfil de Google Business|google-business-profile]], con un ejemplo.",
+    sections: [
+      {
+        id: "lo-que-mide",
+        heading: "What Google measures and what it does not",
+        headingEs: "Lo que mide Google y lo que no",
+        body: [
+          "In your profile's performance section, Google reports views, searches, direction requests, website clicks and calls. According to its help centre, **calls** are the number of times someone tapped the call button: they do not tell you whether you answered, or whether the call was a customer or a salesperson.",
+          "And on 31 July 2024 Google removed call history and chat from Business Profile. So the number on your profile measures interest, not answered calls. **Views**, meanwhile, count unique people who saw your profile, at most once a day.",
+          "To know whether your listing works, the calculation that matters is this: out of every 100 people who see it, how many contact you, by calling, writing, visiting your site or asking for directions. That is your contact rate, and it is worth more than the number of views.",
+        ],
+        bodyEs: [
+          "En la sección de rendimiento de tu perfil, Google reporta vistas, búsquedas, solicitudes de cómo llegar, clics al sitio web y llamadas. Según su centro de ayuda, las **llamadas** son el número de veces que alguien tocó el botón de llamar: no te dicen si contestaste, ni si la llamada era de un cliente o de un vendedor.",
+          "Y el 31 de julio de 2024 Google quitó el historial de llamadas y el chat del perfil. Así que el número de tu perfil mide interés, no llamadas atendidas. Las **vistas**, por su parte, cuentan personas únicas que vieron tu perfil, como máximo una vez al día.",
+          "Para saber si tu ficha funciona, la cuenta que importa es esta: de cada 100 personas que la ven, cuántas te contactan, ya sea llamando, escribiendo, entrando a tu sitio o pidiendo cómo llegar. Ese es tu porcentaje de contacto, y vale más que el número de vistas.",
+        ],
+      },
+      {
+        id: "ejemplo",
+        heading: "An example: where the customers go",
+        headingEs: "Un ejemplo: dónde se van los clientes",
+        body: [
+          "This case is **illustrative**, with example figures: a mechanic's garage in Tijuana.",
+          "There are two different leaks. The first, from 2,000 views to 60 calls, belongs to the listing: something the customer sees does not convince them. The second, from 60 to 38, belongs to the business: the phone is not answered. The second is cheaper to fix, and it is the one that rarely gets measured.",
+        ],
+        bodyEs: [
+          "Este caso es **ilustrativo**, con cifras de ejemplo: un taller mecánico en Tijuana.",
+          "Ahí hay dos fugas distintas. La primera, de 2,000 vistas a 60 llamadas, es de la ficha: algo de lo que el cliente ve no lo convence. La segunda, de 60 a 38, es del negocio: el teléfono no se contesta. La segunda es más barata de arreglar, y es la que casi nunca se mide.",
+        ],
+        diagram: {
+          kind: "funnel",
+          title: "One month of a Tijuana garage's profile",
+          titleEs: "Un mes del perfil de un taller en Tijuana",
+          note: "Example figures. The calls Google reports are taps on the button; answered calls and customers come from the garage's own records.",
+          noteEs: "Cifras de ejemplo. Las llamadas que reporta Google son toques al botón; las contestadas y los clientes salen del registro del propio taller.",
+          steps: [
+            { label: "2,000 profile views", labelEs: "2,000 vistas del perfil", detail: "People who saw the listing in Search or Maps.", detailEs: "Personas que vieron la ficha en Búsqueda o Maps." },
+            { label: "60 taps on the call button", labelEs: "60 toques al botón de llamar", detail: "3% of views. The number Google reports.", detailEs: "3% de las vistas. El número que reporta Google." },
+            { label: "38 answered calls", labelEs: "38 llamadas contestadas", detail: "The rest fell at lunchtime, on the weekend or on a busy line.", detailEs: "Las demás cayeron a la hora de la comida, en fin de semana o con la línea ocupada." },
+            { label: "15 customers", labelEs: "15 clientes", detail: "The ones who brought their car in.", detailEs: "Los que llevaron el carro." },
+          ],
+        },
+      },
+      {
+        id: "la-ficha",
+        heading: "What the customer sees on their phone before calling",
+        headingEs: "Lo que el cliente ve en su celular antes de llamar",
+        body: [
+          "Open your own profile on a phone, logged out, as if you were a customer, and check this:",
+          "**Does it say open?** If your hours are wrong, or you did not set special hours for holidays, Google may show you as closed. In Whitespark's 2026 Local Search Ranking Factors survey, being open at the time of the search is among the factors that weigh most, both to show up and to be chosen.",
+          "**Is the [[primary category|categoria-principal]] right?** In the same survey it is the number one factor for appearing on the map. “Auto repair shop” is not the same as “Auto body shop”.",
+          "**Are the photos real and recent?** The façade so people recognise you when they arrive, the inside, the team working. A listing with three old photos or stock images does not inspire confidence.",
+          "**What do the recent reviews say, and did you reply?** Read the newest ones as if you were a customer: which complaint repeats? Google says more reviews and positive ratings help your local ranking, and a bad review answered well says more about you than none at all.",
+          "**Is the phone the one that gets answered?** Many profiles show a landline ringing in an empty office, or the mobile of someone who no longer works there.",
+          "**Is there another way to reach you?** Google lets eligible accounts receive text messages or WhatsApp from the profile. Whoever does not want to call, or finds you at 11 at night, writes.",
+          "**Does your website convince?** If someone taps “Website” and the page is slow or does not show the phone at the top, they go back to the map and call the next one.",
+          "The complete step-by-step setup is in [how to optimise your Google Business Profile](/blog/optimizar-google-business-profile).",
+        ],
+        bodyEs: [
+          "Abre tu propio perfil desde el celular, sin sesión iniciada, como si fueras cliente, y revisa esto:",
+          "**¿Dice que está abierto?** Si tu horario está mal, o no pusiste horario especial en días festivos, Google te puede mostrar cerrado. En la encuesta de factores de búsqueda local de Whitespark de 2026, estar abierto al momento de la búsqueda está entre los factores que más pesan, tanto para aparecer como para que te elijan.",
+          "**¿La [[categoría principal|categoria-principal]] es la correcta?** En la misma encuesta es el factor número uno para aparecer en el mapa. “Taller mecánico” no es lo mismo que “Taller de hojalatería y pintura”.",
+          "**¿Las fotos son reales y recientes?** La fachada para que te reconozcan al llegar, el interior, el equipo trabajando. Una ficha con tres fotos viejas o de banco de imágenes no da confianza.",
+          "**¿Qué dicen las reseñas recientes y respondiste?** Lee las más nuevas como si fueras cliente: ¿qué queja se repite? Google dice que más reseñas y mejores calificaciones ayudan a tu posición local, y una mala reseña bien respondida dice más de ti que ninguna.",
+          "**¿El teléfono es el que se contesta?** Muchos perfiles tienen el número fijo que suena en una oficina vacía, o el celular de alguien que ya no trabaja ahí.",
+          "**¿Hay otra forma de contactarte?** Google permite que las cuentas elegibles reciban mensajes de texto o de WhatsApp desde el perfil. Quien no quiere llamar, o te encuentra a las 11 de la noche, escribe.",
+          "**¿Tu sitio web convence?** Si alguien toca “Sitio web” y la página tarda o no tiene el teléfono arriba, se regresa al mapa y llama al siguiente.",
+          "La configuración completa paso a paso está en [cómo optimizar tu perfil de Google Business](/blog/optimizar-google-business-profile).",
+        ],
+      },
+      {
+        id: "el-telefono",
+        heading: "The leak nobody measures: the phone that goes unanswered",
+        headingEs: "La fuga que nadie mide: el teléfono que no se contesta",
+        body: [
+          "A missed call is the most expensive kind of lost customer: that person had already decided to call you. To know how many you lose, use what you already have: the missed-call log on the phone or the switchboard, by hour and by day. One week is enough to see the pattern: lunchtime, Saturdays, after 6 pm.",
+          "What fixes it is rarely more advertising. It is someone answering at those hours, forwarding to another phone, a voicemail that points to WhatsApp, or an automatic message that returns the missed call with “how can we help?”. We cover it in [the lead you do not answer within an hour goes cold](/blog/responder-rapido-a-tus-leads).",
+          "And if your profile says you open at 8 but nobody answers before 9, change the hours: better to lose an hour of visibility than a call.",
+        ],
+        bodyEs: [
+          "La llamada perdida es el cliente perdido más caro: esa persona ya había decidido llamarte. Para saber cuántas pierdes, usa lo que ya tienes: el registro de llamadas perdidas del celular o del conmutador, por hora y por día. Una semana basta para ver el patrón: la hora de la comida, los sábados, después de las 6.",
+          "Lo que lo arregla rara vez es más publicidad. Es que alguien conteste en esas horas, un desvío a otro celular, una contestadora que mande al WhatsApp, o un mensaje automático que devuelva la llamada perdida con un “¿en qué te ayudamos?”. Lo vemos en [el lead que no contestas en una hora se enfría](/blog/responder-rapido-a-tus-leads).",
+          "Y si tu perfil dice que abres a las 8 pero nadie contesta antes de las 9, cambia el horario: es mejor perder una hora de visibilidad que una llamada.",
+        ],
+      },
+      {
+        id: "medir",
+        heading: "How to measure the calls your profile brings in",
+        headingEs: "Cómo medir cuántas llamadas te trae tu perfil",
+        body: [
+          "**A number just for the profile.** A number you use nowhere else tells you exactly how many calls come from Google. Many call-tracking services provide one; keep your usual number as an additional phone on the profile, so it still matches the one on your website and in directories.",
+          "**A tagged link on the website button.** Add [[UTM parameters|parametros-utm]] to your website link on the profile; then Google Analytics shows how many visits and contacts come from the listing.",
+          "**Ask and write it down.** “How did you find us?” on every call, recorded in a spreadsheet or your [[CRM|crm]]. It is the simplest method and the first one to be dropped after two weeks.",
+          "**Look at the month, not the day.** Profile numbers jump a lot from one week to the next; compare month against month, and against the same month last year.",
+          "**WhatsApp clicks count too.** If your website has a WhatsApp button, measure it as an event; we explain how in [what Google Tag Manager is](/blog/que-es-google-tag-manager).",
+        ],
+        bodyEs: [
+          "**Un número solo para el perfil.** Un número que no uses en ningún otro lado te dice exactamente cuántas llamadas vienen de Google. Muchos servicios de seguimiento de llamadas lo ofrecen; conserva tu número de siempre como teléfono adicional en el perfil, para que siga coincidiendo con el de tu sitio y el de los directorios.",
+          "**Un enlace etiquetado en el botón del sitio.** Agrega [[parámetros UTM|parametros-utm]] al enlace de tu sitio en el perfil; así en Google Analytics ves cuántas visitas y contactos vienen de la ficha.",
+          "**Pregunta y anota.** “¿Cómo nos encontraste?” en cada llamada, anotado en una hoja o en tu [[CRM|crm]]. Es lo más simple y lo primero que se deja de hacer a la segunda semana.",
+          "**Revisa el mes, no el día.** Los números del perfil brincan mucho de una semana a otra; compara mes contra mes, y contra el mismo mes del año anterior.",
+          "**Los clics a WhatsApp también cuentan.** Si tu sitio tiene botón de WhatsApp, mídelo como evento; explicamos cómo en [qué es Google Tag Manager](/blog/que-es-google-tag-manager).",
+        ],
+      },
+      {
+        id: "si-el-problema-es-aparecer",
+        heading: "And if the problem really is showing up",
+        headingEs: "Y si el problema sí es aparecer",
+        body: [
+          "If your views are low, then it is a ranking problem. Google says local ranking depends on three things, relevance, distance and prominence, and that there is no way to pay for a better local ranking. In practice, according to the Whitespark survey, what moves it most is the primary category, proximity to the searcher, the service words in the business name, an address inside the city and reviews: many, recent and steady.",
+          "Careful with the name: the service words only count if they are part of your real business name. Adding them to the profile just to rank breaks Google's rules and can get the listing suspended. The rest of the work is in our [local SEO guide](/blog/seo-local-guia).",
+          "If your profile gets views but the phone does not ring, [request a local diagnosis](/seo-tijuana): we review your listing and your website from a phone, help you measure the calls and tell you where the customers are going.",
+        ],
+        bodyEs: [
+          "Si tus vistas son pocas, entonces sí es un problema de posicionamiento. Google dice que su ranking local depende de tres cosas, relevancia, distancia y prominencia, y que no hay forma de pagar para subir en los resultados locales. En la práctica, según la encuesta de Whitespark, lo que más lo mueve es la categoría principal, la cercanía con quien busca, las palabras del servicio en el nombre del negocio, una dirección dentro de la ciudad y las reseñas: muchas, recientes y constantes.",
+          "Cuidado con el nombre: las palabras del servicio solo cuentan si son parte del nombre real de tu negocio. Agregarlas al perfil solo para posicionar rompe las reglas de Google y puede hacer que suspendan la ficha. El resto del trabajo está en nuestra [guía de SEO local](/blog/seo-local-guia).",
+          "Si tu perfil tiene vistas pero el teléfono no suena, [solicita un diagnóstico local](/seo-tijuana): revisamos tu ficha y tu sitio desde el celular, te ayudamos a medir las llamadas y te decimos a dónde se están yendo los clientes.",
+        ],
+      },
+    ],
+    gradient: "from-emerald-900 to-neutral-950",
+    faq: [
+      {
+        q: "¿Por qué mi negocio sale en Google Maps pero no me llaman?",
+        qEn: "Why does my business show up on Google Maps but nobody calls?",
+        a: "Casi siempre por una de dos fugas: algo en tu ficha no convence (aparece cerrado, categoría equivocada, fotos viejas, reseñas sin responder, un teléfono que no se contesta) o las llamadas sí llegan pero no se contestan. Revisa tu ficha desde el celular y tu registro de llamadas perdidas.",
+        aEn: "Almost always one of two leaks: something on your listing does not convince (it shows closed, wrong category, old photos, unanswered reviews, a phone nobody answers) or the calls do arrive but are not answered. Check your listing on a phone and your missed-call log.",
+      },
+      {
+        q: "¿Las llamadas que muestra mi perfil de Google son llamadas reales?",
+        qEn: "Are the calls shown on my Google profile real calls?",
+        a: "No exactamente. Google cuenta las veces que alguien tocó el botón de llamar, no si la llamada se contestó ni quién era. Para saber las llamadas reales necesitas un número exclusivo para el perfil o tu propio registro.",
+        aEn: "Not exactly. Google counts the times someone tapped the call button, not whether the call was answered or who it was. To know the real calls you need a number used only on the profile, or your own records.",
+      },
+      {
+        q: "¿Puedo ver el historial de llamadas en mi perfil de Google?",
+        qEn: "Can I see call history on my Google profile?",
+        a: "No. Google quitó el historial de llamadas y el chat del perfil el 31 de julio de 2024. Sigues recibiendo llamadas, pero el detalle tienes que llevarlo tú.",
+        aEn: "No. Google removed call history and chat from Business Profile on 31 July 2024. You still receive calls, but you have to keep the details yourself.",
+      },
+      {
+        q: "¿Cómo sé cuántos clientes me trae mi perfil de Google?",
+        qEn: "How do I know how many customers my Google profile brings in?",
+        a: "Con tres cosas: un número de teléfono que solo uses en el perfil, parámetros UTM en el enlace a tu sitio y preguntar “¿cómo nos encontraste?” en cada llamada. Revisa el resultado por mes.",
+        aEn: "With three things: a phone number used only on the profile, UTM parameters on the link to your website and asking “how did you find us?” on every call. Review the results monthly.",
+      },
+      {
+        q: "¿Poner palabras clave en el nombre del negocio ayuda a aparecer en Maps?",
+        qEn: "Does putting keywords in the business name help on Maps?",
+        a: "Solo si son parte del nombre real de tu negocio. Agregarlas al perfil para posicionar viola las reglas de Google y puede provocar que suspendan tu ficha.",
+        aEn: "Only if they are part of your real business name. Adding them to the profile to rank breaks Google's rules and can get your listing suspended.",
+      },
+      {
+        q: "¿Se puede pagar para salir más arriba en Google Maps?",
+        qEn: "Can I pay to rank higher on Google Maps?",
+        a: "En los resultados orgánicos, no: Google dice que no hay forma de pagar por un mejor ranking local. Lo que sí existe son los anuncios de Google Ads, que pueden aparecer como resultados patrocinados en Maps.",
+        aEn: "In the organic results, no: Google says there is no way to pay for a better local ranking. What does exist are Google Ads ads, which can appear as sponsored results on Maps.",
+      },
+    ],
+    schema: {
+      keywords: [
+        "Google Maps no calls",
+        "Google Business Profile calls metric",
+        "local SEO Tijuana",
+        "Google Business Profile call tracking",
+        "why customers don't call my business",
+      ],
+      keywordsEs: [
+        "aparezco en Google Maps pero no me llaman",
+        "llamadas perfil de Google Business",
+        "SEO local Tijuana",
+        "medir llamadas Google Maps",
+        "por qué no me llaman clientes",
+        "posicionamiento en Google Maps",
+      ],
+    },
+  },
 ];
 
 export type BlogCategory = { key: string; en: string; es: string };

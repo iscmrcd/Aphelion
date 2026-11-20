@@ -656,4 +656,36 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
       "A booked appointment the patient or customer neither attends nor cancels in time. It leaves an empty slot that can no longer be filled.",
     href: "/blog/agenda-en-linea-para-clinicas",
   },
+  hreflang: {
+    term: "hreflang",
+    termEn: "hreflang",
+    def: "Una etiqueta que le dice a Google que una página tiene versiones en otros idiomas y cuál es cuál, para que muestre a cada persona la de su idioma.",
+    defEn:
+      "A tag that tells Google a page has versions in other languages and which is which, so each person is shown the one in their language.",
+    href: "/blog/web-bilingue-proveedor-industrial",
+  },
+  "solicitud-de-cotizacion": {
+    term: "Solicitud de cotización (RFQ)",
+    termEn: "Request for quote (RFQ)",
+    def: "El documento o formulario con el que un comprador le pide precio a un proveedor, normalmente con planos, cantidades, material y fechas.",
+    defEn:
+      "The document or form a buyer uses to ask a supplier for a price, usually with drawings, quantities, material and dates.",
+    href: "/blog/web-bilingue-proveedor-industrial",
+  },
+  "categoria-principal": {
+    term: "Categoría principal",
+    termEn: "Primary category",
+    def: "La categoría que eliges en tu perfil de Google para decir qué es tu negocio, como “Taller mecánico”. Es de lo que más pesa para aparecer en el mapa.",
+    defEn:
+      "The category you choose on your Google profile to say what your business is, such as “Auto repair shop”. It is one of the biggest factors for appearing on the map.",
+    href: "/blog/google-maps-no-llaman",
+  },
+  "parametros-utm": {
+    term: "Parámetros UTM",
+    termEn: "UTM parameters",
+    def: "Etiquetas que se agregan al final de un enlace para que Google Analytics sepa de dónde vino la visita, por ejemplo de tu perfil de Google o de un anuncio.",
+    defEn:
+      "Tags added to the end of a link so Google Analytics knows where the visit came from, for example your Google profile or an ad.",
+    href: "/blog/google-maps-no-llaman",
+  },
 };
